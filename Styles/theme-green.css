@@ -1,0 +1,51 @@
+/*
+Main Menu
+*/
+menu ul li:hover > a {
+    color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+.active-link {
+    color: #71C152;
+}
+.main-color {
+    background-color: #71C152;
+}
+.hover:hover {
+    background-color: #71C152;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+::selection {
+    background: #71C152;
+    color: #FAFAFA;
+}
+/* Firefox */
+::-moz-selection {
+    background: #71C152;
+    color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+.text-link {
+    color: #7BD657;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+.text-link:link {
+    color: #71C152;
+}
+/* visited link */
+.text-link:visited {
+    color: #71C152;
+}
+.text-link:hover {
+    color: #7BD657;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}

@@ -1,0 +1,1470 @@
+/*
+==================================================================
+******						CSS RESET						******
+==================================================================
+*/
+
+/*
+Obtained from http://meyerweb.com/eric/tools/css/reset/
+License: None (Public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/*
+==================================================================
+******				      SHARED  FONTS						******
+==================================================================
+*/
+
+h1, h2, h3, h4, h5, h6, p, .paragraph-list, {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+menu, .project-icon-title, #bottomBannerText {
+	font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/*
+==================================================================
+******						MAIN MENU						******
+==================================================================
+*/
+
+menu {
+	display: inline-block;
+	text-align: left;
+}
+
+	/*
+	-----------------HIDING AND SHOWING SUB MENUS-----------------
+	The ul within a ul in English refers to the "list inside the list", or submenus
+	in this case. The '>' child selector makes sure only the child UL of the hovered/
+	targeted LI is shown, otherwise all submenus would appear.
+	*/
+	menu ul ul {
+		display: none;
+
+		padding: 0;
+		margin-top: -1px; /* Fixes a gap that can sometimes be visible between drop down and menu-line-separator */
+		position: absolute;
+
+		border: 0px solid transparent;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		z-index: 1;
+	}
+	menu ul li:hover > ul {
+		display: block; /* Converting the menu back to block elemnts on hover of the LI. */
+	}
+
+	/*
+	-----------------MAIN MENU SPACING, MINOR STYLING. AND POSITIONING-----------------
+	*/
+	menu ul {
+		padding-left: 0px;
+		list-style: none;
+		position: relative; /* Allows us to absolutely position the sub menus according to this main menu bar */
+	}
+
+	menu ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	/*
+	-----------------SUBMENU SPACING, SUB AND MAIN STYLE, AND POSITIONING-----------------
+	*/
+	menu ul li {
+		float: left; /* Comment out to have iPhone-like menu */
+		transition:background-color .2s linear;
+	}
+
+	menu ul li:hover > a {
+		color: #FAFAFA; /* Foreground color of menu on hover */
+	}
+
+	menu ul li ul li:hover > a {
+		color: #FAFAFA; /* Foreground color of submenu on hover */
+	}
+
+	menu ul li ul li:focus {
+		color: black;
+	}
+
+	menu ul li ul li a {
+		color: black;
+	}
+
+	menu ul li ul {
+		color: black;
+	}
+
+	menu ul li a {
+		display: list-item; /* Makes the submenu a nice little sub-list */
+		padding: 5px 15px;
+		color: #54565F; /* Foreground color of main menu and submenu */
+	}
+
+	menu ul ul li {
+		float: none;
+		position: relative;
+
+		border: 0px solid transparent;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+
+#active-menu-item {
+	color: #FAFAFA
+}
+
+#menu-line-separator {
+	height: 3px;
+	margin-top: -4px;
+}
+
+/*
+==================================================================
+******					ARTICLE STYLES						******
+==================================================================
+*/
+
+#logo {
+	padding-left: 0.5em;
+	width: 24px;
+}
+
+html, body {
+	height: 100%;
+	background-color: #FAFAFA;
+	text-align: center;
+}
+
+main {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+hr {
+	border: none;
+	border-top: 3px solid #0AA0D2;
+}
+
+p {
+	padding-top: 6pt;
+	line-height: 19pt;
+}
+
+#drop-cap {
+	color: black;
+}
+
+pre {
+	margin-top: 6pt;
+}
+
+code[class*="language-"] {
+	font-size: 0.8em;
+	
+}
+
+/*
+================== LISTS ====================
+*/
+
+p, ul li {
+	list-style-type: disc;
+	text-align: left;
+	color: black;
+	font-size: 11.96pt; /* 16px */
+	padding-top: 6pt;
+}
+
+/*.paragraph-list ul li {
+	padding-top: 7.5pt;
+}*/
+
+.experience-list {
+	padding-top: 0px;
+	list-style-type: none;
+}
+
+/*
+================== TITLES ====================
+*/
+
+/* Page Titles */
+h1 {
+	color: black;
+	font-size: 190%; /*214%;*/
+	font-weight: 900;
+	line-height: 100%;
+	padding-bottom: 19px;
+
+}
+
+/* Article Titles */
+h2 {
+	color: black;
+	text-align: left;
+	font-weight: 900;
+	font-size: 140%;
+}
+
+/* Article Subtitle */
+h3 {
+	color: #54565F;
+	font-size: 145%;
+	font-weight: bold;
+}
+
+/* Slighly larger than paragraph but not title*/
+h4  {
+	color: black;
+	font-size: 13.5pt;
+	line-height: 1.2em;
+}
+
+.h4-deemphasized {
+	color: #9298AA;
+}
+
+.h4-emphasized {
+	font-weight: bold;
+}
+
+/* Tiny title metadata (article author, date, etc.) */
+h5, time {
+	color: #A0A8B6;
+	text-align: left;
+	font-size: 1em;
+	padding-top: 2pt;
+	display: block;
+}
+
+/*
+================== BLOG OLDER/NEWER POSTS NAVIGATION ====================
+*/
+
+#bottom-navigation {
+	font-size: 1.1em;
+}
+
+#navigation-previous {
+	float: left;
+	text-align: left;
+	display: inline-block;
+	width: 41%;
+	line-height: 21pt;
+}
+
+#navigation-next {
+	float: right;
+	text-align: right;
+	display: inline-block;
+	width: 43%;
+	line-height: 21pt;
+}
+
+/*
+================== INLINE FOOTNOTES ====================
+*/
+
+.footnotes {
+	font-size: 0.95em;
+	padding-left: 17px;
+	line-height: 15pt;
+	text-align: left;
+}
+
+.footnotes ol {
+	list-style-type: decimal;
+}
+
+.footnotes ol li {
+	margin: 0 0 8pt 0;
+}
+
+/*
+================== IMAGES ====================
+*/
+
+.project-icon-image {
+	max-width: 85px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.project-icon-title {
+	font-size: 13px;
+	padding-top: 0.3em;
+}
+
+.anonymouth-app-icon {
+	width: 45%;
+	max-width: 400px;
+}
+
+.news-logo {
+	max-height: 16px;
+}
+
+.contact-icon {
+	width: 44px;
+}
+
+.gallery-image {
+	text-align: center;
+	display: inline-block;
+	max-width: 100%;
+}
+
+.generic-icon, .school-icon {
+	display: block;
+}
+.generic-icon {
+	width: 2.8em;
+}
+.school-icon {
+	width: 2.8em;
+}
+
+/*
+==================================================================
+******						POSITIONING						******
+==================================================================
+*/
+
+/*
+================== ALIGNMENT ====================
+*/
+.center {
+	text-align: center;
+	width: auto;
+	margin: 0 auto;
+}
+
+.left {
+	text-align: left;
+}
+
+.vertical-middle {
+	vertical-align: middle;
+}
+
+.vertical-top {
+	vertical-align: top;
+}
+
+/*
+================== DISPLAY MODES ====================
+*/
+
+.inline-block {
+	display: inline-block;
+}
+
+/*
+================== PADDING ====================
+*/
+
+.small-top-pad {
+	margin-top: 6pt;
+}
+
+.small-bottom-pad {
+	margin-bottom: 6pt;
+}
+
+.medium-bottom-pad {
+	padding-bottom: 20px;
+}
+
+.small-left-pad {
+	padding-left: 0px;
+	padding-top: 0.3em;
+}
+
+.large-top-pad {
+	margin-top: 25px;
+}
+
+.large-bottom-pad {
+	margin-bottom: 25px;
+}
+
+.massive-left-pad {
+	padding-left: 30px;
+}
+
+main hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/*
+==================================================================
+******					BOTTOM BANNER						******
+==================================================================
+*/
+
+/*
+Thanks to cssstickyfooter.com for this wonderful solution
+*/
+
+/* The root containers for all non-banner related site elements */
+#wrap {
+	min-height: 100%;
+}
+
+/*
+Immediate child element of wrap. Since it rests inside wrap the padding height
+is part of the 100%, thus forcing the bottom banner to rest at the bottom of
+the page.
+*/
+#content {
+	overflow: auto;
+	margin-top: 1.5em;
+	padding-bottom: 20px; /* Must be same height as the footer! */
+	max-width: 546px;
+}
+
+#bottomBanner {
+	position: relative;
+	height: 20px;
+	margin-top: -20px; /* Negative value of footer height */
+	clear: both;
+}
+
+#bottomBannerText {
+	padding-top: 3px;
+	height: auto;
+	font-size: 95%;
+	color: #FAFAFA;
+}
+
+/* Opera Fix */
+body:before {
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
+}
+
+/*
+==================================================================
+******						FINGE CASES						******
+==================================================================
+*/
+
+#projects #content {
+	padding-left: 0vw;
+	padding-right: 0vw;
+}
+
+#blog h1 {
+	padding-bottom: 0px;
+}
+
+/*
+==================================================================
+******					LOOK AND FEEL / THEME				******
+==================================================================
+*/
+
+/*
+=========== BLOG HIGHLIGHTING COLOR (Blue) ===========
+*/
+
+/*
+Main Menu
+*/
+#blog menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#blog .linkActive {
+	color: #0AA0D2;
+}
+#blog .mainColor {
+	background-color: #0AA0D2;
+}
+#blog .hover:hover {
+	background-color: #0AA0D2;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#blog ::selection {
+	background: #0AA0D2;
+	color: #FAFAFA;
+}
+/* Firefox */
+#blog ::-moz-selection {
+	background: #0AA0D2;
+	color: #FAFAFA;
+}
+
+/*
+Links
+*/
+#blog .text-link {
+	color: #0BC1FF;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#blog .text-link:link {
+	color: #0AA0D2;
+}
+/* visited link */
+#blog .text-link:visited {
+	color: #0AA0D2;
+}
+#blog .text-link:hover {
+	color: #0BC1FF;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+h2 a, h1 a {
+	color: #0BC1FF;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
+}
+h2 a:link, h1 a:link {
+	color: black;
+}
+h2 a:visited, h1 a:visited {
+	color: black;
+}
+h2 a:hover, h1 a:hover {
+	color: #0BC1FF;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
+}
+
+/*
+=========== PROJECTS HIGHLIGHTING COLOR (Blue) ===========
+*/
+
+/*
+Main Menu
+*/
+#projects menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#projects .linkActive {
+	color: #973D8E;
+}
+#projects .mainColor {
+	background-color: #973D8E;
+}
+#projects .hover:hover {
+	background-color: #973D8E;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#projects ::selection {
+	background: #973D8E;
+	color: #FAFAFA;
+}
+/* Firefox */
+#projects ::-moz-selection {
+	background: #973D8E;
+	color: #FAFAFA;
+}
+
+/*
+Links
+*/
+#projects .text-link {
+	color: black;
+}
+
+/*
+=========== THE LARGEST VIDEO GAME EVER HIGHLIGHTING COLOR (Tan) ===========
+*/
+
+/*
+Main Menu
+*/
+#largestVGEver menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#largestVGEver .linkActive {
+	color: #E13646;
+}
+#largestVGEver .mainColor {
+	background-color: #E13646;
+}
+#largestVGEver .hover:hover {
+	background-color: #E13646;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#largestVGEver ::selection {
+	background: #E13646;
+	color: #FAFAFA;
+}
+/* Firefox */
+#largestVGEver ::-moz-selection {
+	background: #E13646;
+	color: #FAFAFA;
+}
+
+/*
+Links
+*/
+#largestVGEver .text-link {
+	color: #FF0410;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#largestVGEver .text-link:link {
+	color: #D23141;
+}
+/* visited link */
+#largestVGEver .text-link:visited {
+	color: #D23141;
+}
+#largestVGEver .text-link:hover {
+	color: #FF0410;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== NEWS (Orange) ===========
+*/
+
+/*
+Main Menu
+*/
+#news menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#news .linkActive {
+	color: #F68048;
+}
+#news .mainColor {
+	background-color: #F68048;
+}
+#news .hover:hover {
+	background-color: #F68048;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#news ::selection {
+	background: #F68048;
+	color: #FAFAFA;
+}
+/* Firefox */
+#news ::-moz-selection {
+	background: #F68048;
+	color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+#news .text-link {
+	color: #F03F0D;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#news .text-link:link {
+	color: #F68048;
+}
+/* visited link */
+#news .text-link:visited {
+	color: #F68048;
+}
+#news .text-link:hover {
+	color: #F03F0D;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== ICONS () ===========
+*/
+
+/*
+Main Menu
+*/
+#icons menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#icons .linkActive {
+	color: #0AA0D2;
+}
+#icons .mainColor {
+	background-color: #0AA0D2;
+}
+#icons .hover:hover {
+	background-color: #0AA0D2;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#icons ::selection {
+	background: #0AA0D2;
+	color: #FAFAFA;
+}
+/* Firefox */
+#icons ::-moz-selection {
+	background: #0AA0D2;
+	color: #FAFAFA;
+}
+
+/*
+Links
+*/
+#icons .text-link {
+	color: #0BC1FF;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#icons .text-link:link {
+	color: #0AA0D2;
+}
+/* visited link */
+#icons .text-link:visited {
+	color: #0AA0D2;
+}
+#icons .text-link:hover {
+	color: #0BC1FF;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== CONTACT (Yellow) ===========
+*/
+
+/*
+MainMenu
+*/
+#contact menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#contact .linkActive {
+	color: #EEBC4E;
+}
+#contact .mainColor {
+	background-color: #EEBC4E;
+}
+#contact .hover:hover {
+	background-color: #EEBC4E;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#contact ::selection {
+	background: #EEBC4E;
+	color: #FAFAFA;
+}
+/* Firefox */
+#contact ::-moz-selection {
+	background: #EEBC4E;
+	color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+#contact .text-link {
+	color: #FFC852;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#contact .text-link:link {
+	color: #EEBC4E;
+}
+/* visited link */
+#contact .text-link:visited {
+	color: #EEBC4E;
+}
+#contact .text-link:hover {
+	color: #FFC852;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== ANONYMOUTH (Purple) ===========
+*/
+
+/*
+Main Menu
+*/
+#anonymouth menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#anonymouth .linkActive {
+	color: #973D8E;
+}
+#anonymouth .mainColor {
+	background-color: #973D8E;
+}
+#anonymouth .hover:hover {
+	background-color: #973D8E;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#anonymouth ::selection {
+	background: #973D8E;
+	color: #FAFAFA;
+}
+/* Firefox */
+#anonymouth ::-moz-selection {
+	background: #973D8E;
+	color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+#anonymouth .text-link {
+	color: #E05AD2;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#anonymouth .text-link:link {
+	color: #973D8E;
+}
+/* visited link */
+#anonymouth .text-link:visited {
+	color: #973D8E;
+}
+#anonymouth .text-link:hover {
+	color: #E05AD2;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== ABOUT (Green) ===========
+*/
+
+/*
+Main Menu
+*/
+#about menu ul li:hover > a {
+	color: #FAFAFA; /*Foreground color of menu on hover*/
+}
+#about .linkActive {
+	color: #71C152;
+}
+#about .mainColor {
+	background-color: #71C152;
+}
+#about .hover:hover {
+	background-color: #71C152;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#about ::selection {
+	background: #71C152;
+	color: #FAFAFA;
+}
+/* Firefox */
+#about ::-moz-selection {
+	background: #71C152;
+	color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+#about .text-link {
+	color: #7BD657;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+/* unvisited link */
+#about .text-link:link {
+	color: #71C152;
+}
+/* visited link */
+#about .text-link:visited {
+	color: #71C152;
+}
+#about .text-link:hover {
+	color: #7BD657;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== ERROR PAGE (Windows BSOD Blue and Grey) ===========
+*/
+
+/*
+Main Menu
+*/
+#errorPage menu ul li:hover > a {
+	color: #FAFAFA;
+}
+#errorPage .linkActive {
+	color: #0B0BA5;
+}
+#errorPage .mainColor {
+	background-color: #0B0BA5;
+}
+#errorPage .hover:hover {
+	background-color: #0B0BA5;
+}
+#errorPage menu ul li ul li a {
+	color: #ABAAAB;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+#errorPage ::selection {
+	background: #ABAAAB;
+	color: #FAFAFA;
+}
+/* Firefox */
+#errorPage ::-moz-selection {
+	background: #ABAAAB;
+	color: #FAFAFA;
+}
+
+/*
+Text Links
+*/
+#errorPage .text-link {
+	color: #0B0BA5;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+#errorPage .text-link:link {
+	color: #0B0BA5;
+}
+#errorPage .text-link:visited {
+	color: #0B0BA5;
+}
+#errorPage .text-link:hover {
+	color: #2268AD;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/*
+=========== BOTTOM BANNER ===========
+*/
+
+#bottomBannerText a {
+	color: #FAFAFA;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
+}
+#bottomBannerText a:link {
+	color: #FAFAFA;
+}
+#bottomBannerText a:visited {
+	color: #FAFAFA;
+}
+#bottomBannerText a:hover {
+	color: #FAFAFA;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
+}
+
+/*
+==================================================================
+******					ANIMATED BUTTONS					******
+==================================================================
+*/
+
+.rss-button, .download-button, .button-hover, .button-default {
+	position: relative;
+	display: inline-block;
+}
+.homemade-icon-button {
+	position: relative;
+
+	width: 6.3em;
+	height: 6.3em;
+	margin-right: 0.3em;
+	margin-left: 0.3em;
+	margin-bottom: 0.3em;
+}
+.homemade-app-button {
+	width: 3.7em;
+	height: 3.7em;
+}
+.homemade-folder-button {
+	width: 3.7em;
+	height: 2.9em;
+}
+.rss-button, .download-button {
+	width: 30px;
+	height: 30px;
+}
+
+.rss-button img, .download-button img, .homemade-icon-button img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: opacity 0.25s linear;
+	-moz-transition: opacity 0.25s linear;
+	-o-transition: opacity 0.25s linear;
+	transition: opacity 0.25s linear;
+}
+
+.button-hover {
+	opacity: 0;
+}
+
+.button-hover:hover {
+	opacity: 1;
+}
+
+/*
+==================================================================
+******					RESPONSIVE DESIGN					******
+==================================================================
+*/
+
+/* Dynamically fit and size images */
+img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto\9;
+}
+
+/* Dynamically resize HTML5 video */
+.videoContainer {
+	position: relative;
+}
+video, canvas {
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+video {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#content {
+		margin-top: 1.6em;
+		max-width: 648px;
+	}
+	main {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	menu {
+		font-size: 150%;
+	}
+	h1 {
+		font-size: 240%;
+	}
+	h2 {
+		font-size: 190%;
+	}
+	h3 {
+		font-size: 170%;
+	}
+	h4 {
+		font-size: 15.5pt;
+	}
+	h5, time {
+		font-size: 120%;
+	}
+	p, ul li {
+		font-size: 14.35pt; /* 19px, 1.2em */
+		letter-spacing: 0.03em;
+		padding-top: 7.5pt;
+	}
+	p {
+		line-height: 22pt;
+	}
+	p:first-of-type::first-letter {
+		initial-letter: 1;
+	}
+	code[class*="language-"] {
+		font-size: 1em;
+	}
+	pre {
+		margin-top: 7.5pt;
+	}
+	main hr {
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+	.homemade-icon-button {
+		margin-right: 0.7em;
+		margin-left: 0.7em;
+		margin-bottom: 0.7em;
+	}
+	.gallery-image {
+		max-width: 213px;
+	}
+	.project-icon-image {
+		max-width: 140px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.generic-icon, .school-icon {
+		display: inline-block;
+	}
+	.generic-icon {
+		width: 3em;
+	}
+	.school-icon {
+		width: 5.5em;
+	}
+	.homemade-app-button {
+		width: 8em;
+		height: 8em;
+	}
+	.homemade-folder-button {
+		width: 8em;
+		height: 5.95em;
+	}
+	.project-icon-title {
+		font-size: 18px;
+		padding-top: 0.4em;
+	}
+	.news-logo {
+		max-height: 18px;
+	}
+	.contact-icon {
+		width: 48px;
+	}
+	.footnotes {
+		font-size: 1em;
+		line-height: 15pt;
+		padding-left: 19px;
+	}
+	#navigation-previous, #navigation-next {
+		line-height: 24pt;
+	}
+	#bottom-navigation {
+		font-size: 1.2em;
+	}
+
+	.large-top-pad {
+		margin-top: 30px;
+	}
+	.large-bottom-pad {
+		margin-bottom: 30px;
+	}
+	.small-left-pad {
+		padding-left: 7.5pt;
+		padding-top: 0px;
+	}
+	.small-top-pad {
+		margin-top: 7.5pt;
+	}
+	.small-bottom-pad {
+		margin-bottom: 7.5pt;
+	}
+	.massive-left-pad {
+		padding-left: 40px;
+	}
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#content {
+		margin-top: 1.7em;
+		max-width: 682px;
+	}
+	menu {
+		font-size: 162%;
+	}
+	#logo {
+		padding-left: 1em;
+	}
+	h1 {
+		font-size: 300%;
+	}
+	h2 {
+		font-size: 250%;
+	}
+	h3 {
+		font-size: 205%;
+	}
+	h4 {
+		font-size: 18pt;
+	}
+	h5, time {
+		font-size: 1.3em;
+	}
+	p, ul li {
+		font-size: 14.94pt; /* 20px, 1.25em */
+		padding-top: 9pt;
+	}
+	p {
+		line-height: 23.5pt;
+	}
+	p:first-of-type::first-letter {
+		initial-letter: 2;
+	}
+	pre {
+		margin-top: 9pt;
+	}
+	main hr {
+		margin-top: 85px;
+		margin-bottom: 85px;
+	}
+	.gallery-image {
+		max-width: 224px;
+	}
+	.project-icon-image {
+		max-width: 170px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.generic-icon {
+		width: 3.5em;
+	}
+	.school-icon {
+		width: 6.5em;
+	}
+	.homemade-app-button {
+		width: 9em;
+		height: 9em;
+	}
+	.homemade-folder-button {
+		width: 9em;
+		height: 6.95em;
+	}
+	.project-icon-title {
+		font-size: 20px;
+		padding-top: 0.5em;
+	}
+	.news-logo {
+		max-height:20px;
+	}
+	.contact-icon {
+		width: 56px;
+	}
+	.rss-button, .download-button {
+		width: 36px;
+		height: 36px;
+	}
+	.footnotes {
+		font-size: 1.05em;
+		line-height: 16pt;
+		padding-left: 18px;
+	}
+	#navigation-previous, #navigation-next {
+		line-height: 29pt;
+	}
+	#bottom-navigation {
+		font-size: 1.25em;
+	}
+
+	.large-top-pad {
+		margin-top: 40px;
+	}
+	.large-bottom-pad {
+		margin-bottom: 40px;
+	}
+	.small-left-pad {
+		padding-left: 9pt;
+	}
+	.small-top-pad {
+		margin-top: 9pt;
+	}
+	.small-bottom-pad {
+		margin-bottom: 9pt;
+	}
+	.massive-left-pad {
+		padding-left: 50px;
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#content {
+		margin-top: 1.8em;
+		max-width: 750px;
+	}
+	menu {
+		font-size: 175%;
+	}
+	h1 {
+		font-size: 325%;
+		padding-bottom: 21px;
+	}
+	h2 {
+		font-size: 275%;
+	}
+	h3 {
+		font-size: 230%;
+	}
+	h4 {
+		font-size: 20pt;
+	}
+	h5, time {
+		font-size: 1.4em;
+	}
+	p, ul li {
+		font-size: 16.74pt; /* 22px, 1.4em */
+		padding-top: 11.25pt;
+	}
+	p {
+		line-height: 25pt;
+	}
+	pre {
+		margin-top: 15px;
+	}
+	main hr {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.gallery-image {
+		max-width: 247px;
+	}
+	.project-icon-image {
+		max-width: 180px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.generic-icon {
+		width: 4em;
+	}
+	.school-icon {
+		width: 7.5em;
+	}
+	.homemade-app-button {
+		width: 10em;
+		height: 10em;
+	}
+	.homemade-folder-button {
+		width: 10em;
+		height: 7.95em;
+	}
+	.project-icon-title {
+		font-size: 22px;
+		padding-top: 0.6em;
+	}
+	.news-logo {
+		max-height: 22px;
+	}
+	.contact-icon {
+		width: 64px;
+	}
+	.footnotes {
+		font-size: 1.1em;
+		padding-left: 20px;
+	}
+	#bottom-navigation {
+		font-size: 1.4em;
+	}
+
+	.large-top-pad {
+		margin-top: 50px;
+	}
+	.large-bottom-pad {
+		margin-bottom: 50px;
+	}
+	.small-left-pad {
+		padding-left: 15px;
+	}
+	.small-top-pad {
+		margin-top: 15px;
+	}
+	.small-bottom-pad {
+		margin-bottom: 15px;
+	}
+	.massive-left-pad {
+		padding-left: 60px;
+	}
+}
+
+/*      .:'
+    __ :'__
+ .'`__`-'__``.
+:__________.-'
+:_________:
+ :_________`-;
+  `.__.-.__.'  jgs
+
+THINK DIFFERENT
+*/

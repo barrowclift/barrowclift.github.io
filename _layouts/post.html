@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article>
+	<header role="header">
+		{% if page.link %}
+			<!-- <h2 class="center"><a href="{{ page.link }}">{{ page.title }} <span class="link-arrow">➤</span></a></h2> -->
+			<h2 class="center">
+				<a href="{{ page.link }}">{{ page.title }} ↦</a>
+			</h2>
+		{% else %}
+			<h2 class="center">
+				{{ page.title }}
+			</h2>
+		{% endif %}
+		<time itemprop="dateCreated" class="center">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+	</header>
+
+	{{ content }}
+
+	<footer class="large-top-pad large-bottom-pad">
+		<div id="bottom-navigation">
+			<a href="./the_barrow_man.xml.rss">
+				<div class="rss-button">
+					<img class="button-default" src="{{ "/Images/Blog/rss.jpg" | prepend: site.baseurl }}" />
+					<img class="button-hover" src="{{ "/Images/Blog/rss_hover.jpg" | prepend: site.baseurl }}" src=""/>
+				</div>
+			</a>
+		</div>
+	</footer>
+</article>

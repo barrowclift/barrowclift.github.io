@@ -1,0 +1,56 @@
+# Site settings
+title: Marc Barrowclift
+email: marc@barrowclift.me
+twitter_username: barrowclift
+github_username:  barrowclift
+description: > 
+  Some guy on the internet rambling about Apple, technology, and whatever else strikes his fancy.
+
+baseurl: "" # The subpath of your site, e.g. /blog/
+url: "http://127.0.0.1" # The base hostname & protocol for your site
+port: 4000 # Just for testing, need to switch to default HTTP port upon deployment
+permalink: /Post/:title # Permalink posts sorted by date with directories is awful.
+paginate_path: "/Page/:num" # Home older/previous pages go here
+highlighter: pygments
+
+# Build settings
+markdown: kramdown
+paginate: 2 # Number of posts to be shown on each each paginated page.
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
+# =========== PLUGINS ===========
+# "Jekyll Pages Directory Plugin"
+# https://github.com/bbakersmith/jekyll-pages-directory
+# Allows me to put all my custom-made static pages in a directory in the
+# project root to keep things tidy. The plugin will move them into the
+# deployed site's root upon build.
+pages: ./_pages
+
+# "ArchiveGenerator"
+# See ruby file category_archive_plugin.rb for more info
+# [MODIFIED] - MUST MERGE WITH NEWER VERSIONS
+
+# "Jekyll Auto Image"
+# https://github.com/merlos/jekyll-auto-image
+# Allows me to easily snag the first image of a post and use it as a variable.
+# (mostly useful for Twitter Cards)
+gmes:
+  - jekyll-auto-image # Enable auto image
+image: /Images/Favicons/favicon-128x128.png # Default image
+
+# "Jekyll Markdown References Plugin"
+# https://github.com/olov/jekyll-references
+# Gives me a nice, central place to add/modify markdown reference-style links
+
+# "Jekyll Smartify"
+# https://github.com/pathawks/jekyll-smartify
+# Make my quotes nice and curly automatically
+#gems:
+ # - jekyll-smartify # Enable Smartify
