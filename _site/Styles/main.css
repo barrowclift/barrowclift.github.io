@@ -453,7 +453,7 @@ img.right-wrap, img.left-wrap {
 }
 
 #logo {
-    background-image: url("/Images/Favicons/favicon-16x16.png") !important;
+    background-image: url("/TheBarrowMan/Images/Favicons/favicon-16x16.png") !important;
     /*background-size: 16px 16px;*/
     margin-left: 0.1rem;
     width: 16px;

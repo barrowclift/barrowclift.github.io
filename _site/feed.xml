@@ -4,10 +4,10 @@
     <title>Marc Barrowclift</title>
     <description>Some guy on the internet rambling about Apple, technology, and whatever else strikes his fancy.
 </description>
-    <link>http://127.0.0.1/</link>
-    <atom:link href="http://127.0.0.1/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Apr 2015 22:01:54 -0400</pubDate>
-    <lastBuildDate>Wed, 15 Apr 2015 22:01:54 -0400</lastBuildDate>
+    <link>http://barrowclift.github.io/TheBarrowMan/</link>
+    <atom:link href="http://barrowclift.github.io/TheBarrowMan/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 15 Apr 2015 23:03:58 -0400</pubDate>
+    <lastBuildDate>Wed, 15 Apr 2015 23:03:58 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33,7 +33,7 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;Here’s a picture I found that I think articulates my point really well. This problem isn’t exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For &lt;em&gt;example&lt;/em&gt;, J.K. Rowling’s recent work The Cuckoo’s Calling &lt;strong&gt;was&lt;/strong&gt; originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;ios-screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;ios-screen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Look at it. LOOK AT IT! This problem isn’t exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For &lt;em&gt;example&lt;/em&gt;, J.K. Rowling’s recent work The Cuckoo’s Calling &lt;strong&gt;was&lt;/strong&gt; originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).&lt;/p&gt;
 
@@ -61,16 +61,11 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;As you can see, this is a huge problem, but what can we do to protect ourselves? Enter Anonymouth. Anonymouth has grown enormously over the past two years and is just nearing a stable 0.6 Beta. While there is still much work to be done, its current version provides users with the basic tools necessary to help them begin anonymizing their documents.&lt;/p&gt;
 
-&lt;p&gt;Look at it. LOOK AT IT! This problem isn’t exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For &lt;em&gt;example&lt;/em&gt;, J.K. Rowling’s recent work The Cuckoo’s Calling &lt;strong&gt;was&lt;/strong&gt; originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).
-&lt;!--
-[google]: http://www.google.com  &quot;Google it!&quot;
-[wiki]: http://wikipedia.org  &quot;Online Encyclopedia&quot;
-[id]: url  &quot;tooltip&quot;
---&gt;&lt;/p&gt;
+&lt;p&gt;Look at it. LOOK AT IT! This problem isn’t exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For &lt;em&gt;example&lt;/em&gt;, J.K. Rowling’s recent work The Cuckoo’s Calling &lt;strong&gt;was&lt;/strong&gt; originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Mar 2015 10:04:28 -0400</pubDate>
-        <link>http://127.0.0.1/Post/welcome-to-jekyll%20copy%202</link>
-        <guid isPermaLink="true">http://127.0.0.1/Post/welcome-to-jekyll%20copy%202</guid>
+        <link>http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy%202</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy%202</guid>
         
         
         <category>jekyll</category>
@@ -128,16 +123,11 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
   &lt;li&gt;Foo bar&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As you can see, this is a huge problem, but what can we do to protect ourselves? Enter Anonymouth. Anonymouth has grown enormously over the past two years and is just nearing a stable 0.6 Beta. While there is still much work to be done, its current version provides users with the basic tools necessary to help them begin anonymizing their documents.
-&lt;!--
-[google]: http://www.google.com  &quot;Google it!&quot;
-[wiki]: http://wikipedia.org  &quot;Online Encyclopedia&quot;
-[id]: url  &quot;tooltip&quot;
---&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, this is a huge problem, but what can we do to protect ourselves? Enter Anonymouth. Anonymouth has grown enormously over the past two years and is just nearing a stable 0.6 Beta. While there is still much work to be done, its current version provides users with the basic tools necessary to help them begin anonymizing their documents.&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Mar 2015 10:04:28 -0400</pubDate>
-        <link>http://127.0.0.1/Post/My-Test-Post</link>
-        <guid isPermaLink="true">http://127.0.0.1/Post/My-Test-Post</guid>
+        <link>http://barrowclift.github.io/TheBarrowMan/Post/My-Test-Post</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/TheBarrowMan/Post/My-Test-Post</guid>
         
         
         <category>jekyll</category>
@@ -152,13 +142,13 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;There’s a cool thing with pictures as well. Here’s a picture:&lt;/p&gt;
 
-&lt;p class=&quot;full-width parallax__layer parallax__layer--back&quot;&gt;&lt;img src=&quot;/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;full-width parallax__layer parallax__layer--back&quot;&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s one thing, here’s another thing. Blah blah blah I don’t know what to type this is so close ot being done.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -166,7 +156,7 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;ios-screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;ios-screen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -174,7 +164,7 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;right-wrap ios-screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;right-wrap ios-screen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -182,7 +172,7 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. That’s one thing, here’s another thing. Blah blah blah I don’t know what to type this is so close ot being done. That’s one thing, here’s another thing. Blah blah blah I don’t know what to type this is so close ot being done.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;left-wrap ios-screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Assets/screen.png&quot; alt=&quot;&quot; class=&quot;left-wrap ios-screen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -223,11 +213,6 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;!--
-[google]: http://www.google.com  &quot;Google it!&quot;
-[wiki]: http://wikipedia.org  &quot;Online Encyclopedia&quot;
-[id]: url  &quot;tooltip&quot;
---&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:interesting&quot;&gt;
@@ -240,8 +225,8 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 24 Mar 2015 10:04:28 -0400</pubDate>
-        <link>http://127.0.0.1/Post/welcome-to-jekyll%20copy%203</link>
-        <guid isPermaLink="true">http://127.0.0.1/Post/welcome-to-jekyll%20copy%203</guid>
+        <link>http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy%203</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy%203</guid>
         
         
         <category>jekyll</category>
@@ -267,15 +252,10 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
-&lt;!--
-[google]: http://www.google.com  &quot;Google it!&quot;
-[wiki]: http://wikipedia.org  &quot;Online Encyclopedia&quot;
-[id]: url  &quot;tooltip&quot;
---&gt;
 </description>
         <pubDate>Tue, 24 Mar 2015 10:04:28 -0400</pubDate>
-        <link>http://127.0.0.1/Post/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://127.0.0.1/Post/welcome-to-jekyll</guid>
+        <link>http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
@@ -303,11 +283,6 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;!--
-[google]: http://www.google.com  &quot;Google it!&quot;
-[wiki]: http://wikipedia.org  &quot;Online Encyclopedia&quot;
-[id]: url  &quot;tooltip&quot;
---&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:interesting&quot;&gt;
@@ -320,8 +295,8 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 22 Mar 2015 10:04:28 -0400</pubDate>
-        <link>http://127.0.0.1/Post/welcome-to-jekyll%20copy</link>
-        <guid isPermaLink="true">http://127.0.0.1/Post/welcome-to-jekyll%20copy</guid>
+        <link>http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/TheBarrowMan/Post/welcome-to-jekyll%20copy</guid>
         
         
         <category>jekyll</category>
