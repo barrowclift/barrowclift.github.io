@@ -3,7 +3,8 @@
 	<head class="short">
 		<link rel="stylesheet" href="/Styles/reset.css" type="text/css" />
 		<link rel="stylesheet" href="/Styles/main.css" type="text/css" />
-		<link rel="stylesheet" href="/Styles/theme-windows.css" type="text/css" />
+		<link rel="stylesheet" href="/Styles/contact-form.css" type="text/css" />
+		<link rel="stylesheet" href="/Styles/theme-yellow.css" type="text/css" />
 		<link rel="icon" type="image/png" href="/Images/favicons/favicon-16x16.png" sizes="16x16" />
 		<link rel="icon" type="image/png" href="/Images/favicons/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="/Images/favicons/favicon-96x96.png" sizes="96x96" />
@@ -27,7 +28,7 @@
 		<meta name="theme-color" content="#fafafa" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Page Not Found</title>
+		<title>Marc Barrowclift - Contact</title>
 		<!--[if !IE 7]>
 			<style type="text/css">
 				#wrap {display:table;height:100%}
@@ -43,7 +44,7 @@
 		<div id="wrap">
 			<menu>
 				<ul>
-					<li class="hover"><a href="/">Home</a></li>
+					<li class="hover"><a href="{{ site.baseurl }}">Home</a></li>
 					<li class="hover"><a href="/Projects.html">Projects</a>
 						<ul class="main-color">
 							<li><a href="/Icons.html">Icons</a></li>
@@ -57,15 +58,56 @@
 							<li><a href="/Experience.html">Experience</a></li>
 						</ul>
 					</li>
-					<li class="hover"><a href="/Contact.html">Contact</a></li>
+					<li class="hover"><a href="/Contact.html" class="active-link">Contact</a></li>
 				</ul>
 			</menu>
 			<div id="menu-line-separator" class="main-color"></div>
 
 			<div id="content" class="center">
 				<main role="main" class="large-bottom-pad">
-					<h2 class="center">Hmmm, I don't seem to have that page</h2>
-					<h4 class="center large-top-pad">You can <a href="/" class="text-link">click here</a> to get back to the home page</h4>
+					<div>
+						<div class="inline-block">
+							<a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">
+								<img class="generic-icon" src="/Images/Contact/mail.jpg" />
+							</a>
+						</div>
+						<div class="massive-left-pad inline-block">
+							<a href="https://twitter.com/Barrowclift">
+								<img class="generic-icon" src="/Images/Contact/twitter.jpg" />
+							</a>
+						</div>
+						<div class="massive-left-pad inline-block">
+							<a href="https://github.com/Barrowclift">
+								<img class="generic-icon" src="/Images/Contact/github.jpg" />
+							</a>
+						</div>
+						<div class="massive-left-pad inline-block">
+							<a href="https://www.linkedin.com/in/marcbarrowclift/">
+								<img class="generic-icon" src="/Images/Contact/linkedin.jpg" />
+							</a>
+						</div>
+					</div>
+
+					<div id="contact-form" class="clearfix large-top-pad">
+						<p>Get in touch:</p>
+						<ul id="errors" class="">
+							<li id="info">Whoops, there's a few things missing from your message:</li>
+						</ul>
+						<p id="success">Your message has been sent. Thanks for reaching out!</p>
+						<form method="post" action="process.php">
+							<label for="name">Name: </label>
+							<input type="text" id="name" name="name" value="" placeholder="" required="required" autofocus="autofocus" />
+							
+							<label for="email">Email Address: </label>
+							<input type="email" id="email" name="email" value="" placeholder="" required="required" />
+							
+							<label for="message">Message: </label>
+							<textarea id="message" name="message" placeholder="" required="required" data-minlength="20"></textarea>
+							
+							<span id="loading"></span>
+							<input type="submit" value="Send" id="submit-button" />
+						</form>
+					</div>
 				</main>
 			</div>
 		</div>

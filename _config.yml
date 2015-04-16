@@ -7,7 +7,7 @@ description: >
   Some guy on the internet rambling about Apple, technology, and whatever else strikes his fancy.
 
 baseurl: "/TheBarrowMan" # The subpath of your site, e.g. /blog/
-url: "http://barrowclift.github.io/TheBarrowMan/" # The base hostname & protocol for your site
+url: "http://barrowclift.github.io" # The base hostname & protocol for your site
 # port: 4000 # Just for testing, need to switch to default HTTP port upon deployment
 permalink: /Post/:title # Permalink posts sorted by date with directories is awful.
 paginate_path: "/Page/:num" # Home older/previous pages go here

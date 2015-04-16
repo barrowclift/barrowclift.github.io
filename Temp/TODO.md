@@ -22,6 +22,8 @@ It's time to move my website off the Pi and host on Github or some other provide
 
 redirect or 404.html in tux
 
+404 for github
+
 "css parallax html"
 
 codepen.io/znak/pen/ntsdy
