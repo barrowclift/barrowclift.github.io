@@ -22,6 +22,16 @@ It's time to move my website off the Pi and host on Github or some other provide
 
 redirect or 404.html in tux
 
+Jesus, more padding on top and bottom of Main Title and Main Footer
+
+Padding above h3 needs a lot more space
+
+Jesus chris, my footer's font size is larger than my god damn paragraph font...
+
+Experience's font height's are all kinds of fucked up
+
+inline NOT full-width images are a little shrunk when landscape iPhone iOS
+
 404 for github
 
 "css parallax html"
