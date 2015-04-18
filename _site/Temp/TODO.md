@@ -32,6 +32,8 @@ Experience's font height's are all kinds of fucked up
 
 inline NOT full-width images are a little shrunk when landscape iPhone iOS
 
+Make README on GitHub
+
 404 for github
 
 "css parallax html"

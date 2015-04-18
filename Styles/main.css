@@ -119,7 +119,7 @@ menu {
 h1 {
     font-size: 2em;
     line-height: 1.25em;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-weight: bold;
 }
 
@@ -137,8 +137,8 @@ h3 {
     line-height: 1.13636364em;
     font-weight: bold;
     text-align: left;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     color: #545760;
 }
 
@@ -369,7 +369,7 @@ html, body {
 
 p {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 25px;
     text-align: left;
     margin-top: 20px;
 }
@@ -393,8 +393,8 @@ hr {
 
 article hr, footer hr, .dashed {
     border-top: 1px dashed #A0A8B6;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     max-width: 160px;
 }
 
@@ -580,14 +580,14 @@ the page.
 */
 #content {
     overflow: auto;
-    margin-top: 1.5em;
-    padding-bottom: 20px; /* Must be same height as the footer! */
+    margin-top: 35px;
+    padding-bottom: 15px; /* Must be same height as the footer! */
 }
 
 #bottom-banner {
     position: relative;
-    height: 20px;
-    margin-top: -20px; /* Negative value of footer height */
+    height: 15px;
+    margin-top: -15px; /* Negative value of footer height */
     clear: both;
     color: #FAFAFA;
 }
@@ -595,7 +595,7 @@ the page.
 #bottom-banner-text {
     padding-top: 3px;
     height: auto;
-    font-size: 95%;
+    font-size: 0.7em;
     color: #FAFAFA;
 }
 
@@ -719,11 +719,11 @@ body:before {
 }
 
 .large-top-pad {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .large-bottom-pad {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .massive-left-pad {
@@ -746,7 +746,7 @@ body:before {
     h1 {
         font-size: 2.5em;
         line-height: 1.125em;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
     h2 {
         font-size: 2em;
@@ -755,8 +755,8 @@ body:before {
     h3 {
         font-size: 1.5em;
         line-height: 1.24em;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 45px;
+        margin-bottom: 45px;
     }
     h4 {
         font-size: 1.2em;
@@ -818,8 +818,8 @@ body:before {
         margin-bottom: 75px;
     }
     article hr, footer hr {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 45px;
+        margin-bottom: 45px;
         max-width: 300px;
     }
     /* Images */
@@ -892,7 +892,16 @@ body:before {
     }
     /* Bottom Banner */
     #content {
-        margin-top: 1.6em;
+        margin-top: 45px;
+        padding-bottom: 18px;
+    }
+    #bottom-banner {
+        height: 18px;
+        margin-top: -18px;
+    }
+    #bottom-banner-text {
+        font-size: 0.8em;
+        padding-top: 3px;
     }
     /* Buttons */
     .homemade-icon-button {
@@ -910,10 +919,10 @@ body:before {
     }
     /* Positioning */
     .large-top-pad {
-        margin-top: 30px;
+        margin-top: 45px;
     }
     .large-bottom-pad {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
     .small-left-pad {
         padding-left: 7.5pt;
@@ -1048,7 +1057,16 @@ body:before {
     }
     /* Bottom Banner */
     #content {
-        margin-top: 1.8em;
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    #bottom-banner {
+        height: 20px;
+        margin-top: -20px;
+    }
+    #bottom-banner-text {
+        font-size: 1em;
+        padding-top: 2px;
     }
     /* Buttons */
     .homemade-app-button {
