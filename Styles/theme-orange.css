@@ -32,7 +32,7 @@ Highlight Color
 Text Links
 */
 .text-link {
-    color: #F03F0D;
+    color: #F68048;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
@@ -48,4 +48,21 @@ Text Links
     color: #F03F0D;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
+}
+
+h1 a {
+    color: #F68048;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+h1 a:link {
+    color: black;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: #F68048;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
 }

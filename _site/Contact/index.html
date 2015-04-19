@@ -3,6 +3,7 @@
 	<head class="short">
 		<link rel="stylesheet" href="/TheBarrowMan/Styles/reset.css" type="text/css" />
 		<link rel="stylesheet" href="/TheBarrowMan/Styles/main.css" type="text/css" />
+		<link rel="stylesheet" href="/TheBarrowMan/Styles/contact-form.css" type="text/css" />
 		<link rel="stylesheet" href="/TheBarrowMan/Styles/theme-green.css" type="text/css" />
 		<link rel="icon" type="image/png" href="/TheBarrowMan/Images/favicons/favicon-16x16.png" sizes="16x16" />
 		<link rel="icon" type="image/png" href="/TheBarrowMan/Images/favicons/favicon-32x32.png" sizes="32x32" />
@@ -27,7 +28,7 @@
 		<meta name="theme-color" content="#fafafa" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Marc Barrowclift - About</title>
+		<title>Marc Barrowclift - Contact</title>
 		<!--[if !IE 7]>
 			<style type="text/css">
 				#wrap {display:table;height:100%}
@@ -42,41 +43,66 @@
 	<body>
 		<div id="wrap">
 			<menu>
+				<header id="title" role="banner">
+					<h1>
+						<a href="/TheBarrowMan/">Marc Barrowclift <span id="logo" /></a>
+					</h1>
+				</header>
 				<ul>
-					<li class="hover"><a href="/TheBarrowMan/">Home</a></li>
-					<li class="hover"><a href="/TheBarrowMan/Projects.html">Projects</a>
-						<ul class="main-color">
-							<li><a href="/TheBarrowMan/Icons.html">Icons</a></li>
-							<li><a href="/TheBarrowMan/Largest_Video_Game_Ever.html">Largest Video Game Ever</a></li>
-							<li><a href="/TheBarrowMan/Anonymouth.html">Anonymouth</a></li>
-						</ul>
-					</li>
-					<li class="hover"><a href="/TheBarrowMan/About.html" class="active-link">About</a>
-						<ul class="main-color">
-							<li><a href="/TheBarrowMan/In_the_News.html">In the News</a></li>
-							<li><a href="/TheBarrowMan/Experience.html">Experience</a></li>
-						</ul>
-					</li>
-					<li class="hover"><a href="/TheBarrowMan/Contact.html">Contact</a></li>
+					<li class="hover"><a href="/TheBarrowMan/" class="home-menu-item">Home</a></li>
+					<li class="hover"><a href="/TheBarrowMan/Code/" class="code-menu-item">Code</a></li>
+					<li class="hover"><a href="/TheBarrowMan/Art/" class="art-menu-item">Art</a></li>
+					<li class="hover"><a href="/TheBarrowMan/Music/" class="music-menu-item">Music</a></li>
+					<li class="hover"><a href="/TheBarrowMan/About" class="about-menu-item">About</a></li>
+					<li class="hover"><a href="/TheBarrowMan/Contact" class="active-link">Contact</a></li>
 				</ul>
 			</menu>
 			<div id="menu-line-separator" class="main-color"></div>
 
 			<div id="content" class="center">
 				<main role="main" class="large-bottom-pad">
-					<img src="/TheBarrowMan/Images/About/marc.jpg" />
-					<p>Hello, my name is Marc Barrowclift and I’m a software engineer working towards my bachelor’s degree at Drexel University in Philadelphia. Feel free to <a class="text-link" href="/TheBarrowMan/Contact.html">contact me</a> or learn more below. Cheers! &#x1F37A;</p>
-					<div class="large-top-pad inline-block">
-						<h4 class="inline-block">
-							<a class="text-link" href="/TheBarrowMan/In_the_News.html">
-								In The News
+					<div>
+						<div class="inline-block">
+							<a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">
+								<img class="generic-icon" src="/TheBarrowMan/Images/Contact/mail.jpg" />
 							</a>
 						</div>
-						<h4 class="massive-left-pad inline-block">
-							<a class="text-link" href="/TheBarrowMan/Experience.html">
-								Experience
+						<div class="massive-left-pad inline-block">
+							<a href="https://twitter.com/Barrowclift">
+								<img class="generic-icon" src="/TheBarrowMan/Images/Contact/twitter.jpg" />
 							</a>
-						</h4>
+						</div>
+						<div class="massive-left-pad inline-block">
+							<a href="https://github.com/Barrowclift">
+								<img class="generic-icon" src="/TheBarrowMan/Images/Contact/github.jpg" />
+							</a>
+						</div>
+						<div class="massive-left-pad inline-block">
+							<a href="https://www.linkedin.com/in/marcbarrowclift/">
+								<img class="generic-icon" src="/TheBarrowMan/Images/Contact/linkedin.jpg" />
+							</a>
+						</div>
+					</div>
+
+					<div id="contact-form" class="clearfix large-top-pad">
+						<p>Get in touch:</p>
+						<ul id="errors" class="">
+							<li id="info">Whoops, there's a few things missing from your message:</li>
+						</ul>
+						<p id="success">Your message has been sent. Thanks for reaching out!</p>
+						<form method="post" action="process.php">
+							<label for="name">Name: </label>
+							<input type="text" id="name" name="name" value="" placeholder="" required="required" autofocus="autofocus" />
+							
+							<label for="email">Email Address: </label>
+							<input type="email" id="email" name="email" value="" placeholder="" required="required" />
+							
+							<label for="message">Message: </label>
+							<textarea id="message" name="message" placeholder="" required="required" data-minlength="20"></textarea>
+							
+							<span id="loading"></span>
+							<input type="submit" value="Send" id="submit-button" />
+						</form>
 					</div>
 				</main>
 			</div>

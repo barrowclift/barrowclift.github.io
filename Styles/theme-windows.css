@@ -50,3 +50,20 @@ Text Links
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
+
+h1 a {
+    color: #0B0BA5;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+h1 a:link {
+    color: black;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: #0B0BA5;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}

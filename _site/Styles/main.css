@@ -24,8 +24,8 @@ pre, code {
 
 menu {
     display: inline-block;
-    text-align: left;
-    font-size: 0.98em;
+    text-align: center;
+    font-size: 1.1em;
 }
 
     /*
@@ -38,7 +38,6 @@ menu {
         display: none;
 
         padding: 0;
-        margin-top: -1px; /* Fixes a gap that can sometimes be visible between drop down and menu-line-separator */
         position: absolute;
 
         border: 0px solid transparent;
@@ -54,9 +53,8 @@ menu {
     -----------------MAIN MENU SPACING, MINOR STYLING. AND POSITIONING-----------------
     */
     menu ul {
-        padding-left: 0px;
-        list-style: none;
         position: relative; /* Allows us to absolutely position the sub menus according to this main menu bar */
+        margin-right: 5px;
     }
     menu ul:after {
         content: "";
@@ -68,8 +66,8 @@ menu {
     -----------------SUBMENU SPACING, SUB AND MAIN STYLE, AND POSITIONING-----------------
     */
     menu ul li {
-        float: left; /* Comment out to have iPhone-like menu */
-        transition:background-color .2s linear;
+        display: inline-block;
+        margin-right: -5px;
     }
     menu ul li:hover > a {
         color: #FAFAFA; /* Foreground color of menu on hover */
@@ -88,12 +86,15 @@ menu {
     }
     menu ul li a {
         display: list-item; /* Makes the submenu a nice little sub-list */
-        padding: 5px 15px;
+        padding: 5px 15px; /* TODO menu spacing is shit */
         color: #54565F; /* Foreground color of main menu and submenu */
+        transition:background-color .1s linear;
     }
     menu ul ul li {
         float: none;
         position: relative;
+        display: block;
+        text-align: left;
 
         border: 0px solid transparent;
         border-bottom-left-radius: 25px;
@@ -101,12 +102,11 @@ menu {
     }
 
 #active-menu-item {
-    color: #FAFAFA
+    color: #FAFAFA;
 }
 
 #menu-line-separator {
     height: 3px;
-    margin-top: -4px;
 }
 
 /*
@@ -117,10 +117,12 @@ menu {
 
 /* Page Headers */
 h1 {
-    font-size: 2em;
-    line-height: 1.25em;
-    margin-bottom: 35px;
+    font-size: 2.4em;
+    line-height: 1em;
     font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Post Titles */
@@ -455,7 +457,7 @@ img.right-wrap, img.left-wrap {
 #logo {
     background-image: url("/TheBarrowMan/Images/Favicons/favicon-16x16.png") !important;
     /*background-size: 16px 16px;*/
-    margin-left: 0.1rem;
+    margin-left: 0px;
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -740,13 +742,20 @@ body:before {
 @media (min-width: 43.75rem) {
     /* Navigation */
     menu {
-        font-size: 1.5em;
+        font-size: 1.55em;
+    }
+    menu ul {
+        margin-right: 8px;
+    }
+    menu ul li {
+        margin-right: -7px;
     }
     /* Titles */
     h1 {
-        font-size: 2.5em;
+        font-size: 3rem;
         line-height: 1.125em;
-        margin-bottom: 45px;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
     h2 {
         font-size: 2em;
@@ -844,7 +853,7 @@ body:before {
     }
     #logo {
         background-image: url("/TheBarrowMan/Images/Favicons/favicon-24x24.png") !important;
-        margin-left: 0.2rem;
+        margin-left: 1px;
         width: 24px;
         height: 24px;
     }
@@ -944,11 +953,18 @@ body:before {
     menu {
         font-size: 1.75em;
     }
+    menu ul {
+        margin-right: 7px;
+    }
+    menu ul li {
+        margin-right: -8px;
+    }
     /* Titles */
     h1 {
-        font-size: 3em;
-        line-height: 1.05em;
-        margin-bottom: 50px;
+        font-size: 3.5rem;
+        /*line-height: 1.05rem;*/
+        /*margin-top: 40px;
+        margin-bottom: 20px;*/
     }
     h2 {
         font-size: 2.25em;

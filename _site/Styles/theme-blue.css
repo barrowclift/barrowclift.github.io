@@ -1,16 +1,13 @@
 /*
 Main Menu
 */
-menu ul li:hover > a {
-    color: #FAFAFA; /*Foreground color of menu on hover*/
-}
 .active-link {
     color: #0AA0D2;
 }
 .main-color {
     background-color: #0AA0D2;
 }
-.hover:hover {
+.hover .active-link:hover {
     background-color: #0AA0D2;
 }
 
@@ -32,7 +29,7 @@ Highlight Color
 Links
 */
 main :not(h2) > a {
-    color: #0BC1FF;
+    color: #0AA0D2;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
@@ -51,7 +48,7 @@ main :not(h2) > a:hover {
 }
 
 h2 a, h1 a {
-    color: #0BC1FF;
+    color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
@@ -62,7 +59,7 @@ h2 a:visited, h1 a:visited {
     color: black;
 }
 h2 a:hover, h1 a:hover {
-    color: #0BC1FF;
+    color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
