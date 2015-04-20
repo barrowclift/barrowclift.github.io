@@ -68,6 +68,7 @@ menu {
     menu ul li {
         display: inline-block;
         margin-right: -5px;
+        transition:background-color .1s linear;
     }
     menu ul li:hover > a {
         color: #FAFAFA; /* Foreground color of menu on hover */
@@ -87,8 +88,7 @@ menu {
     menu ul li a {
         display: list-item; /* Makes the submenu a nice little sub-list */
         padding: 5px 15px; /* TODO menu spacing is shit */
-        color: #54565F; /* Foreground color of main menu and submenu */
-        transition:background-color .1s linear;
+        color: #54565F; /* Foreground color of main menu and submenu */   
     }
     menu ul ul li {
         float: none;
@@ -117,7 +117,7 @@ menu {
 
 /* Page Headers */
 h1 {
-    font-size: 2.4em;
+    font-size: 2.4rem;
     line-height: 1em;
     font-weight: bold;
     text-align: center;
@@ -127,7 +127,7 @@ h1 {
 
 /* Post Titles */
 h2 {
-    font-size: 1.625em;
+    font-size: 1.8rem;
     line-height: 1.15384615em;
     font-weight: bold;
     text-align: left;
@@ -135,7 +135,7 @@ h2 {
 
 /* Post Sections */
 h3 {
-    font-size: 1.375em;
+    font-size: 1.4rem;
     line-height: 1.13636364em;
     font-weight: bold;
     text-align: left;
@@ -144,8 +144,14 @@ h3 {
     color: #545760;
 }
 
-/* Anything else */
-h4  {
+h4 {
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #545760;
+}
+
+/* Anything else (basically p) */
+h5  {
     font-size: 1em;
     line-height: 1.11111111em;
     text-align: left;
@@ -153,7 +159,7 @@ h4  {
 
 /* Post Metadata Header (Time, Author, Category, etc.) */
 time {
-    font-size: 1em;
+    font-size: 1.2rem;
     text-align: left;
     padding-top: 3px;
     display: block;
@@ -454,24 +460,34 @@ img.right-wrap, img.left-wrap {
     clear: right;
 }
 
-#logo {
-    background-image: url("/TheBarrowMan/Images/Favicons/favicon-16x16.png") !important;
-    /*background-size: 16px 16px;*/
+#logo, #failed-logo {
     margin-left: 0px;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
+}
+
+#logo {
+    background-image: url("/TheBarrowMan/Images/Favicons/favicon_24x24.jpg") !important;
+}
+
+#failed-logo {
+    background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_24x24.jpg") !important;
 }
 
 .project-icon-image {
     max-width: 85px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 
-.project-icon-title {
-    font-size: 13px;
-    padding-top: 0.3em;
+.project-icon-text {
+    display: inline-block;
+    max-width: 425px;
+    margin-top: 0px;
+}
+
+.project-icon-text h3 {
+    line-height: 28px;
 }
 
 .anonymouth-app-icon {
@@ -758,21 +774,29 @@ body:before {
         margin-bottom: 5px;
     }
     h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         line-height: 1.25em;
     }
     h3 {
-        font-size: 1.5em;
+        font-size: 1.6rem;
         line-height: 1.24em;
         margin-top: 45px;
         margin-bottom: 45px;
     }
+    .project-icon-text h3 {
+        line-height: 35px;
+    }
     h4 {
+        font-size: 1.5rem;
+        line-height: 35px;
+        color: #545760;
+    }
+    h5 {
         font-size: 1.2em;
         line-height: 1.22222222em;
     }
     time {
-        font-size: 1.2em;
+        font-size: 1.4rem;
     }
     #title {
         padding-left: 0%;
@@ -851,23 +875,27 @@ body:before {
         margin-right: 1em;
         margin-left: 0px;
     }
+    #logo, #failed-logo {
+        margin-left: 0px;
+        width: 28px;
+        height: 28px;
+    }
     #logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon-24x24.png") !important;
-        margin-left: 1px;
-        width: 24px;
-        height: 24px;
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon_28x28.jpg") !important;
+    }
+    #failed-logo {
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_28x28.jpg") !important;
     }
     .gallery-image {
         max-width: 213px;
     }
     .project-icon-image {
-        max-width: 140px;
-        padding-left: 20px;
+        max-width: 120px;
         padding-right: 20px;
     }
-    .project-icon-title {
-        font-size: 18px;
-        padding-top: 0.4em;
+    .project-icon-text {
+        max-width: 504px;
+        margin-top: 8px;
     }
     .news-logo {
         max-height: 18px;
@@ -962,26 +990,31 @@ body:before {
     /* Titles */
     h1 {
         font-size: 3.5rem;
-        /*line-height: 1.05rem;*/
-        /*margin-top: 40px;
-        margin-bottom: 20px;*/
     }
     h2 {
-        font-size: 2.25em;
+        font-size: 2.7rem;
         line-height: 1.25em;
     }
     h3 {
-        font-size: 1.75em;
+        font-size: 2rem;
         line-height: 1.25em;
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    .project-icon-text h3 {
+        line-height: 41px;
+    }
     h4 {
-        font-size: 1.4em;
+        font-size: 1.8rem;
+        line-height: 41px;
+        color: #545760;
+    }
+    h5 {
+        font-size: 1.4rem;
         line-height: 1.33333333em;
     }
     time {
-        font-size: 1.4em;
+        font-size: 1.6rem;
     }
     /* Lists */
     main ol, main ul {
@@ -1035,17 +1068,27 @@ body:before {
         padding-top: 28px;
         padding-bottom: 28px;
     }
+    #logo, #failed-logo {
+        margin-left: 1px;
+        width: 32px;
+        height: 32px;
+    }
+    #logo {
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon_32x32.jpg") !important;
+    }
+    #failed-logo {
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_32x32.jpg") !important;
+    }
     .gallery-image {
         max-width: 247px;
     }
     .project-icon-image {
-        max-width: 180px;
-        padding-left: 30px;
+        max-width: 140px;
         padding-right: 30px;
     }
-    .project-icon-title {
-        font-size: 22px;
-        padding-top: 0.6em;
+    .project-icon-text {
+        max-width: 536px;
+        margin-top: 8px;
     }
     .generic-icon {
         width: 4em;

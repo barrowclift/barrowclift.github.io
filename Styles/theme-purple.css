@@ -28,11 +28,15 @@ Highlight Color
     color: #FAFAFA;
 }
 
+h3 {
+    color: inherit;
+}
+
 /*
 Text Links
 */
 .text-link {
-    color: #973D8E;
+    color: black;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
@@ -45,23 +49,23 @@ Text Links
     color: #973D8E;
 }
 .text-link:hover {
-    color: #E05AD2;
+    color: #973D8E;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 
-h1 a {
+a > h2, h1 a {
     color: #973D8E;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-h1 a:link {
+a > h2:link, h1 a:link {
     color: black;
 }
-h1 a:visited {
+a > h2:visited, h1 a:visited {
     color: black;
 }
-h1 a:hover {
+a > h2:hover, h1 a:hover {
     color: #973D8E;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;

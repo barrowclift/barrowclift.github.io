@@ -1,13 +1,16 @@
 /*
 MainMenu
 */
+menu ul li:hover > a {
+    color: #FAFAFA; /*Foreground color of menu on hover*/
+}
 .active-link {
     color: #EEBC4E;
 }
 .main-color {
     background-color: #EEBC4E;
 }
-.hover .active-link:hover {
+.hover:hover {
     background-color: #EEBC4E;
 }
 
