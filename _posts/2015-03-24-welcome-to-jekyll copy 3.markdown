@@ -9,14 +9,14 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 There's a cool thing with pictures as well. Here's a picture:
 
-![]({{ site.baseurl }}/Images/Largest_Video_Game_Ever/controller.jpg){: .full-width}
+![]({{ site.baseurl }}/Images/Largest-Video-Game-Ever/controller.jpg){: .full-width}
 {: .full-width .parallax__layer .parallax__layer--back}
 
 That's one thing, here's another thing. Blah blah blah I don't know what to type this is so close ot being done.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-![]({{ site.baseurl }}/Images/Largest_Video_Game_Ever/controller.jpg)
+![]({{ site.baseurl }}/Images/Largest-Video-Game-Ever/controller.jpg)
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

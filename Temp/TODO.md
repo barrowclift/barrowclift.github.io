@@ -14,27 +14,15 @@ Also, there's some code clone there with the `/Images/Assets/` path, that should
 
 Find out how to properly have multiple iOS screens side by side in a single view.
 
-Consider immediately jumping into 5.0's design. Make it GOOD.
-
 Check to see if I can add my main page to RSS feed and have it go through
 
-It's time to move my website off the Pi and host on Github or some other provider. Figure out all the ins and outs of that and ensure that it's the appropriate decision.
+redirect or 404.html on Pi
 
-redirect or 404.html in tux
-
-Jesus, more padding on top and bottom of Main Title and Main Footer
-
-Padding above h3 needs a lot more space
-
-Jesus chris, my footer's font size is larger than my god damn paragraph font...
+404 for github
 
 Experience's font height's are all kinds of fucked up
 
 inline NOT full-width images are a little shrunk when landscape iPhone iOS
-
-Make README on GitHub
-
-404 for github
 
 "css parallax html"
 
@@ -43,3 +31,7 @@ http://jsfiddle.net/wf3qj2nk
 Google analytics script at end of source
 
 ∞ ⇥ ↦ ⇒ → ▶ ➡ ➤ ➢ ➣ ➭
+
+http://www.jqueryscript.net/other/jQuery-Plugin-To-Add-Unique-Anchor-Links-To-Headlines-anchor-js.html
+
+&#x21A9;&#xFE0E;

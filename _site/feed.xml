@@ -6,8 +6,8 @@
 </description>
     <link>http://barrowclift.github.io/TheBarrowMan/</link>
     <atom:link href="http://barrowclift.github.io/TheBarrowMan/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Apr 2015 00:12:42 -0400</pubDate>
-    <lastBuildDate>Mon, 20 Apr 2015 00:12:42 -0400</lastBuildDate>
+    <pubDate>Thu, 23 Apr 2015 11:25:28 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Apr 2015 11:25:28 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -142,13 +142,13 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 
 &lt;p&gt;There’s a cool thing with pictures as well. Here’s a picture:&lt;/p&gt;
 
-&lt;p class=&quot;full-width parallax__layer parallax__layer--back&quot;&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;full-width parallax__layer parallax__layer--back&quot;&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest-Video-Game-Ever/controller.jpg&quot; alt=&quot;&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s one thing, here’s another thing. Blah blah blah I don’t know what to type this is so close ot being done.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest_Video_Game_Ever/controller.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/TheBarrowMan/Images/Largest-Video-Game-Ever/controller.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 

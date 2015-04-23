@@ -4,17 +4,150 @@
 ==================================================================
 */
 
-h1, h2, h3, h4, h5, h6, p {
+@font-face {
+    font-family: "Palantino";
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot'); /* IE9 Compat Modes */
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Palantino";
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.eot'); /* IE9 Compat Modes */
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Palantino";
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Palantino";
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold-italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AdelleSansBold';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.svg#AdelleSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansSemiBold';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.svg#AdelleSansSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansRegular';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.svg#AdelleSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansLight';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.svg#AdelleSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansThin';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.svg#AdelleSansThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansItalic';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.svg#AdelleSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansLightItalic';
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot');
+    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.woff2') format('woff2'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.woff') format('woff'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.ttf') format('truetype'),
+         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.svg#AdelleSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'AdelleSansBold', Georgia, Times, 'Times New Roman', serif;
+}
+
+h4, h5, h6 {
+    font-family: 'AdelleSansRegular', Georgia, Times, 'Times New Roman', serif;
+}
+
+p, ol, ul {
+    font-family: 'Palantino', Georgia, Times, 'Times New Roman', serif;
+}
+
+menu ul, .project-icon-title, #bottom-banner-text, time {
+    font-family: 'AdelleSansRegular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+    /*font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;*/
+}
+
+/*h1, h2, h3, h4, h5, h6, p {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-menu, .project-icon-title, #bottom-banner-text {
+menu, .project-icon-title, #bottom-banner-text, time {
     font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 
 pre, code {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
-}
+}*/
 
 /*
 ==================================================================
@@ -25,7 +158,7 @@ pre, code {
 menu {
     display: inline-block;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
     /*
@@ -67,7 +200,7 @@ menu {
     */
     menu ul li {
         display: inline-block;
-        margin-right: -5px;
+        margin-right: -4px;
         transition:background-color .1s linear;
     }
     menu ul li:hover > a {
@@ -141,7 +274,7 @@ h3 {
     text-align: left;
     margin-top: 35px;
     margin-bottom: 35px;
-    color: #545760;
+    /*color: #545760;*/
 }
 
 h4 {
@@ -325,7 +458,7 @@ pre ::selection, code ::selection {
     float: left;
     text-align: left;
     display: inline-block;
-    width: 41%;
+    min-width: 95px;
     line-height: 21pt;
 }
 
@@ -333,7 +466,7 @@ pre ::selection, code ::selection {
     float: right;
     text-align: right;
     display: inline-block;
-    width: 43%;
+    min-width: 95px;
     line-height: 21pt;
 }
 
@@ -468,11 +601,13 @@ img.right-wrap, img.left-wrap {
 }
 
 #logo {
-    background-image: url("/TheBarrowMan/Images/Favicons/favicon_24x24.jpg") !important;
+    background-image: url("/TheBarrowMan/Images/Favicons/favicon-24x24@2x.jpg") !important;
+    background-size: 24px 24px;
 }
 
 #failed-logo {
-    background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_24x24.jpg") !important;
+    background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-24x24@2x.jpg") !important;
+    background-size: 24px 24px;
 }
 
 .project-icon-image {
@@ -632,7 +767,7 @@ body:before {
 ==================================================================
 */
 
-.rss-button, .download-button, .button-hover, .button-default {
+.round-button, .button-hover, .button-default {
     position: relative;
     display: inline-block;
 }
@@ -657,12 +792,15 @@ body:before {
     height: 2.9em;
 }
 
-.rss-button, .download-button {
+.round-button {
     width: 30px;
     height: 30px;
+
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.rss-button img, .download-button img, .homemade-icon-button img {
+.round-button img, .homemade-icon-button img {
     position: absolute;
     left: 0;
     top: 0;
@@ -761,10 +899,10 @@ body:before {
         font-size: 1.55em;
     }
     menu ul {
-        margin-right: 8px;
+        margin-right: 5px;
     }
     menu ul li {
-        margin-right: -7px;
+        margin-right: -5px;
     }
     /* Titles */
     h1 {
@@ -881,10 +1019,12 @@ body:before {
         height: 28px;
     }
     #logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon_28x28.jpg") !important;
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon-28x28@2x.jpg") !important;
+        background-size: 28px 28px;
     }
     #failed-logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_28x28.jpg") !important;
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-28x28@2x.jpg") !important;
+        background-size: 28px 28px;
     }
     .gallery-image {
         max-width: 213px;
@@ -982,10 +1122,10 @@ body:before {
         font-size: 1.75em;
     }
     menu ul {
-        margin-right: 7px;
+        margin-right: 5px;
     }
     menu ul li {
-        margin-right: -8px;
+        margin-right: -6px;
     }
     /* Titles */
     h1 {
@@ -1074,10 +1214,12 @@ body:before {
         height: 32px;
     }
     #logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon_32x32.jpg") !important;
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon-32x32@2x.jpg") !important;
+        background-size: 32px 32px;
     }
     #failed-logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon_bad_32x32.jpg") !important;
+        background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-32x32@2x.jpg") !important;
+        background-size: 32px 32px;
     }
     .gallery-image {
         max-width: 247px;
@@ -1125,7 +1267,7 @@ body:before {
     }
     #bottom-banner-text {
         font-size: 1em;
-        padding-top: 2px;
+        padding-top: 3px;
     }
     /* Buttons */
     .homemade-app-button {

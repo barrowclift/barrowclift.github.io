@@ -13,27 +13,27 @@
 <!--<![endif]-->
 
 	<head>
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon_16x16.jpg" sizes="16x16" />
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon_32x32.jpg" sizes="32x32" />
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon_96x96.jpg" sizes="96x96" />
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon_128x128.jpg" sizes="128x128" />
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/android_chrome_192x192.jpg" sizes="192x192" />
-	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon_196x196.jpg" sizes="196x196" />
-	<link rel="apple-touch-icon" sizes="57x57" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_57x57.jpg" />
-	<link rel="apple-touch-icon" sizes="60x60" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_60x60.jpg" />
-	<link rel="apple-touch-icon" sizes="72x72" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_72x72.jpg" />
-	<link rel="apple-touch-icon" sizes="76x76" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_76x76.jpg" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_114x114.jpg" />
-	<link rel="apple-touch-icon" sizes="120x120" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_120x120.jpg" />
-	<link rel="apple-touch-icon" sizes="144x144" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_144x144.jpg" />
-	<link rel="apple-touch-icon" sizes="152x152" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_152x152.jpg" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/TheBarrowMan/Images/Favicons/apple_touch_icon_180x180.jpg" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon-16x16.jpg" sizes="16x16" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon-32x32.jpg" sizes="32x32" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon-96x96.jpg" sizes="96x96" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon-128x128.jpg" sizes="128x128" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/android-chrome-192x192.jpg" sizes="192x192" />
+	<link rel="icon" type="image/jpg" href="/TheBarrowMan/Images/Favicons/favicon-196x196.jpg" sizes="196x196" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-57x57.jpg" />
+	<link rel="apple-touch-icon" sizes="60x60" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-60x60.jpg" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-72x72.jpg" />
+	<link rel="apple-touch-icon" sizes="76x76" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-76x76.jpg" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-114x114.jpg" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-120x120.jpg" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-144x144.jpg" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-152x152.jpg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/TheBarrowMan/Images/Favicons/apple-touch-icon-180x180.jpg" />
 	<link rel="shortcut icon" href="/TheBarrowMan/Images/Favicons/favicon.ico" />
 	<link rel="manifest" href="/TheBarrowMan/Images/Favicons/manifest.json" />
 	
 	<meta name="application-name" content="The Barrow Man" />
 	<meta name="msapplication-TileColor" content="#fafafa" />
-	<meta name="msapplication-TileImage" content="/TheBarrowMan/Images/Favicons/mstile_144x144.jpg" />
+	<meta name="msapplication-TileImage" content="/TheBarrowMan/Images/Favicons/mstile-144x144.jpg" />
 	<meta name="msapplication-config" content="/TheBarrowMan/Images/Favicons/browserconfig.xml" />
 	<meta name="theme-color" content="#fafafa" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -44,14 +44,23 @@
 	<link rel="stylesheet" href="/TheBarrowMan/Styles/main.css" type="text/css" />
 	<link rel="stylesheet" href="/TheBarrowMan/Styles/syntax.css" type="text/css" />
 	<link rel="stylesheet" href="/TheBarrowMan/Styles/theme-blue.css" type="text/css" />
+	<link rel="stylesheet" href="/TheBarrowMan/Styles/anchor.css" type="text/css" />
 
 	<script src="/TheBarrowMan/Scripts/jquery-2.1.1.min.js"></script>
 	<script src="/TheBarrowMan/Scripts/bigfoot.min.js"></script>
+	<script src="/TheBarrowMan/Scripts/anchor.min.js"></script>
 	<script>
 		$.bigfoot({
 			// 
 			actionOriginalFN: "ignore",
 			numberResetSelector: "article"
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('h3').anchor({
+				symbol: '#'
+			});
 		});
 	</script>
 
@@ -162,9 +171,15 @@
 			</a>
 		</div>
 		<a href="/TheBarrowMan/feed.xml">
-			<div class="rss-button">
+			<div class="round-button">
 				<img class="button-default" src="/TheBarrowMan/Images/Blog/rss.jpg" />
-				<img class="button-hover" src="/TheBarrowMan/Images/Blog/rss_hover.jpg" src=""/>
+				<img class="button-hover" src="/TheBarrowMan/Images/Blog/rss-hover.jpg" src=""/>
+			</div>
+		</a>
+		<a href="/TheBarrowMan/Archive">
+			<div class="round-button">
+				<img class="button-default" src="/TheBarrowMan/Images/Blog/archive.jpg" />
+				<img class="button-hover" src="/TheBarrowMan/Images/Blog/archive-hover.jpg" />
 			</div>
 		</a>
 		<div id="navigation-next">
