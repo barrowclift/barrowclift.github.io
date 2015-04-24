@@ -5,7 +5,7 @@
 */
 
 @font-face {
-    font-family: "Palantino";
+    font-family: "Palatino";
     src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot'); /* IE9 Compat Modes */
     src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('/TheBarrowMan/Fonts/Palatino/palatino-regular.woff') format('woff'), /* Pretty Modern Browsers */
@@ -16,32 +16,28 @@
 }
 
 @font-face {
-    font-family: "Palantino";
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.eot'); /* IE9 Compat Modes */
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: "Palatino";
+    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Palantino";
+    font-family: "Palatino";
     src: url('/TheBarrowMan/Fonts/Palatino/palatino-italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Palantino";
+    font-family: "Palatino";
     src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold-italic.ttf');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'AdelleSansBold';
+    font-family: 'AdelleSans';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.woff2') format('woff2'),
@@ -49,21 +45,11 @@
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.ttf') format('truetype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.svg#AdelleSansBold') format('svg');
     font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'AdelleSansSemiBold';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-semibold-webfont.svg#AdelleSansSemiBold') format('svg');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'AdelleSansRegular';
+    font-family: 'AdelleSans';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.woff2') format('woff2'),
@@ -75,38 +61,31 @@
 }
 
 @font-face {
-    font-family: 'AdelleSansLight';
+    font-family: 'AdelleSans';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff2') format('woff2'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff') format('woff'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.ttf') format('truetype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.svg#AdelleSansLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'AdelleSansThin';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-thin-webfont.svg#AdelleSansThin') format('svg');
-}
-
-@font-face {
-    font-family: 'AdelleSansItalic';
+    font-family: 'AdelleSans';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff2') format('woff2'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff') format('woff'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.ttf') format('truetype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.svg#AdelleSansItalic') format('svg');
+    font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'AdelleSansLightItalic';
+    font-family: 'AdelleSansLight';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.woff2') format('woff2'),
@@ -114,36 +93,24 @@
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.ttf') format('truetype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.svg#AdelleSansLightItalic') format('svg');
     font-style: italic;
+    font-weight: 300;
 }
 
 h1, h2, h3 {
-    font-family: 'AdelleSansBold', Georgia, Times, 'Times New Roman', serif;
-}
-
-h4, h5, h6 {
-    font-family: 'AdelleSansRegular', Georgia, Times, 'Times New Roman', serif;
+    font-family: 'AdelleSans', Adelle Sans, Adelle, Georgia, Times, 'Times New Roman', serif;
 }
 
 p, ol, ul {
-    font-family: 'Palantino', Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
 
-menu ul, .project-icon-title, #bottom-banner-text, time {
-    font-family: 'AdelleSansRegular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-    /*font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;*/
-}
-
-/*h1, h2, h3, h4, h5, h6, p {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-}
-
-menu, .project-icon-title, #bottom-banner-text, time {
-    font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+menu ul, .project-icon-title, #bottom-banner-text, time, h4, h5, h6, #bottom-navigation, .experience-list {
+    font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 
 pre, code {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
-}*/
+}
 
 /*
 ==================================================================
@@ -154,7 +121,7 @@ pre, code {
 menu {
     display: inline-block;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
     /*
@@ -197,7 +164,8 @@ menu {
     menu ul li {
         display: inline-block;
         margin-right: -4px;
-        transition:background-color .1s linear;
+        transition: background-color .1s linear;
+        padding-top: 2px;
     }
     menu ul li:hover > a {
         color: #FAFAFA; /* Foreground color of menu on hover */
@@ -269,20 +237,19 @@ h3 {
     font-weight: bold;
     text-align: left;
     margin-top: 35px;
-    margin-bottom: 35px;
-    /*color: #545760;*/
+    margin-bottom: 15px;
 }
 
 h4 {
     font-size: 1.2rem;
     line-height: 28px;
-    color: #545760;
+    color: #A0A8B6;
 }
 
 /* Anything else (basically p) */
 h5  {
     font-size: 1em;
-    line-height: 1.11111111em;
+    line-height: 1.5em;
     text-align: left;
 }
 
@@ -374,6 +341,11 @@ main ol li > :last-child, main ul li > :last-child {
     padding-left: 0px;
 }
 
+.experience-list {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
 /*
 ==================================================================
 ******                        CODE                          ******
@@ -381,15 +353,16 @@ main ol li > :last-child, main ul li > :last-child {
 */
 
 pre {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
-    padding: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 20px;
+    padding: 1rem;
     overflow: scroll;
     position: relative;
 }
 
 :not(pre) > code {
-    font-size: 0.9em;
+    font-size: 1.2rem;
+    line-height: 27px;
     box-shadow: 0 0 1px rgba(20, 20, 20, .6);
     background-color: rgba(0, 0, 0, .07);
     border-radius: 3px;
@@ -421,6 +394,7 @@ pre ::selection, code ::selection {
 
     float: left;
     width: 100%;
+    border-radius: 0.35em;
 
     white-space: pre;
     word-spacing: normal;
@@ -448,7 +422,7 @@ pre ::selection, code ::selection {
 */
 
 #bottom-navigation {
-    font-size: 1.1em;
+    font-size: 1.2rem;
 }
 
 #navigation-previous {
@@ -900,6 +874,7 @@ body:before {
     }
     menu ul li {
         margin-right: -5px;
+        padding-top: 2px;
     }
     /* Titles */
     h1 {
@@ -916,7 +891,7 @@ body:before {
         font-size: 1.6rem;
         line-height: 1.24em;
         margin-top: 45px;
-        margin-bottom: 45px;
+        margin-bottom: 25px;
     }
     .project-icon-text h3 {
         line-height: 35px;
@@ -924,14 +899,13 @@ body:before {
     h4 {
         font-size: 1.5rem;
         line-height: 35px;
-        color: #545760;
     }
     h5 {
         font-size: 1.2em;
         line-height: 1.22222222em;
     }
     time {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     #title {
         padding-left: 0%;
@@ -953,10 +927,17 @@ body:before {
     #archive-list {
         margin-top: 18px;
     }
+    .experience-list {
+        font-size: 1.2em;
+    }
     /* Code */
     pre {
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    :not(pre) > code {
+        font-size: 1.2rem;
+        line-height: 1.85rem;
     }
     .highlight {
         margin-top: 1.03rem;
@@ -968,7 +949,7 @@ body:before {
         line-height: 24pt;
     }
     #bottom-navigation {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
     /* Main Pieces */
     main {
@@ -1123,6 +1104,7 @@ body:before {
     }
     menu ul li {
         margin-right: -6px;
+        padding-top: 3px;
     }
     /* Titles */
     h1 {
@@ -1136,7 +1118,7 @@ body:before {
         font-size: 2rem;
         line-height: 1.25em;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .project-icon-text h3 {
         line-height: 41px;
@@ -1144,14 +1126,13 @@ body:before {
     h4 {
         font-size: 1.8rem;
         line-height: 41px;
-        color: #545760;
     }
     h5 {
         font-size: 1.4rem;
         line-height: 1.33333333em;
     }
     time {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     /* Lists */
     main ol, main ul {
@@ -1169,10 +1150,17 @@ body:before {
     #archive-list {
         margin-top: 28px;
     }
+    .experience-list {
+        font-size: 1.4rem;
+    }
     /* Code */
     pre {
-        font-size: 1.1rem;
-        line-height: 1.4rem;
+        font-size: 1.4rem;
+        line-height: 24px;
+    }
+    :not(pre) > code {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
     }
     .highlight {
         margin-top: 1.55rem;
@@ -1180,7 +1168,7 @@ body:before {
     }
     /* Home Page Prev/New Footer */
     #bottom-navigation {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
     /* Main Pieces */
     main {
