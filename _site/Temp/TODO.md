@@ -14,18 +14,6 @@ Also, there's some code clone there with the `/Images/Assets/` path, that should
 
 Find out how to properly have multiple iOS screens side by side in a single view.
 
-Check to see if I can add my main page to RSS feed and have it go through
-
-redirect or 404.html on Pi
-
-404 for github
-
-Experience's font height's are all kinds of fucked up
-
-inline NOT full-width images are a little shrunk when landscape iPhone iOS
-
-"css parallax html"
-
 codepen.io/znak/pen/ntsdy
 http://jsfiddle.net/wf3qj2nk
 Google analytics script at end of source

@@ -68,7 +68,7 @@
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff') format('woff'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.ttf') format('truetype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.svg#AdelleSansLight') format('svg');
-    font-weight: 300;
+    /*font-weight: 300;*/
     font-style: normal;
 }
 
@@ -494,6 +494,8 @@ main {
     width: auto;
     margin: 0 auto;
     position: relative;
+    /* IE 11 Fix */
+    display: block;
 }
 
 hr {
