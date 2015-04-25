@@ -6,68 +6,68 @@
 
 @font-face {
     font-family: "Palatino";
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot'); /* IE9 Compat Modes */
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/TheBarrowMan/Fonts/Palatino/palatino-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('/Fonts/Palatino/palatino-regular.eot'); /* IE9 Compat Modes */
+    src: url('/Fonts/Palatino/palatino-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/Fonts/Palatino/palatino-regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/Fonts/Palatino/palatino-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/Fonts/Palatino/palatino-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
     font-weight: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Palatino";
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold.ttf');
+    src: url('/Fonts/Palatino/palatino-bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Palatino";
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-italic.ttf');
+    src: url('/Fonts/Palatino/palatino-italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Palatino";
-    src: url('/TheBarrowMan/Fonts/Palatino/palatino-bold-italic.ttf');
+    src: url('/Fonts/Palatino/palatino-bold-italic.ttf');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'AdelleSans';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-bold-webfont.svg#AdelleSansBold') format('svg');
+    src: url('/Fonts/Adelle-Sans/adellesans-bold-webfont.eot');
+    src: url('/Fonts/Adelle-Sans/adellesans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Fonts/Adelle-Sans/adellesans-bold-webfont.woff2') format('woff2'),
+         url('/Fonts/Adelle-Sans/adellesans-bold-webfont.woff') format('woff'),
+         url('/Fonts/Adelle-Sans/adellesans-bold-webfont.ttf') format('truetype'),
+         url('/Fonts/Adelle-Sans/adellesans-bold-webfont.svg#AdelleSansBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AdelleSans';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-regular-webfont.svg#AdelleSansRegular') format('svg');
+    src: url('/Fonts/Adelle-Sans/adellesans-regular-webfont.eot');
+    src: url('/Fonts/Adelle-Sans/adellesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Fonts/Adelle-Sans/adellesans-regular-webfont.woff2') format('woff2'),
+         url('/Fonts/Adelle-Sans/adellesans-regular-webfont.woff') format('woff'),
+         url('/Fonts/Adelle-Sans/adellesans-regular-webfont.ttf') format('truetype'),
+         url('/Fonts/Adelle-Sans/adellesans-regular-webfont.svg#AdelleSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AdelleSans';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.svg#AdelleSansItalic') format('svg');
+    src: url('/Fonts/Adelle-Sans/adellesans-italic-webfont.eot');
+    src: url('/Fonts/Adelle-Sans/adellesans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Fonts/Adelle-Sans/adellesans-italic-webfont.woff2') format('woff2'),
+         url('/Fonts/Adelle-Sans/adellesans-italic-webfont.woff') format('woff'),
+         url('/Fonts/Adelle-Sans/adellesans-italic-webfont.ttf') format('truetype'),
+         url('/Fonts/Adelle-Sans/adellesans-italic-webfont.svg#AdelleSansItalic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -550,12 +550,12 @@ img.right-wrap, img.left-wrap {
 }
 
 #logo {
-    background-image: url("/TheBarrowMan/Images/Favicons/favicon-24x24@2x.jpg") !important;
+    background-image: url("/Images/Favicons/favicon-24x24@2x.jpg") !important;
     background-size: 24px 24px;
 }
 
 #failed-logo {
-    background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-24x24@2x.jpg") !important;
+    background-image: url("/Images/Favicons/favicon-bad-24x24@2x.jpg") !important;
     background-size: 24px 24px;
 }
 
@@ -975,11 +975,11 @@ body:before {
         height: 28px;
     }
     #logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon-28x28@2x.jpg") !important;
+        background-image: url("/Images/Favicons/favicon-28x28@2x.jpg") !important;
         background-size: 28px 28px;
     }
     #failed-logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-28x28@2x.jpg") !important;
+        background-image: url("/Images/Favicons/favicon-bad-28x28@2x.jpg") !important;
         background-size: 28px 28px;
     }
     .gallery-image {
@@ -1177,11 +1177,11 @@ body:before {
         height: 32px;
     }
     #logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon-32x32@2x.jpg") !important;
+        background-image: url("/Images/Favicons/favicon-32x32@2x.jpg") !important;
         background-size: 32px 32px;
     }
     #failed-logo {
-        background-image: url("/TheBarrowMan/Images/Favicons/favicon-bad-32x32@2x.jpg") !important;
+        background-image: url("/Images/Favicons/favicon-bad-32x32@2x.jpg") !important;
         background-size: 32px 32px;
     }
     .gallery-image {
