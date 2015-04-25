@@ -21,6 +21,7 @@ Google analytics script at end of source
 ∞ ⇥ ↦ ⇒ → ▶ ➡ ➤ ➢ ➣ ➭
 
 http://www.jqueryscript.net/other/jQuery-Plugin-To-Add-Unique-Anchor-Links-To-Headlines-anchor-js.html
+http://mediaelementjs.com
 
 &#x21A9;&#xFE0E;
 

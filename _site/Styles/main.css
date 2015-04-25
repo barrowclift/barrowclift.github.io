@@ -62,18 +62,6 @@
 
 @font-face {
     font-family: 'AdelleSans';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-light-webfont.svg#AdelleSansLight') format('svg');
-    /*font-weight: 300;*/
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'AdelleSans';
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot');
     src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.woff2') format('woff2'),
@@ -82,18 +70,6 @@
          url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-italic-webfont.svg#AdelleSansItalic') format('svg');
     font-weight: normal;
     font-style: italic;
-}
-
-@font-face {
-    font-family: 'AdelleSansLight';
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot');
-    src: url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.woff2') format('woff2'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.woff') format('woff'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.ttf') format('truetype'),
-         url('/TheBarrowMan/Fonts/Adelle-Sans/adellesans-lightitalic-webfont.svg#AdelleSansLightItalic') format('svg');
-    font-style: italic;
-    font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -494,7 +470,7 @@ main {
     width: auto;
     margin: 0 auto;
     position: relative;
-    /* TODO IE 11 Fix */
+    /* IE 11 Fix */
     display: block;
 }
 

@@ -17,6 +17,7 @@ highlighter: pygments
 # Build settings
 markdown: kramdown
 paginate: 2 # Number of posts to be shown on each each paginated page.
+safe: false
 
 defaults:
   -
