@@ -5,7 +5,6 @@ twitter_username: barrowclift
 github_username:  barrowclift
 description: > 
   Some guy on the internet rambling about Apple, technology, and whatever else pops up.
-
 baseurl: "" # The subpath of your site, e.g. /blog/
 url: "http://barrowclift.github.io" # The base hostname & protocol for your site
 host: 127.0.0.1
