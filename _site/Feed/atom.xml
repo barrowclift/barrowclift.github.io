@@ -6,9 +6,24 @@
 </description>
     <link>http://barrowclift.github.io/</link>
     <atom:link href="http://barrowclift.github.io/Feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 13:55:19 -0400</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 13:55:19 -0400</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 14:53:28 -0400</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 14:53:28 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>New Post to Test RSS</title>
+        <description>&lt;p&gt;This is my test post to see if the new post gets successfully added to my RSS client. I’m also slightly confused as to how Github Pages actually hosts Jekyll based sites. Do I have to build the website locally then push the static pages or does Github automatically do that and repopulate &lt;code&gt;_site&lt;/code&gt; itself? It’s not entirely clear, but how it handles a new markdown post with no local builds by me will tell me all I need to know. Hopefully everything works we’ll just have to see…&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Apr 2015 22:00:00 -0400</pubDate>
+        <link>http://barrowclift.github.io/Post/New-Post-to-Test-RSS</link>
+        <guid isPermaLink="true">http://barrowclift.github.io/Post/New-Post-to-Test-RSS</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>My Other Post</title>
