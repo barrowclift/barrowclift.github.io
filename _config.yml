@@ -16,7 +16,6 @@ highlighter: pygments
 # Build settings
 markdown: kramdown
 paginate: 2 # Number of posts to be shown on each each paginated page.
-safe: false
 
 defaults:
   -
@@ -27,6 +26,10 @@ defaults:
       is_post: true # automatically set is_post=true for all posts
 
 # =========== PLUGINS ===========
+
+gems:
+  - jemoji
+
 # "Jekyll Pages Directory Plugin"
 # https://github.com/bbakersmith/jekyll-pages-directory
 # Allows me to put all my custom-made static pages in a directory in the
