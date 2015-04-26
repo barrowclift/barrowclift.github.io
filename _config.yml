@@ -12,10 +12,11 @@ host: 127.0.0.1
 permalink: /Post/:title # Permalink posts sorted by date with directories is awful.
 paginate_path: "/Page/:num" # Home older/previous pages go here
 highlighter: pygments
+safe: true
 
 # Build settings
 markdown: kramdown
-paginate: 2 # Number of posts to be shown on each each paginated page.
+paginate: 10 # Number of posts to be shown on each each paginated page.
 
 defaults:
   -

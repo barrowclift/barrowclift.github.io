@@ -13,7 +13,7 @@
 #contact-form select,
 #contact-form textarea,
 #contact-form label {
-    font-size: 15px;
+    text-align: left;
     margin-bottom: 2px;
 
      /* css 3 */
