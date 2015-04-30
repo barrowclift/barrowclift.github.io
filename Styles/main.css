@@ -80,7 +80,7 @@ p, ol, ul {
     font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
 
-menu ul, .project-icon-title, #bottom-banner-text, time, h4, h5, h6, #bottom-navigation, .experience-list {
+menu ul, .project-icon-title, #bottom-banner-text, time, h4, h5, h6, #bottom-navigation, .experience-list, table {
     font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 
@@ -328,24 +328,71 @@ main ol li > :last-child, main ul li > :last-child {
 ==================================================================
 */
 
-pre {
-    font-size: 1.2rem;
-    line-height: 20px;
-    padding: 1rem;
-    overflow: scroll;
-    position: relative;
+pre, code {
+    font-size: 1.2em;
+    line-height: 27px;
 }
 
-:not(pre) > code {
-    font-size: 1.2rem;
-    line-height: 27px;
+pre {
+    overflow: auto;
+    border-radius: 0.35em;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    word-wrap: normal;
+}
+
+code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    
+    font-size: 85%;
+    
     box-shadow: 0 0 1px rgba(20, 20, 20, .6);
     background-color: rgba(0, 0, 0, .07);
     border-radius: 3px;
-    padding: .15em .4em;
-    margin-left: .15em;
-    margin-right: .15em;
-    white-space: nowrap;
+}
+
+code:before, code:after {
+    letter-spacing: -0.2em;
+}
+
+pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background-color: transparent;
+    border: 0;
+
+    display: inline;
+    max-width: initial;
+    overflow: initial;
+    line-height: inherit;
+}
+
+.highlight pre, pre {
+    padding: 1em;
+    overflow: auto;
+    background-color: #272821;
+    border-radius: 3px;
+    color: white;
+    text-align:left;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+.highlight pre {
+    word-break: normal;
+}
+
+pre code:before,
+pre code:after {
+    content: normal;
 }
 
 code::selection, pre::selection {
@@ -364,31 +411,73 @@ pre ::selection, code ::selection {
     background: hsla(54, 8%, 26%, 0.9);
 }
 
-.highlight {
-    background-color: #272821;
-    text-align: left;
+:not(pre) > code {
+    box-shadow: 0 0 1px rgba(20, 20, 20, .6);
+    background-color: rgba(0, 0, 0, .07);
+    border-radius: 3px;
+    padding: .15em .4em;
+    margin-left: 0em;
+    margin-right: 0em;
+    word-wrap: break-word;
+}
 
-    float: left;
+.highlight {
     width: 100%;
-    border-radius: 0.35em;
 
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
+}
 
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+/*
+==================================================================
+******                      TABLES                          ******
+==================================================================
+*/
 
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-    line-height: 1.3em;
-    font-size: 0.8em;
+table {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    margin-top: 20px;
+    margin-bottom: 24px;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th {
+    font-weight: bold;
+    background-color: #272821;
+    color: #f8f8f2;
+}
+
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #A6A6A6;
+}
+
+table tr {
+    background-color: #FFFFFF;
+    border-top: 1px solid #A6A6A6;
+}
+
+table tr:nth-child(2n) {
+    background-color: #EFEFEF;
+}
+
+hr:before {
+    display: table;
+    content: "";
+}
+
+hr:after {
+    display: table;
+    clear: both;
+    content: "";
 }
 
 /*
@@ -445,6 +534,7 @@ pre ::selection, code ::selection {
 
 html {
     background-color: #FAFAFA;
+    /*-webkit-font-smoothing: antialiased;*/
 }
 
 body {
@@ -470,7 +560,7 @@ main {
     width: auto;
     margin: 0 auto;
     position: relative;
-    /* IE 11 Fix */
+    /* IE 11 does not fully support main, ignores max-width otherwise */
     display: block;
 }
 
@@ -531,6 +621,8 @@ img.full-width {
    website background) */
 img.ios-screen {
     box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 /* Float portrait images (will override optinos from default) */
@@ -909,18 +1001,22 @@ body:before {
         font-size: 1.2em;
     }
     /* Code */
+    pre, code {
+        font-size: 1.2em;
+        line-height: 27px;
+    }
+    code {
+        font-size: 85%;
+    }
     pre {
-        font-size: 1.2rem;
-        line-height: 20px;
+        margin-top: 27px;
+        margin-bottom: 32px;
     }
-    :not(pre) > code {
+    /* Tables */
+    table {
         font-size: 1.2rem;
-        line-height: 1.85rem;
-    }
-    .highlight {
-        margin-top: 1.03rem;
-        margin-bottom: 1.03rem;
-        font-size: 0.9em;
+        margin-top: 27px;
+        margin-bottom: 32px;
     }
     /* Home Page Prev/New Footer */
     #navigation-previous, #navigation-next {
@@ -947,12 +1043,19 @@ body:before {
     article hr, footer hr {
         margin-top: 45px;
         margin-bottom: 45px;
-        max-width: 300px;
+        max-width: 306px;
+    }
+    article hr, footer hr, .dashed {
+        border-top: 2px dashed #A0A8B6;
     }
     /* Images */
     p.full-width {
         padding-top: 18px;
         padding-bottom: 18px;
+    }
+    .ios-screen {
+        margin-top: 27px;
+        margin-bottom: 32px;
     }
     img.left-wrap, img.right-wrap {
         margin-top: 0.4em;
@@ -1075,13 +1178,13 @@ body:before {
 @media (min-width: 56.25em) {
     /* Navigation */
     menu {
-        font-size: 1.75em;
+        font-size: 1.75em; /* 1.8em when bold */
     }
     menu ul {
-        margin-right: 5px;
+        margin-right: 5px; /* 5px when bold */
     }
     menu ul li {
-        margin-right: -6px;
+        margin-right: -6px; /* -5px when bold */
         padding-top: 3px;
     }
     /* Titles */
@@ -1132,17 +1235,22 @@ body:before {
         font-size: 1.4rem;
     }
     /* Code */
+    pre, code {
+        font-size: 1.4rem;
+        line-height: 2.1rem; /*27px*/
+    }
+    code {
+        font-size: 85%;
+    }
     pre {
-        font-size: 1.4rem;
-        line-height: 24px;
+        margin-top: 32px;
+        margin-bottom: 38px;
     }
-    :not(pre) > code {
+    /* Tables */
+    table {
         font-size: 1.4rem;
-        line-height: 2.1rem;
-    }
-    .highlight {
-        margin-top: 1.55rem;
-        margin-bottom: 1.55rem;
+        margin-top: 32px;
+        margin-bottom: 38px;
     }
     /* Home Page Prev/New Footer */
     #bottom-navigation {
@@ -1164,12 +1272,15 @@ body:before {
     article hr, footer hr {
         margin-top: 50px;
         margin-bottom: 50px;
-        max-width: 350px;
+        max-width: 354px;
     }
     /* Images */
     p.full-width {
         padding-top: 28px;
         padding-bottom: 28px;
+    }
+    .ios-screen {
+        margin-bottom: 38px;
     }
     #logo, #failed-logo {
         margin-left: 1px;
@@ -1261,6 +1372,15 @@ body:before {
         padding-left: 60px;
     }
 }
+
+/*@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-device-pixel-ratio: 1.25),
+only screen and (min-resolution: 200dpi),
+only screen and (min-resolution: 1.25dppx)
+{
+    -webkit-font-smoothing: subpixel-antialiased;
+}*/
 
 /*      .:'
     __ :'__

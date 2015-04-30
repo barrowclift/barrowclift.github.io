@@ -26,3 +26,13 @@ http://mediaelementjs.com
 &#x21A9;&#xFE0E;
 
 Regenerate Archive script
+
+{% highlight <language> linenos %}
+     <code>
+ {% endhighlight %}
+
+ ❖
+
+ You're doing it wrong common html tag mistakes
+
+www.intridea.com/blog/2014/5/8/better-font-smoothing-in-chrome-on-mac-os-x

@@ -20,4 +20,4 @@ As you can see, this is a huge problem, but what can we do to protect ourselves?
 ----------
 
 [^interesting]: I have something interesting to say! Herp derp lerp burb.
-[^camelot]: Let's not go to Camelot, 'tis a silly place. This is an extremely long thing, I'm not even kidding here just look how fucking long this shit is, it's nuts. This is probably the longest footnote in the history of footnotes, my god this needs it's own article whyyyy
+[^camelot]: Let's not go to Camelot, 'tis a silly place. This is an extremely long thing, I'm not even kidding here just look how fucking long this shit is, it's nuts. This is probably the longest footnote in the history of footnotes, my god this needs it's own article whyyyy. Let's not go to Camelot, 'tis a silly place. This is an extremely long thing, I'm not even kidding here just look how fucking long this shit is, it's nuts. This is probably the longest footnote in the history of footnotes, my god this needs it's own article whyyyy

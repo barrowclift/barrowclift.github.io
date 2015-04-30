@@ -45,11 +45,13 @@
 		});
 	</script>
 	<script>
+		{% if page.is_post %}
 		$(document).ready(function() {
 			$('h3').anchor({
 				symbol: '#'
 			});
 		});
+		{% endif %}
 	</script>
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

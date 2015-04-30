@@ -77,10 +77,10 @@ The members were as follows:
 3. Gaylord Holder - Networking, LED map parser, assistant programmer
 4. Marc Barrowclift - Display manager, Tetris, Snake, and GUI game tester
 
-As you can see, this is a huge problem, but what can we do to protect ourselves? Enter Anonymouth. Anonymouth has grown enormously over the past two years and is just nearing a stable 0.6 Beta. While there is still much work to be done, its current version provides users with the basic tools necessary to help them begin anonymizing their documents.
-
-----------
-
+As you can see, this is a huge problem, but what can we do to protect ourselves? Enter Anonymouth. Anonymouth has grown enormously over the past two years and is just nearing a stable 0.6 Beta. While there is still much work to be done, its current version provides users with the basic tools necessary to help them begin anonymizing their documents.  
+  
+----------  
+  
 [^interesting]: I have something interesting to say! Herp derp lerp burb.
 [^camelot]: Let's not go to Camelot, 'tis a silly place. This is an extremely long thing, I'm not even kidding here just look how fucking long this shit is, it's nuts. This is probably the longest footnote in the history of footnotes, my god this needs it's own article whyyyy
 
