@@ -28,6 +28,10 @@ Highlight Color
     color: #FAFAFA;
 }
 
+hr {
+    border-top: 3px solid #E13646;
+}
+
 /*
 Links
 */
