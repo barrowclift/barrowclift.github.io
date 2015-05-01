@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "My Other Post"
-date:   2015-03-31 14:04:28
+title:  "Link Test Post"
+date:   2015-05-01 15:45:00
 categories: jekyll update
 link: https://blog.pinboard.in/2014/07/pinboard_turns_five/
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "New Post to Test RSS"
-date:   2015-04-26 02:00:00
-categories: jekyll update
+title:  "Gneral Markdown Rendering Test Post"
+date:   2015-05-01 15:47:00
+categories: test
 ---
 
 ![MacDown logo](http://macdown.uranusjr.com/static/base/img/logo-160.png)
