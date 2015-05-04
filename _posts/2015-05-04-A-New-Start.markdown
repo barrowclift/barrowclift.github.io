@@ -3,6 +3,8 @@ layout: post
 title:  "A New Start"
 date:   2015-05-04 15:06:00
 categories: design technology
+
+image_name: "favicon-256x256.jpg"
 ---
 
 A friend of mine once told me software engineers shouldn't do design.
