@@ -57,8 +57,8 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="next" href="http://barrowclift.me/Page/2/" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}" />
+	<meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:url" content="http://barrowclift.me" />
@@ -71,9 +71,11 @@
 	<meta name="twitter:title" content="{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.image_name %}
-		<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}" />
+	<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+
+	<meta property="fb:admins" content="1665270112" />
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
