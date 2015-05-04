@@ -1,11 +1,12 @@
 #contact-form {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 465px;
     background-color: #FCFCFC;
-    width: 465px;
-    padding-left: 20px;
-    padding-right: 20px;
     /*margin: 50px auto;*/
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
 }
 
@@ -16,28 +17,31 @@
     text-align: left;
     margin-bottom: 2px;
 
-     /* css 3 */
-     border-radius: 5px;
-     /* mozilla */
-     -moz-border-radius: 5px;
-     /* webkit */
-     -webkit-border-radius: 5px;
+    /* css 3 */
+    border-radius: 3px;
+    /* mozilla */
+    -moz-border-radius: 3px;
+    /* webkit */
+    -webkit-border-radius: 3px;
 }
 
 #contact-form input,
 #contact-form select,
 #contact-form textarea {
-    width: 450px;
+    width: 97%;
     border: 1px solid #C6C6C6;
     margin-bottom: 20px;
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 
     /* css 3 */
-    border-radius: 5px;
+    border-radius: 3px;
     /* mozilla */
-    -moz-border-radius: 5px;
+    -moz-border-radius: 3px;
     /* webkit */
-    -webkit-border-radius: 5px;
+    -webkit-border-radius: 3px;
 }
 
 #contact-form input:focus,
@@ -51,14 +55,13 @@
 
 #contact-form textarea {
     height:150px;
-    max-width: 450px;
 
     /* css 3 */
-    border-radius:5px;
+    border-radius: 3px;
     /* mozilla */
-    -moz-border-radius:5px;
+    -moz-border-radius: 3px;
     /* webkit */
-    -webkit-border-radius:5px;
+    -webkit-border-radius: 3px;
 }
 
 #contact-form label {
@@ -77,9 +80,8 @@
     display: block;
     float: right;
     margin-bottom: 0px;
-    margin-right: 6px;
     background-color: #545760;
-    -moz-border-radius: 8px;
+    -moz-border-radius: 3px;
     -webkit-transition: background-color .2s ease;
     transition: background-color .2s ease;
 }
@@ -95,59 +97,13 @@
     top: 1px;
 }
 
-#contact-form #loading {
-    width: 32px;
-    height: 32px;
-    background-image: url(../img/loading.gif);
-    display: block;
-    position: absolute;
-    right: 130px;
-    bottom: 16px;
-    display: none;
-}
-
-#errors {
-    border: solid 1px #E58E8E;
-    padding: 10px;
-    margin: 25px 0px;
-    display: block;
-    width: 437px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    background: #FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
-    display: none;
-}
-
-#errors li {
-    padding: 2px;
-    list-style: none;
-}
-
-#errors li:before {
-    content: ' - ';
-}
-
-#errors #info {
-    font-weight: bold;
-}
-
-#errors #info:before {
-    content: '';
-}
-
-#success {
-    border: solid 1px #83D186;
-    padding: 25px 10px;
-    margin: 25px 0px;
-    display: block;
-    width: 437px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius :8px;
-    background: #D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
-    font-weight: bold;
-    display: none;
+#submit-button {
+    /* css 3 */
+    border-radius: 3px;
+    /* mozilla */
+    -moz-border-radius: 3px;
+    /* webkit */
+    -webkit-border-radius: 3px;
 }
 
 #errors.visible, #success.visible {

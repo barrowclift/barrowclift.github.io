@@ -36,7 +36,7 @@
 
 		<script src="/Scripts/contact.js"></script>
 
-		<title>Marc Barrowclift - Contact</title>
+		<title>Marc Barrowclift - Thank You</title>
 		<!--[if !IE 7]>
 			<style type="text/css">
 				#wrap {display:table;height:100%}
@@ -72,45 +72,9 @@
 
 			<div id="content" class="center">
 				<main role="main" class="large-bottom-pad">
-					<!-- <h2 style="margin-top:0px;" class="center">Contact</h2> -->
+					<h2 style="margin-top:0px;" class="center">Thank You!</h2>
 
-					<form id="contact-form" class="form-horizontal" action="javascript:validateForm()" style="display: inline-block;" method="post">
-					    <div id="name-group" class="form-group">
-					        <div class="col-xs-10 col-xs-offset-1 input-group">
-					            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-					            <input type="text" class="form-control" id="name" placeholder="Name" onblur="javascript:validateInline(this.id, this.value)">
-					        </div>
-					    </div>
-					    <div id="email-group" class="form-group">
-					        <div class="col-xs-10 col-xs-offset-1 input-group">
-					            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-					            <input type="email" class="form-control" id="email" placeholder="Email" onblur="javascript:validateInline(this.id, this.value)">
-					        </div>
-					    </div>
-					    <div id="subject-group" class="form-group">
-					        <div class="col-xs-10 col-xs-offset-1 input-group">
-					            <span class="input-group-addon"><i class="fa fa-comment"></i></span>
-					            <input type="text" class="form-control" id="subject" placeholder="Subject" onblur="javascript:validateInline(this.id, this.value)">
-					        </div>
-					    </div>
-					    <div id="message-group" class="form-group">
-					        <div class="col-xs-10 col-xs-offset-1 input-group">
-					            <span class="input-group-addon"><i class="fa fa-quote-left"></i></span>
-					            <textarea class="form-control" id="message" rows="5" placeholder="Message" onblur="javascript:validateInline(this.id, this.value)"></textarea>
-					        </div>
-					    </div>
-					    <div hidden class="form-group" id="short-message-group">
-					        <div class="col-xs-10 col-xs-offset-1 alert alert-warning alert-dismissable">
-					            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					            Your message looks a little short. Press submit again if you'd like to send it anyways.
-					        </div>
-					    </div>
-					    <div class="form-group">
-					        <div class="col-xs-offset-1">
-					            <button type="submit" id="submit-button" class="btn btn-default">Send</button>
-					        </div>
-					    </div>
-					</form>
+					<p style="text-align:center;" class="large-bottom-pad">Your message has been sent. I'll get back to you soon!</p>
 
 					<article>
 						<hr>
@@ -138,27 +102,6 @@
 							</a>
 						</div>
 					</div>
-
-					<!-- <div id="contact-form" class="clearfix large-top-pad">
-						<h3 class="center">Get in touch</h3>
-						<ul id="errors" class="">
-							<li id="info">Whoops, there's a few things missing from your message:</li>
-						</ul>
-						<p id="success">Your message has been sent. Thanks for reaching out!</p>
-						<form method="post" action="/Scripts/process.php">
-							<label for="name">Name: </label>
-							<input type="text" id="name" name="name" value="" placeholder="" required="required" />
-							
-							<label for="email">Email Address: </label>
-							<input type="email" id="email" name="email" value="" placeholder="" required="required" />
-							
-							<label for="message">Message: </label>
-							<textarea id="message" name="message" placeholder="" required="required" data-minlength="20"></textarea>
-							
-							<span id="loading"></span>
-							<input type="submit" value="Send" id="submit-button" />
-						</form>
-					</div> -->
 				</main>
 			</div>
 		</div>

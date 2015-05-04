@@ -72,15 +72,13 @@
     font-style: italic;
 }
 
-h1, h2, h3 {
-    font-family: 'AdelleSans', Adelle Sans, Adelle, Georgia, Times, 'Times New Roman', serif;
-}
-
 p, ol, ul {
     font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
 
-menu ul, .project-icon-title, #bottom-banner-text, time, h4, h5, h6, #bottom-navigation, .experience-list, table {
+menu ul, time, table, h1, h2, h3, h4, h5, h6,
+#bottom-banner-text, #bottom-navigation,
+.experience-list, .project-icon-title {
     font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 
@@ -579,6 +577,21 @@ article hr, footer hr, .dashed {
 
 /*
 ==================================================================
+******                   INPUT ELEMENTS                     ******
+==================================================================
+*/
+
+input, select, textarea, button {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+}
+
+button {
+    height: 23px;
+}
+
+/*
+==================================================================
 ******                        IMAGES                        ******
 *       NOTE: Order is extremely important in this section       *
 ==================================================================
@@ -1047,6 +1060,14 @@ body:before {
     article hr, footer hr, .dashed {
         border-top: 2px dashed #A0A8B6;
     }
+    /* Input elements */
+    input, select, textarea, button {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    button {
+        height: 27px;
+    }
     /* Images */
     p.full-width {
         padding-top: 18px;
@@ -1272,6 +1293,14 @@ body:before {
         margin-top: 50px;
         margin-bottom: 50px;
         max-width: 354px;
+    }
+    /* Input Elements */
+    input, select, textarea, button {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    button {
+        height: 28px;
     }
     /* Images */
     p.full-width {
