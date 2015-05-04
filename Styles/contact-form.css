@@ -31,10 +31,7 @@
     width: 97%;
     border: 1px solid #C6C6C6;
     margin-bottom: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 4px;
 
     /* css 3 */
     border-radius: 3px;

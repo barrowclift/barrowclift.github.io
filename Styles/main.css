@@ -76,7 +76,7 @@ p, ol, ul {
     font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
 
-menu ul, time, table, h1, h2, h3, h4, h5, h6,
+menu ul, time, table, h1, h2, h3, h4, h5, h6, input, select, textarea, label,
 #bottom-banner-text, #bottom-navigation,
 .experience-list, .project-icon-title {
     font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
@@ -582,8 +582,7 @@ article hr, footer hr, .dashed {
 */
 
 input, select, textarea, button {
-    font-size: 0.7rem;
-    line-height: 0.8rem;
+    font-size: 0.8rem;
 }
 
 button {
@@ -1063,7 +1062,6 @@ body:before {
     /* Input elements */
     input, select, textarea, button {
         font-size: 0.9rem;
-        line-height: 1rem;
     }
     button {
         height: 27px;
@@ -1297,7 +1295,6 @@ body:before {
     /* Input Elements */
     input, select, textarea, button {
         font-size: 1rem;
-        line-height: 1rem;
     }
     button {
         height: 28px;
