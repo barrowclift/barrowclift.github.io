@@ -51,7 +51,7 @@ function validateForm() {
         document.getElementById("short-message-group").hidden = false;
     else if(valid) {
         document.body.innerHTML += '<form id="simpleForm" action="http://getsimpleform.com/messages?form_api_token=283f253c565bcf75c31c2a6f8128678b" method="post">' +
-                                        '<input type="hidden" name="redirect_to" value="http://barrowclift.me/Contact/Thank-You/" />'
+                                        '<input type="hidden" name="redirect_to" value="http://barrowclift.me/Contact/Thank-You/">' + 
                                         '<input type="hidden" name="Name" value="'+name+'">' +
                                         '<input type="hidden" name="Email" value="'+email+'">' +
                                         '<input type="hidden" name="Subject" value="'+subject+'">' +

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gneral Markdown Rendering Test Post"
+title:  "General Markdown Rendering Test Post"
 date:   2015-05-01 15:47:00
 categories: test
 ---
