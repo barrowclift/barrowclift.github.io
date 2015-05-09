@@ -55,23 +55,29 @@
 	</script>
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="next" href="http://barrowclift.me/Page/2/" />
+	<link rel="next" href="{{ site.url }}/Page/2/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta property="og:url" content="http://barrowclift.me" />
-	<meta property="og:image" content="http://barrowclift.me/Images/Favicons/favicon-120x120.jpg"/>
-	<meta property="og:site_name" content="{{site.title}}" />
+	<meta property="og:url" content="{{ site.url }}" />
+	{% if page.image_name %}
+	<meta property="og:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}"/>
+	{% else %}
+	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg"/>
+	{% endif %}
+	<meta property="og:site_name" content="{{ site.title }}" />
 	<title>{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}</title>
 	
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@barrowclift" />
-	<meta name="twitter:title" content="{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}" />
+	<meta name="twitter:title" content="{{ ite.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.image_name %}
 	<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}" />
+	{% else %}
+	<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
 

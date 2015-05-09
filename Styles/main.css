@@ -684,6 +684,7 @@ img.right-wrap, img.left-wrap {
 
 .news-logo {
     max-height: 16px;
+    display: inline-block;
 }
 
 .contact-icon {

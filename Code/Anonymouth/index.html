@@ -41,7 +41,25 @@
 			});
 		</script>
 
-		<link rel="alternate" type="application/rss+xml" title="Marc Barrowclift" href="http://barrowclift.github.com/atom.xml">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{{ site.title }} - Anonymouth" />
+		<meta property="og:description" content="{{ site.description }}" />
+		<meta name="description" content="{{ site.description }}">
+		<meta property="og:url" content="{{ site.url }}" />
+		<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg"/>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@barrowclift" />
+		<meta name="twitter:title" content="{{ site.title }} - Anonymouth" />
+		<meta name="twitter:description" content="{{ site.description }}" />
+		<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg" />
+		<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+
+		<meta property="fb:admins" content="1665270112" />
+
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://barrowclift.github.com/atom.xml">
 
 		<title>Marc Barrowclift - Anonymouth</title>
 		<!--[if !IE 7]>
@@ -68,10 +86,10 @@
 				</header>
 				<ul>
 					<li class="hover"><a href="/">Home</a></li>
+					<li class="hover"><a href="/About/">About</a></li>
 					<li class="hover"><a href="/Code/" class="active-link">Code</a></li>
 					<li class="hover"><a href="/Art/">Art</a></li>
 					<li class="hover"><a href="/Music/">Music</a></li>
-					<li class="hover"><a href="/About/">About</a></li>
 					<li class="hover"><a href="/Contact/">Contact</a></li>
 				</ul>
 			</menu>
@@ -106,6 +124,33 @@
 						<h3 id="how-you-can-help">How You Can Help</h3>
 
 						<p>While I ceased involvement with the Anonymouth project in 2011, the project is still in active development and eager for new contributers. If you're interested feel free to request a fork on the project's <a href="https://github.com/psal/anonymouth">Github page</a>.</p>
+
+						<h3 id="in-the-news">In the News</h3>
+
+						<div class="massive-left-pad medium-bottom-pad center">
+							<a class="text-link" href="http://www.newrepublic.com/article/114112/anonymouth-linguistic-tool-might-have-helped-jk-rowling">
+								<div class="left">
+									<img class="news-logo left" src="/Images/In-the-News/new-republic.png" />
+								</div>
+								<h5 class="left">
+									<a class="text-link" href="http://www.newrepublic.com/article/114112/anonymouth-linguistic-tool-might-have-helped-jk-rowling">
+										Computer Program Turns Famous Writers Into Anonymous Hacks
+									</a>
+								</h5>
+							</a>
+						</div>
+						<div class="massive-left-pad center">
+							<a class="text-link" href="http://tech.slashdot.org/story/13/08/05/1220215/project-anonymizes-your-writing-style-to-hide-your-identity?utm_source=rss1.0mainlinkanon">
+								<div class="left">
+									<img class="news-logo" src="/Images/In-the-News/slashdot.png" />
+								</div>
+								<h5 class="left">
+									<a class="text-link" href="http://tech.slashdot.org/story/13/08/05/1220215/project-anonymizes-your-writing-style-to-hide-your-identity?utm_source=rss1.0mainlinkanon">
+										Project Anonymizes Your Writing Style To Hide Your Identity
+									</a>
+								</h5>
+							</a>
+						</div>
 
 						<div class="small-top-pad">
 							<a href="/Images/Anonymouth/anonymouth-screen-1.png">

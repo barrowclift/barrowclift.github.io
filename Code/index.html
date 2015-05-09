@@ -29,7 +29,25 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="alternate" type="application/rss+xml" title="Marc Barrowclift" href="http://barrowclift.github.com/atom.xml">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{{ site.title }} - Code" />
+		<meta property="og:description" content="{{ site.description }}" />
+		<meta name="description" content="{{ site.description }}">
+		<meta property="og:url" content="{{ site.url }}" />
+		<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg"/>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@barrowclift" />
+		<meta name="twitter:title" content="{{ site.title }} - Code" />
+		<meta name="twitter:description" content="{{ site.description }}" />
+		<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg" />
+		<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+
+		<meta property="fb:admins" content="1665270112" />
+
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://barrowclift.github.com/atom.xml">
 
 		<title>Marc Barrowclift - Code</title>
 
@@ -77,10 +95,10 @@
 				</header>
 				<ul>
 					<li class="hover"><a href="/">Home</a></li>
+					<li class="hover"><a href="/About/">About</a></li>
 					<li class="hover"><a href="/Code/" class="active-link">Code</a></li>
 					<li class="hover"><a href="/Art/">Art</a></li>
 					<li class="hover"><a href="/Music/">Music</a></li>
-					<li class="hover"><a href="/About/">About</a></li>
 					<li class="hover"><a href="/Contact/">Contact</a></li>
 				</ul>
 			</menu>
