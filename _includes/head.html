@@ -65,7 +65,8 @@
 	{% if page.image_name %}
 	<meta property="og:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}"/>
 	{% else %}
-	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg"/>
+	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg
+favicon-600x314.jpg"/>
 	{% endif %}
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<title>{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}</title>
@@ -77,7 +78,8 @@
 	{% if page.image_name %}
 	<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.image_name }}" />
 	{% else %}
-	<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg" />
+	<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-400x400.jpg
+favicon-600x314.jpg" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/" />
 
