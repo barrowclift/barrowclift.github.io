@@ -2,7 +2,7 @@
 layout: post
 title:  "A New Start"
 date:   2015-05-04 15:06:00
-categories: design technology
+categories: Design Technology
 excerpt: "All designers, even the accidental ones, have something special to share."
 ---
 
