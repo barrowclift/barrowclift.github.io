@@ -586,7 +586,7 @@ input, select, textarea, button {
 }
 
 button {
-    height: 23px;
+    height: 25px;
 }
 
 /*
@@ -1298,7 +1298,7 @@ body:before {
         font-size: 1rem;
     }
     button {
-        height: 28px;
+        height: 29px;
     }
     /* Images */
     p.full-width {

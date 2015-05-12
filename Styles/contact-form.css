@@ -4,8 +4,9 @@
     box-sizing: border-box;
 
     width: 100%;
+    margin-left:-10px;
     max-width: 465px;
-    background-color: #FCFCFC;
+    background-color: #FAFAFA;
     /*margin: 50px auto;*/
     position: relative;
 }
@@ -14,21 +15,7 @@
 #contact-form select,
 #contact-form textarea,
 #contact-form label {
-    text-align: left;
-    margin-bottom: 2px;
-
-    /* css 3 */
-    border-radius: 3px;
-    /* mozilla */
-    -moz-border-radius: 3px;
-    /* webkit */
-    -webkit-border-radius: 3px;
-}
-
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-    width: 97%;
+    width: 100%;
     border: 1px solid #C6C6C6;
     margin-bottom: 20px;
     padding: 4px;
@@ -44,7 +31,7 @@
 #contact-form input:focus,
 #contact-form select:focus,
 #contact-form textarea:focus {
-    border-color: #EEBC4E;
+    border-color: #FFC852;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 188, 78, 0.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 188, 78, 0.6);
@@ -72,35 +59,29 @@
 
 #contact-form #submit-button {
     width: 100px;
-    color: #FCFCFC;
+    color: #FAFAFA;
     border: none;
     display: block;
     float: right;
     margin-bottom: 0px;
     background-color: #545760;
-    -moz-border-radius: 3px;
     -webkit-transition: background-color .2s ease;
     transition: background-color .2s ease;
-}
 
-#contact-form #submit-button:hover {
-    background-color: #FEC752;
-    -webkit-transition: background-color .2s ease;
-    transition: background-color .2s ease;
-}
+    margin-right:-10px;
 
-#contact-form #submit-button:active {
-    position: relative;
-    top: 1px;
-}
-
-#submit-button {
     /* css 3 */
     border-radius: 3px;
     /* mozilla */
     -moz-border-radius: 3px;
     /* webkit */
     -webkit-border-radius: 3px;
+}
+
+#contact-form #submit-button:hover {
+    background-color: #FEC752;
+    -webkit-transition: background-color .2s ease;
+    transition: background-color .2s ease;
 }
 
 #errors.visible, #success.visible {
@@ -111,7 +92,7 @@
     font-style: italic;
 }
 
-/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+/* Remove box shadow firefox, chrome and opera put around required fields. */
 input:required, textarea:required {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
