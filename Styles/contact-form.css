@@ -65,8 +65,8 @@
     float: right;
     margin-bottom: 0px;
     background-color: #545760;
-    -webkit-transition: background-color .2s ease;
-    transition: background-color .2s ease;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
 
     margin-right:-10px;
 
@@ -80,8 +80,8 @@
 
 #contact-form #submit-button:hover {
     background-color: #FEC752;
-    -webkit-transition: background-color .2s ease;
-    transition: background-color .2s ease;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
 }
 
 #errors.visible, #success.visible {

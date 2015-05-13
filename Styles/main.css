@@ -222,7 +222,7 @@ h4 {
 
 /* Anything else (basically p) */
 h5  {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5em;
     text-align: left;
 }
@@ -488,11 +488,26 @@ hr:after {
     font-size: 1.2rem;
 }
 
+#bottom-tools {
+    padding-top: 50px;
+}
+
+.tools-bottom-pad {
+    padding-bottom: 8px;
+}
+
+.bottom-tool-category {
+    max-width: 100px;
+    text-align: center;
+    width: auto;
+    margin: 0 20px;
+    display: inline-block;
+}
+
 #navigation-previous {
     float: left;
     text-align: left;
     display: inline-block;
-    min-width: 95px;
     line-height: 21pt;
 }
 
@@ -500,7 +515,6 @@ hr:after {
     float: right;
     text-align: right;
     display: inline-block;
-    min-width: 95px;
     line-height: 21pt;
 }
 
@@ -709,6 +723,11 @@ img.right-wrap, img.left-wrap {
     width: 2.8em;
 }
 
+.newsletter-promotion-image { 
+    max-width: 150px;
+    display: block;
+}
+
 /*
 ==================================================================
 ******                         VIDEO                        ******
@@ -820,7 +839,7 @@ body:before {
 ==================================================================
 */
 
-.round-button, .button-hover, .button-default {
+.round-button, .button-hover, .button-default, .contact-button {
     position: relative;
     display: inline-block;
 }
@@ -853,7 +872,12 @@ body:before {
     margin-right: 5px;
 }
 
-.round-button img, .homemade-icon-button img {
+.contact-button {
+    width: 45px;
+    height: 45px;
+}
+
+.round-button img, .homemade-icon-button img, .contact-button img {
     position: absolute;
     left: 0;
     top: 0;
@@ -1037,6 +1061,12 @@ body:before {
     #bottom-navigation {
         font-size: 1.2rem;
     }
+    #bottom-tools {
+        padding-top: 70px;
+    }
+    .bottom-tool-category {
+        margin: 0 30px;
+    }
     /* Main Pieces */
     main {
         padding-left: 0%;
@@ -1129,6 +1159,14 @@ body:before {
     }
     .school-icon {
         width: 5.5em;
+    }
+    .newsletter-promotion-image {
+        max-width: 280px;
+    }
+    /* Buttons */
+    .contact-button {
+        width: 64px;
+        height: 64px;
     }
     /* Dropcaps */
     p:first-of-type::first-letter {
@@ -1275,6 +1313,12 @@ body:before {
     #bottom-navigation {
         font-size: 1.4rem;
     }
+    #bottom-tools {
+        padding-top: 75px;
+    }
+    .bottom-tool-category {
+        margin: 0 40px;
+    }
     /* Main Pieces */
     main {
         max-width: 750px;
@@ -1343,6 +1387,9 @@ body:before {
     }
     .contact-icon {
         width: 64px;
+    }
+    .newsletter-promotion-image {
+        max-width: 310px;
     }
     /* Footnotes */
     .footnotes ol li p {

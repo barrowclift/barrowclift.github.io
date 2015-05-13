@@ -5,26 +5,26 @@ layout: default
 {% assign count=0 %}
 {% for post in paginator.posts %}
 	{% if count > 0 %}
-		<hr class="main-color" />
+	<hr class="main-color" />
 	{% endif %}
 
 	<article>
 		<header role="header">
 			{% if post.link %}
-				<!-- <h2><a href="{{ post.link }}">{{ post.title }} <span class="link-arrow">➤</span></a></h2> -->
-				<h2>
-					<a href="{{ post.link }}">{{ post.title }} ↦</a>
-				</h2>
-				<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}
-					<span>
-						<a href="{{ post.url | prepend: site.baseurl }}">∞</a>
-					</span>
-				</time>
+			<!-- <h2><a href="{{ post.link }}">{{ post.title }} <span class="link-arrow">➤</span></a></h2> -->
+			<h2>
+				<a href="{{ post.link }}">{{ post.title }} ↦</a>
+			</h2>
+			<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}
+				<span>
+					<a href="{{ post.url | prepend: site.baseurl }}">∞</a>
+				</span>
+			</time>
 			{% else %}
-				<h2>
-					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-				<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}</time>
+			<h2>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+			<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}</time>
 			{% endif %}
 		</header>
 
@@ -39,28 +39,49 @@ layout: default
 			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="text-link">
 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 				{% if paginator.next_page %}
-					&#8592; Older
+				&#8592; Older
 				{% endif %}
 			</a>
 		</div>
-		<a href="{{ "/atom.xml" | prepend: site.baseurl }}">
-			<div class="round-button">
-				<img class="button-default" src="{{ "/Images/Blog/rss.jpg" | prepend: site.baseurl }}" />
-				<img class="button-hover" src="{{ "/Images/Blog/rss-hover.jpg" | prepend: site.baseurl }}" src=""/>
-			</div>
-		</a>
-		<a href="{{ "/Archive" | prepend: site.baseurl }}">
-			<div class="round-button">
-				<img class="button-default" src="{{ "/Images/Blog/archive.jpg" | prepend: site.baseurl }}" />
-				<img class="button-hover" src="{{ "/Images/Blog/archive-hover.jpg" | prepend: site.baseurl }}" />
-			</div>
-		</a>
 		<div id="navigation-next">
 			<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}" class="text-link">
 				{% if paginator.previous_page %}
-					Newer &#8594;
+				Newer &#8594;
 				{% endif %}
 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+			</a>
+		</div>
+	</div>
+	{% if paginator.previous_page %}
+	<div id="bottom-tools">
+	{% elsif paginator.next_page %}
+	<div id="bottom-tools">
+	{% else %}
+	<div>
+	{% endif %}
+		<div class="bottom-tool-category">
+			<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Subscribe</h5>
+			<a href="{{ "/Newsletter" | prepend: site.baseurl }}">
+				<div class="round-button" style="text-align:center;">
+					<img class="button-default" src="{{ "/Images/Blog/newsletter.jpg" | prepend: site.baseurl }}" />
+					<img class="button-hover" src="{{ "/Images/Blog/newsletter-hover.jpg" | prepend: site.baseurl }}" src=""/>
+				</div>
+			</a>
+			<a href="{{ "/atom.xml" | prepend: site.baseurl }}">
+				<div class="round-button" style="text-align:center;">
+					<img class="button-default" src="{{ "/Images/Blog/rss.jpg" | prepend: site.baseurl }}" />
+					<img class="button-hover" src="{{ "/Images/Blog/rss-hover.jpg" | prepend: site.baseurl }}" src=""/>
+				</div>
+			</a>
+		</div>
+		
+		<div class="bottom-tool-category">
+			<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Browse</h5>
+			<a href="{{ "/Archive" | prepend: site.baseurl }}">
+				<div class="round-button" style="text-align:center;">
+					<img class="button-default" src="{{ "/Images/Blog/archive.jpg" | prepend: site.baseurl }}" />
+					<img class="button-hover" src="{{ "/Images/Blog/archive-hover.jpg" | prepend: site.baseurl }}" />
+				</div>
 			</a>
 		</div>
 	</div>
