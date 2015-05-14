@@ -52,8 +52,6 @@
         <link rel="stylesheet" href="/Styles/contact-form.css" type="text/css" />
         <link rel="stylesheet" href="/Styles/theme-yellow.css" type="text/css" />
 
-        <script src="/Scripts/contact.js"></script>
-
         <title>Marc Barrowclift - Contact</title>
         <!--[if !IE 7]>
             <style type="text/css">
@@ -88,42 +86,11 @@
 
             <div id="content" class="center">
                 <main role="main" class="large-bottom-pad">
-                    <!-- <h2 style="margin-top:0px;" class="center">Contact</h2> -->
-
-                    <form id="contact-form" class="form-horizontal" action="javascript:validateForm()" style="display: inline-block;" method="post">
-                        <div id="name-group" class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                <input type="text" class="form-control" id="name" placeholder="Name" onblur="javascript:validateInline(this.id, this.value)">
-                            </div>
-                        </div>
-                        <div id="email-group" class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="email" placeholder="Email" onblur="javascript:validateInline(this.id, this.value)">
-                            </div>
-                        </div>
-                        <div id="subject-group" class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-comment"></i></span>
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" onblur="javascript:validateInline(this.id, this.value)">
-                            </div>
-                        </div>
-                        <div id="message-group" class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-quote-left"></i></span>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Message" onblur="javascript:validateInline(this.id, this.value)"></textarea>
-                            </div>
-                        </div>
-                        <div hidden class="form-group" id="short-message-group">
-                            <div class="alert alert-warning alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Your message looks a little short. Press submit again if you'd like to send it anyways.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" id="submit-button">Send</button>
-                        </div>
+                    <form style="display: inline-block;" class="medium-bottom-pad" action="//formspree.io/&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;" method="POST" id="contact-form">
+                        <input type="email" name="_replyto" placeholder="Your email" />
+                        <textarea rows="5" type="text" name="message" placeholder="Your message"></textarea>
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" value="Send" id="submit-button">Send</button>
                     </form>
 
                     <article>

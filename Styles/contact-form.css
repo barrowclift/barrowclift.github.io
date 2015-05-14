@@ -12,9 +12,7 @@
 }
 
 #contact-form input,
-#contact-form select,
-#contact-form textarea,
-#contact-form label {
+#contact-form textarea {
     width: 100%;
     border: 1px solid #C6C6C6;
     margin-bottom: 20px;
@@ -29,7 +27,6 @@
 }
 
 #contact-form input:focus,
-#contact-form select:focus,
 #contact-form textarea:focus {
     border-color: #FFC852;
     outline: 0;
@@ -46,15 +43,6 @@
     -moz-border-radius: 3px;
     /* webkit */
     -webkit-border-radius: 3px;
-}
-
-#contact-form label {
-    display: block;
-}
-
-#contact-form .required {
-    font-weight: bold;
-    color: #F00;
 }
 
 #contact-form #submit-button {
@@ -82,20 +70,4 @@
     background-color: #FEC752;
     -webkit-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
-}
-
-#errors.visible, #success.visible {
-    display: block;
-}
-
-#req-field-desc {
-    font-style: italic;
-}
-
-/* Remove box shadow firefox, chrome and opera put around required fields. */
-input:required, textarea:required {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
 }

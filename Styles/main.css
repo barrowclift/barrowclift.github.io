@@ -227,6 +227,14 @@ h5  {
     text-align: left;
 }
 
+h6 {
+    font-size: 0.7rem;
+    line-height: 16px;
+    color: #A0A8B6;
+    text-align: left;
+    max-width: 300px;
+}
+
 /* Post Metadata Header (Time, Author, Category, etc.) */
 time {
     font-size: 1.2rem;
@@ -1010,6 +1018,11 @@ body:before {
         font-size: 1.2em;
         line-height: 1.22222222em;
     }
+    h6 {
+        font-size: 0.8rem;
+        line-height: 18px;
+        max-width: 350px;
+    }
     time {
         font-size: 1.2rem;
     }
@@ -1268,6 +1281,11 @@ body:before {
     h5 {
         font-size: 1.4rem;
         line-height: 1.33333333em;
+    }
+    h6 {
+        font-size: 0.9rem;
+        line-height: 20px;
+        max-width: 400px;
     }
     time {
         font-size: 1.4rem;
