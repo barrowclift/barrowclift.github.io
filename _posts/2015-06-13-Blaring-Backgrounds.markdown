@@ -3,7 +3,7 @@ layout: post
 title: "Blaring Backgrounds"
 date: 2015-06-13 12:15:00
 image_name: "Blaring-Backgrounds/bad-desktop.jpg"
-description: "What makes a great general-purpose photo does not necessarily make a great desktop background."
+excerpt: "What makes a great general-purpose photo does not necessarily make a great desktop background."
 categories:
   - Technology
   - OS X
