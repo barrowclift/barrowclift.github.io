@@ -72,7 +72,7 @@
     font-style: italic;
 }
 
-p, ol, ul {
+p, ol, ul, figcaption {
     font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -236,12 +236,23 @@ h6 {
 }
 
 /* Post Metadata Header (Time, Author, Category, etc.) */
-time {
+time, figcaption {
     font-size: 1.2rem;
-    text-align: left;
-    padding-top: 3px;
     display: block;
     color: #A0A8B6;
+}
+
+time {
+    text-align: left;
+    padding-top: 3px;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 0px;
+    line-height: 1.2em;
+    font-size: 0.8rem;
+    letter-spacing: 0.0625em;
 }
 
 #title {
@@ -328,6 +339,10 @@ main ol li > :last-child, main ul li > :last-child {
     line-height: 1.5em;
 }
 
+.tight-list {
+    margin-bottom: 0px;
+}
+
 /*
 ==================================================================
 ******                        CODE                          ******
@@ -336,7 +351,7 @@ main ol li > :last-child, main ul li > :last-child {
 
 pre, code {
     font-size: 1.2em;
-    line-height: 27px;
+    line-height: 1.4rem;
 }
 
 pre {
@@ -354,9 +369,6 @@ code {
     margin: 0;
     
     font-size: 85%;
-    
-    box-shadow: 0 0 1px rgba(20, 20, 20, .6);
-    background-color: rgba(0, 0, 0, .07);
     border-radius: 3px;
 }
 
@@ -597,6 +609,10 @@ article hr, footer hr, .dashed {
     max-width: 160px;
 }
 
+figure p {
+    text-align: center;
+}
+
 /*
 ==================================================================
 ******                   INPUT ELEMENTS                     ******
@@ -650,15 +666,36 @@ img.full-width {
     height: auto;
 }
 
+img.responsive-width {
+    display: inline-block;
+    max-width: 1600px;
+    max-height: none;
+    width: 100vw;
+    margin-left: -28vw;
+    margin-right: -28vw;
+    height: auto;
+}
+
+.blog-image-top-pad {
+    padding-top: 14px;
+}
+
+.blog-image-bottom-pad {
+    padding-bottom: 14px;
+}
+
 /* iOS screen shots (OS X Yosemite "window" blur otherwise window blends into
    website background) */
-img.ios-screen {
+img.shadow {
     box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+img.inline {
     margin-top: 20px;
     margin-bottom: 24px;
 }
 
-/* Float portrait images (will override optinos from default) */
+/* Float portrait images (will override options from default) */
 img.right-wrap, img.left-wrap {
     display: block;
     max-width: 100%;
@@ -1026,6 +1063,10 @@ body:before {
     time {
         font-size: 1.2rem;
     }
+    figcaption {
+        font-size: 0.9rem;
+        padding-top: 0px;
+    }
     #title {
         padding-left: 0%;
         padding-right: 0%;
@@ -1052,7 +1093,7 @@ body:before {
     /* Code */
     pre, code {
         font-size: 1.2em;
-        line-height: 27px;
+        line-height: 1.5rem;
     }
     code {
         font-size: 85%;
@@ -1115,7 +1156,13 @@ body:before {
         padding-top: 18px;
         padding-bottom: 18px;
     }
-    .ios-screen {
+    .blog-image-top-pad {
+        padding-top: 18px;
+    }
+    .blog-image-bottom-pad {
+        padding-bottom: 18px;
+    }
+    img.inline {
         margin-top: 27px;
         margin-bottom: 32px;
     }
@@ -1290,6 +1337,10 @@ body:before {
     time {
         font-size: 1.4rem;
     }
+    figcaption {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
     /* Lists */
     main ol, main ul {
         font-size: 1.4rem;
@@ -1312,7 +1363,7 @@ body:before {
     /* Code */
     pre, code {
         font-size: 1.4rem;
-        line-height: 2.1rem; /*27px*/
+        line-height: 1.8rem; /*27px*/
     }
     code {
         font-size: 85%;
@@ -1367,7 +1418,20 @@ body:before {
         padding-top: 28px;
         padding-bottom: 28px;
     }
-    .ios-screen {
+    .blog-image-top-pad {
+        padding-top: 0px;
+    }
+    .blog-image-bottom-pad {
+        padding-bottom: 0px;
+    }
+    img.responsive-width {
+        display: block;
+        max-width: 750px;
+        width: auto;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    img.inline {
         margin-bottom: 38px;
     }
     #logo, #failed-logo {

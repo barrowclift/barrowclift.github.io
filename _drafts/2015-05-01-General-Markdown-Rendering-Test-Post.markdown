@@ -181,7 +181,7 @@ If you indent at least four spaces or one tab, I'll display a code block.
 	print('This is a code block')
 	print('The block must be preceded by a blank line')
 	print('Then indent at least 4 spaces or 1 tab')
-		print('Nesting does nothing. Your code is displayed Literally')
+	print('Nesting does nothing. Your code is displayed Literally')
 
 I also know how to do something called [Fenced Code Blocks](#fenced-code-block) which I will tell you about later.
 
