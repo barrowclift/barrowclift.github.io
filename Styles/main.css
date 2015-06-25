@@ -4,7 +4,7 @@
  font-family: "Palatino";
  src: url('/Fonts/Palatino/palatino-regular.ttf');
  font-weight: normal;
- font-weight: normal;
+ font-style: normal;
 }
 @font-face {
  font-family: "Palatino";
@@ -24,10 +24,10 @@
  font-weight: bold;
  font-style: normal;
 }
-p, ol, ul, figcaption {
+p, ol, ul {
  font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
-menu ul, time, table, h1, h2, h3, h4, h5, h6, input, select, textarea, label, #bottom-banner-text, #bottom-navigation, .experience-list, .project-icon-title {
+menu ul, time, table, h1, h2, h3, h4, h5, h6, input, select, textarea, figcaption, label, #bottom-banner-text, #bottom-navigation, .experience-list, .project-icon-title {
  font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 pre, code {
