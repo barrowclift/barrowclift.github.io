@@ -48,7 +48,7 @@ title: Archive
 
     {% for post in site.posts %}
         <li style="margin-bottom:0.6rem;">
-            <a class="text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak">- {{ post.date | date: "%B %-d, %Y" }}</span>
+            <a class="text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak"> - {{ post.date | date: "%B %-d, %Y" }}</span>
         </li>
     {% endfor %}
 
