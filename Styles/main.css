@@ -24,6 +24,12 @@
  font-weight: bold;
  font-style: normal;
 }
+@font-face {
+ font-family: 'AdelleSans';
+ src: url('/Fonts/Adelle-Sans/adellesans-regular-webfont.ttf');
+ font-weight: normal;
+ font-style: normal;
+}
 p, ol, ul {
  font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
 }
