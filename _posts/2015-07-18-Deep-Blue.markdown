@@ -7,6 +7,7 @@ categories:
   - Apps
   - Health
 excerpt: "Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it's no coincidence."
+image_name: "Deep-Blue/blue-light-laptop.jpg"
 ---
 
 <figure markdown="1">
