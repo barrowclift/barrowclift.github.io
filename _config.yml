@@ -15,7 +15,7 @@ safe: true
 
 # Build settings
 markdown: kramdown
-paginate: 10 # Number of posts to be shown on each each paginated page.
+paginate: 5 # Number of posts to be shown on each each paginated page.
 
 defaults:
   -
