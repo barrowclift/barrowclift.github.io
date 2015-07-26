@@ -26,3 +26,16 @@ Separate Background Image suggestion into completely separate post ("Home Sweet 
 THEN have app suggestion post ("App Suggestions", "App Suggestions for Power Users", etc.)
 
 http://cssminifier.com Used for all CSS Minification
+
+#### In the Browse section
+
+Have a Star or Medal icon for "Best of"
+Have a tag icon for "Tags"
+
+#### In the Archive page
+
+There needs to be a better way to separate or divide up these posts (by year categories?)
+
+#### In the newsletter subscription page
+
+It's terrible
