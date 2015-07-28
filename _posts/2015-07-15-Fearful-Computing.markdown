@@ -8,6 +8,7 @@ categories:
   - iOS
   - Windows
   - Pokémon
+  - Stories
 excerpt: "Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window."
 image_name: "Fearful-Computing/windows-desktop.jpg"
 ---

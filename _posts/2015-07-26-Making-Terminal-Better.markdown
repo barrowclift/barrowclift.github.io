@@ -6,7 +6,7 @@ description: "Most developers can agree Terminal is great for productivity. Usab
 image_name: "Making-Terminal-Better/banner-image.png"
 categories:
   - Technology
-  - Developer
+  - Programming
   - Unix
   - OS X
 ---

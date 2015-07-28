@@ -1,43 +1,40 @@
 /* FONTS ========================================================== */
 
-@font-face {
- font-family: "Palatino";
- src: url('/Fonts/Palatino/palatino-regular.ttf');
- font-weight: normal;
- font-style: normal;
+p, ol, ul, .bigfoot-footnote__content p,
+figcaption, table,
+menu ul, time, h1, h2, h3, h4, h5, h6,
+input, select, textarea, label,
+#bottom-banner-text, #bottom-navigation, .experience-list, .project-icon-title {
+ font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-@font-face {
- font-family: "Palatino";
- src: url('/Fonts/Palatino/palatino-bold.ttf');
+p, ol, ul, h5, h4, .bigfoot-footnote__content p
+table, figcaption, label
+menu ul,
+textarea, input, .experience-list, time, #bottom-banner-text {
+ font-weight: normal;
+}
+input, textarea {
+ letter-spacing: 1px;
+}
+h1, h2, h3 
+#bottom-navigation {
  font-weight: bold;
- font-style: normal;
-}
-@font-face {
- font-family: "Palatino";
- src: url('/Fonts/Palatino/palatino-italic.ttf');
- font-weight: normal;
- font-style: italic;
-}
-@font-face {
- font-family: 'AdelleSans';
- src: url('/Fonts/Adelle-Sans/adellesans-regular-webfont.ttf');
- font-weight: normal;
- font-style: normal;
-}
-@font-face {
- font-family: 'AdelleSans';
- src: url('/Fonts/Adelle-Sans/adellesans-bold-webfont.ttf');
- font-weight: bold;
- font-style: normal;
-}
-p, ol, ul {
- font-family: 'Palatino', Palatino, Georgia, Times, 'Times New Roman', serif;
-}
-menu ul, time, table, h1, h2, h3, h4, h5, h6, input, select, textarea, figcaption, label, #bottom-banner-text, #bottom-navigation, .experience-list, .project-icon-title, .bigfoot-footnote__content p {
- font-family: 'AdelleSans', Adelle Sans, Adelle, "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 pre, code {
- font-family: Consolas, Monaco, 'Andale Mono', monospace;
+ font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+p, h4, blockquote, main ol, main ul, table, time {
+ font-size: 14px;
+ line-height: 23px;
+}
+.footnotes ol li p, .footnotes ol, figcaption, pre {
+ font-size: 12px;
+ line-height: 19px;
+}
+h5, #bottom-navigation {
+ font-size: 18px;
+ line-height: 28px;
 }
 
 /* NAVIGATION ===================================================== */
@@ -73,6 +70,8 @@ menu {
   main menu bar
   */
   position: relative;
+ 
+  letter-spacing: 0.1px;
   margin-right: 5px;
  }
  menu ul:after {
@@ -83,7 +82,7 @@ menu {
  /* ---------- SUBMENU SPACING, SUB AND MAIN STYLE, AND POSITIONING ---------- */
  menu ul li {
   display: inline-block;
-  margin-right: -4px;
+  margin-right: -6px;
   transition: background-color .1s linear;
   padding-top: 2px;
  }
@@ -127,23 +126,23 @@ menu {
 
 /* Page Headers */
 h1 {
- font-size: 2.4rem;
+ font-size: 1.95rem;
  line-height: 1em;
  font-weight: bold;
  text-align: center;
  margin-top: 10px;
- margin-bottom: 10px;
+ margin-bottom: 5px;
 }
 /* Post Titles */
 h2 {
- font-size: 1.8rem;
+ font-size: 1.4rem;
  line-height: 1.15384615em;
  font-weight: bold;
  text-align: left;
 }
 /* Post Sections */
 h3 {
- font-size: 1.4rem;
+ font-size: 1.3rem;
  line-height: 1.13636364em;
  font-weight: bold;
  text-align: left;
@@ -151,40 +150,27 @@ h3 {
  margin-bottom: 15px;
 }
 h4 {
- font-size: 1.2rem;
- line-height: 28px;
  color: #A0A8B6;
 }
 /* Anything else (basically p) */
-h5  {
- font-size: 1.1em;
- line-height: 1.5em;
+h5 {
  text-align: left;
-}
-h6 {
- font-size: 0.7rem;
- line-height: 16px;
- color: #A0A8B6;
- text-align: left;
- max-width: 300px;
 }
 /* Post Metadata Header (Time, Author, Category, etc.) */
 time, figcaption {
- font-size: 1.2rem;
  display: block;
- color: #A0A8B6;
+ color: #A0A8B6;  
 }
 time {
+ line-height: 14px;
  text-align: left;
- padding-top: 3px;
+ padding-top: 5px;
 }
 figcaption {
  text-align: center;
  width: auto;
  margin: 0 auto;
  padding-top: 0px;
- line-height: 1.2em;
- font-size: 0.8rem;
  letter-spacing: 0.0625em;
 }
 #title {
@@ -220,8 +206,6 @@ blockquote > :last-child {
 /* LISTS ========================================================== */
 
 main ol, main ul {
- font-size: 1.2rem;
- line-height: 27px;
  text-align: left;
  margin-top: 20px;
  padding-left: 30px;
@@ -241,7 +225,7 @@ main ol li > :last-child, main ul li > :last-child {
 #archive-list {
  list-style: none;
  margin-top: 20px;
- line-height: 25px;
+ line-height: 14px;
  margin-left: 0px;
  padding-left: 0px;
 }
@@ -255,13 +239,9 @@ main ol li > :last-child, main ul li > :last-child {
 
 /* CODE =========================================================== */
 
-pre, code {
- font-size: 1rem;
- line-height: 1.2rem;
-}
 pre {
- font-size: 1rem;
- line-height: 1.2rem;
+ line-height: 14px;
+
  overflow: auto;
  border-radius: 0.35em;
  margin-top: 20px;
@@ -269,6 +249,7 @@ pre {
  word-wrap: normal;
 }
 code {
+ font-size: 90%;
  padding: 0;
  padding-top: 0.2em;
  padding-bottom: 0.2em;
@@ -342,7 +323,7 @@ pre ::selection, code ::selection {
 /* TABLES ========================================================= */
 
 table {
- font-size: 1.2rem;
+ line-height: 0;
  display: block;
  width: 100%;
  overflow: auto;
@@ -381,9 +362,6 @@ hr:after {
 
 /* OME PAGE PREV/NEW FOOTER ======================================= */
 
-#bottom-navigation {
- font-size: 1.2rem;
-}
 #bottom-tools {
  padding-top: 50px;
 }
@@ -439,8 +417,6 @@ html, body {
  height: 100%;
 }
 p {
- font-size: 1.2rem;
- line-height: 27px;
  text-align: left;
  margin-top: 20px;
 }
@@ -619,12 +595,7 @@ video {
 
 /* FOOTNOTES ====================================================== */
 
-.footnotes ol li p {
- font-size: 0.95rem;
-}
 .footnotes ol {
- font-size: 0.95rem;
- line-height: 1.5rem;
  margin-left: 19px;
  padding-left: 0px;
 }
@@ -746,6 +717,9 @@ body:before {
 .small-top-pad {
  margin-top: 8px;
 }
+.normal-top-pad {
+ margin-top: 20px;
+}
 .small-bottom-pad {
  margin-bottom: 8px;
 }
@@ -765,60 +739,69 @@ body:before {
 .massive-left-pad {
  padding-left: 30px;
 }
+.divider {
+ padding-left:25px;
+ padding-right:25px;
+}
 
 /* RESPONSIVE DESIGN ============================================== */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 43.75rem) {
+ p, h4, blockquote, main ol, main ul, table, time,
+ h5, #bottom-navigation {
+  font-size: 18px;
+  line-height: 28px;
+ }
+ .footnotes ol li p, .footnotes ol, figcaption, pre {
+  font-size: 14px;
+  line-height: 24px;
+ }
+
  /* Navigation */
  menu {
-  font-size: 1.55em;
+  font-size: 1.4em;
  }
  menu ul {
-  margin-right: 5px;
+  letter-spacing: 0px;
+  margin-right: 6px;
  }
  menu ul li {
-  margin-right: -5px;
+  margin-right: -6px;
   padding-top: 2px;
  }
  /* Titles */
  h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.125em;
   margin-top: 15px;
   margin-bottom: 5px;
  }
  h2 {
-  font-size: 2.2em;
-  line-height: 1.25em;
+  font-size: 1.7em;
+  line-height: 1.2em;
  }
  h3 {
   font-size: 1.6rem;
-  line-height: 1.24em;
+  line-height: 1.2em;
   margin-top: 45px;
   margin-bottom: 25px;
  }
  .project-icon-text h3 {
   line-height: 35px;
  }
+ .bigfoot-footnote__button {
+  font-size: 16px;
+ }
  h4 {
-  font-size: 1.5rem;
-  line-height: 35px;
- }
- h5 {
-  font-size: 1.2em;
-  line-height: 1.22222222em;
- }
- h6 {
-  font-size: 0.8rem;
-  line-height: 18px;
-  max-width: 350px;
+  font-size: 1.4rem;
+  line-height: 30px;
  }
  time {
-  font-size: 1.2rem;
+  line-height: 14px;
+  padding-top: 8px;
  }
  figcaption {
-  font-size: 0.9rem;
   padding-top: 0px;
  }
  #title {
@@ -827,8 +810,6 @@ body:before {
  }
  /* Lists */
  main ol, main ul {
-  font-size: 1.2rem;
-  line-height: 1.85rem;
   margin-top: 26px;
   padding-left: 40px;
  }
@@ -840,31 +821,21 @@ body:before {
  }
  #archive-list {
   margin-top: 18px;
- }
- .experience-list {
-  font-size: 1.2em;
+  line-height: 20px;
  }
  /* Code */
- pre, code {
-  line-height: 1.3rem; /*27px*/
-  font-size: 1rem;
- }
  pre {
+  line-height: 18px;
   margin-top: 27px;
   margin-bottom: 32px;
  }
  /* Tables */
  table {
-  font-size: 1.2rem;
-  margin-top: 27px;
   margin-bottom: 32px;
  }
  /* Home Page Prev/New Footer */
  #navigation-previous, #navigation-next {
   line-height: 24pt;
- }
- #bottom-navigation {
-  font-size: 1.2rem;
  }
  #bottom-tools {
   padding-top: 70px;
@@ -879,8 +850,6 @@ body:before {
   max-width: 648px;
  }
  p {
-  font-size: 1.2rem;
-  line-height: 1.85rem;
   margin-top: 26px;
  }
  hr {
@@ -985,10 +954,12 @@ body:before {
  }
  /* Footnotes */
  .footnotes ol li p {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
  }
  .footnotes ol {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
   margin-left: 20px;
  }
  .footnotes ol li {
@@ -1041,33 +1012,51 @@ body:before {
  .massive-left-pad {
   padding-left: 40px;
  }
+ .divider {
+  padding-left: 40px;
+  padding-right: 40px;
+ }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 56.25em) {
+ p, h4, blockquote, main ol, main ul, table, time,
+ h5, #bottom-navigation {
+  font-size: 21px;
+  line-height: 32px;
+ }
+ .footnotes ol li p, .footnotes ol, figcaption, pre {
+  font-size: 16px;
+  line-height: 26px;
+ }
+
  /* Navigation */
  menu {
   font-size: 1.75em; /* 1.8em when bold */
  }
  menu ul {
-  margin-right: 5px; /* 5px when bold */
+  letter-spacing: 0px;
+  margin-right: 7px;
  }
  menu ul li {
-  margin-right: -6px; /* -5px when bold */
+  margin-right: -8px;
   padding-top: 3px;
  }
  /* Titles */
  h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
  }
  h2 {
-  font-size: 2.6rem;
-  line-height: 1.25em;
+  font-size: 2rem;
+  line-height: 1.3em;
  }
  h3 {
-  font-size: 2rem;
-  line-height: 1.25em;
+  font-size: 1.9rem;
+  line-height: 1.3em;
   margin-top: 50px;
   margin-bottom: 30px;
+ }
+ .bigfoot-footnote__button {
+  font-size: 18px;
  }
  .project-icon-text h3 {
   line-height: 41px;
@@ -1077,25 +1066,16 @@ body:before {
   line-height: 41px;
  }
  h5 {
-  font-size: 1.4rem;
   line-height: 1.33333333em;
  }
- h6 {
-  font-size: 0.9rem;
-  line-height: 20px;
-  max-width: 400px;
- }
  time {
-  font-size: 1.4rem;
+  line-height: 18px;
  }
  figcaption {
-  font-size: 1rem;
   padding-top: 10px;
  }
  /* Lists */
  main ol, main ul {
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   margin-top: 32px;
   padding-left: 60px;
  }
@@ -1107,25 +1087,20 @@ body:before {
  }
  #archive-list {
   margin-top: 28px;
- }
- .experience-list {
-  font-size: 1.4rem;
+  line-height: 24px;
  }
  /* Code */
  pre {
+  line-height: 19px;
   margin-top: 32px;
   margin-bottom: 38px;
  }
  /* Tables */
  table {
-  font-size: 1.4rem;
   margin-top: 32px;
   margin-bottom: 38px;
  }
  /* Home Page Prev/New Footer */
- #bottom-navigation {
-  font-size: 1.4rem;
- }
  #bottom-tools {
   padding-top: 75px;
  }
@@ -1137,8 +1112,6 @@ body:before {
   max-width: 750px;
  }
  p {
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   margin-top: 32px;
  }
  hr {
@@ -1219,11 +1192,12 @@ body:before {
  }
  /* Footnotes */
  .footnotes ol li p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
  }
  .footnotes ol {
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   margin-left: 23px;
  }
  .footnotes ol li {
@@ -1240,7 +1214,7 @@ body:before {
  }
  #bottom-banner-text {
   font-size: 1em;
-  padding-top: 3px;
+  padding-top: 2px;
  }
  /* Buttons */
  .homemade-app-button {
