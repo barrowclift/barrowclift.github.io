@@ -31,9 +31,6 @@ defaults:
 gems:
   - jemoji
 
-kramdown:
-  footnote_backlink: ‘&#8617;&#65038;’
-
 # "Jekyll Pages Directory Plugin"
 # https://github.com/bbakersmith/jekyll-pages-directory
 # Allows me to put all my custom-made static pages in a directory in the

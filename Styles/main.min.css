@@ -21,7 +21,7 @@ h1, h2, h3
  font-weight: bold;
 }
 pre, code {
- font-family: Consolas, Monaco, "Courier New", monospace;
+ font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
 }
 
 p, h4, blockquote, main ol, main ul, table, time {
@@ -1092,7 +1092,7 @@ body:before {
  }
  /* Code */
  pre {
-  line-height: 19px;
+  line-height: 20px;
   margin-top: 32px;
   margin-bottom: 38px;
  }
