@@ -19,7 +19,7 @@
 
 			{% include header.html %}
 
-			<div id="content" class="center {% if page.has-banner %}banner-media{% endif %}">
+			<div id="content" class="center {% if page.banner-image %}banner-media{% endif %} {% if page.is_post != true %}normal-code-blocks{% endif %}">
 				<main role="main" class="large-bottom-pad">
 
 					{{ content }}

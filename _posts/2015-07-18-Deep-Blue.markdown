@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: banner-post
 title:  "Deep Blue"
 date:   2015-07-18 17:00:00
 categories:
@@ -8,11 +8,10 @@ categories:
   - Health
 excerpt: "Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it's no coincidence."
 image_name: "Deep-Blue/blue-light-laptop.jpg"
+banner-image: "Deep-Blue/blue-light-laptop.jpg"
+banner-link: "https://www.youtube.com/watch?v=cDIRT_NEMxo"
+banner-hover: "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me."
 ---
-
-<figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Deep-Blue/blue-light-laptop.jpg){: .responsive-width}](https://www.youtube.com/watch?v=cDIRT_NEMxo "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me.")
-</figure>
 
 As a student that has for years now feverishly clacked away assignments deep into the night, f.lux is my easily most precious app. No longer do I have to be bathed in eerie, bright blue light in the night; my poor eyes instead are rewarded a much needed reprieve with a soothing, orange glow that steadily grows with the fading day.
 

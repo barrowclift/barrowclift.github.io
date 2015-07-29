@@ -82,8 +82,8 @@ Let's take compression, for example. The proper command to compress a tar of a g
 # Extract practically anything
 # Usage: $ extract {YOUR_ARCHIVE}
 extract () {
-	# Many thanks to Daniel Baldwin for providing the foundation for the command
-	# https://github.com/danielcbaldwin/dotfiles/blob/master/bash/plugins/extract.plugin.bash
+	# Many thanks to Daniel Baldwin (danielcbaldwin on GitHub) for providing
+	# the foundation used for the command.
 	#
 	# Must use "$@" if we want all arguments (with white space) to be treated
 	# As one file argument. This, however, restricts the command to one file 

@@ -28,6 +28,20 @@ layout: default
 			{% endif %}
 		</header>
 
+		{% if post.banner-image %}
+		<figure>
+			<p>
+				{% if post.banner-link %}
+				<a href="{{post.banner-link}}" {% if post.banner-hover %}title="{{post.banner-hover}}"{% endif %}>
+					<img src="/Images/Assets/{{ post.banner-image }}" alt="" class="responsive-width" /></a>
+				</a>
+				{% else %}
+				<img src="/Images/Assets/{{ post.banner-image }}" alt="" class="responsive-width" /></a>
+				{% endif %}
+			</p>
+		</figure>
+		{% endif %}
+
 		{{ post.content }}
 	</article>
 	{% assign count=count | plus:1 %}

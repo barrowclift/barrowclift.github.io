@@ -5,7 +5,13 @@ layout: default
 
 	<figure>
 		<p style="margin-top:0px;">
-			<img src="/Images/Assets/{{ page.banner-image }}" alt="" class="responsive-width" />
+			{% if page.banner-link %}
+			<a href="{{page.banner-link}}" {% if page.banner-hover %}title="{{page.banner-hover}}"{% endif %}>
+				<img src="/Images/Assets/{{ page.banner-image }}" alt="" class="post-banner" />
+			</a>
+			{% else %}
+			<img src="/Images/Assets/{{ page.banner-image }}" alt="" class="post-banner" />
+			{% endif %}
 		</p>
 	</figure>
 

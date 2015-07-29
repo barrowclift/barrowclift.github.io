@@ -488,7 +488,7 @@ img.full-width {
  margin-right: -28vw;
  height: auto;
 }
-img.responsive-width, video.responsive-width {
+img.responsive-width, video.responsive-width, .post-banner {
  display: inline-block;
  max-width: 1600px;
  max-height: none;
@@ -636,7 +636,7 @@ rest at the bottom of the page.
  color: #FAFAFA;
 }
 #bottom-banner-text {
- padding-top: 3px;
+ padding-top: 2.5px;
  height: auto;
  font-size: 0.7em;
  color: #FAFAFA;
@@ -1184,9 +1184,6 @@ body:before {
  #failed-logo {
   background-image: url("/Images/Favicons/favicon-bad-32x32@2x.png") !important;
   background-size: 32px 32px;
- }
- .banner-media {
-  margin-top: 45px !important;
  }
  .gallery-image {
   max-width: 247px;
