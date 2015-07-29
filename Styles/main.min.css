@@ -44,7 +44,7 @@ menu {
  text-align: center;
  font-size: 1.2rem;
  margin-left: 10px;
- margin-right:10px;
+ margin-right: 10px;
 }
  /*
  ---------- HIDING AND SHOWING SUB MENUS ----------
@@ -488,7 +488,7 @@ img.full-width {
  margin-right: -28vw;
  height: auto;
 }
-img.responsive-width {
+img.responsive-width, video.responsive-width {
  display: inline-block;
  max-width: 1600px;
  max-height: none;
@@ -536,17 +536,23 @@ img.right-wrap, img.left-wrap {
  background-image: url("/Images/Favicons/favicon-bad-24x24@2x.png") !important;
  background-size: 24px 24px;
 }
+#music-promotion {
+ width: 45vw;
+}
 .project-icon-image {
  max-width: 85px;
  padding-right: 10px;
+ display: block;
+ text-align: center !important;
 }
 .project-icon-text {
- display: inline-block;
- max-width: 425px;
+ display: block;
  margin-top: 0px;
+ text-align: center !important;
 }
 .project-icon-text h3 {
  line-height: 28px;
+ text-align: center !important;
 }
 .anonymouth-app-icon {
  width: 45%;
@@ -577,23 +583,20 @@ img.right-wrap, img.left-wrap {
  max-width: 150px;
  display: block;
 }
+.banner-media {
+ margin-top: 0px !important;
+}
 
 /* VIDEO ========================================================== */
 
-.video-container {
- position: relative;
-}
 video, canvas {
  top: 0;
  left: 0;
- width: 100%;
  max-width: 100%;
  height: auto;
 }
 video {
  width: 100%;
- height: 100%;
- position: absolute;
 }
 
 /* FOOTNOTES ====================================================== */
@@ -767,10 +770,10 @@ body:before {
  }
  menu ul {
   letter-spacing: 0px;
-  margin-right: 6px;
+  margin-right: 6.5px;
  }
  menu ul li {
-  margin-right: -6px;
+  margin-right: -6.5px;
   padding-top: 2px;
  }
  /* Titles */
@@ -790,8 +793,17 @@ body:before {
   margin-top: 45px;
   margin-bottom: 25px;
  }
+ .project-icon-image {
+  display: inline-block;
+  text-align: left !important;
+ }
+ .project-icon-text {
+  display: inline-block;
+  text-align: left !important;
+ }
  .project-icon-text h3 {
   line-height: 35px;
+  text-align: left !important;
  }
  .bigfoot-footnote__button {
   font-size: 16px;
@@ -853,6 +865,9 @@ body:before {
   max-width: 648px;
  }
  p {
+  margin-top: 26px;
+ }
+ .normal-top-pad {
   margin-top: 26px;
  }
  hr {
@@ -1117,6 +1132,9 @@ body:before {
  p {
   margin-top: 32px;
  }
+ .normal-top-pad {
+  margin-top: 32px;
+ }
  hr {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -1144,7 +1162,7 @@ body:before {
  .blog-image-bottom-pad {
   padding-bottom: 0px;
  }
- img.responsive-width {
+ img.responsive-width, video.responsive-width {
   display: block;
   max-width: 750px;
   width: auto;
@@ -1166,6 +1184,9 @@ body:before {
  #failed-logo {
   background-image: url("/Images/Favicons/favicon-bad-32x32@2x.png") !important;
   background-size: 32px 32px;
+ }
+ .banner-media {
+  margin-top: 45px !important;
  }
  .gallery-image {
   max-width: 247px;

@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<article>
+
+	<figure>
+		<p style="margin-top:0px;">
+			<img src="/Images/Assets/{{ page.banner-image }}" alt="" class="responsive-width" />
+		</p>
+	</figure>
+
+	<header role="header" class="normal-top-pad">
+		{% if page.link %}
+			<h2 class="center">
+				<a href="{{ page.link }}">{{ page.title }} ↦</a>
+			</h2>
+		{% else %}
+			<h2 class="center">
+				{{ page.title }}
+			</h2>
+		{% endif %}
+		<time itemprop="dateCreated" class="center">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+	</header>
+
+	{{ content }}
+
+	<footer class="large-top-pad large-bottom-pad">
+		<div>
+			<div class="bottom-tool-category">
+				<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Subscribe</h5>
+				<a href="{{ "/Newsletter" | prepend: site.baseurl }}">
+					<div class="round-button" style="text-align:center;">
+						<img class="button-default" src="{{ "/Images/Blog/newsletter.jpg" | prepend: site.baseurl }}" />
+						<img class="button-hover" src="{{ "/Images/Blog/newsletter-hover.jpg" | prepend: site.baseurl }}" src=""/>
+					</div>
+				</a>
+				<a href="{{ "/atom.xml" | prepend: site.baseurl }}">
+					<div class="round-button" style="text-align:center;">
+						<img class="button-default" src="{{ "/Images/Blog/rss.jpg" | prepend: site.baseurl }}" />
+						<img class="button-hover" src="{{ "/Images/Blog/rss-hover.jpg" | prepend: site.baseurl }}" src=""/>
+					</div>
+				</a>
+			</div>
+			
+			<div class="bottom-tool-category">
+				<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Browse</h5>
+				<a href="{{ "/Archive" | prepend: site.baseurl }}">
+					<div class="round-button" style="text-align:center;">
+						<img class="button-default" src="{{ "/Images/Blog/archive.jpg" | prepend: site.baseurl }}" />
+						<img class="button-hover" src="{{ "/Images/Blog/archive-hover.jpg" | prepend: site.baseurl }}" />
+					</div>
+				</a>
+			</div>
+		</div>
+	</footer>
+</article>
