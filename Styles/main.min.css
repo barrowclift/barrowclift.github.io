@@ -43,6 +43,8 @@ menu {
  display: inline-block;
  text-align: center;
  font-size: 1.2rem;
+ margin-left: 10px;
+ margin-right:10px;
 }
  /*
  ---------- HIDING AND SHOWING SUB MENUS ----------
