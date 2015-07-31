@@ -195,6 +195,7 @@ pre {
     margin-right: -28vw;
     margin-top: 36px;
     margin-bottom: 20px;
+    -webkit-text-size-adjust: none;
 }
 code {
     padding: 0;
