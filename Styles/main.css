@@ -101,7 +101,7 @@ table {
     }
 .footnotes ol li p,
 .footnotes ol,
-figcaption, #bottom-banner-text,
+figcaption, pre, #bottom-banner-text,
 input, select, textarea, button {
     font-size: 12px;
 }
@@ -110,13 +110,12 @@ input, select, textarea, button {
     figcaption {
         line-height: 23px;
     }
+    pre {
+        line-height: 16px;
+    }
     #bottom-banner-text {
         line-height: 12px;
     }
-pre {
-    font-size: 11px;
-    line-height: 14px;
-}
 code {
     font-size: 90%;
 }
