@@ -1,0 +1,35 @@
+main :not(li) > a {
+    color: black;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(li) > a:link {
+    color: black;
+}
+/* visited link */
+main :not(li) > a:visited {
+    color: black;
+}
+main :not(li) > a:hover {
+    color: #7BD657;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.school-icon {
+	display: block;
+	width: 2.8em;
+}
+
+@media (min-width: 43.75rem) {
+	.school-icon {
+		display: inline-block;
+		width: 5.5em;
+	}
+}
+@media (min-width: 56.25em) {
+	.school-icon {
+		width: 7.5em;
+	}
+}

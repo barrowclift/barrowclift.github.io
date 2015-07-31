@@ -12,7 +12,7 @@ categories:
 What makes a great general-purpose photo does not necessarily make a great desktop background. Bright, busy photos &#8212; while they may be beautiful art pieces &#8212; are oftentimes a poor choice of background since they end up polluting your screen with a cacophony of overly stimulating visual noise. If all of your two million pixels are bright colors screaming for attention it takes a non-trivial amount of processing to work out which of those pixels you want to focus on and to retain that focus as you work. Take for example this desktop sporting one of OS X Maverick's built-in backgrounds.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/bad-desktop.jpg){: .responsive-width}]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/bad-desktop.jpg "#subtlety")
+[![]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/bad-desktop.jpg){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/bad-desktop.jpg "#subtlety")
 {: .blog-image-top-pad}
 <figcaption>
 I'M SO GREEN! I'M SORRY ARE YOU TRYING TO FOCUS ON SOMETHING IMPORTANT?!
@@ -23,7 +23,7 @@ I'M SO GREEN! I'M SORRY ARE YOU TRYING TO FOCUS ON SOMETHING IMPORTANT?!
 Yikes. I'd elaborate on what's wrong with this background choice but I'm afraid you wouldn't be able to read it over the neon green nightmare screaming above. Let's pick something else...
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/good-desktop.jpg){: .responsive-width}]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/good-desktop.jpg)
+[![]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/good-desktop.jpg){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Blaring-Backgrounds/good-desktop.jpg)
 {: .blog-image-top-pad}
 <figcaption>
 Aaah, much better.

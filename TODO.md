@@ -5,6 +5,10 @@ TODO
 
 For articles that open with an image I really should have a nicer style for that
 
+#### Icons
+
+Am I sure there's no way for the smaller devices one to be more responsive?
+
 #### In the Browse section
 
 Have a Star or Medal icon for "Best of"
