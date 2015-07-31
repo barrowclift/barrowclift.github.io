@@ -101,7 +101,7 @@ table {
     }
 .footnotes ol li p,
 .footnotes ol,
-figcaption, pre, #bottom-banner-text,
+figcaption, pre, pre > code, #bottom-banner-text,
 input, select, textarea, button {
     font-size: 12px;
 }
@@ -117,7 +117,7 @@ input, select, textarea, button {
         line-height: 12px;
     }
 code {
-    font-size: 90%;
+    font-size: 13px;
 }
 
 /* TITLES ------------------------------------------------------------------- */
@@ -205,7 +205,6 @@ code {
 }
 pre > code {
     display: inline-block;
-    font-size: 100%;
     padding: 0;
     margin: 0;
     border: 0;
@@ -761,7 +760,7 @@ body:before {
         line-height: 14px;
     }
     code {
-        font-size: 85%;
+        font-size: 15px;
     }
 
 
@@ -803,10 +802,21 @@ body:before {
         margin-left: 8vw;
         margin-right: 8vw;
     }
+    .reserved-mode main article .highlight > pre {
+       display: block;
+       width: auto;
+       margin-left: 0;
+       margin-right: 0;
+       margin-top: 34px;
+       margin-bottom: 38px;
+    }
+    .reserved-mode main article .highlight > pre > code {
+       margin: 0;
+    }
     .reserved-mode main article .highlight pre,
     .reserved-mode main article .highlight > pre {
-        border-radius: 0px;
-        padding: 1em 0em;
+       border-radius: 3px;
+       padding: 1em;
     }
 
 
@@ -895,6 +905,13 @@ body:before {
     .list-thumbnail-image {
         display: inline-block;
         width: 3em;
+    }
+    .reserved-mode main article .edge-to-edge {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
 
 
@@ -1009,7 +1026,7 @@ body:before {
             line-height: 16px;
         }
     code {
-        font-size: 80%;
+        font-size: 15px;
     }
 
 
@@ -1037,23 +1054,7 @@ body:before {
 
     /* ----- CODE ----- */
     pre {
-     margin-top: 52px;
-    }
-    .reserved-mode main article .highlight > pre {
-       display: block;
-       width: auto;
-       margin-left: 0;
-       margin-right: 0;
-       margin-top: 34px;
-       margin-bottom: 38px;
-    }
-    .reserved-mode main article .highlight > pre > code {
-       margin: 0;
-    }
-    .reserved-mode main article .highlight pre,
-    .reserved-mode main article .highlight > pre {
-       border-radius: 3px;
-       padding: 1em;
+        margin-top: 52px;
     }
 
 
@@ -1136,13 +1137,6 @@ body:before {
     }
     .list-thumbnail-image {
         width: 4em;
-    }
-    .reserved-mode main article .edge-to-edge {
-        display: block;
-        max-width: 750px;
-        width: auto;
-        margin-left: 0vw;
-        margin-right: 0vw;
     }
 
 
