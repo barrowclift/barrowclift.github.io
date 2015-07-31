@@ -101,7 +101,7 @@ table {
     }
 .footnotes ol li p,
 .footnotes ol,
-figcaption, pre, pre > code, #bottom-banner-text,
+figcaption, pre > code, code, #bottom-banner-text,
 input, select, textarea, button {
     font-size: 12px;
 }
@@ -116,9 +116,6 @@ input, select, textarea, button {
     #bottom-banner-text {
         line-height: 12px;
     }
-code {
-    font-size: 13px;
-}
 
 /* TITLES ------------------------------------------------------------------- */
 
@@ -743,7 +740,7 @@ body:before {
         }
     .footnotes ol li p,
     .footnotes ol,
-    figcaption, pre,
+    figcaption, pre > code, code,
     input, select, textarea, button {
         font-size: 15px;
     }
@@ -758,9 +755,6 @@ body:before {
     #bottom-banner-text {
         font-size: 14px;
         line-height: 14px;
-    }
-    code {
-        font-size: 15px;
     }
 
 
@@ -1010,7 +1004,7 @@ body:before {
         }
     .footnotes ol li p,
     .footnotes ol,
-    figcaption, pre, #bottom-banner-text,
+    figcaption, pre > code, code, #bottom-banner-text,
     input, select, textarea, button {
         font-size: 16px;
     }
@@ -1025,9 +1019,6 @@ body:before {
         #bottom-banner-text {
             line-height: 16px;
         }
-    code {
-        font-size: 15px;
-    }
 
 
     /* ----- TITLES ----- */
