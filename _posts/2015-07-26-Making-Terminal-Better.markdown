@@ -3,7 +3,7 @@ layout: post
 title:  "Making Terminal Better"
 date:   2015-07-26 19:38:00
 description: "Most developers can agree Terminal is great for productivity. Usability? Not so much. Here's some quick tips to help humanize the grandfather of the GUI on OS X."
-image_name: "Making-Terminal-Better/banner-image.png"
+share-image: "Making-Terminal-Better/banner-image.png"
 categories:
   - Technology
   - Programming
@@ -25,7 +25,7 @@ In my opinion if there's anything you take your time to consider it should be yo
 To begin, let's look at OS X's default Terminal.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
+[![]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
 </figure>
 
 Yikes, this won't do at all. I've seen far too many friends and colleagues sticking with this or one of the other dreadful default themes available on OS X and I'm here to tell you there's a better way. By just taking a few moments to consider the points below we can transform your Terminal into something actually enjoyable to use (and sometimes even beautiful).
@@ -37,7 +37,7 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 Now, here's my current setup for inspiration:
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png)
+[![]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png)
 </figure>
 
 How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/Downloads/Making-Terminal-Better/Duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.

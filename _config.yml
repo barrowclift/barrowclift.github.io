@@ -24,7 +24,7 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
-      image_name:  # assume a default post doesn't have an image, /Images/Assets/${image_name}
+      share-image:  # assume a default post doesn't have an image, /Images/Assets/${share-image}
 
 # =========== PLUGINS ===========
 

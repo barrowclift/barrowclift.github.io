@@ -10,13 +10,13 @@ categories:
   - Pokémon
   - Stories
 excerpt: "Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window."
-image_name: "Fearful-Computing/windows-desktop.jpg"
+share-image: "Fearful-Computing/windows-desktop.jpg"
 ---
 
 When I was a child I &#8212; like most American children in the late 1990's &#8212; spent nearly all my car travel time engrossed in the world of Pokémon. The game cleverly leveraged the social pressures of competitive collecting utilized in the past for baseball cards with cute, digital monsters. Children were incentivized to trade with friends to obtain the bragging rights of collecting all 151 monsters which not only meant the game had a pervasive presence on the playground but also ensured that most of their free time would then be spent preparing for those trades by catching as many Pokémon as possible.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/cable-club.png){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/cable-club.png "Oh god it begins...")
+[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/cable-club.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/cable-club.png "Oh god it begins...")
 </figure>
 
 The actual process of trading in particular has remained curiously vivid in my mind after all these years. As far as I can confirm, the link cable used to connect the two Game Boys for the trade was my very first exposure to the concept of computer networking (albeit a very primitive implementation) and it scrambled my mind as a child. How on *earth* could it be possible to trade my digital monster companions using just a plain old cable? Despite the game's best efforts to abstract this complication away enough to ease its young players into the concept I remained terrified by it in my confusion. I was just so sure that I would find some way to screw it up and lose my monster, or worse, corrupt my game save. In fact, if I had my way I would have forgone trading entirely to remain in my little, comfortable island of understanding where I felt I had control.
@@ -36,34 +36,28 @@ Over the years I have witnessed and experienced many different manifestations of
 Why does such a thing happen? How could we let something like this dictate our actions for so long? Well let me assure you that once again the fault for these feelings of discomfort and bad experiences lies squarely on the developers and designers behind these systems and applications we interact with. __These poor experiences are never your fault. Ever__.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/windows-desktop.jpg){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/windows-desktop.jpg)
-{: .blog-image-top-pad}
+[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/windows-desktop.jpg){: .responsive}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/windows-desktop.jpg)
 <figcaption>
 This is the equivalent of the college professor who keeps every paper they own on their desk, also known as the default Windows experience
 </figcaption>
-{: .blog-image-bottom-pad}
 </figure>
 
 For one example let's look at the kitchen-sink desktops again, why are so many people afraid to use Windows Explorer to organize their files? The answer is quite clear, barring the barebones Linux console and other text-only UIs, Windows is hands down the worst implementation of the file system "desktop" paradigm in popular use today. It's the digital wild west, applications save scattered files and folders at seemingly random locations by default (often without the choice to change the location later) and usually next to what are actually "safe" folders meant for the users. Users have no mental model for what they can and cannot use freely and that model is in a constant state of flux. "Outlook" and "Custom Office Templates" folders are intruding in the user's Documents folder, "Lync Recordings" decided to show up in the user's home directory, and even still more garbage directories infest the drive root like Python installations and Apache libraries like tomcat if you're a developer. This gives the impression to users that the file system is not a safe place of their own but a place where things they don't understand or control rule. If there's a standard for these things Windows developers clearly don't have the discipline to follow it.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/internet-explorer.png){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/internet-explorer.png)
-{: .blog-image-top-pad}
+[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/internet-explorer.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/internet-explorer.png)
 <figcaption>
 You've never used a Windows computer before, let's play "guess what you have to double click to run your app"
 </figcaption>
-{: .blog-image-bottom-pad}
 </figure>
 
 And what of apps themselves? There's two application folders both with frightening and confusing names to normal users. What's "x86" mean[^x86]? Is "Program Files" files used by programs or programs themselves? Should I save my app to one of them? Which one? Even if a user can somehow guess their way through that mess even launching apps themselves is a disaster. Most Windows "apps" are actually just folders with a bunch of the applications resources and source files strewn about with a few .exe files, one of which is the one you're *actually* supposed to double click to launch the app (common apps guilty of the practice are Google Chrome, Notepad++, and Skype to name a few). Microsoft has tried to alleviate this by allowing app launching from the Start Menu but the messy implementation is still right there in plain view for everyone to stumble into and see. It's design like this that has scared the majority of desktop PC users away from the file system for years and makes them uncomfortable saving or accessing any file, folder, or application that isn't on their desktop.
 
 <figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/os-x-desktop.jpg){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/os-x-desktop.jpg "Amazing what some design competency can do, right?")
-{: .blog-image-top-pad}
+[![]({{ site.baseurl }}/Images/Assets/Fearful-Computing/os-x-desktop.jpg){: .responsive}]({{ site.baseurl }}/Images/Assets/Fearful-Computing/os-x-desktop.jpg "Amazing what some design competency can do, right?")
 <figcaption>
 No desktop shortcuts by default and apps are lovely, launchable, secret folders.
 </figcaption>
-{: .blog-image-bottom-pad}
 </figure>
 
 OS X's file system offers some much needed improvements like the consolidation and bundling of system files, keeping the user's home directory and sub directories as clean as possible through standards the majority of developers actually care enough to adhere to, and making apps a special launchable folder called an app bundle so the users never have to trek inside to launch it. It is certainly not without it's flaws though since OS X &#8212; like Windows &#8212; has two completely separate Application folders (which one should you choose?) and a "browser" style Finder application that oftentimes decides at random to garble folder contents like a digital tornado went through or randomly change the view style or window size of Finder windows.
