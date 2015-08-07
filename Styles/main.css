@@ -306,6 +306,7 @@ article img {
     margin: 0 auto;
 }
 
+
 figure {
     padding-top: 14px;
     padding-bottom: 14px;
@@ -322,18 +323,65 @@ figcaption {
 }
 
 
-.edge-to-edge {
+/****** ALL IMAGES TYPES FOR USE IN BLOG ******/
+/* A true, edge-to-edge image. To be used for full-blown banners and scenic,
+image heavy adventure posts like the Sibs Trip. Should be used rarely and with
+extreme deliberation. */
+.edge-to-edge,
+/* Used for most post images. Responsive images will be edge-to-edge on small
+devices and on medium devices in post view but will switch to large, inline
+images on home view on medium devices and both views on large devices to
+provide a better viewing experience on large screens. */
+.responsive,
+/* There are some rare cases where images actually shouldn't spill past the
+text's width bounds since they then take over the vertical space and become an
+uncomfortable waste of space. (square images mostly). In these cases it
+actually makes more sense to have the image be edge-to-edge only on small
+devices then switch to bound, inline images on medium and large devices
+in both views. */
+.bound-responsive,
+/* For non-blog post banners (About page, Code project pages, etc.) that I
+personally think shouldn't be a full blown banner and work better as a "shy"
+banner that acts edge-to-edge in almost all cases except large devices where
+it switches back to a large, inline image with padding. */
+.shy-banner {
     display: inline-block;
+    height: auto;
+    width: 100vw;
     max-width: 1600px;
     max-height: none;
-    width: 100vw;
     margin-left: -28vw;
     margin-right: -28vw;
-    height: auto;
 }
-.banner {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
+
+
+/* iOS screen shots (OS X Yosemite "window" blur otherwise window blends into
+website background)*/
+.screenshot-shadow {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+/* The size of the iOS screenshot will change depending on how many should be
+shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
+there's a way to do so with the way the rest of the content is currently
+flowed (my responsive stuff is basically a hack as is...) */
+.ios-one-screen,
+.ios-two-screens,
+.ios-three-screens {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.ios-one-screen {
+    max-width: 70vw;
+}
+.ios-two-screens {
+    max-width: 43vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.ios-three-screens {
+    max-width: 28vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 
@@ -452,6 +500,10 @@ button {
 .divider {
     padding-left: 15px;
     padding-right: 15px;
+}
+.banner-padding {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
 }
 
 
@@ -797,6 +849,10 @@ body:before {
         margin-left: 8vw;
         margin-right: 8vw;
     }
+    /* When on the home view we want all images AND code blocks to actually be
+    bound, inline objects to provide a less distracting view of the post for
+    speed reading and/or binge reading. This will still allow the code blocks
+    to be completely edge-to-edge in the dedicated post view.*/
     .reserved-mode main article .highlight > pre {
        display: block;
        width: auto;
@@ -827,6 +883,50 @@ body:before {
     /* ----- GENERIC IMAGES ----- */
     figcaption {
         padding-top: 0px;
+    }
+    /* When on the home view we want all images AND code blocks to actually be
+    bound, inline objects to provide a less distracting view of the post for
+    speed reading and/or binge reading. This will still allow the code blocks
+    to be completely edge-to-edge in the dedicated post view.*/
+    .reserved-mode main article .bound-responsive,
+    .reserved-mode main article .edge-to-edge,
+    .reserved-mode main article .responsive {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    /* From here one out bound-responsive images will never be larger than the width
+       bounds of the enclosing text. */
+    .bound-responsive {
+        max-width: 648px;
+        width: auto;
+    }
+    .ios-one-screen {
+        max-width: 350px;
+    }
+    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
+       but stay bound for home view. */
+    .ios-two-screens {
+        max-width: 45vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .reserved-mode main article .responsive p a .ios-two-screens {
+        max-width: 290px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    .ios-three-screens {
+        max-width: 28vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .reserved-mode main article .responsive p a .ios-three-screens {
+        max-width: 195px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
 
@@ -900,13 +1000,6 @@ body:before {
     .list-thumbnail-image {
         display: inline-block;
         width: 3em;
-    }
-    .reserved-mode main article .edge-to-edge {
-        display: block;
-        max-width: 100%;
-        width: auto;
-        margin-left: 0vw;
-        margin-right: 0vw;
     }
 
 
@@ -1047,6 +1140,7 @@ body:before {
     /* ----- CODE ----- */
     pre {
         margin-top: 52px;
+        max-width: 1200px;
     }
 
 
@@ -1063,7 +1157,50 @@ body:before {
     figcaption {
         padding-top: 10px;
     }
-
+    /* Hard-coded adjustment of the bound-responsive image width to match the text's
+       width */
+    .bound-responsive {
+        max-width: 750px
+    }
+    .responsive {
+        max-width: 1200px;
+        width: 100vw;
+    }
+    .shy-banner {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 50px;
+    }
+    .ios-one-screen {
+        max-width: 375px;
+    }
+    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
+       but stay bound for home view. */
+    .ios-two-screens {
+        width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 400px;
+    }
+    .reserved-mode main article .responsive p a .ios-two-screens {
+        max-width: 332px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ios-three-screens {
+        width: 25vw;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 355px;
+    }
+    .reserved-mode main article .responsive p a .ios-three-screens {
+        max-width: 205px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 
     /* ----- FOOTNOTES ----- */
     .footnotes ol {

@@ -23,7 +23,7 @@ defaults:
       path: ""      # empty string for all files
       type: posts   # limit to posts
     values:
-      is_post: true # automatically set is_post=true for all posts
+      post-view: true # automatically set post-view=true for all posts
       share-image:  # assume a default post doesn't have an image, /Images/Assets/${share-image}
 
 # =========== PLUGINS ===========

@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/Images/Favicons/apple-touch-icon-180x180.png" | prepend: site.baseurl }}" />
 	<link rel="shortcut icon" href="{{ "/Images/Favicons/favicon.ico" | prepend: site.baseurl }}" />
 	<link rel="manifest" href="{{ "/Images/Favicons/manifest.json" | prepend: site.baseurl }}" />
-	
+
 	<meta name="application-name" content="The Barrow Man" />
 	<meta name="msapplication-TileColor" content="#fafafa" />
 	<meta name="msapplication-TileImage" content="{{ "/Images/Favicons/mstile-144x144.png" | prepend: site.baseurl }}" />
@@ -31,13 +31,15 @@
 	<link rel="stylesheet" href="{{ "/Styles/Min/syntax.min.css" | prepend: site.baseurl }}" type="text/css" />
 	<link rel="stylesheet" href="{{ "/Styles/Min/anchor.min.css" | prepend: site.baseurl }}" type="text/css" />
 	<link rel="stylesheet" href="{{ "/Styles/Min/theme-blue.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
-	<script src="{{ "/Scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/Scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/Scripts/anchor.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/Scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/Scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/Scripts/anchor.min.js" | prepend: site.baseurl }}"></script>
 	<script>
 		$.bigfoot({
-			// {% if page.is_post %}
+			// Uncomment to hide inline footnotes from home view
+			// {% if page.post-view %}
 			// actionOriginalFN: "ignore",
 			// {% endif %}
 			actionOriginalFN: "ignore",
@@ -45,7 +47,7 @@
 		});
 	</script>
 	<script>
-		{% if page.is_post %}
+		{% if page.post-view %}
 		$(document).ready(function() {
 			$('h3').anchor({
 				symbol: '#'
@@ -57,7 +59,7 @@
 	<link rel="canonical" href="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/Page/2/" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}" />
+	<meta property="og:type" content="{% if page.post-view %}article{% else %}website{% endif %}" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -65,7 +67,7 @@
 	{% if page.share-image %}
 	<meta property="og:image" content="{{ site.url }}/Images/Assets/{{ page.share-image }}"/>
 	{% else %}
-	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-600x314.png"/>
+	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-600x314@2x.png"/>
 	{% endif %}
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<title>{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}</title>
@@ -77,7 +79,7 @@
 	{% if page.share-image %}
 	<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.share-image }}" />
 	{% else %}
-	<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-600x314.png" />
+	<meta name="twitter:image" content="{{ site.url }}/Images/Favicons/favicon-600x314@2x.png" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
 	<meta property="fb:admins" content="1665270112" />

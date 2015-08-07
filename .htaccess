@@ -1,0 +1,4 @@
+    #FileETag none
+############################################
+## FOR NGINX, LIGHTTPD, VARNISH OR ANY OTHER REVERSE PROXY TO APACHE
+SetEnvIf X-Forwarded-Proto https HTTPS=on

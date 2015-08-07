@@ -1,14 +1,6 @@
 TODO
 =================
 
-#### Article Banners
-
-For articles that open with an image I really should have a nicer style for that
-
-#### Icons
-
-Am I sure there's no way for the smaller devices one to be more responsive?
-
 #### In the Browse section
 
 Have a Star or Medal icon for "Best of"
@@ -60,11 +52,6 @@ There needs to be a better way to separate or divide up these posts (by year cat
 #### In the Music page
 
 Bare, probably should get started on that website
-
-#### In the Code page
-
-~~My God this is really bad responsive design, fix it~~
-Well, it's *kinda* fixed I guess.
 
 #### In the newsletter subscription page
 

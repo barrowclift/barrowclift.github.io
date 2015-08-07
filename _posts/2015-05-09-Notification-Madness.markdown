@@ -2,7 +2,10 @@
 layout: post
 title:  "Notification Madness"
 date:   2015-05-09 19:00:00
-categories: Technology iOS Notifications
+categories:
+  - Technology
+  - iOS
+  - Notifications
 excerpt: "Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn't have to be this way!"
 ---
 
