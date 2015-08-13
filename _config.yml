@@ -30,7 +30,7 @@ defaults:
 
 gems:
   - jemoji
-
+  
 # "Jekyll Pages Directory Plugin"
 # https://github.com/bbakersmith/jekyll-pages-directory
 # Allows me to put all my custom-made static pages in a directory in the
