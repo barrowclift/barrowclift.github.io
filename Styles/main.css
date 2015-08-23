@@ -251,13 +251,15 @@ pre ::selection, code ::selection {
     background: hsla(54, 8%, 26%, 0.9);
 }
 :not(pre) > code {
-    box-shadow: 0 0 1px rgba(20, 20, 20, .6);
     background-color: rgba(0, 0, 0, .07);
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     padding: .15em .4em;
     margin-left: 0em;
     margin-right: 0em;
     word-wrap: break-word;
+}
+a > code {
+    color: black;
 }
 .highlight {
     width: 100%;
