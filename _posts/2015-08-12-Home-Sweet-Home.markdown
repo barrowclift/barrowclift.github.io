@@ -27,13 +27,13 @@ First thing's first, you should consider deleting any of the apps on your phone 
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/settings.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/settings.jpg)
+[![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/settings.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/settings.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/general.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/general.jpg)
+[![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/general.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/general.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/usage.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/usage.jpg)
+[![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/usage.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/usage.jpg)
 </figure>
 </div>
 
@@ -57,11 +57,11 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-1.png)
+[![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-1.png)
 {: style="margin-top:0px;"}
 </figure>
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-2.png)
+[![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/creative-folder-page-2.png)
 {: style="margin-top:0px;"}
 </figure>
 </div>
@@ -70,11 +70,11 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-1.png)
+[![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-1.png)
 {: style="margin-top:0px;"}
 </figure>
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-2.png)
+[![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/games-folder-page-2.png)
 {: style="margin-top:0px;"}
 </figure>
 </div>
@@ -83,7 +83,7 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/media-folder.png){: .ios-one-screen}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/media-folder.png)
+[![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/media-folder.png){: .ios-one-screen}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/media-folder.png)
 {: style="margin-top:0px;"}
 </figure>
 </div>
@@ -92,11 +92,11 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-1.png)
+[![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-1.png)
 {: style="margin-top:0px;"}
 </figure>
 <figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-2.png)
+[![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/services-folder-page-2.png)
 {: style="margin-top:0px;"}
 </figure>
 </div>
@@ -111,7 +111,7 @@ Now all you need to do is decide the final order of these various pieces you've 
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/home-screen.jpg){: .screenshot-shadow .ios-one-screen}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/home-screen.jpg)
+[![My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/home-screen.jpg){: .screenshot-shadow .ios-one-screen}]({{ site.baseurl }}/Images/Assets/Home-Sweet-Home/home-screen.jpg)
 </figure>
 </div>
 

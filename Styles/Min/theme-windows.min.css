@@ -1,1 +1,63 @@
-menu ul li:hover>a{color:#FAFAFA}.active-link{color:#0B0BA5}.hover:hover,.main-color{background-color:#0B0BA5}menu ul li ul li a{color:#ABAAAB}::selection{background:#ABAAAB;color:#FAFAFA}::-moz-selection{background:#ABAAAB;color:#FAFAFA}.text-link{color:#0B0BA5;-webkit-transition:color .2s linear;transition:color .2s linear}.text-link:link,.text-link:visited{color:#0B0BA5}.text-link:hover{color:#2268AD;-webkit-transition:color .2s linear;transition:color .2s linear}h1 a{color:#0B0BA5;-webkit-transition:color .2s ease;transition:color .2s ease}h1 a:link,h1 a:visited{color:#000}h1 a:hover{color:#0B0BA5;-webkit-transition:color .2s ease;transition:color .2s ease}
+/*
+Main Menu
+*/
+menu ul li:hover > a {
+    color: #ABAAAB;
+}
+menu ul, .main-color {
+    background-color: #0041FF;
+}
+.hover:hover {
+    background-color: white;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+::selection {
+    background: #ABAAAB;
+    color: white;
+}
+/* Firefox */
+::-moz-selection {
+    background: #ABAAAB;
+    color: white;
+}
+
+/*
+Text Links
+*/
+.text-link {
+    color: #0041FF;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.text-link:link {
+    color: #0041FF;
+}
+.text-link:visited {
+    color: #0041FF;
+}
+.text-link:hover {
+    color: #2268AD;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+h1 a {
+    color: #ABAAAB;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+h1 a:link {
+    color: black;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: #ABAAAB;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}

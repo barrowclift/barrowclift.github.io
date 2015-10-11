@@ -1,120 +1,45 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="/Styles/Min/reset.min.css" type="text/css" />
-		<link rel="stylesheet" href="/Styles/Min/main.min.css" type="text/css" />
-		<link rel="stylesheet" href="/Styles/Min/theme-purple.min.css" type="text/css" />
-		<link rel="stylesheet" href="/Styles/Page-Specific/Min/code.min.css" type="text/css" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/favicon-128x128.png" sizes="128x128" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/android-chrome-192x192.png" sizes="192x192" />
-		<link rel="icon" type="image/png" href="/Images/Favicons/favicon-196x196.png" sizes="196x196" />
-		<link rel="apple-touch-icon" sizes="57x57" href="/Images/Favicons/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="/Images/Favicons/apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="/Images/Favicons/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="/Images/Favicons/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="/Images/Favicons/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="/Images/Favicons/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="/Images/Favicons/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="/Images/Favicons/apple-touch-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/Images/Favicons/apple-touch-icon-180x180.png" />
-		<link rel="shortcut icon" href="/Images/Favicons/favicon.ico" />
-		<link rel="manifest" href="/Images/Favicons/manifest.json" />
-		<meta name="application-name" content="Barrowclift" />
-		<meta name="msapplication-TileColor" content="#fafafa" />
-		<meta name="msapplication-TileImage" content="/Images/Favicons/mstile-144x144.png" />
-		<meta name="msapplication-config" content="/Images/Favicons/browserconfig.xml">
-		<meta name="theme-color" content="#fafafa" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: default
+anchors: false
+viewing-single-page: true
+page-specific:
+  - code.min.css
+color: purple
+title: "Code"
+---
 
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Marc Barrowclift - Code" />
-		<meta property="og:description" content="Celebrate the humanity in computing" />
-		<meta name="description" content="Celebrate the humanity in computing">
-		<meta property="og:url" content="http://barrowclift.me/Code/" />
-		<meta property="og:image" content="http://barrowclift.me/Images/Favicons/favicon-600x314@2x.png"/>
-		<meta property="og:site_name" content="Marc Barrowclift" />
-		
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@barrowclift" />
-		<meta name="twitter:title" content="Marc Barrowclift - Code" />
-		<meta name="twitter:description" content="Celebrate the humanity in computing" />
-		<meta name="twitter:image" content="http://barrowclift.me/Images/Favicons/favicon-600x314@2x.png" />
-		<meta name="twitter:url" content="http://barrowclift.me/Code/" />
-
-		<meta property="fb:admins" content="1665270112" />
-
-		<link rel="alternate" type="application/rss+xml" title="Marc Barrowclift" href="http://barrowclift.github.com/atom.xml">
-
-		<title>Marc Barrowclift - Code</title>
-
-		<!--[if !IE 7]>
-			<style type="text/css">
-				#wrap {display:table;height:100%}
-			</style>
-		<![endif]-->
-		<!-- Enable media queries for old IE -->
-		<!--[if lt IE 9]>
-			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-			<script src="/Scripts/html5shiv.min.js" type="text/javascript"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-		<div id="wrap">
-			<menu>
-				<header id="website-title" role="banner">
-					<h1>
-							<a href="/">Marc Barrowclift <span id="logo" /></a>
-						</h1>
-				</header>
-				<ul>
-					<li class="hover"><a href="/">Home</a></li>
-					<li class="hover"><a href="/About/">About</a></li>
-					<li class="hover"><a href="/Code/" class="active-link">Code</a></li>
-					<li class="hover"><a href="/Art/">Art</a></li>
-					<li class="hover"><a href="/Music/">Music</a></li>
-					<li class="hover"><a href="/Contact/">Contact</a></li>
-				</ul>
-			</menu>
-			<div id="menu-line-separator" class="main-color"></div>
-			<div id="content" class="center">
-				<main role="main" class="large-bottom-pad">
-					<div>
-						<a href="/Code/Anonymouth/">
-							<div style="text-align:left;" class="text-link large-bottom-pad">
-								<div class="project-icon-image vertical-top center">
-									<img src="/Images/Anonymouth/anonymouth-small.jpg" />
-								</div>
-								<div class="project-icon-text">
-									<h3 style="margin-top:0px;margin-bottom:0px;">Anonymouth</h3>
-									<h4>The first and only tool to help you anonymize your writing</h4>
-								</div>
-							</div>
-						</a>
-						<a href="/Code/Largest-Video-Game-Ever/">
-							<div style="text-align: left;" class="text-link">
-								<div class="project-icon-image vertical-top center">
-									<img src="/Images/Largest-Video-Game-Ever/cira-center.png" />
-								</div>
-								<div class="project-icon-text">
-									<h3 style="margin-top:0px;margin-bottom:0px;">Largest Video Game Ever</h3>
-									<h4>Creating and playing Tetris on the side of a skyscraper</h4>
-								</div>
-							</div>
-						</a>
-					</div>
-				</main>
+<div>
+	<a href="/Code/Anonymouth/">
+		<div class="text-link large-bottom-pad left">
+			<div class="project-icon-image vertical-top center">
+				<img src="/Images/Code/anonymouth.png" alt="Anonymouth icon" />
+			</div>
+			<div class="project-icon-text">
+				<h3 style="margin-top:0px;margin-bottom:0px;">Anonymouth</h3>
+				<h4>The first and only tool to help you anonymize your writing</h4>
 			</div>
 		</div>
-		<div id="bottom-banner" class="main-color">
-			<div id="bottom-banner-text" class="center">
-				<a href="/About/Shoutouts/">© 2013-2015 Marc Barrowclift</a>
+	</a>
+	<a href="/Code/Largest-Video-Game-Ever/">
+		<div class="text-link large-bottom-pad left">
+			<div class="project-icon-image vertical-top center">
+				<img src="/Images/Code/cira-center.png" alt="Tetris blocks falling" />
+			</div>
+			<div class="project-icon-text">
+				<h3 style="margin-top:0px;margin-bottom:0px;">Largest Video Game Ever</h3>
+				<h4>Creating and playing Tetris on the side of a skyscraper</h4>
 			</div>
 		</div>
-	</body>
-</html>
+	</a>
+	<a href="https://github.com/Barrowclift">
+		<div class="text-link left">
+			<div class="project-icon-image vertical-top center">
+				<img src="/Images/Code/github.png" alt="Github logo" />
+			</div>
+			<div class="project-icon-text">
+				<h3 style="margin-top:0px;margin-bottom:0px;">Github Projects</h3>
+				<h4>Small side projects, environment customization, and automation</h4>
+			</div>
+		</div>
+	</a>
+</div>

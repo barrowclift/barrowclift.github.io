@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
+
 <article>
 
 	<figure class="banner-padding">
 		<p style="margin-top:0px;">
 			{% if page.banner-link %}
 			<a href="{{page.banner-link}}" {% if page.banner-hover %}title="{{page.banner-hover}}"{% endif %}>
-				<img src="/Images/Assets/{{ page.banner-image }}" class="edge-to-edge" />
+				<img src="/Images/Assets/{{ page.banner-image }}" class="edge-to-edge" {% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %} />
 			</a>
 			{% else %}
-			<img src="/Images/Assets/{{ page.banner-image }}" class="edge-to-edge" />
+			<img src="/Images/Assets/{{ page.banner-image }}" class="edge-to-edge" {% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %} />
 			{% endif %}
 		</p>
 	</figure>
@@ -30,33 +31,5 @@ layout: default
 
 	{{ content }}
 
-	<footer class="large-top-pad large-bottom-pad">
-		<div>
-			<div class="bottom-tool-category">
-				<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Subscribe</h5>
-				<a href="{{ "/Newsletter" | prepend: site.baseurl }}">
-					<div class="round-button" style="text-align:center;">
-						<img class="button-default" src="{{ "/Images/Blog/newsletter.jpg" | prepend: site.baseurl }}" />
-						<img class="button-hover" src="{{ "/Images/Blog/newsletter-hover.jpg" | prepend: site.baseurl }}" src=""/>
-					</div>
-				</a>
-				<a href="{{ "/atom.xml" | prepend: site.baseurl }}">
-					<div class="round-button" style="text-align:center;">
-						<img class="button-default" src="{{ "/Images/Blog/rss.jpg" | prepend: site.baseurl }}" />
-						<img class="button-hover" src="{{ "/Images/Blog/rss-hover.jpg" | prepend: site.baseurl }}" src=""/>
-					</div>
-				</a>
-			</div>
-			
-			<div class="bottom-tool-category">
-				<h5 style="color: #A0A8B6;text-align:center;" class="tools-bottom-pad">Browse</h5>
-				<a href="{{ "/Archive" | prepend: site.baseurl }}">
-					<div class="round-button" style="text-align:center;">
-						<img class="button-default" src="{{ "/Images/Blog/archive.jpg" | prepend: site.baseurl }}" />
-						<img class="button-hover" src="{{ "/Images/Blog/archive-hover.jpg" | prepend: site.baseurl }}" />
-					</div>
-				</a>
-			</div>
-		</div>
-	</footer>
+	{% include blog-share-sheet.html %}
 </article>

@@ -1,4 +1,5 @@
 <head>
+	<link rel="mask-icon" mask href="{{ "/Images/Logo/Happy/logo-min.svg" | prepend: site.baseurl }}" color="black" />
 	<link rel="icon" type="image/png" href="{{ "/Images/Favicons/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16" />
 	<link rel="icon" type="image/png" href="{{ "/Images/Favicons/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32" />
 	<link rel="icon" type="image/png" href="{{ "/Images/Favicons/favicon-96x96.png" | prepend: site.baseurl }}" sizes="96x96" />
@@ -17,11 +18,11 @@
 	<link rel="shortcut icon" href="{{ "/Images/Favicons/favicon.ico" | prepend: site.baseurl }}" />
 	<link rel="manifest" href="{{ "/Images/Favicons/manifest.json" | prepend: site.baseurl }}" />
 
-	<meta name="application-name" content="The Barrow Man" />
-	<meta name="msapplication-TileColor" content="#fafafa" />
+	<meta name="application-name" content="Barrowclift" />
+	<meta name="msapplication-TileColor" content="white" />
 	<meta name="msapplication-TileImage" content="{{ "/Images/Favicons/mstile-144x144.png" | prepend: site.baseurl }}" />
 	<meta name="msapplication-config" content="{{ "/Images/Favicons/browserconfig.xml" | prepend: site.baseurl }}" />
-	<meta name="theme-color" content="#fafafa" />
+	<meta name="theme-color" content="white" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -30,7 +31,14 @@
 	<link rel="stylesheet" href="{{ "/Styles/Min/main.min.css" | prepend: site.baseurl }}" type="text/css" />
 	<link rel="stylesheet" href="{{ "/Styles/Min/syntax.min.css" | prepend: site.baseurl }}" type="text/css" />
 	<link rel="stylesheet" href="{{ "/Styles/Min/anchor.min.css" | prepend: site.baseurl }}" type="text/css" />
+	{% if page.color %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/Styles/Min/theme-{{ page.color }}.min.css" type="text/css" />
+	{% else %}
 	<link rel="stylesheet" href="{{ "/Styles/Min/theme-blue.min.css" | prepend: site.baseurl }}" type="text/css" />
+	{% endif %}
+	{% for style in page.page-specific %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/Styles/Page-Specific/Min/{{ style }}" type="text/css" />
+	{% endfor %}
 	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
 	<script type="text/javascript" src="{{ "/Scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
@@ -39,7 +47,7 @@
 	<script>
 		$.bigfoot({
 			// Uncomment to hide inline footnotes from home view
-			// {% if page.post-view %}
+			// {% if page.viewing-single-page %}
 			// actionOriginalFN: "ignore",
 			// {% endif %}
 			actionOriginalFN: "ignore",
@@ -47,7 +55,7 @@
 		});
 	</script>
 	<script>
-		{% if page.post-view %}
+		{% if page.anchors %}
 		$(document).ready(function() {
 			$('h3').anchor({
 				symbol: '#'
@@ -59,7 +67,7 @@
 	<link rel="canonical" href="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/Page/2/" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="{% if page.post-view %}article{% else %}website{% endif %}" />
+	<meta property="og:type" content="{% if page.viewing-single-page %}article{% else %}website{% endif %}" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -70,11 +78,11 @@
 	<meta property="og:image" content="{{ site.url }}/Images/Favicons/favicon-600x314@2x.png"/>
 	{% endif %}
 	<meta property="og:site_name" content="{{ site.title }}" />
-	<title>{{site.title}}{% if page.title %} - {{ page.title }}{% endif %}</title>
+	<title>{{site.title}}{% if page.title %}: {{ page.title }}{% endif %}</title>
 	
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@barrowclift" />
-	<meta name="twitter:title" content="{{ ite.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.share-image %}
 	<meta name="twitter:image" content="{{ site.url }}/Images/Assets/{{ page.share-image }}" />

@@ -1,1 +1,65 @@
-menu ul li:hover>a{color:#FAFAFA}.active-link{color:#F68048}.hover:hover,.main-color{background-color:#F68048}::selection{background:#F68048;color:#FAFAFA}::-moz-selection{background:#F68048;color:#FAFAFA}.text-link{color:#F68048;-webkit-transition:color .2s linear;transition:color .2s linear}.text-link:link,.text-link:visited{color:#F68048}.text-link:hover{color:#F03F0D;-webkit-transition:color .2s linear;transition:color .2s linear}h1 a{color:#F68048;-webkit-transition:color .2s ease;transition:color .2s ease}h1 a:link,h1 a:visited{color:#000}h1 a:hover{color:#F68048;-webkit-transition:color .2s ease;transition:color .2s ease}
+/*
+Main Menu
+*/
+menu ul li:hover > a {
+    color: #F68048; /*Foreground color of menu on hover*/
+}
+menu ul, .main-color {
+    background-color: #F68048;
+}
+.hover:hover {
+    background-color: white;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+::selection {
+    background: #F68048;
+    color: white;
+}
+/* Firefox */
+::-moz-selection {
+    background: #F68048;
+    color: white;
+}
+
+/*
+Text Links
+*/
+main :not(h2) > a {
+    color: #F68048;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(h2) > a:link {
+    color: #F68048;
+}
+/* visited link */
+main :not(h2) > a:visited {
+    color: #F68048;
+}
+main :not(h2) > a:hover {
+    color: #FFB963;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+h1 a {
+    color: #F68048;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+h1 a:link {
+    color: black;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: #F68048;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}

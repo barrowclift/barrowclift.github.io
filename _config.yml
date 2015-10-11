@@ -1,5 +1,5 @@
 # Site settings
-title: Marc Barrowclift
+title: Barrowclift
 email: "&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;"
 twitter_username: barrowclift
 github_username:  barrowclift
@@ -18,13 +18,18 @@ markdown: kramdown
 paginate: 5 # Number of posts to be shown on each each paginated page.
 
 defaults:
-  -
+  - # POST SPECIFIC VARIABLES
     scope:
       path: ""      # empty string for all files
-      type: posts   # limit to posts
+      type: "posts"   # limit to posts
     values:
-      post-view: true # automatically set post-view=true for all posts
+      viewing-single-page: true # *NOT* Being viewed from home, a specific article page
       share-image:  # assume a default post doesn't have an image, /Images/Assets/${share-image}
+  - # SITE-WIDE VARIABLES
+    scope:
+      path: "" # all files
+    values:
+      anchors: true # We want sections to be anchorable by default for everything
 
 # =========== PLUGINS ===========
 

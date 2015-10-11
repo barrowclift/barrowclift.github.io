@@ -1,17 +1,17 @@
-main :not(h2) > a {
+main :not(h2) a {
     color: black;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 /* unvisited link */
-main :not(h2) > a:link {
+main :not(h2) a:link {
     color: black;
 }
 /* visited link */
-main :not(h2) > a:visited {
+main :not(h2) a:visited {
     color: black;
 }
-main :not(h2) > a:hover {
+main :not(h2) a:hover {
     color: #E05AD2;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;

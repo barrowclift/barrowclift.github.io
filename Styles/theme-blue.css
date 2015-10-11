@@ -49,7 +49,7 @@ main :not(h2) > a:visited {
     color: #0AA0D2;
 }
 main :not(h2) > a:hover {
-    color: #0BC1FF;
+    color: #0BDDF8;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }

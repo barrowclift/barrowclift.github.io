@@ -17,10 +17,10 @@
 	<body>
 		<div id="wrap">
 
-			{% include header.html %}
+			{% include header-happy.html %}
 
-			<div id="content" class="center {% if page.banner-image %}banner-padding{% endif %} {% if page.post-view != true %}reserved-mode{% endif %}">
-				<main role="main" class="large-bottom-pad">
+			<div id="content" class="center {% if page.banner-image %}banner-padding{% endif %} {% if page.viewing-single-page != true %}reserved-mode{% endif %}">
+				<main class="large-bottom-pad">
 
 					{{ content }}
 
