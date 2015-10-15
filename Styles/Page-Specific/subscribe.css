@@ -5,14 +5,14 @@
 
     width: 100%;
     margin-left:-5px;
-    max-width: 300px;
+    max-width: 295px;
     background-color: white;
     position: relative;
 }
 
 #mc_embed_signup {
-	width: 100%;
-	max-width: 300px;
+    width: 100%;
+    max-width: 295px;
 }
 
 #mce-EMAIL:focus {
@@ -31,11 +31,11 @@
     text-align: center;
 
     /* css 3 */
-    border-radius: 3px;
+    border-radius: 4px;
     /* mozilla */
-    -moz-border-radius: 3px;
+    -moz-border-radius: 4px;
     /* webkit */
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 4px;
 }
 
 #mc-embedded-subscribe {
@@ -43,7 +43,7 @@
     color: white;
     border: none;
     margin-bottom: 0px;
-    background-color: #545760;
+    background-color: #979797;
     -webkit-transition: background-color .2s ease;
     transition: background-color .2s ease;
 
@@ -51,11 +51,11 @@
     margin-right:-10px;
 
     /* css 3 */
-    border-radius: 3px;
+    border-radius: 4px;
     /* mozilla */
-    -moz-border-radius: 3px;
+    -moz-border-radius: 4px;
     /* webkit */
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 4px;
 }
 
 #mc-embedded-subscribe:hover {

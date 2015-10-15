@@ -24,7 +24,13 @@ CONTENTS
 
 /* Font Families */
 html {
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h1 {
+    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", "Arial", 
+    sans-serif;
+    font-weight:100;
+    font-stretch:normal;
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -48,7 +54,7 @@ menu ul {
 figcaption {
     letter-spacing: 0.0625em;
 }
-h1, h2, h3,
+h2, h3,
 table th, strong {
     font-weight: bold;
 }
@@ -57,51 +63,47 @@ blockquote, em {
 }
 h4, time,
 figcaption, .weak {
-    color: #A0A8B6;
+    color: #979797;
 }
 
 
 /* Sizes */
 h1 { /* Page Headers */
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 45px;
+    line-height: 45px;
 }
 h2 { /* Post Titles */
     font-size: 24px;
     line-height: 24px;
 }
-h3 { /* Post Sections */
-    font-size: 21px;
-    line-height: 21px;
-}
-h5, h4, menu ul,
-#bottom-navigation, .experience-list {
+h3, h4, h5, menu ul,
+#bottom-navigation {
     font-size: 19px;
 }
-    h4, #bottom-navigation, .experience-list {
+    h4, #bottom-navigation {
         line-height: 31px;
     }
     h5 {
         line-height: 23px;
     }
-    menu ul {
+    h3, menu ul {
         line-height: 19px;
     }
 time,
 p, blockquote, ol, ul,
-table {
+table, #bottom-banner-text {
     font-size: 14px;
 }
     time,
-    p, blockquote, ol, ul {
+    p, blockquote, ol, ul, table {
         line-height: 23px;
     }
-    time, #archive-list {
+    time, #archive-list, #bottom-banner-text {
         line-height: 14px;
     }
 .footnotes ol li p,
 .footnotes ol,
-figcaption, pre > code, code, #bottom-banner-text,
+figcaption, pre > code, code,
 input, select, textarea, button {
     font-size: 12px;
 }
@@ -113,16 +115,13 @@ input, select, textarea, button {
     pre {
         line-height: 16px;
     }
-    #bottom-banner-text {
-        line-height: 12px;
-    }
 
 /* TITLES ------------------------------------------------------------------- */
 
 h1 {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 14px;
 }
 h2 {
     text-align: left;
@@ -210,7 +209,7 @@ pre > code {
     margin-right: 18px;
 
     max-width: initial;
-    overflow: initial;
+    overflow: scroll;
     line-height: inherit;
     background-color: transparent;
     word-break: normal;
@@ -220,7 +219,7 @@ pre > code {
     padding-top: 1em;
     padding-bottom: 1em;
     
-    overflow: auto;
+    overflow: scroll;
 
     background-color: #272821;
     color: white;
@@ -252,7 +251,7 @@ pre ::selection, code ::selection {
 }
 :not(pre) > code {
     background-color: rgba(0, 0, 0, .07);
-    /*border-radius: 3px;*/
+    border-radius: 4px;
     padding: .15em .4em;
     margin-left: 0em;
     margin-right: 0em;
@@ -398,7 +397,7 @@ video {
 /* FOOTNOTES ---------------------------------------------------------------- */
 
 .footnotes ol {
-    margin-left: 19px;
+    margin-left: 16px;
     padding-left: 0px;
 }
 .footnotes ol li {
@@ -417,14 +416,9 @@ button {
 
 /* Smooth hover-transition buttons & Generic round button (RSS, Archive, etc.) */
 .button-hover, .button-default,
-.social-site-button, .round-button {
+.social-site-button, .experience-company-button, .news-logo-button, .round-button {
     position: relative;
     display: inline-block;
-}
-.social-site-button {
-    max-width: 64px;
-    width: 14vw;
-    height: 14vw;
 }
 .round-button {
     width: 30px;
@@ -440,7 +434,9 @@ button {
 }
 .round-button img,
 .icon-button img,
-.social-site-button img {
+.social-site-button img,
+.news-logo-button img,
+.experience-company-button img {
     position: absolute;
     left: 0;
     top: 0;
@@ -517,7 +513,7 @@ button {
 /* ROOT ELEMENTS ------------------------------------------------------------ */
 
 html {
-    background-color: #FAFAFA;
+    background-color: white;
 }
 body, main {
     text-align: center;
@@ -542,8 +538,9 @@ main {
 menu {
     display: inline-block;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 }
     /*
     ---------- HIDING AND SHOWING SUB MENUS
@@ -574,9 +571,12 @@ menu {
         position: relative;
         list-style-type: none;
         text-align: center;
-        margin-right: 6px;
+        
+        margin-right: 0px;
         margin-top: 0px;
         padding-left: 0px;
+        padding-left: 6vw;
+        padding-right: 6vw;
     }
     menu ul:after {
         content: "";
@@ -587,14 +587,16 @@ menu {
     /* ---------- SUBMENU SPACING, SUB AND MAIN STYLE, AND POSITIONING */
     menu ul li {
         display: inline-block;
-        margin-right: -5px;
+        margin-left: -2.5px;
+        margin-right: -2.5px;
         margin-bottom: 0px;
         padding-top: 2px;
+
         transition: background-color .1s linear;
     }
     menu ul li:hover > a, /* Foreground color of menu on hover */
     menu ul li ul li:hover > a { /* Foreground color of submenu on hover */
-        color: #FAFAFA; 
+        color: white; 
     }
     menu ul li ul li:focus,
     menu ul li ul li a,
@@ -603,8 +605,8 @@ menu {
     }
     menu ul li a {
         display: list-item; /* Makes the submenu a nice little sub-list */
-        padding: 5px 15px;
-        color: #54565F; /* Foreground color of main menu and submenu */   
+        padding: 6px 15px;
+        color: white; /* Foreground color of main menu and submenu */
     }
     menu ul ul li {
         float: none;
@@ -617,40 +619,17 @@ menu {
     }
     
 #active-menu-item {
- color: #FAFAFA;
-}
-#menu-line-separator {
- height: 3px;
+    color: white;
 }
 
 /* TABLES ------------------------------------------------------------------- */
 
 table {
-    display: block;
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
     margin-top: 20px;
     margin-bottom: 24px;
-
-    overflow: auto;
     word-break: normal;
     word-break: keep-all;
-}
-table th {
-    background-color: #272821;
-    color: #f8f8f2;
-}
-table th, table td {
-    padding: 6px 13px;
-    border: 1px solid #A6A6A6;
-}
-table tr {
-    background-color: #FFFFFF;
-    border-top: 1px solid #A6A6A6;
-}
-table tr:nth-child(2n) {
-    background-color: #EFEFEF;
 }
 hr:before, hr:after {
     display: table;
@@ -667,38 +646,26 @@ hr {
     margin-bottom: 50px;
     border: none;
 }
-article hr, footer hr, .dashed {
-    border-top: 1px dashed #A0A8B6;
+article hr, footer hr {
+    border-top: 1px solid #E5E5E5;
     margin-top: 35px;
     margin-bottom: 35px;
-    max-width: 160px;
 }
 
 /* SPECIAL IMAGES ----------------------------------------------------------- */
 
-#logo, #failed-logo {
-    display: inline-block;
-    margin-left: 0px;
-    width: 24px;
-    height: 24px;
-    background-size: 24px 24px;
-}
 #logo {
-    background-image: url("/Images/Favicons/favicon-24x24@2x.png");
-}
-#failed-logo {
-    background-image: url("/Images/Favicons/favicon-bad-24x24@2x.png");
-}
-
-
-/* Used for non-post pages, therefore "special" */
-.news-logo {
-    max-height: 16px;
     display: inline-block;
+    width: 32px;
+    height: 32px;
 }
-.list-thumbnail-image {
-    display: block;
-    width: 2.8em;
+/* Used in project pages */
+.news-logo {
+    height: 4.5vw;
+    max-height: 25px;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 .gallery-image {
     display: inline-block;
@@ -718,22 +685,20 @@ rest at the bottom of the page.
 #content {
     overflow: auto;
     margin-top: 35px;
-    padding-bottom: 15px; /* Must be same height as the bottom banner! */
+    padding-bottom: 18px; /* Must be same height as the bottom banner! */
 }
 #bottom-banner {
     position: relative;
-    height: 15px;
-    margin-top: -15px; /* Negative value of footer height */
+    height: 18px;
+    margin-top: -18px; /* Negative value of footer height */
     clear: both;
-    color: #FAFAFA;
 }
 #bottom-banner-text {
     height: auto;
-    color: #FAFAFA;
     padding-top: 2px;
 }
 #bottom-banner-text a {
-    color: #FAFAFA;
+    color: white;
 }
 /* Opera Fix */
 body:before {
@@ -757,22 +722,18 @@ body:before {
         letter-spacing: 0px;
     }
     h1 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 91px;
+        line-height: 45px;
     }
     h2 {
         font-size: 30px;
         line-height: 30px;
     }
-    h3 {
-        font-size: 26px;
-        line-height: 26px;
+    h3, h5, h4, menu ul,
+    #bottom-navigation {
+        font-size: 24px;
     }
-    h5, h4, menu ul,
-    #bottom-navigation, .experience-list {
-        font-size: 22px;
-    }
-        h4, #bottom-navigation, .experience-list {
+        h4, #bottom-navigation {
             line-height: 32px;
         }
         h5 {
@@ -783,21 +744,24 @@ body:before {
         }
     time,
     p, blockquote, ol, ul,
-    table {
-        font-size: 18px;
+    table, #bottom-banner-text {
+        font-size: 16px;
     }
         p, blockquote, ol, ul,
         table {
-            line-height: 28px;
+            line-height: 26px;
         }
         time, #archive-list {
             line-height: 20px;
+        }
+        #bottom-banner-text {
+            line-height: 16px;
         }
     .footnotes ol li p,
     .footnotes ol,
     figcaption, pre > code, code,
     input, select, textarea, button {
-        font-size: 15px;
+        font-size: 14px;
     }
         .footnotes ol li p,
         .footnotes ol,
@@ -807,16 +771,12 @@ body:before {
         pre {
             line-height: 18px;
         }
-    #bottom-banner-text {
-        font-size: 14px;
-        line-height: 14px;
-    }
 
 
     /* ----- TITLES ----- */
     h1 {
-        margin-top: 15px;
-        margin-bottom: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     h3 {
         margin-top: 45px;
@@ -847,10 +807,6 @@ body:before {
         margin-top: 46px;
         margin-bottom: 24px;
     }
-    pre > code {
-        margin-left: 8vw;
-        margin-right: 8vw;
-    }
     /* When on the home view we want all images AND code blocks to actually be
     bound, inline objects to provide a less distracting view of the post for
     speed reading and/or binge reading. This will still allow the code blocks
@@ -868,7 +824,7 @@ body:before {
     }
     .reserved-mode main article .highlight pre,
     .reserved-mode main article .highlight > pre {
-       border-radius: 3px;
+       border-radius: 4px;
        padding: 1em;
     }
 
@@ -884,7 +840,7 @@ body:before {
 
     /* ----- GENERIC IMAGES ----- */
     figcaption {
-        padding-top: 0px;
+        padding-top: 8px;
     }
     /* When on the home view we want all images AND code blocks to actually be
     bound, inline objects to provide a less distracting view of the post for
@@ -898,12 +854,14 @@ body:before {
         width: auto;
         margin-left: 0vw;
         margin-right: 0vw;
+        border-radius: 4px;
     }
     /* From here one out bound-responsive images will never be larger than the width
        bounds of the enclosing text. */
     .bound-responsive {
         max-width: 648px;
         width: auto;
+        border-radius: 4px;
     }
     .ios-one-screen {
         max-width: 350px;
@@ -934,7 +892,7 @@ body:before {
 
     /* ----- FOOTNOTES ----- */
     .footnotes ol {
-        margin-left: 20px;
+        margin-left: 18px;
     }
     .footnotes ol li {
         margin-bottom: -8px;
@@ -980,28 +938,17 @@ body:before {
 
 
     /* ----- SPECIAL IMAGES ----- */
-    #logo, #failed-logo {
-        margin-left: 0px;
-        width: 28px;
-        height: 28px;
-    }
     #logo {
-        background-image: url("/Images/Favicons/favicon-28x28@2x.png");
-        background-size: 28px 28px;
-    }
-    #failed-logo {
-        background-image: url("/Images/Favicons/favicon-bad-28x28@2x.png");
-        background-size: 28px 28px;
+        width: 64px;
+        height: 64px;
     }
     .gallery-image {
         max-width: 213px;
     }
     .news-logo {
-        max-height: 18px;
-    }
-    .list-thumbnail-image {
-        display: inline-block;
-        width: 3em;
+        max-height: 25px;
+        margin-right: 1.9em;
+        margin-left: 1.9em;
     }
 
 
@@ -1015,13 +962,26 @@ body:before {
 
     /* ----- MAIN NAVIGATION ----- */
     menu ul {
-        margin-right: 6.5px;
+        margin-right: 0px;
+        margin-left: 0px;
+
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     menu ul li {
-        margin-right: -6.5px;
-        padding-top: 2px;
+        padding-top: 0px;
+
+        margin-left: -3.3px;
+        margin-right: -3.3px;
     }
-    
+    menu ul li a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
 
     /* ----- TABLES ----- */
     table {
@@ -1033,51 +993,48 @@ body:before {
     hr {
         margin-top: 75px;
         margin-bottom: 75px;
+        max-width: 648px;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     article hr, footer hr {
         margin-top: 45px;
         margin-bottom: 45px;
-        max-width: 306px;
+        max-width: 648px;
+        border-top: 1px solid #E5E5E5;
     }
-    article hr, footer hr, .dashed {
-        border-top: 2px dashed #A0A8B6;
-    }
+
 
     /* ----- BOTTOM BANNER ----- */
     #content {
         margin-top: 45px;
-        padding-bottom: 18px;
+        padding-bottom: 23px;
     }
     #bottom-banner {
-        height: 18px;
-        margin-top: -18px;
+        padding-top: 2px;
+        height: 23px;
+        margin-top: -25px;
     }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 56.25em) {
     /* ----- FONTS ----- */
-    menu ul {
-        letter-spacing: 0px;
-    }
     h1 {
-        font-size: 45px;
+        font-size: 91px;
         line-height: 45px;
     }
     h2 {
         font-size: 35px;
         line-height: 35px;
     }
-    h3 {
-        font-size: 31px;
-        line-height: 31px;
-    }
-    h4, h5, menu ul,
-    #bottom-navigation, .experience-list {
+    h3, h4, h5, menu ul,
+    #bottom-navigation {
         font-size: 27px;
         line-height: 27px;
     }
-        h4, #bottom-navigation, .experience-list {
+        h4, #bottom-navigation {
             line-height: 39px;
         }
         h5 {
@@ -1088,19 +1045,22 @@ body:before {
         }
     time,
     p, blockquote, ol, ul,
-    table {
-        font-size: 21px;
+    table, #bottom-banner-text {
+        font-size: 18px;
     }
         p, blockquote, ol, ul,
         table {
-            line-height: 32px;
+            line-height: 29px;
         }
         time, #archive-list {
             line-height: 23px;
         }
+        #bottom-banner-text {
+            line-height: 18px;
+        }
     .footnotes ol li p,
     .footnotes ol,
-    figcaption, pre > code, code, #bottom-banner-text,
+    figcaption, pre > code, code,
     input, select, textarea, button {
         font-size: 16px;
     }
@@ -1111,9 +1071,6 @@ body:before {
         }
         pre {
             line-height: 20px;
-        }
-        #bottom-banner-text {
-            line-height: 16px;
         }
 
 
@@ -1162,7 +1119,7 @@ body:before {
     /* Hard-coded adjustment of the bound-responsive image width to match the text's
        width */
     .bound-responsive {
-        max-width: 750px
+        max-width: 764px;
     }
     .responsive {
         max-width: 1200px;
@@ -1174,6 +1131,7 @@ body:before {
         margin-left: 0vw;
         margin-right: 0vw;
         margin-top: 50px;
+        border-radius: 4px;
     }
     .ios-one-screen {
         max-width: 375px;
@@ -1206,7 +1164,7 @@ body:before {
 
     /* ----- FOOTNOTES ----- */
     .footnotes ol {
-        margin-left: 23px;
+        margin-left: 20px;
     }
     .footnotes ol li {
         margin-bottom: -10px;
@@ -1247,43 +1205,26 @@ body:before {
 
 
     /* ----- SPECIAL IMAGES ----- */
-    #logo, #failed-logo {
-        margin-left: 1px;
-        width: 32px;
-        height: 32px;
-    }
-    #logo {
-        background-image: url("/Images/Favicons/favicon-32x32@2x.png");
-        background-size: 32px 32px;
-    }
-    #failed-logo {
-        background-image: url("/Images/Favicons/favicon-bad-32x32@2x.png");
-        background-size: 32px 32px;
-    }
     .gallery-image {
         max-width: 247px;
     }
     .news-logo {
-        max-height: 22px;
-    }
-    .list-thumbnail-image {
-        width: 4em;
+        min-height: 30px;
+        margin-right: 2.2em;
+        margin-left: 2.2em;
     }
 
 
     /* ----- ROOT ELEMENTS ----- */
     main {
-        max-width: 750px;
+        max-width: 764px;
     }
 
 
     /* ----- MAIN NAVIGATION ----- */
-    menu ul {
-        margin-right: 6px;
-    }
-    menu ul li {
-        margin-right: -7.5px;
-        padding-top: 3px;
+    menu ul li a {
+        padding-left: 39px;
+        padding-right: 39px;
     }
 
 
@@ -1298,21 +1239,28 @@ body:before {
     hr {
         margin-top: 100px;
         margin-bottom: 100px;
+
+        display: inline-block;
+        width: 75vw;
+        max-width: 1100px;
+        min-width: 810px;
+        margin-left: -28vw;
+        margin-right: -28vw;
     }
     article hr, footer hr {
         margin-top: 50px;
-        margin-bottom: 50px;
-        max-width: 354px;
+        margin-bottom: 20px;
+
+        margin-left: 0vw;
+        margin-right: 0vw;
+        width: 100%;
+        max-width: none;
+        min-width: 764px;
     }
 
 
     /* ----- BOTTOM BANNER ----- */
     #content {
         margin-top: 50px;
-        padding-bottom: 20px;
-    }
-    #bottom-banner {
-        height: 20px;
-        margin-top: -20px;
     }
 }

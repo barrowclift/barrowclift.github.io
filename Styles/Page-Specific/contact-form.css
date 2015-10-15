@@ -5,10 +5,17 @@
 
     width: 100%;
     margin-left:-10px;
-    max-width: 465px;
+    max-width: 600px;
     background-color: white;
     /*margin: 50px auto;*/
     position: relative;
+}
+
+.social-site-button {
+    max-width: 64px;
+    max-height: 64px;
+    width: 14vw;
+    height: 14vw;
 }
 
 #contact-form input,
@@ -19,11 +26,11 @@
     padding: 4px;
 
     /* css 3 */
-    border-radius: 3px;
+    border-radius: 4px;
     /* mozilla */
-    -moz-border-radius: 3px;
+    -moz-border-radius: 4px;
     /* webkit */
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 4px;
 }
 
 #contact-form input:focus,
@@ -35,14 +42,14 @@
 }
 
 #contact-form textarea {
-    height:150px;
+    max-width: 600px;
 
     /* css 3 */
-    border-radius: 3px;
+    border-radius: 4px;
     /* mozilla */
-    -moz-border-radius: 3px;
+    -moz-border-radius: 4px;
     /* webkit */
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 4px;
 }
 
 #contact-form #submit-button {
@@ -59,15 +66,24 @@
     margin-right:-10px;
 
     /* css 3 */
-    border-radius: 3px;
+    border-radius: 4px;
     /* mozilla */
-    -moz-border-radius: 3px;
+    -moz-border-radius: 4px;
     /* webkit */
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 4px;
 }
 
 #contact-form #submit-button:hover {
-    background-color: #FEC752;
+    background-color: #EEBC4E;
     -webkit-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
+}
+
+article hr, footer hr {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    max-width: 610px;
+    min-width: 0px;
+    width:100%;
 }

@@ -2,19 +2,13 @@
 Main Menu
 */
 menu ul li:hover > a {
-    color: #FAFAFA;
+    color: #ABAAAB;
 }
-.active-link {
-    color: #0B0BA5;
-}
-.main-color {
-    background-color: #0B0BA5;
+menu ul, .main-color {
+    background-color: #0041FF;
 }
 .hover:hover {
-    background-color: #0B0BA5;
-}
-menu ul li ul li a {
-    color: #ABAAAB;
+    background-color: white;
 }
 
 /*
@@ -23,27 +17,27 @@ Highlight Color
 /* Safari */
 ::selection {
     background: #ABAAAB;
-    color: #FAFAFA;
+    color: white;
 }
 /* Firefox */
 ::-moz-selection {
     background: #ABAAAB;
-    color: #FAFAFA;
+    color: white;
 }
 
 /*
 Text Links
 */
 .text-link {
-    color: #0B0BA5;
+    color: #0041FF;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 .text-link:link {
-    color: #0B0BA5;
+    color: #0041FF;
 }
 .text-link:visited {
-    color: #0B0BA5;
+    color: #0041FF;
 }
 .text-link:hover {
     color: #2268AD;
@@ -52,7 +46,7 @@ Text Links
 }
 
 h1 a {
-    color: #0B0BA5;
+    color: #ABAAAB;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
@@ -63,7 +57,7 @@ h1 a:visited {
     color: black;
 }
 h1 a:hover {
-    color: #0B0BA5;
+    color: #ABAAAB;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }

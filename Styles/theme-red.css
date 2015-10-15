@@ -2,16 +2,13 @@
 Main Menu
 */
 menu ul li:hover > a {
-    color: #FAFAFA; /*Foreground color of menu on hover*/
+    color: #E13646; /*Foreground color of menu on hover*/
 }
-.active-link {
-    color: #E13646;
-}
-.main-color {
+menu ul, .main-color {
     background-color: #E13646;
 }
 .hover:hover {
-    background-color: #E13646;
+    background-color: white;
 }
 
 /*
@@ -20,12 +17,12 @@ Highlight Color
 /* Safari */
 ::selection {
     background: #E13646;
-    color: #FAFAFA;
+    color: white;
 }
 /* Firefox */
 ::-moz-selection {
     background: #E13646;
-    color: #FAFAFA;
+    color: white;
 }
 
 hr {
@@ -49,7 +46,7 @@ main :not(h2) > a:visited {
     color: #D23141;
 }
 main :not(h2) > a:hover {
-    color: #FF0410;
+    color: #FF6871;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
@@ -69,4 +66,15 @@ h1 a:hover {
     color: #D23141;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
+}
+
+.anchor {
+    color: #D23141 !important;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.anchor:hover {
+    color: #FF6871 !important;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
 }

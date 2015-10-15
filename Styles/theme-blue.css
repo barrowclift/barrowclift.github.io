@@ -2,16 +2,13 @@
 Main Menu
 */
 menu ul li:hover > a {
-    color: #FAFAFA; /*Foreground color of menu on hover*/
+    color: #0AA0D2; /*Foreground color of menu on hover*/
 }
-.active-link {
-    color: #0AA0D2;
-}
-.main-color {
+menu ul, .main-color {
     background-color: #0AA0D2;
 }
 .hover:hover {
-    background-color: #0AA0D2;
+    background-color: white;
 }
 
 /*
@@ -20,12 +17,12 @@ Highlight Color
 /* Safari */
 ::selection {
     background: #0AA0D2;
-    color: #FAFAFA;
+    color: white;
 }
 /* Firefox */
 ::-moz-selection {
     background: #0AA0D2;
-    color: #FAFAFA;
+    color: white;
 }
 
 hr {
@@ -54,19 +51,61 @@ main :not(h2) > a:hover {
     transition: color .2s linear;
 }
 
-h2 a, h1 a {
+h2 a, header a {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-h2 a:link, h1 a:link {
+h2 a:link, header a:link {
     color: black;
 }
-h2 a:visited, h1 a:visited {
+h2 a:visited, header a:visited {
     color: black;
 }
-h2 a:hover, h1 a:hover {
+h2 a:hover, header a:hover {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
+}
+
+.anchor {
+    color: #0AA0D2 !important;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.anchor:hover {
+    color: #0BDDF8 !important;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/* TABLES ------------------------------------------------------------------- */
+
+table {
+    display: block;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: auto;
+}
+table th {
+    background-color: #979797;
+    color: white;
+}
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #C7C7C7;
+}
+table tr {
+    background-color: white;
+    border-top: 1px solid #C7C7C7;
+}
+table tr:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+hr:before, hr:after {
+    display: table;
+    content: "";
+}
+hr:after {
+    clear: both;
 }
