@@ -51,18 +51,18 @@ main :not(h2) > a:hover {
     transition: color .2s linear;
 }
 
-h2 a, header a {
+h2 a, h1 a {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-h2 a:link, header a:link {
+h2 a:link, h1 a:link {
     color: black;
 }
-h2 a:visited, header a:visited {
+h2 a:visited, h1 a:visited {
     color: black;
 }
-h2 a:hover, header a:hover {
+h2 a:hover, h1 a:hover {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
