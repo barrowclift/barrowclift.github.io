@@ -23,11 +23,11 @@ CONTENTS
 /* FONTS -------------------------------------------------------------------- */
 
 /* Font Families */
-html {
-    font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+html, input, textarea {
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
 }
 h1 {
-    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Open Sans Light", "Open Sans", "Droid Sans Light", "HelveticaNeue", "Helvetica Neue", "Arial", 
+    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Segoe UI", "HelveticaNeue", "Helvetica Neue", "Arial", 
     sans-serif;
     font-weight:100;
     font-stretch:normal;
@@ -208,8 +208,11 @@ pre > code {
     margin-left: 18px;
     margin-right: 18px;
 
+    overflow: hidden;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    
     max-width: initial;
-    overflow: scroll;
     line-height: inherit;
     background-color: transparent;
     word-break: normal;
@@ -221,6 +224,7 @@ pre > code {
 
     background-color: #272821;
     color: white;
+    overflow: scroll;
 
     text-align:left;
     -moz-tab-size: 4;
