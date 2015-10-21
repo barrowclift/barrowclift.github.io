@@ -27,7 +27,7 @@ html {
     font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 h1 {
-    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", "Arial", 
+    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Open Sans Light", "Open Sans", "Droid Sans Light", "HelveticaNeue", "Helvetica Neue", "Arial", 
     sans-serif;
     font-weight:100;
     font-stretch:normal;
@@ -43,7 +43,7 @@ html {
 }
 input, textarea {
     /* Better experience for user while entering text */
-    letter-spacing: 1px;
+    letter-spacing: 1px !important;
 }
 code:before, code:after {
     letter-spacing: -0.2em;
@@ -218,8 +218,6 @@ pre > code {
 .highlight pre, pre {
     padding-top: 1em;
     padding-bottom: 1em;
-    
-    overflow: scroll;
 
     background-color: #272821;
     color: white;
