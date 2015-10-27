@@ -62,8 +62,6 @@ How on earth is this even possible given how we know our Macs or PCs manage open
 
 In reality, all but one of the apps you see in the multitasking list are actually in what Apple calls a "suspended state". While OS X and Windows allow you to keep as many apps as you want open and running at any given time iOS actually only allows __one__ open app at any given time &#8212; the one you're currently looking at and using[^exceptions]. All others are effectively "frozen" in time and memory.
 
-This means that all you see in the multitasking list is an image representation of your last place in your recent apps frozen in time like a photo.
-
 This means all you see in the multitasking list is images of your apps frozen in time as if you took photos of them. In this state it's no longer using any battery and also has no effect on the speed of the app you're currently running. Again, these apps are not running or using battery, so there's no need to force quit them from the multitasking list.
 
 <figure markdown="1">
