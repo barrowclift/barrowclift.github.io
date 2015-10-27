@@ -22,7 +22,7 @@ CONTENTS
 
 /* FONTS -------------------------------------------------------------------- */
 
-/* Font Families */
+/* Font Families (input and textarea included to fix Windows issues) */
 html, input, textarea {
     font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
 }
@@ -209,6 +209,7 @@ pre > code {
     margin-right: 18px;
 
     overflow: hidden;
+    /* Fix for that awful, double scrollview thing in Windows */
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     
