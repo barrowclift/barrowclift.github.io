@@ -28,18 +28,20 @@ Highlight Color
 /*
 Text Links
 */
-.text-link {
+main :not(h2) > a {
     color: #0041FF;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
-.text-link:link {
+/* unvisited link */
+main :not(h2) > a:link {
     color: #0041FF;
 }
-.text-link:visited {
+/* visited link */
+main :not(h2) > a:visited {
     color: #0041FF;
 }
-.text-link:hover {
+main :not(h2) > a:hover {
     color: #2268AD;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
