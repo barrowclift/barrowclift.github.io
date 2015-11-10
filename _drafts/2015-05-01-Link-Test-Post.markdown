@@ -22,7 +22,7 @@ This problem isn't exclusive to government whistle blowers; journalists and auth
 
 Here's a picture I found that I think articulates my point really well. This problem isn't exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For _example_, J.K. Rowling's recent work The Cuckoo's Calling **was** originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).
 
-![]({{ site.baseurl }}/Images/Assets/screen.png){: .ios-screen}
+![]({{ site.baseurl }}/images/assets/screen.png){: .ios-screen}
 
 Look at it. LOOK AT IT! This problem isn't exclusive to government whistle blowers; journalists and authors wishing to publish works under a pen name may also be at risk with these rising technologies. For _example_, J.K. Rowling's recent work The Cuckoo's Calling **was** originally published under the alias, Robert Galbraith. Using JGAAP, an authorship detection tool he developed, Patrick Juola made a strong case for Rowling being the true author. This ultimately led to her confession (see here for the whole story).
 
