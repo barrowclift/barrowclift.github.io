@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article>
+
+	<figure class="banner-padding">
+		<p style="margin-top:0px;">
+			{% if page.banner-link %}
+			<a href="{{page.banner-link}}" {% if page.banner-hover %}title="{{page.banner-hover}}"{% endif %}>
+				<img src="/images/assets/{{ page.banner-image }}" class="edge-to-edge" {% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %} />
+			</a>
+			{% else %}
+			<img src="/images/assets/{{ page.banner-image }}" class="edge-to-edge" {% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %} />
+			{% endif %}
+		</p>
+	</figure>
+
+	<header role="header" class="normal-top-pad">
+		{% if page.link %}
+			<h2 class="center">
+				<a href="{{ page.link }}">{{ page.title }} ↦</a>
+			</h2>
+		{% else %}
+			<h2 class="center">
+				{{ page.title }}
+			</h2>
+		{% endif %}
+		<time itemprop="dateCreated" class="center">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+	</header>
+
+	{{ content }}
+
+	{% include blog-share-sheet.html %}
+</article>
