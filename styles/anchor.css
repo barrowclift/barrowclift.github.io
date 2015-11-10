@@ -1,0 +1,24 @@
+.anchor {
+	color: currentcolor;
+	text-decoration: none;
+	padding: 0 .34em;
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+	float: none;
+	margin-left: 0em;
+}
+
+.anchored:hover .anchor {
+	opacity: 1; /* .5 */
+}
+
+.anchored .anchor:hover {
+	opacity: 1;
+}
+
+@media (min-width: 43.75rem) {
+	.anchor {
+		float: left;
+		margin-left: -1.3em;
+	}
+}

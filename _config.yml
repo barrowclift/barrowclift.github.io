@@ -1,0 +1,66 @@
+# Site settings
+title: Barrowclift
+email: "&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;"
+twitter_username: barrowclift
+github_username:  barrowclift
+description: Celebrate the humanity in computing
+baseurl: "" # The subpath of your site, e.g. /blog/
+url: "http://barrowclift.me" # The base hostname & protocol for your site
+host: localhost
+
+permalink: /post/:title # Permalink posts sorted by date with directories is awful.
+paginate_path: "/page/:num" # Home older/previous pages go here
+highlighter: pygments
+safe: true
+
+# Build settings
+markdown: kramdown
+paginate: 5 # Number of posts to be shown on each each paginated page.
+
+defaults:
+  - # POST SPECIFIC VARIABLES
+    scope:
+      path: ""      # empty string for all files
+      type: "posts"   # limit to posts
+    values:
+      viewing-single-page: true # *NOT* Being viewed from home, a specific article page
+      share-image:  # assume a default post doesn't have an image, /images/assets/${share-image}
+  - # SITE-WIDE VARIABLES
+    scope:
+      path: "" # all files
+    values:
+      anchors: true # We want sections to be anchorable by default for everything
+
+# =========== PLUGINS ===========
+
+gems:
+  - jemoji
+  
+# "Jekyll Pages Directory Plugin"
+# https://github.com/bbakersmith/jekyll-pages-directory
+# Allows me to put all my custom-made static pages in a directory in the
+# project root to keep things tidy. The plugin will move them into the
+# deployed site's root upon build.
+# pages: ./_pages
+
+# "ArchiveGenerator"
+# See ruby file category_archive_plugin.rb for more info
+# [MODIFIED] - MUST MERGE WITH NEWER VERSIONS
+
+# "Jekyll Auto Image"
+# https://github.com/merlos/jekyll-auto-image
+# Allows me to easily snag the first image of a post and use it as a variable.
+# (mostly useful for Twitter Cards)
+# gems:
+#  - jekyll-auto-image # Enable auto image
+# image: /images/favicons/favicon-128x128.png # Default image
+
+# "Jekyll Markdown References Plugin"
+# https://github.com/olov/jekyll-references
+# Gives me a nice, central place to add/modify markdown reference-style links
+
+# "Jekyll Smartify"
+# https://github.com/pathawks/jekyll-smartify
+# Make my quotes nice and curly automatically
+# gems:
+# - jekyll-smartify # Enable Smartify
