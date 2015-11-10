@@ -8,8 +8,8 @@ baseurl: "" # The subpath of your site, e.g. /blog/
 url: "http://barrowclift.me" # The base hostname & protocol for your site
 host: localhost
 
-permalink: /Post/:title # Permalink posts sorted by date with directories is awful.
-paginate_path: "/Page/:num" # Home older/previous pages go here
+permalink: /post/:title # Permalink posts sorted by date with directories is awful.
+paginate_path: "/page/:num" # Home older/previous pages go here
 highlighter: pygments
 safe: true
 

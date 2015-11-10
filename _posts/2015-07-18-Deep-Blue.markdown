@@ -7,9 +7,9 @@ categories:
   - Apps
   - Health
 excerpt: "Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it's no coincidence."
-share-image: "Deep-Blue/blue-light-laptop.jpg"
-banner-image: "Deep-Blue/blue-light-laptop.jpg"
-banner-image-small: "Deep-Blue/blue-light-laptop@small.jpg"
+share-image: "deep-blue/blue-light-laptop.jpg"
+banner-image: "deep-blue/blue-light-laptop.jpg"
+banner-image-small: "deep-blue/blue-light-laptop@small.jpg"
 banner-link: "https://www.youtube.com/watch?v=cDIRT_NEMxo"
 banner-alt: "Laptop backlight glowing brightly in a dark room"
 banner-hover: "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me."

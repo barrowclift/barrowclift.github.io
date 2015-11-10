@@ -3,7 +3,7 @@ layout: post
 title:  "Making Terminal Better"
 date:   2015-07-26 19:38:00
 description: "Most developers can agree Terminal is great for productivity. Usability? Not so much. Here's some quick tips to help humanize the grandfather of the GUI on OS X."
-share-image: "Making-Terminal-Better/banner-image.png"
+share-image: "making-terminal-better/banner-image.png"
 categories:
   - Technology
   - Programming
@@ -25,7 +25,7 @@ In my opinion if there's anything you take your time to consider it should be yo
 To begin, let's look at OS X's default Terminal.
 
 <figure markdown="1">
-[![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
+[![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png){: .bound-responsive}]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
 </figure>
 
 Yikes, this won't do at all. I've seen far too many friends and colleagues sticking with this or one of the other dreadful default themes available on OS X and I'm here to tell you there's a better way. By just taking a few moments to consider the points below we can transform your Terminal into something actually enjoyable to use (and sometimes even beautiful).
@@ -37,10 +37,10 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 Now, here's my current setup for inspiration:
 
 <figure markdown="1">
-[![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png){: .bound-responsive}]({{ site.baseurl }}/Images/Assets/Making-Terminal-Better/customized-terminal.png)
+[![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png){: .bound-responsive}]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png)
 </figure>
 
-How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/Downloads/Making-Terminal-Better/Duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
+How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/downloads/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
 
 The `.bashrc` will be used to actually "turn on" colors, assign the colors to the kinds of files you think they should represent, and customize your prompt since they're all directly handled by the shell. Below are the lines necessary to turn on colors and some of my current settings to help get you started on your prompt and color assignments.
 
@@ -205,10 +205,10 @@ alias f='open -a Finder ./'
 
 If you want the full `.bashrc` and `.bash_aliases` files used in the examples above you can download them below:
 
-* __With Comments__: [bashrc]({{ site.baseurl }}/Downloads/Making-Terminal-Better/bashrc.txt), [bash_aliases]({{ site.baseurl }}/Downloads/Making-Terminal-Better/bash-aliases.txt)
-* __Without Comments__: [bashrc]({{ site.baseurl }}/Downloads/Making-Terminal-Better/bashrc-sans-comments.txt), [bash_aliases](bash-aliases-sans-comments.txt)
+* __With Comments__: [bashrc]({{ site.baseurl }}/downloads/making-terminal-better/bashrc.txt), [bash_aliases]({{ site.baseurl }}/downloads/making-terminal-better/bash-aliases.txt)
+* __Without Comments__: [bashrc]({{ site.baseurl }}/downloads/making-terminal-better/bashrc-sans-comments.txt), [bash_aliases](bash-aliases-sans-comments.txt)
 
-In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/Downloads/Making-Terminal-Better/Duokai.terminal). Happy customizing, everyone. ⌘
+In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/making-terminal-better/duokai.terminal). Happy customizing, everyone. ⌘
 
 ----------  
 
