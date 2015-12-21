@@ -1,0 +1,68 @@
+main :not(h2) a {
+    color: black;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(h2) a:link {
+    color: black;
+}
+/* visited link */
+main :not(h2) a:visited {
+    color: black;
+}
+main :not(h2) > a:hover {
+    color: #F68048;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.project-icon-image {
+    display: block;
+    text-align: center;
+    max-width: 120px;
+    padding-right: 0px;
+}
+.project-icon-text, .project-icon-text h3 {
+    display: block;
+    text-align: center;
+}
+.project-icon-text h3 {
+	line-height: 30px;
+}
+@media (min-width: 43.75rem) {
+	.project-icon-image {
+		display: inline-block;
+	 	text-align: left;
+		max-width: 120px;
+		padding-right: 20px;
+	}
+	.project-icon-text, .project-icon-text h3, .project-icon-text h4 {
+		max-width: 500px;
+	}
+	.project-icon-text {
+		margin-top: 8px;
+		padding-top: 0px;
+		display: inline-block;
+		text-align: left;
+	}
+	.project-icon-text h3 {
+		line-height: 35px;
+		text-align: left;
+	}
+}
+@media (min-width: 56.25em) {
+	.project-icon-image {
+		max-width: 140px;
+		padding-right: 30px;
+	}
+	.project-icon-text, .project-icon-text h3, .project-icon-text h4 {
+		max-width: 575px;
+	}
+	.project-icon-text {
+		max-width: 575px;
+		margin-top: 8px;
+	}
+	.project-icon-text h3 {
+		line-height: 41px;
+	}
+}

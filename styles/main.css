@@ -80,6 +80,9 @@ h3, h4, h5, menu ul,
 #bottom-navigation {
     font-size: 19px;
 }
+    h3 {
+        line-height: 19px;
+    }
     h4, #bottom-navigation {
         line-height: 31px;
     }
@@ -96,7 +99,7 @@ table, #bottom-banner-text {
 }
     time,
     p, blockquote, ol, ul, table {
-        line-height: 23px;
+        line-height: 22px;
     }
     time, #archive-list, #bottom-banner-text {
         line-height: 14px;
@@ -354,8 +357,8 @@ it switches back to a large, inline image with padding. */
     width: 100vw;
     max-width: 1600px;
     max-height: none;
-    margin-left: -28vw;
-    margin-right: -28vw;
+    margin-left: -30vw;
+    margin-right: -30vw;
 }
 
 
@@ -373,6 +376,7 @@ flowed (my responsive stuff is basically a hack as is...) */
 .ios-three-screens {
     margin-top: 20px;
     margin-bottom: 4px;
+    border-radius: 4px;
 }
 .ios-one-screen {
     max-width: 70vw;
@@ -531,9 +535,12 @@ main {
     position: relative;
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 546px;
+    max-width: 463px;
     width: auto;
     margin: 0 auto;
+}
+.fat-page main {
+    max-width: 546px;
 }
 
 /* MAIN NAVIGATION ---------------------------------------------------------- */
@@ -665,7 +672,7 @@ article hr, footer hr {
 /* Used in project pages */
 .news-logo {
     height: 4.5vw;
-    max-height: 25px;
+    max-height: 22px;
     display: inline-block;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -736,6 +743,9 @@ body:before {
     #bottom-navigation {
         font-size: 24px;
     }
+        h3 {
+            line-height: 24px;
+        }
         h4, #bottom-navigation {
             line-height: 32px;
         }
@@ -752,7 +762,7 @@ body:before {
     }
         p, blockquote, ol, ul,
         table {
-            line-height: 26px;
+            line-height: 25px;
         }
         time, #archive-list {
             line-height: 20px;
@@ -810,26 +820,6 @@ body:before {
         margin-top: 46px;
         margin-bottom: 24px;
     }
-    /* When on the home view we want all images AND code blocks to actually be
-    bound, inline objects to provide a less distracting view of the post for
-    speed reading and/or binge reading. This will still allow the code blocks
-    to be completely edge-to-edge in the dedicated post view.*/
-    .reserved-mode main article .highlight > pre {
-       display: block;
-       width: auto;
-       margin-left: 0;
-       margin-right: 0;
-       margin-top: 34px;
-       margin-bottom: 38px;
-    }
-    .reserved-mode main article .highlight > pre > code {
-       margin: 0;
-    }
-    .reserved-mode main article .highlight pre,
-    .reserved-mode main article .highlight > pre {
-       border-radius: 4px;
-       padding: 1em;
-    }
 
 
     /* ----- PAGE END ELEMENTS ----- */
@@ -849,47 +839,27 @@ body:before {
     bound, inline objects to provide a less distracting view of the post for
     speed reading and/or binge reading. This will still allow the code blocks
     to be completely edge-to-edge in the dedicated post view.*/
-    .reserved-mode main article .bound-responsive,
-    .reserved-mode main article .edge-to-edge,
-    .reserved-mode main article .responsive {
+    .reserved-mode main article .edge-to-edge {
         display: block;
-        max-width: 100%;
-        width: auto;
+        max-width: 529px;
+        width: 100%;
         margin-left: 0vw;
         margin-right: 0vw;
+
+        max-width: 800px;
         border-radius: 4px;
     }
     /* From here one out bound-responsive images will never be larger than the width
        bounds of the enclosing text. */
     .bound-responsive {
-        max-width: 648px;
+        max-width: 650px;
         width: auto;
         border-radius: 4px;
     }
-    .ios-one-screen {
-        max-width: 350px;
-    }
-    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
-       but stay bound for home view. */
-    .ios-two-screens {
-        max-width: 45vw;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-    .reserved-mode main article .responsive p a .ios-two-screens {
-        max-width: 290px;
-        margin-left: 14px;
-        margin-right: 14px;
-    }
-    .ios-three-screens {
+    .ios-one-screen, .ios-two-screens, .ios-three-screens {
         max-width: 28vw;
         margin-left: 2vw;
         margin-right: 2vw;
-    }
-    .reserved-mode main article .responsive p a .ios-three-screens {
-        max-width: 195px;
-        margin-left: 8px;
-        margin-right: 8px;
     }
 
 
@@ -946,12 +916,12 @@ body:before {
         height: 64px;
     }
     .gallery-image {
-        max-width: 213px;
+        max-width: 172px;
     }
     .news-logo {
-        max-height: 25px;
-        margin-right: 1.9em;
-        margin-left: 1.9em;
+        max-height: 23px;
+        margin-right: 1.1em;
+        margin-left: 1.1em;
     }
 
 
@@ -959,6 +929,9 @@ body:before {
     main {
         padding-left: 0%;
         padding-right: 0%;
+        max-width: 529px;
+    }
+    .fat-page main {
         max-width: 648px;
     }
 
@@ -996,15 +969,17 @@ body:before {
     hr {
         margin-top: 75px;
         margin-bottom: 75px;
-        max-width: 648px;
+        max-width: 840px;
 
-        margin-top: 100px;
-        margin-bottom: 100px;
+        display: inline-block;
+        width: 93vw;
+        margin-left: -28vw;
+        margin-right: -28vw;
     }
     article hr, footer hr {
         margin-top: 45px;
         margin-bottom: 45px;
-        max-width: 648px;
+        max-width: 529px;
         border-top: 1px solid #E5E5E5;
     }
 
@@ -1053,7 +1028,7 @@ body:before {
     }
         p, blockquote, ol, ul,
         table {
-            line-height: 29px;
+            line-height: 27px;
         }
         time, #archive-list {
             line-height: 23px;
@@ -1103,6 +1078,8 @@ body:before {
     pre {
         margin-top: 52px;
         max-width: 1200px;
+        width: 800px;
+        border-radius: 4px;
     }
 
 
@@ -1122,10 +1099,10 @@ body:before {
     /* Hard-coded adjustment of the bound-responsive image width to match the text's
        width */
     .bound-responsive {
-        max-width: 764px;
+        max-width: 800px;
     }
     .responsive {
-        max-width: 1200px;
+        max-width: 1158px;
         width: 100vw;
     }
     .shy-banner {
@@ -1136,32 +1113,23 @@ body:before {
         margin-top: 50px;
         border-radius: 4px;
     }
-    .ios-one-screen {
-        max-width: 375px;
-    }
     /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
        but stay bound for home view. */
+    .ios-one-screen {
+        width: 25vw;
+        max-width: 355px;
+    }
     .ios-two-screens {
-        width: 400px;
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: 400px;
-    }
-    .reserved-mode main article .responsive p a .ios-two-screens {
-        max-width: 332px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .ios-three-screens {
         width: 25vw;
         margin-left: 20px;
         margin-right: 20px;
         max-width: 355px;
     }
-    .reserved-mode main article .responsive p a .ios-three-screens {
-        max-width: 205px;
-        margin-left: 20px;
-        margin-right: 20px;
+    .ios-three-screens {
+        width: 25vw;
+        margin-left: 14px;
+        margin-right: 14px;
+        max-width: 355px;
     }
     
 
@@ -1209,17 +1177,21 @@ body:before {
 
     /* ----- SPECIAL IMAGES ----- */
     .gallery-image {
-        max-width: 247px;
+        max-width: 194px;
+        margin-top: 30px;
     }
     .news-logo {
-        min-height: 30px;
-        margin-right: 2.2em;
-        margin-left: 2.2em;
+        min-height: 26px;
+        margin-right: 1.2em;
+        margin-left: 1.2em;
     }
 
 
     /* ----- ROOT ELEMENTS ----- */
     main {
+        max-width: 595px;
+    }
+    .fat-page main {
         max-width: 764px;
     }
 
@@ -1244,8 +1216,8 @@ body:before {
         margin-bottom: 100px;
 
         display: inline-block;
-        width: 75vw;
-        max-width: 1100px;
+        width: 82vw;
+        max-width: 1158px;
         min-width: 810px;
         margin-left: -28vw;
         margin-right: -28vw;
@@ -1258,7 +1230,7 @@ body:before {
         margin-right: 0vw;
         width: 100%;
         max-width: none;
-        min-width: 764px;
+        min-width: 595px;
     }
 
 
