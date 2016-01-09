@@ -110,13 +110,13 @@ figcaption, pre > code, code,
 input, select, textarea, button {
     font-size: 12px;
 }
-    .footnotes ol li p, /* The inline footnote text */
-    .footnotes ol, /* The number in the list */
-    figcaption {
-        line-height: 23px;
-    }
     pre {
         line-height: 16px;
+    }
+    figcaption,
+    .footnotes ol li p, /* The inline footnote text */
+    .footnotes ol { /* The number in the list */
+        line-height: 20px;
     }
 
 /* TITLES ------------------------------------------------------------------- */
@@ -776,13 +776,13 @@ body:before {
     input, select, textarea, button {
         font-size: 14px;
     }
-        .footnotes ol li p,
-        .footnotes ol,
-        figcaption {
-            line-height: 26px;
-        }
         pre {
             line-height: 18px;
+        }
+        figcaption,
+        .footnotes ol li p,
+        .footnotes ol {
+            line-height: 23px;
         }
 
 
@@ -1042,13 +1042,13 @@ body:before {
     input, select, textarea, button {
         font-size: 16px;
     }
-        .footnotes ol li p,
-        .footnotes ol,
-        figcaption {
-            line-height: 26px;
-        }
         pre {
             line-height: 20px;
+        }
+        figcaption,
+        .footnotes ol li p,
+        .footnotes ol {
+            line-height: 25px;
         }
 
 
