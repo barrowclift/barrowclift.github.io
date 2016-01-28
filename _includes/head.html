@@ -26,19 +26,20 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="{{ "/styles/min/reset.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/styles/min/bigfoot-number.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/styles/min/main.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/styles/min/syntax.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/styles/min/anchor.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/reset.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/bigfoot-number.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/main.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/syntax.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/anchor.min.css" | prepend: site.baseurl }}" type="text/css" />
 	{% if page.color %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/styles/min/theme-{{ page.color }}.min.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/theme-{{ page.color }}.min.css" type="text/css" />
 	{% else %}
-	<link rel="stylesheet" href="{{ "/styles/min/theme-blue.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link rel="stylesheet" href="{{ "/css/min/theme-blue.min.css" | prepend: site.baseurl }}" type="text/css" />
 	{% endif %}
 	{% for style in page.page-specific %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/styles/page-specific/min/{{ style }}" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/page-specific/min/{{ style }}" type="text/css" />
 	{% endfor %}
+	<link rel="stylesheet" href="{{ "site.baseurl }}/css/min/fonts.min.css" | prepend: site.baseurl }}" type="text/css" />
 	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
 	<script type="text/javascript" src="{{ "/scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
@@ -90,7 +91,6 @@
 	<meta name="twitter:image" content="{{ site.url }}/images/favicons/favicon-600x314@2x.png" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
-	<meta property="fb:admins" content="1665270112" />
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" />
 

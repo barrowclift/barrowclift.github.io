@@ -1,34 +1,11 @@
-/*
-CONTENTS
-    High Chance of Changes Desired:
-        Fonts
-        Titles
-        Paragraph Elements
-        Code
-        Page End Elements (Browsing, Prev/Next, etc.)
-        Generic Images (Images expected to be generated from Markdown)
-        Footnotes
-        Buttons
-        Positioning
-        Media Queries
-    Low Chance of Changes Desired:
-        Root Elements
-        Main Navigation
-        Tables
-        Dividers
-        Special Images (Specific images expected to be used site-wide)
-        Bottom Banner
-========================================================================================================== */
-
 /* FONTS -------------------------------------------------------------------- */
 
 /* Font Families (input and textarea included to fix Windows issues) */
 html, input, textarea {
-    font-family: system, -apple-system, ".SFNSDisplay-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", "San Francisco", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
 }
 h1 {
-    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Segoe UI", "HelveticaNeue", "Helvetica Neue", "Arial", 
-    sans-serif;
+    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "San Francisco", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Segoe UI", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
     font-weight:100;
     font-stretch:normal;
 }
@@ -54,7 +31,9 @@ menu ul {
 figcaption {
     letter-spacing: 0.0625em;
 }
-h2, h3,
+h2, h3 {
+    font-weight: 500;
+}
 table th, strong {
     font-weight: bold;
 }
