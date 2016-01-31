@@ -17,11 +17,15 @@ main div > a:hover {
     transition: color .2s linear;
 }
 
+.drexel-padding {
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-top: 0.3em;
+}
 .school-icon {
     display: block;
     width: 3em;
 }
-
 .experience-company-button {
     max-width: 90px;
     max-height: 90px;
@@ -57,6 +61,10 @@ td > span {
         margin-left: 32.5px;
         margin-right: 32.5px;
     }
+    .drexel-padding {
+        padding-left: 7.5pt;
+        padding-top: 0px;
+    }
     td > span {
         display: inline;
     }
@@ -72,14 +80,17 @@ td > span {
     .school-icon {
         width: 94px;
     }
+    .experience-company-button {
+        margin-left: 44.5px;
+        margin-right: 44.5px;
+    }
+    .drexel-padding {
+        padding-left: 11.25pt;
+    }
     table {
         padding-left: 60px;
     }
     table td {
         min-width: 250px;
-    }
-    .experience-company-button {
-        margin-left: 44.5px;
-        margin-right: 44.5px;
     }
 }

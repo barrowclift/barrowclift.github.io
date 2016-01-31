@@ -1,6 +1,27 @@
-/* FONTS -------------------------------------------------------------------- */
+/*
+CONTENT:
+    Font families ---
+    Font sizes  ---
+    Root elements ---
+    Navbar ---
+    Headers ---
+    Paragraph elements ---
+    Stream navigation ---
+    Images & video ---
+    Footnotes ---
+    Dividers ---
+    Tables ---
+    Buttons ---
+    Positioning ---
+    Title ---
+    Page Footer ---
+    Anchors ---
+    Code ---
+*/
 
-/* Font Families (input and textarea included to fix Windows issues) */
+/* FONT FAMILIES -------------------------------------------------------------------- */
+
+/* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
     font-family: system, -apple-system, ".SFNSDisplay-Regular", "San Francisco", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
 }
@@ -13,6 +34,7 @@ pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
 }
 
+/* FONT SIZES ------------------------------------------------------------------- */
 
 /* Weights, kerning, etc. */
 html {
@@ -59,29 +81,25 @@ h3, h4, h5, menu ul,
 #bottom-navigation {
     font-size: 19px;
 }
-    h3 {
+    h3, menu ul {
         line-height: 19px;
-    }
-    h4, #bottom-navigation {
-        line-height: 31px;
     }
     h5 {
         line-height: 23px;
     }
-    h3, menu ul {
-        line-height: 19px;
+    h4, #bottom-navigation {
+        line-height: 31px;
     }
 time,
 p, blockquote, ol, ul,
-table, #bottom-banner-text {
+table, #page-footer-text {
     font-size: 14px;
 }
-    time,
-    p, blockquote, ol, ul, table {
-        line-height: 22px;
-    }
-    time, #archive-list, #bottom-banner-text {
+    time, #page-footer-text {
         line-height: 14px;
+    }
+    p, #archive-list, blockquote, ol, ul, table {
+        line-height: 22px;
     }
 .footnotes ol li p,
 .footnotes ol,
@@ -98,39 +116,94 @@ input, select, textarea, button {
         line-height: 20px;
     }
 
-/* TITLES ------------------------------------------------------------------- */
+/* ROOT ELEMENTS ------------------------------------------------------------ */
+
+html {
+    background-color: white;
+}
+body, main {
+    text-align: center;
+}
+html, body {
+    height: 100%;
+}
+main {
+    display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 463px;
+    width: auto;
+    margin: 0 auto;
+}
+.fat-page main {
+    max-width: 546px;
+}
+
+
+#content {
+    overflow: auto;
+    margin-top: 35px;
+    padding-bottom: 18px; /* Must be same height as the bottom banner! */
+}
+
+/* NAVBAR ---------------------------------------------------------- */
+
+menu ul {
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+menu ul li {
+    display: inline-block;
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+    margin-bottom: 0px;
+    padding-top: 2px;
+    transition: background-color .1s linear;
+}
+menu ul li a {
+    display: list-item;
+    padding: 6px 15px;
+    color: white; /* Foreground color of main menu and submenu */
+}
+
+/* HEADERS ------------------------------------------------------------------- */
 
 h1 {
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 14px;
 }
-h2 {
+h2, h3, time {
     text-align: left;
 }
 h3 { 
-    text-align: left;
     margin-top: 35px;
     margin-bottom: 15px;
 }
 
 
 time {
-    text-align: left;
     display: block;
     padding-top: 5px;
 }
 
 /* PARAGRAPH ELEMENTS ------------------------------------------------------- */
 
-p {
+p, ol, ul {
     text-align: left;
+}
+
+
+p {
     margin-top: 20px;
 }
 
 
 ol, ul {
-    text-align: left;
     margin-top: 20px;
     padding-left: 30px;
 }
@@ -148,9 +221,7 @@ ol li > :last-child, ul li > :last-child {
 }
 #archive-list {
     list-style: none;
-
     margin-top: 20px;
-    margin-left: 0px;
     padding-left: 0px;
 }
 
@@ -164,110 +235,8 @@ blockquote > :last-child {
     margin-bottom: 0;
 }
 
-/* CODE --------------------------------------------------------------------- */
+/* STREAM NAVIGATION -------------------------------------------------------- */
 
-pre {
-    display: inline-block;
-    width: 100vw;
-    height: auto;
-    max-width: 1600px;
-    max-height: none;
-    margin-left: -28vw;
-    margin-right: -28vw;
-    margin-top: 36px;
-    margin-bottom: 20px;
-    -webkit-text-size-adjust: none;
-}
-code {
-    padding: 0;
-    margin: 0;
-}
-pre > code {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    margin-left: 18px;
-    margin-right: 18px;
-
-    overflow: hidden;
-    /* Fix for that awful, double scrollview thing in Windows */
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    
-    max-width: initial;
-    line-height: inherit;
-    background-color: transparent;
-    word-break: normal;
-    white-space: pre;
-}
-.highlight pre, pre {
-    padding-top: 1em;
-    padding-bottom: 1em;
-
-    background-color: #272821;
-    color: white;
-    overflow: scroll;
-
-    text-align:left;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-}
-.highlight pre {
-    word-break: normal;
-}
-pre code:before,
-pre code:after {
-    content: normal;
-}
-code::selection, pre::selection {
-    background: hsla(54, 8%, 26%, 0.9);
-}
-pre::-moz-selection, code::-moz-selection,
-pre ::-moz-selection, code ::-moz-selection {
-    text-shadow: none;
-    background: hsla(54, 8%, 26%, 0.9);
-}
-pre::selection, code::selection,
-pre ::selection, code ::selection {
-    text-shadow: none;
-    background: hsla(54, 8%, 26%, 0.9);
-}
-:not(pre) > code {
-    background-color: rgba(0, 0, 0, .07);
-    border-radius: 4px;
-    padding: .15em .4em;
-    margin-left: 0em;
-    margin-right: 0em;
-    word-wrap: break-word;
-}
-a > code {
-    color: black;
-}
-.highlight {
-    width: 100%;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-}
-
-/* PAGE END ELEMENTS -------------------------------------------------------- */
-
-#bottom-tools {
-    padding-top: 50px;
-}
-.tools-bottom-pad {
-    padding-bottom: 8px;
-}
-.bottom-tool-category {
-    display: inline-block;
-    text-align: center;
-    /* This MUST be the max width of the bottom tools label h5 */
-    max-width: 122px;
-    width: auto;
-    margin: 0 20px;
-}
 #navigation-previous {
     display: inline-block;
     float: left;
@@ -279,7 +248,7 @@ a > code {
     text-align: right;
 }
 
-/* GENERIC IMAGES ----------------------------------------------------------- */
+/* IMAGES & VIDEO ----------------------------------------------------------- */
 
 img {
     max-width: 100%;
@@ -299,13 +268,6 @@ figure {
 }
 figure p {
     text-align: center;
-}
-figcaption {
-    display: block;
-    text-align: center;
-    width: auto;
-    margin: 0 auto;
-    padding-top: 0px;
 }
 
 
@@ -393,6 +355,36 @@ video {
     margin-bottom: 0px;
 }
 
+/* DIVIDERS ----------------------------------------------------------------- */
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+}
+article hr, footer hr {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* TABLES ------------------------------------------------------------------- */
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    word-break: normal;
+    word-break: keep-all;
+}
+hr:before, hr:after {
+    display: table;
+    content: "";
+}
+hr:after {
+    clear: both;
+}
+
 /* BUTTONS ------------------------------------------------------------------ */
 
 button {
@@ -407,6 +399,7 @@ button {
     display: inline-block;
 }
 .round-button {
+    text-align: center;
     width: 30px;
     height: 30px;
     margin-left: 5px;
@@ -434,18 +427,16 @@ button {
 
 /* POSITIONING -------------------------------------------------------------- */
 
-/* NOT ideal, but makes the non-blog page markup slightly nicer to handle */
+/* NOT ideal, but makes the non-blog page markup slightly nicer to handle, and
+there are times we need to fiddle with the margin and width to truely get
+something to center. */
 .center {
     text-align: center;
     width: auto;
     margin: 0 auto;
 }
-.left {
-    text-align: left;
-}
-.vertical-middle {
-    vertical-align: middle;
-}
+
+
 .vertical-top {
     vertical-align: top;
 }
@@ -456,22 +447,6 @@ button {
 
 /* Relic from release 3.0. Again, NOT ideal and needs to be fixed/removed in a
    future refactor.*/   
-.small-top-pad {
-    margin-top: 8px;
-}
-.small-bottom-pad {
-    margin-bottom: 8px;
-}
-.small-left-pad {
-    padding-left: 0px;
-    padding-top: 0.3em;
-}
-.normal-top-pad {
-    margin-top: 20px;
-}
-.static-bottom-pad {
-    padding-bottom: 20px;
-}
 .large-top-pad {
     margin-top: 35px;
 }
@@ -490,177 +465,24 @@ button {
     padding-top: 0px !important;
 }
 
-
-
-/* ======================================================================================================= */
-
-
-
-/* ROOT ELEMENTS ------------------------------------------------------------ */
-
-html {
-    background-color: white;
-}
-body, main {
-    text-align: center;
-}
-html, body {
-    height: 100%;
-}
-main {
-    /* IE 11 does not fully support main, ignores max-width otherwise */
-    display: block;
-
-    position: relative;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 463px;
-    width: auto;
-    margin: 0 auto;
-}
-.fat-page main {
-    max-width: 546px;
-}
-
-/* MAIN NAVIGATION ---------------------------------------------------------- */
-
-menu {
-    display: inline-block;
-    text-align: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-}
-    /*
-    ---------- HIDING AND SHOWING SUB MENUS
-    The ul within a ul in English refers to the "list inside the list", or
-    submenus in this case. The '>' child selector makes sure only the child ul
-    of the hovered/ targeted li is shown, otherwise all submenus would appear.
-    */
-    menu ul ul {
-        display: none;
-        padding: 0;
-        position: absolute;
-        border: 0px solid transparent;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        z-index: 1;
-    }
-    menu ul li:hover > ul {
-        /* Converting the menu back to block elemnts on hover of the li */
-        display: block;
-    }
- 
-    /* ---------- MAIN MENU SPACING, MINOR STYLING. AND POSITIONING */
-    menu ul {
-        /* 
-        Allows us to absolutely position the sub menus according to this main
-        menu bar
-        */
-        position: relative;
-        list-style-type: none;
-        text-align: center;
-        
-        margin-right: 0px;
-        margin-top: 0px;
-        padding-left: 0px;
-        padding-left: 6vw;
-        padding-right: 6vw;
-    }
-    menu ul:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    
-    /* ---------- SUBMENU SPACING, SUB AND MAIN STYLE, AND POSITIONING */
-    menu ul li {
-        display: inline-block;
-        margin-left: -2.5px;
-        margin-right: -2.5px;
-        margin-bottom: 0px;
-        padding-top: 2px;
-
-        transition: background-color .1s linear;
-    }
-    menu ul li:hover > a, /* Foreground color of menu on hover */
-    menu ul li ul li:hover > a { /* Foreground color of submenu on hover */
-        color: white; 
-    }
-    menu ul li ul li:focus,
-    menu ul li ul li a,
-    menu ul li ul {
-        color: black;
-    }
-    menu ul li a {
-        display: list-item; /* Makes the submenu a nice little sub-list */
-        padding: 6px 15px;
-        color: white; /* Foreground color of main menu and submenu */
-    }
-    menu ul ul li {
-        float: none;
-        position: relative;
-        display: block;
-        text-align: left;
-        border: 0px solid transparent;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-    
-#active-menu-item {
-    color: white;
-}
-
-/* TABLES ------------------------------------------------------------------- */
-
-table {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 24px;
-    word-break: normal;
-    word-break: keep-all;
-}
-hr:before, hr:after {
-    display: table;
-    content: "";
-}
-hr:after {
-    clear: both;
-}
-
-/* DIVIDERS ----------------------------------------------------------------- */
-
-hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: none;
-}
-article hr, footer hr {
-    border-top: 1px solid #E5E5E5;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-/* SPECIAL IMAGES ----------------------------------------------------------- */
+/* TITLE ----------------------------------------------------------- */
 
 #logo {
     display: inline-block;
     width: 32px;
     height: 32px;
 }
-/* Used in project pages */
-.news-logo {
-    height: 4.5vw;
-    max-height: 22px;
-    display: inline-block;
-    margin-right: 1vw;
-    margin-left: 1vw;
+
+svg #logo-eye-opened,
+h1:hover #logo-eye-closed {
+    opacity: 1;
 }
-.gallery-image {
-    display: inline-block;
+svg #logo-eye-closed,
+h1:hover #logo-eye-opened {
+    opacity: 0;
 }
 
-/* BOTTOM BANNER ------------------------------------------------------------ */
+/* PAGE FOOTER ------------------------------------------------------------ */
 
 /* The root containers for all non-bottom banner site elements */
 #wrap {
@@ -671,22 +493,17 @@ Immediate child element of wrap. Since it rests inside wrap the
 padding height is part of the 100%, thus forcing the bottom banner to
 rest at the bottom of the page.
 */
-#content {
-    overflow: auto;
-    margin-top: 35px;
-    padding-bottom: 18px; /* Must be same height as the bottom banner! */
-}
-#bottom-banner {
+#page-footer {
     position: relative;
     height: 18px;
     margin-top: -18px; /* Negative value of footer height */
     clear: both;
 }
-#bottom-banner-text {
+#page-footer-text {
     height: auto;
     padding-top: 2px;
 }
-#bottom-banner-text a {
+#page-footer-text a {
     color: white;
 }
 /* Opera Fix */
@@ -698,15 +515,139 @@ body:before {
     margin-top: -32767px;
 }
 
+/* ANCHORS ----------------------------------------------------------- */
+
+.anchor {
+    color: currentcolor;
+    text-decoration: none;
+    padding: 0 .34em;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    float: none;
+    margin-left: 0em;
+}
+
+.anchored:hover .anchor,
+.anchored .anchor:hover {
+    opacity: 1;
+}
+
+/* ACTIONS SHEET ----------------------------------------------------------- */
+
+#actions-sheet {
+    padding-top: 50px;
+}
+.action-label {
+    padding-bottom: 8px;
+    color: #979797;
+}
+.action-category {
+    display: inline-block;
+    text-align: center;
+    /* This MUST be the max width of the action label */
+    max-width: 122px;
+    width: auto;
+    margin: 0 20px;
+}
+
+/* CODE --------------------------------------------------------------------- */
+
+pre {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    max-width: 1600px;
+    max-height: none;
+    margin-left: -28vw;
+    margin-right: -28vw;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    -webkit-text-size-adjust: none;
+}
+code {
+    padding: 0;
+    margin: 0;
+}
+pre > code {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-left: 18px;
+    margin-right: 18px;
+
+    overflow: hidden;
+    /* Fix for that awful, double scrollview thing in Windows */
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    
+    max-width: initial;
+    line-height: inherit;
+    background-color: transparent;
+    word-break: normal;
+    white-space: pre;
+}
+.highlight pre, pre {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    background-color: #272821;
+    color: white;
+    overflow: scroll;
+
+    text-align:left;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+.highlight pre {
+    word-break: normal;
+}
+pre code:before,
+pre code:after {
+    content: normal;
+}
+/* These must be separate, otherwise the highlighting doesn't work */
+code::selection, pre::selection {
+    background: hsla(54, 8%, 26%, 0.9);
+}
+pre::-moz-selection, code::-moz-selection,
+pre ::-moz-selection, code ::-moz-selection {
+    text-shadow: none;
+    background: hsla(54, 8%, 26%, 0.9);
+}
+pre::selection, code::selection,
+pre ::selection, code ::selection {
+    text-shadow: none;
+    background: hsla(54, 8%, 26%, 0.9);
+}
+:not(pre) > code {
+    background-color: rgba(0, 0, 0, .07);
+    border-radius: 4px;
+    padding: .15em .4em;
+    margin-left: 0em;
+    margin-right: 0em;
+    word-wrap: break-word;
+}
+a > code {
+    color: black;
+}
+.highlight {
+    width: 100%;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+}
+
 
 
 /* ======================================================================================================= */
 
 
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (iPads) */
 @media (min-width: 43.75rem) {
-    /* ----- FONTS ----- */
+    /* ----- FONT SIZES ----- */
     menu ul {
         letter-spacing: 0px;
     }
@@ -722,32 +663,32 @@ body:before {
     #bottom-navigation {
         font-size: 24px;
     }
+        menu ul {
+            line-height: 22px;
+        }
         h3 {
             line-height: 24px;
-        }
-        h4, #bottom-navigation {
-            line-height: 32px;
         }
         h5 {
             line-height: 28px;
         }
-        menu ul {
-            line-height: 22px;
+        h4, #bottom-navigation {
+            line-height: 32px;
         }
     time,
     p, blockquote, ol, ul,
-    table, #bottom-banner-text {
+    table, #page-footer-text {
         font-size: 16px;
     }
-        p, blockquote, ol, ul,
-        table {
-            line-height: 25px;
+        #page-footer-text {
+            line-height: 16px;
         }
         time, #archive-list {
             line-height: 20px;
         }
-        #bottom-banner-text {
-            line-height: 16px;
+        p, blockquote, ol, ul,
+        table {
+            line-height: 25px;
         }
     .footnotes ol li p,
     .footnotes ol,
@@ -765,7 +706,42 @@ body:before {
         }
 
 
-    /* ----- TITLES ----- */
+    /* ----- ROOT ELEMENTS ----- */
+    main {
+        padding-left: 0%;
+        padding-right: 0%;
+        max-width: 529px;
+    }
+    .fat-page main {
+        max-width: 648px;
+    }
+
+    #content {
+        margin-top: 45px;
+        padding-bottom: 23px;
+    }
+
+
+    /* ----- NAVBAR ----- */
+    menu ul {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    menu ul li {
+        padding-top: 0px;
+
+        margin-left: -3.3px;
+        margin-right: -3.3px;
+    }
+    menu ul li a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    /* ----- HEADERS ----- */
     h1 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -794,23 +770,10 @@ body:before {
     }
     
 
-    /* ----- CODE ----- */
-    pre {
-        margin-top: 46px;
-        margin-bottom: 24px;
-    }
+    /* ----- STREAM NAVIGATION ----- */
+    
 
-
-    /* ----- PAGE END ELEMENTS ----- */
-    #bottom-tools {
-        padding-top: 70px;
-    }
-    .bottom-tool-category {
-        margin: 0 30px;
-    }
-
-
-    /* ----- GENERIC IMAGES ----- */
+    /* ----- IMAGES & VIDEO ----- */
     figcaption {
         padding-top: 8px;
     }
@@ -851,99 +814,6 @@ body:before {
     }
 
 
-    /* ----- BUTTONS ----- */
-    .bigfoot-footnote__button {
-        font-size: 16px;
-    }
-    button {
-        height: 27px;
-    }
-
-
-    /* ----- POSITIONING ----- */
-    .small-left-pad {
-        padding-left: 7.5pt;
-        padding-top: 0px;
-    }
-    .small-top-pad {
-        margin-top: 7.5pt;
-    }
-    .small-bottom-pad {
-        margin-bottom: 7.5pt;
-    }
-    .normal-top-pad {
-        margin-top: 26px;
-    }
-    .large-top-pad {
-        margin-top: 45px;
-    }
-    .large-bottom-pad {
-        margin-bottom: 45px;
-    }
-    .massive-left-pad {
-        padding-left: 40px;
-    }
-    .divider {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-
-    /* ----- SPECIAL IMAGES ----- */
-    #logo {
-        width: 64px;
-        height: 64px;
-    }
-    .gallery-image {
-        max-width: 172px;
-    }
-    .news-logo {
-        max-height: 23px;
-        margin-right: 1.1em;
-        margin-left: 1.1em;
-    }
-
-
-    /* ----- ROOT ELEMENTS ----- */
-    main {
-        padding-left: 0%;
-        padding-right: 0%;
-        max-width: 529px;
-    }
-    .fat-page main {
-        max-width: 648px;
-    }
-
-
-    /* ----- MAIN NAVIGATION ----- */
-    menu ul {
-        margin-right: 0px;
-        margin-left: 0px;
-
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    menu ul li {
-        padding-top: 0px;
-
-        margin-left: -3.3px;
-        margin-right: -3.3px;
-    }
-    menu ul li a {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-
-    /* ----- TABLES ----- */
-    table {
-        margin-bottom: 32px;
-    }
-    
-
     /* ----- DIVIDERS ----- */
     hr {
         margin-top: 75px;
@@ -963,21 +833,78 @@ body:before {
     }
 
 
-    /* ----- BOTTOM BANNER ----- */
-    #content {
-        margin-top: 45px;
-        padding-bottom: 23px;
+    /* ----- TABLES ----- */
+    table {
+        margin-bottom: 32px;
     }
-    #bottom-banner {
+
+
+    /* ----- BUTTONS ----- */
+    .bigfoot-footnote__button {
+        font-size: 16px;
+    }
+    button {
+        height: 27px;
+    }
+
+
+    /* ----- POSITIONING ----- */
+    .large-top-pad {
+        margin-top: 45px;
+    }
+    .large-bottom-pad {
+        margin-bottom: 45px;
+    }
+    .massive-left-pad {
+        padding-left: 40px;
+    }
+    .divider {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    /* ----- TITLE ----- */
+    #logo {
+        width: 64px;
+        height: 64px;
+    }
+
+
+    /* ----- PAGE FOOTER ----- */
+    #page-footer {
         padding-top: 2px;
         height: 23px;
         margin-top: -25px;
     }
+
+
+    /* ----- ANCHORS ----- */
+    .anchor {
+        float: left;
+        margin-left: -1.3em;
+    }
+
+
+    /* ----- ACTIONS SHEET ----- */
+    #actions-sheet {
+        padding-top: 70px;
+    }
+    .action-category {
+        margin: 0 30px;
+    }
+
+
+    /* ----- CODE ----- */
+    pre {
+        margin-top: 46px;
+        margin-bottom: 24px;
+    }
 }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (Macs) */
 @media (min-width: 56.25em) {
-    /* ----- FONTS ----- */
+    /* ----- FONT SIZES ----- */
     h1 {
         font-size: 91px;
         line-height: 45px;
@@ -991,29 +918,29 @@ body:before {
         font-size: 27px;
         line-height: 27px;
     }
-        h4, #bottom-navigation {
-            line-height: 39px;
+        menu ul {
+            line-height: 27px;
         }
         h5 {
             line-height: 33px;
         }
-        menu ul {
-            line-height: 27px;
+        h4, #bottom-navigation {
+            line-height: 39px;
         }
     time,
     p, blockquote, ol, ul,
-    table, #bottom-banner-text {
+    table, #page-footer-text {
         font-size: 18px;
     }
-        p, blockquote, ol, ul,
-        table {
-            line-height: 27px;
+        #page-footer-text {
+            line-height: 18px;
         }
         time, #archive-list {
             line-height: 23px;
         }
-        #bottom-banner-text {
-            line-height: 18px;
+        p, blockquote, ol, ul,
+        table {
+            line-height: 27px;
         }
     .footnotes ol li p,
     .footnotes ol,
@@ -1031,7 +958,26 @@ body:before {
         }
 
 
-    /* ----- TITLES ----- */
+    /* ----- ROOT ELEMENTS ----- */
+    main {
+        max-width: 595px;
+    }
+    .fat-page main {
+        max-width: 764px;
+    }
+    #content {
+        margin-top: 50px;
+    }
+
+
+    /* ----- NAVBAR ----- */
+    menu ul li a {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+
+    /* ----- HEADERS ----- */
     h3 {
         margin-top: 50px;
         margin-bottom: 30px;
@@ -1053,22 +999,7 @@ body:before {
     }
 
 
-    /* ----- CODE ----- */
-    pre {
-        margin-top: 52px;
-        max-width: 1200px;
-        width: 800px;
-        border-radius: 4px;
-    }
-
-
-    /* ----- PAGE END ELEMENTS ----- */
-    #bottom-tools {
-        padding-top: 75px;
-    }
-    .bottom-tool-category {
-        margin: 0 40px;
-    }
+    /* ----- STREAM NAVIGATION ----- */
 
 
     /* ----- GENERIC IMAGES ----- */
@@ -1110,7 +1041,7 @@ body:before {
         margin-right: 14px;
         max-width: 355px;
     }
-    
+
 
     /* ----- FOOTNOTES ----- */
     .footnotes ol {
@@ -1118,74 +1049,6 @@ body:before {
     }
     .footnotes ol li {
         margin-bottom: -10px;
-    }
-
-
-    /* ----- BUTTONS ----- */
-    .bigfoot-footnote__button {
-        font-size: 18px;
-    }
-    button {
-        height: 29px;
-    }
-
-
-    /* ----- POSITIONING ----- */
-    .small-left-pad {
-        padding-left: 11.25pt;
-    }
-    .small-top-pad {
-        margin-top: 11.25pt;
-    }
-    .small-bottom-pad {
-        margin-bottom: 11.25pt;
-    }
-    .normal-top-pad {
-        margin-top: 32px;
-    }
-    .large-top-pad {
-        margin-top: 50px;
-    }
-    .large-bottom-pad {
-        margin-bottom: 50px;
-    }
-    .massive-left-pad {
-        padding-left: 60px;
-    }
-
-
-    /* ----- SPECIAL IMAGES ----- */
-    .gallery-image {
-        max-width: 194px;
-        margin-top: 30px;
-    }
-    .news-logo {
-        min-height: 26px;
-        margin-right: 1.2em;
-        margin-left: 1.2em;
-    }
-
-
-    /* ----- ROOT ELEMENTS ----- */
-    main {
-        max-width: 595px;
-    }
-    .fat-page main {
-        max-width: 764px;
-    }
-
-
-    /* ----- MAIN NAVIGATION ----- */
-    menu ul li a {
-        padding-left: 39px;
-        padding-right: 39px;
-    }
-
-
-    /* ----- TABLES ----- */
-    table {
-        margin-top: 32px;
-        margin-bottom: 38px;
     }
 
 
@@ -1213,8 +1076,57 @@ body:before {
     }
 
 
-    /* ----- BOTTOM BANNER ----- */
-    #content {
+    /* ----- TABLES ----- */
+    table {
+        margin-top: 32px;
+        margin-bottom: 38px;
+    }
+
+
+    /* ----- BUTTONS ----- */
+    .bigfoot-footnote__button {
+        font-size: 18px;
+    }
+    button {
+        height: 29px;
+    }
+
+
+    /* ----- POSITIONING ----- */
+    .large-top-pad {
         margin-top: 50px;
+    }
+    .large-bottom-pad {
+        margin-bottom: 50px;
+    }
+    .massive-left-pad {
+        padding-left: 60px;
+    }
+
+
+    /* ----- TITLE ----- */
+
+
+    /* ----- PAGE FOOTER ----- */
+
+
+    /* ----- ANCHORS ----- */
+
+
+    /* ----- ACTIONS SHEET ----- */
+    #actions-sheet {
+        padding-top: 75px;
+    }
+    .action-category {
+        margin: 0 40px;
+    }
+
+
+    /* ----- CODE ----- */
+    pre {
+        margin-top: 52px;
+        max-width: 1200px;
+        width: 800px;
+        border-radius: 4px;
     }
 }

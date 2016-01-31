@@ -16,18 +16,20 @@ layout: default
 		</p>
 	</figure>
 
-	<header role="header" class="normal-top-pad">
-		{% if page.link %}
-			<h2 class="center">
-				<a href="{{ page.link }}">{{ page.title }} ↦</a>
-			</h2>
-		{% else %}
-			<h2 class="center">
-				{{ page.title }}
-			</h2>
-		{% endif %}
-		<time itemprop="dateCreated" class="center">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
-	</header>
+	<p>
+		<header role="header">
+			{% if page.link %}
+				<h2 class="center">
+					<a href="{{ page.link }}">{{ page.title }} ↦</a>
+				</h2>
+			{% else %}
+				<h2 class="center">
+					{{ page.title }}
+				</h2>
+			{% endif %}
+			<time itemprop="dateCreated" class="center">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+		</header>
+	</p>
 
 	{{ content }}
 

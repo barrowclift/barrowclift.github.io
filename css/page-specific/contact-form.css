@@ -7,7 +7,7 @@
     margin-left:-10px;
     max-width: 600px;
     background-color: white;
-    /*margin: 50px auto;*/
+    display: inline-block;
     position: relative;
 }
 
@@ -77,13 +77,4 @@
     background-color: #EEBC4E;
     -webkit-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
-}
-
-article hr, footer hr {
-    margin-top: 50px;
-    margin-bottom: 25px;
-
-    max-width: 610px;
-    min-width: 0px;
-    width:100%;
 }

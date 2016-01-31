@@ -51,7 +51,7 @@ anchors: false
 <footer class="large-top-pad large-bottom-pad">
 	<div id="bottom-navigation">
 		<div id="navigation-previous">
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="text-link">
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 				{% if paginator.next_page %}
 				&#8592; Older
@@ -59,7 +59,7 @@ anchors: false
 			</a>
 		</div>
 		<div id="navigation-next">
-			<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}" class="text-link">
+			<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
 				{% if paginator.previous_page %}
 				Newer &#8594;
 				{% endif %}
@@ -68,14 +68,14 @@ anchors: false
 		</div>
 	</div>
 	{% if paginator.previous_page %}
-	<div id="bottom-tools">
+	<div id="actions-sheet">
 	{% elsif paginator.next_page %}
-	<div id="bottom-tools">
+	<div id="actions-sheet">
 	{% else %}
 	<div>
 	{% endif %}
-		<div class="bottom-tool-category">
-			<h5 style="color: #979797;text-align:center;" class="tools-bottom-pad">Subscribe</h5>
+		<div class="action-category">
+			<h5 style="color: #979797;text-align:center;" class="action-label">Subscribe</h5>
 			<a href="{{ "/newsletter" | prepend: site.baseurl }}">
 				<div class="round-button" style="text-align:center;">
 					<img class="button-default" src="{{ "/images/blog/newsletter.jpg" | prepend: site.baseurl }}" alt="Newsletter button" />
@@ -89,8 +89,8 @@ anchors: false
 				</div>
 			</a>
 		</div>
-		<div class="bottom-tool-category">
-			<h5 style="color: #979797;text-align:center;" class="tools-bottom-pad">Browse</h5>
+		<div class="action-category">
+			<h5 style="color: #979797;text-align:center;" class="action-label">Browse</h5>
 			<a href="{{ "/archive" | prepend: site.baseurl }}">
 				<div class="round-button" style="text-align:center;">
 					<img class="button-default" src="{{ "/images/blog/archive.jpg" | prepend: site.baseurl }}" alt="Archive button" />
