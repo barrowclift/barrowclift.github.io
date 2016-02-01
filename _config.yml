@@ -8,12 +8,13 @@ url: "http://barrowclift.me" # The base hostname & protocol for your site
 host: localhost
 
 permalink: /post/:title # Permalink posts sorted by date with directories is awful.
-paginate_path: "/page/:num" # Home older/previous pages go here
-highlighter: pygments
-safe: true
+paginate_path: "page/:num" # Home older/previous pages go here
+paginate: 5 # Number of posts to be shown on each each paginated page.
 
 markdown: kramdown
-paginate: 5 # Number of posts to be shown on each each paginated page.
+highlighter: rouge
+show_drafts: False
+future: False
 
 defaults:
   - # POST SPECIFIC VARIABLES
@@ -29,7 +30,6 @@ defaults:
     values:
       anchors: true # We want sections to be anchorable by default for everything
 
-# =========== PLUGINS ===========
-
 gems:
   - jemoji
+  - jekyll-paginate
