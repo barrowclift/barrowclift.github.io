@@ -16,6 +16,9 @@ highlighter: rouge
 show_drafts: False
 future: False
 
+kramdown:
+  footnote_backlink: "&#x21A9;&#xFE0E;"
+
 defaults:
   - # POST SPECIFIC VARIABLES
     scope:
