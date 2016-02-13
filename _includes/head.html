@@ -40,11 +40,12 @@
 	{% endfor %}
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/fonts.min.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/hint.min.css" type="text/css" />
-	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
 	<script type="text/javascript" src="{{ "/scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
 	<script type="text/javascript" src="{{ "/scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
 	<script type="text/javascript" src="{{ "/scripts/anchor.min.js" | prepend: site.baseurl }}"></script>
+	<script async type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script src="{{ "/scripts/lazysizes.min.js" | prepend: site.baseurl }}" async=""></script>
 	<script>
 		$.bigfoot({
 			// Uncomment to hide inline footnotes from home view
@@ -64,6 +65,18 @@
 		});
 		{% endif %}
 	</script>
+	<style>
+		.blur-up {
+	        -webkit-filter: blur(25px);
+	        filter: blur(25px);
+	        transition: filter 200ms, -webkit-filter 200ms;
+	    }
+
+	    .blur-up.lazyloaded {
+	        -webkit-filter: none;
+	        filter: none;
+	    }
+	</style>
 
 	<link rel="canonical" href="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/page/2/" />

@@ -5,12 +5,17 @@ title: Archive
 
 <h2 class="center">{{ page.title }}</h2>
 
-<ul id="archive-list">
-
-    {% for post in site.posts %}
-        <li style="margin-bottom:0.6rem;">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak"> - {{ post.date | date: "%B %-d, %Y" }}</span>
-        </li>
-    {% endfor %}
-
+{% assign year=0 %}
+{% for post in site.posts %}
+	{% capture postYear %}{{ post.date | date: '%Y' }}{% endcapture %}
+	{% if year != postYear %}
+		{% capture year %}{{ postYear }}{% endcapture %}
+		</ul>
+		<h3>{{ year }}</h3>
+		<ul id="archive-list">
+	{% endif %}
+	<li style="margin-bottom:0.6rem;">
+	    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak"> - {{ post.date | date: "%B %-d" }}</span>
+	</li>
+{% endfor %}
 </ul>
