@@ -41,11 +41,9 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/fonts.min.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/hint.min.css" type="text/css" />
 
-	<script type="text/javascript" src="{{ "/scripts/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
-	<script type="text/javascript" src="{{ "/scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
-	<script type="text/javascript" src="{{ "/scripts/anchor.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script async type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<script src="{{ "/scripts/lazysizes.min.js" | prepend: site.baseurl }}" async=""></script>
+	<script type="text/javascript" src="{{ "/scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
 	<script>
 		$.bigfoot({
 			// Uncomment to hide inline footnotes from home view
@@ -56,6 +54,7 @@
 			numberResetSelector: "article"
 		});
 	</script>
+	<script>$.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symbol:"¶",maxLength:100},c=$.extend({},b,a),d=$(this),e=[],f=function(a){var b=a.replace(/[^a-z0-9\s]/gi,"").replace(/[_\s]/g,"-").replace(/ /g,"-").toLowerCase();return b};d.each(function(){var a,b=$(this),d=b.text(),g=1;d.length>c.maxLength&&(d=d.substring(0,c.maxLength)),d=f(d),e[d]>=1?(g=e[d]+1,a=d+"-"+g):a=d,b.addClass(c.headingClass).attr("id",a),b.append('<a class="'+c.anchorClass+'" href="#'+a+'">'+c.symbol+"</a>"),e[d]=g})};</script>
 	<script>
 		{% if page.anchors %}
 		$(document).ready(function() {
@@ -65,18 +64,6 @@
 		});
 		{% endif %}
 	</script>
-	<style>
-		.blur-up {
-	        -webkit-filter: blur(25px);
-	        filter: blur(25px);
-	        transition: filter 200ms, -webkit-filter 200ms;
-	    }
-
-	    .blur-up.lazyloaded {
-	        -webkit-filter: none;
-	        filter: none;
-	    }
-	</style>
 
 	<link rel="canonical" href="{{ site.url }}{{ page.url | append: '/' | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/page/2/" />
