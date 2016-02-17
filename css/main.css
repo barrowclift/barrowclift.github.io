@@ -135,6 +135,7 @@ main {
     max-width: 463px;
     width: auto;
     margin: 0 auto;
+    margin-top: 35px;
 }
 .fat-page main {
     max-width: 546px;
@@ -143,7 +144,7 @@ main {
 
 #content {
     overflow: auto;
-    margin-top: 35px;
+    overflow-x: hidden;
     padding-bottom: 18px; /* Must be same height as the bottom banner! */
 }
 
@@ -460,9 +461,12 @@ something to center. */
     padding-left: 15px;
     padding-right: 15px;
 }
-.banner-padding {
+.banner-header-padding {
     margin-top: 0px !important;
     padding-top: 0px !important;
+}
+.banner-top-padding {
+    margin-top: -49px;
 }
 
 /* TITLE ----------------------------------------------------------- */
@@ -711,13 +715,13 @@ a > code {
         padding-left: 0%;
         padding-right: 0%;
         max-width: 529px;
+        margin-top: 45px;
     }
     .fat-page main {
         max-width: 648px;
     }
 
     #content {
-        margin-top: 45px;
         padding-bottom: 23px;
     }
 
@@ -862,6 +866,9 @@ a > code {
         padding-left: 40px;
         padding-right: 40px;
     }
+    .banner-top-padding {
+        margin-top: -59px;
+    }
 
 
     /* ----- TITLE ----- */
@@ -961,12 +968,10 @@ a > code {
     /* ----- ROOT ELEMENTS ----- */
     main {
         max-width: 595px;
+        margin-top: 50px;
     }
     .fat-page main {
         max-width: 764px;
-    }
-    #content {
-        margin-top: 50px;
     }
 
 
@@ -1101,6 +1106,9 @@ a > code {
     }
     .massive-left-pad {
         padding-left: 60px;
+    }
+    .banner-top-padding {
+        margin-top: -64px;
     }
 
 
