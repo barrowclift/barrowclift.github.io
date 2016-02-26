@@ -1,4 +1,7 @@
 <head>
+	<title>{{site.title}}{% if page.title %}: {{ page.title }}{% endif %}</title>
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
 	<link rel="mask-icon" mask href="{{ "/images/favicons/logo.min.svg" | prepend: site.baseurl }}" color="black" />
 	<link rel="icon" type="image/png" href="{{ "/images/favicons/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16" />
 	<link rel="icon" type="image/png" href="{{ "/images/favicons/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32" />
@@ -26,45 +29,25 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="{{ "/css/min/reset.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/min/bigfoot-number.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/min/main.min.css" | prepend: site.baseurl }}" type="text/css" />
-	<link rel="stylesheet" href="{{ "/css/min/syntax.min.css" | prepend: site.baseurl }}" type="text/css" />
+
+	<link href="{{ site.baseurl }}/css/min/full.min.css" rel="stylesheet" type="text/css" />
 	{% if page.color %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/theme-{{ page.color }}.min.css" type="text/css" />
+	<link href="{{ site.baseurl }}/css/min/theme-{{ page.color }}.min.css" rel="stylesheet" type="text/css" />
 	{% else %}
-	<link rel="stylesheet" href="{{ "/css/min/theme-blue.min.css" | prepend: site.baseurl }}" type="text/css" />
+	<link href="{{ site.baseurl }}/css/min/theme-blue.min.css" rel="stylesheet" type="text/css" />
 	{% endif %}
 	{% for style in page.page-specific %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/page-specific/min/{{ style }}" type="text/css" />
+	<link href="{{ site.baseurl }}/css/page-specific/min/{{ style }}" rel="stylesheet" type="text/css" />
 	{% endfor %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/fonts.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/hint.min.css" type="text/css" />
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script async type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<script type="text/javascript" src="{{ "/scripts/bigfoot.min.js" | prepend: site.baseurl }}"></script>
-	<script>
-		$.bigfoot({
-			// Uncomment to hide inline footnotes from home view
-			// {% if page.viewing-single-page %}
-			// actionOriginalFN: "ignore",
-			// {% endif %}
-			actionOriginalFN: "ignore",
-			numberResetSelector: "article"
-		});
-	</script>
-	<script>$.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symbol:"¶",maxLength:100},c=$.extend({},b,a),d=$(this),e=[],f=function(a){var b=a.replace(/[^a-z0-9\s]/gi,"").replace(/[_\s]/g,"-").replace(/ /g,"-").toLowerCase();return b};d.each(function(){var a,b=$(this),d=b.text(),g=1;d.length>c.maxLength&&(d=d.substring(0,c.maxLength)),d=f(d),e[d]>=1?(g=e[d]+1,a=d+"-"+g):a=d,b.addClass(c.headingClass).attr("id",a),b.append('<a class="'+c.anchorClass+'" href="#'+a+'">'+c.symbol+"</a>"),e[d]=g})};</script>
-	<script>
-		{% if page.anchors %}
-		$(document).ready(function() {
-			$('h3').anchor({
-				symbol: '#'
-			});
-		});
-		{% endif %}
-	</script>
+	{% if page.anchors %}
+	<script async src="{{ site.baseurl }}/scripts/full.min.js" type="text/javascript"></script>
+	{% else %}
+	<script async src="{{ site.baseurl }}/scripts/full-sans-anchors.min.js" type="text/javascript"></script>
+	{% endif %}
 
+
+	<!--Facebook OpenGraph -->
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/page/2/" />
 	<meta property="og:locale" content="en_US" />
@@ -80,8 +63,7 @@
 	{% endif %}
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="fb:admins" content="1665270112" />
-	<title>{{site.title}}{% if page.title %}: {{ page.title }}{% endif %}</title>
-	
+	<!--Twitter Cards -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@barrowclift" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
@@ -93,7 +75,6 @@
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
 
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
 	<!--[if !IE 7]>
 		<style type="text/css">
@@ -102,7 +83,6 @@
 	<![endif]-->
 	<!-- Enable media queries for old IE -->
 	<!--[if lt IE 9]>
-		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-		<script src="/scripts/html5shiv.min.js" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}/scripts/fuckInternetExplorer.min.js" type="text/javascript"></script>
 	<![endif]-->
 </head>

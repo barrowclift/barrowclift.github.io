@@ -16,10 +16,10 @@
 
 	<body>
 		<div id="wrap">
-
-			{% include header-sad.html %}
-
 			<div id="content" class="center {% if page.banner-image %}banner-header-padding{% endif %} {% if page.viewing-single-page != true %}reserved-mode{% endif %}">
+
+				{% include header-sad.html %}
+				
 				<main class="large-bottom-pad">
 
 					{{ content }}
