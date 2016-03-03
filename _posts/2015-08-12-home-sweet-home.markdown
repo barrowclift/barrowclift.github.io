@@ -56,48 +56,41 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 1. __Creative__: Any apps where I directly create my own content within the apps themselves go here (Diary apps, Note apps, music creation apps like Garageband, etc.). I have also chosen to include apps whose sole purpose is to supplement these creative apps like Dropbox and Metronome so I never have to go far to hop from one to the other, but this is entirely up to you.
 
 <div markdown="1" class="responsive">
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.jpg)
 </figure>
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.jpg)
 </figure>
 </div>
 
 2. __Games__: You guessed it, all games go here with the most played ones in the first page, nothing else to it, really.
 
 <div markdown="1" class="responsive">
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.jpg)
 </figure>
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.jpg)
 </figure>
 </div>
 
 3. __Media__: This could also be named "Relaxation", "Fun", or something along those lines since any app whose sole purpose is consumption of media goes in here (Music, iBooks, Netflix, etc.).
 
 <div markdown="1" class="responsive">
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.png){: .ios-one-screen}]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.jpg){: .ios-one-screen}]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.jpg)
 </figure>
 </div>
 
 4. __Services__: Anything that provides a website-like service to me goes here (TD Bank, Mail, Maps, App Store, etc.). In the bowels of the third and fourth pages of this folder is where I throw all the built in iOS apps that I don't use, never to be seen again. As far as I'm concerned, third and fourth pages in either the home screen or folders don't exist. On the off-chance I ever need to use one of those apps [I can simply use Spotlight lookup instead](http://www.imore.com/how-to-access-use-spotlight-seach-iphone-ipad).
 
 <div markdown="1" class="responsive">
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.jpg)
 </figure>
-<figure markdown="1" style="display: inline-block;padding-top:0px;">
-[![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.png){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.png)
-{: style="margin-top:0px;"}
+<figure markdown="1" style="display: inline-block;">
+[![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.jpg)
 </figure>
 </div>
 

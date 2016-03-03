@@ -14,7 +14,7 @@ title: Archive
 		<h3>{{ year }}</h3>
 		<ul id="archive-list">
 	{% endif %}
-	<li style="margin-bottom:0.6rem;">
+	<li>
 	    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak"> - {{ post.date | date: "%B %-d" }}</span>
 	</li>
 {% endfor %}

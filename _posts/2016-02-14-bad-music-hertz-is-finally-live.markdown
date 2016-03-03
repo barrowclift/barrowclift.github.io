@@ -8,8 +8,4 @@ excerpt: "Come scrutinize and celebrate great music with us, one record at a tim
 share-image: "bad-music-hertz-is-finally-live/logo-transparent-600x315@2x.png"
 ---
 
-<figure markdown="1">
-[![The Bad Music Hertz logo]({{ site.baseurl }}/images/assets/bad-music-hertz-is-finally-live/logo-transparent-600x315@2x.png){: .bound-responsive}](http://badmusichertz.com "I had a blast designing the look and feel for the site")
-</figure>
-
 After talking about it for years my brother, Michael Barrowclift, and I launched our brand new music blog, [Bad Music Hertz](http://badmusichertz.com). We both cherish the record format and are excited to finally share our loved and not-so-loved listens. To celebrate the launch we have a double-feature: my brother's thoughts on [LUDO's Broken Bride](http://badmusichertz.com/post/broken-bride) and mine on [Fleet Fox's Helplessness Blues](http://badmusichertz.com/post/helplessness-blues). Stop on by and give us a spin. ⌘ 

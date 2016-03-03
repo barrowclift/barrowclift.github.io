@@ -63,3 +63,14 @@ h1 a:hover {
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
+
+#logo-color {
+    fill: black;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
+}
+h1:hover #logo-color {
+    fill: #EEBC4E;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
+}

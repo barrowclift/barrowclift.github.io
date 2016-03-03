@@ -51,21 +51,34 @@ main :not(h2) > a:hover {
     transition: color .2s linear;
 }
 
-h2 a, h1 a {
+h2 a {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-h2 a:link, h1 a:link {
+h2 a:link {
     color: black;
+    fill: black;
 }
-h2 a:visited, h1 a:visited {
+h2 a:visited {
     color: black;
+    fill: black;
 }
-h2 a:hover, h1 a:hover {
+h2 a:hover {
     color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
+}
+
+#logo-color {
+    fill: black;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
+}
+h1:hover #logo-color {
+    fill: #0AA0D2;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
 }
 
 .anchor {
