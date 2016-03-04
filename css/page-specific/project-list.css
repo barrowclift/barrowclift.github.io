@@ -1,53 +1,87 @@
+.project {
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	margin-bottom: 1.5em;
+}
 .project-icon-image {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 120px;
-    padding-right: 0px;
+	max-width: 150px;
+	max-height: 150px;
+	width: 39vw;
+	height: 39vw;
+	padding:0;
+	text-align: center;
+	margin: 0 auto;
 }
-.project-icon-text, .project-icon-text h3 {
-    display: block;
-    text-align: center;
+.project-icon-text, .project-icon-text h5, .project-icon-text time {
+	max-width: 150px;
+	width: 39vw;
+	text-align: center;
 }
-.project-icon-text h3 {
-	line-height: 30px;
-	margin-top:0px;
-	margin-bottom:0px;
+h5 {
+	font-weight: 500;
+	line-height: 1.2em;
+}
+time {
+	margin-top: 0.5em;
+}
+.project-icon-text {
+	margin-top: 1.2em;
+}
+main :not(h2) a {
+    color: black;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(h2) a:link {
+    color: black;
+}
+/* visited link */
+main :not(h2) a:visited {
+    color: black;
+}
+main :not(h2) > a:hover {
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+main :not(h2) > .orange:hover {
+	color: #F68048;
+}
+main :not(h2) > .bmh:hover {
+	color: #840300;
+}
+main :not(h2) > .purple:hover {
+	color: #973D8E;
+}
+main :not(h2) > .red:hover {
+	color: #D23141;
 }
 @media (min-width: 43.75rem) {
+	.project {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
 	.project-icon-image {
-		display: inline-block;
-	 	text-align: left;
-		max-width: 120px;
-		padding-right: 20px;
+		max-width: 180px;
+		max-height: 180px;
 	}
-	.project-icon-text, .project-icon-text h3, .project-icon-text h4 {
-		max-width: 500px;
-	}
-	.project-icon-text {
-		margin-top: 8px;
-		padding-top: 0px;
-		display: inline-block;
-		text-align: left;
-	}
-	.project-icon-text h3 {
-		line-height: 35px;
-		text-align: left;
+	.project-icon-text, .project-icon-text h5, .project-icon-text time {
+		max-width: 207px;
 	}
 }
 @media (min-width: 56.25em) {
+	.project {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
 	.project-icon-image {
-		max-width: 140px;
-		padding-right: 30px;
+		max-width: 210px;
+		max-height: 210px;
 	}
-	.project-icon-text, .project-icon-text h3, .project-icon-text h4 {
-		max-width: 575px;
-	}
-	.project-icon-text {
-		max-width: 575px;
-		margin-top: 8px;
-	}
-	.project-icon-text h3 {
-		line-height: 41px;
+	.project-icon-text, .project-icon-text h5, .project-icon-text time {
+		max-width: 235px;
 	}
 }

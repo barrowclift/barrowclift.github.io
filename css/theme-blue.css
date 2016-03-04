@@ -26,7 +26,17 @@ Highlight Color
 }
 
 hr {
-    border-top: 3px solid #0AA0D2;
+    border: none;
+    background-color: #0AA0D2;
+    height: 2px;
+    background: #0AA0D2; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, #0AA0D2 25%, #0AA0D2 50%, #0AA0D2 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#0AA0D2), color-stop(50%,#0AA0D2), color-stop(75%,#0AA0D2), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
 /*

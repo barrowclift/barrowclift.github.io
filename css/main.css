@@ -76,25 +76,26 @@ h2 { /* Post Titles */
     font-size: 24px;
     line-height: 34px;
 }
-h3, h4, h5, menu ul,
+h3, h4,
 #bottom-navigation {
     font-size: 19px;
 }
-    h3, menu ul, h4, #bottom-navigation {
+    h3, h4, #bottom-navigation {
         line-height: 28px;
     }
-    h5 {
-        line-height: 23px;
-    }
+menu ul {
+    font-size: 16px;
+    line-height: 16px;
+}
 time,
-p, blockquote, ol, ul,
+p, blockquote, ol, ul, h5,
 table, #page-footer-text {
     font-size: 14px;
 }
     time, #page-footer-text {
         line-height: 14px;
     }
-    p, #archive-list li, blockquote, ol, ul, table {
+    p, #archive-list li, blockquote, ol, ul, table, h5 {
         line-height: 22px;
     }
 .footnotes ol li p,
@@ -141,7 +142,7 @@ main {
 #content {
     overflow: auto;
     overflow-x: hidden;
-    padding-bottom: 18px; /* Must be same height as the bottom banner! */
+    /*padding-bottom: 18px;  Must be same height as the bottom banner! */
 }
 
 /* NAVBAR ---------------------------------------------------------- */
@@ -151,8 +152,7 @@ menu ul {
     list-style-type: none;
     text-align: center;
     margin-top: 0;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding: 0;
 }
 menu ul li {
     display: inline-block;
@@ -160,12 +160,12 @@ menu ul li {
     margin-right: -2.5px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 2px;
+    padding-top: 0px;
     transition: background-color .1s linear;
 }
 menu ul li a {
     display: list-item;
-    padding: 6px 15px;
+    padding: 6px 0.94em;
     color: white; /* Foreground color of main menu and submenu */
 }
 
@@ -365,15 +365,25 @@ hr {
     border: none;
 }
 article hr, footer hr {
-    border-top: 1px solid #E5E5E5;
+    border: none;
+    background-color: #E5E5E5;
+    height: 1px;
+    background: #E5E5E5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#E5E5E5), color-stop(50%,#E5E5E5), color-stop(75%,#E5E5E5), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
 /* TABLES ------------------------------------------------------------------- */
 
 table {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 24px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     word-break: normal;
     word-break: keep-all;
 }
@@ -680,7 +690,7 @@ a > code {
             line-height: 28px;
         }
     time,
-    p, blockquote, ol, ul,
+    p, blockquote, ol, ul, h5,
     table, #page-footer-text {
         font-size: 16px;
     }
@@ -690,7 +700,7 @@ a > code {
         time {
             line-height: 20px;
         }
-        p, blockquote, ol, ul, #archive-list li,
+        p, blockquote, ol, ul, #archive-list li, h5,
         table {
             line-height: 25px;
         }
@@ -722,7 +732,7 @@ a > code {
     }
 
     #content {
-        padding-bottom: 23px;
+        /*padding-bottom: 23px;*/
     }
 
 
@@ -817,13 +827,13 @@ a > code {
     article hr, footer hr {
         margin: 25px 0;
         max-width: 529px;
-        border-top: 1px solid #E5E5E5;
     }
 
 
     /* ----- TABLES ----- */
     table {
-        margin-bottom: 32px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
 
@@ -924,7 +934,7 @@ a > code {
             line-height: 38px;
         }
     time,
-    p, blockquote, ol, ul,
+    p, blockquote, ol, ul, h5,
     table, #page-footer-text {
         font-size: 18px;
     }
@@ -934,7 +944,7 @@ a > code {
         time {
             line-height: 23px;
         }
-        p, blockquote, ol, ul, #archive-list li,
+        p, blockquote, ol, ul, #archive-list li, h5,
         table {
             line-height: 27px;
         }
@@ -1066,8 +1076,8 @@ a > code {
 
     /* ----- TABLES ----- */
     table {
-        margin-top: 32px;
-        margin-bottom: 38px;
+        margin-top: 27px;
+        margin-bottom: 27px;
     }
 
 

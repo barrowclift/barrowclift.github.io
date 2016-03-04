@@ -1,0 +1,92 @@
+/*
+Main Menu
+*/
+menu ul li:hover > a {
+    color: #979797; /*Foreground color of menu on hover*/
+}
+menu ul, .main-color {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#71c152+0,eebc4e+20,f68048+40,d23141+60,973d8e+80,0aa0d2+100 */
+    background: #71c152; /* Old browsers */
+    background: -moz-linear-gradient(left, #71c152 0%, #eebc4e 20%, #f68048 40%, #d23141 60%, #973d8e 80%, #0aa0d2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #71c152 0%,#eebc4e 20%,#f68048 40%,#d23141 60%,#973d8e 80%,#0aa0d2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #71c152 0%,#eebc4e 20%,#f68048 40%,#d23141 60%,#973d8e 80%,#0aa0d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71c152', endColorstr='#0aa0d2',GradientType=1 ); /* IE6-9 */
+}
+.hover:hover {
+    background-color: white;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+::selection {
+    background: #979797;
+    color: white;
+}
+/* Firefox */
+::-moz-selection {
+    background: #979797;
+    color: white;
+}
+
+/*
+Text Links
+*/
+main :not(h2) > a {
+    color: #979797;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(h2) > a:link {
+    color: #979797;
+}
+/* visited link */
+main :not(h2) > a:visited {
+    color: #979797;
+}
+main :not(h2) > a:hover {
+    color: #333333;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+a > h2, h1 a {
+    color: #979797;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+a > h2:link, h1 a:link {
+    color: black;
+}
+a > h2:visited, h1 a:visited {
+    color: black;
+}
+a > h2:hover, h1 a:hover {
+    color: #979797;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+#logo-color {
+    fill: black;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
+}
+h1:hover #logo-color {
+    fill: #979797;
+    -webkit-transition: fill .2s ease;
+    transition: fill .2s ease;
+}
+
+.anchor {
+    color: #333333 !important;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.anchor:hover {
+    color: #979797 !important;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}

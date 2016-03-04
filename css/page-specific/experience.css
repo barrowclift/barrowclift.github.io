@@ -40,7 +40,7 @@ table {
     text-align: left;
     display: block;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 33px;
     width: auto;
 }
 
@@ -58,8 +58,8 @@ td > span {
         width: 85px;
     }
     .experience-company-button {
-        margin-left: 32.5px;
-        margin-right: 32.5px;
+        margin-left: 29px;
+        margin-right: 29px;
     }
     .drexel-padding {
         padding-left: 7.5pt;
@@ -69,7 +69,7 @@ td > span {
         display: inline;
     }
     table {
-        padding-left: 40px;
+        padding-left: 50px;
         max-width: 648px;
     }
     table td {
@@ -81,14 +81,14 @@ td > span {
         width: 94px;
     }
     .experience-company-button {
-        margin-left: 44.5px;
-        margin-right: 44.5px;
+        margin-left: 46.5px;
+        margin-right: 46.5px;
     }
     .drexel-padding {
         padding-left: 11.25pt;
     }
     table {
-        padding-left: 60px;
+        padding-left: 54px;
     }
     table td {
         min-width: 250px;
