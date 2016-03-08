@@ -279,24 +279,33 @@ figcaption {
 /****** ALL IMAGES TYPES FOR USE IN BLOG ******/
 /* A true, edge-to-edge image. To be used for full-blown banners and scenic,
 image heavy adventure posts like the Sibs Trip. Should be used rarely and with
-extreme deliberation. */
+extreme deliberation.*/
 .edge-to-edge,
-/* Used for most post images. Responsive images will be edge-to-edge on small
-devices and on medium devices in post view but will switch to large, inline
-images on home view on medium devices and both views on large devices to
-provide a better viewing experience on large screens. */
+/* A slightly more reserved edge-to-edge responsive image. On small and medium
+devices it will always be edge-to-edge and remain edge-to-edge until the width
+reaches 1158px on large devices. This should also be used sparingly and great
+care should be taken when choosing this class (scrolling through massive
+images = bad user experience!)*/
 .responsive,
-/* There are some rare cases where images actually shouldn't spill past the
-text's width bounds since they then take over the vertical space and become an
-uncomfortable waste of space. (square images mostly). In these cases it
-actually makes more sense to have the image be edge-to-edge only on small
-devices then switch to bound, inline images on medium and large devices
-in both views. */
+/* Used for almost all post images. They are guarenteed to be edge-to-edge for
+small devices but have max-width bounds for both medium and large devices so
+that they "spill out" past the text width. This grants us the benefits of
+"edge-to-edge" images without sacrificing the user experinece by having to
+scroll through massive images.*/
 .bound-responsive,
+/* The last "blog post" image size class. This behaves somewhat similarly to
+bound-responsive *but* on medium and large devices it never "spills" beyond
+the text-width. In this way, on small devices it's edge-to-edge, but on medium
+and large devices it's exactly in line with the text wrapped to the top and
+bottom. This should be used sparingly for images that are abnormally tall and
+not very wide (portrait photos mostly).*/
+.inline,
+
 /* For non-blog post banners (About page, Code project pages, etc.) that I
 personally think shouldn't be a full blown banner and work better as a "shy"
 banner that acts edge-to-edge in almost all cases except large devices where
-it switches back to a large, inline image with padding. */
+it switches back to a large, inline image with padding. Fo post banners, edge-
+to-edge and the appropriate banner padding class should be used.*/
 .shy-banner {
     display: inline-block;
     height: auto;
@@ -808,6 +817,9 @@ a > code {
         max-width: 28vw;
         margin: 0 2vw;
     }
+    .inline {
+        max-width: 529px;
+    }
 
 
     /* ----- FOOTNOTES ----- */
@@ -1017,6 +1029,9 @@ a > code {
        width */
     .bound-responsive {
         max-width: 800px;
+    }
+    .inline {
+        max-width: 595px;
     }
     .responsive {
         max-width: 1158px;
