@@ -190,13 +190,13 @@ h1 {
     width: auto;
     display: inline-block;
 }
-h1 svg {
+/*h1 svg {
     transition: all 0.25s ease 0s;
     -webkit-transition: all 0.25s ease 0s;
     -moz-transition: all 0.25s ease 0s;
     -ms-transition: all 0.25s ease 0s;
     -o-transition: all 0.25s ease 0s;
-}
+}*/
 h2, h3, time {
     text-align: left;
 }
