@@ -101,9 +101,12 @@ table, #page-footer-text {
 .footnotes ol li p,
 .footnotes ol,
 figcaption, pre > code, code,
-input, select, textarea, button {
+input, select, textarea, button, h6 {
     font-size: 12px;
 }
+    h6 {
+        line-height: 19px;
+    }
     pre {
         line-height: 16px;
     }
@@ -133,16 +136,20 @@ main {
     width: auto;
     margin: 0 auto;
     margin-top: 35px;
+    margin-bottom:35px;
 }
-.fat-page main {
+.wide-page main {
     max-width: 546px;
+}
+.extra-wide-page main {
+    max-width: 100%;
+    padding:0;
 }
 
 
 #content {
     overflow: auto;
     overflow-x: hidden;
-    /*padding-bottom: 18px;  Must be same height as the bottom banner! */
 }
 
 /* NAVBAR ---------------------------------------------------------- */
@@ -153,6 +160,12 @@ menu ul {
     text-align: center;
     margin-top: 0;
     padding: 0;
+
+    transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -ms-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
 }
 menu ul li {
     display: inline-block;
@@ -176,6 +189,13 @@ h1 {
     margin-bottom: 11px;
     width: auto;
     display: inline-block;
+}
+h1 svg {
+    transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -ms-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
 }
 h2, h3, time {
     text-align: left;
@@ -237,6 +257,11 @@ blockquote {
 }
 blockquote > :last-child {
     margin-bottom: 0;
+}
+
+
+.underline {
+    text-decoration: underline;
 }
 
 /* STREAM NAVIGATION -------------------------------------------------------- */
@@ -716,7 +741,7 @@ a > code {
     .footnotes ol li p,
     .footnotes ol,
     figcaption, pre > code, code,
-    input, select, textarea, button {
+    input, select, textarea, button, h6 {
         font-size: 14px;
     }
         pre {
@@ -727,6 +752,9 @@ a > code {
         .footnotes ol {
             line-height: 23px;
         }
+        h6 {
+            line-height: 21px;
+        }
 
 
     /* ----- ROOT ELEMENTS ----- */
@@ -735,13 +763,10 @@ a > code {
         padding-right: 0%;
         max-width: 529px;
         margin-top: 45px;
+        margin-bottom: 45px;
     }
-    .fat-page main {
+    .wide-page main {
         max-width: 648px;
-    }
-
-    #content {
-        /*padding-bottom: 23px;*/
     }
 
 
@@ -963,7 +988,7 @@ a > code {
     .footnotes ol li p,
     .footnotes ol,
     figcaption, pre > code, code,
-    input, select, textarea, button {
+    input, select, textarea, button, h6 {
         font-size: 16px;
     }
         pre {
@@ -974,15 +999,22 @@ a > code {
         .footnotes ol {
             line-height: 25px;
         }
+        h6 {
+            line-height: 25px;
+        }
 
 
     /* ----- ROOT ELEMENTS ----- */
     main {
         max-width: 595px;
         margin-top: 50px;
+        margin-bottom:50px;
     }
-    .fat-page main {
+    .wide-page main {
         max-width: 764px;
+    }
+    .extra-wide-page main {
+        max-width: 1200px;
     }
 
 

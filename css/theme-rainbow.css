@@ -6,11 +6,31 @@ menu ul li:hover > a {
 }
 menu ul, .main-color {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#71c152+0,eebc4e+20,f68048+40,d23141+60,973d8e+80,0aa0d2+100 */
-    background: #71c152; /* Old browsers */
-    background: -moz-linear-gradient(left, #71c152 0%, #eebc4e 20%, #f68048 40%, #d23141 60%, #973d8e 80%, #0aa0d2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #71c152 0%,#eebc4e 20%,#f68048 40%,#d23141 60%,#973d8e 80%,#0aa0d2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #71c152 0%,#eebc4e 20%,#f68048 40%,#d23141 60%,#973d8e 80%,#0aa0d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71c152', endColorstr='#0aa0d2',GradientType=1 ); /* IE6-9 */
+    background-color: #F68048;
+    animation: rgb 60s infinite;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+}
+@keyframes rgb {
+    17% {
+        background-color: #EEBC4E;
+    }
+    33% {
+        background-color: #71C152;
+    }
+    50% {
+        background-color: #0AA0D2;
+    }
+    66% {
+        background-color: #973D8E;
+    }
+    83% {
+        background-color: #E13646;
+    }
+    100% {
+        background-color: #F68048;
+    }
 }
 .hover:hover {
     background-color: white;
