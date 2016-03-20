@@ -161,11 +161,11 @@ menu ul {
     margin-top: 0;
     padding: 0;
 
-    transition: all 0.25s ease 0s;
+    /*transition: all 0.25s ease 0s;
     -webkit-transition: all 0.25s ease 0s;
     -moz-transition: all 0.25s ease 0s;
     -ms-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;*/
 }
 menu ul li {
     display: inline-block;
