@@ -17,6 +17,36 @@ main div > a:hover {
     transition: color .2s linear;
 }
 
+a.download-button {
+    color: white !important;
+}
+.download-button {
+    width: 200px;
+    height: 28px;
+    color: white;
+    border: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-top:10px;
+    background-color: #979797;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+
+    /* css 3 */
+    border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
+}
+.download-button:hover {
+    background-color: #71C152;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+}
+
 .drexel-padding {
     margin-top: 0px;
     padding-left: 0px;
