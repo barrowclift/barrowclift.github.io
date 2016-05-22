@@ -5,7 +5,7 @@ menu ul li:hover > a {
     color: #733041; /*Foreground color of menu on hover*/
     background-color: transparent;
 }
-menu ul, .main-color {
+#website-title, .main-color {
     background-color: #733041;
 }
 .hover:hover {

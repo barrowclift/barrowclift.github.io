@@ -4,8 +4,10 @@
 .project {
     max-height: 275px;
     max-width: 564px;
-    width: 100%;
     height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 22px;

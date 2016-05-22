@@ -4,7 +4,7 @@ Main Menu
 menu ul li:hover > a {
     color: #979797; /*Foreground color of menu on hover*/
 }
-menu ul, .main-color {
+#website-title, .main-color {
     background-color: #F68048;
     animation: rgb 60s infinite;
     -webkit-transition: .2s;
@@ -12,27 +12,32 @@ menu ul, .main-color {
     transition: .2s;
 }
 @keyframes rgb {
-    17% {
+    0% {
+        background-color: #F68048;
+    }
+    20% {
         background-color: #EEBC4E;
     }
-    33% {
+    40% {
         background-color: #71C152;
     }
-    50% {
+    60% {
         background-color: #0AA0D2;
     }
-    66% {
+    80% {
         background-color: #973D8E;
     }
-    83% {
-        background-color: #E13646;
-    }
     100% {
-        background-color: #F68048;
+        background-color: #E13646;
     }
 }
 .hover:hover {
     background-color: white;
+}
+
+.active a {
+    background-color: white;
+    color: #979797;
 }
 
 /*

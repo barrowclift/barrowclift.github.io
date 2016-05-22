@@ -4,7 +4,7 @@ Main Menu
 menu ul li:hover > a {
     color: #E13646; /*Foreground color of menu on hover*/
 }
-menu ul, .main-color {
+#website-title, .main-color {
     background-color: #E13646;
 }
 .hover:hover {

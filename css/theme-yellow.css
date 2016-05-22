@@ -4,11 +4,15 @@ MainMenu
 menu ul li:hover > a {
     color: #EEBC4E; /*Foreground color of menu on hover*/
 }
-menu ul, .main-color {
+#website-title, .main-color {
     background-color: #EEBC4E;
 }
 .hover:hover {
     background-color: white;
+}
+.active a {
+    background-color: white;
+    color: #EEBC4E;
 }
 
 /*

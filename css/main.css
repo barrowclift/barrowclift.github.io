@@ -27,7 +27,6 @@ html, input, textarea {
 }
 h1 {
     font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "San Francisco", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Segoe UI", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
-    font-weight:100;
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -48,9 +47,14 @@ code:before, code:after {
 }
 menu ul {
     letter-spacing: 0.1px;
+    font-weight: 500;
 }
 figcaption {
     letter-spacing: 0.0625em;
+}
+h1 {
+    font-weight: 200;
+    color: white;
 }
 h2, h3 {
     font-weight: 500;
@@ -182,7 +186,7 @@ menu ul li {
 }
 menu ul li a {
     display: list-item;
-    padding: 6px 0.94em;
+    padding: 6px 0.9em;
     color: white; /* Foreground color of main menu and submenu */
 }
 
@@ -201,7 +205,10 @@ h1 {
     -ms-transition: all 0.25s ease 0s;
     -o-transition: all 0.25s ease 0s;
 }*/
-h2, h3, time {
+h2, time {
+    text-align: center;
+}
+h3 {
     text-align: left;
 }
 h3 { 
@@ -519,13 +526,13 @@ something to center. */
 
 #logo-image {
     display: inline-block;
+    vertical-align: top;
     width: 32px;
     height: 32px;
     padding-top:1px;
 }
 #logo-text {
-    height: 35px;
-    margin-top:-1px;
+    height: 48px;
 }
 
 svg #logo-eye-opened,
@@ -911,7 +918,8 @@ a > code {
         height: 48px;
     }
     #logo-text {
-        height: 52px;
+        height: 69px;
+        margin-top: 1px;
     }
 
 
@@ -1163,11 +1171,10 @@ a > code {
     #logo-image {
         width: 64px;
         height: 64px;
-        padding-top:2px;
+        padding-top: 2px;
     }
     #logo-text {
-        height: 70px;
-        margin-top:-2px;
+        height: 94px;
     }
 
     /* ----- PAGE FOOTER ----- */

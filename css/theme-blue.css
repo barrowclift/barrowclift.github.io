@@ -4,7 +4,7 @@ Main Menu
 menu ul li:hover > a {
     color: #0AA0D2; /*Foreground color of menu on hover*/
 }
-menu ul, .main-color {
+#website-title, .main-color {
     background-color: #0AA0D2;
 }
 .hover:hover {
@@ -37,6 +37,11 @@ hr {
     background: -ms-linear-gradient(left,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* IE10+ */
     background: linear-gradient(to right,  #FFFFFF 0%,#0AA0D2 25%,#0AA0D2 50%,#0AA0D2 75%,#FFFFFF 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
+}
+
+.active a {
+    background-color: white;
+    color: #0AA0D2;
 }
 
 /*
@@ -80,15 +85,15 @@ h2 a:hover {
     transition: color .2s ease;
 }
 
-#logo-color {
-    fill: black;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
+h1 a {
+    color: white;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
 }
-h1:hover #logo-color {
-    fill: #0AA0D2;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
+h1:hover a {
+    color: red;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
 }
 
 .anchor {
