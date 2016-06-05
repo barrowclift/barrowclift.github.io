@@ -96,6 +96,13 @@ h1:hover a {
     transition: color .2s ease;
 }
 
+/* Firefox is the only browser that doesn't respect this color being set in the
+correct bigfoot-number.min.css style sheet. This makes Firefox do what literally
+every other browser has the competency to figure out themselves. */
+.bigfoot-footnote__button {
+    background-color: #0AA0D2;
+}
+
 .anchor {
     color: #0AA0D2 !important;
     -webkit-transition: color .2s ease;

@@ -6,29 +6,36 @@ menu ul li:hover > a {
 }
 #website-title, .main-color {
     background-color: #F68048;
-    animation: rgb 60s infinite;
+    -webkit-animation: rgb 60s infinite;
+       -moz-animation: rgb 60s infinite;
+        -ms-animation: rgb 60s infinite;
+         -o-animation: rgb 60s infinite;
+            animation: rgb 60s infinite;
     -webkit-transition: .2s;
-    -moz-transition: .2s;
-    transition: .2s;
+       -moz-transition: .2s;
+            transition: .2s;
 }
 @keyframes rgb {
     0% {
         background-color: #F68048;
     }
-    20% {
+    10% {
         background-color: #EEBC4E;
     }
-    40% {
+    30% {
         background-color: #71C152;
     }
-    60% {
+    50% {
         background-color: #0AA0D2;
     }
-    80% {
+    70% {
         background-color: #973D8E;
     }
-    100% {
+    90% {
         background-color: #E13646;
+    }
+    100% {
+        background-color: #F68048;
     }
 }
 .hover:hover {

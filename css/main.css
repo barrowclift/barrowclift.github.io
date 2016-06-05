@@ -23,10 +23,9 @@ CONTENT:
 
 /* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
-    font-family: system, -apple-system, ".SFNSDisplay-Regular", "San Francisco", "HelveticaNeue", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
-}
-h1 {
-    font-family: system, -apple-system, ".SFNSDisplay-Ultralight", "San Francisco", "HelveticaNeueUltraLight", 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "Segoe UI", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+    font-family: system, -apple-system, "San Francisco", "Helvetica Neue", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
+    -moz-osx-font-smoothing: grayscale;
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -190,6 +189,10 @@ menu ul li a {
     color: white; /* Foreground color of main menu and submenu */
 }
 
+#website-title {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(0, 0, 0, 0.09));
+}
+
 /* HEADERS ------------------------------------------------------------------- */
 
 h1 {
@@ -348,8 +351,27 @@ to-edge and the appropriate banner padding class should be used.*/
     width: 100vw;
     max-width: 1600px;
     max-height: none;
-    margin-left: -30vw;
-    margin-right: -30vw;
+}
+
+.bound-responsive {
+    margin-left: -15vw;
+    margin-right: -15vw;
+}
+.responsive {
+    margin-left: -25vw;
+    margin-right: -25vw;
+}
+.inline {
+    margin-left: -15vw;
+    margin-right: -15vw;
+}
+.edge-to-edge {
+    margin-left: -35vw;
+    margin-right: -35vw;
+}
+.shy-banner {
+    margin-left: -35vw;
+    margin-right: -35vw;
 }
 
 
@@ -380,7 +402,6 @@ flowed (my responsive stuff is basically a hack as is...) */
     margin-left: 2vw;
     margin-right: 2vw;
 }
-
 
 video {
     top: 0;
@@ -530,6 +551,9 @@ something to center. */
     width: 32px;
     height: 32px;
     padding-top:1px;
+    /* Fixes Firefox rendering the logo like a drunken idiot, every
+       other browser could handle it just fine. */
+    image-rendering: -moz-crisp-edges; 
 }
 #logo-text {
     height: 48px;
@@ -789,8 +813,8 @@ a > code {
     menu ul li {
         padding-top: 0px;
 
-        margin-left: -3.3px;
-        margin-right: -3.3px;
+        margin-left: -4px;
+        margin-right: -4px;
     }
     menu ul li a {
         padding: 8px 28px;
@@ -1031,8 +1055,12 @@ a > code {
 
     /* ----- NAVBAR ----- */
     menu ul li a {
-        padding-left: 41px;
-        padding-right: 41px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    menu ul li {
+        margin-left:-4px;
+        margin-right:-4px;
     }
 
 
