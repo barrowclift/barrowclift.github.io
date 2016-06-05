@@ -16,6 +16,7 @@ CONTENT:
     Title ---
     Page Footer ---
     Anchors ---
+    Actions Sheet ---
     Code ---
 */
 
@@ -80,10 +81,11 @@ h2 { /* Post Titles */
     line-height: 34px;
 }
 h3, h4,
-#bottom-navigation {
+#bottom-navigation,
+.action-label {
     font-size: 19px;
 }
-    h3, h4, #bottom-navigation {
+    h3, h4, #bottom-navigation, .action-label {
         line-height: 28px;
     }
 menu ul {
@@ -746,7 +748,8 @@ a > code {
         line-height: 41px;
     }
     h3, h5, h4, menu ul,
-    #bottom-navigation {
+    #bottom-navigation,
+    .action-label {
         font-size: 24px;
     }
         menu ul {
@@ -755,7 +758,7 @@ a > code {
         h3, h4 {
             line-height: 33px;
         }
-        h5 {
+        h5, .action-label {
             line-height: 28px;
         }
     time,
@@ -992,7 +995,8 @@ a > code {
         line-height: 48px;
     }
     h3, h4, h5, menu ul,
-    #bottom-navigation {
+    #bottom-navigation,
+    .action-label {
         font-size: 27px;
         line-height: 27px;
     }
@@ -1002,7 +1006,7 @@ a > code {
         h5 {
             line-height: 33px;
         }
-        h3, h4, #bottom-navigation {
+        h3, h4, #bottom-navigation, .action-label {
             line-height: 38px;
         }
     time,
