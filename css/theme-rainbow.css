@@ -15,6 +15,76 @@ menu ul li:hover > a {
        -moz-transition: .2s;
             transition: .2s;
 }
+@-moz-keyframes rgb {
+    0% {
+        background-color: #F68048;
+    }
+    10% {
+        background-color: #EEBC4E;
+    }
+    30% {
+        background-color: #71C152;
+    }
+    50% {
+        background-color: #0AA0D2;
+    }
+    70% {
+        background-color: #973D8E;
+    }
+    90% {
+        background-color: #E13646;
+    }
+    100% {
+        background-color: #F68048;
+    }
+}
+
+@-webkit-keyframes rgb {
+    0% {
+        background-color: #F68048;
+    }
+    10% {
+        background-color: #EEBC4E;
+    }
+    30% {
+        background-color: #71C152;
+    }
+    50% {
+        background-color: #0AA0D2;
+    }
+    70% {
+        background-color: #973D8E;
+    }
+    90% {
+        background-color: #E13646;
+    }
+    100% {
+        background-color: #F68048;
+    }
+}
+@-o-keyframes rgb {
+    0% {
+        background-color: #F68048;
+    }
+    10% {
+        background-color: #EEBC4E;
+    }
+    30% {
+        background-color: #71C152;
+    }
+    50% {
+        background-color: #0AA0D2;
+    }
+    70% {
+        background-color: #973D8E;
+    }
+    90% {
+        background-color: #E13646;
+    }
+    100% {
+        background-color: #F68048;
+    }
+}
 @keyframes rgb {
     0% {
         background-color: #F68048;
