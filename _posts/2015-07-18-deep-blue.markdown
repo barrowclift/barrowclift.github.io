@@ -1,5 +1,5 @@
 ---
-layout: banner-post
+layout: post-banner
 title:  "Deep Blue"
 date:   2015-07-18 17:00:00
 categories:

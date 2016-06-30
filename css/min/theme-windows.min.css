@@ -1,1 +1,63 @@
-menu ul li:hover > a{color:#ABAAAB}#website-title,.main-color{background-color:#0041FF}.hover:hover{background-color:white}::selection{background:#ABAAAB;color:white}::-moz-selection{background:#ABAAAB;color:white}main :not(h2) > a{color:#0041FF;-webkit-transition:color .2s linear;transition:color .2s linear}main :not(h2) > a:link{color:#0041FF}main :not(h2) > a:visited{color:#0041FF}main :not(h2) > a:hover{color:#2268AD;-webkit-transition:color .2s linear;transition:color .2s linear}h1 a{color:#ABAAAB;-webkit-transition:color .2s ease;transition:color .2s ease}h1 a:link{color:black}h1 a:visited{color:black}h1 a:hover{color:#ABAAAB;-webkit-transition:color .2s ease;transition:color .2s ease}#logo-color{fill:black;-webkit-transition:fill .2s ease;transition:fill .2s ease}h1:hover #logo-color{fill:#ABAAAB;-webkit-transition:fill .2s ease;transition:fill .2s ease}
+/*
+Main Menu
+*/
+#website-title, .main-color {
+    background-color: #0041FF;
+}
+.hover:hover {
+    background-color: #0041FF;
+    color: white;
+}
+
+/*
+Highlight Color
+*/
+/* Safari */
+::selection {
+    background: #ABAAAB;
+    color: white;
+}
+/* Firefox */
+::-moz-selection {
+    background: #ABAAAB;
+    color: white;
+}
+
+/*
+Text Links
+*/
+main :not(h2) > a {
+    color: #0041FF;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* unvisited link */
+main :not(h2) > a:link {
+    color: #0041FF;
+}
+/* visited link */
+main :not(h2) > a:visited {
+    color: #0041FF;
+}
+main :not(h2) > a:hover {
+    color: #2268AD;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+h1 a {
+    color: #ABAAAB;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+h1 a:link {
+    color: black;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: #ABAAAB;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}

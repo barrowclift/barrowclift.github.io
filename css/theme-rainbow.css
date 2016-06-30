@@ -170,24 +170,9 @@ a > h2:hover, h1 a:hover {
     transition: color .2s ease;
 }
 
-#logo-color {
-    fill: black;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
-}
-h1:hover #logo-color {
-    fill: #979797;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
-}
-
 .anchor {
     color: #333333 !important;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
 }
 .anchor:hover {
     color: #979797 !important;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
 }

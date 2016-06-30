@@ -8,15 +8,7 @@ page-specific:
   - contact-form.min.css
 ---
 
-<form id="contact-form" action="//formspree.io/&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;" method="POST">
-    <input type="hidden" name="_next" value="/contact/thank-you/" />
-    <input type="email" name="_replyto" placeholder="Your email address" />
-    <textarea rows="15" type="text" name="message" placeholder="Your message"></textarea>
-    <input type="text" name="_gotcha" style="display:none">
-    <button type="submit" value="Send" id="submit-button">Send</button>
-</form>
-
-<div class="large-top-pad inline-block">
+<div class="inline-block bottom-pad">
     <div class="inline-block">
         <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">
             <div class="social-site-button">
@@ -25,7 +17,7 @@ page-specific:
             </div>
         </a>
     </div>
-    <div class="massive-left-pad inline-block">
+    <div class="inline-block">
         <a href="https://twitter.com/barrowclift">
             <div class="social-site-button">
                 <img class="button-default" src="/images/contact/twitter.png" alt="Twitter button" />
@@ -33,7 +25,7 @@ page-specific:
             </div>
         </a>
     </div>
-    <div class="massive-left-pad inline-block">
+    <div class="inline-block">
         <a href="https://github.com/barrowclift">
             <div class="social-site-button">
                 <img class="button-default" src="/images/contact/github.png" alt="Github button" />
@@ -41,7 +33,7 @@ page-specific:
             </div>
         </a>
     </div>
-    <div class="massive-left-pad inline-block">
+    <div class="inline-block">
         <a href="https://www.linkedin.com/in/marcbarrowclift/">
             <div class="social-site-button">
                 <img class="button-default" src="/images/contact/linkedin.png" alt="Linkedin button" />
@@ -50,3 +42,14 @@ page-specific:
         </a>
     </div>
 </div>
+
+<hr class="small">
+<p>Got something you want to talk with me about? I'm all ears.</p>    
+
+<form id="contact-form" action="//formspree.io/&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;" method="POST">
+    <input type="hidden" name="_next" value="/contact/thank-you/" />
+    <input type="email" name="_replyto" placeholder="Your email address" />
+    <textarea rows="10" type="text" name="message" placeholder="Your message"></textarea>
+    <input type="text" name="_gotcha" style="display:none">
+    <button type="submit" value="Send" id="submit-button">Send</button>
+</form>

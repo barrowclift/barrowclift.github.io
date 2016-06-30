@@ -20,7 +20,7 @@
 				
 				{% include header-happy.html %}
 				
-				<main>
+				<main style="{% if page.bottom-margin-included != true %}margin-bottom:0px;{% endif %}">
 
 					{{ content }}
 

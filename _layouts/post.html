@@ -5,15 +5,15 @@ layout: default
 <article>
 	<header role="header">
 		{% if page.link %}
-			<h2 class="center">
+			<h2>
 				<a href="{{ page.link }}">{{ page.title }} ↦</a>
 			</h2>
 		{% else %}
-			<h2 class="center">
+			<h2>
 				{{ page.title }}
 			</h2>
 		{% endif %}
-		<time itemprop="dateCreated" style="text-align:center;">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+		<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}, <img title="This page is a permalink" src="/images/blog/permalink.svg" class="permalink"></time>
 	</header>
 
 	{{ content }}

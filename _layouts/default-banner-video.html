@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+	{% include head.html %}
+
+	<body>
+		<div id="wrap">
+			<div id="content" class="center {% if page.banner %}banner-header-padding{% endif %} {% if page.viewing-single-page != true %}reserved-mode{% endif %}">
+				
+				{% include header-happy.html %}
+				
+				<main>
+
+					<article>
+						<figure class="banner-top-padding">
+							<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %}">
+								<source src="/videos/{{ page.banner-video }}.mp4" type="video/mp4">
+								<source src="/videos/{{ page.banner-video }}.webm" type="video/webm">
+								<source src="/videos/{{ page.banner-video }}.ogv" type="video/ogg">
+								[HTML5 video tag not supported by your browser]
+							</video>
+						</figure>
+
+						{{ content }}
+					</article>
+
+				</main>
+			</div>
+		</div>
+
+		{% include footer.html %}
+	</body>
+</html>
