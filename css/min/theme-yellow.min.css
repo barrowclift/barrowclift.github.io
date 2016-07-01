@@ -32,20 +32,20 @@ Highlight Color
 /*
 Text Links
 */
-main :not(h2) > a {
+main :not(h1) > a {
     color: #EEBC4E;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 /* unvisited link */
-main :not(h2) > a:link {
+main :not(h1) > a:link {
     color: #EEBC4E;
 }
 /* visited link */
-main :not(h2) > a:visited {
+main :not(h1) > a:visited {
     color: #EEBC4E;
 }
-main :not(h2) > a:hover {
+main :not(h1) > a:hover {
     color: #F7D242;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;

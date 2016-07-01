@@ -36,20 +36,20 @@ hr {
 /*
 Links
 */
-main :not(h2) > a {
+main :not(h1) > a {
     color: #D23141;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 /* unvisited link */
-main :not(h2) > a:link {
+main :not(h1) > a:link {
     color: #D23141;
 }
 /* visited link */
-main :not(h2) > a:visited {
+main :not(h1) > a:visited {
     color: #D23141;
 }
-main :not(h2) > a:hover {
+main :not(h1) > a:hover {
     color: #FF6871;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;

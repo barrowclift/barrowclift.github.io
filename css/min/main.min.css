@@ -53,7 +53,7 @@ menu ul {
     font-weight: 200;
     color: white;
 }*/
-h2, h3 {
+h1, h2 {
     font-family: "SFNS Display";
     font-weight: 900;
 }
@@ -63,12 +63,15 @@ table th, strong {
 blockquote, em {
     font-style: italic;
 }
-h4, time,
+time,
 figcaption, .weak {
     color: #979797;
 }
 /* ----- FONT SIZES ----- */
 html {
+    letter-spacing: 0.025em;
+}
+time {
     letter-spacing: 0.025em;
 }
 menu ul {
@@ -77,65 +80,84 @@ menu ul {
 figcaption {
     letter-spacing: 0.085em;
 }
-h2, h3 {
+h1, h2 {
     letter-spacing: 0.03em !important;
 }
 
 
 /* Sizes */
 #logo { /* Page Headers */
-    margin-top: 23px;
+    margin-top: 21px;
     margin-bottom: 0px;
 }
-h2 { /* Post Titles */
-    font-size: 40px; /* 16px * 2.5 */
-    line-height: 46px; /* 23px * 2 */
-    margin-top: 46px;
-    margin-bottom: 0px;
-}
-h3, h4, h5,
-#bottom-navigation {
-    font-size: 24px; /* 16px * 1.5 */
-    line-height: 34.5px; /* 23px * 1.5 */
-    margin: 34.5px 0;
-}
-    h3 {
-        margin-top: 46px;
-        margin-bottom: 23px;
-    }
-    h5 {
-        margin: 11.5px 0; /* 23px * 0.5 */
-    }
 menu ul {
-    font-size: 20px; /* ((24 - 16) / 2) + 16 */
-    line-height: 23px;
-    margin: 11.5px 0;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 10.5px 0;
 }
-time,
+h1 {
+    font-size: 35px; /* 14px from <p> * 2.5 */
+    line-height: 42px; /* 21px * 2 */
+    margin-top: 42px; /* 21px * 2 */
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 28px !important; /* 14px from <p> * 2 */
+    line-height: 36.75px; /* 21px * 1.75 */
+    margin: 36.75px 0; /* 21px * 1.75 */
+}
+h3 {
+    font-size: 21px; /* 14px from <p> * 1.5 */
+    line-height: 31.5px; /* 21px * 1.5 */
+    margin: 31.5px 0; /* 21px * 1.5 */
+}
+h4 {
+    font-size: 17.5px; /* 14px from <p> * 1.25 */
+    line-height: 26.25px; /* 21px * 1.25 */
+    margin: 26.25px 0; /* 21px * 1.25 */
+}
+h5 {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 21px 0;
+}
+h6 {
+    font-size: 10.5px; /* 14px from <p> * 0.75 */
+    line-height: 15.75px; /* 21px * 0.75 */
+    margin: 15.75px 0; /* 21px * 0.75 */
+}
 p, blockquote, ol, ul,
 table {
-    font-size: 16px;
-    line-height: 23px;
-    margin: 23px 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 21px 0;
 }
     time {
-        line-height: 11.5px; /* 23px * 0.5 */
-        margin: 11.5px 0;
+        font-size: 0.5em;
+        line-height: 10.5px; /* 21px * 0.5 */
+        margin: 10.5px 0;
+        margin-top: 10.5px;
+        margin-bottom: 31.5px;
         font-style: italic;
     }
 .footnotes ol li p,
 .footnotes ol,
 figcaption, pre > code, code,
-input, select, textarea, button, h6 {
+input, select, textarea, button {
     font-size: 13px;
-    line-height: 23px;
-    margin: 23px 0;
+    line-height: 21px;
+    margin: 21px 0;
 }
     pre, pre > code {
-        line-height:17.25px; /* 23 * 0.75 */
+        line-height:15.75px; /* 21 * 0.75 */
     }
 .bigfoot-footnote__content p {
-    line-height: 19.55px; /* font-size: 85%, 0.85 * base line height 23px for iPhone */
+    line-height: 17.85px; /* font-size: 85%, 0.85 * base line height 21px for iPhone */
+}
+small {
+    font-size: 0.75em;
+    /*font-style: italic;*/
+    color: #979797;
 }
 
 /* ROOT ELEMENTS ------------------------------------------------------------ */
@@ -157,8 +179,8 @@ main {
     max-width: 463px;
     width: auto;
     margin: 0 auto;
-    margin-top: 46px;
-    margin-bottom: 46px;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
 .wide-page main {
     max-width: 546px;
@@ -185,12 +207,6 @@ menu ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
-
-    /*transition: all 0.25s ease 0s;
-    -webkit-transition: all 0.25s ease 0s;
-    -moz-transition: all 0.25s ease 0s;
-    -ms-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;*/
 }
 menu ul li {
     display: inline-block;
@@ -199,11 +215,12 @@ menu ul li {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
+    min-width: 75px;
     transition: background-color .1s linear;
 }
 menu ul li a {
     display: list-item;
-    padding: 6px 1.69vw; /* 23px * 0.25 */
+    padding: 5.25px 1.69vw; /* 21px * 0.25 */
     color: white; /* Foreground color of main menu and submenu */
 }
 menu {
@@ -225,11 +242,11 @@ menu {
     width: auto;
     display: inline-block;
 }
-h2, time {
+h1,h2,h3,h4,h5,h6,time {
     text-align: left;
 }
-h3 {
-    text-align: left;
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
 }
 
 
@@ -244,7 +261,7 @@ p, ol, ul {
 }
 
 ol, ul {
-    padding-left: 34.5px; /* 23px * 1.5 */
+    padding-left: 31.5px; /* 21px * 1.5 */
 }
 ol {
     list-style-type: decimal;
@@ -265,7 +282,7 @@ ol li > :last-child, ul li > :last-child {
 
 
 blockquote {
-    padding-left: 34.5px;
+    padding-left: 31.5px;
     border-left: 4px solid #e8e8e8;
     color: #828282;
 }
@@ -310,7 +327,7 @@ figure p {
 }
 figcaption {
     padding: 0 5%;
-    margin-top: -11.5px;
+    margin-top: -10.5px;
     margin-bottom: 23px;
 }
 
@@ -378,7 +395,8 @@ to-edge and the appropriate banner padding class should be used.*/
 /* iOS screen shots (OS X Yosemite "window" blur otherwise window blends into
 website background)*/
 .screenshot-shadow {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    /*box-shadow: 0 8px 16px rgba(0,0,0,0.25);*/
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
 }
 /* The size of the iOS screenshot will change depending on how many should be
 shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
@@ -420,13 +438,16 @@ video {
 .footnotes ol > :last-child {
     margin-bottom: 0px;
 }
+footer {
+    margin: 42px 0;
+}
 
 
 /* DIVIDERS ----------------------------------------------------------------- */
 
 hr {
-    margin-top: 34.5px; /* (23 * 2.5) - 23 */
-    margin-bottom: 23px; /* (23 * 2.5) - (23 * 1.5) */
+    margin-top: 42px;
+    margin-bottom: 21px;
     border: none;
     margin-left: -15vw;
     margin-right: -15vw;
@@ -438,7 +459,7 @@ article hr, footer hr, hr.small {
     border: none;
     background-color: #E5E5E5;
     height: 1px;
-    margin: 11.5px 0; /* (29 * 1.5) - 29 */
+    margin: 10.5px 0; /* (21 * 1.5) - 21 */
     max-width: 463px;
     background: #E5E5E5; /* Old browsers */
     background: -moz-linear-gradient(left,  #FFFFFF 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, #FFFFFF 100%); /* FF3.6+ */
@@ -476,7 +497,7 @@ button {
 input, button, textarea {
     display: block;
     margin-top: 0px;
-    margin-bottom: 11.5px;
+    margin-bottom: 10.5px;
 }
 
 
@@ -535,29 +556,29 @@ something to center. */
 /* Relic from release 3.0. Again, NOT ideal and needs to be fixed/removed in a
    future refactor.*/   
 .large-top-pad {
-    margin-top: 34.5px;
+    margin-top: 31.5px;
 }
 .large-bottom-pad {
-    margin-bottom: 34.5px;
+    margin-bottom: 31.5px;
 }
 .top-pad {
-    margin-top: 23px;
+    margin-top: 21px;
 }
 .bottom-pad {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 }
 .massive-left-pad {
-    padding-left: 34.5px;
+    padding-left: 31.5px;
 }
 .divider {
-    margin: 0 11.5px;
+    margin: 0 5vw;
 }
 .banner-header-padding {
     margin-top: 0px !important;
     padding-top: 0px !important;
 }
 .banner-top-padding {
-    margin-top: -46px;
+    margin-top: -42px;
 }
 
 /* TITLE ----------------------------------------------------------- */
@@ -621,17 +642,20 @@ body:before {
 /* ACTIONS SHEET ----------------------------------------------------------- */
 
 #actions-sheet {
-    padding-top: 46px;
+    padding-top: 29px;
 }
 .action-label {
     color: #979797;
+}
+#navigation-next, #navigation-previous {
+    min-width: 85px;
 }
 .action-category {
     display: inline-block;
     text-align: center;
     min-width: 60px;
     width: auto;
-    margin: 0 23px;
+    margin: 0 21px;
 }
 
 /* CODE --------------------------------------------------------------------- */
@@ -729,7 +753,7 @@ a > code {
     height: 0.8em;
     width: 0.7em;
     opacity: 1;
-    margin-left: 0.35em;
+    margin-left: 0.3em;
 }
 
 
@@ -744,44 +768,58 @@ a > code {
     html {
         letter-spacing: 0.02em;
     }
+    time {
+        letter-spacing: 0.02em;
+    }
     menu ul {
         letter-spacing: -0.03em !important;
     }
     figcaption {
         letter-spacing: 0.085em;
     }
-    h2, h3 {
+    h1, h2 {
         letter-spacing: -0.011em !important;
     }
     #logo {
         margin-top: 29px;
         margin-bottom: 0px;
     }
-    h2 {
-        font-size: 47.5px; /* 19px * 2.5 */
-        line-height: 58px;
-        margin-top: 58px;
-        margin-bottom: 0px;
-    }
-    h3, h5, h4, menu ul,
-    #bottom-navigation {
-        font-size: 28.5px; /* 19px * 1.5 */
-        line-height: 43.5px; /* 29px * 1.5 */
-        margin: 43.5px 0;
-    }
-        h3 {
-            margin-top: 58px;
-            margin-bottom: 29px;
-        }
-        h5 {
-            margin: 14.5px 0; /* 43.5 - 29 */
-        }
     menu ul {
         font-size: 23.75px; /* ((28.5 - 19) / 2) + 19 */
-        line-height:29px;
-        margin:14.5px 0;
+        line-height: 29px;
+        margin: 14.5px 0;
     }
-    time,
+    h1 {
+        font-size: 47.5px; /* 19px from <p> * 2.5 */
+        line-height: 58px; /* 29px * 2 */
+        margin-top: 58px; /* 29px * 2 */
+        margin-bottom: 0px;
+    }
+    h2 {
+        font-size: 38px !important; /* 19px from <p> * 2 */
+        line-height: 50.75px; /* 29px * 1.75 */
+        margin: 50.75px 0; /* 29px * 1.75 */
+    }
+    h3 {
+        font-size: 28.5px; /* 19px from <p> * 1.5 */
+        line-height: 43.5px; /* 29px * 1.5 */
+        margin: 43.5px 0; /* 29px * 1.5 */
+    }
+    h4 {
+        font-size: 23.75px; /* 19px from <p> * 1.25 */
+        line-height: 36.25px; /* 29px * 1.25 */
+        margin: 36.25px 0; /* 29px * 1.25 */
+    }
+    h5 {
+        font-size: 19px;
+        line-height: 29px;
+        margin: 29px 0;
+    }
+    h6 {
+        font-size: 14.25px; /* 19px from <p> * 0.75 */
+        line-height: 21.75px; /* 29px * 0.75 */
+        margin: 21.75px 0; /* 29px * 0.75 */
+    }
     p, blockquote, ol, ul,
     table {
         font-size: 19px;
@@ -790,7 +828,8 @@ a > code {
     }
         time {
             line-height: 14.5px;
-            margin: 14.5px 0;
+            margin-top: 14.5px;
+            margin-bottom: 43.5px;
             font-style: italic;
         }
     .footnotes ol li p,
@@ -894,11 +933,14 @@ a > code {
     .footnotes ol {
         margin-left: 23px;
     }
+    footer {
+        margin: 58px 0;
+    }
 
 
     /* ----- DIVIDERS ----- */
     hr {
-        margin-top: 43.5px; /* (29 * 2.5) - 29 */
+        margin-top: 58px; /* (29 * 2.5) - 29 */
         margin-bottom: 29px; /* (29 * 2.5) - (29 * 1.5) */
         margin-left: -5vw;
         margin-right: -5vw;
@@ -981,7 +1023,10 @@ a > code {
 
     /* ----- ACTIONS SHEET ----- */
     #actions-sheet {
-        padding-top: 58px;
+        padding-top: 43.5px;
+    }
+    #navigation-next, #navigation-previous {
+        min-width: 102px;
     }
     .action-category {
         margin: 0 29px;
@@ -1005,47 +1050,61 @@ a > code {
     html {
         letter-spacing: 0.0165em;
     }
+    time {
+        letter-spacing: 0.0165em;
+    }
     menu ul {
         letter-spacing: -0.026em !important;
     }
     figcaption {
         letter-spacing: 0.08em;
     }
-    h2, h3 {
+    h1, h2 {
         letter-spacing: -0.013em !important;
     }
-    /*h2, h3 {
+    /*h1, h2 {
         letter-spacing: -0.035em !important;
     }*/
     #logo {
         margin-top: 32px;
         margin-bottom: 0px;
     }
-    h2 {
-        font-size: 52.5px;
-        line-height: 64px;
-        margin-top: 64px;
-        margin-bottom: 0px;
-    }
     menu ul {
         font-size: 26.25px; /*((31.5px - 21px) / 2) + 21px*/
-        line-height:32px;
-        margin:16px 0;
+        line-height: 32px;
+        margin: 16px 0;
     }
-    h3, h4, h5,
-    #bottom-navigation {
-        font-size: 31.5px !important; /* 21px from <p> * 1.5 */
-        line-height: 48px;
-        margin: 48px 0;
+    h1 {
+        font-size: 52.5px; /* 21px from <p> * 2.5 */
+        line-height: 64px; /* 32px * 2 */
+        margin-top: 64px; /* 32px * 2 */
+        margin-bottom: 0px;
     }
-        h5 {
-            margin: 16px 0;
-        }
-        h3 {
-            margin-top: 64px;
-            margin-bottom: 32px;
-        }
-    time,
+    h2 {
+        font-size: 42px !important; /* 21px from <p> * 2 */
+        line-height: 56px; /* 32px * 1.75 */
+        margin: 56px 0; /* 32px * 1.75 */
+    }
+    h3 {
+        font-size: 31.5px; /* 21px from <p> * 1.5 */
+        line-height: 48px; /* 32px * 1.5 */
+        margin: 48px 0; /* 32px * 1.5 */
+    }
+    h4 {
+        font-size: 26.25px; /* 21px from <p> * 1.25 */
+        line-height: 40px; /* 32px * 1.25 */
+        margin: 40px 0; /* 32px * 1.25 */
+    }
+    h5 {
+        font-size: 21px;
+        line-height: 32px;
+        margin: 32px 0;
+    }
+    h6 {
+        font-size: 15.75px; /* 21px from <p> * 0.75 */
+        line-height: 24px; /* 32px * 0.75 */
+        margin: 24px 0; /* 32px * 0.75 */
+    }
     p, blockquote, ol, ul,
     table {
         /* For fonts other than Helvetica / San Fransico, font-size of 21px is comparable to font-size
@@ -1055,14 +1114,15 @@ a > code {
         line-height: 32px;
         margin: 32px 0;
     }
-        time {
-            line-height: 16px;
-            margin: 16px 0;
-        }
+    time {
+        line-height: 16px;
+        margin-top: 16px;
+        margin-bottom: 48px;
+    }
     .footnotes ol li p,
     .footnotes ol,
     figcaption, pre > code, code,
-    input, textarea, select, button, h6 {
+    input, textarea, select, button {
         font-size: 18px;
         line-height: 32px;
         margin: 32px 0;
@@ -1162,12 +1222,15 @@ a > code {
     .footnotes ol {
         margin-left: 26px;
     }
+    footer {
+        margin: 64px 0;
+    }
 
 
     /* ----- DIVIDERS ----- */
     hr {
-        margin-top: 48px; /* 80px - 32px */
-        margin-bottom: 32px; /* 80px - 48px */
+        margin-top: 64px;
+        margin-bottom: 32px;
         margin-left: -24vw;
         margin-right: -24vw;
 
@@ -1252,7 +1315,10 @@ a > code {
 
     /* ----- ACTIONS SHEET ----- */
     #actions-sheet {
-        padding-top: 64px;
+        padding-top: 48px;
+    }
+    #navigation-next, #navigation-previous {
+        min-width: 150px;
     }
     .action-category {
         margin: 0 32px;

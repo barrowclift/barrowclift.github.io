@@ -14,8 +14,9 @@
 .social-site-button {
     max-width: 64px;
     max-height: 64px;
-    width: 14vw;
-    height: 14vw;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 1.9vw;
 }
 
 #contact-form input,

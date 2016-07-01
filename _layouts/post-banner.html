@@ -17,21 +17,12 @@ layout: default
 	</figure>
 
 	<p>
-		<header role="header">
-			{% if page.link %}
-				<h2 class="center">
-					<a href="{{ page.link }}">{{ page.title }} ↦</a>
-				</h2>
-			{% else %}
-				<h2 class="center">
-					{{ page.title }}
-				</h2>
-			{% endif %}
-			<time itemprop="dateCreated" style="text-align:center;">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
-		</header>
+		{% include article-header.html %}
 	</p>
 
 	{{ content }}
 
-	{% include blog-share-sheet.html %}
+	<footer>
+		{% include actions-sheet.html %}	
+	</footer>
 </article>

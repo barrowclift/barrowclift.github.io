@@ -21,7 +21,8 @@ You might be thinking "Sure, I've got lots of pages, a handful of old apps I don
 
 The core problem with poorly organized home screens &#8212; whether you believe you're used to them or not &#8212; is they require wasted swipe and tap cycles to navigate to your most commonly used apps. For example, you'd swipe to a specific page, tap on a specific folder, or (in worst case scenarios) swipe to a specific page of a specific folder after swiping to a specific page to get to your app instead of *just tapping it*. Yikes. Not to worry though, with just a few minutes of proper thought and execution this can all be a thing of the past.
 
-### Let's Begin With Spring Cleaning
+Let's Begin With Spring Cleaning
+--------------------------------
 
 First thing's first, you should consider deleting any of the apps on your phone you don't want anymore. Not only do they add clutter they may also be squatting on a nontrivial amount of storage on your iPhone that could instead be used for more family photos, music, or new apps. To determine which apps are taking up the most space, you can navigate to `General > Usage > Manage Storage` under the "Storage" group to see a list of the largest apps on your iPhone. You can delete the apps directly from this list by tapping on the app you want to delete and selecting "Delete App" (alternatively you can just enter wiggle mode at the home screen and delete apps there). Don't worry, [you can always re-download the app again for free from the App Store](https://support.apple.com/en-us/HT201272) if you decide you want it back in the future.
 
@@ -39,7 +40,8 @@ First thing's first, you should consider deleting any of the apps on your phone 
 
 However, if you plan to possibly download and use it again in the future you should proceed with great care and deliberation. If there's an app with personal files or data (like game saves) you wish to preserve for the future you should first check to see if the developer implemented iCloud backup. If they did, then you could always just re-download the app again and your personal data will be pulled down from iCloud automatically just as it last was. You can determine if the app has it's data backed up to iCloud by selecting "Manage Storage" from the "iCloud" group this time instead of the "Storage" group. If your app appears under the "Documents & Data" group then your data is being backed up and you can safely delete the app back in the "Storage" page or from your home screen (Don't delete it here! That deletes your personal data associated with the app from iCloud and *not* from your local storage). If your app was not listed then I recommend leaving the app as it is until you either decide you no longer want to keep your personal data backed up to iCloud or the developer updates their app to support it (which good developers should already be doing).
 
-### A Little Home Remodeling
+A Little Home Remodeling
+------------------------
 
 Without glancing at your iPhone screen take a moment to consider the apps you use every day. Surely some jump to mind without you even having to look. Perhaps it's an app you use every morning as you're in bed waking up, or maybe an app or two that you use every day during work or school. Whatever the case, take hold of some paper and write down all the ones that come to mind (Remember, don't cheat by looking at your phone! If it's an app you use every single day you're sure to remember at least what the icon looked like and what it does). You should have at least eight but certainly no more than sixteen or so. After all, do you *actually* use all sixteen equally each and every day? If the answer is no, then remove the ones you don't from the list. After a few minutes of doing this you should have a small list of your most precious apps before you and from this you should then finally choose one to four that are the most important of them all.
 
@@ -47,7 +49,8 @@ Say hello to the members your new home screen.
 
 At this time, you can start wiggle mode and begin moving the apps you just selected to the front page of your home screen and anything else to other pages so they're out of the way for now (we'll get back to them later). I wouldn't worry about the specific order of the apps for now, just work on separating them. Also, remember to take the one to four most important apps you had chosen earlier and put them in the dock. If at this time you see a few apps you *know* you use every day but you simply forgot about during the process above you can of course include them in the front page as well. When you're finished your front page should exclusively contain the apps you deliberately expressed were important to you and nothing else.
 
-### Categorizing the Heap
+Categorizing the Heap
+---------------------
 
 Now you've got all your other less important apps strewn about in the other pages and it's time to start funneling them into meaningful folders ([how to do so is explained here if you're unaware](http://www.imore.com/how-create-folders-add-apps-your-iphone-or-ipad)). What specific folder categories work best for you depend heavily on the exact nature of the apps you own. For example, if you have a massive number of games and not much else it doesn't make sense to have just one games folder like I do, instead it would make more sense to group them into folders by genre ("Adventure", "Puzzle", etc.). Since the optimal groups depend greatly on the apps themselves my suggestions will only suit those who also share a similar set of apps with me, though hopefully I can spark some ideas.
 
@@ -98,7 +101,8 @@ Within the folders you create is a whole new world of prioritized app sorting. T
 
 Also, friendly reminder that the *only* apps that should be going into the folders you create are the ones you did not pick as the important ones from the beginning. Those ones, no matter how nicely they fit into the categories, must always be immediately and easily accessible from the home screen's front page. They're important to you, burying them in a folder defeats the purpose of trying to make them more prominent and easy to access.
 
-### You're Almost There!
+You're Almost There!
+--------------------
 
 Now all you need to do is decide the final order of these various pieces you've created. What should that order be? Truth is only you can answer that question as it depends solely on how much you personally value ascetics vs. efficiency. If you put more weight on efficiency then your best bet is to put your folders and apps together on a single page and sort your apps into rows by broad category and thumb distance travel vs. frequency of use (the apps you use the most would then be the easiest to tap). This is the sorting method I chose for my own home screen which you can see here with the first row being folders, the second social apps, the third reading apps, and the fourth everything else.
 
@@ -110,6 +114,7 @@ Now all you need to do is decide the final order of these various pieces you've 
 
 If you instead, however, put more weight on ascetics your sorting could be completely different. Perhaps you prefer to sort your apps by icon color even if it doesn't align with your optimal thumb placement, or perhaps you prefer to put all your folders on a second page even if that means you have to swipe once whenever you want to reach them. That's entirely fine and completely your choice, play around with your sorting style until you settle on one that fits your particular tastes best. Remember, there's no right answer to this step and it's always a work in progress. Remain curious and continue trying new arrangements in the future as apps come and go.
 
-### Done
+Done
+----
 
 Brew some coffee or tea, sit back, and enjoy the fruits of your efforts. You've now got an iPhone that more purely and boldly reflects your individual style and values. Do keep in mind that it might take some time to adjust and you might have to scan your screen for a moment or two when finding apps for the first week or so. Don't worry and press on, you'll adjust quickly and soon wonder how you ever got by before. Welcome home. ⌘

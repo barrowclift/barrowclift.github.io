@@ -1,6 +1,7 @@
 ---
 layout: default
 anchors: false
+hex-color: #0AA0D2
 home-menu-active: true
 ---
 
@@ -11,24 +12,7 @@ home-menu-active: true
 	{% endif %}
 
 	<article>
-		<header role="header">
-			{% if post.link %}
-			<!-- <h2><a href="{{ post.link }}">{{ post.title }} <span class="link-arrow">➤</span></a></h2> -->
-			<h2>
-				<a href="{{ post.link }}">{{ post.title }} ↦</a>
-			</h2>
-			<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}
-				<span>
-					<a href="{{ post.url | prepend: site.baseurl }}">∞</a>
-				</span>
-			</time>
-			{% else %}
-			<h2>
-				<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
-			<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}</time>
-			{% endif %}
-		</header>
+		{% include article-header.html %}
 
 		{% if post.banner-image %}
 		<figure>
@@ -49,24 +33,26 @@ home-menu-active: true
 	{% assign count=count | plus:1 %}
 {% endfor %}
 
-<footer class="large-top-pad large-bottom-pad">
-	<div id="bottom-navigation">
-		<div id="navigation-previous">
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
-				{% if paginator.next_page %}
-				&#8592; Older
-				{% endif %}
-			</a>
-		</div>
-		<div id="navigation-next">
-			<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
-				{% if paginator.previous_page %}
-				Newer &#8594;
-				{% endif %}
-				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
-			</a>
-		</div>
+<footer>
+	<div id="navigation-previous">
+		<h4>
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+			{% if paginator.next_page %}
+			&#8592; Older
+			{% endif %}
+		</a>
+		</h4>
+	</div>
+	<div id="navigation-next">
+		<h4>
+		<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
+			{% if paginator.previous_page %}
+			Newer &#8594;
+			{% endif %}
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+		</a>
+		</h4>
 	</div>
 	{% if paginator.previous_page %}
 	<div id="actions-sheet">
@@ -75,29 +61,6 @@ home-menu-active: true
 	{% else %}
 	<div>
 	{% endif %}
-		<div class="action-category">
-			<h5 style="color: #979797;text-align:center;" class="action-label">Subscribe</h5>
-			<a href="{{ "/newsletter" | prepend: site.baseurl }}">
-				<div class="round-button" style="text-align:center;">
-					<img class="button-default" src="{{ "/images/blog/newsletter.jpg" | prepend: site.baseurl }}" alt="Newsletter button" />
-					<img class="button-hover" src="{{ "/images/blog/newsletter-hover.jpg" | prepend: site.baseurl }}" alt="" />
-				</div>
-			</a>
-			<a href="{{ "/atom.xml" | prepend: site.baseurl }}">
-				<div class="round-button" style="text-align:center;">
-					<img class="button-default" src="{{ "/images/blog/rss.jpg" | prepend: site.baseurl }}" alt="RSS button" />
-					<img class="button-hover" src="{{ "/images/blog/rss-hover.jpg" | prepend: site.baseurl }}" alt="" />
-				</div>
-			</a>
-		</div>
-		<div class="action-category">
-			<h5 style="color: #979797;text-align:center;" class="action-label">Browse</h5>
-			<a href="{{ "/archive" | prepend: site.baseurl }}">
-				<div class="round-button" style="text-align:center;">
-					<img class="button-default" src="{{ "/images/blog/archive.jpg" | prepend: site.baseurl }}" alt="Archive button" />
-					<img class="button-hover" src="{{ "/images/blog/archive-hover.jpg" | prepend: site.baseurl }}" alt="" />
-				</div>
-			</a>
-		</div>
+		{% include actions-sheet.html %}	
 	</div>
 </footer>

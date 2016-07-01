@@ -17,7 +17,8 @@ Perhaps you're the friend in this scenario force quitting iOS apps as an act of 
 
 In reality this results in the exact opposite of the intended effect and not only slows down app launching in the future but also drains battery that would have otherwise been preserved had the apps been left alone. Now this most likely sounds preposterous and it's entirely because iOS's multitasking model flies in the face of everything people have been taught for decades to be true about how computers work. In many ways the "quit apps when you're done" workflow was and __still remains__ the correct action to do on computers. iPhones, however, are a different story.
 
-### OS X Multitasking
+OS X Multitasking
+-----------------
 
 In order to fully understand why force quitting all your apps on iOS results in overall negative effects on speed and battery life we must first understand where our prior assumptions come from in the first place. Enter Windows (PC) and OS X (MacBooks, iMacs, and Mac Pros). These operating systems which we encounter every day are responsible for the following general rules most people have [intuitively figured out](http://apple.stackexchange.com/a/40686):
 
@@ -49,7 +50,8 @@ This is by no means meant to be a complete nor academically accurate representat
 1. Computers generally do not quit apps for you, you are expected to do it yourself if you have too many open.
 2. Any open app has the possibility to demand as much computer attention (CPU time) as it wants, which can drain your battery.
 
-### iOS Multitasking
+iOS Multitasking
+----------------
 
 This is where things get completely turned on their head. The two key rules about how OS X and Windows multitask open apps does not apply __at all__ to iOS. The two new general rules for iOS multitasking are:
 
@@ -58,7 +60,8 @@ This is where things get completely turned on their head. The two key rules abou
 
 How on earth is this even possible given how we know our Macs or PCs manage open apps? What's going on?
 
-### Suspension and the "One True Open App"
+Suspension and the "One True Open App"
+--------------------------------------
 
 In reality, all but one of the apps you see in the multitasking list are actually in what Apple calls a "suspended state". While OS X and Windows allow you to keep as many apps as you want open and running at any given time iOS actually only allows __one__ open app at any given time &#8212; the one you're currently looking at and using[^exceptions]. All others are effectively "frozen" in time and memory.
 
@@ -88,7 +91,8 @@ Note how the app preview images change from most recently used to oldest.
 </figcaption>
 </div>
 
-### Background App Refresh (The Primary Exception the the Rule)
+Background App Refresh (The Primary Exception the the Rule)
+-----------------------------------------------------------
 
 Starting with iOS 7 Apple added a feature that complicates things slightly. Background App Refresh is an option that developers can opt into where suspended apps can be "woken up" periodically by iOS to refresh data. For example, with Background App Refresh enabled for my podcast app of choice, [Overcast](https://overcast.fm), the app can periodically check if there's any new podcasts available and refresh the UI to add any new episodes to the queue. This feature is incredibly useful for our most commonly used apps since the apps can ensure they don't waste time when resumed updating to reflect changes that *could* have been made in the background.
 
@@ -108,7 +112,8 @@ This of course poses a potential problem since there's bound to be some apps you
 
 Another thing to consider when you're deciding which apps to turn Background App Refresh off for &#8212; if any at all &#8212; is how many apps are currently enabled for background refresh in the list. If you have more than twenty or so with Background App Refresh turned on you might want to consider trimming that number down. While any individual app only takes a tiny, negligible amount of battery to background refresh ([usually](https://www.macstories.net/linked/the-background-data-and-battery-usage-of-facebooks-ios-app/)) this number *can* add up if there's a lot of them.
 
-### Quit Quitting Apps on iOS
+Quit Quitting Apps on iOS
+-------------------------
 
 At the end of the day, force quitting apps on iOS not only makes opening them later slower but wastes battery that could have otherwise been saved reinitializing all the app's data objects.
 

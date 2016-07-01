@@ -26,13 +26,15 @@ Of course, this was never really an option. Doing so would not only jeopardize m
 
 I have no doubt this will prove humorous but some of you may instead give pause and wonder why this sounds so strangely familiar...
 
-### The Comfort-Zone Trap
+The Comfort-Zone Trap
+---------------------
 
 Perhaps you've got a "kitchen sink" desktop where you throw every single file and application you've ever used instead of organizing them in the file system. Or maybe you insist on sending friends or coworkers CD's or flash drives in person for all data transfers instead of using email or cloud services like DropBox. Or perhaps you, like I currently, are skeptical of streaming services like Spotify and strangely insist on pack-ratting local copies of all your entertainment media to manage yourself.
 
 Over the years I have witnessed and experienced many different manifestations of computing "quirks" all originating from some form of fear over a specific computing concept just like my Pokémon troubles back in grade school. In the case of the kitchen-sink desktop, for example, the fear finds it roots in a lack of comfort using and understanding the file system. For insisting on physical data transfers, the core fear is a deep distrust in computer networks and believing that seeing the full "path" the data takes from one person to another will make the transfer more secure (my distrust in Pokémon trading stemmed from this as well). In the case of streaming services, the fear I and some like me are currently wrestling with is losing complete local control over our media will for some ludicrous reason endanger their future existence. In every single one of these scenarios and many more like them the comfort zones we've barricaded ourselves into are prisons that are holding us back from not only enjoying our computing life to it's fullest potential but also are hurting our productivity. It is because of this that I believe fear is the most harmful emotion a person can experience when using a system. If you're afraid to use a specific app, do a particular task, or even use something as important and fundamental as the file system you're going to be far more likely to avoid exploring and learning how to better use them in the future. [Even Yoda knows what's up](https://youtu.be/kFnFr-DOPf8?t=3s).
 
-### The Cause
+The Cause
+---------
 
 Why does such a thing happen? How could we let something like this dictate our actions for so long? Well let me assure you that once again the fault for these feelings of discomfort and bad experiences lies squarely on the developers and designers behind these systems and applications we interact with. __These poor experiences are never your fault. Ever__.
 
@@ -65,7 +67,8 @@ OS X's file system offers some much needed improvements like the consolidation a
 
 With users continuing to avoid these headaches entirely and stick to the desktop where they feel they finally have some peace and control over their data it's apparent to me that the file system as we know it has failed and will eventually be phased out over the next ten years. People en masse have decided that it is not the correct solution to the problem by continuing to fight against the existing implementations or fleeing to other products. Again this and the other problems exposed above are not the users fault, but the fault of an incorrect solution.
 
-### The Cure
+The Cure
+--------
 
 I truly wish there there was "One Weird Trick" or "5 Easy Steps to Computer Wiz You Wouldn't BELIEVE" that I could share with you but the truth of the matter is the suggestions I have for you are probably not the ones you were hoping for. These aren't quick and dirty tricks nor are they easy but the *will* help alleviate your discomfort with whatever concept you're struggling with and eventually make you more confident and comfortable while at the computer. Remember, you don't have to be a "techie" to be comfortable using computers, it's a skill everyone can share.
 
@@ -73,7 +76,8 @@ I truly wish there there was "One Weird Trick" or "5 Easy Steps to Computer Wiz 
 * __Stay Hungry, Stay Foolish__: OS X has been my desktop OS for over ten years now and to this day I'm still learning new features to improve my efficiency and computing happiness, and you can too! I recommend doing as many little things as you possibly can; when your computer says it updated to a new version, try taking a moment or two to read about the new version online and see if there's any new features you could use (or maybe bug fixes to ones you didn't even know about). Or perhaps next time you're using your favorite application open up the Settings or Preferences and take a peak in there to see if there's anything cool that interests you. If you like reading you might want to consider following a news website like [iMore](http://www.imore.com) or [Six Colors](http://sixcolors.com) which post all kinds of [fantastic reviews](http://www.imore.com/os-x-yosemite-review) and [help articles](http://sixcolors.com/post/2015/07/hands-on-with-photos-for-mac-11/) which are appropriate for everyone. These are all tiny things that don't take much time and in isolation aren't that big a deal but together over time will help make you a more cultured individual and improve your computing life.
 * __Practice, Practice, Practice__: Like most things in life, you can read about computers and download apps all you want but you won't become any better at actually using them until you do. If you read up on a feature that sounded interesting to you, try using it for the next week or so to see if you get any benefit from it. If you just acknowledge a feature but don't try it out it's incredibly easy to forget about it and end up never using it, even though it might be something you'd love. Same goes for apps. If you download an app you think you'll enjoy to replace an old one but continue to use the old one after just trying the new one once you're not doing yourself any good. Give apps an honest try of at least a couple uses before deciding to trash it. I have found that many apps I didn't like at all initially have oftentimes grown to be my most precious and favorite apps in my collection like [Vesper](http://vesperapp.co), [Overcast](https://overcast.fm/), and [f.lux](https://justgetflux.com/). Computing skills are a muscle that needs to be exercised just a little bit and if you do over time you'll reap the benefits.
 
-### Our Responsibility As Developers and Designers
+Our Responsibility As Developers and Designers
+----------------------------------------------
 
 Us developers and designers have a responsibility to fix this at the root. Users should never have had to shoulder this cognitive burden to begin with. There *can* exist operating systems and apps that would make fear in computing all but obsolete, the proof is in the pudding of what I adamantly believe is the finest operating system currently available: iOS. Apple realized that with the iPhone they finally had a chance to start over, to make an operating system where the file system as we knew it was never exposed to the user at all. The user didn't have to manage their files, *their apps would*. That shift in responsibility meant that the cornerstone of the user experience would be the functionality the user expected by means of apps and not the constant headache of trying to get to the functionality from the file system.
 

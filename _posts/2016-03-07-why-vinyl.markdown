@@ -15,7 +15,8 @@ At Christmastime this past year my parents surprised me with a gift that had bee
 
 Telling friends and colleges about the gift often elicits one of two responses: a lighthearted jab about my hipster status or a genuinely curious "why?". While there's nothing I could say at this point to dispel remarks of the former's variety (owning a record player certainly isn't helping my case), I can certainly address the "why". But to do so I must first explain what happened to make me even consider something so peculiar.
 
-### I Used to Write
+I Used to Write
+---------------
 
 I was about halfway through my college career and knew just enough computer science principles to be dangerous. I felt for the first time completely in control on my digital life and was eager to digitize every conceivable aspect of the physical world to feed it. Everything from past time pleasures like movies, books, and music to calendars and study materials were digitalized. Even communication with far away loved ones transitioned onto electronic paths; nothing was safe from the runaway digitalization train of progress!
 
@@ -27,7 +28,8 @@ This proved to be an epiphany for me in retrospect, the moment I awoke to my ind
 
 I could relearn cursive, but that wouldn't fix problem at its source. Something at a deeper level had to be done.
 
-### Restoring Balance
+Restoring Balance
+-----------------
 
 <figure markdown="1">
 [![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.jpg){: .bound-responsive}]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.jpg)
@@ -43,7 +45,8 @@ In my day to day life, I now apply these rules when making my choices:
 
 I'm not the first nor the only person in the technology sector bringing analog back into their lives. [Marco Arment](https://marco.org/about) (the original developer of Tumblr) has [fallen in love with analog watches](https://marco.org/2016/02/05/watch) after initially starting with and abandoning the Apple Watch[^marco]. I think this excerpt from his post succinctly captures our thoughts best: "A big part of that joy, for me, is that this *isn't* like anything else in my life, and the difference is refreshing".
 
-### So, Why Vinyl Then?
+So, Why Vinyl Then?
+-------------------
 
 Now that my reasoning for even having physical artifacts at all is established we can finally discuss why I prefer vinyl over CD or streaming services (when given the chance and a forgiving budget):
 

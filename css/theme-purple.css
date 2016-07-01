@@ -28,37 +28,37 @@ Highlight Color
 /*
 Text Links
 */
-main :not(h2) > a {
+main :not(h1) > a {
     color: #973D8E;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 /* unvisited link */
-main :not(h2) > a:link {
+main :not(h1) > a:link {
     color: #973D8E;
 }
 /* visited link */
-main :not(h2) > a:visited {
+main :not(h1) > a:visited {
     color: #973D8E;
 }
-main :not(h2) > a:hover {
+main :not(h1) > a:hover {
     color: #ED76E1;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 
-a > h2, h1 a {
+a > h1, h1 a {
     color: #973D8E;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-a > h2:link, h1 a:link {
+a > h1:link, h1 a:link {
     color: black;
 }
-a > h2:visited, h1 a:visited {
+a > h1:visited, h1 a:visited {
     color: black;
 }
-a > h2:hover, h1 a:hover {
+a > h1:hover, h1 a:hover {
     color: #973D8E;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;

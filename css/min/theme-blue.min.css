@@ -46,51 +46,40 @@ hr {
 /*
 Links
 */
-main :not(h2) > a {
+main :not(h1) > a {
     color: #0AA0D2;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 /* unvisited link */
-main :not(h2) > a:link {
+main :not(h1) > a:link {
     color: #0AA0D2;
 }
 /* visited link */
-main :not(h2) > a:visited {
+main :not(h1) > a:visited {
     color: #0AA0D2;
 }
-main :not(h2) > a:hover {
+main :not(h1) > a:hover {
     color: #0BDDF8;
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
 
-h2 a {
-    color: #0AA0D2;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-h2 a:link {
-    color: black;
-    fill: black;
-}
-h2 a:visited {
-    color: black;
-    fill: black;
-}
-h2 a:hover {
-    color: #0AA0D2;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-
 h1 a {
-    color: white;
+    color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
-h1:hover a {
-    color: red;
+h1 a:link {
+    color: black;
+    fill: black;
+}
+h1 a:visited {
+    color: black;
+    fill: black;
+}
+h1 a:hover {
+    color: #0AA0D2;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
 }
@@ -99,7 +88,7 @@ h1:hover a {
 correct bigfoot-number.min.css style sheet. This makes Firefox do what literally
 every other browser has the competency to figure out themselves. */
 .bigfoot-footnote__button {
-    background-color: #0AA0D2;
+    background-color: #979797;
 }
 
 .anchor {

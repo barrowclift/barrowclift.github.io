@@ -15,11 +15,13 @@ When you finish mentally parsing through the laundry list of unimportant notific
 
 This is a day in the life of the typical iPhone user and this hostile, stressful environment it creates is entirely avoidable. *It doesn't have to be this way*. Your lock and home screen can be a comforting place that knows what you care about like an old friend, let me show you how.
 
-### Before We Begin
+Before We Begin
+---------------
 
 It's important to first note that if the story above sounds like you it is not your fault. Apple is famous for their [poorly implemented notification system](http://daringfireball.net/2012/05/ios_low_hanging_fruit) and the fact that you have to manage notifications entirely yourself is living proof that their current solution is __wrong__. While it's rumored that improvements are [coming soon in iOS 9](http://www.ordoh.com/2015/04/apple-ios-9-rumors-improvement-notification-center-mechanism-ios-9/) this summer you don't have to wait, with just five minutes you can take control back.
 
-### Making the Change
+Making the Change
+-----------------
 
 Open the Settings app and tap on Notifications. In there you should see a list divided into two main groups: "Include" and "Do Not Include". You're going to want to focus only on the items in the "Include" group since those are the apps that currently have permission to send notifications. For each of the apps in this group I recommend you follow this process:
 
@@ -28,7 +30,8 @@ Open the Settings app and tap on Notifications. In there you should see a list d
 	- Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
 	- Keep notifications on for that app.
 
-### Not All App Notifications Are Equal
+Not All App Notifications Are Equal
+-----------------------------------
 
 You're bound to have chosen to keep at least some of your app notifications on which is perfectly fine, but we can take this one step further. Not all app notifications are equal and you can turn on or off certain notification components for each app depending on how important they are to you. This can be easily understood by looking at the four independent pieces that make up the broad term "notification" in iOS, all of which are accessible by tapping on the app in the "Include" list:
 

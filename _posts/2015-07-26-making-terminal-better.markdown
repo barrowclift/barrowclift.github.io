@@ -17,8 +17,8 @@ Developers, I'm going to take a wild guess and assume that the vast majority of 
 
 So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a GUI we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
 
-
-### Look and Feel
+Look and Feel
+-------------
 
 In my opinion if there's anything you take your time to consider it should be your Terminal's look and feel (your prompt, colors, and font). This aspect of Terminal is practically inescapable and remains a core piece of the experience from the moment you open the window to the moment you exit. Developers deserve good UI just as much as the public do, let's not deprive ourselves of it.
 
@@ -72,7 +72,8 @@ export NORMAL='\[\033[00m\]'
 export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 {% endhighlight %}
 
-### Functions
+Functions
+---------
 
 Now you've got your Terminal look and feel set just the way you like, what next? Well, I'd say the next most important change you could make is adding functions to your `.bashrc`	to encapsulate those often lengthy, horrid Unix commands into a much nicer function.
 
@@ -165,7 +166,8 @@ ql () {
 }
 {% endhighlight %}
 
-### Aliases
+Aliases
+-------
 
 Last but not least there's aliases which &#8212; if you aren't aware &#8212; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
 
@@ -201,7 +203,8 @@ And for OS X developers this particular command helps bridge the sometimes aggra
 alias f='open -a Finder ./'
 {% endhighlight %}
 
-### Download
+Download
+--------
 
 If you want the full `.bashrc` and `.bash_aliases` files used in the examples above you can download them below:
 

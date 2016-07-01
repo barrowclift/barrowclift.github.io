@@ -3,20 +3,11 @@ layout: default
 ---
 
 <article>
-	<header role="header">
-		{% if page.link %}
-			<h2>
-				<a href="{{ page.link }}">{{ page.title }} ↦</a>
-			</h2>
-		{% else %}
-			<h2>
-				{{ page.title }}
-			</h2>
-		{% endif %}
-		<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}, <img title="This page is a permalink" src="/images/blog/permalink.svg" class="permalink"></time>
-	</header>
+	{% include article-header.html %}
 
 	{{ content }}
 
-	{% include blog-share-sheet.html %}
+	<footer>
+		{% include actions-sheet.html %}	
+	</footer>
 </article>
