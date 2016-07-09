@@ -20,11 +20,10 @@
 				
 				{% include header-happy.html %}
 				
-				<main>
-
+				<main {% if page.bottom-margin-included != true %}style="margin-bottom:1px;"{% endif %}>
 					<article>
 						<figure class="banner-top-padding">
-							<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}alt="{{ page.banner-alt }}"{% else %}alt="Post banner"{% endif %}">
+							<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}{{ page.banner-alt }}{% else %}Post banner{% endif %}">
 								<source src="/videos/{{ page.banner-video }}.mp4" type="video/mp4">
 								<source src="/videos/{{ page.banner-video }}.webm" type="video/webm">
 								<source src="/videos/{{ page.banner-video }}.ogv" type="video/ogg">
@@ -34,7 +33,6 @@
 
 						{{ content }}
 					</article>
-
 				</main>
 			</div>
 		</div>

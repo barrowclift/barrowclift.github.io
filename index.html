@@ -39,7 +39,7 @@ home-menu-active: true
 		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
 			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 			{% if paginator.next_page %}
-			&#8592; Older
+			< Older
 			{% endif %}
 		</a>
 		</h4>
@@ -48,7 +48,7 @@ home-menu-active: true
 		<h4>
 		<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
 			{% if paginator.previous_page %}
-			Newer &#8594;
+			Newer >
 			{% endif %}
 			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 		</a>

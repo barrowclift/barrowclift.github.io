@@ -1,5 +1,5 @@
 .news-logo {
-    height: 4.5vw;
+    height: 4.9vw;
     max-height: 22px;
     display: inline-block;
     margin-right: 1vw;
@@ -7,24 +7,64 @@
 }
 .gallery-image {
     display: inline-block;
+    width: 45vw;
+    margin: 0.5em 0.25em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+
+    -webkit-transition: -webkit-box-shadow 0.25s ease 0s; 
+    -moz-transition: -moz-box-shadow 0.25s ease 0s; 
+    -o-transition: -o-box-shadow 0.25s ease 0s; 
+    transition: box-shadow 0.25s ease 0s;
+}
+video {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-transition: -webkit-box-shadow 0.25s ease 0s; 
+    -moz-transition: -moz-box-shadow 0.25s ease 0s; 
+    -o-transition: -o-box-shadow 0.25s ease 0s; 
+    transition: box-shadow 0.25s ease 0s;
+}
+video:hover {
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+}
+.gallery-image:hover {
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
 }
 @media (min-width: 43.75rem) {
     .gallery-image {
-        max-width: 210px;
+        display: inline-block;
+        width: 45vw;
+        margin: 0.75em 0.5em;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
     }
     .news-logo {
-        max-height: 29px;
-        margin-right: 1.1em;
-        margin-left: 1.1em;
+        max-height: 32px;
+        margin-right: 17px;
+        margin-left: 17px;
     }
 }
 @media (min-width: 56.25em) {
     .gallery-image {
-        max-width: 242px;
+        display: inline-block;
+        width: 30vw;
+        max-width: 506px;
+        margin: 1em 0.75em;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
     }
     .news-logo {
-        min-height: 34px;
-        margin-right: 1.2em;
-        margin-left: 1.2em;
+        min-height: 35px;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+    .section {
+        padding-left:8vw;
+        padding-right:8vw;
     }
 }

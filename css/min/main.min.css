@@ -133,10 +133,10 @@ table {
     margin: 21px 0;
 }
     time {
-        font-size: 0.5em;
-        line-height: 10.5px; /* 21px * 0.5 */
+        font-size: 0.4em;
+        line-height: 21px; /* 21px * 0.25 */
         margin: 10.5px 0;
-        margin-top: 10.5px;
+        margin-top: 5.25px;
         margin-bottom: 31.5px;
         font-style: italic;
     }
@@ -356,7 +356,7 @@ and large devices it's exactly in line with the text wrapped to the top and
 bottom. This should be used sparingly for images that are abnormally tall and
 not very wide (portrait photos mostly).*/
 .inline,
-
+.slice,
 /* For non-blog post banners (About page, Code project pages, etc.) that I
 personally think shouldn't be a full blown banner and work better as a "shy"
 banner that acts edge-to-edge in almost all cases except large devices where
@@ -368,6 +368,9 @@ to-edge and the appropriate banner padding class should be used.*/
     width: 100vw;
     max-width: 1600px;
     max-height: none;
+}
+.slice {
+    max-width:none;
 }
 
 .bound-responsive {
@@ -382,7 +385,7 @@ to-edge and the appropriate banner padding class should be used.*/
     margin-left: -15vw;
     margin-right: -15vw;
 }
-.edge-to-edge {
+.edge-to-edge, .slice {
     margin-left: -35vw;
     margin-right: -35vw;
 }
@@ -509,10 +512,10 @@ input, button, textarea {
 }
 .round-button {
     text-align: center;
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
 }
 .button-hover {
     opacity: 0;
@@ -560,6 +563,12 @@ something to center. */
 }
 .large-bottom-pad {
     margin-bottom: 31.5px;
+}
+.large-bottom-padding {
+    padding-bottom: 31.5px;
+}
+.small-bottom-pad {
+    margin-bottom: 10.5px;
 }
 .top-pad {
     margin-top: 21px;
@@ -648,7 +657,7 @@ body:before {
     color: #979797;
 }
 #navigation-next, #navigation-previous {
-    min-width: 85px;
+    min-width: 75px;
 }
 .action-category {
     display: inline-block;
@@ -656,6 +665,28 @@ body:before {
     min-width: 60px;
     width: auto;
     margin: 0 21px;
+    margin-top: 2px;
+}
+h1::selection, h2::selection, h3::selection {
+    -webkit-text-stroke: 1px #000;
+    color: #fff !important;
+    background: transparent
+}
+h1 a::selection {
+    -webkit-text-stroke: 1px #000;
+    color: #fff !important;
+    background: transparent
+}
+h1 span::selection {
+     -webkit-text-stroke: 1px #000;
+    color: #fff !important;
+    background: transparent
+}
+html {
+    color: #333333 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
 }
 
 /* CODE --------------------------------------------------------------------- */
@@ -750,7 +781,7 @@ a > code {
 .permalink {
     display: inline-block;
     position: absolute;
-    height: 0.8em;
+    height: 1.5em;
     width: 0.7em;
     opacity: 1;
     margin-left: 0.3em;
@@ -760,7 +791,16 @@ a > code {
 
 /* ======================================================================================================= */
 
-
+@media(max-width: 319px) {
+    /* ----- NAVBAR ----- */
+    menu ul li {
+        display: block;
+    }
+    .active a, .hover:hover {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
 
 /* Small devices (iPads) */
 @media (min-width: 43.75rem) {
@@ -827,8 +867,8 @@ a > code {
         margin: 29px 0;
     }
         time {
-            line-height: 14.5px;
-            margin-top: 14.5px;
+            line-height: 29px;
+            margin-top: 7.25px;
             margin-bottom: 43.5px;
             font-style: italic;
         }
@@ -965,6 +1005,12 @@ a > code {
     .bigfoot-footnote__button {
         font-size: 18px;
     }
+    .round-button {
+        width: 1.25em;
+        height: 1.25em;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     button {
         height: 39px;
     }
@@ -985,6 +1031,12 @@ a > code {
     }
     .large-bottom-pad {
         margin-bottom: 43.5px;
+    }
+    .large-bottom-padding {
+        padding-bottom: 43.5px;
+    }
+    .small-bottom-pad {
+        margin-bottom: 14.5px;
     }
     .top-pad {
         margin-top: 29px;
@@ -1030,6 +1082,7 @@ a > code {
     }
     .action-category {
         margin: 0 29px;
+        margin-top: 2px;
     }
 
 
@@ -1115,8 +1168,8 @@ a > code {
         margin: 32px 0;
     }
     time {
-        line-height: 16px;
-        margin-top: 16px;
+        line-height: 32px;
+        margin-top: 8px;
         margin-bottom: 48px;
     }
     .footnotes ol li p,
@@ -1259,6 +1312,12 @@ a > code {
     .bigfoot-footnote__button {
         font-size: 18px;
     }
+    .round-button {
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
     button {
         height: 42px;
     }
@@ -1280,6 +1339,12 @@ a > code {
     }
     .large-bottom-pad {
         margin-bottom: 48px;
+    }
+    .large-bottom-padding {
+        padding-bottom: 48px;
+    }
+    .small-bottom-pad {
+        margin-bottom: 16px;
     }
     .top-pad {
         margin-top: 32px;
@@ -1322,6 +1387,7 @@ a > code {
     }
     .action-category {
         margin: 0 32px;
+        margin-top: 2px;
     }
 
 

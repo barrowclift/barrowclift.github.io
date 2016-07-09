@@ -1,0 +1,92 @@
+body,html,main {margin:0; padding:0;}
+body,html,main,h1,h2,h3,h4,h5,h6 {color:black;}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 54px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 2em;
+    line-height: 47.25px;
+    margin: 47.25px 0;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 42px;
+    margin: 42px 0;
+}
+h4 {
+    font-size: 1.25em;
+    line-height: 33.75px;
+    margin: 33.75px 0;
+}
+h5 {
+    font-size: 1em;
+    line-height: 27px;
+    margin: 27px 0;
+}
+h6 {
+    font-size: 0.75em;
+    line-height: 20.25px;
+    margin: 20.25px 0;
+}
+p, blockquote, ol, ul,
+table, time {
+    font-size: 100%;
+    line-height: 27px;
+}
+    time {
+        font-size: 0.4em;
+        margin: 13.5px 0;
+        margin-top: 6.75px;
+        margin-bottom: 40.5px;
+        font-style: italic;
+    }
+.footnotes ol li p,
+.footnotes ol,
+figcaption, pre > code, code,
+input, select, textarea, button {
+    font-size: 90%;
+    line-height: 27px;
+    margin: 27px 0;
+}
+    pre, pre > code {
+        line-height: 20.25px;
+    }
+small {
+    font-size: 0.75em;
+    color: #979797;
+}
+
+menu, footer, .hide-for-print, .permalink, .reversefootnote {
+	display:none;
+}
+.bigfoot-footnote__button::after {
+	color:#333333;
+}
+.bigfoot-footnote__button {
+	background-color:transparent;
+	margin: -0.75em -0.25em 0 -0.25em !important;
+}
+sup .footnote {
+	margin: 0em 0.25em 0 0.25em !important;
+	font-size: 0.5em;
+}
+
+img, .bound-responsive, .edge-to-edge, .responsive, .inline {
+		width: 40% !important;
+		margin: 0 0.5em !important;
+	}
+figure p, figure {
+	display: inline !important;
+}
+ol, ol li {
+	list-style-type: decimal;
+	margin-left:1.5em;
+}
+
+a:link, a:visited {background: transparent; text-decoration:none;}
+a[href^="http://"] {color:#000 !important;}
+a {color:black !important;}

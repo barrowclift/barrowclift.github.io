@@ -13,8 +13,8 @@
 .social-site-button {
     max-width: 64px;
     max-height: 64px;
-    width: 9vw;
-    height: 9vw;
+    width: 8.9vw;
+    height: 8.9vw;
     margin: 0 1.9vw;
 }
 
@@ -23,7 +23,7 @@
     width: 100%;
     border: 1px solid #C7C7C7;
     margin-bottom: 11.5px;
-    padding: 0px 4px;
+    padding: 0px 7px;
 
     /* css 3 */
     border-radius: 4px;
