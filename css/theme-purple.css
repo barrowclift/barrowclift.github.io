@@ -1,87 +1,51 @@
-/*
-Main Menu
-*/
-menu ul li:hover > a {
-    color: #973D8E; /*Foreground color of menu on hover*/
-}
-menu ul, .main-color {
+/* THEMED ELEMENTS ------------------------------------------------------------------ */
+
+menu, /* The color (plus gradient) of the navigation element */
+.hover:hover, /* We want hovered tabs to be pure purple */
+.active, /* We want active tabs to be pure purple */
+hr { /* Dividers take the color as well */
     background-color: #973D8E;
 }
-.hover:hover {
-    background-color: white;
+
+hr {
+    background: #973D8E; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, #973D8E 25%, #973D8E 50%, #973D8E 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#973D8E), color-stop(50%,#973D8E), color-stop(75%,#973D8E), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#973D8E 25%,#973D8E 50%,#973D8E 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,#973D8E 25%,#973D8E 50%,#973D8E 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,#973D8E 25%,#973D8E 50%,#973D8E 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,#973D8E 25%,#973D8E 50%,#973D8E 75%,#FFFFFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
-/*
-Highlight Color
-*/
-/* Safari */
-::selection {
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
     background: #973D8E;
     color: white;
 }
-/* Firefox */
-::-moz-selection {
+::-moz-selection { /* Firefox */
     background: #973D8E;
     color: white;
 }
 
-/*
-Text Links
-*/
-main :not(h1) > a {
-    color: #973D8E;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
-}
-/* unvisited link */
-main :not(h1) > a:link {
-    color: #973D8E;
-}
-/* visited link */
-main :not(h1) > a:visited {
-    color: #973D8E;
-}
-main :not(h1) > a:hover {
-    color: #ED76E1;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
-}
+/* LINKS ------------------------------------------------------------------ */
 
-a > h1, h1 a {
-    color: #973D8E;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-a > h1:link, h1 a:link {
-    color: black;
-}
-a > h1:visited, h1 a:visited {
-    color: black;
-}
-a > h1:hover, h1 a:hover {
-    color: #973D8E;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-
-#logo-color {
-    fill: black;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
-}
-h1:hover #logo-color {
-    fill: #973D8E;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
-}
-
+main a, /* Link */
+main a:link, /* Unvisited link */
+main a:visited, /* Visited link */
 .anchor {
-    color: #973D8E !important;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
+    color: #973D8E;
 }
+main a:hover,
 .anchor:hover {
-    color: #ED76E1 !important;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
+    color: #ED76E1;
+}
+
+h1 a, /* Link */
+h1 a:link, /* Unvisited link */
+h1 a:visited { /* Visited link */
+    color: #333333;
+}
+h1 a:hover {
+    color: #973D8E;
 }

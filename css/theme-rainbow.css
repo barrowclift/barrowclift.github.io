@@ -1,19 +1,12 @@
-/*
-Main Menu
-*/
-menu ul li:hover > a {
-    color: #979797; /*Foreground color of menu on hover*/
-}
-#website-title, .main-color {
+/* DYNAMIC RAINBOW ELEMENTS ------------------------------------------------------------------ */
+
+menu {
     background-color: #F68048;
-    -webkit-animation: rgb 60s infinite;
-       -moz-animation: rgb 60s infinite;
-        -ms-animation: rgb 60s infinite;
-         -o-animation: rgb 60s infinite;
-            animation: rgb 60s infinite;
-    -webkit-transition: .2s;
-       -moz-transition: .2s;
-            transition: .2s;
+    -webkit-animation: rgb 90s infinite;
+       -moz-animation: rgb 90s infinite;
+        -ms-animation: rgb 90s infinite;
+         -o-animation: rgb 90s infinite;
+            animation: rgb 90s infinite;
 }
 @-moz-keyframes rgb {
     0% {
@@ -108,71 +101,55 @@ menu ul li:hover > a {
         background-color: #F68048;
     }
 }
-.hover:hover {
-    background-color: white;
+
+/* STATICALLY COLORED ELEMENTS ------------------------------------------------------------------ */
+
+hr { /* Dividers take the color as well */
+    background-color: #979797;
+}
+.hover:hover, .active {
+    background-color: rgba(230,230,230,0.2);
 }
 
-.active a {
-    background-color: white;
-    color: #979797;
+hr {
+    background: #979797; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, #979797 25%, #979797 50%, #979797 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#979797), color-stop(50%,#979797), color-stop(75%,#979797), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#979797 25%,#979797 50%,#979797 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,#979797 25%,#979797 50%,#979797 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,#979797 25%,#979797 50%,#979797 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,#979797 25%,#979797 50%,#979797 75%,#FFFFFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
-/*
-Highlight Color
-*/
-/* Safari */
-::selection {
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
     background: #979797;
     color: white;
 }
-/* Firefox */
-::-moz-selection {
+::-moz-selection { /* Firefox */
     background: #979797;
     color: white;
 }
 
-/*
-Text Links
-*/
-main :not(h2) > a {
-    color: #979797;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
-}
-/* unvisited link */
-main :not(h2) > a:link {
-    color: #979797;
-}
-/* visited link */
-main :not(h2) > a:visited {
-    color: #979797;
-}
-main :not(h2) > a:hover {
-    color: #333333;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
-}
+/* LINKS ------------------------------------------------------------------ */
 
-a > h2, h1 a {
-    color: #979797;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-a > h2:link, h1 a:link {
-    color: black;
-}
-a > h2:visited, h1 a:visited {
-    color: black;
-}
-a > h2:hover, h1 a:hover {
-    color: #979797;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-
+main a, /* Link */
+main a:link, /* Unvisited link */
+main a:visited, /* Visited link */
 .anchor {
-    color: #333333 !important;
+    color: #979797;
 }
+main a:hover,
 .anchor:hover {
-    color: #979797 !important;
+    color: #707070;
+}
+
+h1 a, /* Link */
+h1 a:link, /* Unvisited link */
+h1 a:visited { /* Visited link */
+    color: #707070;
+}
+h1 a:hover {
+    color: #979797;
 }

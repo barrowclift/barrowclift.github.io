@@ -22,7 +22,7 @@
 				
 				<main {% if page.bottom-margin-included != true %}style="margin-bottom:1px;"{% endif %}>
 					<article>
-						<figure class="banner-top-padding">
+						<figure class="banner-top-margin">
 							<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}{{ page.banner-alt }}{% else %}Post banner{% endif %}">
 								<source src="/videos/{{ page.banner-video }}.mp4" type="video/mp4">
 								<source src="/videos/{{ page.banner-video }}.webm" type="video/webm">

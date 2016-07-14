@@ -14,7 +14,7 @@ home-menu-active: true
 		{% capture year %}{{ postYear }}{% endcapture %}
 		</ul>
 		<h2>{{ year }}</h2>
-		<ul id="archive-list">
+		<ul class="bare-list">
 	{% endif %}
 	<li>
 	    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a><span class="weak"> - {{ post.date | date: "%B %-d" }}</span>

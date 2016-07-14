@@ -1,80 +1,60 @@
-/*
-MainMenu
-*/
-menu ul li:hover > a {
-    color: #EEBC4E; /*Foreground color of menu on hover*/
-}
-#website-title, .main-color {
+/* THEMED ELEMENTS ------------------------------------------------------------------ */
+
+menu, /* The color (plus gradient) of the navigation element */
+.hover:hover, /* We want hovered tabs to be pure yellow */
+.active, /* We want active tabs to be pure yellow */
+hr { /* Dividers take the color as well */
     background-color: #EEBC4E;
 }
-.hover:hover {
-    background-color: white;
-}
-.active a {
-    background-color: white;
-    color: #EEBC4E;
+
+hr {
+    background: #EEBC4E; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, #EEBC4E 25%, #EEBC4E 50%, #EEBC4E 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#EEBC4E), color-stop(50%,#EEBC4E), color-stop(75%,#EEBC4E), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#EEBC4E 25%,#EEBC4E 50%,#EEBC4E 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,#EEBC4E 25%,#EEBC4E 50%,#EEBC4E 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,#EEBC4E 25%,#EEBC4E 50%,#EEBC4E 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,#EEBC4E 25%,#EEBC4E 50%,#EEBC4E 75%,#FFFFFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
-/*
-Highlight Color
-*/
-/* Safari */
-::selection {
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
     background: #EEBC4E;
     color: white;
 }
-/* Firefox */
-::-moz-selection {
+::-moz-selection { /* Firefox */
     background: #EEBC4E;
     color: white;
 }
 
-/*
-Text Links
-*/
-main :not(h2) > a {
-    color: #EEBC4E;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
+input:focus, textarea:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 188, 78, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 188, 78, 0.6);
+    border-color: #F7D242;
 }
-/* unvisited link */
-main :not(h2) > a:link {
+button:hover {
+    background-color: #EEBC4E;
+}
+
+/* LINKS ------------------------------------------------------------------ */
+
+main a, /* Link */
+main a:link, /* Unvisited link */
+main a:visited, /* Visited link */
+.anchor {
     color: #EEBC4E;
 }
-/* visited link */
-main :not(h2) > a:visited {
-    color: #EEBC4E;
-}
-main :not(h2) > a:hover {
+main a:hover,
+.anchor:hover {
     color: #F7D242;
-    -webkit-transition: color .2s linear;
-    transition: color .2s linear;
 }
 
-h1 a {
-    color: #EEBC4E;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-h1 a:link {
-    color: black;
-}
-h1 a:visited {
-    color: black;
+h1 a, /* Link */
+h1 a:link, /* Unvisited link */
+h1 a:visited { /* Visited link */
+    color: #333333;
 }
 h1 a:hover {
     color: #EEBC4E;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-
-#logo-color {
-    fill: black;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
-}
-h1:hover #logo-color {
-    fill: #EEBC4E;
-    -webkit-transition: fill .2s ease;
-    transition: fill .2s ease;
 }

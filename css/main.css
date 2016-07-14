@@ -1,130 +1,181 @@
 /*
-CONTENT:
+TABLE OF CONTENTS:
     Font families ---
-    Font sizes  ---
-    Root elements ---
+    Font sizes & kerning ---
+    Page ---
     Navbar ---
-    Headers ---
-    Paragraph elements ---
-    Stream navigation ---
+    Logo ---
+    Writing layout ---
     Images & video ---
     Footnotes ---
     Dividers ---
+    Blog navigation ---
+    Actions Sheet ---
     Tables ---
-    Buttons ---
+    Forms & Buttons ---
     Positioning ---
-    Title ---
     Page Footer ---
     Anchors ---
-    Actions Sheet ---
     Code ---
+
+Small devices (iPhones)
+Font size: 14px, ~Margin&Padding: 21px
 */
 
 /* FONT FAMILIES -------------------------------------------------------------------- */
 
+@font-face {
+    font-family: "SFNSDisplayRegular";
+    src: url('/fonts/sfns-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: "SFNSDisplayBold";
+    src: url('/fonts/sfns-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SFNSDisplayThin";
+    src: url('/fonts/sfns-thin.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: "SFNSText";
+    src: url('/fonts/sfns-text.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
 /* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
-    font-family: system, -apple-system, "San Francisco", "Helvetica Neue", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-family: "SFNSDisplayRegular";
+    
     /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
     -moz-osx-font-smoothing: grayscale;
+    /* Default text rendering in WebKit is *way* too heavy, in my opinion. This thins
+       the text a bit and makes it more crisp and pleasing to read. */
+    -webkit-font-smoothing: antialiased;
+}
+menu ul {
+    font-family: "SFNSText";
+    font-weight: 400; /* Default "SFNS Text" is medium, no further weight necessary */
+}
+h1,h2,h3,h4,h5,h6,
+table th, strong {
+    font-family: "SFNSDisplayBold";
+    font-weight: 400; /* Font's already bold, no further weight necessary */
+}
+time, blockquote, em {
+    font-style: italic;
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
 }
 
-/* FONT SIZES ------------------------------------------------------------------- */
+/* FONT SIZES & KERNING ------------------------------------------------------------------- */
 
-/* Weights, kerning, etc. */
+/* ----- SIZES ----- */
 html {
-    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
 }
+#logo {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+}
+menu ul {
+    font-size: 1.2em;
+    line-height: 1.5rem;
+    margin: 0.75rem 0;
+}
+h1 {
+    font-size: 2.5em; /* 14px from <p> * 2.5 */
+    line-height: 3rem; /* 21px * 2 */
+    margin-top: 3rem; /* 21px * 2 */
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 2em; /* 14px from <p> * 2 */
+    line-height: 2.625rem; /* 21px * 1.75 */
+    margin: 2.625rem 0; /* 21px * 1.75 */
+}
+h3 {
+    font-size: 1.5em; /* 14px from <p> * 1.5 */
+    line-height: 2.25rem; /* 21px * 1.5 */
+    margin: 2.25rem 0; /* 21px * 1.5 */
+}
+h4 {
+    font-size: 1.25em; /* 14px from <p> * 1.25 */
+    line-height: 1.875rem; /* 21px * 1.25 */
+    margin: 1.875rem 0; /* 21px * 1.25 */
+}
+h5 {
+    font-size: 1em; /* 14px from <p> */
+    line-height: 1.5rem; /* 21px */
+    margin: 1.5rem 0; /* 21px */
+}
+h6 {
+    font-size: 0.75em; /* 14px from <p> * 0.75 */
+    line-height: 1.125rem; /* 21px * 0.75 */
+    margin: 1.125rem 0; /* 21px * 0.75 */
+}
+p, blockquote, ol, ul, table, ol li, ul li {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+    ol, ul {
+        padding-left: 2.25rem; /* 21px * 1.5 */
+    }
+time {
+    font-size: 0.5em;
+    line-height: 1.5rem; /* 21px */
+    margin-top: 0.375rem; /* 21px * 0.25 */
+    margin-bottom: 2.25rem; /* 21px * 1.5 */
+}
+.footnotes ol li p,
+.footnotes ol,
+figcaption, pre > code, code,
+input, select, textarea, button {
+    font-size: 0.9em; /* 13px */
+    line-height: 1.25rem;
+    margin: 1.25rem 0;
+}
+    pre, pre > code {
+        line-height: 1.2rem; /* 21 * 0.875 */
+    }
+.bigfoot-footnote__content p {
+    line-height: 1.275rem; /* font-size: 85%, 0.85 * base line height 21px for iPhone */
+}
+small {
+    font-size: 0.75em;
+}
+
+
+/* ----- KERNING ----- */
 input, textarea {
     /* Better experience for user while entering text */
-    letter-spacing: 1px !important;
+    letter-spacing: 1px;
 }
 code:before, code:after {
     letter-spacing: -0.2em;
 }
+html {
+    letter-spacing: 0.02rem;
+}
+time {
+    letter-spacing: 0.025em;
+}
 menu ul {
-    letter-spacing: 0.1px;
-    font-weight: 500;
+    letter-spacing: -0.02em;
 }
 figcaption {
-    letter-spacing: 0.0625em;
+    letter-spacing: 0.0425em;
 }
-h1 {
-    font-weight: 200;
-    color: white;
-}
-h2, h3 {
-    font-weight: 500;
-}
-table th, strong {
-    font-weight: bold;
-}
-blockquote, em {
-    font-style: italic;
-}
-h4, time,
-figcaption, .weak {
-    color: #979797;
+h1, h2 {
+    letter-spacing: 0em;
 }
 
-
-/* Sizes */
-h1 { /* Page Headers */
-    font-size: 45px;
-    line-height: 45px;
-}
-h2 { /* Post Titles */
-    font-size: 24px;
-    line-height: 34px;
-}
-h3, h4,
-#bottom-navigation,
-.action-label {
-    font-size: 19px;
-}
-    h3, h4, #bottom-navigation, .action-label {
-        line-height: 28px;
-    }
-menu ul {
-    font-size: 16px;
-    line-height: 16px;
-}
-time,
-p, blockquote, ol, ul, h5,
-table, #page-footer-text {
-    font-size: 14px;
-}
-    time, #page-footer-text {
-        line-height: 14px;
-    }
-    p, #archive-list li, blockquote, ol, ul, table, h5 {
-        line-height: 22px;
-    }
-.footnotes ol li p,
-.footnotes ol,
-figcaption, pre > code, code,
-input, select, textarea, button, h6 {
-    font-size: 12px;
-}
-    h6 {
-        line-height: 19px;
-    }
-    pre {
-        line-height: 16px;
-    }
-    figcaption,
-    .footnotes ol li p, /* The inline footnote text */
-    .footnotes ol { /* The number in the list */
-        line-height: 20px;
-    }
-
-/* ROOT ELEMENTS ------------------------------------------------------------ */
+/* PAGE ------------------------------------------------------------ */
 
 html {
     background-color: white;
+    color: #333333;
 }
 body, main {
     text-align: center;
@@ -137,25 +188,31 @@ main {
     position: relative;
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 463px;
+    max-width: 33rem;
     width: auto;
     margin: 0 auto;
-    margin-top: 35px;
-    margin-bottom:35px;
+    margin-top: 3rem; /* 21px * 2 */
+    margin-bottom: 3rem; /* 21px * 2 */
+}
+main a {
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
 }
 .wide-page main {
-    max-width: 546px;
+    max-width: 39rem;
 }
-.extra-wide-page main {
-    max-width: 100%;
-    padding:0;
-}
+.extra-wide-page main,
 .full-width-page main {
     max-width: 100%;
-    padding:0;
+    padding: 0;
+}
+.extra-wide-page main {
+    max-width: 1440px;
 }
 
 
+/* Allows for margin bottom on main page elements and makes it easier to
+   re-add stickied footers, should I want them back anytime going forward */
 #content {
     overflow: auto;
     overflow-x: hidden;
@@ -163,111 +220,115 @@ main {
 
 /* NAVBAR ---------------------------------------------------------- */
 
+#logo {
+    width: auto;
+    display: inline-block;
+}
+
+
 menu ul {
     position: relative;
     list-style-type: none;
     text-align: center;
-    margin-top: 0;
     padding: 0;
-
-    /*transition: all 0.25s ease 0s;
-    -webkit-transition: all 0.25s ease 0s;
-    -moz-transition: all 0.25s ease 0s;
-    -ms-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;*/
 }
 menu ul li {
     display: inline-block;
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
+    margin: 0;
+    min-width: 75px;
     transition: background-color .1s linear;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 menu ul li a {
     display: list-item;
-    padding: 6px 0.9em;
+    padding: 0.4rem 1.69vw; /* 21px * 0.25 */
     color: white; /* Foreground color of main menu and submenu */
 }
-
-#website-title {
+menu {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
     background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(0, 0, 0, 0.09));
 }
 
-/* HEADERS ------------------------------------------------------------------- */
+/* LOGO ----------------------------------------------------------- */
 
-h1 {
-    margin-top: 11px;
-    margin-bottom: 11px;
-    width: auto;
+#mac {
     display: inline-block;
+    vertical-align: top;
+    width: 32px;
+    height: 32px;
+    padding-top: 1px;
+    
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
 }
-/*h1 svg {
-    transition: all 0.25s ease 0s;
-    -webkit-transition: all 0.25s ease 0s;
-    -moz-transition: all 0.25s ease 0s;
-    -ms-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;
-}*/
-h2, time {
-    text-align: center;
-}
-h3 {
-    text-align: left;
-}
-h3 { 
-    margin: 22px 0;
-}
-h2 {
-    margin-top: 22px;
+#signature {
+    height: 48px;
+    margin-left:5.75px;
 }
 
-
-time {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 11px;
+svg #logo-eye-opened,
+#logo:hover #logo-eye-closed {
+    opacity: 1;
+}
+svg #logo-eye-closed,
+#logo:hover #logo-eye-opened {
+    opacity: 0;
 }
 
-/* PARAGRAPH ELEMENTS ------------------------------------------------------- */
+/* WRITING LAYOUT ------------------------------------------------------------------- */
 
+h1, h2, h3, h4, h5, h6, time,
 p, ol, ul {
     text-align: left;
 }
-
-
-p, ol, ul, #archive-list {
-    margin: 22px 0;
+h1::selection,
+h2::selection,
+h3::selection,
+h1 a::selection, /* Article titles in main feed */
+h1 span::selection { /* Article titles in page view */
+    -webkit-text-stroke: 1px #333333;
+    color: white;
+    background: transparent;
+}
+time {
+    display: block;
+}
+.permalink {
+    display: inline-block;
+    position: absolute;
+    height: 1.5rem;
+    width: 1rem;
+    opacity: 1;
+    margin-left: 0.375rem;
 }
 
 
-ol, ul {
-    padding-left: 33px;
-}
 ol {
     list-style-type: decimal;
 }
 ul {
     list-style-type: initial;
 }
-ol li, ul li {
-    margin: 22px 0;
-}
 ol li > :last-child, ul li > :last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-#archive-list {
+/* Raw list of items, no bullets, padding, or frills at all */
+.bare-list {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
-#archive-list li {
+.bare-list li {
     margin: 0;
 }
 
 
 blockquote {
-    padding-left: 15px;
+    padding-left: 2.25rem;
     border-left: 4px solid #e8e8e8;
     color: #828282;
 }
@@ -276,21 +337,11 @@ blockquote > :last-child {
 }
 
 
+time, figcaption, .weak, small {
+    color: #979797;
+}
 .underline {
     text-decoration: underline;
-}
-
-/* STREAM NAVIGATION -------------------------------------------------------- */
-
-#navigation-previous {
-    display: inline-block;
-    float: left;
-    text-align: left;
-}
-#navigation-next {
-    display: inline-block;
-    float: right;
-    text-align: right;
 }
 
 /* IMAGES & VIDEO ----------------------------------------------------------- */
@@ -312,15 +363,20 @@ figure p {
 }
 figcaption {
     padding: 0 5%;
-    margin-top: -11px;
-    margin-bottom: 22px;
+    margin-top: -0.75rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
 }
 
 
 /****** ALL IMAGES TYPES FOR USE IN BLOG ******/
+/* Today's bootstrap-like project sites have edge-to-edge "sections" that have
+no max width. This functions almost exactly like edge-to-edge *except* without
+the max-width. */
+.slice,
 /* A true, edge-to-edge image. To be used for full-blown banners and scenic,
 image heavy adventure posts like the Sibs Trip. Should be used rarely and with
-extreme deliberation.*/
+extreme deliberation. Caps out eventually at a certain width limit. */
 .edge-to-edge,
 /* A slightly more reserved edge-to-edge responsive image. On small and medium
 devices it will always be edge-to-edge and remain edge-to-edge until the width
@@ -341,7 +397,6 @@ and large devices it's exactly in line with the text wrapped to the top and
 bottom. This should be used sparingly for images that are abnormally tall and
 not very wide (portrait photos mostly).*/
 .inline,
-
 /* For non-blog post banners (About page, Code project pages, etc.) that I
 personally think shouldn't be a full blown banner and work better as a "shy"
 banner that acts edge-to-edge in almost all cases except large devices where
@@ -354,10 +409,18 @@ to-edge and the appropriate banner padding class should be used.*/
     max-width: 1600px;
     max-height: none;
 }
+.slice {
+    max-width: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    background-color: #F9F9F9;
+}
 
 .bound-responsive {
-    margin-left: -15vw;
-    margin-right: -15vw;
+    margin-left: -18vw;
+    margin-right: -18vw;
 }
 .responsive {
     margin-left: -25vw;
@@ -367,7 +430,7 @@ to-edge and the appropriate banner padding class should be used.*/
     margin-left: -15vw;
     margin-right: -15vw;
 }
-.edge-to-edge {
+.edge-to-edge, .slice {
     margin-left: -35vw;
     margin-right: -35vw;
 }
@@ -377,10 +440,11 @@ to-edge and the appropriate banner padding class should be used.*/
 }
 
 
-/* iOS screen shots (OS X Yosemite "window" blur otherwise window blends into
-website background)*/
+/* iOS screen shots (shadow necessary, otherwise screen blends into website background) */
 .screenshot-shadow {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
 }
 /* The size of the iOS screenshot will change depending on how many should be
 shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
@@ -389,7 +453,12 @@ flowed (my responsive stuff is basically a hack as is...) */
 .ios-one-screen,
 .ios-two-screens,
 .ios-three-screens {
+    /* css 3 */
     border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
 }
 .ios-one-screen {
     max-width: 70vw;
@@ -405,6 +474,7 @@ flowed (my responsive stuff is basically a hack as is...) */
     margin-right: 2vw;
 }
 
+
 video {
     top: 0;
     left: 0;
@@ -416,42 +486,91 @@ video {
 /* FOOTNOTES ---------------------------------------------------------------- */
 
 .footnotes ol {
-    margin-left: 16px;
-    padding-left: 0px;
+    /* Needed pixel-perfect left alignment for this one, otherwise the decimal
+       lists would split out past the page's content width */
+    margin-left: 19px;
+    padding-left: 0;
 }
 .footnotes ol > :last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-.footnotes ol, .footnotes ol li p {
-    margin-top: 0px;
+footer {
+    margin: 3rem 0;
+}
+
+
+/* Firefox is the only browser that doesn't respect this color being set in the
+correct bigfoot-number.min.css style sheet. This makes Firefox do what literally
+every other browser has the competency to figure out themselves. */
+.bigfoot-footnote__button {
+    background-color: #979797;
 }
 
 /* DIVIDERS ----------------------------------------------------------------- */
 
 hr {
-    margin: 44px 0;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
     border: none;
+    margin-left: -15vw;
+    margin-right: -15vw;
+    max-width: 61rem;
+    width: 90vw;
+    height: 2px;
+    display: inline-block;
 }
-article hr, footer hr {
+article hr, footer hr, hr.small {
     border: none;
     background-color: #E5E5E5;
     height: 1px;
+    margin: 0.75rem 0; /* 21px * 0.5 */
+    max-width: 33rem;
     background: #E5E5E5; /* Old browsers */
-    background: -moz-linear-gradient(left,  #FFFFFF 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, #FFFFFF 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#E5E5E5), color-stop(50%,#E5E5E5), color-stop(75%,#E5E5E5), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* IE10+ */
-    background: linear-gradient(to right,  #FFFFFF 0%,#E5E5E5 25%,#E5E5E5 50%,#E5E5E5 75%,#FFFFFF 100%); /* W3C */
+    background: -moz-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,white), color-stop(25%,#E5E5E5), color-stop(50%,#E5E5E5), color-stop(75%,#E5E5E5), color-stop(100%,white)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* IE10+ */
+    background: linear-gradient(to right, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
+}
+
+/* BLOG NAVIGATION -------------------------------------------------------- */
+
+#navigation-previous {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+#navigation-next {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+/* ACTIONS SHEET ----------------------------------------------------------- */
+
+#actions-sheet {
+    padding-top: 2rem;
+}
+#navigation-next, #navigation-previous {
+    min-width: 5.5rem;
+}
+.action-category {
+    display: inline-block;
+    text-align: center;
+    min-width: 4.5rem;
+    width: auto;
+    margin: 0 1.5rem;
+    margin-top: 2px;
 }
 
 /* TABLES ------------------------------------------------------------------- */
 
 table {
     width: 100%;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     word-break: normal;
     word-break: keep-all;
 }
@@ -463,25 +582,62 @@ hr:after {
     clear: both;
 }
 
-/* BUTTONS ------------------------------------------------------------------ */
+/* FORMS & BUTTONS ------------------------------------------------------------------ */
 
-button {
-    height: 25px;
+form {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
+form, input, button, textarea {
+    display: inline-block;
+    width: 100%;
+}
+input, button, textarea {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+button {
+    height: 24px;
+    color: white;
+    border: none;
+    background-color: #979797;
+    display: inline-block;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #C7C7C7;
+    padding: 0.375rem; /* Inner padding */
+}
+input, textarea, button {
+    /* css 3 */
+    border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
+}
+input:focus, textarea:focus {
+    outline: 0;
+}
+/* Remove box shadow firefox, chrome and opera put around required fields. */
+input:required {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
 
 /* Smooth hover-transition buttons & Generic round button (RSS, Archive, etc.) */
 .button-hover, .button-default,
-.social-site-button, .experience-company-button, .news-logo-button, .round-button {
+.social-button, .blog-button {
     position: relative;
     display: inline-block;
-}
-.round-button {
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 .button-hover {
     opacity: 0;
@@ -489,11 +645,9 @@ button {
 .button-hover:hover {
     opacity: 1;
 }
-.round-button img,
+.blog-button img,
 .icon-button img,
-.social-site-button img,
-.news-logo-button img,
-.experience-company-button img {
+.social-button img {
     position: absolute;
     left: 0;
     top: 0;
@@ -502,16 +656,26 @@ button {
     -o-transition: opacity 0.25s linear;
     transition: opacity 0.25s linear;
 }
+.blog-button {
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.social-button {
+    max-width: 64px;
+    max-height: 64px;
+    width: 8.9vw;
+    height: 8.9vw;
+    margin: 0 1.9vw;
+}
 
 /* POSITIONING -------------------------------------------------------------- */
 
-/* NOT ideal, but makes the non-blog page markup slightly nicer to handle, and
-there are times we need to fiddle with the margin and width to truely get
-something to center. */
 .center {
     text-align: center;
     width: auto;
-    margin: 0 auto;
 }
 
 
@@ -523,84 +687,43 @@ something to center. */
 }
 
 
-/* Relic from release 3.0. Again, NOT ideal and needs to be fixed/removed in a
-   future refactor.*/   
+.large-top-margin {
+    margin-top: 2.25rem;
+}
+.large-bottom-margin {
+    margin-bottom: 2.25rem;
+}
 .large-top-pad {
-    margin-top: 44px;
+    padding-top: 2.25rem;
 }
 .large-bottom-pad {
-    margin-bottom: 44px;
+    padding-bottom: 2.25rem;
 }
-.massive-left-pad {
-    padding-left: 33px;
+.top-margin {
+    margin-top: 1.5rem;
 }
-.divider {
-    margin: 0 22px;
+.bottom-margin {
+    margin-bottom: 1.5rem;
 }
+.small-top-margin {
+    margin-top: 0.75rem;
+}
+.small-bottom-margin {
+    margin-bottom: 0.75rem;
+}
+
+
 .banner-header-padding {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
+    margin-top: 0px;
+    padding-top: 0px;
 }
-.banner-top-padding {
-    margin-top: -35px;
-}
-
-/* TITLE ----------------------------------------------------------- */
-
-#logo-image {
-    display: inline-block;
-    vertical-align: top;
-    width: 32px;
-    height: 32px;
-    padding-top:1px;
-    /* Fixes Firefox rendering the logo like a drunken idiot, every
-       other browser could handle it just fine. */
-    image-rendering: -moz-crisp-edges; 
-}
-#logo-text {
-    height: 48px;
+.banner-top-margin {
+    margin-top: -3rem;
 }
 
-svg #logo-eye-opened,
-h1:hover #logo-eye-closed {
-    opacity: 1;
-}
-svg #logo-eye-closed,
-h1:hover #logo-eye-opened {
-    opacity: 0;
-}
 
-/* PAGE FOOTER ------------------------------------------------------------ */
-
-/* The root containers for all non-bottom banner site elements */
-#wrap {
-    min-height: 100%;
-}
-/*
-Immediate child element of wrap. Since it rests inside wrap the
-padding height is part of the 100%, thus forcing the bottom banner to
-rest at the bottom of the page.
-*/
-#page-footer {
-    position: relative;
-    height: 18px;
-    margin-top: -18px; /* Negative value of footer height */
-    clear: both;
-}
-#page-footer-text {
-    height: auto;
-    padding-top: 2px;
-}
-#page-footer-text a {
-    color: white;
-}
-/* Opera Fix */
-body:before {
-    content: "";
-    height: 100%;
-    float: left;
-    width: 0;
-    margin-top: -32767px;
+.divider {
+    margin: 0 5vw;
 }
 
 /* ANCHORS ----------------------------------------------------------- */
@@ -610,32 +733,15 @@ body:before {
     text-decoration: none;
     padding: 0 .34em;
     opacity: 0;
-    transition: opacity .2s ease-in-out;
     float: none;
     margin-left: 0em;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
 }
-
+/* When hovering the header text or the anchor location itself, show anchor */
 .anchored:hover .anchor,
 .anchored .anchor:hover {
     opacity: 1;
-}
-
-/* ACTIONS SHEET ----------------------------------------------------------- */
-
-#actions-sheet {
-    padding-top: 66px;
-}
-.action-label {
-    padding-bottom: 11px;
-    color: #979797;
-}
-.action-category {
-    display: inline-block;
-    text-align: center;
-    /* This MUST be the max width of the action label */
-    max-width: 122px;
-    width: auto;
-    margin: 0 44px;
 }
 
 /* CODE --------------------------------------------------------------------- */
@@ -648,8 +754,8 @@ pre {
     max-height: none;
     margin-left: -28vw;
     margin-right: -28vw;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     -webkit-text-size-adjust: none;
 }
 code {
@@ -661,8 +767,8 @@ pre > code {
     padding: 0;
     margin: 0;
     border: 0;
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     overflow: hidden;
     /* Fix for that awful, double scrollview thing in Windows */
@@ -670,14 +776,13 @@ pre > code {
     overflow: -moz-scrollbars-none;
     
     max-width: initial;
-    line-height: inherit;
     background-color: transparent;
     word-break: normal;
     white-space: pre;
 }
 .highlight pre, pre {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     background-color: #272821;
     color: white;
@@ -711,11 +816,16 @@ pre ::selection, code ::selection {
 }
 :not(pre) > code {
     background-color: rgba(0, 0, 0, .07);
-    border-radius: 4px;
     padding: .15em .4em;
     margin-left: 0em;
     margin-right: 0em;
     word-wrap: break-word;
+    /* css 3 */
+    border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
 }
 a > code {
     color: black;
@@ -727,134 +837,72 @@ a > code {
     word-break: normal;
 }
 
-
-
 /* ======================================================================================================= */
 
+/* Tiny devices (width smaller than 320px, the original iPhone screen) */
+@media(max-width: 319px) {
+    /* ----- NAVBAR ----- */
+    menu ul li {
+        display: block;
+    }
+    .active a, .hover:hover {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+/* 
+Medium devices (iPads)
+Font size: 19px, ~Margin&Padding: 28.5px
+*/
+@media (min-width: 700px) {
+    /* ----- FONT SIZES & KERNING ----- */
+    /* Sizes */
+    html {
+        font-size: 19px;
+    }
 
 
-/* Small devices (iPads) */
-@media (min-width: 43.75rem) {
-    /* ----- FONT SIZES ----- */
-    menu ul {
-        letter-spacing: 0px;
-    }
-    h1 {
-        font-size: 68px;
-        line-height: 34px;
-    }
-    h2 {
-        font-size: 30px;
-        line-height: 41px;
-    }
-    h3, h5, h4, menu ul,
-    #bottom-navigation,
-    .action-label {
-        font-size: 24px;
-    }
-        menu ul {
-            line-height: 22px;
-        }
-        h3, h4 {
-            line-height: 33px;
-        }
-        h5, .action-label {
-            line-height: 28px;
-        }
-    time,
-    p, blockquote, ol, ul, h5,
-    table, #page-footer-text {
-        font-size: 16px;
-    }
-        #page-footer-text {
-            line-height: 16px;
-        }
-        time {
-            line-height: 20px;
-        }
-        p, blockquote, ol, ul, #archive-list li, h5,
-        table {
-            line-height: 25px;
-        }
-    .footnotes ol li p,
-    .footnotes ol,
-    figcaption, pre > code, code,
-    input, select, textarea, button, h6 {
-        font-size: 14px;
-    }
-        pre {
-            line-height: 18px;
-        }
-        figcaption,
-        .footnotes ol li p,
-        .footnotes ol {
-            line-height: 23px;
-        }
-        h6 {
-            line-height: 21px;
-        }
-
-
-    /* ----- ROOT ELEMENTS ----- */
+    /* ----- PAGE ----- */
     main {
-        padding-left: 0%;
-        padding-right: 0%;
-        max-width: 529px;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 34rem;
     }
     .wide-page main {
-        max-width: 648px;
+        max-width: 36rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 
     /* ----- NAVBAR ----- */
-    menu ul {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
     menu ul li {
-        padding-top: 0px;
-
-        margin-left: -4px;
-        margin-right: -4px;
-    }
-    menu ul li a {
-        padding: 8px 28px;
+        min-width: 8.9rem;
     }
 
 
-    /* ----- HEADERS ----- */
-    h1, h3 {
-        margin: 25px 0;
+    /* ----- LOGO ----- */
+    #mac {
+        width: 48px;
+        height: 48px;
     }
-    h2 {
-        margin-top: 25px;
-    }
-    time {
-        margin-bottom: 12.5px;
+    #signature {
+        height: 69px;
+        margin-left: 0.375rem;
     }
 
 
-    /* ----- PARAGRAPH ELEMENTS ----- */
-    p, ol, ul, #archive-list {
-        margin: 25px 0;
-    }
+    /* ----- WRITING LAYOUT ----- */
     ol, ul {
-        padding-left: 50px;
+        padding-left: 2.25rem;
     }
-    ol li, ul li {
-        margin: 25px 0;
-    }
-    
 
-    /* ----- STREAM NAVIGATION ----- */
-    
 
     /* ----- IMAGES & VIDEO ----- */
     figcaption {
-        margin-top: -12.5px;
-        margin-bottom: 25px;
+        display: inline-block;
+        max-width: 34rem;
     }
     /* When on the home view we want all images AND code blocks to actually be
     bound, inline objects to provide a less distracting view of the post for
@@ -862,99 +910,226 @@ a > code {
     to be completely edge-to-edge in the dedicated post view.*/
     .reserved-mode main article .edge-to-edge {
         display: block;
-        max-width: 529px;
+        max-width: 34rem;
         width: 100%;
         margin: 0;
-
-        max-width: 800px;
-        border-radius: 4px;
     }
     /* From here one out bound-responsive images will never be larger than the width
        bounds of the enclosing text. */
     .bound-responsive {
-        max-width: 650px;
-        width: auto;
+        width: 100vw;
+    }
+    .reserved-mode main article .edge-to-edge, .bound-responsive {
+        max-width: 42rem;
+        /* css 3 */
         border-radius: 4px;
+        /* mozilla */
+        -moz-border-radius: 4px;
+        /* webkit */
+        -webkit-border-radius: 4px;
     }
     .ios-one-screen, .ios-two-screens, .ios-three-screens {
         max-width: 28vw;
         margin: 0 2vw;
     }
     .inline {
-        max-width: 529px;
+        max-width: 34rem;
     }
 
 
     /* ----- FOOTNOTES ----- */
     .footnotes ol {
-        margin-left: 18px;
+        margin-left: 23px;
     }
 
 
     /* ----- DIVIDERS ----- */
     hr {
-        margin: 50px -28vw;
-        max-width: 840px;
+        margin-left: -5vw;
+        margin-right: -5vw;
+        max-width: 45rem;
+    }
+    article hr, footer hr, hr.small {
+        max-width: 34rem;
+    }
+    
 
-        display: inline-block;
-        width: 80vw;
-    }
-    article hr, footer hr {
-        margin: 25px 0;
-        max-width: 529px;
-    }
+    /* ----- BLOG NAVIGATION ----- */
+
+
+    /* ----- ACTIONS SHEET ----- */
 
 
     /* ----- TABLES ----- */
-    table {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
 
 
-    /* ----- BUTTONS ----- */
+    /* ----- FORMS & BUTTONS ----- */
     .bigfoot-footnote__button {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .blog-button {
+        width: 1.25em;
+        height: 1.25em;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    .social-button {
+        width: 14vw;
+        height: 14vw;
+        margin: 0 29px;
     }
     button {
-        height: 27px;
+        height: 35px;
     }
 
 
     /* ----- POSITIONING ----- */
-    .large-top-pad {
-        margin-top: 50px;
+
+
+    /* ----- ANCHORS ----- */
+
+
+    /* ----- CODE ----- */
+    pre > code {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
-    .large-bottom-pad {
-        margin-bottom: 50px;
+}
+
+/* 
+Large devices (Macs)
+Font size: 21px, ~Margin&Padding: 31.5px
+*/
+@media (min-width: 900px) {
+    /* ----- FONT SIZES & KERNING ----- */
+    /* Sizes */
+    html {
+        font-size: 21px;
     }
-    .massive-left-pad {
-        padding-left: 50px;
+
+    /* ----- PAGE ----- */
+    main {
+        max-width: 35rem;
     }
-    .divider {
-        margin: 0 50px;
-    }
-    .banner-top-padding {
-        margin-top: -45px;
+    .wide-page main {
+        max-width: 46rem;
     }
 
 
-    /* ----- TITLE ----- */
-    #logo-image {
-        width: 48px;
-        height: 48px;
+    /* ----- NAVBAR ----- */
+    menu ul li a {
+        padding: 0.41rem 1.5rem;
     }
-    #logo-text {
-        height: 69px;
+    menu ul li {
+        min-width: 220px;
     }
 
 
-    /* ----- PAGE FOOTER ----- */
-    #page-footer {
-        padding-top: 2px;
-        height: 23px;
-        margin-top: -25px;
+    /* ----- LOGO ----- */
+    #mac {
+        width: 64px;
+        height: 64px;
+        padding-top: 0px;
     }
+    #signature {
+        height: 94px;
+        margin-left: 8px;
+    }
+
+
+    /* ----- WRITING LAYOUT ----- */
+
+
+    /* ----- IMAGES & VIDEO ----- */
+    figcaption {
+        max-width: 35rem;
+    }
+    /* Hard-coded adjustment of the bound-responsive image width to match the text's
+       width */
+    .bound-responsive {
+        max-width: 1000px;
+    }
+    .inline {
+        max-width: 35rem;
+    }
+    .responsive {
+        max-width: 1303px;
+        width: 100vw;
+    }
+    .shy-banner {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 96px;
+        /* css 3 */
+        border-radius: 4px;
+        /* mozilla */
+        -moz-border-radius: 4px;
+        /* webkit */
+        -webkit-border-radius: 4px;
+    }
+    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
+       but stay bound for home view. */
+    .ios-one-screen, .ios-two-screens, .ios-three-screens {
+        width: 25vw;
+        max-width: 17rem;
+    }
+    .ios-two-screens, .ios-three-screens {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+
+    /* ----- FOOTNOTES ----- */
+    .footnotes ol {
+        margin-left: 26px;
+    }
+
+
+    /* ----- DIVIDERS ----- */
+    hr {
+        margin-left: -24vw;
+        margin-right: -24vw;
+        width: 82vw;
+        max-width: 55rem;
+        min-width: 39rem;
+    }
+    article hr, footer hr, hr.small {
+        width: 100%;
+        max-width: none;
+        min-width: 736px;
+    }
+
+
+    /* ----- BLOG NAVIGATION ----- */
+
+
+    /* ----- ACTIONS SHEET ----- */
+    #navigation-next, #navigation-previous {
+        min-width: 7rem;
+    }
+
+
+    /* ----- TABLES ----- */
+
+
+    /* ----- FORMS & BUTTONS ----- */
+    .blog-button {
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 1.125rem;
+        margin-right: 1.125rem;
+    }
+    .social-button {
+        margin: 0 1.5rem;
+    }
+    button {
+        height: 39px;
+    }
+
+
+    /* ----- POSITIONING ----- */
 
 
     /* ----- ANCHORS ----- */
@@ -964,274 +1139,22 @@ a > code {
     }
 
 
-    /* ----- ACTIONS SHEET ----- */
-    #actions-sheet {
-        padding-top: 75px;
-    }
-    .action-label {
-        padding-bottom: 12.5px;
-    }
-    .action-category {
-        margin: 0 50px;
-    }
-
-
     /* ----- CODE ----- */
     pre {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-}
-
-/* Large devices (Macs) */
-@media (min-width: 56.25em) {
-    /* ----- FONT SIZES ----- */
-    h1 {
-        font-size: 91px;
-        line-height: 45px;
-    }
-    h2 {
-        font-size: 35px;
-        line-height: 48px;
-    }
-    h3, h4, h5, menu ul,
-    #bottom-navigation,
-    .action-label {
-        font-size: 27px;
-        line-height: 27px;
-    }
-        menu ul {
-            line-height: 27px;
-        }
-        h5 {
-            line-height: 33px;
-        }
-        h3, h4, #bottom-navigation, .action-label {
-            line-height: 38px;
-        }
-    time,
-    p, blockquote, ol, ul, h5,
-    table, #page-footer-text {
-        font-size: 18px;
-    }
-        #page-footer-text {
-            line-height: 18px;
-        }
-        time {
-            line-height: 23px;
-        }
-        p, blockquote, ol, ul, #archive-list li, h5,
-        table {
-            line-height: 27px;
-        }
-    .footnotes ol li p,
-    .footnotes ol,
-    figcaption, pre > code, code,
-    input, select, textarea, button, h6 {
-        font-size: 16px;
-    }
-        pre {
-            line-height: 20px;
-        }
-        figcaption,
-        .footnotes ol li p,
-        .footnotes ol {
-            line-height: 25px;
-        }
-        h6 {
-            line-height: 25px;
-        }
-
-
-    /* ----- ROOT ELEMENTS ----- */
-    main {
-        max-width: 595px;
-        margin-top: 50px;
-        margin-bottom:50px;
-    }
-    .wide-page main {
-        max-width: 764px;
-    }
-    .extra-wide-page main {
-        max-width: 1200px;
-    }
-
-
-    /* ----- NAVBAR ----- */
-    menu ul li a {
-        padding-left: 44px;
-        padding-right: 44px;
-    }
-    menu ul li {
-        margin-left:-4px;
-        margin-right:-4px;
-    }
-
-
-    /* ----- HEADERS ----- */
-    h1, h3 {
-        margin: 27px 0;
-    }
-    h2 {
-        margin-top: 27px;
-    }
-    time {
-        margin-bottom: 13.5px;
-    }
-
-
-    /* ----- PARAGRAPH ELEMENTS ----- */
-    p, ol, ul, #archive-list {
-        margin: 27px 0;
-    }
-    ol, ul {
-        padding-left: 54px;
-    }
-    ol li, ul li {
-        margin: 27px 0;
-    }
-
-
-    /* ----- STREAM NAVIGATION ----- */
-
-
-    /* ----- IMAGES & VIDEO ----- */
-    figcaption {
-        margin-top: -13.5px;
-        margin-bottom: 27px;
-    }
-    /* Hard-coded adjustment of the bound-responsive image width to match the text's
-       width */
-    .bound-responsive {
-        max-width: 800px;
-    }
-    .inline {
-        max-width: 595px;
-    }
-    .responsive {
-        max-width: 1158px;
-        width: 100vw;
-    }
-    .shy-banner {
-        max-width: 100%;
-        width: auto;
-        margin-left: 0vw;
-        margin-right: 0vw;
-        margin-top: 54px;
+        max-width: 57rem;
+        width: 43rem;
+        /* css 3 */
         border-radius: 4px;
+        /* mozilla */
+        -moz-border-radius: 4px;
+        /* webkit */
+        -webkit-border-radius: 4px;
     }
-    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
-       but stay bound for home view. */
-    .ios-one-screen {
-        width: 25vw;
-        max-width: 355px;
+    pre > code {
+        margin: 0.75rem;
     }
-    .ios-two-screens {
-        width: 25vw;
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: 355px;
-    }
-    .ios-three-screens {
-        width: 25vw;
-        margin-left: 14px;
-        margin-right: 14px;
-        max-width: 355px;
-    }
-
-
-    /* ----- FOOTNOTES ----- */
-    .footnotes ol {
-        margin-left: 27px;
-    }
-
-
-    /* ----- DIVIDERS ----- */
-    hr {
-        margin: 54px -28vw;
-
-        display: inline-block;
-        width: 82vw;
-        max-width: 1158px;
-        min-width: 810px;
-    }
-    article hr, footer hr {
-        margin: 27px 0;
-
-        width: 100%;
-        max-width: none;
-        min-width: 595px;
-    }
-
-
-    /* ----- TABLES ----- */
-    table {
-        margin-top: 27px;
-        margin-bottom: 27px;
-    }
-
-
-    /* ----- BUTTONS ----- */
-    .bigfoot-footnote__button {
-        font-size: 18px;
-    }
-    button {
-        height: 28px;
-    }
-
-
-    /* ----- POSITIONING ----- */
-    .large-top-pad {
-        margin-top: 54px;
-    }
-    .large-bottom-pad {
-        margin-bottom: 54px;
-    }
-    .massive-left-pad {
-        padding-left: 54px;
-    }
-    .banner-top-padding {
-        margin-top: -50px;
-    }
-    .divider {
-        margin: 0 54px;
-    }
-
-
-    /* ----- TITLE ----- */
-    #logo-image {
-        width: 64px;
-        height: 64px;
-        padding-top: 2px;
-    }
-    #logo-text {
-        height: 94px;
-    }
-
-    /* ----- PAGE FOOTER ----- */
-
-
-    /* ----- ANCHORS ----- */
-
-
-    /* ----- ACTIONS SHEET ----- */
-    #actions-sheet {
-        padding-top: 81px;
-    }
-    .action-label {
-        padding-bottom: 13.5px;
-    }
-    .action-category {
-        margin: 0 54px;
-    }
-
-
-    /* ----- CODE ----- */
-    pre {
-        margin-top: 27px;
-        margin-bottom: 27px;
-        max-width: 1200px;
-        width: 800px;
-        border-radius: 4px;
+    .highlight pre, pre {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
