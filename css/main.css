@@ -229,14 +229,14 @@ menu ul {
 menu ul li {
     display: inline-block;
     margin: 0;
-    min-width: 75px;
+    min-width: 72px;
     transition: background-color .1s linear;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 menu ul li a {
     display: list-item;
-    padding: 0.4rem 1.69vw; /* 21px * 0.25 */
+    padding: 0.4rem 1.69vw;
     color: white; /* Foreground color of main menu and submenu */
 }
 menu {
@@ -875,7 +875,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
     /* ----- NAVBAR ----- */
     menu ul li {
-        min-width: 8.9rem;
+        min-width: 8.7rem;
     }
 
 
@@ -1018,7 +1018,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
         padding: 0.41rem 1.5rem;
     }
     menu ul li {
-        min-width: 220px;
+        min-width: 214px;
     }
 
 
