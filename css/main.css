@@ -25,17 +25,14 @@ Font size: 14px, ~Margin&Padding: 21px
 /* FONT FAMILIES -------------------------------------------------------------------- */
 
 @font-face {
-    font-family: "SFNSDisplayRegular";
+    font-family: "SFNSDisplay";
     src: url('/fonts/sfns-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
 }
 @font-face {
-    font-family: "SFNSDisplayBold";
+    font-family: "SFNSDisplay";
     src: url('/fonts/sfns-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-weight: 500;
-}
-@font-face {
-    font-family: "SFNSDisplayThin";
-    src: url('/fonts/sfns-thin.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
 }
 @font-face {
     font-family: "SFNSText";
@@ -45,7 +42,7 @@ Font size: 14px, ~Margin&Padding: 21px
 
 /* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
-    font-family: "SFNSDisplayRegular";
+    font-family: "SFNSDisplay", sans-serif;
     
     /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
     -moz-osx-font-smoothing: grayscale;
@@ -54,16 +51,13 @@ html, input, textarea {
     -webkit-font-smoothing: antialiased;
 }
 menu ul {
-    font-family: "SFNSText";
+    font-family: "SFNSText", sans-serif;
     font-weight: 400; /* Default "SFNS Text" is medium, no further weight necessary */
 }
 h1,h2,h3,h4,h5,h6,
 table th, strong {
-    font-family: "SFNSDisplayBold";
-    font-weight: 400; /* Font's already bold, no further weight necessary */
-}
-time, blockquote, em {
-    font-style: italic;
+    font-family: "SFNSDisplay", sans-serif;
+    font-weight: 600; /* Font's already bold, no further weight necessary */
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -285,6 +279,9 @@ svg #logo-eye-closed,
 h1, h2, h3, h4, h5, h6, time,
 p, ol, ul {
     text-align: left;
+}
+time, blockquote, em {
+    font-style: italic;
 }
 h1::selection,
 h2::selection,
