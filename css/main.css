@@ -601,6 +601,8 @@ button {
     height: 24px;
     color: white;
     border: none;
+    padding-left: 0.425rem;
+    padding-right: 0.425rem;
     background-color: #979797;
     display: inline-block;
     -webkit-transition: background-color 0.25s ease;
@@ -657,15 +659,15 @@ input:required {
     text-align: center;
     width: 16px;
     height: 16px;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
 }
 .social-button {
     max-width: 64px;
     max-height: 64px;
     width: 8.9vw;
     height: 8.9vw;
-    margin: 0 1.9vw;
+    margin: 0 0.9rem;
 }
 
 /* POSITIONING -------------------------------------------------------------- */
@@ -932,6 +934,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .inline {
         max-width: 34rem;
     }
+    /* Hack to prevent strange "double scroll" behavior in Safari (only effected
+       Medium+ devices with no <main> bottom margin) */
+    .slice {
+        margin-bottom: 1px;
+    }
 
 
     /* ----- FOOTNOTES ----- */
@@ -977,6 +984,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     button {
         height: 35px;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
     }
 
 
@@ -1123,6 +1132,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
     button {
         height: 39px;
+        padding-left: 0.29rem;
+        padding-right: 0.29rem;
     }
 
 

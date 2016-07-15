@@ -9,5 +9,8 @@ button {
 @media (min-width: 700px) {
     button {
         width: 256px;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        margin-left: 0.85rem;
     }
 }
