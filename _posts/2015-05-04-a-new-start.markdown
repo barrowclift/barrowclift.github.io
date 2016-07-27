@@ -6,7 +6,7 @@ excerpt: "All designers, even the accidental ones, have something special to sha
 categories:
   - Design
   - Technology
-  - Site News
+  - Announcement
 ---
 
 A friend of mine once told me software engineers shouldn't do design.

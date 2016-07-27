@@ -5,7 +5,7 @@ TABLE OF CONTENTS:
     Page ---
     Navbar ---
     Logo ---
-    Writing layout ---
+    Writing Styles ---
     Images & video ---
     Footnotes ---
     Dividers ---
@@ -274,7 +274,7 @@ svg #logo-eye-closed,
     opacity: 0;
 }
 
-/* WRITING LAYOUT ------------------------------------------------------------------- */
+/* WRITING STYLES ------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, time,
 p, ol, ul {
@@ -325,20 +325,28 @@ ol li > :last-child, ul li > :last-child {
 
 
 blockquote {
-    padding-left: 2.25rem;
-    border-left: 4px solid #e8e8e8;
-    color: #828282;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(0, 0, 0, .07);
 }
 blockquote > :last-child {
     margin-bottom: 0;
 }
 
 
-time, figcaption, .weak, small {
+time, figcaption, .weak, small, blockquote {
     color: #979797;
 }
 .underline {
     text-decoration: underline;
+}
+mark {
+    background-color: #FFCB46;
+    color: #333333;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    border-radius: 4px;
 }
 
 /* IMAGES & VIDEO ----------------------------------------------------------- */
@@ -496,6 +504,12 @@ footer {
 }
 
 
+.footnote-ref {
+    font-size: 0.75rem;
+    vertical-align: super;
+}
+
+
 /* Firefox is the only browser that doesn't respect this color being set in the
 correct bigfoot-number.min.css style sheet. This makes Firefox do what literally
 every other browser has the competency to figure out themselves. */
@@ -570,6 +584,8 @@ table {
     margin-bottom: 1.5rem;
     word-break: normal;
     word-break: keep-all;
+    border-collapse: collapse;
+    overflow-x: auto;
 }
 hr:before, hr:after {
     display: table;
@@ -577,6 +593,25 @@ hr:before, hr:after {
 }
 hr:after {
     clear: both;
+}
+td {
+    border: solid #E5E5E5;
+    border-width: 1px;
+    border-right: none;
+    border-left: none;
+}
+th, td {
+    padding: 0 1rem;
+}
+table th {
+    background-color: #E5E5E5;
+    color: #666666;
+}
+th:first-child {
+    border-top-left-radius: 4px;
+}
+th:last-child {
+    border-top-right-radius: 4px;
 }
 
 /* FORMS & BUTTONS ------------------------------------------------------------------ */
@@ -612,6 +647,10 @@ input, textarea {
     width: 100%;
     border: 1px solid #C7C7C7;
     padding: 0.375rem; /* Inner padding */
+}
+input[type='checkbox'] {
+    width: 1rem;
+    display: inline-block;
 }
 input, textarea, button {
     /* css 3 */
@@ -892,7 +931,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
 
 
-    /* ----- WRITING LAYOUT ----- */
+    /* ----- WRITING STYLES ----- */
     ol, ul {
         padding-left: 2.25rem;
     }
@@ -1043,7 +1082,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
 
 
-    /* ----- WRITING LAYOUT ----- */
+    /* ----- WRITING STYLES ----- */
 
 
     /* ----- IMAGES & VIDEO ----- */
