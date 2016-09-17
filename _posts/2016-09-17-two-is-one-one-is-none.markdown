@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Two Is One, One Is None"
-date:   2016-09-17 14:34:00
+date:   2016-09-17 15:04:00 -0400
 categories:
   - Technology
   - macOS
