@@ -37,7 +37,7 @@ Backblaze's findings over the years are concerning. Overall, a little over 2% of
 
 Trust me, I know from first and second hand experience; hard drive failures, accidents from external forces, or even personal mistakes *can* and *will* happen. The time to take action to protect yourself against these forces is now.
 
-The Incredible, Fallible Computer ![]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/uh-oh.png)
+The Incredible, Fallible Computer ![]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/uh-oh-mac.png)
 --------------------------------------------------------------------------------------------------------
 
 If you are not currently backing up your computer, please realize this is a perfectly natural position to be in. It's become deceptively easy nowadays to forget (or never learn) how fragile our data really is. It's comfortable to view our computers as little, magic "black boxes" that will persist as long as we need them to. While perceiving our computing devices through this lens certainly has its benefits, promoting healthy levels of protection is not one of them. Our computers *are* fallible, not only to our own mistakes and external factors such as theft and water damage but also to inherit, non-negligible hard drive failure rates.
