@@ -4,7 +4,7 @@ title:  "Fearful Computing"
 date:   2015-07-15 22:39:00
 categories:
   - Technology
-  - OS X
+  - macOS
   - iOS
   - Windows
   - Pokémon

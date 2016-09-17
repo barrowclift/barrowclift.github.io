@@ -16,6 +16,8 @@ highlighter: rouge
 show_drafts: False
 future: False
 
+timezone: America/New_York
+
 kramdown:
   footnote_backlink: "&#x21A9;&#xFE0E;"
 

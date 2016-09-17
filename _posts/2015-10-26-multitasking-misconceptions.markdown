@@ -5,7 +5,7 @@ date:   2015-10-26 21:23:00
 categories:
   - Technology
   - iOS
-  - OS X
+  - macOS
   - Multitasking
 excerpt: "Does force quitting apps in iOS *really* help speed up your iPhone and save battery?"
 share-image: "multitasking-misconceptions/share-image.jpg"

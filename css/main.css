@@ -74,7 +74,7 @@ html {
     margin-bottom: 0px;
 }
 menu ul {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.5rem;
     margin: 0.75rem 0;
 }
@@ -124,15 +124,16 @@ time {
 }
 .footnotes ol li p,
 .footnotes ol,
-figcaption, pre > code, code,
+figcaption, code,
 input, select, textarea, button {
     font-size: 0.9em; /* 13px */
     line-height: 1.25rem;
     margin: 1.25rem 0;
 }
-    pre, pre > code {
-        line-height: 1.2rem; /* 21 * 0.875 */
-    }
+pre > code {
+    font-size: 0.65em;
+    line-height: 1.375em;
+}
 .bigfoot-footnote__content p {
     line-height: 1.275rem; /* font-size: 85%, 0.85 * base line height 21px for iPhone */
 }
@@ -236,7 +237,7 @@ menu ul li {
 }
 menu ul li a {
     display: list-item;
-    padding: 0.4rem 1.69vw;
+    padding: 0.5rem 4.2vw;
     color: white; /* Foreground color of main menu and submenu */
 }
 menu {
@@ -251,9 +252,8 @@ menu {
 #mac {
     display: inline-block;
     vertical-align: top;
-    width: 32px;
-    height: 32px;
-    padding-top: 1px;
+    width: 64px;
+    height: 64px;
     
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
@@ -261,8 +261,8 @@ menu {
     -ms-interpolation-mode: nearest-neighbor;
 }
 #signature {
-    height: 48px;
-    margin-left:5.75px;
+    height: 94px;
+    margin-left: 8px;
 }
 
 svg #logo-eye-opened,
@@ -477,6 +477,12 @@ flowed (my responsive stuff is basically a hack as is...) */
     max-width: 28vw;
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+h2 img {
+    max-width: 32px;
+    margin-left: 0.1em;
+    display: inline;
 }
 
 
@@ -786,14 +792,13 @@ input:required {
 
 pre {
     display: inline-block;
+    text-align: left;
     width: 100vw;
     height: auto;
     max-width: 1600px;
     max-height: none;
     margin-left: -28vw;
     margin-right: -28vw;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
     -webkit-text-size-adjust: none;
 }
 code {
@@ -854,10 +859,12 @@ pre ::selection, code ::selection {
 }
 :not(pre) > code {
     background-color: rgba(0, 0, 0, .07);
-    padding: .15em .4em;
+    padding: .05em .4em;
     margin-left: 0em;
     margin-right: 0em;
     word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .04);
+
     /* css 3 */
     border-radius: 4px;
     /* mozilla */
@@ -873,9 +880,37 @@ a > code {
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
 }
 
 /* ======================================================================================================= */
+
+/* New iPhones */
+/*@media(max-width: 415px) {
+    menu ul {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    menu ul li a {
+        padding: 0.75rem 2.75vw;
+    }
+}*/
+
+/* Old iPhones */
+@media(max-width: 374px) {
+    menu ul {
+        font-size: 1.3em;
+        line-height: 1.5rem;
+    }
+    menu ul li a {
+        padding: 0.5rem 2.1vw;
+    }
+}
 
 /* Tiny devices (width smaller than 320px, the original iPhone screen) */
 @media(max-width: 319px) {
@@ -887,7 +922,16 @@ a > code {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
+    #signature {
+        height: 48px;
+    }
+    #mac {
+        width: 32px;
+        height: 32px;
+    }
 }
+
+
 
 /* 
 Medium devices (iPads)
@@ -898,6 +942,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
     /* Sizes */
     html {
         font-size: 19px;
+    }
+    menu ul {
+        line-height: 2.3rem;
     }
 
 
@@ -918,17 +965,12 @@ Font size: 19px, ~Margin&Padding: 28.5px
     menu ul li {
         min-width: 8.7rem;
     }
+    menu ul li a {
+        padding: 0.5rem 2.75vw;
+    }
 
 
     /* ----- LOGO ----- */
-    #mac {
-        width: 48px;
-        height: 48px;
-    }
-    #signature {
-        height: 69px;
-        margin-left: 0.375rem;
-    }
 
 
     /* ----- WRITING STYLES ----- */
@@ -1071,15 +1113,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- LOGO ----- */
-    #mac {
-        width: 64px;
-        height: 64px;
-        padding-top: 0px;
-    }
-    #signature {
-        height: 94px;
-        margin-left: 8px;
-    }
 
 
     /* ----- WRITING STYLES ----- */

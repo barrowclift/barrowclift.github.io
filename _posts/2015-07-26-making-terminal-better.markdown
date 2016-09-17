@@ -8,7 +8,7 @@ categories:
   - Technology
   - Programming
   - Unix
-  - OS X
+  - macOS
 ---
 
 For the past few articles I've focused on topics that were for everyone, but for now I want to take a brief break and give my developer friends some attention.
