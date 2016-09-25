@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Listing the Little Things"
-date:   2016-09-25 12:44:18-0500
+date:   2016-09-25 12:45:18-0300
 categories:
   - Technology
   - iOS
