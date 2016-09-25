@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bad Music Hertz is Finally Live"
-date:   2016-02-14 13:24:00-4:00
+date:   2016-02-14 13:24:00
 categories:
   - Announcement
 excerpt: "Come scrutinize and celebrate great music with us, one record at a time"

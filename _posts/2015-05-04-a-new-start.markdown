@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A New Start"
-date:   2015-05-04 15:06:00-4:00
+date:   2015-05-04 15:06:00
 excerpt: "All designers, even the accidental ones, have something special to share."
 categories:
   - Design

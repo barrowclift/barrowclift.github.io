@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fearful Computing"
-date:   2015-07-15 22:39:00-4:00
+date:   2015-07-15 22:39:00
 categories:
   - Technology
   - macOS

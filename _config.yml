@@ -17,6 +17,7 @@ show_drafts: False
 future: False
 
 timezone: America/New_York
+locale: "en-US"
 
 kramdown:
   footnote_backlink: "&#x21A9;&#xFE0E;"

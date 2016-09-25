@@ -1,7 +1,7 @@
 ---
 layout: post-banner
 title:  "Deep Blue"
-date:   2015-07-18 17:00:00-4:00
+date:   2015-07-18 17:00:00
 categories:
   - Technology
   - Apps

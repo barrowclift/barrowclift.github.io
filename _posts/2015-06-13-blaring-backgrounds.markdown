@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blaring Backgrounds"
-date: 2015-06-13 12:15:00-4:00
+date: 2015-06-13 12:15:00
 share-image: "blaring-backgrounds/bad-desktop.jpg"
 excerpt: "What makes a great general-purpose photo does not necessarily make a great desktop background."
 categories:
