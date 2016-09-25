@@ -3,7 +3,8 @@
 menu, /* The color (plus gradient) of the navigation element */
 .hover:hover, /* We want hovered tabs to be pure green */
 .active, /* We want active tabs to be pure green */
-hr { /* Dividers take the color as well */
+hr, /* Dividers take the color as well */
+a .link-button:hover { /* Any iOS 7+ styled link buttons */
     background-color: #71C152;
 }
 
@@ -39,6 +40,9 @@ main a:visited, /* Visited link */
 main a:hover,
 .anchor:hover {
     color: #8CDC7B;
+}
+.link-button {
+    border-color: #71C152;
 }
 
 h1 a, /* Link */

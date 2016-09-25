@@ -252,8 +252,8 @@ menu {
 #mac {
     display: inline-block;
     vertical-align: top;
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
@@ -261,8 +261,8 @@ menu {
     -ms-interpolation-mode: nearest-neighbor;
 }
 #signature {
-    height: 94px;
-    margin-left: 8px;
+    height: 70px;
+    margin-left: 0.5em;
 }
 
 svg #logo-eye-opened,
@@ -677,6 +677,21 @@ input:required {
     box-shadow: none;
 }
 
+.link-button {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px solid #979797;
+    border-radius: 0.5em;
+    font-weight: 500;
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
+a .link-button:hover {
+    color: white !important;
+}
+
 /* Smooth hover-transition buttons & Generic round button (RSS, Archive, etc.) */
 .button-hover, .button-default,
 .social-button, .blog-button {
@@ -767,7 +782,7 @@ input:required {
 
 
 .divider {
-    margin: 0 5vw;
+    margin: 0 2vw;
 }
 
 /* ANCHORS ----------------------------------------------------------- */
@@ -922,13 +937,6 @@ a > code {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
-    #signature {
-        height: 48px;
-    }
-    #mac {
-        width: 32px;
-        height: 32px;
-    }
 }
 
 
@@ -971,6 +979,13 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* ----- LOGO ----- */
+    #mac {
+        width: 64px;
+        height: 64px;
+    }
+    #signature {
+        height: 94px;
+    }
 
 
     /* ----- WRITING STYLES ----- */
