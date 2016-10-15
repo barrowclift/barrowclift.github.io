@@ -845,6 +845,8 @@ pre > code {
     background-color: #272821;
     color: white;
     overflow: scroll;
+    /* Momentum scrolling in iOS */
+    -webkit-overflow-scrolling: touch;
 
     text-align:left;
     -moz-tab-size: 4;
