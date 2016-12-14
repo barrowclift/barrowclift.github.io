@@ -6,7 +6,7 @@ twitter_username: barrowclift
 github_username:  barrowclift
 description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
-url: "http://barrowclift.me" # The base hostname & protocol for your site
+url: "https://barrowclift.me" # The base hostname & protocol for your site
 host: localhost
 
 permalink: /post/:title # Permalink posts sorted by date with directories is awful.
