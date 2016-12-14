@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Listing the Little Things"
-date:   2016-09-25 01:01:00 -0400
+date:   2016-09-25 01:01:00
 categories:
   - Technology
   - iOS
@@ -12,7 +12,7 @@ image:
 ---
 
 As is tradition, with fresh versions of Apple's operating systems comes thousands of reviews and pop tabloids eager to cash in on the hype. While there's no shortage of trashy, Buzzfeed-style list "articles"[^buzzfeed], it's situations like this where lists (when implemented correctly and with respect to the reader) prove to be quite useful. There's four brand-new operating systems teeming with goodies, some of which may potentially never be discovered or utilized to their full potential. To help expose these otherwise obscure tidbits, I've compiled a short list of my favorite features and options from iOS 10 and watchOS 3[^where-is-macos].
- 
+
 In respect of your time, below is a linked list of my personal favorite tidbits, feel free to peruse this list first and jump to any particular ones that interest you.
 
 📱 __iOS 10__
