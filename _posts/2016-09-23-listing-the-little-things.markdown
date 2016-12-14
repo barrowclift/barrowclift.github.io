@@ -7,7 +7,8 @@ categories:
   - iOS
   - watchOS
 excerpt: "With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!"
-share-image: "listing-the-little-thing/share-image.jpg"
+image:
+  path: "/images/assets/listing-the-little-thing/share-image.jpg"
 ---
 
 As is tradition, with fresh versions of Apple's operating systems comes thousands of reviews and pop tabloids eager to cash in on the hype. While there's no shortage of trashy, Buzzfeed-style list "articles"[^buzzfeed], it's situations like this where lists (when implemented correctly and with respect to the reader) prove to be quite useful. There's four brand-new operating systems teeming with goodies, some of which may potentially never be discovered or utilized to their full potential. To help expose these otherwise obscure tidbits, I've compiled a short list of my favorite features and options from iOS 10 and watchOS 3[^where-is-macos].

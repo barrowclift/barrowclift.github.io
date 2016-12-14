@@ -8,7 +8,8 @@ categories:
   - macOS
   - Multitasking
 excerpt: "Does force quitting apps in iOS *really* help speed up your iPhone and save battery?"
-share-image: "multitasking-misconceptions/share-image.jpg"
+image:
+  path: "/images/assets/multitasking-misconceptions/share-image.jpg"
 ---
 
 It's inevitable, you'll be enjoying a friend's company and they decide to take out their iPhone to show you some new pictures.  You both share a good laugh or two over them and as they begin to put their iPhone away you notice something strange; just before putting it away they [force quit](https://support.apple.com/en-us/HT201330) the app they just used with the familiar upward swipe, leaving their [multitasking list](https://support.apple.com/en-us/HT202070) barren. When questioned about their reason for doing so they brush it off saying something about wanting to save battery or not slow down their iPhone.

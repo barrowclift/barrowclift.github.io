@@ -1,6 +1,7 @@
 <head>
 	<title>{{site.title}}{% if page.title %}: {{ page.title }}{% endif %}</title>
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+	{% feed_meta %}
 
 	<link rel="mask-icon" mask href="{{ "/images/logo/logo.min.svg" | prepend: site.baseurl }}" color="black" />
 	<link rel="icon" type="image/png" href="{{ "/images/logo/favicon.png" | prepend: site.baseurl }}" />
@@ -49,8 +50,8 @@
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
-	{% if page.share-image %}
-	<meta property="og:image" content="{{ site.url }}/images/assets/{{ page.share-image }}"/>
+	{% if page.image.path %}
+	<meta property="og:image" content="{{ site.url }}/images/assets/{{ page.image.path }}"/>
 	{% else %}
 	<meta property="og:image" content="{{ site.url }}/images/logo/logo-banner-600x314@2x.png"/>
 	{% endif %}
@@ -61,7 +62,7 @@
 	<meta name="twitter:site" content="@barrowclift" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
-	{% if page.share-image %}
+	{% if page.image.path %}
 	<meta name="twitter:image" content="{{ site.url }}/images/assets/{{ page.share-image }}" />
 	{% else %}
 	<meta name="twitter:image" content="{{ site.url }}/images/logo/logo-banner-600x314@2x.png" />

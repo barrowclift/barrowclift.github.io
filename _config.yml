@@ -39,3 +39,4 @@ defaults:
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-feed
