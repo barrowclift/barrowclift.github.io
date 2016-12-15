@@ -7,8 +7,7 @@ categories:
   - Programming
   - Stories
 excerpt: "Pouring one out for the new generation of Turtles out there."
-image:
-  path: "/images/assets/turtles-hares-and-hot-rods/math-turtle.jpg"
+image: "/images/assets/turtles-hares-and-hot-rods/math-turtle.jpg"
 ---
 
 <figure markdown="1">
