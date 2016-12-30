@@ -1,9 +1,11 @@
 .sketch {
-	display: block;
+	display: inline-block;
+	text-align: center;
+	max-width: 40%;
+	padding: 4vw;
+	vertical-align: middle;
 	max-height: none;
-	max-width: 100%;
-	padding-top: 8vw;
-	padding-bottom: 8vw;
+	/*max-height: 25%;*/
 }
 main {
 	padding-left: 5% !important;
@@ -13,8 +15,10 @@ main {
 @media (min-width: 700px) {
 	.sketch {
 		display: inline-block;
-		max-height: 40vw;
-		max-width: 35vw;
+		max-height:320px;
+		max-width:320px;
+		width: auto;
+		height:auto;
 		padding: 3vw;
 	}
 	main {
