@@ -24,25 +24,9 @@ Font size: 14px, ~Margin&Padding: 21px
 
 /* FONT FAMILIES -------------------------------------------------------------------- */
 
-@font-face {
-    font-family: "SFNSDisplay";
-    src: url('/fonts/sfns-regular.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-weight: normal;
-}
-@font-face {
-    font-family: "SFNSDisplay";
-    src: url('/fonts/sfns-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-weight: bold;
-}
-@font-face {
-    font-family: "SFNSText";
-    src: url('/fonts/sfns-text.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-
-
 /* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
-    font-family: "SFNSDisplay", sans-serif;
+    font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
     
     /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
     -moz-osx-font-smoothing: grayscale;
@@ -51,13 +35,13 @@ html, input, textarea {
     -webkit-font-smoothing: antialiased;
 }
 menu ul {
-    font-family: "SFNSText", sans-serif;
-    font-weight: 400; /* Default "SFNS Text" is medium, no further weight necessary */
+    font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
+    font-weight: 500; /* Default "SFNS Text" is medium, no further weight necessary */
 }
 h1,h2,h3,h4,h5,h6,
 table th, strong {
-    font-family: "SFNSDisplay", sans-serif;
-    font-weight: 600; /* Font's already bold, no further weight necessary */
+    font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
+    font-weight: 700; /* Font's already bold, no further weight necessary */
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -80,33 +64,32 @@ menu ul {
 }
 h1 {
     font-size: 2.5em; /* 14px from <p> * 2.5 */
-    line-height: 3rem; /* 21px * 2 */
-    margin-top: 3rem; /* 21px * 2 */
-    margin-bottom: 0px;
+    line-height: 1.05em;
+    margin: 2rem 0; /* 21px * 2 */
 }
 h2 {
     font-size: 2em; /* 14px from <p> * 2 */
-    line-height: 2.625rem; /* 21px * 1.75 */
-    margin: 2.625rem 0; /* 21px * 1.75 */
+    line-height: 1.05em;
+    margin: 1.875rem 0; /* 21px * 1.75 */
 }
 h3 {
     font-size: 1.5em; /* 14px from <p> * 1.5 */
-    line-height: 2.25rem; /* 21px * 1.5 */
-    margin: 2.25rem 0; /* 21px * 1.5 */
+    line-height: 1.05em;
+    margin: 1.75rem 0; /* 21px * 1.5 */
 }
 h4 {
     font-size: 1.25em; /* 14px from <p> * 1.25 */
-    line-height: 1.875rem; /* 21px * 1.25 */
-    margin: 1.875rem 0; /* 21px * 1.25 */
+    line-height: 1.05em;
+    margin: 1.625rem 0; /* 21px * 1.25 */
 }
 h5 {
     font-size: 1em; /* 14px from <p> */
-    line-height: 1.5rem; /* 21px */
+    line-height: 1.05em;
     margin: 1.5rem 0; /* 21px */
 }
 h6 {
     font-size: 0.75em; /* 14px from <p> * 0.75 */
-    line-height: 1.125rem; /* 21px * 0.75 */
+    line-height: 1.05em;
     margin: 1.125rem 0; /* 21px * 0.75 */
 }
 p, blockquote, ol, ul, table, ol li, ul li {
@@ -114,12 +97,12 @@ p, blockquote, ol, ul, table, ol li, ul li {
     margin: 1.5rem 0;
 }
     ol, ul {
-        padding-left: 2.25rem; /* 21px * 1.5 */
+        padding-left: 2rem; /* 21px * 1.5 */
     }
 time {
     font-size: 0.375em; /* 14px from <p> * 0.375 */
-    line-height: 0.5625rem; /* 21px * 0.375 */
-    margin: 0.5625rem 0; /* 21px * 0.375 */
+    line-height: 1.5em; /* 21px * 0.375 */
+    margin: 0;
 }
 .footnotes ol li p,
 .footnotes ol,
@@ -128,6 +111,12 @@ input, select, textarea, button {
     font-size: 0.9em; /* 13px */
     line-height: 1.25rem;
     margin: 1.25rem 0;
+}
+.footnotes ol {
+    margin-bottom: 0;
+}
+.footnotes ol li p:last-child {
+    margin-bottom: 0;
 }
 pre > code {
     font-size: 0.65em;
@@ -145,24 +134,6 @@ small {
 input, textarea {
     /* Better experience for user while entering text */
     letter-spacing: 1px;
-}
-code:before, code:after {
-    letter-spacing: -0.2em;
-}
-html {
-    letter-spacing: 0.02rem;
-}
-time {
-    letter-spacing: 0.025em;
-}
-menu ul {
-    letter-spacing: -0.02em;
-}
-figcaption {
-    letter-spacing: 0.0425em;
-}
-h1, h2 {
-    letter-spacing: 0em;
 }
 
 /* PAGE ------------------------------------------------------------ */
@@ -298,9 +269,18 @@ time {
     display: inline-block;
     position: absolute;
     width: 0.875rem;
-    margin-top: -0.15em;
+    margin-top: 0.25em;
     opacity: 1;
     margin-left: 0.375rem;
+}
+
+
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
+    letter-spacing: 0.05em;
 }
 
 
@@ -525,8 +505,8 @@ every other browser has the competency to figure out themselves. */
 /* DIVIDERS ----------------------------------------------------------------- */
 
 hr {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
     border: none;
     margin-left: -15vw;
     margin-right: -15vw;
@@ -567,7 +547,7 @@ article hr, footer hr, hr.small {
 /* ACTIONS SHEET ----------------------------------------------------------- */
 
 #actions-sheet {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 #navigation-next, #navigation-previous {
     min-width: 5.5rem;
@@ -647,6 +627,7 @@ button {
     display: inline-block;
     -webkit-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
+    font-weight: 600;
 }
 input, textarea {
     width: 100%;
@@ -677,8 +658,7 @@ input:required {
 }
 
 .link-button {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding: 0.25em 0.75em;
     border: 1px solid #979797;
     border-radius: 0.5em;
     font-weight: 500;
@@ -746,16 +726,16 @@ a .link-button:hover {
 
 
 .large-top-margin {
-    margin-top: 2.25rem;
+    margin-top: 2rem;
 }
 .large-bottom-margin {
-    margin-bottom: 2.25rem;
+    margin-bottom: 2rem;
 }
 .large-top-pad {
-    padding-top: 2.25rem;
+    padding-top: 2rem;
 }
 .large-bottom-pad {
-    padding-bottom: 2.25rem;
+    padding-bottom: 2rem;
 }
 .top-margin {
     margin-top: 1.5rem;
@@ -991,7 +971,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
     /* ----- WRITING STYLES ----- */
     ol, ul {
-        padding-left: 2.25rem;
+        padding-left: 2rem;
+    }
+    .permalink {
+        margin-top: 0.25625em;
     }
 
 
@@ -1132,6 +1115,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- WRITING STYLES ----- */
+    .permalink {
+        margin-top: 0.325em;
+    }
 
 
     /* ----- IMAGES & VIDEO ----- */
