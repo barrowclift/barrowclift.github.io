@@ -66,6 +66,7 @@ h1 {
     font-size: 2.5em; /* 14px from <p> * 2.5 */
     line-height: 1.05em;
     margin: 2rem 0; /* 21px * 2 */
+    margin-bottom: 0;
 }
 h2 {
     font-size: 2em; /* 14px from <p> * 2 */
@@ -92,7 +93,7 @@ h6 {
     line-height: 1.05em;
     margin: 1.125rem 0; /* 21px * 0.75 */
 }
-p, blockquote, ol, ul, table, ol li, ul li {
+p, blockquote, ol, ul, table, ol li, ul li, time {
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
@@ -100,9 +101,10 @@ p, blockquote, ol, ul, table, ol li, ul li {
         padding-left: 2rem; /* 21px * 1.5 */
     }
 time {
-    font-size: 0.375em; /* 14px from <p> * 0.375 */
-    line-height: 1.5em; /* 21px * 0.375 */
-    margin: 0;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 .footnotes ol li p,
 .footnotes ol,
@@ -147,6 +149,9 @@ body, main {
 }
 html, body {
     height: 100%;
+}
+main {
+    font-weight: 500;
 }
 main {
     display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
@@ -250,7 +255,7 @@ h1, h2, h3, h4, h5, h6, time,
 p, ol, ul {
     text-align: left;
 }
-time, blockquote, em {
+blockquote, em {
     font-style: italic;
 }
 h1::selection,
@@ -269,7 +274,7 @@ time {
     display: inline-block;
     position: absolute;
     width: 0.875rem;
-    margin-top: 0.25em;
+    margin-top: 0.35em;
     opacity: 1;
     margin-left: 0.375rem;
 }
@@ -761,7 +766,7 @@ a .link-button:hover {
 
 
 .divider {
-    margin: 0 2vw;
+    margin: 0 1vw;
 }
 
 /* ANCHORS ----------------------------------------------------------- */
@@ -974,7 +979,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-left: 2rem;
     }
     .permalink {
-        margin-top: 0.25625em;
+        margin-top: 0.325em;
     }
 
 
@@ -1070,7 +1075,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* ----- POSITIONING ----- */
-
+    .divider {
+        margin: 0 2vw;
+    }
 
     /* ----- ANCHORS ----- */
 
@@ -1115,9 +1122,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- WRITING STYLES ----- */
-    .permalink {
-        margin-top: 0.325em;
-    }
 
 
     /* ----- IMAGES & VIDEO ----- */
