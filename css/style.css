@@ -64,33 +64,33 @@ menu ul {
 }
 h1 {
     font-size: 2.5em; /* 14px from <p> * 2.5 */
-    line-height: 1.125em;
+    line-height: 1.1875em;
     margin: 2rem 0; /* 21px * 2 */
     margin-bottom: 0;
 }
 h2 {
     font-size: 2em; /* 14px from <p> * 2 */
-    line-height: 1.05em;
+    line-height: 1.1875em;
     margin: 1.875rem 0; /* 21px * 1.75 */
 }
 h3 {
     font-size: 1.5em; /* 14px from <p> * 1.5 */
-    line-height: 1.05em;
+    line-height: 1.1875em;
     margin: 1.75rem 0; /* 21px * 1.5 */
 }
 h4 {
     font-size: 1.25em; /* 14px from <p> * 1.25 */
-    line-height: 1.05em;
+    line-height: 1.1875em;
     margin: 1.625rem 0; /* 21px * 1.25 */
 }
 h5 {
     font-size: 1em; /* 14px from <p> */
-    line-height: 1.05em;
+    line-height: 1.1875em;
     margin: 1.5rem 0; /* 21px */
 }
 h6 {
     font-size: 0.75em; /* 14px from <p> * 0.75 */
-    line-height: 1.05em;
+    line-height: 1.1875em;
     margin: 1.125rem 0; /* 21px * 0.75 */
 }
 p, blockquote, ol, ul, table, ol li, ul li, time {
