@@ -48,13 +48,13 @@ The iOS Music app has been an unequivocal disaster since it's half-assed redesig
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the "Library" tab in the redesigned Music app in iOS 10. There's a sub-menu at the very top containing "Playlists", "Artists", "Albums", and "Downloaded". There's barely any room left on the screen for anything else!]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-1.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-1.jpg)
+[![A screenshot of the "Library" tab in the redesigned Music app in iOS 10. There's a sub-menu at the very top containing "Playlists", "Artists", "Albums", and "Downloaded". There's barely any room left on the screen for anything else!]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-1.jpg){:  .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-1.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of that same "Library" tab in the redesigned Music app in iOS 10, except now the "Edit" button has been tapped and only “Artists” and "Albums" are checked in the list.]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-2.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-2.jpg)
+[![A screenshot of that same "Library" tab in the redesigned Music app in iOS 10, except now the "Edit" button has been tapped and only “Artists” and "Albums" are checked in the list.]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-2.jpg){:  .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-2.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![A final screenshot of the Music app, now with the sub-menu at the top containing just "Artists" and "Albums", leaving plenty of other space on the screen for other things.]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-3.jpg){: .screenshot-shadow .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-3.jpg)
+[![A final screenshot of the Music app, now with the sub-menu at the top containing just "Artists" and "Albums", leaving plenty of other space on the screen for other things.]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-3.jpg){:  .ios-three-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/music-app-screenshot-3.jpg)
 </figure>
 </div>
 
@@ -68,10 +68,10 @@ As always, you can also scroll down to the bottom of the widgets view and tap "E
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the new widgets view in iOS 10, showing Weather, Calendar, and Activity widgets.]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-collapsed.jpg){: .screenshot-shadow .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-collapsed.jpg)
+[![A screenshot of the new widgets view in iOS 10, showing Weather, Calendar, and Activity widgets.]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-collapsed.jpg){:  .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-collapsed.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![Another screenshot of that widgets view in iOS 10, this time with Weather expanded to additionally show the week's forecast.]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-expanded.jpg){: .screenshot-shadow .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-expanded.jpg)
+[![Another screenshot of that widgets view in iOS 10, this time with Weather expanded to additionally show the week's forecast.]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-expanded.jpg){:  .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/widget-expanded.jpg)
 </figure>
 </div>
 
@@ -83,10 +83,10 @@ Thankfully, [as of iOS 7](http://www.cultofmac.com/233940/set-the-preferred-dire
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the Settings app with the "Maps" menu item highlighted.]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-home.jpg){:.screenshot-shadow .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-home.jpg)
+[![A screenshot of the Settings app with the "Maps" menu item highlighted.]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-home.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-home.jpg)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the "Maps" preferences pane in the Settings app with the Preferred Transportation Type "Walking" checked.]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-map.jpg){:.screenshot-shadow .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-map.jpg)
+[![A screenshot of the "Maps" preferences pane in the Settings app with the Preferred Transportation Type "Walking" checked.]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-map.jpg){: .ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/settings-map.jpg)
 </figure>
 </div>
 
@@ -99,10 +99,10 @@ As discussed previously in "[Home Sweet Home]({{ "/post/home-sweet-home" | prepe
 
 <div markdown="1" class="responsive">
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the Modular watch face.]({{ site.baseurl }}/images/assets/listing-the-little-things/watch-face.png){:.ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/watch-face.png)
+[![A screenshot of the Modular watch face.]({{ site.baseurl }}/images/assets/listing-the-little-things/watch-face.png){:.ios-two-screens .no-shadow}]({{ site.baseurl }}/images/assets/listing-the-little-things/watch-face.png)
 </figure>
 <figure markdown="1" style="display: inline-block;">
-[![A screenshot of the new dock in watchOS 3, with the "Mail" app preview showing "No Mail".]({{ site.baseurl }}/images/assets/listing-the-little-things/dock.png){:.ios-two-screens}]({{ site.baseurl }}/images/assets/listing-the-little-things/dock.png)
+[![A screenshot of the new dock in watchOS 3, with the "Mail" app preview showing "No Mail".]({{ site.baseurl }}/images/assets/listing-the-little-things/dock.png){:.ios-two-screens .no-shadow}]({{ site.baseurl }}/images/assets/listing-the-little-things/dock.png)
 </figure>
 </div>
 
@@ -118,11 +118,9 @@ This makes which apps you choose for the dock critical; you don't want to add to
 
 You should now have roughly five or six apps to add to your dock. If you have more than that I highly recommend trimming it down to avoid overfilling the dock and slowing yourself down. You can add these apps to the dock from the "Dock" menu in iOS's Watch app. Put the ones you want to access the most at the top and then the ones you want to access the least near the bottom.
 
-<div markdown="1" class="responsive">
-<figure markdown="1" style="display: inline-block;">
+<figure markdown="1">
 [![A screenshot of the Watch iOS app displaying the new "Dock" preference pane.]({{ site.baseurl }}/images/assets/listing-the-little-things/ios-watch-app.jpg){: .ios-one-screen}]({{ site.baseurl }}/images/assets/listing-the-little-things/ios-watch-app.jpg)
 </figure>
-</div>
 
 You may be wondering why I'm suggesting you exclude apps from the dock that you already added as a complication on your most-used watch face. Since complications are already kept open in memory and up-to-date like apps added to the dock are, should you ever want to access that app *you can just tap the complication instead*. There's practically no added benefit to having it additionally take up space in your dock. Having the app be visible and launchable from the most accessible, visible place in the entire OS negates any benefits that could be gained from adding it to the dock. Not to mention, adding it to the dock as well would needlessly clutter it up and make switching back and forth between apps in the dock more difficult and frustrating.
 
@@ -131,7 +129,7 @@ You may be wondering why I'm suggesting you exclude apps from the dock that you 
 While the new dock in watchOS 3 is fantastic for accessing your apps quickly, it can take a bit longer than desired to scroll to a particular app in the list by using the Digital Crown or standard swipes. Thankfully, there's another method of scrolling which makes the process as fast as you can move: the "tap and drag" section at the bottom of the dock. Instead of having to spin or scroll over multiple times to get to where you want, you can just tap and drag quickly to your destination. Take a look!
 
 <figure markdown="1">
-[![An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed.]({{ site.baseurl }}/images/assets/listing-the-little-things/speedy-dock.gif)]({{ site.baseurl }}/images/assets/listing-the-little-things/speedy-dock.gif)
+[![An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed.]({{ site.baseurl }}/images/assets/listing-the-little-things/speedy-dock.gif){: .apple-watch-screenshot }]({{ site.baseurl }}/images/assets/listing-the-little-things/speedy-dock.gif)
 <figcaption>
 Of course, it would be your finger instead of a mouse pointer 😉
 </figcaption>

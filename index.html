@@ -35,18 +35,19 @@ home-menu-active: true
 <footer>
 	<div id="navigation-previous">
 		<h4>
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-			{% if paginator.next_page %}
-			&#8592; Older
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			{% if paginator.previous_page %}
+			&#8592; Newer
 			{% endif %}
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 		</a>
 		</h4>
 	</div>
 	<div id="navigation-next">
 		<h4>
-		<a href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
-			{% if paginator.previous_page %}
-			Newer &#8594;
+		<a href="{{ paginator.next_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
+			{% if paginator.next_page %}
+			Older  &#8594;
 			{% endif %}
 			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
 		</a>

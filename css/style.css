@@ -27,21 +27,16 @@ Font size: 14px, ~Margin&Padding: 21px
 /* Font Families (input and textarea explicitly included to fix Windows issues) */
 html, input, textarea {
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
-    
-    /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
-    -moz-osx-font-smoothing: grayscale;
-    /* Default text rendering in WebKit is *way* too heavy, in my opinion. This thins
-       the text a bit and makes it more crisp and pleasing to read. */
-    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
 }
 menu ul {
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
-    font-weight: 500; /* Default "SFNS Text" is medium, no further weight necessary */
+    font-weight: 500;
 }
 h1,h2,h3,h4,h5,h6,
 table th, strong {
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
-    font-weight: 700; /* Font's already bold, no further weight necessary */
+    font-weight: bold;
 }
 pre, code {
     font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
@@ -151,9 +146,6 @@ html, body {
     height: 100%;
 }
 main {
-    font-weight: 500;
-}
-main {
     display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
     position: relative;
     padding-left: 5%;
@@ -258,15 +250,6 @@ p, ol, ul {
 blockquote, em {
     font-style: italic;
 }
-h1::selection,
-h2::selection,
-h3::selection,
-h1 a::selection, /* Article titles in main feed */
-h1 span::selection { /* Article titles in page view */
-    -webkit-text-stroke: 1px #333333;
-    color: white;
-    background: transparent;
-}
 time {
     display: block;
 }
@@ -285,7 +268,6 @@ time {
     -ms-font-feature-settings: "c2sc", "smcp";
     -webkit-font-feature-settings: "c2sc", "smcp";
     font-feature-settings: "c2sc", "smcp";
-    letter-spacing: 0.05em;
 }
 
 
@@ -317,20 +299,57 @@ blockquote > :last-child {
 }
 
 
+del, del code {
+    color: rgba(51, 51, 51, 0.5) !important;
+}
+
+
 time, figcaption, .weak, small, blockquote {
     color: #979797;
 }
 .underline {
     text-decoration: underline;
 }
-mark {
-    background-color: #FFCB46;
-    color: #333333;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.05rem;
-    padding-bottom: 0.05rem;
+mark, mark code,
+code, pre code {
+    color: rgba(51, 51, 51, 0.9);
+}
+mark, mark.yellow {
+    background-color: #FED558;
+    border: 1px solid #FECD38;
+    word-wrap: break-word;
     border-radius: 4px;
+    padding: .05em .4em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+mark.tag {
+    /*color: white;*/
+    border-radius: 1em;
+}
+mark.green {
+    background-color: #86DF6A;
+    border-color: #70D94E;
+}
+mark.gray, mark.grey {
+    background-color: #A4A4A7;
+    border-color: #8E8E91;
+}
+mark.red {
+    background-color: #FC6360;
+    border-color: #FC4642;
+}
+mark.orange {
+    background-color: #FDA951;
+    border-color: #FD9426;
+}
+mark.blue {
+    background-color: #54BEF7;
+    border-color: #2AAEF5;
+}
+mark.purple {
+    background-color: #D592E5;
+    border-color: #CB77DF;
 }
 
 /* IMAGES & VIDEO ----------------------------------------------------------- */
@@ -349,14 +368,43 @@ article img {
 
 figure p {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+figure p:first-child {
+    line-height: 0;
+}
+figure {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+figure.spilled {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+div.responsive {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.slice figure,
+.edge-to-edge figure,
+.inline figure,
+.responsive figure,
+.bound-responsive figure {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* if there's a figure p a, the p should have line-height:0;*/
 figcaption {
     padding: 0 5%;
-    margin-top: -0.75rem;
-    margin-bottom: 1.5rem;
-    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0.75rem;
+    vertical-align: bottom;
 }
-
+figure.spilled figcaption,
+div.responsive figcaption {
+    margin-top: 1.5rem;
+}
 
 /****** ALL IMAGES TYPES FOR USE IN BLOG ******/
 /* Today's bootstrap-like project sites have edge-to-edge "sections" that have
@@ -398,6 +446,11 @@ to-edge and the appropriate banner padding class should be used.*/
     max-width: 1600px;
     max-height: none;
 }
+figure img {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+}
 .slice {
     max-width: none;
     background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
@@ -419,21 +472,49 @@ to-edge and the appropriate banner padding class should be used.*/
     margin-left: -15vw;
     margin-right: -15vw;
 }
-.edge-to-edge, .slice {
+.edge-to-edge, .slice, .responsive {
     margin-left: -35vw;
     margin-right: -35vw;
+
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
 }
 .shy-banner {
     margin-left: -35vw;
     margin-right: -35vw;
 }
 
+.small-inline {
+    display: inline-block;
+    height: auto;
+    width: 50%;
+}
 
-/* iOS screen shots (shadow necessary, otherwise screen blends into website background) */
-.screenshot-shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+img.macos-screenshot {
+    box-shadow: 0px 0px 1rem #acacac;
+    -webkit-box-shadow: 0px 0px 1rem #acacac;
+    -moz-box-shadow: 0px 0px 1rem #acacac;
+
+    /* css 3 */
+    border-radius: 5px;
+    /* mozilla */
+    -moz-border-radius: 5px;
+    /* webkit */
+    -webkit-border-radius: 5px;
+}
+.no-shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+img.apple-watch-screenshot {
+    /* css 3 */
+    border-radius: 10px;
+    /* mozilla */
+    -moz-border-radius: 10px;
+    /* webkit */
+    -webkit-border-radius: 10px;
 }
 /* The size of the iOS screenshot will change depending on how many should be
 shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
@@ -450,7 +531,9 @@ flowed (my responsive stuff is basically a hack as is...) */
     -webkit-border-radius: 4px;
 }
 .ios-one-screen {
-    max-width: 70vw;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto !important;
 }
 .ios-two-screens {
     max-width: 43vw;
@@ -486,11 +569,9 @@ video {
     margin-left: 19px;
     padding-left: 0;
 }
-.footnotes ol > :last-child {
-    margin-bottom: 0;
-}
 footer {
-    margin: 3rem 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -499,18 +580,10 @@ footer {
     vertical-align: super;
 }
 
-
-/* Firefox is the only browser that doesn't respect this color being set in the
-correct bigfoot-number.min.css style sheet. This makes Firefox do what literally
-every other browser has the competency to figure out themselves. */
-.bigfoot-footnote__button {
-    background-color: #979797;
-}
-
 /* DIVIDERS ----------------------------------------------------------------- */
 
 hr {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     margin-bottom: 2rem;
     border: none;
     margin-left: -15vw;
@@ -552,10 +625,15 @@ article hr, footer hr, hr.small {
 /* ACTIONS SHEET ----------------------------------------------------------- */
 
 #actions-sheet {
-    padding-top: 1.5rem;
+    padding-top: 4.25rem;
 }
 #navigation-next, #navigation-previous {
     min-width: 5.5rem;
+}
+#navigation-next h4,
+#navigation-previous h4 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 .action-category {
     display: inline-block;
@@ -563,7 +641,6 @@ article hr, footer hr, hr.small {
     min-width: 4.5rem;
     width: auto;
     margin: 0 1.5rem;
-    margin-top: 2px;
 }
 
 /* TABLES ------------------------------------------------------------------- */
@@ -789,61 +866,98 @@ a .link-button:hover {
 
 /* CODE --------------------------------------------------------------------- */
 
-pre {
-    display: inline-block;
-    text-align: left;
-    width: 100vw;
-    height: auto;
-    max-width: 1600px;
-    max-height: none;
-    margin-left: -28vw;
-    margin-right: -28vw;
-    -webkit-text-size-adjust: none;
-}
+/**
+ * Inline code snippets
+ */
 code {
-    padding: 0;
+    /* css 3 */
+    border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
+
+    padding: .15em .4em .05em .4em;
     margin: 0;
+    word-wrap: break-word;
 }
-pre > code {
-    display: inline-block;
+mark code,
+pre code {
     padding: 0;
+    background-color: transparent;
+    border: none;
+}
+pre, code {
+    background-color: #EFF0F1;
+    border: 1px solid rgba(0, 0, 0, .02);
+}
+
+
+pre,
+pre code {
+    display: inline-block;
+}
+pre {
+    width: 100%;
+    height: auto;
     margin: 0;
-    border: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
+
+    /**
+     * iOS used to resize the code block text size to be *far* larger than it was
+     * supposed to be This prevents this from happening.
+     */
+    -webkit-text-size-adjust: none;
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);*/
+}
+pre code {
+    padding: 0;
+    margin: 0 1rem;
+    max-width: initial;
 
     overflow: hidden;
     /* Fix for that awful, double scrollview thing in Windows */
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
-    
-    max-width: initial;
-    background-color: transparent;
-    word-break: normal;
-    white-space: pre;
+}
+pre code.ascii-art {
+    line-height: 1em;
+}
+.highlight pre code {
+    color: #f8f8f2;
 }
 .highlight pre, pre {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    text-align:left;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: pre;
 
-    background-color: #272821;
-    color: white;
-    overflow: scroll;
     /* Momentum scrolling in iOS */
     -webkit-overflow-scrolling: touch;
-
-    text-align:left;
+    overflow: scroll;
+    
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
 }
 .highlight pre {
-    word-break: normal;
+    width: 100vw;
+    height: auto;
+    max-width: 1600px;
+    max-height: none;
+    margin: 0 -28vw;
+
+    background-color: #272821;
+    color: white;
+    border: none;
 }
-pre code:before,
-pre code:after {
-    content: normal;
+.highlight {
+    margin: 1.5rem 0;
 }
+
+
 /* These must be separate, otherwise the highlighting doesn't work */
 code::selection, pre::selection {
     background: hsla(54, 8%, 26%, 0.9);
@@ -858,49 +972,8 @@ pre ::selection, code ::selection {
     text-shadow: none;
     background: hsla(54, 8%, 26%, 0.9);
 }
-:not(pre) > code {
-    background-color: rgba(0, 0, 0, .07);
-    padding: .05em .4em;
-    margin-left: 0em;
-    margin-right: 0em;
-    word-wrap: break-word;
-    border: 1px solid rgba(0, 0, 0, .04);
-
-    /* css 3 */
-    border-radius: 4px;
-    /* mozilla */
-    -moz-border-radius: 4px;
-    /* webkit */
-    -webkit-border-radius: 4px;
-}
-a > code {
-    color: black;
-}
-.highlight {
-    width: 100%;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-}
 
 /* ======================================================================================================= */
-
-/* New iPhones */
-/*@media(max-width: 415px) {
-    menu ul {
-        font-size: 1.5em;
-        line-height: 2em;
-    }
-    menu ul li a {
-        padding: 0.75rem 2.75vw;
-    }
-}*/
 
 /* Old iPhones */
 @media(max-width: 374px) {
@@ -924,8 +997,6 @@ a > code {
         border-top-right-radius: 0px;
     }
 }
-
-
 
 /* 
 Medium devices (iPads)
@@ -988,6 +1059,14 @@ Font size: 19px, ~Margin&Padding: 28.5px
         display: inline-block;
         max-width: 34rem;
     }
+    figure img {
+        /* css 3 */
+        border-radius: 4px;
+        /* mozilla */
+        -moz-border-radius: 4px;
+        /* webkit */
+        -webkit-border-radius: 4px;
+    }
     /* When on the home view we want all images AND code blocks to actually be
     bound, inline objects to provide a less distracting view of the post for
     speed reading and/or binge reading. This will still allow the code blocks
@@ -997,14 +1076,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
         max-width: 34rem;
         width: 100%;
         margin: 0;
-    }
-    /* From here one out bound-responsive images will never be larger than the width
-       bounds of the enclosing text. */
-    .bound-responsive {
-        width: 100vw;
-    }
-    .reserved-mode main article .edge-to-edge, .bound-responsive {
-        max-width: 42rem;
+
         /* css 3 */
         border-radius: 4px;
         /* mozilla */
@@ -1012,11 +1084,23 @@ Font size: 19px, ~Margin&Padding: 28.5px
         /* webkit */
         -webkit-border-radius: 4px;
     }
-    .ios-one-screen, .ios-two-screens, .ios-three-screens {
+    /* From here one out bound-responsive images will never be larger than the width
+       bounds of the enclosing text. */
+    .bound-responsive {
+        width: 100vw;
+    }
+    .reserved-mode main article .edge-to-edge,
+    .bound-responsive {
+        max-width: 42rem;
+    }
+    .ios-one-screen,
+    .ios-two-screens,
+    .ios-three-screens {
         max-width: 28vw;
         margin: 0 2vw;
     }
-    .inline {
+    .inline,
+    .small-inline {
         max-width: 34rem;
     }
     /* Hack to prevent strange "double scroll" behavior in Safari (only effected
@@ -1047,7 +1131,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* ----- ACTIONS SHEET ----- */
-
+    #actions-sheet {
+        display: inline-block;
+        padding-top: 0.125rem;
+    }
 
     /* ----- TABLES ----- */
 
@@ -1083,7 +1170,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* ----- CODE ----- */
-    pre > code {
+    pre code {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
@@ -1133,7 +1220,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .bound-responsive {
         max-width: 1000px;
     }
-    .inline {
+    .inline, .small-inline {
         max-width: 35rem;
     }
     .responsive {
@@ -1155,11 +1242,14 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
     /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
        but stay bound for home view. */
-    .ios-one-screen, .ios-two-screens, .ios-three-screens {
+    .ios-one-screen,
+    .ios-two-screens,
+    .ios-three-screens {
         width: 25vw;
         max-width: 17rem;
     }
-    .ios-two-screens, .ios-three-screens {
+    .ios-two-screens,
+    .ios-three-screens {
         margin-left: 1.25rem;
         margin-right: 1.25rem;
     }
@@ -1199,12 +1289,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- FORMS & BUTTONS ----- */
-    .blog-button {
-        width: 1.5em;
-        height: 1.5em;
-        margin-left: 1.125rem;
-        margin-right: 1.125rem;
-    }
     .social-button {
         margin: 0 1.5rem;
     }
@@ -1226,9 +1310,12 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- CODE ----- */
-    pre {
+    .highlight pre {
+        padding: 0;
         max-width: 57rem;
         width: 43rem;
+    }
+    pre {
         /* css 3 */
         border-radius: 4px;
         /* mozilla */
@@ -1236,11 +1323,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
         /* webkit */
         -webkit-border-radius: 4px;
     }
-    pre > code {
+    pre code {
         margin: 0.75rem;
-    }
-    .highlight pre, pre {
-        padding-top: 0;
-        padding-bottom: 0;
     }
 }

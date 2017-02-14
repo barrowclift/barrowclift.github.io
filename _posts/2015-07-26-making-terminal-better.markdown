@@ -15,17 +15,17 @@ For the past few articles I've focused on topics that were for everyone, but for
 
 Developers, I'm going to take a wild guess and assume that the vast majority of you reading this use some form of Unix-based machine (like Linux or OS X) for the bulk of your development. But let's face it; as powerful as Unix is we can't deny how big a pain in the neck it is to use, even at the most rudimentary level[^quiz]. To master it takes *years* of dedicated exercise which isn't made any easier by how cryptic and ludicrous some commands are (I'm looking at you, `sed`).
 
-So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a GUI we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
+So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a <span class="small-caps">GUI</span> we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
 
 Look and Feel
 -------------
 
-In my opinion if there's anything you take your time to consider it should be your Terminal's look and feel (your prompt, colors, and font). This aspect of Terminal is practically inescapable and remains a core piece of the experience from the moment you open the window to the moment you exit. Developers deserve good UI just as much as the public do, let's not deprive ourselves of it.
+In my opinion if there's anything you take your time to consider it should be your Terminal's look and feel (your prompt, colors, and font). This aspect of Terminal is practically inescapable and remains a core piece of the experience from the moment you open the window to the moment you exit. Developers deserve good <span class="small-caps">UI</span> just as much as the public do, let's not deprive ourselves of it.
 
 To begin, let's look at OS X's default Terminal.
 
 <figure markdown="1">
-[![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png){: .inline}]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
+[![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png){: .inline .no-shadow}]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
 </figure>
 
 Yikes, this won't do at all. I've seen far too many friends and colleagues sticking with this or one of the other dreadful default themes available on OS X and I'm here to tell you there's a better way. By just taking a few moments to consider the points below we can transform your Terminal into something actually enjoyable to use (and sometimes even beautiful).
@@ -37,7 +37,7 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 Now, here's my current setup for inspiration:
 
 <figure markdown="1">
-[![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png){: .inline}]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png)
+[![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png){: .inline .no-shadow}]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png)
 </figure>
 
 How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/downloads/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
@@ -136,7 +136,7 @@ tartar () {
 }
 {% endhighlight %}
 
-As a special treat to OS X developers, here's some essential functions that both help clean up after OS X's messes and also bring the power of OS X's GUI to the Terminal.
+As a special treat to OS X developers, here's some essential functions that both help clean up after OS X's messes and also bring the power of OS X's <span class="small-caps">GUI</span> to the Terminal.
 
 {% highlight bash %}
 # .DS_Store files are the herpes of the OS X file system.
@@ -196,7 +196,7 @@ alias disksize='df -h --total | grep total'
 alias which='type -all'
 {% endhighlight %}
 
-And for OS X developers this particular command helps bridge the sometimes aggravating separation between the GUI and command line interfaces by letting you to quickly open a Finder window of your current directory when it's the preferred tool for a particular job.
+And for OS X developers this particular command helps bridge the sometimes aggravating separation between the <span class="small-caps">GUI</span> and command line interfaces by letting you to quickly open a Finder window of your current directory when it's the preferred tool for a particular job.
 
 {% highlight bash %}
 # Open a new Finder window at your current directory
@@ -215,4 +215,4 @@ In case you missed it you can also download my Terminal's theme [here]({{ site.b
 
 ----------  
 
-[^quiz]: Pop quiz, do you know how to get the total space used (in GB) of your main drive *without* having to dig through a man page or reference a Unix bible? Probably not.
+[^quiz]: Pop quiz, do you know how to get the total space used (in <span class="small-caps">GB</span>) of your main drive *without* having to dig through a man page or reference a Unix bible? Probably not.
