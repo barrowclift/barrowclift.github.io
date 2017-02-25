@@ -15,11 +15,11 @@ html {
 /* NAVBAR ---------------------------------------------------------- */
 
 menu {
-	-webkit-animation: none;
-	   -moz-animation: none;
-	    -ms-animation: none;
-	     -o-animation: none;
-	        animation: none;
+	-webkit-animation: none !important;
+	   -moz-animation: none !important;
+	    -ms-animation: none !important;
+	     -o-animation: none !important;
+	        animation: none !important;
 }
 menu ul li a,
 menu ul li label {
