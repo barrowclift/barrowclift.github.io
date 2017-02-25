@@ -24,6 +24,9 @@
     -o-transition: -o-box-shadow 0.25s ease 0s; 
     transition: box-shadow 0.25s ease 0s;
 }
+#gallery a:hover {
+    text-decoration: none;
+}
 .gallery-image:hover,
 #gallery video:hover {
     -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);

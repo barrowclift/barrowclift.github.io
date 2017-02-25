@@ -15,12 +15,16 @@ For the past few articles I've focused on topics that were for everyone, but for
 
 Developers, I'm going to take a wild guess and assume that the vast majority of you reading this use some form of Unix-based machine (like Linux or OS X) for the bulk of your development. But let's face it; as powerful as Unix is we can't deny how big a pain in the neck it is to use, even at the most rudimentary level[^quiz]. To master it takes *years* of dedicated exercise which isn't made any easier by how cryptic and ludicrous some commands are (I'm looking at you, `sed`).
 
+<a id="resume-from-break"></a>
+
 So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a <span class="small-caps">GUI</span> we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
+
+<!--break-->
 
 Look and Feel
 -------------
 
-In my opinion if there's anything you take your time to consider it should be your Terminal's look and feel (your prompt, colors, and font). This aspect of Terminal is practically inescapable and remains a core piece of the experience from the moment you open the window to the moment you exit. Developers deserve good <span class="small-caps">UI</span> just as much as the public do, let's not deprive ourselves of it.
+In my opinion if there's anything you take your time to consider it should be your Terminal's look and feel (your prompt, colors, and font). This aspect of Terminal is practically inescapable and remains a core piece of the experience from the moment you open the window to the moment you exit. Developers deserve good UI just as much as the public do, let's not deprive ourselves of it.
 
 To begin, let's look at OS X's default Terminal.
 

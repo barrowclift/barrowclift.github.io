@@ -5,14 +5,14 @@ bottom-margin-included: false
 banner: true
 color: red
 anchors: false
-hex-color: #E13646
+hex-color: #FF3B30
 title: "The Largest Video Game Ever Made"
 projects-menu-active: true
 banner-video: "tetris"
 banner-poster: "projects/code/largest-video-game-ever/tetris-poster.jpg"
 banner-alt: "Video of Marc playing tetris on the Cira Center skyscraper"
 page-specific:
-  - project.min.css
+  - project
 ---
 
 <h1>The Largest Video Game Ever</h1>
@@ -42,18 +42,53 @@ page-specific:
 	</li>
 </ul>
 
-<hr>
+<hr style="margin-bottom:4rem;margin-top:4rem;">
+
+<figure class="small-bottom-margin top-margin">
+	<video class="embedded-video" controls preload="none" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
+		<source src="/videos/news-coverage.mp4" type="video/mp4">
+		<source src="/videos/news-coverage.webm" type="video/webm">
+		<source src="/videos/news-coverage.ogv" type="video/ogg">
+		[HTML5 video tag not supported by your browser]
+	</video>
+</figure>
+
+<div class="slice large-bottom-pad" style="background-image:none;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;background-color:transparent;">
+	<div class="section" style="margin-top:1.5rem">
+		<a href="http://arstechnica.com/gaming/2013/04/selling-coding-and-playing-the-worlds-largest-videogame/">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/ars-technica.png" alt="Ars Technica" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/ars-technica-white.png" alt="Ars Technica" />
+		</a>
+		<a href="http://www.fastcolabs.com/3008594/worlds-biggest-game-pong-heres-how-they-built-it?partner=rss">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/fast-company.png" alt="Fast Company" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/fast-company-white.png" alt="Fast Company" />
+		</a>
+		<a href="http://www.myfoxphilly.com/story/21895571/professor-planning-pong-game-on-cira-building">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/myfoxphilly.png" alt="MyFoxPhilly.com" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/myfoxphilly-white.png" alt="MyFoxPhilly.com" />
+		</a>
+		<a href="http://technical.ly/philly/2013/04/03/how-frank-lee-got-pong-on-the-cira-centre/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TechnicallyPhilly+(Technically+Philly)">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/technically-philly.png" alt="Technically" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/technically-philly-white.png" alt="Technically" />
+		</a>
+		<a href="http://drexel.edu/now/news-media/releases/archive/2013/November/CiraPongGuinness/">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/drexel-now.png" alt="Drexel NOW" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/drexel-now-white.png" alt="Drexel NOW" />
+		</a>
+		<a href="http://articles.philly.com/2013-04-05/news/38309615_1_drexel-university-cira-centre-led-lights">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/philly.com.png" alt="philly.com" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/philly.com-white.png" alt="philly.com" />
+		</a>
+		<a href="http://landing.newsinc.com/shared/video.html?freewheel=91048&sitesection=WPHL_nws_loc_sec&VID=24746524">
+			<img class="news-logo show-when-light" src="/images/projects/code/largest-video-game-ever/phl17.png" alt="My PHL 17" />
+			<img class="news-logo show-when-dark" src="/images/projects/code/largest-video-game-ever/phl17-white.png" alt="My PHL 17" />
+		</a>
+	</div>
+</div>
+
+<hr style="margin-bottom:6rem;margin-top:3rem;">
 
 <div id="gallery">
-	<figure class="small-bottom-margin top-margin">
-		<video class="embedded-video" controls preload="none" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
-			<source src="/videos/news-coverage.mp4" type="video/mp4">
-			<source src="/videos/news-coverage.webm" type="video/webm">
-			<source src="/videos/news-coverage.ogv" type="video/ogg">
-			[HTML5 video tag not supported by your browser]
-		</video>
-	</figure>
-
 	<div class="edge-to-edge bottom-margin">
 		<a href="/images/projects/code/largest-video-game-ever/2.jpg">
 			<img class="gallery-image" src="/images/projects/code/largest-video-game-ever/2-gallery.jpg">
@@ -74,33 +109,4 @@ page-specific:
 			<img class="gallery-image" src="/images/projects/code/largest-video-game-ever/poster-gallery.jpg">
 		</a>
 	</div>	
-</div>
-
-<div></div>
-
-<div class="slice large-bottom-pad">
-	<h2>Featured On</h2>
-	<div class="section">
-		<a href="http://arstechnica.com/gaming/2013/04/selling-coding-and-playing-the-worlds-largest-videogame/">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/ars-technica.png" alt="Ars Technica" />
-		</a>
-		<a href="http://www.fastcolabs.com/3008594/worlds-biggest-game-pong-heres-how-they-built-it?partner=rss">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/fast-company.png" alt="Fast Company" />
-		</a>
-		<a href="http://www.myfoxphilly.com/story/21895571/professor-planning-pong-game-on-cira-building">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/myfoxphilly.png" alt="MyFoxPhilly.com" />
-		</a>
-		<a href="http://technical.ly/philly/2013/04/03/how-frank-lee-got-pong-on-the-cira-centre/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TechnicallyPhilly+(Technically+Philly)">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/technically-philly.png" alt="Technically" />
-		</a>
-		<a href="http://drexel.edu/now/news-media/releases/archive/2013/November/CiraPongGuinness/">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/drexel-now.png" alt="Drexel NOW" />
-		</a>
-		<a href="http://articles.philly.com/2013-04-05/news/38309615_1_drexel-university-cira-centre-led-lights">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/philly.com.png" alt="philly.com" />
-		</a>
-		<a href="http://landing.newsinc.com/shared/video.html?freewheel=91048&sitesection=WPHL_nws_loc_sec&VID=24746524">
-			<img class="news-logo" src="/images/projects/code/largest-video-game-ever/phl17.png" alt="My PHL 17" />
-		</a>
-	</div>
 </div>

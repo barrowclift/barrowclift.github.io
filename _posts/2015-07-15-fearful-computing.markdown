@@ -22,9 +22,13 @@ When I was a child I &#8212; like most American children in the late 1990's &#82
 
 The actual process of trading in particular has remained curiously vivid in my mind after all these years. As far as I can confirm, the link cable used to connect the two Game Boys for the trade was my very first exposure to the concept of computer networking (albeit a very primitive implementation) and it scrambled my mind as a child. How on *earth* could it be possible to trade my digital monster companions using just a plain old cable? Despite the game's best efforts to abstract this complication away enough to ease its young players into the concept I remained terrified by it in my confusion. I was just so sure that I would find some way to screw it up and lose my monster, or worse, corrupt my game save. In fact, if I had my way I would have forgone trading entirely to remain in my little, comfortable island of understanding where I felt I had control.
 
+<a id="resume-from-break"></a>
+
 Of course, this was never really an option. Doing so would not only jeopardize my game's progress but also cut me off socially from my peers. So I did what any child or adult does when forced into a situation they're afraid of; I insisted on complete control of the process. My fear of the unknown had taken form in an absurd set of requirements that must be followed during set-up and that only their strict adherence would guarantee the safety of my game save and monster during the trade. I had rationalized with myself that syncing up the in-game trade character's dialogue boxes on both Game Boys would somehow make them "see" each other more clearly and ensure a clear path of communication between them. It just seemed so natural to assume this cable connecting our Game Boys was a delicate, black magic ritual that I could easily break if I didn't set some silly, arbitrary set of obsessive rules to prevent. They were stupid, yes, but they made me *feel* like I was in control, it made me feel just barely comfortable enough with the concept in play to do the trade.
 
-I have no doubt this will prove humorous but some of you may instead give pause and wonder why this sounds so strangely familiar...
+I have no doubt this will prove humorous to most, but some of you may instead give pause and wonder why this sounds so strangely familiar...
+
+<!--break-->
 
 The Comfort-Zone Trap
 ---------------------

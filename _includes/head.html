@@ -3,10 +3,9 @@
 
 	{% feed_meta %}
 
-	<link rel="mask-icon" mask href="{{ "/images/logo/logo.min.svg" | prepend: site.baseurl }}" color="black" />
-	<link rel="icon" type="image/png" href="{{ "/images/logo/favicon.png" | prepend: site.baseurl }}" />
+	<link rel="mask-icon" href="{{ "/images/logo/pinned-tab.min.svg" | prepend: site.baseurl }}" color="#333333" />
+	<link rel="shortcut icon" href="{{ "/images/logo/favicon.ico" | prepend: site.baseurl }}" />
 	<link rel="apple-touch-icon" href="{{ "/images/logo/apple-touch-icon.png" | prepend: site.baseurl }}" />
-	<link rel="manifest" href="{{ "/images/logo/manifest.json" | prepend: site.baseurl }}" />
 
 	<meta name="application-name" content="Barrowclift" />
 	<meta name="msapplication-TileColor" content="white" />
@@ -20,25 +19,34 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/reset.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/bigfoot-number.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/style.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/syntax.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/hint.min.css" type="text/css" />
-	{% if page.color %}
-	<link href="{{ site.baseurl }}/css/min/theme-{{ page.color }}.min.css" rel="stylesheet" type="text/css" />
+	<!-- Load dark mode first (if enabled) to minimize flash of white as much as possible -->
+	{% if jekyll.environment == "development" %}
+	<script>darkModeStylesheetPath = "/css/dark.css"</script>
 	{% else %}
-	<link href="{{ site.baseurl }}/css/min/theme-blue.min.css" rel="stylesheet" type="text/css" />
+	<script>darkModeStylesheetPath = "/css/min/dark.min.css"</script>
 	{% endif %}
-	{% for style in page.page-specific %}
-	<link href="{{ site.baseurl }}/css/page-specific/min/{{ style }}" rel="stylesheet" type="text/css" />
-	{% endfor %}
+	<script>
+		/* See simple-get-cookie.js */
+		function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0)return null;}else{b+=2;var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}}return decodeURI(dc.substring(b+p.length, e));}
+		/* See main.js */
+		if(c("dark-mode")){var i='dark-mode';var h=document.getElementsByTagName('head')[0];var l=document.createElement('link');l.id=i;l.rel='stylesheet';l.type='text/css';l.href=darkModeStylesheetPath;l.media='all';h.appendChild(l);}
+	</script>
+
+	{% if jekyll.environment == "development" %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css" />
+	{% else %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/main.min.css" type="text/css" />
+	{% endif %}
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print.min.css" type="text/css" media="print" />
 
 	{% if page.anchors %}
-	<script async src="{{ site.baseurl }}/scripts/full.min.js" type="text/javascript"></script>
+	<script async src="{{ site.baseurl }}/scripts/min/main.min.js" type="text/javascript"></script>
 	{% else %}
-	<script async src="{{ site.baseurl }}/scripts/full-sans-anchors.min.js" type="text/javascript"></script>
+	<script async src="{{ site.baseurl }}/scripts/min/main-sans-anchors.min.js" type="text/javascript"></script>
 	{% endif %}
 
 	<!--Facebook OpenGraph -->
@@ -76,7 +84,6 @@
 	<![endif]-->
 	<!-- Enable media queries for old IE -->
 	<!--[if lt IE 9]>
-		<script src="{{ site.baseurl }}/scripts/fuckInternetExplorer.min.js" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}/scripts/min/fuck-internet-explorer.min.js" type="text/javascript"></script>
 	<![endif]-->
-	<!--[if IE]><link rel="shortcut icon" href="{{ "/images/logo/logo.ico" | prepend: site.baseurl }}" /><![endif]-->
 </head>

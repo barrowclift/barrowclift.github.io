@@ -14,7 +14,11 @@ image: "/images/assets/two-is-one-one-is-none/panel-3-colored.jpg"
 
 Your computer is priceless. It doesn't matter whether or not you have a new top-of-the-line desktop or an ancient, eight-year-old clunker, these computers are priceless not because of their specs but because of the data entrusted to their care. Nowadays, we trust our computers not only with memories such as baby pictures and wedding videos but also files critical to our livelihoods like personal projects and art portfolios. This data is more than just computer files, it's an extension of ourselves: our memories, our livelihoods, our lives. This data, *your* data, is precious.
 
+<a id="resume-from-break"></a>
+
 Yet I generally do not see this importance manifesting in protective action. From observing individuals breaking down at the Apple Store when they discover their family photos are lost forever to witnessing an artist and personal friend lose their entire life's works, I've sadly also seen the consequences of neglecting such action. Depending on your response to the following question, it's not a matter of *if* you'll share a similar fate, but *when*: Do you back up your devices?
+
+<!--break-->
 
 I've learned the value of doing so not just from observation but also from firsthand experience. Back when Apple released the then-new Apple Music service I quickly signed up without a second thought and turned on the option to [integrate my local iTunes library with my new iCloud Music Library](https://support.apple.com/en-us/HT204926). Big mistake.
 
@@ -56,7 +60,7 @@ What I personally believe to be the optimal backup strategy for the vast majorit
 ### Local Backups
 
 <figure markdown="1">
-[![A cartoon depicting a smiling computer passing files to his external hard drive buddy for safe keeping]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.jpg){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.jpg)
+[![A cartoon depicting a smiling computer passing files to his external hard drive buddy for safe keeping]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.png)
 </figure>
 
 As mentioned before, Time Machine can be used for local backups on macOS. Assuming you don't already have a spare external hard drive lying around, I recommend buying one that is at least double what your computer's internal storage is. You can determine what this is by clicking the Apple menu on your computer's menu bar then "About this Mac". From there, click the "Storage" tab and note the total storage size.
@@ -72,13 +76,13 @@ While Windows doesn't currently have a solution as mature as Time Machine, Micro
 For locally backing up your iPhone or iPad, plug it into your computer and open up iTunes. Assuming you've synced with this computer before, your device should appear near the library switcher in the upper-left corner of the window.
 
 <figure markdown="1">
-[![A screenshot of an iTunes window with an iOS device plugged in]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-1.jpg){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-1.jpg "iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.")
+[![A screenshot of an iTunes window with an iOS device plugged in]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-1.png){: .bound-responsive .macos-screenshot}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-1.png "iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.")
 </figure>
 
 Once you click on your device you'll be brought to a screen like this.
 
 <figure markdown="1">
-[![A screenshot of an iTunes window on the device sync screen, highlighting the "Backups" section]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-2.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-2.png)
+[![A screenshot of an iTunes window on the device sync screen, highlighting the "Backups" section]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-2.png){: .bound-responsive .macos-screenshot}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-2.png)
 </figure>
 
 You're going to want to *temporarily* switch the bubble from "iCloud" to "This computer", then check "Encrypt iPhone backup" which will prompt you for a password. Setting an encryption password serves both security and convenience purposes: first, it protects your backup's text messages, photos, etc. from potential snoops and lets you restore from a backup without having to reenter all your iOS passwords all over again like the iCloud backup does. After you've entered your password, you can click "Back Up Now". Once this backup completes, __switch "This computer" back to "iCloud"__ and click "Done". Now you can safely eject your iPhone or iPad and go about your day knowing that you have a recent, local backup of your portable's data should anything happen.
@@ -86,19 +90,19 @@ You're going to want to *temporarily* switch the bubble from "iCloud" to "This c
 ### Remote Backups
 
 <figure markdown="1">
-[![A cartoon of a smiling cloud catching files sent to him by balloon]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-1-colored.jpg){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-1-colored.jpg)
+[![A cartoon of a smiling cloud catching files sent to him by balloon]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-1-colored.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-1-colored.png)
 </figure>
 
 That covers local backups, but what about those remote backups mentioned before? Backing up remotely has never been easier thanks to Backblaze. Simply navigate [to their website](https://www.backblaze.com) and sign up for their [personal unlimited backup plan](https://www.backblaze.com/cloud-backup.html), Backblaze will guide you through the necessary steps to start. Backblaze's small backup utility will continuously run in the background of your computer and automatically send any new/modified files to their secure servers. *You don't have to do a thing*. Should you wish to check on your backup's status or fiddle with the settings you can navigate to their preferences pane in System Preferences > Backblaze Backup.
 
 <figure markdown="1">
-[![A screenshot of Backblaze's preference pane on macOS]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/preferences.png){: .inline .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.jpg)
+[![A screenshot of Backblaze's preference pane on macOS]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/preferences.png){: .inline .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/preferences.png)
 </figure>
 
 Alternatively, for just occasionally checking in on the backups you can check out the little flame icon in your menu bar.
 
 <figure markdown="1">
-[![A screenshot of Backblaze's menu bar icon and available menu options]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/menu-bar.jpg){: .inline}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.jpg)
+[![A screenshot of Backblaze's menu bar icon and available menu options]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/menu-bar.jpg){: .inline}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/menu-bar.jpg)
 </figure>
 
 I personally recommend choosing the 2-year $95 plan over the monthly $5 or yearly $50 plans, you'll save more money in the long run while also avoiding yet another monthly fee. Even Windows users can sign up for remote backups with Backblaze, so there's no reason not to sign up. I've been backing up my data with them for six years now and they've not only helped me restore numerous prematurely deleted files but also granted me peace of mind, knowing that my livelihood and family memories are safe against all potential local threats.
@@ -108,7 +112,7 @@ For your iOS devices like iPhone and iPad, remote backups are built-in. Every ni
 That's it! I have no doubt many people will be turned off from backing up because of the modest monetary investment required to do so, and that's understandable. It helps to think of backups as if it were insurance; it's a required investment to protect yourself against whatever life throws our way. The cost is an investment in protecting your past, present, and future digital lifestyle, and for the peace of mind that brings it's a small price to pay. Just remember: the time to think about backups is *now*, not when the rainy day comes. ⌘
 
 <figure markdown="1">
-[![A cartoon of our smiling cloud and external hard drive characters from before, this time shielding the files from rain using a massive umbrella]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-3-colored.jpg){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.jpg "Keeping your data safe, one potential disaster at a time :)")
+[![A cartoon of our smiling cloud and external hard drive characters from before, this time shielding the files from rain using a massive umbrella]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-3-colored.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/panel-2-colored.png "Keeping your data safe, one potential disaster at a time :)")
 </figure>
 
 -----------------------

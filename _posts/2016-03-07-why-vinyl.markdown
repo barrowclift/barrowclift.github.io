@@ -13,7 +13,11 @@ image: "/images/assets/why-vinyl/divers-photos.jpg"
 
 At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format long thought dead by the general public since the CD was introduced over thirty years ago. Not to mention, for today's youth that grow up with constant access to the entirety of music history at the tap of a screen the notion of having physical objects dedicated to predetermined static content must seem barbaric.
 
+<a id="resume-from-break"></a>
+
 Telling friends and colleges about the gift often elicits one of two responses: a lighthearted jab about my hipster status or a genuinely curious "why?". While there's nothing I could say at this point to dispel remarks of the former's variety (owning a record player certainly isn't helping my case), I can certainly address the "why". But to do so I must first explain what happened to make me even consider something so peculiar.
+
+<!--break-->
 
 I Used to Write
 ---------------
@@ -32,7 +36,7 @@ Restoring Balance
 -----------------
 
 <figure markdown="1">
-[![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.jpg){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.jpg)
+[![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.png)
 </figure>
 
 As you'd guess, simply throwing away all my digitization progress would grossly overcorrect the problem and leave me in a similarly deficient state. The optimal solution was finding *balance* again by determining whether a given interaction or object was better served through physical or digital means given the context of the situation.

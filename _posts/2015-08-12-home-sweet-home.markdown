@@ -19,7 +19,11 @@ Thankfully, we've solved this problem before multiple times in physical spaces, 
 
 You might be thinking "Sure, I've got lots of pages, a handful of old apps I don't use anymore, and tons of folders questionably categorized. I can always find what I'm looking for though, so who cares?" I believe there's a key issue with this line of thinking; people become "used" to environments all the time but that doesn't in any way make the environment itself healthy or any less chaotic, the two are independent of each other.
 
+<a id="resume-from-break"></a>
+
 The core problem with poorly organized home screens &#8212; whether you believe you're used to them or not &#8212; is they require wasted swipe and tap cycles to navigate to your most commonly used apps. For example, you'd swipe to a specific page, tap on a specific folder, or (in worst case scenarios) swipe to a specific page of a specific folder after swiping to a specific page to get to your app instead of *just tapping it*. Yikes. Not to worry though, with just a few minutes of proper thought and execution this can all be a thing of the past.
+
+<!--break-->
 
 Let's Begin With Spring Cleaning
 --------------------------------

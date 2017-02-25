@@ -1,35 +1,41 @@
 /* THEMED ELEMENTS ------------------------------------------------------------------ */
 
 menu, /* The color (plus gradient) of the navigation element */
+.hover:hover:not(.active), /* We want hovered tabs to be pure green */
 hr { /* Dividers take the color as well */
-    background-color: #733041;
+    background-color: rgb(255, 59, 48);
 }
-.hover:hover, /* We want hovered tabs to be pure, deep brown/red */
-.active { /* We want active tabs to be pure, deep brown/red */
-    background-color: #8B3A4F;
+.active a {
+    color: rgb(255, 59, 48);
 }
-#content { /* Provides a nice "sketchpad" like texture to the background */
+menu ul li a {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+/* Provides a nice "sketchpad" like texture to the background */
+#content,
+.active a  {
     background-image: url(/images/projects/art/sketches/notes.jpg);
 }
 
 hr {
-    background: #733041; /* Old browsers */
-    background: -moz-linear-gradient(left,  #FFFFFF 0%, #733041 25%, #733041 50%, #733041 75%, #FFFFFF 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,#733041), color-stop(50%,#733041), color-stop(75%,#733041), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #FFFFFF 0%,#733041 25%,#733041 50%,#733041 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #FFFFFF 0%,#733041 25%,#733041 50%,#733041 75%,#FFFFFF 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #FFFFFF 0%,#733041 25%,#733041 50%,#733041 75%,#FFFFFF 100%); /* IE10+ */
-    background: linear-gradient(to right,  #FFFFFF 0%,#733041 25%,#733041 50%,#733041 75%,#FFFFFF 100%); /* W3C */
+    background: rgb(255, 59, 48); /* Old browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF 0%, rgb(255, 59, 48) 25%, rgb(255, 59, 48) 50%, rgb(255, 59, 48) 75%, #FFFFFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(25%,rgb(255, 59, 48)), color-stop(50%,rgb(255, 59, 48)), color-stop(75%,rgb(255, 59, 48)), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FFFFFF 0%,rgb(255, 59, 48) 25%,rgb(255, 59, 48) 50%,rgb(255, 59, 48) 75%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FFFFFF 0%,rgb(255, 59, 48) 25%,rgb(255, 59, 48) 50%,rgb(255, 59, 48) 75%,#FFFFFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FFFFFF 0%,rgb(255, 59, 48) 25%,rgb(255, 59, 48) 50%,rgb(255, 59, 48) 75%,#FFFFFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FFFFFF 0%,rgb(255, 59, 48) 25%,rgb(255, 59, 48) 50%,rgb(255, 59, 48) 75%,#FFFFFF 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
 }
 
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
-    background: #733041;
+    background: rgb(255, 59, 48);
     color: white;
 }
 ::-moz-selection { /* Firefox */
-    background: #733041;
+    background: rgb(255, 59, 48);
     color: white;
 }
 
@@ -39,11 +45,14 @@ main a, /* Link */
 main a:link, /* Unvisited link */
 main a:visited, /* Visited link */
 .anchor {
-    color: #733041;
+    color: rgb(255, 59, 48);
 }
 main a:hover,
 .anchor:hover {
-    color: #8CDC7B;
+    color: rgb(255, 59, 48);
+}
+main a:hover {
+    text-decoration: none;
 }
 
 h1 a, /* Link */
@@ -52,5 +61,5 @@ h1 a:visited { /* Visited link */
     color: #333333;
 }
 h1 a:hover {
-    color: #733041;
+    color: rgb(255, 59, 48);
 }

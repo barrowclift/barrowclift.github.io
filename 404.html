@@ -1,9 +1,12 @@
 ---
 layout: default-sad
 viewing-single-page: true
-color: windows
+color: gray
 title: "Page Not Found"
 ---
 
-<h1 class="center">I can't find that page. Sorry!</h1>
-<p class="center large-top-margin">Was there supposed to be a page here? Feel free to let me know <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;"><strong>here</strong></a>. Thanks!</p>
+<h1 class="center">Page Not Found</h1>
+<p class="center">Hmm, I don't seem to have that page, sorry! If I should, please feel free to <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">let me know</a> and I'll give it a look.</p>
+{% for post in site.posts limit:1 %}
+<p class="center">In the meantime, why not read my latest article, <a href="{{ post.url | prepend: site.baseurl }}">"{{ post.title }}"</a>?</p>
+{% endfor %}

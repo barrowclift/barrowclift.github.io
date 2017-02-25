@@ -1,10 +1,15 @@
 ---
 layout: default
 anchors: false
-hex-color: #0AA0D2
+hex-color: #007AFF
 home-menu-active: true
 ---
 
+<style>
+sup[id^=fnref] {
+	display:none;
+}
+</style>
 {% assign count=0 %}
 {% for post in paginator.posts %}
 	{% if count > 0 %}
@@ -27,10 +32,15 @@ home-menu-active: true
 		</figure>
 		{% endif %}
 
-		{{ post.content }}
+		{{ post.content | split:'<!--break-->' | first }}
+		{% if post.content contains '<!--break-->' %}
+			<h5 style="text-align:center;"><a href="{{ post.url }}/#resume-from-break">Continue Reading...</a></h5>
+		{% endif %}
 	</article>
 	{% assign count=count | plus:1 %}
 {% endfor %}
+
+<hr style="margin-bottom:0;" class="gray">
 
 <footer>
 	<div id="navigation-previous">
@@ -53,13 +63,6 @@ home-menu-active: true
 		</a>
 		</h4>
 	</div>
-	{% if paginator.previous_page %}
-	<div id="actions-sheet">
-	{% elsif paginator.next_page %}
-	<div id="actions-sheet">
-	{% else %}
-	<div>
-	{% endif %}
-		{% include actions-sheet.html %}	
-	</div>
+	
+	{% include actions-sheet.html %}
 </footer>

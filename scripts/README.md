@@ -5,8 +5,9 @@ full.min.js Contents
 --------------------
 
 1. jquery-2.2.1.min.js
-2. bigfoot.anchor.min.js
-3. anchor.min.js
+2. bigfoot.min.js (Unknown version, modified to have rounded, inline numbered buttons)
+3. anchor.min.js (No version provided)
+4. jquery.cookie-1.4.1.min.js
 
 {% highlight javascript %}
 $.bigfoot({
@@ -20,27 +21,24 @@ $(document).ready(function() {
 		symbol: '#'
 	});
 });
-{% endhighlight %}
 
-full-sans-anchors.min.js Contents
----------------------------------
+if ($.cookie("dark-mode")) {
+	var cssId = 'dark-mode';
+	var head = document.getElementsByTagName('head')[0];
+	var link = document.createElement('link');
+	link.id = cssId;
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = '/css/min/dark.min.css';
+	link.media = 'all';
+	head.appendChild(link);
 
-It's essential that my javascript be served with the `async` tag, but regrettably that means the anchor javascript (which is necessary to dynamically turn on or off anchors per page as necessary) cannot work since it's added to the combined file. Because of this, there are now two combined files identical in every way except missing `anchor.min.js` and it's initialization.
-
-1. jquery-2.2.1.min.js
-2. bigfoot.anchor.min.js
-
-{% highlight javascript %}
-$.bigfoot({
-	// Uncomment to hide inline footnotes from home view
-	// 
-	actionOriginalFN: "ignore",
-	numberResetSelector: "article"
-});
+	$("input[value='dark-mode']").prop("checked", true);
+}
 {% endhighlight %}
 
 fuckInternetExplorer.min.js Contents
 ------------------------------------
 
-1. css3-mediaqueries.min.js
-2. html5shiv.min.js
+1. css3-mediaqueries.min.js (Unknown version)
+2. html5shiv-3.7.3.min.js

@@ -3,7 +3,7 @@
 		<h1>
 			{% if post.link %}
 			<a title="Go to {{ post.link }}" href="{{ post.link }}">{{ post.title }} ↦</a>
-			<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}<span class="hide-for-print">,</span> <a href="Permalink for &quot;{{ post.title }}&quot;"><img src="/images/blog/permalink.svg" class="permalink"></a></time>
+			<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}<span class="hide-for-print">,</span> <a href="Permalink for &quot;{{ post.title }}&quot;"><img src="/images/writings/permalink.svg" class="permalink"></a></time>
 			{% else %}
 			<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			<time itemprop="dateCreated">{{ post.date | date: "%A, %B %-d, %Y" }}</time>
@@ -16,7 +16,7 @@
 			{% else %}
 			<span>{{ page.title }}</span>
 			{% endif %}
-			<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}<span class="hide-for-print">,</span> <img title="This page is a permalink" src="/images/blog/permalink.svg" class="permalink"></time>
+			<time itemprop="dateCreated">{{ page.date | date: "%A, %B %-d, %Y" }}<span class="hide-for-print">,</span> <img title="This page is a permalink" src="/images/writings/permalink.svg" class="permalink"></time>
 		</h1>
 	{% endif %}
 </header>

@@ -1,7 +1,7 @@
 /* DYNAMIC RAINBOW ELEMENTS ------------------------------------------------------------------ */
 
 menu {
-    background-color: #F68048;
+    background-color: rgb(255,129,0);
     -webkit-animation: rgb 90s infinite;
        -moz-animation: rgb 90s infinite;
         -ms-animation: rgb 90s infinite;
@@ -10,95 +10,95 @@ menu {
 }
 @-moz-keyframes rgb {
     0% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
     10% {
-        background-color: #EEBC4E;
+        background-color: rgb(255, 204, 0);
     }
     30% {
-        background-color: #71C152;
+        background-color: rgb(76, 217, 100);
     }
     50% {
-        background-color: #0AA0D2;
+        background-color: rgb(0, 122, 255);
     }
     70% {
-        background-color: #973D8E;
+        background-color: rgb(88, 86, 214);
     }
     90% {
-        background-color: #E13646;
+        background-color: rgb(255, 59, 48);
     }
     100% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
 }
 
 @-webkit-keyframes rgb {
     0% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
     10% {
-        background-color: #EEBC4E;
+        background-color: rgb(255, 204, 0);
     }
     30% {
-        background-color: #71C152;
+        background-color: rgb(76, 217, 100);
     }
     50% {
-        background-color: #0AA0D2;
+        background-color: rgb(0, 122, 255);
     }
     70% {
-        background-color: #973D8E;
+        background-color: rgb(88, 86, 214);
     }
     90% {
-        background-color: #E13646;
+        background-color: rgb(255, 59, 48);
     }
     100% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
 }
 @-o-keyframes rgb {
     0% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
     10% {
-        background-color: #EEBC4E;
+        background-color: rgb(255, 204, 0);
     }
     30% {
-        background-color: #71C152;
+        background-color: rgb(76, 217, 100);
     }
     50% {
-        background-color: #0AA0D2;
+        background-color: rgb(0, 122, 255);
     }
     70% {
-        background-color: #973D8E;
+        background-color: rgb(88, 86, 214);
     }
     90% {
-        background-color: #E13646;
+        background-color: rgb(255, 59, 48);
     }
     100% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
 }
 @keyframes rgb {
     0% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
     10% {
-        background-color: #EEBC4E;
+        background-color: rgb(255, 204, 0);
     }
     30% {
-        background-color: #71C152;
+        background-color: rgb(76, 217, 100);
     }
     50% {
-        background-color: #0AA0D2;
+        background-color: rgb(0, 122, 255);
     }
     70% {
-        background-color: #973D8E;
+        background-color: rgb(88, 86, 214);
     }
     90% {
-        background-color: #E13646;
+        background-color: rgb(255, 59, 48);
     }
     100% {
-        background-color: #F68048;
+        background-color: rgb(255,129,0);
     }
 }
 
@@ -107,8 +107,14 @@ menu {
 hr { /* Dividers take the color as well */
     background-color: #979797;
 }
-.hover:hover, .active {
+.hover:hover:not(.active) {
     background-color: rgba(230,230,230,0.2);
+}
+.active {
+    background-color: white;
+}
+.active a {
+    color: #979797;
 }
 
 hr {

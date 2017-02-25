@@ -14,6 +14,8 @@ As is tradition, with fresh versions of Apple's operating systems comes thousand
 
 In respect of your time, below is a linked list of my personal favorite tidbits, feel free to peruse this list first and jump to any particular ones that interest you.
 
+<a id="resume-from-break"></a>
+
 📱 __iOS 10__
 
 * [The Bedtime Feature - Never worry about setting alarms for work or school again](#the-bedtime-feature)
@@ -25,6 +27,8 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
 
 * [The Perfect Dock - Optimizing your app choices to help create the perfect dock](#the-perfect-dock)
 * [Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster](#super-fast-dock-scrolling)
+
+<!--break-->
 
 ------------
 
