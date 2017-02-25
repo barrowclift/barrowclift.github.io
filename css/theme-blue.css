@@ -53,6 +53,9 @@ main a:visited, /* Visited link */
 .anchor {
     color: rgb(0, 122, 255);
 }
+.link-button {
+    border-color: rgb(0, 122, 255);
+}
 
 h1 a, /* Link */
 h1 a:link, /* Unvisited link */
