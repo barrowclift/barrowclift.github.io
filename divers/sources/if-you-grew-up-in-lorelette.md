@@ -12,7 +12,7 @@ Lorelette is a tiny elven settlement (only about fifty remain) located at the he
 
 About two millennia ago, the wood elves actually lived in what is still known as Lorelai, their original Agora home. At the time, it was a wood elf city, whose size and power rivaled that of the neighboring cities. The Frozen Pines Forest was much larger as well, nearly double that of its current day size. Communication among the wood elves in Lorelai and the surrounding cities was strong, and ocean travel was common.
 
-That era is long gone. About a millennia ago, the Frozen Pines Forest began to quickly recede, ocean travel became increasingly dangerous, and terrifying rumors of a neighboring island disappearing into the bowels of the ocean began circulating Agora. The Lorelai city council were soon forced to have a meeting, where they agreed this was a sign of the beginning of the end; Innisfree was a dying world. Because of this, the majority of the peoples there decided to pack up and travel back to their home island of XXX before ocean travel to the West became impossible.
+That era is long gone. About a millennia ago, the Frozen Pines Forest began to quickly recede, ocean travel became increasingly dangerous, and terrifying rumors of a neighboring island disappearing into the bowels of the ocean began circulating Agora. The Lorelai city council were soon forced to have a meeting, where they agreed this was a sign of the beginning of the end; Innisfree was a dying world. Because of this, the majority of the peoples there decided to pack up and travel back to their home island of Benji before ocean travel to the West became impossible.
 
 As time wore on, the few elves that remained were forced to move their home to keep up with the dying, shrinking Frozen Pines Forest, eventually abandoning their original home in Lorelai and settling in what is now known as Lorelette. The remaining wood elves at this time chose a life of seclusion, and had little to no communication with outside peoples since.
 
@@ -44,4 +44,4 @@ What You've Heard About Ivarstead
 
 > "From what I was told, dealing with the Ivarstead people was... not particularly pleasant, even when times were good."
 
-While the wood elves once had strong relations with Ramon, communication with Ivarstead was kept to a minimum. Supposedly, not only were they a pain to trade with back in the day, but they gave extreme resistance to the wood elves transport back to XXX, despite already charging outrageous taxes to do so. If there's any city you were told about with distain, it's Ivarstead.
+While the wood elves once had strong relations with Ramon, communication with Ivarstead was kept to a minimum. Supposedly, not only were they a pain to trade with back in the day, but they gave extreme resistance to the wood elves transport back to Benji, despite already charging outrageous taxes to do so. If there's any city you were told about with distain, it's Ivarstead.
