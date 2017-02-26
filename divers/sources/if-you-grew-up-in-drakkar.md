@@ -1,10 +1,10 @@
-Growing Up In Drakkar
-=====================
+If You Grew Up In Drakkar
+=========================
 
 For characters growing up in Drakkar, the write up below is from the perspective of the typical Drakkar citizen and what you've most likely grown up hearing there. People from other cities may have different views or different information.
 
-Views on Drakkar
-----------------
+What You Know About Drakkar
+---------------------------
 
 > "Legends say this city used to be a goldmine. I say it still might be, but you'd never tell under all this grime and soot!"
 
@@ -18,8 +18,8 @@ You'd also know Darrak Khurdak is the current head of the Khurdak clan. While so
 
 While relations between the humans and the dwarves & gnomes are not great in Drakkar (as you'd expect, given how poorly the humans are living), rumor has it that Darrak has been floating the idea of establishing better living conditions and opportunities for the humans there, but has been receiving considerable pushback from the council against this.
 
-Views on Ramon
---------------
+What You Know About Ramon
+-------------------------
 
 > "Drakkar is the only thing keeping Ramon alive, and they'd do well to remember that! This island is colder than a witch's tit, if it weren't for our coal shipments every damn week, Ramon would be one big pompous ice cube by now. Not to mention, it was OUR stones that allowed them to build that city in the first place..."
 
@@ -27,15 +27,15 @@ Centuries ago, Drakkar and Ramon supposedly got along great, but with the way th
 
 You would know that Ramon has historically been run by the Halsey family, the heads of the merchants guild. While Ivarstead is technically a port city as well, they haven't sent or received a ship in centuries, leaving Ramon as the only functioning port city on the entire island. While moving into or even vacationing to Ramon has been extremely tough in the past, there are rumors circulating that they'll ban it entirely and shut down the city from all Agora interactions other than the coal and occasional stone shipments from Drakkar. While Drakkar's not particularly happy about this, they'd still be able to continue their meager business with Ramon, so they're mostly indifferent towards the rumor.
 
-Views on Lorelai
-----------------
+What You Know About Lorelai
+---------------------------
 
 > "That place still exists?"
 
 What most people in Drakkar know about Lorelai is it *used* to be a hub city servicing trade between Ramon and Ivarstead ages ago (back when island trade was more common). Now? If that place still actually exists, I can't imagine there's anyone other than disease ridden thieves there at this point.
 
-Views on Ivarstead
-------------------
+What You Know About Ivarstead
+-----------------------------
 
 > "They're kidding themselves, that old city's running on fumes. Once their stores of money from the old times finally dries up they'll wither away like that Lorelai place did."
 
