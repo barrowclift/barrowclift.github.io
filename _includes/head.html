@@ -3,14 +3,14 @@
 
 	{% feed_meta %}
 
-	<link rel="mask-icon" href="{{ "/images/logo/pinned-tab.svg" | prepend: site.baseurl }}" color="#333333" />
-	<link rel="shortcut icon" href="{{ "/images/logo/favicon.ico" | prepend: site.baseurl }}" />
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/logo/apple-touch-icon.png?m=<?php echo filemtime('apple-touch-icon.png'); ?>" />
+	<link rel="mask-icon" href="{{ site.baseurl }}/images/logo/pinned-tab.svg" color="#333333" />
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/logo/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/logo/apple-touch-icon-v3.png" />
 
 	<meta name="application-name" content="Barrowclift" />
 	<meta name="msapplication-TileColor" content="white" />
-	<meta name="msapplication-TileImage" content="{{ "/images/logo/mstile/mstile-144x144.png" | prepend: site.baseurl }}" />
-	<meta name="msapplication-config" content="{{ "/images/logo/browserconfig.xml" | prepend: site.baseurl }}" />
+	<meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/logo/mstile/mstile-144x144.png" />
+	<meta name="msapplication-config" content="{{ site.baseurl }}/images/logo/browserconfig.xml" />
 	{% if page.hex-color %}
 	<meta name="theme-color" content="{{ page.hex-color }}" />
 	{% else %}
