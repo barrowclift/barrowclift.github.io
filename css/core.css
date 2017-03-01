@@ -58,34 +58,34 @@ h1 {
 h2 {
     font-size: 2em; /* 14px from <p> * 2 */
     line-height: 1.1875em;
-    margin: 1.875rem 0; /* 21px * 1.75 */
+    margin: 1.75rem 0; /* 21px * 1.75 */
 }
 h3 {
     font-size: 1.5em; /* 14px from <p> * 1.5 */
     line-height: 1.1875em;
-    margin: 1.75rem 0; /* 21px * 1.5 */
+    margin: 1.5rem 0; /* 21px * 1.25 */
 }
 h4 {
     font-size: 1.25em; /* 14px from <p> * 1.25 */
     line-height: 1.1875em;
-    margin: 1.625rem 0; /* 21px * 1.25 */
+    margin: 1.25rem 0; /* 21px * 1.25 */
 }
 h5 {
     font-size: 1em; /* 14px from <p> */
     line-height: 1.1875em;
-    margin: 1.5rem 0; /* 21px */
+    margin: 1rem 0; /* 21px * 0.75 */
 }
 h6 {
     font-size: 0.75em; /* 14px from <p> * 0.75 */
     line-height: 1.1875em;
-    margin: 1.125rem 0; /* 21px * 0.75 */
+    margin: 0.75rem 0; /* 21px * 0.75 */
 }
 p, blockquote, ol, ul, table, ol li, ul li, time {
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
     ol, ul {
-        padding-left: 2rem; /* 21px * 1.5 */
+        padding-left: 1.5rem;
     }
 time {
     line-height: 1.5rem;
@@ -287,6 +287,10 @@ h1, h2, h3, h4, h5, h6, time,
 p, ol, ul {
     text-align: left;
 }
+h1 a {
+    transition: color .1s linear;
+    -webkit-transition: color .1s linear;
+}
 blockquote, em {
     font-style: italic;
 }
@@ -314,13 +318,27 @@ time {
 ol {
     list-style-type: decimal;
 }
+ol ol {
+    list-style-type: lower-alpha;
+}
+ol ol ol {
+    list-style-type: lower-roman;
+}
 ul {
-    list-style-type: initial;
+    list-style-type: disc;
 }
-ol li > :last-child, ul li > :last-child {
-    margin-bottom: 0;
+ul ul {
+    list-style-type: circle;
 }
-/* Raw list of items, no bullets, padding, or frills at all */
+ul ul ul {
+    list-style-type: none;
+}
+ul ul ul li:before {
+    content: "-";
+    position: absolute;
+    margin-left: -1em;
+}
+/* Raw list of items, no bullets, padding, or frills at all (good for UI element lists) */
 .bare-list {
     list-style: none;
     padding-left: 0;
@@ -328,14 +346,18 @@ ol li > :last-child, ul li > :last-child {
 .bare-list li {
     margin: 0;
 }
+/* No normal paragraph padding, keep them one logical block (good for short lists) */
+.compact-list li,
+.compact-list ul,
+.compact-list ol {
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
 
 blockquote {
     padding-left: 1rem;
     border-left: 3px solid rgba(0, 0, 0, .07);
-}
-blockquote > :last-child {
-    margin-bottom: 0;
 }
 
 
@@ -644,9 +666,7 @@ h2 img {
 /* FOOTNOTES ---------------------------------------------------------------- */
 
 .footnotes ol {
-    /* Needed pixel-perfect left alignment for this one, otherwise the decimal
-       lists would split out past the page's content width */
-    margin-left: 19px;
+    margin-left: 1.5rem;
     padding-left: 0;
 }
 footer {
@@ -1211,7 +1231,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
     /* ----- WRITING STYLES ----- */
     ol, ul {
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
     .permalink {
         margin-top: 0.325em;
@@ -1270,9 +1290,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* ----- FOOTNOTES ----- */
-    .footnotes ol {
-        margin-left: 23px;
-    }
 
 
     /* ----- DIVIDERS ----- */
@@ -1451,9 +1468,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* ----- FOOTNOTES ----- */
-    .footnotes ol {
-        margin-left: 26px;
-    }
 
 
     /* ----- DIVIDERS ----- */

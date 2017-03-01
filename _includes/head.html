@@ -3,9 +3,9 @@
 
 	{% feed_meta %}
 
-	<link rel="mask-icon" href="{{ "/images/logo/pinned-tab.min.svg" | prepend: site.baseurl }}" color="#333333" />
+	<link rel="mask-icon" href="{{ "/images/logo/pinned-tab.svg" | prepend: site.baseurl }}" color="#333333" />
 	<link rel="shortcut icon" href="{{ "/images/logo/favicon.ico" | prepend: site.baseurl }}" />
-	<link rel="apple-touch-icon" href="{{ "/images/logo/apple-touch-icon.png" | prepend: site.baseurl }}" />
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/logo/apple-touch-icon.png?m=<?php echo filemtime('apple-touch-icon.png'); ?>" />
 
 	<meta name="application-name" content="Barrowclift" />
 	<meta name="msapplication-TileColor" content="white" />
@@ -41,6 +41,7 @@
 	{% else %}
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/main.min.css" type="text/css" />
 	{% endif %}
+	
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print.min.css" type="text/css" media="print" />
 
 	{% if page.anchors %}
