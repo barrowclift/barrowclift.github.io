@@ -542,10 +542,10 @@ input[type='checkbox'] {
     display: inline-block;
 }
 /* Override iOS textbox shadow */
-input[type=text] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input, textarea {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 }
 input, textarea, button {
     /* css 3 */
