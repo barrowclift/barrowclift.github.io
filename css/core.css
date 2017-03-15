@@ -1382,7 +1382,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-right: 0.3rem;
     }
     .link-button {
-        padding: 0.25em 0.75em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
         width: 7.5rem;
     }
     .link-button-group li {
