@@ -1,137 +1,43 @@
 /*
 TABLE OF CONTENTS:
-    Font families ---
-    Font sizes & kerning ---
-    Page ---
-    Navbar ---
-    Logo ---
-    Writing Styles ---
-    Images & video ---
-    Footnotes ---
-    Dividers ---
-    Blog navigation ---
-    Actions Sheet ---
-    Tables ---
-    Cards ---
-    Forms & Buttons ---
-    Positioning ---
-    Page Footer ---
-    Anchors ---
-    Code ---
+    * Container
+    * Typography
+        - Typeface
+        - Kerning
+        - Sizes, Margins, and Weights
+        - Lists
+        - Text Styles
+        - Text Decoration
+    * Navbar
+        - Menu
+        - Logo
+        - Accessibility Toggles
+    * Elements
+        - Cards
+        - Dividers
+        - Forms & Buttons
+        - Tables
+        - Tags & Highlighting
+    * Images & Video
+    * Code
+    * Footer
+        - Footnotes
+        - Page Navigation
+        - Footnote Buttons
+    * Misc
+        - Anchors
+        - Animations
+        - Positioning
 
 Small devices (iPhones)
-Font size: 14px, ~Margin&Padding: 21px
+Font size: 14px, ~Margin&Padding: 20px
 */
 
-/* FONT FAMILIES -------------------------------------------------------------------- */
-
-/* Font Families (input and textarea explicitly included to fix Windows issues) */
-html,
-textarea { /* Fixing bug with Firefox, proving once again it's the worst browser */
-    font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Arial", sans-serif;
-}
-pre, code {
-    font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
-}
-
-/* FONT SIZES & KERNING ------------------------------------------------------------------- */
-
-/* ----- SIZES ----- */
-html {
-    font-size: 14px;
-}
-#logo {
-    margin-top: 1.5rem;
-    margin-bottom: 0px;
-}
-menu ul {
-    font-size: 1.3em;
-    line-height: 1.5rem;
-    margin: 0.75rem 0;
-}
-h1 {
-    font-size: 2.5em; /* 14px from <p> * 2.5 */
-    line-height: 1.1875em;
-    margin: 2rem 0; /* 21px * 2 */
-    margin-bottom: 0;
-}
-h2 {
-    font-size: 2em; /* 14px from <p> * 2 */
-    line-height: 1.1875em;
-    margin: 1.75rem 0; /* 21px * 1.75 */
-}
-h3 {
-    font-size: 1.5em; /* 14px from <p> * 1.5 */
-    line-height: 1.1875em;
-    margin: 1.5rem 0; /* 21px * 1.25 */
-}
-h4 {
-    font-size: 1.25em; /* 14px from <p> * 1.25 */
-    line-height: 1.1875em;
-    margin: 1.25rem 0; /* 21px * 1.25 */
-}
-h5 {
-    font-size: 1em; /* 14px from <p> */
-    line-height: 1.1875em;
-    margin: 1rem 0; /* 21px * 0.75 */
-}
-h6 {
-    font-size: 0.75em; /* 14px from <p> * 0.75 */
-    line-height: 1.1875em;
-    margin: 0.75rem 0; /* 21px * 0.75 */
-}
-p, blockquote, ol, ul, table, ol li, ul li, time {
-    line-height: 1.5rem;
-    margin: 1.5rem 0;
-}
-    ol, ul {
-        padding-left: 1.5rem;
-    }
-time {
-    line-height: 1.5rem;
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-}
-.footnotes ol li p,
-.footnotes ol,
-figcaption, code,
-input, select, textarea, button {
-    font-size: 0.9em; /* 13px */
-    line-height: 1.25rem;
-    margin: 1.25rem 0;
-}
-.footnotes ol {
-    margin-bottom: 0;
-}
-.footnotes ol li p:last-child {
-    margin-bottom: 0;
-}
-pre code {
-    font-size: 0.65em;
-    line-height: 1.375em;
-}
-.bigfoot-footnote__content p {
-    line-height: 1.275rem; /* font-size: 85%, 0.85 * base line height 21px for iPhone */
-}
-small {
-    font-size: 0.75em;
-}
-
-
-/* ----- KERNING ----- */
-input, textarea {
-    /* Better experience for user while entering text */
-    letter-spacing: 1px;
-}
-
-/* PAGE ------------------------------------------------------------ */
+/* CONTAINER ------------------------------------------------------------------------ */
 
 html {
     background-color: white;
     color: #333333;
-    transition: background-color .1s linear;
-    -webkit-transition: background-color .1s linear;
 }
 html, body {
     height: 100%;
@@ -139,8 +45,11 @@ html, body {
 body, main {
     text-align: center;
 }
-main a:hover {
-    text-decoration: underline;
+h1, h2, h3, h4, h5, h6, time,
+p,
+blockquote,
+ol, ul, ol li, ul li {
+    text-align: left;
 }
 main {
     display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
@@ -150,8 +59,8 @@ main {
     max-width: 33rem;
     width: auto;
     margin: 0 auto;
-    margin-top: 3rem; /* 21px * 2 */
-    margin-bottom: 3rem; /* 21px * 2 */
+    margin-top: 2.828rem; /* 1.414 base header top margin * 2 */
+    margin-bottom: 2.828rem; /* 1.414 base header top margin * 2 */
 }
 .wide-page main {
     max-width: 39rem;
@@ -173,148 +82,146 @@ main {
     overflow-x: hidden;
 }
 
-/* NAVBAR ---------------------------------------------------------- */
+/* TYPOGRAPHY ----------------------------------------------------------------------- */
 
-#logo {
-    width: auto;
-    display: inline-block;
+
+/* ----- TYPEFACE ----- */
+html,
+textarea { /* Must explicitly add textarea for Firefox bug, proving once again it's the worst browser */
+    font-family: system, -apple-system, BlinkMacSystemFont, helvetica, roboto, segoe ui, arial, sans-serif;
+
+    text-rendering: optimizeLegibility;
+    /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
+    -moz-osx-font-smoothing: grayscale;
+    /* Default text rendering in WebKit is *way* too heavy, in my opinion. This thins
+    the text a bit and makes it more crisp and pleasing to read. */
+    -webkit-font-smoothing: antialiased;
+}
+pre, code {
+    font-family: Menlo, Lucida Console, Liberation Mono, DejaVu Sans Mono, monospace, sans-serif;
 }
 
 
+/* ----- KERNING ----- */
+input, textarea {
+    /* Better experience for user while entering text */
+    letter-spacing: 1px;
+}
+
+
+/* ----- SIZES, MARGINS, AND WEIGHTS ----- */
+html {
+    font-size: 14px;
+    font-weight: 400;
+}
+body,
+.bigfoot-footnote__content p,
+.footnotes ol, .footnotes ol li p,
+figcaption,
+code,
+input, select, textarea, button,
+small {
+    /* 1.5 is too loose, ~1.2-1.45 is desired, depending on typeface */
+    line-height: 1.45em;
+}
 menu ul {
-    position: relative;
-    list-style-type: none;
-    text-align: left;
-    padding: 0;
-    font-weight: 600; /* try 600, also used to be 500 */
+    font-size: 1.3em;
+    margin: 0.75rem 0;
 }
-menu ul li {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    min-width: 88px;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+/*
+Following the 1.2 Minor Third type scale 
+http://type-scale.com
+*/
+h1 {
+    font-size: 2.074em;
+    font-weight: 700;
 }
-menu ul li,
-#dark-mode-toggle label {
-    transition: background-color .1s linear;
-    -webkit-transition: background-color .1s linear;
+h2 {
+    font-size: 1.728em;
+    font-weight: 700;
 }
-menu ul li a,
-menu ul li label {
-    display: list-item;
-    padding: 0.5rem 4.2vw;
-    color: white;
+h3 {
+    font-size: 1.44em;
+    font-weight: 600;
 }
-.hover:hover:not(.active) {
-    background-color: rgba(255, 255, 255, 0.5);
+h4 {
+    font-size: 1.2em;
+    font-weight: 600;
 }
-menu {
-    box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(0, 0, 0, 0.09));
+h5 {
+    font-size: 1em;
+    font-weight: 500;
 }
-.active {
-    box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
-    background-color: white;
+h6 {
+    font-size: 0.833em;
+    font-weight: 500;
 }
-
-
-#dark-mode-toggle {
-    float: right;
-    position: absolute;
-    display: inline;
-    left: 100%;
-    margin-left: -44px;
-    min-width: 44px;
+h6 {
+    font-size: 0.75em;
+    line-height: 1.1875em;
+    margin: 0.75rem 0;
 }
-#dark-mode-toggle,
-#dark-mode-toggle label {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0.5rem;
-    padding-left: 0;
-    padding-right: 0;
-}
-#dark-mode-checkbox {
-    display: none;
-}
-
-/* LOGO ----------------------------------------------------------- */
-
-#mac {
-    display: inline-block;
-    vertical-align: top;
-    width: 48px;
-    height: 48px;
-    
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
-}
-#signature {
-    height: 70px;
-    margin-left: 0.5em;
-}
-.signature-color {
-    fill: #6C6C6C;
-}
-#logo-eye-opened,
-#logo:hover #logo-eye-closed {
-    opacity: 1;
-}
-#logo-eye-closed,
-#logo:hover #logo-eye-opened,
-#sunglasses,
-#smirk {
-    opacity: 0;
-}
-
-/* WRITING STYLES ------------------------------------------------------------------- */
-
-html, input, textarea {
-    font-weight: normal;
-}
-h1, h2, h3, h4, h5, h6,
-table th, strong {
-    font-weight: bold;
-}
-h1, h2, h3, h4, h5, h6, time,
-p, ol, ul {
-    text-align: left;
-}
-h1 a {
-    transition: color .1s linear;
-    -webkit-transition: color .1s linear;
-}
-blockquote, em {
-    font-style: italic;
+h1, h2, h3, h4, h5, h6, time {
+    /* ~1.1em-1.2em preferred, depending on typeface */
+    line-height: 1.2em;
+    margin: 1.414em 0 0.5em;
 }
 time {
+    margin-bottom: 0;
+    margin-top: 0.25em; /* Or 0.5em */
+    font-size: 1rem;
+    /* Always have time below whatever content it's representing */
     display: block;
 }
-.permalink {
-    display: inline-block;
-    position: absolute;
-    width: 0.875rem;
-    margin-top: 0.35em;
-    opacity: 1;
-    margin-left: 0.375rem;
+p,
+blockquote,
+ol, ul, ol li, ul li,
+table,
+.highlight {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+}
+ol li, ul li {
+    margin-top: 0;
+    margin-bottom: 0.65rem; /* 1.3 base type bottom margin / 2 */
+}
+li ol, li ul {
+    margin-top: 0.65rem; /* 1.3 base type bottom margin / 2 */
+    margin-bottom: 0;
+}
+ol, ul,
+blockquote {
+    margin-left: 1.95rem; /* 1.3 base type bottom margin * 1.5 */
+}
+blockquote p {
+    margin-left: 0.65em;
+}
+code {
+    /* Gets the vertical height of both the Windows and macOS monospace
+       fonts as close to San Fransico as I can get */
+    font-size: 0.9em;
+}
+.footnotes ol, .footnotes ol li p,
+figcaption,
+input, select, textarea, button,
+small {
+    font-size: 0.833em;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+}
+pre code {
+    font-size: 0.75em;
+    line-height: 1.375em;
+}
+code, mark {
+    padding: 0em 0.325em;
+}
+strong {
+    font-weight: 700;
 }
 
 
-.small-caps {
-    -moz-font-feature-settings: "c2sc", "smcp";
-    -ms-font-feature-settings: "c2sc", "smcp";
-    -webkit-font-feature-settings: "c2sc", "smcp";
-    font-feature-settings: "c2sc", "smcp";
-}
-
-
+/* ----- LISTS ----- */
 ol {
     list-style-type: decimal;
 }
@@ -346,6 +253,9 @@ ul ul ul li:before {
 .bare-list li {
     margin: 0;
 }
+.compact-list li {
+    margin: 0;
+}
 /* No normal paragraph padding, keep them one logical block (good for short lists) */
 .compact-list li,
 .compact-list ul,
@@ -355,25 +265,386 @@ ul ul ul li:before {
 }
 
 
-blockquote {
-    padding-left: 1rem;
-    border-left: 3px solid rgba(0, 0, 0, .07);
+/* ----- TEXT STYLES ----- */
+em, blockquote {
+    font-style: italic;
+}
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
 }
 
 
-del, del code {
-    color: rgba(51, 51, 51, 0.5) !important;
-}
-
-
-time, figcaption, .weak, small, blockquote {
-    color: #979797;
-}
-
-
+/* ----- TEXT DECORATION ---- */
+main a:hover,
 .underline {
     text-decoration: underline;
 }
+blockquote {
+    border-left: 3px solid rgba(151, 151, 151, 0.25);
+}
+del, del code {
+    color: rgba(51, 51, 51, 0.5) !important;
+}
+time, figcaption, .weak, small, blockquote {
+    color: #979797;
+}
+mark, code {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+/* NAVBAR --------------------------------------------------------------------------- */
+
+
+/* ----- MENU ----- */
+menu ul {
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    font-weight: 600; /* try 600, also used to be 500 */
+}
+menu ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    min-width: 88px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+menu ul li a,
+menu ul li label {
+    display: list-item;
+    padding: 0.5rem 4.2vw;
+    color: white;
+}
+.hover:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+menu {
+    box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: inset 0 -4px 5px -5px rgba(0, 0, 0, 0.12), inset 0 -10px 10px -5px rgba(0, 0, 0, 0.10);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(0, 0, 0, 0.09));
+}
+.active {
+    box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 -10px 5px -8px rgba(0, 0, 0, 0.12), 0 -2px 10px -8px rgba(0, 0, 0, 0.10);
+    background-color: white;
+}
+
+
+/* ----- LOGO ----- */
+#logo {
+    margin-top: 1.414em;
+    margin-bottom: 0px;
+    width: auto;
+    display: inline-block;
+}
+#mac {
+    display: inline-block;
+    vertical-align: top;
+    width: 48px;
+    height: 48px;
+    
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+#signature {
+    height: 70px;
+    margin-left: 0.5em;
+}
+.signature-color {
+    fill: #6C6C6C;
+}
+#logo-eye-opened,
+#logo:hover #logo-eye-closed {
+    opacity: 1;
+}
+#logo-eye-closed,
+#logo:hover #logo-eye-opened,
+#sunglasses,
+#smirk {
+    opacity: 0;
+}
+
+
+/* ----- ACCESSIBILITY TOGGLES ----- */
+#dark-mode-toggle {
+    float: right;
+    position: absolute;
+    display: inline;
+    left: 100%;
+    margin-left: -44px;
+    min-width: 44px;
+}
+#dark-mode-toggle,
+#dark-mode-toggle label {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+#dark-mode-checkbox {
+    display: none;
+}
+
+/* ELEMENTS ------------------------------------------------------------------------- */
+
+
+/* ----- CARDS ----- */
+
+.card {
+    display: block;
+    border-radius: 1rem;
+    background-color: #F9F9F9;
+    vertical-align: middle;
+
+    margin: 1.3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+}
+.card:hover {
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+}
+.card.large {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.card.bleed {
+    padding-bottom: 1.3rem;
+    padding-top: 0;
+}
+.card.bleed img,
+.card.bleed video {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.card .label {
+    margin-top: 0.5rem;
+}
+.card.bleed .label {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+.card.large .label {
+    margin-top: 1.3rem;
+}
+.card .content .logo, 
+.card .content .long-logo {
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+}
+.card .content .long-logo {
+    width: 100%;
+    height: auto;
+}
+.card .label .primary,
+.card .label .secondary {
+    text-align: center;
+    margin: 0;
+}
+.card .label .secondary {
+    color: #979797;
+    margin-top: 0.25rem;
+}
+
+
+/* ----- DIVIDERS ----- */
+
+hr {
+    margin: 3.9em -15vw;
+    border: none;
+    max-width: 61rem;
+    width: 90vw;
+    height: 2px;
+    display: block;
+}
+article hr,
+footer hr,
+hr.small {
+    border: none;
+    height: 1px;
+    margin: 2.6rem 0; /* 1.3 base type bottom margin * 2 */
+    max-width: 33rem;
+    display: block;
+}
+hr.gray,
+article hr,
+footer hr,
+hr.small {
+    background-color: #E5E5E5;
+    background: #E5E5E5; /* Old browsers */
+    background: -moz-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,white), color-stop(25%,#E5E5E5), color-stop(50%,#E5E5E5), color-stop(75%,#E5E5E5), color-stop(100%,white)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* IE10+ */
+    background: linear-gradient(to right, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
+}
+
+
+/* ----- FORMS & BUTTONS ----- */
+
+form {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+form, input, button, textarea {
+    display: inline-block;
+    width: 100%;
+}
+input, button, textarea {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button {
+    height: 2rem;
+    color: white;
+    border: none;
+    padding-left: 0.425rem;
+    padding-right: 0.425rem;
+    background-color: #979797;
+    display: inline-block;
+    font-weight: 600;
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #C7C7C7;
+    padding: 0.375rem; /* Inner padding */
+
+
+}
+input[type='checkbox'] {
+    width: 1rem;
+    display: inline-block;
+}
+input, textarea, button {
+    /* css 3 */
+    border-radius: 4px;
+    /* mozilla */
+    -moz-border-radius: 4px;
+    /* webkit */
+    -webkit-border-radius: 4px;
+}
+input:focus, textarea:focus {
+    outline: 0;
+}
+/* Remove box shadow firefox, chrome and opera put around required fields. */
+input:required {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.link-button {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 90vw;
+    max-width: 33rem;
+    border: 1px solid #979797;
+    border-radius: 0.5em;
+    font-weight: 500;
+}
+a .link-button:hover {
+    color: white !important;
+}
+.link-button-group li {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+.link-button-group {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    text-align: center;
+}
+
+
+/* ----- TABLES ----- */
+
+/* Typographic table (spaces and weights only) */
+table {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    word-break: normal;
+    word-break: keep-all;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+td {
+    padding: .13em 0;
+    border: none;
+}
+th {
+    padding-bottom: .13em;
+}
+tr:last-child td {
+    padding-bottom: 0;
+}
+thead, th {
+    font-weight: bold;
+}
+/* Decorated table (Borders, colors, etc.) */
+table.fancy td {
+    border: solid #EFF0F1;
+    border-width: 1px;
+    border-right: none;
+    border-left: none;
+}
+table.fancy th {
+    color: rgba(51, 51, 51, 0.9);
+    background-color: #EFF0F1;
+}
+table.fancy th,
+table.fancy td {
+    padding: .13em .65em;
+}
+table.fancy th:first-child {
+    border-top-left-radius: 4px;
+}
+table.fancy th:last-child {
+    border-top-right-radius: 4px;
+}
+
+
+/* ----- TAGS & HIGHLIGHTING ----- */
+
 mark, mark code,
 code, pre code {
     color: rgba(51, 51, 51, 0.9);
@@ -382,8 +653,6 @@ mark, mark.yellow {
     background-color: #FED558;
     border: 1px solid #FECD38;
     word-wrap: break-word;
-    border-radius: 4px;
-    padding: .05em .4em;
     margin-left: 0em;
     margin-right: 0em;
 }
@@ -416,7 +685,7 @@ mark.purple {
     border-color: #CB77DF;
 }
 
-/* IMAGES & VIDEO ----------------------------------------------------------- */
+/* IMAGES & VIDEO ------------------------------------------------------------------- */
 
 video {
     top: 0;
@@ -446,16 +715,12 @@ figure p:first-child {
     line-height: 0;
 }
 figure {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-figure.spilled {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 0;
+    margin-bottom: 1.3rem;
 }
 div.responsive {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.3rem;
 }
 .slice figure,
 .edge-to-edge figure,
@@ -470,12 +735,8 @@ div.responsive {
 figcaption {
     padding: 0 5%;
     margin-bottom: 0;
-    margin-top: 0.75rem;
+    margin-top: 0.65em;
     vertical-align: bottom;
-}
-figure.spilled figcaption,
-div.responsive figcaption {
-    margin-top: 1.5rem;
 }
 
 /****** ALL IMAGES TYPES FOR USE IN BLOG ******/
@@ -645,15 +906,6 @@ h2 img {
 .stroke-color {
     stroke: #979797;
 }
-.fill-transparent,
-.fill-color,
-.stroke-transparent,
-.stroke-color {
-    -webkit-transition: stroke 0.1s linear;
-    -moz-transition: stroke 0.1s linear;
-    -o-transition: stroke 0.1s linear;
-    transition: stroke 0.1s linear;
-}
 
 
 .show-when-dark {
@@ -663,393 +915,22 @@ h2 img {
     display: inline-block !important;
 }
 
-/* FOOTNOTES ---------------------------------------------------------------- */
 
-.footnotes ol {
-    margin-left: 1.5rem;
-    padding-left: 0;
-}
-footer {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-
-.footnote-ref {
-    font-size: 0.75rem;
-    vertical-align: super;
-}
-
-/* DIVIDERS ----------------------------------------------------------------- */
-
-hr {
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    margin-left: -15vw;
-    margin-right: -15vw;
-    border: none;
-    max-width: 61rem;
-    width: 90vw;
-    height: 2px;
+.permalink {
     display: inline-block;
-}
-article hr,
-footer hr,
-hr.small {
-    border: none;
-    height: 1px;
-    margin: 0.75rem 0; /* 21px * 0.5 */
-    max-width: 33rem;
-}
-hr.gray,
-article hr,
-footer hr,
-hr.small {
-    background-color: #E5E5E5;
-    background: #E5E5E5; /* Old browsers */
-    background: -moz-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,white), color-stop(25%,#E5E5E5), color-stop(50%,#E5E5E5), color-stop(75%,#E5E5E5), color-stop(100%,white)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* IE10+ */
-    background: linear-gradient(to right, white 0%, #E5E5E5 25%, #E5E5E5 50%, #E5E5E5 75%, white 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
-}
-
-/* BLOG NAVIGATION -------------------------------------------------------- */
-
-#navigation-previous {
-    display: inline-block;
-    float: left;
-    text-align: left;
-}
-#navigation-next {
-    display: inline-block;
-    float: right;
-    text-align: right;
-}
-#navigation-next, #navigation-previous {
-    min-width: 5.5rem;
-}
-#navigation-next h4,
-#navigation-previous h4 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-}
-
-/* ACTIONS SHEET ----------------------------------------------------------- */
-
-#actions-sheet {
-    padding-top: 4.25rem;
-    padding-left: 0;
-    display: inline-block;
-    text-align: center;
-    min-width: 4.5rem;
-    width: auto;
-    margin: 0 1.5rem;
-}
-#actions-sheet svg {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 24px;
-    height: 24px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-#actions-sheet a {
-    text-decoration: none;
-}
-
-/* TABLES ------------------------------------------------------------------- */
-
-table {
-    width: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    word-break: normal;
-    word-break: keep-all;
-    border-collapse: collapse;
-    overflow-x: auto;
-}
-hr:before, hr:after {
-    display: table;
-    content: "";
-}
-hr:after {
-    clear: both;
-}
-td {
-    border: solid #E5E5E5;
-    border-width: 1px;
-    border-right: none;
-    border-left: none;
-}
-th, td {
-    padding: 0 1rem;
-}
-table th {
-    background-color: #E5E5E5;
-    color: #666666;
-}
-th:first-child {
-    border-top-left-radius: 4px;
-}
-th:last-child {
-    border-top-right-radius: 4px;
-}
-
-/* CARDS -------------------------------------------------------------------- */
-
-.card {
-    display: block;
-    border-radius: 1rem;
-    background-color: #F9F9F9;
-    vertical-align: middle;
-
-    margin: 1.5rem 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    -webkit-transition: -webkit-box-shadow 0.25s ease 0s, background-color 0.1s linear;
-    -moz-transition: -moz-box-shadow 0.25s ease 0s, background-color 0.1s linear;
-    -o-transition: -o-box-shadow 0.25s ease 0s, background-color 0.1s linear;
-    transition: box-shadow 0.25s ease 0s, background-color 0.1s linear;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-}
-.card:hover {
-    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
-    -moz-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
-}
-.card.large {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.card.bleed {
-    padding-bottom: 1.5rem;
-    padding-top: 0;
-}
-.card.bleed img,
-.card.bleed video {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-}
-.card .label {
-    margin-top: 0.5rem;
-}
-.card.bleed .label {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 1rem;
-}
-.card.large .label {
-    margin-top: 1.5rem;
-}
-.card .content {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.card .content .logo, 
-.card .content .long-logo {
-    width: 20vw;
-    height: 20vw;
-    text-align: center;
-}
-.card .content .long-logo {
-    width: 100%;
-    height: auto;
-}
-.card .label .primary,
-.card .label .secondary {
-    text-align: center;
-    margin: 0;
-}
-.card .label .secondary {
-    color: #979797;
-    font-style: italic;
-    margin-top: 0.25rem;
-}
-
-/* FORMS & BUTTONS ------------------------------------------------------------------ */
-
-form {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-form, input, button, textarea {
-    display: inline-block;
-    width: 100%;
-}
-input, button, textarea {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
-button {
-    height: 24px;
-    color: white;
-    border: none;
-    padding-left: 0.425rem;
-    padding-right: 0.425rem;
-    background-color: #979797;
-    display: inline-block;
-    -webkit-transition: background-color 0.1s ease;
-    transition: background-color 0.1s ease;
-    font-weight: 600;
-}
-input, textarea {
-    width: 100%;
-    border: 1px solid #C7C7C7;
-    padding: 0.375rem; /* Inner padding */
-}
-input[type='checkbox'] {
-    width: 1rem;
-    display: inline-block;
-}
-input, textarea, button {
-    /* css 3 */
-    border-radius: 4px;
-    /* mozilla */
-    -moz-border-radius: 4px;
-    /* webkit */
-    -webkit-border-radius: 4px;
-}
-input:focus, textarea:focus {
-    outline: 0;
-}
-/* Remove box shadow firefox, chrome and opera put around required fields. */
-input:required {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-}
-
-.no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
-}
-
-.link-button {
-    text-align: center;
-    display: inline-block;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 90vw;
-    max-width: 33rem;
-    border: 1px solid #979797;
-    border-radius: 0.5em;
-    font-weight: 500;
-    -webkit-transition: background-color 0.1s linear;
-    -moz-transition: background-color 0.1s linear;
-    -o-transition: background-color 0.1s linear;
-    transition: background-color 0.1s linear;
-}
-a .link-button:hover {
-    color: white !important;
-}
-.link-button-group li {
-    display: inline-block;
-    margin: 0.5rem 0;
-}
-.link-button-group {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline;
-}
-
-/* POSITIONING -------------------------------------------------------------- */
-
-.center {
-    text-align: center;
-    width: auto;
-}
-
-
-.vertical-top {
-    vertical-align: top;
-}
-.inline-block {
-    display: inline-block;
-}
-
-
-.large-top-margin {
-    margin-top: 2rem;
-}
-.large-bottom-margin {
-    margin-bottom: 2rem;
-}
-.large-top-pad {
-    padding-top: 2rem;
-}
-.large-bottom-pad {
-    padding-bottom: 2rem;
-}
-.top-margin {
-    margin-top: 1.5rem;
-}
-.bottom-margin {
-    margin-bottom: 1.5rem;
-}
-.small-top-margin {
-    margin-top: 0.75rem;
-}
-.small-bottom-margin {
-    margin-bottom: 0.75rem;
-}
-
-
-.banner-header-padding {
-    margin-top: 0px;
-    padding-top: 0px;
-}
-.banner-top-margin {
-    margin-top: -3rem;
-}
-
-/* ANCHORS ----------------------------------------------------------- */
-
-.anchor {
-    color: currentcolor;
-    text-decoration: none;
-    padding: 0 .34em;
-    opacity: 0;
-    float: none;
-    margin-left: 0em;
-    -webkit-transition: all .1s ease;
-    transition: all .1s ease;
-}
-/* When hovering the header text or the anchor location itself, show anchor */
-.anchored:hover .anchor,
-.anchored .anchor:hover {
+    position: absolute;
+    width: 0.875rem;
+    margin-top: 0.175em;
+    margin-left: 0.25em;
     opacity: 1;
 }
 
-/* CODE --------------------------------------------------------------------- */
+/* CODE ----------------------------------------------------------------------------- */
 
 /**
  * Inline code snippets
  */
 code {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-
-    padding: .15em .4em .05em .4em;
     margin: 0;
     word-wrap: break-word;
 }
@@ -1082,7 +963,7 @@ pre {
 }
 pre code {
     padding: 0;
-    margin: 0 1rem;
+    margin: 0 1.3rem;
     max-width: initial;
 
     overflow: hidden;
@@ -1097,8 +978,8 @@ pre code.ascii-art {
     color: #f8f8f2;
 }
 .highlight pre, pre {
-    padding: 1rem 0;
-    text-align:left;
+    padding: 1.3em 0;
+    text-align: left;
     word-break: normal;
     word-spacing: normal;
     white-space: pre;
@@ -1122,9 +1003,6 @@ pre code.ascii-art {
     color: white;
     border: none;
 }
-.highlight {
-    margin: 1.5rem 0;
-}
 
 
 /* These must be separate, otherwise the highlighting doesn't work */
@@ -1142,13 +1020,208 @@ pre ::selection, code ::selection {
     background: hsla(54, 8%, 26%, 0.9);
 }
 
+/* FOOTER --------------------------------------------------------------------------- */
+
+
+/* ----- FOOTNOTES ----- */
+
+footer {
+    margin-top: 2.828em; /* 1.414 base header top margin * 2 */
+    margin-bottom: 0;
+}
+
+
+/* ----- PAGE NAVIGATION ----- */
+
+#navigation-previous {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+#navigation-next {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+#navigation-next, #navigation-previous {
+    min-width: 5.5rem;
+}
+#navigation-next h4,
+#navigation-previous h4 {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+}
+
+
+/* ----- FOOTNOTE BUTTONS ----- */
+
+#actions-sheet {
+    padding-top: 1.414rem;
+    padding-left: 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+#actions-sheet svg {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+#actions-sheet a {
+    text-decoration: none;
+}
+
+/* MISC ----------------------------------------------------------------------------- */
+
+
+/* ----- ANCHORS ----- */
+
+.anchor {
+    color: currentcolor;
+    text-decoration: none !important;
+    padding: 0 .34em;
+    opacity: 0;
+    float: none;
+    margin-left: 0em;
+}
+/* When hovering the header text or the anchor location itself, show anchor */
+.anchored:hover .anchor,
+.anchored .anchor:hover {
+    opacity: 1;
+}
+
+
+/* ----- ANIMATIONS ----- */
+
+/* Transitioning background colors */
+button, /* For standard, form buttons */
+html, /* For dark mode transition */
+menu ul li, /* For hovering items */
+#dark-mode-toggle label, /* For hovering the dark mode toggle specifically */
+.link-button /* For hovering link buttons, like those on the About page */
+{
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+    transition: background-color 0.1s ease;
+}
+
+/* Transitioning shadows */
+.card, /* For hovering generic cards like on the Experience page */
+.gallery-image, #gallery video, /* For hovering special "cards" like on project pages (TODO refactor to generic .cards) */
+.project /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
+{
+    -webkit-transition: -webkit-box-shadow 0.25s ease;
+    -moz-transition: -moz-box-shadow 0.25s ease;
+    -o-transition: -o-box-shadow 0.25s ease;
+    transition: box-shadow 0.25s ease;
+}
+
+/* Transitioning colors */
+h1 a {
+    -webkit-transition: color 0.1s ease;
+    -moz-transition: color 0.1s ease;
+    -o-transition: color 0.1s ease;
+    transition: color 0.1s ease;
+}
+
+/* SVG Stroke */
+.stroke-transparent,
+.stroke-color {
+    -webkit-transition: stroke 0.1s ease;
+    -moz-transition: stroke 0.1s ease;
+    -o-transition: stroke 0.1s ease;
+    transition: stroke 0.1s ease;
+}
+/* SVG Fill */
+.fill-transparent,
+.fill-color {
+    -webkit-transition: fill 0.1s ease;
+    -moz-transition: fill 0.1s ease;
+    -o-transition: fill 0.1s ease;
+    transition: fill 0.1s ease;
+}
+
+/* Everything */
+.anchor {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+/* Border */
+input, textarea {
+    -webkit-transition: border 0.1s ease;
+    -moz-transition: border 0.1s ease;
+    -o-transition: border 0.1s ease;
+    transition: border 0.1s ease;
+}
+
+
+/* ----- POSITIONING ----- */
+
+.center {
+    text-align: center;
+    width: auto;
+}
+
+
+.vertical-top {
+    vertical-align: top;
+}
+.inline-block {
+    display: inline-block;
+}
+
+
+.large-top-margin {
+    margin-top: 2.6em; /* 1.3 base type bottom margin / 2 */
+}
+.large-bottom-margin {
+    margin-bottom: 2.6em; /* 1.3 base type bottom margin / 2 */
+}
+.large-top-pad {
+    padding-top: 2.6em; /* 1.3 base type bottom margin / 2 */
+}
+.large-bottom-pad {
+    padding-bottom: 2.6em; /* 1.3 base type bottom margin / 2 */
+}
+.top-margin {
+    margin-top: 1.3em;
+}
+.bottom-margin {
+    margin-bottom: 1.3em;
+}
+.small-top-margin {
+    margin-top: 0.65em;
+}
+.small-bottom-margin {
+    margin-bottom: 0.65em;
+}
+
+
+.banner-header-padding {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.banner-top-margin {
+    margin-top: -2.82rem;
+}
+
 /* ======================================================================================================= */
 
 /* Old iPhones */
 @media(max-width: 374px) {
     menu ul {
         font-size: 1.3em;
-        line-height: 1.5rem;
+        line-height: 1.3em;
     }
     menu ul li a,
     menu ul li label {
@@ -1158,7 +1231,10 @@ pre ::selection, code ::selection {
 
 /* Tiny devices (width smaller than 320px, the original iPhone screen) */
 @media(max-width: 319px) {
-    /* ----- NAVBAR ----- */
+    /* NAVBAR ------------------------------------- */
+
+
+    /* --- MENU --- */
     menu ul li {
         display: block;
     }
@@ -1178,17 +1254,7 @@ Medium devices (iPads)
 Font size: 19px, ~Margin&Padding: 28.5px
 */
 @media (min-width: 700px) {
-    /* ----- FONT SIZES & KERNING ----- */
-    /* Sizes */
-    html {
-        font-size: 19px;
-    }
-    menu ul {
-        line-height: 2.3rem;
-    }
-
-
-    /* ----- PAGE ----- */
+    /* CONTAINER ---------------------------------- */
     main {
         padding-left: 0;
         padding-right: 0;
@@ -1200,8 +1266,21 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-right: 5%;
     }
 
+    /* TYPOGRAPHY --------------------------------- */
 
-    /* ----- NAVBAR ----- */
+
+    /* --- SIZES, MARGINS, AND WEIGHTS --- */
+    html {
+        font-size: 19px;
+    }
+    menu ul {
+        line-height: 1.8em; /* 1.2 header line height * 1.5 */
+    }
+
+    /* NAVBAR ------------------------------------- */
+    
+
+    /* --- MENU --- */
     menu ul {
         text-align: center;
     }
@@ -1210,16 +1289,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     menu ul li a,
     menu ul li label {
-        padding: 0.48rem 2.75vw;
-    }
-    #dark-mode-toggle {
-        margin-left: -54px;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
+        padding: 0;
     }
 
 
-    /* ----- LOGO ----- */
+    /* --- LOGO --- */
     #mac {
         width: 64px;
         height: 64px;
@@ -1229,17 +1303,94 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
 
 
-    /* ----- WRITING STYLES ----- */
-    ol, ul {
-        padding-left: 1.5rem;
+    /* --- ACCESSIBILITY TOGGLES --- */
+    #dark-mode-toggle {
+        margin-left: -54px;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
-    .permalink {
-        margin-top: 0.325em;
+
+    /* ELEMENTS ----------------------------------- */
+
+
+    /* --- CARDS --- */
+    .card {
+        display: inline-block;
+        margin: 0.65rem;
+        min-width: 320px; 
+        width: 46vw;
+        max-width: 406px; 
+    }
+    .card.large {
+        width: 75%;
+        max-width: 750px;
+        min-width: 320px;
+        margin: 0.65rem;
+        display: inline-block;
+    }
+    .card .content .logo {
+        width: 110px;
+        height: 110px;
+    }
+    .card .content .long-logo {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
     }
 
 
-    /* ----- IMAGES & VIDEO ----- */
+    /* --- DIVIDERS --- */
+    hr {
+        margin-left: -5vw;
+        margin-right: -5vw;
+        max-width: 45rem;
+    }
+    article hr,
+    footer hr,
+    hr.small {
+        max-width: 34rem;
+    }
+
+
+    /* --- FORMS & BUTTONS --- */
+    .bigfoot-footnote__button {
+        font-size: 18px;
+    }
+    #actions-sheet svg {
+        width: 1.25em;
+        height: 1.25em;
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
+    button {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    .link-button {
+        padding: 0.25em 0.75em;
+        width: 7.5rem;
+    }
+    .link-button-group li {
+        margin-left: .65rem; /* 1.3 base type bottom margin / 2 */
+        margin-right: .65rem; /* 1.3 base type bottom margin / 2 */
+    }
+
+    /* IMAGES & VIDEO ----------------------------- */
+
+    figure.spilled {
+        margin-top: 2.6rem; /* 1.3 base type bottom margin * 2 */
+        margin-bottom: 2.6rem; /* 1.3 base type bottom margin * 2 */
+    }
+    figure.spilled figcaption,
+    div.responsive figcaption {
+        margin-top: 1.3em;
+    }
+    div.responsive {
+        margin-top: 1.3rem;
+        margin-bottom: 2.6rem;
+    }
     figcaption {
+        padding: 0;
         display: inline-block;
         max-width: 34rem;
     }
@@ -1254,7 +1405,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
         margin: 0;
     }
     figure img,
-    .reserved-mode main article .edge-to-edge {
+    .reserved-mode main article .edge-to-edge,
+    .inline {
         border-radius: 4px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -1288,98 +1440,23 @@ Font size: 19px, ~Margin&Padding: 28.5px
         margin-bottom: 1px;
     }
 
-
-    /* ----- FOOTNOTES ----- */
-
-
-    /* ----- DIVIDERS ----- */
-    hr {
-        margin-left: -5vw;
-        margin-right: -5vw;
-        max-width: 45rem;
-    }
-    article hr,
-    footer hr,
-    hr.small {
-        max-width: 34rem;
-    }
-    
-
-    /* ----- BLOG NAVIGATION ----- */
+    /* CODE --------------------------------------- */
 
 
-    /* ----- ACTIONS SHEET ----- */
+    /* FOOTER ------------------------------------- */
+
+
+    /* --- FOOTNOTE BUTTONS --- */
     #actions-sheet {
-        display: inline-block;
-        padding-top: 0.125rem;
+        padding-top: 2px;
+        min-width: 4.5rem;
+        width: auto;
+        margin: 0 1.3rem;
     }
 
-
-    /* ----- TABLES ----- */
-
-
-    /* ----- CARDS ----- */
-    .card {
-        display: inline-block;
-        margin: 0.5rem;
-        min-width: 320px; 
-        width: 46vw;
-        max-width: 406px; 
-    }
-    .card.large {
-        width: 75%;
-        max-width: 750px;
-        min-width: 320px;
-        margin: 0.5rem;
-        display: inline-block;
-    }
-    .card .content .logo {
-        width: 110px;
-        height: 110px;
-    }
-    .card .content .long-logo {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
+    /* MISC --------------------------------------- */
 
 
-    /* ----- FORMS & BUTTONS ----- */
-    .bigfoot-footnote__button {
-        font-size: 18px;
-    }
-    #actions-sheet svg {
-        width: 1.25em;
-        height: 1.25em;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    button {
-        height: 35px;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-    }
-    .link-button {
-        padding: 0.25em 0.75em;
-        width: 7.5rem;
-    }
-    .link-button-group li {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-
-    /* ----- POSITIONING ----- */
-
-
-    /* ----- ANCHORS ----- */
-
-
-    /* ----- CODE ----- */
-    pre code {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
 }
 
 /* 
@@ -1387,13 +1464,8 @@ Large devices (Macs)
 Font size: 21px, ~Margin&Padding: 31.5px
 */
 @media (min-width: 900px) {
-    /* ----- FONT SIZES & KERNING ----- */
-    /* Sizes */
-    html {
-        font-size: 21px;
-    }
+    /* CONTAINER ---------------------------------- */
 
-    /* ----- PAGE ----- */
     main {
         max-width: 35rem;
     }
@@ -1401,29 +1473,67 @@ Font size: 21px, ~Margin&Padding: 31.5px
         max-width: 46rem;
     }
 
+    /* TYPOGRAPHY --------------------------------- */
 
-    /* ----- NAVBAR ----- */
-    menu ul li a,
-    menu ul li label {
-        padding: 0.48rem 1.5rem;
+
+    /* --- SIZES, MARGINS, AND WEIGHTS --- */
+    html {
+        font-size: 21px;
     }
+
+    /* NAVBAR ------------------------------------- */
+
+
+    /* --- MENU --- */
     menu ul li {
         min-width: 214px;
     }
+
+
+    /* --- ACCESSIBILITY TOGGLES --- */
     #dark-mode-toggle {
         margin-left: -65px;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 
-
-    /* ----- LOGO ----- */
-
-
-    /* ----- WRITING STYLES ----- */
+    /* ELEMENTS ------------------------------------- */
 
 
-    /* ----- IMAGES & VIDEO ----- */
+    /* --- CARDS --- */
+    .card {
+        margin: 1rem;
+        min-width: 384px; 
+        width: 42.5vw; 
+        max-width: 492px;
+    }
+
+
+    /* --- DIVIDERS --- */
+    hr {
+        margin-left: -24vw;
+        margin-right: -24vw;
+        width: 82vw;
+        max-width: 55rem;
+        min-width: 39rem;
+    }
+    article hr,
+    footer hr,
+    hr.small {
+        width: 100%;
+        max-width: none;
+        min-width: 736px;
+    }
+
+
+    /* --- FORMS & BUTTONS --- */
+    button {
+        padding-left: 0.29rem;
+        padding-right: 0.29rem;
+    }
+
+    /* IMAGES & VIDEO ------------------------------- */
+
     figcaption {
         max-width: 35rem;
     }
@@ -1462,72 +1572,12 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
     .ios-two-screens,
     .ios-three-screens {
-        margin-left: 1.25rem;
-        margin-right: 1.25rem;
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
     }
 
+    /* CODE ----------------------------------------- */
 
-    /* ----- FOOTNOTES ----- */
-
-
-    /* ----- DIVIDERS ----- */
-    hr {
-        margin-left: -24vw;
-        margin-right: -24vw;
-        width: 82vw;
-        max-width: 55rem;
-        min-width: 39rem;
-    }
-    article hr,
-    footer hr,
-    hr.small {
-        width: 100%;
-        max-width: none;
-        min-width: 736px;
-    }
-
-
-    /* ----- BLOG NAVIGATION ----- */
-
-
-    /* ----- ACTIONS SHEET ----- */
-    #navigation-next,
-    #navigation-previous {
-        min-width: 7rem;
-    }
-
-
-    /* ----- TABLES ----- */
-
-
-    /* ----- CARDS ----- */
-    .card {
-        margin: 1rem;
-        min-width: 384px; 
-        width: 42.5vw; 
-        max-width: 492px;
-    }
-
-
-    /* ----- FORMS & BUTTONS ----- */
-    button {
-        height: 39px;
-        padding-left: 0.29rem;
-        padding-right: 0.29rem;
-    }
-
-
-    /* ----- POSITIONING ----- */
-
-
-    /* ----- ANCHORS ----- */
-    .anchor {
-        float: left;
-        margin-left: -1.3em;
-    }
-
-
-    /* ----- CODE ----- */
     .highlight pre {
         padding: 0;
         max-width: 57rem;
@@ -1542,6 +1592,24 @@ Font size: 21px, ~Margin&Padding: 31.5px
         -webkit-border-radius: 4px;
     }
     pre code {
-        margin: 0.75rem;
+        margin: 0.65rem;
+    }
+
+    /* FOOTER --------------------------------------- */
+
+
+    /* --- FOOTNOTE BUTTONS --- */
+    #navigation-next,
+    #navigation-previous {
+        min-width: 7rem;
+    }
+
+    /* MISC ----------------------------------------- */
+
+
+    /* --- ANCHORS --- */
+    .anchor {
+        float: left;
+        margin-left: -1.35em;
     }
 }

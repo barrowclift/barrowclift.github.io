@@ -60,7 +60,7 @@ You've never used a Windows computer before, let's play "guess what you have to 
 
 And what of apps themselves? There's two application folders both with frightening and confusing names to normal users. What's "x86" mean[^x86]? Is "Program Files" files used by programs or programs themselves? Should I save my app to one of them? Which one? Even if a user can somehow guess their way through that mess even launching apps themselves is a disaster. Most Windows "apps" are actually just folders with a bunch of the applications resources and source files strewn about with a few .exe files, one of which is the one you're *actually* supposed to double click to launch the app (common apps guilty of the practice are Google Chrome, Notepad++, and Skype to name a few). Microsoft has tried to alleviate this by allowing app launching from the Start Menu but the messy implementation is still right there in plain view for everyone to stumble into and see. It's design like this that has scared the majority of desktop PC users away from the file system for years and makes them uncomfortable saving or accessing any file, folder, or application that isn't on their desktop.
 
-<figure markdown="1">
+<figure markdown="1" class="spilled">
 [![Typical OS X desktop experience, desktop is clean of icons]({{ site.baseurl }}/images/assets/fearful-computing/os-x-desktop.jpg){: .responsive}]({{ site.baseurl }}/images/assets/fearful-computing/os-x-desktop.jpg "Amazing what some design competency can do, right?")
 <figcaption>
 No desktop shortcuts by default and apps are lovely, launchable, secret folders.

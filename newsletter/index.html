@@ -5,10 +5,23 @@ color: blue
 hex-color: 007AFF
 title: "Subscribe"
 home-menu-active: true
-page-specific:
-  - newsletter
 ---
 
+<style>
+form {
+    max-width: 320px;
+}
+input, button {
+    text-align: center;
+}
+
+/* Medium devices (iPads) */
+@media (min-width: 700px) {
+    button {
+        width: 100%;
+    }
+}
+</style>
 <h1 class="center">Subscribe to Newsletter</h1>
 
 <p class="center">Your email will only be used to notify you when new articles are posted. You will always have the option to unsubscribe anytime you receive one.</p>

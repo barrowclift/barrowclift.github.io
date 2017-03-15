@@ -4,12 +4,38 @@ viewing-single-page: true
 color: sketchbook
 hex-color: #733041
 title: "Sketches"
-bottom-margin-included: true
 projects-menu-active: true
-page-specific:
-  - sketches
 ---
 
+<style>
+.sketch {
+	display: inline-block;
+	text-align: center;
+	max-width: 40%;
+	padding: 4vw;
+	vertical-align: middle;
+	max-height: none;
+}
+main {
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+/* Medium devices (iPads) */
+@media (min-width: 700px) {
+	.sketch {
+		display: inline-block;
+		max-height:320px;
+		max-width:320px;
+		width: auto;
+		height:auto;
+		padding: 3vw;
+	}
+	main {
+		padding-left: 0% !important;
+		padding-right: 0% !important;
+	}
+}
+</style>
 <h1 class="large-bottom-margin center">Sketches</h1>
 
 <a href="/images/projects/art/sketches/dungeons-and-dragons-map.png">

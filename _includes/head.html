@@ -5,7 +5,7 @@
 
 	<link rel="mask-icon" href="{{ site.baseurl }}/images/logo/pinned-tab.svg" color="#333333" />
 	<link rel="shortcut icon" href="{{ site.baseurl }}/images/logo/favicon.ico" />
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/logo/apple-touch-icon-v3.png" />
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/logo/apple-touch-icon.png" />
 
 	<meta name="application-name" content="Barrowclift" />
 	<meta name="msapplication-TileColor" content="white" />
@@ -44,11 +44,20 @@
 	
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print.min.css" type="text/css" media="print" />
 
+	{% if jekyll.environment == "development" %}
+	{% if page.anchors %}
+	<script async src="{{ site.baseurl }}/scripts/main.js" type="text/javascript"></script>
+	{% else %}
+	<script async src="{{ site.baseurl }}/scripts/main-sans-anchors.js" type="text/javascript"></script>
+	{% endif %}
+	{% else %}
 	{% if page.anchors %}
 	<script async src="{{ site.baseurl }}/scripts/min/main.min.js" type="text/javascript"></script>
 	{% else %}
 	<script async src="{{ site.baseurl }}/scripts/min/main-sans-anchors.min.js" type="text/javascript"></script>
 	{% endif %}
+	{% endif %}
+	
 
 	<!--Facebook OpenGraph -->
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">

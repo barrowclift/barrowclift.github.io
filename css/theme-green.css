@@ -21,8 +21,8 @@ hr {
 }
 
 input:focus, textarea:focus {
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(76, 217, 100, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(76, 217, 100, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     border-color: rgb(76, 217, 100);
 }
 

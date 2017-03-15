@@ -22,7 +22,7 @@
 				
 				{% include header-happy.html %}
 				
-				<main {% if page.bottom-margin-included != true %}style="margin-bottom:1px;"{% endif %}>
+				<main>
 					<article>
 						<figure class="banner-top-margin">
 							<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}{{ page.banner-alt }}{% else %}Post banner{% endif %}">
