@@ -220,6 +220,9 @@ pre code {
 code, mark {
     padding: 0em 0.325em;
 }
+mark.tag {
+    padding: 0em 0.5em;
+}
 strong {
     font-weight: 700;
 }
