@@ -11,7 +11,7 @@ excerpt: "What does \"magic()\" mean? How about \"foo()\"? Or \"arg1\"? Nobody k
 ---
 
 <figure markdown="1">
-[![A "Hello, My Name Is" sticker with the name "FOOBAR" on it]({{ site.baseurl }}/images/assets/meaningful-names/namecard.png){: .inline .no-shadow}]({{ site.baseurl }}/images/assets/meaningful-names/namecard.png)
+![A "Hello, My Name Is" sticker with the name "FOOBAR" on it]({{ site.baseurl }}/images/assets/meaningful-names/namecard.png){: .edge-to-edge .small .no-shadow }
 </figure>
 
 Do you know what `magic()` means? How about `foo()`, what does that do? What about `arg1`, what's that supposed to be? To be frank, I have no idea what any of these represent since the names themselves carry little to no intrinsic meaning. They're just meaningless fluff.
@@ -23,9 +23,9 @@ Oftentimes, this is what it feels like as a developer when [reading code from th
 <!--break-->
 
 <figure markdown="1">
-[![An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg){: .inline}](http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the)
+[![An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg){: .inline }](http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the)
 <figcaption>
-Nobody can, because it's horrible
+Nobody can, because it's horrible.
 </figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Where It All Started
 Having tiny, arbitrary names like [`ox`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-113), [`tid`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-112), or [`pctl`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-105) back in the 1980's was a pragmatic choice compared to using lengthier, meaningful names. Developers wrote in lightweight plain text editors such as [vi](https://en.wikipedia.org/wiki/Vi), and at the time no contextual help like [autocomplete](https://en.wikipedia.org/wiki/Autocomplete) or [IntelliSense](https://en.wikipedia.org/wiki/Intelligent_code_completion) existed. This meant that every single variable name had to be retyped in full or copy/pasted whenever needed. Even copy/pasting, while helpful, was a pain since nearly all development in the early 80's was done without a mouse. That's right, actions such as moving the cursor, selecting text, copy/pasting, etc. were done exclusively on the keyboard. While developers adapted to these constraints fairly well, long variable names remained unwieldy and were generally avoided. Shrinking names down to their smallest possible form simply made editing that much easier.
 
 <figure markdown="1">
-[![Another image of what appears to be a TV monitor displaying utter gibberish, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/back-in-my-day.jpg){: .inline}](http://moviecode.tumblr.com/post/74145306311/from-classic-doctor-who-episode-the-twin-dilemma)
+[![Another image of what appears to be a TV monitor displaying utter gibberish, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/back-in-my-day.jpg){: .inline }](http://moviecode.tumblr.com/post/74145306311/from-classic-doctor-who-episode-the-twin-dilemma)
 <figcaption>
 40 whole characters on a single line? Truly this is the future.
 </figcaption>

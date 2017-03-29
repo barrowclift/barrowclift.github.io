@@ -144,10 +144,10 @@ strong {
     background-color: transparent;
     margin: -0.75em -0.25em 0 -0.25em !important;
 }
-img, .bound-responsive, .edge-to-edge, .responsive, .inline, .inline-half-size {
+img, .edge-to-edge, .inline, .half-inline {
     width: 30vw !important;
 }
-.inline-half-size {
+.half-inline {
     width: 15vw !important;
 }
 .ios-one-screen, .ios-two-screens, .ios-three-screens {

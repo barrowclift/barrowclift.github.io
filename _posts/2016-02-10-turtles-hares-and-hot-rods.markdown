@@ -11,7 +11,7 @@ image: "/images/assets/turtles-hares-and-hot-rods/math-turtle.jpg"
 ---
 
 <figure markdown="1">
-[![A cartoon of a turtle nervously trying to figure out a simple arithmetic problem at the school chalkboard]({{ site.baseurl }}/images/assets/turtles-hares-and-hot-rods/math-turtle.png){: .bound-responsive .no-shadow}]({{ site.baseurl }}/images/assets/turtles-hares-and-hot-rods/math-turtle.png "Nothing in this world gave me worse stage fright than having to do timed math problems in front of the class")
+![A cartoon of a turtle nervously trying to figure out a simple arithmetic problem at the school chalkboard]({{ site.baseurl }}/images/assets/turtles-hares-and-hot-rods/math-turtle.png "Nothing in this world gave me worse stage fright than having to do timed math problems in front of the class"){: .edge-to-edge .medium .no-shadow }
 </figure>
 
 "Alright class, we're going to play Turtle, Hare, and Hot Rod!"

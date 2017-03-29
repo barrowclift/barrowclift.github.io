@@ -177,7 +177,8 @@ p,
 blockquote,
 ol, ul, ol li, ul li,
 table,
-.highlight {
+.highlight,
+.update {
     margin-top: 0;
     margin-bottom: 1.3rem;
 }
@@ -299,9 +300,9 @@ time, figcaption, .weak, small, blockquote {
     color: #979797;
 }
 mark, code {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
 }
 
 /* NAVBAR --------------------------------------------------------------------------- */
@@ -511,9 +512,9 @@ hr.small {
 form {
     margin-top: 0;
     margin-bottom: 0;
+    display: inline-block;
 }
 form, input, button, textarea {
-    display: inline-block;
     width: 100%;
 }
 input, button, textarea {
@@ -557,11 +558,11 @@ textarea {
 }
 input, textarea, button {
     /* css 3 */
-    border-radius: 4px;
+    border-radius: 0.25rem;
     /* mozilla */
-    -moz-border-radius: 4px;
+    -moz-border-radius: 0.25rem;
     /* webkit */
-    -webkit-border-radius: 4px;
+    -webkit-border-radius: 0.25rem;
 }
 input:focus, textarea:focus {
     outline: 0;
@@ -685,6 +686,10 @@ mark.gray, mark.grey {
     background-color: #A4A4A7;
     border-color: #8E8E91;
 }
+mark.light-gray, mark.light-grey {
+    background-color: #EFF0F1;
+    border-color: rgba(0, 0, 0, .02);
+}
 mark.red {
     background-color: #FC6360;
     border-color: #FC4642;
@@ -702,6 +707,20 @@ mark.purple {
     border-color: #CB77DF;
 }
 
+div.update {
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: #FED558;
+    border: 1px solid #FECD38;
+    color: rgba(51, 51, 51, 0.9);
+}
+div.update h4 {
+    margin-top: 0em;
+}
+div.update p:last-child {
+    margin-bottom: 0;
+}
+
 /* IMAGES & VIDEO ------------------------------------------------------------------- */
 
 video {
@@ -711,17 +730,16 @@ video {
     width: 100%;
     height: auto;
 }
-
-
 img {
     max-width: 100%;
     max-height: 100%;
     width: auto\9;
 }
-article img {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+
+
+figure {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
 }
 figure p {
     text-align: center;
@@ -731,24 +749,6 @@ figure p {
 figure p:first-child {
     line-height: 0;
 }
-figure {
-    margin-top: 0;
-    margin-bottom: 1.3rem;
-}
-div.responsive {
-    margin-top: 0;
-    margin-bottom: 1.3rem;
-}
-.slice figure,
-.edge-to-edge figure,
-.inline figure,
-.strict-inline figure,
-.responsive figure,
-.bound-responsive figure {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-/* if there's a figure p a, the p should have line-height:0;*/
 figcaption {
     padding: 0 5%;
     margin-bottom: 0;
@@ -756,85 +756,15 @@ figcaption {
     vertical-align: bottom;
 }
 
-/****** ALL IMAGES TYPES FOR USE IN BLOG ******/
-/* Today's bootstrap-like project sites have edge-to-edge "sections" that have
-no max width. This functions almost exactly like edge-to-edge *except* without
-the max-width. */
-.slice,
-/* A true, edge-to-edge image. To be used for full-blown banners and scenic,
-image heavy adventure posts like the Sibs Trip. Should be used rarely and with
-extreme deliberation. Caps out eventually at a certain width limit. */
-.edge-to-edge,
-/* A slightly more reserved edge-to-edge responsive image. On small and medium
-devices it will always be edge-to-edge and remain edge-to-edge until the width
-reaches 1158px on large devices. This should also be used sparingly and great
-care should be taken when choosing this class (scrolling through massive
-images = bad user experience!)*/
-.responsive,
-/* Used for almost all post images. They are guarenteed to be edge-to-edge for
-small devices but have max-width bounds for both medium and large devices so
-that they "spill out" past the text width. This grants us the benefits of
-"edge-to-edge" images without sacrificing the user experinece by having to
-scroll through massive images.*/
-.bound-responsive,
-/* This behaves somewhat similarly to bound-responsive *but* on medium and large
-devices it never "spills" beyond the text-width. In this way, on small devices
-it's edge-to-edge, but on medium and large devices it's exactly in line with
-the text wrapped to the top and bottom. This should be used sparingly for
-images that are abnormally tall and not very wide (portrait photos mostly).*/
-.inline,
-/* The last "blog post" image size class. Like .inline, but instead of being
-edge-to-edge on mobile devices it continues to be bound by the width of the
-surrouding elecment, in this case the article.*/
-.strict-inline,
-/* For non-blog post banners (About page, Code project pages, etc.) that I
-personally think shouldn't be a full blown banner and work better as a "shy"
-banner that acts edge-to-edge in almost all cases except large devices where
-it switches back to a large, inline image with padding. Fo post banners, edge-
-to-edge and the appropriate banner padding class should be used.*/
-.shy-banner {
+
+/* On iOS devices, all edge-to-edge elements are fully edge-to-edge*/
+.edge-to-edge {
     display: inline-block;
     height: auto;
     width: 100vw;
     max-width: 1600px;
     max-height: none;
-}
-/* In extremely rare cases, we want the image to just always be half of the
-surrounding element's width.*/
-.inline-half-size {
-    display: inline-block;
-    height: auto;
-    width: 50%;
-}
-figure img {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-}
-.slice {
-    max-width: none;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    background-color: #F9F9F9;
-}
-.bound-responsive {
-    margin-left: -18vw;
-    margin-right: -18vw;
-}
-.responsive {
-    margin-left: -25vw;
-    margin-right: -25vw;
-}
-.inline {
-    margin-left: -15vw;
-    margin-right: -15vw;
-}
-.edge-to-edge,
-.slice,
-.responsive,
-.inline {
+
     margin-left: -35vw;
     margin-right: -35vw;
 
@@ -842,21 +772,41 @@ figure img {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
 }
-.strict-inline {
+.edge-to-edge figure {
+    display: inline-block;
+}
+.inline {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
 
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
 }
-.shy-banner {
-    margin-left: -35vw;
-    margin-right: -35vw;
+.half-inline {
+    display: inline-block;
+    height: auto;
+    width: 50%;
 }
 
 
+img.no-shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+img.shadow,
+figure img {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+}
+.apple-watch-screenshot {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
 .macos-screenshot {
     box-shadow: 0px 0px 1rem #acacac;
     -webkit-box-shadow: 0px 0px 1rem #acacac;
@@ -866,16 +816,6 @@ figure img {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-.no-shadow {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-}
-.apple-watch-screenshot {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
 /* The size of the iOS screenshot will change depending on how many should be
 shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
 there's a way to do so with the way the rest of the content is currently
@@ -883,9 +823,9 @@ flowed (my responsive stuff is basically a hack as is...) */
 .ios-one-screen,
 .ios-two-screens,
 .ios-three-screens {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
 }
 .ios-one-screen {
     max-width: 100%;
@@ -904,6 +844,7 @@ flowed (my responsive stuff is basically a hack as is...) */
 }
 
 
+/* For a one-off, inline sub header image. Will probably never be used again */
 h2 img {
     max-width: 32px;
     margin-left: 0.1em;
@@ -922,14 +863,6 @@ h2 img {
 }
 .stroke-color {
     stroke: #979797;
-}
-
-
-.show-when-dark {
-    display: none !important;
-}
-.show-when-light {
-    display: inline-block !important;
 }
 
 
@@ -1224,6 +1157,14 @@ input, textarea {
 }
 
 
+.show-when-dark {
+    display: none !important;
+}
+.show-when-light {
+    display: inline-block !important;
+}
+
+
 .banner-header-padding {
     margin-top: 0px;
     padding-top: 0px;
@@ -1396,48 +1337,68 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
     /* IMAGES & VIDEO ----------------------------- */
 
-    figure.spilled {
+    /* When on the home view we want all images AND code blocks to actually be
+    bound, inline objects to provide a less distracting view of the post for
+    speed reading and/or binge reading. This will still allow the code blocks
+    to be completely edge-to-edge in the dedicated post view.*/
+    .reserved-mode .edge-to-edge.large {
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        margin: 0;
+    }
+    .edge-to-edge.small {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+    }
+    .edge-to-edge.medium {
+        max-width: 800px;
+    }
+    .edge-to-edge.medium,
+    .edge-to-edge.large {
+        margin-left: -18vw;
+        margin-right: -18vw;
+        width: 100vw;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+
+    /* There are times we *don't* want the image itself to provide the top and bottom padding,
+    specifically, when the image also has a caption. If we retained the image padding, the caption
+    would be shoved far away, which we don't want. So, in cases like this, we provide the breathing
+    room to the parent element instead */
+    figure.breathing-room figcaption,
+    div.edge-to-edge figcaption {
+        margin-top: 1.3em;
+    }
+    figure.breathing-room {
         margin-top: 2.6rem; /* 1.3 base type bottom margin * 2 */
         margin-bottom: 2.6rem; /* 1.3 base type bottom margin * 2 */
     }
-    figure.spilled figcaption,
-    div.responsive figcaption {
-        margin-top: 1.3em;
-    }
-    div.responsive {
-        margin-top: 1.3rem;
-        margin-bottom: 2.6rem;
+    /* We don't want the image itself to have top and bottom padding when "breakthing room"
+    is in effect. This ensures that the image caption remains close to the image, while giving
+    breathing room to the whole group: both the image AND the caption. */
+    figure.breathing-room .edge-to-edge {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     figcaption {
         padding: 0;
         display: inline-block;
         max-width: 34rem;
     }
-    /* When on the home view we want all images AND code blocks to actually be
-    bound, inline objects to provide a less distracting view of the post for
-    speed reading and/or binge reading. This will still allow the code blocks
-    to be completely edge-to-edge in the dedicated post view.*/
-    .reserved-mode main article .edge-to-edge {
-        display: block;
-        max-width: 34rem;
-        width: 100%;
-        margin: 0;
+
+    div.edge-to-edge {
+        margin-top: 1.3rem;
+        margin-bottom: 2.6rem;
     }
-    figure img,
-    .reserved-mode main article .edge-to-edge,
-    .inline {
-        border-radius: 4px;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-    }
-    /* From here one out bound-responsive images will never be larger than the width
-       bounds of the enclosing text. */
-    .bound-responsive {
-        width: 100vw;
-    }
-    .reserved-mode main article .edge-to-edge,
-    .bound-responsive {
-        max-width: 42rem;
+    div.edge-to-edge figure {
+        margin-bottom: 0;
     }
     .ios-one-screen,
     .ios-two-screens,
@@ -1447,16 +1408,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .ios-two-screens,
     .ios-three-screens {
         margin: 0 2vw;
-    }
-    .inline,
-    .inline-half-size,
-    .strict-inline {
-        max-width: 34rem;
-    }
-    /* Hack to prevent strange "double scroll" behavior in Safari (only effected
-       Medium+ devices with no <main> bottom margin) */
-    .slice {
-        margin-bottom: 1px;
     }
 
     /* CODE --------------------------------------- */
@@ -1476,6 +1427,14 @@ Font size: 19px, ~Margin&Padding: 28.5px
     /* MISC --------------------------------------- */
 
 
+}
+@media (min-width: 801px) {
+    .edge-to-edge.medium,
+    .reserved-mode .edge-to-edge {
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+    }
 }
 
 /* 
@@ -1546,33 +1505,24 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
     /* IMAGES & VIDEO ------------------------------- */
 
-    figcaption {
-        max-width: 35rem;
-    }
-    /* Hard-coded adjustment of the bound-responsive image width to match the text's
-       width */
-    .bound-responsive {
+    .edge-to-edge.medium {
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
         max-width: 1000px;
-    }
-    .inline,
-    .inline-half-size,
-    .strict-inline {
-        max-width: 35rem;
-    }
-    .responsive {
-        max-width: 1303px;
         width: 100vw;
     }
-    .shy-banner {
-        max-width: 100%;
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 96px;
-
-        border-radius: 4px;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
+    .edge-to-edge.large {
+        margin-left: -35vw;
+        margin-right: -35vw;
+        width: 100vw;
+        max-width: 1303px;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+    figcaption {
+        max-width: 35rem;
     }
     /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
        but stay bound for home view. */
@@ -1597,11 +1547,11 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
     pre {
         /* css 3 */
-        border-radius: 4px;
+        border-radius: 0.25rem;
         /* mozilla */
-        -moz-border-radius: 4px;
+        -moz-border-radius: 0.25rem;
         /* webkit */
-        -webkit-border-radius: 4px;
+        -webkit-border-radius: 0.25rem;
     }
     pre code {
         margin: 0.65rem;
@@ -1623,5 +1573,26 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .anchor {
         float: left;
         margin-left: -1.35em;
+    }
+}
+@media (min-width: 1001px) {
+    .edge-to-edge.medium {
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+    }
+}
+@media (min-width: 1304px) {
+    .edge-to-edge.large {
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+    }
+}
+@media (min-width: 1601px) {
+    .edge-to-edge {
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
     }
 }
