@@ -1,8 +1,7 @@
 ---
 layout: default
 anchors: false
-hex-color: #007AFF
-home-menu-active: true
+writings-menu-active: true
 ---
 
 <style>
@@ -40,6 +39,7 @@ sup[id^=fnref] {
 	{% assign count=count | plus:1 %}
 {% endfor %}
 
+<!-- !TODO!, is the gray necessary here? -->
 <hr class="gray">
 
 <footer>
@@ -64,5 +64,5 @@ sup[id^=fnref] {
 		</h4>
 	</div>
 	
-	{% include actions-sheet.html %}
+	{% include blog-footer-buttons.html %}
 </footer>

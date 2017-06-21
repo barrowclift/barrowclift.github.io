@@ -6,6 +6,7 @@ categories:
   - Technology
   - iOS
   - watchOS
+timelocked: true
 excerpt: "With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!"
 image: "/images/assets/listing-the-little-things/share-image.jpg"
 ---

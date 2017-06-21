@@ -1,0 +1,125 @@
+article {
+	max-width: 35em;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 2.6em;
+}
+#parallax-foreground {
+	min-width: 90vw;
+	width: 90vw;
+	margin-top: 0;
+	top: -2.5vw;
+}
+menu {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
+}
+@media (min-width: 700px) {
+	.overflow {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		width: 100%;
+		height: 100%;
+	}
+	.perspective {
+		perspective: 1px;
+		perspective-origin: top left;
+	}
+	.preserve {
+		transform-style: preserve-3d;
+		z-index: 3;
+		transform-style: flat;
+	}
+	#parallax-background {
+		transform: scale(3.3333333333333335) translate3d(0px, 0px, -2.3333333333333335px);
+		transform-origin: top left;
+		display: block;
+
+		box-sizing: border-box;
+		min-width: unset;
+		width: 100%;
+		top: 0;
+
+		background-size: cover;
+		height: 100vh;
+		margin-bottom: -100vh;
+		background-position: center;
+		position: absolute;
+	}
+	#parallax-background figure,
+	#parallax-background video {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	#parallax-foreground {
+		transform: translateZ(0px);
+		box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
+		background-color: white;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		z-index: 1;
+		position: absolute;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		top: 56.25vw;
+		margin-top: 0 !important;
+	}
+	#parallax-foreground {
+		min-width: 90vw;
+		width: 90vw;
+	}
+	menu {
+		background-color: transparent !important;
+		-webkit-backdrop-filter: none !important;
+		backdrop-filter: none !important;
+		border: none !important;
+		z-index: 1;
+		position: fixed; /* Fallback for browsers that don't support sticky */
+		position: sticky;
+		top: 0;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		min-width: 100vw;
+	}
+	body {
+		transform: translateZ(0px);
+	}
+
+	menu ul a,
+	menu,
+	.hover:hover:not(.active) {
+		color: white;
+	}
+	#dark-mode-toggle .fill-color {
+		fill: white !important;
+	}
+	#dark-mode-toggle .stroke-color {
+		stroke: white !important;
+	}
+	#dark-mode-toggle:hover .fill-color {
+		fill: rgb(0, 122, 255) !important;
+	}
+	#dark-mode-toggle:hover .stroke-color {
+		stroke: rgb(0, 122, 255) !important;
+	}
+	.signature-color {
+		fill: white;
+	}
+	.active,
+	.hover:hover:not(.active),
+	#dark-mode-toggle:hover {
+		color: rgb(0, 122, 255);
+	}
+
+	@media (min-width: 700px) {
+		#parallax-foreground {
+			min-width: 100vw;
+			width: 100vw;
+		}
+	}
+}

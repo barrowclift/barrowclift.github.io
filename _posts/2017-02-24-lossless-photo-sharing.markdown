@@ -6,6 +6,7 @@ categories:
   - Technology
   - Services
   - Photos
+timelocked: true
 excerpt: "It can get confusing trying to figure out the best way to losslessly share photos with someone, but I'm here to help!"
 image: "/images/assets/lossless-photo-sharing/share-image.jpg"
 ---

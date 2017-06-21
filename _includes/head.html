@@ -11,53 +11,43 @@
 	<meta name="msapplication-TileColor" content="white" />
 	<meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/logo/mstile/mstile-144x144.png" />
 	<meta name="msapplication-config" content="{{ site.baseurl }}/images/logo/browserconfig.xml" />
-	{% if page.hex-color %}
-	<meta name="theme-color" content="{{ page.hex-color }}" />
-	{% else %}
 	<meta name="theme-color" content="white" />
-	{% endif %}
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Load dark mode first (if enabled) to minimize flash of white as much as possible -->
-	{% if jekyll.environment == "development" %}
-	<script>darkModeStylesheetPath = "/css/dark.css"</script>
-	{% else %}
-	<script>darkModeStylesheetPath = "/css/min/dark.min.css"</script>
-	{% endif %}
+	<!-- Add dark mode ID (if enabled) to minimize flash of white as much as possible -->
 	<script>
 		/* See simple-get-cookie.js */
 		function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0)return null;}else{b+=2;var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}}return decodeURI(dc.substring(b+p.length, e));}
 		/* See main.js */
-		if(c("dark-mode")){var i='dark-mode';var h=document.getElementsByTagName('head')[0];var l=document.createElement('link');l.id=i;l.rel='stylesheet';l.type='text/css';l.href=darkModeStylesheetPath;l.media='all';h.appendChild(l);}
+		if(c("dark-mode")){document.getElementsByTagName("html")[0].setAttribute("id", "dark");}
 	</script>
-
 	{% if jekyll.environment == "development" %}
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/fonts-linked.css" type="text/css" media="none" onload="this.media='all';" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print" />
 	{% else %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/main.min.css" type="text/css" />
-	{% endif %}
-	
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/merged-core.min.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/fonts-linked.min.css" type="text/css" media="none" onload="this.media='all';" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print.min.css" type="text/css" media="print" />
+	{% endif %}
 
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	{% if jekyll.environment == "development" %}
-	{% if page.anchors %}
-	<script async src="{{ site.baseurl }}/scripts/main.js" type="text/javascript"></script>
+	<script async src="{{ site.baseurl }}/scripts/core.js" type="text/javascript"></script>
 	{% else %}
-	<script async src="{{ site.baseurl }}/scripts/main-sans-anchors.js" type="text/javascript"></script>
+	<script async src="{{ site.baseurl }}/scripts/min/core.min.js" type="text/javascript"></script>
 	{% endif %}
-	{% else %}
-	{% if page.anchors %}
-	<script async src="{{ site.baseurl }}/scripts/min/main.min.js" type="text/javascript"></script>
-	{% else %}
-	<script async src="{{ site.baseurl }}/scripts/min/main-sans-anchors.min.js" type="text/javascript"></script>
-	{% endif %}
-	{% endif %}
-	
+	<!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
+	<script>
+		$(document).ready(function() {
+			anchorsEnabled = {{ page.anchors }};
+		});
+	</script>
 
 	<!--Facebook OpenGraph -->
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">

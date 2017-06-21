@@ -1,0 +1,42 @@
+<menu class="no-select">
+	<header>
+		<div id="logo" onclick="darkModeClicked();">
+			{% if page.error %}
+			{% include logo-error.html %}
+			{% else %}
+			{% include logo-happy.html %}
+			{% endif %}
+		</div>
+	</header>
+	<ul>
+		<a class="hover {%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image'" %}active{% endif %}" href="{{ "/" | prepend: site.baseurl }}"><li>Writings</li></a>
+		<a class="hover {%if page.projects-menu-active %}active{% endif %}" href="{{ "/projects/" | prepend: site.baseurl }}"><li>Projects</li></a>
+		<a class="hover {%if page.about-menu-active %}active{% endif %}" href="{{ "/about/" | prepend: site.baseurl }}"><li>About</li></a>
+	</ul>
+	<div class="hover hide-when-small" id="dark-mode-toggle" onclick="darkModeClicked();">
+		<input type="checkbox" name="dark-mode-checkbox" id="dark-mode-checkbox" value="dark-mode" onclick="darkModeToggled(this);" />
+		<svg id="dark-mode-icon" class="turn-on-light show-when-dark" viewBox="0 0 389 389" version="1.1" role="img" preserveAspectRatio="xMidYMin slice">
+			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<circle class="fill-color" cx="194.875" cy="194.875" r="75"></circle>
+				<g transform="translate(8.000000, 8.000000)" class="stroke-color" stroke-width="16" stroke-linecap="square">
+					<path d="M188,50.010203 L188,0.0102030194" class="stroke-color"></path>
+					<path d="M188,373 L188,323" class="stroke-color"></path>
+					<path d="M323,188 L373,188" class="stroke-color"></path>
+					<path d="M0,188 L50,188" transform="translate(25.000000, 188.000000) scale(-1, -1) translate(-25.000000, -188.000000) " class="stroke-color"></path>
+					<path d="M55,55 L90.3553391,90.3553391" class="stroke-color"></path>
+					<path d="M283,55 L318.355339,90.3553391" transform="translate(300.677670, 72.677670) scale(-1, 1) translate(-300.677670, -72.677670) " class="stroke-color"></path>
+					<path d="M283,283 L318.355339,318.355339" transform="translate(300.677670, 300.677670) scale(-1, -1) translate(-300.677670, -300.677670) " class="stroke-color"></path>
+					<path d="M55,283 L90.3553391,318.355339" transform="translate(72.677670, 300.677670) scale(1, -1) translate(-72.677670, -300.677670) " class="stroke-color"></path>
+				</g>
+			</g>
+		</svg>
+		<svg id="dark-mode-icon" class="turn-off-light show-when-light" viewBox="0 0 389 389" version="1.1">
+			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g class="fill-color">
+					<path d="M240.528062,70.3363704 C227.18224,65.7629888 212.865611,63.2807709 197.969229,63.2807709 C125.49885,63.2807709 66.75,122.029621 66.75,194.5 C66.75,266.970379 125.49885,325.719229 197.969229,325.719229 C256.330096,325.719229 305.792298,287.61951 322.840034,234.935868 C304.856568,254.447632 279.084155,266.670576 250.456921,266.670576 C196.104136,266.670576 152.042499,222.608939 152.042499,168.256154 C152.042499,117.254752 190.837992,75.314522 240.528071,70.3363736 Z" id="Combined-Shape"></path>
+				</g>
+			</g>
+		</svg>
+	</div>
+</menu>
+<div id="dynamic-margin-for-floating-menu"></div>

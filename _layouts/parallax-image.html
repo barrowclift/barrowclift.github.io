@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+	{% include head.html %}
+
+	<body>
+		{% include lazy-load-stylesheets.html %}
+
+		<div id="parallax-container" class="perspective overflow">
+			{% include menu.html %}
+			<div class="preserve">
+				<div id="parallax-background" class="parallax">
+					<svg onclick="upArrowClicked();" id="up-arrow" viewBox="0 0 565 565" version="1.1" role="img">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<path d="M242.609127,161.5 L18.96767,385.141457 L-0.477766446,404.586893 L38.4131065,443.477766 L57.858543,424.03233 L281.5,200.390873 L505.141457,424.03233 L524.586893,443.477766 L563.477766,404.586893 L544.03233,385.141457 L320.390873,161.5 L320.461176,161.429697 L281.570303,122.538824 L281.5,122.609127 L281.429697,122.538824 L242.538824,161.429697 L242.609127,161.5 Z"></path>
+						</g>
+					</svg>
+				</div>
+				<main id="parallax-foreground" class="parallax">
+					{% if page.wrap-article %}
+					<article>
+						{{ content }}
+					</article>
+					{% else %}
+					{{ content }}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+		<style>
+			#up-arrow {
+				top: 87.5vh;
+				width: 64px;
+				left: 50%;
+				margin-left: -32px;
+				position: absolute;
+				cursor: pointer;
+			}
+			#up-arrow path {
+				fill: rgba(255, 255, 255, 0.75);
+				-webkit-transition: fill 0.25s ease;
+				-moz-transition: fill 0.25s ease;
+				-o-transition: fill 0.25s ease;
+				transition: fill 0.25s ease;
+			}
+			#up-arrow:hover path {
+				fill: rgba(0, 122, 255, 0.75);
+			}
+			#parallax-background {
+				background-image: url("/images/{{ page.image }}");
+			}
+		</style>
+
+		{% include footer.html %}
+	</body>
+</html>
