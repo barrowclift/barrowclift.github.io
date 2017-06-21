@@ -12,8 +12,8 @@ $.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symb
 !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=/\+/g,h=a.cookie=function(e,g,i){if(void 0!==g&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setTime(+k+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e&&e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});
 
 /* We can have nice translucency effects in Safari, enable them if using Safari */
-var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
+var is_safari = navigator.userAgent.indexOf("Safari") > -1 || navigator.userAgent.indexOf("AppleWebKit") > -1;
 var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 if ((is_chrome)&&(is_safari)) {is_safari=false;}
 if ((is_chrome)&&(is_opera)) {is_chrome=false;}
@@ -22,7 +22,7 @@ if (is_safari) {
 }
 
 function darkModeToggled(checkbox) {
-	var cssId = 'dark-mode';
+	var cssId = "dark-mode";
 	$("menu").css("background-color", "");
 	if (checkbox.checked) {
 		$.cookie("dark-mode", "on");
