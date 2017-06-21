@@ -1,5 +1,9 @@
 <head>
-	<title>{{site.title}}{% if page.title %}: {{ page.title }}{% endif %}</title>
+	{% if page.title %}
+		<title>{{page.title}}</title>
+	{% else %}
+		<title>{{site.title}}</title>
+	{% endif %}
 
 	{% feed_meta %}
 
