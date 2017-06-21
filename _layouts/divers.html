@@ -24,10 +24,12 @@
 			position: relative;
 			display: inline-block;
 			width: 100%;
+			display: none;
 		}
 		</style>
 		<div id="wrap">
 			<div id="content" class="center {% if page.viewing-single-page != true %}feed-view{% endif %}">
+				{% include menu.html %}
 				<main>
 					{{ content }}
 				</main>
