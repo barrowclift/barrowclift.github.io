@@ -41,13 +41,19 @@
 
 		<style>
 			#up-arrow {
-				top: 105vh;
+				top: 95vh;
 				width: 64px;
 				left: 50%;
 				margin-left: -32px;
 				position: absolute;
 				cursor: pointer;
 			}
+			@media (min-width: 700px) {
+				#up-arrow {
+					top: 105vh;
+				}
+			}
+
 			#up-arrow path {
 				fill: rgba(255, 255, 255, 0.75);
 				-webkit-transition: fill 0.25s ease;
