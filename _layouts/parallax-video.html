@@ -17,11 +17,11 @@
 	<body>
 		{% include lazy-load-stylesheets.html %}
 
-		<div id="parallax-container" class="perspective overflow">
-			{% include menu.html %}
-			<div class="preserve">
-				<div id="parallax-background" class="parallax">
-					<figure class="banner-top-margin">
+		<div id="parallax">
+			<div class="container">
+				{% include menu.html %}
+				<div id="parallax-background" class="layer">
+					<figure>
 						<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="/images/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}{{ page.banner-alt }}{% else %}Post banner{% endif %}">
 							<source src="/videos/{{ page.banner-video }}.mp4" type="video/mp4">
 							<source src="/videos/{{ page.banner-video }}.webm" type="video/webm">
@@ -30,7 +30,7 @@
 						</video>
 					</figure>
 				</div>
-				<main id="parallax-foreground" class="parallax">
+				<main id="parallax-foreground" class="layer">
 					{% if page.wrap-article %}
 					<article>
 						{{ content }}

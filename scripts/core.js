@@ -13,12 +13,15 @@ $.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symb
 
 /* We can have nice translucency effects in Safari, enable them if using Safari */
 var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
-var is_safari = navigator.userAgent.indexOf("Safari") > -1 || navigator.userAgent.indexOf("AppleWebKit") > -1;
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+var is_ios_safari = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
 var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 if ((is_chrome)&&(is_safari)) {is_safari=false;}
 if ((is_chrome)&&(is_opera)) {is_chrome=false;}
-if (is_safari) {
+if (is_safari || is_ios_safari) {
 	document.getElementsByTagName("html")[0].setAttribute("class", "safari");
+} else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
+	document.getElementsByTagName("html")[0].setAttribute("class", "firefox");
 }
 
 function darkModeToggled(checkbox) {
@@ -42,7 +45,7 @@ function darkModeClicked() { /* Allow clicking the area AROUND the dark mode lab
    actionable indicator that there's more content. Mostly needed for people on
    macOS or iOS with hidden scrollbars enabled */   
 function upArrowClicked() {
-	$('#parallax-container').animate({scrollTop: 300}, 250);
+	$('#parallax').animate({scrollTop: 300}, 250);
 }
 
 /* When ready... */
@@ -66,14 +69,12 @@ $(document).ready(function() {
 	}
 
 	/* Pass scrolling events when the mouse is hovering over the menu bar on parallax views */
-	var parallaxContainer = document.getElementById("parallax-container");
-	if (null !== parallaxContainer) {
-		document.getElementsByTagName("menu")[0].addEventListener('mousewheel', function (e) {
-			parallaxContainer.scrollTop = parallaxContainer.scrollTop+e.deltaY;
-		});	
-	}
+	var parallax = document.getElementById("parallax");
+	document.getElementsByTagName("menu")[0].addEventListener('mousewheel', function (e) {
+		parallax.scrollTop = parallax.scrollTop+e.deltaY;
+	});
 
-	/* Dynamically floating menu bar */
+	/* Dynamic scrolling menu on mobile */
 	$(function() {
 		var nav = $('menu');
 		var content = $('#dynamic-margin-for-floating-menu')
