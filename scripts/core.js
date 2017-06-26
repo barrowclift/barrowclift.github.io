@@ -70,21 +70,23 @@ $(document).ready(function() {
 
 	/* Pass scrolling events when the mouse is hovering over the menu bar on parallax views */
 	var parallax = document.getElementById("parallax");
-	document.getElementsByTagName("menu")[0].addEventListener('mousewheel', function (e) {
-		parallax.scrollTop = parallax.scrollTop+e.deltaY;
-	});
+	if (typeof(parallax) != 'undefined' && parallax != null) {
+		document.getElementsByTagName("menu")[0].addEventListener('mousewheel', function (e) {
+			parallax.scrollTop = parallax.scrollTop+e.deltaY;
+		});
+	}
 
 	/* Dynamic scrolling menu on mobile */
 	$(function() {
 		var nav = $('menu');
-		var content = $('#dynamic-margin-for-floating-menu')
+		var content = $('#dynamic-menu-height')
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
 				nav.addClass("fixed-menu");
-				content.addClass("dynamic-menu-top-margin");
+				content.addClass("collapsed");
 			} else {
 				nav.removeClass("fixed-menu");
-				content.removeClass("dynamic-menu-top-margin");
+				content.removeClass("collapsed");
 			}
 		});
 	});

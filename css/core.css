@@ -145,7 +145,7 @@ small {
 	line-height: 1.45em;
 }
 menu {
-	font-size: 1.3em;
+	font-size: 1.3rem;
 }
 /*
 Following the 1.2 Minor Third type scale 
@@ -414,7 +414,10 @@ menu {
 	left: 0;
 	top: -5.575em;
 }
-.dynamic-menu-top-margin {
+#dynamic-menu-height {
+	height: 0;
+}
+#dynamic-menu-height.collapsed {
 	height: 10.125em;
 }
 
@@ -1396,8 +1399,8 @@ input, textarea {
 
 
 	/* --- MENU --- */
-	.dynamic-menu-top-margin {
-		height: 0;
+	#dynamic-menu-height {
+		height: 0 !important;
 	}
 	.fixed-menu {
 		position: relative;
@@ -1439,6 +1442,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	}
 	menu {
 		font-weight: 500;
+		font-size: 1rem;
 	}
 
 
@@ -1466,18 +1470,18 @@ Font size: 19px, ~Margin&Padding: 28.5px
 			padding-top: 0.45em;
 		}
 		menu ul {
-			margin-left: 7em;
+			margin-left: 9rem;
 			text-align: left;
 		}
 			menu ul li {
 				min-width: 8rem;
-				padding-bottom: 0.25em;
-				padding-top: 0.8em;
 				line-height: 1em;
+				padding-top: 1.25rem;
+				padding-bottom: 0;
 			}
 			menu ul a {
-				padding-top: 0.75em;
-				padding-bottom: 0.325em;
+				padding-top: 1.1rem;
+				padding-bottom: .36rem;
 				margin-right: -0.125rem;
 				margin-left: -0.125rem;
 			}
@@ -1508,15 +1512,12 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		width: 100%;
 		left: 100%;
 
-		margin-top: -2.18em;
-		margin-left: -2.375em;
-		margin-right: -0.25em;
-		margin-bottom: 0;
-
-		padding-top: .9em;
-		padding-bottom: .375em;
-		padding-left: 1rem;
-		padding-right: 0.25rem;
+		top: 0;
+		margin-left: -2.75rem;
+		margin-top: 0;
+		padding-left: 0.9rem;
+		padding-bottom: 0.1375rem;
+		padding-top: 1.2rem;
 	}
 		#dark-mode-icon {
 			width: 1em;
@@ -1711,8 +1712,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	.hide-when-small {
 		display: initial !important;
 	}
-	.dynamic-menu-top-margin {
-		height: 0;
+	#dynamic-menu-height {
+		height: 0 !important;
 	}
 }
 @media (min-width: 801px) {
@@ -1760,28 +1761,31 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
 	/* --- MENU --- */
+	menu {
+		/* Fix for Chrome and Firefox hover boxes not overlapping the bottom border (the bottom border was on the outside, while Safari had it inside) */
+		box-sizing: border-box;
+		height: 2.675rem;
+	}
 	menu header {
 		padding-left: 0.75em;
 		padding-top: 0.5em;
 	}
 	menu ul li {
-		padding-top: 0.825em;
-		padding-bottom: 0.475em;
+		padding-top: 1.15rem;
 	}
 	menu ul a {
-		padding-top: 1em;
-		padding-bottom: 0.4em;
+		padding-top: 1.15rem;
+		padding-bottom: .425rem;
 	}
 
 
 	/* --- ACCESSIBILITY TOGGLES --- */
 	#dark-mode-toggle {
-		margin-top: -2.3em;
-		margin-left: -2.75em;
-
-		padding-top: 0.875em;
-		padding-bottom: 0.25em;
-		padding-left: 0.9em;
+		margin-left: -2.75rem;
+		margin-top: 0;
+		padding-left: 0.9rem;
+		padding-bottom: 0.1375rem;
+		padding-top: 1.1rem;
 	}	
 	
 
