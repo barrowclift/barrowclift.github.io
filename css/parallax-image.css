@@ -78,9 +78,6 @@ menu {
 	-moz-box-shadow: none;
 	min-width: 100vw;
 }
-#dynamic-menu-height {
-	height: 0 !important;
-}
 body {
 	transform: translateZ(0px);
 }
