@@ -81,12 +81,12 @@ $(document).ready(function() {
 		var nav = $('menu');
 		var content = $('#dynamic-menu-height')
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				nav.addClass("fixed-menu");
-				content.addClass("collapsed");
+			if ($(this).scrollTop() <= 0) {
+				nav.css({ top: 0 });
+			} else if ($(this).scrollTop() <= 101) {
+				nav.css({ top: (-1)*$(this).scrollTop() });
 			} else {
-				nav.removeClass("fixed-menu");
-				content.removeClass("collapsed");
+				nav.css({ top: -101.465 });
 			}
 		});
 	});

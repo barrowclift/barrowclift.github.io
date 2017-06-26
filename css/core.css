@@ -366,7 +366,7 @@ menu {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
 	
 	text-align: left;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	z-index: 10000;
 	text-align: left;
@@ -409,15 +409,7 @@ menu {
 		width: 100%;
 		text-align: center;
 	}
-.fixed-menu {
-	position: fixed;
-	left: 0;
-	top: -5.575em;
-}
 #dynamic-menu-height {
-	height: 0;
-}
-#dynamic-menu-height.collapsed {
 	height: 10.125em;
 }
 
@@ -1402,11 +1394,6 @@ input, textarea {
 	#dynamic-menu-height {
 		height: 0 !important;
 	}
-	.fixed-menu {
-		position: relative;
-		left: initial;
-		top: initial;
-	}
 }
 
 /* 
@@ -1443,6 +1430,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	menu {
 		font-weight: 500;
 		font-size: 1rem;
+		top: 0 !important;
 	}
 
 
