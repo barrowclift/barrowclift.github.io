@@ -1328,7 +1328,7 @@ input, textarea {
 /* Resizing / Transformations */
 .card,
 .project {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .show-when-hovered,
