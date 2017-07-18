@@ -36,7 +36,9 @@ Small devices (iPhones)
 Font size: 14px, ~Margin&Padding: 20px
 */
 
+
 /* CONTAINER ------------------------------------------------------------------------ */
+
 
 html {
 	background-color: white;
@@ -108,7 +110,6 @@ code {
 }
 
 
-
 /* ----- KERNING ----- */
 input,
 textarea {
@@ -166,7 +167,7 @@ h4, .admonition-title {
 h5 {
 	font-size: 1em;
 }
-h6 {
+h6, .anchor {
 	font-size: 0.833em;
 }
 h1, h2, h3, h4, h5, h6, time,
@@ -1259,7 +1260,6 @@ sup[id^=fnref] {
 	opacity: 0;
 	float: none;
 	margin-left: 0em;
-	font-size: 1em;
 }
 /* When hovering the header text or the anchor location itself, show anchor */
 .anchored:hover .anchor,

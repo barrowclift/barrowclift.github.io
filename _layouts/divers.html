@@ -21,14 +21,27 @@
 		#home-link {
 			font-weight: bold;
 			text-align: left;
-			position: relative;
-			display: inline-block;
-			width: 100%;
-			display: none;
+			display: block;
+		}
+		#home-link {
+			color: #007AFF;
+		}
+		#home-link:hover {
+			color: #0063CE !important;
 		}
 		@media (min-width: 700px) {
 			.link-button-group li {
 				width: 40%;
+			}
+		}
+		@media (min-width: 790px) {
+			.link-button-group li {
+				width: 40%;
+			}
+			#home-link {
+				margin-left: -1.3375em;
+				position: relative;
+				float: left !important;
 			}
 		}
 		</style>
