@@ -1277,21 +1277,21 @@ html, /* For dark mode transition */
 .link-button, /* For hovering link buttons, like those on the About page */
 menu,
 input, textarea { 
-	transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease-in-out;
 }
 menu ul a {
-	transition: background-color 0.2s ease, color 0.2s ease;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 /* Transitioning background */
 hr {
-	transition: background 0.2s ease;
+	transition: background 0.2s ease-in-out;
 }
 
 /* Transitioning shadows */
 .gallery-image, #gallery video, /* For hovering special "cards" like on project pages (TODO refactor to generic .cards) */
 .project { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
-	transition: box-shadow 0.2s ease;
+	transition: box-shadow 0.2s ease-in-out;
 }
 
 /* Transitioning colors */
@@ -1301,39 +1301,39 @@ h1 a,
 #social-buttons a,
 main a,
 menu a {
-	transition: color 0.2s ease;
+	transition: color 0.2s ease-in-out;
 }
 
 /* SVG Stroke */
 .stroke-transparent,
 .stroke-color {
-	transition: stroke 0.2s ease;
+	transition: stroke 0.2s ease-in-out;
 }
 /* SVG Fill */
 .fill-transparent,
 .fill-color {
-	transition: fill 0.2s ease;
+	transition: fill 0.2s ease-in-out;
 }
 
 /* Everything */
 .anchor {
-	transition: all 0.2s ease;
+	transition: all 0.2s ease-in-out;
 }
 
 /* Border */
 input, textarea {
-	transition: border 0.1s ease;
+	transition: border 0.1s ease-in-out;
 }
 
 /* Resizing / Transformations */
 .card,
 .project {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
 
 .show-when-hovered,
 .hide-when-hovered {
-	transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease-in-out;
 }
 
 
