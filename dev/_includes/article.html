@@ -1,0 +1,37 @@
+<article>
+	{% include article-header.html %}
+
+	{% if page.timelocked %}
+		{% comment %} convert our dates to Number of seconds since 1970-01-01 00:00:00 UTC {% endcomment %}
+		{% if page.revision-date %}
+			{% assign dateStart = page.revision-date | date: '%s' %}
+		{% else %}
+			{% assign dateStart = page.date | date: '%s' %}
+		{% endif %}
+		{% assign nowTimestamp = 'now' | date: '%s' %}
+
+		{% comment %} difference in seconds {% endcomment %}
+		{% assign diffSeconds = nowTimestamp | minus: dateStart %}
+
+		{% comment %} difference in days {% endcomment %}
+		{% assign daysSince = diffSeconds | divided_by: 3600 | divided_by: 24 %}
+		{% if daysSince >= 365 %}
+		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
+		<div class="admonition warning">
+			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since Last Revision</p>
+			<p>Technology moves fast! Article details are now out of date.</p>
+		</div>
+		{% elsif daysSince > 180 %}
+		<div class="admonition update">
+			<p class="admonition-title">{{ daysSince }} Days Since Last Revision</p>
+			<p>Technology moves fast! Specific details likely to be out of date.</p>
+		</div>
+		{% endif %}
+	{% endif %}
+
+	{{ content }}
+
+	<footer>
+		{% include blog-footer-buttons.html %}
+	</footer>
+</article>

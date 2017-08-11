@@ -1,0 +1,71 @@
+.active,
+.hover:hover:not(.active),
+main a,
+main a:link,
+main a:visited,
+.anchor,
+#blog-footer-buttons a,
+#social-buttons a {
+	color: #FFCC00;
+}
+.anchor:hover,
+main a:hover,
+#blog-footer-buttons a:hover,
+#social-buttons a:hover {
+	color: #DBAF00;
+}
+
+h1 a:hover {
+	color: #FFCC00 !important;
+}
+
+#dark-mode-toggle:hover .fill-color,
+a .fill-color {
+	fill: #FFCC00;
+}
+#dark-mode-toggle:hover .stroke-color {
+	stroke: #FFCC00;
+}
+
+button,
+.link-button {
+	background-color: #FFCC00;
+}
+button:hover,
+.link-button:hover {
+	background-color: #DBAF00;
+}
+input:focus,
+textarea:focus {
+	border-color: #FFCC00;
+}
+a:hover .fill-color {
+	fill: #DBAF00 !important;
+}
+
+#dark .hover:hover:not(.active),
+#dark #dark-mode-toggle:hover {
+	background-color: unset;
+	color: #FFCC00;
+}
+#dark #dark-mode-toggle:hover .fill-color,
+a .fill-color {
+	fill: #FFCC00 !important;
+}
+#dark #dark-mode-toggle:hover .stroke-color {
+	stroke: #FFCC00 !important;
+}
+#dark .active {
+	background-color: unset;
+	color: #FFCC00;
+}
+
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
+	background: #FFCC00;
+	color: white;
+}
+::-moz-selection { /* Firefox */
+	background: #FFCC00;
+	color: white;
+}

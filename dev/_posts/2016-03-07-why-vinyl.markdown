@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "Why Vinyl?"
+date:   2016-03-07 19:45:00
+categories:
+  - Analog
+  - Music
+  - Streaming
+  - Technology
+excerpt: "At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format that's been long considered dead in the public consciousness since the optical CD was introduced over thirty years ago. And I love it to bits."
+image: "/images/assets/why-vinyl/divers-photos.jpg"
+---
+
+At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format long thought dead by the general public since the CD was introduced over thirty years ago. Not to mention, for today's youth that grow up with constant access to the entirety of music history at the tap of a screen the notion of having physical objects dedicated to predetermined static content must seem barbaric.
+
+<a id="resume-from-break"></a>
+
+Telling friends and colleges about the gift often elicits one of two responses: a lighthearted jab about my hipster status or a genuinely curious "why?". While there's nothing I could say at this point to dispel remarks of the former's variety (owning a record player certainly isn't helping my case), I can certainly address the "why". But to do so I must first explain what happened to make me even consider something so peculiar.
+
+<!--break-->
+
+I Used to Write
+---------------
+
+I was about halfway through my college career and knew just enough computer science principles to be dangerous. I felt for the first time completely in control on my digital life and was eager to digitize every conceivable aspect of the physical world to feed it. Everything from past time pleasures like movies, books, and music to calendars and study materials were digitalized. Even communication with far away loved ones transitioned onto electronic paths; nothing was safe from the runaway digitalization train of progress!
+
+It was a particularly slow day in one of my free elective classes that set the wheels in motion to reverse this sad trend. By sheer whim, recent inspiration from Arcade Fire's ["We Used to Wait"](https://www.youtube.com/watch?v=kJ7osdJ4H_8), and just a dash of boredom I decided to do something off the wall, inconsequential, and most important of all distracting so I could ignore class: It was a challenge to recite a poem from memory, word for word, neatly on paper. Up to that point the little writing I did was in print, but I wanted this to be special so I decided to use cursive instead. I made short work of memorizing the poem, but upon my pen tip meeting the paper it dawned on me; I had forgotten how to write cursive.
+
+Sure, I could scribble my signature out just fine but the lower case cursive characters not used in my name as well as the majority of the capital letter cursive characters were lost to me. That can't be right, surely I know how to do it. Let's try... no, that's definitely not it. How about&#8212;no, that's not right either. Instead of completing the quick, idle time-waster meant to soak up five minutes of my Philosophy class I was caught in a class-long struggle to access an ability that was now clearly lost after over eight years of cold neglect.
+
+This proved to be an epiphany for me in retrospect, the moment I awoke to my indifferent slaughter of all tangible, physical good I possessed to further advance my digital desires. My modest library of treasured works from my youth was either given away or abandoned at home, the works now compressed down to sterile, white-room derivatives on my computer where I could no longer experience the smell of old paper, the tactile feel of leafing through pages, or the soothing spin of an audio disk. Gone was my ability to pick up a tool and gracefully etch out my heart onto paper with such character that only cursive could allow. In its place was blazing speed with standardized keyboard input delivering uniform text prioritizing raw efficiency over the human spirit.
+
+I could relearn cursive, but that wouldn't fix problem at its source. Something at a deeper level had to be done.
+
+Restoring Balance
+-----------------
+
+<figure markdown="1">
+![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.png){: .edge-to-edge .medium .no-shadow }
+</figure>
+
+As you'd guess, simply throwing away all my digitization progress would grossly overcorrect the problem and leave me in a similarly deficient state. The optimal solution was finding *balance* again by determining whether a given interaction or object was better served through physical or digital means given the context of the situation.
+
+In my day to day life, I now apply these rules when making my choices:
+
+* When opting for physical artifacts, buy the nicest implementation you possible can within reason. The whole point of supplementing a digital lifestyle with physical goods is to allow you to once again experience sensations that digital forms can't deliver. After all, digital goods trump physical ones in almost every metric other than the senses touch, smell, etc., so if you're buying physical goods that don't deliver on those sensations because they feel cheap then you're wasting your time and money. Buying mechanical pencils? Buy the best ones like the [GraphGear 1000](http://www.amazon.com/Pentel-Automatic-Drafting-Brushed-PG1015A/dp/B000GAU2RU) or the [Uni Kuru Toga](http://www.amazon.com/Uni-Kurutoga-Mechanical-Standard-M54501P-33/dp/B0021G9HZU/ref=sr_1_4?s=office-products&ie=UTF8&qid=1457321062&sr=1-4&keywords=uni+kuru+toga+0.5)[^pencils], not dollar store garbage. Buying pens? Buy the best ones like [Micron](http://www.amazon.com/Sakura-30062-6-Piece-Pigma-Micron/dp/B0008G8G8Y/ref=sr_1_1?s=office-products&ie=UTF8&qid=1457321128&sr=1-1&keywords=Micron) or the [uni-ball Jetstream](http://www.amazon.com/uni-ball-Jetstream-Retractable-Colored-70879/dp/B002S5382C/ref=sr_1_1?s=office-products&ie=UTF8&qid=1457321150&sr=1-1&keywords=uni-ball+jetstream)[^pens], not those dreadful, gummy-ink Bic ballpoints. Buying notebooks? Buy the best ones like [Field Notes](http://fieldnotesbrand.com) or [Baron Fig](http://www.baronfig.com). Buying physical books? Always go hardback. Buying music on physical mediums? Go with the medium that best enhances the ritual of sitting down to listen to music and has the most supplementary "goodies" to compliment your listen's atmosphere (in almost all cases this is vinyl). Compared to digital expenses, these purchases (baring vinyl) are trivial and all of them are well worth the investment.
+* When communicating with loved ones, is speed the most important factor for the current situation? Or is it expressing love or appreciation? If speed, always digital. When speed isn't important (birthday cards, Valentine's Day, etc.) go for written "snail mail" or at the very least a phone call. They'll appreciate the effort since most others will resort to an unceremonious "Happy Birthday, ENTER_NAME_HERE!" on Facebook and be done with it.
+* Continue to consume entertainment through digital channels like Netflix, Spotify, Kindle, etc. as you would otherwise, but for works you adore get physical copies as well. These are special to you, therefore they deserve to be elevated above the rest and have a physical manifestation for you to enjoy and share with others in the comfort of your home. This inherently creates a ritual around revisiting loved works that's calmingly separate from the constant urgency found in digital social life and work that can give your mind a much needed time and place to rest.
+
+I'm not the first nor the only person in the technology sector bringing analog back into their lives. [Marco Arment](https://marco.org/about) (the original developer of Tumblr) has [fallen in love with analog watches](https://marco.org/2016/02/05/watch) after initially starting with and abandoning the Apple Watch[^marco]. I think this excerpt from his post succinctly captures our thoughts best: "A big part of that joy, for me, is that this *isn't* like anything else in my life, and the difference is refreshing".
+
+So, Why Vinyl Then?
+-------------------
+
+Now that my reasoning for even having physical artifacts at all is established we can finally discuss why I prefer vinyl over CD or streaming services (when given the chance and a forgiving budget):
+
+* __Community__: This is one I didn't anticipate but has nonetheless risen to be among one of the top perks. Having to actually go somewhere to purchase records may initially seem irksome but becomes a surprisingly pleasant experience when you have a supportive and thriving community of like-minded individuals there to socialize with. Similar to comic book stores, half the fun is perusing the constantly-in-flux "used" section and swapping recommendations with other patrons to expand our libraries and taste. Even if you have no desire to get a record player I encourage you to swing into your local record store to see for yourself what it's like[^long-in-the-tooth].
+* __Album Art__: As someone who meticulously obsesses over finding the highest resolution album artwork available for his digital collection having such a large canvas to showcase album artwork was a primary draw from the very start. I spent my childhood staring at [images the size of postage stamps on Game Boy screens](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Game-Boy-Pocket-Black.jpg/800px-Game-Boy-Pocket-Black.jpg), I'm *tired* of low res, rubbish image files (it's 2016, selling digital music with scrawny 500x500 artwork images should be banned). Even when I manage to find high quality artwork and maximize the player window to fit my screen the details in amazing album covers like [Fleet Foxes](http://fleetfoxes.com/images/album_fleet_foxes.jpg) and [Lonerism](https://consequenceofsound.files.wordpress.com/2012/07/tame-impala-lonerism.jpeg) are still lost. With a massive 12"x12" size large enough to be mistaken for a respectable wall decoration, however, vinyl proudly displays the full-sized album artwork, details and all.
+* __Goodie Grab Bag__: As the phrase "grab bag" implies, you never know quite what you're going to get with a record purchase. Sometimes you just get the sleeve and the album, while other times you get full color lyric booklets, posters, supplementary album photos, or lots of other things. Remember when you were a kid and you treasured the times where you got surprises in the cereal box? This is the music equivalent.
+
+<figure markdown="1">
+![The Decemberists’s "Picaresque" lyric book, showing the page for the picture and lyrics of "The Mariner's Revenge Song"]({{ site.baseurl }}/images/assets/why-vinyl/picaresque-lyric-book.jpg){: .edge-to-edge .medium }
+</figure>
+
+<figure markdown="1">
+![Joanna Newsom's "Divers" alongside all it's included, supplementary lyric pictures]({{ site.baseurl }}/images/assets/why-vinyl/divers-photos.jpg){: .edge-to-edge .medium }
+</figure>
+
+* __Maintenance__: Yes, you read that right, I'm counting maintenance as a perk. When I say "maintenance" I'm referring to how noticeably difficult it is to idly play records without paying attention to the music. With streaming services, it's easy to listen to an endless sea of songs on shuffle all day only to realize afterwards you never actually paid attention to any of it. By comparison, vinyl's need for someone to physically move the album along acts as a built-in system keeping the listener engaged and focused where their attention should be. When I sit down to listen to my favorite records I can use having to flip to the other side or swap to the second disk as an excuse to *calm down*, put my phone and computer aside for a while, and unplug. While you can absolutely achieve this same effect with streaming services (assuming you have enough will power) I personally find it very easy when listening through this medium to slip into "not paying attention" mode and begin working on the endless list of things I convince myself must be worked on this very minute.
+
+To reiterate, this doesn't mean I "hate" digital things. I still love being able to listen to any music I want any time I want and would never want to give that up. That's not to say though that it's my preferred or only choice in all scenarios. It's all part of my overarching effort to restore and maintain balance between my physical and digital life. And, inline with this effort, I regained my cursive ability after a few days of practice and did indeed finish reciting Wordsworth's "My Heart Leaps Up" from memory. All things are better in moderation, in balance with each other, "bound each to each by natural piety". ⌘
+
+<figure markdown="1">
+![Wordsworth's "My Heart Leaps Up" written in cursive on paper]({{ site.baseurl }}/images/assets/why-vinyl/my-heart-leaps-up.jpg){: .inline .no-shadow }
+</figure>
+
+--------------
+
+[^pens]: Want to become a collector a quality pens but don't know where to start? Try [The Pen Addict](http://www.penaddict.com) and [The Wirecutter's "Best Pen" Showdown](http://thewirecutter.com/reviews/the-best-pen/).
+[^pencils]: Want to become a collector of quality mechanical pencils but don't know where to start? Try [The Wirecutter's "Best Mechanical Pencils" Showdown](http://thewirecutter.com/reviews/best-mechanical-pencils/) where they compare and contrast many different kinds of mechanicals to fit everyone's needs.
+[^marco]: In typical Marco fashion after a previous blog post he wrote in which he declared ["dumbwatches" doomed because of the Apple Watch](https://marco.org/2015/03/20/dumbwatch-future).
+[^long-in-the-tooth]: For those of you in Philly I highly recommend [Long in the Tooth](). The management are an incredibly nice couple and were happy to walk me through some basic vinyl care questions I had. While you certainly can order albums online, don't miss out on an opportunity to support your local businesses.

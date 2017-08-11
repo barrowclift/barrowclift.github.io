@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+	{% include head.html %}
+
+	<body>
+		{% include lazy-load-stylesheets.html %}
+		
+		<style>
+		#home-link {
+			font-weight: bold;
+			text-align: left;
+			display: block;
+		}
+		#home-link,
+		#dark #home-link {
+			color: #007AFF;
+		}
+		#home-link:hover,
+		#dark #home-link:hover{
+			color: #0063CE !important;
+		}
+		@media (min-width: 700px) {
+			.link-button-group li {
+				width: 40%;
+			}
+		}
+		@media (min-width: 790px) {
+			.link-button-group li {
+				width: 40%;
+			}
+			#home-link {
+				margin-left: -1.3375em;
+				position: relative;
+				float: left !important;
+			}
+		}
+		</style>
+		<div id="wrap">
+			<div id="content" class="center {% if page.viewing-single-page != true %}feed-view{% endif %}">
+				{% include menu.html %}
+				<main>
+					{{ content }}
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
