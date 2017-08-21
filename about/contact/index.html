@@ -11,21 +11,28 @@ about-menu-active: true
 button {
     text-align: center;
 }
-#social-buttons svg {
-    position: relative;
-    display: inline-block;
-    width: 10vw;
-    height: 10vw;
-    padding: 0 1.3rem;
-    margin: 0;
-    max-width: 42px;
-    max-height: 42px;
-}
 #social-buttons {
-    margin-top: 0;
+    width: 100%;
     padding-left: 0;
     margin-left: 0;
     text-align: center;
+}
+#social-buttons svg {
+    position: relative;
+    display: inline-block;
+    width: 8vw;
+    height: 8vw;
+    max-width: 42px;
+    max-height: 42px;
+    vertical-align: middle;
+}
+#social-buttons .link-button {
+    width: 43.375vw;
+    min-width: 9.9em;
+    max-width:16.125em;
+}
+span:nth-child(2n) .link-button {
+    margin-left: 0.5rem;
 }
 /* Medium devices (iPads) */
 @media (min-width: 700px) {
@@ -37,24 +44,39 @@ button {
         padding-right: 0.25rem;
     }
     #social-buttons svg {
-        width: 14vw;
-        height: 14vw;
-        padding: 0 29px;
-        max-width: 64px;
-        max-height: 64px;
+        max-width: 48px;
+        max-height: 48px;
+    }
+    #social-buttons .link-button {
+        width: 16.6em;
+        min-width: unset;
+        max-width: unset;
     }
 }
 /* Large devices (iMacs) */
 @media (min-width: 900px) {
     #social-buttons svg {
-        padding: 0 1.5rem;
+        width: 14vw;
+        height: 14vw;
+        max-width: 64px;
+        max-height: 64px;
+    }
+    #social-buttons .link-button {
+        width: 8.2125em;
+    }
+    span + span .link-button {
+        margin-left: 0.5rem;
     }
 }
 </style>
 
+<h1>Contact</h1>
+
+<h2>Social</h2>
+
 <ul id="social-buttons">
     <span class="hint--bottom hint--rounded hint--bounce" data-hint="Send me an Email">
-        <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">
+        <a class="link-button" href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">
             <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g fill="currentColor">
@@ -68,7 +90,7 @@ button {
         </a>
     </span>
     <span class="hint--bottom hint--rounded hint--bounce" data-hint="Follow me on Twitter">
-        <a href="https://twitter.com/barrowclift">
+        <a class="link-button" href="https://twitter.com/barrowclift">
             <svg viewBox="0 0 299 299" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(0.820000, 0.140000)" fill-rule="nonzero" fill="currentColor">
@@ -79,7 +101,7 @@ button {
         </a>
     </span>
     <span class="hint--bottom hint--rounded hint--bounce" data-hint="Follow my projects on Github">
-        <a href="https://github.com/barrowclift">
+        <a class="link-button" href="https://github.com/barrowclift">
             <svg viewBox="0 0 121 121" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <path fill="currentColor" d="M60.609,1.446 C27.262,1.446 0.221,28.481 0.221,61.833 C0.221,88.514 17.524,111.15 41.518,119.135 C44.536,119.694 45.644,117.825 45.644,116.23 C45.644,114.79 45.588,110.033 45.562,104.987 C28.762,108.64 25.217,97.862 25.217,97.862 C22.47,90.882 18.512,89.026 18.512,89.026 C13.033,85.278 18.925,85.355 18.925,85.355 C24.989,85.78 28.182,91.578 28.182,91.578 C33.568,100.81 42.309,98.141 45.755,96.598 C46.297,92.696 47.862,90.03 49.589,88.523 C36.176,86.996 22.076,81.818 22.076,58.679 C22.076,52.086 24.435,46.699 28.298,42.47 C27.671,40.948 25.604,34.807 28.883,26.489 C28.883,26.489 33.954,24.866 45.494,32.679 C50.311,31.341 55.477,30.67 60.609,30.647 C65.741,30.67 70.911,31.341 75.737,32.679 C87.263,24.866 92.327,26.489 92.327,26.489 C95.614,34.807 93.546,40.948 92.919,42.47 C96.791,46.699 99.134,52.086 99.134,58.679 C99.134,81.873 85.007,86.98 71.56,88.475 C73.726,90.349 75.656,94.024 75.656,99.658 C75.656,107.737 75.586,114.24 75.586,116.23 C75.586,117.837 76.673,119.72 79.734,119.127 C103.715,111.133 120.996,88.505 120.996,61.833 C120.996,28.481 93.959,1.446 60.609,1.446"></path>
@@ -88,7 +110,7 @@ button {
         </a>
     </span>
     <span class="hint--bottom hint--rounded hint--bounce" data-hint="Reach out on AngelList">
-        <a href="https://angel.co/marc-barrowclift">
+        <a class="link-button" href="https://angel.co/marc-barrowclift">
             <svg viewBox="0 0 32 32" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(5.000000, 0.000000)" fill-rule="nonzero" fill="currentColor">
@@ -100,9 +122,7 @@ button {
     </span>
 </ul>
 
-<hr class="small">
-
-<p>Got something you want to talk with me about? I'm all ears.</p>    
+<h2>Hit Me Up</h2>
 
 <form action="//formspree.io/&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;" method="POST">
     <input type="hidden" name="_next" value="/contact/thank-you/" />

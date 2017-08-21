@@ -78,6 +78,9 @@ menu {
 	-moz-box-shadow: none;
 	min-width: 100vw;
 }
+#menu-height-offset {
+	height: 0;
+}
 body {
 	transform: translateZ(0px);
 }

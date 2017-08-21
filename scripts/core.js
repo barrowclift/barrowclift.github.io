@@ -76,17 +76,27 @@ $(document).ready(function() {
 		});
 	}
 
+	var html = $("html");
+	if (html.scrollTop() > 40) {
+		html.addClass("hide-menu");
+	}
+
 	/* Dynamic scrolling menu on mobile */
 	$(function() {
-		var nav = $('menu');
-		var content = $('#dynamic-menu-height')
+		var html = $("html");
+		var menu = $("menu");
+		var skip = true;
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				nav.addClass("fixed-menu");
-				content.addClass("collapsed");
+			if ($(this).scrollTop() > 40) {
+				html.addClass("hide-menu");
 			} else {
-				nav.removeClass("fixed-menu");
-				content.removeClass("collapsed");
+				html.removeClass("hide-menu");
+			}
+			if (skip) {
+				skip = false;
+			} else if (!menu.hasClass("transform-animation")) {
+				menu.addClass("transform-animation");
+				$("#logo").addClass("transform-animation");
 			}
 		});
 	});
