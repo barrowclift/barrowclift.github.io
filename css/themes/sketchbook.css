@@ -6,7 +6,7 @@ menu {
 	background-color: rgba(256, 210, 0, 0.7);
 }
 /* Provides a nice "sketchpad" like texture to the background */
-#content  {
+body  {
 	background-image: url(/images/projects/art/sketches/notes@2x.png);
 }
 

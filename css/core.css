@@ -895,6 +895,30 @@ figcaption {
 	vertical-align: bottom;
 }
 
+/* There are times we *don't* want the image itself to provide the top and bottom padding,
+specifically, when the image also has a caption. If we retained the image padding, the caption
+would be shoved far away, which we don't want. So, in cases like this, we provide the breathing
+room to the parent element instead */
+figure.breathing-room figcaption,
+.edge-to-edge figcaption {
+	margin-top: 1.3em;
+}
+figure.breathing-room {
+	margin-top: 2.6em;
+	margin-bottom: 2.6em;
+}
+/* We don't want the image itself to have top and bottom padding when "breakthing room"
+is in effect. This ensures that the image caption remains close to the image, while giving
+breathing room to the whole group: both the image AND the caption. */
+figure.breathing-room .edge-to-edge {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+figure.reserved-breathing-room {
+	margin-top: 0;
+	margin-bottom: 1.3em;
+}
+
 
 /* On iOS devices, all edge-to-edge elements are fully edge-to-edge */
 .edge-to-edge,
@@ -947,7 +971,7 @@ img.shadow {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
 }
 .apple-watch-screenshot {
-	border-radius: 0.5em;
+	border-radius: 0.875em;
 }
 .macos-screenshot {
 	box-shadow: 0 0 1rem #acacac;
@@ -1623,10 +1647,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		width: 100%;
 		margin: 0;
 	}
-	.edge-to-edge {
-		margin-top: 1.3em;
-		margin-bottom: 1.3em;
-	}
 	.edge-to-edge.small {
 		margin-left: 0;
 		margin-right: 0;
@@ -1642,25 +1662,18 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		border-radius: 0.25em;
 	}
 
-	/* There are times we *don't* want the image itself to provide the top and bottom padding,
-	specifically, when the image also has a caption. If we retained the image padding, the caption
-	would be shoved far away, which we don't want. So, in cases like this, we provide the breathing
-	room to the parent element instead */
-	figure.breathing-room figcaption,
-	.edge-to-edge figcaption {
+	div.breathing-room {
 		margin-top: 1.3em;
+		margin-bottom: 2.6em;
 	}
-	figure.breathing-room {
+	div.breathing-room figure {
+		margin-bottom: 0;
+	}
+	figure.reserved-breathing-room {
 		margin-top: 2.6em;
 		margin-bottom: 2.6em;
 	}
-	/* We don't want the image itself to have top and bottom padding when "breakthing room"
-	is in effect. This ensures that the image caption remains close to the image, while giving
-	breathing room to the whole group: both the image AND the caption. */
-	figure.breathing-room .edge-to-edge {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+
 	figcaption {
 		padding: 0;
 		display: inline-block;
@@ -1668,10 +1681,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	}
 
 	.edge-to-edge {
-		margin-top: 1.3em;
+		margin-top: 0;
 		margin-bottom: 1.3em;
 	}
-		.edge-to-edge figure {
+		.edge-to-edge figure,
+		figure .edge-to-edge {
 			margin-bottom: 0;
 		}
 	.ios-one-screen,

@@ -30,7 +30,7 @@ Let's Begin With Spring Cleaning
 
 First thing's first, you should consider deleting any of the apps on your phone you don't want anymore. Not only do they add clutter they may also be squatting on a nontrivial amount of storage on your iPhone that could instead be used for more family photos, music, or new apps. To determine which apps are taking up the most space, you can navigate to `General > Usage > Manage Storage` under the "Storage" group to see a list of the largest apps on your iPhone. You can delete the apps directly from this list by tapping on the app you want to delete and selecting "Delete App" (alternatively you can just enter wiggle mode at the home screen and delete apps there). Don't worry, [you can always re-download the app again for free from the App Store](https://support.apple.com/en-us/HT201272) if you decide you want it back in the future.
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large breathing-room">
 <figure markdown="1">
 ![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/settings.jpg){: .ios-screenshot-shadow .ios-three-screens }
 </figure>
@@ -110,7 +110,7 @@ You're Almost There!
 
 Now all you need to do is decide the final order of these various pieces you've created. What should that order be? Truth is only you can answer that question as it depends solely on how much you personally value ascetics vs. efficiency. If you put more weight on efficiency then your best bet is to put your folders and apps together on a single page and sort your apps into rows by broad category and thumb distance travel vs. frequency of use (the apps you use the most would then be the easiest to tap). This is the sorting method I chose for my own home screen which you can see here with the first row being folders, the second social apps, the third reading apps, and the fourth everything else.
 
-<figure markdown="1">
+<figure markdown="1" class="breathing-room">
 ![My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast]({{ site.baseurl }}/images/assets/home-sweet-home/home-screen.jpg){: .ios-screenshot-shadow .ios-one-screen }
 </figure>
 

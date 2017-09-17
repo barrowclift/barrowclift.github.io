@@ -37,7 +37,7 @@ defaults:
     values:
       anchors: true # We want sections to be anchorable by default for everything
 
-gems:
+plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-feed
