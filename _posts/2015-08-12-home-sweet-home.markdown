@@ -30,15 +30,15 @@ Let's Begin With Spring Cleaning
 
 First thing's first, you should consider deleting any of the apps on your phone you don't want anymore. Not only do they add clutter they may also be squatting on a nontrivial amount of storage on your iPhone that could instead be used for more family photos, music, or new apps. To determine which apps are taking up the most space, you can navigate to `General > Usage > Manage Storage` under the "Storage" group to see a list of the largest apps on your iPhone. You can delete the apps directly from this list by tapping on the app you want to delete and selecting "Delete App" (alternatively you can just enter wiggle mode at the home screen and delete apps there). Don't worry, [you can always re-download the app again for free from the App Store](https://support.apple.com/en-us/HT201272) if you decide you want it back in the future.
 
-<div class="edge-to-edge large breathing-room">
+<div class="edge-to-edge large">
 <figure markdown="1">
-![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/settings.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/settings.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 <figure markdown="1">
-![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/general.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/general.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 <figure markdown="1">
-![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/usage.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/usage.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 </div>
 
@@ -64,10 +64,10 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div class="edge-to-edge large">
 <figure markdown="1">
-![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.jpg){: .ios-two-screens }
 </figure>
 <figure markdown="1">
-![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.jpg){: .ios-two-screens }
 </figure>
 </div>
 
@@ -75,10 +75,10 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div class="edge-to-edge large">
 <figure markdown="1">
-![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.jpg){: .ios-two-screens }
 </figure>
 <figure markdown="1">
-![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.jpg){: .ios-two-screens }
 </figure>
 </div>
 
@@ -86,7 +86,7 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div class="edge-to-edge large">
 <figure markdown="1">
-![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.jpg){: .ios-two-screens }
 </figure>
 </div>
 
@@ -94,10 +94,10 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 <div class="edge-to-edge large">
 <figure markdown="1">
-![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.jpg){: .ios-two-screens }
 </figure>
 <figure markdown="1">
-![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.jpg){: .ios-two-screens .no-shadow }
+![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.jpg){: .ios-two-screens }
 </figure>
 </div>
 
@@ -110,7 +110,7 @@ You're Almost There!
 
 Now all you need to do is decide the final order of these various pieces you've created. What should that order be? Truth is only you can answer that question as it depends solely on how much you personally value ascetics vs. efficiency. If you put more weight on efficiency then your best bet is to put your folders and apps together on a single page and sort your apps into rows by broad category and thumb distance travel vs. frequency of use (the apps you use the most would then be the easiest to tap). This is the sorting method I chose for my own home screen which you can see here with the first row being folders, the second social apps, the third reading apps, and the fourth everything else.
 
-<figure markdown="1" class="breathing-room">
+<figure markdown="1">
 ![My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast]({{ site.baseurl }}/images/assets/home-sweet-home/home-screen.jpg){: .ios-screenshot-shadow .ios-one-screen }
 </figure>
 

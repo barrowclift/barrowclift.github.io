@@ -81,6 +81,9 @@ $(document).ready(function() {
 		html.addClass("hide-menu");
 	}
 
+	// Adding additional padding to element that preceeds figcaption (formerly the manually added class "breathing-room")
+	$("figcaption").prev().addClass("caption-top-pad");
+
 	/* Dynamic scrolling menu on mobile */
 	$(function() {
 		var html = $("html");

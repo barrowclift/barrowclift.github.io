@@ -36,7 +36,7 @@ Restoring Balance
 -----------------
 
 <figure markdown="1">
-![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.png){: .edge-to-edge .medium .no-shadow }
+![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.baseurl }}/images/assets/why-vinyl/digital-and-analog-friends.png){: .edge-to-edge .medium }
 </figure>
 
 As you'd guess, simply throwing away all my digitization progress would grossly overcorrect the problem and leave me in a similarly deficient state. The optimal solution was finding *balance* again by determining whether a given interaction or object was better served through physical or digital means given the context of the situation.
@@ -71,7 +71,7 @@ Now that my reasoning for even having physical artifacts at all is established w
 To reiterate, this doesn't mean I "hate" digital things. I still love being able to listen to any music I want any time I want and would never want to give that up. That's not to say though that it's my preferred or only choice in all scenarios. It's all part of my overarching effort to restore and maintain balance between my physical and digital life. And, inline with this effort, I regained my cursive ability after a few days of practice and did indeed finish reciting Wordsworth's "My Heart Leaps Up" from memory. All things are better in moderation, in balance with each other, "bound each to each by natural piety". ⌘
 
 <figure markdown="1">
-![Wordsworth's "My Heart Leaps Up" written in cursive on paper]({{ site.baseurl }}/images/assets/why-vinyl/my-heart-leaps-up.jpg){: .inline .no-shadow }
+![Wordsworth's "My Heart Leaps Up" written in cursive on paper]({{ site.baseurl }}/images/assets/why-vinyl/my-heart-leaps-up.jpg){: .inline }
 </figure>
 
 --------------

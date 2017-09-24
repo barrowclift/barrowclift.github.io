@@ -11,7 +11,7 @@ excerpt: "What does \"magic()\" mean? How about \"foo()\"? Or \"arg1\"? Nobody k
 ---
 
 <figure markdown="1">
-![A "Hello, My Name Is" sticker with the name "FOOBAR" on it]({{ site.baseurl }}/images/assets/meaningful-names/namecard.png){: .edge-to-edge .small .no-shadow }
+![A "Hello, My Name Is" sticker with the name "FOOBAR" on it]({{ site.baseurl }}/images/assets/meaningful-names/namecard.png){: .edge-to-edge .small }
 </figure>
 
 Do you know what `magic()` means? How about `foo()`, what does that do? What about `arg1`, what's that supposed to be? To be frank, I have no idea what any of these represent since the names themselves carry little to no intrinsic meaning. They're just meaningless fluff.

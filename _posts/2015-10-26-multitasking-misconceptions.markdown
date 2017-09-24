@@ -32,13 +32,13 @@ In order to fully understand why force quitting all your apps on iOS results in 
 The reason these rules still apply to OS X and Windows is due to the liberal way they manage apps. When you first launch an app like Safari from the Dock your computer loads a bunch of data from storage (which is *extremely* slow) into memory (which is *extremely* fast) so the app can then be used quickly and normally. The amount of memory your computer has dictates how much other apps and "stuff" your computer can quickly access at any given time.
 
 <figure markdown="1">
-![A cartoon of a Storage disk throwing data to a nervous, almost overflowing Memory card]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-1-colored.png "Watch how much stuff you're making Memory remember, Storage!"){: .edge-to-edge .medium .no-shadow }
+![A cartoon of a Storage disk throwing data to a nervous, almost overflowing Memory card]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-1-colored.png "Watch how much stuff you're making Memory remember, Storage!"){: .edge-to-edge .medium }
 </figure>
 
 As you'd imagine, the less memory your computer has the less apps and "stuff" read from slow storage can be kept in the fast memory at any given time. Computers become extremely slow when it's memory is completely full and has nowhere else to put new things for fast recollection, meaning it has to "pretend" it has more memory than it actually does by using the *extremely* slow storage as make-believe extra memory.
 
 <figure markdown="1">
-![The second panel of the cartoon where the Memory card says "I'm full, this is your problem now, slow poke storage!" to the sheepish looking Storage disk]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-2-colored.png "What did I tell you, Storage?"){: .edge-to-edge .medium .no-shadow }
+![The second panel of the cartoon where the Memory card says "I'm full, this is your problem now, slow poke storage!" to the sheepish looking Storage disk]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-2-colored.png "What did I tell you, Storage?"){: .edge-to-edge .medium }
 </figure>
 
 This is where quitting apps when you have too many open comes into play. If you act as the janitor and help the computer "clean up" itself by quitting apps you no longer need the portions of memory that those apps were sitting in then gets cleared for your computer to then use again as open memory for new things. Thankfully having full memory doesn't *necessarily* mean you're using more battery, but having your memory filled to the brim with open apps and other things will certainly slow down other memory-intensive tasks like opening new apps in the future.
@@ -46,7 +46,7 @@ This is where quitting apps when you have too many open comes into play. If you 
 While all those open apps hanging around in memory aren't using more battery just by being there it's the things they're still possibly doing that will. All open apps retain free reign on your computer's <span class="small-caps">CPU</span> (which you can think of as your computer's "attention"). Any app you have open (which you can identify by the little dot under the icon in your Dock in OS X) can take up as much or as little of your computer's "attention" as it wishes, and this "attention" takes battery. It's entirely possible for your open apps to hog all your computer's attention doing something they think is important but that you don't think is important at all (assuming you even know about it! [I'm looking at you, Google Chrome](https://productforums.google.com/forum/#!topic/chrome/LfBqIlfFoSo)).
 
 <figure markdown="1">
-![The third panel of the cartoon has a bunch of apps fighting for the panicked CPU's attention with a battery fuel gauge nearing empty]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-3-colored.png "Apps can be annoying little buggers sometimes."){: .edge-to-edge .medium .no-shadow }
+![The third panel of the cartoon has a bunch of apps fighting for the panicked CPU's attention with a battery fuel gauge nearing empty]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-3-colored.png "Apps can be annoying little buggers sometimes."){: .edge-to-edge .medium }
 </figure>
 
 This is by no means meant to be a complete nor academically accurate representation of what's going on in your Mac. There were *plenty* of [details](https://en.wikipedia.org/wiki/Scheduling_(computing)) and [special cases](http://appleinsider.com/articles/13/06/18/os-x-mavericks-new-app-nap-timer-coalescing-features-target-battery-efficiency) intentionally left out or glossed over to boil down the essence of how OS X and Windows manage your apps. The key takeaways are:
@@ -72,23 +72,23 @@ In reality, all but one of the apps you see in the multitasking list are actuall
 This means all you see in the multitasking list is images of your apps frozen in time as if you took photos of them. In this state it's no longer using any battery and also has no effect on the speed of the app you're currently running. Again, these apps are not running or using battery, so there's no need to force quit them from the multitasking list.
 
 <figure markdown="1">
-![The fourth panel of the cartoon has the CPU easily managing one app's requests with a full reserve of battery to power him)]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-4-colored.png "And with ample battery to spare"){: .edge-to-edge .medium .no-shadow }
+![The fourth panel of the cartoon has the CPU easily managing one app's requests with a full reserve of battery to power him)]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-4-colored.png "And with ample battery to spare"){: .edge-to-edge .medium }
 </figure>
 
 What about iOS's memory though? Surely, frozen in memory or not, these apps in the multitasking list are still hogging your iPhone's memory which could have been used on the app you're currently using, right? Well, not exactly. Remember how we discussed that OS X and Windows almost never quit your apps for you and they make it the user's responsibility to monitor whether or not they're using too much memory? iOS instead takes this mental burden away from the user by intelligently and automatically clearing as many of the oldest suspended apps from the phone's memory as needed to make room for the app currently in use. This *guarantees* that the app currently running will never have to worry about running out of memory due to other apps in the multitasking view hogging memory because iOS will automatically remove these apps for you if necessary.
 
 <figure markdown="1">
-![The fifth panel of the cartoon has the Memory card taking control with the power of iOS and demanding the eldest and least used app has got to go)]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-5-colored.png "Out with the old, in with the new."){: .edge-to-edge .medium .no-shadow }
+![The fifth panel of the cartoon has the Memory card taking control with the power of iOS and demanding the eldest and least used app has got to go)]({{ site.baseurl }}/images/assets/multitasking-misconceptions/panel-5-colored.png "Out with the old, in with the new."){: .edge-to-edge .medium }
 </figure>
 
 You can actually see this in the wild yourself, double-press your home button and look at a few of the most recently used apps immediately to the left of your home screen. Notice how they have a nice little picture of what you were doing right before you switched to a different app. That's because they’re still sitting in memory ready to pick up right where you left off (but remember, they're not actually running!). Now start scrolling farther and farther back to the left. You'll start seeing apps you haven't opened in a long time and eventually you'll notice they start looking like they don't seem to have a picture of what you were last doing in them anymore, in fact they look blank. These are apps that iOS has already cleared from memory to make room for more recently suspended apps back to the right close to the Home Screen. If you were to tap on any of these apps they would launch as if you had force quit them instead of "resuming" from suspension because the entire app has to be read back from slow storage into memory (and in the process shoving the new "oldest suspended app" off memory to make room). This super slow process is what happens *every single time* if you force quit all your apps after using them.
 
-<div class="edge-to-edge large breathing-room">
+<div class="edge-to-edge large">
 <figure markdown="1">
-![The app switcher view, showing images for each of their last known states]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-new.jpg){: .ios-screenshot-shadow .ios-two-screens }
+![The app switcher view, showing images for each of their last known states]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-new.jpg){: .ios-screenshot-shadow .ios-two-screens .shadow }
 </figure>
 <figure markdown="1">
-![The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-old.jpg){: .ios-screenshot-shadow .ios-two-screens}
+![The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-old.jpg){: .ios-screenshot-shadow .ios-two-screens .shadow }
 </figure>
 <figcaption>
 Note how the app preview images change from most recently used to oldest.
@@ -102,15 +102,15 @@ Starting with iOS 7 Apple added a feature that complicates things slightly. Back
 
 This of course poses a potential problem since there's bound to be some apps you barely use that have this feature enabled by default that you'd rather have turned off. I'd recommend keeping it on for apps you use at least semi-regularly and disable it for the rest. Simply open up the "Settings" app and navigate to `General > Background App Refresh` and flip the switch for apps you don't use often off.
 
-<div markdown="1" class="edge-to-edge large breathing-room">
+<div markdown="1" class="edge-to-edge large">
 <figure markdown="1">
-![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/settings.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/settings.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 <figure markdown="1">
-![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/general.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/general.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 <figure markdown="1">
-![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/background-app-refresh.jpg){: .ios-screenshot-shadow .ios-three-screens }
+![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/background-app-refresh.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
 </figure>
 </div>
 
