@@ -1,0 +1,106 @@
+if [[ $- != *i* ]] ; then
+	return
+fi
+
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+
+export LS_COLORS="*.m4a=00;33:*.mp3=00;33:*.flac=00;33:*.aac=00;33:*.aiff=00;33"
+export LS_COLORS="*.m4v=00;33:*.mov=00;33:*.mpg=00;33:*.mp4=00;33:${LS_COLORS}"
+export LS_COLORS="*.jpg=00;35:*.png=00;35:*.tiff=00;35:*.tif=00;35:*.gif=00;35:*.pdf=00;35:${LS_COLORS}"
+export LS_COLORS="*.tar=00;31:*.tgz=00;31:*.zip=00;31:*.gz=00;31:*.jar=00;31:*.rar=00;31:*.7z=00;31:${LS_COLORS}"
+
+export CLICOLOR=1
+
+export LESS_TERMCAP_mb=$'\e[01;31m'
+export LESS_TERMCAP_md=$'\e[1;94;1;94m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[0;103m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;31;1;31m'
+
+export RED='\[\033[0;31m\]'
+export CYAN='\[\033[0;36m\]'
+export BLUE='\[\033[0;34m\]'
+export NORMAL='\[\033[00m\]'
+export PS1="\u:${CYAN}\w${RED}\n\$ ${NORMAL}"
+
+export SHTEVE="$USER@$HOSTNAME"
+
+export EDITOR=/usr/bin/vim
+
+shopt -s cdspell
+shopt -s checkwinsize
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+if [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+
+extract () {
+	if [ -f "$@" ] ; then
+		case "$@" in
+			*.tar.bz2)  tar xjf "$@"    ;;
+			*.tar.gz)   tar xzf "$@"    ;;
+			*.bz2)      bunzip2 "$@"    ;;
+			*.rar)      rar x "$@"      ;;
+			*.gz)       gunzip "$@"     ;;
+			*.tar)      tar xf "$@"     ;;
+			*.tbz2)     tar xjf "$@"    ;;
+			*.tgz)      tar xzf "$@"    ;;
+			*.zip)      unzip "$@"      ;;
+			*.Z)        uncompress "$@" ;;
+			*)          echo "'$@' cannot be extracted via extract()" ;;
+		esac
+	else
+		echo "'$@' is not a valid file"
+	fi
+}
+
+zipper () {
+	if [ $(echo $@ | tail -c 2) == "/" ] ; then
+		file="${@%?}"
+	else
+		file="$@"
+	fi
+
+	zip -r -q "$file.zip" "$file"
+}
+
+tartar () {
+	if [ $(echo $@ | tail -c 2) == "/" ] ; then
+		file="${@%?}"
+	else
+		file="$@"
+	fi
+
+	tar czf "$file.tar.gz" "$file"
+}
+
+md () {
+	if [ -f "$1" -o -d "$1" ] ; then
+		if [ -d "$2" ] ; then
+			mv "$1" "$2"
+			cd "$2"
+		else
+			echo "'$2' is not a valid directory"
+		fi
+	else
+		echo "'$1' is not a valid file"
+	fi
+}
+
+dsdel () {
+	find . -name ".DS_Store" -delete
+}
+
+trash () {
+	command mv "$@" ~/.Trash ;
+}
+
+ql () {
+	qlmanage -p "$*" >& /dev/null;
+}

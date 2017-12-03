@@ -18,7 +18,6 @@ image: "/images/assets/lossless-photo-sharing/share-image.jpg"
 My mom sent me an email recently asking for advice sending a couple photos to a friend. She knew that emailing worked in theory, but was concerned the pictures would be compressed at some point along the way. I had to stop and think for a moment on this one; what *is* the best option for losslessly sharing a photo or two with someone? While on that thought, what's the best option for losslessly sharing entire albums of photos? In a sea of services all promising to make the confusing mess that is photo sharing a thing of the past, how is anyone supposed to figure it out?
 
 <a id="resume-from-break"></a>
-
 To combat this absurdly complicated productscape, I've compiled what I personally believe to be the best services for losslessly share photos with friends and family, separated into two tiers based on the volume of photos being shared. Regrettably, two categories are necessary since there's currently no "cure-all" product or service that's the absolute *best* option for sharing arbitrary amounts of pictures; some are wonderful for a picture or two, while others shine best for hundreds. Like many things in life, it's all about knowing which tools to use for the job.
 
 <!--break-->
@@ -56,7 +55,7 @@ Sharing Photo Albums
 
 Creating and sharing albums in Google Photos is currently the best option for collaboratively sharing more than a handful of photos. While Google Photos didn't fare as well as Dropbox for individual photo sharing, it was entirely because it was carefully tailored to best suit managing and sharing many photos from large libraries. Thus, it truly shines when the volume of photos being shared increases to album size and beyond. With *any* service, by the time you want to start sharing more than a couple photos, the problem's scope necessitates a more robust and fully-featured service to support easily uploading and managing all the photos. Since solutions in this tier are naturally "heavy duty" because of this, the previous hit against Google Photos for being a bit too much for just sharing a single photo or two vanishes.
 
-Google Photos is cross-platform, lossless for free for up to 15GB[^free-tier], and provides everyone you invite the ability to contribute their own photos. Not only that, but it also includes all the goodies you'd expect from a Google service like intelligent photo searching and face detection. All these features&#8212;while overkill for just a single photo or two&#8212;make sharing and enjoying lossless photo albums with friends and family a joy. When you decide to give the service a try for yourself, Google has some great [help guides](https://support.google.com/photos/?hl=en#topic=6128818) that outline how to create photo albums and how to [invite others](https://support.google.com/photos/answer/6280921?hl=en) to see and contribute.
+Google Photos is cross-platform, lossless for free for up to 15GB[^free-tier], and provides everyone you invite the ability to contribute their own photos. Not only that, but it also includes all the goodies you'd expect from a Google service like intelligent photo searching and face detection. All these features&mdash;while overkill for just a single photo or two&mdash;make sharing and enjoying lossless photo albums with friends and family a joy. When you decide to give the service a try for yourself, Google has some great [help guides](https://support.google.com/photos/?hl=en#topic=6128818) that outline how to create photo albums and how to [invite others](https://support.google.com/photos/answer/6280921?hl=en) to see and contribute.
 
 While there are less services available that serve this particular use case, there are certainly some out there that promise similar features to Google Photos, here's why I can't recommend them:
 
@@ -66,7 +65,7 @@ While there are less services available that serve this particular use case, the
 
 ---------------------------
 
-Photo sharing is a bloated, complicated mess, but now you're armed and ready with the knowledge of what the available, optimal services are for the volume of photos you're sharing. Now, instead of spending time worrying about what to use, you can direct your energy back to where it belongs&#8212;sharing your uncompressed memories with friends and family. ⌘
+Photo sharing is a bloated, complicated mess, but now you're armed and ready with the knowledge of what the available, optimal services are for the volume of photos you're sharing. Now, instead of spending time worrying about what to use, you can direct your energy back to where it belongs&mdash;sharing your uncompressed memories with friends and family. ⌘
 
 ----------------------------
 

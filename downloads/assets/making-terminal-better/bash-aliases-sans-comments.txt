@@ -1,0 +1,33 @@
+alias whichDNS='nslookup apple.com'
+
+alias mkdir='mkdir -p'
+alias cpProgress='rsync --progress'
+
+alias which='type -all'
+
+alias partitionsize='df -hT --exclude-type=tmpfs --exclude-type=devtmpfs'
+alias size='du -ch | grep total'
+alias disksize='df -h --total | grep total'
+alias largestfiles='du -hsx * | sort -rh | head -10'
+
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+alias cp='cp -i'
+alias move='mv -i'
+
+alias ls='ls --color=auto'
+alias grep='grep --colour=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias calculator='bc -l'
+
+alias f='open -a Finder ./'
+
+alias shutdown="sudo shutdown -h now"
+alias reboot="sudo reboot"
+alias restart="sudo reboot"
+
+alias path='echo -e ${PATH//:/\\n}'
+
+alias source='source ~/.bash_profile'

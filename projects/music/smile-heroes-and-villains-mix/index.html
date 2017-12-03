@@ -1,36 +1,186 @@
 ---
 layout: default
+edge-to-edge: true
 
 viewing-single-page: true
 anchors: false
 
 theme: custom
 primary-color: "rgb(234, 110, 55)"
-menu-color: "rgba(235, 103, 32, 0.95)"
-menu-color-safari: "rgba(235, 103, 32, 0.7)"
+primary-color-hover: "rgba(234, 110, 55, 0.2)"
+menu-color: "rgba(235, 141, 59, 0.95)"
+menu-color-safari: "rgba(235, 141, 59, 0.7)"
 
 title: "SMiLE: Heroes and Villains Mix"
 projects-menu-active: true
 ---
 
-<a href="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg"><img src="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg" class="large-bottom-margin" alt="Vinyl vector" /></a>
+<style>
+	main {
+		margin-top:0;
+		margin-bottom:0;
+	}
+	.foo {
+		display: inline-block;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.18);
+		width: 100%;
+		border-top-right-radius: 1em;
+		border-top-left-radius: 1em;
+		margin-top: -1em;
+		background-color: white;
+	}
+	#dark .foo {
+		background-color: #272822;
+	}
+	.bar {
+		max-width: 35em;
+		display: inline-block;
+		margin-bottom: 2.6em;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.lalala {
+		/*IE10+ */
+		background-image: -ms-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
+		/*Mozilla Firefox */
+		background-image: -moz-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
+		/*Opera */
+		background-image: -o-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
+		/*Webkit (Safari/Chrome 10) */
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EB8D3B), color-stop(100, #EB6B37));
+		/*Webkit (Chrome 11+) */
+		background-image: -webkit-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
+		/*W3C Markup */
+		background-image: linear-gradient(to bottom, #EB8D3B 0%, #EB6B37 100%);
+		/*background: linear-gradient(135deg, #EB8D3B 0%, #EB6B37 100%);*/
+		transition: background 5s ease-in-out;
+	}
+	#dark .lalala {
+		background: linear-gradient(135deg, hsl(28, 91%, 29%), hsl(17, 92%, 28%) 100%);
+	}
+	.lalala img {
+		width: 35vh;
+		border-radius: 0.25em;
+	}
+	.lalala a {
+		margin: 0;
+		padding: 0;
+		display:inline-block;
+		text-decoration: none;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.lalala a:hover {
+		background-color:unset;
+	}
+	.lalala {
+		padding-top: 10vh;
+		height:65vh;
+	}
+	.project {
+	    border-radius: 1em;
+	    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+	    overflow: hidden;
+	}
+	.project:hover {
+	    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
+	    transform: scale(1.025);
+	}
+	.project img {
+	    margin:0;
+	    padding:0;
+	    display:block;
+	}
+	iframe {
+		margin-top: 5vh;
+		max-width: 60em;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5vh;
+		width: 90vw;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+	}
+	.compactSound__artwork {
+		display:none;
+	}
+	@media (max-height: 460px) {
+		.lalala {
+			display:none;
+		}
+	}
+	@media (max-height: 565px) {
+		.lalala img {
+			display:none;
+		}
+		.lalala {
+			height: 50vh;
+		}
+	}
+	@media (min-height: 900px) {
+		.lalala {
+			height: 60vh;
+			max-height:725px;
+			padding-top: 5vh;
+		}
+	}
+	@media (min-width: 700px) {
+		.lalala img {
+			width: 50vh;
+		}
+		.lalala {
+			padding-top: 15vh;
+			height: 85vh;
+			max-height:unset;
+		}
+		.bar {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	@media(min-width: 700px) and (max-height: 700px) {
+		.lalala {
+			padding-top: 15vh;
+		}
+	}
+	@media(min-width: 700px) and (max-height: 600px) {
+		.lalala {
+			height: 50vh;
+		}
+		.lalala img {
+			display:none;
+		}
+	}
+</style>
 
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255075143&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+<div class="lalala">
+	<div>
+		<a href="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg">
+			<img src="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg" class="project" alt="Vinyl vector" />
+		</a>
+	</div>
 
-<p class="large-top-margin">In 1966, hot off recording "Pet Sounds" and with The Beatles' "Sgt. Pepper's Lonely Hearts Club Band" in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
+	<iframe class="project" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255075143&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false&amp;"></iframe>
+</div>
 
-<p>The musical fruits of that year of recording would never see true completion, however. Upon the rest of The Beach Boys returning from their tour the atmosphere cultivating the project turned sour. Specifically, one particular band member, Mike Love, incessantly harassed Parks and his contributions eventually driving Parks to quit the project altogether. This, combined with Love’s further dismissive and harsh comments towards the new material, shattered Brian’s already fragile mental state. The project quickly fell apart afterwards.</p>
+<div class="foo">
+	<div class="bar">
+		<h1>SMiLE: Heroes and Villains Mix</h1>
+		<p class="large-top-margin">In 1966, hot off recording "Pet Sounds" and with The Beatles' "Sgt. Pepper's Lonely Hearts Club Band" in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
 
-<p>It would take decades of struggling with increasing mental problems and drug abuse following those events for Brian, with the support of family and friends, to have the courage to pick up the pieces and finally release the symphony to the world (or at least an approximation of what it would have been like had he and Parks been allowed to complete it).</p>
+		<p>The musical fruits of that year of recording would never see true completion, however. Upon the rest of The Beach Boys returning from their tour the atmosphere cultivating the project turned sour. Specifically, one particular band member, Mike Love, incessantly harassed Parks and his contributions eventually driving Parks to quit the project altogether. This, combined with Love’s further dismissive and harsh comments towards the new material, shattered Brian’s already fragile mental state. The project quickly fell apart afterwards.</p>
 
-<p>The <a href="https://itunes.apple.com/us/album/smile-sessions/id720113626">official compilation</a>, while a treat to hear and special in its own right, is in my and many fans opinions only one possible way to interpret and piece together the literal 75+ hours of unique audio recorded from that era. This reconstruction is my contribution to this thriving community and a personal tribute to the groundbreaking musical exploration that Brian and Parks made back in 1966.</p>
+		<p>It would take decades of struggling with increasing mental problems and drug abuse following those events for Brian, with the support of family and friends, to have the courage to pick up the pieces and finally release the symphony to the world (or at least an approximation of what it would have been like had he and Parks been allowed to complete it).</p>
 
-<h2 id="credits">Credits</h2>
+		<p>The <a href="https://itunes.apple.com/us/album/smile-sessions/id720113626">official compilation</a>, while a treat to hear and special in its own right, is in my and many fans opinions only one possible way to interpret and piece together the literal 75+ hours of unique audio recorded from that era. This reconstruction is my contribution to this thriving community and a personal tribute to the groundbreaking musical exploration that Brian and Parks made back in 1966.</p>
 
-<p>This project was only possible because of the help from these wonderful people from the SMiLE and Beach Boys fan community.</p>
+		<h2 id="credits">Credits</h2>
 
-<ul>
-	<li><a href="http://albumsthatneverwere.blogspot.com">soniclovenoize</a>'s absolutely stellar <a href="http://albumsthatneverwere.blogspot.com/2012/06/beach-boys-smile-soniclovenoize-stereo.html">BWPS 2004 Stereo Mix</a> whose reconstructions of Vega-Tables and Cabin Essence (among other bits and bobs) were pulled directly for mine. My thanks to him, and you can check out his other amazing album reconstructions at his website <a href="http://albumsthatneverwere.blogspot.com">here</a>.</li>
-	<li><a href="https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg">adwolf16</a>'s <a href="https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9">SMiLE Recreation - Suite One</a> which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.</li>
-	<li>Mark Hardy's now taken down <a href="https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop">SMiLE - An Approximation</a> mix which was the general inspiration for my recreation.</li>
-</ul>
+		<p>This project was only possible because of the help from these wonderful people from the SMiLE and Beach Boys fan community.</p>
+
+		<ul>
+			<li><a href="http://albumsthatneverwere.blogspot.com">soniclovenoize</a>'s absolutely stellar <a href="http://albumsthatneverwere.blogspot.com/2012/06/beach-boys-smile-soniclovenoize-stereo.html">BWPS 2004 Stereo Mix</a> whose reconstructions of Vega-Tables and Cabin Essence (among other bits and bobs) were pulled directly for mine. My thanks to him, and you can check out his other amazing album reconstructions at his website <a href="http://albumsthatneverwere.blogspot.com">here</a>.</li>
+			<li><a href="https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg">adwolf16</a>'s <a href="https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9">SMiLE Recreation - Suite One</a> which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.</li>
+			<li>Mark Hardy's now taken down <a href="https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop">SMiLE - An Approximation</a> mix which was the general inspiration for my recreation.</li>
+		</ul>
+	</div>
+</div>

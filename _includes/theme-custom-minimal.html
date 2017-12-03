@@ -29,6 +29,9 @@ menu,
 svg:hover .fill-color {
 	fill: {{ page.primary-color }} !important;
 }
+#logo:hover .signature-color {
+	fill: {{ page.primary-color }} !important;
+}
 
 input:focus, textarea:focus,
 button, .link-button {
@@ -45,6 +48,10 @@ main a:visited,
 .active,
 .anchor {
 	color: {{ page.primary-color }};
+}
+main a:hover,
+.anchor:hover {
+	background-color: {{ page.primary-color-hover }};
 }
 
 /* Highlights (must be seperate, combining them breaks the style) */

@@ -16,18 +16,21 @@ As is tradition, with fresh versions of Apple's operating systems comes thousand
 In respect of your time, below is a linked list of my personal favorite tidbits, feel free to peruse this list first and jump to any particular ones that interest you.
 
 <a id="resume-from-break"></a>
-
 📱 __iOS 10__
 
-* [The Bedtime Feature - Never worry about setting alarms for work or school again](#the-bedtime-feature)
-* [Custom Music Menu - Create an experience tailored to how *you* listen to music](#custom-music-menu)
-* [Expanding Important Widgets - Opt to always see more information at a glance](#expanding-important-widgets)
-* [Setting A Preferred Transportation Type - Have things like time of arrival, departure times, etc. use that type by default](#setting-a-preferred-transportation-type)
+<ul class="compact-list">
+  <li><a href="#the-bedtime-feature">The Bedtime Feature - Never worry about setting alarms for work or school again</a></li>
+  <li><a href="#custom-music-menu">Custom Music Menu - Create an experience tailored to how <em>you</em> listen to music</a></li>
+  <li><a href="#expanding-important-widgets">Expanding Important Widgets - Opt to always see more information at a glance</a></li>
+  <li><a href="#setting-a-preferred-transportation-type">Setting A Preferred Transportation Type - Have things like time of arrival, departure times, etc. use that type by default</a></li>
+</ul>
 
 ⌚ __watchOS 3__
 
-* [The Perfect Dock - Optimizing your app choices to help create the perfect dock](#the-perfect-dock)
-* [Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster](#super-fast-dock-scrolling)
+<ul class="compact-list">
+  <li><a href="#the-perfect-dock">The Perfect Dock - Optimizing your app choices to help create the perfect dock</a></li>
+  <li><a href="#super-fast-dock-scrolling">Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster</a></li>
+</ul>
 
 <!--break-->
 
