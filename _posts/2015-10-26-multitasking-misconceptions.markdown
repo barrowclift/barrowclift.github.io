@@ -16,7 +16,6 @@ It's inevitable, you'll be enjoying a friend's company and they decide to take o
 Perhaps you're the friend in this scenario force quitting iOS apps as an act of instinctual habit and haven't though much about it until now. What's so wrong about it though? You're done using the app after all, why *wouldn't* you quit the app? Isn't that what you're supposed to do? It only makes sense, having more apps in the multitasking list must mean your iPhone is doing a lot of extra work and quitting all those apps would free your iPhone from doing it and maybe even save battery.
 
 <a id="resume-from-break"></a>
-
 In reality this results in the exact opposite of the intended effect and not only slows down app launching in the future but also drains battery that would have otherwise been preserved had the apps been left alone. Now this most likely sounds preposterous and it's entirely because iOS's multitasking model flies in the face of everything people have been taught for decades to be true about how computers work. In many ways the "quit apps when you're done" workflow was and __still remains__ the correct action to do on computers. iPhones, however, are a different story.
 
 <!--break-->
@@ -67,7 +66,7 @@ How on earth is this even possible given how we know our Macs or PCs manage open
 Suspension and the "One True Open App"
 --------------------------------------
 
-In reality, all but one of the apps you see in the multitasking list are actually in what Apple calls a "suspended state". While OS X and Windows allow you to keep as many apps as you want open and running at any given time iOS actually only allows __one__ open app at any given time &#8212; the one you're currently looking at and using[^exceptions]. All others are effectively "frozen" in time and memory.
+In reality, all but one of the apps you see in the multitasking list are actually in what Apple calls a "suspended state". While OS X and Windows allow you to keep as many apps as you want open and running at any given time iOS actually only allows __one__ open app at any given time &mdash; the one you're currently looking at and using[^exceptions]. All others are effectively "frozen" in time and memory.
 
 This means all you see in the multitasking list is images of your apps frozen in time as if you took photos of them. In this state it's no longer using any battery and also has no effect on the speed of the app you're currently running. Again, these apps are not running or using battery, so there's no need to force quit them from the multitasking list.
 
@@ -114,7 +113,7 @@ This of course poses a potential problem since there's bound to be some apps you
 </figure>
 </div>
 
-Another thing to consider when you're deciding which apps to turn Background App Refresh off for &#8212; if any at all &#8212; is how many apps are currently enabled for background refresh in the list. If you have more than twenty or so with Background App Refresh turned on you might want to consider trimming that number down. While any individual app only takes a tiny, negligible amount of battery to background refresh ([usually](https://www.macstories.net/linked/the-background-data-and-battery-usage-of-facebooks-ios-app/)) this number *can* add up if there's a lot of them.
+Another thing to consider when you're deciding which apps to turn Background App Refresh off for &mdash; if any at all &mdash; is how many apps are currently enabled for background refresh in the list. If you have more than twenty or so with Background App Refresh turned on you might want to consider trimming that number down. While any individual app only takes a tiny, negligible amount of battery to background refresh ([usually](https://www.macstories.net/linked/the-background-data-and-battery-usage-of-facebooks-ios-app/)) this number *can* add up if there's a lot of them.
 
 Quit Quitting Apps on iOS
 -------------------------

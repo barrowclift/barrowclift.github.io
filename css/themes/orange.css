@@ -3,15 +3,11 @@
 main a,
 main a:link,
 main a:visited,
-.anchor,
-#blog-footer-buttons a,
-#social-buttons a {
+.anchor {
 	color: #FF8100;
 }
 .anchor:hover,
-main a:hover,
-#blog-footer-buttons a:hover,
-#social-buttons a:hover {
+main a:hover {
 	color: #EB7802;
 }
 

@@ -11,8 +11,24 @@ title: "Experience"
 about-menu-active: true
 ---
 
-<h1>Experience</h1>
 <style>
+	main a:hover {
+		background-color: unset;
+	}
+	/*menu ul a {
+		color: #333333;
+	}
+	#dark-mode-toggle .fill-color {
+		fill: #333333;
+	}*/
+	h2.fancy {
+		margin: 2.828em 0 0.5em;
+	}
+	main {
+		margin-top: 1px;
+		margin-bottom: 5.2em;
+	}
+	
 	.fancy {
 		line-height: 1em;
 		text-align: center;
@@ -57,27 +73,86 @@ about-menu-active: true
 			background-image: -moz-linear-gradient(left, #5A5B56, #272822);
 			background-image: -o-linear-gradient(left, #5A5B56, #272822);
 		}
+	.foobar h2 {
+		text-shadow: 0px 2px 4px RGBA(51, 51, 51, 0.25);
+		margin-bottom: 0;
+	}
+	.foobar img {
+		width: 90vw;
+		max-width: 650px;
+	}
+	.foobar > div {
+		background-image: url('/images/about/experience/Slice.png');background-image: url('/images/about/experience/Slice.png');
+		background-size: 100% 100%;box-shadow: inset 0 -1em 1em -1em rgba(115, 115, 115, 0.75);
+		padding-top: 3.9em;
+		padding-bottom: 3.9em;
+	}
+	#dark .foobar > div {
+		filter: grayscale(0.2);
+	}
+	.foobar > div {
+		transition: filter 0.2s ease-in-out;
+	}
+	.asdf {
+		max-width:unset !important;
+	}
+	@media (min-width: 700px) {
+		#past-work .card {
+			width: 20vw;
+			min-width: 9em;
+			max-width: 13em;
+		}
+		.foobar h2 {
+			text-shadow: 0px 2px 8px RGBA(51, 51, 51, 0.5);
+		}
+		main {
+			margin-top: 51px;
+		}
+		
+	}
+	@media (min-width: 900px) {
+		main {
+			margin-top: 56px;
+		}
+		.foobar img {
+			min-width: 650px;
+			max-width: 750px;
+			width: 50vw;
+		}
+		.foobar > div {
+			padding-top: 6.5em;
+			padding-bottom: 6.5em;
+		}
+		.asdf .card {
+			width: 42.25vw;
+			max-width: unset;
+		}
+	}
+	@media (min-width: 1300px) {
+		.asdf .card {
+			width: 30vw;
+			max-width: 440px;
+		}
+	}
 </style>
-<ul>
-	<a href="https://www.xfinity.com">
-		<div class="card large">
-			<div class="content">
-				<img class="long-logo show-when-light" src="/images/about/experience/comcast.png" alt="Comcast" />
-				<img class="long-logo show-when-dark" src="/images/about/experience/comcast-white.png" alt="Comcast" />
+	<div class="foobar" style="width: 100vw;">
+		<div>
+			<a href="https://www.xfinity.com" class="content">
+				<img class="long-logo" src="/images/about/experience/comcast-white.png" alt="Comcast" />
 				<div class="label">
-					<h4 class="primary">Technology &amp; Product - Core Scheduler Team</h4>
+					<h2 style="text-align: center; font-weight: bold;
+color: white;" class="primary">Technology &amp; Product<span class="hide-when-small"> &ndash; </span><span class="show-when-small"></span>Core Scheduler Team</h2>
 				</div>
-			</div>
+			</a>
 		</div>
-	</a>
-</ul>
+	</div>
 
 <h2 class="fancy"><span>Past Work</span></h2>
 
-<ul>
+<ul id="past-work">
 	<a href="http://www.ibx.com/index.jsp">
 		<div class="card" id="ibx">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 300 300" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<path d="M217,83 L217,0 L83,0 L83,83 L0,83 L0,217 L83,217 L83,300 L217,300 L217,217 L300,217 L300,83 L217,83 Z" class="fill-color"></path>
@@ -100,7 +175,7 @@ about-menu-active: true
 	</a>
 	<a href="http://www.bentley.com/en-US/">
 		<div class="card" id="bentley">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 214 214" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<rect class="fill-color" x="0" y="0" width="223" height="214"></rect>
@@ -116,7 +191,7 @@ about-menu-active: true
 	</a>
 	<a href="http://arcweb.co">
 		<div class="card" id="arcweb">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 418 418" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<path d="M209,418 C93.5724873,418 0,324.427513 0,209 C0,93.5724873 93.5724873,0 209,0 C324.427513,0 418,93.5724873 418,209 C418,324.427513 324.427513,418 209,418 Z M209.5,396 C312.501106,396 396,312.501106 396,209.5 C396,106.498894 312.501106,23 209.5,23 C106.498894,23 23,106.498894 23,209.5 C23,312.501106 106.498894,396 209.5,396 Z" class="fill-color"></path>
@@ -137,7 +212,7 @@ about-menu-active: true
 	</a>
 	<a href="https://psal.cs.drexel.edu/index.php/Main_Page">
 		<div class="card drexel">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 227 227" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<g transform="translate(12.000000, 0.000000)" fill-rule="nonzero" class="stroke-color">
@@ -184,7 +259,7 @@ about-menu-active: true
 <ul>
 	<a href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
 		<div class="card" id="guinness-world-record">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 330 330" preserveAspectRatio="xMidYMin slice" version="1.1" role="img">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<g transform="translate(3.000000, 3.000000)" class="fill-color">
@@ -216,7 +291,7 @@ about-menu-active: true
 	</a>
 	<a href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
 		<div class="card drexel">
-			<div class="content">
+			<div class="content card-animation">
 				<svg class="logo" viewBox="0 0 227 227" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<g transform="translate(12.000000, 0.000000)" fill-rule="nonzero" class="stroke-color">
@@ -258,27 +333,9 @@ about-menu-active: true
 	</a>
 </ul>
 
-<h2 class="fancy"><span>Education</span></h2>
-
-<ul>
-<div class="card large education">
-	<div class="content">
-		<a href="http://drexel.edu">
-			<img src="/images/about/experience/drexel-logo.png" alt="Drexel University logo"/>
-		</a>
-		
-		<div class="label">
-			<h2 class="primary">CLASS OF 2016</h2>
-			<h3 class="secondary">Bachelors of Software Engineering</h3>
-			<h4 class="small">Graduate With Honors</h4>
-		</div>
-	</div>
-</div>
-</ul>
-
 <h2 class="fancy"><span>Apperances</span></h2>
 
-<ul>
+<ul class="asdf">
 	<div class="card bleed large-when-small">
 		<video controls preload="metadata" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
 			<source src="/videos/news-coverage.mp4" type="video/mp4">
@@ -301,12 +358,32 @@ about-menu-active: true
 		</div>
 	</a>
 	<a href="https://twitter.com/comcastcareers/status/889502224791076864">
-		<div class="card bleed large-when-small">
-			<img src="/images/about/experience/comcast-ypn-month.jpg">
+		<div class="card bleed large-when-small" style="overflow:hidden;">
+			<img style="max-width: unset;
+width: 113%;
+margin-left: -13%;" src="/images/about/experience/comcast-ypn-month.jpg">
 			<div class="label">
 				<h4 class="primary">Comcast Twitter Feature</h4>
 				<h5 class="secondary">Young Professionals Network</h5>
 			</div>
 		</div>
 	</a>
+</ul>
+
+<h2 class="fancy"><span>Education</span></h2>
+
+<ul>
+<div class="card large education">
+	<div class="content card-animation">
+		<a href="http://drexel.edu">
+			<img src="/images/about/experience/drexel-logo.png" alt="Drexel University logo"/>
+		</a>
+		
+		<div class="label">
+			<h2 class="primary">CLASS OF 2016</h2>
+			<h3 class="secondary">Bachelors of Software Engineering</h3>
+			<h4 class="small">Graduate With Honors</h4>
+		</div>
+	</div>
+</div>
 </ul>

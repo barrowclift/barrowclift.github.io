@@ -17,7 +17,6 @@ excerpt: "What does \"magic()\" mean? How about \"foo()\"? Or \"arg1\"? Nobody k
 Do you know what `magic()` means? How about `foo()`, what does that do? What about `arg1`, what's that supposed to be? To be frank, I have no idea what any of these represent since the names themselves carry little to no intrinsic meaning. They're just meaningless fluff.
 
 <a id="resume-from-break"></a>
-
 Oftentimes, this is what it feels like as a developer when [reading code from the community](http://www.c2.com/cgi/wiki?BadVariableNames). Not all developers write code in this style, of course, but some do and it makes understanding the story they're trying to tell nigh impossible. Even the general public can sympathize with these feelings; you've no doubt seen "hackers" in shows or movies clacking away [alphabet vomit](http://www.hackertyper.com) and wondered to yourselves, "Who the blazes can actually read that?".
 
 <!--break-->

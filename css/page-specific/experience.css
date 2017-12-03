@@ -56,9 +56,6 @@ main ul {
 	width: auto;
 	max-height: 11vh;
 }
-.card:hover {
-	transform: scale(1.025);
-}
 
 /* ----- IMAGES & VIDEO ----- */
 

@@ -16,7 +16,6 @@ For the past few articles I've focused on topics that were for everyone, but for
 Developers, I'm going to take a wild guess and assume that the vast majority of you reading this use some form of Unix-based machine (like Linux or OS X) for the bulk of your development. But let's face it; as powerful as Unix is we can't deny how big a pain in the neck it is to use, even at the most rudimentary level[^quiz]. To master it takes *years* of dedicated exercise which isn't made any easier by how cryptic and ludicrous some commands are (I'm looking at you, `sed`).
 
 <a id="resume-from-break"></a>
-
 So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a <span class="small-caps">GUI</span> we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
 
 <!--break-->
@@ -44,7 +43,7 @@ Now, here's my current setup for inspiration:
 ![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png){: .inline .no-shadow }
 </figure>
 
-How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/downloads/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
+How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
 
 The `.bashrc` will be used to actually "turn on" colors, assign the colors to the kinds of files you think they should represent, and customize your prompt since they're all directly handled by the shell. Below are the lines necessary to turn on colors and some of my current settings to help get you started on your prompt and color assignments.
 
@@ -173,7 +172,7 @@ ql () {
 Aliases
 -------
 
-Last but not least there's aliases which &#8212; if you aren't aware &#8212; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
+Last but not least there's aliases which &mdash; if you aren't aware &mdash; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
 
 {% highlight bash %}
 # Print out every path that constitutes the current $PATH
@@ -212,10 +211,10 @@ Download
 
 If you want the full `.bashrc` and `.bash_aliases` files used in the examples above you can download them below:
 
-* __With Comments__: [bashrc]({{ site.baseurl }}/downloads/making-terminal-better/bashrc.txt), [bash_aliases]({{ site.baseurl }}/downloads/making-terminal-better/bash-aliases.txt)
-* __Without Comments__: [bashrc]({{ site.baseurl }}/downloads/making-terminal-better/bashrc-sans-comments.txt), [bash_aliases](bash-aliases-sans-comments.txt)
+* __With Comments__: [bashrc]({{ site.baseurl }}/downloads/assets/making-terminal-better/bashrc.txt), [bash_aliases]({{ site.baseurl }}/downloads/assets/making-terminal-better/bash-aliases.txt)
+* __Without Comments__: [bashrc]({{ site.baseurl }}/downloads/assets/making-terminal-better/bashrc-sans-comments.txt), [bash_aliases](bash-aliases-sans-comments.txt)
 
-In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/making-terminal-better/duokai.terminal). Happy customizing, everyone. ⌘
+In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal). Happy customizing, everyone. ⌘
 
 ----------  
 

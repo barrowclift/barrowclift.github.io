@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 42.4 39.5" enable-background="new 0 0 42.4 39.5" xml:space="preserve">
-<g id="XMLID_5_">
-	<g id="XMLID_6_">
-		<polygon id="XMLID_11_" fill="#007EE5" points="12.5,0 0,8.1 8.7,15.1 21.2,7.3"/>
-		<polygon id="XMLID_10_" fill="#007EE5" points="0,21.9 12.5,30.1 21.2,22.8 8.7,15.1"/>
-		<polygon id="XMLID_9_" fill="#007EE5" points="21.2,22.8 30,30.1 42.4,22 33.8,15.1"/>
-		<polygon id="XMLID_8_" fill="#007EE5" points="42.4,8.1 30,0 21.2,7.3 33.8,15.1"/>
-		<polygon id="XMLID_7_" fill="#007EE5" points="21.3,24.4 12.5,31.7 8.8,29.2 8.8,32 21.3,39.5 33.8,32 33.8,29.2 30,31.7"/>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="948px" height="884px" viewBox="0 0 948 884" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero" fill="#007EE5">
+            <polygon points="279.481132 0 0 180.774834 194.518868 337 474 162.92053"></polygon>
+            <polygon points="0 489.773333 279.481132 674 474 509.993333 194.518868 337"></polygon>
+            <polygon points="474 509.993333 670.754717 674 948 492.02 755.716981 337"></polygon>
+            <polygon points="948 180.774834 670.754717 0 474 162.92053 755.716981 337"></polygon>
+            <polygon points="481 547 283.176 709.92053 200 654.125828 200 716.615894 481 884 762 716.615894 762 654.125828 676.576 709.92053"></polygon>
+        </g>
+    </g>
 </svg>

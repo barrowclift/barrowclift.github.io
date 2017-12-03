@@ -51,7 +51,7 @@ function upArrowClicked() {
 /* When ready... */
 $(document).ready(function() {
 	/* Dark Mode */
-	$.cookie.defaults={path:'/'};
+	$.cookie.defaults = { expires: 265, path: '/' };
 	if ($.cookie("dark-mode")) {
 		var cssId = 'dark-mode';
 		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	}
 
 	var html = $("html");
-	if (html.scrollTop() > 40) {
+	if (html.scrollTop() > 70) {
 		html.addClass("hide-menu");
 	}
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		var menu = $("menu");
 		var skip = true;
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 40) {
+			if ($(this).scrollTop() > 70) {
 				html.addClass("hide-menu");
 			} else {
 				html.removeClass("hide-menu");

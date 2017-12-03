@@ -22,12 +22,12 @@ I had nothing but apathy for the feature. With macOS's benign default tags like 
 
 ------
 
-Let's walk through a scenario: You're an independent web developer and human interface designer. As a part of your continued education, you've made a habit of locally saving web pages you were inspired by to later use as references. To help organize the growing reference folder, the archived pages were sorted into folders based loosely on the page type: blog, product, or portfolio. Then&#8212;when you wanted to reference something&#8212;you'd drill down into one of those folders based on the kind of page you wanted references for. So far, so good.
+Let's walk through a scenario: You're an independent web developer and human interface designer. As a part of your continued education, you've made a habit of locally saving web pages you were inspired by to later use as references. To help organize the growing reference folder, the archived pages were sorted into folders based loosely on the page type: blog, product, or portfolio. Then&mdash;when you wanted to reference something&mdash;you'd drill down into one of those folders based on the kind of page you wanted references for. So far, so good.
 
 Now fast forward a year. What began as a small collection of inspiration materials has ballooned into a bin filled to the brim with hundreds of archived web pages, all with their own design strengths and weaknesses. So, when you want to reference blog pages with a colorful, casual feel, you are forced to sift through hundreds of unrelated blog pages to find those that match your criteria.
 
 <figure markdown="1">
-[![A screenshot of a macOS Finder window of a folder filled with archived web pages. These pages are not organized at all.]({{ site.baseurl }}/images/assets/tags-explained/before-tags.jpg){: .edge-to-edge .medium .macos-screenshot }]({{ site.baseurl }}/images/assets/tags-explained/before-tags.png)
+![A screenshot of a macOS Finder window of a folder filled with archived web pages. These pages are not organized at all.]({{ site.baseurl }}/images/assets/tags-explained/before-tags.jpg){: .edge-to-edge .medium .macos-screenshot }
 <figcaption>
 You'd have to check each page manually to see if it matches the criteria, thus this system is woefully inadequate.
 </figcaption>
@@ -38,7 +38,7 @@ You may have anticipated this and added another set of folders earlier on under 
 This approach has one fatal flaw: *The reference materials can easily have more than one design strength*. What if you want to archive a product page that is professional, but also colorful? In this system, you'd either have to make duplicates of that page for each of the strength folders, make an alias to the page for each folder, or simply give up and only sort into one folder. This method of organization is incredibly wasteful in the case of duplications and extremely brittle in the case of file aliases, and is thus not sustainable.
 
 <figure markdown="1">
-[![A screenshot of a macOS Finder window demonstrating that an example web page could belong to both a "Colorful" folder as well as a "Typography" folder]({{ site.baseurl }}/images/assets/tags-explained/only-one-place-at-a-time.jpg){: .edge-to-edge .medium .macos-screenshot }]({{ site.baseurl }}/images/assets/tags-explained/only-one-place-at-a-time.png)
+![A screenshot of a macOS Finder window demonstrating that an example web page could belong to both a "Colorful" folder as well as a "Typography" folder]({{ site.baseurl }}/images/assets/tags-explained/only-one-place-at-a-time.jpg){: .edge-to-edge .medium .macos-screenshot }
 <figcaption>
 This particular page has lovely colors and tight typography, but it can't be in two folders at once!
 </figcaption>
@@ -59,12 +59,12 @@ However, if we use tags instead, our situation quickly improves. There's no need
 </p>
 </figure>
 
-The scenario we've walked through exposes the core truth that folders are specifically designed to organize files with clearly defined, inherit hierarchies. When that hierarchy isn't clear or doesn't exist&#8212;like in the scenario above&#8212;the system falls apart.
+The scenario we've walked through exposes the core truth that folders are specifically designed to organize files with clearly defined, inherit hierarchies. When that hierarchy isn't clear or doesn't exist&mdash;like in the scenario above&mdash;the system falls apart.
 
 In contrast, tags are built for the explicit purpose of being able to handle situations where there is no obvious hierarchy. Since the design strengths in the scenario are "flat" properties, tags are the perfect system to represent them. In fact, some apps already utilize their own tagging systems over folders for this very reason, like [Photos](#TODO) and the [Bear Writer](http://www.bear-writer.com) notes app[^photo-organization].
 
 <figure markdown="1">
-[![A sketch showing the file duplicates required to get the same organizational result with Folders, compared to Tags where no duplicates are necessary]({{ site.baseurl }}/images/assets/tags-explained/folders-vs-tags-sketch.png){: .edge-to-edge .medium }]({{ site.baseurl }}/images/assets/tags-explained/folders-vs-tags-sketch.png)
+![A sketch showing the file duplicates required to get the same organizational result with Folders, compared to Tags where no duplicates are necessary]({{ site.baseurl }}/images/assets/tags-explained/folders-vs-tags-sketch.png){: .edge-to-edge .medium }
 </figure>
 
 That's all well and good, but how do you know when to use tags instead of folders in your day-to-day life? After all, whether or not your information is hierarchical in nature isn't exactly obvious. To help with this task, there's a fantastic little trick you can use to quickly determine whether or not tags should be used instead of folders: __If you find yourself duplicating folders or files during organization, use tags instead__. Take the scenario from above; if using folders, there would have been duplicate "design strength" folders like "Colorful" within each "page type" folder, as well as page duplicates in each appropriate "design strength" folder. We have found ourselves making many duplicates, so tags should be considered instead.

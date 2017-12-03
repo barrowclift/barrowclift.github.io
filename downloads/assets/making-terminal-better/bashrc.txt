@@ -1,0 +1,185 @@
+# This file is sourced by all *interactive* bash shells on startup,
+# including some apparently interactive shells such as scp and rcp
+# that can't tolerate any output.  So make sure this doesn't display
+# anything or bad things will happen !
+
+# Test for an interactive shell.  There is no need to set anything
+# past this point for scp and rcp, and it's important to refrain from
+# outputting anything in those cases.
+
+# This .bashrc was formed with the help of Kurt Schmidt and lots of fine folks
+# over at dotfiles.org like xabbott and chris71mach1. Others included
+# onyxleopard from reddit.com/r/osxterminal and lopespm on Github.
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive. Quit!
+	return
+fi
+
+#  -----------------------------------------------------------------------------
+#
+#  SECTIONS:
+#  1.  Environment Configuration
+#  2.  Terminal Functions
+#
+#  -----------------------------------------------------------------------------
+
+
+# ==============================================================================
+# 1.  ENVIRONMENT CONFIGURATION
+# ==============================================================================
+
+# PATH
+# ----------------------------------------------
+# Default path
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+# Any other paths you have for libraries, languages,
+# applications, etc. go here
+
+
+# COLORS
+# ----------------------------------------------
+# See http://www.linux-sxs.org/housekeeping/lscolors.html for color guide
+# Music (Yellow)
+export LS_COLORS="*.m4a=00;33:*.mp3=00;33:*.flac=00;33:*.aac=00;33:*.aiff=00;33"
+# Movie (Yellow)
+export LS_COLORS="*.m4v=00;33:*.mov=00;33:*.mpg=00;33:*.mp4=00;33:${LS_COLORS}"
+# Pictures (Magenta)
+export LS_COLORS="*.jpg=00;35:*.png=00;35:*.tiff=00;35:*.tif=00;35:*.gif=00;35:*.pdf=00;35:${LS_COLORS}"
+# Archives (Red)
+export LS_COLORS="*.tar=00;31:*.tgz=00;31:*.zip=00;31:*.gz=00;31:*.jar=00;31:*.rar=00;31:*.7z=00;31:${LS_COLORS}"
+
+# Add color in Terminal, required to "turn on" colors for OS X and FreeBSD
+export CLICOLOR=1
+
+# Colorize and format man pages
+export LESS_TERMCAP_mb=$'\e[01;31m'
+export LESS_TERMCAP_md=$'\e[1;94;1;94m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[0;103m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;31;1;31m'
+
+
+# PROMPT
+# ----------------------------------------------
+export RED='\[\033[0;31m\]'
+export CYAN='\[\033[0;36m\]'
+export BLUE='\[\033[0;34m\]'
+export NORMAL='\[\033[00m\]'
+export PS1="\u:${CYAN}\w${RED}\n\$ ${NORMAL}"
+
+
+# LOCATIONS
+# ----------------------------------------------
+# Local login
+export SHTEVE="$USER@$HOSTNAME"
+# Any other locations you want to assign variables to go here.
+
+
+# VARIOUS
+# ----------------------------------------------
+# Set default editor
+export EDITOR=/usr/bin/vim
+
+# Try to correct spelling errors in the cd command
+shopt -s cdspell
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# Using alias definitions from .bash_aliases.
+# Please make sure this file is either present or delete this line,
+# otherwise your shell will fail loading the .bashrc at this part
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+# Enable programmable completion features
+if [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+
+
+# ==============================================================================
+# 2.  TERMINAL FUNCTIONS
+# ==============================================================================
+
+# Easier and better extractor
+extract () {
+	# Must use "$@" if we want all arguments (with white space) to be treated
+	# As one file argument. This, however, restricts the command to one file 
+	# or directory argument at a time, so while that's never an issue for me
+	# personally do take note of this.
+	if [ -f "$@" ] ; then
+		case "$@" in
+			*.tar.bz2)  tar xjf "$@"    ;;
+			*.tar.gz)   tar xzf "$@"    ;;
+			*.bz2)      bunzip2 "$@"    ;;
+			*.rar)      rar x "$@"      ;;
+			*.gz)       gunzip "$@"     ;;
+			*.tar)      tar xf "$@"     ;;
+			*.tbz2)     tar xjf "$@"    ;;
+			*.tgz)      tar xzf "$@"    ;;
+			*.zip)      unzip "$@"      ;;
+			*.Z)        uncompress "$@" ;;
+			*)          echo "'$@' cannot be extracted via extract()" ;;
+		esac
+	else
+		echo "'$@' is not a valid file"
+	fi
+}
+
+# An easer zip command
+# Usage: $ zipper ${THE_FILE}
+zipper () {
+	if [ $(echo $@ | tail -c 2) == "/" ] ; then
+		file="${@%?}"
+	else
+		file="$@"
+	fi
+
+	zip -r -q "$file.zip" "$file"
+}
+
+# An easier tar compression command
+# Usages: $ tartar ${THE_FILE}
+tartar () {
+	if [ $(echo $@ | tail -c 2) == "/" ] ; then
+		file="${@%?}"
+	else
+		file="$@"
+	fi
+
+	tar czf "$file.tar.gz" "$file"
+}
+
+# Move a file and automatically traverse to the directory it was moved to
+md () {
+	if [ -f "$1" -o -d "$1" ] ; then
+		if [ -d "$2" ] ; then
+			mv "$1" "$2"
+			cd "$2"
+		else
+			echo "'$2' is not a valid directory"
+		fi
+	else
+		echo "'$1' is not a valid file"
+	fi
+}
+
+# Removes all .DS_Store and ._.DS_Store files from the current directory down
+dsdel () {
+	find . -name ".DS_Store" -delete
+}
+
+# Move deleted files to OS X's trash (safer)
+trash () {
+	command mv "$@" ~/.Trash ;
+}
+
+# Preview file in OS X's QuickLook
+ql () {
+	qlmanage -p "$*" >& /dev/null;
+}

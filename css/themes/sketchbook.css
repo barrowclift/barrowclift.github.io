@@ -6,11 +6,19 @@ menu {
 	background-color: rgba(256, 210, 0, 0.7);
 }
 /* Provides a nice "sketchpad" like texture to the background */
-body  {
+html  {
 	background-image: url(/images/projects/art/sketches/notes@2x.png);
 }
+html#dark {
+	background-image: url(/images/projects/art/sketches/darknotes@2x.png);
+}
 
-
+#logo:hover .signature-color {
+	fill: white !important;
+}
+#dark #logo:hover .signature-color {
+	fill: #FDD442 !important;
+}
 .signature-color {
 	fill: white;
 }

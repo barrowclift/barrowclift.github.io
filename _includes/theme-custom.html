@@ -48,6 +48,12 @@ menu ul a,
 	background-color: unset;
 	color: {{ page.primary-color }};
 }
+#logo:hover .signature-color {
+	fill: white !important;
+}
+#dark #logo:hover .signature-color {
+	fill: {{ page.primary-color }} !important;
+}
 
 main a,
 main a:link,
@@ -55,6 +61,10 @@ main a:visited,
 .active,
 .anchor {
 	color: {{ page.primary-color }};
+}
+main a:hover,
+.anchor:hover {
+	background-color: {{ page.primary-color-hover }};
 }
 
 /* Highlights (must be seperate, combining them breaks the style) */
