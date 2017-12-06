@@ -30,7 +30,8 @@ menu ul a,
 #dark-mode-toggle:hover {
 	background-color: rgba(255, 255, 255, 0.3);
 }
-.active {
+.active,
+menu a:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 #dark-mode-toggle .fill-color {
@@ -47,8 +48,9 @@ menu ul a,
 }
 
 #dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover {
-	background-color: unset;
+#dark #dark-mode-toggle:hover,
+#dark .active:hover {
+	background-color: rgba(253, 212, 66, 0.1);
 	color: #FDD442;
 }
 #dark #dark-mode-toggle:hover .fill-color,

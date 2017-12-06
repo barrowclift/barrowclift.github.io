@@ -53,6 +53,7 @@
 	min-width: 100vw;
 	height: auto;
 	margin: 0 !important;
+	border-radius: 1em;
 }
 article {
 	max-width: 35em;

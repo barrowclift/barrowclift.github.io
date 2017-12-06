@@ -26,16 +26,19 @@ menu ul a,
 	stroke: white !important;
 }
 .hover:hover:not(.active),
-#dark-mode-toggle:hover {
+#dark-mode-toggle:hover,
+menu a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
-.active {
+.active,
+menu a.active:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
 #dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover {
-	background-color: unset;
+#dark #dark-mode-toggle:hover,
+#dark menu a.active:hover {
+	background-color: {{ page.primary-color-hover }};
 	color: {{ page.primary-color }};
 }
 #dark #dark-mode-toggle:hover .fill-color {

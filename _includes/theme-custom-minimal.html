@@ -33,6 +33,11 @@ svg:hover .fill-color {
 	fill: {{ page.primary-color }} !important;
 }
 
+#dark menu a:hover,
+#dark .hover:hover:not(.active) {
+	background-color: {{ page.primary-color-hover }};
+}
+
 input:focus, textarea:focus,
 button, .link-button {
 	background-color: {{ page.primary-color }};
@@ -62,5 +67,12 @@ main a:hover,
 ::-moz-selection { /* Firefox */
 	background: {{ page.primary-color }};
 	color: white;
+}
+
+@media (min-width: 700px) {
+	#dark menu a:hover,
+	#dark .hover:hover:not(.active) {
+		background-color: unset;
+	}
 }
 </style>
