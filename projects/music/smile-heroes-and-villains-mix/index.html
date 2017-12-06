@@ -7,7 +7,7 @@ anchors: false
 
 theme: custom
 primary-color: "rgb(234, 110, 55)"
-primary-color-hover: "rgba(234, 110, 55, 0.2)"
+primary-color-hover: "rgba(234, 110, 55, 0.1)"
 menu-color: "rgba(235, 141, 59, 0.95)"
 menu-color-safari: "rgba(235, 141, 59, 0.7)"
 
@@ -16,11 +16,14 @@ projects-menu-active: true
 ---
 
 <style>
+	#content {
+		background-color: #DF914D;
+	}
 	main {
 		margin-top:0;
 		margin-bottom:0;
 	}
-	.foo {
+	.details {
 		display: inline-block;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.18);
 		width: 100%;
@@ -29,17 +32,17 @@ projects-menu-active: true
 		margin-top: -1em;
 		background-color: white;
 	}
-	#dark .foo {
+	#dark .details {
 		background-color: #272822;
 	}
-	.bar {
+	.wrapper {
 		max-width: 35em;
 		display: inline-block;
 		margin-bottom: 2.6em;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.lalala {
+	.showcase {
 		/*IE10+ */
 		background-image: -ms-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
 		/*Mozilla Firefox */
@@ -55,14 +58,14 @@ projects-menu-active: true
 		/*background: linear-gradient(135deg, #EB8D3B 0%, #EB6B37 100%);*/
 		transition: background 5s ease-in-out;
 	}
-	#dark .lalala {
+	#dark .showcase {
 		background: linear-gradient(135deg, hsl(28, 91%, 29%), hsl(17, 92%, 28%) 100%);
 	}
-	.lalala img {
+	.showcase img {
 		width: 35vh;
 		border-radius: 0.25em;
 	}
-	.lalala a {
+	.showcase a {
 		margin: 0;
 		padding: 0;
 		display:inline-block;
@@ -70,10 +73,10 @@ projects-menu-active: true
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	.lalala a:hover {
+	.showcase a:hover {
 		background-color:unset;
 	}
-	.lalala {
+	.showcase {
 		padding-top: 10vh;
 		height:65vh;
 	}
@@ -104,55 +107,55 @@ projects-menu-active: true
 		display:none;
 	}
 	@media (max-height: 460px) {
-		.lalala {
+		.showcase {
 			display:none;
 		}
 	}
 	@media (max-height: 565px) {
-		.lalala img {
+		.showcase img {
 			display:none;
 		}
-		.lalala {
+		.showcase {
 			height: 50vh;
 		}
 	}
 	@media (min-height: 900px) {
-		.lalala {
+		.showcase {
 			height: 60vh;
 			max-height:725px;
 			padding-top: 5vh;
 		}
 	}
 	@media (min-width: 700px) {
-		.lalala img {
+		.showcase img {
 			width: 50vh;
 		}
-		.lalala {
+		.showcase {
 			padding-top: 15vh;
 			height: 85vh;
 			max-height:unset;
 		}
-		.bar {
+		.wrapper {
 			padding-left: 0;
 			padding-right: 0;
 		}
 	}
 	@media(min-width: 700px) and (max-height: 700px) {
-		.lalala {
+		.showcase {
 			padding-top: 15vh;
 		}
 	}
 	@media(min-width: 700px) and (max-height: 600px) {
-		.lalala {
+		.showcase {
 			height: 50vh;
 		}
-		.lalala img {
+		.showcase img {
 			display:none;
 		}
 	}
 </style>
 
-<div class="lalala">
+<div class="showcase">
 	<div>
 		<a href="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg">
 			<img src="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg" class="project" alt="Vinyl vector" />
@@ -162,8 +165,8 @@ projects-menu-active: true
 	<iframe class="project" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255075143&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false&amp;"></iframe>
 </div>
 
-<div class="foo">
-	<div class="bar">
+<div class="details">
+	<div class="wrapper">
 		<h1>SMiLE: Heroes and Villains Mix</h1>
 		<p class="large-top-margin">In 1966, hot off recording "Pet Sounds" and with The Beatles' "Sgt. Pepper's Lonely Hearts Club Band" in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
 

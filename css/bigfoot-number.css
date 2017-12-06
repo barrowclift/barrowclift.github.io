@@ -14,7 +14,7 @@
 	border: none;
 	border-radius: 0.3em;
 	cursor: pointer;
-	background-color: rgba(0, 122, 255, 0.2);
+	background-color: rgba(0, 122, 255, 0.1);
 	-webkit-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
 	backface-visibility: hidden;

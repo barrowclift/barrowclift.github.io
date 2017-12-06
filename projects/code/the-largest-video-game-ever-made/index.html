@@ -11,7 +11,7 @@ theme: custom-minimal
 background-color: "rgb(10, 10, 10)"
 foreground-color: "white"
 primary-color: "rgb(255, 59, 48)"
-primary-color-hover: "rgba(255, 59, 48, 0.2)"
+primary-color-hover: "rgba(255, 59, 48, 0.1)"
 menu-color: "rgba(0, 0, 0, 0.95);"
 dark: true
 
@@ -30,6 +30,11 @@ projects-menu-active: true
 	#logo {
 		pointer-events: none;
    		cursor: default;
+	}
+	@media (min-width:700px) {
+		header {
+			display: none !important;
+		}
 	}
 </style>
 <h1 class="center">The Largest Video Game Ever</h1>
@@ -53,7 +58,7 @@ projects-menu-active: true
 <hr style="margin-bottom:3.9rem;margin-top:3.9rem;">
 
 <figure class="small-bottom-margin top-margin">
-	<video class="embedded-video" controls preload="none" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
+	<video class="embedded-video" controls preload="metadata" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
 		<source src="/videos/news-coverage.mp4" type="video/mp4">
 		<source src="/videos/news-coverage.webm" type="video/webm">
 		<source src="/videos/news-coverage.ogv" type="video/ogg">
