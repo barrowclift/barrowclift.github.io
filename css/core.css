@@ -1401,10 +1401,10 @@ input, textarea {
 
 /* Dynamic menu hiding */
 menu.transform-animation {
-	transition: background-color 0.25s ease-in-out, transform 0.25s ease-out;
+	transition: background-color 0.25s ease-in-out, transform 0.5s ease-out;
 }
 #logo.transform-animation {
-	transition: transform 0.25s ease-out;	
+	transition: transform 0.5s ease-out;	
 }
 #menu-height-offset {
 	transition: height 0.25s ease-out;
@@ -1549,8 +1549,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
 			text-align: left;
 			width: auto;
 			position: absolute;
-			padding-left: 0.45em;
-			padding-top: 0.45em;
+			padding-left: 0.48em;
+			padding-top: 0.48em;
 		}
 		menu ul {
 			margin-left: 9rem;
@@ -1841,8 +1841,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
 		height: 2.675rem;
 	}
 		menu header {
-			padding-left: 0.75em;
-			padding-top: 0.5em;
+			padding-left: 0.78em;
+			padding-top: 0.49em;
 		}
 			menu ul {
 				margin-left: 0;
