@@ -77,7 +77,7 @@ $(document).ready(function() {
 	}
 
 	var html = $("html");
-	if (html.scrollTop() > 1) {
+	if (html.scrollTop() > 10) {
 		html.addClass("hide-menu");
 	}
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		var menu = $("menu");
 		var skip = true;
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 1) {
+			if ($(this).scrollTop() > 10) {
 				html.addClass("hide-menu");
 			} else {
 				html.removeClass("hide-menu");
