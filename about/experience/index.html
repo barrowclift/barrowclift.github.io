@@ -6,6 +6,7 @@ anchors: false
 edge-to-edge: true
 special-stylesheets:
   - experience
+date-override: 1515261162
   
 title: "Experience"
 about-menu-active: true
@@ -15,14 +16,8 @@ about-menu-active: true
 	main a:hover {
 		background-color: unset;
 	}
-	/*menu ul a {
-		color: #333333;
-	}
-	#dark-mode-toggle .fill-color {
-		fill: #333333;
-	}*/
 	h2.fancy {
-		margin: 2.828em 0 0.5em;
+		margin: 2.828em 0 1.95rem;
 	}
 	main {
 		margin-top: 1px;
@@ -73,27 +68,27 @@ about-menu-active: true
 			background-image: -moz-linear-gradient(left, #5A5B56, #272822);
 			background-image: -o-linear-gradient(left, #5A5B56, #272822);
 		}
-	.foobar h2 {
-		text-shadow: 0px 2px 4px RGBA(51, 51, 51, 0.25);
+	.hero-section h2 {
+		text-shadow: 0px 2px 4px rgba(51, 51, 51, 0.25);
 		margin-bottom: 0;
 	}
-	.foobar img {
+	.hero-section img {
 		width: 90vw;
 		max-width: 650px;
 	}
-	.foobar > div {
+	.hero-section > div {
 		background-image: url('/images/about/experience/Slice.png');background-image: url('/images/about/experience/Slice.png');
 		background-size: 100% 100%;box-shadow: inset 0 -1em 1em -1em rgba(115, 115, 115, 0.75);
 		padding-top: 3.9em;
 		padding-bottom: 3.9em;
 	}
-	#dark .foobar > div {
+	#dark .hero-section > div {
 		filter: grayscale(0.2);
 	}
-	.foobar > div {
+	.hero-section > div {
 		transition: filter 0.2s ease-in-out;
 	}
-	.asdf {
+	.apperances {
 		max-width:unset !important;
 	}
 	@media (min-width: 700px) {
@@ -102,40 +97,46 @@ about-menu-active: true
 			min-width: 9em;
 			max-width: 13em;
 		}
-		.foobar h2 {
-			text-shadow: 0px 2px 8px RGBA(51, 51, 51, 0.5);
+		.hero-section h2 {
+			text-shadow: 0px 2px 8px rgba(51, 51, 51, 0.5);
 		}
 		main {
 			margin-top: 51px;
-		}
-		
+		}	
 	}
 	@media (min-width: 900px) {
 		main {
 			margin-top: 56px;
 		}
-		.foobar img {
+		.hero-section img {
 			min-width: 650px;
 			max-width: 750px;
 			width: 50vw;
 		}
-		.foobar > div {
+		.hero-section > div {
 			padding-top: 6.5em;
 			padding-bottom: 6.5em;
 		}
-		.asdf .card {
+		.apperances .card {
 			width: 42.25vw;
 			max-width: unset;
 		}
 	}
 	@media (min-width: 1300px) {
-		.asdf .card {
-			width: 30vw;
+		.apperances .card {
+			width: 29vw;
 			max-width: 440px;
+		}
+		.card,
+		.card.large,
+		.card.large-when-small {
+			margin-left: .975rem;
+			margin-right: .975rem;
+			margin-bottom: 1.95rem;
 		}
 	}
 </style>
-	<div class="foobar" style="width: 100vw;">
+	<div class="hero-section" style="width: 100vw;">
 		<div>
 			<a href="https://www.xfinity.com" class="content">
 				<img class="long-logo" src="/images/about/experience/comcast-white.png" alt="Comcast" />
@@ -335,7 +336,7 @@ color: white;" class="primary">Technology &amp; Product<span class="hide-when-sm
 
 <h2 class="fancy"><span>Apperances</span></h2>
 
-<ul class="asdf">
+<ul class="apperances">
 	<div class="card bleed large-when-small">
 		<video controls preload="metadata" poster="/images/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
 			<source src="/videos/news-coverage.mp4" type="video/mp4">
