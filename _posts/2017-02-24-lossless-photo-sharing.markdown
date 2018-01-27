@@ -65,7 +65,7 @@ While there are less services available that serve this particular use case, the
 
 ---------------------------
 
-Photo sharing is a bloated, complicated mess, but now you're armed and ready with the knowledge of what the available, optimal services are for the volume of photos you're sharing. Now, instead of spending time worrying about what to use, you can direct your energy back to where it belongs&mdash;sharing your uncompressed memories with friends and family. ⌘
+Photo sharing is a bloated, complicated mess, but now you're armed and ready with the knowledge of what the available, optimal services are for the volume of photos you're sharing. Now, instead of spending time worrying about what to use, you can direct your energy back to where it belongs&mdash;sharing your uncompressed memories with friends and family.
 
 ----------------------------
 

@@ -578,7 +578,7 @@ Third party menu bar icons come in all kinds of styles. Some have thick stroke l
 
 Things have changed so much the past five years. Apple's focus has all but vanished from macOS in lieu of the shareholder darling, iOS, leaving poor macOS to live on in little more than maintenance mode at worst and with [shoddy drive-by updates by B-Team developers](https://512pixels.net/2016/03/typos-in-disk-utility/) at best.
 
-However, even with the poor treatment its receives, macOS continues to stand strong against the test of time, helped by its suite of powerful, delightful features that continue to put smiles on the faces of average consumers and developers alike. Hopefully, these features brought a smile to your face as well. While that's all the features I have to highlight at this time, with any luck there will be a list of new features to highlight in next year's update. For macOS's sake, I certainly hope so. ⌘
+However, even with the poor treatment its receives, macOS continues to stand strong against the test of time, helped by its suite of powerful, delightful features that continue to put smiles on the faces of average consumers and developers alike. Hopefully, these features brought a smile to your face as well. While that's all the features I have to highlight at this time, with any luck there will be a list of new features to highlight in next year's update. For macOS's sake, I certainly hope so.
 
 -----
 

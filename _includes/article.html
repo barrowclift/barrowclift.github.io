@@ -31,6 +31,17 @@
 
 	{{ content }}
 
+	<div id="article-linkback">
+		<a href="https://barrowclift.me">⌘</a>
+	</div>
+	<script>
+		$(document).ready(function() {
+		    if ($("article .footnotes")) {
+		    	$("#article-linkback").insertBefore($("article .footnotes").prev());
+		    }
+		});
+	</script>
+
 	<footer>
 		{% include blog-footer-buttons.html %}
 	</footer>

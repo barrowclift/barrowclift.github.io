@@ -27,4 +27,4 @@ There are [multiple academic papers](https://justgetflux.com/research.html) publ
 
 If you are not already using f.lux I implore you to give it a try. For best results I highly recommend launching it in the middle of the day and leaving it be, that way you get to experience the natural, steady transition it provides as the night advances.
 
-You can [download f.lux for free here](https://justgetflux.com). ⌘
+You can [download f.lux for free here](https://justgetflux.com).

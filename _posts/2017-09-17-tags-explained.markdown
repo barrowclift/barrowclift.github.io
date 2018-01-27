@@ -69,7 +69,7 @@ In contrast, tags are built for the explicit purpose of being able to handle sit
 
 That's all well and good, but how do you know when to use tags instead of folders in your day-to-day life? After all, whether or not your information is hierarchical in nature isn't exactly obvious. To help with this task, there's a fantastic little trick you can use to quickly determine whether or not tags should be used instead of folders: __If you find yourself duplicating folders or files during organization, use tags instead__. Take the scenario from above; if using folders, there would have been duplicate "design strength" folders like "Colorful" within each "page type" folder, as well as page duplicates in each appropriate "design strength" folder. We have found ourselves making many duplicates, so tags should be considered instead.
 
-With that little trick in mind, you're now equipped to take full advantage of the latest macOS file system features. When used in the right situations, tags can help make your file organization as clean and efficient as the Mac they're on, so don't be afraid to take a little bit of time to play around with it. Happy organizing! ⌘
+With that little trick in mind, you're now equipped to take full advantage of the latest macOS file system features. When used in the right situations, tags can help make your file organization as clean and efficient as the Mac they're on, so don't be afraid to take a little bit of time to play around with it. Happy organizing!
 
 -----------------
 

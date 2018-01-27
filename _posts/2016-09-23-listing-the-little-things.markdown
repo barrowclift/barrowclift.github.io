@@ -145,7 +145,7 @@ Of course, it would be your finger instead of a mouse pointer 😉
 
 --------------------
 
-That's it! Please, feel free to share your own favorites with me [here]({{ "/contact" | prepend: site.baseurl }}), especially if they aren't already listed above. I look forward to hearing them! ⌘
+That's it! Please, feel free to share your own favorites with me [here]({{ "/contact" | prepend: site.baseurl }}), especially if they aren't already listed above. I look forward to hearing them!
 
 --------------------
 
