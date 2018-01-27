@@ -17,6 +17,32 @@
 	<body>
 		{% include lazy-load-stylesheets.html %}
 
+		{% if page.backdrop %}
+		<style>
+			.backdrop {
+				position: fixed;
+				background-image: url('{{ page.backdrop }}');
+				background-position: center;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				z-index: -500;
+				opacity: 0.05;
+				transition: opacity 0.2s ease;
+
+				-webkit-filter: blur(25px);
+				-moz-filter: blur(25px);
+				-o-filter: blur(25px);
+				-ms-filter: blur(25px);
+				filter: blur(25px);
+			}
+			#dark .backdrop {
+				opacity: 0.1;
+			}
+		</style>
+		<div class="backdrop"></div>
+		{% endif %}
+
 		<div id="wrap">
 			<div id="content" class="center {% if page.viewing-single-page != true %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
 				{% include menu.html %}

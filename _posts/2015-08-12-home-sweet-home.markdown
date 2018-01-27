@@ -118,4 +118,4 @@ If you instead, however, put more weight on ascetics your sorting could be compl
 Done
 ----
 
-Brew some coffee or tea, sit back, and enjoy the fruits of your efforts. You've now got an iPhone that more purely and boldly reflects your individual style and values. Do keep in mind that it might take some time to adjust and you might have to scan your screen for a moment or two when finding apps for the first week or so. Don't worry and press on, you'll adjust quickly and soon wonder how you ever got by before. Welcome home. ⌘
+Brew some coffee or tea, sit back, and enjoy the fruits of your efforts. You've now got an iPhone that more purely and boldly reflects your individual style and values. Do keep in mind that it might take some time to adjust and you might have to scan your screen for a moment or two when finding apps for the first week or so. Don't worry and press on, you'll adjust quickly and soon wonder how you ever got by before. Welcome home.

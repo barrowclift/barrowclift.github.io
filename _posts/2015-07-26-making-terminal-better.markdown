@@ -214,7 +214,7 @@ If you want the full `.bashrc` and `.bash_aliases` files used in the examples ab
 * __With Comments__: [bashrc]({{ site.baseurl }}/downloads/assets/making-terminal-better/bashrc.txt), [bash_aliases]({{ site.baseurl }}/downloads/assets/making-terminal-better/bash-aliases.txt)
 * __Without Comments__: [bashrc]({{ site.baseurl }}/downloads/assets/making-terminal-better/bashrc-sans-comments.txt), [bash_aliases](bash-aliases-sans-comments.txt)
 
-In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal). Happy customizing, everyone. ⌘
+In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal). Happy customizing, everyone.
 
 ----------  
 

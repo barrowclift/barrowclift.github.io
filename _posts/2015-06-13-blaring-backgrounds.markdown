@@ -27,4 +27,4 @@ Aaah, much better.
 </figcaption>
 </figure>
 
-This background is a vast improvement. Not only is it a far more soothing tone of green it's also far less visually busy. It succeeds at fading into the background and directing focus towards the task by subtly supporting and enhancing the foreground, exactly what any kind of background is supposed to accomplish. After all, it's not a desktop foreground, it's a desktop *background*, and it should stay true to what it is (unless you plan on dedicating your computer to being a $1000+ picture frame). ⌘
+This background is a vast improvement. Not only is it a far more soothing tone of green it's also far less visually busy. It succeeds at fading into the background and directing focus towards the task by subtly supporting and enhancing the foreground, exactly what any kind of background is supposed to accomplish. After all, it's not a desktop foreground, it's a desktop *background*, and it should stay true to what it is (unless you plan on dedicating your computer to being a $1000+ picture frame).

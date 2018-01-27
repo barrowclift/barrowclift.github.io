@@ -60,7 +60,7 @@ I believe this is one of the contributing factors behind why developers have suc
 
 As developers, we are not being clever or efficient when we use cryptic acronyms, declarations stripped of all vowels so "r cd rds lk ths", or vague names that only seem to communicate to the reader "I'm a thing" like [`o`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/alphabet/fs/query.b?at=default#query.b-44), [`foo`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/lib/pslib.b?at=default#pslib.b-690), or [`magic`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/cmd/mdb.b?at=default#mdb.b-372). Writing with such a harmful style complicates our jobs when we return months later to fix a bug only to discover we have no idea how our own program works, cripples future developers' ability to continue project maintenance, and further alienates developers from other professions. If we simply gave our names proper attention and care, we would not only make future enhancements on our old work more pleasant, but in the process we'd break down the harmful front that our profession consists of wizards slamming [green-colored gibberish into black terminals](http://hackertyper.net). It is time we upgrade our coding style to match the power of the technology we use, not only to make our profession more enjoyable but also to help foster newfound interest in the hearts of others to pursue the discipline.
 
-Any fool can create confusion, it takes professionals to produce clarity. ⌘
+Any fool can create confusion, it takes professionals to produce clarity.
 
 ----------  
 

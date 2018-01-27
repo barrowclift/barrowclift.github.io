@@ -88,7 +88,7 @@ If you're still not convinced, let's take a random photo file you want to find o
 
 Now let's try to find a random photo on iOS. It's in your Photos app.
 
-There's a powerful lesson to be learned from this. Humanistic operating systems and apps are an achievable goal, we've gotten close (iOS) and almost unanimously achieved it in some cases ([Vesper](http://vesperapp.co)). With the roaring success of Apple's user-first design leaving Windows and their <span class="small-caps">IT</span> department-first design scrambling to keep up it's clear that humanistic design is winning, and there's nothing to fear about that. ⌘
+There's a powerful lesson to be learned from this. Humanistic operating systems and apps are an achievable goal, we've gotten close (iOS) and almost unanimously achieved it in some cases ([Vesper](http://vesperapp.co)). With the roaring success of Apple's user-first design leaving Windows and their <span class="small-caps">IT</span> department-first design scrambling to keep up it's clear that humanistic design is winning, and there's nothing to fear about that.
 
 ----------  
 

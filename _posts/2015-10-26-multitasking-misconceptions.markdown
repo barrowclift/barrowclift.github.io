@@ -120,7 +120,7 @@ Quit Quitting Apps on iOS
 
 At the end of the day, force quitting apps on iOS not only makes opening them later slower but wastes battery that could have otherwise been saved reinitializing all the app's data objects.
 
-As with everything in life there are exceptions to the rule; at times apps can get "stuck" and stop working properly. It's for situations like this that we have the power to force quit apps on iOS since it can oftentimes fix the problem (kind of like how restarting your computer can sometimes help). But this should be used very sparingly and more often than not you shouldn't be bothering with it. In almost every other case it's better to just let iOS do what it was designed from day one to do. It's time to experience iOS the way it was meant to be experienced; quit quitting your apps. ⌘
+As with everything in life there are exceptions to the rule; at times apps can get "stuck" and stop working properly. It's for situations like this that we have the power to force quit apps on iOS since it can oftentimes fix the problem (kind of like how restarting your computer can sometimes help). But this should be used very sparingly and more often than not you shouldn't be bothering with it. In almost every other case it's better to just let iOS do what it was designed from day one to do. It's time to experience iOS the way it was meant to be experienced; quit quitting your apps.
 
 ----------  
 
