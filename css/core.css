@@ -57,19 +57,28 @@ ol, ul, ol li, ul li {
 main {
 	display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
 	position: relative;
-	padding-left: 5%;
-	padding-right: 5%;
 	max-width: 33em;
 	width: auto;
 	margin: 2.6em auto;
+
+	padding-left: 5%;
+	padding-right: 5%;
+}
+@supports(padding: max(0px)) {
+	main {
+		padding-left: max(5%, env(safe-area-inset-left));
+		padding-right: max(5%, env(safe-area-inset-right));
+	}
 }
 	.full-width-page main {
 		max-width: 100%;
 		padding: 0;
 	}
 	.extra-wide-page main {
-		max-width: 66em;
+		max-width: 2560px;
 		padding: 0;
+		padding-left: env(safe-area-inset-left);
+		padding-right: env(safe-area-inset-right);
 	}
 	.wide-page main {
 		max-width: 38em;
@@ -232,6 +241,12 @@ small, kbd {
 	margin-top: 0;
 	margin-bottom: 1.3em;
 }
+figcaption {
+	margin-bottom: 0;
+}
+.edge-to-edge:not(.small) figcaption {
+	margin-bottom: 1.3rem;
+}
 pre {
 	font-size: 0.75em;
 	line-height: 1.375em;
@@ -356,14 +371,17 @@ main h1 a:link,
 main h1 a:visited {
 	color: #333333;
 }
-del, del code, time {
+del,
+del code,
+time {
 	color: #bababa !important;
 }
 menu, menu ul a,
 figcaption,
 .weak,
 small,
-.card .label .secondary {
+.card .label .secondary,
+img {
 	color: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -401,13 +419,30 @@ menu {
 	z-index: 10000;
 	text-align: left;
 	width: 100%;
+	opacity: 1;
+
+	padding-left: env(safe-area-inset-left);
+	padding-right: env(safe-area-inset-right);
+}
+
+
+menu {
+	position: absolute;
 }
 .hide-menu menu {
+	position: fixed;
 	transform: translate(0, -5.5em);
 }
 .hide-menu #logo {
-	transform: scale(0.5);
+	/*transform: scale(0.5);*/
 }
+.hide-menu menu.test-hide {
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+
 .safari menu { /* Use Safari's lovely translucency, if available (see core.js) */
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	backdrop-filter: saturate(180%) blur(20px);
@@ -509,9 +544,21 @@ menu header:hover #logo #logo-eye-opened {
 
 
 /* ----- CARDS ----- */
+.threeDHover,
+.shadow img,
+.shadow video {
+	box-shadow: 0 1.3em 2.6em -0.6em rgba(0, 0, 0, 0.15);
+}
+	.threeDHover:hover,
+	.shadow a:hover img,
+	.shadow:hover video {
+		box-shadow: 0 1.625em 2.925em -0.6em rgba(0, 0, 0, 0.2);
+		transform: scale(1.025);
+	}
+	
+
 .card {
 	background-color: #F9F9F9;
-	box-shadow: 0 1.3em 2.6em -0.6em rgba(0, 0, 0, 0.15);
 
 	border-radius: 1em;
 	display: inline-block;
@@ -524,12 +571,8 @@ menu header:hover #logo #logo-eye-opened {
 	padding-top: 1.3em;
 	padding-bottom: 1.3em;
 }
-	.card:hover {
-		box-shadow: 0 1.625em 2.925em -0.6em rgba(0, 0, 0, 0.2);
-		transform: scale(1.025);
-	}
 	.card-animation:hover {
-	    transform: scale(1.025);
+		transform: scale(1.025);
 	}
 
 .card.large,
@@ -555,7 +598,7 @@ menu header:hover #logo #logo-eye-opened {
 	.card.bleed video {
 		border-top-right-radius: 1em;
 		border-top-left-radius: 1em;
-		display: block !important;
+		display: inline-block !important;
 	}
 
 .card .content {
@@ -917,40 +960,28 @@ img {
 }
 
 
-figure {
-	margin-top: 0;
-	margin-bottom: 1.3em;
-}
-/*figure + figure {
-	margin-top: -1.3em;
-}*/
 figure p {
 	text-align: center;
 	margin-top: 0;
-	margin-bottom: 0;
-}
-figure p:first-child {
-	line-height: 0;
-}
-figure .caption-top-pad {
-	margin-top: 1.3em;
-}
-/* Adding a bit more padding so the shadow isn't so close to the figcaption text */
-figure .caption-top-pad .macos-screenshot,
-figure .caption-top-pad .shadow {
-	margin-bottom: 0.65em;
-}
-figure .caption-top-pad img {
-	margin-bottom: 0;
-}
-figure .caption-top-pad .inline {
-	margin-top: 1.3em;
 }
 figcaption {
 	padding: 0 5%;
-	margin-top: 0.65em;
-	margin-bottom: 2.6em;
 	vertical-align: bottom;
+}
+.macos-screenshot figcaption,
+.apple-watch-screenshot figcaption,
+/*.shadow figcaption */ {
+	margin-top: 2.6em;
+}
+.shadow figcaption {
+	margin-top: 0.65em;
+}
+.edge-to-edge.shadow figcaption {
+	margin-top: 1.95em; /*margin-top: 3.9em;*/
+}
+.inline.shadow {
+	margin-top: 2.6em;
+	margin-bottom: 2.6em;
 }
 
 
@@ -970,13 +1001,21 @@ figcaption {
 	margin-top: 1.3em;
 	margin-bottom: 1.3em;
 }
+.edge-to-edge + div + .edge-to-edge {
+	margin-top: 0;
+}
+	.edge-to-edge.infinite {
+		max-width: unset;
+		margin-left: -36vw;
+		margin-right: -36vw;
+	}
+	.edge-to-edge img,
+	.edge-to-edge video {
+		width: 100%;
+	}
 	.edge-to-edge figure {
 		display: inline-block;
 	}
-	.edge-to-edge p {
-		margin-bottom: 0;
-		line-height: 0;
-}
 figure .edge-to-edge {
 	margin-top: 1.3em;
 	margin-bottom: 1.3em;
@@ -987,40 +1026,57 @@ figure .edge-to-edge {
 	-webkit-overflow-scrolling: touch;
 }
 .inline {
+	margin-bottom: 1.3em;
+}
+.strict-inline img {
+	width: auto;
+}
+.inline img,
+.inline video {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
+	border-radius: 0.25em;
 }
-.half-inline {
+.half-inline img {
 	display: inline-block;
 	height: auto;
 	width: 50%;
 }
-.half-inline,
-.strict-inline {
+.half-inline img,
+.strict-inline img {
 	border-radius: 0.25em;
 }
 
 
-img.no-shadow {
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+.failed-to-load {
+	color: rgba(51, 51, 51, 0.9);
+	background-color: rgba(229, 231, 232, 0.85);
+	border: 1px solid rgba(218, 219, 220, 0.85);
 }
-img.shadow {
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-}
-.apple-watch-screenshot {
-	border-radius: 0.5em;
-}
-.macos-screenshot {
-	box-shadow: 0 0 1.3em #b5b5b5;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 4px;
 
-	/* Extra padding to offsetting the shadow */
-	margin-top: 0.65em;
-	margin-bottom: 0.65em;
+
+.apple-watch-screenshot img {
+	border-radius: 0.5em !important;
+}
+.macos-screenshot:not(.edge-to-edge),
+.apple-watch-screenshot:not(.edge-to-edge),
+.captioned:not(.edge-to-edge) {
+	margin-top: 2.6em !important;
+	margin-bottom: 2.6em !important;
+}
+.edge-to-edge.captioned {
+	margin-top: 1.3em !important;
+	margin-bottom: 2.6em !important;
+}
+.ios-screenshot img {
+	border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.macos-screenshot img,
+.macos-screenshot video {
+	box-shadow: 0 0.5em 1.3em #b5b5b5;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px !important;
 }
 
 
@@ -1028,22 +1084,26 @@ img.shadow {
 shown inline. I have no doubt there's a dynamic, nice way to do it but I doubt
 there's a way to do so with the way the rest of the content is currently
 flowed (my responsive stuff is basically a hack as is...) */
-.ios-one-screen,
-.ios-two-screens,
-.ios-three-screens {
+.one-image figure,
+.one-image figure img,
+.two-images figure,
+.two-images figure img,
+.three-images figure,
+.three-images figure img {
 	border-radius: 0.25em;
 }
-.ios-one-screen {
+.one-image figure {
 	max-width: 100%;
 	text-align: center;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
-.ios-two-screens {
-	max-width: 43vw;
-	margin-left: 3vw;
-	margin-right: 3vw;
+.two-images figure {
+	max-width: 44vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
 }
-.ios-three-screens {
+.three-images figure {
 	max-width: 28vw;
 	margin-left: 2vw;
 	margin-right: 2vw;
@@ -1071,17 +1131,17 @@ h2 img {
 }
 
 
-.no-border-radius {
+.no-border-radius,
+.no-border-radius img {
 	border-radius: unset !important;
 }
 
 
 .permalink {
-	display: inline-block;
-	position: absolute;
 	width: 0.75em;
-	margin-top: 0.225em;
+	margin-top: -0.725em;
 	margin-left: 0.5em;
+	margin-right: 0.5em;
 	opacity: 1
 }
 .permalink path {
@@ -1167,7 +1227,6 @@ code {
 	background-color: #272821;
 	color: white;
 
-	overflow: hidden;
 	/**
 	 * iOS used to resize the code block text size to be *far* larger than it was
 	 * supposed to be This prevents this from happening.
@@ -1177,22 +1236,37 @@ code {
 	-webkit-overflow-scrolling: touch;
 
 	display: inline-block;
-	text-align: left;
-	width: 101vw;
 	height: auto;
-	max-width: 1600px;
 	max-height: none;
-	margin: 0 -28vw;
-	margin-top: 1.3em;
-	margin-bottom: 2.6em;
 	line-height: 1em;
+
+	max-width: unset;
+	text-align: center;
+	padding-top: 2.6em;
+	padding-bottom: 2.6em;
+	overflow-x: scroll;
+	box-shadow: inset 0px 1.3em 1rem -1.2em #121212, inset 0px -1.3em 1rem -1.2em #121212;
+
+	width: 100vw;
+	max-width: 1600px;
+	border-radius: 0;
+
+	margin-left: -36vw;
+	margin-right: -36vw;
+
+	border-radius: 0;
+	margin-top: 1.3rem;
+	margin-bottom: 1.3rem;
+}
+.edge-to-edge.infinite .highlight,
+.edge-to-edge.infinite .codehilite {
+	margin-top: 0;
 }
 .highlight pre code {
 	color: white;
 }
 .codehilite pre,
 .highlight pre {
-	overflow: scroll;
 	-webkit-overflow-scrolling: none;
 }
 li .codehilite,
@@ -1210,15 +1284,15 @@ pre {
 	-o-tab-size: 4;
 	tab-size: 4;
 
-	border-radius: 0.25em;
-
 	word-break: normal;
-	max-width: none;
-	width: 100%;
-	margin-top: 0;
-	margin-bottom: 1.3em;
 
-	overflow-y: hidden;
+	max-width: 33rem;
+	width: 33rem;
+	padding: 0;
+	margin-left: 5.5%;
+	margin-right: 5.5%;
+	overflow: visible;
+
 	/* Fix for that awful, double scrollview thing in Windows */
 	-ms-overflow-style: none;
 	overflow: -moz-scrollbars-none;
@@ -1229,6 +1303,13 @@ pre {
 pre code {
 	max-width: none;
 	padding: 0;
+	word-wrap: normal;
+}
+.edge-to-edge.infinite .highlight code,
+.edge-to-edge.infinite .codehilite code {
+	padding-right: 5%;
+	padding-left: 2.5%;
+	margin-left: -2.5%;
 }
 pre.ascii-art code {
 	line-height: 1.05em;
@@ -1243,15 +1324,9 @@ pre.wrap code {
 pre {
 	box-sizing: border-box;
 }
-pre {
-	padding: 0.65em 0.975em;
-}
 .codehilite pre,
 .highlight pre {
 	color: white;
-
-	max-width: initial;
-	margin: 0;
 	border-radius: none;
 }
 .codehilite pre,
@@ -1331,7 +1406,6 @@ sup[id^=fnref] {
 main,
 html, /* For dark mode transition */
 #dark-mode-toggle,
-menu,
 input, textarea,
 main a,
 .anchor { 
@@ -1339,6 +1413,9 @@ main a,
 }
 menu ul a {
 	transition: background-color 0.2s ease, color 0.2s ease;
+}
+menu {
+	transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 .link-button,
@@ -1352,8 +1429,10 @@ hr {
 }
 
 /* Transitioning shadows */
-.gallery-image, #gallery video, /* For hovering special "cards" like on project pages (TODO refactor to generic .cards) */
-.project { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
+.project,
+.threeDHover,
+.shadow a img,
+.shadow video { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
 	transition: box-shadow 0.2s ease;
 }
 
@@ -1397,25 +1476,25 @@ input, textarea {
 
 /* Resizing / Transformations */
 .card,
-.project {
-    transition: box-shadow 338ms ease, transform 600ms ease;
+.project,
+.threeDHover,
+.shadow a img,
+.shadow video {
+	transition: box-shadow 338ms ease, transform 600ms ease;
 }
 .card-animation {
 	transition: transform 600ms ease;
 }
 
 .show-when-hovered,
-.hide-when-hovered {
+.hide-when-hovered,
+#sunglasses,
+#logo-eye-closed,
+#logo-eye-opened,
+#smirk {
 	transition: opacity 0.2s ease;
 }
 
-/* Dynamic menu hiding */
-menu.transform-animation {
-	transition: background-color 0.25s ease, transform 0.3s ease-out;
-}
-#logo.transform-animation {
-	transition: transform 0.3s ease-out;	
-}
 #menu-height-offset {
 	transition: height 0.3s ease-out;
 }
@@ -1507,14 +1586,22 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 	main {
 		margin-top: 5.2em;
-		padding-left: 0;
-		padding-right: 0;
 		max-width: 34em;
+	}
+	div:not(.full-width-page) > main {
+		padding-left: env(safe-area-inset-left);
+		padding-right: env(safe-area-inset-right);
 	}
 	.wide-page main {
 		max-width: 36em;
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	@supports(padding: max(0px)) {
+		.wide-page main {
+			padding-left: max(5%, env(safe-area-inset-left));
+			padding-right: max(5%, env(safe-area-inset-right));
+		}
 	}
 
 
@@ -1583,6 +1670,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 			}
 	#menu-height-offset {
 		height: 0;
+	}
+	menu.medium-test-hide {
+		opacity: 0;
+		pointer-events: none;
 	}
 
 
@@ -1700,7 +1791,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	to be completely edge-to-edge in the dedicated post view.*/
 	.feed-view .edge-to-edge:not(.large):not(.medium):not(.small) {
 		display: block;
-		max-width: 800px;
+		max-width: 812px;
 		width: 100%;
 		margin: 0;
 	}
@@ -1715,15 +1806,12 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	.caption-top-pad .edge-to-edge {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
 	.edge-to-edge.medium {
-		max-width: 800px;
+		max-width: 812px;
 	}
-	.inline,
-	.edge-to-edge.small {
+	.inline img,
+	.edge-to-edge.small img,
+	.edge-to-edge.small video {
 		border-radius: 0.25em;
 	}
 
@@ -1731,32 +1819,32 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		padding: 0;
 		display: inline-block;
 		max-width: 34em;
-		margin-bottom: 1.3em;
 	}
-	figure .caption-top-pad {
-		margin-top: 2.6em;
+	.edge-to-edge.shadow figcaption {
+		margin-top: 0.65em; /*margin-top: 2.6em;*/
 	}
-	figure .caption-top-pad .inline {
-		margin-top: 0;
-	}
-	/* Adding a bit more padding so the shadow isn't so close to the figcaption text */
-	figure .caption-top-pad .macos-screenshot,
-	figure .caption-top-pad .shadow {
-		margin-bottom: 0.65em;
+	.edge-to-edge:not(.small) figcaption {
+		margin-bottom: 1.3rem;
 	}
 
-	.macos-screenshot {
-		border-radius: 7px;
+	.macos-screenshot img,
+	.macos-screenshot video {
+		border-radius: 7px !important;
+	}
+	.macos-screenshot figcaption,
+	.apple-watch-screenshot figcaption {
+		margin-top: 0.65em;
 	}
 
-	.ios-one-screen,
-	.ios-two-screens,
-	.ios-three-screens {
+	.one-image figure,
+	.two-images figure,
+	.three-images figure {
 		max-width: 28vw;
 	}
-	.ios-two-screens,
-	.ios-three-screens {
-		margin: 0 2vw;
+	.two-images figure,
+	.three-images figure {
+		margin-left: 2vw;
+		margin-right: 2vw;
 	}
 
 	h2 img {
@@ -1769,12 +1857,47 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 	.codehilite,
 	.highlight {
+		text-align: left;
+		max-width: 1600px;
 		width: 100%;
 		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 1.3em;
 		display: block;
+		border-radius: 0.25em;
+		padding: 0.65em 0.975em;
+		overflow: hidden;
+		box-shadow: inset 0 0 1.3em .1625em #121212;
+	}
+	pre {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.edge-to-edge.infinite .highlight,
+	.edge-to-edge.infinite .codehilite {
+		max-width: unset;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 2.6em;
+		padding-bottom: 2.6em;
+		overflow-x: scroll;
+		box-shadow: inset 0px 1.3em 1rem -1.2em #121212, inset 0px -1.3em 1rem -1.2em #121212;
+
+		border-radius: 0;
+		margin-top: 0;
+		margin-bottom: 1.3rem;
+	}
+	.edge-to-edge.infinite .highlight pre,
+	.edge-to-edge.infinite .codehilite pre {
+		width: 33rem;
+		max-width: 33rem;
+		width: 100%;
+		padding: 0;
+		overflow: visible;
+		margin-left: 5.5%;
+		margin-right: 5.5%;
 	}
 	pre,
 	.codehilite,
@@ -1784,6 +1907,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	.codehilite + hr,
 	.highlight + hr {
 		margin-top: 2.6em;
+	}
+	.edge-to-edge.infinite .highlight pre,
+	.edge-to-edge.infinite .codehilite pre {
+		max-width: 34rem;
 	}
 
 
@@ -1806,8 +1933,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	}
 }
 @media (min-width: 801px) {
-	.edge-to-edge.medium,
-	.feed-view .edge-to-edge {
+	.edge-to-edge.medium img,
+	.edge-to-edge.medium video
+	.feed-view .edge-to-edge img,
+	.feed-view .edge-to-edge video {
 		border-radius: 0.25em;
 	}
 }
@@ -1870,6 +1999,11 @@ Font size: 21px, ~Margin&Padding: 31.5px
 					padding-top: 1.15rem;
 					padding-bottom: .425rem;
 				}
+	.hide-menu menu.test-hide,
+	menu.medium-test-hide {
+		opacity: 1;
+		pointer-events: auto;
+	}
 
 
 	/* --- ACCESSIBILITY TOGGLES --- */
@@ -1918,8 +2052,18 @@ Font size: 21px, ~Margin&Padding: 31.5px
 	/* IMAGES & VIDEO ------------------------------- */
 
 
-	.edge-to-edge.medium {
+	.edge-to-edge.medium img,
+	.edge-to-edge.medium video,
+	.edge-to-edge.large img,
+	.edge-to-edge.large video {
 		border-radius: 0;
+	}
+	.edge-to-edge.one-image img,
+	.edge-to-edge.two-images img,
+	.edge-to-edge.three-images img {
+		border-radius: 0.25em;
+	}
+	.edge-to-edge.medium {
 		max-width: 1000px;
 		width: 100vw;
 	}
@@ -1928,27 +2072,37 @@ Font size: 21px, ~Margin&Padding: 31.5px
 		margin-right: -35vw;
 		width: 100vw;
 		max-width: 1303px;
-		border-radius: 0;
 	}
 	figcaption {
 		max-width: 35em;
 	}
 	/* Lets iOS Screenshots spill beyond the text width bounds when in post view,
 	   but stay bound for home view. */
-	.ios-one-screen,
-	.ios-two-screens,
-	.ios-three-screens {
+	.one-image figure,
+	.two-images figure,
+	.three-images figure {
 		width: 25vw;
 		max-width: 17em;
 	}
-	.ios-two-screens,
-	.ios-three-screens {
-		margin-left: 1.3em;
-		margin-right: 1.3em;
+	.two-images figure,
+	.three-images figure {
+		margin-left: .975em;
+		margin-right: .975em;
 	}
 
-	.macos-screenshot {
-		border-radius: 8px;
+	.macos-screenshot img,
+	.macos-screenshot video {
+		border-radius: 8px !important;
+	}
+
+
+	/* CODE --------------------------------------- */
+
+
+	.edge-to-edge.infinite .highlight pre,
+	.edge-to-edge.infinite .codehilite pre {
+		width: 35rem;
+		max-width: 35rem;
 	}
 
 
@@ -1969,17 +2123,20 @@ Font size: 21px, ~Margin&Padding: 31.5px
 	}
 }
 @media (min-width: 1001px) {
-	.edge-to-edge.medium {
+	.edge-to-edge.medium img,
+	.edge-to-edge.medium video {
 		border-radius: 0.25em;
 	}
 }
 @media (min-width: 1304px) {
-	.edge-to-edge.large {
+	.edge-to-edge.large img,
+	.edge-to-edge.large video {
 		border-radius: 0.25em;
 	}
 }
 @media (min-width: 1601px) {
-	.edge-to-edge {
+	.edge-to-edge img,
+	.edge-to-edge video {
 		border-radius: 0.25em;
 	}
 }
@@ -1994,7 +2151,7 @@ main a,
 main a:link,
 main a:visited,
 .anchor {
-    color: #007AFF;
+	color: #007AFF;
 }
 #logo:hover .signature-color {
 	fill: #007AFF;
@@ -2009,7 +2166,7 @@ menu a:hover,
 .hover:hover:not(.active),
 #dark .hover:hover:not(.active),
 #dark #dark-mode-toggle:hover {
-    background-color: rgba(0, 122, 255, 0.1);
+	background-color: rgba(0, 122, 255, 0.1);
 }
 .link-button-group a:hover,
 form a:hover {
@@ -2017,16 +2174,16 @@ form a:hover {
 }
 
 h1 a:hover {
-    color: #007AFF !important;
-    background-color: unset;
+	color: #007AFF !important;
+	background-color: unset;
 }
 
 #dark-mode-toggle:hover .fill-color,
 a .fill-color {
-    fill: #007AFF;
+	fill: #007AFF;
 }
 #dark-mode-toggle:hover .stroke-color {
-    stroke: #007AFF;
+	stroke: #007AFF;
 }
 
 #social-buttons a:hover {
@@ -2034,27 +2191,27 @@ a .fill-color {
 }
 button:not(.bigfoot-footnote__button),
 .link-button {
-    background-color: #007AFF;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-    /* Old browsers */
-    background-repeat: repeat-x;
-    /* Repeat the gradient */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6db2ff), color-stop(100%, #007AFF));
-    /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(top, #6db2ff 0, #007AFF 100%);
-    /* Chrome 10+,Safari 5.1+ */
-    background-image: -moz-linear-gradient(top, #6db2ff 0, #007AFF 100%);
-    /* FF3.6+ */
-    background-image: -ms-linear-gradient(top, #6db2ff 0, #007AFF 100%);
-    /* IE10+ */
-    background-image: -o-linear-gradient(top, #6db2ff 0, #007AFF 100%);
-    /* Opera 11.10+ */
-    background-image: linear-gradient(top, #6db2ff 0, #007AFF 100%);
-    /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6db2ff', endColorstr='#007AFF', GradientType=0);
-    /* IE6-9 */
-    border: 1px solid #489fff;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
+	background-color: #007AFF;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6db2ff), color-stop(100%, #007AFF));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6db2ff', endColorstr='#007AFF', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid #489fff;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
 }
 	button:not(.bigfoot-footnote__button):hover,
 	.link-button:hover {
@@ -2068,20 +2225,20 @@ button:not(.bigfoot-footnote__button),
 	}
 input:focus,
 textarea:focus {
-    border-color: #007AFF !important;
+	border-color: #007AFF !important;
 }
 a:hover .fill-color {
-    fill: #0063CE !important;
+	fill: #0063CE !important;
 }
 
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
-    background: #007AFF;
-    color: white;
+	background: #007AFF;
+	color: white;
 }
 ::-moz-selection { /* Firefox */
-    background: #007AFF;
-    color: white;
+	background: #007AFF;
+	color: white;
 }
 
 #dark .active,
@@ -2119,10 +2276,15 @@ a:hover .fill-color {
 #dark h1 a:visited {
 	color: #F8F8F2;
 }
-#dark del, #dark del code, #dark time {
+#dark del,
+#dark del code,
+#dark time {
 	color: #6B6A6A !important;
 }
-#dark figcaption, #dark .weak, #dark small {
+#dark figcaption,
+#dark .weak,
+#dark small,
+#dark img {
 	color: hsla(0, 0%, 100%, 0.6);
 }
 
@@ -2165,10 +2327,10 @@ a:hover .fill-color {
 	stroke: hsla(0, 0%, 100%, 0.6);
 }
 #dark #dark-mode-toggle:hover .fill-color {
-    fill: #007AFF;
+	fill: #007AFF;
 }
 #dark #dark-mode-toggle:hover .stroke-color {
-    stroke: #007AFF;
+	stroke: #007AFF;
 }
 
 
@@ -2257,16 +2419,28 @@ a:hover .fill-color {
 	display: none !important;
 }
 
-#dark .macos-screenshot {
-	box-shadow: 0 0 1.3em #121212;
+#dark .macos-screenshot img,
+#dark .macos-screenshot video {
+	box-shadow: 0 0.5em 1.3em #121212;
 }
+
+#dark .threeDHover,
+#dark .shadow img,
+#dark .shadow video {
+	box-shadow: 0 1.3em 2.6em -0.6em #121212;
+}
+	#dark .threeDHover:hover,
+	#dark .shadow a:hover img,
+	#dark .shadow:hover video {
+		box-shadow: 0 1.3em 2.6em -0.6em #090909;
+	}
 
 #dark .apple-logo path {
 	fill: #F8F8F2;
 }
 #dark .permalink path {
-	fill: #A1A1A1;
-	stroke: #A1A1A1;
+	fill: #6B6A6A;
+	stroke: #6B6A6A;
 }
 
 
@@ -2312,11 +2486,6 @@ a:hover .fill-color {
 #dark .bigfoot-footnote {
 	border-color: #3A3B35;
 }
-#dark .hint--bottom-left:before,
-#dark .hint--bottom-right:before,
-#dark .hint--bottom:before {
-	border-bottom-color: #3C3D37;
-}
 
 
 /* MISC --------------------------------------- */
@@ -2327,6 +2496,14 @@ a:hover .fill-color {
 #dark .hint--top-right:before,
 #dark .hint--top:before {
 	border-top-color: #3C3D37;
+}
+#dark .hint--bottom-left:before,
+#dark .hint--bottom-right:before,
+#dark .hint--bottom:before {
+	border-bottom-color: #3C3D37;
+}
+#dark .hint--right:before {
+	border-right-color: #3C3D37;
 }
 #dark [data-hint]:after {
 	background-color: #3C3D37;

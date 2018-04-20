@@ -11,6 +11,16 @@ categories:
   - macOS
 ---
 
+<style>
+	.terminal-image-1 img {
+		max-width: 570px;
+	}
+	.terminal-image-2 img {
+		max-width: 730px;
+	}
+}
+</style>
+
 For the past few articles I've focused on topics that were for everyone, but for now I want to take a brief break and give my developer friends some attention.
 
 Developers, I'm going to take a wild guess and assume that the vast majority of you reading this use some form of Unix-based machine (like Linux or OS X) for the bulk of your development. But let's face it; as powerful as Unix is we can't deny how big a pain in the neck it is to use, even at the most rudimentary level[^quiz]. To master it takes *years* of dedicated exercise which isn't made any easier by how cryptic and ludicrous some commands are (I'm looking at you, `sed`).
@@ -27,8 +37,8 @@ In my opinion if there's anything you take your time to consider it should be yo
 
 To begin, let's look at OS X's default Terminal.
 
-<figure markdown="1">
-![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on."){: .inline .no-shadow }
+<figure markdown="1" class="terminal-image-1 inline macos-screenshot">
+![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
 </figure>
 
 Yikes, this won't do at all. I've seen far too many friends and colleagues sticking with this or one of the other dreadful default themes available on OS X and I'm here to tell you there's a better way. By just taking a few moments to consider the points below we can transform your Terminal into something actually enjoyable to use (and sometimes even beautiful).
@@ -39,14 +49,15 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 
 Now, here's my current setup for inspiration:
 
-<figure markdown="1">
-![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png){: .inline .no-shadow }
+<figure markdown="1" class="terminal-image-2 inline macos-screenshot">
+![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png)
 </figure>
 
 How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
 
 The `.bashrc` will be used to actually "turn on" colors, assign the colors to the kinds of files you think they should represent, and customize your prompt since they're all directly handled by the shell. Below are the lines necessary to turn on colors and some of my current settings to help get you started on your prompt and color assignments.
 
+<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # COLORS
 # ----------------------------------------------
@@ -74,6 +85,7 @@ export BLUE='\[\033[0;34m\]'
 export NORMAL='\[\033[00m\]'
 export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 {% endhighlight %}
+</div>
 
 Functions
 ---------
@@ -82,6 +94,7 @@ Now you've got your Terminal look and feel set just the way you like, what next?
 
 Let's take compression, for example. The proper command to compress a tar of a given file in Unix is `tar czf ${YOUR_FILE}`. Decompressing and extracting the file back out is just as cryptic with `tar xjf ${YOUR_FILE}`. I have never once been able to remember those infuriating arbitrary series of characters that tells the tar command to actually do what should be the default action. Thankfully with functions I don't need to, and now you don't have to either!
 
+<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # Extract practically anything
 # Usage: $ extract {YOUR_ARCHIVE}
@@ -138,9 +151,11 @@ tartar () {
 	tar czf "$file.tar.gz" "$file"
 }
 {% endhighlight %}
+</div>
 
 As a special treat to OS X developers, here's some essential functions that both help clean up after OS X's messes and also bring the power of OS X's <span class="small-caps">GUI</span> to the Terminal.
 
+<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # .DS_Store files are the herpes of the OS X file system.
 #
@@ -168,12 +183,14 @@ ql () {
 	qlmanage -p "$*" >& /dev/null;
 }
 {% endhighlight %}
+</div>
 
 Aliases
 -------
 
 Last but not least there's aliases which &mdash; if you aren't aware &mdash; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
 
+<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # Print out every path that constitutes the current $PATH
 alias path='echo -e ${PATH//:/\\n}'
@@ -198,6 +215,7 @@ alias disksize='df -h --total | grep total'
 # Display every instance of the given command found in the path
 alias which='type -all'
 {% endhighlight %}
+</div>
 
 And for OS X developers this particular command helps bridge the sometimes aggravating separation between the <span class="small-caps">GUI</span> and command line interfaces by letting you to quickly open a Finder window of your current directory when it's the preferred tool for a particular job.
 

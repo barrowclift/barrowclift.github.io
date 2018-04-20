@@ -8,8 +8,10 @@ excerpt: "Join us as we scrutinize and celebrate great music, one episode at a t
 image: "/images/assets/we-made-a-podcast/podcast-cover-art.jpg"
 ---
 
-<figure markdown="1">
-![Bad Music Hertz podcast cover art]({{ site.baseurl }}/images/assets/we-made-a-podcast/podcast-cover-art.jpg){: .inline }
+<figure markdown="1" class="inline shadow">
+<a href="https://badmusichertz.com/post/lonesome-dreams">
+![Bad Music Hertz podcast cover art]({{ site.baseurl }}/images/assets/we-made-a-podcast/podcast-cover-art.jpg)
+</a>
 </figure>
 
 After talking about it for years, my siblings and I are proud to officially release the [first episode of the Bad Music Hertz podcast](https://badmusichertz.com/post/lonesome-dreams), where we kick things off with a discussion of Lord Huron's *Lonesome Dreams*.

@@ -5,29 +5,12 @@
 	margin-top: 0.275em;
 	margin-bottom: 0;
 }
-.gallery-image,
 .section a {
 	display: inline-block;
 }
 .section a {
 	margin-top: 1em;
 	margin-bottom: 0;
-}
-.gallery-image {
-	width: 45vw;
-	margin: 0.5em 0.25em;
-}
-.gallery-image,
-#gallery video {
-	border-radius: 0.25em;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-}
-#gallery a:hover {
-	text-decoration: none;
-}
-.gallery-image:hover,
-#gallery video:hover {
-	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.20), 0 4px 12px 0 rgba(0, 0, 0, 0.28);
 }
 .section {
 	padding-left: 1rem;
@@ -43,9 +26,6 @@ Medium devices (iPads)
 Font size: 19px, ~Margin&Padding: 28.5px
 */
 @media (min-width: 700px) {
-	.gallery-image {
-		margin: 0.75em 0.5em;
-	}
 	.news-logo {
 		max-height: 32px;
 		margin-right: 0.75rem;
@@ -58,11 +38,6 @@ Large devices (Macs)
 Font size: 21px, ~Margin&Padding: 31.5px
 */
 @media (min-width: 900px) {
-	.gallery-image {
-		width: 30vw;
-		max-width: 506px;
-		margin: 0.75rem 0.5rem;
-	}
 	.news-logo {
 		min-height: 35px;
 		margin-right: 1.125rem;
