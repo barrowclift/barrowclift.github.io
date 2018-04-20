@@ -29,15 +29,15 @@ Let's Begin With Spring Cleaning
 
 First thing's first, you should consider deleting any of the apps on your phone you don't want anymore. Not only do they add clutter they may also be squatting on a nontrivial amount of storage on your iPhone that could instead be used for more family photos, music, or new apps. To determine which apps are taking up the most space, you can navigate to `General > Usage > Manage Storage` under the "Storage" group to see a list of the largest apps on your iPhone. You can delete the apps directly from this list by tapping on the app you want to delete and selecting "Delete App" (alternatively you can just enter wiggle mode at the home screen and delete apps there). Don't worry, [you can always re-download the app again for free from the App Store](https://support.apple.com/en-us/HT201272) if you decide you want it back in the future.
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large three-images shadow ios-screenshot">
 <figure markdown="1">
-![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/settings.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
+![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/settings.jpg)
 </figure>
 <figure markdown="1">
-![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/general.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
+![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/general.jpg)
 </figure>
 <figure markdown="1">
-![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/usage.jpg){: .ios-screenshot-shadow .ios-three-screens .shadow }
+![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/home-sweet-home/usage.jpg)
 </figure>
 </div>
 
@@ -61,42 +61,42 @@ In general (since I prefer to have just one page on my home screen) I like to ke
 
 * __Creative__: Any apps where I directly create my own content within the apps themselves go here (Diary apps, Note apps, music creation apps like Garageband, etc.). I have also chosen to include apps whose sole purpose is to supplement these creative apps like Dropbox and Metronome so I never have to go far to hop from one to the other, but this is entirely up to you.
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large two-images">
 <figure markdown="1">
-![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.jpg){: .ios-two-screens }
+![iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-1.png)
 </figure>
 <figure markdown="1">
-![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.jpg){: .ios-two-screens }
+![iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical]({{ site.baseurl }}/images/assets/home-sweet-home/creative-folder-page-2.png)
 </figure>
 </div>
 
 * __Games__: You guessed it, all games go here with the most played ones in the first page, nothing else to it, really.
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large two-images">
 <figure markdown="1">
-![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.jpg){: .ios-two-screens }
+![iOS app folder called Games, page 1 contains Threes, Impossible, RaceTheSun, Alto, Smash Hit, Tiny Wings, Monument, #sworcery, and BADLAND]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-1.png)
 </figure>
 <figure markdown="1">
-![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.jpg){: .ios-two-screens }
+![iOS app folder called Games, page 2 contains The Roow Two, Minecraft PE, Dude Where's My Water, Temple Run 2, Cube Runner, Duet, Crossy Road, Shades, and Jetpack]({{ site.baseurl }}/images/assets/home-sweet-home/games-folder-page-2.png)
 </figure>
 </div>
 
 * __Media__: This could also be named "Relaxation", "Fun", or something along those lines since any app whose sole purpose is consumption of media goes in here (Music, iBooks, Netflix, etc.).
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large two-images">
 <figure markdown="1">
-![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.jpg){: .ios-two-screens }
+![iOS app folder called Media, page 1 contains Genius, Kodi Remote, Videos, iBooks, Cesium, Photos, Netflix, Barrowclift.me web shortcut, and Music]({{ site.baseurl }}/images/assets/home-sweet-home/media-folder.png)
 </figure>
 </div>
 
 * __Services__: Anything that provides a website-like service to me goes here (TD Bank, Mail, Maps, App Store, etc.). In the bowels of the third and fourth pages of this folder is where I throw all the built in iOS apps that I don't use, never to be seen again. As far as I'm concerned, third and fourth pages in either the home screen or folders don't exist. On the off-chance I ever need to use one of those apps [I can simply use Spotlight lookup instead](http://www.imore.com/how-to-access-use-spotlight-seach-iphone-ipad).
 
-<div class="edge-to-edge large">
+<div class="edge-to-edge large two-images">
 <figure markdown="1">
-![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.jpg){: .ios-two-screens }
+![iOS app folder called Services, page 1 contains TD Bank, Maps, Capital One, Mail, Settings, TestFlight, Apple Watch, Activity, and App Store]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-1.png)
 </figure>
 <figure markdown="1">
-![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.jpg){: .ios-two-screens }
+![iOS app folder called Services, page 2 contains Wunderground, GrubHub, FaceTime, Phone, Passbook, Health, Adobe Acrobat, Wallet, and Southwest]({{ site.baseurl }}/images/assets/home-sweet-home/services-folder-page-2.png)
 </figure>
 </div>
 
@@ -109,9 +109,11 @@ You're Almost There!
 
 Now all you need to do is decide the final order of these various pieces you've created. What should that order be? Truth is only you can answer that question as it depends solely on how much you personally value ascetics vs. efficiency. If you put more weight on efficiency then your best bet is to put your folders and apps together on a single page and sort your apps into rows by broad category and thumb distance travel vs. frequency of use (the apps you use the most would then be the easiest to tap). This is the sorting method I chose for my own home screen which you can see here with the first row being folders, the second social apps, the third reading apps, and the fourth everything else.
 
+<div class="edge-to-edge large one-image shadow ios-screenshot">
 <figure markdown="1">
-![My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast]({{ site.baseurl }}/images/assets/home-sweet-home/home-screen.jpg){: .ios-screenshot-shadow .ios-one-screen }
+![My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast]({{ site.baseurl }}/images/assets/home-sweet-home/home-screen.jpg)
 </figure>
+</div>
 
 If you instead, however, put more weight on ascetics your sorting could be completely different. Perhaps you prefer to sort your apps by icon color even if it doesn't align with your optimal thumb placement, or perhaps you prefer to put all your folders on a second page even if that means you have to swipe once whenever you want to reach them. That's entirely fine and completely your choice, play around with your sorting style until you settle on one that fits your particular tastes best. Remember, there's no right answer to this step and it's always a work in progress. Remain curious and continue trying new arrangements in the future as apps come and go.
 

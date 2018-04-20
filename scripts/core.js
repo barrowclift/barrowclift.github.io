@@ -48,6 +48,11 @@ function upArrowClicked() {
 	$('#parallax').animate({scrollTop: 300}, 250);
 }
 
+/* Better style image alt text when/if images fail to load */
+$("img").error(function(){
+        $(this).addClass("failed-to-load");
+});
+
 /* When ready... */
 $(document).ready(function() {
 	/* Dark Mode */
@@ -77,30 +82,57 @@ $(document).ready(function() {
 	}
 
 	var html = $("html");
-	if (html.scrollTop() > 10) {
+	var menu = $("menu");
+
+	if ($(this).scrollTop() > 50) {
+		menu.addClass("medium-test-hide");
+	}
+	if ($(this).scrollTop() > 125) {
+		menu.addClass("test-hide");
+	} else if (html.scrollTop() > 100) {
 		html.addClass("hide-menu");
 	}
 
-	// Adding additional padding to element that preceeds figcaption (formerly the manually added class "breathing-room")
-	$("figcaption").prev().addClass("caption-top-pad");
-
 	/* Dynamic scrolling menu on mobile */
+	var previousScrollTop = $(this).scrollTop();
 	$(function() {
 		var html = $("html");
 		var menu = $("menu");
 		var skip = true;
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 10) {
-				html.addClass("hide-menu");
+			var newScrollTop = $(this).scrollTop();
+			if (newScrollTop > 50) {
+				menu.addClass("medium-test-hide");
 			} else {
+				menu.removeClass("medium-test-hide");
+			}
+
+			if (newScrollTop > 125) {
+				menu.addClass("test-hide");
+				html.addClass("hide-menu");
+			} else if (newScrollTop > 100) {
+				html.addClass("hide-menu");
+				menu.removeClass("test-hide");
+			} else if (newScrollTop <= 100) {
+				menu.removeClass("test-hide");
 				html.removeClass("hide-menu");
 			}
-			if (skip) {
-				skip = false;
-			} else if (!menu.hasClass("transform-animation")) {
-				menu.addClass("transform-animation");
-				$("#logo").addClass("transform-animation");
+
+			if (newScrollTop > 50) {
+				if (newScrollTop - previousScrollTop < 0) {
+					menu.removeClass("medium-test-hide");
+				} else {
+					menu.addClass("medium-test-hide");
+				}
 			}
+			if (newScrollTop > 125) {
+				if (newScrollTop - previousScrollTop < 0) {
+					menu.removeClass("test-hide");
+				} else {
+					menu.addClass("test-hide");
+				}
+			}
+			previousScrollTop = newScrollTop;
 		});
 	});
 
