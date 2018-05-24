@@ -21,7 +21,7 @@ Oftentimes, this is what it feels like as a developer when [reading code from th
 
 <!--break-->
 
-<figure markdown="1" class="inline captioned shadow">
+<figure markdown="1" class="edge-to-edge small">
 [![An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg)](http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the)
 <figcaption>
 Nobody can, because it's horrible.
@@ -34,7 +34,7 @@ Where It All Started
 
 Having tiny, arbitrary names like [`ox`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-113), [`tid`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-112), or [`pctl`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-105) back in the 1980's was a pragmatic choice compared to using lengthier, meaningful names. Developers wrote in lightweight plain text editors such as [vi](https://en.wikipedia.org/wiki/Vi), and at the time no contextual help like [autocomplete](https://en.wikipedia.org/wiki/Autocomplete) or [IntelliSense](https://en.wikipedia.org/wiki/Intelligent_code_completion) existed. This meant that every single variable name had to be retyped in full or copy/pasted whenever needed. Even copy/pasting, while helpful, was a pain since nearly all development in the early 80's was done without a mouse. That's right, actions such as moving the cursor, selecting text, copy/pasting, etc. were done exclusively on the keyboard. While developers adapted to these constraints fairly well, long variable names remained unwieldy and were generally avoided. Shrinking names down to their smallest possible form simply made editing that much easier.
 
-<figure markdown="1" class="inline captioned shadow">
+<figure markdown="1" class="edge-to-edge small">
 [![Another image of what appears to be a TV monitor displaying utter gibberish, click this image to go to moviecode's source post at tumblr.com]({{ site.baseurl }}/images/assets/meaningful-names/back-in-my-day.jpg)](http://moviecode.tumblr.com/post/74145306311/from-classic-doctor-who-episode-the-twin-dilemma)
 <figcaption>
 40 whole characters on a single line? Truly this is the future.

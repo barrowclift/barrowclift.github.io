@@ -41,7 +41,7 @@ The Cause
 
 Why does such a thing happen? How could we let something like this dictate our actions for so long? Well let me assure you that once again the fault for these feelings of discomfort and bad experiences lies squarely on the developers and designers behind these systems and applications we interact with. __These poor experiences are never your fault. Ever__.
 
-<figure markdown="1" class="edge-to-edge medium shadow">
+<figure markdown="1" class="edge-to-edge medium">
 ![Typical Windows desktop, lots of app icons everywhere]({{ site.baseurl }}/images/assets/fearful-computing/windows-desktop.jpg)
 <figcaption>
 This is the equivalent of the college professor who keeps every paper they own on their desk, also known as the default Windows experience
@@ -50,7 +50,7 @@ This is the equivalent of the college professor who keeps every paper they own o
 
 For one example let's look at the kitchen-sink desktops again, why are so many people afraid to use Windows Explorer to organize their files? The answer is quite clear, barring the barebones Linux console and other text-only UIs, Windows is hands down the worst implementation of the file system "desktop" paradigm in popular use today. It's the digital wild west, applications save scattered files and folders at seemingly random locations by default (often without the choice to change the location later) and usually next to what are actually "safe" folders meant for the users. Users have no mental model for what they can and cannot use freely and that model is in a constant state of flux. "Outlook" and "Custom Office Templates" folders are intruding in the user's Documents folder, "Lync Recordings" decided to show up in the user's home directory, and even still more garbage directories infest the drive root like Python installations and Apache libraries like tomcat if you're a developer. This gives the impression to users that the file system is not a safe place of their own but a place where things they don't understand or control rule. If there's a standard for these things Windows developers clearly don't have the discipline to follow it.
 
-<figure markdown="1" class="inline macos-screenshot shadow">
+<figure markdown="1" class="edge-to-edge small macos-window-screenshot">
 ![Windows Explorer window showing Internet Explorer's folder contents]({{ site.baseurl }}/images/assets/fearful-computing/internet-explorer.png)
 <figcaption>
 Let's play "guess what you have to double click to run your app"
@@ -59,7 +59,7 @@ Let's play "guess what you have to double click to run your app"
 
 And what of apps themselves? There's two application folders both with frightening and confusing names to normal users. What's "x86" mean[^x86]? Is "Program Files" files used by programs or programs themselves? Should I save my app to one of them? Which one? Even if a user can somehow guess their way through that mess even launching apps themselves is a disaster. Most Windows "apps" are actually just folders with a bunch of the applications resources and source files strewn about with a few .exe files, one of which is the one you're *actually* supposed to double click to launch the app (common apps guilty of the practice are Google Chrome, Notepad++, and Skype to name a few). Microsoft has tried to alleviate this by allowing app launching from the Start Menu but the messy implementation is still right there in plain view for everyone to stumble into and see. It's design like this that has scared the majority of desktop PC users away from the file system for years and makes them uncomfortable saving or accessing any file, folder, or application that isn't on their desktop.
 
-<figure markdown="1" class="edge-to-edge medium shadow">
+<figure markdown="1" class="edge-to-edge medium">
 ![Typical OS X desktop experience, desktop is clean of icons]({{ site.baseurl }}/images/assets/fearful-computing/os-x-desktop.jpg "Amazing what some design competency can do, right?")
 <figcaption>
 No desktop shortcuts by default and apps are lovely, launchable, secret folders.

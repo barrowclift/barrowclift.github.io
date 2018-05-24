@@ -58,11 +58,11 @@ Now that my reasoning for even having physical artifacts at all is established w
 * __Album Art__: As someone who meticulously obsesses over finding the highest resolution album artwork available for his digital collection having such a large canvas to showcase album artwork was a primary draw from the very start. I spent my childhood staring at [images the size of postage stamps on Game Boy screens](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Game-Boy-Pocket-Black.jpg/800px-Game-Boy-Pocket-Black.jpg), I'm *tired* of low res, rubbish image files (it's 2016, selling digital music with scrawny 500x500 artwork images should be banned). Even when I manage to find high quality artwork and maximize the player window to fit my screen the details in amazing album covers like [Fleet Foxes](http://fleetfoxes.com/images/album_fleet_foxes.jpg) and [Lonerism](https://consequenceofsound.files.wordpress.com/2012/07/tame-impala-lonerism.jpeg) are still lost. With a massive 12"x12" size large enough to be mistaken for a respectable wall decoration, however, vinyl proudly displays the full-sized album artwork, details and all.
 * __Goodie Grab Bag__: As the phrase "grab bag" implies, you never know quite what you're going to get with a record purchase. Sometimes you just get the sleeve and the album, while other times you get full color lyric booklets, posters, supplementary album photos, or lots of other things. Remember when you were a kid and you treasured the times where you got surprises in the cereal box? This is the music equivalent.
 
-<figure markdown="1" class="edge-to-edge medium shadow">
+<figure markdown="1" class="edge-to-edge medium">
 ![The Decemberists’s "Picaresque" lyric book, showing the page for the picture and lyrics of "The Mariner's Revenge Song"]({{ site.baseurl }}/images/assets/why-vinyl/picaresque-lyric-book.jpg)
 </figure>
 <div></div>
-<figure markdown="1" class="edge-to-edge medium shadow">
+<figure markdown="1" class="edge-to-edge medium">
 ![Joanna Newsom's "Divers" alongside all it's included, supplementary lyric pictures]({{ site.baseurl }}/images/assets/why-vinyl/divers-photos.jpg)
 </figure>
 

@@ -13,22 +13,16 @@ image: "/images/assets/restoring-my-ipod-video/share-image.jpg"
 
 I still remember how thrilled I was the day I got my [iPod Touch](https://web.archive.org/web/20081201132411/http://www.apple.com:80/ipodtouch/)&mdash;or more specifically, how thrilled I was I could finally dump my old [iPod Video](https://en.wikipedia.org/wiki/IPod_Classic#5th_generation). Besides the strict technical upgrade, after four years of hard but loving use, my iPod Video was showing its age. The battery hardly lasted an hour on a single charge (even with the screen brightness turned completely down). The once-gloriously shiny metal back was now dull and dented, and the [infamously scratch-attractive screen](https://www.cnet.com/news/ipod-nano-special-report-scratches-how-to-protect-from-and-fix/) was even worse, transforming its contents into a dim and smudgy mess that no amount of polishing could fix. The 30GB storage that once seemed as endless was practically bursting at the seams.
 
-<div class="edge-to-edge large three-images shadow">
-<figure markdown="1">
+<div markdown="1" class="edge-to-edge large three-images shadow">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-screen.jpg">
 ![My old iPod Video's scratchy screen]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg)
 </a>
-</figure>
-<figure markdown="1">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-front.jpg">
 ![My old iPod Video's aged, dim display and yellowed white plastic front]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg)
 </a>
-</figure>
-<figure markdown="1">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-back.jpg">
 ![My old iPod Video's battered and scratched metal back plate]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg)
 </a>
-</figure>
 </div>
 
 <a id="resume-from-break"></a>
@@ -50,7 +44,7 @@ As it turns out, I'm quite fortunate to have an old iPod Video lying around. Not
 
 With that said, there's no way I could use it as-is. The deteriorated battery, tiny storage, and battered appearance was just too hard a pill to swallow. There was no doubt about it, a repair was required. However, if I was going to do a repair, I wouldn't stop with just a simple restoration&mdash;oh no&mdash;I'd want a full ["Pimp My Ride"](https://en.wikipedia.org/wiki/Pimp_My_Ride) upgrade, featuring an improved screen and massive SSD with enough space for all the music I'd ever own in my lifetime. Excited at the prospects, I jumped right in.
 
-<figure markdown="1" class="edge-to-edge small shadow captioned">
+<figure markdown="1" class="edge-to-edge small shadow">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/some-assembly-required.jpg">
 ![My old iPod Video beside the various replacement components]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/some-assembly-required.jpg)
 </a>
@@ -89,22 +83,16 @@ After all that, surely this time was a success, right?
 
 Thankfully, after numerous fits and starts, the replacement audio jack did indeed work and I finally sealed the unit up. See the results for yourself!
 
-<div class="edge-to-edge large three-images shadow">
-<figure markdown="1">
+<div markdown="1" class="edge-to-edge large three-images shadow">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-screen.jpg">
 ![My new, scratch-free screen]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-screen.jpg)
 </a>
-</figure>
-<figure markdown="1">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-front.jpg">
 ![My new, bright display and crisp, white plastic front]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-front.jpg)
 </a>
-</figure>
-<figure markdown="1">
 <a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-back.jpg">
 ![My new, shiny metal back plate]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-back.jpg)
 </a>
-</figure>
 </div>
 
 The restoration didn't only include a brand new shell and buttons to get back that wonderful "out of box" look, while I was inside I took the liberty of upgrading the screen to a noticeably brighter and higher quality panel. I also upgraded from the 30GB HDD to a speedy, more resilient [250GB SSD](https://www.newegg.com/Product/Product.aspx?Item=N82E16820147683), eliminating moving parts that could easily wear or fail with time.

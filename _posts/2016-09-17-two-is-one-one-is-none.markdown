@@ -29,7 +29,7 @@ While cleaning up I had accidentally deleted the directory containing the projec
 
 For those rightfully skeptical about taking my anecdotes to heart, the aforementioned backup service Backblaze publishes [quarterly hard drive reports](https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/) covering the various brands and drive sizes they use in their servers and the failure rates they encountered for each of them. Below is the most recent cumulative report available, which goes back all the way to when they started releasing them in 2013.
 
-<figure markdown="1" class="edge-to-edge small captioned">
+<figure markdown="1" class="edge-to-edge small">
 [![A chart showing various hard drive brands such as Toshiba and Seagate, the storage sizes for each drive, and their respective failure rates. Can you believe the worst had a 9% annualized failure rate? Wow!]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/backblaze-hard-drive-chart.jpg)](https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/ "Note to self: Never buy Western Digital brand drives again.")
 <figcaption>
 Tap or click on the chart for a link to the full Q2 2016 report
@@ -64,7 +64,7 @@ What I personally believe to be the optimal backup strategy for the vast majorit
 
 As mentioned before, Time Machine can be used for local backups on macOS. Assuming you don't already have a spare external hard drive lying around, I recommend buying one that is at least double what your computer's internal storage is. You can determine what this is by clicking the Apple menu on your computer's menu bar then "About this Mac". From there, click the "Storage" tab and note the total storage size.
 
-<figure markdown="1" class="inline macos-screenshot">
+<figure markdown="1" class="inline macos-window-screenshot">
 ![A screenshot of the "Storage" tab in macOS's "About This Mac" tab, showing a 480GB hard drive]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/storage.png "Dang, I may need to upgrade my internal hard drive soon.")
 </figure>
 
@@ -74,13 +74,13 @@ While Windows doesn't currently have a solution as mature as Time Machine, Micro
 
 For locally backing up your iPhone or iPad, plug it into your computer and open up iTunes. Assuming you've synced with this computer before, your device should appear near the library switcher in the upper-left corner of the window.
 
-<figure markdown="1" class="edge-to-edge medium macos-screenshot">
+<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 ![A screenshot of an iTunes window with an iOS device plugged in]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-1.png "iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.")
 </figure>
 
 Once you click on your device you'll be brought to a screen like this.
 
-<figure markdown="1" class="edge-to-edge medium macos-screenshot">
+<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 ![A screenshot of an iTunes window on the device sync screen, highlighting the "Backups" section]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/itunes-window-2.png)
 </figure>
 
@@ -94,13 +94,13 @@ You're going to want to *temporarily* switch the bubble from "iCloud" to "This c
 
 That covers local backups, but what about those remote backups mentioned before? Backing up remotely has never been easier thanks to Backblaze. Simply navigate [to their website](https://www.backblaze.com) and sign up for their [personal unlimited backup plan](https://www.backblaze.com/cloud-backup.html), Backblaze will guide you through the necessary steps to start. Backblaze's small backup utility will continuously run in the background of your computer and automatically send any new/modified files to their secure servers. *You don't have to do a thing*. Should you wish to check on your backup's status or fiddle with the settings you can navigate to their preferences pane in System Preferences > Backblaze Backup.
 
-<figure markdown="1" class="inline macos-screenshot">
+<figure markdown="1" class="inline macos-window-screenshot">
 ![A screenshot of Backblaze's preference pane on macOS]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/preferences.png)
 </figure>
 
 Alternatively, for just occasionally checking in on the backups you can check out the little flame icon in your menu bar.
 
-<figure markdown="1" class="inline shadow">
+<figure markdown="1" class="inline">
 ![A screenshot of Backblaze's menu bar icon and available menu options]({{ site.baseurl }}/images/assets/two-is-one-one-is-none/menu-bar.jpg)
 </figure>
 
