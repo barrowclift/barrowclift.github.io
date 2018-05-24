@@ -37,7 +37,7 @@ In my opinion if there's anything you take your time to consider it should be yo
 
 To begin, let's look at OS X's default Terminal.
 
-<figure markdown="1" class="terminal-image-1 inline macos-screenshot">
+<figure markdown="1" class="terminal-image-1 inline macos-window-screenshot">
 ![Terminal window, all output is in plain, black text against a blaring white background]({{ site.baseurl }}/images/assets/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
 </figure>
 
@@ -49,7 +49,7 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 
 Now, here's my current setup for inspiration:
 
-<figure markdown="1" class="terminal-image-2 inline macos-screenshot">
+<figure markdown="1" class="terminal-image-2 inline macos-window-screenshot">
 ![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.baseurl }}/images/assets/making-terminal-better/customized-terminal.png)
 </figure>
 

@@ -26,7 +26,7 @@ Let's walk through a scenario: You're an independent web developer and human int
 
 Now fast forward a year. What began as a small collection of inspiration materials has ballooned into a bin filled to the brim with hundreds of archived web pages, all with their own design strengths and weaknesses. So, when you want to reference blog pages with a colorful, casual feel, you are forced to sift through hundreds of unrelated blog pages to find those that match your criteria.
 
-<figure markdown="1" class="edge-to-edge medium macos-screenshot">
+<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 ![A screenshot of a macOS Finder window of a folder filled with archived web pages. These pages are not organized at all.]({{ site.baseurl }}/images/assets/tags-explained/before-tags.jpg)
 <figcaption>
 You'd have to check each page manually to see if it matches the criteria, thus this system is woefully inadequate.
@@ -37,7 +37,7 @@ You may have anticipated this and added another set of folders earlier on under 
 
 This approach has one fatal flaw: *The reference materials can easily have more than one design strength*. What if you want to archive a product page that is professional, but also colorful? In this system, you'd either have to make duplicates of that page for each of the strength folders, make an alias to the page for each folder, or simply give up and only sort into one folder. This method of organization is incredibly wasteful in the case of duplications and extremely brittle in the case of file aliases, and is thus not sustainable.
 
-<figure markdown="1" class="edge-to-edge medium macos-screenshot">
+<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 ![A screenshot of a macOS Finder window demonstrating that an example web page could belong to both a "Colorful" folder as well as a "Typography" folder]({{ site.baseurl }}/images/assets/tags-explained/only-one-place-at-a-time.jpg)
 <figcaption>
 This particular page has lovely colors and tight typography, but it can't be in two folders at once!
@@ -48,7 +48,7 @@ As demonstrated in the scenario above, while folder hierarchies certainly have t
 
 However, if we use tags instead, our situation quickly improves. There's no need for a whole new directory level and duplicate files, you can simply add as many tags as you want to describe all the strengths any particular page has. This lets you easily search for *any* tag combination. From the earlier example, you'd only have to search `Tag:Professional, Tag:Colorful, Tag:Typography` and all archived pages that contain the subset of those three tags will be displayed.
 
-<figure markdown="1" class="edge-to-edge medium macos-screenshot">
+<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 <p>
 <video controls preload="metadata" poster="/videos/assets/tags-explained/tag-searching-poster.jpg" alt="A video of a macOS Finder window containing a folder filled with tagged web pages. The video depicts a user searching for web pages by the tags 'Professional', 'Colorful' and 'Typography'">
 	<source src="/videos/assets/tags-explained/tag-searching.mp4" type="video/mp4">

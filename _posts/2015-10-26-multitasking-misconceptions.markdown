@@ -82,17 +82,13 @@ What about iOS's memory though? Surely, frozen in memory or not, these apps in t
 
 You can actually see this in the wild yourself, double-press your home button and look at a few of the most recently used apps immediately to the left of your home screen. Notice how they have a nice little picture of what you were doing right before you switched to a different app. That's because they’re still sitting in memory ready to pick up right where you left off (but remember, they're not actually running!). Now start scrolling farther and farther back to the left. You'll start seeing apps you haven't opened in a long time and eventually you'll notice they start looking like they don't seem to have a picture of what you were last doing in them anymore, in fact they look blank. These are apps that iOS has already cleared from memory to make room for more recently suspended apps back to the right close to the Home Screen. If you were to tap on any of these apps they would launch as if you had force quit them instead of "resuming" from suspension because the entire app has to be read back from slow storage into memory (and in the process shoving the new "oldest suspended app" off memory to make room). This super slow process is what happens *every single time* if you force quit all your apps after using them.
 
-<div class="edge-to-edge large two-images shadow ios-screenshot">
-<figure markdown="1">
+<figure markdown="1" class="edge-to-edge large two-images ios-screenshot">
 ![The app switcher view, showing images for each of their last known states]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-new.jpg)
-</figure>
-<figure markdown="1">
 ![The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles]({{ site.baseurl }}/images/assets/multitasking-misconceptions/multitasking-old.jpg)
-</figure>
 <figcaption>
 Note how the app preview images change from most recently used to oldest.
 </figcaption>
-</div>
+</figure>
 
 Background App Refresh (The Primary Exception the the Rule)
 -----------------------------------------------------------
@@ -101,16 +97,10 @@ Starting with iOS 7 Apple added a feature that complicates things slightly. Back
 
 This of course poses a potential problem since there's bound to be some apps you barely use that have this feature enabled by default that you'd rather have turned off. I'd recommend keeping it on for apps you use at least semi-regularly and disable it for the rest. Simply open up the "Settings" app and navigate to `General > Background App Refresh` and flip the switch for apps you don't use often off.
 
-<div markdown="1" class="edge-to-edge large three-images shadow ios-screenshot">
-<figure markdown="1">
+<div markdown="1" class="edge-to-edge large three-images ios-screenshot">
 ![iOS Settings Screen, General list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/settings.jpg)
-</figure>
-<figure markdown="1">
 ![iOS General Settings Screen, Usage list item highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/general.jpg)
-</figure>
-<figure markdown="1">
 ![iOS Usage Settings Screen, both Manage Storage list items highlighted]({{ site.baseurl }}/images/assets/multitasking-misconceptions/background-app-refresh.jpg)
-</figure>
 </div>
 
 Another thing to consider when you're deciding which apps to turn Background App Refresh off for &mdash; if any at all &mdash; is how many apps are currently enabled for background refresh in the list. If you have more than twenty or so with Background App Refresh turned on you might want to consider trimming that number down. While any individual app only takes a tiny, negligible amount of battery to background refresh ([usually](https://www.macstories.net/linked/the-background-data-and-battery-usage-of-facebooks-ios-app/)) this number *can* add up if there's a lot of them.
