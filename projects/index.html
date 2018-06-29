@@ -13,102 +13,138 @@ projects-menu-active: true
 
 <style>
 .project {
-    max-height: 275px;
-    max-width: 564px;
-    height: 100%;
-    width: 90%;
-    border-radius: 1em;
-    display: inline-block;
+	max-height: 275px;
+	max-width: 564px;
+	height: 100%;
+	border-radius: 1em;
+	display: inline-block;
+	width: 44vw;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	margin-bottom: 1rem;
 
-    margin-left: .975rem;
-    margin-right: .975rem;
-    margin-bottom: 1.95rem;
-
-    overflow: hidden;
+	overflow: hidden;
 }
 .project-list a:last-child .project {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .project img {
-    margin: 0;
-    padding: 0;
-    display: block;
+	margin: 0;
+	padding: 0;
+	display: block;
 }
 main a:hover {
-    text-decoration: none;
-    background-color: unset;
+	text-decoration: none;
+	background-color: unset;
+}
+/* Tiny devices (Width smaller than 320px) */
+@media(max-width: 318px) {
+	.project {
+		width: 90%;
+		margin-left: .975rem;
+		margin-right: .975rem;
+		margin-bottom: 1.95rem;
+	}
 }
 /* Medium devices (iPads) */
 @media (min-width: 700px) {
-    .project {
-        width: 39vw;
-    }
-    .project-list a:last-child .project {
-        margin-bottom: 1.95rem;
-    }
+	.project {
+		width: 44vw;
+		margin-left: .5rem;
+		margin-right: .5rem;
+		margin-bottom: 1rem;
+	}
+	.project-list a:last-child .project {
+		margin-bottom: 1.95rem;
+	}
 }
 /* Large devices (Macs) */
 @media (min-width: 900px) {
-    .project {
-        width: 44vw;
-        height: 21.453900709vw;
-    }
+	.project {
+		width: 44vw;
+		margin-left: .975rem;
+		margin-right: .975rem;
+		margin-bottom: 1.95rem;
+		height: 21.453900709vw;
+	}
 }
 </style>
 <div class="project-list">
-    <a href="https://shelf.barrowclift.me">
-        <div class="threeDHover project">
-            <img src="/images/projects/code/shelf/project-banner.jpg" alt="Shelf Logo" />
-        </div>
-    </a>
-    <a href="https://barrowclift.me/marcdown/">
-        <div class="threeDHover project">
-            <img src="/images/projects/code/marcdown/project-banner.png" alt="Marcdown Logo" />
-        </div>
-    </a>
-    <a href="https://badmusichertz.com" target="_blank">
-        <div class="threeDHover project">
-            <img src="/images/projects/music/bad-music-hertz/project-banner.jpg" alt="Bad Music Hertz Blog" />
-        </div>
-    </a>
-    <a href="/divers/">
-        <div class="threeDHover project">
-            <img src="/divers/images/project-banner.jpg" alt="Divers" />
-        </div>
-    </a>
-    <a href="/projects/art/sketches/">
-        <div class="threeDHover project">
-            <img src="/images/projects/art/sketches/project-banner.jpg" alt="Sketches" />
-        </div>
-    </a>
-	<a href="/projects/music/smile-heroes-and-villains-mix/">
-        <div class="threeDHover project">
-		  <img src="/images/projects/music/smile-heroes-and-villains-mix/project-banner.png" alt="SMiLE: Heroes and Villains Mix" />
-        </div>
+	<a href="https://shelf.barrowclift.me">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/code/shelf/project-banner.jpg" alt="Shelf Logo" />
+			</div>
+		</div>
 	</a>
-    <a href="/projects/art/iconography/">
-        <div class="threeDHover project">
-            <img src="/images/projects/art/iconography/project-banner.png" alt="Iconography" />
-        </div>
-    </a>
-    <a href="https://github.com/barrowclift" target="_blank">
-        <div class="threeDHover project">
-          <img src="/images/projects/code/github/project-banner.jpg" alt="Github account" />
-        </div>
-    </a>
-    <a href="https://itunes.apple.com/us/podcast/bad-music-hertz/id1319023897?mt=2">
-        <div class="threeDHover project">
-            <img src="/images/projects/music/bad-music-hertz/podcast-project-banner.png" alt="Bad Music Hertz Podcast" />
-        </div>
-    </a>
-    <a href="https://lookatthatcloud.com/original">
-        <div class="threeDHover project">
-            <img src="/images/projects/code/lookatthatcloud/project-banner.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website" />
-        </div>
-    </a>
-    <a href="/projects/code/the-largest-video-game-ever-made/">
-        <div class="threeDHover project">
-            <img src="/images/projects/code/largest-video-game-ever/project-banner.jpg" alt="The Largest Video Game Ever Made" />
-        </div>
-    </a>
+	<a href="https://barrowclift.me/marcdown/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/code/marcdown/project-banner.png" alt="Marcdown Logo" />
+			</div>
+		</div>
+	</a>
+	<a href="https://badmusichertz.com" target="_blank">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/music/bad-music-hertz/project-banner.jpg" alt="Bad Music Hertz Blog" />
+			</div>
+		</div>
+	</a>
+	<a href="https://itunes.apple.com/us/podcast/bad-music-hertz/id1319023897?mt=2">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/music/bad-music-hertz/podcast-project-banner.png" alt="Bad Music Hertz Podcast" />
+			</div>
+		</div>
+	</a>
+	<a href="/divers/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/divers/images/project-banner.jpg" alt="Divers" />
+			</div>
+		</div>
+	</a>
+	<a href="/projects/art/sketches/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/art/sketches/project-banner.jpg" alt="Sketches" />
+			</div>
+		</div>
+	</a>
+	<a href="/projects/music/smile-heroes-and-villains-mix/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/music/smile-heroes-and-villains-mix/project-banner.png" alt="SMiLE: Heroes and Villains Mix" />
+			</div>
+		</div>
+	</a>
+	<a href="/projects/art/iconography/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/art/iconography/project-banner.png" alt="Iconography" />
+			</div>
+		</div>
+	</a>
+	<a href="https://github.com/barrowclift" target="_blank">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/code/github/project-banner.jpg" alt="Github account" />
+			</div>
+		</div>
+	</a>
+	<a href="https://lookatthatcloud.com/original">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/code/lookatthatcloud/project-banner.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website" />
+			</div>
+		</div>
+	</a>
+	<a href="/projects/code/the-largest-video-game-ever-made/">
+		<div class="project threeDHover">
+			<div class="content card-animation">
+				<img src="/images/projects/code/largest-video-game-ever/project-banner.jpg" alt="The Largest Video Game Ever Made" />
+			</div>
+		</div>
+	</a>
 </div>

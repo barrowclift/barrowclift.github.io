@@ -22,6 +22,8 @@ if (is_safari || is_ios_safari) {
 	document.getElementsByTagName("html")[0].setAttribute("class", "safari");
 } else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
 	document.getElementsByTagName("html")[0].setAttribute("class", "firefox");
+} else if (!is_safari && !is_ios_safari && !is_opera && is_chrome) {
+	document.getElementsByTagName("html")[0].setAttribute("class", "chrome");
 }
 
 function darkModeToggled(checkbox) {

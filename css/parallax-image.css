@@ -20,13 +20,6 @@
 		.safari #parallax .layer {
 			position: -webkit-sticky;
 		}
-		/* Have to turn off parallax, Firefox sucks */
-		.firefox #parallax .layer {
-			position: absolute; 
-		}
-		.firefox #parallax-foreground {
-			top: 100vh;
-		}
 #parallax-background {
 	transform: translateZ(-0.2px);
 
@@ -47,7 +40,7 @@
 	z-index: 10;
 	
 	box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
-	background-color: white;
+	background-color: rgba(255, 255, 255, 1);
 
 	width: 100vw;
 	min-width: 100vw;
@@ -55,6 +48,11 @@
 	margin: 0 !important;
 	border-radius: 1em;
 }
+	.safari #parallax-foreground {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255, 255, 255, 0.95);
+	}
 article {
 	max-width: 35em;
 	text-align: center;
