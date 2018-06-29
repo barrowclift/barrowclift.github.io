@@ -196,6 +196,7 @@ menu ul {
 }
 time {
 	font-size: 1rem;
+	line-height: 1.3em;
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
 	/* Always have time below whatever content it's representing */
@@ -404,6 +405,10 @@ main a,
 mark {
 	padding-top: 0.11em;
 	padding-bottom: 0.11em;
+}
+figure a,
+.edge-to-edge a {
+	background-color: unset !important;
 }
 
 
@@ -1029,9 +1034,7 @@ article > p > img {
 	max-width: 1600px;
 	max-height: none;
 
-	/* On mobile, there is a bit of a gap in the "edge-to-edge" effect, making
-       slightly bigger to compensate*/
-	width: 101vw;
+	width: 100vw;
 	margin-left: -19vw;
 	margin-right: -19vw;
 
@@ -1065,7 +1068,7 @@ article > p > img {
 }
 .inline img,
 .inline video {
-	width: 100%;
+	width: auto;
 	margin-left: 0;
 	margin-right: 0;
 	border-radius: 0.25em;
@@ -1090,19 +1093,6 @@ article > p > img {
 	background-color: rgba(229, 231, 232, 0.85);
 	border: 1px solid rgba(218, 219, 220, 0.85);
 }
-
-/**
- * Screenshots on retina displays should be halfed to be displayed at their
- * "true" size.
- */
-/*.watchos-screenshot img,
-.watchos-screenshot video,
-.ios-screenshot img,
-.ios-screenshot video,
-.macos-window-screenshot img,
-.macos-window-screenshot video {
-	zoom: 50%;
-}*/
 
 .watchos-screenshot img,
 .watchos-screenshot video {
@@ -1294,9 +1284,7 @@ article > pre,
 	max-width: 1600px;
 	border-radius: 0;
 
-	/* On mobile, there is a bit of a gap in the "edge-to-edge", making slightly
-       bigger to compensate*/
-	width: 101vw;
+	width: 100vw;
 	margin-left: -19vw;
 	margin-right: -19vw;
 
@@ -2092,7 +2080,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
 	}
 		menu header {
 			padding-left: 0.78em;
-			padding-top: 0.49em;
+			padding-top: 0.50em;
 		}
 			menu ul {
 				margin-left: 0;
@@ -2283,7 +2271,7 @@ menu a:hover,
 }
 .link-button-group a:hover,
 form a:hover {
-	background-color: unset;
+	background-color: unset !important;
 }
 
 h1 a:hover {
@@ -2354,11 +2342,6 @@ a:hover .fill-color {
 	color: white;
 }
 
-#dark .active,
-#dark .hover:hover:not(.active) {
-	color: #007AFF;
-}
-
 
 /* DARK THEME ======================================================================= */
 
@@ -2374,6 +2357,9 @@ a:hover .fill-color {
 #dark #parallax-foreground {
 	box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
 }
+	#dark.safari #parallax-foreground {
+		background-color: rgba(39, 40, 34, 0.95);
+	}
 #dark #content,
 #dark .active a  {
 	background-image: none;
@@ -2401,11 +2387,10 @@ a:hover .fill-color {
 	color: hsla(0, 0%, 100%, 0.6);
 }
 
-#dark main a:hover,
+#dark main a:not(.link-button):hover,
 #dark menu a:hover,
 #dark .anchor:hover,
-#dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover {
+#dark .hover:hover:not(.active) {
 	background-color: rgba(0, 122, 255, 0.25);
 }
 
@@ -2414,6 +2399,11 @@ a:hover .fill-color {
 
 
 /* --- MENU --- */
+#dark .active,
+#dark .hover:hover:not(.active) {
+	color: #007AFF;
+}
+
 #dark menu {
 	background-color: rgba(23, 24, 20, 0.95);
 	border-bottom: 1px solid rgba(175, 175, 175, 0.1);
@@ -2432,6 +2422,8 @@ a:hover .fill-color {
 #dark #logo:hover #smirk {
 	opacity: 1;
 }
+#dark #logo-eye-opened,
+#dark #logo-eye-closed,
 #dark #smirk {
 	opacity: 0;
 }

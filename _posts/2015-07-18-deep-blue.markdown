@@ -3,6 +3,7 @@ layout: post-parallax-image
 title:  "Deep Blue"
 foreground-color: "#BEC5C9"
 primary-color: "#91C0F2"
+background-color: "#030504"
 date:   2015-07-18 17:00:00
 categories:
   - Technology

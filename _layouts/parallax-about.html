@@ -21,9 +21,63 @@
 			<div class="container">
 				{% include menu.html %}
 				<div id="parallax-background" class="layer">
-					<h1>Hi!</h1>
-					<h2>I'm Marc Barrowclift</h2>
-					<h3>Human Interface Designer  <span id="up-arrow" onclick="upArrowClicked();">▼</span></h3>
+					<svg id="about-mac" viewBox="0 0 32 32" role="img" version="1.1">
+						<title id="logo-speech-bubble"></title>
+						<rect width="26" height="24" x="3" y="1" class="fill-color"></rect>
+						<rect width="2" height="22" x="1" y="2" class="fill-color"></rect>
+						<rect width="1" height="1" x="2" y="1" class="fill-color"></rect>
+						<rect width="1" height="1" x="2" y="24" class="fill-color"></rect>
+						<rect width="2" height="22" x="29" y="2" class="fill-color"></rect>
+						<rect width="1" height="1" x="29" y="1" class="fill-color"></rect>
+						<rect width="1" height="1" x="29" y="24" class="fill-color"></rect>
+						<rect width="6" height="5" x="13" y="26" class="fill-color"></rect>
+						<rect width="1" height="2" x="11" y="29" class="fill-color"></rect>
+						<rect width="1" height="3" x="12" y="28" class="fill-color"></rect>
+						<rect width="1" height="2" x="20" y="29" class="fill-color"></rect>
+						<rect width="1" height="3" x="19" y="28" class="fill-color"></rect>
+						<rect width="28" height="1" x="2" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="1" y="1" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="30" y="1" class="mac-line-color"></rect>
+						<rect width="1" height="22" y="2" class="mac-line-color"></rect>
+						<rect width="1" height="22" x="31" y="2" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="1" y="24" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="30" y="24" class="mac-line-color"></rect>
+						<rect width="28" height="1" x="2" y="25" class="mac-line-color"></rect>
+						<rect width="22" height="1" x="5" y="4" class="mac-line-color"></rect>
+						<rect width="22" height="1" x="5" y="19" class="mac-line-color"></rect>
+						<rect width="1" height="16" x="4" y="4" class="mac-line-color"></rect>
+						<rect width="1" height="16" x="27" y="4" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="11" y="9" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="12" y="8" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="13" y="9" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="18" y="9" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="19" y="8" class="mac-line-color"></rect>
+						<rect id="logo-eye-closed" width="1" height="1" x="20" y="9" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="5" height="1" x="9" y="9" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="3" height="1" x="10" y="10" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="5" height="1" x="18" y="9" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="3" height="1" x="19" y="10" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="10" height="1" x="6" y="8" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="9" height="1" x="17" y="8" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="1" height="1" x="5" y="7" class="mac-line-color"></rect>
+						<rect id="sunglasses" width="1" height="1" x="26" y="7" class="mac-line-color"></rect>
+						<rect id="logo-eye-opened" width="1" height="2" x="12" y="8" class="mac-line-color"></rect>
+						<rect id="logo-eye-opened" width="1" height="2" x="19" y="8" class="mac-line-color"></rect>
+						<rect width="1" height="5" x="16" y="8" class="mac-line-color"></rect>
+						<rect width="2" height="1" x="15" y="13" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="13" y="15" class="mac-line-color"></rect>
+						<rect width="1" height="1" x="18" y="15" class="mac-line-color"></rect>
+						<rect width="4" height="1" x="14" y="16" class="mac-line-color"></rect>
+						<rect id="smirk" width="1" height="1" x="19" y="14" class="mac-line-color"></rect>
+						<rect width="1" height="2" x="12" y="26" class="mac-line-color"></rect>
+						<rect width="1" height="2" x="19" y="26" class="mac-line-color"></rect>
+						<rect width="2" height="1" x="10" y="28" class="mac-line-color"></rect>
+						<rect width="2" height="1" x="20" y="28" class="mac-line-color"></rect>
+						<rect width="1" height="2" x="10" y="29" class="mac-line-color"></rect>
+						<rect width="1" height="2" x="21" y="29" class="mac-line-color"></rect>
+						<rect width="12" height="1" x="10" y="31" class="mac-line-color"></rect>
+						<path class="mac-line-color" transform="translate(14.9, 21.4), scale(0.013)" d="m127.805969,90.003128c0.224838,24.213104 21.241287,32.270615 21.474121,32.373459c-0.177704,0.56826 -3.358078,11.482742 -11.072464,22.756622c-6.668747,9.746841 -13.590027,19.457977 -24.493088,19.659103c-10.713348,0.197403 -14.158287,-6.353043 -26.406677,-6.353043c-12.24469,0 -16.072174,6.151901 -26.213551,6.550446c-10.52422,0.398254 -18.538303,-10.539917 -25.26247,-20.251053c-13.740021,-19.864456 -24.24024,-56.132286 -10.1411,-80.613663c7.004152,-12.157551 19.521101,-19.85622 33.10713,-20.053638c10.334515,-0.197132 20.089069,6.952717 26.406689,6.952717c6.313614,0 18.167473,-8.59832 30.628998,-7.335548c5.21682,0.217129 19.860519,2.1073 29.263641,15.871029c-0.75766,0.469692 -17.472931,10.200527 -17.291229,30.443592m-20.134499,-59.456692c5.587379,-6.7633 9.348007,-16.178439 8.322067,-25.546439c-8.053787,0.32369 -17.792625,5.36682 -23.569427,12.126399c-5.177124,5.985922 -9.711121,15.566772 -8.48777,24.749359c8.976891,0.69453 18.147476,-4.561718 23.73513,-11.329308"/><rect width="32" height="32" opacity="0" role="img" class="mac-line-color"></rect><image src="{{ "/images/favicon-32x32@2x.png" | prepend: site.baseurl }}" alt="Happy iMac Logo"></image>
+					</svg>
 				</div>
 				<main id="parallax-foreground" class="layer">
 					{% if page.wrap-article %}
@@ -38,103 +92,207 @@
 		</div>
 
 		<style>
-			#parallax-background h1,
-			#parallax-background h2,
-			#parallax-background h3 {
-				opacity: 1;
-				transition: opacity 0.2s ease;
-			}
-			@media (max-height: 500px) {
-				#parallax-background h1,
-				#parallax-background h2,
-				#parallax-background h3 {
-					opacity: 0;
-				}
-			}
-			@media (max-height: 580px) and (min-width: 700px) {
-				#parallax-background h1,
-				#parallax-background h2,
-				#parallax-background h3 {
-					opacity: 0;
-				}
-			}
-			@media (max-height: 620px) and (min-width: 900px) {
-				#parallax-background h1,
-				#parallax-background h2,
-				#parallax-background h3 {
-					opacity: 0;
-				}
-			}
-
-			#up-arrow {
-				color: #007AFF;
-				transition: color 0.2s ease;
-				cursor: pointer;
-				display: block;
-			}
-			#up-arrow:hover {
-				color: #0063CE;
-			}
-
-			#parallax-background {
+			/*#parallax-background {
 				background-image: url("/images/{{ page.image }}");
-				background-position-y: center !important;
-				background-position-x: 37.5% !important;
+			}*/
+			#about-mac {
+				width: 40vw;
+				max-width: 128px;
+				margin-top: 42vh;
 			}
-
-			#parallax-background h1 {
-				position: absolute;
-				margin: 0;
-				top: 40vh;
-				font-size: 350%;
-				color: white;
-				left: 5vw;
-				right: 5vw;
-			}
-			#parallax-background h2 {
-				position: absolute;
-				margin: 0;
-				top: 85vh;
-				font-size: 275%;
-				color: white;
-				left: 5vw;
-				right: 5vw;
-			}
-			#parallax-background h3 {
-				position: absolute;
-				top: 85vh;
-				margin-top: 2em;
-				font-size: 200%;
-				color: white;
-				left: 5vw;
-				right: 5vw;
-			}
-
-			@media (min-height: 800px) {
-				#parallax-background h1 {
-					top: 30vh;
-				}
-				#parallax-background h2 {
-					top: 98vh;
-				}
-				#parallax-background h3 {
-					top: 98vh;
-				}
+			#parallax-background {
+				/*height: 70vh;
+				max-height: 250px;
+				width: 120vw;
+				margin-bottom: -22vh;*/
+				height: 40vh;
+				max-height: 260px;
+				width: 120vw;
+				margin-bottom: -14vh;
 			}
 			@media (min-width: 700px) {
-				#parallax-background h1 {
-					top: 27vh;
-					font-size: 500%;
+				#parallax-background {
+					height: 100vh;
+					max-height: unset;
+					width: 120vw;
+					margin-bottom: -31vh;
 				}
-				#parallax-background h2 {
-					top: 90vh;
-					font-size: 400%;
+				#about-mac {
+					max-width: 192px;
+					margin-top: 35vh;
 				}
-				#parallax-background h3 {
-					top: 90vh;
-					margin-top: 1.625em;
-					font-size: 300%;
+			}
+			@media (min-width: 900px) {
+				#about-mac {
+					max-width: 256px;
+					margin-top: 30vh;
 				}
+			}
+			@media (max-height: 400px) {
+				#about-mac {
+					opacity: 0;
+				}
+			}
+			@media (max-height: 510px) and (max-width: 700px) {
+				#about-mac {
+					opacity: 0;
+				}
+				#parallax-background {
+					height: 70vh;
+					max-height: 250px;
+					width: 120vw;
+					margin-bottom: -22vh;
+				}
+			}
+			@media (max-height: 510px) and (min-width: 700px) {
+				#about-mac {
+					max-width: 128px;
+					margin-top: 33vh;
+				}
+			}
+			@media (max-width: 700px) and (min-height: 660px) {
+				#about-mac {
+					max-width: 192px;
+					margin-top: 40vh;
+				}
+			}
+			#about-mac {
+				image-rendering: optimizeQuality !important;
+				-webkit-filter: drop-shadow(0 1.025em 2.925em rgba(0,0,0,0.2));
+				transition: opacity 0.2s ease;
+			}
+			.firefox #about-mac {
+				margin-top: 26vh;
+			}
+			#about-mac .fill-color,
+			#dark #about-mac .fill-color {
+				fill: rgba(255,255,255,0.85);
+			}
+			#about-mac .mac-line-color {
+				fill: hsla(0, 0%, 0%, 0.85);
+			}
+
+			@keyframes cyclecolors
+				{
+					0%  {background-color:#007AFF;}
+					16% {background-color:#4CD964;}
+					32% {background-color:#5856D6;}
+					48% {background-color:#FF3B30;}
+					64% {background-color:#FF8100;}
+					96% {background-color:#FFCC00;}
+				}
+
+			@-webkit-keyframes cyclecolors /* Safari */
+				{		
+					0%  {background-color:#007AFF;}
+					16% {background-color:#4CD964;}
+					32% {background-color:#5856D6;}
+					48% {background-color:#FF3B30;}
+					64% {background-color:#FF8100;}
+					96% {background-color:#FFCC00;}
+				}
+				
+			@-moz-keyframes cyclecolors /* Firefox */
+				{
+					0%  {background-color:#007AFF;}
+					16% {background-color:#4CD964;}
+					32% {background-color:#5856D6;}
+					48% {background-color:#FF3B30;}
+					64% {background-color:#FF8100;}
+					96% {background-color:#FFCC00;}
+				}
+
+			/** Remember to maybe switch this to HTML, if one of the other options */
+			html {
+				background: rgba(0,122,255,1);
+			}
+			#parallax-background {
+				/*https://cssgradient.io*/
+
+				background: rgb(76,217,100);
+				background: radial-gradient(circle, rgba(76,217,100,1) 25%, rgba(0,122,255,1) 100%);
+
+				/*background: rgb(255,204,0);
+				background: radial-gradient(circle, rgba(255,204,0,1) 25%, rgba(255,129,0,1) 100%);*/
+
+				/*background-color:#007AFF;
+				-webkit-animation:cyclecolors linear infinite;
+				-webkit-animation-duration: 90s;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation:cyclecolors linear infinite;
+				-moz-animation-duration: 90s;
+				-moz-animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(51,51,51,0.26)), color-stop(100%, rgba(51,51,51,0.4)), to(transparent));
+				background-image: -webkit-linear-gradient(transparent, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);
+				background-image: linear-gradient(transparent, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);*/
+
+				/*background: rgb(27,173,248);
+				background: radial-gradient(circle, rgba(27,173,248,1) 25%, rgba(0,122,255,1) 100%);*/
+
+				transition: background 0.2s ease, background-color 0.2s ease, background-image 0.2s ease;
+			}
+			#dark #parallax-background {
+				background-color: #141414 !important;
+				background: #000;
+
+				background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(25%, rgba(0,122,255,0.26)), color-stop(100%, rgba(0,122,255,0.4)), to(transparent));
+				background-image: -webkit-linear-gradient(transparent, rgba(0,122,255,0.26) 25%, rgba(0,122,255,0.4) 100%, transparent);
+				background-image: linear-gradient(transparent, rgba(0,122,255,0.26) 25%, rgba(0,122,255,0.4) 100%, transparent);
+				
+				/*background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(25%, rgba(255, 204, 0, 0.26)), color-stop(100%, rgba(255, 204, 0, 0.4)), to(transparent));
+				background-image: -webkit-linear-gradient(transparent, rgba(255, 204, 0, 0.26) 25%, rgba(255, 204, 0, 0.4) 100%, transparent);
+				background-image: linear-gradient(transparent, rgba(255, 204, 0, 0.26) 25%, rgba(255, 204, 0, 0.4) 100%, transparent);*/
+			}
+			@media (min-width: 700px) {
+				#dark #parallax-background {
+					background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(0,122,255,0.26)), color-stop(100%, rgba(0,122,255,0.4)), to(transparent));
+					background-image: -webkit-linear-gradient(transparent, rgba(0,122,255,0.26) 50%, rgba(0,122,255,0.4) 100%, transparent);
+					background-image: linear-gradient(transparent, rgba(0,122,255,0.26) 50%, rgba(0,122,255,0.4) 100%, transparent);
+
+					/*background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(255, 204, 0, 0.26)), color-stop(100%, rgba(255, 204, 0, 0.4)), to(transparent));
+					background-image: -webkit-linear-gradient(transparent, rgba(255, 204, 0, 0.26) 50%, rgba(255, 204, 0, 0.4) 100%, transparent);
+					background-image: linear-gradient(transparent, rgba(255, 204, 0, 0.26) 50%, rgba(255, 204, 0, 0.4) 100%, transparent);*/
+				}
+			}
+			/*#dark #parallax-background {
+				background-image: unset;
+			}*/
+			#about-mac:hover #logo-eye-closed {
+				opacity: 1;
+			}
+			#about-mac:hover #logo-eye-opened {
+				opacity: 0;
+			}
+			#dark #about-mac:hover #logo-eye-closed {
+				opacity: 0;
+			}
+			#dark #about-mac:hover #smirk {
+				opacity: 1;
+			}
+			menu ul a:not(.active) {
+				color: hsla(0, 0%, 0%, 0.5);
+			}
+			#dark-mode-toggle .fill-color,
+			#logo .signature-color {
+				fill: hsla(0, 0%, 0%, 0.75);
+			}
+			.active,
+			.hover:hover:not(.active) {
+				color: rgba(255, 255, 255, 0.9);
+			}
+			#dark-mode-toggle:hover .fill-color,
+			#logo:hover .signature-color,
+			#dark #dark-mode-toggle .fill-color,
+			#dark .signature-color {
+				fill: rgba(255, 255, 255, 0.9);
+			}
+			menu a:hover,
+			.hover:hover:not(.active) {
+				background-color: rgba(255, 255, 255, 0.15);
+			}
+			#dark #logo:hover .signature-color {
+				fill: #007AFF;
 			}
 		</style>
 
