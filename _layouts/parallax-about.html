@@ -99,6 +99,7 @@
 				width: 40vw;
 				max-width: 128px;
 				margin-top: 42vh;
+				opacity: 0;
 			}
 			#parallax-background {
 				/*height: 70vh;
@@ -118,6 +119,7 @@
 					margin-bottom: -31vh;
 				}
 				#about-mac {
+					opacity: 1;
 					max-width: 192px;
 					margin-top: 35vh;
 				}
@@ -174,32 +176,35 @@
 
 			@keyframes cyclecolors
 				{
-					0%  {background-color:#007AFF;}
-					16% {background-color:#4CD964;}
-					32% {background-color:#5856D6;}
-					48% {background-color:#FF3B30;}
-					64% {background-color:#FF8100;}
-					96% {background-color:#FFCC00;}
+					8.33%  {background-color:#007AFF;}
+					25% {background-color:#4CD964;}
+					41.67% {background-color:#5856D6;}
+					58.33% {background-color:#FF3B30;}
+					75% {background-color:#FF8100;}
+					91.67% {background-color:#FFCC00;}
+					100%  {background-color:#007AFF;}
 				}
 
 			@-webkit-keyframes cyclecolors /* Safari */
 				{		
-					0%  {background-color:#007AFF;}
-					16% {background-color:#4CD964;}
-					32% {background-color:#5856D6;}
-					48% {background-color:#FF3B30;}
-					64% {background-color:#FF8100;}
-					96% {background-color:#FFCC00;}
+					8.33%  {background-color:#007AFF;}
+					25% {background-color:#4CD964;}
+					41.67% {background-color:#5856D6;}
+					58.33% {background-color:#FF3B30;}
+					75% {background-color:#FF8100;}
+					91.67% {background-color:#FFCC00;}
+					100%  {background-color:#007AFF;}
 				}
 				
 			@-moz-keyframes cyclecolors /* Firefox */
 				{
-					0%  {background-color:#007AFF;}
-					16% {background-color:#4CD964;}
-					32% {background-color:#5856D6;}
-					48% {background-color:#FF3B30;}
-					64% {background-color:#FF8100;}
-					96% {background-color:#FFCC00;}
+					8.33%  {background-color:#007AFF;}
+					25% {background-color:#4CD964;}
+					41.67% {background-color:#5856D6;}
+					58.33% {background-color:#FF3B30;}
+					75% {background-color:#FF8100;}
+					91.67% {background-color:#FFCC00;}
+					100%  {background-color:#007AFF;}
 				}
 
 			/** Remember to maybe switch this to HTML, if one of the other options */
@@ -221,9 +226,9 @@
 				-moz-animation-duration: 90s;
 				-moz-animation-iteration-count: infinite;
 				-o-animation-iteration-count: infinite;
-				background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(51,51,51,0.26)), color-stop(100%, rgba(51,51,51,0.4)), to(transparent));
-				background-image: -webkit-linear-gradient(transparent, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);
-				background-image: linear-gradient(transparent, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);*/
+				background-image: -webkit-gradient(linear, left top, left bottom, from(0%, rgba(255,255,255,0.26)), color-stop(50%, rgba(51,51,51,0.26)), color-stop(100%, rgba(51,51,51,0.4)), to(transparent));
+				background-image: -webkit-linear-gradient(transparent, rgba(255,255,255,0.26) 0%, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);
+				background-image: linear-gradient(transparent, rgba(255,255,255,0.26) 0%, rgba(51,51,51,0.26) 50%, rgba(51,51,51,0.4) 100%, transparent);*/
 
 				/*background: rgb(27,173,248);
 				background: radial-gradient(circle, rgba(27,173,248,1) 25%, rgba(0,122,255,1) 100%);*/
