@@ -92,7 +92,7 @@
 		</div>
 
 		<style>
-			/*#parallax-background {
+			/*html {
 				background-image: url("/images/{{ page.image }}");
 			}*/
 			#about-mac {
@@ -204,13 +204,11 @@
 
 			/** Remember to maybe switch this to HTML, if one of the other options */
 			html {
-				background: rgba(0,122,255,1);
-			}
-			#parallax-background {
-				/*https://cssgradient.io*/
+				background: rgba(76, 217, 100, 1);
+				background: radial-gradient(circle, rgba(76, 217, 100, 1) 25%, rgba(0, 122, 255, 1) 100%);
+				transition: background 0.2s ease, background-color 0.2s ease, background-image 0.2s ease;
 
-				background: rgb(76,217,100);
-				background: radial-gradient(circle, rgba(76,217,100,1) 25%, rgba(0,122,255,1) 100%);
+				/*https://cssgradient.io*/
 
 				/*background: rgb(255,204,0);
 				background: radial-gradient(circle, rgba(255,204,0,1) 25%, rgba(255,129,0,1) 100%);*/
@@ -229,10 +227,8 @@
 
 				/*background: rgb(27,173,248);
 				background: radial-gradient(circle, rgba(27,173,248,1) 25%, rgba(0,122,255,1) 100%);*/
-
-				transition: background 0.2s ease, background-color 0.2s ease, background-image 0.2s ease;
 			}
-			#dark #parallax-background {
+			html#dark {
 				background-color: #141414 !important;
 				background: #000;
 
@@ -245,7 +241,7 @@
 				background-image: linear-gradient(transparent, rgba(255, 204, 0, 0.26) 25%, rgba(255, 204, 0, 0.4) 100%, transparent);*/
 			}
 			@media (min-width: 700px) {
-				#dark #parallax-background {
+				html#dark {
 					background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(0,122,255,0.26)), color-stop(100%, rgba(0,122,255,0.4)), to(transparent));
 					background-image: -webkit-linear-gradient(transparent, rgba(0,122,255,0.26) 50%, rgba(0,122,255,0.4) 100%, transparent);
 					background-image: linear-gradient(transparent, rgba(0,122,255,0.26) 50%, rgba(0,122,255,0.4) 100%, transparent);

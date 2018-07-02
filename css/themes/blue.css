@@ -14,6 +14,12 @@ main a:hover,
 #social-buttons a:hover {
 	color: #0063CE;
 }
+.anchor:hover,
+main a:hover,
+menu a:hover,
+.hover:hover:not(.active) {
+	background-color: rgba(0, 122, 255, 0.1)
+}
 
 h1 a:hover {
 	color: #007AFF !important;
@@ -27,17 +33,44 @@ a .fill-color {
 	stroke: #007AFF;
 }
 
-button,
-.link-button {
+button.bigfoot-footnote__button {
 	background-color: #007AFF;
 }
-button:hover,
-.link-button:hover {
+button.bigfoot-footnote__button:hover {
 	background-color: #0063CE;
 }
+button:not(.bigfoot-footnote__button),
+.link-button {
+	background-color: #007AFF;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6db2ff), color-stop(100%, #007AFF));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6db2ff', endColorstr='#007AFF', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid #489fff;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
+}
+	button:not(.bigfoot-footnote__button):active,
+	.link-button:active {
+		background-color: #007AFF;
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.1);
+	}
 input:focus,
 textarea:focus {
-	border-color: #007AFF;
+	border-color: #007AFF !important;
 }
 a:hover .fill-color {
 	fill: #0063CE !important;
@@ -47,6 +80,15 @@ a:hover .fill-color {
 #dark #dark-mode-toggle:hover {
 	background-color: unset;
 	color: #007AFF;
+}
+#dark main a:hover,
+#dark menu a:hover,
+#dark .anchor:hover,
+#dark .hover:hover:not(.active) {
+	background-color: rgba(0, 122, 255, 0.25);
+}
+#dark #logo:hover .signature-color {
+	fill: #007AFF !important;
 }
 #dark #dark-mode-toggle:hover .fill-color,
 a .fill-color {
