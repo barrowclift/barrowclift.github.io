@@ -5,8 +5,16 @@ main a:link,
 main a:visited,
 .anchor,
 #blog-footer-buttons a,
-#social-buttons a {
+#social-buttons a,
+#settings-toggle:hover {
 	color: #007AFF;
+}
+#submenu {
+	background-color: hsla(211, 100%, 90%, 0.75);
+}
+.block-list a:hover h3,
+#dark.block-list a:hover h3 {
+	color: #007AFF !important
 }
 .anchor:hover,
 main a:hover,
@@ -15,30 +23,46 @@ main a:hover,
 	color: #0063CE;
 }
 .anchor:hover,
-main a:hover,
-menu a:hover,
-.hover:hover:not(.active) {
-	background-color: rgba(0, 122, 255, 0.1)
+main a:not(.link-button):hover,
+menu a:hover, menu a.light-hover,
+.hover:hover:not(.active),
+#submenu {
+	background-color: rgba(0, 122, 255, 0.1);
 }
-
+#darkmain a:not(.link-button):hover,
+#darkmenu a:hover, #darkmenu a.light-hover,
+#dark.anchor:hover,
+#dark.hover:hover:not(.active),
+#dark#submenu {
+	background-color: rgba(0, 122, 255, 0.25);
+}
 h1 a:hover {
 	color: #007AFF !important;
 }
-
-#dark-mode-toggle:hover .fill-color,
 a .fill-color {
 	fill: #007AFF;
 }
-#dark-mode-toggle:hover .stroke-color {
-	stroke: #007AFF;
-}
-
 button.bigfoot-footnote__button {
 	background-color: #007AFF;
 }
+	button.bigfoot-footnote__button:after {
+		color: #007AFF;
+	}
+	button.bigfoot-footnote__button {
+		background-color: rgba(0, 122, 255, 0.25) !important;
+	}
 button.bigfoot-footnote__button:hover {
 	background-color: #0063CE;
 }
+	button.bigfoot-footnote__button:hover,
+	button.bigfoot-footnote__button:hover,
+	button.bigfoot-footnote__button:focus {
+		background-color: #007AFF !important;
+	}
+	button.bigfoot-footnote__button:active,
+	button.bigfoot-footnote__button.is-active {
+		background-color: #0063CE !important;
+	}
 button:not(.bigfoot-footnote__button),
 .link-button {
 	background-color: #007AFF;
@@ -75,33 +99,19 @@ textarea:focus {
 a:hover .fill-color {
 	fill: #0063CE !important;
 }
-
-#dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover {
-	background-color: unset;
+#dark.hover:hover:not(.active) {
 	color: #007AFF;
 }
-#dark main a:hover,
-#dark menu a:hover,
-#dark .anchor:hover,
-#dark .hover:hover:not(.active) {
-	background-color: rgba(0, 122, 255, 0.25);
-}
-#dark #logo:hover .signature-color {
+#logo:hover .signature-color {
 	fill: #007AFF !important;
 }
-#dark #dark-mode-toggle:hover .fill-color,
 a .fill-color {
-	fill: #007AFF !important;
+	fill: #007AFF;
 }
-#dark #dark-mode-toggle:hover .stroke-color {
-	stroke: #007AFF !important;
-}
-#dark .active {
+#dark.active {
 	background-color: unset;
 	color: #007AFF;
 }
-
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
 	background: #007AFF;

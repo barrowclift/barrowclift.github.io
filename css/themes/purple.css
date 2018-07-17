@@ -5,61 +5,109 @@ main a:link,
 main a:visited,
 .anchor,
 #blog-footer-buttons a,
-#social-buttons a {
+#social-buttons a,
+#settings-toggle:hover {
 	color: #5856D6;
+}
+.block-list a:hover h3,
+#dark.block-list a:hover h3 {
+	color: #5856D6 !important
 }
 .anchor:hover,
 main a:hover,
-#blog-footer-buttons a:hover,
-#social-buttons a:hover {
-	color: #413F9F;
+#blog-footer-buttons a:hover {
+	color: #615EF2;
 }
-
+.anchor:hover,
+main a:not(.link-button):hover,
+menu a:hover, menu a.light-hover,
+.hover:hover:not(.active),
+#submenu {
+	background-color: rgba(88, 86, 214, 0.1);
+}
+#darkmain a:not(.link-button):hover,
+#darkmenu a:hover, #darkmenu a.light-hover,
+#dark.anchor:hover,
+#dark.hover:hover:not(.active),
+#dark#submenu {
+	background-color: rgba(88, 86, 214, 0.25);
+}
 h1 a:hover {
 	color: #5856D6 !important;
 }
-
-#dark-mode-toggle:hover .fill-color,
 a .fill-color {
 	fill: #5856D6;
 }
-#dark-mode-toggle:hover .stroke-color {
-	stroke: #5856D6;
-}
-
-button,
-.link-button {
+button.bigfoot-footnote__button {
 	background-color: #5856D6;
 }
-button:hover,
-.link-button:hover {
-	background-color: #413F9F;
+	button.bigfoot-footnote__button:after {
+		color: #5856D6;
+	}
+	button.bigfoot-footnote__button {
+		background-color: rgba(88, 86, 214, 0.25) !important;
+	}
+button.bigfoot-footnote__button:hover {
+	background-color: #615EF2;
 }
+	button.bigfoot-footnote__button:hover,
+	button.bigfoot-footnote__button:hover,
+	button.bigfoot-footnote__button:focus {
+		background-color: #5856D6 !important;
+	}
+	button.bigfoot-footnote__button:active,
+	button.bigfoot-footnote__button.is-active {
+		background-color: #615EF2 !important;
+	}
+button:not(.bigfoot-footnote__button),
+.link-button {
+	background-color: hsl(236, 61%, 59%); /* hsl(241, 61%, 59%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(237, 61%, 70%)), color-stop(100%, hsl(236, 61%, 59%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(237, 61%, 70%)', endColorstr='hsl(236, 61%, 59%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(237, 61%, 64%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2);
+}
+	button:not(.bigfoot-footnote__button):active,
+	.link-button:active {
+		background-color: hsl(236, 61%, 59%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.1);
+	}
 input:focus,
 textarea:focus {
-	border-color: #5856D6;
+	border-color: #5856D6 !important;
 }
 a:hover .fill-color {
-	fill: #413F9F !important;
+	fill: #615EF2 !important;
 }
-
-#dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover {
-	background-color: unset;
+#dark.hover:hover:not(.active) {
 	color: #5856D6;
 }
-#dark #dark-mode-toggle:hover .fill-color,
-a .fill-color {
+#logo:hover .signature-color {
 	fill: #5856D6 !important;
 }
-#dark #dark-mode-toggle:hover .stroke-color {
-	stroke: #5856D6 !important;
+a .fill-color {
+	fill: #5856D6;
 }
-#dark .active {
+#dark.active {
 	background-color: unset;
 	color: #5856D6;
 }
-
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
 	background: #5856D6;
@@ -67,5 +115,13 @@ a .fill-color {
 }
 ::-moz-selection { /* Firefox */
 	background: #5856D6;
+	color: white;
+}
+#dark::selection { /* Safari */
+	background: hsl(265, 83%, 50%);
+	color: white;
+}
+#dark::-moz-selection { /* Firefox */
+	background: hsl(265, 83%, 50%);
 	color: white;
 }

@@ -3,13 +3,11 @@ layout: default
 error: true
 
 viewing-single-page: true
-color: gray
 
-title: "Could Not Find Page"
+title: "No Page Found"
 ---
 
-<h1 class="center">Could Not Find Page</h1>
-<p class="center">If this page should exist, please feel free to <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">let me know</a> and I'll give it a look.</p>
+<h1 class="center">No Page Found</h1>
 {% for post in site.posts limit:1 %}
-<p class="center">In the meantime, why not read my latest article, <a href="{{ post.url | prepend: site.baseurl }}">"{{ post.title }}"</a>?</p>
+<p class="center">If you're looking for something to read, consider reading my latest article, "<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>".</p>
 {% endfor %}

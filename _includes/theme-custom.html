@@ -13,20 +13,7 @@ menu ul a,
 .signature-color {
 	fill: white;
 }
-#dark-mode-toggle .fill-color {
-	fill: white;
-}
-#dark-mode-toggle .stroke-color {
-	stroke: white;
-}
-#dark-mode-toggle:hover .fill-color {
-	fill: white !important;
-}
-#dark-mode-toggle:hover .stroke-color {
-	stroke: white !important;
-}
 .hover:hover:not(.active),
-#dark-mode-toggle:hover,
 menu a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
@@ -36,16 +23,9 @@ menu a.active:hover {
 }
 
 #dark .hover:hover:not(.active),
-#dark #dark-mode-toggle:hover,
 #dark menu a.active:hover {
 	background-color: {{ page.primary-color-hover }};
 	color: {{ page.primary-color }};
-}
-#dark #dark-mode-toggle:hover .fill-color {
-	fill: {{ page.primary-color }} !important;
-}
-#dark #dark-mode-toggle:hover .stroke-color {
-	stroke: {{ page.primary-color }} !important;
 }
 #dark .active {
 	background-color: unset;

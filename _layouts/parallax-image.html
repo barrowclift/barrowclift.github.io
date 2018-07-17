@@ -14,7 +14,7 @@
 
 	{% include head.html %}
 
-	<body>
+	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
 		{% include lazy-load-stylesheets.html %}
 
 		<div id="parallax">
@@ -59,7 +59,7 @@
 				transition: fill 0.2s ease;
 			}
 			#up-arrow:hover path {
-				fill: rgba(0, 122, 255, 0.75);
+				fill: rgba(255, 255, 255, 0.5);
 			}
 			#parallax-background {
 				background-image: url("/images/{{ page.image }}");

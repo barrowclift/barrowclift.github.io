@@ -1,0 +1,38 @@
+---
+layout: plain
+error: true
+
+viewing-single-page: true
+anchors: false
+
+title: "Hello"
+---
+
+<style>
+	@media (min-width: 700px) {
+		.link-button-group li {
+			width: 33%;
+		}
+		.link-button-group li:first-child {
+			margin-left: 0;
+		}
+		.link-button-group {
+			text-align: left;
+		}
+	}
+</style>
+
+<h1>Hello,<br>My name is Marc Barrowclift</h1>
+
+<figure class="inline shadow">
+	<img src="/images/about/marc-pine-point.jpg" alt="Portrait of Marc Barrowclift">
+</figure>
+
+<h3>I'm a human interface designer, web developer, and computer scientist.</h3>
+
+<h3 style="margin-bottom:1.3em">I currently work for Comcast in Philly.</h3>
+
+<ul class="link-button-group">
+	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="link-button">Read my Articles</p></a></li>
+	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="link-button">Browse my Projects</p></a></li>
+</ul>

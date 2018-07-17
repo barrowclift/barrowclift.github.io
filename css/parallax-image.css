@@ -1,3 +1,6 @@
+#mainmenu {
+	height: initial;
+}
 #parallax {
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -66,15 +69,15 @@ menu {
 	background-color: transparent !important;
 	-webkit-backdrop-filter: none !important;
 	backdrop-filter: none !important;
+
 	border: none !important;
+	box-shadow: none !important;
 	
 	position: fixed; /* Fallback for browsers that don't support sticky */
 	position: sticky;
 	top: 0;
 	height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
 	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	min-width: 100vw;
 }
 #menu-height-offset {
@@ -84,14 +87,9 @@ body {
 	transform: translateZ(0px);
 }
 
-menu ul a:not(.active) {
+menu ul a:not(.active),
+#settings-toggle {
 	color: white;
-}
-#dark-mode-toggle .fill-color {
-	fill: white;
-}
-#dark-mode-toggle .stroke-color {
-	stroke: white;
 }
 .signature-color {
 	fill: white;
