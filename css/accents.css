@@ -1,0 +1,880 @@
+/******************
+ ***    BLUE    ***
+ ******************/
+
+.blue .active,
+.blue .hover:hover:not(.active),
+.blue main a,
+.blue main a:link,
+.blue main a:visited,
+.blue .anchor,
+.blue #blog-footer-buttons a,
+.blue #social-buttons a,
+.blue #settings-toggle:hover {
+	color: #007AFF;
+}
+.blue #submenu {
+	background-color: hsla(211, 100%, 90%, 0.75);
+}
+.blue .block-list a:hover h3,
+#dark.blue .block-list a:hover h3 {
+	color: #007AFF !important
+}
+.blue .anchor:hover,
+.blue main a:hover,
+.blue #blog-footer-buttons a:hover,
+.blue #social-buttons a:hover {
+	color: #0063CE;
+}
+.blue .anchor:hover,
+.blue main a:not(.link-button):hover,
+.blue menu a:hover, .blue menu a.light-hover,
+.blue .hover:hover:not(.active),
+.blue #submenu {
+	background-color: rgba(0, 122, 255, 0.1);
+}
+#dark.blue main a:not(.link-button):hover,
+#dark.blue menu a:hover, #dark.blue menu a.light-hover,
+#dark.blue .anchor:hover,
+#dark.blue .hover:hover:not(.active),
+#dark.blue #submenu {
+	background-color: rgba(0, 122, 255, 0.25);
+}
+.blue h1 a:hover {
+	color: #007AFF !important;
+}
+.blue a .fill-color {
+	fill: #007AFF;
+}
+.blue button.bigfoot-footnote__button {
+	background-color: #007AFF;
+}
+	.blue button.bigfoot-footnote__button:after {
+		color: #007AFF;
+	}
+	.blue button.bigfoot-footnote__button {
+		background-color: rgba(0, 122, 255, 0.25) !important;
+	}
+.blue button.bigfoot-footnote__button:hover {
+	background-color: #0063CE;
+}
+	.blue button.bigfoot-footnote__button:hover,
+	.blue button.bigfoot-footnote__button:hover,
+	.blue button.bigfoot-footnote__button:focus {
+		background-color: #007AFF !important;
+	}
+	.blue button.bigfoot-footnote__button:active,
+	.blue button.bigfoot-footnote__button.is-active {
+		background-color: #0063CE !important;
+	}
+.blue button:not(.bigfoot-footnote__button),
+.blue .link-button {
+	background-color: #007AFF;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6db2ff), color-stop(100%, #007AFF));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #6db2ff 0, #007AFF 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6db2ff', endColorstr='#007AFF', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid #489fff;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
+}
+	.blue button:not(.bigfoot-footnote__button):active,
+	.blue .link-button:active {
+		background-color: #007AFF;
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.1);
+	}
+.blue input:focus,
+.blue textarea:focus {
+	border-color: #007AFF !important;
+}
+.blue a:hover .fill-color {
+	fill: #0063CE !important;
+}
+#dark.blue .hover:hover:not(.active) {
+	color: #007AFF;
+}
+.blue #logo:hover .signature-color {
+	fill: #007AFF !important;
+}
+.blue a .fill-color {
+	fill: #007AFF;
+}
+#dark.blue .active {
+	background-color: unset;
+	color: #007AFF;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.blue ::selection { /* Safari */
+	background: #007AFF;
+	color: white;
+}
+.blue ::-moz-selection { /* Firefox */
+	background: #007AFF;
+	color: white;
+}
+
+/******************
+ ***     RED    ***
+ ******************/
+
+.red .active,
+.red .hover:hover:not(.active),
+.red main a,
+.red main a:link,
+.red main a:visited,
+.red .anchor,
+.red #blog-footer-buttons a,
+.red #social-buttons a,
+.red #settings-toggle:hover {
+	color: #FF3B30;
+}
+.red .block-list a:hover h3,
+#dark.red .block-list a:hover h3 {
+	color: #FF3B30 !important
+}
+.red .anchor:hover,
+.red main a:hover,
+.red #blog-footer-buttons a:hover {
+	color: #DE4935;
+}
+.red .anchor:hover,
+.red main a:not(.link-button):hover,
+.red menu a:hover, .red menu a.light-hover,
+.red .hover:hover:not(.active),
+.red #submenu {
+	background-color: rgba(255, 59, 48, 0.1);
+}
+#dark.red main a:not(.link-button):hover,
+#dark.red menu a:hover,
+#dark.red .anchor:hover, #dark.red menu a.light-hover,
+#dark.red .hover:hover:not(.active),
+#dark.red #submenu {
+	background-color: rgba(255, 59, 48, 0.25);
+}
+.red h1 a:hover {
+	color: #FF3B30 !important;
+}
+
+.red a .fill-color {
+	fill: #FF3B30;
+}
+.red button.bigfoot-footnote__button {
+	background-color: #FF3B30;
+}
+	.red button.bigfoot-footnote__button:after {
+		color: #FF3B30;
+	}
+	.red button.bigfoot-footnote__button {
+		background-color: rgba(255, 59, 48, 0.25) !important;
+	}
+.red button.bigfoot-footnote__button:hover {
+	background-color: #DE4935;
+}
+	.red button.bigfoot-footnote__button:hover,
+	.red button.bigfoot-footnote__button:hover,
+	.red button.bigfoot-footnote__button:focus {
+		background-color: #FF3B30 !important;
+	}
+	.red button.bigfoot-footnote__button:active,
+	.red button.bigfoot-footnote__button.is-active {
+		background-color: #DE4935 !important;
+	}
+.red button:not(.bigfoot-footnote__button),
+.red .link-button {
+	background-color: hsl(3, 100%, 50%); /*  hsl(3, 100%, 59%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(12, 100%, 65%)), color-stop(100%, hsl(3, 100%, 50%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(12, 100%, 65%) 0, hsl(3, 100%, 50%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(12, 100%, 65%) 0, hsl(3, 100%, 50%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(12, 100%, 65%) 0, hsl(3, 100%, 50%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(12, 100%, 65%) 0, hsl(3, 100%, 50%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(12, 100%, 65%) 0, hsl(3, 100%, 50%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(12, 100%, 65%)', endColorstr='hsl(3, 100%, 50%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(12, 100%, 55%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(255, 59, 48, 0.2);
+}
+	.red button:not(.bigfoot-footnote__button):active,
+	.red .link-button:active {
+		background-color: hsl(3, 100%, 50%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(255, 59, 48, 0.1);
+	}
+.red input:focus,
+.red textarea:focus {
+	border-color: #FF3B30 !important;
+}
+.red a:hover .fill-color {
+	fill: #DE4935 !important;
+}
+#dark.red .hover:hover:not(.active) {
+	color: #FF3B30;
+}
+.red #logo:hover .signature-color {
+	fill: #FF3B30 !important;
+}
+.red a .fill-color {
+	fill: #FF3B30;
+}
+#dark.red .active {
+	background-color: unset;
+	color: #FF3B30;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.red ::selection { /* Safari */
+	background: #FF3B30;
+	color: white;
+}
+.red ::-moz-selection { /* Firefox */
+	background: #FF3B30;
+	color: white;
+}
+
+/******************
+ ***   ORANGE   ***
+ ******************/
+
+.orange .active,
+.orange .hover:hover:not(.active),
+.orange main a,
+.orange main a:link,
+.orange main a:visited,
+.orange .anchor,
+.orange #blog-footer-buttons a,
+.orange #social-buttons a,
+.orange #settings-toggle:hover {
+	color: #FF8100;
+}
+.orange .block-list a:hover h3,
+#dark.orange .block-list a:hover h3 {
+	color: #FF8100 !important
+}
+.orange .anchor:hover,
+.orange main a:hover,
+.orange #blog-footer-buttons a:hover {
+	color: #EB7802;
+}
+.orange .anchor:hover,
+.orange main a:not(.link-button):hover,
+.orange menu a:hover, .orange menu a.light-hover,
+.orange .hover:hover:not(.active),
+.orange #submenu {
+	background-color: rgba(255, 129, 0, 0.1);
+}
+#dark.orange main a:not(.link-button):hover,
+#dark.orange menu a:hover, #dark.orange menu a.light-hover,
+#dark.orange .anchor:hover,
+#dark.orange .hover:hover:not(.active),
+#dark.orange #submenu {
+	background-color: rgba(255, 129, 0, 0.25);
+}
+.orange h1 a:hover {
+	color: #FF8100 !important;
+}
+.orange a .fill-color {
+	fill: #FF8100;
+}
+.orange button.bigfoot-footnote__button {
+	background-color: #FF8100;
+}
+	.orange button.bigfoot-footnote__button:after {
+		color: #FF8100;
+	}
+	.orange button.bigfoot-footnote__button {
+		background-color: rgba(255, 129, 0, 0.25) !important;
+	}
+.orange button.bigfoot-footnote__button:hover {
+	background-color: #EB7802;
+}
+	.orange button.bigfoot-footnote__button:hover,
+	.orange button.bigfoot-footnote__button:hover,
+	.orange button.bigfoot-footnote__button:focus {
+		background-color: #FF8100 !important;
+	}
+	.orange button.bigfoot-footnote__button:active,
+	.orange button.bigfoot-footnote__button.is-active {
+		background-color: #EB7802 !important;
+	}
+.orange button:not(.bigfoot-footnote__button),
+.orange .link-button {
+	background-color: hsl(25, 100%, 50%); /* hsl(30, 100%, 50%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(32, 100%, 61%)), color-stop(100%, hsl(25, 100%, 50%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(32, 100%, 61%) 0, hsl(25, 100%, 50%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(32, 100%, 61%) 0, hsl(25, 100%, 50%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(32, 100%, 61%) 0, hsl(25, 100%, 50%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(32, 100%, 61%) 0, hsl(25, 100%, 50%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(32, 100%, 61%) 0, hsl(25, 100%, 50%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(32, 100%, 61%)', endColorstr='hsl(25, 100%, 50%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(32, 100%, 55%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(255, 129, 0, 0.2);
+}
+	.orange button:not(.bigfoot-footnote__button):active,
+	.orange .link-button:active {
+		background-color: hsl(25, 100%, 50%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(255, 129, 0, 0.1);
+	}
+.orange input:focus,
+.orange textarea:focus {
+	border-color: #FF8100 !important;
+}
+.orange a:hover .fill-color {
+	fill: #EB7802 !important;
+}
+#dark.orange .hover:hover:not(.active) {
+	color: #FF8100;
+}
+.orange #logo:hover .signature-color {
+	fill: #FF8100 !important;
+}
+.orange a .fill-color {
+	fill: #FF8100;
+}
+#dark.orange .active {
+	background-color: unset;
+	color: #FF8100;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.orange ::selection { /* Safari */
+	background: #FF8100;
+	color: white;
+}
+.orange ::-moz-selection { /* Firefox */
+	background: #FF8100;
+	color: white;
+}
+
+/******************
+ ***   YELLOW   ***
+ ******************/
+
+.yellow .active,
+.yellow .hover:hover:not(.active),
+.yellow main a,
+.yellow main a:link,
+.yellow main a:visited,
+.yellow .anchor,
+.yellow #blog-footer-buttons a,
+.yellow #social-buttons a,
+.yellow #settings-toggle:hover {
+	color: #FFCC00;
+}
+.yellow .block-list a:hover h3,
+#dark.yellow .block-list a:hover h3 {
+	color: #FFCC00 !important
+}
+.yellow .anchor:hover,
+.yellow main a:hover,
+.yellow #blog-footer-buttons a:hover {
+	color: #DBAF00;
+}
+.yellow .anchor:hover,
+.yellow main a:not(.link-button):hover,
+.yellow menu a:hover, .yellow menu a.light-hover,
+.yellow .hover:hover:not(.active),
+.yellow #submenu {
+	background-color: rgba(255, 204, 0, 0.15);
+}
+#dark.yellow main a:not(.link-button):hover,
+#dark.yellow menu a:hover, #dark.yellow menu a.light-hover,
+#dark.yellow .anchor:hover,
+#dark.yellow .hover:hover:not(.active),
+#dark.yellow #submenu {
+	background-color: rgba(255, 204, 0, 0.25);
+}
+.yellow h1 a:hover {
+	color: #FFCC00 !important;
+}
+.yellow a .fill-color {
+	fill: #FFCC00;
+}
+.yellow button.bigfoot-footnote__button {
+	background-color: #FFCC00;
+}
+	.yellow button.bigfoot-footnote__button:after {
+		color: #FFCC00;
+	}
+	.yellow button.bigfoot-footnote__button {
+		background-color: rgba(255, 204, 0, 0.25) !important;
+	}
+.yellow button.bigfoot-footnote__button:hover {
+	background-color: #DBAF00;
+}
+	.yellow button.bigfoot-footnote__button:hover,
+	.yellow button.bigfoot-footnote__button:hover,
+	.yellow button.bigfoot-footnote__button:focus {
+		background-color: #FFCC00 !important;
+	}
+	.yellow button.bigfoot-footnote__button:active,
+	.yellow button.bigfoot-footnote__button.is-active {
+		background-color: #DBAF00 !important;
+	}
+.yellow button:not(.bigfoot-footnote__button),
+.yellow .link-button {
+	background-color: hsl(43, 100%, 45%); /* hsl(48, 100%, 50%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(49, 100%, 55%)), color-stop(100%, hsl(43, 100%, 45%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(49, 100%, 55%) 0, hsl(43, 100%, 45%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(49, 100%, 55%) 0, hsl(43, 100%, 45%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(49, 100%, 55%) 0, hsl(43, 100%, 45%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(49, 100%, 55%) 0, hsl(43, 100%, 45%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(49, 100%, 55%) 0, hsl(43, 100%, 45%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(49, 100%, 55%)', endColorstr='hsl(43, 100%, 45%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(49, 100%, 45%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(255, 204, 0, 0.2);
+}
+	.yellow button:not(.bigfoot-footnote__button):active,
+	.yellow .link-button:active {
+		background-color: hsl(43, 100%, 45%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(255, 204, 0, 0.1);
+	}
+.yellow input:focus,
+.yellow textarea:focus {
+	border-color: #FFCC00 !important;
+}
+.yellow a:hover .fill-color {
+	fill: #DBAF00 !important;
+}
+#dark.yellow .hover:hover:not(.active) {
+	color: #FFCC00;
+}
+.yellow #logo:hover .signature-color {
+	fill: #FFCC00 !important;
+}
+.yellow a .fill-color {
+	fill: #FFCC00;
+}
+#dark.yellow .active {
+	background-color: unset;
+	color: #FFCC00;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.yellow ::selection { /* Safari */
+	background: #FFCC00;
+	color: white;
+}
+.yellow ::-moz-selection { /* Firefox */
+	background: #FFCC00;
+	color: white;
+}
+
+/******************
+ ***    GREEN   ***
+ ******************/
+
+.green .active,
+.green .hover:hover:not(.active),
+.green main a,
+.green main a:link,
+.green main a:visited,
+.green .anchor,
+.green #blog-footer-buttons a,
+.green #social-buttons a,
+.green #settings-toggle:hover {
+	color: #4CD964;
+}
+.green .block-list a:hover h3,
+#dark.green .block-list a:hover h3 {
+	color: #4CD964 !important
+}
+.green .anchor:hover,
+.green main a:hover,
+.green #blog-footer-buttons a:hover {
+	color: #3EB352;
+}
+.green .anchor:hover,
+.green main a:not(.link-button):hover,
+.green menu a:hover, .green menu a.light-hover,
+.green .hover:hover:not(.active),
+.green #submenu {
+	background-color: rgba(76, 217, 100, 0.1);
+}
+#dark.green main a:not(.link-button):hover,
+#dark.green menu a:hover, #dark.green menu a.light-hover,
+#dark.green .anchor:hover,
+#dark.green .hover:hover:not(.active),
+#dark.green #submenu {
+	background-color: rgba(76, 217, 100, 0.25);
+}
+.green h1 a:hover {
+	color: #4CD964 !important;
+}
+.green a .fill-color {
+	fill: #4CD964;
+}
+.green button.bigfoot-footnote__button {
+	background-color: #4CD964;
+}
+	.green button.bigfoot-footnote__button:after {
+		color: #4CD964;
+	}
+	.green button.bigfoot-footnote__button {
+		background-color: rgba(76, 217, 100, 0.25) !important;
+	}
+.green button.bigfoot-footnote__button:hover {
+	background-color: #3EB352;
+}
+	.green button.bigfoot-footnote__button:hover,
+	.green button.bigfoot-footnote__button:hover,
+	.green button.bigfoot-footnote__button:focus {
+		background-color: #4CD964 !important;
+	}
+	.green button.bigfoot-footnote__button:active,
+	.green button.bigfoot-footnote__button.is-active {
+		background-color: #3EB352 !important;
+	}
+.green button:not(.bigfoot-footnote__button),
+.green .link-button {
+	background-color: hsl(130, 100%, 35%); /* hsl(130, 65%, 57%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(125, 100%, 45%)), color-stop(100%, hsl(130, 100%, 35%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(125, 100%, 45%)', endColorstr='hsl(130, 100%, 35%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(125, 100%, 40%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(76, 217, 100, 0.2);
+}
+	.green button:not(.bigfoot-footnote__button):active,
+	.green .link-button:active {
+		background-color: hsl(130, 100%, 35%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(76, 217, 100, 0.1);
+	}
+.green input:focus,
+.green textarea:focus {
+	border-color: #4CD964 !important;
+}
+.green a:hover .fill-color {
+	fill: #3EB352 !important;
+}
+#dark.green .hover:hover:not(.active) {
+	color: #4CD964;
+}
+.green #logo:hover .signature-color {
+	fill: #4CD964 !important;
+}
+.green a .fill-color {
+	fill: #4CD964;
+}
+#dark.green .active {
+	background-color: unset;
+	color: #4CD964;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.green ::selection { /* Safari */
+	background: #4CD964;
+	color: white;
+}
+.green ::-moz-selection { /* Firefox */
+	background: #4CD964;
+	color: white;
+}
+
+/******************
+ ***   PURPLE   ***
+ ******************/
+
+.purple .active,
+.purple .hover:hover:not(.active),
+.purple main a,
+.purple main a:link,
+.purple main a:visited,
+.purple .anchor,
+.purple #blog-footer-buttons a,
+.purple #social-buttons a,
+.purple #settings-toggle:hover {
+	color: #5856D6;
+}
+.purple .block-list a:hover h3,
+#dark.purple .block-list a:hover h3 {
+	color: #5856D6 !important
+}
+.purple .anchor:hover,
+.purple main a:hover,
+.purple #blog-footer-buttons a:hover {
+	color: #615EF2;
+}
+.purple .anchor:hover,
+.purple main a:not(.link-button):hover,
+.purple menu a:hover, .purple menu a.light-hover,
+.purple .hover:hover:not(.active),
+.purple #submenu {
+	background-color: rgba(88, 86, 214, 0.1);
+}
+#dark.purple main a:not(.link-button):hover,
+#dark.purple menu a:hover, #dark.purple menu a.light-hover,
+#dark.purple .anchor:hover,
+#dark.purple .hover:hover:not(.active),
+#dark.purple #submenu {
+	background-color: rgba(88, 86, 214, 0.25);
+}
+.purple h1 a:hover {
+	color: #5856D6 !important;
+}
+.purple a .fill-color {
+	fill: #5856D6;
+}
+.purple button.bigfoot-footnote__button {
+	background-color: #5856D6;
+}
+	.purple button.bigfoot-footnote__button:after {
+		color: #5856D6;
+	}
+	.purple button.bigfoot-footnote__button {
+		background-color: rgba(88, 86, 214, 0.25) !important;
+	}
+.purple button.bigfoot-footnote__button:hover {
+	background-color: #615EF2;
+}
+	.purple button.bigfoot-footnote__button:hover,
+	.purple button.bigfoot-footnote__button:hover,
+	.purple button.bigfoot-footnote__button:focus {
+		background-color: #5856D6 !important;
+	}
+	.purple button.bigfoot-footnote__button:active,
+	.purple button.bigfoot-footnote__button.is-active {
+		background-color: #615EF2 !important;
+	}
+.purple button:not(.bigfoot-footnote__button),
+.purple .link-button {
+	background-color: hsl(236, 61%, 59%); /* hsl(241, 61%, 59%) */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(237, 61%, 70%)), color-stop(100%, hsl(236, 61%, 59%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(237, 61%, 70%) 0, hsl(236, 61%, 59%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(237, 61%, 70%)', endColorstr='hsl(236, 61%, 59%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(237, 61%, 64%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2);
+}
+	.purple button:not(.bigfoot-footnote__button):active,
+	.purple .link-button:active {
+		background-color: hsl(236, 61%, 59%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.1);
+	}
+.purple input:focus,
+.purple textarea:focus {
+	border-color: #5856D6 !important;
+}
+.purple a:hover .fill-color {
+	fill: #615EF2 !important;
+}
+#dark.purple .hover:hover:not(.active) {
+	color: #5856D6;
+}
+.purple #logo:hover .signature-color {
+	fill: #5856D6 !important;
+}
+.purple a .fill-color {
+	fill: #5856D6;
+}
+#dark.purple .active {
+	background-color: unset;
+	color: #5856D6;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.purple ::selection { /* Safari */
+	background: #5856D6;
+	color: white;
+}
+.purple ::-moz-selection { /* Firefox */
+	background: #5856D6;
+	color: white;
+}
+#dark.purple ::selection { /* Safari */
+	background: hsl(265, 83%, 50%);
+	color: white;
+}
+#dark.purple ::-moz-selection { /* Firefox */
+	background: hsl(265, 83%, 50%);
+	color: white;
+}
+
+/******************
+ ***    PINK    ***
+ ******************/
+
+.pink .active,
+.pink .hover:hover:not(.active),
+.pink main a,
+.pink main a:link,
+.pink main a:visited,
+.pink .anchor,
+.pink #blog-footer-buttons a,
+.pink #social-buttons a,
+.pink #settings-toggle:hover {
+	color: #FF2D55;
+}
+.pink .block-list a:hover h3,
+#dark.pink .block-list a:hover h3 {
+	color: #FF2D55 !important;
+}
+.pink .anchor:hover,
+.pink main a:hover,
+.pink #blog-footer-buttons a:hover {
+	color: #F2113A;
+}
+.pink .anchor:hover,
+.pink main a:not(.link-button):hover,
+.pink menu a:hover, .pink menu a.light-hover,
+.pink .hover:hover:not(.active),
+.pink #submenu {
+	background-color: hsla(342, 100%, 65%, 0.1);
+}
+#dark.pink main a:not(.link-button):hover,
+#dark.pink menu a:hover, #dark.pink menu a.light-hover,
+#dark.pink .anchor:hover,
+#dark.pink .hover:hover:not(.active),
+#dark.pink #submenu {
+	background-color: hsla(342, 100%, 65%, 0.25);
+}
+.pink h1 a:hover {
+	color: #FF2D55 !important;
+}
+.pink a .fill-color {
+	fill: #FF2D55;
+}
+.pink button.bigfoot-footnote__button {
+	background-color: #FF2D55;
+}
+	.pink button.bigfoot-footnote__button:after {
+		color: #FF2D55;
+	}
+	.pink button.bigfoot-footnote__button {
+		background-color: hsla(342, 100%, 65%, 0.25) !important;
+	}
+.pink button.bigfoot-footnote__button:hover {
+	background-color: #F2113A;
+}
+	.pink button.bigfoot-footnote__button:hover,
+	.pink button.bigfoot-footnote__button:hover,
+	.pink button.bigfoot-footnote__button:focus {
+		background-color: #FF2D55 !important;
+	}
+	.pink button.bigfoot-footnote__button:active,
+	.pink button.bigfoot-footnote__button.is-active {
+		background-color: #F2113A !important;
+	}
+.pink button:not(.bigfoot-footnote__button),
+.pink .link-button {
+	background-color: hsl(344, 100%, 59%); /* #FF2D55 */
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	/* Old browsers */
+	background-repeat: repeat-x;
+	/* Repeat the gradient */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(350, 100%, 70%)), color-stop(100%, hsl(344, 100%, 59%)));
+	/* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, hsl(350, 100%, 70%) 0, hsl(344, 100%, 59%) 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -moz-linear-gradient(top, hsl(350, 100%, 70%) 0, hsl(344, 100%, 59%) 100%);
+	/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, hsl(350, 100%, 70%) 0, hsl(344, 100%, 59%) 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, hsl(350, 100%, 70%) 0, hsl(344, 100%, 59%) 100%);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, hsl(350, 100%, 70%) 0, hsl(344, 100%, 59%) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(350, 100%, 70%)', endColorstr='hsl(344, 100%, 59%)', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid hsl(350, 100%, 50%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(255, 45, 85, 0.2);
+}
+	.pink button:not(.bigfoot-footnote__button):active,
+	.pink .link-button:active {
+		background-color: hsl(344, 100%, 59%);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em hsla(342, 100%, 65%, 0.1);
+	}
+.pink input:focus,
+.pink textarea:focus {
+	border-color: #FF2D55 !important;
+}
+.pink a:hover .fill-color {
+	fill: #F2113A !important;
+}
+#dark.pink .hover:hover:not(.active) {
+	color: #FF2D55;
+}
+.pink #logo:hover .signature-color {
+	fill: #FF2D55 !important;
+}
+.pink a .fill-color {
+	fill: #FF2D55;
+}
+#dark.pink .active {
+	background-color: unset;
+	color: #FF2D55;
+}
+/* Highlights (must be seperate, combining them breaks the style) */
+.pink ::selection { /* Safari */
+	background: #FF4C81;
+	color: white;
+}
+.pink ::-moz-selection { /* Firefox */
+	background: #FF4C81;
+	color: white;
+}

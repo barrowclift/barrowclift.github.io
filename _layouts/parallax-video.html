@@ -14,7 +14,7 @@
 
 	{% include head.html %}
 
-	<body>
+	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
 		{% include lazy-load-stylesheets.html %}
 
 		<div id="parallax">

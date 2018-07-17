@@ -345,8 +345,7 @@ button,
 table.fancy thead, table.fancy th {
 	font-weight: 700;
 }
-h4,
-menu {
+h4 {
 	font-weight: 600;
 }
 h5,
@@ -367,14 +366,15 @@ abbr {
 	-ms-font-feature-settings: "c2sc", "smcp";
 	-webkit-font-feature-settings: "c2sc", "smcp";
 	font-feature-settings: "c2sc", "smcp";
+	font-variant-caps: all-small-caps;
 }
 .underline {
 	text-decoration: underline;
 }
 html,
-main h1 a,
-main h1 a:link,
-main h1 a:visited {
+html main a.header,
+html main a.header:link,
+html main a.header:visited {
 	color: #333333;
 }
 del,
@@ -432,19 +432,174 @@ menu {
 	padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
 }
+	#mainmenu {
+		z-index: 5000;
+		height: 100%;
+	}
+	#submenu-toggle {
+		cursor: pointer;
+	}
+	#submenu {
+		transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 0);
+
+		z-index: -5000;
+
+		font-size: 0.833em;
+		margin-top: 0;
+		
+		overflow: hidden;
+		opacity: 0;
+		height: 0;
+	}
+		#submenu.show {
+			opacity: 1;
+			height: 46px;
+		}
+		#submenu a:hover {
+			background-color: unset !important;
+		}
+		#submenu ul li {
+			padding-top: 0.833em;
+			padding-bottom: 0.833em;
+			min-width: 33vw;
+		}
+
+/* Settings "button" (aA) */
+#settings-toggle {
+	height: 1.5em;
+}
+.ignore-accent-color.enforce-dark-mode #settings-toggle,
+#settings-toggle {
+	display: none;
+}
+/* Settings popup & inner panels */
+.popup {
+	cursor: default;
+	opacity: 0;
+	height: auto;
+	width: 12em;
+	padding: 0.65em;
+	background-color: rgba(249, 249, 249, 0.95);
+	border: 1px solid #EFF0F1;
+	border-radius: 0.25em;
+	box-shadow: 0 1.3em 2.6em -0.6em rgba(0, 0, 0, 0.3);
+	text-align: left;
+
+	-webkit-transition-property: opacity, -webkit-transform, background-color, border;
+	transition-property: opacity, transform, background-color, border;
+	-webkit-transition-duration: 0.25s, 0.25s, 0.2s, 0.2s;
+	transition-duration: 0.25s, 0.25s, 0.2s, 0.2s;
+	-webkit-transition-timing-function: ease, ease, cubic-bezier(0.28, 0.11, 0.32, 0), cubic-bezier(0.28, 0.11, 0.32, 0);
+	transition-timing-function: ease, ease, cubic-bezier(0.28, 0.11, 0.32, 0), cubic-bezier(0.28, 0.11, 0.32, 0);
+	-webkit-transform: scale(0.1) translateZ(0);
+	-ms-transform: scale(0.1) translateZ(0);
+	transform: scale(0.1) translateZ(0);
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+
+	float: right;
+	position: absolute;
+	left: 100%;
+	margin-left: -13.75em;
+	top: 10.6em;
+	z-index: 10000;
+}
+	.safari .popup {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(249, 249, 249, 0.9);
+	}
+	.popup.show {
+	    -webkit-transform: scale(1) translateZ(0);
+	    -ms-transform: scale(1) translateZ(0);
+	    transform: scale(1) translateZ(0);
+	    opacity: 1;
+	}
+	.popup .group {
+		margin-bottom: 0.65em;
+	}
+	.popup .group:last-child {
+		margin-bottom: 0;
+	}
+	.popup label {
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	/* Accent color "buttons" */
+	.accent-colors {
+		margin-left: 0;
+		text-align: center;
+	}
+	.accent-colors li {
+		display: inline-block;
+		min-width: unset;
+		margin-left: 0.15em;
+		margin-right: 0.15em;
+		margin-top: 0.65em;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	/* Setting popup groups visibility and padding */
+	.ignore-accent-color #accent-color-settings,
+	.enforce-dark-mode #dark-mode-settings {
+		display: none;
+	}
+	.ignore-accent-color #dark-mode-settings,
+	.enforce-dark-mode #accent-color-settings {
+		margin-bottom: 0;
+	}
+
+
+.accent-color {
+	cursor: pointer;
+	width: 1em;
+	height: 1em;
+	border-radius: 0.25em;
+}
+.accent-color.blue {
+	background-color: #007AFF;
+	border: 1px solid hsl(212, 100%, 64%);
+}
+.accent-color.red {
+	background-color: #FF3B30;
+	border: 1px solid hsl(12, 100%, 55%);
+}
+.accent-color.orange {
+	background-color: #FF8100;
+	border: 1px solid hsl(32, 100%, 55%);
+}
+.accent-color.yellow {
+	background-color: #FFCC00;
+	border: 1px solid hsl(49, 100%, 50%);
+}
+.accent-color.green {
+	background-color: #4CD964;
+	border: 1px solid hsl(125, 100%, 40%);
+}
+.accent-color.purple {
+	background-color: #5856D6;
+	border: 1px solid hsl(237, 61%, 64%);
+}
+.accent-color.pink {
+	background-color: #FF2D55;
+	border: 1px solid hsl(350, 100%, 50%);
+}
+
+
+
 
 
 menu {
 	position: absolute;
 }
-.hide-menu menu {
+.float-menu-for-hiding menu {
 	position: fixed;
 	transform: translate(0, -5.5em);
 }
-.hide-menu #logo {
+.float-menu-for-hiding #logo {
 	/*transform: scale(0.5);*/
 }
-.hide-menu menu.test-hide {
+.float-menu-for-hiding menu.hide-for-small-device {
 	opacity: 0;
 	pointer-events: none;
 }
@@ -476,7 +631,7 @@ menu {
 		}
 		menu ul a {
 			margin-bottom: 0;
-			padding-bottom: 0.5375em;
+			padding-bottom: 0.5em;
 			padding-top: 0.725em;
 			min-width: 28.5vw;
 			margin-right: -0.125rem;
@@ -496,9 +651,14 @@ menu {
 
 
 /* ----- LOGO ----- */
-.signature-color,
-.mac-line-color {
+.signature-color {
 	fill: hsla(0, 0%, 0%, 0.7);
+}
+.mac-line-color {
+	fill: #4c4c4c;
+}
+.mac-background-color {
+	fill: #ffffff;
 }
 #logo {
 	margin-top: 1.414em;
@@ -543,7 +703,9 @@ menu header:hover #logo #logo-eye-opened {
 /* ----- ACCESSIBILITY TOGGLES ----- */
 /* Hidden for small devices */
 /* Always hide the checkbox, though, should never be visible */
-#dark-mode-checkbox {
+#dark-mode-checkbox,
+#settings-checkbox,
+#submenu-checkbox {
 	display: none !important;
 }
 
@@ -584,8 +746,6 @@ menu header:hover #logo #logo-eye-opened {
 	margin-left: .5rem;
 	margin-right: .5rem;
 	margin-bottom: 1.3rem;
-	padding-top: 1.3em;
-	padding-bottom: 1.3em;
 }
 	.card-animation:hover {
 		transform: scale(1.025);
@@ -620,6 +780,8 @@ menu header:hover #logo #logo-eye-opened {
 .card .content {
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-bottom: 1.3em;
+	padding-top: 1.3em;
 }
 .card .content .logo {
 	width: auto;
@@ -757,8 +919,7 @@ input:required {
 									supported by Chrome and Opera */
 }
 
-a.link-button:hover,
-h1 a:hover {
+a:hover {
 	text-decoration: none;
 }
 .link-button-group li {
@@ -779,6 +940,115 @@ h1 a:hover {
 input:focus,
 textarea:focus {
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+
+/* iOS "switch" checkbox
+   Thanks to Fiddle user Yeyene, https://jsfiddle.net/yeyene/42p6s7ps/ */
+.ios-switch {
+	position: relative;
+}
+.ios-switch input {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 0%;
+	margin: 0 0;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.ios-switch input + span {
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.ios-switch input + span:before {
+	position: absolute;
+	left: 6em;
+	display: inline-block;
+}
+.ios-switch input + span > h4 {
+	display: inline;
+}
+.ios-switch input + span:before {
+	content: "";
+	height: 20px;
+	width: 40px;
+	background: white;
+	border: 1px solid #e5e5e5;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+	transition: background 0.2s ease-out;
+	margin-top: 0;
+}
+.ios-switch input + span:after {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 6em;
+	top: 0;
+	display: block;
+	background: #ffffff;
+	transition: margin-left 0.1s ease-in-out;
+	text-align: center;
+	font-weight: bold;
+	content: "";
+	margin-top: 0.05em;
+}
+.ios-switch input:checked + span:after {
+	margin-left: 21px;
+	content: "";
+}
+.ios-switch input:checked + span:before {
+	transition: background 0.2s ease-in;
+}
+.ios-switch input + span:before {
+	border-radius: 20px;
+	width: 40px;
+}
+.ios-switch input + span:after {
+	background: #ffffff;
+	content: "";
+	width: 20px;
+	background-clip: padding-box;
+	border-radius: 20px;
+	margin-left: 1px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+.ios-switch input:not(:checked) + span:after {
+	-webkit-animation: popOut ease-in 0.3s normal;
+	        animation: popOut ease-in 0.3s normal;
+}
+.ios-switch input:checked + span:after {
+	content: "";
+	margin-left: 21px;
+	background-clip: padding-box;
+	-webkit-animation: popIn ease-in 0.3s normal;
+	        animation: popIn ease-in 0.3s normal;
+}
+.ios-switch input:checked + span:before {
+	background: #58d56e;
+}
+.ios-switch.checkbox-slider-md input + span:before {
+	border-radius: 30px;
+}
+.ios-switch.checkbox-slider-md input + span:after {
+	border-radius: 30px;
+}
+.ios-switch.checkbox-slider-lg input + span:before {
+	border-radius: 40px;
+}
+.ios-switch.checkbox-slider-lg input + span:after {
+	border-radius: 40px;
+}
+.ios-switch input + span:before {
+	box-shadow: none;
 }
 
 
@@ -939,24 +1209,24 @@ mark {
 }
 	.admonition.update {
 		background-color: rgba(254, 213, 88, 0.6);
-		border-color: rgba(254, 205, 56, 0.6);
+		border-color: rgba(254, 213, 88, 0.25);
 	}
 	.admonition.error,
 	.admonition.danger,
 	.admonition.warning {
 		background-color: rgba(252, 99, 96, 0.6);
-		border-color: rgba(252, 70, 66, 0.6);
+		border-color: rgba(252, 99, 96, 0.25);
 	}
 	.admonition.success {
 		background-color: rgba(134, 223, 106, 0.6);
-		border-color: rgba(112, 217, 78, 0.6);
+		border-color: rgba(134, 223, 106, 0.25);
 	}
 	.admonition.hint,
 	.admonition.question,
 	.admonition.note,
 	.admonition.info {
 		background-color: rgba(84, 190, 247, 0.6);
-		border-color: rgba(42, 174, 245, 0.6);
+		border-color: rgba(84, 190, 247, 0.25);
 	}
 
 
@@ -1435,6 +1705,12 @@ sup[id^=fnref] {
 
 
 /* ----- FOOTNOTE BUTTONS ----- */
+/* Tapping the bottommost button triggers that iOS safari menu to pop up, really annoying.
+   So we should add enough padding to make tapping the bottom button keep the page where it
+   is */
+#blog-footer-buttons {
+	padding-bottom: 2.6em;
+}
 #blog-footer-buttons svg {
 	height: 0.75em;
 	margin-right: 0.325em;
@@ -1465,18 +1741,20 @@ sup[id^=fnref] {
 /* ----- ANIMATIONS ----- */
 /* Transitioning background colors */
 main,
-html, /* For dark mode transition */
-#dark-mode-toggle,
-input, textarea,
-main a,
-.anchor { 
+html {
+	transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0);
+}
+input, textarea { 
 	transition: background-color 0.2s ease;
 }
-menu ul a {
+menu ul a,
+main a,
+.anchor,
+#settings-toggle {
 	transition: background-color 0.2s ease, color 0.2s ease;
 }
 menu {
-	transition: background-color 0.2s ease, opacity 0.2s ease;
+	transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0), opacity 0.2s ease;
 }
 
 .link-button,
@@ -1498,9 +1776,7 @@ hr {
 }
 
 /* Transitioning colors */
-h1 a,
-#dark-mode-toggle label,
-menu a {
+a.header {
 	transition: color 0.2s ease;
 }
 
@@ -1557,7 +1833,10 @@ input, textarea {
 }
 
 #menu-height-offset {
-	transition: height 0.3s ease-out;
+	transition: height 0.2s ease-out;
+}
+#submenu {
+	transition: height 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease;
 }
 
 kbd {
@@ -1617,7 +1896,7 @@ kbd {
 	display: none !important;
 }
 .show-when-small {
-	display: block !important;
+	display: inline !important;
 }
 
 
@@ -1630,7 +1909,7 @@ kbd {
 
 
 	/* --- MENU --- */
-	.hide-menu {
+	.float-menu-for-hiding {
 		position: relative;
 		left: initial;
 		top: initial;
@@ -1701,10 +1980,29 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	menu {
 		position: fixed;
 		top: 0 !important;
+		height: 2.6em;
 	}
-	.hide-menu menu,
-	.hide-menu #logo {
+	/* For now, we have no need to show the submenu on anything but iPhones */
+	#submenu.show {
+		opacity: 0;
+		height: 0;
+	}
+	.float-menu-for-hiding menu,
+	.float-menu-for-hiding #logo {
 		transform: none;
+	}
+	.ios-switch input + span:before {
+		margin-top: 0.1em;
+	}
+	.ios-switch input + span:after {
+		margin-top: 0.15em;
+	}
+	.popup {
+		margin-left: -14em;
+		top: 3.25em;
+		-webkit-transform-origin: 90% 0;
+		-ms-transform-origin: 90% 0;
+		transform-origin: 90% 0;
 	}
 		menu header {
 			text-align: left;
@@ -1714,25 +2012,25 @@ Font size: 19px, ~Margin&Padding: 28.5px
 			padding-top: 0.48em;
 		}
 		menu ul {
-			margin-left: 9rem;
+			margin-left: 9em;
 			text-align: left;
 		}
 			menu ul li {
-				min-width: 8rem;
+				min-width: 8em;
 				line-height: 1em;
-				padding-top: 1.25rem;
+				padding-top: 1.25em;
 				padding-bottom: 0;
 			}
 			menu ul a {
-				padding-top: 1.15rem;
-				padding-bottom: .36rem;
-				margin-right: -0.0975rem;
-				margin-left: -0.0975rem;
+				padding-top: 1.15em;
+				padding-bottom: 0.3em;
+				margin-right: -0.0975em;
+				margin-left: -0.0975em;
 			}
 	#menu-height-offset {
 		height: 0;
 	}
-	menu.medium-test-hide {
+	menu.hide-for-medium-and-larger-devices {
 		opacity: 0;
 		pointer-events: none;
 	}
@@ -1753,13 +2051,17 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
 	/* --- ACCESSIBILITY TOGGLES --- */
-	#dark-mode-toggle {
+	#settings-popup,
+	#settings-toggle {
+		display: inline;
+	}
+	#settings-toggle {
 		cursor: pointer;
 
 		float: right;
 		position: absolute;
 		display: inline;
-		
+
 		width: 100%;
 		left: 100%;
 
@@ -1768,18 +2070,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		margin-top: 0;
 		padding-left: 0.9rem;
 		padding-bottom: 0.1375rem;
-		padding-top: 1.2rem;
+		padding-top: 1.05rem;
 	}
-		#dark-mode-icon {
-			width: 1em;
-			height: 1em;
-		}
-		#dark-mode-toggle .fill-color {
-			fill: hsla(0, 0%, 0%, 0.5);
-		}
-		#dark-mode-toggle .stroke-color {
-			stroke: hsla(0, 0%, 0%, 0.5);
-		}
 
 
 	/* ELEMENTS ----------------------------------- */
@@ -1839,7 +2131,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	.link-button-group li {
 		margin-left: 0.65em; /* 1.3 base type bottom margin / 2 */
 		margin-right: 0.65em; /* 1.3 base type bottom margin / 2 */
-		width: 25%;
+		width: 26%;
 	}
 
 
@@ -2009,6 +2301,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
 	/* FOOTER ------------------------------------- */
+	#blog-footer-buttons {
+		padding-bottom: 0;
+	}
 
 
 	/* MISC --------------------------------------- */
@@ -2076,7 +2371,16 @@ Font size: 21px, ~Margin&Padding: 31.5px
 	menu {
 		/* Fix for Chrome and Firefox hover boxes not overlapping the bottom border (the bottom border was on the outside, while Safari had it inside) */
 		box-sizing: border-box;
-		height: 2.675rem;
+		height: 2.55em;
+	}
+	.ios-switch input + span:before {
+		margin-top: 0.2em;
+	}
+	.ios-switch input + span:after {
+		margin-top: 0.25em;
+	}
+	.popup {
+		top: 3.1em;
 	}
 		menu header {
 			padding-left: 0.78em;
@@ -2087,27 +2391,26 @@ Font size: 21px, ~Margin&Padding: 31.5px
 				text-align: center;
 			}
 				menu ul li {
-					padding-top: 1.15rem;
+					padding-top: 1.15em;
 				}
 				menu ul a {
-					padding-top: 1.15rem;
-					padding-bottom: .425rem;
+					padding-top: 1.15em;
 				}
-	.hide-menu menu.test-hide,
-	menu.medium-test-hide {
+	.float-menu-for-hiding menu.hide-for-small-device,
+	menu.hide-for-medium-and-larger-devices {
 		opacity: 1;
 		pointer-events: auto;
 	}
 
 
 	/* --- ACCESSIBILITY TOGGLES --- */
-	#dark-mode-toggle {
+	#settings-toggle {
 		margin-left: -2.75rem;
 		margin-top: 0;
 		padding-left: 0.9rem;
 		padding-bottom: 0.1375rem;
-		padding-top: 1.1rem;
-	}	
+		padding-top: 0.9em;
+	}
 	
 
 	/* ELEMENTS ------------------------------------- */
@@ -2253,7 +2556,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
 main a,
 main a:link,
 main a:visited,
-.anchor {
+.anchor,
+#settings-toggle:hover {
 	color: #007AFF;
 }
 #logo:hover .signature-color {
@@ -2264,9 +2568,10 @@ li > a {
 	display: inline;
 }
 .anchor:hover,
-main a:hover,
-menu a:hover,
-.hover:hover:not(.active) {
+main a:not(.link-button):hover,
+menu a:hover, menu a.light-hover,
+.hover:hover:not(.active),
+#submenu {
 	background-color: rgba(0, 122, 255, 0.1);
 }
 .link-button-group a:hover,
@@ -2274,22 +2579,15 @@ form a:hover {
 	background-color: unset !important;
 }
 
-h1 a:hover {
+a.header:hover {
 	color: #007AFF !important;
 	background-color: unset !important;
 }
 
-#dark-mode-toggle:hover .fill-color,
 a .fill-color {
 	fill: #007AFF;
 }
-#dark-mode-toggle:hover .stroke-color {
-	stroke: #007AFF;
-}
 
-#social-buttons a:hover {
-	background-color: #007AFF;
-}
 button:not(.bigfoot-footnote__button),
 .link-button {
 	background-color: #007AFF;
@@ -2345,6 +2643,9 @@ a:hover .fill-color {
 
 /* DARK THEME ======================================================================= */
 
+#dark .ios-switch input + span:before {
+	border-color: #5A5B56;
+}
 
 /* CONTAINER ---------------------------------- */
 
@@ -2370,9 +2671,9 @@ a:hover .fill-color {
 
 
 /* --- TEXT STYLES --- */
-#dark h1 a,
-#dark h1 a:link,
-#dark h1 a:visited {
+html#dark main a.header,
+html#dark main a.header:link,
+html#dark main a.header:visited {
 	color: #F8F8F2;
 }
 #dark del,
@@ -2388,9 +2689,10 @@ a:hover .fill-color {
 }
 
 #dark main a:not(.link-button):hover,
-#dark menu a:hover,
+#dark menu a:hover, #dark menu a.light-hover,
 #dark .anchor:hover,
-#dark .hover:hover:not(.active) {
+#dark .hover:hover:not(.active),
+#dark #submenu {
 	background-color: rgba(0, 122, 255, 0.25);
 }
 
@@ -2406,11 +2708,12 @@ a:hover .fill-color {
 
 #dark menu {
 	background-color: rgba(23, 24, 20, 0.95);
-	border-bottom: 1px solid rgba(175, 175, 175, 0.1);
+	border-bottom: 1px solid rgba(204, 204, 204, 0.1);
+	box-shadow: 0 0.325em 0.6em 0 rgba(0, 0, 0, 0.2), 0 0.6em 1.3em 0 rgba(0, 0, 0, 0.1);
 }
-#dark.safari menu {
-	background-color: rgba(23, 24, 20, 0.7);
-}
+	#dark.safari menu {
+		background-color: rgba(23, 24, 20, 0.7);
+	}
 #dark menu,
 #dark menu ul a {
 	color: hsla(0, 0%, 100%, 0.6);
@@ -2430,21 +2733,15 @@ a:hover .fill-color {
 #dark .signature-color {
 	fill: hsla(0, 0%, 100%, 0.6);
 }
+#dark .mac-line-color {
+	fill: #090907;
+}
+#dark .mac-background-color {
+	fill: #a3a5a2;
+}
 
 
 /* --- ACCESSIBILITY TOGGLES --- */
-#dark #dark-mode-toggle .fill-color {
-	fill: hsla(0, 0%, 100%, 0.6);
-}
-#dark #dark-mode-toggle .stroke-color {
-	stroke: hsla(0, 0%, 100%, 0.6);
-}
-#dark #dark-mode-toggle:hover .fill-color {
-	fill: #007AFF;
-}
-#dark #dark-mode-toggle:hover .stroke-color {
-	stroke: #007AFF;
-}
 
 
 /* ELEMENTS ----------------------------------- */
@@ -2656,12 +2953,31 @@ a:hover .fill-color {
 #dark .bigfoot-footnote__tooltip,
 #dark .bigfoot-footnote {
 	background-color: #3C3D37;
+}
+#dark .bigfoot-footnote__content,
+#dark .bigfoot-footnote__wrapper,
+#dark .bigfoot-footnote__tooltip,
+#dark .bigfoot-footnote,
+#dark .popup {
 	color: white;
 }
+#dark .popup {
+	background-color: rgba(60, 61, 55, 0.95);
+}
+#dark.safari .popup {
+	background-color: rgba(60, 61, 55, 0.9);	
+}
 #dark .bigfoot-footnote__tooltip,
-#dark .bigfoot-footnote {
+#dark .bigfoot-footnote,
+#dark .popup {
 	border-color: #3A3B35;
 }
+/*#dark .popup:before {
+	border-bottom-color: #3C3D37;
+}
+#dark .popup:after {
+	background-color: #3C3D37;
+}*/
 
 
 /* MISC --------------------------------------- */

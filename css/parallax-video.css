@@ -1,3 +1,6 @@
+#mainmenu {
+	height: initial;
+}
 article {
 	max-width: 35em;
 	text-align: center;
@@ -88,15 +91,15 @@ menu {
 		background-color: transparent !important;
 		-webkit-backdrop-filter: none !important;
 		backdrop-filter: none !important;
+
 		border: none !important;
+		box-shadow: none !important;
 		
 		position: fixed; /* Fallback for browsers that don't support sticky */
 		position: sticky;
 		top: 0;
 		height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
 		box-shadow: none;
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
 		min-width: 100vw;
 	}
 	body {
@@ -105,27 +108,16 @@ menu {
 
 	menu ul a,
 	menu,
-	.hover:hover:not(.active) {
+	.hover:hover:not(.active),
+	#settings-toggle {
 		color: white;
-	}
-	#dark-mode-toggle .fill-color {
-		fill: white !important;
-	}
-	#dark-mode-toggle .stroke-color {
-		stroke: white !important;
-	}
-	#dark-mode-toggle:hover .fill-color {
-		fill: rgb(0, 122, 255) !important;
-	}
-	#dark-mode-toggle:hover .stroke-color {
-		stroke: rgb(0, 122, 255) !important;
 	}
 	.signature-color {
 		fill: white;
 	}
 	.active,
 	.hover:hover:not(.active),
-	#dark-mode-toggle:hover {
+	#settings-toggle:hover {
 		color: rgb(0, 122, 255);
 	}
 }

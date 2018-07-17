@@ -14,7 +14,7 @@
 
 	{% include head.html %}
 
-	<body>
+	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
 		{% include lazy-load-stylesheets.html %}
 
 		<div id="parallax">
@@ -274,7 +274,6 @@
 			menu ul a:not(.active) {
 				color: hsla(0, 0%, 0%, 0.5);
 			}
-			#dark-mode-toggle .fill-color,
 			#logo .signature-color {
 				fill: hsla(0, 0%, 0%, 0.75);
 			}
@@ -282,9 +281,7 @@
 			.hover:hover:not(.active) {
 				color: rgba(255, 255, 255, 0.9);
 			}
-			#dark-mode-toggle:hover .fill-color,
 			#logo:hover .signature-color,
-			#dark #dark-mode-toggle .fill-color,
 			#dark .signature-color {
 				fill: rgba(255, 255, 255, 0.9);
 			}

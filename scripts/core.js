@@ -39,8 +39,60 @@ function darkModeToggled(checkbox) {
 		document.getElementsByTagName("html")[0].removeAttribute("id");
 	}
 }
-function darkModeClicked() { /* Allow clicking the area AROUND the dark mode label to trigger the effect as well */
-	$("#dark-mode-checkbox").click();
+/* Allow clicking the area AROUND the buttons to trigger the effect as well */
+function submenuClicked() {
+	$("#submenu-checkbox").click();
+	return false;
+}
+function submenuToggled(checkbox) {
+	if (checkbox.checked) {
+		$("#submenu").addClass("show");
+		$("#submenu-toggle").addClass("light-hover");
+	} else {
+		$("#submenu").removeClass("show");
+		$("#submenu-toggle").removeClass("light-hover");
+	}
+}
+function settingsClicked() {
+	$("#settings-checkbox").click();
+	return false;
+}
+function settingsToggled(checkbox) {
+	if ($(window).width() > 700) {
+		if (checkbox.checked) {
+			if (!$("#submenu-checkbox").is(':checked')) {
+				submenuClicked();
+			}
+		} else {
+			if ($("#submenu-checkbox").is(':checked')) {
+				submenuClicked();
+			}
+		}
+	}
+	var popup = document.getElementById("settings-popup");
+	popup.classList.toggle("show");
+	var settingToggles = document.getElementsByClassName("setting-toggles");
+	for (var i = 0; i < settingToggles.length; i++) {
+		settingToggles[i].classList.toggle("active");
+	}
+}
+
+function changeAccentColor(color) {
+	if (!$("body").hasClass("ignore-accent-color") && !$("html").hasClass(color)) {
+		$("html").removeClass("blue");
+		$("html").removeClass("red");
+		$("html").removeClass("orange");
+		$("html").removeClass("yellow");
+		$("html").removeClass("green");
+		$("html").removeClass("purple");
+		$("html").removeClass("pink");
+		if (color == "blue") {
+			$.removeCookie("accent-color");
+		} else {
+			$("html").addClass(color);
+			$.cookie("accent-color", color);
+		}
+	}
 }
 
 /* Full-page parallax images might confuse some people, this provides an
@@ -52,7 +104,7 @@ function upArrowClicked() {
 
 /* Better style image alt text when/if images fail to load */
 $("img").error(function(){
-        $(this).addClass("failed-to-load");
+	$(this).addClass("failed-to-load");
 });
 
 /* When ready... */
@@ -66,6 +118,10 @@ $(document).ready(function() {
 		$('#logo-speech-bubble').text("Stay cool, dude.");
 	} else {
 		$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
+	}
+
+	if ($.cookie("accent-color") && !document.getElementsByTagName("body")[0].classList.contains("ignore-accent-color")) {
+		document.getElementsByTagName("html")[0].className += " " + $.cookie("accent-color");
 	}
 
 	/* anchor.min.js - Settings */
@@ -83,19 +139,23 @@ $(document).ready(function() {
 		});
 	}
 
+	/***
+	 * DYNAMIC MENU
+	 ***/
 	var html = $("html");
 	var menu = $("menu");
 
+	// Initial starting position for browsers that remember and persist scroll position through reloads
 	if ($(this).scrollTop() > 50) {
-		menu.addClass("medium-test-hide");
+		menu.addClass("hide-for-medium-and-larger-devices");
 	}
 	if ($(this).scrollTop() > 125) {
-		menu.addClass("test-hide");
+		menu.addClass("hide-for-small-device");
 	} else if (html.scrollTop() > 100) {
-		html.addClass("hide-menu");
+		html.addClass("float-menu-for-hiding");
 	}
 
-	/* Dynamic scrolling menu on mobile */
+	// Dynamic hiding based on scroll position and page type
 	var previousScrollTop = $(this).scrollTop();
 	$(function() {
 		var html = $("html");
@@ -104,34 +164,34 @@ $(document).ready(function() {
 		$(window).scroll(function () {
 			var newScrollTop = $(this).scrollTop();
 			if (newScrollTop > 50) {
-				menu.addClass("medium-test-hide");
+				menu.addClass("hide-for-medium-and-larger-devices");
 			} else {
-				menu.removeClass("medium-test-hide");
+				menu.removeClass("hide-for-medium-and-larger-devices");
 			}
 
 			if (newScrollTop > 125) {
-				menu.addClass("test-hide");
-				html.addClass("hide-menu");
+				menu.addClass("hide-for-small-device");
+				html.addClass("float-menu-for-hiding");
 			} else if (newScrollTop > 100) {
-				html.addClass("hide-menu");
-				menu.removeClass("test-hide");
+				html.addClass("float-menu-for-hiding");
+				menu.removeClass("hide-for-small-device");
 			} else if (newScrollTop <= 100) {
-				menu.removeClass("test-hide");
-				html.removeClass("hide-menu");
+				menu.removeClass("hide-for-small-device");
+				html.removeClass("float-menu-for-hiding");
 			}
 
 			if (newScrollTop > 50) {
 				if (newScrollTop - previousScrollTop < 0) {
-					menu.removeClass("medium-test-hide");
+					menu.removeClass("hide-for-medium-and-larger-devices");
 				} else {
-					menu.addClass("medium-test-hide");
+					menu.addClass("hide-for-medium-and-larger-devices");
 				}
 			}
 			if (newScrollTop > 125) {
 				if (newScrollTop - previousScrollTop < 0) {
-					menu.removeClass("test-hide");
+					menu.removeClass("hide-for-small-device");
 				} else {
-					menu.addClass("test-hide");
+					menu.addClass("hide-for-small-device");
 				}
 			}
 			previousScrollTop = newScrollTop;
@@ -153,4 +213,21 @@ $(document).ready(function() {
 			element.className += " wrap";
 		}
 	}
+
+	//https://stackoverflow.com/a/3028037
+	$(document).click(function(event) {
+		if ($("#settings-popup").hasClass("show")) {
+			if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-toggle").length) {
+				settingsClicked();
+			}
+		}
+		if ($("#submenu").hasClass("show")) {
+			if (!$(event.target).closest("#submenu").length
+			 && !$(event.target).closest("#submenu-toggle").length
+			 && !$(event.target).closest("#settings-popup").length
+			 && !$(event.target).closest("#settings-toggle").length) {
+				$("#submenu-checkbox").click();
+			}
+		}
+	});
 });
