@@ -214,8 +214,10 @@ $(document).ready(function() {
 		}
 	}
 
-	//https://stackoverflow.com/a/3028037
-	$(document).click(function(event) {
+	// https://stackoverflow.com/questions/11406285/determine-and-bind-click-or-touch-event
+	var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
+	// https://stackoverflow.com/a/3028037
+	$(document).on(clickEventName, function() {
 		if ($("#settings-popup").hasClass("show")) {
 			if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-toggle").length) {
 				settingsClicked();

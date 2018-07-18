@@ -445,7 +445,7 @@ menu {
 		z-index: -5000;
 
 		font-size: 0.833em;
-		margin-top: 0;
+		margin-top: 1px;
 		
 		overflow: hidden;
 		opacity: 0;
@@ -1986,6 +1986,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	#submenu.show {
 		opacity: 0;
 		height: 0;
+	}
+	#submenu {
+		margin-top: 0;
 	}
 	.float-menu-for-hiding menu,
 	.float-menu-for-hiding #logo {
