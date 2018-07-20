@@ -4,7 +4,15 @@ Welcome! Please feel free to stop by, take a load off your feet, brew some tea, 
 
 --------
 
-# Barrowclift 10 - Codename “Unity”
+# 11.0 - "Foreigner"
+
+With the introduction of macOS Mojave, users can now choose the accent color for the system. Jumping from just the "Blue" and "Graphite" colors we've known for the past decade, users can now change buttons, links, and more to be their favorite color.
+
+Much like macOS, my personal website has also "supported" custom accent colors, but never exposed them to the user in any meaningful way. Now, with the new accessibility settings in 11.0, you can customize the site to match your preferred system accent color, so the site will always gracefully match your personality and style.
+
+![Image of the Accessibility Settings popup](images/readme/accessibility-settings.png)
+
+# 10.0 - "Unity"
 
 Until now, [Marcdown](https://barrowclift.me/marcdown) and [barrowclift.me](https://barrowclift.me) styles were designed and maintained independently, in parallel. This was a choice made mostly due to these historical reasons:
 
@@ -14,18 +22,3 @@ Until now, [Marcdown](https://barrowclift.me/marcdown) and [barrowclift.me](http
 That time has now passed. [barrowclift.me](https://barrowclift.me)’s legacy code has been all but swept away as the CSS has been gradually refined over the years. Additionally, both [barrowclift.me](https://barrowclift.me) were beginning to converge together towards a similar style for some time now. With the differences between them falling away and the benefits of keeping them separate dwindling, it's time to fuse them together to create one, final CSS and Javascript heart which will serve as the foundation for all future typographic/design changes made to Marcdown and barrowclift.me from this point on&mdash;`core.css` and `core.js`.
 
 It's time to bring order to the chaos. It's time for Unity.
-
-## Release Notes
-
-- Marcdown and Barrowclift website stylesheets now completely in sync
-- Dark mode architectural redesign for improved readability, speed, and design flexibility
-- Improvements to stylesheet and script architecture
-- Admonition style
-- Key style
-- Definition style
-- Typography overhaul (carried over from Marcdown). Includes redesigned tables, block quotes, lists, headers, typeface, etc.
-- Completely redesigned menu
-- Decreased total CSS weight by 30%
-- Banner images are now parallax
-- Improvements to cards
-- Plenty more minor improvements
