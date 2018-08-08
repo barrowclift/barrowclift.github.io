@@ -1431,6 +1431,12 @@ article > p > img {
 }
 
 
+.no-border-radius,
+.no-border-radius img {
+	border-radius: 0 !important;
+}
+
+
 h2 img {
 	max-width: 16px;
 	margin-left: 0.1em;
