@@ -6,20 +6,27 @@ menu {
 .safari menu {
 	background-color: {{ page.menu-color-safari }};
 }
-menu ul a,
-.hover:hover:not(.active) {
-	color: white;
-}
 .signature-color {
 	fill: white;
 }
+menu ul a,
 .hover:hover:not(.active),
-menu a:hover {
+#settings-toggle {
+	color: white;
+}
+.hover:hover:not(.active),
+menu a:hover,
+#settings-toggle:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
+#settings-toggle:hover {
+	color: white;
+}
 .active,
-menu a.active:hover {
+menu a.active:hover,
+#settings-toggle.active, #settings-toggle.active:hover {
 	background-color: rgba(255, 255, 255, 0.9);
+	color: {{ page.primary-color }};
 }
 
 #dark .hover:hover:not(.active),

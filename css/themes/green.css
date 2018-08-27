@@ -1,36 +1,37 @@
-.active,
+ .active,
 .hover:hover:not(.active),
 main a,
 main a:link,
 main a:visited,
 .anchor,
-#blog-footer-buttons a,
-#social-buttons a,
 #settings-toggle:hover {
 	color: #4CD964;
 }
 .block-list a:hover h3,
-#dark.block-list a:hover h3 {
+#dark .block-list a:hover h3 {
 	color: #4CD964 !important
 }
 .anchor:hover,
-main a:hover,
-#blog-footer-buttons a:hover {
-	color: #3EB352;
+main a:hover {
+	color: hsl(130, 65%, 47%);
+}
+#dark .anchor:hover,
+#dark main a:hover {
+	color: hsl(130, 65%, 67%);
 }
 .anchor:hover,
 main a:not(.link-button):hover,
-menu a:hover, menu a.light-hover,
+menu a:hover,  menu a.light-hover,
 .hover:hover:not(.active),
 #submenu {
 	background-color: rgba(76, 217, 100, 0.1);
 }
-#darkmain a:not(.link-button):hover,
-#darkmenu a:hover, #darkmenu a.light-hover,
-#dark.anchor:hover,
-#dark.hover:hover:not(.active),
-#dark#submenu {
-	background-color: rgba(76, 217, 100, 0.25);
+#dark main a:not(.link-button):hover,
+#dark menu a:hover, #dark menu a.light-hover,
+#dark .anchor:hover,
+#dark .hover:hover:not(.active),
+#dark #submenu {
+	background-color: rgba(76, 217, 100, 0.15);
 }
 h1 a:hover {
 	color: #4CD964 !important;
@@ -42,13 +43,19 @@ button.bigfoot-footnote__button {
 	background-color: #4CD964;
 }
 	button.bigfoot-footnote__button:after {
-		color: #4CD964;
+		color: hsl(130, 65%, 47%);
+	}
+	#dark button.bigfoot-footnote__button:after {
+		color: hsl(130, 65%, 67%);
 	}
 	button.bigfoot-footnote__button {
-		background-color: rgba(76, 217, 100, 0.25) !important;
+		background-color: rgba(76, 217, 100, 0.1);
+	}
+	#dark button.bigfoot-footnote__button {
+		background-color: rgba(76, 217, 100, 0.15);
 	}
 button.bigfoot-footnote__button:hover {
-	background-color: #3EB352;
+	background-color: hsl(130, 65%, 47%);
 }
 	button.bigfoot-footnote__button:hover,
 	button.bigfoot-footnote__button:hover,
@@ -57,35 +64,35 @@ button.bigfoot-footnote__button:hover {
 	}
 	button.bigfoot-footnote__button:active,
 	button.bigfoot-footnote__button.is-active {
-		background-color: #3EB352 !important;
+		background-color: hsl(130, 65%, 47%) !important;
 	}
 button:not(.bigfoot-footnote__button),
 .link-button {
-	background-color: hsl(130, 100%, 35%); /* hsl(130, 65%, 57%) */
+	background-color: hsl(130, 65%, 47%); /* hsl(130, 65%, 57%) */
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 	/* Old browsers */
 	background-repeat: repeat-x;
 	/* Repeat the gradient */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(125, 100%, 45%)), color-stop(100%, hsl(130, 100%, 35%)));
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(130, 65%, 67%)), color-stop(65%, hsl(130, 65%, 47%)));
 	/* Chrome,Safari4+ */
-	background-image: -webkit-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	background-image: -webkit-linear-gradient(top, hsl(130, 65%, 67%) 0, hsl(130, 65%, 47%) 100%);
 	/* Chrome 10+,Safari 5.1+ */
-	background-image: -moz-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	background-image: -moz-linear-gradient(top, hsl(130, 65%, 67%) 0, hsl(130, 65%, 47%) 100%);
 	/* FF3.6+ */
-	background-image: -ms-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	background-image: -ms-linear-gradient(top, hsl(130, 65%, 67%) 0, hsl(130, 65%, 47%) 100%);
 	/* IE10+ */
-	background-image: -o-linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	background-image: -o-linear-gradient(top, hsl(130, 65%, 67%) 0, hsl(130, 65%, 47%) 100%);
 	/* Opera 11.10+ */
-	background-image: linear-gradient(top, hsl(125, 100%, 45%) 0, hsl(130, 100%, 35%) 100%);
+	background-image: linear-gradient(top, hsl(130, 65%, 67%) 0, hsl(130, 65%, 47%) 100%);
 	/* W3C */
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(125, 100%, 45%)', endColorstr='hsl(130, 100%, 35%)', GradientType=0);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(130, 65%, 67%)', endColorstr='hsl(130, 65%, 47%)', GradientType=0);
 	/* IE6-9 */
-	border: 1px solid hsl(125, 100%, 40%);
+	border: 1px solid hsl(130, 65%, 57%);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(76, 217, 100, 0.2);
 }
 	button:not(.bigfoot-footnote__button):active,
 	.link-button:active {
-		background-color: hsl(130, 100%, 35%);
+		background-color: hsl(130, 65%, 47%);
 		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(76, 217, 100, 0.1);
 	}
 input:focus,
@@ -93,9 +100,9 @@ textarea:focus {
 	border-color: #4CD964 !important;
 }
 a:hover .fill-color {
-	fill: #3EB352 !important;
+	fill: hsl(130, 65%, 47%) !important;
 }
-#dark.hover:hover:not(.active) {
+#dark .hover:hover:not(.active) {
 	color: #4CD964;
 }
 #logo:hover .signature-color {
@@ -104,16 +111,65 @@ a:hover .fill-color {
 a .fill-color {
 	fill: #4CD964;
 }
-#dark.active {
+#dark .active {
 	background-color: unset;
 	color: #4CD964;
 }
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
-	background: #4CD964;
+	background: rgba(76, 217, 100, 0.99);
 	color: white;
 }
 ::-moz-selection { /* Firefox */
-	background: #4CD964;
+	background: rgba(76, 217, 100, 0.99);
 	color: white;
+}
+#dark ::selection { /* Safari */
+	background: rgba(76, 217, 100, 0.85);
+}
+#dark ::-moz-selection { /* Firefox */
+	background: rgba(76, 217, 100, 0.85);
+}
+.backdrop {
+	background-color: #4CD964;
+}
+menu {
+	background-color: rgba(253, 255, 253, 0.95);
+}
+#dark menu {
+	background-color: rgba(24, 27, 24, 0.95);
+}
+.safari menu {
+	background-color: rgba(253, 255, 253, 0.95);
+}
+#dark.safari menu {
+	background-color: rgba(24, 27, 24, 0.7);
+}
+[data-hint]:after,
+.card,
+.bigfoot-footnote__content,
+.bigfoot-footnote__wrapper,
+.bigfoot-footnote__tooltip,
+.bigfoot-footnote {
+	background-color: rgb(247, 249, 247);
+}
+.popup {
+	background-color: rgba(247, 249, 247, 0.95);
+}
+.safari .popup {
+	background-color: rgba(247, 249, 247, 0.9);
+}
+#dark [data-hint]:after,
+#dark .card,
+#dark .bigfoot-footnote__content,
+#dark .bigfoot-footnote__wrapper,
+#dark .bigfoot-footnote__tooltip,
+#dark .bigfoot-footnote {
+	background-color: rgb(61, 64, 61);
+}
+#dark .popup {
+	background-color: rgba(61, 64, 61, 0.95);
+}
+#dark.safari .popup {
+	background-color: rgba(61, 64, 61, 0.9);
 }
