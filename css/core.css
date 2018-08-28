@@ -1712,7 +1712,8 @@ footer {
 	margin-bottom: 2.6em;
 }
 footer,
-#article-linkback {
+#article-linkback,
+.article-linkback {
 	margin-top: 2.6em;
 }
 sup[id^=fnref] {
