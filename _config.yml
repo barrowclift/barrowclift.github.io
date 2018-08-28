@@ -30,6 +30,7 @@ defaults:
       type: "posts" # limit to posts
     values:
       viewing-single-page: true # *NOT* Being viewed from home, a specific article page
+      hasAfterward: false
       share-image:  # assume a default post doesn't have an image, /images/assets/${share-image}
   - # SITE-WIDE VARIABLES
     scope:

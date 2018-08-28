@@ -31,9 +31,11 @@
 
 	{{ content }}
 
+	{% if page.hasAfterward == false %}
 	<div id="article-linkback">
 		<a href="/">⌘</a>
 	</div>
+	{% endif %}
 	<script>
 		$(document).ready(function() {
 		    if ($("article .footnotes")) {
