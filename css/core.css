@@ -813,13 +813,13 @@ menu header:hover #logo #logo-eye-opened {
 hr {
 	background-color: rgb(240, 240, 240);
 	background: rgb(240, 240, 240); /* Old browsers */
-	background: -moz-linear-gradient(left,  white 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, white 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,white), color-stop(25%,rgb(240, 240, 240)), color-stop(50%,rgb(240, 240, 240)), color-stop(75%,rgb(240, 240, 240)), color-stop(100%,white)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  white 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, white 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, white 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, white 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, white 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, white 100%); /* IE10+ */
-	background: linear-gradient(to right, white 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, white 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
+	background: -moz-linear-gradient(left,  #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FCFDFF), color-stop(25%,rgb(240, 240, 240)), color-stop(50%,rgb(240, 240, 240)), color-stop(75%,rgb(240, 240, 240)), color-stop(100%,#FCFDFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* IE10+ */
+	background: linear-gradient(to right, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCFDFF', endColorstr='#FCFDFF',GradientType=1 ); /* IE6-9 */
 
 	border: none;
 	height: 1px;
@@ -2826,13 +2826,13 @@ html#dark main a.header:visited {
 #dark hr {
 	background-color: #5A5B56;
 	background: #5A5B56;
-	background: -moz-linear-gradient(left, #242424 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242424 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #242424), color-stop(25%, #5A5B56), color-stop(50%, #5A5B56), color-stop(75%, #5A5B56), color-stop(100%, #242424));
-	background: -webkit-linear-gradient(left, #242424 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242424 100%);
-	background: -o-linear-gradient(left, #242424 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242424 100%);
-	background: -ms-linear-gradient(left, #242424 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242424 100%);
-	background: linear-gradient(to right, #242424 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242424 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#242424', GradientType=1 );
+	background: -moz-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #242629), color-stop(25%, #5A5B56), color-stop(50%, #5A5B56), color-stop(75%, #5A5B56), color-stop(100%, #242629));
+	background: -webkit-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
+	background: -o-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
+	background: -ms-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
+	background: linear-gradient(to right, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#242629', endColorstr='#242629', GradientType=1 );
 }
 
 
