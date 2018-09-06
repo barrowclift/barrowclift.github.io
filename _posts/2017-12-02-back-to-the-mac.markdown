@@ -163,6 +163,11 @@ Why Apple to this day hides the date in the macOS Menu Bar clock, I'll never kno
 </a>
 </figure>
 
+<div class="admonition update">
+<p class="admonition-title">Update: September 6, 2018</p>
+<p>I've been informed there's another method for checking the date that's arguably easier than opening Calendar or checking Notification Center; you can alternatively click the Menu Bar Clock to see the full date in a popup menu.</p>
+</div>
+
 ### Quicklook for Superior File Browsing
 
 Don't you wish you could visually zip through files on a computer as quickly and easily as you can physical objects like photos and pages? Sure, text searching is preferred when possible, but there are times brief visual parsing is preferable, like when you're picking a particular photo out from a set. Unfortunately, on inferior systems like Windows, you are left no choice but to either increase the thumbnail images to clown-shoe proportions or double-click each and every file until you find the one you're looking for.
