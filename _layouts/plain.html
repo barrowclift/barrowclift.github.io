@@ -6,18 +6,13 @@
 	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
 		{% include lazy-load-stylesheets.html %}
 
-		{% if page.backdrop %}
+		{% if page.backdrop-image %}
 		<style>
 			.backdrop {
-				position: fixed;
-				background-image: url('{{ page.backdrop }}');
+				background-image: url('{{ page.backdrop-image }}');
 				background-position: center;
 				background-size: cover;
-				width: 100%;
-				height: 100%;
-				z-index: -500;
 				opacity: 0.05;
-				transition: opacity 0.2s ease;
 
 				-webkit-filter: blur(25px);
 				-moz-filter: blur(25px);
@@ -29,8 +24,8 @@
 				opacity: 0.1;
 			}
 		</style>
-		<div class="backdrop"></div>
 		{% endif %}
+		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
 		<style>
 			main {
 				margin-top: 0;

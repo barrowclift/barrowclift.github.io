@@ -932,7 +932,7 @@ a:hover {
 }
 input:focus,
 textarea:focus {
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2) !important;
 }
 
 
@@ -2615,37 +2615,18 @@ a .fill-color {
 
 button:not(.bigfoot-footnote__button),
 .link-button {
-	background-color: hsl(211, 100%, 45%); /* hsl(211, 100%, 50%) */
-	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-	/* Old browsers */
-	background-repeat: repeat-x;
-	/* Repeat the gradient */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(211, 100%, 55%)), color-stop(100%, hsl(211, 100%, 45%)));
-	/* Chrome,Safari4+ */
-	background-image: -webkit-linear-gradient(top, hsl(211, 100%, 55%) 0, hsl(211, 100%, 45%) 100%);
-	/* Chrome 10+,Safari 5.1+ */
-	background-image: -moz-linear-gradient(top, hsl(211, 100%, 55%) 0, hsl(211, 100%, 45%) 100%);
-	/* FF3.6+ */
-	background-image: -ms-linear-gradient(top, hsl(211, 100%, 55%) 0, hsl(211, 100%, 45%) 100%);
-	/* IE10+ */
-	background-image: -o-linear-gradient(top, hsl(211, 100%, 55%) 0, hsl(211, 100%, 45%) 100%);
-	/* Opera 11.10+ */
-	background-image: linear-gradient(top, hsl(211, 100%, 55%) 0, hsl(211, 100%, 45%) 100%);
-	/* W3C */
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(211, 100%, 55%)', endColorstr='hsl(211, 100%, 45%)', GradientType=0);
-	/* IE6-9 */
-	border: 1px solid hsl(211, 100%, 50%);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	background-color: hsl(211, 100%, 48%);
+	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
 }
 	button:not(.bigfoot-footnote__button):hover,
 	.link-button:hover {
-		background-position: 0 -15px;
+		background-color: hsl(211, 100%, 45%);
 	}
 	button:not(.bigfoot-footnote__button):active,
 	.link-button:active {
-		background-image: none;
 		background-color: hsl(211, 100%, 45%);
-		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.1);
+		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, .0625), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
 	}
 input:focus,
 textarea:focus {
