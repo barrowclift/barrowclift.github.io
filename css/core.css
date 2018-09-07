@@ -1177,8 +1177,7 @@ mark {
 .admonition {
 	color: rgba(26, 26, 26, 0.9);
 	/* Default style is inline code colors */
-	background-color: rgba(229, 231, 232, 0.6);
-	border: 1px solid rgba(229, 231, 232, 0.9);
+	background-color: rgba(229, 231, 232, 0.7);
 
 	padding: 1em;
 	border-radius: 0.25em;
@@ -1197,25 +1196,21 @@ mark {
 	color: rgba(246, 246, 246, 0.75) !important;
 }
 	.admonition.update {
-		background-color: rgba(254, 213, 88, 0.6);
-		border-color: rgba(254, 213, 88, 0.75);
+		background-color: rgba(254, 213, 88, 0.7);
 	}
 	.admonition.error,
 	.admonition.danger,
 	.admonition.warning {
-		background-color: rgba(252, 99, 96, 0.6);
-		border-color: rgba(252, 99, 96, 0.2);
+		background-color: rgba(252, 99, 96, 0.7);
 	}
 	.admonition.success {
-		background-color: rgba(134, 223, 106, 0.6);
-		border-color: rgba(134, 223, 106, 0.6);
+		background-color: rgba(134, 223, 106, 0.7);
 	}
 	.admonition.hint,
 	.admonition.question,
 	.admonition.note,
 	.admonition.info {
-		background-color: rgba(84, 190, 247, 0.6);
-		border-color: rgba(84, 190, 247, 0.6);
+		background-color: rgba(84, 190, 247, 0.7);
 	}
 
 
