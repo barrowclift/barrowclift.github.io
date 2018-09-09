@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+	
+	{% include head.html %}
+	{% if page.color %}
+	<link href="{{ site.baseurl }}/css/themes/{{ page.color }}.css" rel="stylesheet" type="text/css" lazyload="1" />
+	{% endif %}
+	<style>
+	html { font-size: 14px; }
+	@media (min-width: 700px) {
+		html { font-size: 16px; }
+	}
+	html,body { color: black; }
+	html#dark,#dark body { color: white; }
+	#dark { background-color: #111111; }
+	menu {
+		position: absolute !important;
+		background-color: #ff6600 !important;
+		border: unset;
+		box-shadow: unset;
+	}
+	main {
+		margin-top: 6.5em;
+	}
+	menu ul li {
+		text-shadow: unset;
+		color: black !important;
+	}
+	#logo:hover .signature-color {
+		fill: black !important;
+	}
+	header {
+		padding-top: 0.3em !important;
+	}
+	@media (max-width: 699px) {
+		#logo {
+			margin-top: 0;
+		}
+		#logo #mac {
+			margin-left: 0.3em;
+			width: 16px;
+			height: 16px;
+		}
+		#logo #signature {
+			height: 24px;
+			margin-left: 0em;
+		}
+		menu ul {
+			display: inline-block;
+			vertical-align: top;
+			width: 70%;
+		}
+		#header-link {
+			display: inline-block;
+		}
+		menu ul li {
+			margin-top: 0.45em;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			font-size: 0.833em;
+			min-width: unset;
+			margin-left: 3vw;
+			margin-right: 3vw;
+		}
+		#menu-height-offset {
+			display: none;
+		}
+		.link-button {
+			padding: 0.375em;
+			width: auto;
+		}
+		#submenu-toggle {
+			display: none !important;
+		}
+		#about-link {
+			display: inline !important;
+		}
+	}
+	</style>
+
+	<body class="ignore-accent-color">
+		<div id="wrap">
+			<div id="content" class="center">
+				{% include menu.html %}
+				<main>
+					{{ content }}
+				</main>
+			</div>
+		</div>
+
+		{% include footer.html %}
+	</body>
+</html>

@@ -4,3 +4,6 @@ html  {
 html#dark {
 	background-image: url(/images/projects/art/sketches/darknotes@2x.png);
 }
+.backdrop {
+	display: none;
+}
