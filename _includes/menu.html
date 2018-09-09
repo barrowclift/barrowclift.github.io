@@ -1,6 +1,6 @@
 <menu class="no-select">
 	<div id="mainmenu">
-		<a style="background-color:unset!important;" href="{{ "/hello/" | prepend: site.baseurl }}">
+		<a id="header-link" style="background-color:unset !important;" href="{{ "/hello/" | prepend: site.baseurl }}">
 			<header>
 				<div id="logo">
 					{% if page.error %}
@@ -14,12 +14,13 @@
 		<ul>
 			<a class="hover {%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image'" %}active{% endif %}" href="{{ "/" | prepend: site.baseurl }}"><li>Writings</li></a>
 			<a class="hover {%if page.projects-menu-active %}active{% endif %}" href="{{ "/projects/" | prepend: site.baseurl }}"><li>Projects</li></a>
-			<a class="hide-when-small hover {%if page.about-menu-active %}active{% endif %}" href="{{ "/about/" | prepend: site.baseurl }}"><li>About</li></a>
+			<a class="hide-when-small hover {%if page.about-menu-active %}active{% endif %}" id="about-link" href="{{ "/about/" | prepend: site.baseurl }}"><li>About</li></a>
 			<a class="show-when-small hover" id="submenu-toggle" onclick="submenuClicked();">
 				<input type="checkbox" name="submenu-checkbox" id="submenu-checkbox" value="submenu" onclick="submenuToggled(this);" />
 				<li>More</li>
 			</a>
 		</ul>
+		{% if page.hide-settings != true %}
 		<div onclick="settingsClicked();" class="setting-toggles" id="settings-toggle">
 			<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
 			<span><span class="small-caps">A</span>A</span>
@@ -44,6 +45,7 @@
 				</ul>
 			</div>
 		</div>
+		{% endif %}
 	</div>
 	<div id="submenu">
 		<ul>

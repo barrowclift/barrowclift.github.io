@@ -42,13 +42,13 @@ a .fill-color {
 button.bigfoot-footnote__button {
 	background-color: #5856D6;
 }
-	button.bigfoot-footnote__button:after {
+	 button.bigfoot-footnote__button:after {
 		color: hsl(241, 61%, 49%);
 	}
 	#dark button.bigfoot-footnote__button:after {
 		color: hsl(241, 61%, 69%);
 	}
-	button.bigfoot-footnote__button {
+	 button.bigfoot-footnote__button {
 		background-color: rgba(88, 86, 214, 0.1);
 	}
 	#dark button.bigfoot-footnote__button {
@@ -57,47 +57,33 @@ button.bigfoot-footnote__button {
 button.bigfoot-footnote__button:hover {
 	background-color: hsl(241, 61%, 49%);
 }
-	button.bigfoot-footnote__button:hover,
-	button.bigfoot-footnote__button:hover,
-	button.bigfoot-footnote__button:focus {
+	 button.bigfoot-footnote__button:hover,
+	 button.bigfoot-footnote__button:hover,
+	 button.bigfoot-footnote__button:focus {
 		background-color: #5856D6 !important;
 	}
-	button.bigfoot-footnote__button:active,
-	button.bigfoot-footnote__button.is-active {
+	 button.bigfoot-footnote__button:active,
+	 button.bigfoot-footnote__button.is-active {
 		background-color: hsl(241, 61%, 49%) !important;
 	}
 button:not(.bigfoot-footnote__button),
 .link-button {
-	background-color: hsl(241, 61%, 54%); /* hsl(241, 61%, 59%) */
-	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-	/* Old browsers */
-	background-repeat: repeat-x;
-	/* Repeat the gradient */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(241, 61%, 64%)), color-stop(100%, hsl(241, 61%, 54%)));
-	/* Chrome,Safari4+ */
-	background-image: -webkit-linear-gradient(top, hsl(241, 61%, 64%) 0, hsl(241, 61%, 54%) 100%);
-	/* Chrome 10+,Safari 5.1+ */
-	background-image: -moz-linear-gradient(top, hsl(241, 61%, 64%) 0, hsl(241, 61%, 54%) 100%);
-	/* FF3.6+ */
-	background-image: -ms-linear-gradient(top, hsl(241, 61%, 64%) 0, hsl(241, 61%, 54%) 100%);
-	/* IE10+ */
-	background-image: -o-linear-gradient(top, hsl(241, 61%, 64%) 0, hsl(241, 61%, 54%) 100%);
-	/* Opera 11.10+ */
-	background-image: linear-gradient(top, hsl(241, 61%, 64%) 0, hsl(241, 61%, 54%) 100%);
-	/* W3C */
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='hsl(241, 61%, 64%)', endColorstr='hsl(241, 61%, 54%)', GradientType=0);
-	/* IE6-9 */
-	border: 1px solid hsl(241, 61%, 59%);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2);
+	background-color: hsl(241, 61%, 57%);
+	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2);
 }
-	button:not(.bigfoot-footnote__button):active,
-	.link-button:active {
-		background-color: hsl(241, 61%, 54%);
-		box-shadow: inset 0 5px 10px rgba(0, 0, 0, .125), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.1);
+	 button:not(.bigfoot-footnote__button):hover,
+	 .link-button:hover {
+		background-color: hsl(241, 61%, 55%);
+	}
+	 button:not(.bigfoot-footnote__button):active,
+	 .link-button:active {
+		background-color: hsl(241, 61%, 55%);
+		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, .0625), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2);
 	}
 input:focus,
 textarea:focus {
 	border-color: #5856D6 !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em rgba(88, 86, 214, 0.2) !important;
 }
 a:hover .fill-color {
 	fill: hsl(241, 61%, 49%) !important;
@@ -172,4 +158,26 @@ menu {
 }
 #dark.safari .popup {
 	background-color: rgba(61, 61, 64, 0.9);
+}
+hr {
+	background-color: rgb(240, 240, 240);
+	background: rgb(240, 240, 240); /* Old browsers */
+	background: -moz-linear-gradient(left,  #FDFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FDFDFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FDFDFF), color-stop(25%,rgb(240, 240, 240)), color-stop(50%,rgb(240, 240, 240)), color-stop(75%,rgb(240, 240, 240)), color-stop(100%,#FDFDFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #FDFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FDFDFF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #FDFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FDFDFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #FDFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FDFDFF 100%); /* IE10+ */
+	background: linear-gradient(to right, #FDFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FDFDFF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDFDFF', endColorstr='#FDFDFF',GradientType=1 ); /* IE6-9 */
+}
+#dark hr {
+	background-color: #5A5B56;
+	background: #5A5B56;
+	background: -moz-linear-gradient(left, #252528 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #252528 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #252528), color-stop(25%, #5A5B56), color-stop(50%, #5A5B56), color-stop(75%, #5A5B56), color-stop(100%, #252528));
+	background: -webkit-linear-gradient(left, #252528 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #252528 100%);
+	background: -o-linear-gradient(left, #252528 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #252528 100%);
+	background: -ms-linear-gradient(left, #252528 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #252528 100%);
+	background: linear-gradient(to right, #252528 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #252528 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#252528', endColorstr='#252528', GradientType=1 );
 }
