@@ -3,7 +3,7 @@ layout: brutalist
 
 color: orange
 ignore-accent-color: true
-show-settings: fal
+hide-settings: false
 
 viewing-single-page: true
 anchors: true
@@ -25,9 +25,12 @@ hr, #dark hr {
 #dark hr {
 	border-bottom: 2px solid rgba(255,255,255,0.2);
 }
+#settings-toggle {
+	color: black !important;
+}
 </style>
 <h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="/images/projects/code/hacker-news-cleanser/sponge.png" /></h1>
-<p>This is a self-hosted service that will auto-hide Hacker News articles by filtering articles based on:</p>
+<p>This is a self-hosted service that will auto-hide <a href="https://news.ycombinator.com">Hacker News</a> articles by filtering articles based on:</p>
 <ul class="compact-list">
 <li>Site</li>
 <li>Title keywords matching</li>
