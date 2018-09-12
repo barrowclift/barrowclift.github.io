@@ -508,7 +508,7 @@ Unfortunately, due to the specialized nature of mouse-driven automation, there's
 
 ### "Get Info" Multiple Files at Once
 
-macOS is great at many things, but "Get Info" windows aren't one of then. If you've ever made the mistake of right clicking a bunch of selected files and selecting "Get Info...", know already know why. For those don't, have you even won a round of Windows Solitaire?
+macOS is great at many things, but "Get Info" windows aren't one of then. If you've ever made the mistake of right clicking a bunch of selected files and clicking "Get Info...", you already know why. For those don't, have you even won a round of Windows Solitaire?
 
 <figure markdown="1" class="edge-to-edge large">
 <a href="{{ site.baseurl }}/images/assets/back-to-the-mac/originals/death-by-get-info.jpg">
