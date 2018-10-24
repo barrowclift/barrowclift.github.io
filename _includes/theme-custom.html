@@ -7,7 +7,7 @@ menu {
 	background-color: {{ page.menu-color-safari }};
 }
 .signature-color {
-	fill: white;
+	fill: white !important;
 }
 menu ul a,
 .hover:hover:not(.active),
@@ -26,34 +26,43 @@ menu a:hover,
 menu a.active:hover,
 #settings-toggle.active, #settings-toggle.active:hover {
 	background-color: rgba(255, 255, 255, 0.9);
-	color: {{ page.primary-color }};
 }
 
-#dark .hover:hover:not(.active),
-#dark menu a.active:hover {
-	background-color: {{ page.primary-color-hover }};
-	color: {{ page.primary-color }};
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
+	background: {{ page.primary-color }};
+	color: white;
 }
-#dark .active {
-	background-color: unset;
+::-moz-selection { /* Firefox */
+	background: {{ page.primary-color }};
+	color: white;
+}
+
+#mainmenu a:hover,
+#settings-toggle:hover {
+	color: white;
+}
+
+/**
+ * Hex: #FF8100
+ * RGB: rgb(255, 129, 0);
+ * HSL: {{ page.primary-color }};
+ */
+a,
+#mainmenu .active,
+.header a:hover,
+a:hover .header {
 	color: {{ page.primary-color }};
 }
 #logo:hover .signature-color {
-	fill: white !important;
+	fill: {{ page.primary-color }};
 }
-#dark #logo:hover .signature-color {
-	fill: {{ page.primary-color }} !important;
+.backdrop {
+	background-color: {{ page.primary-color }};
 }
 
-main a,
-main a:link,
-main a:visited,
-.active,
-.anchor {
-	color: {{ page.primary-color }};
-}
-main a:hover,
-.anchor:hover {
+a:hover,
+#submenu {
 	background-color: {{ page.primary-color-hover }};
 }
 
@@ -66,4 +75,34 @@ main a:hover,
 	background: {{ page.primary-color }};
 	color: white;
 }
+
+button,
+.button {
+	background-color: {{ page.primary-color }};
+}
+button.bigfoot-footnote__button {
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: none;
+}
+	button.bigfoot-footnote__button:after {
+		color: {{ page.primary-color }} !important;
+	}
+	button.bigfoot-footnote__button:hover {
+		background-color: {{ page.primary-color }} !important;
+	}
+	button.bigfoot-footnote__button:active,
+	button.bigfoot-footnote__button.is-active {
+		background-color: {{ page.primary-color }} !important;
+	}
+
+input:focus,
+textarea:focus {
+	border-color: {{ page.primary-color }} !important;
+}
+
+#dark .header a:hover,
+#dark a:hover .header {
+	color: {{ page.primary-color }};
+}
+
 </style>

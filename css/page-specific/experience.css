@@ -1,13 +1,3 @@
-main a,
-main a:link,
-main a:visited,
-main a:hover,
-main a .primary,
-main a:link .primary,
-main a:visited .primary,
-main a:hover .primary {
-	color: #333333;
-}
 main a:hover {
 	text-decoration: none;
 }
@@ -32,16 +22,16 @@ main ul {
 .card.education .label .primary,
 .card.education .label .secondary {
 	display: block;
+	color: rgba(255, 255, 255, 0.9) !important;
 }
-.card.education .label .secondary,
 .card.education .label .small {
-	color: #CFCFC2;
+	color: rgba(255, 255, 255, 0.3) !important;
 }
 .card.education .label .secondary {
 	font-style: normal;
 	font-weight: 500;
 	text-align: center;
-	margin-top: 0;
+	margin-top: 0.25rem;
 	margin-bottom: 0;
 }
 .card.education .label .primary {
@@ -62,33 +52,93 @@ main ul {
 
 /* ----- IMAGES & VIDEO ----- */
 
-.fill-color,
-svg:hover .fill-color {
-	fill: #979797 !important;
+.fill-transparent,
+.blue .fill-transparent {
+	fill: rgb(246, 246, 246);
 }
-a .fill-color {
-	fill: #979797 !important;
+.red .fill-transparent {
+	fill: rgb(250, 246, 246);
 }
-	#dark .fill-color {
-		fill: #CFCFC2 !important;
+.orange .fill-transparent {
+	fill: rgb(249, 248, 246);
+}
+.yellow .fill-transparent {
+	fill: rgb(249, 249, 246);
+}
+.green .fill-transparent {
+	fill: rgb(247, 249, 247);
+}
+.purple .fill-transparent {
+	fill: rgb(247, 247, 249);
+}
+.pink .fill-transparent {
+	fill: rgb(250, 246, 247);
+}
+	#dark .fill-transparent,
+	#dark.blue .fill-transparent {
+		fill: rgb(45, 45, 45);
 	}
-.stroke-color {
-	stroke: #979797 !important;
-}
-	#dark .stroke-color {
-		stroke: #CFCFC2 !important;
+	#dark.red .fill-transparent {
+		fill: rgb(65, 60, 60);
 	}
-.fill-transparent {
-	fill: #F9F9F9 !important;
-}
-	#dark .fill-transparent {
-		fill: #3C3D37 !important;
+	#dark.orange .fill-transparent {
+		fill: rgb(66, 62, 59);
 	}
-.stroke-transparent {
-	stroke: #F9F9F9 !important;
+	#dark.yellow .fill-transparent {
+		fill: rgb(65, 64, 59);
+	}
+	#dark.green .fill-transparent {
+		fill: rgb(61, 64, 61);
+	}
+	#dark.purple .fill-transparent {
+		fill: rgb(61, 61, 64);
+	}
+	#dark.pink .fill-transparent {
+		fill: rgb(65, 60, 61);
+	}
+.stroke-transparent,
+.blue .stroke-transparent {
+	stroke: rgb(246, 246, 246);
 }
-	#dark .stroke-transparent {
-		stroke: #3C3D37 !important;
+.red .stroke-transparent {
+	stroke: rgb(250, 246, 246);
+}
+.orange .stroke-transparent {
+	stroke: rgb(249, 248, 246);
+}
+.yellow .stroke-transparent {
+	stroke: rgb(249, 249, 246);
+}
+.green .stroke-transparent {
+	stroke: rgb(247, 249, 247);
+}
+.purple .stroke-transparent {
+	stroke: rgb(247, 247, 249);
+}
+.pink .stroke-transparent {
+	stroke: rgb(250, 246, 247);
+}
+	#dark .stroke-transparent,
+	#dark.blue .stroke-transparent {
+		stroke: rgb(45, 45, 45);
+	}
+	#dark.red .stroke-transparent {
+		stroke: rgb(65, 60, 60);
+	}
+	#dark.orange .stroke-transparent {
+		stroke: rgb(66, 62, 59);
+	}
+	#dark.yellow .stroke-transparent {
+		stroke: rgb(65, 64, 59);
+	}
+	#dark.green .stroke-transparent {
+		stroke: rgb(61, 64, 61);
+	}
+	#dark.purple .stroke-transparent {
+		stroke: rgb(61, 61, 64);
+	}
+	#dark.pink .stroke-transparent {
+		stroke: rgb(65, 60, 61);
 	}
 
 #ibx:hover .fill-color {

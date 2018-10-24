@@ -13,15 +13,11 @@ projects-menu-active: true
 ---
 
 <style>
-.link-button {
-	background-color: #f57a00;
-	box-shadow: inset 0 .65em 1.3em rgba(255,255,255,.1875),0 .43em .87em -.2em rgba(255,129,0,.2);
-}
 html {
-	background-color: #f6f6ef;
+	background-color: hsla(60, 28%, 95%, 0.5);
 }
 menu {
-	background-color: #ff6600 !important;
+	background-color: #FF8100 !important;
 }
 hr, #dark hr {
 	background: none;
@@ -35,6 +31,9 @@ hr, #dark hr {
 #settings-toggle {
 	color: black !important;
 }
+menu a:hover {
+	background-color: transparent !important;
+}
 </style>
 <h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="/images/projects/code/hacker-news-cleanser/sponge.png" /></h1>
 <p>This is a self-hosted service that will auto-hide <a href="https://news.ycombinator.com">Hacker News</a> articles by filtering articles based on:</p>
@@ -44,7 +43,7 @@ hr, #dark hr {
 <li>Title regex matching</li>
 <li>Username</li>
 </ul>
-<p><a href="https://github.com/barrowclift/hacker-news-cleanser" style="padding-left:2em;padding-right:2em;text-align:left;" class="link-button">Github</a></p>
+<p><a href="https://github.com/barrowclift/hacker-news-cleanser" style="padding-left:2em;padding-right:2em;text-align:left;" class="button">Github</a></p>
 <hr>
 <h3 id="why-this-exists" class="anchored">Why This Exists</h3>
 <p>I’ve been a “lurker” on Hacker News for three years and have long enjoyed reading the thoughtful articles and sometimes heated but always informative comments.</p>

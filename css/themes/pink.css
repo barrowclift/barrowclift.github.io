@@ -1,183 +1,97 @@
- .active,
-.hover:hover:not(.active),
-main a,
-main a:link,
-main a:visited,
-.anchor,
-#settings-toggle:hover {
-	color: #FF2D55;
+/**
+ * Hex: #FF2D55
+ * RGB: rgb(255, 45, 85);
+ * HSL: hsl(349, 100%, 59%);
+ */
+a,
+#mainmenu .active,
+#mainmenu a:hover,
+#settings-toggle:hover,
+#settings-toggle.active,
+#submenu a:hover,
+.header a:hover,
+a:hover .header {
+	color: hsl(349, 100%, 59%);
 }
-.block-list a:hover h3,
-#dark .block-list a:hover h3 {
-	color: #FF2D55 !important;
+#logo:hover .signature-color {
+	fill: hsl(349, 100%, 59%);
 }
-.anchor:hover,
-main a:hover {
-	color: hsl(349, 100%, 49%);
+.backdrop {
+	background-color: hsl(349, 100%, 59%);
 }
-#dark .anchor:hover,
-#dark main a:hover {
-	color: hsl(349, 100%, 69%);
-}
-.anchor:hover,
-main a:not(.link-button):hover,
-menu a:hover,  menu a.light-hover,
-.hover:hover:not(.active),
+
+a:hover,
 #submenu {
-	background-color: hsla(342, 100%, 65%, 0.1);
+	background-color: hsla(349, 100%, 59%, 0.1);
 }
-#dark main a:not(.link-button):hover,
-#dark menu a:hover, #dark menu a.light-hover,
-#dark .anchor:hover,
-#dark .hover:hover:not(.active),
-#dark #submenu {
-	background-color: hsla(342, 100%, 65%, 0.15);
+
+/* Highlights (must be seperate, combining them breaks the style) */
+::selection { /* Safari */
+	background: hsla(349, 100%, 59%, 0.99);
+	color: white;
 }
-h1 a:hover {
-	color: #FF2D55 !important;
+::-moz-selection { /* Firefox */
+	background: hsla(349, 100%, 59%, 0.99);
+	color: white;
 }
-a .fill-color {
-	fill: #FF2D55;
+
+button,
+.button {
+	background-color: hsl(349, 100%, 59%);
+	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2);
 }
+	 button:hover,
+	 .button:hover {
+		background-color: hsl(349, 100%, 49%);
+		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(349, 100%, 49%, 0.2);
+	}
+	 button:active,
+	 .button:active {
+		background-color: hsl(349, 100%, 49%);
+		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(349, 100%, 49%, 0.2);
+	}
 button.bigfoot-footnote__button {
-	background-color: #FF2D55;
+	background-color: hsla(349, 100%, 59%, 0.1);
+	box-shadow: none;
 }
 	 button.bigfoot-footnote__button:after {
-		color: hsl(349, 100%, 49%);
+		color: hsl(349, 100%, 59%) !important;
 	}
-	#dark button.bigfoot-footnote__button:after {
-		color: hsl(349, 100%, 69%);
-	}
-	 button.bigfoot-footnote__button {
-		background-color: hsla(342, 100%, 65%, 0.1);
-	}
-	#dark button.bigfoot-footnote__button {
-		background-color: hsla(342, 100%, 65%, 0.15);
-	}
-button.bigfoot-footnote__button:hover {
-	background-color: hsl(349, 100%, 49%);
-}
-	 button.bigfoot-footnote__button:hover,
-	 button.bigfoot-footnote__button:hover,
-	 button.bigfoot-footnote__button:focus {
-		background-color: #FF2D55 !important;
+	 button.bigfoot-footnote__button:hover {
+		background-color: hsl(349, 100%, 59%) !important;
+		box-shadow: 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2);
 	}
 	 button.bigfoot-footnote__button:active,
 	 button.bigfoot-footnote__button.is-active {
 		background-color: hsl(349, 100%, 49%) !important;
+		box-shadow: 0 0.43em 0.87em -0.2em hsla(349, 100%, 49%, 0.2);
 	}
-button:not(.bigfoot-footnote__button),
-.link-button {
-	background-color: hsl(349, 100%, 57%);
-	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 0.43em 0.87em -0.2em rgba(255, 45, 85, 0.2);
-}
-	 button:not(.bigfoot-footnote__button):hover,
-	 .link-button:hover {
-		background-color: hsl(349, 100%, 52%);
-	}
-	 button:not(.bigfoot-footnote__button):active,
-	 .link-button:active {
-		background-color: hsl(349, 100%, 52%);
-		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, .0625), 0 0.43em 0.87em -0.2em rgba(255, 45, 85, 0.2);
-	}
+
 input:focus,
 textarea:focus {
-	border-color: #FF2D55 !important;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em rgba(255, 45, 85, 0.2) !important;
+	border-color: hsl(349, 100%, 59%) !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2) !important;
 }
-a:hover .fill-color {
-	fill: hsl(349, 100%, 49%) !important;
+
+.codehilite,
+.highlight {
+	background-color: rgb(36, 34, 34);
 }
-#dark .hover:hover:not(.active) {
-	color: #FF2D55;
+
+#dark .header a:hover,
+#dark a:hover .header {
+	color: hsl(349, 100%, 59%);
 }
-#logo:hover .signature-color {
-	fill: #FF2D55 !important;
+#dark a:hover,
+#dark #submenu,
+#dark button.bigfoot-footnote__button {
+	background-color: hsla(349, 100%, 59%, 0.15);
 }
-a .fill-color {
-	fill: #FF2D55;
-}
-#dark .active {
-	background-color: unset;
-	color: #FF2D55;
-}
+
 /* Highlights (must be seperate, combining them breaks the style) */
-::selection { /* Safari */
-	background: rgba(255, 45, 85, 0.99);
-	color: white;
-}
-::-moz-selection { /* Firefox */
-	background: rgba(255, 45, 85, 0.99);
-	color: white;
-}
 #dark ::selection { /* Safari */
-	background: rgba(255, 45, 85, 0.85);
+	background: hsla(349, 100%, 59%, 0.85);
 }
 #dark ::-moz-selection { /* Firefox */
-	background: rgba(255, 45, 85, 0.85);
-}
-.backdrop {
-	background-color: #FF2D55;
-}
-menu {
-	background-color: rgba(255, 252, 253, 0.95);
-}
-#dark menu {
-	background-color: rgba(28, 23, 24, 0.95);
-}
-.safari menu {
-	background-color: rgba(255, 252, 253, 0.7);
-}
-#dark.safari menu {
-	background-color: rgba(28, 23, 24, 0.7);
-}
-[data-hint]:after,
-.card,
-.bigfoot-footnote__content,
-.bigfoot-footnote__wrapper,
-.bigfoot-footnote__tooltip,
-.bigfoot-footnote {
-	background-color: rgb(249, 246, 247);
-}
-.popup {
-	background-color: rgba(249, 246, 247, 0.95);
-}
-.safari .popup {
-	background-color: rgba(249, 246, 247, 0.9);
-}
-#dark [data-hint]:after,
-#dark .card,
-#dark .bigfoot-footnote__content,
-#dark .bigfoot-footnote__wrapper,
-#dark .bigfoot-footnote__tooltip,
-#dark .bigfoot-footnote {
-	background-color: rgb(65, 60, 61);
-}
-#dark .popup {
-	background-color: rgba(65, 60, 61, 0.95);
-}
-#dark.safari .popup {
-	background-color: rgba(65, 60, 61, 0.9);
-}
-.purple hr {
-	background-color: rgb(240, 240, 240);
-	background: rgb(240, 240, 240); /* Old browsers */
-	background: -moz-linear-gradient(left,  #FFFDFD 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FFFDFD 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFDFD), color-stop(25%,rgb(240, 240, 240)), color-stop(50%,rgb(240, 240, 240)), color-stop(75%,rgb(240, 240, 240)), color-stop(100%,#FFFDFD)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #FFFDFD 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FFFDFD 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, #FFFDFD 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FFFDFD 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, #FFFDFD 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FFFDFD 100%); /* IE10+ */
-	background: linear-gradient(to right, #FFFDFD 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FFFDFD 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFDFD', endColorstr='#FFFDFD',GradientType=1 ); /* IE6-9 */
-}
-#dark.purple hr {
-	background-color: #5A5B56;
-	background: #5A5B56;
-	background: -moz-linear-gradient(left, #282425 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #282425 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #282425), color-stop(25%, #5A5B56), color-stop(50%, #5A5B56), color-stop(75%, #5A5B56), color-stop(100%, #282425));
-	background: -webkit-linear-gradient(left, #282425 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #282425 100%);
-	background: -o-linear-gradient(left, #282425 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #282425 100%);
-	background: -ms-linear-gradient(left, #282425 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #282425 100%);
-	background: linear-gradient(to right, #282425 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #282425 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#282425', endColorstr='#282425', GradientType=1 );
+	background: hsla(349, 100%, 59%, 0.85);
 }

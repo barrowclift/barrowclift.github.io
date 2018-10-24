@@ -8,15 +8,15 @@ anchors: false
 title: "Hello"
 ---
 
-<style>
+<!-- <style>
 	@media (min-width: 700px) {
-		.link-button-group li {
+		.button-group li {
 			width: 33%;
 		}
-		.link-button-group li:first-child {
+		.button-group li:first-child {
 			margin-left: 0;
 		}
-		.link-button-group {
+		.button-group {
 			text-align: left;
 		}
 	}
@@ -32,7 +32,53 @@ title: "Hello"
 
 <h3 style="margin-bottom:1.3em">I currently work for Comcast in Philly.</h3>
 
-<ul class="link-button-group">
-	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="link-button">Read my Articles</p></a></li>
-	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="link-button">Browse my Projects</p></a></li>
-</ul>
+<ul class="button-group">
+	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="button">Read my Articles</p></a></li>
+	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="button">Browse my Projects</p></a></li>
+</ul> -->
+
+<article>
+<p>Those months were a frantic scramble. Designing the games themselves was trivial, but learning how the existing system worked and building the necessary engine for it to perform like a computer display proved to be a challenging process. It required a great deal of collaboration with <a href="http://www.brandywinerealty.com">Brandywine Reality Trust</a> every step of the way, for everything from frequent building access to fixing burnt out and incorrectly mapped LEDs. Thanks to both party's efforts, the necessary piping was completed just in time, leaving the crowd of spectators to kick off 2013's Philly Tech Week with Pong on the Cira Center's grand LED matrix "screen" from the historic Philadelphia Art Museum.</p>
+
+<table id="list" class="table table-sm table-hover text-nowrap"><thead><tr class="d-none d-md-table-row"><td class="col-auto"></td><th style="width:55%" class="col filename">File Name</th><th style="width:20%" class="col-auto d-none d-md-table-cell">File Size</th><th style="width:25%" class="col-auto d-none d-md-table-cell">Date</th></tr></thead>
+<tbody><tr><td class="col-auto"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></td><td class="link col filename">Private</td><td class="size col-auto d-none d-md-table-cell">-</td><td class="date col-auto d-none d-md-table-cell">Oct 11, 10:16PM</td></tr>
+<tr><td class="col-auto"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></td><td class="link col filename">Public</td><td class="size col-auto d-none d-md-table-cell">-</td><td class="date col-auto d-none d-md-table-cell">Oct 11,  2:18PM</td></tr>
+</tbody></table>
+
+<p>Those months were a frantic scramble. Designing the games themselves was trivial, but learning how the existing system worked and building the necessary engine for it to perform like a computer display proved to be a challenging process. It required a great deal of collaboration with <a href="http://www.brandywinerealty.com">Brandywine Reality Trust</a> every step of the way, for everything from frequent building access to fixing burnt out and incorrectly mapped LEDs. Thanks to both party's efforts, the necessary piping was completed just in time, leaving the crowd of spectators to kick off 2013's Philly Tech Week with Pong on the Cira Center's grand LED matrix "screen" from the historic Philadelphia Art Museum.</p>
+
+<pre>This is a test</pre>
+
+<p>Those <code>months were a frantic</code> scramble. Designing the games themselves was trivial, but learning how the existing system worked and building the necessary engine for it to perform like a computer display proved to be a challenging process. It required a great deal of collaboration with <a href="http://www.brandywinerealty.com">Brandywine Reality Trust</a> every step of the way, for everything from frequent building access to fixing burnt out and incorrectly mapped LEDs. Thanks to both party's efforts, the necessary piping was completed just <kbd>Spacebar</kbd> in time, leaving the crowd of spectators to kick off 2013's Philly Tech Week with Pong on the Cira Center's grand LED matrix "screen" from the historic Philadelphia Art Museum.</p>
+
+<blockquote>Those months were a frantic scramble. Designing the games themselves was trivial, but learning how the existing system worked and building the necessary engine for it to perform like a computer display proved to be a challenging process. It required a great deal of collaboration with <a href="http://www.brandywinerealty.com">Brandywine Reality Trust</a> every step of the way, for everything from frequent building access to fixing burnt out and incorrectly mapped LEDs. Thanks to both party's efforts, the necessary piping was completed just in time, leaving the crowd of spectators to kick off 2013's Philly Tech Week with Pong on the Cira Center's grand LED matrix "screen" from the historic Philadelphia Art Museum.</blockquote>
+
+<p>While organizing reference materials or studying, there are times we *really* want to emphasis a word or snippet, so much so that even __bolding__ the text won't suffice. For situations like this, <mark>highlighting is fully supported</mark> using the `==text to highlight==` syntax. For the highlight-lovers out there, multiple flavors like <mark class="red">Red</mark>, <mark class="orange">Orange</mark>, <mark class="yellow">Yellow</mark>, <mark class="blue">Blue</mark>, <mark class="green">Green</mark>, <mark class="purple">Purple</mark>, <mark class="pink">Pink</mark>, and <mark class="gray">Gray</mark> are supported.</p>
+
+<p>Additionally, if you want your highlights to function as tags instead, just provide the additional `tag` class:</p>
+
+<p>
+<mark class="tag red">Red</mark> <mark class="tag orange">Orange</mark> <mark class="tag yellow">Yellow</mark> <mark class="tag blue">Blue</mark> <mark class="tag green">Green</mark> <mark class="tag purple">Purple</mark> <mark class="tag pink">Pink</mark> <mark class="tag gray">Gray</mark>
+</p>
+
+<div class="admonition update">
+<p class="admonition-title">Update: March 17, 2017</p>
+<p>This process has changed as of iOS 10. While the steps below still apply for those on older versions, those running iOS 10+ must follow follow <a href="#admonitions">these steps</a> instead.</p>
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">Trigger Warning</p>
+<p>What follows are recounts of graphically violent stories that may not be suitable for those dealing with trauma such as PTSD. Reader discretion is advised.</p>
+</div>
+
+<div class="admonition success">
+<p class="admonition-title">All Tests Passed</p>
+<p>All tests passed full regression testing.</p>
+</div>
+
+<div class="admonition unknown">
+<p class="admonition-title">Title</p>
+<p>Generic admonition block.</p>
+</div>
+
+</article>
