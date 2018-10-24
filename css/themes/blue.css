@@ -1,185 +1,97 @@
- .active,
-.hover:hover:not(.active),
-main a,
-main a:link,
-main a:visited,
-.anchor,
-#settings-toggle:hover {
-	color: #007AFF;
-}
-#submenu {
-	background-color: hsla(211, 100%, 90%, 0.75);
-}
-.block-list a:hover h3,
-#dark .block-list a:hover h3 {
-	color: #007AFF !important
-}
-.anchor:hover,
-main a:hover {
-	color: #0063CE;
-}
-#dark .anchor:hover,
-#dark main a:hover {
-	color: hsl(211, 100%, 60%);
-}
-.anchor:hover,
-main a:not(.link-button):hover,
-menu a:hover, menu a.light-hover,
-.hover:hover:not(.active),
-#submenu {
-	background-color: rgba(0, 122, 255, 0.1);
-}
-#dark main a:not(.link-button):hover,
-#dark menu a:hover, #darkmenu a.light-hover,
-#dark .anchor:hover,
-#dark .hover:hover:not(.active),
-#dark #submenu {
-	background-color: rgba(0, 122, 255, 0.15);
-}
-h1 a:hover {
-	color: #007AFF !important;
-}
-a .fill-color {
-	fill: #007AFF;
-}
-button.bigfoot-footnote__button {
-	background-color: #007AFF;
-}
-	 button.bigfoot-footnote__button:after {
-		color: #0063CE;
-	}
-	 button.bigfoot-footnote__button {
-		background-color: rgba(0, 122, 255, 0.15) !important;
-	}
-button.bigfoot-footnote__button:hover {
-	background-color: #0063CE;
-}
-	 button.bigfoot-footnote__button:hover,
-	 button.bigfoot-footnote__button:hover,
-	 button.bigfoot-footnote__button:focus,
-	#dark button.bigfoot-footnote__button:hover,
-	#dark button.bigfoot-footnote__button:hover,
-	#dark button.bigfoot-footnote__button:focus {
-		background-color: #007AFF !important;
-	}
-	 button.bigfoot-footnote__button:active,
-	 button.bigfoot-footnote__button.is-active,
-	#dark button.bigfoot-footnote__button:active,
-	#dark button.bigfoot-footnote__button.is-active {
-		background-color: #0063CE !important;
-	}
-button:not(.bigfoot-footnote__button),
-.link-button {
-	background-color: hsl(211, 100%, 48%);
-	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
-}
-	 button:not(.bigfoot-footnote__button):hover,
-	 .link-button:hover {
-		background-color: hsl(211, 100%, 45%);
-	}
-	 button:not(.bigfoot-footnote__button):active,
-	 .link-button:active {
-		background-color: hsl(211, 100%, 45%);
-		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, .0625), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2);
-	}
-input:focus,
-textarea:focus {
-	border-color: #007AFF !important;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em rgba(0, 122, 255, 0.2) !important;
-}
-a:hover .fill-color {
-	fill: #0063CE !important;
-}
-#dark .hover:hover:not(.active) {
-	color: #007AFF;
+/**
+ * Hex: #007AFF
+ * RGB: rgb(0, 122, 255);
+ * HSL: hsl(211, 100%, 50%);
+ */
+a,
+#mainmenu .active,
+#mainmenu a:hover,
+#settings-toggle:hover,
+#settings-toggle.active,
+#submenu a:hover,
+.header a:hover,
+a:hover .header  {
+	color: hsl(211, 100%, 50%);
 }
 #logo:hover .signature-color {
-	fill: #007AFF !important;
+	fill: hsl(211, 100%, 50%);
 }
-a .fill-color {
-	fill: #007AFF;
+.backdrop {
+	background-color: hsl(211, 100%, 50%);
 }
-#dark .active {
-	background-color: unset;
-	color: #007AFF;
+
+a:hover,
+#submenu {
+	background-color: hsla(211, 100%, 50%, 0.1);
 }
+
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
-	background: rgba(0, 122, 255, 0.99);
+	background: hsla(211, 100%, 50%, 0.99);
 	color: white;
 }
 ::-moz-selection { /* Firefox */
-	background: rgba(0, 122, 255, 0.99);
+	background: hsla(211, 100%, 50%, 0.99);
 	color: white;
 }
+
+button,
+.button {
+	background-color: hsl(211, 100%, 50%);
+	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
+}
+	 button:hover,
+	 .button:hover {
+		background-color: hsl(211, 100%, 40%);
+		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
+	}
+	 button:active,
+	 .button:active {
+		background-color: hsl(211, 100%, 40%);
+		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
+	}
+button.bigfoot-footnote__button {
+	background-color: hsla(211, 100%, 50%, 0.1);
+	box-shadow: none;
+}
+	 button.bigfoot-footnote__button:after {
+		color: hsl(211, 100%, 50%) !important;
+	}
+	 button.bigfoot-footnote__button:hover {
+		background-color: hsl(211, 100%, 50%) !important;
+		box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
+	}
+	 button.bigfoot-footnote__button:active,
+	 button.bigfoot-footnote__button.is-active {
+		background-color: hsl(211, 100%, 40%) !important;
+		box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
+	}
+
+input:focus,
+textarea:focus {
+	border-color: hsl(211, 100%, 50%) !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2) !important;
+}
+
+.codehilite,
+.highlight {
+	background-color: rgb(33, 34, 36);
+}
+
+#dark .header a:hover,
+#dark a:hover .header {
+	color: hsl(211, 100%, 50%);
+}
+#dark a:hover,
+#dark #submenu,
+#dark button.bigfoot-footnote__button {
+	background-color: hsla(211, 100%, 50%, 0.15);
+}
+
+/* Highlights (must be seperate, combining them breaks the style) */
 #dark ::selection { /* Safari */
-	background: rgba(0, 122, 255, 0.85);
+	background: hsla(211, 100%, 50%, 0.85);
 }
 #dark ::-moz-selection { /* Firefox */
-	background: rgba(0, 122, 255, 0.85);
-}
-.backdrop {
-	background-color: #007AFF;
-}
-menu {
-	background-color: rgba(252, 253, 255, 0.95);
-}
-#dark menu {
-	background-color: rgba(22, 25, 28, 0.95);
-}
-.safari menu {
-	background-color: rgba(252, 253, 255, 0.7);
-}
-#dark.safari menu {
-	background-color: rgba(22, 25, 28, 0.7);
-}
-[data-hint]:after,
-.card,
-.bigfoot-footnote__content,
-.bigfoot-footnote__wrapper,
-.bigfoot-footnote__tooltip,
-.bigfoot-footnote {
-	background-color: rgb(246, 247, 249);
-}
-.popup {
-	background-color: rgba(246, 247, 249, 0.95);
-}
-.safari .popup {
-	background-color: rgba(246, 247, 249, 0.9);
-}
-#dark [data-hint]:after,
-#dark .card,
-#dark .bigfoot-footnote__content,
-#dark .bigfoot-footnote__wrapper,
-#dark .bigfoot-footnote__tooltip,
-#dark .bigfoot-footnote {
-	background-color: rgb(59, 62, 65);
-}
-#dark .popup {
-	background-color: rgba(59, 62, 65, 0.95);
-}
-#dark.safari .popup {
-	background-color: rgba(59, 62, 65, 0.9);
-}
-hr {
-	background-color: rgb(240, 240, 240);
-	background: rgb(240, 240, 240); /* Old browsers */
-	background: -moz-linear-gradient(left,  #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FCFDFF), color-stop(25%,rgb(240, 240, 240)), color-stop(50%,rgb(240, 240, 240)), color-stop(75%,rgb(240, 240, 240)), color-stop(100%,#FCFDFF)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* IE10+ */
-	background: linear-gradient(to right, #FCFDFF 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 50%, rgb(240, 240, 240) 75%, #FCFDFF 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCFDFF', endColorstr='#FCFDFF',GradientType=1 ); /* IE6-9 */
-}
-#dark hr {
-	background-color: #5A5B56;
-	background: #5A5B56;
-	background: -moz-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #242629), color-stop(25%, #5A5B56), color-stop(50%, #5A5B56), color-stop(75%, #5A5B56), color-stop(100%, #242629));
-	background: -webkit-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
-	background: -o-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
-	background: -ms-linear-gradient(left, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
-	background: linear-gradient(to right, #242629 0%, #5A5B56 25%, #5A5B56 50%, #5A5B56 75%, #242629 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#242629', endColorstr='#242629', GradientType=1 );
+	background: hsla(211, 100%, 50%, 0.85);
 }

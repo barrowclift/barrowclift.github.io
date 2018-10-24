@@ -102,11 +102,6 @@ function upArrowClicked() {
 	$('#parallax').animate({scrollTop: 300}, 250);
 }
 
-/* Better style image alt text when/if images fail to load */
-$("img").error(function(){
-	$(this).addClass("failed-to-load");
-});
-
 /* When ready... */
 $(document).ready(function() {
 	/* Dark Mode */
