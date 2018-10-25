@@ -10,13 +10,13 @@ title: "Hello"
 
 <style>
 	@media (min-width: 700px) {
-		.link-button-group li {
+		.button-group li {
 			width: 33%;
 		}
-		.link-button-group li:first-child {
+		.button-group li:first-child {
 			margin-left: 0;
 		}
-		.link-button-group {
+		.button-group {
 			text-align: left;
 		}
 	}
@@ -32,7 +32,7 @@ title: "Hello"
 
 <h3 style="margin-bottom:1.3em">I currently work for Comcast in Philly.</h3>
 
-<ul class="link-button-group">
-	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="link-button">Read my Articles</p></a></li>
-	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="link-button">Browse my Projects</p></a></li>
+<ul class="button-group">
+	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="button">Read my Articles</p></a></li>
+	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="button">Browse my Projects</p></a></li>
 </ul>
