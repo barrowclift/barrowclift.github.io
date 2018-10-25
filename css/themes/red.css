@@ -42,12 +42,12 @@ button,
 }
 	 button:hover,
 	 .button:hover {
-		background-color: hsl(3, 100%, 49%);
+		background-color: hsl(3, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(3, 100%, 49%, 0.2);
 	}
 	 button:active,
 	 .button:active {
-		background-color: hsl(3, 100%, 49%);
+		background-color: hsl(3, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(3, 100%, 49%, 0.2);
 	}
 button.bigfoot-footnote__button {

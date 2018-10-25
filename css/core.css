@@ -470,7 +470,7 @@ menu {
 			height: 46px;
 		}
 		#submenu a:hover {
-			background-color: transparent;
+			background-color: transparent !important;
 		}
 		#submenu ul li {
 			padding-top: 0.833em;
@@ -977,6 +977,31 @@ td {
 	padding-top: 0.15em;
 	padding-bottom: 0.15em;
 }
+	td[align="left"],
+	th[align="left"],
+	thead[align="left"] {
+		padding-right: 2em;
+		padding-left: 0;
+	}
+	td[align="left"]:last-child,
+	th[align="left"]:last-child,
+	thead[align="left"]:last-child {
+		padding-right: 0;
+	}
+	td[align="right"],
+	th[align="right"],
+	thead[align="right"] {
+		padding-left: 2em;
+		padding-right: 0;
+	}
+	td[align="right"]:first-child,
+	th[align="right"]:first-child,
+	thead[align="right"]:first-child, {
+		padding-left: 0;
+	}
+	tr:last-child td {
+		padding-bottom: 0;
+	}
 
 
 /* ----- TAGS & HIGHLIGHTING ----- */
@@ -1132,7 +1157,7 @@ article > p > img {
 }
 
 .edge-to-edge a:hover,
-.figure a:hover {
+figure a:hover {
 	background-color: transparent !important;
 }
 
@@ -1410,7 +1435,7 @@ pre {
 .highlight pre,
 pre code {
 	white-space: pre;
-	background-color: transparent;
+	background-color: transparent !important;
 	display: inline-block;
 	border: 0;
 }
@@ -1596,8 +1621,13 @@ input, textarea {
 	transition: height 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease;
 }
 
+pre
+code {
+	transition: background-color: 0.2s cubic-bezier(0.28, 0.11, 0.32, 0), color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0), border-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0);
+}
+
 kbd {
-	transition: all 0.2s ease;
+	transition: all 0.2s cubic-bezier(0.28, 0.11, 0.32, 0);
 }
 
 
@@ -1770,9 +1800,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
 	.popup {
 		margin-left: -19.25em;
 		top: 3.25em;
-		-webkit-transform-origin: 90% 0;
-		-ms-transform-origin: 90% 0;
-		transform-origin: 90% 0;
+		-webkit-transform-origin: top right;
+		-ms-transform-origin: top right;
+		transform-origin: top right;
 	}
 	.ignore-accent-color .popup {
 		width: 8.75em;
@@ -2516,11 +2546,14 @@ button,
 a.button:hover,
 mark.tag,
 .codehilite,
-.codehilite pre
+.codehilite pre,
 .highlight,
 .highlight pre,
 .highlight pre code {
 	color: rgba(255, 255, 255, 1);
+}
+a.button {
+	color: rgba(255, 255, 255, 1) !important;
 }
 
 /* ----- LOGO ----- */
@@ -2608,12 +2641,12 @@ button,
 }
 	button:hover,
 	.button:hover {
-		background-color: hsl(211, 100%, 45%);
+		background-color: hsl(211, 100%, 45%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
 	}
 	button:active,
 	.button:active {
-		background-color: hsl(211, 100%, 45%);
+		background-color: hsl(211, 100%, 45%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
 	}
 button.bigfoot-footnote__button {

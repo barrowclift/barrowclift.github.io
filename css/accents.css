@@ -86,12 +86,12 @@ mark.tag.blue {
 }
 	.blue button:hover,
 	.blue .button:hover {
-		background-color: hsl(211, 100%, 40%);
+		background-color: hsl(211, 100%, 40%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
 	}
 	.blue button:active,
 	.blue .button:active {
-		background-color: hsl(211, 100%, 40%);
+		background-color: hsl(211, 100%, 40%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
 	}
 .blue button.bigfoot-footnote__button {
@@ -205,12 +205,12 @@ mark.tag.red {
 }
 	.red button:hover,
 	.red .button:hover {
-		background-color: hsl(3, 100%, 49%);
+		background-color: hsl(3, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(3, 100%, 49%, 0.2);
 	}
 	.red button:active,
 	.red .button:active {
-		background-color: hsl(3, 100%, 49%);
+		background-color: hsl(3, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(3, 100%, 49%, 0.2);
 	}
 .red button.bigfoot-footnote__button {
@@ -319,12 +319,12 @@ mark.tag.orange {
 }
 	.orange button:hover,
 	.orange .button:hover {
-		background-color: hsl(30, 100%, 47.5%);
+		background-color: hsl(30, 100%, 47.5%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(30, 100%, 47.5%, 0.2);
 	}
 	.orange button:active,
 	.orange .button:active {
-		background-color: hsl(30, 100%, 47.5%);
+		background-color: hsl(30, 100%, 47.5%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(30, 100%, 47.5%, 0.2);
 	}
 .orange button.bigfoot-footnote__button {
@@ -438,12 +438,12 @@ mark.tag.yellow {
 }
 	.yellow button:hover,
 	.yellow .button:hover {
-		background-color: hsl(48, 100%, 47.5%);
+		background-color: hsl(48, 100%, 47.5%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(48, 100%, 47.5%, 0.2);
 	}
 	.yellow button:active,
 	.yellow .button:active {
-		background-color: hsl(48, 100%, 47.5%);
+		background-color: hsl(48, 100%, 47.5%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(48, 100%, 47.5%, 0.2);
 	}
 .yellow button.bigfoot-footnote__button {
@@ -555,12 +555,12 @@ mark.tag.green {
 }
 	.green button:hover,
 	.green .button:hover {
-		background-color: hsl(130, 65%, 47%);
+		background-color: hsl(130, 65%, 47%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(130, 65%, 47%, 0.2);
 	}
 	.green button:active,
 	.green .button:active {
-		background-color: hsl(130, 65%, 47%);
+		background-color: hsl(130, 65%, 47%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(130, 65%, 47%, 0.2);
 	}
 .green button.bigfoot-footnote__button {
@@ -669,12 +669,12 @@ mark.tag.purple {
 }
 	.purple button:hover,
 	.purple .button:hover {
-		background-color: hsl(241, 61%, 54%);
+		background-color: hsl(241, 61%, 54%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(241, 61%, 54%, 0.2);
 	}
 	.purple button:active,
 	.purple .button:active {
-		background-color: hsl(241, 61%, 54%);
+		background-color: hsl(241, 61%, 54%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(241, 61%, 54%, 0.2);
 	}
 .purple button.bigfoot-footnote__button {
@@ -783,12 +783,12 @@ mark.tag.pink {
 }
 	.pink button:hover,
 	.pink .button:hover {
-		background-color: hsl(349, 100%, 49%);
+		background-color: hsl(349, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(349, 100%, 49%, 0.2);
 	}
 	.pink button:active,
 	.pink .button:active {
-		background-color: hsl(349, 100%, 49%);
+		background-color: hsl(349, 100%, 49%) !important;
 		box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(349, 100%, 49%, 0.2);
 	}
 .pink button.bigfoot-footnote__button {
