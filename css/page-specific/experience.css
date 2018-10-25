@@ -79,22 +79,22 @@ main ul {
 		fill: rgb(45, 45, 45);
 	}
 	#dark.red .fill-transparent {
-		fill: rgb(65, 60, 60);
+		fill: rgb(45, 45, 45);
 	}
 	#dark.orange .fill-transparent {
-		fill: rgb(66, 62, 59);
+		fill: rgb(45, 45, 45);
 	}
 	#dark.yellow .fill-transparent {
-		fill: rgb(65, 64, 59);
+		fill: rgb(45, 45, 44);
 	}
 	#dark.green .fill-transparent {
-		fill: rgb(61, 64, 61);
+		fill: rgb(45, 45, 45);
 	}
 	#dark.purple .fill-transparent {
-		fill: rgb(61, 61, 64);
+		fill: rgb(45, 45, 45);
 	}
 	#dark.pink .fill-transparent {
-		fill: rgb(65, 60, 61);
+		fill: rgb(45, 45, 45);
 	}
 .stroke-transparent,
 .blue .stroke-transparent {
@@ -123,22 +123,22 @@ main ul {
 		stroke: rgb(45, 45, 45);
 	}
 	#dark.red .stroke-transparent {
-		stroke: rgb(65, 60, 60);
+		stroke: rgb(45, 45, 45);
 	}
 	#dark.orange .stroke-transparent {
-		stroke: rgb(66, 62, 59);
+		stroke: rgb(45, 45, 45);
 	}
 	#dark.yellow .stroke-transparent {
-		stroke: rgb(65, 64, 59);
+		stroke: rgb(45, 45, 44);
 	}
 	#dark.green .stroke-transparent {
-		stroke: rgb(61, 64, 61);
+		stroke: rgb(45, 45, 45);
 	}
 	#dark.purple .stroke-transparent {
-		stroke: rgb(61, 61, 64);
+		stroke: rgb(45, 45, 45);
 	}
 	#dark.pink .stroke-transparent {
-		stroke: rgb(65, 60, 61);
+		stroke: rgb(45, 45, 45);
 	}
 
 #ibx:hover .fill-color {

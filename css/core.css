@@ -2831,12 +2831,9 @@ html#dark,
 /**
  * Secondary Text on Secondary Background
  */
-#dark mark.tag.light-gray,
-#dark mark.tag.light-grey,
 #dark pre,
 #dark code,
 #dark pre code,
-#dark mark,
 #dark mark code,
 #dark kbd,
 #dark input,
@@ -2859,6 +2856,18 @@ html#dark,
 #dark .permalink path {
 	fill: rgba(255, 255, 255, 0.35);
 	stroke: rgba(255, 255, 255, 0.35);
+}
+/**
+ * Lit Text
+ *
+ * Text with any dark or bold color behind it (like a button)
+ */
+#dark mark,
+#dark .admonition {
+	color: rgba(30, 30, 30, 0.9);
+}
+#dark .admonition a {
+	color: rgba(255, 255, 255, 0.8);
 }
 
 /* ----- LOGO ----- */
