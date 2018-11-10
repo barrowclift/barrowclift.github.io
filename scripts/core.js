@@ -34,7 +34,7 @@ function darkModeToggled(checkbox) {
 		$('#logo-speech-bubble').text("Stay cool, dude.");
 		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
 	} else {
-		$.removeCookie("dark-mode");
+		$.cookie("dark-mode", "off");
 		$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
 		document.getElementsByTagName("html")[0].removeAttribute("id");
 	}
@@ -106,7 +106,8 @@ function upArrowClicked() {
 $(document).ready(function() {
 	/* Dark Mode */
 	$.cookie.defaults = { expires: 265, path: '/' };
-	if ($.cookie("dark-mode")) {
+	var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	if ($.cookie("dark-mode") == "on" || (inSystemDarkMode && $.cookie("dark-mode") == null)) {
 		var cssId = 'dark-mode';
 		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
 		$("input[value='dark-mode']").prop("checked", true);
