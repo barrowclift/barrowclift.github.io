@@ -9,15 +9,19 @@
 				{% endif %}
 			</div>
 		</header>
-		<a id="hidden-logo-link" href="{{ "/hello/" | prepend: site.baseurl }}"></a>
+		<a id="hidden-logo-link" href="{{ site.baseurl }}/hello/">Welcome Page</a>
 		<ul>
-			<a class="hover {%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image'" %}active{% endif %}" href="{{ "/" | prepend: site.baseurl }}"><li>Writings</li></a>
-			<a class="hover {%if page.projects-menu-active %}active{% endif %}" href="{{ "/projects/" | prepend: site.baseurl }}"><li>Projects</li></a>
-			<a class="hide-when-small hover {%if page.about-menu-active %}active{% endif %}" id="about-link" href="{{ "/about/" | prepend: site.baseurl }}"><li>About</li></a>
-			<a class="show-when-small hover" id="submenu-toggle" onclick="submenuClicked();">
-				<input type="checkbox" name="submenu-checkbox" id="submenu-checkbox" value="submenu" onclick="submenuToggled(this);" />
-				<li>More</li>
-			</a>
+			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="{{ site.baseurl }}/">Writings</a></li>
+			<li><a class="{%if page.projects-menu-active %}active{% endif %}" href="{{ site.baseurl }}/projects/">Projects</a></li>
+			<li class="hide-when-small">
+				<a id="about-link" class="{%if page.about-menu-active %}active{% endif %}" href="{{ site.baseurl }}/about/">About</a>
+			</li>
+			<li class="show-when-small">
+				<a id="submenu-toggle" onclick="submenuClicked();">
+					<input type="checkbox" name="submenu-checkbox" id="submenu-checkbox" value="submenu" onclick="submenuToggled(this);" />
+					<span>More<span>
+				</a>
+			</li>
 		</ul>
 		{% if page.hide-settings != true %}
 		<div onclick="settingsClicked();" class="setting-toggles" id="settings-toggle">
@@ -48,12 +52,8 @@
 	</div>
 	<div id="submenu">
 		<ul>
-			<a class="hover {%if page.about-menu-active %}active{% endif %}" href="{{ "/about/" | prepend: site.baseurl }}"><li>About</li></a>
-			<a style="cursor:pointer;" class="hover" onclick="settingsClicked();">
-				<li style="display:inline-block;" class="setting-toggles" id="settings-toggle">
-					Settings
-				</li>
-			</a>
+			<li><a class="{%if page.about-menu-active %}active{% endif %}" href="{{ site.baseurl }}/about/">About</a></li>
+			<li class="setting-toggles" id="settings-toggle" style="display:inline-block;"><a style="cursor:pointer;" class="settings-switch" onclick="settingsClicked();">Settings</a></li>
 		</ul>
 	</div>
 </menu>

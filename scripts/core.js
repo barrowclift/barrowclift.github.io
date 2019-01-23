@@ -97,7 +97,7 @@ function changeAccentColor(color) {
 
 /* Full-page parallax images might confuse some people, this provides an
    actionable indicator that there's more content. Mostly needed for people on
-   macOS or iOS with hidden scrollbars enabled */   
+   macOS or iOS with hidden scrollbars enabled */
 function upArrowClicked() {
 	$('#parallax').animate({scrollTop: 300}, 250);
 }

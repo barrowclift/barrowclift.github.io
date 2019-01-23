@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: parallax-custom
 edge-to-edge: true
 
 viewing-single-page: true
@@ -7,14 +7,16 @@ anchors: false
 
 theme: custom
 ignore-accent-color: true
+
+foreground-color: "#FFFFFF"
 primary-color: "rgb(234, 110, 55)"
-primary-color-hover: "rgba(234, 110, 55, 0.1)"
-menu-color: "rgba(235, 141, 59, 0.95)"
-menu-color-safari: "rgba(235, 141, 59, 0.7)"
+background-color: "#EB8D3B"
+dark-background-color: "hsl(23, 77%, 31%)"
 
 title: "SMiLE: Heroes and Villains Mix"
 projects-menu-active: true
 ---
+
 <style>
 	#content {
 		background-color: #DF914D;
@@ -42,7 +44,7 @@ projects-menu-active: true
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.showcase {
+	#parallax-background {
 		/*IE10+ */
 		background-image: -ms-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
 		/*Mozilla Firefox */
@@ -58,14 +60,14 @@ projects-menu-active: true
 		/*background: linear-gradient(135deg, #EB8D3B 0%, #EB6B37 100%);*/
 		transition: background 5s ease-in-out;
 	}
-	#dark .showcase {
+	#dark #parallax-background {
 		background: linear-gradient(135deg, hsl(28, 91%, 29%), hsl(17, 92%, 28%) 100%);
 	}
-	.showcase img {
-		width: 35vh;
+	#parallax-background img {
+		width: 51vh;
 		border-radius: 0.25em;
 	}
-	.showcase a {
+	#parallax-background a {
 		margin: 0;
 		padding: 0;
 		display:inline-block;
@@ -73,12 +75,11 @@ projects-menu-active: true
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	.showcase a:hover {
+	#parallax-background a:hover {
 		background-color:unset;
 	}
-	.showcase {
-		padding-top: 10vh;
-		height:65vh;
+	#parallax-background {
+		padding-top: 32vh;
 	}
 	.project {
 		border-radius: 1em;
@@ -91,55 +92,49 @@ projects-menu-active: true
 	}
 	iframe {
 		margin-top: 5vh;
-		max-width: 60em;
-		margin-left: 5%;
-		margin-right: 5%;
 		margin-bottom: 5vh;
-		width: 90vw;
+		width: 105vw;
+		max-width: 60em;
 	}
 	.compactSound__artwork {
 		display:none;
 	}
 	@media (max-height: 460px) {
-		.showcase {
+		#parallax-background {
 			display:none;
 		}
 	}
 	@media (max-height: 565px) {
-		.showcase img {
+		#parallax-background img {
 			display:none;
 		}
-		.showcase {
-			height: 50vh;
+		#parallax-background {
+			padding-top: 50vh;
 		}
 	}
 	@media (min-height: 900px) {
-		.showcase {
-			height: 60vh;
-			max-height:725px;
+		#parallax-background {
 			padding-top: 5vh;
 		}
 	}
 	@media (min-width: 700px) {
-		.showcase img {
+		#parallax-background img {
 			width: 50vh;
 		}
-		.showcase {
-			padding-top: 15vh;
-			height: 85vh;
-			max-height:unset;
+		#parallax-background {
+			padding-top: 25vh;
 		}
 	}
 	@media(min-width: 700px) and (max-height: 700px) {
-		.showcase {
-			padding-top: 15vh;
+		#parallax-background {
+			padding-top: 22vh;
 		}
 	}
 	@media(min-width: 700px) and (max-height: 600px) {
-		.showcase {
-			height: 50vh;
+		#parallax-background {
+			padding-top: 38vh;
 		}
-		.showcase img {
+		#parallax-background img {
 			display:none;
 		}
 	}
@@ -151,18 +146,22 @@ projects-menu-active: true
 	}
 </style>
 
-<div class="showcase">
+<div id="parallax-background" class="layer">
 	<div>
 		<a href="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg">
 			<img src="/images/projects/music/smile-heroes-and-villains-mix/cover.jpg" class="project threeDHover" alt="Vinyl vector" />
 		</a>
 	</div>
-
 	<iframe class="project threeDHover" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255075143&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false&amp;"></iframe>
-</div>
 
-<div class="details">
-	<div class="wrapper">
+	<svg alt="Minimalist up array" onclick="upArrowClicked();" id="up-arrow" viewBox="0 0 565 565" version="1.1" role="img">
+		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<path d="M242.609127,161.5 L18.96767,385.141457 L-0.477766446,404.586893 L38.4131065,443.477766 L57.858543,424.03233 L281.5,200.390873 L505.141457,424.03233 L524.586893,443.477766 L563.477766,404.586893 L544.03233,385.141457 L320.390873,161.5 L320.461176,161.429697 L281.570303,122.538824 L281.5,122.609127 L281.429697,122.538824 L242.538824,161.429697 L242.609127,161.5 Z"></path>
+		</g>
+	</svg>
+</div>
+<main id="parallax-foreground" class="layer">
+	<article>
 		<h1>SMiLE: Heroes and Villains Mix</h1>
 		<p class="large-top-margin">In 1966, hot off recording "Pet Sounds" and with The Beatles' "Sgt. Pepper's Lonely Hearts Club Band" in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
 
@@ -181,5 +180,5 @@ projects-menu-active: true
 			<li><a href="https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg">adwolf16</a>'s <a href="https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9">SMiLE Recreation - Suite One</a> which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.</li>
 			<li>Mark Hardy's now taken down <a href="https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop">SMiLE - An Approximation</a> mix which was the general inspiration for my recreation.</li>
 		</ul>
-	</div>
+	</article>
 </div>

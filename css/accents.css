@@ -51,7 +51,7 @@ mark.tag.blue {
 .blue #mainmenu .active,
 .blue #mainmenu a:hover,
 .blue #settings-toggle:hover,
-.blue #settings-toggle.active,
+.blue #settings-toggle.active a,
 .blue #submenu a:hover,
 .blue .header a:hover,
 .blue a:hover .header  {
@@ -170,7 +170,7 @@ mark.tag.red {
 .red #mainmenu .active,
 .red #mainmenu a:hover,
 .red #settings-toggle:hover,
-.red #settings-toggle.active,
+.red #settings-toggle.active a,
 .red #submenu a:hover,
 .red .header a:hover,
 .red a:hover .header {
@@ -284,7 +284,7 @@ mark.tag.orange {
 .orange #mainmenu .active,
 .orange #mainmenu a:hover,
 .orange #settings-toggle:hover,
-.orange #settings-toggle.active,
+.orange #settings-toggle.active a,
 .orange #submenu a:hover,
 .orange .header a:hover,
 .orange a:hover .header {
@@ -403,7 +403,7 @@ mark.tag.yellow {
 .yellow #mainmenu .active,
 .yellow #mainmenu a:hover,
 .yellow #settings-toggle:hover,
-.yellow #settings-toggle.active,
+.yellow #settings-toggle.active a,
 .yellow #submenu a:hover,
 .yellow .header a:hover,
 .yellow a:hover .header {
@@ -520,7 +520,7 @@ mark.tag.green {
 .green #mainmenu .active,
 .green #mainmenu a:hover,
 .green #settings-toggle:hover,
-.green #settings-toggle.active,
+.green #settings-toggle.active a,
 .green #submenu a:hover,
 .green .header a:hover,
 .green a:hover .header {
@@ -634,7 +634,7 @@ mark.tag.purple {
 .purple #mainmenu .active,
 .purple #mainmenu a:hover,
 .purple #settings-toggle:hover,
-.purple #settings-toggle.active,
+.purple #settings-toggle.active a,
 .purple #submenu a:hover,
 .purple .header a:hover,
 .purple a:hover .header {
@@ -741,14 +741,14 @@ mark.pink {
 }
 mark.tag.pink {
 	background: unset;
-	background-image: linear-gradient(to bottom right, hsla(349, 100%, 59%, 0.9) 38.66%, hsla(352, 100%, 59%, 0.9));	
+	background-image: linear-gradient(to bottom right, hsla(349, 100%, 59%, 0.9) 38.66%, hsla(352, 100%, 59%, 0.9));
 }
 
 .pink a,
 .pink #mainmenu .active,
 .pink #mainmenu a:hover,
 .pink #settings-toggle:hover,
-.pink #settings-toggle.active,
+.pink #settings-toggle.active a,
 .pink #submenu a:hover,
 .pink .header a:hover,
 .pink a:hover .header {

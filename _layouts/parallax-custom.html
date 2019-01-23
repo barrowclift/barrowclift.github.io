@@ -20,22 +20,7 @@
 		<div id="parallax">
 			<div class="container">
 				{% include menu.html %}
-				<div id="parallax-background" class="layer">
-					<svg alt="Minimalist up array" onclick="upArrowClicked();" id="up-arrow" viewBox="0 0 565 565" version="1.1" role="img">
-						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							<path d="M242.609127,161.5 L18.96767,385.141457 L-0.477766446,404.586893 L38.4131065,443.477766 L57.858543,424.03233 L281.5,200.390873 L505.141457,424.03233 L524.586893,443.477766 L563.477766,404.586893 L544.03233,385.141457 L320.390873,161.5 L320.461176,161.429697 L281.570303,122.538824 L281.5,122.609127 L281.429697,122.538824 L242.538824,161.429697 L242.609127,161.5 Z"></path>
-						</g>
-					</svg>
-				</div>
-				<main id="parallax-foreground" class="layer">
-					{% if page.wrap-article %}
-					<article>
-						{{ content }}
-					</article>
-					{% else %}
-					{{ content }}
-					{% endif %}
-				</div>
+				{{ content }}
 			</div>
 		</div>
 
@@ -63,11 +48,11 @@
 			#up-arrow:hover path {
 				fill: rgba(255, 255, 255, 0.9);
 			}
-			#parallax-background {
-				background-image: url("/images/{{ page.image }}");
-			}
 			html {
 				background-color: {{page.background-color}};
+			}
+			html#dark {
+				background-color: {{page.dark-background-color}};
 			}
 		</style>
 
