@@ -7,25 +7,21 @@ menu {
 	background-color: {{ page.menu-color-safari }};
 }
 .signature-color {
-	fill: white !important;
+	fill: rgba(255, 255, 255, 0.5) !important;
 }
-menu ul a,
-.hover:hover:not(.active),
+menu ul a:not(.active),
 #settings-toggle {
-	color: white;
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+#logo:hover .signature-color {
+	fill: rgba(255, 255, 255, 0.9) !important;
 }
 .hover:hover:not(.active),
-menu a:hover,
+menu ul a:hover:not(.active),
+#settings-toggle:hover,
+#mainmenu .active,
 #settings-toggle:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-#settings-toggle:hover {
-	color: white;
-}
-.active,
-menu a.active:hover,
-#settings-toggle.active, #settings-toggle.active:hover {
-	background-color: rgba(255, 255, 255, 0.9);
+	color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Highlights (must be seperate, combining them breaks the style) */
@@ -49,13 +45,9 @@ menu a.active:hover,
  * HSL: {{ page.primary-color }};
  */
 a,
-#mainmenu .active,
 .header a:hover,
 a:hover .header {
 	color: {{ page.primary-color }};
-}
-#logo:hover .signature-color {
-	fill: {{ page.primary-color }};
 }
 .backdrop {
 	background-color: {{ page.primary-color }};

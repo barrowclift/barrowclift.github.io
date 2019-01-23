@@ -20,7 +20,7 @@
 	<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 
 	<!-- Add dark mode ID (if enabled) to minimize flash of white as much as possible -->
-	<script>
+	<script type="text/javascript">
 		/* See simple-get-cookie.js */
 		function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0){return null;}}else{b+=2;}var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}return decodeURI(dc.substring(b+p.length, e));}
 		/* See main.js */
@@ -43,18 +43,18 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1541868992.min.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1531916673.min.css" type="text/css" media="print" />
 
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
 	<script async src="{{ site.baseurl }}/scripts/min/core-1541868992.min.js" type="text/javascript"></script>
 	{% endif %}
 
 	<!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
-	<script>
+	<script type="text/javascript">
 		$(document).ready(function() {
 			anchorsEnabled = {{ page.anchors }};
 		});
 	</script>
 	<!-- Anchor offset -->
-	<script>
+	<script type="text/javascript">
 		!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);
 	</script>
 

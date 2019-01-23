@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-	
+
 	{% include head.html %}
 	{% if page.color %}
 	<link href="{{ site.baseurl }}/css/themes/{{ page.color }}.css" rel="stylesheet" type="text/css" lazyload="1" />
 	{% endif %}
 	<style>
-	html { font-size: 14px; }
-	@media (min-width: 700px) {
-		html { font-size: 16px; }
+	html {
+		font-size: 14px;
 	}
-	html,body { color: black; }
-	html#dark,#dark body { color: white; }
-	#dark { background-color: #111111; }
+	@media (min-width: 700px) {
+		html {
+			font-size: 16px;
+		}
+	}
+	html, body {
+		color: black;
+	}
+	html#dark,
+	#dark body {
+		color: white;
+	}
+	#dark {
+		background-color: #111111;
+	}
 	menu {
 		position: absolute !important;
 		border: unset;
@@ -24,7 +35,7 @@
 	main {
 		margin-top: 6.5em;
 	}
-	menu ul li {
+	menu ul li a {
 		text-shadow: unset;
 		color: black !important;
 	}

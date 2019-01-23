@@ -23,7 +23,7 @@
 	{% endif %}
 {% endfor %}
 
-{% if page.layout == "parallax-image" or page.layout == "post-parallax-image" or page.layout == "parallax-about" %}
+{% if page.layout == "parallax-image" or page.layout == "post-parallax-image" or page.layout == "parallax-about" or page.layout == "parallax-custom" %}
 	{% if jekyll.environment == "development" %}
 	<link href="{{ site.baseurl }}/css/parallax-image.css" rel="stylesheet" type="text/css" lazyload="1" />
 	{% else %}
