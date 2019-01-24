@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default-flex
 
+projects: true
 viewing-single-page: true
 anchors: true
 extra-wide: true
@@ -10,24 +11,64 @@ projects-menu-active: true
 ---
 
 <style>
+.project-list {
+	padding-bottom: 5.2em;
+}
+main {
+	margin-bottom: 0 !important;
+	margin-top: 2.6em !important;
+}
 .project {
+	padding: 0;
+	margin: 0;
+
 	max-height: 275px;
 	max-width: 564px;
 	height: 100%;
-	border-radius: 1em;
 	display: inline-block;
 	width: 44vw;
+	height: 21.453900709vw;
 	margin-left: .5rem;
 	margin-right: .5rem;
 	margin-bottom: 1rem;
 
-	overflow: hidden;
+	border-radius: 1em;
+	overflow: visible;
+
+	will-change: transform;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: perspective(500px);
+	transform: perspective(500px);
 }
-.project img {
-	margin: 0;
-	padding: 0;
+.project:hover .foreground {
+	-webkit-transform: translateZ(50px);
+	transform: translateZ(50px);
+}
+.project:hover .foreground-1 {
+	-webkit-transform: translateZ(50px);
+	transform: translateZ(50px);
+}
+.project:hover .foreground-2 {
+	-webkit-transform: translateZ(25px);
+	transform: translateZ(25px);
+}
+.foreground,
+.foreground-1,
+.foreground-2 {
+	position: absolute;
 	display: block;
+	will-change: transform;
+	transition: transform 300ms ease;
+	z-index: 0;
 }
+.background {
+	position: absolute;
+	display: block;
+	will-change: transform;
+	z-index: -1;
+}
+
 main a:hover {
 	text-decoration: none !important;
 	background-color: unset !important;
@@ -49,6 +90,9 @@ main a:hover {
 		margin-right: .5rem;
 		margin-bottom: 1rem;
 	}
+	main {
+		margin-top: 0 !important;
+	}
 }
 /* Large devices (Macs) */
 @media (min-width: 900px) {
@@ -62,88 +106,63 @@ main a:hover {
 }
 </style>
 <div class="project-list">
-	<a href="/projects/code/hacker-news-cleanser/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/hacker-news-cleanser/project-banner.png" alt="Hacker News Cleanser Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/projects/code/hacker-news-cleanser/">
+		<img class="foreground-1" src="/images/projects/code/hacker-news-cleanser/project-banner-top-1.png" alt="Hacker News Cleanser Banner" />
+		<img class="foreground-2" src="/images/projects/code/hacker-news-cleanser/project-banner-top-2.png" alt="Hacker News Cleanser Banner" />
+		<img class="background" src="/images/projects/code/hacker-news-cleanser/project-banner-bottom.png" alt="Hacker News Cleanser Banner" />
 	</a>
-	<a href="https://shelf.barrowclift.me">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/shelf/project-banner.jpg" alt="Shelf Logo" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://shelf.barrowclift.me">
+		<img class="foreground" src="/images/projects/code/shelf/project-banner-top.png" alt="Shelf Logo" />
+		<img class="background" src="/images/projects/code/shelf/project-banner-bottom.png" alt="Shelf Logo" />
 	</a>
-	<a href="https://barrowclift.me/marcdown/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/marcdown/project-banner.png" alt="Marcdown Logo" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://barrowclift.me/marcdown/">
+		<img class="foreground-1" src="/images/projects/code/marcdown/project-banner-top-1.png" alt="Marcdown Logo" />
+		<img class="foreground-2" src="/images/projects/code/marcdown/project-banner-top-2.png" alt="Marcdown Logo" />
+		<img class="background" src="/images/projects/code/marcdown/project-banner-bottom.jpg" alt="Marcdown Logo" />
 	</a>
-	<a href="https://badmusichertz.com" target="_blank">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/music/bad-music-hertz/project-banner.jpg" alt="Bad Music Hertz Blog Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://badmusichertz.com" target="_blank">
+		<img class="foreground" src="/images/projects/music/bad-music-hertz/project-banner-top.png" alt="Bad Music Hertz Blog Banner" />
+		<img class="background" src="/images/projects/music/bad-music-hertz/project-banner-bottom.png" alt="Bad Music Hertz Blog Banner" />
 	</a>
-	<a href="https://itunes.apple.com/us/podcast/bad-music-hertz/id1319023897?mt=2">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/music/bad-music-hertz/podcast-project-banner.png" alt="Bad Music Hertz Podcast Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://itunes.apple.com/us/podcast/bad-music-hertz/id1319023897?mt=2">
+		<img class="foreground-1" src="/images/projects/music/bad-music-hertz/podcast-project-banner-top-1.png" alt="Bad Music Hertz Podcast Banner" />
+		<img class="foreground-2" src="/images/projects/music/bad-music-hertz/podcast-project-banner-top-2.png" alt="Bad Music Hertz Podcast Banner" />
+		<img class="background" src="/images/projects/music/bad-music-hertz/podcast-project-banner-bottom.jpg" alt="Bad Music Hertz Podcast Banner" />
 	</a>
-	<a href="/divers/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/divers/images/project-banner.jpg" alt="Divers Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/divers/">
+		<img class="foreground" src="/divers/images/project-banner-top.png" alt="Divers Banner" />
+		<img class="background" src="/divers/images/project-banner-bottom.jpg" alt="Divers Banner" />
 	</a>
-	<a href="/projects/art/sketches/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/art/sketches/project-banner.jpg" alt="Sketches Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/projects/art/sketches/">
+		<img class="foreground" src="/images/projects/art/sketches/project-banner-top.png" alt="Sketches Banner" />
+		<img class="background" src="/images/projects/art/sketches/project-banner-bottom.jpg" alt="Sketches Banner" />
 	</a>
-	<a href="/projects/music/smile-heroes-and-villains-mix/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/music/smile-heroes-and-villains-mix/project-banner.png" alt="SMiLE: Heroes and Villains Mix Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/projects/music/smile-heroes-and-villains-mix/">
+		<img class="foreground" src="/images/projects/music/smile-heroes-and-villains-mix/project-banner-top.png" alt="SMiLE: Heroes and Villains Mix Banner" />
+		<img class="background" src="/images/projects/music/smile-heroes-and-villains-mix/project-banner-bottom.png" alt="SMiLE: Heroes and Villains Mix Banner" />
 	</a>
-	<a href="/projects/art/iconography/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/art/iconography/project-banner.png" alt="Iconography Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/projects/art/iconography/">
+		<img class="foreground-1" src="/images/projects/art/iconography/project-banner-top-1.png" alt="Iconography Banner" />
+		<img class="foreground-2" src="/images/projects/art/iconography/project-banner-top-2.png" alt="Iconography Banner" />
+		<img class="background" src="/images/projects/art/iconography/project-banner-bottom.png" alt="Iconography Banner" />
 	</a>
-	<a href="https://github.com/barrowclift" target="_blank">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/github/project-banner.jpg" alt="Github Account Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://github.com/barrowclift" target="_blank">
+		<img class="foreground" src="/images/projects/code/github/project-banner-top.png" alt="Github Account Banner" />
+		<img class="background" src="/images/projects/code/github/project-banner-bottom.jpg" alt="Github Account Banner" />
 	</a>
-	<a href="https://lookatthatcloud.com/original">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/lookatthatcloud/project-banner.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="https://lookatthatcloud.com/original">
+		<img class="foreground-1" src="/images/projects/code/lookatthatcloud/project-banner-top-1.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
+		<img class="foreground-2" src="/images/projects/code/lookatthatcloud/project-banner-top-2.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
+		<img class="background" src="/images/projects/code/lookatthatcloud/project-banner-bottom.jpg" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
 	</a>
-	<a href="/projects/code/the-largest-video-game-ever-made/">
-		<div class="project threeDHover">
-			<div class="content card-animation">
-				<img src="/images/projects/code/largest-video-game-ever/project-banner.jpg" alt="The Largest Video Game Ever Made Banner" />
-			</div>
-		</div>
+	<a class="project" data-tilt data-tilt-glare="true" data-tilt-reverse="false" data-tilt-max="25" data-tilt-scale="1.075" href="/projects/code/the-largest-video-game-ever-made/">
+		<img class="foreground-1" src="/images/projects/code/largest-video-game-ever/project-banner-top-1.png" alt="The Largest Video Game Ever Made Banner" />
+		<img class="foreground-2" src="/images/projects/code/largest-video-game-ever/project-banner-top-2.png" alt="The Largest Video Game Ever Made Banner" />
+		<img class="background" src="/images/projects/code/largest-video-game-ever/project-banner-bottom.jpg" alt="The Largest Video Game Ever Made Banner" />
 	</a>
+	{% if jekyll.environment == "development" %}
+	<script src="{{ site.baseurl }}/scripts/vanilla-tilt.js" type="text/javascript"></script>
+	{% else %}
+	<script src="{{ site.baseurl }}/scripts/min/vanilla-tilt.min.js" type="text/javascript"></script>
+	{% endif %}
 </div>
