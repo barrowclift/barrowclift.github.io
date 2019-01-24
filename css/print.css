@@ -26,7 +26,7 @@ code {
     padding: 0 !important;
 }
 button,
-.link-button {
+.button {
     box-shadow: unset !important;
     text-shadow: unset !important;
 }

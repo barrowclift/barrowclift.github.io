@@ -11,7 +11,7 @@ title: "Hello"
 <style>
 	@media (min-width: 700px) {
 		.button-group li {
-			width: 33%;
+			width: 29%;
 		}
 		.button-group li:first-child {
 			margin-left: 0;
@@ -33,6 +33,7 @@ title: "Hello"
 <h3 style="margin-bottom:1.3em">I currently work for Comcast in Philly.</h3>
 
 <ul class="button-group">
-	<li><a href="{{ "/" | prepend: site.baseurl }}"><p class="button">Read my Articles</p></a></li>
-	<li><a href="{{ "/projects/" | prepend: site.baseurl }}"><p class="button">Browse my Projects</p></a></li>
+	<li><a href="{{ site.baseurl }}/"><p class="button">Articles</p></a></li>
+	<li><a href="{{ site.baseurl }}/projects/"><p class="button">Projects</p></a></li>
+	<li><a href="{{ site.baseurl }}/about/contact/"><p class="button">Contact</p></a></li>
 </ul>
