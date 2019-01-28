@@ -655,14 +655,14 @@ menu header:hover #logo #logo-eye-opened {
 }
 button:hover,
 .button:hover {
-	transform: scale(1.05);	
+	transform: scale(1.05);
 }
 button.active,
 button:active
 .button:hover,
 .button.active,
 .button:active {
-	transform: scale(0.95);	
+	transform: scale(0.95);
 }
 
 .card {
@@ -1052,6 +1052,15 @@ mark {
 .admonition table:last-child,
 .admonition .admonition {
 	margin-bottom: 0;
+}
+
+
+/* ----- HINTS ----- */
+[data-hint]:after {
+	z-index: 100;
+}
+[data-hint]:before {
+	z-index: 101;
 }
 
 
@@ -2403,35 +2412,22 @@ menu,
 .bigfoot-footnote__tooltip {
 	background-color: rgba(255, 255, 255, 0.9);
 }
-.hint--right:before {
+.hint--right[data-hint]:before {
 	border-right-color: rgba(255, 255, 255, 0.9);
 }
-.hint--top:before {
+.hint--top[data-hint]:before {
 	border-top-color: rgba(255, 255, 255, 0.9);
 }
-.hint--bottom:before {
+.hint--bottom[data-hint]:before {
 	border-bottom-color: rgba(255, 255, 255, 0.9);
 }
-.hint--left:before {
+.hint--left[data-hint]:before {
 	border-left-color: rgba(255, 255, 255, 0.9);
 }
 	.safari menu,
 	.safari .popup,
-	.safari [data-hint]:after,
 	.safari .bigfoot-footnote__content {
 		background-color: rgba(255, 255, 255, 0.7);
-	}
-	.safari .hint--right:before {
-		border-right-color: rgba(255, 255, 255, 0.7);
-	}
-	.safari .hint--top:before {
-		border-top-color: rgba(255, 255, 255, 0.7);
-	}
-	.safari .hint--bottom:before {
-		border-bottom-color: rgba(255, 255, 255, 0.7);
-	}
-	.safari .hint--left:before {
-		border-left-color: rgba(255, 255, 255, 0.7);
 	}
 /**
  * Secondary backgrounds
@@ -2751,37 +2747,24 @@ html#dark {
 #dark .popup {
 	background-color: rgba(46, 46, 46, 0.95);
 }
-#dark .hint--right:before {
+#dark .hint--right[data-hint]:before {
 	border-right-color: rgba(46, 46, 46, 0.95);
 }
-#dark .hint--top:before {
+#dark .hint--top[data-hint]:before {
 	border-top-color: rgba(46, 46, 46, 0.95);
 }
-#dark .hint--bottom:before {
+#dark .hint--bottom[data-hint]:before {
 	border-bottom-color: rgba(46, 46, 46, 0.95);
 }
-#dark .hint--left:before {
+#dark .hint--left[data-hint]:before {
 	border-left-color: rgba(46, 46, 46, 0.95);
 }
 	#dark.safari menu {
 		background-color: rgba(23, 23, 23, 0.7);
 	}
-	#dark.safari [data-hint]:after,
 	#dark.safari .bigfoot-footnote__content,
 	#dark.safari .popup {
 		background-color: rgba(46, 46, 46, 0.7);
-	}
-	#dark.safari .hint--right:before {
-		border-right-color: rgba(46, 46, 46, 0.7);
-	}
-	#dark.safari .hint--top:before {
-		border-top-color: rgba(46, 46, 46, 0.7);
-	}
-	#dark.safari .hint--bottom:before {
-		border-bottom-color: rgba(46, 46, 46, 0.7);
-	}
-	#dark.safari .hint--left:before  {
-		border-left-color: rgba(46, 46, 46, 0.7);
 	}
 /**
  * Secondary backgrounds
