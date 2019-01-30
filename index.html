@@ -33,7 +33,7 @@ sup[id^=fnref] {
 
 		{{ post.content | split:'<!--break-->' | first }}
 		{% if post.content contains '<!--break-->' %}
-			<h5 style="text-align:center;"><a href="{{ post.url }}#resume-from-break">Continue Reading...</a></h5>
+			<h5 style="text-align:center;"><a class="button" href="{{ post.url }}#resume-from-break">Continue Reading...</a></h5>
 		{% endif %}
 	</article>
 	{% assign count=count | plus:1 %}
