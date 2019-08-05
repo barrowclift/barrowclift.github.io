@@ -70,7 +70,7 @@ menu {
 	#parallax-foreground {
 		transform: translateZ(0px);
 		z-index: 10;
-		
+
 		box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
 		background-color: rgba(255, 255, 255, 1);
 
@@ -79,7 +79,8 @@ menu {
 		height: auto;
 		margin: 0 !important;
 	}
-		.safari #parallax-foreground {
+		.safari #parallax-foreground,
+		.chrome #parallax-foreground {
 			-webkit-backdrop-filter: saturate(180%) blur(20px);
 			backdrop-filter: saturate(180%) blur(20px);
 			background-color: rgba(255, 255, 255, 0.95);
@@ -94,7 +95,7 @@ menu {
 
 		border: none !important;
 		box-shadow: none !important;
-		
+
 		position: fixed; /* Fallback for browsers that don't support sticky */
 		position: sticky;
 		top: 0;
