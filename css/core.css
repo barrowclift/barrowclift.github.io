@@ -1875,7 +1875,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 			padding-left: 0.48em;
 			padding-top: 0.48em;
 		}
-		menu ul {
+		menu > ul {
 			padding-left: 9em;
 			text-align: left;
 		}
@@ -2256,7 +2256,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
 			padding-left: 0.78em;
 			padding-top: 0.50em;
 		}
-			menu ul {
+			menu > ul {
 				padding-left: 0;
 				text-align: center;
 			}
