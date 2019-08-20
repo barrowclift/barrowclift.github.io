@@ -636,7 +636,8 @@ menu header:hover #logo #logo-eye-closed {
 	opacity: 1;
 }
 #logo-eye-closed,
-menu header:hover #logo #logo-eye-opened {
+menu header:hover #logo #logo-eye-opened,
+#dark menu header:hover #logo #logo-eye-closed {
 	opacity: 0;
 }
 #sunglasses,
