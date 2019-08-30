@@ -3,7 +3,6 @@ layout: post
 title:  "Turtles, Hares, and Hot Rods"
 date:   2016-02-12 22:34:00
 categories:
-  - Education
   - Programming
   - Stories
 excerpt: "Pouring one out for the new generation of Turtles out there."
