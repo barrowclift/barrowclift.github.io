@@ -9,6 +9,7 @@ categories:
   - Programming
   - Unix
   - macOS
+  - Guides
 ---
 
 <style>
@@ -103,7 +104,7 @@ extract () {
 	# the foundation used for the command.
 	#
 	# Must use "$@" if we want all arguments (with white space) to be treated
-	# As one file argument. This, however, restricts the command to one file 
+	# As one file argument. This, however, restricts the command to one file
 	# or directory argument at a time, so while that's never an issue for me
 	# personally do take note of this.
 	if [ -f "$@" ] ; then
@@ -234,6 +235,6 @@ If you want the full `.bashrc` and `.bash_aliases` files used in the examples ab
 
 In case you missed it you can also download my Terminal's theme [here]({{ site.baseurl }}/downloads/assets/making-terminal-better/duokai.terminal). Happy customizing, everyone.
 
-----------  
+----------
 
 [^quiz]: Pop quiz, do you know how to get the total space used (in <span class="small-caps">GB</span>) of your main drive *without* having to dig through a man page or reference a Unix bible? Probably not.

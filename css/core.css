@@ -236,6 +236,9 @@ dl dd {
 blockquote {
 	padding-left: 1.3em;
 }
+	li blockquote {
+		margin-top: 1.3em;
+	}
 code {
 	font-size: 0.9em;
 }
@@ -1490,6 +1493,9 @@ pre code {
 	display: inline-block;
 	border: 0;
 }
+.highlight pre {
+	width: 100%;
+}
 
 .edge-to-edge.infinite > pre > code {
 	text-align: left;
@@ -1497,6 +1503,32 @@ pre code {
 	margin-left: 5.5%;
 	margin-right: 5.5%;
 	max-width: 33rem;
+}
+
+/**
+ * Code blocks in lists should become more "inline" than otherwise.
+ */
+li .highlight {
+	overflow-x: scroll;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+	width: auto;
+	border-radius: 0.25em;
+}
+li .highlight pre {
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+	width: auto;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow-x: scroll;
+	text-align: left;
 }
 
 /**
