@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fearful Computing"
-date:   2015-07-15 22:39:00
+date:   2015-07-16 2:38:58
 categories:
   - Technology
   - macOS
@@ -90,6 +90,6 @@ Now let's try to find a random photo on iOS. It's in your Photos app.
 
 There's a powerful lesson to be learned from this. Humanistic operating systems and apps are an achievable goal, we've gotten close (iOS) and almost unanimously achieved it in some cases ([Vesper](http://vesperapp.co)). With the roaring success of Apple's user-first design leaving Windows and their <span class="small-caps">IT</span> department-first design scrambling to keep up it's clear that humanistic design is winning, and there's nothing to fear about that.
 
-----------  
+----------
 
 [^x86]: Refers to the [family of microprocessors](https://en.wikipedia.org/wiki/X86) used in most computers today. Windows split the Program Files folder in two so that one could be for 32-bit apps and the other for 64-bit apps. [Why didn’t they just abstract this needless detail away from users](http://superuser.com/a/442269)? In plain English because they wanted to make their lives and the lives of <span class="small-caps">IT</span> departments easier and didn't give a damn if it confused you.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notification Madness"
-date:   2015-05-09 19:00:00
+date:   2015-05-10 2:50:10
 categories:
   - Technology
   - iOS
@@ -45,6 +45,6 @@ You're bound to have chosen to keep at least some of your app notifications on w
 
 Determining which of the four to enable/disable for each app is where you can truly regain control of your iPhone. No longer will you be at the mercy of what it deems is important but what *you* think is important. This by no means is a perfect science, what works for me may not work for other people. You may find yourself going to Settings occasionally afterwards to tweak notifications for an app or two and that's perfectly fine, that's all part of the process of determining what works for you and what doesn't. Eventually though you will have a setup that makes your iPhone understand and respect what you value and that alone makes the process worth it.
 
-----------  
+----------
 
 [^vip]: This can be achieved with the little-known [VIP](https://support.apple.com/kb/PH12515?locale=en_US) feature in Mail. Read more about how to use VIP to achieve a similar result [here](http://heresthethingblog.com/2014/09/29/ios-8-tip-alert-vips-send-email/).

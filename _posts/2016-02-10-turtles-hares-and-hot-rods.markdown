@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Turtles, Hares, and Hot Rods"
-date:   2016-02-12 22:34:00
+date:   2016-02-13 2:33:38
 categories:
   - Programming
   - Stories

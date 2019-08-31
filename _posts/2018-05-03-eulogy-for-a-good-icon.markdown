@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Eulogy for a Good Icon"
-date:   2018-08-28 19:31:00
+date:   2018-08-28 23:31:23
 categories:
   - Technology
   - macOS

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quest for the Best iOS Music Player"
-date:   2019-01-30 18:16:00
+date:   2019-01-30 22:16:47
 categories:
   - Technology
   - iOS
@@ -63,7 +63,7 @@ To help guide my search, I wrote out specific features and design decisions I wo
 None of the above requests were deal-breakers, however. Every single music player I've tried thus far fails to address at least one of these points, but plenty of them are still extremely good contenders by meeting the majority. My only deal-breaking requirements were:
 
 * A native or native-like app. That means no web apps, lazy Android ports, or apps with badly designed custom interface elements. Apps that are performant and well designed enough to fool me into thinking they're native apps are fair game.
-* Local-primary focus, so no exclusively streaming players. Apps that support both local and cloud libraries but present local collections as the assumed default are fair game. 
+* Local-primary focus, so no exclusively streaming players. Apps that support both local and cloud libraries but present local collections as the assumed default are fair game.
 * Large album art in the player view (preferably edge-to-edge)
 
 Due to the player technically meeting the deal-breaking requirements, the official iOS Music.app will also be included for consideration with the qualifying third-party contenders.
@@ -139,7 +139,7 @@ Functional, but boring. Its interface is entirely utilitarian with little to no 
 <a href="https://itunes.apple.com/gr/app/doppler-music-player/id1252143995?mt=8"><img src="{{ site.baseurl }}/images/assets/quest-for-the-best-ios-music-player/download-on-the-app-store.svg" /></a>
 </figure>
 
-Promising, but still too young and missing too many features to seriously consider. 
+Promising, but still too young and missing too many features to seriously consider.
 
 #### Pros
 
@@ -375,7 +375,7 @@ However, that doesn't mean I've given up hope! While Music.app has been more-or-
 
 ## Honorable Mention
 
-I could not end without briefly mentioning what I find to be the finest music player available on any platform, tvOS's Music.app. Not only does it feature an album grid view and dark mode support, but the player view is the most gorgeous and visually captivating of any other player (yes, even better than Picky's). While it utilizes a blurring effect similar to Picky's, tvOS's Music.app subtly mutates the image over time, resulting in lava lamp effect on the blurred image. The result is captivating. 
+I could not end without briefly mentioning what I find to be the finest music player available on any platform, tvOS's Music.app. Not only does it feature an album grid view and dark mode support, but the player view is the most gorgeous and visually captivating of any other player (yes, even better than Picky's). While it utilizes a blurring effect similar to Picky's, tvOS's Music.app subtly mutates the image over time, resulting in lava lamp effect on the blurred image. The result is captivating.
 
 *[OLED]: Organic Light Emitting Diode
 *[UI]: User Interface

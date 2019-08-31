@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meaningful Names"
-date:   2017-02-13 22:04:00
+date:   2017-02-14 1:05:17
 categories:
   - Programming
   - Technology
@@ -62,7 +62,7 @@ As developers, we are not being clever or efficient when we use cryptic acronyms
 
 Any fool can create confusion, it takes professionals to produce clarity.
 
-----------  
+----------
 
 [^so-much-larger]: Fun fact, you could fit about 115 displays powered by the IBM 1981 Color Graphics Adapter (which supported a [max resolution of 640x200](https://en.wikipedia.org/wiki/Color_Graphics_Adapter)) in today's 5K iMac (which has a resolution of [5120x2880](https://www.apple.com/imac-with-retina/specs/)). That's a lot of pixels!
 [^foo-bar]: I mean "funny names" genuinely. One of the longstanding traditions in computer science is for developers to use the nonsense names `foo` or `foobar` when they don't want to take the time to properly come up with one.

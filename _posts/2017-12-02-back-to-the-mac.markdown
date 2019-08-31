@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Back to the Mac"
-date:   2017-12-02 18:41:00
+date:   2017-12-02 23:20:40
 categories:
   - Technology
   - Organization
@@ -50,7 +50,7 @@ image: "/images/assets/back-to-the-mac/share-image.png"
 	max-width: 111px;
 }
 .footnotes .macbook {
-	width:75%;	
+	width:75%;
 }
 .get-info {
 	max-width: 308px;
@@ -279,7 +279,7 @@ If this sounds complicated, don't be worried; macOS makes screensharing (mostly)
 <p>The bubble should be blue to indicate they have an active Apple ID with iMessage enabled. If it's not blue, either you or the receiving party don't have iMessage enabled. <a href="https://www.imore.com/how-set-messages-your-mac">Read here to find out how to turn it on</a>.</p>
 </div>
 
-With the thread visible, click the blue "Details" button in the upper right-hand side of the Messages window and a little window will popup with recently shared files and additional contact buttons. One of those buttons is <span class="hint--top hint--rounded hint--bounce" data-hint="The button to start screensharing looks like me!"><svg class="screensharing" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="13" y="16" width="29" height="21" rx="2"></rect><path d="M29,15 L29,7 C29,5.8954305 28.1045695,5 27,5 L2,5 L2,5 C0.8954305,5 -1.3527075e-16,5.8954305 0,7 L0,7 L0,24 C1.3527075e-16,25.1045695 0.8954305,26 2,26 L12,26 L12,17 C12,15.8954305 12.8954305,15 14,15 L29,15 Z"></path></g></svg></span>, and clicking it displays two choices, neither of which make any sense. To assist with Apple's horrible labeling, I've translated the options for you below. 
+With the thread visible, click the blue "Details" button in the upper right-hand side of the Messages window and a little window will popup with recently shared files and additional contact buttons. One of those buttons is <span class="hint--top hint--rounded hint--bounce" data-hint="The button to start screensharing looks like me!"><svg class="screensharing" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="13" y="16" width="29" height="21" rx="2"></rect><path d="M29,15 L29,7 C29,5.8954305 28.1045695,5 27,5 L2,5 L2,5 C0.8954305,5 -1.3527075e-16,5.8954305 0,7 L0,7 L0,24 C1.3527075e-16,25.1045695 0.8954305,26 2,26 L12,26 L12,17 C12,15.8954305 12.8954305,15 14,15 L29,15 Z"></path></g></svg></span>, and clicking it displays two choices, neither of which make any sense. To assist with Apple's horrible labeling, I've translated the options for you below.
 
 * "Invite to share my screen" = Request they control my computer
 * "Ask to share screen" = Ask if I can control their computer
@@ -582,7 +582,7 @@ If you've always found yourself gravitating towards dark backgrounds, you owe it
 
 ### Auto-Hidden Dock
 
-The vast majority of Macs you'll find out in the wild are laptops, just take a look at any college campus or Mac-friendly corporate workplace to confirm for yourself. External monitors aside, that means there's a shocking percentage of users who primary experience macOS on tiny 12"-15" screens. Efficient use of the scarce screen real estate in these situations is *incredibly* important, yet I see most people still opting to keep the Dock always visible at the bottom of their screens. 
+The vast majority of Macs you'll find out in the wild are laptops, just take a look at any college campus or Mac-friendly corporate workplace to confirm for yourself. External monitors aside, that means there's a shocking percentage of users who primary experience macOS on tiny 12"-15" screens. Efficient use of the scarce screen real estate in these situations is *incredibly* important, yet I see most people still opting to keep the Dock always visible at the bottom of their screens.
 
 Depending on the Dock size and the number of docked apps, an always-visible Dock can hoard around 9% of precious screen space on the 12" MacBook[^dock]. That space can't be shared with your content since the Dock prevents users from dragging-and-dropping apps over it, which leaves the bottom 9% of the screen as little more than a marginally useful screen bezel. That's absolutely unacceptable. The user should be allowed to utilize their whole screen for their precious content instead of accepting 9% of the screen as a permanent sacrifice to the OS.
 
@@ -621,5 +621,5 @@ However, even with the poor treatment its receives, macOS continues to stand str
 [^dock]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct large"></div><p style="text-align:left;"><img alt="MacBook screenshot showcasing the space taken up by the Dock" class="macbook" style="border-radius:0.25em" src="{{ site.baseurl }}/images/assets/back-to-the-mac/macbook-dock.jpg"/></p></figure>
 
 *[VU]: Volume Unit
-*[MP3]: Moving Picture Experts Group Layer-3 Audio 
+*[MP3]: Moving Picture Experts Group Layer-3 Audio
 *[FTFF]: Fix the 🙊 Finder
