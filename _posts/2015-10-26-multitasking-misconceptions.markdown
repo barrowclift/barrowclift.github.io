@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Multitasking Misconceptions"
-date:   2015-10-26 21:23:00
+date:   2015-10-27 1:23:04
 categories:
   - Technology
   - iOS
@@ -112,6 +112,6 @@ At the end of the day, force quitting apps on iOS not only makes opening them la
 
 As with everything in life there are exceptions to the rule; at times apps can get "stuck" and stop working properly. It's for situations like this that we have the power to force quit apps on iOS since it can oftentimes fix the problem (kind of like how restarting your computer can sometimes help). But this should be used very sparingly and more often than not you shouldn't be bothering with it. In almost every other case it's better to just let iOS do what it was designed from day one to do. It's time to experience iOS the way it was meant to be experienced; quit quitting your apps.
 
-----------  
+----------
 
 [^exceptions]: With iOS 9 it is now possible to have more than one app active at any time with [Slide Over or Split View](http://www.apple.com/ios/whats-new/) so in these cases both apps are indeed running at the same time.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tags Explained"
-date:   2017-09-17 09:45:00
+date:   2017-09-18 1:46:52
 categories:
   - Technology
   - Organization
