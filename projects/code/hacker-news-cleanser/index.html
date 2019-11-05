@@ -34,6 +34,30 @@ hr, #dark hr {
 menu a:hover {
 	background-color: transparent !important;
 }
+.popup {
+	width: 9.75em !important;
+	margin-left: -10.375em !important;
+}
+.ios-switch input + span:before {
+	margin-top: 0 !important;
+}
+.ios-switch input + span:after {
+	margin-top: 0.05em !important;
+}
+.safari menu #mainmenu ul,
+.chrome menu #mainmenu ul {
+	-webkit-backdrop-filter: unset;
+	backdrop-filter: unset;
+}
+@media (max-width: 700px) {
+	.popup {
+		top: 2em;
+	}
+	#submenu {
+		opacity: 0 !important;
+		height: 0 !important;
+	}
+}
 </style>
 <h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="/images/projects/code/hacker-news-cleanser/sponge.png" /></h1>
 <p>This is a self-hosted service that will auto-hide <a href="https://news.ycombinator.com">Hacker News</a> articles by filtering articles based on:</p>
