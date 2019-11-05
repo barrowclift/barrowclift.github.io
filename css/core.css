@@ -580,6 +580,10 @@ menu {
 	.enforce-dark-mode #accent-color-settings {
 		margin-bottom: 0;
 	}
+	.ignore-accent-color .popup {
+		width: 9.375em;
+		margin-left: -9.875em;
+	}
 	.enforce-dark-mode .accent-colors li {
 		margin-top: 0.25em;
 	}
@@ -1893,10 +1897,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
 		-webkit-transform-origin: top right;
 		-ms-transform-origin: top right;
 		transform-origin: top right;
-	}
-	.ignore-accent-color .popup {
-		width: 8.75em;
-		margin-left: -10.75em;
 	}
 	.enforce-dark-mode .accent-colors li {
 		margin-top: 0.5em;
