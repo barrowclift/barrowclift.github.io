@@ -1,7 +1,7 @@
 ---
 layout: default
 
-viewing-single-page: true
+viewing_single_page: true
 
 title: "Contact"
 about-menu-active: true
@@ -10,15 +10,12 @@ about-menu-active: true
 <style>
 button {
     text-align: center;
+    float: right;
+    width: 50%;
 }
-/* Medium devices (iPads) */
 @media (min-width: 700px) {
     button {
-        width: 50%;
-        display: inline-block;
-        float:right;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
+        width: 25%;
     }
 }
 </style>
@@ -35,7 +32,7 @@ button {
 
 <p>You can also send me a direct message below:</p>
 
-<form action="//formspree.io/&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;" method="POST">
+<form action="https://formspree.io/mleepqzg" method="POST">
     <input type="hidden" name="_next" value="/about/contact/thank-you/" />
     <input type="email" tabindex="1" name="_replyto" placeholder="Your email address" />
     <textarea rows="10" tabindex="2" type="text" name="message" placeholder="Your message"></textarea>

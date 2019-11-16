@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "We Made a Podcast!"
-date:  2017-12-02 23:19:40
+title: "We Made a Podcast!"
+date: 2017-12-02 23:19:40
 categories:
   - Announcement
 excerpt: "Join us as we scrutinize and celebrate great music, one episode at a time"

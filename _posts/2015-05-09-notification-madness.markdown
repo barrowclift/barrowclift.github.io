@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Notification Madness"
-date:   2015-05-10 2:50:10
+title: "Notification Madness"
+date: 2015-05-10 2:50:10
 categories:
   - Technology
   - iOS

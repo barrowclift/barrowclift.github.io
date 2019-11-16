@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Why Vinyl?"
-date:   2016-03-07 23:39:26
+title: "Why Vinyl?"
+date: 2016-03-07 23:39:26
 categories:
   - Analog
   - Music

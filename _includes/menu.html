@@ -9,18 +9,14 @@
 				{% endif %}
 			</div>
 		</header>
-		<a id="hidden-logo-link" href="{{ site.baseurl }}/hello/">Welcome Page</a>
+		<a id="hidden-logo-link" href="{{ site.baseurl }}/">Home</a>
 		<ul>
-			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="{{ site.baseurl }}/">Articles</a></li>
+			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="{{ site.baseurl }}/articles/">Articles</a></li>
 			<li><a class="{%if page.projects-menu-active %}active{% endif %}" href="{{ site.baseurl }}/projects/">Projects</a></li>
-			<li class="hide-when-small">
-				<a id="about-link" class="{%if page.about-menu-active %}active{% endif %}" href="{{ site.baseurl }}/about/">About</a>
-			</li>
-			<li class="show-when-small">
-				<a id="submenu-toggle" onclick="submenuClicked();">
-					<input type="checkbox" name="submenu-checkbox" id="submenu-checkbox" value="submenu" onclick="submenuToggled(this);" />
-					<span>More<span>
-				</a>
+			<li onclick="settingsClicked();" class="setting-toggles show-when-small" id="settings-toggle">
+				<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
+				<span><span class="small-caps">A</span>A</span>
+				<!-- https://stackoverflow.com/questions/23072351/css-box-with-arrow-and-shadow -->
 			</li>
 		</ul>
 		{% if page.hide-settings != true %}
@@ -51,12 +47,6 @@
 			</div>
 		</div>
 		{% endif %}
-	</div>
-	<div id="submenu">
-		<ul>
-			<li><a class="{%if page.about-menu-active %}active{% endif %}" href="{{ site.baseurl }}/about/">About</a></li>
-			<li class="setting-toggles" id="settings-toggle" style="display:inline-block;"><a style="cursor:pointer;" class="settings-switch" onclick="settingsClicked();">Settings</a></li>
-		</ul>
 	</div>
 </menu>
 <div id="menu-height-offset"></div>

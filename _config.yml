@@ -5,11 +5,11 @@ twitter_username: barrowclift
 github_username:  barrowclift
 description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
-url: "https://barrowclift.me" # The base hostname & protocol for your site
+url: https://barrowclift.me # The base hostname & protocol for your site
 host: localhost
 
 permalink: /post/:title # Permalink posts sorted by date with directories is awful.
-paginate_path: "page/:num" # Home older/previous pages go here
+paginate_path: articles/:num # Home older/previous pages go here
 paginate: 5 # Number of posts to be shown on each each paginated page.
 
 markdown: kramdown
@@ -18,7 +18,7 @@ show_drafts: False
 future: False
 
 timezone: America/New_York
-locale: "en-US"
+locale: en-US
 
 kramdown:
   footnote_backlink: "&#x21A9;&#xFE0E;"
@@ -27,11 +27,12 @@ defaults:
   - # POST SPECIFIC VARIABLES
     scope:
       path: "" # empty string for all files
-      type: "posts" # limit to posts
+      type: posts # limit to posts
     values:
-      viewing-single-page: true # *NOT* Being viewed from home, a specific article page
-      hasAfterward: false
-      share-image:  # assume a default post doesn't have an image, /images/assets/${share-image}
+      viewing_single_page: true # *NOT* Being viewed from home, a specific article page
+      has_afterward: false
+      share_image: # assume a default post doesn't have an image, /images/assets/${share_image}
+      type: article # assume the post type is an article unless told otherwise
   - # SITE-WIDE VARIABLES
     scope:
       path: "" # all files

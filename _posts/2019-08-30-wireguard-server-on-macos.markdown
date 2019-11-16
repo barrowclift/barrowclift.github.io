@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Wireguard Server on macOS"
-date:   2019-08-30 20:15:26
+title: "Wireguard Server on macOS"
+date: 2019-08-30 20:15:26
 categories:
   - Technology
   - macOS
@@ -11,7 +11,7 @@ categories:
   - Guides
 excerpt: "With this guide, you too can easily enjoy Wireguard VPN's performance and security served by macOS Mojave."
 image: "/images/assets/wireguard-server-on-macos/share-image.jpg"
-hasAfterward: true
+has_afterward: true
 ---
 
 <figure markdown="1" class="inline shadow">

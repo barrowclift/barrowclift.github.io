@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Quest for the Best iOS Music Player"
-date:   2019-01-30 22:16:47
+title: "Quest for the Best iOS Music Player"
+date: 2019-01-30 22:16:47
 categories:
   - Technology
   - iOS
@@ -9,7 +9,7 @@ categories:
   - Music
 excerpt: "My quest to find a niche app that's unapologetically for people that love actively listening to and collecting music. Who will win?"
 image: "/images/assets/quest-for-the-best-ios-music-player/share-image.jpg"
-hasAfterward: true
+has_afterward: true
 ---
 
 <style>

@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Eulogy for a Good Icon"
-date:   2018-08-28 23:31:23
+title: "Eulogy for a Good Icon"
+date: 2018-08-28 23:31:23
 categories:
   - Technology
   - macOS
   - Design
 excerpt: "Icon redesigns are a difficult balancing act to pull off. Tower 2 did so gracefully, but what about Tower 3?"
 image: "/images/assets/eulogy-for-a-good-icon/share-image.jpg"
-hasAfterward: true
+has_afterward: true
 ---
 
 <style>

@@ -40,11 +40,11 @@
 	<script src="{{ site.baseurl }}/scripts/min/jquery-2.2.1.min.js" type="text/javascript"></script>
 	<script async src="{{ site.baseurl }}/scripts/core.js" type="text/javascript"></script>
 	{% else %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1567195922.min.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1573916992.min.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1548294991.min.css" type="text/css" media="print" />
 
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
-	<script async src="{{ site.baseurl }}/scripts/min/core-1564577815.min.js" type="text/javascript"></script>
+	<script async src="{{ site.baseurl }}/scripts/min/core-1573916992.min.js" type="text/javascript"></script>
 	{% endif %}
 
 	<!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
@@ -62,7 +62,7 @@
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	<link rel="next" href="{{ site.url }}/page/2/" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="{% if page.viewing-single-page %}article{% else %}website{% endif %}" />
+	<meta property="og:type" content="{% if page.viewing_single_page %}article{% else %}website{% endif %}" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">

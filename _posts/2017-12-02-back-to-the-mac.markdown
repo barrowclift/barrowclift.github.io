@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "Back to the Mac"
-date:   2017-12-02 23:20:40
+title: "Back to the Mac"
+date: 2017-12-02 23:20:40
 categories:
   - Technology
   - Organization
   - macOS
   - Best Of
+timelocked: true
 excerpt: "The feature listicle that macOS deserves."
-image: "/images/assets/back-to-the-mac/share-image.png"
+image: "/images/assets/back-to-the-mac/share_image.png"
 ---
 
 <style>
