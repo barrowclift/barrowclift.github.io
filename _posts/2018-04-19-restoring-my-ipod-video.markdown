@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Restoring my iPod Video"
-date:   2018-04-20 2:17:05
+title: "Restoring my iPod Video"
+date: 2018-04-20 2:17:05
 categories:
   - Technology
   - Repair

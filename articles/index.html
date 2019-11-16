@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Articles"
+anchors: false
+writings-menu-active: true
+---
+
+<style>
+sup[id^=fnref] {
+	display:none;
+}
+</style>
+{% assign count=0 %}
+{% for post in paginator.posts %}
+	{% if post.type != "article" %}
+	{% continue %}
+	{% endif %}
+	{% if count > 0 %}
+	<hr>
+	{% endif %}
+
+	<article>
+		{% include article-header.html %}
+		{% if post.banner-image %}
+		<figure>
+			<p>
+				{% if post.banner-link %}
+				<a href="{{post.banner-link}}" {% if post.banner-hover %}title="{{post.banner-hover}}"{% endif %}>
+					<img src="/images/assets/{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
+				</a>
+				{% else %}
+				<img src="/images/assets/{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
+				{% endif %}
+			</p>
+		</figure>
+		{% endif %}
+
+		{{ post.content | split:'<!--break-->' | first }}
+		{% if post.content contains '<!--break-->' %}
+			<h5 style="text-align:center;"><a class="button" href="{{ post.url }}#resume-from-break">Continue Reading...</a></h5>
+		{% endif %}
+	</article>
+	{% assign count=count | plus:1 %}
+{% endfor %}
+
+<hr>
+
+<footer>
+	<h4 style="text-align:center;">
+		{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}">More Articles →</a>
+		{% else %}
+		<span class="weak">No more articles, sorry!</span>
+		{% endif %}
+	</h4>
+</footer>
+
+{% include blog-footer-buttons.html %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Multitasking Misconceptions"
-date:   2015-10-27 1:23:04
+title: "Multitasking Misconceptions"
+date: 2015-10-27 1:23:04
 categories:
   - Technology
   - iOS

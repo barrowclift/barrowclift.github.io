@@ -40,35 +40,11 @@ function darkModeToggled(checkbox) {
 	}
 }
 /* Allow clicking the area AROUND the buttons to trigger the effect as well */
-function submenuClicked() {
-	$("#submenu-checkbox").click();
-	return false;
-}
-function submenuToggled(checkbox) {
-	if (checkbox.checked) {
-		$("#submenu").addClass("show");
-		$("#submenu-toggle").addClass("light-hover");
-	} else {
-		$("#submenu").removeClass("show");
-		$("#submenu-toggle").removeClass("light-hover");
-	}
-}
 function settingsClicked() {
 	$("#settings-checkbox").click();
 	return false;
 }
 function settingsToggled(checkbox) {
-	if ($(window).width() > 700) {
-		if (checkbox.checked) {
-			if (!$("#submenu-checkbox").is(':checked')) {
-				submenuClicked();
-			}
-		} else {
-			if ($("#submenu-checkbox").is(':checked')) {
-				submenuClicked();
-			}
-		}
-	}
 	var popup = document.getElementById("settings-popup");
 	popup.classList.toggle("show");
 	var settingToggles = document.getElementsByClassName("setting-toggles");
@@ -217,14 +193,6 @@ $(document).ready(function() {
 		if ($("#settings-popup").hasClass("show")) {
 			if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-toggle").length) {
 				settingsClicked();
-			}
-		}
-		if ($("#submenu").hasClass("show")) {
-			if (!$(event.target).closest("#submenu").length
-			 && !$(event.target).closest("#submenu-toggle").length
-			 && !$(event.target).closest("#settings-popup").length
-			 && !$(event.target).closest("#settings-toggle").length) {
-				$("#submenu-checkbox").click();
 			}
 		}
 	});

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Home Sweet Home"
-date:   2015-08-13 2:35:33
+title: "Home Sweet Home"
+date: 2015-08-13 2:35:33
 categories:
   - Technology
   - iOS

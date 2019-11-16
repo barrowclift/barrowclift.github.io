@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Fearful Computing"
-date:   2015-07-16 2:38:58
+title: "Fearful Computing"
+date: 2015-07-16 2:38:58
 categories:
   - Technology
   - macOS

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Meaningful Names"
-date:   2017-02-14 1:05:17
+title: "Meaningful Names"
+date: 2017-02-14 1:05:17
 categories:
   - Programming
   - Technology

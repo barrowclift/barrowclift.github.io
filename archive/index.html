@@ -1,74 +1,42 @@
 ---
 layout: default
 
-viewing-single-page: true
+viewing_single_page: true
 
 title: "Archive"
 anchors: false
 writings-menu-active: true
 ---
 
-<style>
-	.nib-list {
-		list-style: none;
-		padding-left: 0;
-	}
-	.nib-list li a {
-		display: block;
-		padding-top: 0.65em;
-		padding-bottom: 0.65em;
-		padding-left: 0.65em;
-	}
-	.nib-list h3,
-	.nib-list time {
-		margin-top: 0;
-	}
-	.nib-list p {
-		margin-bottom: 0;
-	}
-	.nib-list h3 {
-		transition: color 0.2s ease;
-	}
-	/*.nib-list p {
-		color: rgba(30, 30, 30, 0.9);
-	}
-	.nib-list a:hover h3,
-	#dark .nib-list a:hover h3 {
-		color: #007aff;
-	}
-	#dark .nib-list h3 {
-		color: #F8F8F2;
-	}
-	#dark .nib-list p {
-		color: rgba(255, 255, 255, 0.9);
-	}*/
-</style>
 <h1>{{ page.title }}</h1>
 
 {% assign year=0 %}
 {% for post in site.posts %}
+	{% if post.type != "article" %}
+	{% continue %}
+	{% endif %}
 	{% capture postYear %}{{ post.date | date: '%Y' }}{% endcapture %}
 	{% if year != postYear %}
 		{% capture year %}{{ postYear }}{% endcapture %}
 		</ul>
 		<h2>{{ year }}</h2>
-		<ul class="nib-list">
+		<ul class="summary-list">
 	{% endif %}
 	<li>
-	    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-	    	<h3 class="header">
-	    		{% if post.link %}
-	    		<time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }} <a href="Permalink for &quot;{{ post.title }}&quot;"><svg class="permalink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82"><path fill-rule="evenodd" stroke-width="2" d="M30.3,64.5 L26.3,68.5 C22.7,72 17,72 13.5,68.5 C11.8,66.8 10.9,64.5 10.9,62.2 C10.9,59.9 11.7,57.6 13.4,56 L28.4,41.2 C31.4,38.2 37.2,33.6 41.4,37.8 C43.4,39.8 46.4,39.8 48.4,37.8 C50.4,35.8 50.4,32.8 48.4,30.8 C41.2,23.6 30.6,25 21.4,34.2 L6.4,49 C3,52.4 1,57 1,62 C1,67 3,72 6.5,75.5 C10.2,79.2 15,81 20,81 C24.7,81 29.6,79.2 33.2,75.5 L37.2,71.5 C39.2,69.5 39.2,66.5 37.2,64.5 C35.4,62.5 32.2,62.5 30.2,64.5 L30.3,64.5 L30.3,64.5 Z M75.5,7 C67.7,-0.6 57,-1 49.8,6 L44.8,11 C42.8,13 42.8,16 44.8,18 C46.6,20 49.8,20 51.8,18 L56.8,13 C60.5,9.4 65.3,11 68.5,14 C70.2,15.8 71.1,18 71.1,20.3 C71.1,22.7 70.3,24.9 68.6,26.6 L52.6,42.4 C45.4,49.6 42,46.2 40.6,44.8 C38.6,42.8 35.6,42.8 33.6,44.8 C31.6,46.8 31.6,49.8 33.6,51.8 C36.9,55.1 40.6,56.8 44.6,56.8 C49.6,56.8 54.6,54.3 59.6,49.4 L75.6,33.6 C79,30 81,25.4 81,20.3 C81,15.3 79,10.6 75.5,7 L75.5,7 L75.5,7 Z"/></svg></a></time>
-	    		{{ post.title }} ↦
-	    		{% else %}
-	    		<time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
-	    		{{ post.title }}
-	    		{% endif %}
-	    	</h3>
-	    	<p>
-	    		{{ post.excerpt }}
-	    	</p>
-	    </a>
+		<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+			<h3 class="header">
+				{% if post.link %}
+				<time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }} <a href="Permalink for &quot;{{ post.title }}&quot;"><svg class="permalink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82"><path fill-rule="evenodd" stroke-width="2" d="M30.3,64.5 L26.3,68.5 C22.7,72 17,72 13.5,68.5 C11.8,66.8 10.9,64.5 10.9,62.2 C10.9,59.9 11.7,57.6 13.4,56 L28.4,41.2 C31.4,38.2 37.2,33.6 41.4,37.8 C43.4,39.8 46.4,39.8 48.4,37.8 C50.4,35.8 50.4,32.8 48.4,30.8 C41.2,23.6 30.6,25 21.4,34.2 L6.4,49 C3,52.4 1,57 1,62 C1,67 3,72 6.5,75.5 C10.2,79.2 15,81 20,81 C24.7,81 29.6,79.2 33.2,75.5 L37.2,71.5 C39.2,69.5 39.2,66.5 37.2,64.5 C35.4,62.5 32.2,62.5 30.2,64.5 L30.3,64.5 L30.3,64.5 Z M75.5,7 C67.7,-0.6 57,-1 49.8,6 L44.8,11 C42.8,13 42.8,16 44.8,18 C46.6,20 49.8,20 51.8,18 L56.8,13 C60.5,9.4 65.3,11 68.5,14 C70.2,15.8 71.1,18 71.1,20.3 C71.1,22.7 70.3,24.9 68.6,26.6 L52.6,42.4 C45.4,49.6 42,46.2 40.6,44.8 C38.6,42.8 35.6,42.8 33.6,44.8 C31.6,46.8 31.6,49.8 33.6,51.8 C36.9,55.1 40.6,56.8 44.6,56.8 C49.6,56.8 54.6,54.3 59.6,49.4 L75.6,33.6 C79,30 81,25.4 81,20.3 C81,15.3 79,10.6 75.5,7 L75.5,7 L75.5,7 Z"/></svg></a></time>
+				{{ post.title }} ↦
+				{% else %}
+				<time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+				{{ post.title }}
+				{% endif %}
+			</h3>
+			<p>
+				{{ post.excerpt }}
+			</p>
+		</a>
 	</li>
 {% endfor %}
 </ul>
