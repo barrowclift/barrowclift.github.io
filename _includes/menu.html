@@ -1,15 +1,16 @@
 <menu class="no-select">
 	<div id="mainmenu">
-		<header onclick="document.getElementById('hidden-logo-link').click()">
-			<div id="logo">
-				{% if page.error %}
-				{% include logo-error.html %}
-				{% else %}
-				{% include logo-happy.html %}
-				{% endif %}
-			</div>
-		</header>
-		<a id="hidden-logo-link" href="{{ site.baseurl }}/">Home</a>
+		<a href="{{ site.baseurl }}/">
+			<header onclick="document.getElementById('hidden-logo-link').click()">
+				<div id="logo">
+					{% if page.error %}
+					{% include logo-error.html %}
+					{% else %}
+					{% include logo-happy.html %}
+					{% endif %}
+				</div>
+			</header>
+		</a>
 		<ul>
 			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="{{ site.baseurl }}/articles/">Articles</a></li>
 			<li><a class="{%if page.projects-menu-active %}active{% endif %}" href="{{ site.baseurl }}/projects/">Projects</a></li>
