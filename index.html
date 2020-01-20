@@ -40,7 +40,7 @@ home-menu-active: true
 			<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
 			{% endif %}
 				<h3 class="header">
-					<time itemprop="dateCreated">{% if post.type == "article" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project Update</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
+					<time itemprop="dateCreated">{% if post.type == "article" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
 					<!-- {% if forloop.index0 == 0 %}
 					<img class="rounded" src="{{ post.image }}"/>
 					{% endif %} -->

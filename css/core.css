@@ -226,6 +226,9 @@ dl, table,
         margin-top: 0.65em; /* 1.3 base type bottom margin / 2 */
         margin-bottom: 0;
     }
+        li ol.bare-list, li ul.bare-list {
+            margin-top: 0;
+        }
 ol, ul,
 dl dd {
     margin-left: 1.95em; /* 1.3 base type bottom margin * 1.5 */
@@ -284,7 +287,7 @@ ul {
     ul ul {
         list-style-type: none;
     }
-        ul ul li:before {
+        ul ul:not(.bare-list) li:before {
             content: "-";
             position: absolute;
             margin-left: -1.3em;
@@ -292,7 +295,7 @@ ul {
         ul ul ul {
             list-style-type: circle;
         }
-            ul ul ul li:before {
+            ul ul ul:not(.bare-list) li:before {
                 content: none;
                 margin-left: 0;
             }
@@ -307,6 +310,9 @@ ul {
     .compact-list li {
         margin: 0;
     }
+.emoji-list {
+    margin-left: 0.25em !important;
+}
 /* No paragraph margins, keep them one logical block (good for short lists) */
 .compact-list li,
 .compact-list ul,
@@ -436,13 +442,9 @@ menu {
     padding-right: env(safe-area-inset-right);
 }
 .safari menu #mainmenu ul,
-.safari menu #submenu ul,
-.safari .bigfoot-footnote__content,
-.safari .bigfoot-footnote__tooltip,
+.safari menu #submenu ul
 .chrome menu #mainmenu ul,
-.chrome menu #submenu ul,
-.chrome .bigfoot-footnote__content,
-.chrome .bigfoot-footnote__tooltip {
+.chrome menu #submenu ul {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -728,9 +730,9 @@ menu header:hover #logo #logo-eye-opened,
 /* ----- CARDS ----- */
 .threeDHover:hover,
 .shadow a:hover img,
-.shadow:hover video,
+.shadow video:hover,
 .ios-screenshot a:hover img,
-.ios-screenshot:hover video,
+.ios-screenshot video:hover,
 .watchos-screenshot a:hover img,
 .watchos-screenshot:hover video,
 .summary-list li a:hover {
@@ -1226,6 +1228,52 @@ mark {
     content: none !important;
 }
 
+.admonition.tweet {
+    background-color: hsla(203, 89%, 53%, 0.1);
+    border-color: #1DA1F2 !important;
+}
+.admonition.tweet > p:first-child:before,
+.admonition.tweet .admonition-title:before {
+    position: absolute;
+    content: url("data:image/svg+xml; utf8, <svg viewBox='0 0 250 250' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><path d='M78.62,249.59 C172.96,249.59 224.56,171.43 224.56,103.65 C224.56,101.43 224.56,99.22 224.41,97.02 C234.448314,89.7591086 243.113555,80.768794 250,70.47 C240.638791,74.6180177 230.708293,77.3382865 220.54,78.54 C231.24744,72.1298206 239.261235,62.0477199 243.09,50.17 C233.021575,56.1445532 222.006461,60.3551202 210.52,62.62 C194.620828,45.7139428 169.357194,41.5761258 148.895493,52.5267993 C128.433792,63.4774727 117.86275,86.7932573 123.11,109.4 C81.8689574,107.332495 43.4447578,87.8532327 17.4,55.81 C3.78622756,79.2464473 10.7398788,109.228595 33.28,124.28 C25.117412,124.038075 17.1327937,121.836132 10,117.86 C10,118.07 10,118.29 10,118.51 C10.0066813,142.92593 27.2175149,163.955352 51.15,168.79 C43.598696,170.8494 35.6758059,171.150443 27.99,169.67 C34.7094793,190.564228 53.9657456,204.877839 75.91,205.29 C57.7473504,219.564319 35.3105951,227.313277 12.21,227.29 C8.12903569,227.282165 4.05204065,227.035075 0,226.55 C23.4563595,241.602766 50.749134,249.587169 78.62,249.55' id='Path' fill='#FFFFFF' fill-rule='nonzero'></path></g></svg>");
+    border-radius: 25%;
+    height: 1.45em;
+    width: 0.875em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    margin-left: -2em;
+}
+.admonition.tweet g {
+    fill: white;
+}
+.admonition.tweet a {
+    color: #1DA1F2;
+}
+.admonition.tweet a:hover {
+    background-color: hsla(203, 89%, 53%, 0.1);
+}
+#dark .admonition.tweet a:hover {
+    background-color: hsla(203, 89%, 53%, 0.15);
+}
+.admonition.tweet .admonition-title:before,
+.admonition.tweet p:first-child:before {
+    background-color: #1DA1F2 !important;
+}
+#dark .admonition.tweet {
+    background-color: hsla(203, 89%, 53%, 0.15);
+}
+.admonition.award > p:first-child:before,
+.admonition.award .admonition-title:before {
+    position: absolute;
+    content: '★';
+    border-radius: 25%;
+    height: 1.45em;
+    width: 0.875em;
+    padding-left: 0.2125em;
+    padding-right: 0.3625em;
+    margin-left: -1.975em;
+}
+
 
 /* ----- HINTS ----- */
 [data-hint]:after {
@@ -1245,6 +1293,9 @@ video {
     max-width: 100%;
     width: 100%;
     height: auto;
+}
+video:focus {
+    outline: none;
 }
 img {
     max-width: 100%;
@@ -1283,6 +1334,12 @@ figcaption + p {
 }
 .inline.shadow {
     margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+.one-image,
+.two-images,
+.three-images {
+    width: 100%;
     margin-bottom: 1.3em;
 }
 
@@ -1361,7 +1418,10 @@ video.rounded {
 }
 
 .edge-to-edge a:hover,
-figure a:hover {
+figure a:hover,
+.one-image a:hover,
+.two-images a:hover,
+.three-images a:hover {
     background-color: transparent !important;
 }
 
@@ -1407,15 +1467,32 @@ figure a:hover {
 }
 .two-images img,
 .two-images video {
+    max-width: 28vw;
+    width: 25vw;
+    margin-left: 1.75vw;
+    margin-right: 1.75vw;
+}
+.edge-to-edge.two-images img,
+.edge-to-edge.two-images video {
     max-width: 44vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
 }
 .three-images img,
 .three-images video {
+    width: 25vw;
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+    max-width: 9.25em;
+}
+.edge-to-edge.three-images img,
+.edge-to-edge.three-images video {
     max-width: 28vw;
     margin-left: 1.75vw;
     margin-right: 1.75vw;
+}
+figure:not(.edge-to-edge) figcaption {
+    margin-bottom: 0;
 }
 
 .stroke-transparent {
@@ -1469,8 +1546,26 @@ h2 img {
     opacity: 0.1;
 }
 
-.gemoji {
-    width: 1em;
+.emoji {
+    vertical-align: text-bottom;
+}
+.bullet {
+    margin-right: 0.5em;
+}
+
+.twitter-logo svg {
+    vertical-align: baseline;
+    height: 0.75em;
+}
+.twitter-logo g {
+    fill: #1DA1F2 !important;
+}
+.twitter-logo,
+.twitter-logo:hover {
+    color: #1DA1F2 !important;
+}
+.twitter-logo:hover {
+    background-color: transparent !important;
 }
 
 
@@ -1790,9 +1885,7 @@ hr {
 }
 
 /* Transitioning shadows */
-.project,
-.shadow a img,
-.shadow video { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
+.project { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
     transition: box-shadow 0.2s ease;
 }
 
@@ -1808,13 +1901,12 @@ hr {
 /* SVG Fill */
 .fill-transparent,
 .fill-color,
-.signature-color {
-    transition: fill 0.2s ease;
-}
+.signature-color,
 .card .fill-transparent,
 .card .fill-color,
-.card .signature-color {
-    transition: fill 200ms ease;
+.card .signature-color,
+.twitter-logo g {
+    transition: fill 0.2s ease;
 }
 
 /* Everything */
@@ -1831,7 +1923,9 @@ input, textarea {
 .card,
 .threeDHover,
 .shadow a img,
-.shadow video {
+.shadow video,
+.ios-screenshot img,
+.ios-screenshot video {
     transition: box-shadow 200ms ease, transform 200ms ease;
 }
 .card-animation {
@@ -1997,6 +2091,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     menu ul {
         line-height: 1.8em; /* 1.2 header line height * 1.5 */
+        margin-top: -1px;
+        padding-bottom: 1px;
     }
     menu {
         font-weight: 500;
@@ -2010,6 +2106,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
     /* ----- LISTS ----- */
     .task-list {
         margin-left: 0.62em;
+    }
+    .emoji-list {
+        margin-left: 0.75em !important;
     }
 
 
@@ -2289,18 +2388,31 @@ Font size: 19px, ~Margin&Padding: 28.5px
         margin-top: 0.65em;
     }
 
-    .one-image img,
-    .one-image video,
     .two-images img,
-    .two-images video,
+    .two-images video {
+        max-width: 10em;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
     .three-images img,
     .three-images video {
+        width: 10em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-width: unset;
+    }
+    .edge-to-edge.one-image img,
+    .edge-to-edge.one-image video,
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
         max-width: 28vw;
     }
-    .two-images img,
-    .two-images video,
-    .three-images img,
-    .three-images video {
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
         margin-left: 2vw;
         margin-right: 2vw;
     }
@@ -2477,6 +2589,10 @@ Font size: 21px, ~Margin&Padding: 31.5px
             padding-left: 0.78em;
             padding-top: 0.50em;
         }
+            menu ul {
+                margin-top: -2px;
+                padding-bottom: 3px;
+            }
             menu > ul {
                 padding-left: 0;
                 text-align: center;
@@ -2546,14 +2662,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .edge-to-edge.large video {
         border-radius: 0;
     }
-    .one-image img,
-    .two-images img,
-    .three-images img,
-    .one-image video,
-    .two-images video,
-    .three-images video {
-        border-radius: 0.75em !important;
-    }
     .edge-to-edge.medium {
         max-width: 1000px;
         width: 100vw;
@@ -2570,18 +2678,40 @@ Font size: 21px, ~Margin&Padding: 31.5px
     /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
        but stay bound for home view. */
     .one-image img,
-    .one-image video,
     .two-images img,
+    .three-images img,
+    .one-image video,
     .two-images video,
+    .three-images video {
+        border-radius: 0.75em !important;
+    }
+    .two-images img,
+    .two-images video {
+        max-width: 14rem;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
     .three-images img,
     .three-images video {
+        width: 10.25em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-width: unset;
+    }
+    .edge-to-edge.one-image img,
+    .edge-to-edge.one-image video,
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
         width: 25vw;
         max-width: 17rem;
     }
-    .two-images img,
-    .two-images video,
-    .three-images img,
-    .three-images video {
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
         margin-left: 1.3rem;
         margin-right: 1.3rem;
     }
@@ -2590,7 +2720,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .macos-window-screenshot video {
         border-radius: 8px !important;
     }
-
 
     /* CODE --------------------------------------- */
 
@@ -2654,11 +2783,13 @@ html,
 /**
  * Primary floating backgrounds
  */
-menu,
-#popup-background,
-[data-hint]:after,
 .bigfoot-footnote__content,
 .bigfoot-footnote__tooltip {
+    background-color: rgb(255, 255, 255);
+}
+menu,
+#popup-background,
+[data-hint]:after {
     background-color: rgba(255, 255, 255, 0.9);
 }
 .hint--right[data-hint]:before {
@@ -2675,10 +2806,8 @@ menu,
 }
     .safari menu,
     .safari #popup-background,
-    .safari .bigfoot-footnote__content,
     .chrome menu,
-    .chrome #popup-background,
-    .chrome .bigfoot-footnote__content {
+    .chrome #popup-background {
         background-color: rgba(255, 255, 255, 0.7);
     }
 /**
@@ -2890,10 +3019,10 @@ menu {
     .admonition.aside,
     .threeDHover:hover,
     .shadow a:hover img,
-    .shadow:hover video,
+    .shadow video:hover,
     .project:hover,
     .ios-screenshot a:hover img,
-    .ios-screenshot:hover video,
+    .ios-screenshot video:hover,
     .watchos-screenshot a:hover img,
     .watchos-screenshot:hover video,
     .popup,
@@ -3024,9 +3153,11 @@ html#dark {
 #dark menu {
     background-color: rgba(23, 23, 23, 0.95);
 }
-#dark [data-hint]:after,
 #dark .bigfoot-footnote__content,
-#dark .bigfoot-footnote__tooltip,
+#dark .bigfoot-footnote__tooltip {
+    background-color: rgb(46, 46, 46);
+}
+#dark [data-hint]:after,
 #dark #popup-background {
     background-color: rgba(46, 46, 46, 0.95);
 }
@@ -3046,9 +3177,7 @@ html#dark {
     #dark.chrome menu {
         background-color: rgba(23, 23, 23, 0.7);
     }
-    #dark.safari .bigfoot-footnote__content,
     #dark.safari #popup-background,
-    #dark.chrome .bigfoot-footnote__content,
     #dark.chrome #popup-background {
         background-color: rgba(46, 46, 46, 0.7);
     }
@@ -3287,10 +3416,10 @@ html#dark,
     #dark .admonition.aside,
     #dark .threeDHover:hover,
     #dark .shadow a:hover img,
-    #dark .shadow:hover video,
+    #dark .shadow video:hover,
     #dark .project:hover,
     #dark .ios-screenshot a:hover img,
-    #dark .ios-screenshot:hover video,
+    #dark .ios-screenshot video:hover,
     #dark .watchos-screenshot a:hover img,
     #dark .watchos-screenshot:hover video,
     #dark .popup,
