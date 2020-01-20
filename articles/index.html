@@ -25,11 +25,11 @@ sup[id^=fnref] {
 		<figure>
 			<p>
 				{% if post.banner-link %}
-				<a href="{{post.banner-link}}" {% if post.banner-hover %}title="{{post.banner-hover}}"{% endif %}>
-					<img src="/images/assets/{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
+				<a href="{{ post.banner-link }}" {% if post.banner-hover %}title="{{ post.banner-hover }}"{% endif %}>
+					<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
 				</a>
 				{% else %}
-				<img src="/images/assets/{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
+				<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
 				{% endif %}
 			</p>
 		</figure>

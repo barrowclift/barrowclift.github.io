@@ -8,11 +8,11 @@ categories:
   - Photos
 timelocked: true
 excerpt: "It can get confusing trying to figure out the best way to losslessly share photos with someone, but I'm here to help!"
-image: "/images/assets/lossless-photo-sharing/share-image.jpg"
+image: "{{ site.dropbox }}/lossless-photo-sharing/share-image.jpg"
 ---
 
 <figure markdown="1" class="edge-to-edge small">
-![A cartoon of me with analysis paralysis while looking at a pile of different photo service icons, including Dropbox, iCloud Photo Sharing, Flickr, and many more]({{ site.baseurl }}/images/assets/lossless-photo-sharing/what-to-choose.png "Decisions, decisions...")
+![A cartoon of me with analysis paralysis while looking at a pile of different photo service icons, including Dropbox, iCloud Photo Sharing, Flickr, and many more]({{ site.dropbox }}/lossless-photo-sharing/what-to-choose.png "Decisions, decisions...")
 </figure>
 
 My mom sent me an email recently asking for advice sending a couple photos to a friend. She knew that emailing worked in theory, but was concerned the pictures would be compressed at some point along the way. I had to stop and think for a moment on this one; what *is* the best option for losslessly sharing a photo or two with someone? While on that thought, what's the best option for losslessly sharing entire albums of photos? In a sea of services all promising to make the confusing mess that is photo sharing a thing of the past, how is anyone supposed to figure it out?
@@ -26,7 +26,7 @@ Sharing A Handful of Pictures
 -----------------------------
 
 <figure markdown="1" class="half-inline">
-[![The Dropbox logo]({{ site.baseurl }}/images/assets/lossless-photo-sharing/dropbox.svg)](https://www.dropbox.com)
+[![The Dropbox logo]({{ site.dropbox }}/lossless-photo-sharing/dropbox.svg)](https://www.dropbox.com)
 </figure>
 
 The optimal solution is to use [Dropbox](https://www.dropbox.com) by sending [shareable links](https://www.dropbox.com/en/help/167) to your recipients. This solution assumes a one-way transaction of photos from you to another person or small group of people, no collaborative sharing needed.
@@ -50,7 +50,7 @@ Sharing Photo Albums
 --------------------
 
 <figure markdown="1" class="half-inline">
-[![The Google Photos logo]({{ site.baseurl }}/images/assets/lossless-photo-sharing/google-photos.svg)](https://photos.google.com)
+[![The Google Photos logo]({{ site.dropbox }}/lossless-photo-sharing/google-photos.svg)](https://photos.google.com)
 </figure>
 
 Creating and sharing albums in Google Photos is currently the best option for collaboratively sharing more than a handful of photos. While Google Photos didn't fare as well as Dropbox for individual photo sharing, it was entirely because it was carefully tailored to best suit managing and sharing many photos from large libraries. Thus, it truly shines when the volume of photos being shared increases to album size and beyond. With *any* service, by the time you want to start sharing more than a couple photos, the problem's scope necessitates a more robust and fully-featured service to support easily uploading and managing all the photos. Since solutions in this tier are naturally "heavy duty" because of this, the previous hit against Google Photos for being a bit too much for just sharing a single photo or two vanishes.

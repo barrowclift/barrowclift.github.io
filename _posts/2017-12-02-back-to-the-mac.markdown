@@ -9,7 +9,7 @@ categories:
   - Best Of
 timelocked: true
 excerpt: "The feature listicle that macOS deserves."
-image: "/images/assets/back-to-the-mac/share_image.png"
+image: "{{ site.dropbox }}/back-to-the-mac/share_image.png"
 ---
 
 <style>
@@ -146,10 +146,10 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 Who am I kidding, the macOS emoji picker is the feature people will love the most from this list[^i-guess]. You can launch the picker yourself in practically any application with <kbd>^</kbd> + <kbd>⌘</kbd> + <kbd>spacebar</kbd>.
 
 <figure markdown="1" class="edge-to-edge medium">
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
-	<source src="/videos/assets/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/emoji-picker.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
+	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </figure>
@@ -159,8 +159,8 @@ Who am I kidding, the macOS emoji picker is the feature people will love the mos
 Why Apple to this day hides the date in the macOS Menu Bar clock, I'll never know. To check the date with the default settings, you'd need to open up Calender or check Notification Center&mdash;both of which are nonstarters. Checking the time *and* date should be as immediate and instinctual as glancing at a wristwatch or a family calendar on a nearby wall. If you agree, open up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences..."), click on "Date & Time", and in the "Clock" tab check the box that says "Show the day of the week".
 
 <figure markdown="1" class="edge-to-edge small">
-<a href="{{ site.baseurl }}/images/assets/back-to-the-mac/menu-bar-date.jpg">
-![Image showing the macOS menu bar clock with the date displayed alongside the time]({{ site.baseurl }}/images/assets/back-to-the-mac/menu-bar-date.jpg){: .menu-bar}
+<a href="{{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg">
+![Image showing the macOS menu bar clock with the date displayed alongside the time]({{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg){: .menu-bar}
 </a>
 </figure>
 
@@ -177,10 +177,10 @@ Quicklook on macOS completely solves this problem, and is perhaps my single favo
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
-	<source src="/videos/assets/back-to-the-mac/quicklook.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/quicklook.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/quicklook.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
+	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -194,10 +194,10 @@ Spotlight is the little magnifying glass on the right side of the Menu Bar and i
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
-	<source src="/videos/assets/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
+	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -213,10 +213,10 @@ With the default macOS settings, simply tap the word with three fingers and a de
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
-	<source src="/videos/assets/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/tap-to-define.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -233,7 +233,7 @@ The Calendar app will automatically see these birthdays and create yearly, repea
 You may be aware that Windows supports taking screenshots of windows with the [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool). If you are, you're also aware of how hilariously hideous the results are. As expected, Microsoft implemented the feature with their usual level of polish, resulting in tiresome file dialogs for screenshots of un-cropped windows, all bundled together with a [grotesque app icon](https://en.wikipedia.org/wiki/Snipping_Tool#/media/File:Snipping_Tool_10_Icon.png).
 
 <figure markdown="1" class="edge-to-edge small no-border-radius">
-![Image of Windows File Explorer screenshot. If you have difficulties seeing, or the image didn't load for some reason, just take my word for it that it looks like ass]({{ site.baseurl }}/images/assets/fearful-computing/internet-explorer.png)
+![Image of Windows File Explorer screenshot. If you have difficulties seeing, or the image didn't load for some reason, just take my word for it that it looks like ass]({{ site.dropbox }}/fearful-computing/internet-explorer.png)
 <figcaption>
 People, you know you don't have to put up with this shit, right?
 </figcaption>
@@ -246,7 +246,7 @@ If you wanted to take a screenshot of a given section of your screen (not the fu
 While these are certainly helpful, this is technically nothing Window's Snipping Tool couldn't do. Where macOS's Grab app truly shines is it's superior window screenshots, which are lovely little window images like this:
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of a lovely macOS window screenshot]({{ site.baseurl }}/images/assets/back-to-the-mac/screenshot-example.png)
+![Image of a lovely macOS window screenshot]({{ site.dropbox }}/back-to-the-mac/screenshot-example.png)
 </figure>
 
 To make your own, enter the shortcut you did to get the click-and-drag crosshairs before (<kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>), only this time instead of clicking and dragging, press <kbd>spacebar</kbd>. Your crosshairs will transform into a little camera icon, and with that icon you can click on *any* window in macOS to get a perfect window screenshot saved to your Desktop with the familiar camera shutter sound.
@@ -266,7 +266,7 @@ There was none. There is none. Windows 7, the *"gold standard"* operating system
 This is not a problem at all on macOS. Simply open up the [QuickTime app](https://en.wikipedia.org/wiki/QuickTime) with Spotlight (<kbd>⌘</kbd> + <kbd>spacebar</kbd>, type "QuickTime", and press <kbd>return</kbd>). Once the app is open, click "File" > "New Screen Recording". You'll get a small popup window with a VU meter and record button. Click that red button and follow the brief onscreen instructions to begin. Just like that, you're screen recording like a pro!
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the screen recording Quicktime window]({{ site.baseurl }}/images/assets/back-to-the-mac/quicktime-screen-recording.png){: .quicktime }
+![Image of the screen recording Quicktime window]({{ site.dropbox }}/back-to-the-mac/quicktime-screen-recording.png){: .quicktime }
 </figure>
 
 ### Built-In Screensharing
@@ -302,10 +302,10 @@ If you're reading this, you already have at least a passing interest in wanting 
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
-	<source src="/videos/assets/back-to-the-mac/text-navigation.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/text-navigation.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/text-navigation.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -321,10 +321,10 @@ To start, you can easily switch to the previous and next tabs of any tabbed wind
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
-	<source src="/videos/assets/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
+	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -334,10 +334,10 @@ Quickly switching tabs is nice and all, but it doesn't do much if you still have
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
-	<source src="/videos/assets/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -359,7 +359,7 @@ To help make the feature slightly more appealing&mdash;potentially enough to mak
 Adding your own autocorrections couldn't be easier; open up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences..."), click on the "Keyboard" item, and then select the "Text" tab. There, you can add whatever autocorrect substitutions you want to the table on the left.
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the text substitutions System Preferences pane]({{ site.baseurl }}/images/assets/back-to-the-mac/custom-autocorrect-settings.png){: .custom-autocorrect}
+![Image of the text substitutions System Preferences pane]({{ site.dropbox }}/back-to-the-mac/custom-autocorrect-settings.png){: .custom-autocorrect}
 </figure>
 
 To get started, I've included a few of my favorite substitutions for you to consider adding to your own autocorrection collection:
@@ -395,10 +395,10 @@ Once you've added your desired substitutions, using them is as easy as typing mi
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
-	<source src="/videos/assets/back-to-the-mac/text-substitution.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/text-substitution.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/text-substitution.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -419,32 +419,32 @@ All the work improvement tips up to this point have involved the keyboard to var
 Tell me then, why do so many people continue to use default application toolbars?
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the default Finder toolbar]({{ site.baseurl }}/images/assets/back-to-the-mac/finder-default.png){: .finder-default }
+![Image of the default Finder toolbar]({{ site.dropbox }}/back-to-the-mac/finder-default.png){: .finder-default }
 </figure>
 
 Take for example the nightmare that is the Finder window toolbar. It looks like something Google made, with loads of mystery meat hieroglyphic buttons most people will never use, or even need. Thankfully, you can change it and nearly every macOS application's toolbar by going to "View > Customize toolbar..." in the menu bar. A helpful dialog will slide down filled with various buttons, and from that point on you simply drag and drop in or out whatever you want until you're satisfied.
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the Finder toolbar customization pane]({{ site.baseurl }}/images/assets/back-to-the-mac/customize-toolbar-sheet.png){: .customize-toolbar-sheet }
+![Image of the Finder toolbar customization pane]({{ site.dropbox }}/back-to-the-mac/customize-toolbar-sheet.png){: .customize-toolbar-sheet }
 </figure>
 
 Don't be afraid to experiment! You wouldn't just buy a desk from an IKEA showroom and keep all the stuff on the desk *exactly* like IKEA had arranged it, would you? No! You'd get your arrangement *just right* to fit the way you work, and you should consider doing the same to your toolbars. Don't worry, You can always get back the default toolbar by dragging the "default set" back up to the top, so there's no risk of "breaking it". Once you've chosen just the stuff __you__ want, click the "Done" button to save your changes.
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of my customized Finder toolbar]({{ site.baseurl }}/images/assets/back-to-the-mac/finder-custom.png){: .finder-default }
+![Image of my customized Finder toolbar]({{ site.dropbox }}/back-to-the-mac/finder-custom.png){: .finder-default }
 </figure>
 
 For inspiration, just compare the noisy mess that is the default Mail compose window toolbar to the one I use. For as much as Apple touts being simple and elegant, it's amazing they don't have something like mine as the default, right?
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the default Mail Compose toolbar]({{ site.baseurl }}/images/assets/back-to-the-mac/mail-default.png){: .mail-default }
+![Image of the default Mail Compose toolbar]({{ site.dropbox }}/back-to-the-mac/mail-default.png){: .mail-default }
 <figcaption>
 Default
 </figcaption>
 </figure>
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of my custom Mail Compose toolbar]({{ site.baseurl }}/images/assets/back-to-the-mac/mail-custom.png){: .mail-default }
+![Image of my custom Mail Compose toolbar]({{ site.dropbox }}/back-to-the-mac/mail-custom.png){: .mail-default }
 <figcaption>
 Custom
 </figcaption>
@@ -459,39 +459,39 @@ While there's nothing I can write here that will fix Finder[^fftf], I can at lea
 If a search is being made in an opened folder, *why* should that search ever default to searching an entirely different folder instead? If I issued a command for a robot to search my desk drawer for something, I'd consider the robot defective it searched the *entire house* instead of just the specified drawer. The same logic applies to digital folders; if I start a search in a folder, __I expect the search to occur in that folder__. If I wanted to search another folder, __I'd have gone to that folder and started the search there__. If you agree, navigate to "Finder > Preferences...", and in the "Advanced" tab where it says "When performing a search", select "Search the Current Folder". You can now enjoy a marginally less horrible file browser while searching the folders you were expecting to in the first place.
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![Image of the finder Preferences window]({{ site.baseurl }}/images/assets/back-to-the-mac/finder-preferences.png){: .finder-preferences }
+![Image of the finder Preferences window]({{ site.dropbox }}/back-to-the-mac/finder-preferences.png){: .finder-preferences }
 </figure>
 
 ### Automator 101 🤖
 
 If you're a developer, you've undoubtably written small utility scripts to help you with common tasks like data or file manipulations and are already familiar with just how much time and mental energy they save you. Even if you're not a developer per-say, you may have relied on scripts before for other things and not even known it, like macros for Excel. Now, imagine the same conveniences those scripts offer, but baked into the very core of your operating system. Meet [Automator](https://en.wikipedia.org/wiki/List_of_macOS_components#Automator), the unsung hero of macOS efficiency.
 
-What can you do with Automator? Practically anything. Want to make PDFs from selected images directly in Finder? [Automator's got you covered]({{ site.baseurl }}/downloads/assets/back-to-the-mac/Make PDF from Images.zip). Want to convert selected text into an MP3 for listening during a commute? What if you wanted this ability for *any* selectable text in macOS? [Not a problem for Automator](http://automator.us/leopard/examples/ex07/index.html). Frustrated about having no quick, easy, and universal way to convert image formats? [Come on, give Automator something hard to do]({{ site.baseurl }}/downloads/assets/back-to-the-mac/Change Image Format.zip)!
+What can you do with Automator? Practically anything. Want to make PDFs from selected images directly in Finder? [Automator's got you covered]({{ site.dropbox }}/downloads/back-to-the-mac/Make PDF from Images.zip). Want to convert selected text into an MP3 for listening during a commute? What if you wanted this ability for *any* selectable text in macOS? [Not a problem for Automator](http://automator.us/leopard/examples/ex07/index.html). Frustrated about having no quick, easy, and universal way to convert image formats? [Come on, give Automator something hard to do]({{ site.dropbox }}/downloads/back-to-the-mac/Change Image Format.zip)!
 
 Making your own scripts like the ones I mentioned above are shockingly easy. First, open up the Automator app, which is easily identifiable due to its striking resemblance to Eve from Pixar's *Wall-E*[^wall-e].
 
 <figure markdown="1" class="inline">
-![Image showing Auto the Automator robot and Wall-E's Eve side-by-side]({{ site.baseurl }}/images/assets/back-to-the-mac/automator-and-eve.png)
+![Image showing Auto the Automator robot and Wall-E's Eve side-by-side]({{ site.dropbox }}/back-to-the-mac/automator-and-eve.png)
 </figure>
 
 Once opened, you're met with a plentiful list of "Actions" to the left and a chronological timeline to the right where you can drag and drop various actions together to create your desired script. However, if making your own doesn't really interest you, you can search the web for [dozens of pre-made ones](http://macosxautomation.com/services/download/index.html#), ready for use. Additionally, I've linked my favorites below for you to download:
 
 <ul class="compact-list">
-  <li><a href="{{ site.baseurl }}/downloads/assets/back-to-the-mac/Change Image Format.zip">Change Image Format</a></li>
-  <li><a href="{{ site.baseurl }}/downloads/assets/back-to-the-mac/Combine PDFs.zip">Combine PDFs</a></li>
-  <li><a href="{{ site.baseurl }}/downloads/assets/back-to-the-mac/Convert Text to Audio File.zip">Convert Text to Audio File</a></li>
-  <li><a href="{{ site.baseurl }}/downloads/assets/back-to-the-mac/Make PDF from Images.zip">Make PDF from Images</a></li>
-  <li><a href="{{ site.baseurl }}/downloads/assets/back-to-the-mac/Rename Files Sequentially.zip">Rename Files Sequentially</a></li>
+  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Change Image Format.zip">Change Image Format</a></li>
+  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Combine PDFs.zip">Combine PDFs</a></li>
+  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Convert Text to Audio File.zip">Convert Text to Audio File</a></li>
+  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Make PDF from Images.zip">Make PDF from Images</a></li>
+  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Rename Files Sequentially.zip">Rename Files Sequentially</a></li>
 </ul>
 
 To install these scripts, simply double click any ones you've downloaded and click the "Install" button in the popup. From then on you'll be able to access them by right clicking applicable files in Finder (if you've got a lot of them, they'll instead be grouped under a new "Services" submenu).
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
-	<source src="/videos/assets/back-to-the-mac/services.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/services.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/services.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
+	<source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -512,8 +512,8 @@ Unfortunately, due to the specialized nature of mouse-driven automation, there's
 macOS is great at many things, but "Get Info" windows aren't one of then. If you've ever made the mistake of right clicking a bunch of selected files and clicking "Get Info...", you already know why. For those don't, have you even won a round of Windows Solitaire?
 
 <figure markdown="1" class="edge-to-edge large">
-<a href="{{ site.baseurl }}/images/assets/back-to-the-mac/originals/death-by-get-info.jpg">
-![Loads of Finder "Get Info" windows, LOADS OF THEM]({{ site.baseurl }}/images/assets/back-to-the-mac/death-by-get-info.jpg)
+<a href="{{ site.dropbox }}/back-to-the-mac/originals/death-by-get-info.jpg">
+![Loads of Finder "Get Info" windows, LOADS OF THEM]({{ site.dropbox }}/back-to-the-mac/death-by-get-info.jpg)
 </a>
 <figcaption>
 God dammit, Apple...
@@ -523,7 +523,7 @@ God dammit, Apple...
 Thankfully, there *is* a way to consolidate multiple "Get Info" windows into one, but it requires a special interaction: <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>I</kbd>. "What could this window possibly be useful for?", you may ask. It's indispensable for showing/hiding the extensions of multiple files at once (the only other option being to "Get Info" files one-by-one), and it can be quite useful for changing permissions of numerous files at once without having to fire up Terminal and memorize the necessary Unix commands. Now, instead of drowning in countless individual "Get Info" windows, next time you need to edit multiple files at once you can instead fuse them together into a single, sensible window for your edits.
 
 <figure markdown="1" class="inline macos-window-screenshot">
-![The consolidated Finder "Get Info" window]({{ site.baseurl }}/images/assets/back-to-the-mac/consolidated-get-info-window.png){: .get-info }
+![The consolidated Finder "Get Info" window]({{ site.dropbox }}/back-to-the-mac/consolidated-get-info-window.png){: .get-info }
 </figure>
 
 -----
@@ -544,10 +544,10 @@ As fate would have it, *you can still get the old mini player back*, even in the
 
 <figure markdown="1" class="edge-to-edge large">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
-	<source src="/videos/assets/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
+	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -569,15 +569,15 @@ Much to my glee, macOS offers a convenient way to replace practically *any* file
 
 ### Dark Mode 🌚
 
-Let it be said: the dark side has its perks. Besides [shooting lighting out your fingertips](https://www.youtube.com/watch?v=e_DqV1xdf-Y), having a dark background *and* dark UI elements make late-night computing much easier on the eyes. Don't believe me? Open up [this image]({{ site.baseurl }}/images/assets/back-to-the-mac/all-black/) late at night in fullscreen Safari, then switch to [this image]({{ site.baseurl }}/images/assets/back-to-the-mac/all-white/). I'd be willing to bet you winced when you swapped from the calming black image to the stark white one.
+Let it be said: the dark side has its perks. Besides [shooting lighting out your fingertips](https://www.youtube.com/watch?v=e_DqV1xdf-Y), having a dark background *and* dark UI elements make late-night computing much easier on the eyes. Don't believe me? Open up [this image]({{ site.dropbox }}/back-to-the-mac/all-black/) late at night in fullscreen Safari, then switch to [this image]({{ site.dropbox }}/back-to-the-mac/all-white/). I'd be willing to bet you winced when you swapped from the calming black image to the stark white one.
 
 In the past, the only action we could take to combat this was changing our desktop background. The Dock (if visible) and Menu Bar were still white as always, resulting in an unappealing visual clash between the white UI elements and black background. With the advent of [macOS Yosemite](https://web.archive.org/web/20141021032812/http://www.apple.com/osx/), however, our prayers were finally answered in the form of a half-baked, barely thought out "dark mode" which only changed the Menu Bar and Dock to dark-themed variants&mdash;leaving every other white UI element untouched. While poorly executed, the "Dark Mode" at the very least does allow dark backgrounds to blend naturally into the rest of the Desktop UI, allowing black images to be a visually pleasing, viable background choice on macOS for the first time.
 
 If you've always found yourself gravitating towards dark backgrounds, you owe it to yourself to give Dark Mode a spin if you haven't already[^website-dark-mode]. Enabling it's as easy as opening up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences...") and clicking the "Use dark menu bar and Dock" checkbox in the "General" Preference Pane. Below's a screenshot of my Desktop with the setting enabled to give you an idea of what to expect.
 
 <figure markdown="1" class="edge-to-edge large">
-<a href="{{ site.baseurl }}/images/assets/back-to-the-mac/originals/dark-mode.jpg">
-![Image of my desktop with Dark Mode enabled]({{ site.baseurl }}/images/assets/back-to-the-mac/dark-mode.jpg)
+<a href="{{ site.dropbox }}/back-to-the-mac/originals/dark-mode.jpg">
+![Image of my desktop with Dark Mode enabled]({{ site.dropbox }}/back-to-the-mac/dark-mode.jpg)
 </a>
 </figure>
 
@@ -597,10 +597,10 @@ Third party menu bar icons come in all kinds of styles. Some have thick stroke l
 
 <figure markdown="1" class="inline">
 <p>
-<video controls preload="metadata" poster="/videos/assets/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
-	<source src="/videos/assets/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
-	<source src="/videos/assets/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
-	<source src="/videos/assets/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
+<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
+	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
+	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
+	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
@@ -614,12 +614,12 @@ However, even with the poor treatment its receives, macOS continues to stand str
 
 -----
 
-[^i-guess]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct"></div><p style="text-align:left;"><a href="http://www.gunshowcomic.com/367"><img alt="I GUESS" class="i-guess" src="{{ site.baseurl }}/images/assets/back-to-the-mac/i-guess.png" /></a></p></figure>
-[^finder]: Although, there's no denying he's utterly adorable.<img class="finder" alt="Fin the Finder" src="{{ site.baseurl }}/images/assets/back-to-the-mac/finder.png" />
+[^i-guess]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct"></div><p style="text-align:left;"><a href="http://www.gunshowcomic.com/367"><img alt="I GUESS" class="i-guess" src="{{ site.dropbox }}/back-to-the-mac/i-guess.png" /></a></p></figure>
+[^finder]: Although, there's no denying he's utterly adorable.<img class="finder" alt="Fin the Finder" src="{{ site.dropbox }}/back-to-the-mac/finder.png" />
 [^fftf]: Fun Fact: <abbr title="Fix the 🙊 Finder">FTFF</abbr> was a well known acronym chanted by many Mac fans back in the early days of the Mac OS X. I'll give you one guess as to what it stood for, fill in the missing word: "Fix the 🙊 Finder".
 [^wall-e]: The similarity to Apple's design aesthetic was no coincidence; *Wall-E*'s director, Andrew Stanton, revealed in [an interview with Fortune](http://money.cnn.com/2008/05/09/technology/siklos_walle.fortune/index.htm?postversion=2008051208) that Apple's "playbook for design" drove Eve's seamless and sleek character design.
 [^website-dark-mode]: If dark mode's your thing, try clicking the moon in the upper right-hand corner of this site's menu (or tapping the logo on mobile devices). This site fully supports dark mode for late night reading, and remembers your preference for next time!
-[^dock]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct large"></div><p style="text-align:left;"><img alt="MacBook screenshot showcasing the space taken up by the Dock" class="macbook" style="border-radius:0.25em" src="{{ site.baseurl }}/images/assets/back-to-the-mac/macbook-dock.jpg"/></p></figure>
+[^dock]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct large"></div><p style="text-align:left;"><img alt="MacBook screenshot showcasing the space taken up by the Dock" class="macbook" style="border-radius:0.25em" src="{{ site.dropbox }}/back-to-the-mac/macbook-dock.jpg"/></p></figure>
 
 *[VU]: Volume Unit
 *[MP3]: Moving Picture Experts Group Layer-3 Audio

@@ -5,12 +5,12 @@ date: 2017-12-02 23:19:40
 categories:
   - Announcement
 excerpt: "Join us as we scrutinize and celebrate great music, one episode at a time"
-image: "/images/assets/we-made-a-podcast/podcast-cover-art.jpg"
+image: "{{ site.dropbox }}/we-made-a-podcast/podcast-cover-art.jpg"
 ---
 
 <figure markdown="1" class="inline shadow">
 <a href="https://badmusichertz.com/post/lonesome-dreams">
-![Bad Music Hertz podcast cover art]({{ site.baseurl }}/images/assets/we-made-a-podcast/podcast-cover-art.jpg)
+![Bad Music Hertz podcast cover art]({{ site.dropbox }}/we-made-a-podcast/podcast-cover-art.jpg)
 </a>
 </figure>
 

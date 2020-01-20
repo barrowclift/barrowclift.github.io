@@ -8,20 +8,20 @@ categories:
   - iPod
   - Stories
 excerpt: "The day I got my iPod Touch, I retired my iPod Video to the great \"old electronics\" drawer in the sky and didn't look back. Until last month, that is."
-image: "/images/assets/restoring-my-ipod-video/share-image.jpg"
+image: "{{ site.dropbox }}/restoring-my-ipod-video/share-image.jpg"
 ---
 
 I still remember how thrilled I was the day I got my [iPod Touch](https://web.archive.org/web/20081201132411/http://www.apple.com:80/ipodtouch/)&mdash;or more specifically, how thrilled I was I could finally dump my old [iPod Video](https://en.wikipedia.org/wiki/IPod_Classic#5th_generation). Besides the strict technical upgrade, after four years of hard but loving use, my iPod Video was showing its age. The battery hardly lasted an hour on a single charge (even with the screen brightness turned completely down). The once-gloriously shiny metal back was now dull and dented, and the [infamously scratch-attractive screen](https://www.cnet.com/news/ipod-nano-special-report-scratches-how-to-protect-from-and-fix/) was even worse, transforming its contents into a dim and smudgy mess that no amount of polishing could fix. The 30GB storage that once seemed as endless was practically bursting at the seams.
 
 <div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-screen.jpg">
-![My old iPod Video's scratchy screen]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/old-ipod-video-screen.jpg">
+![My old iPod Video's scratchy screen]({{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg)
 </a>
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-front.jpg">
-![My old iPod Video's aged, dim display and yellowed white plastic front]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/old-ipod-video-front.jpg">
+![My old iPod Video's aged, dim display and yellowed white plastic front]({{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg)
 </a>
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/old-ipod-video-back.jpg">
-![My old iPod Video's battered and scratched metal back plate]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/old-ipod-video-back.jpg">
+![My old iPod Video's battered and scratched metal back plate]({{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg)
 </a>
 </div>
 
@@ -45,8 +45,8 @@ As it turns out, I'm quite fortunate to have an old iPod Video lying around. Not
 With that said, there's no way I could use it as-is. The deteriorated battery, tiny storage, and battered appearance was just too hard a pill to swallow. There was no doubt about it, a repair was required. However, if I was going to do a repair, I wouldn't stop with just a simple restoration&mdash;oh no&mdash;I'd want a full ["Pimp My Ride"](https://en.wikipedia.org/wiki/Pimp_My_Ride) upgrade, featuring an improved screen and massive SSD with enough space for all the music I'd ever own in my lifetime. Excited at the prospects, I jumped right in.
 
 <figure markdown="1" class="edge-to-edge small shadow">
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/some-assembly-required.jpg">
-![My old iPod Video beside the various replacement components]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/some-assembly-required.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/some-assembly-required.jpg">
+![My old iPod Video beside the various replacement components]({{ site.dropbox }}/restoring-my-ipod-video/jpg/some-assembly-required.jpg)
 </a>
 <figcaption>
 (Some assembly required)
@@ -84,14 +84,14 @@ After all that, surely this time was a success, right?
 Thankfully, after numerous fits and starts, the replacement audio jack did indeed work and I finally sealed the unit up. See the results for yourself!
 
 <div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-screen.jpg">
-![My new, scratch-free screen]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-screen.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/new-ipod-video-screen.jpg">
+![My new, scratch-free screen]({{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-screen.jpg)
 </a>
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-front.jpg">
-![My new, bright display and crisp, white plastic front]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-front.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/new-ipod-video-front.jpg">
+![My new, bright display and crisp, white plastic front]({{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-front.jpg)
 </a>
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/new-ipod-video-back.jpg">
-![My new, shiny metal back plate]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/new-ipod-video-back.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/new-ipod-video-back.jpg">
+![My new, shiny metal back plate]({{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-back.jpg)
 </a>
 </div>
 
@@ -100,8 +100,8 @@ The restoration didn't only include a brand new shell and buttons to get back th
 While I'm pleased with the final product itself, I haven't been able to shake a feeling of melencholy I picked up from one particular replacement part I received. The reseller that supplied me various components for the repair sells the audio jack still attached to the original back casing of the iPod it came from (after all, why waste time taking it out if nobody wants to buy a used, scratched-up back plate?). As I was doing to repair, I found this etched on the back of the casing that was sent with mine.
 
 <figure markdown="1" class="edge-to-edge small shadow">
-<a href="{{ site.baseurl }}/images/assets/restoring-my-ipod-video/originals/norman-and-cara.jpg">
-![The back plate of one of the replacement parts I ordered with the etching "Love always and forever / Norman and Cara"]({{ site.baseurl }}/images/assets/restoring-my-ipod-video/jpg/norman-and-cara.jpg)
+<a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/norman-and-cara.jpg">
+![The back plate of one of the replacement parts I ordered with the etching "Love always and forever / Norman and Cara"]({{ site.dropbox }}/restoring-my-ipod-video/jpg/norman-and-cara.jpg)
 </a>
 </figure>
 
