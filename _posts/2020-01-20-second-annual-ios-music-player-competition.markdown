@@ -3,7 +3,7 @@ layout: post
 title: "Second Annual iOS Music Player Competition"
 date: 2020-01-20 18:42:21-0500
 excerpt: "Eleven of the finest iOS music players go head-to-head in the ultimate showdown. Which will earn the gold as 2019's best?"
-image: "{{ site.dropbox }}/second-annual-ios-music-player-competition/share-image.jpg"
+image: "second-annual-ios-music-player-competition/share-image.jpg"
 ---
 
 <style>

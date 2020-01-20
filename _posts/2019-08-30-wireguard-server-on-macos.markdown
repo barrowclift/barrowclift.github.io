@@ -11,7 +11,7 @@ categories:
   - Unix
   - Guides
 excerpt: "With this guide, you too can easily enjoy Wireguard VPN's performance and security served by macOS Mojave."
-image: "{{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg"
+image: "wireguard-server-on-macos/share-image.jpg"
 has_afterward: true
 ---
 

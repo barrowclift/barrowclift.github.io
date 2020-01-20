@@ -5,7 +5,7 @@ date: 2017-12-02 23:19:40
 categories:
   - Announcement
 excerpt: "Join us as we scrutinize and celebrate great music, one episode at a time"
-image: "{{ site.dropbox }}/we-made-a-podcast/podcast-cover-art.jpg"
+image: "we-made-a-podcast/podcast-cover-art.jpg"
 ---
 
 <figure markdown="1" class="inline shadow">

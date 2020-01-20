@@ -7,7 +7,7 @@ categories:
   - macOS
   - Design
 excerpt: "Icon redesigns are a difficult balancing act to pull off. Tower 2 did so gracefully, but what about Tower 3?"
-image: "{{ site.dropbox }}/eulogy-for-a-good-icon/share-image.jpg"
+image: "eulogy-for-a-good-icon/share-image.jpg"
 has_afterward: true
 ---
 

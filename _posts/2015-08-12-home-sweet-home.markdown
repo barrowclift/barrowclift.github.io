@@ -8,7 +8,7 @@ categories:
   - Home Screen
   - Organization
 excerpt: "It's about time you get yourself the beautiful and efficient iPhone home screen you deserve."
-image: "{{ site.dropbox }}/home-sweet-home/share-image.jpg"
+image: "home-sweet-home/share-image.jpg"
 ---
 
 What's your iPhone home screen look like? Perhaps you have a few default apps from when you first bought your iPhone like Camera and Clock still taking up a couple rows on your first page. Or maybe you have that one game still sitting on your dock that was really popular a couple months ago but you've mostly stopped playing. Some of you might have half a dozen pages of apps while others might have a dozen folders strewn about like they were accidentally dropped in.

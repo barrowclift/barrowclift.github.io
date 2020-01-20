@@ -15,7 +15,7 @@ banner-image-small: "/deep-blue/blue-light-laptop@small.jpg"
 banner-link: "https://www.youtube.com/watch?v=cDIRT_NEMxo"
 banner-alt: "Laptop backlight glowing brightly in a dark room"
 banner-hover: "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me."
-image: "/deep-blue/blue-light-laptop.jpg"
+image: "deep-blue/blue-light-laptop.jpg"
 ---
 
 As a student that has for years now feverishly clacked away assignments deep into the night, f.lux is my easily most precious app. No longer do I have to be bathed in eerie, bright blue light in the night; my poor eyes instead are rewarded a much needed reprieve with a soothing, orange glow that steadily grows with the fading day.

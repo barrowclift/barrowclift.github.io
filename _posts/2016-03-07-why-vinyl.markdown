@@ -9,7 +9,7 @@ categories:
   - Technology
   - Best Of
 excerpt: "At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format that's been long considered dead in the public consciousness since the optical CD was introduced over thirty years ago. And I love it to bits."
-image: "{{ site.dropbox }}/why-vinyl/divers-photos.jpg"
+image: "why-vinyl/divers-photos.jpg"
 ---
 
 At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format long thought dead by the general public since the CD was introduced over thirty years ago. Not to mention, for today's youth that grow up with constant access to the entirety of music history at the tap of a screen the notion of having physical objects dedicated to predetermined static content must seem barbaric.
