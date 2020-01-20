@@ -8,7 +8,7 @@ categories:
   - Design
   - Music
 excerpt: "My quest to find a niche app that's unapologetically for people that love actively listening to and collecting music. Who will win?"
-image: "{{ site.dropbox }}/quest-for-the-best-ios-music-player/share-image.jpg"
+image: "quest-for-the-best-ios-music-player/share-image.jpg"
 has_afterward: true
 ---
 

@@ -8,7 +8,7 @@ categories:
   - iPod
   - Stories
 excerpt: "The day I got my iPod Touch, I retired my iPod Video to the great \"old electronics\" drawer in the sky and didn't look back. Until last month, that is."
-image: "{{ site.dropbox }}/restoring-my-ipod-video/share-image.jpg"
+image: "restoring-my-ipod-video/share-image.jpg"
 ---
 
 I still remember how thrilled I was the day I got my [iPod Touch](https://web.archive.org/web/20081201132411/http://www.apple.com:80/ipodtouch/)&mdash;or more specifically, how thrilled I was I could finally dump my old [iPod Video](https://en.wikipedia.org/wiki/IPod_Classic#5th_generation). Besides the strict technical upgrade, after four years of hard but loving use, my iPod Video was showing its age. The battery hardly lasted an hour on a single charge (even with the screen brightness turned completely down). The once-gloriously shiny metal back was now dull and dented, and the [infamously scratch-attractive screen](https://www.cnet.com/news/ipod-nano-special-report-scratches-how-to-protect-from-and-fix/) was even worse, transforming its contents into a dim and smudgy mess that no amount of polishing could fix. The 30GB storage that once seemed as endless was practically bursting at the seams.

@@ -6,7 +6,7 @@ categories:
   - Programming
   - Stories
 excerpt: "Pouring one out for the new generation of Turtles out there."
-image: "{{ site.dropbox }}/turtles-hares-and-hot-rods/math-turtle.jpg"
+image: "turtles-hares-and-hot-rods/math-turtle.jpg"
 ---
 
 <figure markdown="1" class="edge-to-edge medium">

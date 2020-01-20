@@ -5,7 +5,7 @@ date: 2017-02-14 1:05:17
 categories:
   - Programming
   - Technology
-image: "{{ site.dropbox }}/meaningful-names/share-image.jpg"
+image: "meaningful-names/share-image.jpg"
 excerpt: "What does \"magic()\" mean? How about \"foo()\"? Or \"arg1\"? Nobody knows, and that's the problem."
 
 ---

@@ -7,7 +7,7 @@ categories:
   - Organization
   - macOS
 excerpt: "I couldn't help but wonder just what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn't?"
-image: "{{ site.dropbox }}/tags-explained/share-image.jpg"
+image: "tags-explained/share-image.jpg"
 ---
 
 <figure markdown="1" class="inline">

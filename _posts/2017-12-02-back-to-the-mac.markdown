@@ -9,7 +9,7 @@ categories:
   - Best Of
 timelocked: true
 excerpt: "The feature listicle that macOS deserves."
-image: "{{ site.dropbox }}/back-to-the-mac/share_image.png"
+image: "back-to-the-mac/share_image.png"
 ---
 
 <style>

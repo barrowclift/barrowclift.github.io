@@ -8,7 +8,7 @@ categories:
   - Photos
 timelocked: true
 excerpt: "It can get confusing trying to figure out the best way to losslessly share photos with someone, but I'm here to help!"
-image: "{{ site.dropbox }}/lossless-photo-sharing/share-image.jpg"
+image: "lossless-photo-sharing/share-image.jpg"
 ---
 
 <figure markdown="1" class="edge-to-edge small">
