@@ -687,7 +687,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 <ul class="bare-list emoji-list">
 <li><span class="bullet">:trophy:</span> <strong>Discovery options: </strong><em>If you want any degree of customization to the core "music player" experience, Marvis Pro is not only a fantastic option, it’s the <strong>only</strong> option.</em></li>
 <li><span class="bullet">:trophy:</span> <strong>Album-focused design:</strong> <em>While "out of the box" it’s not particularly album-centric, it can easily be customized to be the best album-focused music player of the lot.</em><ul class="bare-list">
-    <li><span class="bullet">:trophy:</span> <strong>Proper sorting:</strong> <em markdown="1">While tucked away in the secret "Power Users" menu[^its-a-secret], Marvis Pro does indeed support my beloved sorting method, and was even specially implemented by Aditya at my request, if you can believe it.</em></li>
+    <li><span class="bullet">:trophy:</span> <strong>Proper sorting:</strong> <em markdown="1">Marvis Pro supports my beloved sorting method with its flexible, built-in sorting rules.</em></li>
     <li><span class="bullet">:trophy:</span> <strong>Album grid view:</strong> <em>With its seer amount of display options, Marvis Pro is easily among the best. If you want a grid view in your music player, there’s no better option than Marvis Pro.</em></li>
 </ul></li>
 </ul>
@@ -705,7 +705,6 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 <li>Nearly every view in the app offers complete control over the content’s filtering, sorting, and rendering. No other music player offers as much customization</li>
 <li>Easily search and play both local music <em>and</em> Apple Music</li>
 <li>Customizable icons</li>
-<li>Suite of super-fussy "Power User" advanced settings available for the daring (menu hidden by default)</li>
 </ul>
 
 ### !["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app
@@ -1324,7 +1323,6 @@ Enough about what I think, what were *your* favorite iOS music players this year
 [^value-judgement]: Stezza's [tagline in the App Store](https://apps.apple.com/app/id590317007) reads "for the Car and AppRadio".
 [^car-usage]: However, for everyone's safety including your own, you should __never__ operate your phone while driving.
 [^ecoute-updates]: [Ecoute] received just three tiny bug fixes in 2019, all of which from more than six months ago.
-[^its-a-secret]: You didn't hear this from me, but to access the secret "Power Users" settings page, copy `LETS_give_YOU_more_POWER`, then navigate to "Settings" > "Advanced" in Marvis Pro. You should see an alert that the secret settings page has been unlocked.
 [^igor]: Ironically, I find the effect looks positively hideous with [Tyler the Creator](https://music.apple.com/us/artist/tyler-the-creator/420368335)'s [*Igor*](https://music.apple.com/us/album/igor/1463409338) (featured throughout this article as the "demonstration album"), but in day-to-day use I found the effect looks great the vast majority of the time. Such is the nature with designs like this, the results really do vary!
 [^stacks]: Now renamed "Paths" for the "SongOwl" rebanding.
 [^volume-gesture]: This gesture would typically adjust the volume in TapTunes, but when this gesture is disabled the album art in the "Now Playing" view becomes a gesture "dead zone" and can no longer be used to even dismiss the view. The only other contender that behaves this way is [Sathron].
