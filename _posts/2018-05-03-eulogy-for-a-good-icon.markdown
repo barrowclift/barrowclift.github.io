@@ -6,8 +6,11 @@ categories:
   - Technology
   - macOS
   - Design
+  - Best Of
 excerpt: "Icon redesigns are a difficult balancing act to pull off. Tower 2 did so gracefully, but what about Tower 3?"
 image: "eulogy-for-a-good-icon/share-image.jpg"
+foreground-color: "#45373B"
+background-color: "#EDB392"
 has_afterward: true
 ---
 

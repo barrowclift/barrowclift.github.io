@@ -8,8 +8,11 @@ categories:
   - iOS
   - Windows
   - Backups
-excerpt: "Depending on your response to the following question, it's not a matter of if you'll share a similar fate, but when: Do you back up your devices?"
-image: "two-is-one-one-is-none/panel-3-colored.jpg"
+  - Best Of
+excerpt: "If you're not currently backing up your data, it's not a matter of \"if\" you lose it, but \"when\"."
+image: "two-is-one-one-is-none/share-image.jpg"
+background-color: "#FFFFFF"
+foreground-color: "rgba(30, 30, 30, 0.9)"
 ---
 
 Your computer is priceless. It doesn't matter whether or not you have a new top-of-the-line desktop or an ancient, eight-year-old clunker, these computers are priceless not because of their specs but because of the data entrusted to their care. Nowadays, we trust our computers not only with memories such as baby pictures and wedding videos but also files critical to our livelihoods like personal projects and art portfolios. This data is more than just computer files, it's an extension of ourselves: our memories, our livelihoods, our lives. This data, *your* data, is precious.

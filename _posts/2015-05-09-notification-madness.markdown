@@ -6,6 +6,7 @@ categories:
   - Technology
   - iOS
   - Notifications
+  - Best Of
 excerpt: "Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn't have to be this way!"
 ---
 

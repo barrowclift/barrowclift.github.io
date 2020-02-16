@@ -115,6 +115,7 @@ textarea { /* Must explicitly add textarea for Firefox bug, proving once again i
     the text a bit and makes it more crisp and pleasing to read. */
     -webkit-font-smoothing: antialiased;
 }
+* {-webkit-font-smoothing: antialiased;}
 pre,
 code {
     /* This isn't perfect. Ideally, we'd use a monospace variant of the "system-ui"
@@ -1861,22 +1862,22 @@ html {
     transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0);
 }
 input, textarea {
-    transition: background-color 0.2s ease, border 0.2s ease;
+    transition: background-color 0.2s ease, border 0.2s ease-in-out;
 }
 menu ul a,
 main a,
 .anchor,
 #settings-toggle {
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .summary-list li a {
-    transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .summary-list h3 {
-    transition: color 0.2s ease;
+    transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 menu {
-    transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0), opacity 0.2s ease;
+    transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0), opacity 0.2s ease-in-out;
 }
 
 /* Transitioning background */
@@ -1886,17 +1887,17 @@ hr {
 
 /* Transitioning shadows */
 .project { /* For hovering special project "cards" on the project page (TODO refactor to generic .cards) */
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* SVG Stroke */
 .stroke-transparent,
 .stroke-color {
-    transition: stroke 0.2s ease;
+    transition: stroke 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .card .stroke-transparent,
 .card .stroke-color {
-    transition: stroke 200ms ease;
+    transition: stroke 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 /* SVG Fill */
 .fill-transparent,
@@ -1906,17 +1907,17 @@ hr {
 .card .fill-color,
 .card .signature-color,
 .twitter-logo g {
-    transition: fill 0.2s ease;
+    transition: fill 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* Everything */
 .anchor {
-    transition: all 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Border */
 input, textarea {
-    transition: border 0.1s ease;
+    transition: border 0.1s ease-in-out;
 }
 
 /* Resizing / Transformations */
@@ -1926,14 +1927,14 @@ input, textarea {
 .shadow video,
 .ios-screenshot img,
 .ios-screenshot video {
-    transition: box-shadow 200ms ease, transform 200ms ease;
+    transition: box-shadow .4s cubic-bezier(0.165, 0.84, 0.44, 1), transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .card-animation {
-    transition: transform 200ms ease;
+    transition: transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .button,
 button {
-    transition: background 0.2s ease, box-shadow 0.2s ease, transform 200ms ease;
+    transition: background 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .show-when-hovered,
@@ -1942,14 +1943,14 @@ button {
 #logo-eye-closed,
 #logo-eye-opened,
 #smirk {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 #menu-height-offset {
     transition: height 0.2s ease-out;
 }
 #submenu {
-    transition: height 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease;
+    transition: height 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease-in-out;
 }
 
 pre
@@ -2227,7 +2228,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
         .column > h2,
         .column > h3 {
             margin-top: 0.707em;
-        }  
+        }
         .column > h1:first-child,
         .column > h2:first-child,
         .column > h3:first-child {
@@ -2238,10 +2239,14 @@ Font size: 19px, ~Margin&Padding: 28.5px
         .column h6 {
             margin-top: 0;
         }
-        .column:first-child {
+        .column.w6:nth-child(odd) {
             margin-left: 5%;
         }
-        .column:last-child {
+        .column.w6:nth-child(even) {
+            margin-right: 5%;
+        }
+        .column.w12 {
+            margin-left: 5%;
             margin-right: 5%;
         }
     .flex main {
