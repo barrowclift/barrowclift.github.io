@@ -11,7 +11,9 @@ categories:
   - Stories
   - Best Of
 excerpt: "Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window."
-image: "fearful-computing/windows-desktop.jpg"
+image: "fearful-computing/share-image.jpg"
+background-color: "#1279cf"
+foreground-color: "#FCFCFC"
 ---
 
 When I was a child I &mdash; like most American children in the late 1990's &mdash; spent nearly all my car travel time engrossed in the world of Pokémon. The game cleverly leveraged the social pressures of competitive collecting utilized in the past for baseball cards with cute, digital monsters. Children were incentivized to trade with friends to obtain the bragging rights of collecting all 151 monsters which not only meant the game had a pervasive presence on the playground but also ensured that most of their free time would then be spent preparing for those trades by catching as many Pokémon as possible.

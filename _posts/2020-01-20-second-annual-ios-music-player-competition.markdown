@@ -4,6 +4,14 @@ title: "Second Annual iOS Music Player Competition"
 date: 2020-01-20 18:42:21-0500
 excerpt: "Eleven of the finest iOS music players go head-to-head in the ultimate showdown. Which will earn the gold as 2019's best?"
 image: "second-annual-ios-music-player-competition/share-image.jpg"
+categories:
+  - Technology
+  - iOS
+  - Design
+  - Music
+  - Best Of
+background-color: "#FFFFFF"
+foreground-color: "rgba(30, 30, 30, 0.9)"
 ---
 
 <style>

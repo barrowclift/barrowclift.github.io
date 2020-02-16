@@ -9,7 +9,9 @@ categories:
   - Best Of
 timelocked: true
 excerpt: "The feature listicle that macOS deserves."
-image: "back-to-the-mac/share_image.png"
+image: "back-to-the-mac/share-image.png"
+background-color: "#64B2B6"
+foreground-color: "#FFFFFF"
 ---
 
 <style>
