@@ -121,7 +121,7 @@ home-menu-active: true
 		{% assign maxNumberOfPopularArticles=3 %}
 		{% assign found=0 %}
 		{% assign used=0 %}
-		<ul style="margin-left:0;">
+		<ul style="margin-left:0;margin-bottom:0;">
 		{% for post in site.posts %}
 			{% if used >= maxNumberOfPopularArticles %}
 				{% break %}
@@ -157,7 +157,7 @@ home-menu-active: true
 		{% assign maxNumberOfPopularArticles=3 %}
 		{% assign found=0 %}
 		{% assign used=0 %}
-		<ul style="margin-left:0;">
+		<ul style="margin-left:0;margin-bottom:0;">
 		{% for post in site.posts %}
 			{% if used >= maxNumberOfPopularArticles %}
 				{% break %}
