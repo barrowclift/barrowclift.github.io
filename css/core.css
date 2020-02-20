@@ -443,7 +443,7 @@ menu {
     padding-right: env(safe-area-inset-right);
 }
 .safari menu #mainmenu ul,
-.safari menu #submenu ul
+.safari menu #submenu ul,
 .chrome menu #mainmenu ul,
 .chrome menu #submenu ul {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
