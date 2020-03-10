@@ -148,7 +148,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 Who am I kidding, the macOS emoji picker is the feature people will love the most from this list[^i-guess]. You can launch the picker yourself in practically any application with <kbd>^</kbd> + <kbd>⌘</kbd> + <kbd>spacebar</kbd>.
 
 <figure markdown="1" class="edge-to-edge medium">
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
 	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
@@ -179,7 +179,7 @@ Quicklook on macOS completely solves this problem, and is perhaps my single favo
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
 	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
@@ -196,7 +196,7 @@ Spotlight is the little magnifying glass on the right side of the Menu Bar and i
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
 	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
@@ -215,7 +215,7 @@ With the default macOS settings, simply tap the word with three fingers and a de
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
@@ -304,7 +304,7 @@ If you're reading this, you already have at least a passing interest in wanting 
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
@@ -323,7 +323,7 @@ To start, you can easily switch to the previous and next tabs of any tabbed wind
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
 	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
@@ -336,7 +336,7 @@ Quickly switching tabs is nice and all, but it doesn't do much if you still have
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
@@ -397,7 +397,7 @@ Once you've added your desired substitutions, using them is as easy as typing mi
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
@@ -490,7 +490,7 @@ To install these scripts, simply double click any ones you've downloaded and cli
 
 <figure markdown="1" class="edge-to-edge medium">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
 	<source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
@@ -546,7 +546,7 @@ As fate would have it, *you can still get the old mini player back*, even in the
 
 <figure markdown="1" class="edge-to-edge large">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
 	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
@@ -557,13 +557,13 @@ As fate would have it, *you can still get the old mini player back*, even in the
 
 ### Fix Ugly App Icons
 
-What do [Sublime Text](https://www.sublimetext.com), [MakeMKV](http://makemkv.com), and [Photoshop](TODO) all have in common? Why, hideous icons, of course!
+What do [Sublime Text](https://www.sublimetext.com), [MakeMKV](http://makemkv.com), and [Photoshop](https://www.photoshop.com) all have in common? Why, hideous icons, of course!
 
 Terrible macOS icons come in all kinds. Some, like [Sublime Text](https://www.sublimetext.com), are made competently enough, but outright ignore the [platform icon schema](http://martiancraft.com/blog/2014/07/inspecting-yosemite-icons/) and severely clash with the look-and-feel of the system as a result. However, others like [MakeMKV](http://makemkv.com) look like a [grade-schooler’s thirty-second Microsoft Paint job](https://dl2.macupdate.com/images/icons256/34693.png?d=1504635390) and should be jettisoned into the nearest black hole. Sure, the apps themselves are great, but there's no reason it has to be at the expense of stomaching their dumpster fire icon designs. What's an overly fussy person like me to do?
 
 Much to my glee, macOS offers a convenient way to replace practically *any* file's icon by means of the handy "Get Info" window [mentioned earlier](#get-info-multiple-files-at-once). To do so, you'll need to follow these steps:
 
-1. Open the replacement icon's image file in [Preview](TODO) by double-clicking the file.
+1. Open the replacement icon's image file in [Preview](https://en.wikipedia.org/wiki/Preview_(macOS)) by double-clicking the file.
 2. Select the whole image with <kbd>⌘</kbd> + <kbd>A</kbd> or by click-and-dragging.
 3. Copy the selection to your clipboard with <kbd>⌘</kbd> + <kbd>C</kbd>
 4. Open up the offending app's "Get Info" window with <kbd>⌘</kbd> + <kbd>I</kbd>
@@ -599,7 +599,7 @@ Third party menu bar icons come in all kinds of styles. Some have thick stroke l
 
 <figure markdown="1" class="inline">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
 	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
@@ -625,4 +625,4 @@ However, even with the poor treatment its receives, macOS continues to stand str
 
 *[VU]: Volume Unit
 *[MP3]: Moving Picture Experts Group Layer-3 Audio
-*[FTFF]: Fix the 🙊 Finder
+*[FTFF]: Fix the F#!&ing Finder

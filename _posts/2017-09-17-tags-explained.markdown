@@ -50,7 +50,7 @@ However, if we use tags instead, our situation quickly improves. There's no need
 
 <figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
 <p>
-<video controls preload="metadata" poster="{{ site.dropbox }}/tags-explained/tag-searching-poster.jpg" alt="A video of a macOS Finder window containing a folder filled with tagged web pages. The video depicts a user searching for web pages by the tags 'Professional', 'Colorful' and 'Typography'">
+<video controls preload="none" poster="{{ site.dropbox }}/tags-explained/tag-searching-poster.jpg" alt="A video of a macOS Finder window containing a folder filled with tagged web pages. The video depicts a user searching for web pages by the tags 'Professional', 'Colorful' and 'Typography'">
 	<source src="{{ site.dropbox }}/tags-explained/tag-searching.mp4" type="video/mp4">
 	<source src="{{ site.dropbox }}/tags-explained/tag-searching.webm" type="video/webm">
 	<source src="{{ site.dropbox }}/tags-explained/tag-searching.ogv" type="video/ogg">
