@@ -141,7 +141,7 @@ Like [last time](/post/quest-for-the-best-ios-music-player#disqualifications), m
 ### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .inline-app-icon } Jams On Toast
 
 <div class="edge-to-edge large two-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams usage in On Toast'" title="Demonstrating 'Jams On Toast' usage">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams usage in On Toast'" title="Demonstrating 'Jams On Toast' usage">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage.ogv" type="video/ogg">
@@ -166,7 +166,7 @@ Like last year, the "Now Playing" view remains a tiny portion of the screen; the
 ### !["Stezza" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/icon.png '"Stezza" iOS app icon'){: .inline-app-icon } Stezza
 
 <div class="edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage-poster.jpg" alt="Video demonstrating usage in 'Stezza'" title="Demonstrating 'Stezza' usage">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage-poster.jpg" alt="Video demonstrating usage in 'Stezza'" title="Demonstrating 'Stezza' usage">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage.ogv" type="video/ogg">
@@ -196,7 +196,7 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
 ### !["Ecoute" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/icon.png '"Ecoute" iOS app icon'){: .inline-app-icon } Ecoute
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in light mode" title="Demonstrating 'Ecoute' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in light mode" title="Demonstrating 'Ecoute' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage.ogv" type="video/ogg">
@@ -210,7 +210,7 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in dark mode" title="Demonstrating 'Ecoute' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in dark mode" title="Demonstrating 'Ecoute' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage.ogv" type="video/ogg">
@@ -238,7 +238,7 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
 ### !["Soor" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/icon.png '"Soor" iOS app icon'){: .inline-app-icon } Soor
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage.ogv" type="video/ogg">
@@ -252,7 +252,7 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in dark mode" title="Demonstrating 'Soor' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in dark mode" title="Demonstrating 'Soor' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage.ogv" type="video/ogg">
@@ -292,7 +292,7 @@ If your music collection is cloud-primary, I'd still recommend giving Soor a loo
 ### !["Music Player X" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/icon.png '"Music Player X" iOS app icon'){: .inline-app-icon } Music Player X
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in light mode" title="Demonstrating 'Music Player X' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in light mode" title="Demonstrating 'Music Player X' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage.ogv" type="video/ogg">
@@ -306,7 +306,7 @@ If your music collection is cloud-primary, I'd still recommend giving Soor a loo
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in dark mode" title="Demonstrating 'Music Player X' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in dark mode" title="Demonstrating 'Music Player X' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage.ogv" type="video/ogg">
@@ -348,7 +348,7 @@ With all the disqualifications out of the way, it's time to alphabetically revie
 ### !["Albums" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/albums/icon.png '"Albums" iOS app icon'){: .inline-app-icon } Albums
 
 <div class="show-when-light edge-to-edge large two-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage.ogv" type="video/ogg">
@@ -359,7 +359,7 @@ With all the disqualifications out of the way, it's time to alphabetically revie
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large two-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in dark mode" title="Demonstrating 'Albums' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in dark mode" title="Demonstrating 'Albums' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage.ogv" type="video/ogg">
@@ -407,7 +407,7 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
 ### !["Cs" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/cs/icon.png '"Cs" iOS app icon'){: .inline-app-icon } Cs
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage.ogv" type="video/ogg">
@@ -421,7 +421,7 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage.ogv" type="video/ogg">
@@ -492,7 +492,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 ### !["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .inline-app-icon } Doppi
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in light mode" title="Demonstrating 'Doppi' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in light mode" title="Demonstrating 'Doppi' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage.ogv" type="video/ogg">
@@ -506,7 +506,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in dark mode" title="Demonstrating 'Doppi' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in dark mode" title="Demonstrating 'Doppi' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage.ogv" type="video/ogg">
@@ -567,7 +567,7 @@ Doppi's not without its share of problems, albeit minor; the absence of customiz
 ### !["Doppler" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/icon.png '"Doppler" iOS app icon'){: .inline-app-icon } Doppler
 
 <div class="edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage-poster.jpg" alt="Video demonstrating usage in 'Doppler'" title="Demonstrating 'Doppler' usage">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage-poster.jpg" alt="Video demonstrating usage in 'Doppler'" title="Demonstrating 'Doppler' usage">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage.ogv" type="video/ogg">
@@ -623,7 +623,7 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
 ### !["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in light mode" title="Demonstrating 'Marvis Pro' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in light mode" title="Demonstrating 'Marvis Pro' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage.ogv" type="video/ogg">
@@ -637,7 +637,7 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in dark mode" title="Demonstrating 'Marvis Pro' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in dark mode" title="Demonstrating 'Marvis Pro' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage.ogv" type="video/ogg">
@@ -718,7 +718,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 ### !["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage.ogv" type="video/ogg">
@@ -732,7 +732,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in dark mode" title="Demonstrating 'Music.app' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in dark mode" title="Demonstrating 'Music.app' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage.ogv" type="video/ogg">
@@ -815,7 +815,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 ### !["Picky" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/picky/icon.png '"Picky" iOS app icon'){: .inline-app-icon } Picky
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in light mode" title="Demonstrating 'Picky' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in light mode" title="Demonstrating 'Picky' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage.ogv" type="video/ogg">
@@ -829,7 +829,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in dark mode" title="Demonstrating 'Picky' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in dark mode" title="Demonstrating 'Picky' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage.ogv" type="video/ogg">
@@ -891,7 +891,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 ### !["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in light mode" title="Demonstrating 'Power Player' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in light mode" title="Demonstrating 'Power Player' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage.ogv" type="video/ogg">
@@ -905,7 +905,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in dark mode" title="Demonstrating 'Power Player' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in dark mode" title="Demonstrating 'Power Player' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage.ogv" type="video/ogg">
@@ -1002,7 +1002,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 ### !["Sathorn" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/icon.png '"Sathorn" iOS app icon'){: .inline-app-icon } Sathorn
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage.ogv" type="video/ogg">
@@ -1016,7 +1016,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in dark mode" title="Demonstrating 'Sathorn' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in dark mode" title="Demonstrating 'Sathorn' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage.ogv" type="video/ogg">
@@ -1093,7 +1093,7 @@ Note that while Sathorn technically offers these options, each and every one are
 ### !["TapTunes" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/icon.png){: .inline-app-icon } TapTunes
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in light mode" title="Demonstrating 'TapTunes' usage in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in light mode" title="Demonstrating 'TapTunes' usage in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage.ogv" type="video/ogg">
@@ -1107,7 +1107,7 @@ Note that while Sathorn technically offers these options, each and every one are
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in dark mode" title="Demonstrating 'TapTunes' usage in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in dark mode" title="Demonstrating 'TapTunes' usage in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage.ogv" type="video/ogg">
@@ -1139,19 +1139,19 @@ For example, TapTunes’ entire interface features the album blur effect typical
 As for notable features, TapTunes’ key differentiator is its pool of discovery options, implemented with a collection of odd but effective "displays". While most other players have "Artists", "Albums", etc. views browsable in a standard table or grid, TapTunes has a collection of five different displays that all offer unique ways to explore your library. For example, there’s "Circled", which renders your albums on a slot machine "Picker" control and makes your library a blast to flick through. There’s also "Stacked", which displays a scattered, vertically scrolling array of your albums at random shapes and sizes. All displays shuffle your records and automatically animate at a pleasant pace, so you can sit back and simply enjoy your library get ruffled through for you until you see a record you want to play. Once you do, playing it’s just a tap away. Because of these display views, TapTunes’ discovery features are some of the best I've found this year.
 
 <div class="show-when-light three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in light mode" title="Demonstrating 'TapTunes' 'Circled' display view in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in light mode" title="Demonstrating 'TapTunes' 'Circled' display view in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-scattered-poster.jpg" alt="Video demonstrating 'TapTunes' 'Scattered' display view in light mode" title="Demonstrating 'TapTunes' 'Scattered' display view in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-scattered-poster.jpg" alt="Video demonstrating 'TapTunes' 'Scattered' display view in light mode" title="Demonstrating 'TapTunes' 'Scattered' display view in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-scattered.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-scattered.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-scattered.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-grouped-poster.jpg" alt="Video demonstrating 'TapTunes' 'Grouped' display view in light mode" title="Demonstrating 'TapTunes' 'Grouped' display view in light mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-grouped-poster.jpg" alt="Video demonstrating 'TapTunes' 'Grouped' display view in light mode" title="Demonstrating 'TapTunes' 'Grouped' display view in light mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-grouped.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-grouped.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-grouped.ogv" type="video/ogg">
@@ -1159,19 +1159,19 @@ As for notable features, TapTunes’ key differentiator is its pool of discovery
 </video>
 </div>
 <div class="show-when-dark three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in dark mode" title="Demonstrating 'TapTunes' 'Circled' display view in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in dark mode" title="Demonstrating 'TapTunes' 'Circled' display view in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-scattered-poster.jpg" alt="Video demonstrating 'TapTunes' 'Scattered' display view in dark mode" title="Demonstrating 'TapTunes' 'Scattered' display view in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-scattered-poster.jpg" alt="Video demonstrating 'TapTunes' 'Scattered' display view in dark mode" title="Demonstrating 'TapTunes' 'Scattered' display view in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-scattered.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-scattered.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-scattered.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-grouped-poster.jpg" alt="Video demonstrating 'TapTunes' 'Grouped' display view in dark mode" title="Demonstrating 'TapTunes' 'Grouped' display view in dark mode">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-grouped-poster.jpg" alt="Video demonstrating 'TapTunes' 'Grouped' display view in dark mode" title="Demonstrating 'TapTunes' 'Grouped' display view in dark mode">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-grouped.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-grouped.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-grouped.ogv" type="video/ogg">
@@ -1211,7 +1211,7 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
 ### !["VOX" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/vox/icon.png '"VOX" iOS app icon'){: .inline-app-icon } VOX
 
 <div class="edge-to-edge large three-images ios-screenshot">
-<video controls preload="metadata" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage-poster.jpg" alt="Video demonstrating usage in 'VOX'" title="Demonstrating 'VOX' usage">
+<video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage-poster.jpg" alt="Video demonstrating usage in 'VOX'" title="Demonstrating 'VOX' usage">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage.ogv" type="video/ogg">

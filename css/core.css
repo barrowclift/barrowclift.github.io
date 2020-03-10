@@ -86,6 +86,9 @@ main {
     overflow: auto;
     overflow-x: hidden;
 }
+noscript {
+    width: 100%;
+}
 
 
 /* TYPOGRAPHY ----------------------------------------------------------------------- */
