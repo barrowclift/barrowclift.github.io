@@ -15,34 +15,59 @@
 			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="{{ site.baseurl }}/articles/">Articles</a></li>
 			<li><a class="{%if page.projects-menu-active %}active{% endif %}" href="{{ site.baseurl }}/projects/">Projects</a></li>
 			<li onclick="settingsClicked();" class="setting-toggles show-when-small" id="settings-toggle">
-				<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
-				<span><span class="small-caps">A</span>A</span>
+				<noscript>
+					{% if page.layout == "post" %}
+					{% assign articlePath=page.url | replace: "/post/", "/article/" %}
+					{% capture nitroLink %}https://nitro.barrowclift.me{{ articlePath }}{% endcapture %}
+					<a class="nitro-link" href="{{ nitroLink }}">&#x26A1;</a>
+					{% else %}
+					<a class="nitro-link" href="https://nitro.barrowclift.me">&#x26A1;</a>
+					{% endif %}
+				</noscript>
+				<div class="jsonly">
+					<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
+					<span><span class="small-caps">A</span>A</span>
+				</div>
 				<!-- https://stackoverflow.com/questions/23072351/css-box-with-arrow-and-shadow -->
 			</li>
 		</ul>
 		{% if page.hide-settings != true %}
 		<div onclick="settingsClicked();" class="setting-toggles" id="settings-toggle">
-			<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
-			<span><span class="small-caps">A</span>A</span>
+			<noscript>
+				{% if page.layout == "post" %}
+				{% assign articlePath=page.url | replace: "/post/", "/article/" %}
+				{% capture nitroLink %}https://nitro.barrowclift.me{{ articlePath }}{% endcapture %}
+				<a class="nitro-link" href="{{ nitroLink }}">&#x26A1;</a>
+				{% else %}
+				<a class="nitro-link" href="https://nitro.barrowclift.me">&#x26A1;</a>
+				{% endif %}
+			</noscript>
+			<div class="jsonly">
+				<input type="checkbox" name="settings-checkbox" id="settings-checkbox" value="settings" onclick="settingsToggled(this);" />
+				<span><span class="small-caps">A</span>A</span>
+			</div>
 			<!-- https://stackoverflow.com/questions/23072351/css-box-with-arrow-and-shadow -->
 		</div>
 		<div class="popup" id="settings-popup">
 			<div id="popup-background">
-				<div id="dark-mode-settings" class="group checkbox ios-switch">
-					<label>
-						<input onclick="darkModeToggled(this);" value="dark-mode" type="checkbox"><span>Dark Mode:</span>
-					</label>
+				<div id="dark-mode-settings" class="group">
+					<label>Appearance:</label>
+					<ul class="colors">
+						<li><div onclick="changeAppearance('auto')" class="color-well appearance auto"></div></li>
+						<li><div onclick="changeAppearance('light')" class="color-well appearance light"></div></li>
+						<li><div onclick="changeAppearance('dark')" class="color-well appearance dark"></div></li>
+					</ul>
 				</div>
-				<div id="accent-color-settings" class="group">
+				<div id="color-well-settings" class="group">
 					<label>Accent Color:</label>
-					<ul class="accent-colors">
-						<li><div onclick="changeAccentColor('blue')" class="accent-color blue"></div></li>
-						<li><div onclick="changeAccentColor('purple')" class="accent-color purple"></div></li>
-						<li><div onclick="changeAccentColor('pink')" class="accent-color pink"></div></li>
-						<li><div onclick="changeAccentColor('red')" class="accent-color red"></div></li>
-						<li><div onclick="changeAccentColor('orange')" class="accent-color orange"></div></li>
-						<li><div onclick="changeAccentColor('yellow')" class="accent-color yellow"></div></li>
-						<li><div onclick="changeAccentColor('green')" class="accent-color green"></div></li>
+					<ul class="colors">
+						<li><div onclick="changeAccentColor('blue')" id="input-blue" class="color-well blue"></div></li>
+						<li><div onclick="changeAccentColor('purple')" id="input-purple" class="color-well purple"></div></li>
+						<li><div onclick="changeAccentColor('pink')" id="input-pink" class="color-well pink"></div></li>
+						<li><div onclick="changeAccentColor('red')" id="input-red" class="color-well red"></div></li>
+						<li><div onclick="changeAccentColor('orange')" id="input-orange" class="color-well orange"></div></li>
+						<li><div onclick="changeAccentColor('yellow')" id="input-yellow" class="color-well yellow"></div></li>
+						<li><div onclick="changeAccentColor('green')" id="input-green" class="color-well green"></div></li>
 					</ul>
 				</div>
 			</div>

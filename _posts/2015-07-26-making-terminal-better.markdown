@@ -15,9 +15,11 @@ categories:
 <style>
 	.terminal-image-1 img {
 		max-width: 570px;
+		width: 100% !important;
 	}
 	.terminal-image-2 img {
 		max-width: 730px;
+		width: 100% !important;
 	}
 }
 </style>

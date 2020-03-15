@@ -26,17 +26,35 @@ if (is_safari || is_ios_safari) {
 	document.getElementsByTagName("html")[0].setAttribute("class", "chrome");
 }
 
-function darkModeToggled(checkbox) {
-	var cssId = "dark-mode";
+function changeAppearance(appearance) {
+	$(".color-well.light").removeClass("active");
+	$(".color-well.dark").removeClass("active");
+	$(".color-well.auto").removeClass("active");
 	$("menu").css("background-color", "");
-	if (checkbox.checked) {
-		$.cookie("dark-mode", "on");
-		$('#logo-speech-bubble').text("Stay cool, dude.");
-		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
-	} else {
+	if (appearance == null) {
+		appearance = $.cookie("dark-mode");
+	}
+	if ("light" == appearance) {
 		$.cookie("dark-mode", "off");
 		$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
 		document.getElementsByTagName("html")[0].removeAttribute("id");
+		$(".color-well.light").addClass("active");
+	} else if ("dark" == appearance) {
+		$.cookie("dark-mode", "on");
+		$('#logo-speech-bubble').text("Stay cool, dude.");
+		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+		$(".color-well.dark").addClass("active");
+	} else {
+		$.cookie("dark-mode", "auto");
+		var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		$(".color-well.auto").addClass("active");
+		if (inSystemDarkMode) {
+			$('#logo-speech-bubble').text("Stay cool, dude.");
+			document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+		} else {
+			$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
+			document.getElementsByTagName("html")[0].removeAttribute("id", "dark");
+		}
 	}
 }
 /* Allow clicking the area AROUND the buttons to trigger the effect as well */
@@ -62,6 +80,15 @@ function changeAccentColor(color) {
 		$("html").removeClass("green");
 		$("html").removeClass("purple");
 		$("html").removeClass("pink");
+		$(".color-well.blue").removeClass("active");
+		$(".color-well.red").removeClass("active");
+		$(".color-well.orange").removeClass("active");
+		$(".color-well.yellow").removeClass("active");
+		$(".color-well.green").removeClass("active");
+		$(".color-well.purple").removeClass("active");
+		$(".color-well.pink").removeClass("active");
+
+		$(".color-well." + color).addClass("active");
 		if (color == "blue") {
 			$.removeCookie("accent-color");
 		} else {
@@ -82,18 +109,37 @@ function upArrowClicked() {
 $(document).ready(function() {
 	/* Dark Mode */
 	$.cookie.defaults = { expires: 265, path: '/' };
+
+	// Never been set by the user, default to "auto"
+	if ($.cookie("dark-mode") == null) {
+		$.cookie("dark-mode", "auto");
+	}
+
+	var cachedDarkModeSetting = $.cookie("dark-mode");
 	var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	if ($.cookie("dark-mode") == "on" || (inSystemDarkMode && $.cookie("dark-mode") == null)) {
-		var cssId = 'dark-mode';
+	window.matchMedia('(prefers-color-scheme: dark)').addListener(changeAppearance);
+	if ("on" == cachedDarkModeSetting) {
 		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
-		$("input[value='dark-mode']").prop("checked", true);
 		$('#logo-speech-bubble').text("Stay cool, dude.");
-	} else {
+		$(".color-well.dark").addClass("active");
+	} else if ("off" == cachedDarkModeSetting) {
 		$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
+		$(".color-well.light").addClass("active");
+	} else {
+		$(".color-well.auto").addClass("active");
+		if (inSystemDarkMode) {
+			document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+			$('#logo-speech-bubble').text("Stay cool, dude.");
+		} else {
+			$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
+		}
 	}
 
 	if ($.cookie("accent-color") && !document.getElementsByTagName("body")[0].classList.contains("ignore-accent-color")) {
 		document.getElementsByTagName("html")[0].className += " " + $.cookie("accent-color");
+		$(".color-well." + color).addClass("active");
+	} else {
+		$(".color-well.blue").addClass("active");
 	}
 
 	/* anchor.min.js - Settings */
