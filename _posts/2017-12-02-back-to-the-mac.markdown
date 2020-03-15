@@ -17,19 +17,24 @@ foreground-color: "#FFFFFF"
 <style>
 .menu-bar {
 	max-width: 569px;
+	width: 100% !important;
 }
 .quicktime {
 	max-width: 288px;
+	width: 100% !important;
 	border-radius: 8px;
 }
 .finder-default {
 	max-width: 685px;
+	width: 100% !important;
 }
 .customize-toolbar-sheet {
 	max-width: 635px;
+	width: 100% !important;
 }
 .mail-default {
 	max-width: 586px;
+	width: 100% !important;
 }
 .quicktime,
 .finder-default,
@@ -41,25 +46,31 @@ foreground-color: "#FFFFFF"
 }
 .finder-preferences {
 	max-width: 371px;
+	width: 100% !important;
 }
 .custom-autocorrect {
 	max-width: 668px;
+	width: 100% !important;
 	zoom: unset !important;
 }
 .textedit {
 	max-width: 640px;
+	width: 100% !important;
 }
 .i-guess {
 	max-width: 111px;
+	width: 100% !important;
 }
 .footnotes .macbook {
 	width:75%;
 }
 .get-info {
 	max-width: 308px;
+	width: 100% !important;
 }
 .menu-bar-arrange {
 	max-width: 554px;
+	width: 100% !important;
 }
 .bigfoot-footnote__content img.finder,
 .finder {

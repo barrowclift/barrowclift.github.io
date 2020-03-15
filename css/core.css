@@ -86,9 +86,6 @@ main {
     overflow: auto;
     overflow-x: hidden;
 }
-noscript {
-    width: 100%;
-}
 
 
 /* TYPOGRAPHY ----------------------------------------------------------------------- */
@@ -265,6 +262,11 @@ pre {
 code,
 mark {
     padding: 0 0.325em;
+}
+code a {
+    padding: 0 0.325em !important;
+    margin-left: -0.325em !important;
+    margin-right: -0.325em !important;
 }
 mark.tag {
     padding: 0.25em 0.75em;
@@ -555,7 +557,7 @@ menu {
     float: right;
     position: absolute;
     left: 100%;
-    margin-left: -19.5em;
+    margin-left: -20em;
     top: 8.75em;
     z-index: 10000;
 }
@@ -572,13 +574,13 @@ menu {
         margin-bottom: -0.325em;
     }
     /* Accent color "buttons" */
-    .accent-colors {
-        margin-left: 0.5em;
+    .colors {
+        margin-left: 0.25em;
         text-align: center;
         display: inline;
         vertical-align: middle;
     }
-    .accent-colors li {
+    .colors li {
         display: inline-block;
         min-width: unset;
         margin-left: 0.15em;
@@ -587,11 +589,26 @@ menu {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .accent-color {
+    .color-well {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
         width: 1em;
         height: 1em;
-        border-radius: 0.25em;
+        border-radius: 50%;
+    }
+    .color-well.appearance {
+        border-color: #E5E5E5;
+        border-radius: 0.25em !important;
+    }
+    .color-well.auto {
+        background-image: linear-gradient(-45deg, rgb(36, 36, 36) 50%, white 50%);
+    }
+    .color-well.light {
+        background-color: white;
+    }
+    .color-well.dark {
+        background-color: rgb(36, 36, 36);
     }
     /* Setting popup groups visibility and padding */
     .ignore-accent-color #accent-color-settings,
@@ -606,12 +623,15 @@ menu {
         width: 9.375em;
         margin-left: -9.875em;
     }
-    .enforce-dark-mode .accent-colors li {
+    .enforce-dark-mode .colors li {
         margin-top: 0.25em;
     }
     #popup-background {
         border-radius: 0.25em;
+
         padding: 0.65em;
+        padding-bottom: 0.975em;
+        padding-top: 0.325em;
     }
         .safari #popup-background,
         .chrome #popup-background {
@@ -641,7 +661,40 @@ menu {
     display: inline-block;
     cursor: pointer;
 }
+#logo:after {
+    transition: opacity 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44), transform 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
+    opacity: 0;
+    transform: scale(0.5);
+    background-size: contain;
+    z-index: -5;
+    /*top: -0.24rem;
+    left: 0;
+    height: 3rem;
+    width: 3rem;*/
+    top: 0.75rem;
+    left: calc(50% - 8.9rem);
+    height: 5.5rem;
+    width: 5.5rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    background-image: url("/images/logo/light-rainbow-watercolor.png");
+}
+menu header:hover #logo:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/*menu header:hover #mac {
+    transform: scale(1.075);
+}*/
+.mac-background-color {
+    transition: background-color 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
+}
+menu header:hover .mac-background-color {
+    fill: rgba(255, 255, 255, 1);
+}
 #mac {
+    transition: opacity 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44), transform 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
     display: inline-block;
     vertical-align: top;
     width: 48px;
@@ -746,10 +799,14 @@ button:hover,
 .button:hover {
     transform: scale(1.05);
 }
+.color-well:hover {
+    transform: scale(1.1);
+}
 button.active,
 button:active,
 .button.active,
-.button:active {
+.button:active,
+.color-well:active {
     transform: scale(0.95);
 }
 
@@ -910,11 +967,6 @@ button:disabled {
         margin-left: 0.325em;
         margin-right: 0.325em;
     }
-input,
-textarea {
-    border: 1px solid #000000;
-    width: 100%;
-}
 input[type='checkbox'] {
     width: 1rem;
     display: inline-block;
@@ -929,6 +981,19 @@ textarea {
     -moz-appearance: none !important;
     appearance: none !important;
     box-shadow: none !important;
+}
+input,
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+input[type="password"],
+textarea {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), inset 0 0.1075em 0.2175em -0.2em rgba(0, 0, 0, 0.2) !important;
+}
+input,
+textarea {
+    border: 1px solid #000000;
+    width: 100%;
 }
 input:focus, textarea:focus {
     outline: 0;
@@ -981,110 +1046,13 @@ a:hover {
     margin-bottom: 0;
 }
 
-
-/* iOS "switch" checkbox
-   Thanks to Fiddle user Yeyene, https://jsfiddle.net/yeyene/42p6s7ps/ */
-.ios-switch {
-    position: relative;
+.app-download img {
+    border-radius: 0.7rem;
+    height: 40px;
+    width: auto;
 }
-.ios-switch input {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 0%;
-    margin: 0 0;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.ios-switch input + span {
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-.ios-switch input + span:before {
-    position: absolute;
-    left: 6em;
-    display: inline-block;
-}
-.ios-switch input + span > h4 {
-    display: inline;
-}
-.ios-switch input + span:before {
-    content: "";
-    height: 20px;
-    width: 40px;
-    border: 1px solid #e5e5e5;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
-    transition: background 0.2s ease-out;
-    margin-top: 0;
-}
-.ios-switch input + span:after {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 6em;
-    top: 0;
-    display: block;
-    transition: margin-left 0.1s ease-in-out;
+.app-download {
     text-align: center;
-    font-weight: bold;
-    content: "";
-    margin-top: 0.05em;
-}
-.ios-switch input:checked + span:before {
-    background-color: #4CD964;
-}
-.ios-switch input:checked + span:after {
-    margin-left: 21px;
-    content: "";
-}
-.ios-switch input:checked + span:before {
-    transition: background 0.2s ease-in;
-}
-.ios-switch input + span:before {
-    border-radius: 20px;
-    width: 40px;
-}
-.ios-switch input + span:after {
-    content: "";
-    width: 20px;
-    background-clip: padding-box;
-    border-radius: 20px;
-    margin-left: 1px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
-}
-.ios-switch input:not(:checked) + span:after {
-    -webkit-animation: popOut ease-in 0.3s normal;
-            animation: popOut ease-in 0.3s normal;
-}
-.ios-switch input:checked + span:after {
-    content: "";
-    margin-left: 21px;
-    background-clip: padding-box;
-    -webkit-animation: popIn ease-in 0.3s normal;
-            animation: popIn ease-in 0.3s normal;
-}
-.ios-switch.checkbox-slider-md input + span:before {
-    border-radius: 30px;
-}
-.ios-switch.checkbox-slider-md input + span:after {
-    border-radius: 30px;
-}
-.ios-switch.checkbox-slider-lg input + span:before {
-    border-radius: 40px;
-}
-.ios-switch.checkbox-slider-lg input + span:after {
-    border-radius: 40px;
-}
-.ios-switch input + span:before {
-    box-shadow: none;
 }
 
 
@@ -1104,48 +1072,37 @@ td,
 th {
     text-align: left;
 }
-thead tr {
-    border-bottom: 2px solid #000000;
+table td,
+table th {
+    border: 1px solid black;
 }
-tbody tr {
-    border-bottom: 1px solid #000000;
+tr td,
+tr th {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+}
+tr td:first-child,
+tr th:first-child {
+    padding-left: 1.3em;
+}
+tr td:last-child,
+tr th:last-child {
+    padding-right: 1.3em;
 }
 tbody tr:last-child {
     border-bottom: unset;
 }
-th {
-    padding-bottom: 0.15em;
+th,
+td {
+    padding-top: 0.1625em;
+    padding-bottom: 0.1625em;
 }
 td {
     border: none;
-    padding-top: 0.15em;
-    padding-bottom: 0.15em;
 }
-    td[align="left"],
-    th[align="left"],
-    thead[align="left"] {
-        padding-right: 2em;
-        padding-left: 0;
-    }
-    td[align="left"]:last-child,
-    th[align="left"]:last-child,
-    thead[align="left"]:last-child {
-        padding-right: 0;
-    }
-    td[align="right"],
-    th[align="right"],
-    thead[align="right"] {
-        padding-left: 2em;
-        padding-right: 0;
-    }
-    td[align="right"]:first-child,
-    th[align="right"]:first-child,
-    thead[align="right"]:first-child, {
-        padding-left: 0;
-    }
-    tr:last-child td {
-        padding-bottom: 0;
-    }
+tr:last-child td {
+    padding-bottom: 0;
+}
 
 
 /* ----- TAGS & HIGHLIGHTING ----- */
@@ -1550,7 +1507,7 @@ h2 img {
     opacity: 0.1;
 }
 
-.emoji {
+.bullet .emoji {
     vertical-align: text-bottom;
 }
 .bullet {
@@ -1670,13 +1627,43 @@ article > pre > code {
 .edge-to-edge.infinite > pre {
     margin-top: 0;
 }
+.highlighter-rouge div.highlight {
+    padding: 0;
+}
+.highlighter-rouge pre.highlight {
+    padding: 1.3rem;
+    margin-bottom: 0;
+}
+.highlighter-rouge .highlight {
+    text-align: left;
+    max-width: 1600px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+    display: block;
+    border-radius: 0.25em;
+    padding: 1.3em;
+    box-shadow: unset;
+}
+.highlighter-rouge pre {
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: scroll;
+}
+.highlighter-rouge pre,
+.highlighter-rouge .highlight {
+    border-radius: 0.25em;
+}
 .codehilite pre,
 .highlight pre {
     -webkit-overflow-scrolling: none;
 }
 li .codehilite,
 li .highlight {
-    margin-top: 1.3em;
+    margin-top: 0.65em;
+    margin-bottom: 0.65em;
 }
 pre {
     border: 1px solid #000000;
@@ -1799,6 +1786,10 @@ pre::selection,
 pre ::selection {
     text-shadow: none;
     background: hsla(54, 8%, 26%, 0.9);
+}
+
+span.gp {
+    color: #c65d09;
 }
 
 
@@ -1936,7 +1927,8 @@ input, textarea {
     transition: transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .button,
-button {
+button,
+.color-well {
     transition: background 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -2045,15 +2037,18 @@ kbd {
 }
 
 @media(max-width: 320px) {
-    .accent-colors {
+    .colors {
         margin-left: 0;
         display: block;
     }
     .popup .group {
-        margin-bottom: 1.3em;
+        margin-bottom: 0.65em;
     }
     .popup {
         margin-left: -13.75em;
+    }
+    #popup-background {
+        padding: 0.975em;
     }
 }
 
@@ -2137,20 +2132,18 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .float-menu-for-hiding #logo {
         transform: none;
     }
-    .ios-switch input + span:before {
-        margin-top: 0.1em;
-    }
-    .ios-switch input + span:after {
-        margin-top: 0.15em;
-    }
     .popup {
         -webkit-transform-origin: top right;
         -ms-transform-origin: top right;
         transform-origin: top right;
-        margin-left: -19.6em;
+        margin-left: -20.675em;
         top: 3.25em;
     }
-    .enforce-dark-mode .accent-colors li {
+    #popup-background {
+        padding: 0.975em;
+        padding-top: 0.65em;
+    }
+    .enforce-dark-mode .colors li {
         margin-top: 0.5em;
     }
         menu header {
@@ -2196,6 +2189,12 @@ Font size: 19px, ~Margin&Padding: 28.5px
     #signature {
         height: 47px;
         margin-left: 0;
+    }
+    #logo:after {
+        top: 0rem;
+        left: 0.05rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
 
@@ -2583,15 +2582,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
         box-sizing: border-box;
         height: 2.55em;
     }
-    .ios-switch input + span:before {
-        margin-top: 0.2em;
-    }
-    .ios-switch input + span:after {
-        margin-top: 0.25em;
-    }
     .popup {
         top: 3.1em;
-        margin-left: -19.25em;
+        margin-left: -20.25em;
     }
         menu header {
             padding-left: 0.78em;
@@ -2615,6 +2608,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
     menu.hide-for-medium-and-larger-devices {
         opacity: 1;
         pointer-events: auto;
+    }
+    #logo:after {
+        left: 0.25rem;
     }
 
 
@@ -2783,9 +2779,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
 /**
  * Primary white background
  */
-html,
-.ios-switch input + span:before,
-.ios-switch input + span:after {
+html {
     background-color: rgba(255, 255, 255, 1);
 }
 /**
@@ -2827,7 +2821,11 @@ code,
 kbd {
     background-color: rgba(245, 245, 245, 0.25);
 }
-kbd {
+tbody tr:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.75);
+}
+kbd,
+table th {
     background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
     background-image: linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
@@ -2862,7 +2860,6 @@ textarea {
  */
 menu,
 .popup,
-.ios-switch input + span:before,
 input,
 textarea,
 .ios-screenshot img,
@@ -2878,10 +2875,6 @@ blockquote,
 /**
  * Secondary
  */
-thead tr,
-tbody tr {
-    border-color: rgba(150, 150, 150, 0.1);
-}
 hr {
     background-color: rgba(150, 150, 150, 0.1);
     background: rgba(150, 150, 150, 0.1); /* Old browsers */
@@ -2900,12 +2893,9 @@ hr {
 .macos-window-screenshot video {
     border-color: rgba(50, 50, 50, 0.25);
 }
-kbd {
-    border-bottom-color: rgba(50, 50, 50, 0.25);
-    -webkit-box-shadow: inset 0 -1px 0 rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: inset 0 -1px 0 rgba(50, 50, 50, 0.25);
-    -ms-box-shadow: inset 0 -1px 0 rgba(50, 50, 50, 0.25);
-    box-shadow: inset 0 -1px 0 rgba(50, 50, 50, 0.25);
+table td,
+table th {
+    border-color: rgb(224, 224, 224);
 }
 
 /* ----- FOREGROUNDS ----- */
@@ -2918,7 +2908,8 @@ html,
 .admonition,
 [data-hint]:after,
 .card .primary,
-.summary-list p {
+.summary-list p,
+table th {
     color: rgba(30, 30, 30, 0.9);
 }
 .apple-logo path {
@@ -3137,6 +3128,10 @@ textarea:focus {
     background-color: rgb(33, 34, 36);
 }
 
+.color-well.active {
+    box-shadow: 0 0em 0.5em 0em hsl(211, 100%, 50%);
+}
+
 
 /* DARK THEME ======================================================================= */
 
@@ -3192,20 +3187,21 @@ html#dark {
 /**
  * Secondary backgrounds
  */
-#dark .card,
-#dark kbd {
+#dark .card {
     background-color: rgba(46, 46, 46, 0.9);
 }
-#dark kbd {
-    background-image: -moz-linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0.975));
-    background-image: -webkit-linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0.975));
-    background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0.975));
+#dark kbd,
+#dark table th {
+    background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
 }
 /**
  * Special backgrounds
  */
 #dark code,
-#dark pre {
+#dark pre,
+#dark tbody tr:nth-child(even),
+#dark table th,
+#dark kbd {
     background-color: rgba(15, 15, 15, 0.25);
 }
 #dark .codehilite,
@@ -3229,7 +3225,6 @@ html#dark {
 #dark textarea {
     background-color: rgba(15, 15, 15, 0.375);
 }
-
 #dark .admonition > p:first-child:before,
 #dark .admonition .admonition-title:before {
     background-color: rgb(116, 116, 116);
@@ -3242,7 +3237,6 @@ html#dark {
  */
 #dark menu,
 #dark .popup,
-#dark .ios-switch input + span:before,
 #dark input,
 #dark textarea,
 #dark .ios-screenshot img,
@@ -3251,10 +3245,7 @@ html#dark {
 #dark code,
 #dark blockquote,
 #dark .bigfoot-footnote,
-#dark .bigfoot-footnote__tooltip,
-#dark .ios-switch input + span:before,
-#dark thead tr,
-#dark tbody tr {
+#dark .bigfoot-footnote__tooltip {
     border-color: rgba(150, 150, 150, 0.1);
 }
 #dark hr {
@@ -3267,6 +3258,11 @@ html#dark {
     background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.0) 0%, rgba(150, 150, 150, 0.1) 25%, rgba(150, 150, 150, 0.1) 50%, rgba(150, 150, 150, 0.1) 75%, rgba(255, 255, 255, 0.0) 100%); /* IE10+ */
     background: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(150, 150, 150, 0.1) 25%, rgba(150, 150, 150, 0.1) 50%, rgba(150, 150, 150, 0.1) 75%, rgba(255, 255, 255, 0.0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(150, 150, 150, 0.1)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=1 ); /* IE6-9 */
+}
+#dark table td,
+#dark table th,
+#dark thead tr {
+    border-color: rgba(75, 75, 75);
 }
 /**
  * Secondary
@@ -3304,11 +3300,6 @@ html#dark {
 
 #dark kbd {
     border-color: rgba(0, 0, 0, 0.5);
-    border-bottom-color: rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* ----- FOREGROUNDS ----- */
@@ -3322,7 +3313,8 @@ html#dark,
 #dark [data-hint]:after,
 #dark .card .primary,
 #dark .summary-list p,
-#dark .admonition .admonition-title {
+#dark .admonition .admonition-title,
+#dark table th {
     color: rgba(255, 255, 255, 0.9);
 }
 #dark .apple-logo path {
@@ -3386,6 +3378,9 @@ html#dark,
 #dark .signature-color,
 #dark .mac-background-color {
     fill: rgba(255, 255, 255, 0.6);
+}
+#dark menu header:hover .mac-background-color {
+    fill: rgba(255, 255, 255, 0.9);
 }
 #dark #sunglasses,
 #dark #logo:hover #smirk {

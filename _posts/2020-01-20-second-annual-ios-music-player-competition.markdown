@@ -15,10 +15,6 @@ foreground-color: "rgba(30, 30, 30, 0.9)"
 ---
 
 <style>
-    .app-download img {
-        height: 40px;
-        width: auto;
-    }
     .app-icon {
         height: 5em;
     }
