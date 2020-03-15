@@ -1647,6 +1647,10 @@ article > pre > code {
     padding: 1.3em;
     box-shadow: unset;
 }
+li .highlighter-rouge .highlight {
+    margin-top: 0.65em;
+    margin-bottom: 0.65em;
+}
 .highlighter-rouge pre {
     margin-left: 0;
     margin-right: 0;
