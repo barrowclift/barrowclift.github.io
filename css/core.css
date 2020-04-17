@@ -2074,8 +2074,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     .wide-page main {
         max-width: 36em;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
     @supports(padding: max(0px)) {
         .wide-page main {
