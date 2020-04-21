@@ -94,16 +94,20 @@ home-menu-active: true
 				{% else %}
 				<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
 				{% endif %}
-					<h3 class="header">
-						<time itemprop="dateCreated">{% if post.type == "article" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
-						<!-- {% if forloop.index0 == 0 %}
-						<img class="rounded" src="{{ post.image }}"/>
-						{% endif %} -->
-						{{ post.title }} {% if post.link %}↦{% endif %}
-					</h3>
-					<p>
-						{{ post.excerpt }}
-					</p>
+					{% if post.type == "project-update" and post.project-update-image %}
+						<h3 class="header">
+							<time itemprop="dateCreated"><mark class="tag orange">Project</mark> {{ post.date | date: "%B %-d, %Y" }}</time>
+						</h3>
+						<img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
+					{% else %}
+						<h3 class="header">
+							<time itemprop="dateCreated">{% if post.type == "article" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
+							{{ post.title }} {% if post.link %}↦{% endif %}
+						</h3>
+						{% if post.excerpt %}
+							<p>{{ post.excerpt }}</p>
+						{% endif %}
+					{% endif %}
 				</a>
 			</li>
 		{% endfor %}
