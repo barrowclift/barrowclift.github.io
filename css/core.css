@@ -2575,6 +2575,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .task-list {
         margin-left: .73em;
     }
+    .summary-list img {
+        max-width: 20em;
+    }
 
 
     /* NAVBAR ------------------------------------- */
