@@ -71,33 +71,33 @@ With the score sheet established, let's dive in.
         <li>
             <a href="#dead-music-players">Dead Music Players</a>
             <ul>
-                <li><a href="#-starling">Starling</a></li>
+                <li><a href="#--starling">Starling</a></li>
             </ul>
         </li>
         <li>
             <a href="#disqualifications">Disqualifications</a>
             <ul>
-                <li><a href="#-jams-on-toast">Jams On Toast</a></li>
-                <li><a href="#-stezza">Stezza</a></li>
-                <li><a href="#-ecoute">Ecoute</a></li>
-                <li><a href="#-soor">Soor</a></li>
-                <li><a href="#-music-player-x">Music Player X</a></li>
+                <li><a href="#--jams-on-toast">Jams On Toast</a></li>
+                <li><a href="#--stezza">Stezza</a></li>
+                <li><a href="#--ecoute">Ecoute</a></li>
+                <li><a href="#--soor">Soor</a></li>
+                <li><a href="#--music-player-x">Music Player X</a></li>
             </ul>
         </li>
         <li>
             <a href="#qualifiers">Qualifiers</a>
             <ul>
-                <li><a href="#-albums">Albums</a></li>
-                <li><a href="#-cs">Cs</a></li>
-                <li><a href="#-doppi">Doppi</a></li>
-                <li><a href="#-doppler">Doppler</a></li>
-                <li><a href="#-marvis-pro">Marvis Pro</a></li>
-                <li><a href="#-musicapp">Music.app</a></li>
-                <li><a href="#-picky">Picky</a></li>
-                <li><a href="#-power-player">Power Player</a></li>
-                <li><a href="#-sathorn">Sathorn</a></li>
-                <li><a href="#-taptunes">TapTunes</a></li>
-                <li><a href="#-vox">VOX</a></li>
+                <li><a href="#--albums">Albums</a></li>
+                <li><a href="#--cs">Cs</a></li>
+                <li><a href="#--doppi">Doppi</a></li>
+                <li><a href="#--doppler">Doppler</a></li>
+                <li><a href="#--marvis-pro">Marvis Pro</a></li>
+                <li><a href="#--musicapp">Music.app</a></li>
+                <li><a href="#--picky">Picky</a></li>
+                <li><a href="#--power-player">Power Player</a></li>
+                <li><a href="#--sathorn">Sathorn</a></li>
+                <li><a href="#--taptunes">TapTunes</a></li>
+                <li><a href="#--vox">VOX</a></li>
             </ul>
         </li>
         <li>
@@ -991,7 +991,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
 <li><span class="bullet">:x:</span> <strong>Album-focused design</strong><ul class="bare-list">
     <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+    <li><span class="bullet">:x:</span> <strong>Album grid view</strong> <em>While Power Player on iPad uses grid view, Power Player on iPhone is stricted to just plain-old list view.</em></li>
 </ul></li>
 </ul>
 
