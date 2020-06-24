@@ -322,7 +322,10 @@ ul {
 /* No paragraph margins, keep them one logical block (good for short lists) */
 .compact-list li,
 .compact-list ul,
-.compact-list ol {
+.compact-list ol,
+.toc li,
+.toc ul,
+.toc ol {
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -1120,7 +1123,8 @@ mark {
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
         p mark.tag,
-        time mark.tag {
+        time mark.tag,
+        li mark.tag {
             vertical-align: text-top;
         }
 
@@ -1507,7 +1511,16 @@ h2 img {
     opacity: 0.1;
 }
 
-.bullet .emoji {
+.gemoji {
+    width: 1em;
+}
+.gemoji,
+.emoji {
+    vertical-align: text-top;
+}
+
+.bullet .emoji,
+.bullet .gemoji {
     vertical-align: text-bottom;
 }
 .bullet {
@@ -2369,6 +2382,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* Extra padding in case of figcaption */
+    figure.edge-to-edge.small {
         margin-top: 1.3em;
         margin-bottom: 1.3em;
     }

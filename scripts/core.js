@@ -137,7 +137,7 @@ $(document).ready(function() {
 
 	if ($.cookie("accent-color") && !document.getElementsByTagName("body")[0].classList.contains("ignore-accent-color")) {
 		document.getElementsByTagName("html")[0].className += " " + $.cookie("accent-color");
-		$(".color-well." + color).addClass("active");
+		$(".color-well." + $.cookie("accent-color")).addClass("active");
 	} else {
 		$(".color-well.blue").addClass("active");
 	}
