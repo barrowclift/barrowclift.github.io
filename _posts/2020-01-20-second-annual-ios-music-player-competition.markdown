@@ -991,7 +991,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
 <li><span class="bullet">:x:</span> <strong>Album-focused design</strong><ul class="bare-list">
     <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album grid view</strong> <em>While Power Player on iPad uses grid view, Power Player on iPhone is stricted to just plain-old list view.</em></li>
+    <li><span class="bullet">:x:</span> <strong>Album grid view:</strong> <em>While Power Player on iPad uses grid view, Power Player on iPhone is stricted to just plain-old list view.</em></li>
 </ul></li>
 </ul>
 
@@ -1329,7 +1329,7 @@ Enough about what I think, what were *your* favorite iOS music players this year
 [^ecoute-updates]: [Ecoute] received just three tiny bug fixes in 2019, all of which from more than six months ago.
 [^igor]: Ironically, I find the effect looks positively hideous with [Tyler the Creator](https://music.apple.com/us/artist/tyler-the-creator/420368335)'s [*Igor*](https://music.apple.com/us/album/igor/1463409338) (featured throughout this article as the "demonstration album"), but in day-to-day use I found the effect looks great the vast majority of the time. Such is the nature with designs like this, the results really do vary!
 [^stacks]: Now renamed "Paths" for the "SongOwl" rebanding.
-[^volume-gesture]: This gesture would typically adjust the volume in TapTunes, but when this gesture is disabled the album art in the "Now Playing" view becomes a gesture "dead zone" and can no longer be used to even dismiss the view. The only other contender that behaves this way is [Sathron].
+[^volume-gesture]: This gesture would typically adjust the volume in TapTunes, but when this gesture is disabled the album art in the "Now Playing" view becomes a gesture "dead zone" and can no longer be used to even dismiss the view. The only other contender that behaves this way is [Sathorn].
 
 [Airplay 2]: https://en.wikipedia.org/wiki/AirPlay#Protocols
 [Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
