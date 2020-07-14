@@ -296,7 +296,7 @@ ul {
         ul ul:not(.bare-list) li:before {
             content: "-";
             position: absolute;
-            margin-left: -1.3em;
+            margin-left: -1em;
         }
         ul ul ul {
             list-style-type: circle;
@@ -304,6 +304,9 @@ ul {
             ul ul ul:not(.bare-list) li:before {
                 content: none;
                 margin-left: 0;
+            }
+            ul ul ul ul {
+                list-style-type: square
             }
 /* Raw list of items, no bullets, padding, or frills at all (good for UI element lists) */
 .bare-list {
