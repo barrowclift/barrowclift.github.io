@@ -31,7 +31,7 @@
 
 	{{ content }}
 
-	{% if page.has_afterward == false %}
+	{% if page.next-page == null and page.has_afterward == false or page.has_afterward == null %}
 	<div id="article-linkback">
 		<a href="/">⌘</a>
 	</div>
@@ -44,7 +44,9 @@
 		});
 	</script>
 
+	{% if page.next-page == null %}
 	<footer>
 		{% include blog-footer-buttons.html %}
 	</footer>
+	{% endif %}
 </article>

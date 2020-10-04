@@ -211,7 +211,8 @@ blockquote,
 ol, ul, ol li, ul li,
 dl, table,
 .highlight, .codehilite,
-.admonition {
+.admonition,
+details {
     margin-top: 0;
     margin-bottom: 1.3rem;
 }
@@ -421,10 +422,12 @@ blockquote {
 }
 
 main a,
-.anchor {
+.anchor,
+summary {
     border-radius: 0.25em;
 }
-main a {
+main a,
+summary {
     padding-left: 0.25em;
     padding-right: 0.25em;
     margin-left: -0.25em;
@@ -1001,7 +1004,9 @@ textarea {
     border: 1px solid #000000;
     width: 100%;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus,
+summary {
     outline: 0;
 }
 /* Remove box shadow firefox, chrome and opera put around required fields. */
@@ -1021,6 +1026,14 @@ input:required {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
+}
+
+summary {
+    cursor: pointer;
+    display: inline-block;
+}
+details {
+    text-align: left;
 }
 
 a:hover {
@@ -1880,6 +1893,7 @@ input, textarea {
 }
 menu ul a,
 main a,
+summary,
 .anchor,
 #settings-toggle {
     transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2954,7 +2968,8 @@ menu a,
 .green menu a,
 .blue menu a,
 .purple menu a,
-.pink menu a {
+.pink menu a,
+.longform-title {
     color: rgba(30, 30, 30, 0.6);
 }
 blockquote {
@@ -3073,7 +3088,8 @@ a,
 #settings-toggle.active a,
 #submenu a:hover,
 .header a:hover,
-a:hover .header  {
+a:hover .header,
+summary {
     color: hsl(211, 100%, 50%);
 }
 #logo:hover .signature-color,
@@ -3085,7 +3101,8 @@ a:hover .header  {
 }
 
 a:hover,
-#submenu {
+#submenu,
+summary:hover {
     background-color: hsla(211, 100%, 50%, 0.1);
 }
 
@@ -3353,7 +3370,8 @@ html#dark,
  */
 #dark menu,
 #dark menu a,
-#dark .admonition {
+#dark .admonition,
+#dark .longform-title {
     color: rgba(255, 255, 255, 0.6);
 }
 #dark blockquote {
@@ -3468,11 +3486,13 @@ html#dark,
  * HSL: hsl(211, 100%, 50%);
  */
 #dark .header a:hover,
-#dark a:hover .header {
+#dark a:hover .header,
+#dark summary {
     color: hsl(211, 100%, 50%);
 }
 #dark a:hover,
-#dark #submenu {
+#dark #submenu,
+#dark summary:hover {
     background-color: hsla(211, 100%, 50%, 0.15);
 }
 
