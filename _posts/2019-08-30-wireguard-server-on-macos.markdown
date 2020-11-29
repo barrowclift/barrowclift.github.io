@@ -179,7 +179,7 @@ PersistentKeepalive <span class="o">=</span> 25
 <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;dict&gt;</span>
         <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>org.wireguard.server<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;string&gt;</span>com.wireguard.server<span class="nt">&lt;/string&gt;</span>
         <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
         <span class="nt">&lt;array&gt;</span>
             <span class="nt">&lt;string&gt;</span>/usr/local/bin/wg-quick<span class="nt">&lt;/string&gt;</span>
