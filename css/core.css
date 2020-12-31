@@ -212,7 +212,8 @@ ol, ul, ol li, ul li,
 dl, table,
 .highlight, .codehilite,
 .admonition,
-details {
+details,
+.box {
     margin-top: 0;
     margin-bottom: 1.3rem;
 }
@@ -361,10 +362,8 @@ dt, dd {
 }
     .summary-list li a {
         display: block;
-        padding-top: 0.65em;
-        padding-bottom: 0.65em;
-        padding-left: 0.65em;
-        border-left: 0.5em solid gray;
+        padding: 1em;
+        border-radius: 1em;
     }
     .summary-list h3,
     .summary-list time {
@@ -456,9 +455,9 @@ menu {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
-.safari menu #mainmenu ul,
+.safari menu #mainmenu > ul,
 .safari menu #submenu ul,
-.chrome menu #mainmenu ul,
+.chrome menu #mainmenu > ul,
 .chrome menu #submenu ul {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -758,13 +757,27 @@ menu header:hover #logo #logo-eye-opened,
     margin-left: 0;
     margin-right: 0;
 }
+
+.box,
+#dark .show-when-dark.box,
+.show-when-light.box {
+    width: 100%;
+    display: flex !important;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+    .box p,
+    .box a {
+      margin: 0.5em;
+      display: inline-block;
+    }
 .flex main {
     margin-top: 0 !important;
     padding-top: 2.6em;
 
     display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: flex-start;
     width: auto;
     max-width: 65em;
 }
@@ -801,7 +814,8 @@ menu header:hover #logo #logo-eye-opened,
 .ios-screenshot video:hover,
 .watchos-screenshot a:hover img,
 .watchos-screenshot:hover video,
-.summary-list li a:hover {
+.summary-list li a:hover,
+.widget a:hover img {
     transform: scale(1.025);
 }
 button:hover,
@@ -1178,14 +1192,18 @@ mark {
 .admonition.error .admonition-title:before,
 .admonition.danger .admonition-title:before,
 .admonition.warning .admonition-title:before,
+.admonition.red .admonition-title:before,
 .admonition.error p:first-child:before,
 .admonition.danger p:first-child:before,
-.admonition.warning p:first-child:before {
-    content: "!";
+.admonition.warning p:first-child:before,
+.admonition.red p:first-child:before {
+    content: "!" !important;
 }
 .admonition.question .admonition-title:before,
 .admonition.question p:first-child:before {
-    content: "?";
+    content: "?" !important;
+    width: 0.9em;
+    padding-left: 0.475em;
 }
 .admonition.aside {
     border: unset !important;
@@ -1216,7 +1234,7 @@ mark {
 .admonition.tweet > p:first-child:before,
 .admonition.tweet .admonition-title:before {
     position: absolute;
-    content: url("data:image/svg+xml; utf8, <svg viewBox='0 0 250 250' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><path d='M78.62,249.59 C172.96,249.59 224.56,171.43 224.56,103.65 C224.56,101.43 224.56,99.22 224.41,97.02 C234.448314,89.7591086 243.113555,80.768794 250,70.47 C240.638791,74.6180177 230.708293,77.3382865 220.54,78.54 C231.24744,72.1298206 239.261235,62.0477199 243.09,50.17 C233.021575,56.1445532 222.006461,60.3551202 210.52,62.62 C194.620828,45.7139428 169.357194,41.5761258 148.895493,52.5267993 C128.433792,63.4774727 117.86275,86.7932573 123.11,109.4 C81.8689574,107.332495 43.4447578,87.8532327 17.4,55.81 C3.78622756,79.2464473 10.7398788,109.228595 33.28,124.28 C25.117412,124.038075 17.1327937,121.836132 10,117.86 C10,118.07 10,118.29 10,118.51 C10.0066813,142.92593 27.2175149,163.955352 51.15,168.79 C43.598696,170.8494 35.6758059,171.150443 27.99,169.67 C34.7094793,190.564228 53.9657456,204.877839 75.91,205.29 C57.7473504,219.564319 35.3105951,227.313277 12.21,227.29 C8.12903569,227.282165 4.05204065,227.035075 0,226.55 C23.4563595,241.602766 50.749134,249.587169 78.62,249.55' id='Path' fill='#FFFFFF' fill-rule='nonzero'></path></g></svg>");
+    content: url("/images/writings/twitter.svg");
     border-radius: 25%;
     height: 1.45em;
     width: 0.875em;
@@ -1364,6 +1382,11 @@ article > p > img {
 .edge-to-edge p {
     text-align: center;
 }
+.edge-to-edge.hero-banner {
+    margin-top: -2.6em;
+    margin-bottom: 0;
+    max-width: 2000px;
+}
 .uml-flowchart, .uml-sequence-diagram {
     overflow-x: scroll;
     /* Momentum scrolling in iOS */
@@ -1402,10 +1425,14 @@ video.rounded {
 figure a:hover,
 .one-image a:hover,
 .two-images a:hover,
-.three-images a:hover {
+.three-images a:hover,
+.widget a:hover {
     background-color: transparent !important;
 }
 
+.widget img {
+    border-radius: 2.5vw;
+}
 .watchos-screenshot img,
 .watchos-screenshot video {
     background-color: #000000;
@@ -1418,7 +1445,8 @@ figure a:hover,
     margin-bottom: 2.6em !important;
 }
 .ios-screenshot img,
-.ios-screenshot video {
+.ios-screenshot video,
+.widget img {
     border: 1px solid #000000;
 }
 .macos-window-screenshot img,
@@ -1500,8 +1528,8 @@ h2 img {
 .permalink {
     width: 0.75em;
     margin-top: -0.725em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
     opacity: 1
 }
 .apple-logo {
@@ -1509,6 +1537,18 @@ h2 img {
     height: 0.9em;
 }
 
+.app-icon {
+    height: 5em;
+}
+.inline-app-icon {
+    display: inline-block;
+    height: 1em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    vertical-align: text-top;
+    margin-top: 0.125em;
+    max-width: unset;
+}
 
 .backdrop {
     position: fixed;
@@ -1954,7 +1994,8 @@ input, textarea {
 .shadow a img,
 .shadow video,
 .ios-screenshot img,
-.ios-screenshot video {
+.ios-screenshot video,
+.widget img {
     transition: box-shadow .4s cubic-bezier(0.165, 0.84, 0.44, 1), transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .card-animation {
@@ -2433,6 +2474,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .watchos-screenshot figcaption {
         margin-top: 0.65em;
     }
+    .widget img {
+        border-radius: 1em;
+    }
 
     .two-images img,
     .two-images video {
@@ -2767,6 +2811,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
         border-radius: 8px !important;
     }
 
+
     /* CODE --------------------------------------- */
 
 
@@ -2858,6 +2903,7 @@ menu,
  * Secondary backgrounds
  */
 .card,
+.summary-list li a,
 pre,
 code,
 kbd {
@@ -2911,7 +2957,8 @@ pre,
 code,
 blockquote,
 .bigfoot-footnote,
-.bigfoot-footnote__tooltip {
+.bigfoot-footnote__tooltip,
+.widget img {
     border-color: rgba(50, 50, 50, 0.1);
 }
 /**
@@ -2968,8 +3015,7 @@ menu a,
 .green menu a,
 .blue menu a,
 .purple menu a,
-.pink menu a,
-.longform-title {
+.pink menu a {
     color: rgba(30, 30, 30, 0.6);
 }
 blockquote {
@@ -3004,12 +3050,14 @@ time,
 small,
 img,
 .card .label .secondary,
-figcaption {
-    color: rgba(30, 30, 30, 0.25);
+figcaption,
+.longform-title,
+.longform-title a {
+    color: rgba(30, 30, 30, 0.375);
 }
 .permalink path {
-    fill: rgba(30, 30, 30, 0.25);
-    stroke: rgba(30, 30, 30, 0.25);
+    fill: rgba(30, 30, 30, 0.375);
+    stroke: transparent;
 }
 /**
  * Lit Text
@@ -3055,7 +3103,8 @@ menu {
 .ios-screenshot video,
 .watchos-screenshot img,
 .watchos-screenshot video,
-.summary-list li a:hover {
+.summary-list li a,
+.widget img {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
 }
     .admonition.aside,
@@ -3069,7 +3118,9 @@ menu {
     .watchos-screenshot:hover video,
     .popup,
     [data-hint]:after,
-    .bigfoot-footnote {
+    .bigfoot-footnote,
+    .summary-list li a:hover,
+    .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     }
 
@@ -3102,7 +3153,8 @@ summary {
 
 a:hover,
 #submenu,
-summary:hover {
+summary:hover,
+.summary-list li a:hover {
     background-color: hsla(211, 100%, 50%, 0.1);
 }
 
@@ -3232,8 +3284,9 @@ html#dark {
 /**
  * Secondary backgrounds
  */
-#dark .card {
-    background-color: rgba(46, 46, 46, 0.9);
+#dark .card,
+#dark .summary-list li a {
+    background-color: rgba(46, 46, 46, 0.25);
 }
 #dark kbd,
 #dark table th {
@@ -3290,7 +3343,8 @@ html#dark {
 #dark code,
 #dark blockquote,
 #dark .bigfoot-footnote,
-#dark .bigfoot-footnote__tooltip {
+#dark .bigfoot-footnote__tooltip,
+#dark .widget img {
     border-color: rgba(150, 150, 150, 0.1);
 }
 #dark hr {
@@ -3369,9 +3423,7 @@ html#dark,
  * Secondary Text on Primary Background
  */
 #dark menu,
-#dark menu a,
-#dark .admonition,
-#dark .longform-title {
+#dark menu a {
     color: rgba(255, 255, 255, 0.6);
 }
 #dark blockquote {
@@ -3402,12 +3454,14 @@ html#dark,
 #dark small,
 #dark img,
 #dark .card .label .secondary,
-#dark figcaption {
-    color: rgba(255, 255, 255, 0.35);
+#dark figcaption,
+#dark .longform-title,
+#dark h4.header a {
+    color: rgba(255, 255, 255, 0.375);
 }
 #dark .permalink path {
-    fill: rgba(255, 255, 255, 0.35);
-    stroke: rgba(255, 255, 255, 0.35);
+    fill: rgba(255, 255, 255, 0.375);
+    stroke: transparent;
 }
 /**
  * Lit Text
@@ -3459,7 +3513,8 @@ html#dark,
 #dark .ios-screenshot video,
 #dark .watchos-screenshot img,
 #dark .watchos-screenshot video,
-.summary-list li a:hover {
+#dark .summary-list li a,
+#dark .widget img {
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
     #dark .admonition.aside,
@@ -3473,7 +3528,9 @@ html#dark,
     #dark .watchos-screenshot:hover video,
     #dark .popup,
     #dark [data-hint]:after,
-    #dark .bigfoot-footnote {
+    #dark .bigfoot-footnote,
+    #dark .summary-list li a:hover,
+    #dark .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
     }
 
@@ -3492,7 +3549,8 @@ html#dark,
 }
 #dark a:hover,
 #dark #submenu,
-#dark summary:hover {
+#dark summary:hover,
+#dark .summary-list li a:hover {
     background-color: hsla(211, 100%, 50%, 0.15);
 }
 

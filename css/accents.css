@@ -27,7 +27,7 @@ mark.tag.grey {
 }
 
 #dark .admonition {
-    background-color: rgba(46, 46, 46, 0.9);
+    background-color: rgba(46, 46, 46, 0.25);
     border-color: rgba(124, 124, 124, 0.9);
 }
 #dark .admonition > p:first-child:before,
@@ -94,7 +94,8 @@ mark.tag.blue {
 .blue #settings-toggle.active a,
 .blue #submenu a:hover,
 .blue .header a:hover,
-.blue a:hover .header  {
+.blue a:hover .header,
+.blue summary {
     color: hsl(211, 100%, 50%);
 }
 .blue #logo:hover .signature-color,
@@ -106,7 +107,9 @@ mark.tag.blue {
 }
 
 .blue a:hover,
-.blue #submenu {
+.blue #submenu,
+.blue summary:hover,
+.blue .summary-list li a:hover {
     background-color: hsla(211, 100%, 50%, 0.1);
 }
 
@@ -171,12 +174,15 @@ mark.tag.blue {
     }
 
 #dark.blue .header a:hover,
-#dark.blue a:hover .header {
+#dark.blue a:hover .header,
+#dark.blue summary {
     color: hsl(211, 100%, 50%);
 }
 #dark.blue a:hover,
 #dark.blue #submenu,
-#dark.blue button.bigfoot-footnote__button {
+#dark.blue button.bigfoot-footnote__button,
+#dark.blue summary:hover,
+#dark.blue .summary-list li a:hover {
     background-color: hsla(211, 100%, 50%, 0.15);
 }
 
@@ -251,7 +257,8 @@ mark.tag.red {
 .red #settings-toggle.active a,
 .red #submenu a:hover,
 .red .header a:hover,
-.red a:hover .header {
+.red a:hover .header,
+.red summary {
     color: hsl(3, 100%, 59%);
 }
 .red #logo:hover .signature-color,
@@ -263,7 +270,9 @@ mark.tag.red {
 }
 
 .red a:hover,
-.red #submenu {
+.red #submenu,
+.red summary:hover,
+.red .summary-list li a:hover {
     background-color: hsla(3, 100%, 59%, 0.1);
 }
 
@@ -328,12 +337,15 @@ mark.tag.red {
     }
 
 #dark.red .header a:hover,
-#dark.red a:hover .header {
+#dark.red a:hover .header,
+#dark.red summary {
     color: hsl(3, 100%, 59%);
 }
 #dark.red a:hover,
 #dark.red #submenu,
-#dark.red button.bigfoot-footnote__button {
+#dark.red button.bigfoot-footnote__button,
+#dark.red summary:hover,
+#dark.red .summary-list li a:hover {
     background-color: hsla(3, 100%, 59%, 0.15);
 }
 
@@ -388,7 +400,8 @@ mark.tag.orange {
 .orange #settings-toggle.active a,
 .orange #submenu a:hover,
 .orange .header a:hover,
-.orange a:hover .header {
+.orange a:hover .header,
+.orange summary {
     color: hsl(30, 100%, 50%);
 }
 .orange #logo:hover .signature-color,
@@ -400,7 +413,9 @@ mark.tag.orange {
 }
 
 .orange a:hover,
-.orange #submenu {
+.orange #submenu,
+.orange summary:hover,
+.orange .summary-list li a:hover {
     background-color: hsla(30, 100%, 50%, 0.1);
 }
 
@@ -465,12 +480,15 @@ mark.tag.orange {
     }
 
 #dark.orange .header a:hover,
-#dark.orange a:hover .header {
+#dark.orange a:hover .header,
+#dark.orange summary {
     color: hsl(30, 100%, 50%);
 }
 #dark.orange a:hover,
 #dark.orange #submenu,
-#dark.orange button.bigfoot-footnote__button {
+#dark.orange button.bigfoot-footnote__button,
+#dark.orange summary:hover,
+#dark.orange .summary-list li a:hover {
     background-color: hsla(30, 100%, 50%, 0.15);
 }
 
@@ -531,7 +549,8 @@ mark.tag.yellow {
 .yellow #settings-toggle.active a,
 .yellow #submenu a:hover,
 .yellow .header a:hover,
-.yellow a:hover .header {
+.yellow a:hover .header,
+.yellow summary {
     color: hsl(48, 100%, 50%);
 }
 .yellow #logo:hover .signature-color,
@@ -543,7 +562,9 @@ mark.tag.yellow {
 }
 
 .yellow a:hover,
-.yellow #submenu {
+.yellow #submenu,
+.yellow summary:hover,
+.yellow .summary-list li a:hover {
     background-color: hsla(48, 100%, 50%, 0.1);
 }
 
@@ -608,12 +629,15 @@ mark.tag.yellow {
     }
 
 #dark.yellow .header a:hover,
-#dark.yellow a:hover .header {
+#dark.yellow a:hover .header,
+#dark.yellow summary {
     color: hsl(48, 100%, 50%);
 }
 #dark.yellow a:hover,
 #dark.yellow #submenu,
-#dark.yellow button.bigfoot-footnote__button {
+#dark.yellow button.bigfoot-footnote__button,
+#dark.yellow summary:hover,
+#dark.yellow .summary-list li a:hover {
     background-color: hsla(48, 100%, 50%, 0.15);
 }
 
@@ -677,7 +701,8 @@ mark.tag.green {
 .green #settings-toggle.active a,
 .green #submenu a:hover,
 .green .header a:hover,
-.green a:hover .header {
+.green a:hover .header,
+.green summary {
     color: hsl(130, 65%, 57%);
 }
 .green #logo:hover .signature-color,
@@ -689,7 +714,9 @@ mark.tag.green {
 }
 
 .green a:hover,
-.green #submenu {
+.green #submenu,
+.green summary:hover,
+.green .summary-list li a:hover {
     background-color: hsla(130, 65%, 57%, 0.1);
 }
 
@@ -754,12 +781,15 @@ mark.tag.green {
     }
 
 #dark.green .header a:hover,
-#dark.green a:hover .header {
+#dark.green a:hover .header,
+#dark.green summary {
     color: hsl(130, 65%, 57%);
 }
 #dark.green a:hover,
 #dark.green #submenu,
-#dark.green button.bigfoot-footnote__button {
+#dark.green button.bigfoot-footnote__button,
+#dark.green summary:hover,
+#dark.green .summary-list li a:hover {
     background-color: hsla(130, 65%, 57%, 0.15);
 }
 
@@ -812,7 +842,8 @@ mark.tag.purple {
 .purple #settings-toggle.active a,
 .purple #submenu a:hover,
 .purple .header a:hover,
-.purple a:hover .header {
+.purple a:hover .header,
+.purple summary {
     color: hsl(241, 61%, 59%);
 }
 .purple #logo:hover .signature-color,
@@ -824,7 +855,9 @@ mark.tag.purple {
 }
 
 .purple a:hover,
-.purple #submenu {
+.purple #submenu,
+.purple summary:hover,
+.purple .summary-list li a:hover {
     background-color: hsla(241, 61%, 59%, 0.1);
 }
 
@@ -889,12 +922,15 @@ mark.tag.purple {
     }
 
 #dark.purple .header a:hover,
-#dark.purple a:hover .header {
+#dark.purple a:hover .header,
+#dark.purple summary {
     color: hsl(241, 61%, 59%);
 }
 #dark.purple a:hover,
 #dark.purple #submenu,
-#dark.purple button.bigfoot-footnote__button {
+#dark.purple button.bigfoot-footnote__button,
+#dark.purple summary:hover,
+#dark.purple .summary-list li a:hover {
     background-color: hsla(241, 61%, 59%, 0.15);
 }
 
@@ -942,7 +978,8 @@ mark.tag.pink {
 .pink #settings-toggle.active a,
 .pink #submenu a:hover,
 .pink .header a:hover,
-.pink a:hover .header {
+.pink a:hover .header,
+.pink summary {
     color: hsl(349, 100%, 59%);
 }
 .pink #logo:hover .signature-color,
@@ -954,7 +991,9 @@ mark.tag.pink {
 }
 
 .pink a:hover,
-.pink #submenu {
+.pink #submenu,
+.pink summary:hover,
+.pink .summary-list li a:hover {
     background-color: hsla(349, 100%, 59%, 0.1);
 }
 
@@ -1019,12 +1058,15 @@ mark.tag.pink {
     }
 
 #dark.pink .header a:hover,
-#dark.pink a:hover .header {
+#dark.pink a:hover .header,
+#dark.pink summary {
     color: hsl(349, 100%, 59%);
 }
 #dark.pink a:hover,
 #dark.pink #submenu,
-#dark.pink button.bigfoot-footnote__button {
+#dark.pink button.bigfoot-footnote__button,
+#dark.pink summary:hover,
+#dark.pink .summary-list li a:hover {
     background-color: hsla(349, 100%, 59%, 0.15);
 }
 

@@ -1,0 +1,164 @@
+---
+layout: post
+hidden: true
+title: "Third Annual iOS Music Player Competition"
+date: 2020-12-31 13:10:33-0500
+excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+image: "third-annual-ios-music-player-showcase/share-image.jpg"
+categories:
+  - Technology
+  - iOS
+  - Design
+  - Music
+start-page: "/post/third-annual-ios-music-player-showcase"
+prev-page: "11"
+next-page: "13"
+---
+
+## !["Music.app" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
+![Image of "Music.app" light album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-album-view.jpg '"Music.app" light album view')
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-now-playing.jpg">
+![Image of "Music.app" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-now-playing.jpg '"Music.app" light player view')
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in dark mode" title="Demonstrating 'Music.app' usage in dark mode">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
+![Image of "Music.app" dark album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-album-view.jpg '"Music.app" dark album view')
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-now-playing.jpg">
+![Image of "Music.app" dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-now-playing.jpg '"Music.app" dark player view')
+</a>
+</div>
+
+I tend to give [Music.app](https://www.apple.com/music/) a hard time; while its intentions are pure, I find its attempts to cater to every possible demographic overly idealistic and more often than not are to the app's determent. Music.app's goal to please everyone historically results in bloated, confusing interfaces compared to its more focused contemporaries. In fact, earlier attempts were so bad they [served as the catalyst for Cesium's (now Cs's) creation](https://www.reddit.com/r/apple/comments/2n5b9b/i_couldnt_stand_musicapp_so_i_made_my_own_please/) back in 2014. However, [last year upset this trend](/post/second-annual-ios-music-player-competition#--musicapp) with a radical refresh to lyrics, a feature that inherently only caters to active listeners. Not only did this redesign include "live" lyrics tracking for select songs on Apple's streaming service, it also featured the gorgeous "lava lamp" album art visualizer that [first captivated me in tvOS's Music.app](/post/quest-for-the-best-ios-music-player#honorable-mention) years ago. While the rest of Music.app remained mostly unchanged, I remained hopeful that this hinted at a renewed dedication in Apple towards improving their Music.app experience. With another year and another major iOS release safely behind us, it's time to check back in to see how it fared.
+
+Leading up to [iOS 14](http://web.archive.org/web/20200920101828/https://www.apple.com/ios/ios-14/)'s release, I heard whispers that the betas included my number-one requested feature for the lava lamp visualizer to be *officially* accessible in the player view. Of all iOS 14 features, I was most eager to see this one for myself. The minute the upgrade completed, I rushed to Music.app, started playing a song, and was greeted with...
+
+<figure class="two-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect-poster.jpg" alt="Video demonstrating Music.app's lyrics view visualizer" title="Demonstrating Music.app's lyrics view visualizer">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<figcaption>The new effect’s on the left, which is seen on the player and “regular” lyrics view. The original effect’s on the right, now viewable only for “live” lyrics on select Apple Music tracks. The playback speed’s increased to help demonstrate the effect over time.</figcaption>
+</figure>
+
+... a disaster. The rumors that my beloved visualizer will now accessible in the player view were gravely mistaken; it is **not** the same effect, in fact it's demonstrably worse. While at first glance the new effect in the player view seems similar to the original from [iOS 13](http://web.archive.org/web/20190922153545/https://www.apple.com/ios/ios-13/), iOS 14 now aggressively smudges the effect, which blends the previously distinct colors into a disgusting, sludgy stew. Take an extreme example like [Paul McCarney & Wings](https://music.apple.com/us/artist/paul-mccartney-wings/254653827)' [*Wingspan*](https://music.apple.com/us/album/wingspan-hits-and-history/1440940231) compilation, which cleanly features just two stark colors (neon yellow and navy blue). Included above are two recordings of Music.app playing a song from that record: the first showcasing the new iOS 14 visualizer, and the second showcasing the original iOS 13 visualizer, which can still be seen on iOS 14 for "live" lyrics only[^realtime-lyrics]. To make matters worse, the [iOS 13 bug](https://barrowclift.me/post/second-annual-ios-music-player-competition#--musicapp) that allowed users to access the visualizer on the player view despite the lack of official support no longer works in iOS 14, the new visualizer continues to be displayed instead of the original.
+
+Aside from the "Library" tab switching locations, nothing else in Music.app's local library experience changed this year. While in theory I should love the new player view visualizer, its shoddy implementation consistently reminds me that the original effect is *still* not visible in the player view despite [tremendous customer feedback begging for it](https://www.reddit.com/r/AppleMusic/comments/d1qrsx/finally_got_a_reply_from_craig_about_the_lyrics/). For those customers and myself, what we got instead this year was nothing short of a slap in the face, and I'd rather return to the boring white or black background than keep their sorry excuse of a substitute.
+
+### Widgets
+
+<div class="box widget">
+<div style="flex:0 1 40%;">
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-1.jpg">
+![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-1.jpg)
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-2.jpg">
+![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-2.jpg)
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-3.jpg">
+![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-3.jpg)
+</a>
+</div>
+</div>
+
+Music.app only supports three rudimentary widgets—one for each of the three widget sizes—and are among my least favorite of any player. While I appreciate the "Recently Listened" discovery feature, the lack of customization options is disappointing.
+
+That's to say nothing for its hideous design; there's *way* too much bright red; the Music.app widgets visually scream at my face on any page they're placed on, tearing attention away from everything else. There's not even a toned-down dark mode variant, it's the same bloodcurdling red all the way down.
+
+While it's nice to see Apple providing first-party music widgets to customers as an example for third-party developers to follow, it's a shame they set expectations so low.
+
+### Personal Score Card
+
+<div class="admonition aside">
+<ul class="bare-list emoji-list">
+  <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>“Live” lyrics still feature the original effect, and it’s still just as brilliant as it was last year. Regular lyrics are still functionally great, despite featuring the new, worse visualizer.</em></li>
+  <li><span class="bullet">:trophy:</span> <strong>iPad Support: </strong><em>Music.app continues to unsurprisingly lead the pack with one of the best optimized iPad experiences, in no small part thanks to the new fullscreen player on iPadOS 14.</em></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+  <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+  <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery collections available don’t quite keep pace with other players’ progress this year.</em></li>
+  <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong><ul class="bare-list">
+    <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong> <em>While Music.app technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
+    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+  </ul></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+  <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view:</strong> <em>A bitter disappointment, I’d rather the old, boring design return than be teased by this shoddy, off-brand alternative.</em></li>
+</ul>
+</div>
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/post/third-annual-ios-music-player-showcase/13"><p class="button">Next App: “Picky”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/post/third-annual-ios-music-player-showcase/">Intro</a></li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2020’s Players
+        <ul>
+          <li><a href="/post/third-annual-ios-music-player-showcase/3">Albums</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/4">Cs</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+          <li>Music.app</li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/13">Picky</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/14">Plum</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/18">Soor</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/19">VOX</a></li>
+        </ul>
+      </li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+----
+
+[^realtime-lyrics]: You read that right, the terrible new effect is now even shown for standard lyrics as well; only select Apple Music tracks with "live" lyrics display the superior, original visualizer on iOS 14.
