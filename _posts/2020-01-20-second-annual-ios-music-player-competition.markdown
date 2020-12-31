@@ -15,16 +15,6 @@ foreground-color: "rgba(30, 30, 30, 0.9)"
 ---
 
 <style>
-    .app-icon {
-        height: 5em;
-    }
-    .inline-app-icon {
-        display: inline-block;
-        height: 1em;
-        padding-left: 0.1em;
-        padding-right: 0.1em;
-        vertical-align: text-bottom;
-    }
     article ul li,
     article ol li {
         margin-bottom: 0;
@@ -1069,8 +1059,8 @@ While Sathorn isn't my least favorite contender (that honor's reserved for [one 
 
 <ul class="bare-list emoji-list">
 <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-<li><span class="bullet">:x:</span> <strong>Full iPad support:</strong></li>
-<li><span class="bullet">:x:</span> <strong>Beautiful or viusally engaging player view</strong></li>
+<li><span class="bullet">:x:</span> <strong>Full iPad support</strong></li>
+<li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
 <li><span class="bullet">:x:</span> <strong>Album-focused design</strong><ul class="bare-list">
     <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
     <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
@@ -1189,7 +1179,7 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
 
 <ul class="bare-list emoji-list">
 <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Full iPad support:</strong></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Full iPad support</strong></li>
 <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused design</strong><ul class="bare-list">
     <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting: </strong><em>While most "Display" views don’t sort albums by design, the views where sorting does make sense like the "Stacked" display and "Artists" view while searching properly sorts albums.</em></li>

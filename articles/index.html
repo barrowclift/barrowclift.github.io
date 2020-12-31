@@ -33,6 +33,40 @@ sup[id^=fnref] {
 				{% endif %}
 			</p>
 		</figure>
+		{% elsif post.hero-banner or post.light-hero-banner or post.dark-hero-banner %}
+			{% if post.hero-banner %}
+			<div class="edge-to-edge small shadow">
+			<p>
+			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+			<picture>
+			  <source srcset="{{ site.dropbox }}/{{ post.hero-banner }}.webp">
+			  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.hero-banner }}.jpg">
+			</picture>
+			</a>
+			</p>
+			</div>
+			{% else %}
+			<div class="show-when-light edge-to-edge small shadow">
+			<p>
+			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+			<picture>
+			  <source srcset="{{ site.dropbox }}/{{ post.light-hero-banner }}.webp">
+			  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
+			</picture>
+		    </a>
+			</p>
+			</div>
+			<div class="show-when-dark edge-to-edge small shadow">
+			<p>
+			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+			<picture>
+			  <source srcset="{{ site.dropbox }}/{{ post.dark-hero-banner }}.webp">
+			  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
+			</picture>
+		    </a>
+	     	</p>
+			</div>
+			{% endif %}
 		{% endif %}
 
 		{{ post.content | split:'<!--break-->' | first }}

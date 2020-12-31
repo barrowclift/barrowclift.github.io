@@ -1,0 +1,345 @@
+---
+layout: post
+hidden: true
+title: "Third Annual iOS Music Player Competition"
+date: 2020-12-31 13:10:33-0500
+excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+image: "third-annual-ios-music-player-showcase/share-image.jpg"
+categories:
+  - Technology
+  - iOS
+  - Design
+  - Music
+start-page: "/post/third-annual-ios-music-player-showcase"
+prev-page: "9"
+next-page: "11"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## !["Marvis Pro" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage with light theme" title="Demonstrating 'Marvis Pro' usage with light theme">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-usage.ogv" type="video/ogg">
+  [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
+  <img title="'Marvis Pro' light theme album view" alt="Image of 'Marvis Pro' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
+  <img title="'Marvis Pro' light theme player view" alt="Image of 'Marvis Pro' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage with dark theme" title="Demonstrating 'Marvis Pro' usage with dark theme">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-usage.ogv" type="video/ogg">
+  [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
+  <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
+  <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
+<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+I began this year's showcase with the claim that steady growth marks 2020, and few other players this year exemplify this as deeply as Marvis Pro. There's few visual changes to speak of, so at first glance Marvis Pro appears exactly the same as [last year](/post/second-annual-ios-music-player-competition#--marvis-pro). However, that couldn't be farther from the case; Marvis Pro received plenty of backend enhancements that make it even more powerful and customizable than ever before. Some highlights from Marvis Pro's many releases this year include:
+
+* Lots of highly customizable widgets
+* Rich [Last.fm](https://www.last.fm) integration
+* Rule and filter enhancements, including the ability to copy/paste rule & view options for quicker customization and the ability to easily share your custom sections with others
+* Plenty of new icons to choose from, bringing the total list up to a dazzling 40
+* Customizable player view buttons
+
+For those new to Marvis Pro, it's a general-purpose player build atop a unique, fully customizable system. Other general-purpose players like [Picky] and [Power Player] offer limited, pre-built views like "Artists" and "Albums" and—if you're lucky—a couple pre-built, static discovery collections like "Recently Added". Other apps rarely provide any customization in these views as well, often only supplying a few sorting options or—if you're lucky—the option to switch between displaying items as a grid or a list. As a result, these kinds of players tend to be opinionated [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) experiences. While this approach can result in spectacular experiences like those provided by [Picky] and [Power Player], that design choice inherently limits them.
+
+Marvis Pro takes a different approach; while the traditional "Artists", "Albums", etc. views are all still provided by default, each and every one of those views can be fully manipulated using a suite of filtering, sorting, and display customization features that are unmatched by any other player. Not only that, users can create their own "sections" based on those same tools. For example, you can easily create a section of singles from your high school years, a section for records you haven't listened to in the past year, a section of randomized records you've purchased so far this year, and much more. A more simplistic parallel to Marvis Pro's "sections" that you may be familiar with is ["Smart Playlists"](https://support.apple.com/guide/music/create-edit-and-delete-smart-playlists-mus1712973f4/mac) in [iTunes on Windows](https://support.apple.com/en-us/HT210384) or [Music.app on macOS](https://www.apple.com/music/); it's the same concept, so if you love creating "Smart Playlists" you're sure to love creating your own sections in Marvis Pro. And now, thanks to this year's improvements, you can easily swap your custom creations with your friends.
+
+If this sounds intimidating, not to worry: thanks to its smart design, all these capabilities are optional and tucked away. You can easily use Marvis Pro like any other general-purpose player without ever once touching its customization features. Alternatively, thanks to this year's improvements, you can search online for other users' custom sections and import theirs instead of making your own from scratch. For example, last year I received a lot of feedback asking which rules were used in my dynamic "Pick of the Day" section (which is a lightly modified version of [@jwhamilton_](https://twitter.com/jwhamilton_)'s "Recommended" section previously shared on the ["Marvis App" Discord](https://discord.gg/Vtjumtm)). At that time, the only good way Justin and I had to share those rules was with [screenshots](https://twitter.com/Barrowclift/status/1232478228712837120?s=20) or [manually typing out each of the rules](/notepad/marvis-pro-rules) for others to follow when building their own copies. Now, that section is [available here]({{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/pick-of-the-day.mSection) for you to easily import and use as-is or as a springboard for your own creations.
+
+Then there's Marvis Pro's [Apple Music](https://www.apple.com/apple-music/) integration. Marvis Pro is the only third-party player I've found aside from [Sathorn] that offers Apple Music integration without requiring [iCloud Music Library](https://support.apple.com/en-us/HT204926). Your library can be local-only like mine, yet Marvis Pro still allows you to easily access Apple Music features like its curated playlists or stream albums from its extensive catalogue. The only reason I haven't included Apple Music integration as one of my desired features or deal-breakers is quite frankly because barely any players exist with this functionality, Marvis Pro was the first and only one of value I've found that does, and it was just released this past year. I cannot emphasis as an Apple Music subscriber how fantastic it is to not have to trudge back to [Music.app] whenever I want to stream a new record. I can only hope integration like this sees wider adoption next year as the market continues to mature.
+
+While functionally Marvis Pro saw tremendous improvements this year, I'm still left disappointed we didn't receive the theming system teased by [Addy Rajveer](https://twitter.com/AdityaRajveer)—Marvis Pro's developer—on Twitter last year.
+
+<div class="admonition tweet">
+<p class="admonition-title"><a href="https://twitter.com/AdityaRajveer">@AdityaRajveer</a></p>
+<p>Out of all the new things iOS 13 added, what I am most excited for is new blur styles. 6 years of waiting. ;) Would have been even better if we had complete control but hey this is cool too. :sweat_smile:</p>
+<p><a style="background-color: transparent !important;" href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><picture>
+<source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.webp">
+<img title="Teased screenshots of Marvis Pro with different translucency styles" alt="Image of teased screenshots of Marvis Pro with different translucency styles" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.jpg">
+</picture></a></p>
+<p><a href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><em>12:33 PM - Jun 4, 2019</em></a></p>
+</div>
+
+Overall, I do find Marvis Pro visually pleasing, but it does tend to lean utilitarian in its design and thus appear too plain in certain contexts for my tastes, particularly in the player view. There is a healthy amount of theming customization (such as whether or not to show a translucent album art background), but I can't help but continue to yearn for the translucency options hinted at last year. However, since Marvis Pro development remained consistently active throughout this year, I am left with the assumption that the theming system simply needed more development time than originally estimated and perhaps got pushed to next year as a result. In the meantime, users like myself who love gorgeous or engaging player views will unfortunately need to jump from Marvis Pro to others like [Picky] or [Power Player] in the meantime to get their "pretty player" fix.
+
+Nonetheless, for users such as myself that heavily value functional customization and flexibility, Marvis Pro remains one of the finest players available anywhere. While [Albums] rose to the challenge this year by providing an objectively superior default experience for album lovers, Marvis Pro's core filter & rule system powering all sections within the app continues to offer the best theoretical experience regardless of your music preferences, assuming you have the time & light skillset required to implement your ideas. However, thanks to the enhancements this year allowing users to easily share custom sections, it's now quicker and easier than ever before to customize Marvis Pro. Marvis Pro is like a [bicycle for the mind](https://www.youtube.com/watch?v=KmuP8gsgWb8), and this year more than ever I highly encourage you give it a whirl.
+
+### Widgets
+
+Marvis Pro boasts the most flexible collection of music player widgets you can find. While Albums weighs in with the most widgets (seven to Marvis Pro's six), Marvis Pro's customization more than makes up for this, offering a suite of widget options to tweak practically every visible and functional attribute.
+
+<div class="show-when-light box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-3.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing-widget-1.png">
+</picture>
+</a>
+</div>
+</div>
+<div class="show-when-dark box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-3.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing-widget-1.png">
+</picture>
+</a>
+</div>
+</div>
+
+"Now Playing" is the first of two widget classes Marvis Pro supplies, available in all three sizes. Each one supports a suite of customization features, such as toggling the "background blur" effect and changing the tap action. Nearly every piece of metadata can be individually hidden or shown, and playback controls can also be displayed for the medium and large sizes. There's also an option to greyscale the album artwork, an unusual but much welcomed setting for those like myself that greatly dislike ["loud" widgets](/post/third-annual-ios-music-player-showcase/12#widgets) on the home screen.
+
+<div class="show-when-light box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-1.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-section-widget-3.png">
+</picture>
+</a>
+</div>
+</div>
+<div class="show-when-dark box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-1.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-section-widget-3.png">
+</picture>
+</a>
+</div>
+</div>
+
+The final widget class supplied by Marvis Pro is the "Section" widgets, again available in all three sizes. As the name implies, these widgets display the contents from any one of your Marvis Pro sections, allowing these widgets to be theoretically anything you can imagine, whether it be something wild like ["Pretty Good Of 2020"](https://www.sellfishsoftware.com/blog/31-widgets) or something traditional like "Recently Added".
+
+Like the "Now Playing" widgets, the "Section" widgets sport a myriad of customization options. Like sections in Marvis Pro proper, this includes the ability to display items as a list or a grid with a variable number of columns, among other display options.
+
+<div class="show-when-light box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-1.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-variation-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.png">
+</picture>
+</a>
+</div>
+</div>
+<div class="show-when-dark box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-1.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-1.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-1.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-2.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-2.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-variation-2.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.webp">
+<picture>
+  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.webp">
+  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/variation-3.png">
+</picture>
+</a>
+</div>
+</div>
+
+To provide examples of the flexibility and power these widgets provide, above are some of the same widgets displayed earlier, this time with some modifications. If you love customizing your home screen, you'll love Marvis Pro's widgets.
+
+### Personal Score Card
+
+<div class="admonition aside">
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>It may no longer be the only player to provide discovery feature customization like it was last year, but Marvis Pro's mature rules & filters system help it remain the undisputed champion for those with the time and light computer skills necessary to wield it.</em></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong> <em>The <a href="https://www.musixmatch.com/">MusicMatch</a> integration is a nice touch, but for those like myself that just prefer regular ol’ lyrics, they’re still available inline directly below the the player controls like they were in iOS 12’s Music.app.</em></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong> <em>Marvis Pro’s theme design seems to deviate from iOS's guidelines, but its choices are tasteful and overwhelmingly result in a visually pleasing experience (unlike <a href="https://apps.apple.com/us/app/sathorn/id1447295899">Sathron</a>).</em></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>While I tend to gravitate towards other players on the iPad (notably <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">Power Player</a>), Marvis Pro’s iPad support is perfectly respectable, and support in any capacity is appreciated in light of some other players continuing to drop the ball.</em></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>The visual design is utilitarian and arguably plain, but the ability to enlarge the album art is positively killer for listeners like myself that are fussy about high resolution album art.</em></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>“Out of the box” it’s not particularly album-centric (<a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a> now holds that position), but with some customization it's still among the best album-focused music players of the lot.</em><ul class="bare-list">
+    <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>There's no (publically accessible) option to sort alphabetically by artist, then chronologically by release date.</em></li>
+    <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Not only does Marvis Pro allow you to make every single section in the app a grid view, it also lets you customize the number of columns, metadata visibility, and more.</em></li>
+</ul></li>
+</ul>
+</div>
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/post/third-annual-ios-music-player-showcase/11"><p class="button">Next App: “Music.app”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/post/third-annual-ios-music-player-showcase/">Intro</a></li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2020’s Players
+        <ul>
+          <li><a href="/post/third-annual-ios-music-player-showcase/3">Albums</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/4">Cs</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+          <li>Marvis Pro</li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/13">Picky</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/14">Plum</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/18">Soor</a></li>
+          <li><a href="/post/third-annual-ios-music-player-showcase/19">VOX</a></li>
+        </ul>
+      </li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+      <li><a href="/post/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+*[WYSIWYG]: What You See Is What You Get
+
+[Picky]: https://apps.apple.com/us/app/picky-music-player/id497110916
+[Power Player]: https://apps.apple.com/us/app/power-player-music-player/id1372545429
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Music.app]: /post/third-annual-ios-music-player-showcase/12
+[Sathorn]: https://apps.apple.com/us/app/sathorn/id1447295899

@@ -10,13 +10,14 @@ categories:
   - Programming
   - Unix
   - Guides
-excerpt: "With this guide, you too can easily enjoy Wireguard VPN's performance and security served by macOS Catalina."
+excerpt: "With this guide, you too can easily enjoy Wireguard VPN's performance and security served by macOS Big Sur."
 image: "wireguard-server-on-macos/share-image.jpg"
 has_afterward: true
 ---
 
 <div class="admonition yellow">
 <p class="admonition-title">Update: March 11, 2020</p>
+<p></p>
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
 <p>This revision contains a myriad of improvements <a href="https://github.com/barrowclift/barrowclift.github.io/issues/1">suggested</a> by <a href="https://lifepillar.me">lifepillar</a> and would not exist without their help. Lifepillar has my heartfelt thanks for their tremendous contribution to this site and the Wireguard community.</p>
 <p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes <strong>only</strong>.</p>
