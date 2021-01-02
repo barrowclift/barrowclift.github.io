@@ -104,30 +104,6 @@ Another highlight is the "Over The Years" section, which uses your age to constr
 
 The last of the new tabs (not counting "Settings") is "Stats", which on the surface offers a birds-eye view of your library and listening statistics, much like those provided by [PlayTally](https://playtally.mclay.dev) (which is again another example of Albums incorporating entire other apps' feature sets into just a single view). You can either use the suite of pre-built listening metrics or create your own to see your "most played" producers, genres, recording labels, and more. It's an unexpectedly fun time playing around with these different charts, and to top it off you can easily tap into any of their results to browse or play their items, making it yet another fantastic discovery feature in Albums.
 
-<!-- <figure class="three-images ios-screenshot">
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-tracks.jpg">
-![Image of the "Tracks" tab in the light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-tracks.jpg ""Tracks" tab in the light player view")
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-credits.jpg">
-![Image of the "Credits" tab in the light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-credits.jpg ""Credits" tab in the light player view")
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-stats.jpg">
-![Image of the "Stats" tab in the light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-stats.jpg ""Stats" tab in the light player view")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-tracks.jpg">
-![Image of the "Tracks" tab in the dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-tracks.jpg ""Tracks" tab in the dark player view")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-credits.jpg">
-![Image of the "Credits" tab in the dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-credits.jpg ""Credits" tab in the dark player view")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-stats.jpg">
-![Image of the "Stats" tab in the dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-stats.jpg ""Stats" tab in the dark player view")
-</a>
-<figcaption>
-Three brand-new tabs await in the redesigned player: “Track List”, “Credits”, and “Stats”.
-</figcaption>
-</figure> -->
-
 There's even more wonderful discovery possibilities to be found in the player itself. Upon scrolling down in the redesigned player view, three different tabbed views present themselves: "Track List", "Credits", and "Statistics". Those familiar with my thoughts on Albums last year may remember I panned the credits feature, noting that I found its information uninspiring and not particularly useful. However, this year the credits feature received a complete rewrite and is now arguably Albums' "kill feature".
 
 <figure class="three-images ios-screenshot">
