@@ -15,23 +15,24 @@ image: "wireguard-server-on-macos/share-image.jpg"
 has_afterward: true
 ---
 
+<figure markdown="1" class="inline shadow">
+[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
+</figure>
+
 <div class="admonition yellow">
-<p class="admonition-title">Update: March 11, 2020</p>
+<p class="admonition-title">Update: January 14, 2021</p>
 <p></p>
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
-<p>This revision contains a myriad of improvements <a href="https://github.com/barrowclift/barrowclift.github.io/issues/1">suggested</a> by <a href="https://lifepillar.me">lifepillar</a> and would not exist without their help. Lifepillar has my heartfelt thanks for their tremendous contribution to this site and the Wireguard community.</p>
+<p>This revision contains a myriad of improvements provided by multiple individuals and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
 <p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes <strong>only</strong>.</p>
+<p>I can confirm this guide works for macOS Big Sur 11.1.</p>
 </div>
 
 <div class="admonition blue">
 <p class="admonition-title">Notice: May 12, 2020</p>
-<p>Please be aware that at present the guide's traffic routing instructions route through IPv4 traffic <em>only</em>. That means IPv6-exclusive hosts will be inaccessible to connected peers configured with this guide. An update's in progress to include more comprehensive traffic routing instructions to properly route both IPv4 and IPv6 traffic.</p>
+<p>Please be aware that at present the guide’s traffic routing instructions route through IPv4 traffic <em>only</em>. That means IPv6-exclusive hosts will be inaccessible to connected peers configured with this guide. An update’s in progress to include more comprehensive traffic routing instructions to properly route both IPv4 and IPv6 traffic.</p>
 <p>Many thanks to <a href="https://fiveone.org">Jeremy Quinn</a> for detecting this oversight.</p>
 </div>
-
-<figure markdown="1" class="inline shadow">
-[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
-</figure>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is successfully running on macOS.
 
@@ -191,8 +192,6 @@ PersistentKeepalive <span class="o">=</span> 25
         <span class="nt">&lt;true/&gt;</span>
         <span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
         <span class="nt">&lt;true/&gt;</span>
-        <span class="nt">&lt;key&gt;</span>LaunchOnlyOnce<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;true/&gt;</span>
         <span class="nt">&lt;key&gt;</span>StandardErrorPath<span class="nt">&lt;/key&gt;</span>
         <span class="nt">&lt;string&gt;</span>/usr/local/var/log/wireguard.err<span class="nt">&lt;/string&gt;</span>
         <span class="nt">&lt;key&gt;</span>EnvironmentVariables<span class="nt">&lt;/key&gt;</span>
@@ -229,6 +228,11 @@ The following help articles and documentation from fellow enthusiasts were inval
 * [pirate's "Unofficial Wireguard Documentation"](https://github.com/pirate/wireguard-docs)
 * [Chrissy LeMaire's "Share VPN with OS X Sierra Internet Sharing"](https://blog.netnerds.net/2016/11/share-vpn-with-os-x-sierra-internet-sharing/)
 * [Murus's "OS X PF Manual"](https://murusfirewall.com/Documentation/OS%20X%20PF%20Manual.pdf)
+
+## Many Thanks To...
+
+* [**lifepillar**](https://lifepillar.me) for their superior PF rules handling and daemon config. Our original discussion remains [publically accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1).
+* [**oma_sct**](https://twitter.com/oma_sct) for their private suggestion to do away with the previously enabled `LaunchOnlyOnce` flag, which prevented the service from automatically restarting should the daemon ever exit unexpectedly.
 
 *[LAN]: Local Area Network
 *[VPN]: Virtual Private Network
