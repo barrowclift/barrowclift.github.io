@@ -26,8 +26,8 @@ next-page: "10"
 </video>
 <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
 <picture>
-  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-  <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+  <img type="JPG" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
 </picture>
 </a>
 </div>
@@ -40,8 +40,8 @@ next-page: "10"
 </video>
 <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
 <picture>
-  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-  <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+  <img type="JPG" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
 </picture>
 </a>
 </div>
@@ -67,16 +67,16 @@ Longplay's widget's are as unique as the app. Like the app, the experience is tr
 <div style="flex:0 1 40%;">
 <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
 <picture>
-  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
-  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.png">
+  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
+  <img type="PNG" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.png">
 </picture>
 </a>
 </div>
 <div style="flex:0 1 20%;">
 <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
 <picture>
-  <source srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
-  <img src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.png">
+  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
+  <img type="PNG" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.png">
 </picture>
 </a>
 </div>

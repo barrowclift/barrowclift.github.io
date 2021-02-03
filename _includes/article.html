@@ -3,21 +3,21 @@
 		{% if page.hero-banner %}
 		<div class="edge-to-edge hero-banner">
 		<picture>
-		  <source srcset="{{ site.dropbox }}/{{ page.hero-banner }}.webp">
-		  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.hero-banner }}.jpg">
+		  <source type="WebP" srcset="{{ site.dropbox }}/{{ page.hero-banner }}.webp">
+		  <img type="JPG" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.hero-banner }}.jpg">
 		</picture>
 		</div>
 		{% else %}
 		<div class="show-when-light edge-to-edge hero-banner">
 		<picture>
-		  <source srcset="{{ site.dropbox }}/{{ page.light-hero-banner }}.webp">
-		  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.light-hero-banner }}.jpg">
+		  <source type="WebP" srcset="{{ site.dropbox }}/{{ page.light-hero-banner }}.webp">
+		  <img type="JPG" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.light-hero-banner }}.jpg">
 		</picture>
 		</div>
 		<div class="show-when-dark edge-to-edge hero-banner">
 		<picture>
-		  <source srcset="{{ site.dropbox }}/{{ page.dark-hero-banner }}.webp">
-		  <img title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.dark-hero-banner }}.jpg">
+		  <source type="WebP" srcset="{{ site.dropbox }}/{{ page.dark-hero-banner }}.webp">
+		  <img type="JPG" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.dark-hero-banner }}.jpg">
 		</picture>
 		</div>
 		{% endif %}
