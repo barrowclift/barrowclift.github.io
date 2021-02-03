@@ -62,38 +62,38 @@ It may seem puzzling to consolidate what was previously five discrete tab bar it
 <figure class="three-images ios-screenshot">
 <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
-  <img type="JPG" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
+  <img type="image/jpeg" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.jpg">
 </picture>
 </a>
 <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
-  <img type="JPG" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
+  <img type="image/jpeg" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.jpg">
 </picture>
 </a>
 <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
-  <img type="JPG" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
+  <img type="image/jpeg" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.jpg">
 </picture>
 </a>
 <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
-  <img type="JPG" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
+  <img type="image/jpeg" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.jpg">
 </picture>
 </a>
 <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
-  <img type="JPG" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
+  <img type="image/jpeg" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.jpg">
 </picture>
 </a>
 <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
 <picture>
-  <source type="WebP" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
-  <img type="JPG" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
+  <img type="image/jpeg" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.jpg">
 </picture>
 </a>
 <figcaption>SongOwl’s “Paths” menu and the somewhat limited “Grouping” and “Sorting” options that can be applied to any given path.</figcaption>
