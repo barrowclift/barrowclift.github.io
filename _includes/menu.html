@@ -58,6 +58,7 @@
 						<li><div title="Dark mode" alt="Dark mode" onclick="changeAppearance('dark')" class="color-well appearance dark"></div></li>
 					</ul>
 				</div>
+				{% if page.ignore-accent-color != true %}
 				<div id="color-well-settings" class="group">
 					<label>Accent Color:</label>
 					<ul class="colors">
@@ -70,6 +71,7 @@
 						<li><div title="Green accent color" alt="Green accent color" onclick="changeAccentColor('green')" id="input-green" class="color-well green"></div></li>
 					</ul>
 				</div>
+				{% endif %}
 			</div>
 		</div>
 		{% endif %}

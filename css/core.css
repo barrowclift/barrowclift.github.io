@@ -628,8 +628,11 @@ menu {
         margin-bottom: 0;
     }
     .ignore-accent-color .popup {
-        width: 9.375em;
-        margin-left: -9.875em;
+        width: 14em !important;
+        margin-left: -14.2em !important;
+    }
+    .ignore-accent-color .popup .colors {
+        display: inline;
     }
     .enforce-dark-mode .colors li {
         margin-top: 0.25em;
