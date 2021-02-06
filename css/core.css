@@ -366,6 +366,7 @@ dt, dd {
         border-radius: 1em;
     }
     .summary-list h3,
+    .summary-list .header,
     .summary-list time {
         margin-top: 0;
     }
@@ -1944,7 +1945,9 @@ summary,
 .summary-list li a {
     transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.summary-list h3 {
+.summary-list h3,
+.summary-list .header,
+.summary-list .header {
     transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 menu {
