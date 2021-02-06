@@ -62,7 +62,7 @@ home-menu-active: true
 	<div class="column w6">
 		<h2>I’m Marc Barrowclift,</h2>
 
-		<h4>A <a href="https://github.com/barrowclift">full stack developer</a> from Philly. I <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">engineer</a> reliable and sustainable services professionally and <a href="{{ site.baseurl }}/projects/">design</a> delightful products in my studio during my free time.</h4>
+		<h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full stack developer</a> from Philly. I <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">engineer</a> reliable and sustainable services professionally and <a href="{{ site.baseurl }}/projects/">design</a> delightful products in my studio during my free time.</h4>
 
 		<ul class="button-group left autosize">
 			<li><a href="{{ site.baseurl }}/about/"><p class="button">Learn More</p></a></li>
@@ -71,9 +71,9 @@ home-menu-active: true
 
 		<h2>Occupation</h2>
 
-		<h4>I’m a full-time engineer at <a href="https://my.xfinity.com">Comcast</a> maintaining the <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">DVR Scheduler</a>, which dutifully services over half a billion requests daily.</h4>
+		<h4 style="line-height:1.4em">I’m a full-time engineer at <a href="https://my.xfinity.com">Comcast</a> maintaining the <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">DVR Scheduler</a>, which dutifully services over half a billion requests daily.</h4>
 
-		<h4>My studio is not accepting consultant work at this time.</h4>
+		<h4 style="line-height:1.4em">My studio is not accepting consultant work at this time.</h4>
 
 		<ul class="button-group left autosize">
 			<li><p class="button disabled">Hire</p></li>
@@ -95,15 +95,15 @@ home-menu-active: true
 				<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
 				{% endif %}
 					{% if post.type == "project-update" and post.project-update-image %}
-						<h3 class="header">
+						<h4 class="header">
 							<time itemprop="dateCreated"><mark class="tag orange">Project</mark> {{ post.date | date: "%B %-d, %Y" }}</time>
-						</h3>
+						</h4>
 						<img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
 					{% else %}
-						<h3 class="header">
+						<h4 class="header">
 							<time itemprop="dateCreated">{% if post.type == "article" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
-							{{ post.title }} {% if post.link %}↦{% endif %}
-						</h3>
+							{{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
+						</h4>
 						{% if post.excerpt %}
 							<p>{{ post.excerpt }}</p>
 						{% endif %}
