@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+	
+	{% include head.html %}
+
+	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
+		{% include lazy-load-stylesheets.html %}
+
+		{% if page.backdrop-image %}
+		<style>
+			.backdrop {
+				background-image: url('{{ page.backdrop-image }}');
+				background-position: center;
+				background-size: cover;
+				opacity: 0.05;
+
+				-webkit-filter: blur(25px);
+				-moz-filter: blur(25px);
+				-o-filter: blur(25px);
+				-ms-filter: blur(25px);
+				filter: blur(25px);
+			}
+			#dark .backdrop {
+				opacity: 0.1;
+			}
+		</style>
+		{% endif %}
+		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
+		<style>
+			menu {
+				position: relative !important;
+				background-color: transparent !important;
+				box-shadow: unset !important;
+			}
+			#mainmenu > ul {
+				-webkit-backdrop-filter: unset !important;
+				backdrop-filter: unset !important;
+			}
+			#menu-height-offset {
+				display: none;
+			}
+			@media (min-width: 700px) {
+				main {
+					margin-top: 2.65em;
+				}
+			}
+		</style>
+
+		<div id="wrap">
+			<div id="content" class="center {% if page.viewing_single_page != true %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
+				{% include menu.html %}
+				<main>
+					{{ content }}
+				</main>
+			</div>
+		</div>
+
+		{% include footer.html %}
+	</body>
+</html>
