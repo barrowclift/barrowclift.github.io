@@ -20,17 +20,17 @@ has_afterward: true
 </figure>
 
 <div class="admonition yellow">
-<p class="admonition-title">Update: January 14, 2021</p>
+<p class="admonition-title">Update: May 2, 2021</p>
 <p></p>
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
 <p>This revision contains a myriad of improvements provided by multiple individuals and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
 <p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes <strong>only</strong>.</p>
-<p>I can confirm this guide works for macOS Big Sur 11.1.</p>
+<p>I can confirm this guide works for macOS Big Sur 11.3.</p>
 </div>
 
 <div class="admonition blue">
 <p class="admonition-title">Notice: May 12, 2020</p>
-<p>Please be aware that at present the guide’s traffic routing instructions route through IPv4 traffic <em>only</em>. That means IPv6-exclusive hosts will be inaccessible to connected peers configured with this guide. An update’s in progress to include more comprehensive traffic routing instructions to properly route both IPv4 and IPv6 traffic.</p>
+<p>Please be aware that at present the guide’s traffic routing instructions route through IPv4 traffic <em>only</em>. That means IPv6-exclusive hosts will be inaccessible to connected peers configured with this guide. If you know a means of achieving this, please <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">get in touch</a>.</p>
 <p>Many thanks to <a href="https://fiveone.org">Jeremy Quinn</a> for detecting this oversight.</p>
 </div>
 
@@ -44,7 +44,7 @@ Unfortunately, that's the situation I found myself in with macOS when attempting
 
 Despite numerous attempts over the months, my Google-fu yielded no results, either. While there were plenty of [help articles](https://medium.com/@headquartershq/setting-up-wireguard-on-a-mac-8a121bfe9d86) from others setting up Wireguard on macOS, every single one of them was for setting up a Wireguard *peer* on macOS. This peer was always intended to only connect to a Wireguard server on more common platforms like [Ubuntu](https://ubuntu.com) or [CentOS](https://www.centos.org), never the other way around.
 
-However, from my on-and-off research over these past few months I've finally cobbled together a solution that's working. Thus, I intend to fill this hole in the community's growing collection of documentation and setup guides: here's what you need to do to get a Wireguard server running on macOS with full traffic routing and LAN access.
+However, from my on-and-off research over these past few months I've finally cobbled together a solution that's working. Thus, I intend to fill this hole in the community's growing collection of documentation and setup guides: here's what you need to do to get a Wireguard server running on macOS with full traffic routing and LAN access[^caveat].
 
 <!--break-->
 
@@ -116,8 +116,13 @@ PrivateKey <span class="o">=</span> XXX
 <span class="c"># forwarding on your router, update the port here to match.</span>
 ListenPort <span class="o">=</span> 51820
 <span class="c"># This prevents IPv4 &amp; IPv6 DNS leaks when browsing the web on the</span>
-<span class="c"># VPN. I chose Cloudflare's public DNS servers, but feel free to use</span>
-<span class="c"># whatever provider you prefer.</span>
+<span class="c"># VPN. I chose Cloudflare's public DNS servers, but feel free to</span>
+<span class="c"># use whatever provider you prefer.</span>
+<span class="c">#</span>
+<span class="c"># Please be aware, however, that not all ISPs allow customers to</span>
+<span class="c"># use 3rd party DNS providers. If your ISP does not support this,</span>
+<span class="c"># delete this declaration from your config, otherwise external</span>
+<span class="c"># network requests won't resolve while on the VPN.</span>
 DNS <span class="o">=</span> 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111
 <span class="c"># This ensures our peers continue to report their Wireguard-</span>
 <span class="c"># assigned IPs while connected to the VPN. This is required for</span>
@@ -133,8 +138,9 @@ PostDown <span class="o">=</span> /usr/local/etc/wireguard/postdown.sh
 <span class="o">[</span>Peer]
 <span class="c"># Substitute with *this peer*'s public key</span>
 PublicKey <span class="o">=</span> XXX
-<span class="c"># Chose a unique IP within the Wireguard subnet you defined earlier</span>
-<span class="c"># that this particular peer will use when connected to the VPN.</span>
+<span class="c"># Chose a unique IP within the Wireguard subnet you defined</span>
+<span class="c"># earlier that this particular peer will use when connected</span>
+<span class="c"># to the VPN</span>
 AllowedIPs <span class="o">=</span> 10.0.10.10/32
 
 <span class="c"># Follow the same steps as the [Peer] template above for each</span>
@@ -149,16 +155,16 @@ Address <span class="o">=</span> 10.0.10.10/32
 <span class="c"># Substitute with *this peer's* private key.</span>
 PrivateKey <span class="o">=</span> XXX
 <span class="c"># This prevents IPv4 &amp; IPv6 DNS leaks when browsing the web on the</span>
-<span class="c"># VPN. I chose Cloudflare's public DNS servers, but feel free to use</span>
-<span class="c"># whatever provider you prefer.</span>
+<span class="c"># VPN. I chose Cloudflare's public DNS servers, but feel free to</span>
+<span class="c"># use whatever provider you prefer.</span>
 DNS <span class="o">=</span> 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111
 
 <span class="o">[</span>Peer]
 <span class="c"># Substitute with your *server's* public key</span>
 PublicKey <span class="o">=</span> XXX
 <span class="c"># Your Wireguard server's public IP. If you chose a different port</span>
-<span class="c"># earlier when setting up port forwarding on your router, update the</span>
-<span class="c"># port here to match.</span>
+<span class="c"># earlier when setting up port forwarding on your router, update</span>
+<span class="c"># the port here to match.</span>
 Endpoint <span class="o">=</span> XXX.XXX.XXX.XXX:51820
 <span class="c"># Informs Wireguard to forward ALL traffic through the VPN.</span>
 AllowedIPs <span class="o">=</span> 0.0.0.0/0, ::/0
@@ -184,6 +190,9 @@ PersistentKeepalive <span class="o">=</span> 25
         <span class="nt">&lt;string&gt;</span>com.wireguard.server<span class="nt">&lt;/string&gt;</span>
         <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
         <span class="nt">&lt;array&gt;</span>
+            <span class="c">&lt;!-- NOTE: If you're rocking an Apple Silicon</span>
+            <span class="c">     M-series computer, this path should be</span>
+            <span class="c">     /opt/homebrew/bin/wg-quick, instead --&gt;</span>
             <span class="nt">&lt;string&gt;</span>/usr/local/bin/wg-quick<span class="nt">&lt;/string&gt;</span>
             <span class="nt">&lt;string&gt;</span>up<span class="nt">&lt;/string&gt;</span>
             <span class="nt">&lt;string&gt;</span>/usr/local/etc/wireguard/coordinates.conf<span class="nt">&lt;/string&gt;</span>
@@ -197,7 +206,7 @@ PersistentKeepalive <span class="o">=</span> 25
         <span class="nt">&lt;key&gt;</span>EnvironmentVariables<span class="nt">&lt;/key&gt;</span>
         <span class="nt">&lt;dict&gt;</span>
             <span class="nt">&lt;key&gt;</span>PATH<span class="nt">&lt;/key&gt;</span>
-            <span class="nt">&lt;string&gt;</span>/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin<span class="nt">&lt;/string&gt;</span>
+            <span class="nt">&lt;string&gt;</span>/usr/local/sbin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin<span class="nt">&lt;/string&gt;</span>
         <span class="nt">&lt;/dict&gt;</span>
     <span class="nt">&lt;/dict&gt;</span>
 <span class="nt">&lt;/plist&gt;</span></code></pre></div></div>
@@ -231,8 +240,17 @@ The following help articles and documentation from fellow enthusiasts were inval
 
 ## Many Thanks To...
 
-* [**lifepillar**](https://lifepillar.me) for their superior PF rules handling and daemon config. Our original discussion remains [publically accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1).
+* [**lifepillar**](https://lifepillar.me) for their superior PF rules handling and daemon config. Our discussion remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1).
 * [**oma_sct**](https://twitter.com/oma_sct) for their private suggestion to do away with the previously enabled `LaunchOnlyOnce` flag, which prevented the service from automatically restarting should the daemon ever exit unexpectedly.
+* [**diadal**](https://github.com/diadal) for informing me that not all ISPs allow customers to use 3rd party DNS providers (previously, this was not mentioned in the guide). The discussion remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/2).
+* **Corey Watson** for his private reminder that the default Homebrew executable directory on Macs powered by [Apple Silicon](https://en.wikipedia.org/wiki/Apple-designed_processors) is `/opt/homebrew/bin`, not `/usr/local/bin`. This difference is now reflected in the daemon config template.
+* **Luke Sandoval** for his private message revealing that the approach detailed in this guide obfuscates client IPs behind the server's IP. Thus, this solution might not meet certain needs and is thus now called out as a caveat in the guide.
 
+*[DNS]: Domain Name System
+*[ISP]: Internet Service Provider
 *[LAN]: Local Area Network
 *[VPN]: Virtual Private Network
+
+-------------
+
+[^caveat]: Please be aware that the approach detailed in this guide will obfuscate client IP traffic. This means all connected client requests will appear as if they're requests from the Wireguard server IP itself, not the assigned client IPs. As a result, this solution may not fit your particular needs.
