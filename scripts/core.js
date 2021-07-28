@@ -56,6 +56,7 @@ function changeAppearance(appearance) {
 			document.getElementsByTagName("html")[0].removeAttribute("id", "dark");
 		}
 	}
+	updateThemeColor();
 }
 /* Allow clicking the area AROUND the buttons to trigger the effect as well */
 function settingsClicked() {
@@ -96,6 +97,7 @@ function changeAccentColor(color) {
 			$.cookie("accent-color", color);
 		}
 	}
+	updateThemeColor();
 }
 
 /* Full-page parallax images might confuse some people, this provides an
@@ -103,6 +105,56 @@ function changeAccentColor(color) {
    macOS or iOS with hidden scrollbars enabled */
 function upArrowClicked() {
 	$('#parallax').animate({scrollTop: 300}, 250);
+}
+
+function updateThemeColor(a_accentColor) {
+	let accentColor = a_accentColor || $.cookie("accent-color") || "blue";
+	let darkBaseThemeColor;
+	let lightBaseThemeColor;
+	if (accentColor === "purple") {
+		darkBaseThemeColor = "#1B1B1C";
+		lightBaseThemeColor = "#FEFEFF";
+	} else if (accentColor === "pink") {
+		darkBaseThemeColor = "#1D1B1B";
+		lightBaseThemeColor = "#FFFEFE";
+	} else if (accentColor === "red") {
+		darkBaseThemeColor = "#1D1B1B";
+		lightBaseThemeColor = "#FFFEFE";
+	} else if (accentColor === "orange") {
+		darkBaseThemeColor = "#1C1C1A";
+		lightBaseThemeColor = "#FFFFFE";
+	} else if (accentColor === "yellow") {
+		darkBaseThemeColor = "#1C1C19";
+		lightBaseThemeColor = "#FFFFFE";
+	} else if (accentColor === "green") {
+		darkBaseThemeColor = "#1B1C1B";
+		lightBaseThemeColor = "#FEFFFE";
+	} else {
+		darkBaseThemeColor = "#1A1B1D";
+		lightBaseThemeColor = "#FEFEFF";
+	}
+	let darkModeCookie = $.cookie("dark-mode");
+	if (darkModeCookie === "off") {
+		document.querySelector("meta#dark-base-theme-color").setAttribute("content", lightBaseThemeColor);
+	} else {
+		document.querySelector("meta#dark-base-theme-color").setAttribute("content", darkBaseThemeColor);
+	}
+	if (darkModeCookie === "on") {
+		document.querySelector("meta#light-base-theme-color").setAttribute("content", darkBaseThemeColor);
+	} else {
+		document.querySelector("meta#light-base-theme-color").setAttribute("content", lightBaseThemeColor);
+	}
+	let darkOverride = document.querySelector("meta#override-dark-base-theme-color");
+	let lightOverride = document.querySelector("meta#override-light-base-theme-color");
+	if (lightOverride && darkOverride) {
+		if (darkModeCookie === "auto" || darkModeCookie === "off") {
+			lightOverride.setAttribute("content", lightBaseThemeColorOverride);
+			darkOverride.setAttribute("content", darkBaseThemeColorOverride);
+		} else {
+			lightOverride.setAttribute("content", darkBaseThemeColorOverride);
+			darkOverride.setAttribute("content", lightBaseThemeColorOverride);
+		}
+	}
 }
 
 /* When ready... */
@@ -134,6 +186,7 @@ $(document).ready(function() {
 			$('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
 		}
 	}
+	updateThemeColor();
 
 	if ($.cookie("accent-color") && !document.getElementsByTagName("body")[0].classList.contains("ignore-accent-color")) {
 		document.getElementsByTagName("html")[0].className += " " + $.cookie("accent-color");

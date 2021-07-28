@@ -4,6 +4,8 @@ title: "Deep Blue"
 foreground-color: "#BEC5C9"
 primary-color: "#91C0F2"
 background-color: "#030504"
+theme-color-light: "#000000"
+theme-color-dark: "#000000"
 date: 2015-07-18 21:13:39
 categories:
   - Technology
