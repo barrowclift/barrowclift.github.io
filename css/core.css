@@ -62,7 +62,7 @@ main {
     padding-left: 5%;
     padding-right: 5%;
 }
-@supports(padding: max(0px)) {
+@supports(padding: max(5%, env(safe-area-inset-left))) {
     main {
         padding-left: max(5%, env(safe-area-inset-left));
         padding-right: max(5%, env(safe-area-inset-right));
@@ -453,15 +453,21 @@ menu {
     width: 100%;
     opacity: 1;
 
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
+    padding-left: 0;
+    padding-right: 0;
 }
-.safari menu #mainmenu > ul,
-.safari menu #submenu ul,
-.chrome menu #mainmenu > ul,
-.chrome menu #submenu ul {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+@supports (padding-left: env(safe-area-inset-left)) {
+    menu {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+}
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    #mainmenu,
+    .popup {
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
 }
     #mainmenu {
         z-index: 5000;
@@ -544,10 +550,12 @@ menu {
     opacity: 0;
     height: auto;
     width: auto;
-    padding: 0;
+    padding: 1.3em;
+    padding-top: 0.8125em;
+    padding-bottom: 0.65em;
     border: unset;
     background-color: transparent;
-    border-radius: 0.25em;
+    border-radius: 0.65em;
     text-align: left;
 
     -webkit-transition-property: opacity, -webkit-transform, background-color, border;
@@ -566,7 +574,7 @@ menu {
     float: right;
     position: absolute;
     left: 100%;
-    margin-left: -20em;
+    margin-left: -20.65em;
     top: 8.75em;
     z-index: 10000;
 }
@@ -577,26 +585,32 @@ menu {
         opacity: 1;
     }
     .popup .group {
-        margin-bottom: 0.325em;
+        margin-bottom: 0.65em;
+        margin-top: 0.65em;
     }
-    .popup .group:last-child {
-        margin-bottom: -0.325em;
+    .group ~ .group {
+        margin-top: 1.3em;
     }
     /* Accent color "buttons" */
     .colors {
         margin-left: 0.25em;
         text-align: center;
-        display: inline;
+        display: inline-block;
+        width: auto;
         vertical-align: middle;
+        line-height: initial;
+        padding-bottom: 0;
+        margin-top: 0;
     }
     .colors li {
         display: inline-block;
         min-width: unset;
         margin-left: 0.15em;
         margin-right: 0.15em;
-        margin-top: 0.65em;
+        margin-top: 0;
         padding-top: 0;
         padding-bottom: 0;
+        margin-bottom: 0;
     }
     .color-well {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
@@ -626,30 +640,16 @@ menu {
     }
     .ignore-accent-color #dark-mode-settings,
     .enforce-dark-mode #accent-color-settings {
-        margin-bottom: 0;
+        margin-top: 0.325em;
+        margin-bottom: 0.325em;
     }
     .ignore-accent-color .popup {
-        width: 14em !important;
-        margin-left: -14.2em !important;
+        width: 11.25em !important;
+        margin-left: -14.25em !important;
     }
     .ignore-accent-color .popup .colors {
-        display: inline;
+        display: inline-block;
     }
-    .enforce-dark-mode .colors li {
-        margin-top: 0.25em;
-    }
-    #popup-background {
-        border-radius: 0.25em;
-
-        padding: 0.65em;
-        padding-bottom: 0.975em;
-        padding-top: 0.325em;
-    }
-        .safari #popup-background,
-        .chrome #popup-background {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
 
 .float-menu-for-hiding menu {
     position: fixed;
@@ -679,12 +679,8 @@ menu {
     transform: scale(0.5);
     background-size: contain;
     z-index: -5;
-    /*top: -0.24rem;
-    left: 0;
-    height: 3rem;
-    width: 3rem;*/
     top: 0.75rem;
-    left: calc(50% - 8.9rem);
+    left: 50%;
     height: 5.5rem;
     width: 5.5rem;
     background-repeat: no-repeat;
@@ -692,13 +688,16 @@ menu {
     content: "";
     background-image: url("/images/logo/light-rainbow-watercolor.png");
 }
+@supports (left: calc(50% - 8.9rem)) {
+    #logo:after {
+        left: calc(50% - 8.9rem);
+    }
+}
+
 menu header:hover #logo:after {
     opacity: 1;
     transform: scale(1);
 }
-/*menu header:hover #mac {
-    transform: scale(1.075);
-}*/
 .mac-background-color {
     transition: background-color 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
 }
@@ -963,7 +962,7 @@ button,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 0.25em;
+    border-radius: 1.3em;
     padding: 0.65em;
 }
 button,
@@ -2121,14 +2120,14 @@ kbd {
     .colors {
         margin-left: 0;
         display: block;
+        margin-top: 0.65em;
+        text-align: left;
     }
     .popup .group {
         margin-bottom: 0.65em;
     }
     .popup {
         margin-left: -13.75em;
-    }
-    #popup-background {
         padding: 0.975em;
     }
 }
@@ -2146,15 +2145,21 @@ Font size: 19px, ~Margin&Padding: 28.5px
         max-width: 34em;
     }
     div:not(.full-width-page) > main {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @supports(padding-left: env(safe-area-inset-left)) {
+        div:not(.full-width-page) > main {
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
     }
     .wide-page main {
         max-width: 36em;
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
-    @supports(padding: max(0px)) {
+    @supports(padding: max(5%, env(safe-area-inset-left))) {
         .wide-page main {
             padding-left: max(5%, env(safe-area-inset-left));
             padding-right: max(5%, env(safe-area-inset-right));
@@ -2217,15 +2222,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
         -webkit-transform-origin: top right;
         -ms-transform-origin: top right;
         transform-origin: top right;
-        margin-left: -20.675em;
+        margin-left: -21em;
         top: 3.25em;
-    }
-    #popup-background {
-        padding: 0.975em;
-        padding-top: 0.65em;
-    }
-    .enforce-dark-mode .colors li {
-        margin-top: 0.5em;
     }
         menu header {
             text-align: left;
@@ -2298,6 +2296,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-left: 0.9rem;
         padding-bottom: 0.1375rem;
         padding-top: 1.05rem;
+    }
+    @supports (margin-left: calc(-2.75rem - env(safe-area-inset-right))) {
+        #settings-toggle {
+            margin-left: calc(-2.75rem - env(safe-area-inset-right));
+        }
     }
 
 
@@ -2676,7 +2679,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
     .popup {
         top: 3.1em;
-        margin-left: -20.25em;
+        margin-left: -20.75em;
     }
         menu header {
             padding-left: 0.78em;
@@ -2883,7 +2886,7 @@ html {
     background-color: rgb(255, 255, 255);
 }
 menu,
-#popup-background,
+.popup,
 [data-hint]:after {
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -2899,12 +2902,12 @@ menu,
 .hint--left[data-hint]:before {
     border-left-color: rgba(255, 255, 255, 0.9);
 }
-    .safari menu,
-    .safari #popup-background,
-    .chrome menu,
-    .chrome #popup-background {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    menu,
+    .popup {
         background-color: rgba(255, 255, 255, 0.7);
     }
+}
 /**
  * Secondary backgrounds
  */
@@ -2930,9 +2933,10 @@ table th {
 #parallax-foreground {
     background-color: rgba(255, 255, 255, 0.975);
 }
-    .safari #parallax-foreground,
-    .chrome #parallax-foreground {
-        background-color: rgba(255, 255, 255, 0.95);
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        #parallax-foreground {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
     }
 input,
 textarea {
@@ -3256,15 +3260,15 @@ html#dark {
 /**
  * Primary floating backgrounds
  */
-#dark menu {
+#dark menu,
+#dark .popup {
     background-color: rgba(23, 23, 23, 0.95);
 }
 #dark .bigfoot-footnote__content,
 #dark .bigfoot-footnote__tooltip {
     background-color: rgb(46, 46, 46);
 }
-#dark [data-hint]:after,
-#dark #popup-background {
+#dark [data-hint]:after {
     background-color: rgba(46, 46, 46, 0.95);
 }
 #dark .hint--right[data-hint]:before {
@@ -3279,14 +3283,12 @@ html#dark {
 #dark .hint--left[data-hint]:before {
     border-left-color: rgba(46, 46, 46, 0.95);
 }
-    #dark.safari menu,
-    #dark.chrome menu {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    #dark menu,
+    #dark .popup {
         background-color: rgba(23, 23, 23, 0.7);
     }
-    #dark.safari #popup-background,
-    #dark.chrome #popup-background {
-        background-color: rgba(46, 46, 46, 0.7);
-    }
+}
 /**
  * Secondary backgrounds
  */
@@ -3321,9 +3323,10 @@ html#dark {
 #dark #parallax-foreground {
     background-color: rgba(46, 46, 46, 0.975);
 }
-    #dark.safari #parallax-foreground,
-    #dark.chrome #parallax-foreground {
-        background-color: rgba(46, 46, 46, 0.95);
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        #dark #parallax-foreground {
+            background-color: rgba(46, 46, 46, 0.95);
+        }
     }
 #dark input,
 #dark textarea {
