@@ -2337,7 +2337,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
         }
     .flex main {
         display: flex;
-        width: 100%;
+        width: auto;
     }
 
 
@@ -2711,7 +2711,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
     /* --- ACCESSIBILITY TOGGLES --- */
     #settings-toggle {
-        margin-left: -2.75rem;
         margin-top: 0;
         padding-left: 0.9rem;
         padding-bottom: 0.1375rem;
