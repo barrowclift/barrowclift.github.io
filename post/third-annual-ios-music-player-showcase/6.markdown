@@ -156,3 +156,4 @@ None.
 [^doppi-management]: Doppi's independent library management is all powered by Apple ecosystem features like the iCloud Files app and Airdrop. That's fantastic for users fully "locked" into Apple's ecosystem, but not so fantastic for Windows or Linux users wanting to send music to their iPhone without having to use iTunes or Apple-specific protocols.
 
 [Doppi]: https://doppi.app
+[Doppler 2]: https://apps.apple.com/app/doppler-2-music-player/id1468459747
