@@ -2,6 +2,7 @@
 layout: post
 hidden: true
 title: "Third Annual iOS Music Player Competition - Honorable Mentions"
+article-title: "Third Annual iOS Music Player Competition"
 date: 2020-12-31 13:10:33-0500
 excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
