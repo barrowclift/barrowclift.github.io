@@ -15,7 +15,7 @@
 			{% if page.link %}
 			<a href="{{ page.link }}">{{ page.title }} ↦</a>
 			{% else %}
-			{% if page.prev-page and page.start-page %}<a title="Go back to the start" href="{{ page.start-page }}"><span>{{ page.title }}</span></a>{% else %}<span>{{ page.title }}</span>{% endif %}
+			{% if page.prev-page and page.start-page %}<a title="Go back to the start" href="{{ page.start-page }}"><span>{{ page.article-title }}</span></a>{% else %}<span>{{ page.title }}</span>{% endif %}
 			{% endif %}
 		{% if page.prev-page %}</h4>{% else %}</h1>{% endif %}
 	{% endif %}
