@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fourth Annual iOS Music Player Showcase"
+title: "Fourth Annual iOS Music Player Showcase - Complete"
 date: 2022-01-07 11:11:03-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
