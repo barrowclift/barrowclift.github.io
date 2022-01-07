@@ -9,7 +9,7 @@ categories:
   - iOS
   - Design
   - Music
-  - Best Of
+timelocked: true
 background-color: "#FFFFFF"
 foreground-color: "rgba(30, 30, 30, 0.9)"
 ---

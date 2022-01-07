@@ -7,6 +7,7 @@ categories:
   - iOS
   - Design
   - Music
+timelocked: true
 excerpt: "My quest to find a niche app that's unapologetically for people that love actively listening to and collecting music. Who will win?"
 image: "quest-for-the-best-ios-music-player/share-image.jpg"
 has_afterward: true

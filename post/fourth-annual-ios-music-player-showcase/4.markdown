@@ -1,0 +1,214 @@
+---
+layout: post
+hidden: true
+title: "Fourth Annual iOS Music Player Showcase - MPX EQ"
+article-title: "Fourth Annual iOS Music Player Showcase"
+date: 2022-01-07 11:11:03-0500
+excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+categories:
+  - Technology
+  - iOS
+  - Design
+  - Music
+start-page: "/post/fourth-annual-ios-music-player-showcase"
+prev-page: "3"
+next-page: "5"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![MPX EQ's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/icon.png "MPX EQ's iOS app icon"){: .inline-app-icon } MPX EQ
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in light mode" title="Demonstrating MPX EQ's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.webp">
+  <img type="image/jpeg" title="MPX EQ's light theme album view" alt="Image of MPX EQ's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.webp">
+  <img type="image/jpeg" title="'Mixtapes' light full-player" alt="Image of 'Mixtapes' light full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in dark mode" title="Demonstrating MPX EQ's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.webp">
+  <img type="image/jpeg" title="MPX EQ's dark theme album view" alt="Image of MPX EQ's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.webp">
+  <img type="image/jpeg" title="'Mixtapes' dark full-player" alt="Image of 'Mixtapes' dark full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/mpx-equalizer-bass-booster/id1578646614">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+This year, Femi Oduntan surprised listeners with a major [Music Player X] release built from scratch with a brand new interface. In another surprise, he released this redesign not as a major update to Music Player X, but rather as a new app altogether called MPX EQ, making a clean break from the original Music Player X in the process. As a part of this release, Music Player X was also made entirely free and will presumably switch to maintenance mode for the rest of its shelf life. Needless to say, a lot's riding on MPX EQ's success.
+
+Unfortunately, the very first thing you'll notice about MPX EQ upon launch is the new business model. Instead of charging a one-time in-app purchase for premium features like in Music Player X, MPX EQ instead features a subscription-based model. For the majority of apps here, I intentionally omit discussing price because the price is typically nominal or the majority of core functionality can be enjoyed without even knowing there are purchase options for premium features available. However, I find this difficult to set aside with MPX EQ, since upon launch you're greeted with a paywall popup with a timed dismissal requesting either the monthly subscription of $4.99 or a yearly subscription of $29.99. After roughly ten seconds, you may dismiss the popup, but only after being prompted a final time to start a free trial (an obvious dark pattern since Apple's trial system automatically subscribes you to the entry level paid subscription tier upon trial expiration unless you remember to cancel the trail prior to that time). To avoid, you have to know to hit "Cancel" to finally get into the app proper without accidentally committing to a trial or immediately shelling out the subscription price. Despite feeling a bit gross, this experience itself isn't the reason I find it difficult to discuss MPX EQ without discussing its new business model, but rather because this popup process repeats for every six navigations you make in the app until you formally start a trial or subscribe. Realistically, you *have* to pay the subscription price to use MPX EQ.
+
+To ensure I'm not misunderstood, I'm a firm advocate of paying for software you use and have no issue whatsoever with the principle of subscription-based pricing. For example, I happily pay for subscriptions to apps like [Albums], [Overcast](https://overcast.fm), and [Tweetbot](https://tapbots.com/tweetbot/). However, something about MPX EQ's subscription model feels deeply uncomfortable to me in contrast. After familiarizing myself with the player over the past few months, it became clear to me that upon looking broadly at what MPX EQ offers that the root of my discomfort is that it's simply not yet delivering the value its pricing model warrants.
+
+To refocus back to the app itself, MPX EQ features a traditional tab bar instead of the custom scrollable menu seen on Music Player X. That bar contains a curious selection of four tabs: "Home", "Now Playing", "Equalizer", and "Settings".
+
+The "Home" page naturally serves as the app's landing page, and is strongly reminiscent of [Music.app] and [Doppler]'s "Library" pages since it too serves as the singular entry point into browsing your library. Instead of providing the typical browsers like albums, artists, etc. in the tab bar or menu, MPX EQ exposes them solely at the top of its "Home" page, leaving the bottom half of the page open for its "Suggestions" discovery collection. In terms of design, it leans closer towards Music.app's approach, but unlike Music.app it's much more tolerable here because it's the first and primary tab of the lot and the rest of the tab bar isn't taken up shilling for a streaming service like in Music.app; your content and your control over that content's playback takes priority not only in the "Home" page but on every tab in the tab bar (save for "Settings").
+
+There's plenty of fantastic ideas new to the Music Player X brand throughout the "Home" page; the aforementioned "Suggestions" discovery collection—while it's not particularly clear *how* MPX EQ determines what to suggest—is nonetheless a great addition for times listeners don't want to mindlessly scroll through their library and simply want a quick idea or two for something to throw on. The ability to change the layout style between a list or a grid also makes an appearance, along with some nifty sorting options like the ability to sort by duration. However, that's not to say all these ideas new to the MPX EQ redesign live up to their potential. The introduction of a new discovery feature in the form of the "Suggestions" collection is great to see, but just a single collection of this type is disappointing, especially considering others like "Recently Added" and "Recently Played" are considered tablestakes, nowadays. The ability to switch the layout style to a grid—while a great addition in theory—is crippled by defaulting to a tiny grid of three columns (at least on an iPhone Pro Max screen size), and offers no way to adjust the number of columns to a more comfortable size. Additionally, the layout setting is *global*, you cannot set a specific layout style on a per-page basis; if you want albums displayed as a grid, *everything* is rendered henceforth with a grid until you switch back to a list. After being spoiled by the assumption that layout settings like this are preserved per-page like on [Plum] and [Cs Music], it's frustrating in comparison to see MPX EQ bizarrely treat the setting as a global toggle.
+
+Thankfully the rest of the tab bar fares much better overall. Much like Music Player X, MPX EQ makes the bewildering design decision of promoting its now playing queue to its own tab bar item, an unprecedented move given every other player's choice to expose the queue within the full-player itself. While unorthodox, I surprisingly found myself falling in love with it. The queue is *always* immediately accessible right from the tab bar regardless of where you are in the app, and I severely underestimated at first blush just how profound a usability improvement it provides in practice. It's to the point I hope the ability to display the queue as a tab or menu item becomes standard practice across the player landscape, and is frankly my favorite part of the app. The queue page itself also features another design element I absolutely love: the ability to clear the entire queue with just a single button tap. While perhaps irrational, I frequently get frustrated at most other players' inability to quickly and easily reset the current queue without immediately playing something else, and it's a tremendous quality of life improvement to find this coveted ability make its introduction in MPX EQ.
+
+Continuing our tour through the tab bar, while the equalizer is arguably not quite as capable as [jetAudio]'s, it strikes a strong second place for best in-app equalizer. There are plenty of understandable presents like "Hi Mid" and "Bassy" to choose from, a marked improvement over the meaningless EQ options provided by iOS like "Pop" and "Rock". The EQ is perfectly understandable, supports an adjustable number of bands, and save for a few issues (such as the "Reset" button visually resetting the sliders but not *actually* resetting the playback equalization from the previous selections), it works exactly as you'd expect.
+
+MPX EQ's choice of menu items may be unconventional, but its full-player is remarkably traditional in comparison. As you'd likely expect from other third-party players these days, it's launched from a mini-player that sits right atop the tab bar, but unfortunately its accompanying gesture animation is insanely janky and undeniably the worst in its class.
+
+After launching the full-player, apart for the peculiar inclusion of skip back and forward 15 second buttons typically found in podcast players and a curious waveform button between them, you'll only find essential controls and metadata, resulting in a pleasing minimal design not too far off from Music Player X's full-player. Upon tapping that alluring waveform button, listeners are greeted with a novel fullscreen visualizer, featuring just the album art, bear minimum playback controls, and one of half a dozen different visualizer styles. Unfortunately, despite my love of iOS music player visualization, MPX EQ's visualizer support leaves a lot to be desired. Swapping visualizer styles is near impossible to discover, forcing listeners to first pause playback while on the visualizer page, tap where the visualizer *would* be shown, then resume playback to switch visualizers; simply tapping the visualizer area alone doesn't work. If there's another way to switch visualizers, I couldn't figure it out in all my time using the app. Additionally, my preferred visualizer (the "flame") is broken in the current App Store build for my device size, resulting in the flame hilariously dying out like a fire without enough kindling after only a few seconds of playback. A single bum visualizer style alone wouldn't be cause for much disappointment (after all, there are quite a few styles in [jetAudio] that I don't care for), but unfortuantely every other visualizer style currently offered by MPX EQ are subjectively poor in comparison, leaving me with one broken visualizer I would otherwise have liked, a handful of subpar alternatives, and an objectively terrible interface to switch between them.
+
+<figure class="three-images ios-screenshot">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
+  <img type="image/jpeg" title="MPX EQ in a custom Hacker theme" alt="Image of MPX EQ in a custom Hacker theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
+  <img type="image/jpeg" title="MPX EQ in a custom Rosey Red theme" alt="Image of MPX EQ in a custom Rosey Red theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
+  <img type="image/jpeg" title="MPX EQ in a custom Bumblebee theme" alt="Image of MPX EQ in a custom Bumblebee theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.jpg">
+</picture>
+</a>
+<figcaption>MPX EQ supports the theming engine originally found in Music Player X with some quality of life improvements, such as the ability to now save your custom themes.</figcaption>
+</figure>
+
+With the brief tour of MPX EQ complete, I can't help but feel dumbfounded disbelief at the asking subscription price and disappointment in comparison to its predecessor. Much of Music Player X's DNA is here, such as the delightful ability to customize the entire app's theme color, and MPX EQ undeniably refines that feature with the ability to save your themes. However, it falls short of sticking the landing in nearly every area to the point where the app in its current form feels closer to an early access beta than a finished, publicly available product. Until MPX EQ's rough edges are addressed, I can't see listeners other than Music Player X diehard fans considering the player as it exists today worth its asking price.
+
+Looking towards the future, there remains a lot to be hopeful for. Without a doubt, MPX EQ's navigational and visual design is in every measurable way a tremendous improvement over Music Player X, and given Music Player X's design also improved over the past couple years we can reasonably expect MPX EQ will enjoy a similar degree of interface polish throughout its life. Given Femi's legendary development pace, it's historically only a matter of time until the bugs and janky animations discussed earlier are also addressed. MPX EQ is off to a relatively shaky start, but it's undeniably brimming with the same character, promise, and purpose that Music Player X did. I can't help but be encouraged by this and look toward the imminent future where MPX EQ's subscription price is so obviously earned it doesn't even bare mentioning in the first place. The next year will tell if that optimism is well placed.
+
+### iPad Experience
+
+MPX EQ technically supports the iPad, but like many other third party players MPX EQ's iPad version is just not up to the task. While the performance thankfully remains stable on both the iPad and iPhone versions, MPX EQ's iPad version instead falls short with its interface.
+
+To start, there's no landscape mode to speak of. While standard fare for the iPhone, to only support portrait mode on the iPad is practically unheard of and is an immediate red flag that something's not right. After diving into the player proper, the grid layout—while unusually small on the iPhone—is comically small on the iPad version, resulting in thimble-size cells amidst a sea of wasted white space. While silly, that's at least better than the equalizer page on the iPad, which is straight-up broken; the page itself is blank, requiring listeners tap "Back" for a thin sheet containing the expected EQ page contents to slide out from the left of the screen. The full-player itself is thankfully not broken to that degree, but is also poorly optimized with plenty of wasted vertical whitespace uncomfortably filling the extra screen space which could have otherwise been filled with properly scaled and arranged interface elements.
+
+Regrettably, in its current form, there's simply too much functionality that's either broken or so woefully unoptimized that MPX EQ's iPad version frankly isn't ready for public use, yet.
+
+### Widgets
+
+MPX EQ—like its previous incarnation, Music Player X—does not provide any widgets.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:large_orange_diamond:</span> Light &amp; dark themes</dt>
+  <dd><p>Like Music Player X before it, while it does indeed offer a theming system, that themeing system does not respond to iOS’s current theme option.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
+  <dd><p>Providing an iPad version at all is appreciated, but there’s far too many layout bugs and poor layout choices made on the larger screen for it to hold up.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+  <dd><p>An effort was made with the new “Suggestions” collection, but more is expected nowadays.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>Regrettably, the visualizer is difficult to use, majority of styles are not to my taste, and the one that is appears broken (the flames die out after a few seconds of playback). The full-player itself is not visually engaging or beautiful enough to compensate.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+  <dd><p>The introduction of a grid layout option is fantastic in theory, but it’s far too compromised in its current form.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+  <dd><p>MPX EQ was a great opportunity to add Apple Music support (where Music Player X did not), but this oppertunity was unfortunately missed.</p></dd>
+  <dt><span class="bullet">:x:</span> Lyrics support</dt>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/post/fourth-annual-ios-music-player-showcase/5"><p class="button">Next App: “Musens”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/">Introduction</a></li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><strong>MPX EQ</strong></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Music Player X]: https://www.musicplayerx.com
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Music.app]: /post/fourth-annual-ios-music-player-showcase/14
+[Doppler]: https://brushedtype.co
+[Plum]: https://apps.apple.com/us/app/plum-music-player/id1441625664
+[Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
+[jetAudio]: https://apps.apple.com/us/app/jetaudio-music-player/id894888135

@@ -9,6 +9,7 @@ categories:
   - iOS
   - Design
   - Music
+timelocked: true
 ---
 
 <style>
@@ -64,8 +65,8 @@ Let's get started...
           <li><a href="#--albums">Albums</a></li>
           <li><a href="#--cs">Cs</a></li>
           <li><a href="#--doppi">Doppi</a></li>
-          <li><a href="#--doppler 2">Doppler 2</a></li>
-          <li><a href="#--dot music">Dot Music</a></li>
+          <li><a href="#--doppler-2">Doppler 2</a></li>
+          <li><a href="#--dot-music">Dot Music</a></li>
           <li><a href="#--jetaudio">jetAudio</a></li>
           <li><a href="#--longplay">Longplay</a></li>
           <li><a href="#--marvis-pro">Marvis Pro</a></li>

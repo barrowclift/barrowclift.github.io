@@ -1202,6 +1202,17 @@ mark {
 .admonition.red p:first-child:before {
     content: "!" !important;
 }
+.admonition.error .admonition-title:before,
+.admonition.danger .admonition-title:before,
+.admonition.warning .admonition-title:before,
+.admonition.red .admonition-title:before,
+.admonition.error > p:first-child:before,
+.admonition.danger > p:first-child:before,
+.admonition.warning > p:first-child:before,
+.admonition.red > p:first-child:before {
+    width: 0.9em;
+    padding-left: 0.6em;
+}
 .admonition.question .admonition-title:before,
 .admonition.question p:first-child:before {
     content: "?" !important;
@@ -1368,6 +1379,9 @@ article > p > img {
     border-radius: 0;
     margin-top: 1.3em;
     margin-bottom: 1.3em;
+}
+.edge-to-edge.ios-screenshot {
+    margin-bottom: 2.6em;
 }
 .edge-to-edge + div + .edge-to-edge {
     margin-top: 0;
@@ -1577,13 +1591,17 @@ h2 img {
 .emoji {
     vertical-align: text-top;
 }
+img.emoji {
+    width: 1em !important;
+    height: 1em !important;
+}
 
 .bullet .emoji,
 .bullet .gemoji {
     vertical-align: text-bottom;
 }
 .bullet {
-    margin-right: 0.5em;
+    margin-right: 0.75em;
 }
 
 .twitter-logo svg {

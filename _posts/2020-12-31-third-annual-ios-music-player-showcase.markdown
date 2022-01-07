@@ -11,7 +11,7 @@ categories:
   - iOS
   - Design
   - Music
-  - Best Of
+timelocked: true
 light-background-color: "#ECE5DF"
 light-foreground-color: "#555554"
 dark-background-color: "#303030"
