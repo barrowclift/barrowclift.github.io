@@ -39,11 +39,17 @@
 
 		{% comment %} difference in days {% endcomment %}
 		{% assign daysSince = diffSeconds | divided_by: 3600 | divided_by: 24 %}
-		{% if daysSince >= 365 %}
+		{% if daysSince >= 730 %}
 		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
 		<div class="admonition warning">
 			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since Last Revision</p>
 			<p>Technology moves fast! Article details are now out of date.</p>
+		</div>
+		{% elsif daysSince >= 365 %}
+		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
+		<div class="admonition update">
+			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since Last Revision</p>
+			<p>Technology moves fast! Specific details likely to be out of date.</p>
 		</div>
 		{% elsif daysSince > 180 %}
 		<div class="admonition update">

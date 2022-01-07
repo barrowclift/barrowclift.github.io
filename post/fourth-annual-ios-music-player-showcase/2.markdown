@@ -1,0 +1,664 @@
+---
+layout: post
+hidden: true
+title: "Fourth Annual iOS Music Player Showcase - Honorable Mentions"
+article-title: "Fourth Annual iOS Music Player Showcase"
+date: 2022-01-07 11:11:03-0500
+excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+categories:
+  - Technology
+  - iOS
+  - Design
+  - Music
+start-page: "/post/fourth-annual-ios-music-player-showcase"
+prev-page: ""
+next-page: "3"
+---
+
+## Honorable Mentions
+
+### ![Dot Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/icon.png "Dot Music's iOS app icon"){: .inline-app-icon } Dot Music
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating Dot Music's usage in light mode" title="Demonstrating Dot Music's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.webp">
+  <img type="image/jpeg" title="Dot Music's light theme album view" alt="Image of Dot Music's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.webp">
+  <img type="image/jpeg" title="Dot Music's light theme full-player" alt="Image of Dot Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage-poster.jpg" alt="Video demonstrating Dot Music's usage in dark mode" title="Demonstrating Dot Music's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.webp">
+  <img type="image/jpeg" title="Dot Music's dark theme album view" alt="Image of Dot Music's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.webp">
+  <img type="image/jpeg" title="Dot Music's dark theme full-player" alt="Image of Dot Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Dot Music received no releases of any kind this year, and is thus omitted from the showcase proper. Dot Music's a simple general-purpose player that takes strongly after [2019-era Cs Music](/post/second-annual-ios-music-player-competition#--cs) but offers nothing uniquely compelling to show for it. If you long for a visually bland player that's been ignored for the past year that includes only the bear minimum of cookie-cutter features, then Dot Music may in fact be just what you're looking for.
+
+### ![Ecoute's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/icon.png "Ecoute's iOS app icon"){: .inline-app-icon } Ecoute
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage-poster.jpg" alt="Video demonstrating Ecoute's usage in light mode" title="Demonstrating Ecoute's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.webp">
+  <img type="image/jpeg" title="Ecoute's light theme album view" alt="Image of Ecoute's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.webp">
+  <img type="image/jpeg" title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage-poster.jpg" alt="Video demonstrating Ecoute's usage in dark mode" title="Demonstrating Ecoute's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.webp">
+  <img type="image/jpeg" title="Ecoute's dark theme album view" alt="Image of Ecoute's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.webp">
+  <img type="image/jpeg" title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/ecoute/id536882653">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+For many years, Ecoute's lack of updates (save for an occasional bug patch or two) and radio silence from [Julien Sagot](https://twitter.com/Barbapapapps) (Ecoute's developer) on Ecoute's future, forced listeners to accept that the [once beloved player](https://www.macstories.net/reviews/ecoute-is-the-best-music-player-for-ios-period/) was indeed officially dead and bleeding out the remainder of its life in light maintenance mode.
+
+In 2020, however, [Julien tweeted a single teaser](https://twitter.com/Barbapapapps/status/1343732043683934214) of what was clearly a new player actively in development, presumably the long anticipated Ecoute 3. This year we got *far* more than just that tongue-in-cheek teaser; there's been dozens of tweets from Julien over the months offering sneak peaks at various areas of the UI for this still formally unannounced player. However, these updates throughout 2021 at the very least disuade our previous fears; Julien *is* working on a new player, and it's close to completion.
+
+While the anticipation for Julien's new player is growing, the Ecoute that remains publicly available today hasn't seen an update in over two years, leaving Ecoute to again be omitted from the showcase. While the app is still functional, what once made it visually and functionally stand out from among its peers is now commonplace, leaving it difficult to recommend the aging current Ecoute release. However, if Julien's rate of tweet teasers are any indication, 2022 is looking likely to be the year we'll once again see Ecoute (or perhaps a spiritual successor) return to restore its former glory.
+
+### ![Jams On Toast's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/icon.png "Jams On Toast's iOS app icon"){: .inline-app-icon } Jams On Toast
+
+<div class="edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage-poster.jpg" alt="Video demonstrating Ecoute's usage" title="Demonstrating Ecoute's usage">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.webp">
+  <img type="image/jpeg" title="Ecoute's album view" alt="Image of Ecoute's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/jams-on-toast-music-player/id1303194454">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Jams On Toast received its *first ever* maintenance releases this year in the form of two bug patches, the first movement of any kind in the nearly four years since its original release back in 2017. There was unfortunately no other changes, leaving Jams On Toast to once again miss the cut on the showcase.
+
+Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exactly* as well as it did all the way back in 2017, and continues to this day to offer a novel ["record crate"](https://duckduckgo.com/?q=record+crate&iax=images&ia=images#) library browsing experience. While [Vinyl Fetish] this year released its own form of "record crate" browsing as an optional layout setting, Jams On Toast remains the only way you can browse your entire library as a scrollable list of "crates". If that gimmick interests you in the lightest, Jams On Toast is still well worth your time to check out.
+
+### ![New Monaural's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/icon.png "New Monaural's iOS app icon"){: .inline-app-icon } New Monaural
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage-poster.jpg" alt="Video demonstrating New Monaural's usage in light mode" title="Demonstrating New Monaural's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.webp">
+  <img type="image/jpeg" title="New Monaural's light theme album view" alt="Image of New Monaural's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.webp">
+  <img type="image/jpeg" title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage-poster.jpg" alt="Video demonstrating New Monaural's usage in dark mode" title="Demonstrating New Monaural's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.webp">
+  <img type="image/jpeg" title="New Monaural's dark theme album view" alt="Image of New Monaural's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.webp">
+  <img type="image/jpeg" title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/new-monaural/id1439882679">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Despite first impressions, New Monaural is *not* a general-purpose player, but rather a niche player tailed towards providing rich playback accessibility options. As the name suggests, its crowning jewel is its special "monaural playback" capability, which aims to make playback of stereo music files on mono speakers and headphones sound more natural than they otherwise would with iOS's build-in playback APIs. While the audience who would want such capabilities is undoubtedly slim, it's sure to be a treasured by listeners who are hard of hearing in one ear or for one reason or another only have a single functional speaker. While New Monaural is a fantastic option for those listeners, it remains difficult to broadly recommend as its custom playback engine yields non-flat playback of tracks even if the classic "Stereo" playback option is selected. That paired with a lack of updates through 2021 excluded New Monaural from more thorough attention in the showcase.
+
+### ![Sathorn's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/icon.png "Sathorn's iOS app icon"){: .inline-app-icon } Sathorn
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating Sathorn's usage in light mode" title="Demonstrating Sathorn's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.webp">
+  <img type="image/jpeg" title="Sathorn's light theme album view" alt="Image of Sathorn's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.webp">
+  <img type="image/jpeg" title="Sathorn's light theme full-player" alt="Image of Sathorn's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage-poster.jpg" alt="Video demonstrating Sathorn's usage in dark mode" title="Demonstrating Sathorn's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.webp">
+  <img type="image/jpeg" title="Sathorn's dark theme album view" alt="Image of Sathorn's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.webp">
+  <img type="image/jpeg" title="Sathorn's dark theme full-player" alt="Image of Sathorn's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/sathorn/id1447295899">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Sathorn received no attention of any kind this year, remaining the same poorly designed general-purpose player it was in 2021 and is thus not included in the showcase. If [Dot Music]'s issue was a lack of anything novel, Sathorn's issue is its numerous attempts and failures at doing so. It features a full-player with four different theme options, but each of them manage to look [unappealing](https://dropbox.barrowclift.me/assets/third-annual-ios-music-player-showcase/sathorn/player-composite.webp). It offers a button to change the sort order in the menu bar, but comically features a filter/sieve icon instead of the expected up/down sorting arrows icon. It has an accent color, but inconsistently applies it (in the mini-player, bewilderingly only the "Play" button uses the accent color, not the "Skip" button). While each of these issues taken in isolation is not particularly concerning, the sheer number of issues like these found throughout Sathorn make it difficult to recommend for anyone other than those looking for a case study in poor interface design.
+
+### ![SongOwl's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/icon.png "SongOwl's iOS app icon"){: .inline-app-icon } SongOwl
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating SongOwl's usage in light mode" title="Demonstrating SongOwl's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.webp">
+  <img type="image/jpeg" title="SongOwl's light theme album view" alt="Image of SongOwl's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.webp">
+  <img type="image/jpeg" title="SongOwl's light theme full-player" alt="Image of SongOwl's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage-poster.jpg" alt="Video demonstrating SongOwl's usage in dark mode" title="Demonstrating SongOwl's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.webp">
+  <img type="image/jpeg" title="SongOwl's dark theme album view" alt="Image of SongOwl's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.webp">
+  <img type="image/jpeg" title="SongOwl's dark theme full-player" alt="Image of SongOwl's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/songowl-music-player/id1492630850">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+SongOwl began life as a radical redesign for Cs Music 6. However, the redesign was *so* different that Cs Music's existing user base balked at the change and more or less pressured Mike Clay—SongOwl & Cs Music's developer—to [reverse course](https://twitter.com/CsMusicPlayer/status/1177628272617754624). And reverse course he did, deciding to release the original Cs Music 6 reesign as its own app entirely, SongOwl, and implement to a more traditional redesign for Cs Music 6, instead. The only question left hanging was whether or not either SongOwl or Cs Music would be considered the "darling" and receive the bulk of developer attention.
+
+If [last year](/post/third-annual-ios-music-player-showcase/17) was the warning sign, this year cements it: SongOwl is without a doubt playing second fiddle to [Cs Music], receiving not even a single update this year. For listeners like myself that appreciated SongOwl's flexible and unique "Paths" feature, it's difficult to not be disappointed. "Paths" is in some ways a more approachable and user-friendly parallel to [Marvis Pro]'s "Sections", where listeners can define a grouping and sorting option for any number of different "Paths" they want. For example, I can create a "Recently Added Albums" path by simply grouping by "Album" and sorting by "Date Added". That functionality paired with exceptionally cute branding make SongOwl a catch, and while its future now remains uncertain, what remains available today is still undoubtably worth your time (assuming of course you're comfortable with its current lack of development).
+
+### ![SongPocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/icon.png "SongPocket's iOS app icon"){: .inline-app-icon } SongPocket
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage-poster.jpg" alt="Video demonstrating SongPocket's usage in light mode" title="Demonstrating SongPocket's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.webp">
+  <img type="image/jpeg" title="SongPocket's light theme browser" alt="Image of SongPocket's light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.webp">
+  <img type="image/jpeg" title="SongPocket's light theme album view" alt="Image of SongPocket's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage-poster.jpg" alt="Video demonstrating SongPocket's usage in dark mode" title="Demonstrating SongPocket's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.webp">
+  <img type="image/jpeg" title="SongPocket's dark theme browser" alt="Image of SongPocket's dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.webp">
+  <img type="image/jpeg" title="SongPocket's dark theme album view" alt="Image of SongPocket's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/songpocket/id1538037231">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+All iOS music players fall broadly into one of two camps: they're either a general-purpose player for browsing your library by albums, artist, etc. or a niche player that forgoes traditional browsing for a more specific need. Aside from [Stezza], every niche player I've found puts an emphasis on albums and heavily features album art as a natural consequence or that focus. SongPocket does not.
+
+SongPocket is akin to the light playback utilities typically found on desktop operating systems, like [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) on [macOS](https://www.apple.com/macos/monterey/). It shows just a single list (sans art) of the artists in your library, which can be manually sorted or grouped any way you want. Lovers of art need not worry, album art is indeed displayed upon drilling down into a particular artist, and it's also prominently displayed edge-to-edge on the album pages.
+
+The singular browser alone doesn't draw parallels to desktop OS playback utilities, but rather that in combination with the startling lack of a full-player; its mini-player is the *only* means of in-app playback control. Since large album art in the full-player is a requirement to enter the showcase, SongPocket was omitted from this year's showcase.
+
+If SongPocket's utilitarian design or unique ability to manually sort and group the contents of your library interest you in the slightest, it's absolutely worth a look since this is the only player I'm aware of that provides these capabilities. However, its slim offerings aside from that capability and the lack of a full-screen player (along with queue control, shuffle, etc.) easily qualify it as a niche player and make it difficult to broadly recommend.
+
+### ![Soor's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/icon.png "Soor's iOS app icon"){: .inline-app-icon } Soor
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage-poster.jpg" alt="Video demonstrating Soor's usage in light mode" title="Demonstrating Soor's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.webp">
+  <img type="image/jpeg" title="Soor's light theme album view" alt="Image of Soor's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.webp">
+  <img type="image/jpeg" title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage-poster.jpg" alt="Video demonstrating Soor's usage in dark mode" title="Demonstrating Soor's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.webp">
+  <img type="image/jpeg" title="Soor's dark theme album view" alt="Image of Soor's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.webp">
+  <img type="image/jpeg" title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/soor/id1439731526">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+The general-purpose player Soor received a handful of bug patches this year, but unfortunately no minor or major releases (although the developer—Tanmay Sonawane—hinted in patch release notes that "exciting things" are indeed in the works, including an iPad version). As a result, the Soor available today is more or less the same as [last year](/post/third-annual-ios-music-player-showcase/18)'s, including all the existing bugs like the ability to lock yourself out of the app it you tap "Connect with Apple Music" without "Sync Library" enabled.
+
+If you have an Apple Music subscription and have "Sync Library" enabled, Soor is a treat worth checking out; its animations are buttery smooth, it features an album art visualizer (albeit a bit dull in comparison to [Vinyls], [Power Player], and [jetAudio]'s visualizers), and is deeply and richly integrated at every turn with Apple Music. However, unless you have *both* an Apple Music subscription and "Sync Library" enabled, Soor is simply too crippled functionally to recommend.
+
+### ![Stezza's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/icon.png "Stezza's iOS app icon"){: .inline-app-icon } Stezza
+
+<div class="edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage-poster.jpg" alt="Video demonstrating Stezza's usage" title="Demonstrating Stezza's usage">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.webp">
+  <img type="image/jpeg" title="Stezza's browser" alt="Image of Stezza's browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.webp">
+  <img type="image/jpeg" title="Stezza's album view" alt="Image of Stezza's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/stezza-music-player/id590317007">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Stezza's a curious player whose focus is solely on providing the best possible interface for sightless use, such as when driving. To facilitate this, the full-player serves as the springboard for the entire app (much like [Vinyls] and [Vinyl Fetish]) and features comically massive buttons for play/pause, previous, and skip functions that can be blindly tapped with ease. These massive controls bring additional accessibility benefits as well for listeners who find it hard to tap the smaller tap targets typically used in other players.
+
+While Stezza does the job it set for itself well, it hasn't seen any noteworthy changes or improvements in years other than occasional patch releases to support newer iOS versions, and thus won't be featured in the showcase this year. However, if you find yourself using your phone in a car mount for playback control and are fed up with dangerously hunting for playback controls while driving (which you frankly shouldn't do, anyway), Stezza's ginormous buttons are still well worth checking out despite the lack of active development.
+
+### ![TapTunes's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/icon.png "TapTunes's iOS app icon"){: .inline-app-icon } TapTunes
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage-poster.jpg" alt="Video demonstrating TapTunes's usage in light mode" title="Demonstrating TapTunes's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.webp">
+  <img type="image/jpeg" title="TapTunes's light theme album view" alt="Image of TapTunes's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.webp">
+  <img type="image/jpeg" title="TapTunes's light theme full-player" alt="Image of TapTunes's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage-poster.jpg" alt="Video demonstrating TapTunes's usage in dark mode" title="Demonstrating TapTunes's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.webp">
+  <img type="image/jpeg" title="TapTunes's dark theme album view" alt="Image of TapTunes's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.webp">
+  <img type="image/jpeg" title="TapTunes's dark theme full-player" alt="Image of TapTunes's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/taptunes/id320145698">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+TapTunes is a [decade old](https://david-blundell.blogspot.com/2009/06/taptunes-and-music-trivia-submitted-to.html) niche player that focuses on providing unique visual ways to browse through your albums. Listeners familiar with [Longplay] may recognize a striking similarity in goals, but make no mistake: TapTunes is a vastly more feature-rich, robust, and engaging implementation of that vision, in no small part due to the sheer number of years behind it compared to the relatively young Longplay. Instead of just providing a single album grid with different sorting options like Longplay, TapTunes typically sorts randomly and provides a wild assortment of different display styles. There's "Scattered", which slowly animates all your albums spreading around the screen, as if you strewn your entire physical library onto the ground. Another noteworthy display style is "Stacked", which scrolls infinitely through a winding road of your library's albums at various shapes and sizes. Like with Longplay, this is all in an effort to facilitate library exploration and discovery, and works brilliantly to help inspire you to get out of and avoid musical ruts.
+
+While TapTunes just received a major new 7.0 update at the very beginning of 2022 (featuring a refreshed app icon, widgets, and loads of other interface tweaks and improvements), it just barely missed the cut-off window to be considered a 2021 update. TapTunes' new update and any subsequent updates will instead be covered in further detail in the next annual showcase. To be clear, even if TapTunes didn't receive its major update at the very beginning of 2022, its novel browsing capabilities continue to be well worth a look for anyone wanting something richer than what its peers like [Longplay] can offer.
+
+### ![Vinyls' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/icon.png "Vinyls' iOS app icon"){: .inline-app-icon } Vinyls
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage-poster.jpg" alt="Video demonstrating Vinyls' usage in light mode" title="Demonstrating Vinyls' usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.webp">
+  <img type="image/jpeg" title="Vinyls' light theme browser" alt="Image of Vinyls' light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.webp">
+  <img type="image/jpeg" title="Vinyls' light theme album view" alt="Image of Vinyls' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage-poster.jpg" alt="Video demonstrating Vinyls' usage in dark mode" title="Demonstrating Vinyls' usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.webp">
+  <img type="image/jpeg" title="Vinyls' dark theme browser" alt="Image of Vinyls' dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.webp">
+  <img type="image/jpeg" title="Vinyls' dark theme album view" alt="Image of Vinyls' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/vinyls/id1556054655">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+Vinyls is a delightful surprise this year that—as the name implies—focuses on providing a [skeuomorphic](https://en.wikipedia.org/wiki/Skeuomorph) vinyl record playback experience like [Vinyl Fetish]. Like Vinyl Fetish and [Stezza], the full-player itself serves as the launchpad for the entire app, and features a gorgeously rendered vinly record that spins and tonearm that follows along the groove as the track progresses. Despite the vinyl record visual candy on the full-player, Vinyls is surprisingly a general-purpose player; you can browse your library the usual way by songs, artists, etc. and unlike Vinyl Fetish can playback individual songs without issue. Functionally, the player is just like any other general-purpose player, but instead of displaying the album art in the full-player, Vinyls shows the faux vinyl record & tonearm. In actuality, this flexibility is to Vinyls' detriment, as this breaks the illusion and cheapens the vinyl record gimmick; for example, when playing an album, each song "completes" the faux vinyl record and visually resets the tonearm to the beginning for the next track. While this of course makes sense from a general-purpose player perspective, this flies in the face of the vinyl record player illusion. As a result, it's neither as good a vinyl record emulator as Vinyl Fetish due to not fully committing to the gimmick and not as good a general-purpose player as [Cs Music] and others that don't attempt halfheartedly integrating gimmicks like this that get in the way of general-purpose browsing and playback.
+
+Unfortunately, the lack of ability to display large album art in the full-player instead of or in addition to the spinning record like Vinyl Fetish removes it from consideration. Nonetheless, if you find yourself desiring a cute full-player gimmick but are turned off by Vinyl Fetish's commitment to the illusion, Vinyls is certainly worth checking out.
+
+### ![VOX's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/icon.png "VOX's iOS app icon"){: .inline-app-icon } VOX
+
+<div class="edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage-poster.jpg" alt="Video demonstrating VOX's usage" title="Demonstrating VOX's usage">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.webp">
+  <img type="image/jpeg" title="VOX's album view" alt="Image of VOX's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.webp">
+  <img type="image/jpeg" title="VOX's full-player" alt="Image of VOX's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<figure style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/vox-mp3-flac-music-player/id916215494">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</figure>
+
+At first glance, VOX received a healthy number of minor and patch releases this year to earn it a spot in the showcase. However, upon closer inspection, the bulk of these releases are one of the following:
+
+* "Fixed Youtube playback"
+* Adding support for a new upsell partner, [Qobuz](https://duckduckgo.com/?q=Qobuz&t=osx&ia=web), and fixing issues with that integration
+
+Barely anything regarding the player app itself changed this year; VOX remains the same service upsell vehicle it was upon its introduction. This year has done nothing but continue to enforce that VOX's company, [Coppertino Inc.](https://apps.apple.com/us/developer/coppertino-inc/id410801091), considers the player just a blunt pipe to grossly advertise and deliver sub-par streaming services. This lack of support for the player itself kept VOX out of the showcase this year, and unlike every other honorable mentions is genuinely not worth anyone's time.
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/post/fourth-annual-ios-music-player-showcase/3"><p class="button">First App: “Mixtapes”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/">Introduction</a></li>
+      <li><strong>Honorable Mentions</strong></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/post/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Vinyl Fetish]: https://apps.apple.com/us/app/vinyl-fetish-music-player/id1490719457
+[Dot Music]: https://www.dotmusicplayer.com
+[Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Stezza]: http://stezza.co
+[Vinyls]: https://www.pnguin.app/vinyls
+[Power Player]: https://powerplayer.evenwerk.com
+[jetAudio]: https://apps.apple.com/us/app/jetaudio-music-player/id894888135
+[Longplay]: https://adrian.schoenig.me/longplay/
+
+*[UI]: User Interface
+*[API]: Application Programing Interface

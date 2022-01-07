@@ -73,7 +73,7 @@ home-menu-active: true
 
 		<h4 style="line-height:1.4em">I’m a full-time engineer at <a href="https://my.xfinity.com">Comcast</a> maintaining the <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">DVR Scheduler</a>, which dutifully services over half a billion requests daily.</h4>
 
-		<h4>This past year, I helped build the new <a href="https://corporate.comcast.com/stories/xfinity-stream-app-launches-on-flex-devices">Xfinity Stream app on Flex</a>.</h4>
+		<h4>This past year, I helped build the backend that powers the groundbreaking <a href="https://www.sky.com/glass">Sky Glass</a>.</h4>
 
 		<h4 style="line-height:1.4em">My studio is open for consultant work and employment offers.</h4>
 
@@ -193,6 +193,22 @@ home-menu-active: true
 				{% endif %}
 				<li style="list-style:none;display:inline-block;padding-bottom:1.625em;margin-bottom:0;">
 					<a style="background-color:unset !important;margin:0;padding:0;line-height:0;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+						{% if post.light-foreground-color %}
+						<div class="card threeDHover bleed large-when-small show-when-light" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;background-color:{{ post.light-background-color }};">
+							<img src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
+							<div class="label" style="background-color:{{ post.light-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+								<h3 class="primary" style="text-align:left;color:{{ post.light-foreground-color }} !important;">{{ post.title }}</h3>
+								<h5 class="secondary" style="text-align:left;color:{{ post.light-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+							</div>
+						</div>
+						<div class="card threeDHover bleed large-when-small show-when-dark" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;background-color:{{ post.dark-background-color }};">
+							<img src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
+							<div class="label" style="background-color:{{ post.dark-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+								<h3 class="primary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;">{{ post.title }}</h3>
+								<h5 class="secondary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+							</div>
+						</div>
+						{% else %}
 						<div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;background-color:{{ post.background-color }};">
 							<img src="{{ site.dropbox }}/{{ post.image }}">
 							<div class="label" style="background-color:{{ post.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
@@ -205,6 +221,7 @@ home-menu-active: true
 								{% endif %}
 							</div>
 						</div>
+						{% endif %}
 					</a>
 				</li>
 				{% assign used=used | plus:1 %}
