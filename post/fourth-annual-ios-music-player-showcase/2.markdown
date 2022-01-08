@@ -614,7 +614,7 @@ Barely anything regarding the player app itself changed this year; VOX remains t
 
   <div class="toc" style="margin-bottom: 1.3rem;">
     <ul>
-      <li><a href="/post/fourth-annual-ios-music-player-showcase/">Introduction</a></li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase">Introduction</a></li>
       <li><strong>Honorable Mentions</strong></li>
       <li>2021’s Players
         <ul>

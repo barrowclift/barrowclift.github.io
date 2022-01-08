@@ -263,7 +263,7 @@ Coming from last year's redesign, I frankly wasn't expecting much movement on Cs
 
   <div class="toc" style="margin-bottom: 1.3rem;">
     <ul>
-      <li><a href="/post/fourth-annual-ios-music-player-showcase/">Introduction</a></li>
+      <li><a href="/post/fourth-annual-ios-music-player-showcase">Introduction</a></li>
       <li><a href="/post/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
       <li>2021’s Players
         <ul>
