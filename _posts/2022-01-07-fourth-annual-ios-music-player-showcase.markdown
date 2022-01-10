@@ -2,6 +2,7 @@
 layout: post
 title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
+update: 2022-01-09 20:28:08-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 light-hero-banner: "fourth-annual-ios-music-player-showcase/light-banner"
 dark-hero-banner: "fourth-annual-ios-music-player-showcase/dark-banner"
@@ -31,6 +32,10 @@ next-page: "/post/fourth-annual-ios-music-player-showcase/2"
     }
 </style>
 
+<div class="admonition gray">
+<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/post/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
 There's new and exciting developments every year in the realm of iOS third-party music players, and 2021 was no exception. While [2019](/post/second-annual-ios-music-player-competition) enjoyed an explosion of new players like [Power Player] and [Albums] that through time came to lead the space, [2020](/post/third-annual-ios-music-player-showcase) in contrast received only a modest handful of new players and is instead remembered for the impressive growth the established player base received that year. This past year, 2021, managed to do both with a dizzying array of five new players *and* impressive growth across nearly all existing players.
 
 To start, there were five new players welcomed into the ecosystem this year:
@@ -38,7 +43,7 @@ To start, there were five new players welcomed into the ecosystem this year:
 1. [**Mixtapes:**](/post/fourth-annual-ios-music-player-showcase/3) A general-purpose player with an empahsis on "smart" playlists
 2. [**MPX EQ:**](/post/fourth-annual-ios-music-player-showcase/4) The next evolution of [Music Player X]
 3. [**Musens:**](/post/fourth-annual-ios-music-player-showcase/5) A general-purpose player with a heavy empahsis on [Apple Music](https://www.apple.com/apple-music/) and is similar in many ways to [Music.app]
-4. [**Songpocket:**](/post/fourth-annual-ios-music-player-showcase/2#-songpocket) A lightweight niche player focused on providing the ability to manually sort and manage your library
+4. [**Songpocket:**](/post/fourth-annual-ios-music-player-showcase/2#-Songpocket) A lightweight niche player focused on providing the ability to manually sort and manage your library
 5. [**Vinyls:**](/post/fourth-annual-ios-music-player-showcase/2#-vinyls) A general-purpose player with a cute "vinyl record" visual gimmick in its full-player
 
 These new players combined with the enhancements existing players received this year reveal a few new trends that together define what it means to be a great modern music player at the end of 2021. Those trends are:
@@ -97,7 +102,7 @@ Opinionated
 
 ## Methodology
 
-As with previous years, in order to codify what I expect at a bear minimum from modern music players and in an effort to keep the list of players in the showcase manageable, only players that meet each of the following requirements will be included in the showcase. With that said, any players that I feel are noteworthy for whatever reason will still be briefly acknowledged beforehand as an honorable mention. Despite some minor adjustments, the requirements are broadly the same as [2020's showcase](/post/third-annual-ios-music-player-showcase/):
+As with previous years, in order to codify what I expect at a bare minimum from modern music players and in an effort to keep the list of players in the showcase manageable, only players that meet each of the following requirements will be included in the showcase. With that said, any players that I feel are noteworthy for whatever reason will still be briefly acknowledged beforehand as an honorable mention. Despite some minor adjustments, the requirements are broadly the same as [2020's showcase](/post/third-annual-ios-music-player-showcase/):
 
 * <mark class="tag blue">UPDATED</mark> Active maintenance ("active" meaning the delivery of at least a single meaningful minor or major update in the past year. Does not count patch releases or minor releases, such as just keeping up with new hardware.)
 * <mark class="tag blue">UPDATED</mark> Local-only option (meaning only players that treat cloud capabilities as a strictly additive feature and continue to work in "local-only" mode are fair game.)

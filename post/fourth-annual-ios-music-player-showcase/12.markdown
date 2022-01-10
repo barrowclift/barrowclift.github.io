@@ -334,7 +334,7 @@ Marvis Pro's other widget collection type, "Section", allows you to add a widget
 * Tap Action (Open Section, Open Selection, or Open Section & Selection)
 * Style (List or grid, both with their own settings. Not applicable for the small widget.)
 
-The sheer amount of customization provided by this collection allows you to effectively replicate your Marvis Pro Home page right on your iOS home screen. The only caveat to this widget type is by nature of its design you *have* to customize the widget to make it function, at a bear minimum by selecting the section you want to be displayed. Thus, if you abhor configuration of any kind this probably isn't the widget collection for you.
+The sheer amount of customization provided by this collection allows you to effectively replicate your Marvis Pro Home page right on your iOS home screen. The only caveat to this widget type is by nature of its design you *have* to customize the widget to make it function, at a bare minimum by selecting the section you want to be displayed. Thus, if you abhor configuration of any kind this probably isn't the widget collection for you.
 
 ### New This Year
 

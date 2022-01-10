@@ -61,22 +61,24 @@
 
 	{{ content }}
 
-	{% if page.next-page == null and page.has_afterward == false or page.has_afterward == null %}
-	<div id="article-linkback">
-		<a href="/">⌘</a>
-	</div>
-	{% endif %}
-	<script type="text/javascript">
-		$(document).ready(function() {
-		    if ($("article .footnotes")) {
-		    	$("#article-linkback").insertBefore($("article .footnotes").prev());
-		    }
-		});
-	</script>
+	{% if page.hide-footer != true %}
+		{% if page.next-page == null and page.has_afterward == false or page.has_afterward == null %}
+		<div id="article-linkback">
+			<a href="/">⌘</a>
+		</div>
+		{% endif %}
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    if ($("article .footnotes")) {
+			    	$("#article-linkback").insertBefore($("article .footnotes").prev());
+			    }
+			});
+		</script>
 
-	{% if page.next-page == null %}
-	<footer>
-		{% include blog-footer-buttons.html %}
-	</footer>
+		{% if page.next-page == null %}
+		<footer>
+			{% include blog-footer-buttons.html %}
+		</footer>
+		{% endif %}
 	{% endif %}
 </article>

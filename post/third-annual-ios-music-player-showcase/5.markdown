@@ -83,7 +83,7 @@ While Doppi enjoyed plenty of fixes and improvements this year, I'm going to bri
 
 Sick of using [iTunes](https://support.apple.com/en-us/HT210384) or [Music.app](https://www.apple.com/music/) to manage and sync your library? This year, you can now avoid it entirely with Doppi's new independent library management support. You may import your library using one of the many Apple-specific options Doppi supports, including:
 
-* [Airdrop](https://support.apple.com/en-us/HT203106)
+* [AirDrop](https://support.apple.com/en-us/HT203106)
 * [Files.app](https://support.apple.com/en-us/HT206481), which includes either piecemeal importing from any arbitrary folder or automatic syncing with Doppi's own app folder
 * iOS's [Share Sheet](https://appleinsider.com/articles/20/09/12/how-to-get-the-most-out-of-the-share-sheet-in-ios-13-and-ios-14) from any other app that supports sending audio
 

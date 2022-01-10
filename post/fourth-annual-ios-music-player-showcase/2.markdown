@@ -68,7 +68,7 @@ next-page: "3"
 </a>
 </figure>
 
-Dot Music received no releases of any kind this year, and is thus omitted from the showcase proper. Dot Music's a simple general-purpose player that takes strongly after [2019-era Cs Music](/post/second-annual-ios-music-player-competition#--cs) but offers nothing uniquely compelling to show for it. If you long for a visually bland player that's been ignored for the past year that includes only the bear minimum of cookie-cutter features, then Dot Music may in fact be just what you're looking for.
+Dot Music received no releases of any kind this year, and is thus omitted from the showcase proper. Dot Music's a simple general-purpose player that takes strongly after [2019-era Cs Music](/post/second-annual-ios-music-player-competition#--cs) but offers nothing uniquely compelling to show for it. If you long for a visually bland player that's been ignored for the past year that includes only the bare minimum of cookie-cutter features, then Dot Music may in fact be just what you're looking for.
 
 ### ![Ecoute's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/icon.png "Ecoute's iOS app icon"){: .inline-app-icon } Ecoute
 
@@ -312,63 +312,63 @@ SongOwl began life as a radical redesign for Cs Music 6. However, the redesign w
 
 If [last year](/post/third-annual-ios-music-player-showcase/17) was the warning sign, this year cements it: SongOwl is without a doubt playing second fiddle to [Cs Music], receiving not even a single update this year. For listeners like myself that appreciated SongOwl's flexible and unique "Paths" feature, it's difficult to not be disappointed. "Paths" is in some ways a more approachable and user-friendly parallel to [Marvis Pro]'s "Sections", where listeners can define a grouping and sorting option for any number of different "Paths" they want. For example, I can create a "Recently Added Albums" path by simply grouping by "Album" and sorting by "Date Added". That functionality paired with exceptionally cute branding make SongOwl a catch, and while its future now remains uncertain, what remains available today is still undoubtably worth your time (assuming of course you're comfortable with its current lack of development).
 
-### ![SongPocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/icon.png "SongPocket's iOS app icon"){: .inline-app-icon } SongPocket
+### ![Songpocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/icon.png "Songpocket's iOS app icon"){: .inline-app-icon } Songpocket
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage-poster.jpg" alt="Video demonstrating SongPocket's usage in light mode" title="Demonstrating SongPocket's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.ogv" type="video/ogg">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-usage-poster.jpg" alt="Video demonstrating Songpocket's usage in light mode" title="Demonstrating Songpocket's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-usage.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-browse-view.jpg">
 <picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.webp">
-  <img type="image/jpeg" title="SongPocket's light theme browser" alt="Image of SongPocket's light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-browse-view.webp">
+  <img type="image/jpeg" title="Songpocket's light theme browser" alt="Image of Songpocket's light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-browse-view.jpg">
 </picture>
 </a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-album-view.jpg">
 <picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.webp">
-  <img type="image/jpeg" title="SongPocket's light theme album view" alt="Image of SongPocket's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-album-view.webp">
+  <img type="image/jpeg" title="Songpocket's light theme album view" alt="Image of Songpocket's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/light-album-view.jpg">
 </picture>
 </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage-poster.jpg" alt="Video demonstrating SongPocket's usage in dark mode" title="Demonstrating SongPocket's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.ogv" type="video/ogg">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-usage-poster.jpg" alt="Video demonstrating Songpocket's usage in dark mode" title="Demonstrating Songpocket's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-usage.ogv" type="video/ogg">
     [HTML5 video tag not supported by your browser]
 </video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-browse-view.jpg">
 <picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.webp">
-  <img type="image/jpeg" title="SongPocket's dark theme browser" alt="Image of SongPocket's dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-browse-view.webp">
+  <img type="image/jpeg" title="Songpocket's dark theme browser" alt="Image of Songpocket's dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-browse-view.jpg">
 </picture>
 </a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-album-view.jpg">
 <picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.webp">
-  <img type="image/jpeg" title="SongPocket's dark theme album view" alt="Image of SongPocket's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-album-view.webp">
+  <img type="image/jpeg" title="Songpocket's dark theme album view" alt="Image of Songpocket's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/Songpocket/dark-album-view.jpg">
 </picture>
 </a>
 </div>
 
 <figure style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/songpocket/id1538037231">
+<a href="https://apps.apple.com/us/app/Songpocket/id1538037231">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
 </figure>
 
-All iOS music players fall broadly into one of two camps: they're either a general-purpose player for browsing your library by albums, artist, etc. or a niche player that forgoes traditional browsing for a more specific need. Aside from [Stezza], every niche player I've found puts an emphasis on albums and heavily features album art as a natural consequence or that focus. SongPocket does not.
+All iOS music players fall broadly into one of two camps: they're either a general-purpose player for browsing your library by albums, artist, etc. or a niche player that forgoes traditional browsing for a more specific need. Aside from [Stezza], every niche player I've found puts an emphasis on albums and heavily features album art as a natural consequence or that focus. Songpocket does not.
 
-SongPocket is akin to the light playback utilities typically found on desktop operating systems, like [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) on [macOS](https://www.apple.com/macos/monterey/). It shows just a single list (sans art) of the artists in your library, which can be manually sorted or grouped any way you want. Lovers of art need not worry, album art is indeed displayed upon drilling down into a particular artist, and it's also prominently displayed edge-to-edge on the album pages.
+Songpocket is akin to the light playback utilities typically found on desktop operating systems, like [Tiny Player](https://www.catnapgames.com/tiny-player-for-mac/) on [macOS](https://www.apple.com/macos/monterey/). It shows just a single list (sans art) of the artists in your library, which can be manually sorted or grouped any way you want. Lovers of art need not worry, album art is indeed displayed upon drilling down into a particular artist, and it's also prominently displayed edge-to-edge on the album pages.
 
-The singular browser alone doesn't draw parallels to desktop OS playback utilities, but rather that in combination with the startling lack of a full-player; its mini-player is the *only* means of in-app playback control. Since large album art in the full-player is a requirement to enter the showcase, SongPocket was omitted from this year's showcase.
+The singular browser alone doesn't draw parallels to desktop OS playback utilities, but rather that in combination with the startling lack of a full-player; its mini-player is the *only* means of in-app playback control. Since large album art in the full-player is a requirement to enter the showcase, Songpocket was omitted from this year's showcase.
 
-If SongPocket's utilitarian design or unique ability to manually sort and group the contents of your library interest you in the slightest, it's absolutely worth a look since this is the only player I'm aware of that provides these capabilities. However, its slim offerings aside from that capability and the lack of a full-screen player (along with queue control, shuffle, etc.) easily qualify it as a niche player and make it difficult to broadly recommend.
+If Songpocket's utilitarian design or unique ability to manually sort and group the contents of your library interest you in the slightest, it's absolutely worth a look since this is the only player I'm aware of that provides these capabilities. However, its slim offerings aside from that capability and the lack of a full-screen player (along with queue control, shuffle, etc.) easily qualify it as a niche player and make it difficult to broadly recommend.
 
 ### ![Soor's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/icon.png "Soor's iOS app icon"){: .inline-app-icon } Soor
 
