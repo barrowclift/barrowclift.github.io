@@ -4,6 +4,7 @@ hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Plum"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
+update: 2022-01-09 20:28:08-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
@@ -245,7 +246,7 @@ The "Folders" page offers users the ability to group together albums, artists, o
 <figcaption>Find yourself feeling content and at peace? Not to worry, “Let's Get Sad, Yo” will make quick work of that.</figcaption>
 </figure>
 
-Despite Plum's subjectively tasteful visual design and flexibility, there are certainly some areas where Plum's unique design falters that can't yet be addressed by adjusting settings. For example, while Plum's menu system is undoubtably unique, it's frustratingly slow due to a canned "show" animation that rapidly overstays its welcome. While some other players also have long, canned animations for their menus, they typically provide a gesture to bypass the canned animation entirely, which then limits the time required to show the menu to the speed of your finger. Unfortunately, Plum doesn't support a gesture to reveal the menu, so you're forced to tap the button and wait for the canned animation to finish every single time. Then there's the search history list, which I find barely legible in certain scenarios, depending on what's displayed underneath the transparent search modal when actuated. However, these are admittedly minor, arguably subjective complaints and do little to detract from Plum's overall positive aftertaste[^puns].
+Despite Plum's subjectively tasteful visual design and flexibility, there are certainly some areas where Plum's unique design falters that can't yet be addressed by adjusting settings. For example, while Plum's menu system is undoubtably unique, it's frustratingly slow due to a canned "show" animation that rapidly overstays its welcome. While some other players also have long, canned animations for their menus, they typically provide a gesture to bypass the canned animation entirely, which then limits the time required to show the menu to the speed of your finger. Unfortunately, this gesture in Plum is not particularly discoverable (it requires a swipe-up gesture on the *left side* of the menu, but not the right side where the menu icon resides). Without knowing this, you're forced to tap the button and wait for the canned animation to finish every single time. Then there's the search history list, which I find barely legible in certain scenarios, depending on what's displayed underneath the transparent search modal when actuated. However, these are admittedly minor, arguably subjective complaints and do little to detract from Plum's overall positive aftertaste[^puns].
 
 There's loads of additional surprises to be discovered in Plum, such as its [Last.fm](https://www.last.fm)-powered artist & album descriptions and its lightning-fast search engine, so if you're looking for a new player experience that's not too complicated or niche, Plum is sure to satisfy.
 
