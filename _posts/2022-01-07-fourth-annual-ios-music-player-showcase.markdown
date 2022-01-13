@@ -2,7 +2,7 @@
 layout: post
 title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-update: 2022-01-09 20:28:08-0500
+update: 2022-01-12 19:57:27-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 light-hero-banner: "fourth-annual-ios-music-player-showcase/light-banner"
 dark-hero-banner: "fourth-annual-ios-music-player-showcase/dark-banner"

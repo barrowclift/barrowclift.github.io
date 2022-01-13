@@ -4,6 +4,7 @@ hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Doppler"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
+update: 2022-01-12 19:57:27-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
@@ -90,7 +91,7 @@ However, such an opinionated design necessarily fails to meet the needs of other
 What Doppler arguably misses in terms of "Library" tab customization it makes up for in droves with its staggering independent library capabilities. In addition to the expected integration with Music.app's library, Doppler optionally supports accepting music through following methods, organized in descending order of subjective usefulness:
 
 * **Importing from Wifi** through a peer-to-peer connection to a nearby computer. While not necessarily the quickest way to import a single song or album, it's a wonderful, platform independent option for importing whole libraries worth of music in one batch.
-* **Importing from Cloud services** via the Files app picker modal, so long as the cloud service you want to import from is present in the Files app as a "Location" (all major cloud services like [Dropbox](https://www.dropbox.com), [Onedrive](http://onedrive.live.com), etc. support this). This isn't the best overall method since you can only import manually selected individual audio files this way, but it's a nice option to have if you just need to quickly import a couple songs or a new album.
+* **Importing from Cloud services** via the Files app picker modal, so long as the cloud service you want to import from is present in the Files app as a "Location" (all major cloud services like [Dropbox](https://www.dropbox.com), [Onedrive](http://onedrive.live.com), etc. support this). This arguably isn't the best overall method since the Files app makes it somewhat cumbersome to select multiple audio files, but it's a nice option to have if you just need to quickly import a couple songs or a new album.
 * **Importing with AirDrop** by simply selecting Doppler in the "Open with..." iOS prompt after accepting the drop. Like with importing from cloud services, this is most appropriate for small batches of audio files and not a great choice for importing whole libraries worth of music. Note this is of course only accessible to devices within Apple's ecosystem.
 * **The iOS Share Sheet** via a handy "Add to Doppler" button when listening to an audio file at a direct URL in Safari. While I'm sure there's niche cases where this is nice to have, it's undeniably the least broadly useful means of importing since only a single audio file at a time can be imported this way.
 * **Importing from a URL**, which requires the URL points directly to a file.  This is effectively the same thing as the "Importing from URL" option, but accessible inside Doppler itself.
