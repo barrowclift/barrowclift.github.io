@@ -21,7 +21,7 @@ hide-footer: true
 
 ### January 14<sup>th</sup>, 2022
 
-In [Vinyl Fetish](/post/fourth-annual-ios-music-player-showcase/18)'s section, [German](https://twitter.com/VinylFetishApp) (Vinyl Fetish's developer) wrote in to report a case where I accidentally referred to the app as [Vinyls](/post/fourth-annual-ios-music-player-showcase/2#-vinyls). This slip of the keyboard has been corrected.
+In [Vinyl Fetish](/post/fourth-annual-ios-music-player-showcase/18)'s section, [Germán](https://twitter.com/VinylFetishApp) (Vinyl Fetish's developer) wrote in to report a case where I accidentally referred to the app as [Vinyls](/post/fourth-annual-ios-music-player-showcase/2#-vinyls). This slip of the keyboard has been corrected.
 
 ### January 12<sup>th</sup>, 2022
 
