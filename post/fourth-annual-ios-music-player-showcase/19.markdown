@@ -4,6 +4,7 @@ hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Recommendations"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
 excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
@@ -82,7 +83,7 @@ __[!["jetAudio" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-
 
 On iPhone
 : * **Interested in movement?**
-    * __[!["Musens" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png '"Musens" iOS app icon'){: .inline-app-icon } Musens](https://apps.apple.com/us/app/doppi/id1002899671):__ The days of being bitterly disappointed at Music.app's diluted full-player visualizer are over; Musens captures the liveliness of Music.app's lava lamp "Live Lyrics" visualizer, but right in the full-player. Not diluted, and not locked behind a lyrics feature.
+    * __[!["Musens" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png '"Musens" iOS app icon'){: .inline-app-icon } Musens](https://apps.apple.com/app/musens/id1560526260):__ The days of being bitterly disappointed at Music.app's diluted full-player visualizer are over; Musens captures the liveliness of Music.app's lava lamp "Live Lyrics" visualizer, but right in the full-player. Not diluted, and not locked behind a lyrics feature.
 * **Prefer no movement?**
     * __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ If movement in your full-player isn't your flavor, there are few static full-players more bold and captivating than the one supplied by Power Player. While Picky's full-player is arguably equivalent in beautiful (albeit with a very different approach), Power Player's superior full-player lyrics support and optional visualizer nudge it ahead.
 
@@ -95,12 +96,12 @@ __[!["Doppler" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-s
 
 ### Spiritual iPhoneOS Music app Successor
 
-Toss-up between __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429)__ and __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .inline-app-icon } Cs Music](https://apps.apple.com/us/app/power-player-music-player/id1372545429)__, it really depends on whether or not you appreciate Power Player's bold transparency-forward design. If Power Player's extensive translucency is not to your taste for any reason, Cs Music is the closest alternative to what I'd consider to be the spiritual successor to iPhoneOS's original Music.app. However, if the translucency is to your taste, Power Player is strictly speaking the closest equivalent. While [Picky] got close, it does not support the required ability to customize the tab bar items.
+Toss-up between __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429)__ and __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .inline-app-icon } Cs Music](https://apps.apple.com/us/app/cs-music-player/id924491991)__, it really depends on whether or not you appreciate Power Player's bold transparency-forward design. If Power Player's extensive translucency is not to your taste for any reason, Cs Music is the closest alternative to what I'd consider to be the spiritual successor to iPhoneOS's original Music.app. However, if the translucency is to your taste, Power Player is strictly speaking the closest equivalent. While [Picky] got close, it does not support the required ability to customize the tab bar items.
 
 ### Discovery Features
 
 Little To No Configuration?
-: __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .inline-app-icon } Cs Music](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ With minimal but powerful options like the ability to reorganize and show/hide the various discovery collections combined with the ability to easily switch the entity type they display, Cs Music strikes the best compromise between out-of-the-box discoverability with a satisfying level of accessible customization.
+: __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .inline-app-icon } Cs Music](https://apps.apple.com/us/app/cs-music-player/id924491991):__ With minimal but powerful options like the ability to reorganize and show/hide the various discovery collections combined with the ability to easily switch the entity type they display, Cs Music strikes the best compromise between out-of-the-box discoverability with a satisfying level of accessible customization.
 
 Love Configuration?
 : __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809):__ If you loved making "smart" playlists in iTunes back in the day or if you continuously find yourself longing for more power and control in other music players, Marvis Pro is the player you're looking for. Its exhaustive customization capabilities and section creation engine continue to lead Marvis Pro to the top of its class in the category.
