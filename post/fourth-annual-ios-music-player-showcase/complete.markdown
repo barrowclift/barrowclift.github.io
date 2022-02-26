@@ -12,6 +12,7 @@ categories:
   - Music
   - Best Of
 timelocked: true
+force-early-timelock: true
 has_afterward: true
 ---
 
