@@ -14,6 +14,7 @@ categories:
   - Music
   - Best Of
 timelocked: true
+force-early-timelock: true
 light-background-color: "#D4D3C8"
 light-foreground-color: "#394122"
 dark-background-color: "#394122"

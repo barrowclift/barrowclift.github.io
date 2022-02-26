@@ -42,19 +42,19 @@
 		{% if daysSince >= 730 %}
 		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
 		<div class="admonition warning">
-			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since Last Revision</p>
-			<p>Technology moves fast! Article details are now out of date.</p>
+			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+			<p>Technology moves fast! Article is now out of date.</p>
 		</div>
 		{% elsif daysSince >= 365 %}
 		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
 		<div class="admonition update">
-			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since Last Revision</p>
-			<p>Technology moves fast! Specific details likely to be out of date.</p>
+			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+			<p>Technology moves fast! Details likely out of date.</p>
 		</div>
-		{% elsif daysSince > 180 %}
+		{% elsif daysSince > 180 or page.force-early-timelock %}
 		<div class="admonition update">
-			<p class="admonition-title">{{ daysSince }} Days Since Last Revision</p>
-			<p>Technology moves fast! Specific details likely to be out of date.</p>
+			<p class="admonition-title">{{ daysSince }} Days Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+			<p>Technology moves fast! Some details likely out of date.</p>
 		</div>
 		{% endif %}
 	{% endif %}
