@@ -2,7 +2,7 @@
 layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2020-05-12 22:52:48-0400
+update: 2022-05-01 15:36:22-0400
 categories:
   - Technology
   - macOS
@@ -25,7 +25,7 @@ has_afterward: true
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
 <p>This revision contains a myriad of improvements provided by multiple individuals and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
 <p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes <strong>only</strong>.</p>
-<p>I can confirm this guide works for macOS Big Sur 11.3.</p>
+<p>I can confirm this guide works for macOS Monterey 12.3 on Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <div class="admonition blue">

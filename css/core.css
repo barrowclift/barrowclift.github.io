@@ -368,6 +368,7 @@ dt, dd {
         display: block;
         padding: 1em;
         border-radius: 1em;
+        border: 1px solid rgba(0,0,0,0.1);
     }
     .summary-list h3,
     .summary-list .header,
@@ -842,9 +843,9 @@ button:active,
 
 .card {
     border-radius: 1em;
+    border: 1px solid rgba(0,0,0,0.1);
     display: inline-block;
     width: 42.25vw;
-    border-radius: 1em;
     vertical-align: middle;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -873,10 +874,13 @@ button:active,
     padding-left: 0;
     padding-right: 0;
 }
+    .popular-articles .card {
+        border-color: #E3E2E1;
+    }
     .card.bleed img,
     .card.bleed video {
-        border-top-right-radius: 1em;
-        border-top-left-radius: 1em;
+        border-top-right-radius: 0.95em;
+        border-top-left-radius: 0.95em;
         display: inline-block !important;
     }
 
@@ -892,6 +896,9 @@ button:active,
     max-height: 6em;
     text-align: center;
 }
+    #dark .card:hover .content .logo {
+        filter: drop-shadow(0em 0.5em 4em rgba(255, 255, 255, 0.375));
+    }
 .card .content .long-logo {
     width: auto;
     max-height: 12vh;
@@ -1963,7 +1970,14 @@ summary,
 #settings-toggle {
     transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.summary-list li a {
+.summary-list li a,
+.card,
+.threeDHover,
+.shadow a img,
+.shadow video,
+.ios-screenshot img,
+.ios-screenshot video,
+.widget img {
     transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .summary-list h3,
@@ -2016,17 +2030,8 @@ input, textarea {
 }
 
 /* Resizing / Transformations */
-.card,
-.threeDHover,
-.shadow a img,
-.shadow video,
-.ios-screenshot img,
-.ios-screenshot video,
-.widget img {
-    transition: box-shadow .4s cubic-bezier(0.165, 0.84, 0.44, 1), transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 .card-animation {
-    transition: transform .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .button,
 button,
@@ -3185,16 +3190,10 @@ summary {
 a:hover,
 #submenu,
 summary:hover,
-.summary-list li a:hover {
+.summary-list li a:hover,
+.card:hover {
     background-color: hsla(211, 100%, 50%, 0.1);
 }
-
-.summary-list li a {
-    border-color: hsla(211, 100%, 50%, 0.1);
-}
-    .summary-list li a:hover {
-        border-color: hsl(211, 100%, 50%) !important;
-    }
 
 /* Highlights (must be seperate, combining them breaks the style) */
 ::selection { /* Safari */
@@ -3316,7 +3315,11 @@ html#dark {
 #dark .card,
 #dark .summary-list li a {
     background-color: rgba(46, 46, 46, 0.25);
+    border-color: rgba(150, 150, 150, 0.1);
 }
+    #dark .popular-articles .card {
+        border-color: #373233;
+    }
 #dark kbd,
 #dark table th {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
@@ -3580,7 +3583,8 @@ html#dark,
 #dark a:hover,
 #dark #submenu,
 #dark summary:hover,
-#dark .summary-list li a:hover {
+#dark .summary-list li a:hover,
+#dark .card:hover {
     background-color: hsla(211, 100%, 50%, 0.15);
 }
 
@@ -3590,8 +3594,4 @@ html#dark,
 }
 #dark ::-moz-selection { /* Firefox */
     background: hsla(211, 100%, 50%, 0.85);
-}
-
-#dark .summary-list li a {
-    border-color: hsla(211, 100%, 50%, 0.15);
 }
