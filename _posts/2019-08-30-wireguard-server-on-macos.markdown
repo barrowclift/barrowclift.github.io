@@ -2,7 +2,7 @@
 layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2020-05-12 22:52:48-0400
+update: 2022-05-28 13:36:29-0400
 categories:
   - Technology
   - macOS
@@ -23,9 +23,9 @@ has_afterward: true
 <p class="admonition-title">Update: May 2, 2021</p>
 <p></p>
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
-<p>This revision contains a myriad of improvements provided by multiple individuals and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
-<p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes <strong>only</strong>.</p>
-<p>I can confirm this guide works for macOS Big Sur 11.3.</p>
+<p>This revision contains a myriad of improvements provided by <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
+<p>The original guide remains available <a href="/obsolete/wireguard-server-on-macos">here</a>. Please note that the original guide is no longer the recommended approach and remains available for historical preservation purposes only.</p>
+<p>I can confirm this guide works with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Monterey 12.4 on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <div class="admonition blue">
@@ -87,8 +87,15 @@ However, from my on-and-off research over these past few months I've finally cob
 <span class="c">#    like this will automatically disable the packet filter</span>
 <span class="c">#    firewall if there are no other references left, but will</span>
 <span class="c">#    leave it up and intact if there are.</span>
-pfctl <span class="nt">-X</span> <span class="k">${</span><span class="nv">TOKEN</span><span class="k">}</span> <span class="o">||</span> <span class="nb">exit </span>1
+<span class="nv">ANCHOR</span><span class="o">=</span><span class="s1">'com.apple/wireguard'</span>
+pfctl <span class="nt">-a</span> <span class="nv">$ANCHOR</span> <span class="nt">-F</span> all <span class="o">||</span> <span class="nb">exit </span>1
+<span class="nb">echo</span> <span class="s2">"Removed rule with anchor: </span><span class="nv">$ANCHOR</span><span class="s2">"</span>
+
+pfctl <span class="nt">-X</span> <span class="nv">$TOKEN</span> <span class="o">||</span> <span class="nb">exit </span>1
+<span class="nb">echo</span> <span class="s2">"Removed reference for token: </span><span class="nv">$TOKEN</span><span class="s2">"</span>
+
 <span class="nb">rm</span> <span class="nt">-f</span> /usr/local/var/run/wireguard/pf_wireguard_token.txt
+<span class="nb">echo</span> <span class="s2">"Deleted token file"</span>
 </code></pre></div></div>
       </li>
       <li>Make both scripts executable:
@@ -245,6 +252,7 @@ The following help articles and documentation from fellow enthusiasts were inval
 * [**diadal**](https://github.com/diadal) for informing me that not all ISPs allow customers to use 3rd party DNS providers (previously, this was not mentioned in the guide). The discussion remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/2).
 * **Corey Watson** for his private reminder that the default Homebrew executable directory on Macs powered by [Apple Silicon](https://en.wikipedia.org/wiki/Apple-designed_processors) is `/opt/homebrew/bin`, not `/usr/local/bin`. This difference is now reflected in the daemon config template.
 * **Luke Sandoval** for his private message revealing that the approach detailed in this guide obfuscates client IPs behind the server's IP. Thus, this solution might not meet certain needs and is thus now called out as a caveat in the guide.
+* [**alessionossa**](https://github.com/alessionossa) for informing me that the original "post down" script did *not* in fact remove the PF traffic routing rule as originally claimed (rather, [it only removed the PF "enable" reference](https://www.manpagez.com/man/8/pfctl/). Their original comment notifying this miss remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1#issuecomment-1133563862).
 
 *[DNS]: Domain Name System
 *[ISP]: Internet Service Provider
