@@ -1157,6 +1157,7 @@ mark {
     word-wrap: break-word;
     margin-left: 0em;
     margin-right: 0em;
+    font-style: normal;
 }
     mark.tag {
         vertical-align: top;
