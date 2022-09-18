@@ -24,6 +24,12 @@ menu {
 	margin: 0 !important;
 	padding: 0 !important;
 }
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+	#mainmenu {
+		-webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+		backdrop-filter: saturate(180%) blur(20px) !important;
+	}
+}
 @media (min-width: 700px) {
 	#parallax {
 		overflow-y: scroll;

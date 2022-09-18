@@ -8,6 +8,9 @@
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
 }
+.project {
+	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 	#parallax .container {
 		perspective: 1px;
 		perspective-origin: top left;
