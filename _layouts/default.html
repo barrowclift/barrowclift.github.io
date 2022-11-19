@@ -13,12 +13,15 @@
 				background-position: center;
 				background-size: cover;
 				opacity: 0.05;
-
-				-webkit-filter: blur(25px);
-				-moz-filter: blur(25px);
-				-o-filter: blur(25px);
-				-ms-filter: blur(25px);
-				filter: blur(25px);
+			}
+			@supports (filter: blur(25px)) {
+				.backdrop {
+					-webkit-filter: blur(25px);
+					-moz-filter: blur(25px);
+					-o-filter: blur(25px);
+					-ms-filter: blur(25px);
+					filter: blur(25px);
+				}
 			}
 			#dark .backdrop {
 				opacity: 0.1;
