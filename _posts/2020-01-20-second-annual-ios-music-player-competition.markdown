@@ -1308,7 +1308,7 @@ That's a wrap! With so many new apps introduced this year and the overall *quali
 
 ----
 
-Enough about what I think, what were *your* favorite iOS music players this year? Are there any I missed, or any corrections or insights you'd like to provide? Feel free to "at" me with my [Twitter](https://twitter.com) handle [@Barrowclift](https://twitter.com/Barrowclift) or email me at <marc@barrowclift.me>, I'd love to hear from you! Thanks so much for your support, and happy new year. :tada:
+Enough about what I think, what were *your* favorite iOS music players this year? Are there any I missed, or any corrections or insights you'd like to provide? Feel free to "at" me with my [Twitter](https://twitter.com) handle [@Barrowclift](https://twitter.com/Barrowclift) or email me at <{{ site.email }}>, I'd love to hear from you! Thanks so much for your support, and happy new year. :tada:
 
 ----
 

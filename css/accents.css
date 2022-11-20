@@ -132,7 +132,7 @@ mark.tag.blue {
     .blue button:hover,
     .blue .button:hover {
         background-color: hsl(211, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 55%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 45%, 0.375);
     }
     .blue button:active,
     .blue .button:active {
@@ -286,7 +286,7 @@ mark.tag.red {
     .red button:hover,
     .red .button:hover {
         background-color: hsl(3, 100%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(3, 100%, 64%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(3, 100%, 54%, 0.375);
     }
     .red button:active,
     .red .button:active {
@@ -420,7 +420,7 @@ mark.tag.orange {
     .orange button:hover,
     .orange .button:hover {
         background-color: hsl(30, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(30, 100%, 55%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(30, 100%, 45%, 0.375);
     }
     .orange button:active,
     .orange .button:active {
@@ -560,7 +560,7 @@ mark.tag.yellow {
     .yellow button:hover,
     .yellow .button:hover {
         background-color: hsl(48, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(48, 100%, 55%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(48, 100%, 45%, 0.375);
     }
     .yellow button:active,
     .yellow .button:active {
@@ -703,7 +703,7 @@ mark.tag.green {
     .green button:hover,
     .green .button:hover {
         background-color: hsl(130, 65%, 62%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(130, 65%, 62%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(130, 75%, 52%, 0.375);
     }
     .green button:active,
     .green .button:active {
@@ -835,7 +835,7 @@ mark.tag.purple {
     .purple button:hover,
     .purple .button:hover {
         background-color: hsl(241, 61%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(241, 61%, 64%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(241, 71%, 54%, 0.375);
     }
     .purple button:active,
     .purple .button:active {
@@ -962,7 +962,7 @@ mark.tag.pink {
     .pink button:hover,
     .pink .button:hover {
         background-color: hsl(349, 100%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(349, 100%, 64%, 0.2);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(349, 100%, 54%, 0.375);
     }
     .pink button:active,
     .pink .button:active {
