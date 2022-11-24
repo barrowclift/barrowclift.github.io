@@ -440,8 +440,8 @@ summary {
 }
 main a,
 mark {
-    padding-top: 0.11em;
-    padding-bottom: 0.11em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 }
 
 
@@ -500,7 +500,10 @@ menu {
             margin: 0;
             padding-bottom: 0.5em;
             padding-top: 0.725em;
-            min-width: 32vw;
+            min-width: 25vw; /* 32vw; */
+        }
+        menu ul li.setting-toggles {
+            min-width: 18vw;
         }
         menu ul a {
             margin-bottom: 0;
@@ -543,7 +546,6 @@ menu {
 
 /* Settings "button" (aA) */
 #settings-toggle {
-    cursor: pointer;
     height: 1.5em;
 }
 .ignore-accent-color.enforce-dark-mode #settings-toggle,
@@ -831,6 +833,8 @@ button:hover,
 .button:hover {
     transform: scale(1.05);
 }
+button.pill:hover,
+.setting-toggles.active button.pill,
 .color-well:hover {
     transform: scale(1.1);
 }
@@ -838,8 +842,12 @@ button.active,
 button:active,
 .button.active,
 .button:active,
-.color-well:active {
+.color-well:active,
+button.pill:hover:active {
     transform: scale(0.95);
+}
+.setting-toggles.active button.pill:hover {
+    transform: scale(1.15);
 }
 
 .card {
@@ -1013,6 +1021,36 @@ button:disabled {
         margin-left: 0.325em;
         margin-right: 0.325em;
     }
+button.pill {
+    position: relative;
+    top: -0.1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+/*    margin: 0 0.1em 0 0.2em;*/
+    margin: 0;
+    border: none;
+    border-radius: 1em;
+    font-size: 0.833em;
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+
+    line-height: 1rem;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+.setting-toggles.active button.pill {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.pill svg {
+    height: 1.3rem;
+}
 input[type='checkbox'] {
     width: 1rem;
     display: inline-block;
@@ -2025,7 +2063,8 @@ hr {
 .card .fill-transparent,
 .card .fill-color,
 .card .signature-color,
-.twitter-logo g {
+.twitter-logo g,
+.pill path {
     transition: fill 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -2241,7 +2280,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     menu {
         position: fixed;
         top: 0 !important;
-        height: 2.6em;
+        height: 3em;
     }
     /* For now, we have no need to show the submenu on anything but iPhones */
     #submenu.show {
@@ -2260,7 +2299,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
         -ms-transform-origin: top right;
         transform-origin: top right;
         margin-left: -21em;
-        top: 3.25em;
+        top: 3.4em;
     }
         menu header {
             text-align: left;
@@ -2274,9 +2313,9 @@ Font size: 19px, ~Margin&Padding: 28.5px
             text-align: left;
         }
             menu ul li {
-                min-width: 8em;
+                min-width: 15vw;
                 line-height: 1em;
-                padding-top: 1.25em;
+                padding-top: 1.35em;
                 padding-bottom: 0.4em;
             }
             menu ul a {
@@ -2328,15 +2367,20 @@ Font size: 19px, ~Margin&Padding: 28.5px
         left: 100%;
 
         top: 0;
-        margin-left: -2.75rem;
+        margin-left: -3.2rem;
         margin-top: 0;
-        padding-left: 0.9rem;
-        padding-bottom: 0.1375rem;
-        padding-top: 1.05rem;
+        padding-top: 1.1rem;
     }
-    @supports (margin-left: calc(-2.75rem - env(safe-area-inset-right))) {
+    button.pill {
+        line-height: 0;
+    }
+    button.pill svg {
+        padding-bottom: 1px;
+        height: 1rem;
+    }
+    @supports (margin-left: calc(-3.2rem - env(safe-area-inset-right))) {
         #settings-toggle {
-            margin-left: calc(-2.75rem - env(safe-area-inset-right));
+            margin-left: calc(-3.2rem - env(safe-area-inset-right));
         }
     }
 
@@ -2658,8 +2702,8 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     main a,
     mark {
-        padding-top: 0.15em;
-        padding-bottom: 0.15em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
     }
 }
 @media (min-width: 801px) {
@@ -2712,10 +2756,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
     menu {
         /* Fix for Chrome and Firefox hover boxes not overlapping the bottom border (the bottom border was on the outside, while Safari had it inside) */
         box-sizing: border-box;
-        height: 2.55em;
     }
     .popup {
-        top: 3.1em;
+        top: 3.4em;
         margin-left: -20.75em;
     }
         menu header {
@@ -2731,7 +2774,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
                 text-align: center;
             }
                 menu ul li {
-                    padding-top: 1.15em;
+                    min-width: 8em;
+                    padding-top: 1.25em;
                 }
                 menu ul a {
                     padding-top: 1.15em;
@@ -2748,10 +2792,15 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
     /* --- ACCESSIBILITY TOGGLES --- */
     #settings-toggle {
-        margin-top: 0;
-        padding-left: 0.9rem;
-        padding-bottom: 0.1375rem;
-        padding-top: 0.9em;
+        padding-top: 0.95rem;
+    }
+    #settings-toggle {
+        margin-left: -3.45rem;
+    }
+    @supports (margin-left: calc(-3.45rem - env(safe-area-inset-right))) {
+        #settings-toggle {
+            margin-left: calc(-3.45rem - env(safe-area-inset-right));
+        }
     }
 
 
@@ -2880,8 +2929,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
     main a,
     mark {
-        padding-top: 0.15em;
-        padding-bottom: 0.15em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
     }
 }
 @media (min-width: 1001px) {
@@ -3064,6 +3113,9 @@ menu a,
 .pink menu a {
     color: rgba(30, 30, 30, 0.6);
 }
+.pill path {
+    fill: rgba(30, 30, 30, 0.6);
+}
 blockquote {
     color: rgba(30, 30, 30, 0.5);
 }
@@ -3129,10 +3181,10 @@ a.button {
 
 .signature-color,
 .mac-line-color {
-    fill: rgba(30, 30, 30, 0.75);
+    fill: rgba(30, 30, 30, 0.6);
 }
 .mac-background-color {
-    fill: rgba(255, 255, 255, 0.75);
+    fill: rgba(255, 255, 255, 0.6);
 }
 
 /* ----- DROP SHADOWS ----- */
@@ -3230,18 +3282,31 @@ button,
         background-color: hsl(211, 100%, 45%) !important;
         box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
     }
-button.bigfoot-footnote__button {
+button.bigfoot-footnote__button,
+button.pill {
     box-shadow: none;
+    background-color: hsla(211, 100%, 50%, 0.1);
 }
-    button.bigfoot-footnote__button:hover {
+    button.bigfoot-footnote__button:after,
+    button.pill {
+        color: hsl(211, 100%, 50%) !important;
+    }
+    button.bigfoot-footnote__button:hover,
+    button.pill:hover {
+        background-color: hsl(211, 100%, 50%) !important;
         box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
     }
-    button.bigfoot-footnote__button.is-active {
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
+    button.pill:hover path,
+    .setting-toggles.active button.pill path {
+        fill: white !important;
     }
-    button.bigfoot-footnote__button:hover:after,
-    button.bigfoot-footnote__button.is-active:after {
+    button.bigfoot-footnote__button:active,
+    button.bigfoot-footnote__button.is-active,
+    button.pill:active,
+    .setting-toggles.active button.pill {
         color: white !important;
+        background-color: hsl(211, 100%, 45%) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
     }
 button.disabled,
 button:disabled,
@@ -3466,7 +3531,14 @@ html#dark,
  * Secondary Text on Primary Background
  */
 #dark menu,
-#dark menu a {
+#dark menu a,
+#dark.blue menu a,
+#dark.red menu a,
+#dark.orange menu a,
+#dark.yellow menu a,
+#dark.green menu a,
+#dark.purple menu a,
+#dark.pink menu a {
     color: rgba(255, 255, 255, 0.6);
 }
 #dark blockquote {
@@ -3519,7 +3591,8 @@ html#dark,
 
 #dark .fill-color,
 #dark .signature-color,
-#dark .mac-background-color {
+#dark .mac-background-color,
+#dark .pill path {
     fill: rgba(255, 255, 255, 0.6);
 }
 #dark menu header:hover .mac-background-color {
@@ -3538,7 +3611,7 @@ html#dark,
 /* ----- DROP SHADOWS ----- */
 
 #dark menu {
-    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.225), 0em 0.22em 0.6em rgba(0, 0, 0, 0.1125);
+    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3375), 0em 0.22em 0.6em rgba(0, 0, 0, 0.16875);
 }
 #dark .macos-window-screenshot img,
 #dark .macos-window-screenshot video {
@@ -3585,23 +3658,124 @@ html#dark,
  * RGB: rgb(0, 122, 255);
  * HSL: hsl(211, 100%, 50%);
  */
+#dark .color-well.blue {
+    background-color: #0A84FF;
+}
+#dark mark.blue {
+    background: unset;
+    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.75) 38.66%, hsla(213, 100%, 50%, 0.75));
+}
+#dark mark.tag.blue {
+    background: unset;
+    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.9) 38.66%, hsla(213, 100%, 50%, 0.9));
+}
+
+#dark .admonition.question,
+#dark .admonition.hint,
+#dark .admonition.note,
+#dark .admonition.info,
+#dark .admonition.tip,
+#dark .admonition.example,
+#dark .admonition.blue {
+    background-color: hsla(210, 100%, 52%, 0.15);
+    border-color: hsl(210, 100%, 52%) !important;
+}
+#dark .admonition.question .admonition-title:before,
+#dark .admonition.hint .admonition-title:before,
+#dark .admonition.note .admonition-title:before,
+#dark .admonition.info .admonition-title:before,
+#dark .admonition.tip .admonition-title:before,
+#dark .admonition.example .admonition-title:before,
+#dark .admonition.blue .admonition-title:before,
+#dark .admonition.question p:first-child:before,
+#dark .admonition.hint p:first-child:before,
+#dark .admonition.note p:first-child:before,
+#dark .admonition.info p:first-child:before,
+#dark .admonition.tip p:first-child:before,
+#dark .admonition.example p:first-child:before,
+#dark .admonition.blue p:first-child:before {
+    background-color: hsla(210, 100%, 52%) !important;
+}
+
+#dark .color-well.active {
+    box-shadow: 0 0em 0.5em 0em hsl(210, 100%, 52%);
+}
+
+#dark a,
+#dark #mainmenu .active,
+#dark #mainmenu a:hover,
+#dark #settings-toggle:hover,
+#dark #settings-toggle.active a,
+#dark #submenu a:hover,
 #dark .header a:hover,
 #dark a:hover .header,
 #dark summary {
-    color: hsl(211, 100%, 50%);
+    color: hsl(210, 100%, 52%);
+}
+#dark #logo:hover .signature-color,
+#dark #signature.active .signature-color,
+#dark .pill:hover path {
+    fill: hsl(210, 100%, 52%);
+}
+#dark .backdrop {
+    background-color: hsl(210, 100%, 52%);
 }
 #dark a:hover,
 #dark #submenu,
+#dark button.bigfoot-footnote__button,
+#dark button.pill,
 #dark summary:hover,
 #dark .summary-list li a:hover,
 #dark .card:hover {
-    background-color: hsla(211, 100%, 50%, 0.15);
+    background-color: hsla(210, 100%, 52%, 0.15);
+}
+#dark ::selection {
+    background: hsla(210, 100%, 52%, 0.85);
+}
+#dark ::-moz-selection {
+    background: hsla(210, 100%, 52%, 0.85);
 }
 
-/* Highlights (must be seperate, combining them breaks the style) */
-#dark ::selection { /* Safari */
-    background: hsla(211, 100%, 50%, 0.85);
+#dark button,
+#dark .button {
+    background-color: hsl(210, 100%, 52%);
+    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
 }
-#dark ::-moz-selection { /* Firefox */
-    background: hsla(211, 100%, 50%, 0.85);
+    #dark button:hover,
+    #dark .button:hover {
+        background-color: hsl(211, 100%, 57%) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 47%, 0.375);
+    }
+    #dark button:active,
+    #dark .button:active {
+        background-color: hsl(211, 100%, 47%) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 47%, 0.2);
+    }
+#dark button.bigfoot-footnote__button,
+#dark button.pill {
+    box-shadow: unset;
+    background-color: hsla(210, 100%, 52%, 0.2);
+}
+    #dark button.bigfoot-footnote__button:hover,
+    #dark button.pill:hover {
+        background-color: hsl(210, 100%, 52%) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
+    }
+    #dark button.bigfoot-footnote__button:active,
+    #dark button.bigfoot-footnote__button.is-active,
+    #dark button.pill:active,
+    #dark .setting-toggles.active button.pill {
+        background-color: hsl(211, 100%, 47%) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 47%, 0.2);
+    }
+
+#dark input:focus,
+#dark textarea:focus {
+    border-color: hsl(210, 100%, 52%) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2) !important;
+}
+
+#dark .codehilite,
+#dark .highlight {
+    background-color: rgb(33, 34, 36);
 }

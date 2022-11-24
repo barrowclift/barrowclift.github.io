@@ -44,6 +44,24 @@
 	#logo:hover .signature-color {
 		fill: black !important;
 	}
+	button.pill path,
+	button.pill:hover,
+	button.pill:hover path,
+	button.pill:active,
+	.setting-toggles.active button.pill,
+	.setting-toggles.active button.pill path,
+	#dark button.pill path,
+	#dark button.pill:hover,
+	#dark button.pill:hover path,
+	#dark button.pill:active,
+	#dark .setting-toggles.active button.pill,
+	#dark .setting-toggles.active button.pill path {
+		fill: black !important;
+		transform: unset !important;
+		background-color: unset !important;
+		box-shadow: unset !important;
+		transition: unset !important;
+	}
 	#dark .mac-line-color {
 		fill: #4c4c4c;
 	}
@@ -54,6 +72,24 @@
 		display: inline !important;
 		top: 0;
 		padding-top: 0.3em !important;
+	}
+	.contact {
+		display: none !important;
+	}
+	menu ul li.setting-toggles {
+		margin-left: 0vw;
+		margin-right: 0vw;
+		min-width: auto;
+	}
+	menu > #mainmenu > ul {
+		text-align: left;
+	}
+	.pill svg {
+		height: 1rem;
+	}
+	button.pill {
+		line-height: 0rem !important;
+		top: 0 !important;
 	}
 	@media (max-width: 699px) {
 		#logo {
@@ -88,8 +124,8 @@
 			margin-bottom: 0;
 			font-size: 0.833em;
 			min-width: unset;
-			margin-left: 3vw;
-			margin-right: 3vw;
+			margin-left: 4vw;
+			margin-right: 4vw;
 		}
 		#menu-height-offset {
 			display: none;
@@ -103,6 +139,17 @@
 		}
 		#about-link {
 			display: inline !important;
+		}
+	}
+	@media (min-width: 700px) {
+		.contact {
+			display: inline-block !important;
+		}
+		menu > #mainmenu > ul {
+			text-align: center;
+		}
+		.pill svg {
+			height: 1.3rem;
 		}
 	}
 	</style>
