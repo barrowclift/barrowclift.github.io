@@ -40,6 +40,42 @@ menu, menu a,
 #logo .signature-color {
     fill: white;
 }
+button.pill path {
+    fill: white !important;
+}
+button.pill {
+    background-color: rgba(255, 255, 255, 0.0375);
+    box-shadow: none;
+}
+    button.pill:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    }
+    button.pill:active,
+    .setting-toggles.active button.pill {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    }
+    button.pill:hover path,
+    .setting-toggles.active button.pill path {
+        fill: #FADF4B !important;
+    }
+    #dark button.pill:hover path,
+    #dark .setting-toggles.active button.pill path {
+        fill: white !important;
+    }
+#dark button.pill {
+    background-color: rgba(255, 255, 255, 0.0375);
+}
+    #dark button.pill:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    }
+    #dark button.pill:active,
+    #dark .setting-toggles.active button.pill {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    }
 .mac-line-color {
     fill: black;
 }
@@ -60,7 +96,8 @@ menu, menu a,
  * RGB: rgb(40, 60, 132);
  * HSL: hsl(227, 53%, 44%);
 */
-a {
+a,
+#dark a {
     color: #B1332F;
 }
 #mainmenu .active,
@@ -93,35 +130,25 @@ a:hover,
 }
 
 button,
-.button {
+.button,
+#dark button,
+#dark .button {
     background-color: hsl(227, 53%, 44%);
     box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
 }
-     button:hover,
-     .button:hover {
+    button:hover,
+    .button:hover,
+    #dark button:hover,
+    #dark .button:hover {
         background-color: hsl(227, 53%, 54%) !important;
         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
     }
-     button:active,
-     .button:active {
+    button:active,
+    .button:active,
+    #dark button:active,
+    #dark .button:active {
         background-color: hsl(227, 53%, 54%) !important;
         box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
-    }
-button.bigfoot-footnote__button {
-    background-color: hsla(3, 100%, 59%, 0.1);
-    box-shadow: none;
-}
-     button.bigfoot-footnote__button:after {
-        color: hsl(227, 53%, 44%) !important;
-    }
-     button.bigfoot-footnote__button:hover {
-        background-color: hsl(227, 53%, 44%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2);
-    }
-     button.bigfoot-footnote__button:active,
-     button.bigfoot-footnote__button.is-active {
-        background-color: hsl(3, 100%, 49%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
     }
 
 input:focus,
@@ -154,22 +181,64 @@ hr {
     background: linear-gradient(to right, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* W3C */
 }
 
+
+#dark #mainmenu .active,
+#dark #mainmenu a:hover,
+#dark #settings-toggle:hover,
+#dark #settings-toggle.active a,
+#dark #submenu a:hover,
+#dark .header a:hover,
+#dark a:hover .header,
+#dark summary {
+    color: hsl(51, 95%, 64%);
+}
 #dark .header a:hover,
 #dark a:hover .header {
     color: hsl(227, 53%, 44%);
 }
+#dark #logo:hover .signature-color,
+#dark #signature.active .signature-color {
+    fill: hsl(51, 95%, 64%);
+}
+#dark .backdrop {
+    background-color: hsl(51, 95%, 64%);
+}
 #dark a:hover,
 #dark #submenu,
-#dark button.bigfoot-footnote__button {
+#dark button.bigfoot-footnote__button,
+#dark button.pill,
+#dark summary:hover,
+#dark .summary-list li a:hover,
+#dark .card:hover {
     background-color: hsla(2, 58%, 44%, 0.15);
 }
-
-/* Highlights (must be seperate, combining them breaks the style) */
-#dark ::selection { /* Safari */
+#dark ::selection {
     background: hsla(227, 53%, 34%, 0.85);
 }
-#dark ::-moz-selection { /* Firefox */
+#dark ::-moz-selection {
     background: hsla(227, 53%, 34%, 0.85);
+}
+#dark button.bigfoot-footnote__button,
+#dark button.pill {
+    background-color: hsla(51, 95%, 64%, 0.2);
+}
+    #dark button.bigfoot-footnote__button:hover,
+    #dark button.pill:hover {
+        background-color: hsl(51, 95%, 64%) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2);
+    }
+    #dark button.bigfoot-footnote__button:active,
+    #dark button.bigfoot-footnote__button.is-active,
+    #dark button.pill:active,
+    #dark .setting-toggles.active button.pill {
+        background-color: hsl(51, 95%, 54%) !important;
+        box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 54%, 0.2);
+    }
+
+#dark input:focus,
+#dark textarea:focus {
+    border-color: hsl(51, 95%, 64%) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2) !important;
 }
 </style>
 <h1>

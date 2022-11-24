@@ -59,11 +59,7 @@ function changeAppearance(appearance) {
 	updateThemeColor();
 }
 /* Allow clicking the area AROUND the buttons to trigger the effect as well */
-function settingsClicked() {
-	$("#settings-checkbox").click();
-	return false;
-}
-function settingsToggled(checkbox) {
+function settingsToggled() {
 	var popup = document.getElementById("settings-popup");
 	popup.classList.toggle("show");
 	var settingToggles = document.getElementsByClassName("setting-toggles");
@@ -291,7 +287,7 @@ $(document).ready(function() {
 	$(document).on(clickEventName, function(event) {
 		if ($("#settings-popup").hasClass("show")) {
 			if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-toggle").length) {
-				settingsClicked();
+				settingsToggled()
 			}
 		}
 	});

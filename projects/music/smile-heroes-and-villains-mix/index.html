@@ -47,6 +47,31 @@ projects-menu-active: true
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+	button.pill {
+		background-color: rgba(0, 0, 0, 0.0375);
+		box-shadow: none;
+	}
+		button.pill:hover {
+			background-color: rgba(0, 0, 0, 0.1) !important;
+			box-shadow: 0 0.43em 0.87em -0.2em rgba(0, 0, 0, 0.1);
+		}
+		button.pill:active,
+		.setting-toggles.active button.pill {
+			background-color: rgba(0, 0, 0, 0.1) !important;
+			box-shadow: 0 0.43em 0.87em -0.2em rgba(0, 0, 0, 0.1);
+		}
+	#dark button.pill {
+		background-color: rgba(255, 255, 255, 0.0375);
+	}
+		#dark button.pill:hover {
+			background-color: rgba(255, 255, 255, 0.1) !important;
+			box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+		}
+		#dark button.pill:active,
+		#dark .setting-toggles.active button.pill {
+			background-color: rgba(255, 255, 255, 0.1) !important;
+			box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+		}
 	#parallax-background {
 		/*IE10+ */
 		background-image: -ms-linear-gradient(top, #EB8D3B 0%, #EB6B37 100%);
