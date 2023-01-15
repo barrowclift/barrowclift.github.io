@@ -11,7 +11,7 @@ categories:
   - Unix
   - Guides
   - Best Of
-excerpt: "With this guide, you too can easily enjoy Wireguard VPN's performance and security served by macOS Big Sur."
+excerpt: "With this guide, you too can enjoy Wireguard VPN's performance and security on macOS."
 image: "wireguard-server-on-macos/share-image.jpg"
 has_afterward: true
 background-color: "#4E0008"
