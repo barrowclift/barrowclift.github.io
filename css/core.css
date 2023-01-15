@@ -1796,9 +1796,17 @@ article > pre > code {
     padding: 1.3em;
     box-shadow: unset;
 }
-li .highlighter-rouge .highlight {
+li .highlighter-rouge div.highlight {
     margin-top: 0.65em;
     margin-bottom: 0.65em;
+}
+.highlighter-rouge pre.highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.65em;
+    padding-bottom: 0.65em;
+    padding-left: 0.975em;
+    padding-right: 0.975em;
 }
 .highlighter-rouge pre {
     margin-left: 0;
@@ -3773,9 +3781,4 @@ html#dark,
 #dark textarea:focus {
     border-color: hsl(210, 100%, 52%) !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2) !important;
-}
-
-#dark .codehilite,
-#dark .highlight {
-    background-color: rgb(33, 34, 36);
 }
