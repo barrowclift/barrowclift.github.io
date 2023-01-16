@@ -824,6 +824,9 @@ mark.tag.yellow {
 .yellow summary {
     color: hsl(48, 100%, 50%);
 }
+.admonition.yellow a {
+    color: hsl(45, 100%, 45%);
+}
 .yellow #logo:hover .signature-color,
 .yellow #signature.active .signature-color {
     fill: hsl(48, 100%, 50%);
@@ -957,6 +960,9 @@ mark.tag.yellow {
 #dark.yellow summary {
     color: hsl(50, 100%, 52%);
 }
+#dark .admonition.yellow a {
+    color: hsl(50, 100%, 52%);
+}
 #dark.yellow #logo:hover .signature-color,
 #dark.yellow #signature.active .signature-color {
     fill: hsl(50, 100%, 52%);
@@ -970,7 +976,8 @@ mark.tag.yellow {
 #dark.yellow button.pill,
 #dark.yellow summary:hover,
 #dark.yellow .summary-list li a:hover,
-#dark.yellow .card:hover {
+#dark.yellow .card:hover,
+#dark .admonition.yellow a:hover {
     background-color: hsla(50, 100%, 52%, 0.15);
 }
 #dark.yellow ::selection {
