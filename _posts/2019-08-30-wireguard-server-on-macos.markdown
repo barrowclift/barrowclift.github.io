@@ -2,7 +2,7 @@
 layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2023-01-15 11:42:22-0500
+update: 2023-01-16 10:41:03-0500
 categories:
   - Technology
   - macOS
@@ -18,10 +18,6 @@ background-color: "#4E0008"
 foreground-color: "#FFFFFF"
 ---
 
-<figure markdown="1" class="inline shadow">
-[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
-</figure>
-
 <div class="admonition yellow">
 <p class="admonition-title">Update: January 15, 2023</p>
 <p></p>
@@ -29,6 +25,10 @@ foreground-color: "#FFFFFF"
 <p>This revision contains a myriad of improvements provided by <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
 <p>I can confirm this guide works with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.1 on both Apple Silicon and Intel-based Macs.</p>
 </div>
+
+<figure markdown="1" class="inline shadow">
+[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
+</figure>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is successfully running on macOS.
 
