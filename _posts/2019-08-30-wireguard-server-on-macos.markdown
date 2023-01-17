@@ -206,7 +206,9 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
 <span class="c1"># earlier when setting up port forwarding on your router, update the</span>
 <span class="c1"># port here to match.</span>
 <span class="nv">Endpoint</span> <span class="o">=</span> XXX.XXX.XXX.XXX:51820
-<span class="c1"># Informs Wireguard to forward ALL traffic through the VPN.</span>
+<span class="c1"># Informs Wireguard to forward ALL traffic through the VPN. Note that</span>
+<span class="c1"># one reader reported ::/0 was interferring with HomeKit video feeds,</span>
+<span class="c1"># so if you run into issues you may need to adjust to 2000::/3.</span>
 <span class="nv">AllowedIPs</span> <span class="o">=</span> 0.0.0.0/0, ::/0
 <span class="nv">PersistentKeepalive</span> <span class="o">=</span> 25</code></pre></div></div>
   </li>
