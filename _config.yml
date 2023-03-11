@@ -7,7 +7,7 @@ description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
 dropbox: "https://dropbox.barrowclift.me/assets"
 url: https://barrowclift.me # The base hostname & protocol for your site
-host: localhost
+host: barrowclift.me
 
 permalink: /post/:title # Permalink posts sorted by date with directories is awful.
 paginate_path: articles/:num # Home older/previous pages go here
