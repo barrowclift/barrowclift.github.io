@@ -2,7 +2,7 @@
 layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2023-01-16 10:41:03-0500
+update: 2023-06-19 13:18:11-0400
 categories:
   - Technology
   - macOS
@@ -19,11 +19,11 @@ foreground-color: "#FFFFFF"
 ---
 
 <div class="admonition yellow">
-<p class="admonition-title">Update: January 15, 2023</p>
+<p class="admonition-title">Update: June 19, 2023</p>
 <p></p>
 <p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
 <p>This revision contains a myriad of improvements provided by <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
-<p>I can confirm this guide works with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.1 on both Apple Silicon and Intel-based Macs.</p>
+<p>I can confirm this guide works with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4 on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <figure markdown="1" class="inline shadow">
@@ -157,13 +157,20 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
 <span class="c1"># VPN. I chose Cloudflare's public DNS servers, but feel free to use</span>
 <span class="c1"># whatever provider you prefer. This could alternatively point to a</span>
 <span class="c1"># locally hosted DNS-based ad blocker, such as Pi-Hole or AdGuard</span>
-<span class="c1"># Home</span>
+<span class="c1"># Home.</span>
 <span class="c1">#</span>
 <span class="c1"># If you choose an external DNS provider, please be aware that not</span>
 <span class="c1"># all ISPs allow customers to use 3rd party DNS providers. If your</span>
 <span class="c1"># ISP does not support this, delete this declaration from your</span>
 <span class="c1"># config or point to a locally hosted alternative, otherwise</span>
 <span class="c1"># external network requests won't resolve while on the VPN.</span>
+<span class="c1">#</span>
+<span class="c1"># Additionally, please be aware that this setting breaks Wireguard</span>
+<span class="c1"># on macOS 13 Ventura, so if this is the version your server is</span>
+<span class="c1"># running you must remove or comment out this line. This</span>
+<span class="c1"># unfortunately means you'll need to rely on your clients to</span>
+<span class="c1"># properly set the desired DNS server(s) in their own configs until</span>
+<span class="c1"># and unless this macOS bug is resolved.</span>
 <span class="nv">DNS</span> <span class="o">=</span> 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
 <span class="nv">PostUp</span> <span class="o">=</span> /usr/local/etc/wireguard/postup.sh
 <span class="nv">PostDown</span> <span class="o">=</span> /usr/local/etc/wireguard/postdown.sh
@@ -291,6 +298,7 @@ The following help articles and documentation from fellow enthusiasts were inval
 * **Luke Sandoval** for his private message revealing that the approach detailed in this guide obfuscates client IPs behind the server's IP. Thus, this solution might not meet certain needs and is thus now called out as a caveat in the guide.
 * [**Alessio Nossa**](https://github.com/alessionossa) for informing me that the original "post down" script did *not* in fact remove the PF traffic routing rule as originally claimed (rather, [it only removed the PF "enable" reference](https://www.manpagez.com/man/8/pfctl/). Their original comment notifying this miss remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1#issuecomment-1133563862).
 * [**Donavon Buchanan**](https://github.com/dbuchanandev), whose thorough email and sensible [reference repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6) filled the crucial missing piece of <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 6">IPv6</abbr> support in this guide. Without his contribution, this guide would still be restricted to just <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 4">IPv4</abbr> connections, and been worse off for it.
+* [**Glenn F. Schreiber**](https://theweatherguy.net/blog/blog-faq/) (a.k.a "theweatherguy") for identifying and notifying me that starting with macOS 13 Ventura the DNS directive prevents the VPN from functioning when set in the *server*'s Wireguard config.
 
 *[DNS]: Domain Name System
 *[ISP]: Internet Service Provider
