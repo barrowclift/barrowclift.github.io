@@ -2,7 +2,7 @@
 layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2023-06-19 13:18:11-0400
+update: 2023-07-16 11:34:04-0400
 categories:
   - Technology
   - macOS
@@ -18,12 +18,12 @@ background-color: "#4E0008"
 foreground-color: "#FFFFFF"
 ---
 
-<div class="admonition yellow">
-<p class="admonition-title">Update: June 19, 2023</p>
+<div class="admonition">
+<p class="admonition-title">Update: July 16, 2023</p>
 <p></p>
-<p>This is a revision of the <a href="/obsolete/wireguard-server-on-macos">first guide</a> originally published back in August 30, 2019.</p>
-<p>This revision contains a myriad of improvements provided by <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current form without their help. Each are credited at the end of the article, and many thanks to them all for their contributions to this site and the Wireguard community.</p>
-<p>I can confirm this guide works with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4 on both Apple Silicon and Intel-based Macs.</p>
+<p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/post/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
+<p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
+<p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <figure markdown="1" class="inline shadow">
@@ -144,7 +144,7 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
 <span class="gp">$</span><span class="w"> </span>wg genkey | <span class="nb">tee </span>privatekey | wg pubkey <span class="o">&gt;</span> publickey</code></pre></div></div>
       For example, if you have just a single peer, you should have two public and private keys pairs: one pair for your peer, and another pair for your server. Please ensure you keep these files in a safe and secure place, such as an <a href="https://support.apple.com/guide/disk-utility/create-a-disk-image-dskutl11888/mac">encrypted container</a>. If someone nasty gets them, they have complete remote access to your server!
   </li>
-  <li>Create your Wireguard server configuration file. First, decide a location and filename (I chose <code>/usr/local/etc/wireguard/coordinates.conf</code>), then write your configuration using the following template as your guide:
+  <li>Create your Wireguard server configuration file. First, decide a location and filename (I chose <code>/usr/local/etc/wireguard/coordinates.conf</code>). If you choose somewhere else, take care to <a href="https://stackoverflow.com/a/74674749">ensure your location’s not within the <code>/Users</code> directory</a>, otherwise the Wireguard daemon won’t be able to start the server on system boot and will require that user’s login to launch. Once you’ve got your location chosen, write your configuration using the following template as your guide:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Interface<span class="o">]</span>
 <span class="c1"># Substitute with the subnets you chose for Wireguard earlier.</span>
 <span class="nv">Address</span> <span class="o">=</span> 10.0.10.1/24, fd77:77:77:77::1/112
@@ -261,6 +261,9 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
     <span class="nt">&lt;/dict&gt;</span>
 <span class="nt">&lt;/plist&gt;</span></code></pre></div></div>
       </li>
+      <li>Change the assigned user &amp; group for your daemon config to <code>root:wheel</code> with the following command. This is required for the Wireguard daemon to be launched on system boot.
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo chown </span>root:wheel /Library/LaunchDaemons/com.wireguard.server.plist</code></pre></div></div>
+      </li>
       <li>Inform <code>launchd</code> of the new <code>plist</code> you just created with the following commands:
         <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>launchctl <span class="nb">enable </span>system/com.wireguard.server
 <span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>launchctl bootstrap system /Library/LaunchDaemons/com.wireguard.server.plist</code></pre></div></div>
@@ -282,7 +285,7 @@ Congratulations :tada:! You're now among the dozen people crazy enough to serve 
 
 The following help articles and documentation from fellow enthusiasts were invaluable in my research and referenced heavily. Many thanks to them for their contributions:
 
-* [lifepillar](https://lifepillar.me)'s [fantastic feedback](https://github.com/barrowclift/barrowclift.github.io/issues/1) on the [original article](/obsolete/wireguard-server-on-macos); it's because of their assistance that this new and improved guide was possible. Please support their [work](https://github.com/lifepillar?tab=repositories).
+* [lifepillar](https://lifepillar.me)'s [fantastic feedback](https://github.com/barrowclift/barrowclift.github.io/issues/1) on the [original article](/obsolete/wireguard-server-on-macos); it's because of his assistance that this new and improved guide was possible. Please support his [work](https://github.com/lifepillar?tab=repositories).
 * [Stavros Korokithakis's "How to easily configure WireGuard"](https://www.stavros.io/posts/how-to-configure-wireguard/)
 * [pirate's "Unofficial Wireguard Documentation"](https://github.com/pirate/wireguard-docs)
 * [Chrissy LeMaire's "Share VPN with OS X Sierra Internet Sharing"](https://blog.netnerds.net/2016/11/share-vpn-with-os-x-sierra-internet-sharing/)
@@ -292,6 +295,7 @@ The following help articles and documentation from fellow enthusiasts were inval
 ## Many Thanks To...
 
 * [**lifepillar**](https://lifepillar.me) for his superior PF rules handling and daemon config. Our discussion remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1).
+* [**Charles Richard**](https://twitter.com/charlie_thebird/status/1255894000533413889) for suggesting added clarity around what directory the public/private keys will be generated into.
 * [**Olivier Mathieu**](https://twitter.com/oma_sct) for their private suggestion to do away with the previously enabled `LaunchOnlyOnce` flag, which prevented the service from automatically restarting should the daemon ever exit unexpectedly.
 * [**Olaoluwa Oluwaniyi**](https://github.com/diadal) for informing me that not all ISPs allow customers to use 3rd party DNS providers (previously, this was not mentioned in the guide). The discussion remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/2).
 * **Corey Watson** for his private reminder that the default Homebrew executable directory on Macs powered by [Apple Silicon](https://en.wikipedia.org/wiki/Apple-designed_processors) is `/opt/homebrew/bin`, not `/usr/local/bin`. This difference is now reflected in the daemon config template.
@@ -299,6 +303,7 @@ The following help articles and documentation from fellow enthusiasts were inval
 * [**Alessio Nossa**](https://github.com/alessionossa) for informing me that the original "post down" script did *not* in fact remove the PF traffic routing rule as originally claimed (rather, [it only removed the PF "enable" reference](https://www.manpagez.com/man/8/pfctl/). Their original comment notifying this miss remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1#issuecomment-1133563862).
 * [**Donavon Buchanan**](https://github.com/dbuchanandev), whose thorough email and sensible [reference repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6) filled the crucial missing piece of <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 6">IPv6</abbr> support in this guide. Without his contribution, this guide would still be restricted to just <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 4">IPv4</abbr> connections, and been worse off for it.
 * [**Glenn F. Schreiber**](https://theweatherguy.net/blog/blog-faq/) (a.k.a "theweatherguy") for identifying and notifying me that starting with macOS 13 Ventura the DNS directive prevents the VPN from functioning when set in the *server*'s Wireguard config.
+* [**Cory**](https://mastodon.social/@CyberCory) for [identifying a shortcoming in the daemon config](https://mastodon.social/@CyberCory/110668229010278552) that required user login for the Wireguard server to start. Because of his report, the guide now ensures the daemon's set up to start immediately on system boot, independent of user logins.
 
 *[DNS]: Domain Name System
 *[ISP]: Internet Service Provider
