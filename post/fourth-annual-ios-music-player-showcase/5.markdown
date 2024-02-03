@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Musens"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "6"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/musens/id1560526260">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Musens is a brand new arrival from April 13th, 2021, and is the closest I've seen any app get to becoming a viable drop-in replacement for [Music.app]. While many general-purpose players are great, most are missing one or two features found in Music.app that keep them from being a viable full-time replacement for most listeners. Typically this takes the form of a lack of Apple Music service integration, but other times it's a lack of widget support, a lack of visualizer, or any other myriad of Music.app features that aren't "must haves" but necessarily hold back most other players from being considered a feature-complete Music.app replacement for the general population. This results in today's trend that third-party music players are more often than not *supplementary* to Music.app, with the expectation that Music.app is always kept handy just in case you need to stream a particular record, want a playback visualizer, or any other number of features the many listeners will quickly miss in third-party offerings. Not so with Musens; it's a general-purpose player with first-class Apple Music integration and widget support (that in and of itself is fairly surprising to both see supported for this category of player), but what makes it truly remarkable is its very own implementation of Music.app's beautiful lava lamp visualizer and Sonos-like "Party" feature, allowing anyone at the party to add to the queue as they please. No other third-party player offers this combination of features, and frankly I didn't expect I'd ever see supported. And yet, here they are, all presented with a relatively understated design, a standard iOS tab bar, and a number of Music.app similarities that make Musens feel immediately familiar on first launch.
 

@@ -7,11 +7,7 @@ theme-color-dark: "#7F2623"
 ignore-accent-color: true
 hide-settings: false
 
-viewing_single_page: true
-anchors: false
-
 title: "Development Card Simulator"
-projects-menu-active: true
 ---
 
 <style>
@@ -19,7 +15,7 @@ projects-menu-active: true
     background-color: #B03431;
 }
 #dark #wrap {
-    background-color: #7F2623
+    background-color: #7F2623;
 }
 .page {
     background-color: #FEFACC;
@@ -44,21 +40,24 @@ button.pill path {
     fill: white !important;
 }
 button.pill {
-    background-color: rgba(255, 255, 255, 0.0375);
+    background-color: hsla(51, 95%, 64%, 0.1);
     box-shadow: none;
 }
-    button.pill:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
+    button.pill:hover,
+    #dark button.pill:hover {
+        background-color: hsla(51, 95%, 64%, 1) !important;
         box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
     }
     button.pill:active,
-    .setting-toggles.active button.pill {
-        background-color: rgba(255, 255, 255, 0.1) !important;
+    .setting-toggles.active button.pill,
+    #dark button.pill:active,
+    #dark .setting-toggles.active button.pill  {
+        background-color: hsla(51, 95%, 64%, 1) !important;
         box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
     }
     button.pill:hover path,
     .setting-toggles.active button.pill path {
-        fill: #FADF4B !important;
+        fill: white !important;
     }
     #dark button.pill:hover path,
     #dark .setting-toggles.active button.pill path {
@@ -67,15 +66,6 @@ button.pill {
 #dark button.pill {
     background-color: rgba(255, 255, 255, 0.0375);
 }
-    #dark button.pill:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
-    }
-    #dark button.pill:active,
-    #dark .setting-toggles.active button.pill {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
-    }
 .mac-line-color {
     fill: black;
 }
@@ -243,8 +233,8 @@ hr {
 </style>
 <h1>
 <picture title="Development Card Simulator" alt="Development Card Simulator">
-    <source type="image/webp" srcset="/images/projects/code/development-card-simulator/title.webp">
-    <img type="image/png" src="/images/projects/code/development-card-simulator/title.png">
+    <source type="image/webp" srcset="images/title.webp">
+    <img type="image/png" src="images/title.png">
 </picture>
 </h1>
 <h4 style="margin-top:0;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>

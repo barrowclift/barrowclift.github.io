@@ -1,4 +1,4 @@
-[![Website banner image, featuring a smiling, pixel art iMac in front of a multicolor background](share-banner.jpg)](https://barrowclift.me)
+[![Website banner image, featuring a smiling, pixel art iMac in front of a multicolor background](images/share-banner.jpg)](https://barrowclift.me)
 
 Welcome! Please feel free to stop by, take a load off your feet, brew some tea, and [celebrate the humanity in computing](https://barrowclift.me) with me.
 
@@ -8,7 +8,7 @@ Welcome! Please feel free to stop by, take a load off your feet, brew some tea, 
 
 Up to this point, my website didn't really have a tranditional "home" page—the landing page for the site was the Articles page. With "Home Run", the site now has a proper home page with an "elevator pitch" for who I am, my current occupation, and my most recent works (articles, projects, etc.).
 
-![Image of the new Home Page](images/readme/home-page.png)
+![Image of the new Home Page](images/home-page.png)
 
 # 11.0 - "Foreigner"
 
@@ -16,7 +16,7 @@ With the introduction of macOS Mojave, users can now choose the accent color for
 
 Much like macOS, my personal website has also "supported" custom accent colors, but never exposed them to the user in any meaningful way. Now, with the new accessibility settings in 11.0, you can customize the site to match your preferred system accent color, so the site will always gracefully match your personality and style.
 
-![Image of the Accessibility Settings popup](images/readme/accessibility-settings.png)
+![Image of the Accessibility Settings popup](images/accessibility-settings.png)
 
 # 10.0 - "Unity"
 

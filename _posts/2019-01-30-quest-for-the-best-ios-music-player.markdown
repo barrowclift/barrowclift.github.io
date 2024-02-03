@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Quest for the Best iOS Music Player"
 date: 2019-01-30 22:16:47
 categories:
@@ -8,9 +7,10 @@ categories:
   - Design
   - Music
 timelocked: true
-excerpt: "My quest to find a niche app that's unapologetically for people that love actively listening to and collecting music. Who will win?"
+excerpt: |
+  My quest to find a niche app that’s unapologetically for people that love actively listening to and collecting music. Who will win?
 image: "quest-for-the-best-ios-music-player/share-image.jpg"
-has_afterward: true
+has-afterward: true
 ---
 
 <style>
@@ -97,12 +97,12 @@ Seven apps survived the disqualification round and continued on to be evaluated 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/app/cesium-your-music-streamlined./id924491991?mt=8">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Functional, but boring. Its interface is entirely utilitarian with little to no opinionated design in it. If that's what you're interested in, it's the best player of the bunch (especially if you loved the the original iOS 6 Music.app).
 
@@ -136,12 +136,12 @@ Functional, but boring. Its interface is entirely utilitarian with little to no 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/gr/app/doppler-music-player/id1252143995?mt=8">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Promising, but still too young and missing too many features to seriously consider.
 
@@ -176,12 +176,12 @@ Promising, but still too young and missing too many features to seriously consid
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/us/app/ecoute/id536882653">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 What was previously the gold-standard third-party music app is now a barely maintained shell of its former self, its future as bleak as its last design "update" in 2016. The poor thing needs a roadmap or to be finally put out of its misery.
 
@@ -244,12 +244,12 @@ Entirely inoffensive and mediocre across the board. Unfortunately, in Apple's ef
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/us/app/picky-music-player/id497110916">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Cream of the crop for music selection and sorting, but needs visual work everywhere but the player itself. However, if you have a large library consisting of both singles and albums, this app's for you.
 
@@ -284,12 +284,12 @@ Cream of the crop for music selection and sorting, but needs visual work everywh
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/app/id1210406576">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 A visually interesting player view in an otherwise visually dated and functionally compromised app. Needs a redesign to be seriously considered.
 
@@ -323,12 +323,12 @@ A visually interesting player view in an otherwise visually dated and functional
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://itunes.apple.com/app/apple-store/id916215494?mt=8">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 What seems at first to be a well-made app quickly reveals it's nothing more than a delivery vehicle for the company's "premium" music storage service, leaving the app feeling like nothing more than an upsell trap. Needs to stop being a service delivery vehicle and focus on being an good app to be seriously considered.
 
@@ -384,7 +384,7 @@ I love Cs on my iPhone, but I sometimes want to browse my library with a grid vi
 However, that doesn't mean I've given up hope! While Music.app has been more-or-less feature-stagnant since iOS 10, third-party developers of apps like Cs, Picky, and Doppler continue to work tirelessly to bring new and exciting features like "true black" dark mode in Cs and the "Recently added" view in Doppler. The world of quality music players on iOS may be small, but it's thriving, and hints at great improvements down the road that may finally earn one of them a permanent residence on my Dock. Time will tell which one it is.
 
 <div class="article-linkback">
-	<a href="/">⌘</a>
+	<a href="/about">⌘</a>
 </div>
 
 ------

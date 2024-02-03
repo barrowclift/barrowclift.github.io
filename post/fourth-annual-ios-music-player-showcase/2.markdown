@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Honorable Mentions"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -61,12 +60,12 @@ next-page: "3"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Dot Music received no releases of any kind this year, and is thus omitted from the showcase proper. Dot Music's a simple general-purpose player that takes strongly after [2019-era Cs Music](/post/second-annual-ios-music-player-competition#--cs) but offers nothing uniquely compelling to show for it. If you long for a visually bland player that's been ignored for the past year that includes only the bare minimum of cookie-cutter features, then Dot Music may in fact be just what you're looking for.
 
@@ -113,12 +112,12 @@ Dot Music received no releases of any kind this year, and is thus omitted from t
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/ecoute/id536882653">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 For many years, Ecoute's lack of updates (save for an occasional bug patch or two) and radio silence from [Julien Sagot](https://twitter.com/Barbapapapps) (Ecoute's developer) on Ecoute's future, forced listeners to accept that the [once beloved player](https://www.macstories.net/reviews/ecoute-is-the-best-music-player-for-ios-period/) was indeed officially dead and bleeding out the remainder of its life in light maintenance mode.
 
@@ -143,12 +142,12 @@ While the anticipation for Julien's new player is growing, the Ecoute that remai
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/jams-on-toast-music-player/id1303194454">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Jams On Toast received its *first ever* maintenance releases this year in the form of two bug patches, the first movement of any kind in the nearly four years since its original release back in 2017. There was unfortunately no other changes, leaving Jams On Toast to once again miss the cut on the showcase.
 
@@ -197,12 +196,12 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/new-monaural/id1439882679">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Despite first impressions, New Monaural is *not* a general-purpose player, but rather a niche player tailed towards providing rich playback accessibility options. As the name suggests, its crowning jewel is its special "monaural playback" capability, which aims to make playback of stereo music files on mono speakers and headphones sound more natural than they otherwise would with iOS's build-in playback APIs. While the audience who would want such capabilities is undoubtedly slim, it's sure to be a treasured by listeners who are hard of hearing in one ear or for one reason or another only have a single functional speaker. While New Monaural is a fantastic option for those listeners, it remains difficult to broadly recommend as its custom playback engine yields non-flat playback of tracks even if the classic "Stereo" playback option is selected. That paired with a lack of updates through 2021 excluded New Monaural from more thorough attention in the showcase.
 
@@ -249,12 +248,12 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/sathorn/id1447295899">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Sathorn received no attention of any kind this year, remaining the same poorly designed general-purpose player it was in 2021 and is thus not included in the showcase. If [Dot Music]'s issue was a lack of anything novel, Sathorn's issue is its numerous attempts and failures at doing so. It features a full-player with four different theme options, but each of them manage to look [unappealing](https://dropbox.barrowclift.me/assets/third-annual-ios-music-player-showcase/sathorn/player-composite.webp). It offers a button to change the sort order in the menu bar, but comically features a filter/sieve icon instead of the expected up/down sorting arrows icon. It has an accent color, but inconsistently applies it (in the mini-player, bewilderingly only the "Play" button uses the accent color, not the "Skip" button). While each of these issues taken in isolation is not particularly concerning, the sheer number of issues like these found throughout Sathorn make it difficult to recommend for anyone other than those looking for a case study in poor interface design.
 
@@ -301,12 +300,12 @@ Sathorn received no attention of any kind this year, remaining the same poorly d
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/songowl-music-player/id1492630850">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 SongOwl began life as a radical redesign for Cs Music 6. However, the redesign was *so* different that Cs Music's existing user base balked at the change and more or less pressured Mike Clay—SongOwl & Cs Music's developer—to [reverse course](https://twitter.com/CsMusicPlayer/status/1177628272617754624). And reverse course he did, deciding to release the original Cs Music 6 reesign as its own app entirely, SongOwl, and implement to a more traditional redesign for Cs Music 6, instead. The only question left hanging was whether or not either SongOwl or Cs Music would be considered the "darling" and receive the bulk of developer attention.
 
@@ -355,12 +354,12 @@ If [last year](/post/third-annual-ios-music-player-showcase/17) was the warning 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/Songpocket/id1538037231">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 All iOS music players fall broadly into one of two camps: they're either a general-purpose player for browsing your library by albums, artist, etc. or a niche player that forgoes traditional browsing for a more specific need. Aside from [Stezza], every niche player I've found puts an emphasis on albums and heavily features album art as a natural consequence or that focus. Songpocket does not.
 
@@ -413,12 +412,12 @@ If Songpocket's utilitarian design or unique ability to manually sort and group 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/soor/id1439731526">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 The general-purpose player Soor received a handful of bug patches this year, but unfortunately no minor or major releases (although the developer—Tanmay Sonawane—hinted in patch release notes that "exciting things" are indeed in the works, including an iPad version). As a result, the Soor available today is more or less the same as [last year](/post/third-annual-ios-music-player-showcase/18)'s, including all the existing bugs like the ability to lock yourself out of the app it you tap "Connect with Apple Music" without "Sync Library" enabled.
 
@@ -447,12 +446,12 @@ If you have an Apple Music subscription and have "Sync Library" enabled, Soor is
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/stezza-music-player/id590317007">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Stezza's a curious player whose focus is solely on providing the best possible interface for sightless use, such as when driving. To facilitate this, the full-player serves as the springboard for the entire app (much like [Vinyls] and [Vinyl Fetish]) and features comically massive buttons for play/pause, previous, and skip functions that can be blindly tapped with ease. These massive controls bring additional accessibility benefits as well for listeners who find it hard to tap the smaller tap targets typically used in other players.
 
@@ -501,12 +500,12 @@ While Stezza does the job it set for itself well, it hasn't seen any noteworthy 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/taptunes/id320145698">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 TapTunes is a [decade old](https://david-blundell.blogspot.com/2009/06/taptunes-and-music-trivia-submitted-to.html) niche player that focuses on providing unique visual ways to browse through your albums. Listeners familiar with [Longplay] may recognize a striking similarity in goals, but make no mistake: TapTunes is a vastly more feature-rich, robust, and engaging implementation of that vision, in no small part due to the sheer number of years behind it compared to the relatively young Longplay. Instead of just providing a single album grid with different sorting options like Longplay, TapTunes typically sorts randomly and provides a wild assortment of different display styles. There's "Scattered", which slowly animates all your albums spreading around the screen, as if you strewn your entire physical library onto the ground. Another noteworthy display style is "Stacked", which scrolls infinitely through a winding road of your library's albums at various shapes and sizes. Like with Longplay, this is all in an effort to facilitate library exploration and discovery, and works brilliantly to help inspire you to get out of and avoid musical ruts.
 
@@ -555,12 +554,12 @@ While TapTunes just received a major new 7.0 update at the very beginning of 202
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vinyls/id1556054655">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Vinyls is a delightful surprise this year that—as the name implies—focuses on providing a [skeuomorphic](https://en.wikipedia.org/wiki/Skeuomorph) vinyl record playback experience like [Vinyl Fetish]. Like Vinyl Fetish and [Stezza], the full-player itself serves as the launchpad for the entire app, and features a gorgeously rendered vinly record that spins and tonearm that follows along the groove as the track progresses. Despite the vinyl record visual candy on the full-player, Vinyls is surprisingly a general-purpose player; you can browse your library the usual way by songs, artists, etc. and unlike Vinyl Fetish can playback individual songs without issue. Functionally, the player is just like any other general-purpose player, but instead of displaying the album art in the full-player, Vinyls shows the faux vinyl record & tonearm. In actuality, this flexibility is to Vinyls' detriment, as this breaks the illusion and cheapens the vinyl record gimmick; for example, when playing an album, each song "completes" the faux vinyl record and visually resets the tonearm to the beginning for the next track. While this of course makes sense from a general-purpose player perspective, this flies in the face of the vinyl record player illusion. As a result, it's neither as good a vinyl record emulator as Vinyl Fetish due to not fully committing to the gimmick and not as good a general-purpose player as [Cs Music] and others that don't attempt halfheartedly integrating gimmicks like this that get in the way of general-purpose browsing and playback.
 
@@ -589,12 +588,12 @@ Unfortunately, the lack of ability to display large album art in the full-player
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vox-mp3-flac-music-player/id916215494">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 At first glance, VOX received a healthy number of minor and patch releases this year to earn it a spot in the showcase. However, upon closer inspection, the bulk of these releases are one of the following:
 

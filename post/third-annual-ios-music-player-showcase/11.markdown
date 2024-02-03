@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Music Player X"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "12"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/music-player-x-equalizer-amp/id1221701870">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Music Player X enjoyed sweeping changes in 2020, rivaling [Albums] in its scope. There doesn't appear to be a single view in Music Player X that didn't receive a cosmetic change or navigational refactor. It's a much needed and much appreciated effort; last year, Music Player X was disqualified for featuring what I considered to be an exceptionally poor custom UI, many of which violated [iOS's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/) or general user interface principles. However, I did appreciate its plentiful customization options and niche features like its sleep timer and in-app equalizer (though admittedly the sleep timer's interface is dreadful). This made Music Player X in 2019 feel like an aspirational music player let down by its implementation. I'm happy to say at the end of 2020 this no longer feels like the case, and Music Player X is now a respectable player that's earned its place among the others in the showcase, albeit with caveats.
 

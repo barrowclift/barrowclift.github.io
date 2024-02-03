@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - MPX EQ"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "5"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/mpx-equalizer-bass-booster/id1578646614">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 This year, Femi Oduntan surprised listeners with a major [Music Player X] release built from scratch with a brand new interface. In another surprise, he released this redesign not as a major update to Music Player X, but rather as a new app altogether called MPX EQ, making a clean break from the original Music Player X in the process. As a part of this release, Music Player X was also made entirely free and will presumably switch to maintenance mode for the rest of its shelf life. Needless to say, a lot's riding on MPX EQ's success.
 

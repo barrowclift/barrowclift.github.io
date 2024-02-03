@@ -4,20 +4,20 @@
 		<div class="edge-to-edge hero-banner">
 		<picture>
 		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.hero-banner }}.jpg">
+		  <img type="image/jpeg" title="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" alt="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.hero-banner }}.jpg">
 		</picture>
 		</div>
 		{% else %}
 		<div class="show-when-light edge-to-edge hero-banner">
 		<picture>
 		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.light-hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.light-hero-banner }}.jpg">
+		  <img type="image/jpeg" title="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" alt="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.light-hero-banner }}.jpg">
 		</picture>
 		</div>
 		<div class="show-when-dark edge-to-edge hero-banner">
 		<picture>
 		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.dark-hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.dark-hero-banner }}.jpg">
+		  <img type="image/jpeg" title="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" alt="{% if page.hero-banner-text %}{{ page.hero-banner-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.dark-hero-banner }}.jpg">
 		</picture>
 		</div>
 		{% endif %}
@@ -61,24 +61,5 @@
 
 	{{ content }}
 
-	{% if page.hide-footer != true %}
-		{% if page.next-page == null and page.has_afterward == false or page.has_afterward == null %}
-		<div id="article-linkback">
-			<a href="/">⌘</a>
-		</div>
-		{% endif %}
-		<script type="text/javascript">
-			$(document).ready(function() {
-			    if ($("article .footnotes")) {
-			    	$("#article-linkback").insertBefore($("article .footnotes").prev());
-			    }
-			});
-		</script>
-
-		{% if page.next-page == null %}
-		<footer>
-			{% include blog-footer-buttons.html %}
-		</footer>
-		{% endif %}
-	{% endif %}
+	{% include footer.html %}
 </article>

@@ -1,11 +1,11 @@
 ---
-layout: post
-hidden: true
+hide-footer: true
 title: "Fourth Annual iOS Music Player Showcase - Change Log"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-14 13:24:30-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -14,7 +14,6 @@ categories:
   - Music
   - Best Of
 start-page: "/post/fourth-annual-ios-music-player-showcase"
-hide-footer: true
 ---
 
 ## Change Log

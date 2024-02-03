@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Power Player"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -58,12 +57,12 @@ next-page: "16"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Power Player] is a bold and opinionated player hidden behind a deceptively simple exterior. While its structure is as approachable as general-purpose players come—in no small part due to its stock [iOS tab bar](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/)—its engaging "Home" view, dynamically colored album views, and gold-standard iPad experience elevate Power Player beyond its humble appearance to one of the finest players available.
 

@@ -3,16 +3,13 @@ layout: default
 extra-wide: true
 
 projects: true
-viewing_single_page: true
-anchors: true
 
 title: "Projects"
-projects-menu-active: true
 ---
 
 <style>
 .project-list {
-	padding-bottom: 5.4em;
+	padding-bottom: 3.9em;
 	padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
 }
@@ -27,7 +24,7 @@ main,
 	margin: 0;
 
 	display: block;
-	width: 100%
+	width: auto;
 	height: 100%;
 	margin-left: 4vw;
 	margin-right: 4vw;
@@ -105,7 +102,7 @@ main a:hover {
 	main,
 	.extra-wide-page main {
 		margin-top: 0;
-		padding-top: 5.4em !important;
+		padding-top: 6em !important;
 	}
 }
 /* Large devices (Macs) */
@@ -118,69 +115,56 @@ main a:hover {
 }
 </style>
 <div class="project-list">
+	<span class="hint--top hint--rounded hint--bounce" data-hint="The friendly music club blog & podcast">
+	<a class="project" href="https://badmusichertz.com" target="_blank">
+		<img class="foreground" src="images/bad-music-hertz/project-banner-top.png" />
+		<img class="background" src="images/bad-music-hertz/project-banner-bottom.jpg" alt="Bad Music Hertz: The friendly music club blog & podcast" />
+	</a>
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="Beautifully display your library on the Internet">
+	<a class="project" href="https://shelf.barrowclift.me">
+		<img class="foreground" src="images/shelf/project-banner-top.png" />
+		<img class="background" src="images/shelf/project-banner-bottom.png" alt="Shelf: Beautifully display your library on the Internet" />
+	</a>
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="Fair & balanced virtual Catan playing">
 	<a class="project" href="/projects/code/development-card-simulator/">
 		<picture class="foreground-1">
-			<source type="image/webp" srcset="/images/projects/code/development-card-simulator/project-banner-top-1.webp">
-			<img type="image/jpeg" alt="Development Card Simulator Banner" src="/images/projects/code/development-card-simulator/project-banner-top-1.png">
+			<source type="image/webp" srcset="images/development-card-simulator/project-banner-top-1.webp">
+			<img type="image/jpeg" alt="Development Card Simulator Banner" src="images/development-card-simulator/project-banner-top-1.png">
 		</picture>
 		<picture class="foreground-2">
-			<source type="image/webp" srcset="/images/projects/code/development-card-simulator/project-banner-top-2.webp">
-			<img type="image/jpeg" alt="Development Card Simulator Banner" src="/images/projects/code/development-card-simulator/project-banner-top-2.png">
+			<source type="image/webp" srcset="images/development-card-simulator/project-banner-top-2.webp">
+			<img type="image/jpeg" alt="Development Card Simulator Banner" src="images/development-card-simulator/project-banner-top-2.png">
 		</picture>
-		<img class="background" src="/images/projects/code/development-card-simulator/project-banner-bottom.jpg" alt="Development Card Simulator Banner" />
+		<img class="background" src="images/development-card-simulator/project-banner-bottom.jpg" alt="Development Card Simulator: Fair & balanced virtual Catan playing" />
 	</a>
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="Automatically hide stories by user, keyword, or site">
 	<a class="project" href="/projects/code/hacker-news-cleanser/">
-		<img class="foreground-1" src="/images/projects/code/hacker-news-cleanser/project-banner-top-1.png" alt="Hacker News Cleanser Banner" />
-		<img class="foreground-2" src="/images/projects/code/hacker-news-cleanser/project-banner-top-2.png" alt="Hacker News Cleanser Banner" />
-		<img class="background" src="/images/projects/code/hacker-news-cleanser/project-banner-bottom.png" alt="Hacker News Cleanser Banner" />
+		<img class="foreground-1" src="images/hacker-news-cleanser/project-banner-top-1.png" />
+		<img class="foreground-2" src="images/hacker-news-cleanser/project-banner-top-2.png" />
+		<img class="background" src="images/hacker-news-cleanser/project-banner-bottom.png" alt="Hacker News Cleanser: Automatically hide stories by user, keyword, or site" />
 	</a>
-	<a class="project" href="https://shelf.barrowclift.me">
-		<img class="foreground" src="/images/projects/code/shelf/project-banner-top.png" alt="Shelf Logo" />
-		<img class="background" src="/images/projects/code/shelf/project-banner-bottom.png" alt="Shelf Logo" />
-	</a>
-	<a class="project" href="https://barrowclift.me/marcdown/">
-		<img class="foreground-1" src="/images/projects/code/marcdown/project-banner-top-1.png" alt="Marcdown Logo" />
-		<img class="foreground-2" src="/images/projects/code/marcdown/project-banner-top-2.png" alt="Marcdown Logo" />
-		<img class="background" src="/images/projects/code/marcdown/project-banner-bottom.jpg" alt="Marcdown Logo" />
-	</a>
-	<a class="project" href="https://badmusichertz.com" target="_blank">
-		<img class="foreground" src="/images/projects/music/bad-music-hertz/project-banner-top.png" alt="Bad Music Hertz Blog Banner" />
-		<img class="background" src="/images/projects/music/bad-music-hertz/project-banner-bottom.jpg" alt="Bad Music Hertz Blog Banner" />
-	</a>
-	<!-- <a class="project" href="https://itunes.apple.com/us/podcast/bad-music-hertz/id1319023897?mt=2">
-		<img style="opacity: 0.97;" class="foreground-1" src="/images/projects/music/bad-music-hertz/podcast-project-banner-top-1.png" alt="Bad Music Hertz Podcast Banner" />
-		<img style="opacity: 0.5;" class="foreground-2" src="/images/projects/music/bad-music-hertz/podcast-project-banner-top-2.png" alt="Bad Music Hertz Podcast Banner" />
-		<img class="background" src="/images/projects/music/bad-music-hertz/podcast-project-banner-bottom.jpg" alt="Bad Music Hertz Podcast Banner" />
-	</a> -->
-	<a class="project" href="/divers/">
-		<img class="foreground" src="/divers/images/project-banner-top.png" alt="Divers Banner" />
-		<img class="background" src="/divers/images/project-banner-bottom.jpg" alt="Divers Banner" />
-	</a>
-	<a class="project" href="/projects/art/sketches/">
-		<img class="foreground" src="/images/projects/art/sketches/project-banner-top.png" alt="Sketches Banner" />
-		<img class="background" src="/images/projects/art/sketches/project-banner-bottom.jpg" alt="Sketches Banner" />
-	</a>
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="My take of the legendary album that never was">
 	<a class="project" href="/projects/music/smile-heroes-and-villains-mix/">
-		<img class="foreground" src="/images/projects/music/smile-heroes-and-villains-mix/project-banner-top.png" alt="SMiLE: Heroes and Villains Mix Banner" />
-		<img class="background" src="/images/projects/music/smile-heroes-and-villains-mix/project-banner-bottom.png" alt="SMiLE: Heroes and Villains Mix Banner" />
+		<img class="foreground" src="images/smile-heroes-and-villains-mix/project-banner-top.png" />
+		<img class="background" src="images/smile-heroes-and-villains-mix/project-banner-bottom.png" alt="SMiLE: Heroes & Villains Mix; My take of the legendary album that never was" />
 	</a>
-	<a class="project" href="/projects/art/iconography/">
-		<img class="foreground-1" src="/images/projects/art/iconography/project-banner-top-1.png" alt="Iconography Banner" />
-		<img class="foreground-2" src="/images/projects/art/iconography/project-banner-top-2.png" alt="Iconography Banner" />
-		<img class="background" src="/images/projects/art/iconography/project-banner-bottom.png" alt="Iconography Banner" />
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="My personal Markdown theme">
+	<a class="project" href="https://barrowclift.me/marcdown/">
+		<img class="foreground-1" src="images/marcdown/project-banner-top-1.png" />
+		<img class="foreground-2" src="images/marcdown/project-banner-top-2.png" />
+		<img class="background" src="images/marcdown/project-banner-bottom.jpg" alt="Marcdown: My personal Markdown theme" />
 	</a>
-	<a class="project" href="https://github.com/barrowclift" target="_blank">
-		<img class="foreground" src="/images/projects/code/github/project-banner-top.png" alt="Github Account Banner" />
-		<img class="background" src="/images/projects/code/github/project-banner-bottom.jpg" alt="Github Account Banner" />
-	</a>
-	<a class="project" href="https://lookatthatcloud.com">
-		<img class="foreground-1" src="/images/projects/code/lookatthatcloud/project-banner-top-1.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
-		<img class="foreground-2" src="/images/projects/code/lookatthatcloud/project-banner-top-2.png" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
-		<img class="background" src="/images/projects/code/lookatthatcloud/project-banner-bottom.jpg" alt="Look At That Cloud - Aimee & Chase Guarnaccio's Wedding Website Banner" />
-	</a>
+	</span>
+	<span class="hint--top hint--rounded hint--bounce" data-hint="Playing Tetris on a Philly skyscraper">
 	<a class="project" href="/projects/code/the-largest-video-game-ever-made/">
-		<img class="foreground-1" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-top-1.png" alt="The Largest Video Game Ever Made Banner" />
-		<img class="foreground-2" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-top-2.png" alt="The Largest Video Game Ever Made Banner" />
-		<img class="background" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-bottom.jpg" alt="The Largest Video Game Ever Made Banner" />
+		<img class="foreground-1" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-top-1.png" />
+		<img class="foreground-2" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-top-2.png" />
+		<img class="background" src="{{ site.dropbox }}/projects/code/largest-video-game-ever/project-banner-bottom.jpg" alt="Playing Tetris on a Philly skyscraper" />
 	</a>
+	</span>
 </div>

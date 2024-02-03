@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Music Player X"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "14"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/app/apple-store/id1221701870">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Music Player X—among one of the more curious players in the yearly showcase—is in even more of an usual position this year. In years past, its quirkiness came from its completely custom, [brutalist](https://onextrapixel.com/brutalist-web-design-trend/) interface, which practically bursts at the seams with chaotic but charming personality. However, this past year it's unusual particularly because its successor—[MPX EQ]—was officially released and Music Player X made 100% free. That's right, at least at the time of writing, you can newly download both Music Player X and its replacement right alongside one another. While it's entirely possible Femi Oduntan—the single developer behind both—intends to continue maintaining both for the foreseeable future like Mike does with [Cs Music] and [SongOwl], I can't help but look at this as the formal, graceful deprecation of Music Player X to give customers time to transition to the new version.
 

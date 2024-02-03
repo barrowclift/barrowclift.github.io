@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.flex == true %}flex{% endif %} {% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
 	
+<!--
+The standard website layout. Includes all the site's standard chrome.
+
+Settings:
+  flex (bool): Enable or disable flexbox. Defaults to "false"
+
+Currently used for:
+  /
+  /404
+  /post/
+  /about/
+  /about/shoutouts/
+  /archive/
+  /articles/
+  /contact/
+  /projects/
+-->
+
 	{% include head.html %}
 
-	<body class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.enforce-dark-mode == true %}enforce-dark-mode{% endif %}">
-		{% include lazy-load-stylesheets.html %}
-
+	<body>
 		{% if page.backdrop-image %}
 		<style>
 			.backdrop {
@@ -28,17 +44,31 @@
 			}
 		</style>
 		{% endif %}
+		{% if page.url contains '/post/' or page.dir contains '/obsolete/' %}
+		<style>
+		@media (min-width: 700px) {
+			.float-menu-for-hiding menu.hide-for-small-device,
+			menu.hide-for-medium-and-larger-devices {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+		</style>
+		{% endif %}
 		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
 
 		<div id="wrap">
-			<div id="content" class="center {% if page.viewing_single_page != true %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
+			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
 				{% include menu.html %}
 				<main>
+					{% if page.url contains '/post/' or page.dir contains '/obsolete/' %}
+					{% include article.html %}
+					{% else %}
 					{{ content }}
+					{% include footer.html %}
+					{% endif %}
 				</main>
 			</div>
 		</div>
-
-		{% include footer.html %}
 	</body>
 </html>

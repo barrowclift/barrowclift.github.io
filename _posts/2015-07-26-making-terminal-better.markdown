@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Making Terminal Better"
 date: 2015-07-26 23:38:18
-excerpt: "Most developers can agree Terminal is great for productivity. Usability? Not so much. Here's some quick tips to help humanize the grandfather of the GUI on OS X."
+excerpt: |
+  Most developers can agree Terminal is great for productivity. Usability? Not so much. Here’s some quick tips to help humanize the grandfather of the GUI on OS X.
 image: "making-terminal-better/banner-image.png"
 categories:
   - Technology

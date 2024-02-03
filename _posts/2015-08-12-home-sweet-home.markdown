@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Home Sweet Home"
 date: 2015-08-13 2:35:33
 categories:
@@ -7,7 +6,8 @@ categories:
   - iOS
   - Home Screen
   - Organization
-excerpt: "It's about time you get yourself the beautiful and efficient iPhone home screen you deserve."
+excerpt: |
+  It’s about time you get yourself the beautiful and efficient iPhone home screen you deserve.
 image: "home-sweet-home/share-image.jpg"
 ---
 

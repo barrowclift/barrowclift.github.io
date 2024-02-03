@@ -12,9 +12,9 @@
 			</header>
 		</a>
 		<ul>
-			<li><a class="{%if page.writings-menu-active or page.layout == 'post' or page.layout == 'post-parallax-image' %}active{% endif %}" href="/articles/">Articles</a></li>
-			<li><a class="{%if page.projects-menu-active %}active{% endif %}" href="/projects/">Projects</a></li>
-			<li class="contact"><a class="{%if page.contact-menu-active %}active{% endif %}" href="/contact/">Contact</a></li>
+			<li><a class="{% if page.dir contains '/articles/' or page.url contains '/post/' or page.dir contains '/archive/' or page.dir contains '/obsolete/' %}active{% endif %}" href="/articles/">Articles</a></li>
+			<li><a class="{% if page.dir contains '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
+			<li class="contact"><a class="{% if page.dir contains '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
 			<li class="setting-toggles show-when-small" id="settings-toggle">
 				<noscript>
 					{% if page.layout == "post" %}
@@ -51,7 +51,7 @@
 	{% if page.hide-settings != true %}
 	<!-- https://stackoverflow.com/questions/23072351/css-box-with-arrow-and-shadow -->
 	<div class="popup" id="settings-popup">
-		{% if page.enforce-dark-mode != true %}
+		{% if page.force-dark-mode != true %}
 		<div id="dark-mode-settings" class="group">
 			<label>Appearance:</label>
 			<ul class="colors">

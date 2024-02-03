@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - VOX"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -33,12 +32,12 @@ next-page: "20"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vox-mp3-flac-music-player/id916215494">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 VOX is less "music player" than "delivery vehicle" for its company, [Coppertino](https://vox.rocks/coppertino-team), to upsell users to its ["VOX Premium"](https://vox.rocks/vox-player-premium) service. Ads beaconing users to sign up litter the app, deeply cheapening the experience. I said not much more than that [last year](https://barrowclift.me/post/second-annual-ios-music-player-competition#--vox) and quickly deemed VOX my least favorite player, but this year I want to take my time to properly take apart VOX's problems, which run far deeper than its cheap surface.
 

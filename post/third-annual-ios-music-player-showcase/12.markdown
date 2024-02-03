@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Music.app"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -51,7 +50,7 @@ I tend to give [Music.app](https://www.apple.com/music/) a hard time; while its 
 
 Leading up to [iOS 14](http://web.archive.org/web/20200920101828/https://www.apple.com/ios/ios-14/)'s release, I heard whispers that the betas included my number-one requested feature for the lava lamp visualizer to be *officially* accessible in the player view. Of all iOS 14 features, I was most eager to see this one for myself. The minute the upgrade completed, I rushed to Music.app, started playing a song, and was greeted with...
 
-<figure class="two-images ios-screenshot">
+<div class="two-images ios-screenshot">
 <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
     <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.webm" type="video/webm">
@@ -65,7 +64,7 @@ Leading up to [iOS 14](http://web.archive.org/web/20200920101828/https://www.app
     [HTML5 video tag not supported by your browser]
 </video>
 <figcaption>The new effect’s on the left, which is seen on the player and “regular” lyrics view. The original effect’s on the right, now viewable only for “live” lyrics on select Apple Music tracks. The playback speed’s increased to help demonstrate the effect over time.</figcaption>
-</figure>
+</div>
 
 ... a disaster. The rumors that my beloved visualizer will now accessible in the player view were gravely mistaken; it is **not** the same effect, in fact it's demonstrably worse. While at first glance the new effect in the player view seems similar to the original from [iOS 13](http://web.archive.org/web/20190922153545/https://www.apple.com/ios/ios-13/), iOS 14 now aggressively smudges the effect, which blends the previously distinct colors into a disgusting, sludgy stew. Take an extreme example like [Paul McCarney & Wings](https://music.apple.com/us/artist/paul-mccartney-wings/254653827)' [*Wingspan*](https://music.apple.com/us/album/wingspan-hits-and-history/1440940231) compilation, which cleanly features just two stark colors (neon yellow and navy blue). Included above are two recordings of Music.app playing a song from that record: the first showcasing the new iOS 14 visualizer, and the second showcasing the original iOS 13 visualizer, which can still be seen on iOS 14 for "live" lyrics only[^realtime-lyrics]. To make matters worse, the [iOS 13 bug](https://barrowclift.me/post/second-annual-ios-music-player-competition#--musicapp) that allowed users to access the visualizer on the player view despite the lack of official support no longer works in iOS 14, the new visualizer continues to be displayed instead of the original.
 

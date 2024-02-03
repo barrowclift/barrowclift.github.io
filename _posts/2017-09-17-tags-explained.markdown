@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Tags Explained"
 date: 2017-09-18 1:46:52
 categories:
   - Technology
   - Organization
   - macOS
-excerpt: "I couldn't help but wonder just what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn't?"
+excerpt: |
+  I couldn’t help but wonder just what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn’t?
 image: "tags-explained/share-image.jpg"
 ---
 
@@ -48,7 +48,7 @@ As demonstrated in the scenario above, while folder hierarchies certainly have t
 
 However, if we use tags instead, our situation quickly improves. There's no need for a whole new directory level and duplicate files, you can simply add as many tags as you want to describe all the strengths any particular page has. This lets you easily search for *any* tag combination. From the earlier example, you'd only have to search `Tag:Professional, Tag:Colorful, Tag:Typography` and all archived pages that contain the subset of those three tags will be displayed.
 
-<figure markdown="1" class="edge-to-edge medium macos-window-screenshot">
+<div markdown="1" class="edge-to-edge medium macos-window-screenshot">
 <p>
 <video controls preload="none" poster="{{ site.dropbox }}/tags-explained/tag-searching-poster.jpg" alt="A video of a macOS Finder window containing a folder filled with tagged web pages. The video depicts a user searching for web pages by the tags 'Professional', 'Colorful' and 'Typography'">
 	<source src="{{ site.dropbox }}/tags-explained/tag-searching.mp4" type="video/mp4">
@@ -57,15 +57,15 @@ However, if we use tags instead, our situation quickly improves. There's no need
 	[HTML5 video tag not supported by your browser]
 </video>
 </p>
-</figure>
+</div>
 
 The scenario we've walked through exposes the core truth that folders are specifically designed to organize files with clearly defined, inherit hierarchies. When that hierarchy isn't clear or doesn't exist&mdash;like in the scenario above&mdash;the system falls apart.
 
 In contrast, tags are built for the explicit purpose of being able to handle situations where there is no obvious hierarchy. Since the design strengths in the scenario are "flat" properties, tags are the perfect system to represent them. In fact, some apps already utilize their own tagging systems over folders for this very reason, like [Photos](#TODO) and the [Bear Writer](http://www.bear-writer.com) notes app[^photo-organization].
 
-<figure markdown="1" class="edge-to-edge medium">
+<div markdown="1" class="edge-to-edge medium">
 ![A sketch showing the file duplicates required to get the same organizational result with Folders, compared to Tags where no duplicates are necessary]({{ site.dropbox }}/tags-explained/folders-vs-tags-sketch.png)
-</figure>
+</div>
 
 That's all well and good, but how do you know when to use tags instead of folders in your day-to-day life? After all, whether or not your information is hierarchical in nature isn't exactly obvious. To help with this task, there's a fantastic little trick you can use to quickly determine whether or not tags should be used instead of folders: __If you find yourself duplicating folders or files during organization, use tags instead__. Take the scenario from above; if using folders, there would have been duplicate "design strength" folders like "Colorful" within each "page type" folder, as well as page duplicates in each appropriate "design strength" folder. We have found ourselves making many duplicates, so tags should be considered instead.
 

@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Dot Music"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "8"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Among the few new players introduced this year is [Dot Music], an incredibly simple, general-purpose player. Much like [Picky] and [Cs 5], it leverages a "no-nonsense" interface that's strongly reminiscent of [iOS 6's Music.app](https://www.macworld.com/article/2009048/hands-on-with-ios-6-music.html), but in this case provides little else novel beyond that. 
 

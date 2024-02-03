@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-15 11:17:17-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
-light-hero-banner: "fourth-annual-ios-music-player-showcase/light-banner"
-dark-hero-banner: "fourth-annual-ios-music-player-showcase/dark-banner"
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -15,8 +13,10 @@ categories:
   - Best Of
 timelocked: true
 force-early-timelock: true
+light-hero-banner: "fourth-annual-ios-music-player-showcase/light-banner"
 light-background-color: "#D4D3C8"
 light-foreground-color: "#394122"
+dark-hero-banner: "fourth-annual-ios-music-player-showcase/dark-banner"
 dark-background-color: "#394122"
 dark-foreground-color: "#D4D3C8"
 next-page: "/post/fourth-annual-ios-music-player-showcase/2"

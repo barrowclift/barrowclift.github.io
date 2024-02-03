@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Doppi"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "6"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppi/id1002899671">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Doppi is a sheer delight; thanks to its silky-smooth animations, gorgeous custom interface, and healthy number of customization options despite the [old "simple player" tagline](http://web.archive.org/web/20200114013536if_/https://apps.apple.com/us/app/doppi/id1002899671), no other player held a candle to Doppi's user experience [last year](/post/second-annual-ios-music-player-competition#--doppi). I'm pleased to report that remains the case this year as well thanks to the introduction of marvelous new features and a brand new player view design; Doppi remains one of the finest general-purpose players available.
 

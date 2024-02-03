@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Mixtapes"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "4"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/mixtapes-music-player/id1571885606">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Mixtapes is a new general-purpose player built by [Jake Nelson](https://twitter.com/jknlsn) that dropped late September at the tail end of 2021, and despite its young age already boasts a comprehensive and novel playlist and queue-focused experience. In spite of the third-party music player market's maturity, the concept of "smart" playlists remains rare; to date, the only players that provide a flavor of this capability are [Marvis Pro], [Albums], and [Soor](https://soor.app)[^apple-dropped-the-ball]. It comes as a suprise then to not only see a new player launch boasting this capacity front and center in its marketing and branding, but also to see this relatively complex capability launch right out of the gate in its first version. Even features that didn't make the cut for initial release have since been added in subsequent minor updates, such as full Apple Music support. However, to properly discuss Mixtapes, we need to first step back and take stock of the player holistically.
 

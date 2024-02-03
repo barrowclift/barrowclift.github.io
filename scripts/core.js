@@ -11,21 +11,6 @@ $.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symb
 /* jquery.cookie v1.4.1 | MIT */
 !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=/\+/g,h=a.cookie=function(e,g,i){if(void 0!==g&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setTime(+k+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e&&e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});
 
-/* We can have nice translucency effects in Safari, enable them if using Safari */
-var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
-var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-var is_ios_safari = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
-var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
-if ((is_chrome)&&(is_safari)) {is_safari=false;}
-if ((is_chrome)&&(is_opera)) {is_chrome=false;}
-if (is_safari || is_ios_safari) {
-	document.getElementsByTagName("html")[0].setAttribute("class", "safari");
-} else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
-	document.getElementsByTagName("html")[0].setAttribute("class", "firefox");
-} else if (!is_safari && !is_ios_safari && !is_opera && is_chrome) {
-	document.getElementsByTagName("html")[0].setAttribute("class", "chrome");
-}
-
 function changeAppearance(appearance) {
 	$(".color-well.light").removeClass("active");
 	$(".color-well.dark").removeClass("active");
@@ -69,7 +54,7 @@ function settingsToggled() {
 }
 
 function changeAccentColor(color) {
-	if (!$("body").hasClass("ignore-accent-color") && !$("html").hasClass(color)) {
+	if (!$("html").hasClass("ignore-accent-color") && !$("html").hasClass(color)) {
 		$("html").removeClass("blue");
 		$("html").removeClass("red");
 		$("html").removeClass("orange");
@@ -140,15 +125,27 @@ function updateThemeColor(a_accentColor) {
 	} else {
 		document.querySelector("meta#light-base-theme-color").setAttribute("content", lightBaseThemeColor);
 	}
+	// TODO THE SETTING HERE ISN'T RIGHT, check hacker news in system dark mode and play around with site theme,m,m,m
 	let darkOverride = document.querySelector("meta#override-dark-base-theme-color");
 	let lightOverride = document.querySelector("meta#override-light-base-theme-color");
+	var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 	if (lightOverride && darkOverride) {
-		if (darkModeCookie === "auto" || darkModeCookie === "off") {
-			lightOverride.setAttribute("content", lightBaseThemeColorOverride);
-			darkOverride.setAttribute("content", darkBaseThemeColorOverride);
+		if (inSystemDarkMode) {
+			if (darkModeCookie === "off") {
+				lightOverride.setAttribute("content", darkBaseThemeColorOverride);
+				darkOverride.setAttribute("content", lightBaseThemeColorOverride);
+			} else if (darkModeCookie === "on" || (darkModeCookie === "auto" && inSystemDarkMode)) {
+				lightOverride.setAttribute("content", lightBaseThemeColorOverride);
+				darkOverride.setAttribute("content", darkBaseThemeColorOverride);
+			}
 		} else {
-			lightOverride.setAttribute("content", darkBaseThemeColorOverride);
-			darkOverride.setAttribute("content", lightBaseThemeColorOverride);
+			if (darkModeCookie === "off" || (darkModeCookie === "auto" && !inSystemDarkMode)) {
+				lightOverride.setAttribute("content", lightBaseThemeColorOverride);
+				darkOverride.setAttribute("content", darkBaseThemeColorOverride);
+			} else if (darkModeCookie === "on") {
+				lightOverride.setAttribute("content", darkBaseThemeColorOverride);
+				darkOverride.setAttribute("content", lightBaseThemeColorOverride);
+			}
 		}
 	}
 }
@@ -165,7 +162,13 @@ $(document).ready(function() {
 
 	var cachedDarkModeSetting = $.cookie("dark-mode");
 	var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	window.matchMedia('(prefers-color-scheme: dark)').addListener(changeAppearance);
+	window.matchMedia('(prefers-color-scheme: dark)').addListener(() => {
+		var pageForcesDarkMode = document.getElementsByTagName("html")[0].classList.contains("force-dark-mode");
+		var userPrefersAutoTheme = $.cookie("dark-mode") == "auto";
+		if (!pageForcesDarkMode && userPrefersAutoTheme) {
+			changeAppearance("auto");
+		}
+	});
 	if ("on" == cachedDarkModeSetting) {
 		document.getElementsByTagName("html")[0].setAttribute("id", "dark");
 		$('#logo-speech-bubble').text("Stay cool, dude.");
@@ -184,8 +187,16 @@ $(document).ready(function() {
 	}
 	updateThemeColor();
 
-	if ($.cookie("accent-color") && !document.getElementsByTagName("body")[0].classList.contains("ignore-accent-color")) {
-		document.getElementsByTagName("html")[0].className += " " + $.cookie("accent-color");
+	if (document.getElementsByTagName("html")[0].classList.contains("ignore-accent-color")) {
+		$("html").removeClass("blue");
+		$("html").removeClass("red");
+		$("html").removeClass("orange");
+		$("html").removeClass("yellow");
+		$("html").removeClass("green");
+		$("html").removeClass("purple");
+		$("html").removeClass("pink");
+	}
+	if ($.cookie("accent-color") && !document.getElementsByTagName("html")[0].classList.contains("ignore-accent-color")) {
 		$(".color-well." + $.cookie("accent-color")).addClass("active");
 	} else {
 		$(".color-well.blue").addClass("active");

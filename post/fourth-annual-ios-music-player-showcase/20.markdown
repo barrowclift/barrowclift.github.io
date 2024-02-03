@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Conclusion"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -13,7 +12,7 @@ categories:
   - Music
 start-page: "/post/fourth-annual-ios-music-player-showcase"
 prev-page: "19"
-has_afterward: true
+has-afterward: true
 ---
 
 ## Conclusion
@@ -23,7 +22,7 @@ As the music player genre continues to mature and grow, so does the options avai
 To put it lightly, 2021 was a wild ride, and it's proving increasingly difficult to predict what the new year will bring. However, if this yearly assessment of the music player landscape has taught me anything, it's that I know for certain what we can expect in 2022; the music player ecosystem will continue to thrive. Happy listening into 2022, everyone!
 
 <div class="article-linkback">
-  <a href="/">⌘</a>
+  <a href="/about">⌘</a>
 </div>
 
 ------

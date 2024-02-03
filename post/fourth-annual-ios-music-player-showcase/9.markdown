@@ -1,11 +1,10 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Doppler"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-12 19:57:27-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -51,12 +50,12 @@ next-page: "10"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppler-mp3-flac-player/id1468459747">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 When narrowly observing Doppler as "just" an iOS music player, it's easy to lose the forest in the trees. What you'll immediately notice its custom, permanently dark visuals and singular "Library" tab like in [Music.app]. You may also notice its prominent first-class independent library management, which earned a coveted spot as the "Import" tab in the tab bar. These critical design choices and many others like it certainly differentiate Doppler from being considered a traditional player like [Power Player] or [Cs Music], but at the same time it's purposefully not as radical a departure as to be considered niche like [Albums] or [Vinyl Fetish], situating Doppler squarely in a strange twilight zone between the two.
 

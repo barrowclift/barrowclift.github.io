@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fearful Computing"
 date: 2015-07-16 2:38:58
 categories:
@@ -10,7 +9,8 @@ categories:
   - Pokémon
   - Stories
   - Best Of
-excerpt: "Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window."
+excerpt: |
+  Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window.
 image: "fearful-computing/share-image.jpg"
 background-color: "#1279cf"
 foreground-color: "#FCFCFC"
@@ -43,7 +43,7 @@ The Cause
 
 Why does such a thing happen? How could we let something like this dictate our actions for so long? Well let me assure you that once again the fault for these feelings of discomfort and bad experiences lies squarely on the developers and designers behind these systems and applications we interact with. __These poor experiences are never your fault. Ever__.
 
-<figure markdown="1" class="edge-to-edge medium">
+<figure markdown="1" class="edge-to-edge medium shadow">
 ![Typical Windows desktop, lots of app icons everywhere]({{ site.dropbox }}/fearful-computing/windows-desktop.jpg)
 <figcaption>
 This is the equivalent of the college professor who keeps every paper they own on their desk, also known as the default Windows experience
@@ -61,7 +61,7 @@ Let's play "guess what you have to double click to run your app"
 
 And what of apps themselves? There's two application folders both with frightening and confusing names to normal users. What's "x86" mean[^x86]? Is "Program Files" files used by programs or programs themselves? Should I save my app to one of them? Which one? Even if a user can somehow guess their way through that mess even launching apps themselves is a disaster. Most Windows "apps" are actually just folders with a bunch of the applications resources and source files strewn about with a few .exe files, one of which is the one you're *actually* supposed to double click to launch the app (common apps guilty of the practice are Google Chrome, Notepad++, and Skype to name a few). Microsoft has tried to alleviate this by allowing app launching from the Start Menu but the messy implementation is still right there in plain view for everyone to stumble into and see. It's design like this that has scared the majority of desktop PC users away from the file system for years and makes them uncomfortable saving or accessing any file, folder, or application that isn't on their desktop.
 
-<figure markdown="1" class="edge-to-edge medium">
+<figure markdown="1" class="edge-to-edge medium shadow">
 ![Typical OS X desktop experience, desktop is clean of icons]({{ site.dropbox }}/fearful-computing/os-x-desktop.jpg "Amazing what some design competency can do, right?")
 <figcaption>
 No desktop shortcuts by default and apps are lovely, launchable, secret folders.

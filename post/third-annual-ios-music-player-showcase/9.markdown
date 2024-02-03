@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Longplay"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "10"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/longplay/id1495152002">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Longplay is not only a newcomer this year, but is also among one of the few that's not a general-purpose player. Like [Jams on Toast] and [Albums] before it, Longplay focuses on delivering a non-traditional, album-centric experience. Upon launching the app for the first time, you'll be greeted by a massive album wall strongly reminiscent of the one found in Albums. Like in Albums, tapping any particular record in this wall will immediately begin playing the entire album. However, unlike both Jams on Toast and Albums, instead of launching a dedicated player view, navigation entirely remains on the wall; you'll instead see the playing record's album art enlarge, gain a border colored to match the album art, and a teeny play/pause button appear in the bottom right of the record. While the currently playing album doesn't stretch the width of the screen by default, there is a setting to enable "Large" album art, allowing Longplay to just barely miss disqualification and meet the 2020 players list.
 

@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Plum"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "15"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I somehow managed to miss the delightfully named [Plum] the past couple years, originally releasing all the way back at the start of 2018. It's a general-purpose player with a twist; instead of presenting its standard browse views ("Albums", "Artists", etc.) in a tab bar or left-side [hamburger menu](https://www.computerhope.com/jargon/h/hamburger-menu.htm) like nearly every other player, it hides these views in a hamburger menu at the *bottom* of the screen. While this is simply UI salad dressing and doesn't change the fact the app is functionally another general-purpose experience, it does wonders for making Plum stand out among its peers.
 

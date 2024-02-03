@@ -989,18 +989,18 @@ mark.tag.yellow {
 
 #dark.yellow button,
 #dark.yellow .button {
-    background-color: hsl(50, 100%, 52%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(50, 100%, 52%, 0.2);
+    background-color: hsl(50, 100%, 44%);
+    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(50, 100%, 44%, 0.2);
 }
     #dark.yellow button:hover,
     #dark.yellow .button:hover {
-        background-color: hsl(50, 100%, 57%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(50, 100%, 47%, 0.375);
+        background-color: hsl(50, 100%, 49%) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(50, 100%, 39%, 0.375);
     }
     #dark.yellow button:active,
     #dark.yellow .button:active {
-        background-color: hsl(50, 100%, 47%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(50, 100%, 47%, 0.2);
+        background-color: hsl(50, 100%, 39%) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(50, 100%, 39%, 0.2);
     }
 #dark.yellow button.bigfoot-footnote__button,
 #dark.yellow button.pill {

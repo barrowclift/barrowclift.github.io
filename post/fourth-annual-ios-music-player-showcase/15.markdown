@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Picky"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "16"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Inherently, general-purpose players share more similarities with each other than niche players do with each other. All general-purpose players feature a design focused on browsing the classic ways like "Artists", "Albums", "Songs", etc., feature a full-player, and maybe a few settings or a special "Home" discovery page if you're lucky. Within that framework, there's indeed a tremendous amount of variability, but by design not nearly as much as between any two niche players, which more or less do *whatever they want* at the intentional sacrifice of providing general-purpose functionality. Not so with Picky; Picky remains one of the few general-purpose players that offers a unique spin on the otherwise traditional tab bar browser design.
 

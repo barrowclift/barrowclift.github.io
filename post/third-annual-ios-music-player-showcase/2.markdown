@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Honorable Mentions"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -63,12 +62,12 @@ Like [last year](/post/second-annual-ios-music-player-competition), not all play
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/ecoute/id536882653">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Unfortunately, [Ecoute] is exactly the same as it was last year. It barely received any maintenance updates in 2019, but this year it didn't receive any. For an app once considered by many to be [the best third-party music player](https://www.macstories.net/reviews/ecoute-is-the-best-music-player-for-ios-period/) in the early days of iOS, it's saddening to see it languish like this. A growing list of peers possess—and often surpass—its once-unique qualities like its beautiful, translucent player view design and tab bar-free navigation. The genre's also matured over the many years; Ecoute's slim feature set is now considered table-stakes for newcomers like [Plum] and [SongOwl]. 
 
@@ -103,12 +102,12 @@ To be clear, despite a humerous ["definitely maybe"](https://twitter.com/Barbapa
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/jams-on-toast-music-player/id1303194454">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Another year come and gone, yet [Jams on Toast] remains one-of-a-kind for its [cover flow](https://en.wikipedia.org/wiki/Cover_Flow)-inspired navigation, intended to emulate sifting through physical [record crates](https://duckduckgo.com/?q=record+crate&iax=images&ia=images#). It's genuinely impressive Jams on Toast not only continues to remain unique in this respect, but also manages to avoid regressions from the many iOS releases since its original release back in [late 2017](http://web.archive.org/web/20171229114606/http://www.jamsontoast.com/); Jams On Toast has not seen even a single update or patch, yet continues to function exactly as advertised on iOS 14.
 
@@ -157,12 +156,12 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/new-monaural/id1439882679">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [New Monaural] is the reason behind my only new deal-breaker addition this year. By nearly every measure, New Monaural is a great player; it sports an album grid view, a "Recently Played" collection, dynamic album art themes like [Doppler 2] and [Power Player], and many more qualities that would otherwise earn it proper coverage this year. What went wrong?
 
@@ -191,12 +190,12 @@ As the name implies, New Monaural supports a suite of mono-focused features whic
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/stezza-music-player/id590317007">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Like [New Monaural], [Stezza] is designed with a clear focus in mind; while New Monaural aims to improve the listening experience for mono listeners, Stezza aims to make the best possible music player for the car. This mission statement is most clearly demonstrated in its player view, which features massive buttons you'd have no trouble blindly tapping. While I do take issue with its premise (you shouldn't fiddle with your phone while driving regardless of how accessible the interface is), I'd argue many of us have paused or skipped tracks while driving at some point, anyway. Given people are unfortunately going to do things like this despite the danger, one could argue efforts to make that interaction as effortless and distration-free as possible are a good thing.
 
@@ -245,12 +244,12 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/taptunes/id320145698">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Long before [Albums], [Jams On Toast], and [Longplay] entered the fray with album-focused designs, [TapTunes] was there. Despite [over ten years](https://david-blundell.blogspot.com/2009/06/taptunes-and-music-trivia-submitted-to.html) on the App Store, [David Blundell](https://www.blogger.com/profile/10382410144960812891)—TapTunes' developer—continued to demonstrate dedication to the product with its many feature and maintenance releases through the years.
 

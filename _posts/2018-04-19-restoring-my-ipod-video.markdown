@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Restoring my iPod Video"
 date: 2018-04-20 2:17:05
 categories:
@@ -7,7 +6,8 @@ categories:
   - Repair
   - iPod
   - Stories
-excerpt: "The day I got my iPod Touch, I retired my iPod Video to the great \"old electronics\" drawer in the sky and didn't look back. Until last month, that is."
+excerpt: |
+  The day I got my iPod Touch, I retired my iPod Video to the great “old electronics” drawer in the sky and didn’t look back. Until last month, that is.
 image: "restoring-my-ipod-video/share-image.jpg"
 ---
 
@@ -99,11 +99,11 @@ The restoration didn't only include a brand new shell and buttons to get back th
 
 While I'm pleased with the final product itself, I haven't been able to shake a feeling of melencholy I picked up from one particular replacement part I received. The reseller that supplied me various components for the repair sells the audio jack still attached to the original back casing of the iPod it came from (after all, why waste time taking it out if nobody wants to buy a used, scratched-up back plate?). As I was doing to repair, I found this etched on the back of the casing that was sent with mine.
 
-<figure markdown="1" class="edge-to-edge small shadow">
+<div markdown="1" class="edge-to-edge small shadow">
 <a href="{{ site.dropbox }}/restoring-my-ipod-video/originals/norman-and-cara.jpg">
 ![The back plate of one of the replacement parts I ordered with the etching "Love always and forever / Norman and Cara"]({{ site.dropbox }}/restoring-my-ipod-video/jpg/norman-and-cara.jpg)
 </a>
-</figure>
+</div>
 
 It was a cold reminder the iPod I was greedily [scavenging like a Jawa](https://getyarn.io/yarn-clip/00cc6acb-c63f-42b1-b552-102c16166f75) once belonged to someone, and in this case was a loving gift (and remember, an *expensive* gift at the time). While I finished up the repair, my mind kept returning to that note. Who were Norman and Cara? Who was the recipient of such a fine gift, and for what occasion? Did the recipient forget it was a special present from them when they sold it? Did they pass on? Or, did they only care about the iPod while it was relevant and threw it away the minute next year's model came? Call me cynical, but I'd guess the latter.
 

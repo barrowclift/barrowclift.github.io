@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Articles"
-anchors: false
-writings-menu-active: true
 ---
 
 <style>
@@ -21,19 +19,7 @@ sup[id^=fnref] {
 
 	<article>
 		{% include article-header.html %}
-		{% if post.banner-image %}
-		<figure>
-			<p>
-				{% if post.banner-link %}
-				<a href="{{ post.banner-link }}" {% if post.banner-hover %}title="{{ post.banner-hover }}"{% endif %}>
-					<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
-				</a>
-				{% else %}
-				<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
-				{% endif %}
-			</p>
-		</figure>
-		{% elsif post.hero-banner or post.light-hero-banner or post.dark-hero-banner %}
+		{% if post.hero-banner or post.light-hero-banner or post.dark-hero-banner %}
 			{% if post.hero-banner %}
 			<div class="edge-to-edge small shadow">
 			<p>
@@ -76,17 +62,3 @@ sup[id^=fnref] {
 	</article>
 	{% assign count=count | plus:1 %}
 {% endfor %}
-
-<hr>
-
-<footer>
-	<h4 style="text-align:center;">
-		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}">More Articles →</a>
-		{% else %}
-		<span class="weak">No more articles, sorry!</span>
-		{% endif %}
-	</h4>
-</footer>
-
-{% include blog-footer-buttons.html %}

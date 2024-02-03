@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Cs"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -59,12 +58,12 @@ next-page: "5"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/cs-classic-music-player/id924491991">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Following a [tumultuous development cycle last year](/post/second-annual-ios-music-player-competition#--cs), Cs 6 is now finally available. This comes as quite the surprise to me; for those unaware, what was originally intended to be Cs 6 nearly released back in 2019. During its public beta, Cs's devoted userbase panned its radical redesign and new customization features. The beta's backlash was so severe it forced Cs's developer—[Mike Clay](https://twitter.com/CsMusicPlayer)—to [backpedal](https://twitter.com/CsMusicPlayer/status/1177628272617754624), redevelop the Cs 6 update from scratch, and spin off the bounced Cs 6 beta as a brand new music player called [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850). As a fan of the Cs 6 beta, this left me worried about Cs's future; I predicted this spinoff player would remain Mike's focus, leaving Cs in mere maintenance mode forever catering to that vocal segment of its user base.
 

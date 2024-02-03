@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Albums"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "7"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Few iOS music players available today pour more care and attention into the album browsing and playback experience than Albums. Despite only two short years passing since [its charming but shaky initial release](/post/second-annual-ios-music-player-competition#--albums), Adam Linder—Albums' developer—released a blistering and alarming rate of new features, UI enhancements, and bug fixes that makes Albums today one of if not arguably *the* definitive album-focused player on the market. There's two primary ways Albums strives to earn this title: its gold-standard album browsing feature set and its album-focused playback experience.
 

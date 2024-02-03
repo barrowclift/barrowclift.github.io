@@ -1,22 +1,14 @@
 ---
-layout: post-parallax-image
 title: "Deep Blue"
-foreground-color: "#BEC5C9"
-primary-color: "#91C0F2"
-background-color: "#030504"
-theme-color-light: "#000000"
-theme-color-dark: "#000000"
 date: 2015-07-18 21:13:39
 categories:
   - Technology
   - Apps
   - Health
-excerpt: "Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it's no coincidence."
-banner-image: "/deep-blue/blue-light-laptop.jpg"
-banner-image-small: "/deep-blue/blue-light-laptop@small.jpg"
-banner-link: "https://www.youtube.com/watch?v=cDIRT_NEMxo"
-banner-alt: "Laptop backlight glowing brightly in a dark room"
-banner-hover: "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me."
+excerpt: |
+  Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it’s no coincidence."
+hero-banner: "deep-blue/blue-light-laptop"
+hero-banner-text: "Laptop backlight glowing brightly in a dark room"
 image: "deep-blue/blue-light-laptop.jpg"
 ---
 

@@ -1,61 +1,17 @@
 ---
-layout: brutalist
+layout: hacker-news
 
-theme-color-light: "#FAFAF6"
-theme-color-dark: "#242424"
+theme-color-light: "#FF6600"
+theme-color-dark: "#C24E00"
 
 color: orange
 ignore-accent-color: true
 hide-settings: false
 
-viewing_single_page: true
-anchors: true
-
 title: "Hacker News Cleanser"
-projects-menu-active: true
 ---
 
-<style>
-html {
-	background-color: hsla(60, 28%, 95%, 0.5);
-}
-menu {
-	background-color: #FF8100 !important;
-}
-hr, #dark hr {
-	background: none;
-	background-image: none;
-	border: none;
-	border-bottom: 2px solid rgba(0,0,0,0.1);
-}
-#dark hr {
-	border-bottom: 2px solid rgba(255,255,255,0.2);
-}
-#settings-toggle {
-	color: black !important;
-}
-menu a:hover {
-	background-color: transparent !important;
-}
-.popup {
-	width: 9.75em !important;
-	margin-left: -10.375em !important;
-}
-menu #mainmenu > ul {
-	-webkit-backdrop-filter: unset;
-	backdrop-filter: unset;
-}
-@media (max-width: 700px) {
-	.popup {
-		top: 2em;
-	}
-	#submenu {
-		opacity: 0 !important;
-		height: 0 !important;
-	}
-}
-</style>
-<h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="/images/projects/code/hacker-news-cleanser/sponge.png" /></h1>
+<h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="images/sponge.png" /></h1>
 <p>This is a self-hosted service that will auto-hide <a href="https://news.ycombinator.com">Hacker News</a> articles by filtering articles based on:</p>
 <ul class="compact-list">
 <li>Site</li>
@@ -72,7 +28,7 @@ menu #mainmenu > ul {
 <p>That’s where the inception of the Hacker News Cleanser came from; it’s a “set it and forget it” service that will automatically tailor my home page to more closely fit my personal taste.</p>
 <h3 id="the-compromise-between-being-informed-and-information-separation" class="anchored">The Compromise Between Being Informed and Information Separation</h3>
 <figure markdown="1" class="inline macos-window-screenshot" style="max-width:526px;">
-<img src="/images/projects/code/hacker-news-cleanser/email-report.png" />
+<img src="images/email-report.png" />
 </figure>
 <p>While I do wish for my personal Hacker News page to be more focused, I also still want to have the ability to see the hidden articles and read them if I so choose. No amount of filter tweaking will prevent the occasional salient article or discussion from getting caught when I would have wished to still see it. Additionally, I do still feel it’s important to have a finger on the heartbeat of Hacker News as a whole, only in a separate view and on my own time.</p>
 <p>To achieve this, the Hacker News Cleanser supports sending out email reports styled to look just like the Hacker News homepage containing all cleansed articles since the last email report. This requires setting up a Gmail “service” account to send emails through or using an existing Gmail account (not recommended).</p>

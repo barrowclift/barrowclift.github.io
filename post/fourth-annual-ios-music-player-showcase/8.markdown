@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Doppi"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "9"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppi/id1002899671">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Reflecting on Doppi at the end of 2021 fills me with great sadness; after many long years of service, [Doppi officially went into maintenance mode on April 6th, 2021](https://twitter.com/doppi_app/status/1379581398114312199) after Radu Dutzan—Doppi's developer—accepted a position at Apple. I'm thrilled his hard work paid off with an opportunity to continue his craft in Apple's own apps (some of which like [Music.app] sorely need), but it's nonetheless difficult to accept this sudden and bittersweet end for Doppi. However, this is where my grieving will end; what Doppi has earned and deserves after all these years is a celebration of its legacy as it enters indefinite retirement, along with a proper showcase of the new features that released earlier this year prior to Radu's new career at Apple.
 

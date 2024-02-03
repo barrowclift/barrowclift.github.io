@@ -8,9 +8,9 @@
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
 }
-.project {
+/*.project {
 	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+}*/
 	#parallax .container {
 		perspective: 1px;
 		perspective-origin: top left;
@@ -23,15 +23,16 @@
 		display: block;
 	}
 		/* make parallax work in iOS Safari */
-		.safari #parallax .layer {
-			position: -webkit-sticky;
+		@supports (position: -webkit-sticky) {
+			#parallax .layer {
+				position: -webkit-sticky;
+			}
 		}
 #parallax-background {
 	transform: translateZ(-0.2px);
 
 	height: 120vh;
 	width: 120vw;
-	margin-bottom: -20vh;
 
 	background-size: cover;
 	background-position: center;
@@ -52,7 +53,8 @@
 	min-width: 100vw;
 	height: auto;
 	margin: 0 !important;
-	border-radius: 1em;
+	margin-top: -20vh !important;
+	border-radius: 1em 1em 0 0;
 }
 	@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
 		#parallax-foreground {

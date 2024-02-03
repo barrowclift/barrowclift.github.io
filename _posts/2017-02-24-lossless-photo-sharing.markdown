@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Lossless Photo Sharing"
 date: 2017-02-25 1:01:56
 categories:
@@ -7,7 +6,8 @@ categories:
   - Services
   - Photos
 timelocked: true
-excerpt: "It can get confusing trying to figure out the best way to losslessly share photos with someone, but I'm here to help!"
+excerpt: |
+  It can get confusing trying to figure out the best way to losslessly share photos with someone, but I’m here to help!
 image: "lossless-photo-sharing/share-image.jpg"
 ---
 
@@ -25,9 +25,9 @@ To combat this absurdly complicated productscape, I've compiled what I personall
 Sharing A Handful of Pictures
 -----------------------------
 
-<figure markdown="1" class="half-inline">
+<div markdown="1" class="half-inline">
 [![The Dropbox logo]({{ site.dropbox }}/lossless-photo-sharing/dropbox.svg)](https://www.dropbox.com)
-</figure>
+</div>
 
 The optimal solution is to use [Dropbox](https://www.dropbox.com) by sending [shareable links](https://www.dropbox.com/en/help/167) to your recipients. This solution assumes a one-way transaction of photos from you to another person or small group of people, no collaborative sharing needed.
 
@@ -49,9 +49,9 @@ While I believe Dropbox to be the best solution for this problem, there are load
 Sharing Photo Albums
 --------------------
 
-<figure markdown="1" class="half-inline">
+<div markdown="1" class="half-inline">
 [![The Google Photos logo]({{ site.dropbox }}/lossless-photo-sharing/google-photos.svg)](https://photos.google.com)
-</figure>
+</div>
 
 Creating and sharing albums in Google Photos is currently the best option for collaboratively sharing more than a handful of photos. While Google Photos didn't fare as well as Dropbox for individual photo sharing, it was entirely because it was carefully tailored to best suit managing and sharing many photos from large libraries. Thus, it truly shines when the volume of photos being shared increases to album size and beyond. With *any* service, by the time you want to start sharing more than a couple photos, the problem's scope necessitates a more robust and fully-featured service to support easily uploading and managing all the photos. Since solutions in this tier are naturally "heavy duty" because of this, the previous hit against Google Photos for being a bit too much for just sharing a single photo or two vanishes.
 

@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Third Annual iOS Music Player Showcase - Full"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -134,12 +134,12 @@ Like [last year](/post/second-annual-ios-music-player-competition), not all play
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/ecoute/id536882653">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Unfortunately, [Ecoute] is exactly the same as it was last year. It barely received any maintenance updates in 2019, but this year it didn't receive any. For an app once considered by many to be [the best third-party music player](https://www.macstories.net/reviews/ecoute-is-the-best-music-player-for-ios-period/) in the early days of iOS, it's saddening to see it languish like this. A growing list of peers possess—and often surpass—its once-unique qualities like its beautiful, translucent player view design and tab bar-free navigation. The genre's also matured over the many years; Ecoute's slim feature set is now considered table-stakes for newcomers like [Plum] and [SongOwl]. 
 
@@ -174,12 +174,12 @@ To be clear, despite a humerous ["definitely maybe"](https://twitter.com/Barbapa
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/jams-on-toast-music-player/id1303194454">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Another year come and gone, yet [Jams on Toast] remains one-of-a-kind for its [cover flow](https://en.wikipedia.org/wiki/Cover_Flow)-inspired navigation, intended to emulate sifting through physical [record crates](https://duckduckgo.com/?q=record+crate&iax=images&ia=images#). It's genuinely impressive Jams on Toast not only continues to remain unique in this respect, but also manages to avoid regressions from the many iOS releases since its original release back in [late 2017](http://web.archive.org/web/20171229114606/http://www.jamsontoast.com/); Jams On Toast has not seen even a single update or patch, yet continues to function exactly as advertised on iOS 14.
 
@@ -228,12 +228,12 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/new-monaural/id1439882679">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [New Monaural] is the reason behind my only new deal-breaker addition this year. By nearly every measure, New Monaural is a great player; it sports an album grid view, a "Recently Played" collection, dynamic album art themes like [Doppler 2] and [Power Player], and many more qualities that would otherwise earn it proper coverage this year. What went wrong?
 
@@ -262,12 +262,12 @@ As the name implies, New Monaural supports a suite of mono-focused features whic
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/stezza-music-player/id590317007">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Like [New Monaural], [Stezza] is designed with a clear focus in mind; while New Monaural aims to improve the listening experience for mono listeners, Stezza aims to make the best possible music player for the car. This mission statement is most clearly demonstrated in its player view, which features massive buttons you'd have no trouble blindly tapping. While I do take issue with its premise (you shouldn't fiddle with your phone while driving regardless of how accessible the interface is), I'd argue many of us have paused or skipped tracks while driving at some point, anyway. Given people are unfortunately going to do things like this despite the danger, one could argue efforts to make that interaction as effortless and distration-free as possible are a good thing.
 
@@ -316,12 +316,12 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/taptunes/id320145698">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Long before [Albums], [Jams On Toast], and [Longplay] entered the fray with album-focused designs, [TapTunes] was there. Despite [over ten years](https://david-blundell.blogspot.com/2009/06/taptunes-and-music-trivia-submitted-to.html) on the App Store, [David Blundell](https://www.blogger.com/profile/10382410144960812891)—TapTunes' developer—continued to demonstrate dedication to the product with its many feature and maintenance releases through the years.
 
@@ -364,12 +364,12 @@ Thankfully, despite its lack of update this year, TapTunes is still just as func
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Albums first dropped late last year as one of 2019's many new arrivals. While I was charmed with its clear, album-focused vision, I found its many design issues held it back from becoming a compelling option. I did, however, [note last year](/post/second-annual-ios-music-player-competition#--albums) it was genuinely impressive the sheer number of improvements Albums received just three short months following its initial release. After all, if Albums' developer, [Adam Linder](https://twitter.com/albumstheapp), could improve his app *that much* in just three months, I could only imagine what he'd accomplish if given a full year. Now—at the end of 2020—Albums is no longer a quaint novelty, but a feature-rich juggernaut and a must-buy for anyone that loves albums as an art form.
 
@@ -631,12 +631,12 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/cs-classic-music-player/id924491991">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Following a [tumultuous development cycle last year](/post/second-annual-ios-music-player-competition#--cs), Cs 6 is now finally available. This comes as quite the surprise to me; for those unaware, what was originally intended to be Cs 6 nearly released back in 2019. During its public beta, Cs's devoted userbase panned its radical redesign and new customization features. The beta's backlash was so severe it forced Cs's developer—[Mike Clay](https://twitter.com/CsMusicPlayer)—to [backpedal](https://twitter.com/CsMusicPlayer/status/1177628272617754624), redevelop the Cs 6 update from scratch, and spin off the bounced Cs 6 beta as a brand new music player called [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850). As a fan of the Cs 6 beta, this left me worried about Cs's future; I predicted this spinoff player would remain Mike's focus, leaving Cs in mere maintenance mode forever catering to that vocal segment of its user base.
 
@@ -784,12 +784,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppi/id1002899671">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Doppi is a sheer delight; thanks to its silky-smooth animations, gorgeous custom interface, and healthy number of customization options despite the [old "simple player" tagline](http://web.archive.org/web/20200114013536if_/https://apps.apple.com/us/app/doppi/id1002899671), no other player held a candle to Doppi's user experience [last year](/post/second-annual-ios-music-player-competition#--doppi). I'm pleased to report that remains the case this year as well thanks to the introduction of marvelous new features and a brand new player view design; Doppi remains one of the finest general-purpose players available.
 
@@ -852,12 +852,12 @@ None.
   </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Doppler 2] is technically a new arrival this year since it's a separate app listing from the original Doppler (which has since been taken down) and its initial release occurred at the very beginning of this year on [January 6th](https://blog.brushedtype.co/announcing-doppler-2/). However, one need only peruse the promotion screenshots on its [App Store page](https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747) to realize it shares more in common with its predecessor than the major version bump and new app listing implies. Marked differences from the original version include:
 
@@ -953,12 +953,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Among the few new players introduced this year is [Dot Music], an incredibly simple, general-purpose player. Much like [Picky] and [Cs 5], it leverages a "no-nonsense" interface that's strongly reminiscent of [iOS 6's Music.app](https://www.macworld.com/article/2009048/hands-on-with-ios-6-music.html), but in this case provides little else novel beyond that. 
 
@@ -1106,12 +1106,12 @@ Then, there's Dot Music's "Favorites" widgets, which display the albums you've f
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/jetaudio-mp3-music-player/id894888135">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 jetAudio may be new to me, but is actually one of the oldest players on this list, with the first iOS version hailing [all the way from 2014](http://web.archive.org/web/20141030180103/http://www.jetaudio.com/). Don't let the underwhelming [App Store listing](https://apps.apple.com/us/app/jetaudio-mp3-music-player/id894888135) promo screenshots deceive you, jetAudio is a surprisingly feature-rich and customizable player, albeit with some minor drawbacks.
 
@@ -1206,12 +1206,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/longplay/id1495152002">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Longplay is not only a newcomer this year, but is also among one of the few that's not a general-purpose player. Like [Jams on Toast] and [Albums] before it, Longplay focuses on delivering a non-traditional, album-centric experience. Upon launching the app for the first time, you'll be greeted by a massive album wall strongly reminiscent of the one found in Albums. Like in Albums, tapping any particular record in this wall will immediately begin playing the entire album. However, unlike both Jams on Toast and Albums, instead of launching a dedicated player view, navigation entirely remains on the wall; you'll instead see the playing record's album art enlarge, gain a border colored to match the album art, and a teeny play/pause button appear in the bottom right of the record. While the currently playing album doesn't stretch the width of the screen by default, there is a setting to enable "Large" album art, allowing Longplay to just barely miss disqualification and meet the 2020 players list.
 
@@ -1313,12 +1313,12 @@ While I appreciate this widget class, I'm still left disappointed it does not su
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I began this year's showcase with the claim that steady growth marks 2020, and few other players this year exemplify this as deeply as Marvis Pro. There's few visual changes to speak of, so at first glance Marvis Pro appears exactly the same as [last year](/post/second-annual-ios-music-player-competition#--marvis-pro). However, that couldn't be farther from the case; Marvis Pro received plenty of backend enhancements that make it even more powerful and customizable than ever before. Some highlights from Marvis Pro's many releases this year include:
 
@@ -1573,12 +1573,12 @@ To provide examples of the flexibility and power these widgets provide, above ar
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/music-player-x-equalizer-amp/id1221701870">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Music Player X enjoyed sweeping changes in 2020, rivaling [Albums] in its scope. There doesn't appear to be a single view in Music Player X that didn't receive a cosmetic change or navigational refactor. It's a much needed and much appreciated effort; last year, Music Player X was disqualified for featuring what I considered to be an exceptionally poor custom UI, many of which violated [iOS's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/) or general user interface principles. However, I did appreciate its plentiful customization options and niche features like its sleep timer and in-app equalizer (though admittedly the sleep timer's interface is dreadful). This made Music Player X in 2019 feel like an aspirational music player let down by its implementation. I'm happy to say at the end of 2020 this no longer feels like the case, and Music Player X is now a respectable player that's earned its place among the others in the showcase, albeit with caveats.
 
@@ -1786,12 +1786,12 @@ While it's nice to see Apple providing first-party music widgets to customers as
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Picky] is a filter-focused twist on the traditional, general-purpose player paradigm. Atop the standard "Artists", "Albums", and "Songs" views are Picky's unique filter button, which can hide albums or artists from their respective views that have less than an arbitrary number of songs. The "Songs" view provides the reverse, allowing users to hide songs from artists with more than an arbitrary number of songs. While a few players like [Marvis Pro] and [Albums] technically support features like this with their smart filters and rules, they both require user customization to be accessed, whereas in Picky it's a first-class feature built right into the app, and it's the only app that does so. This unique feature suite is presented over an otherwise traditional (and at this point, aging) no-nonsense [iOS 8](http://web.archive.org/web/20130615181058/http://www.apple.com/ios/ios7/) aesthetic.
 
@@ -1958,12 +1958,12 @@ Finally, there's the "Random Pick" widget, which comes exclusively in small and 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I somehow managed to miss the delightfully named [Plum] the past couple years, originally releasing all the way back at the start of 2018. It's a general-purpose player with a twist; instead of presenting its standard browse views ("Albums", "Artists", etc.) in a tab bar or left-side [hamburger menu](https://www.computerhope.com/jargon/h/hamburger-menu.htm) like nearly every other player, it hides these views in a hamburger menu at the *bottom* of the screen. While this is simply UI salad dressing and doesn't change the fact the app is functionally another general-purpose experience, it does wonders for making Plum stand out among its peers.
 
@@ -2097,12 +2097,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Power Player] is a bold and opinionated player hidden behind a deceptively simple exterior. While its structure is as approachable as general-purpose players come—in no small part due to its stock [iOS tab bar](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/)—its engaging "Home" view, dynamically colored album views, and gold-standard iPad experience elevate Power Player beyond its humble appearance to one of the finest players available.
 
@@ -2252,12 +2252,12 @@ While there's not much customization to speak of here and the choices are limite
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/sathorn/id1447295899">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Sathorn]'s a thoroughly unremarkable player that earned [scathing marks last year](https://barrowclift.me/post/second-annual-ios-music-player-competition#--sathorn) both for its uninspired functionality and ["uncanny vally"](https://en.wikipedia.org/wiki/Uncanny_valley) design. While in broad strokes Sathorn's UI is perfectly sufficient, it suffers from dozens of micro-failures to properly adhere to Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/), resulting in a product that's substantially worse than the sum of its parts. I'm disappointed to say that at the end of this year there's been no changes that I can detect from last year, leaving it just as poorly designed as its initial release.
 
@@ -2339,12 +2339,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/songowl-music-player/id1492630850">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I find it difficult to introduce [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850)—one of the few new players this year—without immediately addressing the elephant in the room concerning its unfortunate origins. [Mike Clay](https://twitter.com/CsMusicPlayer)—SongOwl's developer—initially developed SongOwl not as a standalone app, but rather as the highly anticipated version 6 update to a different app altogether: his existing player, [Cs](https://apps.apple.com/us/app/cs-music-player/id924491991). However, during the Cs 6 beta testing, the functional and navigational changes proved divisive (to say the least), leaving Mike in a difficult situation. Sure, he could double down on his Cs 6 vision and disregard the negative beta feedback, but that would likely result in a similar reaction from the general public, tanking Cs's historically positive App Store rating. He could also attempt addressing the feedback, but doing so would necessarily compromise the exciting new functionality the beta introduced, which also entails throwing away months of work. There was one final option available to Mike, which he thankfully ended up taking: He decided to release the radical Cs 6 update as a brand-new, standalone app, which both freed him up to redevelop a Cs 6 update from the ground up based on the desires of that existing userbase while also still delivering his original Cs 6 vision to a new, hopefully more receptive audience.
 
@@ -2455,12 +2455,12 @@ None.
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/soor/id1439731526">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Last year, Soor [failed to meet the qualifiers list](/post/second-annual-ios-music-player-competition#--soor) due to not meeting the minimum bar for what I considered "local-primary". Soor's heavy [Apple Music](https://music.apple.com/) integration—its [tent-pole](https://en.wikipedia.org/wiki/Tent-pole_%28entertainment%29) feature—resulted in an experience that at every twist and turn strained against local-only use despite technically supporting it. However, despite that remaining the case this year, the introduction of a couple notable and substantial features that both local and cloud users can access helped earn Soor proper attention this year.
 
@@ -2629,12 +2629,12 @@ Finally, there's the "Collection" widgets, which display items from one of the p
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vox-mp3-flac-music-player/id916215494">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 VOX is less "music player" than "delivery vehicle" for its company, [Coppertino](https://vox.rocks/coppertino-team), to upsell users to its ["VOX Premium"](https://vox.rocks/vox-player-premium) service. Ads beaconing users to sign up litter the app, deeply cheapening the experience. I said not much more than that [last year](https://barrowclift.me/post/second-annual-ios-music-player-competition#--vox) and quickly deemed VOX my least favorite player, but this year I want to take my time to properly take apart VOX's problems, which run far deeper than its cheap surface.
 

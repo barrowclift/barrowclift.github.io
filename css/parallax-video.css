@@ -5,7 +5,7 @@ article {
 	max-width: 35em;
 	text-align: center;
 	display: inline-block;
-	margin-bottom: 2.6em;
+	margin-bottom: 3.9em;
 }
 #parallax-foreground {
 	min-width: 90vw;
@@ -23,12 +23,6 @@ menu {
 #parallax-background video {
 	margin: 0 !important;
 	padding: 0 !important;
-}
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-	#mainmenu {
-		-webkit-backdrop-filter: saturate(180%) blur(20px) !important;
-		backdrop-filter: saturate(180%) blur(20px) !important;
-	}
 }
 @media (min-width: 700px) {
 	#parallax {
@@ -49,8 +43,11 @@ menu {
 			box-sizing: border-box;
 			display: block;
 		}
-			.safari #parallax .layer {
-				position: -webkit-sticky; /* make parallax work in iOS Safari */
+			/* make parallax work in iOS Safari */
+			@supports (position: -webkit-sticky) {
+				#parallax .layer {
+					position: -webkit-sticky;
+				}
 			}
 	#parallax-background {
 		transform: translateZ(-0.2px);
@@ -85,10 +82,6 @@ menu {
 		height: auto;
 		margin: 0 !important;
 	}
-		.safari #parallax-foreground,
-		.chrome #parallax-foreground {
-			
-		}
 		@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
 			#parallax-foreground {
 				-webkit-backdrop-filter: saturate(180%) blur(20px);

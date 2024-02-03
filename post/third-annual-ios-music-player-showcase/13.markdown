@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Picky"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -59,12 +58,12 @@ next-page: "14"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Picky] is a filter-focused twist on the traditional, general-purpose player paradigm. Atop the standard "Artists", "Albums", and "Songs" views are Picky's unique filter button, which can hide albums or artists from their respective views that have less than an arbitrary number of songs. The "Songs" view provides the reverse, allowing users to hide songs from artists with more than an arbitrary number of songs. While a few players like [Marvis Pro] and [Albums] technically support features like this with their smart filters and rules, they both require user customization to be accessed, whereas in Picky it's a first-class feature built right into the app, and it's the only app that does so. This unique feature suite is presented over an otherwise traditional (and at this point, aging) no-nonsense [iOS 8](http://web.archive.org/web/20130615181058/http://www.apple.com/ios/ios7/) aesthetic.
 

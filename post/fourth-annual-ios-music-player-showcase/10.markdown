@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - jetAudio"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "11"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/jetaudio-hd-music-player/id894888135">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Among the ever-growing pool of third-party music players on iOS, it remains unusual for a player to support deep customization. In terms of sheer quantity of options, only two players boast settings screens rich enough to be considered a customization-forward player, and those are [Marvis Pro] and jetAudio. However, where Marvis Pro's customization focuses on providing listeners the ability to radically restructure the app's browsing navigation, jetAudio's customization does not. Instead, jetAudio's settings empower listeners to adjust nearly every visual and functional aspect of jetAudio's static browsing experience.
 

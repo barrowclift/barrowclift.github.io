@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Listing the Little Things"
 date: 2016-09-26 3:53:19
 categories:
@@ -7,7 +6,8 @@ categories:
   - iOS
   - watchOS
 timelocked: true
-excerpt: "With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!"
+excerpt: |
+  With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!
 image: "listing-the-little-things/share-image.jpg"
 ---
 
@@ -44,9 +44,9 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
 
 While this is by no means a "hidden" feature, readers who "set and forget" their alarms or exclusively use Siri to manage them may be unaware of iOS 10's redesigned Clock app. Included in the app's redesign is a new "Bedtime" feature that's quickly become one of my favorites.
 
-<figure markdown="1" class="inline">
+<div markdown="1" class="inline">
 ![A screenshot of the "Bedtime" tab in the redesigned Clock app in iOS 10.]({{ site.dropbox }}/listing-the-little-things/bedtime-screenshot.jpg)
-</figure>
+</div>
 
 Effectively, this feature replaces having to maintain five individual alarms for each day of the week you want to get up for work or school while additionally encouraging bedtimes to help you hit your desired hours of sleep. It does this by asking what time you need to get up for work or school, how many hours of sleep you want each night (for your health, please choose at least eight), what days you want the alarm to be in effect (for most of us, just the weekdays), and finally when you want to be reminded of your optimal bedtime. *That's it*, from now on during the specified days you'll not only get bedtime reminders to help you hit your hour goal but you'll also get new, soothing alarm tones to calmly wake you up.
 

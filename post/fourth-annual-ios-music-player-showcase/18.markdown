@@ -1,11 +1,10 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Vinyl Fetish"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-14 13:24:30-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -59,12 +58,12 @@ next-page: "19"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vinyl-fetish-music-player/id1490719457">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Every year or so, a new niche player enters the scene. In the case of [Jams On Toast] in 2017 or [Longplay] in 2020, the concepts are intriguing but lack the developer attention necessary to make the result compelling enough to last beyond initial curiosity. However, in rare cases like with [Albums] in 2019, the developer continues to invest time and energy beyond the initial release towards fully realizing the player's original vision. As the name and promotional screenshots are quick to boldly demonstrate, Vinyl Fetish is a niche player. However, don't let the earnest but amateur visual design fool you; Vinyl Fetish is fiercely developed just like Albums and one of the most exciting album-focused experiences on iOS today.
 

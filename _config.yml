@@ -26,21 +26,30 @@ kramdown:
   footnote_backlink: "&#x21A9;&#xFE0E;"
 
 defaults:
-  - # POST SPECIFIC VARIABLES
+  -
     scope:
-      path: "" # empty string for all files
-      type: posts # limit to posts
+      path: ""
     values:
-      viewing_single_page: true # *NOT* Being viewed from home, a specific article page
-      has_afterward: false
-      image: # assume a default post doesn't have an image, /images/assets/${image}
-      type: article # assume the post type is an article unless told otherwise
-  - # SITE-WIDE VARIABLES
+      layout: default
+  -
     scope:
-      path: "" # all files
+      path: ""
+      type: posts
     values:
-      anchors: true # We want sections to be anchorable by default for everything
-      next-page: # Overriden if a given file is paginated
+      has-afterward: false
+      # Options are:
+      #   "article" for new articles (only one that updates RSS feed)
+      #   "article-update" for updates to existing articles
+      #   "project" for new projects
+      #   "project-update" for updates to existing projects
+      type: article
+      anchors: true
+  -
+    scope:
+      path: ""
+      path: "projects"
+    values:
+      anchors: true
 
 plugins:
   - jemoji

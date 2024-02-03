@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - SongOwl"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "18"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/songowl-music-player/id1492630850">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I find it difficult to introduce [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850)—one of the few new players this year—without immediately addressing the elephant in the room concerning its unfortunate origins. [Mike Clay](https://twitter.com/CsMusicPlayer)—SongOwl's developer—initially developed SongOwl not as a standalone app, but rather as the highly anticipated version 6 update to a different app altogether: his existing player, [Cs](https://apps.apple.com/us/app/cs-music-player/id924491991). However, during the Cs 6 beta testing, the functional and navigational changes proved divisive (to say the least), leaving Mike in a difficult situation. Sure, he could double down on his Cs 6 vision and disregard the negative beta feedback, but that would likely result in a similar reaction from the general public, tanking Cs's historically positive App Store rating. He could also attempt addressing the feedback, but doing so would necessarily compromise the exciting new functionality the beta introduced, which also entails throwing away months of work. There was one final option available to Mike, which he thankfully ended up taking: He decided to release the radical Cs 6 update as a brand-new, standalone app, which both freed him up to redevelop a Cs 6 update from the ground up based on the desires of that existing userbase while also still delivering his original Cs 6 vision to a new, hopefully more receptive audience.
 

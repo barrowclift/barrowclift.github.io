@@ -1,11 +1,10 @@
 ---
-layout: post
-hidden: true
 title: "Wireguard Server on macOS - Change Log"
 article-title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
 update: 2023-07-16 11:34:04-0400
-excerpt: "With this guide, you too can enjoy Wireguard VPN's performance and security on macOS."
+excerpt: |
+  With this guide, you too can enjoy Wireguard VPN’s performance and security on macOS.
 image: "wireguard-server-on-macos/share-image.jpg"
 categories:
   - Technology

@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Second Annual iOS Music Player Competition"
 date: 2020-01-20 18:42:21-0500
-excerpt: "Eleven of the finest iOS music players go head-to-head in the ultimate showdown. Which will earn the gold as 2019's best?"
+excerpt: |
+    Eleven of the finest iOS music players go head-to-head in the ultimate showdown. Which will earn the gold as 2019’s best?
 image: "second-annual-ios-music-player-competition/share-image.jpg"
 categories:
   - Technology
@@ -138,12 +138,12 @@ Like [last time](/post/quest-for-the-best-ios-music-player#disqualifications), m
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="http://itunes.apple.com/app/id1303194454">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Jams On Toast] easily remains one of the most unique music players (disqualified or otherwise) on the App Store exclusively for featuring [cover flow](https://en.wikipedia.org/wiki/Cover_Flow)-inspired navigation, intended to loosely emulate the experience of sifting through [record crates](https://duckduckgo.com/?q=record+crate&iax=images&ia=images#). While the novelty itself deserves recognition, it unfortunately doesn't meet the necessary criteria to enter the runnings.
 
@@ -166,12 +166,12 @@ Like last year, the "Now Playing" view remains a tiny portion of the screen; the
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/app/id590317007">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I couldn't let another year pass by without giving [Stezza] at least a passing nod and briefly explain why it missed the qualifiers again.
 
@@ -210,12 +210,12 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/ecoute/id536882653">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I can't say this one's surprise, [Ecoute]'s been abandonware long before [its inclusion in last year's review](/post/quest-for-the-best-ios-music-player#-ecoute). Its situation hasn't changed this year in the slightest; the poor thing received barely any updates whatsoever in 2019[^ecoute-updates].
 
@@ -252,12 +252,12 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/app/id1439731526?ls=1">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 While [Soor]'s promo images look promising, I personally find Soor does not have a sufficient local-primary focus and is thus disqualified. While you can _technically_ use the app without ["Sync Library"](https://support.apple.com/en-us/HT204926) and ["Show Apple Music"](https://support.apple.com/en-us/HT204951) enabled, doing so understandably cripples the experience since the majority of Soor’s features were built with the expectation that those two settings are enabled. It even politely notifies you right in the home view that "Soor is built to be enjoyed with an Apple Music subscription". One might think you can get away with just enabling "Show Apple Music" without "Sync Library" when you attempt connecting it to Apple Music, but doing so unfortunately breaks Soor. When this is attempted, you are permanently locked out of using the app until you either give in and enable "Sync Library" or delete and re-download the app altogether.
 
@@ -306,12 +306,12 @@ If your music collection is cloud-primary, I'd still recommend giving Soor a loo
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/music-player-x-mp3-eq-mixing/id1221701870">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 In theory, [Music Player X] ticks most of my "must have" requirement boxes: it's local-primary, is _very_ actively maintained, and features large album art in the player view. So what's the problem?
 
@@ -356,12 +356,12 @@ With all the disqualifications out of the way, it's time to alphabetically revie
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 This past September I read an [individual's post](https://www.reddit.com/r/apple/comments/d0zc1p/i_just_released_an_ios_app_for_those_of_us_who/) on the [/r/apple subreddit](https://www.reddit.com/r/apple/) promoting their brand new iOS app "for those of us who listen to full albums". Naturally, I snagged a copy and dove in to explore. What awaited me was a somewhat poorly designed and engineered album-centric music app, clearly the work of a novice iOS developer. And that's okay! I understand we all start somewhere, and I was genuinely happy to see there are other software engineers out there that routinely enjoy listening to albums like I do. With that said, there were simply other apps that filled that need better at the time, so I didn't continue using Albums for long.
 
@@ -421,12 +421,12 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/cs-music-player/id924491991">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Last year, [Cs] swept up [the lion's share of awards](/post/quest-for-the-best-ios-music-player#awards), such as "best dark and 'true black' mode" and "easiest-to-use app". While it certainly had its shortcomings (most notably it's lack of design identity), it was nonetheless among 2018's best, and I couldn't wait to see where Cs would go in 2019.
 
@@ -506,12 +506,12 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppi/id1002899671?ls=1">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Doppi] is a self-proclaimed "simple music player" which I failed to include in [last year's article](/post/quest-for-the-best-ios-music-player). Upon discovering it in my research this year, I first thought I didn't miss much. Perhaps it was the rather silly name or doctored promotional images in the [App Store], but whatever it was Doppi failed to make a positive first impression. That all changed the minute I launched the app for the first time.
 
@@ -567,12 +567,12 @@ Doppi's not without its share of problems, albeit minor; the absence of customiz
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/doppler-music-player/id1252143995">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Doppler] is the most disappointing music player this year. Like [Cs] and [Picky], it's effectively the same app that was reviewed last year. However, Cs and Picky at the very least kept pace with iOS 13's changes, *Doppler didn't even do that*. For example, at time of writing, Doppler still doesn't support iOS 13's theme setting; it continues to only support its custom dark theme, which&mdash;while good for its time&mdash;now sticks out badly among the sea of well behaved apps that have long since updated to support it.
 
@@ -637,12 +637,12 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Blind pursuit of simplicity overwhelmingly dominates software development. Ever since the public first caught a glimpse of the future with the [iPhone reveal back in 2007](https://youtu.be/vN4U5FqrOdQ), consumers responded with an unquenchable appetite for more accessible software and were willing to pay astronomical prices to get it. Naturally, that design philosophy quickly spread downmarket with [Android] and is now the assumed default. It’s extremely rare for consumer-grade apps nowadays to have the complexity and power similar applications had prior. Examples demonstrating this shift are everywhere; compare the surprisingly deep feature pool once available in [iPhoto] to the slim feature set in its [Photos.app] replacement (calendar and photo printing were removed, the flexible star rating were replaced with the binary "favorites" feature, etc.). iOS’s [Mail.app] is also a prime example of feature starvation; compared to its [macOS] counterpart, whole swaths of advanced features like [rules](https://support.apple.com/guide/mail/use-rules-to-manage-emails-you-receive-mlhlp1017/mac) are entirely absent. Granted, Apple could very well intend to migrate features like this to the iOS version, but after over ten years of inactivity on this front, it seems more likely to be another clear example of Apple’s focus on feature starved, simple apps.
 
@@ -829,12 +829,12 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Picky] garnered praise [last year](/post/quest-for-the-best-ios-music-player#-picky) not only as the "cream of the crop for music selection and sorting" but also won the "prettiest player" award for its gorgeous player view blur effect. After such a dazzling display, I thought Picky was on the fast track to greatness. As it would turn out, Picky missed the train.
 
@@ -905,12 +905,12 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429?ls=1">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [Power Player] is among the handful of new apps in 2019, and at first glance appears to be a standard music player; it features a typical table view containing the list of items in your library and a stock tab bar with the usual suspects ("Albums", "Artists", etc.). However, Power Player's bold design decisions quickly reveal themselves once you start navigating the app.
 
@@ -1016,12 +1016,12 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/sathorn/id1447295899">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Of all 2019's new music players, [Sathorn] is my least favorite due to featuring what I feel is the worst design of every contender. While my runner-up for least favorite design, [Albums], certainly has its fair share of interface issues and aesthetic warts, there's a degree of naïveness to the overall presentation that gives it some charm. You get the sense that Adam&mdash;Album's developer&mdash;broke iOS's look and feel guidelines not out of carelessness, but inexperience. At the risk of appearing condescending, it feels equivalent to reading spelling mistakes in a letter from a child; you can't help but appreciate the product despite its issues. To complete the analogy, Sathorn is equivalent to reading a grammatically fraught paper from a high school student; you expect more from someone who should by now display base-level competence.
 
@@ -1107,12 +1107,12 @@ Note that while Sathorn technically offers these options, each and every one are
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/taptunes/id320145698">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I was wrong. Very wrong. For context, here's [my delusional thoughts](/post/quest-for-the-best-ios-music-player#disqualifications) on why [TapTunes] was disqualified last year:
 
@@ -1211,12 +1211,12 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/vox-mp3-flac-music-player/id916215494">
 <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 [VOX] and [Doppler] shared very similar stories this year; they both went into pure maintenance mode and both failed to deliver even the bare minimum required to keep up with iOS 13's feature set. While this abandonment was a massive disappointment for Doppler&mdash;whose initial reveal in 2018 showed much promise&mdash;the sting is far less pronounced with VOX. Where Doppler shined with potential, VOX stank from its numerous advertisements polluting the app attempting to upsell the company's ["premium" music storage service](https://vox.rocks/vox-player-premium). As a result, I visited VOX the least of all qualifying apps, and always left slightly unhappy when I did.
 

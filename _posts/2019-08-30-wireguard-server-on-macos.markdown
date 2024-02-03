@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
 update: 2023-07-16 11:34:04-0400
@@ -11,9 +10,10 @@ categories:
   - Unix
   - Guides
   - Best Of
-excerpt: "With this guide, you too can enjoy Wireguard VPN's performance and security on macOS."
+excerpt: |
+  With this guide, you too can enjoy Wireguard VPN’s performance and security on macOS.
 image: "wireguard-server-on-macos/share-image.jpg"
-has_afterward: true
+has-afterward: true
 background-color: "#4E0008"
 foreground-color: "#FFFFFF"
 ---
@@ -26,9 +26,9 @@ foreground-color: "#FFFFFF"
 <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
-<figure markdown="1" class="inline shadow">
+<div markdown="1" class="inline shadow">
 [![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
-</figure>
+</div>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is successfully running on macOS.
 
@@ -276,7 +276,7 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
 Congratulations :tada:! You're now among the dozen people crazy enough to serve Wireguard on macOS. If you had trouble following this guide or would simply prefer to explore a repo of example Wireguard macOS config files at your own speed, I highly encourage you take a look at [Donavon Buchanan's example configuration repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6).  Additionally, please feel free to get in touch on [Mastodon](https://mastodon.social/@barrowclift) or via <a href="mailto:{{ site.email }}">email</a> if you have any feedback or corrections, I'd love to hear from you.
 
 <div class="article-linkback">
-    <a href="/">⌘</a>
+    <a href="/about">⌘</a>
 </div>
 
 ------

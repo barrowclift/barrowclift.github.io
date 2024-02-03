@@ -1,18 +1,22 @@
 ---
-layout: post
-title: "We Made a Podcast!"
+title: |
+  We Made a Podcast!
 date: 2017-12-02 23:19:40
 categories:
   - Announcement
-excerpt: "Join us as we scrutinize and celebrate great music, one episode at a time"
+excerpt: |
+  Join us as we scrutinize and celebrate great music, one episode at a time.
 image: "we-made-a-podcast/podcast-cover-art.jpg"
 ---
 
-<figure markdown="1" class="inline shadow">
-<a href="https://badmusichertz.com/post/lonesome-dreams">
-![Bad Music Hertz podcast cover art]({{ site.dropbox }}/we-made-a-podcast/podcast-cover-art.jpg)
+<div class="inline shadow">
+<a href="https://podcasts.apple.com/us/podcast/bad-music-hertz/id1319023897">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/we-made-a-podcast/podcast-art.webp">
+  <img type="image/jpeg" title="Bad Music Hertz podcast cover art" alt="Bad Music Hertz podcast cover art" src="{{ site.dropbox }}/we-made-a-podcast/podcast-art.jpg">
+</picture>
 </a>
-</figure>
+</div>
 
 After talking about it for years, my siblings and I are proud to officially release the [first episode of the Bad Music Hertz podcast](https://badmusichertz.com/post/lonesome-dreams), where we kick things off with a discussion of Lord Huron's *Lonesome Dreams*.
 

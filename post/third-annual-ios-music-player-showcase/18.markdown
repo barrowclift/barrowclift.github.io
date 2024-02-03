@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Soor"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -47,12 +46,12 @@ next-page: "19"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/soor/id1439731526">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Last year, Soor [failed to meet the qualifiers list](/post/second-annual-ios-music-player-competition#--soor) due to not meeting the minimum bar for what I considered "local-primary". Soor's heavy [Apple Music](https://music.apple.com/) integration—its [tent-pole](https://en.wikipedia.org/wiki/Tent-pole_%28entertainment%29) feature—resulted in an experience that at every twist and turn strained against local-only use despite technically supporting it. However, despite that remaining the case this year, the introduction of a couple notable and substantial features that both local and cloud users can access helped earn Soor proper attention this year.
 

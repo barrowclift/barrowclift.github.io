@@ -1,17 +1,10 @@
 ---
-layout: parallax-video
-wrap-article: true
+layout: parallax
 
 theme-color-light: "#0A0B0A"
 theme-color-dark: "#0A0B0A"
 
-viewing_single_page: true
-anchors: false
-special-stylesheets:
-  - project
-
-theme: custom-minimal
-enforce-dark-mode: true
+force-dark-mode: true
 background-color: "rgb(10, 10, 10)"
 foreground-color: "white"
 menu-color: "rgba(0, 0, 0, 0.95);"
@@ -22,10 +15,62 @@ banner-poster: "projects/code/largest-video-game-ever/tetris-poster.jpg"
 banner-alt: "Video of Marc playing tetris on the Cira Center skyscraper"
 
 title: "The Largest Video Game Ever Made"
-projects-menu-active: true
 ---
 
 <style>
+	.news-logo {
+		height: 4.9vw;
+		max-height: 22px;
+		margin: 1rem 1vw;
+		margin-top: 0.275em;
+		margin-bottom: 0;
+	}
+	.section a {
+		display: inline-block;
+	}
+	.section a {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+	.section {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.slice h2 {
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+
+	/* 
+	Medium devices (iPads)
+	Font size: 19px, ~Margin&Padding: 28.5px
+	*/
+	@media (min-width: 700px) {
+		.news-logo {
+			max-height: 32px;
+			margin-right: 0.75rem;
+			margin-left: 0.75rem;
+			margin-top: 0.3em;
+		}
+	}
+	/* 
+	Large devices (Macs)
+	Font size: 21px, ~Margin&Padding: 31.5px
+	*/
+	@media (min-width: 900px) {
+		.news-logo {
+			min-height: 35px;
+			margin-right: 1.125rem;
+			margin-left: 1.125rem;
+		}
+		.section {
+			padding-left: 5vw;
+			padding-right: 5vw;
+			max-width: 50rem;
+			text-align: center;
+			margin: auto;
+		}
+	}
 	#parallax-foreground {
 		background-color: rgba(10, 10, 10, 0.9) !important;
 	}

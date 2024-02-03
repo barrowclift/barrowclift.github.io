@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Third Annual iOS Music Player Showcase - Marvis Pro"
 article-title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "11"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
 <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 I began this year's showcase with the claim that steady growth marks 2020, and few other players this year exemplify this as deeply as Marvis Pro. There's few visual changes to speak of, so at first glance Marvis Pro appears exactly the same as [last year](/post/second-annual-ios-music-player-competition#--marvis-pro). However, that couldn't be farther from the case; Marvis Pro received plenty of backend enhancements that make it even more powerful and customizable than ever before. Some highlights from Marvis Pro's many releases this year include:
 

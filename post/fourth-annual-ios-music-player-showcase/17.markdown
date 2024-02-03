@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Power Player"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "18"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Few players riff on the original iOS Music.app design as successfully as Power Player. This is in no small part due to how boldly it wears this influence on its sleeve; from its stock tab bar (complete with the venerable "..." item to see and optionally swap out the other tab bar items) to its limited array of settings (which are only accessible through the Settings app), the player can oftentimes feel as though it was plucked right out of the iOS 7 App Store back in 2013. In an environment where other players with similar origins like [Cs Music] have made conscious efforts over the past couple years to distance their UI from their roots, Power Player has instead staunchly kept its design feet firmly planted in its initial power stance.
 

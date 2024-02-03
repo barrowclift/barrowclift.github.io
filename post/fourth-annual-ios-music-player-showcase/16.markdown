@@ -1,11 +1,10 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Plum"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-09 20:28:08-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -71,12 +70,12 @@ next-page: "17"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 Plum is a general-purpose player packed with features and a visual design that's as fun and quirky as its name. Unlike other general-purpose players which also sport unique designs like [Power Player] and [Doppler], Plum's not strongly opinionated; Plum offers a surprisingly deep customization system that aims to meet listeners' needs regardless of their varied habits and tastes, all while still maintaining its distinctive voice. All too often, music player developers tightly couple unconventional designs with an firm grip on any ability to change how their player looks or behaves. While this design philosophy certainly has its merits, it nonetheless necessarily alienates listeners whose needs or tastes don't quite line up with that vision. Throughout the app, Plum strives for a more accessible and arguably more friendly approach.
 

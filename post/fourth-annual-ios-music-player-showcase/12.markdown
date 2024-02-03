@@ -1,10 +1,9 @@
 ---
-layout: post
-hidden: true
 title: "Fourth Annual iOS Music Player Showcase - Marvis Pro"
 article-title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
+excerpt: |
+  Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
 image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -70,12 +69,12 @@ next-page: "13"
 </a>
 </div>
 
-<figure style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="inline app-download">
 <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
 <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
 <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
 </a>
-</figure>
+</div>
 
 When all's said and done, every player on the market today "is what it is"; the developer had a vision for the browsing and playback experience their app would provide, and then they developed a player that strove to meet that vision. When listeners are lucky, the developer spent some extra time providing settings to lightly tweak aspects of their player's appearance and behavior, but aside from some very rare exceptions, their app's fundamental browsing capabilities remain unchangeable. To be clear, this is partially what makes exploring the world of iOS music players so enjoyable; it's fascinating to explore the diverse ways developers answer the deceptively complicated question "how do listeners want to browse their library?".
 

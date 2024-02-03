@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Third Annual iOS Music Player Showcase"
 date: 2020-12-31 13:10:33-0500
-excerpt: "Celebrating the diverse and exciting world of 2020's iOS music players."
-light-hero-banner: "third-annual-ios-music-player-showcase/light-banner"
-dark-hero-banner: "third-annual-ios-music-player-showcase/dark-banner"
+excerpt: |
+  Celebrating the diverse and exciting world of 2020’s iOS music players.
 image: "third-annual-ios-music-player-showcase/share-image.jpg"
 categories:
   - Technology
@@ -12,10 +10,12 @@ categories:
   - Design
   - Music
 timelocked: true
+light-hero-banner: "third-annual-ios-music-player-showcase/light-banner"
 light-background-color: "#ECE5DF"
 light-foreground-color: "#555554"
 dark-background-color: "#303030"
 dark-foreground-color: "#CBBAA9"
+dark-hero-banner: "third-annual-ios-music-player-showcase/dark-banner"
 next-page: "/post/third-annual-ios-music-player-showcase/2"
 ---
 

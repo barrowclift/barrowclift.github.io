@@ -7,18 +7,18 @@
 
 	{% feed_meta %}
 
-	<link rel="mask-icon" href="{{ site.baseurl }}/pinned-tab.svg" color="#000000" />
-	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.jpg" />
+	<link rel="mask-icon" href="{{ site.baseurl }}/images/pinned-tab.svg" color="#000000" />
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.jpg" />
 
 	<meta name="application-name" content="Barrowclift" />
 	{% if page.theme-color-dark %}
-	<meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.theme-color-dark }}" media="(prefers-color-scheme: dark)" />
-	<script>const darkBaseThemeColorOverride="{{ page.theme-color-dark }}";</script>
+		<meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.theme-color-dark }}" media="(prefers-color-scheme: dark)" />
+		<script>const darkBaseThemeColorOverride="{{ page.theme-color-dark }}";</script>
 	{% endif %}
 	{% if page.theme-color-light %}
-	<meta name="theme-color" id="override-light-base-theme-color" content="{{ page.theme-color-light }}" media="(prefers-color-scheme: light)" />
-	<script>const lightBaseThemeColorOverride="{{ page.theme-color-light }}";</script>
+		<meta name="theme-color" id="override-light-base-theme-color" content="{{ page.theme-color-light }}" media="(prefers-color-scheme: light)" />
+		<script>const lightBaseThemeColorOverride="{{ page.theme-color-light }}";</script>
 	{% endif %}
 	<meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)" />
 	<meta name="theme-color" id="light-base-theme-color" content="white" />
@@ -38,50 +38,74 @@
 		if(color==="purple"){dbc="#1B1B1C";lbc="#FEFEFF";}else if(color==="pink") {dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="red"){dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="orange"){dbc="#1C1C1A";lbc="#FFFFFE";}else if(color==="yellow"){dbc="#1C1C19";lbc="#FFFFFE";}else if(color==="green"){dbc="#1B1C1B";lbc="#FEFFFE";}else{dbc="#1A1B1D";lbc="#FEFEFF";}
 		if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color").setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color").setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color").setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color").setAttribute("content",lbc);}
 	</script>
+	{% if page.force-dark-mode %}
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+		</script>
+	{% endif %}
 	<noscript><style>.jsonly{display: none !important}</style></noscript>
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/gapless5.css" type="text/css" />
+	<script language="JavaScript" type="text/javascript" src="{{ site.baseurl }}/scripts/gapless5.js"></script>
+
 	{% if jekyll.environment == "development" %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/accents.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/accents.css" type="text/css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
+		{% if page.layout == "parallax" %}
+			{% if page.banner-video != nil %}
+				<link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-video.css" type="text/css" />
+			{% else %}
+				<link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-image.css" type="text/css" />
+			{% endif %}
+		{% endif %}
 
-	<script src="{{ site.baseurl }}/scripts/min/jquery-3.7.0.min.js" type="text/javascript"></script>
-	<script async src="{{ site.baseurl }}/scripts/core.js" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}/scripts/min/jquery-3.7.0.min.js" type="text/javascript"></script>
+		<script async src="{{ site.baseurl }}/scripts/core.js" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print" lazyload="1" />
 	{% else %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1673753218.min.css" type="text/css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1548294991.min.css" type="text/css" media="print" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1.min.css" type="text/css" />
+		{% if page.layout == "parallax" %}
+			{% if page.banner-video != nil %}
+				<link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-video-1.min.css" type="text/css" />
+			{% else %}
+				<link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-image-1.min.css" type="text/css" />
+			{% endif %}
+		{% endif %}
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+		<script async src="{{ site.baseurl }}/scripts/min/core-1.min.js" type="text/javascript"></script>
 
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
-	<script async src="{{ site.baseurl }}/scripts/min/core-1669315194.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print" lazyload="1" />
 	{% endif %}
 
 	<!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
-	<script type="text/javascript">$(document).ready(function(){anchorsEnabled = {{ page.anchors }};});</script>
+	<script type="text/javascript">$(document).ready(function(){anchorsEnabled = {% if page.anchors %}true{% else %}false{% endif %};});</script>
 	<!-- Anchor offset -->
 	<script type="text/javascript">!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);</script>
 
 	{% if paginator.previous_page_path or page.prev-page %}
-	<link rel="prev" href="{{ site.url }}{% if page.prev-page %}{{ page.dir }}{{ page.prev-page }}{% else %}{{ paginator.previous_page_path }}{% endif %}" />
+		<link rel="prev" href="{{ site.url }}{% if page.prev-page %}{{ page.dir }}{{ page.prev-page }}{% else %}{{ paginator.previous_page_path }}{% endif %}" />
 	{% endif %}
-	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
+		<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 	{% if paginator.next_page_path or page.next-page %}
-	<link rel="next" href="{{ site.url }}{% if page.next-page %}{{ page.dir }}{{ page.next-page }}{% else %}{{ paginator.next_page_path }}{% endif %}" />
+		<link rel="next" href="{{ site.url }}{% if page.next-page %}{{ page.dir }}{{ page.next-page }}{% else %}{{ paginator.next_page_path }}{% endif %}" />
 	{% endif %}
 
 	<!--Facebook OpenGraph -->
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="{% if page.viewing_single_page %}article{% else %}website{% endif %}" />
+	<meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
 	{% if page.image %}
-	<meta property="og:image" content="{{ site.dropbox }}/{{ page.image }}"/>
+		<meta property="og:image" content="{{ site.dropbox }}/{{ page.image }}"/>
 	{% else %}
-	<meta property="og:image" content="{{ site.url }}/share-banner.jpg"/>
+		<meta property="og:image" content="{{ site.url }}/images/share-banner.jpg"/>
 	{% endif %}
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="fb:admins" content="1665270112" />
@@ -91,19 +115,9 @@
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.image %}
-	<meta name="twitter:image" content="{{ site.dropbox }}/{{ page.image }}" />
+		<meta name="twitter:image" content="{{ site.dropbox }}/{{ page.image }}" />
 	{% else %}
-	<meta name="twitter:image" content="{{ site.url }}/share-banner.jpg" />
+		<meta name="twitter:image" content="{{ site.url }}/share-banner.jpg" />
 	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
-
-	<!--[if !IE 7]>
-		<style type="text/css">
-			#wrap {display:table;height:100%}
-		</style>
-	<![endif]-->
-	<!-- Enable media queries for old IE -->
-	<!--[if lt IE 9]>
-		<script src="{{ site.baseurl }}/scripts/min/fuck-internet-explorer-1512833732.min.js" type="text/javascript"></script>
-	<![endif]-->
 </head>

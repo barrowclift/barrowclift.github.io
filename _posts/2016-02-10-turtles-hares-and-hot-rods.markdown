@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "Turtles, Hares, and Hot Rods"
 date: 2016-02-13 2:33:38
 categories:
   - Programming
   - Stories
-excerpt: "Pouring one out for the new generation of Turtles out there."
+excerpt: |
+  Pouring one out for the new generation of Turtles out there.
 image: "turtles-hares-and-hot-rods/math-turtle.jpg"
 ---
 

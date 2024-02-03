@@ -1,13 +1,8 @@
 ---
-layout: default-flex
-anchors: false
-home-menu-active: true
+flex: true
 ---
 
 <style>
-	.summary-list li:last-child {
-		margin-bottom: 0;
-	}
 	.row {
 		align-items: stretch;
 		width: 100%;
@@ -61,7 +56,7 @@ home-menu-active: true
 <div class="row">
 	<div class="column w6">
 
-		<h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/images/about/me.png" /></h2>
+		<h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/social/images/me.png" /></h2>
 
 		<h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full stack developer</a> from Philly. I craft <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">sustainable services professionally</a> and <a href="{{ site.baseurl }}/projects/">faff about</a> in my free time.</h4>
 
@@ -159,6 +154,7 @@ home-menu-active: true
 						{% else %}
 						<div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
 							<img src="{{ site.dropbox }}/{{ post.image }}">
+							{% if post.background-color %}
 							<div class="label" style="background-color:{{ post.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
 								{% if post.foreground-color-primary and post.foreground-color-secondary %}
 									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color-primary }} !important;">{{ post.title }}</h3>
@@ -168,6 +164,12 @@ home-menu-active: true
 									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
 								{% endif %}
 							</div>
+							{% else %}
+							<div class="label" style="transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+								<h3 class="primary" style="text-align:left;">{{ post.title }}</h3>
+								<h5 class="secondary" style="text-align:left;opacity:0.625;">{{ post.excerpt }}</h5>
+							</div>
+							{% endif %}
 						</div>
 						{% endif %}
 					</a>
@@ -177,7 +179,7 @@ home-menu-active: true
 		{% endfor %}
 		</ul>
 	</div>
-	<div class="column tight w6">
+	<div class="popular-articles column tight w6">
 		{% assign maxNumberOfPopularArticles=3 %}
 		{% assign found=0 %}
 		{% assign used=0 %}
@@ -211,7 +213,8 @@ home-menu-active: true
 						</div>
 						{% else %}
 						<div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.image }}">
+							<img src="{% if post.image %}{{ site.dropbox }}/{{ post.image }}{% else %}{{ site.url }}/images/share-banner.jpg{% endif %}">
+							{% if post.background-color %}
 							<div class="label" style="background-color:{{ post.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
 								{% if post.foreground-color-primary and post.foreground-color-secondary %}
 									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color-primary }} !important;">{{ post.title }}</h3>
@@ -221,6 +224,12 @@ home-menu-active: true
 									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
 								{% endif %}
 							</div>
+							{% else %}
+							<div class="label" style="transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+								<h3 class="primary" style="text-align:left;">{{ post.title }}</h3>
+								<h5 class="secondary" style="text-align:left;opacity:0.625;">{{ post.excerpt }}</h5>
+							</div>
+							{% endif %}
 						</div>
 						{% endif %}
 					</a>
