@@ -1,862 +1,872 @@
 ---
 layout: parallax
-
 title: "SMiLE: Heroes and Villains Mix"
-active-tab: "Projects"
 
-theme-color-light: "hsl(20, 69%, 55%)"
-theme-color-dark: "hsl(23, 77%, 31%)"
+design:
+    ignore-accent-color: true
+    browser-theme-color-light: "hsl(20, 69%, 55%)"
+    browser-theme-color-dark: "hsl(23, 77%, 31%)"
 
-background-color: "hsl(20, 69%, 55%)"
-dark-background-color: "hsl(23, 77%, 31%)"
+parallax:
+    background:
+        light-color: "hsla(20, 69%, 98%, 0.975)"
+        dark-color: "hsla(23, 50%, 15%, 0.95)"
+    foreground:
+        light:
+            background-color: "hsl(17, 82%, 57%)"
+            foreground-color: "hsla(18, 87%, 20%, 0.95)"
+        dark:
+            background-color: "hsl(16, 92%, 28%)"
+            foreground-color: "hsla(18, 87%, 92.5%, 0.9)"
 
-foreground-color: "hsla(18, 87%, 20%, 0.95)"
-dark-foreground-color: "#FFFFFF"
+primary-color:
+    light:
+        hue: "20"
+        saturation: "90%"
+        lightness: "55%"
+    dark:
+        hue: "20"
+        saturation: "100%"
+        lightness: "55%"
 
-ignore-accent-color: true
-primary-color: hsl(20, 100%, 55%);
-
+menu:
+    light:
+        foreground-color: "hsl(0, 0%, 100%)"
+        active:
+            hue: "20"
+            saturation: "56%"
+            lightness: "29%"
+    dark:
+        foreground-color: "hsla(0, 0%, 100%, 0.75)"
+        active:
+            hue: "23"
+            saturation: "77%"
+            lightness: "12.5%"
 ---
 
 <style>
-	::selection {
-		background: hsla(20, 90%, 55%, 0.99) !important;
-	}
-	::-moz-selection {
-		background: hsla(20, 90%, 55%, 0.99) !important;
-	}
-	main a:hover,
-	.anchor:hover {
-		background-color: hsla(20, 100%, 55%, 0.1);
-	}
-	#content {
-		background-color: #DF914D;
-	}
-	html {
-		background-color: #EB6B37 !important;
-	}
-	html#dark {
-		background-color: #892A06 !important;
-	}
-	.mac-background-color,
-	#logo .signature-color,
-	.pill path {
-		fill: white;
-	}
-	#logo:hover #signature .signature-color {
-		fill: #743C21 !important;
-	}
-	#mainmenu a:hover,
-	#mainmenu .active {
-		color: #743C21 !important;
-	}
-	#dark #mainmenu a:hover,
-	#dark #mainmenu .active {
-	    color: hsl(23, 77%, 12.5%) !important;
-	}
-	#dark #logo:hover #signature .signature-color {
-		fill: hsl(23, 77%, 12.5%) !important;
-	}
-	#dark .mac-background-color,
-	#dark #logo .signature-color,
-	#dark .pill path {
-		fill: rgba(255, 255, 255, 0.6);
-	}
-	main {
-		margin-top:0;
-		margin-bottom:0;
-	}
-	.details {
-		display: inline-block;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.18);
-		width: 100%;
-		border-top-right-radius: 1em;
-		border-top-left-radius: 1em;
-		margin-top: -1em;
-		background-color: rgb(255, 254, 252);
-	}
-	#dark .details {
-		background-color: rgb(41, 38, 35);
-	}
-	.wrapper {
-		max-width: 35em;
-		display: inline-block;
-		margin-bottom: 2.6em;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	button.pill {
-		background-color: hsla(20, 56%, 29%, 0.2);
-		box-shadow: none;
-	}
-		button.pill:hover {
-			background-color: #743C21 !important;
-			box-shadow: 0 0.43em 0.87em -0.2em rgba(0, 0, 0, 0.25);
-		}
-		button.pill:active,
-		.setting-toggles.active button.pill {
-			background-color: #743C21 !important;
-			box-shadow: 0 0.43em 0.87em -0.2em rgba(0, 0, 0, 0.25);
-		}
-	#dark button.pill {
-		background-color: hsla(23, 77%, 12.5%, 0.2);
-	}
-		#dark button.pill:hover {
-			background-color: hsla(23, 77%, 12.5%, 1) !important;
-			box-shadow: 0 0.43em 0.87em -0.2em hsla(23, 77%, 12.5%, 0.25);
-		}
-		#dark button.pill:active,
-		#dark .setting-toggles.active button.pill {
-			background-color: hsla(23, 77%, 12.5%, 1) !important;
-			box-shadow: 0 0.43em 0.87em -0.2em hsla(23, 77%, 12.5%, 0.25);
-		}
-	#parallax-background {
-		background-image: -ms-linear-gradient(top, hsl(20, 69%, 55%) 0%, #EB6B37 100%);
-		background-image: -moz-linear-gradient(top, hsl(20, 69%, 55%) 0%, #EB6B37 100%);
-		background-image: -o-linear-gradient(top, hsl(20, 69%, 55%) 0%, #EB6B37 100%);
-		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(20, 69%, 55%)), color-stop(100, #EB6B37));
-		background-image: -webkit-linear-gradient(top, hsl(20, 69%, 55%) 0%, #EB6B37 100%);
-		background-image: linear-gradient(to bottom, hsl(20, 69%, 55%) 0%, #EB6B37 100%);
-	}
-	#dark #parallax-background {
-		background: linear-gradient(180deg, hsl(28, 91%, 29%), hsl(17, 92%, 28%) 100%);
-	}
-	#parallax-background img {
-\		border-radius: 0.25em;
-	}
-	#parallax-background a {
-		margin: 0;
-		padding: 0;
-		display:inline-block;
-		text-decoration: none;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	#parallax-background a:hover {
-		background-color:unset;
-	}
-	.project {
-		border-radius: 1em;
-		overflow: hidden;
-	}
-	.project img {
-		margin:0;
-		padding:0;
-		display:block;
-	}
-	.compactSound__artwork {
-		display:none;
-	}
-	@media (min-width: 900px) {
-		.wrapper {
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
-	#g5positionbar-gapless5-player,
-	#g5shuffle-gapless5-player,
-	#g5volume-gapless5-player,
-	#g5trackname-gapless5-player,
-	#g5prev-gapless5-player,
-	#g5next-gapless5-player,
-	#g5stop-gapless5-player {
-    display: none;
-  }
-  #track-list {
-  	background-color: rgba(255, 255, 255, 0.9);
-  }
-  #dark #track-list {
-  	background-color: rgba(30, 30, 30, 0.7);
-  }
-  .card,
-  .card:hover {
-			background-color: rgba(255, 255, 255, 0.85);
-  }
-  .g5button {
-  	border-radius: 100%;
-		width: 2.5rem;
-		height: 2.5rem;
-  }
-  .card {
-  	overflow: hidden;
-  	width: auto;
-  	margin-bottom: 0;
-  }
-  .card ol {
-  	padding: 0em;
-  	margin-bottom: 0;
-  	margin-left: 2.6em;
-  	border-left: 1px solid rgba(0,0,0,0.1);
-  }
-  .card li {
-  	padding: 0.3em 0.5em;
-  	padding-right: 0.65em;
-  	margin-bottom: 0;
-  	cursor: pointer;
-  	transition: background-color 0.15s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  .card li:last-child {
-  	margin-bottom: 0;
-  }
-  .card li:hover,
-	.card li.active {
-  	background-color: hsla(206, 74%, 41%, 0.25);
-  }
-  #dark .card li:hover,
-  #dark .card li.active {
-  	background-color: hsla(206, 100%, 50%, 0.2);
-  }
-  .card li.active {
-  	color: #1B74B6 !important;
-  }
-  #gapless5-player {
-  	height: 4rem;
-		background: linear-gradient(
-	    to bottom,
-	    hsla(0, 0%, 0%, 0.05) 0%,
-	    hsla(0, 0%, 0%, 0.052) 8.1%,
-	    hsla(0, 0%, 0%, 0.057) 15.5%,
-	    hsla(0, 0%, 0%, 0.066) 22.5%,
-	    hsla(0, 0%, 0%, 0.076) 29%,
-	    hsla(0, 0%, 0%, 0.089) 35.3%,
-	    hsla(0, 0%, 0%, 0.103) 41.2%,
-	    hsla(0, 0%, 0%, 0.118) 47.1%,
-	    hsla(0, 0%, 0%, 0.132) 52.9%,
-	    hsla(0, 0%, 0%, 0.147) 58.8%,
-	    hsla(0, 0%, 0%, 0.161) 64.7%,
-	    hsla(0, 0%, 0%, 0.174) 71%,
-	    hsla(0, 0%, 0%, 0.184) 77.5%,
-	    hsla(0, 0%, 0%, 0.193) 84.5%,
-	    hsla(0, 0%, 0%, 0.198) 91.9%,
-	    hsla(0, 0%, 0%, 0.2) 100%
-	  );
-  	border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-  .g5play {
-  	margin-top: 0.75rem;
-  	position: relative;
-  	--hue: 206;
-  	--saturation: 74%;
-  	--lightness: 41%;
+    /* BODY ============================================================= */
+
+    /* ----- PARALLAX ----- */
+
+    #parallax .container {
+        perspective: initial;
+    }
+    #parallax .layer {
+        position: initial;
+        display: block;
+    }
+    #parallax-background {
+        background: linear-gradient(to bottom, hsl(20, 69%, 55%), hsl(17, 82%, 57%) 100%);
+        transform: unset;
+        height: auto;
+        width: auto;
+        padding-top: 13em;
+    } 
+        #parallax-background img {
+            transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            width: 90%;
+            height: auto;
+            margin-bottom: 1.3em;
+        }
+    #parallax-foreground {
+        min-width: 90vw;
+        max-width: unset;
+        width: 100%;
+
+        transform: unset;
+        border-radius: unset;
+
+        top: -1vw;
+        margin-top: -0.25em !important;
+    }
+    .flex {
+        transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
 
 
-  }
-  .g5play.enabled {
-  	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRo PSIyOTcuNDEwMDM0cHgiIGhlaWdodD0iMjk3LjQxMDAzNHB4IiB2aWV3Qm94PSIw IDAgMjk3LjQxMDAzNCAyOTcuNDEwMDM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93 d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdp ZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9 Ik0xODUuMTIxNDI1LDk2LjUzNzgzMjggTDIzOS44NTA5MTUsMjA1Ljk5NjgxMyBD MjQzLjU1NTc1NCwyMTMuNDA2NDkxIDI0MC41NTIzODksMjIyLjQxNjU4NiAyMzMu MTQyNzExLDIyNi4xMjE0MjUgQzIzMS4wNTk4OCwyMjcuMTYyODQxIDIyOC43NjMx ODQsMjI3LjcwNTAxNyAyMjYuNDM0NTA3LDIyNy43MDUwMTcgTDExNi45NzU1Mjcs MjI3LjcwNTAxNyBDMTA4LjY5MTI1NiwyMjcuNzA1MDE3IDEwMS45NzU1MjcsMjIw Ljk4OTI4OCAxMDEuOTc1NTI3LDIxMi43MDUwMTcgQzEwMS45NzU1MjcsMjEwLjM3 NjM0MSAxMDIuNTE3NzAzLDIwOC4wNzk2NDUgMTAzLjU1OTExOSwyMDUuOTk2ODEz IEwxNTguMjg4NjA5LDk2LjUzNzgzMjggQzE2MS45OTM0NDgsODkuMTI4MTU1NCAx NzEuMDAzNTQ0LDg2LjEyNDc5MDIgMTc4LjQxMzIyMSw4OS44Mjk2Mjg5IEMxODEu MzE2MTMyLDkxLjI4MTA4NDQgMTgzLjY2OTk2OSw5My42MzQ5MjE4IDE4NS4xMjE0 MjUsOTYuNTM3ODMyOCBaIiBpZD0iVHJpYW5nbGUiIGZpbGw9IiNGRkZGRkYiIHRy YW5zZm9ybT0idHJhbnNsYXRlKDE3MS43MDUsIDE0OC43MDUpIHJvdGF0ZSgtMjcw KSB0cmFuc2xhdGUoLTE3MS43MDUsIC0xNDguNzA1KSI+PC9wYXRoPjwvZz48L3N2 Zz4=');
-  	background-size: 100% !important;
-  	background-position: 53% 50% !important;
-  }
-  .g5play.disabled,
-  .g5play.disabled:hover {
-  	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRo PSIyOTcuNDEwMDM0cHgiIGhlaWdodD0iMjk3LjQxMDAzNHB4IiB2aWV3Qm94PSIw IDAgMjk3LjQxMDAzNCAyOTcuNDEwMDM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93 d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdp ZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGlkPSJH cm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTA1LjIwNSwgNzguNzA1KSIgZmls bD0iI0ZGRkZGRiI+PHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iMCIgeT0iMCIgd2lk dGg9IjI2IiBoZWlnaHQ9IjE0MCIgcng9IjgiPjwvcmVjdD48cmVjdCBpZD0iUmVj dGFuZ2xlLUNvcHkiIHg9IjYxIiB5PSIwIiB3aWR0aD0iMjYiIGhlaWdodD0iMTQw IiByeD0iOCI+PC9yZWN0PjwvZz48L2c+PC9zdmc+') !important;
-  	background-size: 100% !important;
-  	background-position: center !important;
-  	cursor: pointer;
-  }
-  .g5play.enabled,
-  .g5play.disabled,
-  .g5play.disabled:hover {
-  	background-repeat: no-repeat !important;
-  	background-color: hsl(var(--hue), var(--saturation), var(--lightness)) !important;
-  	box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), var(--lightness), 0.4) !important;
-  }
-  .g5play:before {
-  	background: linear-gradient(rgba(255,255,255,0.625) 0%, rgba(255,255,255,0) 50%);
-  	border-radius: 50%;
-  	content: '';
-  	height: 100%;
-  	left: 0px;
-  	top: 0px;
-  	transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  	position: absolute;
-  	width: 100%;
-  	overflow: hidden;
-  }
-  .g5play:hover,
-  .g5play.disabled:hover {
-  	transform: scale(1.05) !important;
-  	background-color: hsl(var(--hue), var(--saturation), calc(var(--lightness) + 5%)) !important;
-  	box-shadow: inset 0 13px 25px rgba(255,255,255,0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), calc(var(--lightness) - 5%), 0.8) !important;;
-  }
-  .g5play:active,
-  .g5play.disabled:active {
-  	transform: scale(0.95) !important;
-  	background-color: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 5%)) !important;
-		box-shadow: inset 0 -.65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), calc(var(--lightness) - 5%), 0.2) !important;
-  }
-  .g5play:active:before,
-  .g5play.disabled:active:before {
-  	background: unset;
-  }
-  .g5transport {
-  	margin-right: 1rem;
-		width: 75%;
-  }
-  #g5transportbar-gapless5-player {
-  	padding: 0;
-  	border: unset;
-		width: 100%;
-		margin: 0;
-  	display: inline-block;
-  }
-  #parallax-background a {
-  	margin-left: 0;
-  	margin-right: 0;
-  }
-  input[type=range] {
-	  --g: 0px; /* The gap between the thumb control and the range */
-	  --l: 5em; /* line thickness */
-	  --s: 1.125rem; /* thumb size*/
-  	-webkit-appearance :none;
-  	-moz-appearance :none;
-  	appearance :none;
-  	background: none;
-  	cursor: pointer;
-  	box-shadow: unset !important;
-  }
-  #g5transportbar-gapless5-player {
-  	--val: 0;
-  	--max: 1;
-		--pos: calc(0.5625rem  + var(--val)*(100% - 1.125rem)/var(--max));
-  }
-  [type=range]::-webkit-slider-runnable-track, [type=range]::-webkit-slider-thumb, [type=range] {
-  	-webkit-appearance: none;
-	}
-	[type=range]::-webkit-slider-runnable-track {
-		background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--pos) 100% no-repeat, linear-gradient(#e4e5e7, #fffefc 70%, #bfc2c7);
-	  box-shadow: unset !important;
-	  border-radius: 1.125rem;
-	  overflow: visible;
-	  width: 100%;
-	}
-	[type=range]::-moz-range-track {
-		background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--pos) 100% no-repeat, linear-gradient(#e4e5e7, #fffefc 70%, #bfc2c7);
-	  box-shadow: unset !important;
-	  border-radius: 1.125rem;
-	  height: 1.125rem;
-	  overflow: visible;
-	  width: 100%;
-	}
-	#dark [type=range]::-webkit-slider-runnable-track {
-		background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--pos) 100% no-repeat, linear-gradient(hsl(220, 0%, 20%), hsl(40, 0%, 5%) 70%, hsl(218, 0%, 22.5%));
-	}
-	#dark [type=range]::-moz-range-track {
-		background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--pos) 100% no-repeat, linear-gradient(hsl(220, 0%, 20%), hsl(40, 0%, 5%) 70%, hsl(218, 0%, 22.5%));
-	}
-	/* https://codepen.io/thebabydino/pen/JoOomG
-	   https://codepen.io/thebabydino/pen/ogoxgZ */
-  input[type="range"]::-webkit-slider-thumb {
-  	transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: none;
-    width: var(--s);
-    height: var(--s);
-    border-radius: 50%;
-    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1), 0 0.125em 0.5em rgba(0, 0, 0, 0.1);
-  	background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 99%), hsl(0, 0%, 85%) 0.421875rem, hsl(0, 0%, 80%) 0.5625rem, hsl(0, 0%, 99%));
-  }
-  input[type="range"]::-moz-range-thumb {
-  	transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: none;
-    width: 1.125rem;
-    height: 1.125rem;
-    border-radius: 50%;
-		box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1), 0 0.125em 0.5em rgba(0, 0, 0, 0.1);
-    background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a);
-  }
-  #dark input[type="range"]::-webkit-slider-thumb {
-  	background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 25%), hsl(0, 0%, 35%) 0.421875rem, hsl(0, 0%, 45%) 0.5625rem, hsl(0, 0%, 25%));
-  }
-  #dark input[type="range"]::-moz-range-thumb {
-  	background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 25%), hsl(0, 0%, 35%) 0.421875rem, hsl(0, 0%, 45%) 0.5625rem, hsl(0, 0%, 25%));
-  }
-  input[type="range"]::-webkit-slider-thumb:hover {
-  	box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1), 0 0.25em 1em rgba(0, 0, 0, 0.1);
-    transform: scale(1.05) !important;
-  }
-  input[type="range"]::-moz-range-thumb:hover {
-  	box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1), 0 0.25em 1em rgba(0, 0, 0, 0.1);
-		transform: scale(1.05) !important;
-  }
-  #g5inside-gapless5-player {
-  	display: flex;
-  	display: flex !important;
-  	flex-wrap: wrap;
-  	flex-direction: row;
-  	justify-content: center;
-  	align-items: center;
-  	align-content: center;
-  	gap: 1rem;
-  	margin-left: 1rem;
-  	margin-right: 1rem;
-  }
-  .g5transport,
-  .g5buttons {
-  	margin-left: 0;
-  	margin-right: 0;
-  	display: flex !important;
-  	flex-direction: column !important;
-		flex: 0 1 auto !important;
-  }
-  .g5buttons {
-  	order: 1;
-  	flex-grow: 0 !important;
-  }
-  .g5transport {
-  	order: 2;
-  	flex-grow: 1 !important;
-  }
-  #mainmenu {
-  	height: initial;
-  }
-  article {
-  	max-width: 35em;
-  	text-align: center;
-  	display: inline-block;
-  	margin-bottom: 3.9em;
-  }
-  #parallax-foreground {
-  	min-width: 90vw;
-  	width: 90vw;
-  	margin-top: 0;
-  	top: -1vw;
-  }
-  #parallax-background {
-  	transform: unset;
-  	height: auto;
-  	width: auto;
-  	padding-top: 13em;
-  }
-  #parallax-background img {
-  	border-radius: 1em;
-  	width: 90%;
-  	height: auto;
-  	margin-bottom: 1.3em;
-  }
-  #parallax-foreground {
-  	transform: unset;
-  	border-radius: unset;
-  }
-  #parallax .container {
-  	perspective: initial;
-  }
-  #parallax .layer {
-  	position: initial;
-  	display: block;
-  }
-  menu {
-  	transform: unset;
-  	position: initial;
-  }
-  #up-arrow {
-  	display: none;
-  }
-  #parallax-foreground {
-  	max-width: unset;
-  	width: 100%;
-  	margin-top: -0.25em !important;
-  }
-  .card {
-  	margin-bottom: 3.9em;
-  	margin-left: 0;
-  	margin-right: 0;
-  	width: 90%;
-  	max-width: 396px !important;
-  }
-  .flex {
-  	transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #parallax-background img {
-  	transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #parallax-background img,
-  .card,
-  .card:hover {
-  	border: 2px solid hsla(20, 69%, 50%, 0.9);
-  }
-  #dark #parallax-background img,
-  #dark .card,
-  #dark .card:hover {
-  	border: 2px solid hsla(23, 60%, 35%, 0.9);
-  }
-  #dark .card,
-  #dark .card:hover {
-  	background-color: rgba(46, 46, 46, 0.3);
-  }
-  @media (min-width: 700px) {
-  	#mainmenu {
-  		/*https://larsenwork.com/easing-gradients/*/
-  		background-image: linear-gradient(
-		    to bottom,
-		    hsl(20, 69%, 55%) 0%,
-		    hsla(20, 69%, 55%, 0.987) 16.5%,
-		    hsla(20, 69%, 55%, 0.951) 30.7%,
-		    hsla(20, 69%, 55%, 0.896) 43%,
-		    hsla(20, 69%, 55%, 0.825) 53.5%,
-		    hsla(20, 69%, 55%, 0.741) 62.4%,
-		    hsla(20, 69%, 55%, 0.648) 69.8%,
-		    hsla(20, 69%, 55%, 0.55) 75.9%,
-		    hsla(20, 69%, 55%, 0.45) 80.9%,
-		    hsla(20, 69%, 55%, 0.352) 85%,
-		    hsla(20, 69%, 55%, 0.259) 88.3%,
-		    hsla(20, 69%, 55%, 0.175) 91.1%,
-		    hsla(20, 69%, 55%, 0.104) 93.4%,
-		    hsla(20, 69%, 55%, 0.049) 95.6%,
-		    hsla(20, 69%, 55%, 0.013) 97.7%,
-		    hsla(20, 69%, 55%, 0) 100%
-		  );
-  	}
-  	#dark #mainmenu {
-  		background-image: linear-gradient(
-		    to bottom,
-		    hsl(23, 77%, 31%) 0%,
-		    hsla(23, 77%, 31%, 0.987) 16.5%,
-		    hsla(23, 77%, 31%, 0.951) 30.7%,
-		    hsla(23, 77%, 31%, 0.896) 43%,
-		    hsla(23, 77%, 31%, 0.825) 53.5%,
-		    hsla(23, 77%, 31%, 0.741) 62.4%,
-		    hsla(23, 77%, 31%, 0.648) 69.8%,
-		    hsla(23, 77%, 31%, 0.55) 75.9%,
-		    hsla(23, 77%, 31%, 0.45) 80.9%,
-		    hsla(23, 77%, 31%, 0.352) 85%,
-		    hsla(23, 77%, 31%, 0.259) 88.3%,
-		    hsla(23, 77%, 31%, 0.175) 91.1%,
-		    hsla(23, 77%, 31%, 0.104) 93.4%,
-		    hsla(23, 77%, 31%, 0.049) 95.6%,
-		    hsla(23, 77%, 31%, 0.013) 97.7%,
-		    hsla(23, 77%, 31%, 0) 100%
-		  );
-  	}
-  	#parallax-background {
-  		transform: translateZ(-0.2px);
-  		height: 120vh;
-			width: 120vw;
-  		padding-top: 6rem !important;
-  	}
-  	#parallax-background img {
-  		border-radius: 1em;
-  		margin-bottom: 0;
-  	}
-  	#parallax-foreground {
-  		transform: translateZ(0px);
-  		border-radius: 1em 1em 0 0;
-  		width: 100vw;
-  		min-width: 100vw;
-  		height: auto;
-  		margin: 0 !important;
-  		border-radius: 1em 1em 0 0;
-  		margin-top: calc(792px - 120vh) !important;
-  	}
-  	#parallax .container {
-  		perspective: 1px;
-  	}
-  	#parallax .layer {
-  		position: absolute;
-			position: sticky;
-  	}
-  	menu {
-  		transform: translateZ(0px);
-  		position: sticky;
-  	}
-  	.card {
-  		margin-bottom: 0;
-  		margin-left: 0;
-  		margin-right: 0;
-  		width: auto;
-  		min-width: 22.5em;
-  	}
-	  .flex {
-	  	display: flex !important;
-	  	flex-wrap: nowrap;
-	  	flex-direction: row;
-	  	justify-content: center;
-	  	align-items: center;
-	  	align-content: center;
-	  	gap: 1.3em;
-	  	margin-left: 1.3em;
-	  	margin-right: 1.3em;
-	  }
-	  .column {
-	  	margin-left: 0;
-	  	margin-right: 0;
-	  	display: flex !important;
-	  	flex-direction: column !important;
-			flex: 0 1 auto !important;
-	  }
-	  #parallax-background img {
-			height: auto;
-	  	width: 100%;
-	  	min-width: 17em;
-	  	min-height: 17em;
-	  	max-width: 40.55em;
-	  	max-height: 40.55em;
-	  }
-  }
-  @media (min-width: 900px) {
-  	#parallax-background img {
-			height: auto;
-  		min-width: 22em;
-	  	min-height: 22em;
-  	}
-  	#parallax-foreground {
-			margin-top: calc(882px - 120vh) !important;
-  	}
-  }
+    /* JUKEBOX ============================================================= */
+    
+    /* ----- CONTAINER ----- */
+
+    .card,
+    .card:hover {
+        background-color: hsl(23, 76%, 90%, 0.85);
+    }
+    .card {
+        overflow: hidden;
+        margin-bottom: 3.9em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+        max-width: 396px !important;
+    }
+        .card ol {
+            padding: 0em;
+            margin-bottom: 0;
+            margin-left: 2.6em;
+            border-left: 1px solid rgba(0,0,0,0.1);
+        }
+        .card li {
+            padding: 0.3em 0.5em;
+            padding-right: 0.65em;
+            margin-bottom: 0;
+            cursor: pointer;
+            transition: background-color 0.15s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .card li:last-child {
+            margin-bottom: 0;
+        }
+        .card li:hover,
+        .card li.active {
+            background-color: hsla(206, 74%, 41%, 0.25);
+        }
+        .card li.active {
+            color: #1B74B6 !important;
+        }
+    #parallax-background img,
+    .card,
+    .card:hover {
+        border: 2px solid hsla(20, 69%, 50%, 0.9);
+    }
+
+    /* ----- GAPLESS 5 PLAYER ----- */
+
+    #tracklist {
+        background-color: hsl(23, 76%, 97%);
+    }
+    #g5positionbar-gapless5-player,
+    #g5shuffle-gapless5-player,
+    #g5volume-gapless5-player,
+    #g5trackname-gapless5-player,
+    #g5prev-gapless5-player,
+    #g5next-gapless5-player,
+    #g5stop-gapless5-player {
+        display: none;
+    }
+    #gapless5-player {
+        height: 4rem;
+        background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0.05) 0%,
+            hsla(0, 0%, 0%, 0.052) 8.1%,
+            hsla(0, 0%, 0%, 0.057) 15.5%,
+            hsla(0, 0%, 0%, 0.066) 22.5%,
+            hsla(0, 0%, 0%, 0.076) 29%,
+            hsla(0, 0%, 0%, 0.089) 35.3%,
+            hsla(0, 0%, 0%, 0.103) 41.2%,
+            hsla(0, 0%, 0%, 0.118) 47.1%,
+            hsla(0, 0%, 0%, 0.132) 52.9%,
+            hsla(0, 0%, 0%, 0.147) 58.8%,
+            hsla(0, 0%, 0%, 0.161) 64.7%,
+            hsla(0, 0%, 0%, 0.174) 71%,
+            hsla(0, 0%, 0%, 0.184) 77.5%,
+            hsla(0, 0%, 0%, 0.193) 84.5%,
+            hsla(0, 0%, 0%, 0.198) 91.9%,
+            hsla(0, 0%, 0%, 0.2) 100%
+        );
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    #g5transportbar-gapless5-player {
+        padding: 0;
+        border: unset;
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+
+        --play-progress: 0;
+        --play-end: 1;
+        --thumb-position: calc(0.5625rem  + var(--play-progress)*(100% - 1.125rem)/var(--play-end));
+    }
+    #g5inside-gapless5-player {
+        display: flex;
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* ----- GAPLESS 5 PLAYER: PLAY/PAUSE BUTTON ----- */
+
+    .g5button {
+        border-radius: 100%;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .g5play {
+        margin-top: 0.75rem;
+        position: relative;
+        --hue: 206;
+        --saturation: 74%;
+        --lightness: 41%;
+    }
+        /**
+         * Enabled: Nothing's playing, show the "play" icon
+         * Disabled: Something's playing, show the "pause" icon
+         */
+        .g5play.enabled {
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRo PSIyOTcuNDEwMDM0cHgiIGhlaWdodD0iMjk3LjQxMDAzNHB4IiB2aWV3Qm94PSIw IDAgMjk3LjQxMDAzNCAyOTcuNDEwMDM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93 d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdp ZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9 Ik0xODUuMTIxNDI1LDk2LjUzNzgzMjggTDIzOS44NTA5MTUsMjA1Ljk5NjgxMyBD MjQzLjU1NTc1NCwyMTMuNDA2NDkxIDI0MC41NTIzODksMjIyLjQxNjU4NiAyMzMu MTQyNzExLDIyNi4xMjE0MjUgQzIzMS4wNTk4OCwyMjcuMTYyODQxIDIyOC43NjMx ODQsMjI3LjcwNTAxNyAyMjYuNDM0NTA3LDIyNy43MDUwMTcgTDExNi45NzU1Mjcs MjI3LjcwNTAxNyBDMTA4LjY5MTI1NiwyMjcuNzA1MDE3IDEwMS45NzU1MjcsMjIw Ljk4OTI4OCAxMDEuOTc1NTI3LDIxMi43MDUwMTcgQzEwMS45NzU1MjcsMjEwLjM3 NjM0MSAxMDIuNTE3NzAzLDIwOC4wNzk2NDUgMTAzLjU1OTExOSwyMDUuOTk2ODEz IEwxNTguMjg4NjA5LDk2LjUzNzgzMjggQzE2MS45OTM0NDgsODkuMTI4MTU1NCAx NzEuMDAzNTQ0LDg2LjEyNDc5MDIgMTc4LjQxMzIyMSw4OS44Mjk2Mjg5IEMxODEu MzE2MTMyLDkxLjI4MTA4NDQgMTgzLjY2OTk2OSw5My42MzQ5MjE4IDE4NS4xMjE0 MjUsOTYuNTM3ODMyOCBaIiBpZD0iVHJpYW5nbGUiIGZpbGw9IiNGRkZGRkYiIHRy YW5zZm9ybT0idHJhbnNsYXRlKDE3MS43MDUsIDE0OC43MDUpIHJvdGF0ZSgtMjcw KSB0cmFuc2xhdGUoLTE3MS43MDUsIC0xNDguNzA1KSI+PC9wYXRoPjwvZz48L3N2 Zz4=');
+            background-size: 100% !important;
+            background-position: 53% 50% !important;
+        }
+        .g5play.disabled,
+        .g5play.disabled:hover {
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRo PSIyOTcuNDEwMDM0cHgiIGhlaWdodD0iMjk3LjQxMDAzNHB4IiB2aWV3Qm94PSIw IDAgMjk3LjQxMDAzNCAyOTcuNDEwMDM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93 d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdp ZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGlkPSJH cm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTA1LjIwNSwgNzguNzA1KSIgZmls bD0iI0ZGRkZGRiI+PHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iMCIgeT0iMCIgd2lk dGg9IjI2IiBoZWlnaHQ9IjE0MCIgcng9IjgiPjwvcmVjdD48cmVjdCBpZD0iUmVj dGFuZ2xlLUNvcHkiIHg9IjYxIiB5PSIwIiB3aWR0aD0iMjYiIGhlaWdodD0iMTQw IiByeD0iOCI+PC9yZWN0PjwvZz48L2c+PC9zdmc+') !important;
+            background-size: 100% !important;
+            background-position: center !important;
+            cursor: pointer;
+        }
+        .g5play.enabled,
+        .g5play.disabled,
+        .g5play.disabled:hover {
+            background-repeat: no-repeat !important;
+            background-color: hsl(var(--hue), var(--saturation), var(--lightness)) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), var(--lightness), 0.4) !important;
+        }
+        .g5play:before {
+            background: linear-gradient(rgba(255,255,255,0.625) 0%, rgba(255,255,255,0) 50%);
+            border-radius: 50%;
+            content: '';
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+        .g5play:hover,
+        .g5play.disabled:hover {
+            transform: scale(1.05) !important;
+            background-color: hsl(var(--hue), var(--saturation), calc(var(--lightness) + 5%)) !important;
+            box-shadow: inset 0 13px 25px rgba(255,255,255,0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), calc(var(--lightness) - 5%), 0.8) !important;;
+        }
+        .g5play:active,
+        .g5play.disabled:active {
+            transform: scale(0.95) !important;
+            background-color: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 5%)) !important;
+            box-shadow: inset 0 -.65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(var(--hue), var(--saturation), calc(var(--lightness) - 5%), 0.2) !important;
+        }
+        .g5play:active:before,
+        .g5play.disabled:active:before {
+            background: unset;
+        }
+
+    /* ----- GAPLESS 5 PLAYER: ARRANGING/RESIZING CONTROLS ----- */
+
+    /**
+     * Ensuring the play/pause button and track progress bar are arranged and
+     * resize sanely (play/pause to the left, track progress bar filling the
+     * remaining space to the right).
+     */
+    .g5transport,
+    .g5buttons {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 0 1 auto !important;
+    }
+    .g5buttons {
+        order: 1;
+        flex-grow: 0 !important;
+    }
+    .g5transport {
+        order: 2;
+        flex-grow: 1 !important;
+        width: 75%;
+    }
+
+    /* ----- GAPLESS 5 PLAYER: PROGRESS BAR STYLING ----- */
+
+    /* Disable all default styling */
+    input[type=range] {
+        -webkit-appearance :none;
+        -moz-appearance :none;
+        appearance :none;
+        background: none;
+        cursor: pointer;
+        box-shadow: unset !important;
+    }
+    [type=range]::-webkit-slider-runnable-track,
+    [type=range]::-webkit-slider-thumb,
+    [type=range] {
+        -webkit-appearance: none;
+    }
+    /* The progress bar "track" (both the groove AND the blue "fill" progress) */
+    [type=range]::-webkit-slider-runnable-track {
+        background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--thumb-position) 100% no-repeat, linear-gradient(#e4e5e7, #fffefc 70%, #bfc2c7);
+        box-shadow: unset !important;
+        border-radius: 1.125rem;
+        overflow: visible;
+        width: 100%;
+    }
+    [type=range]::-moz-range-track {
+        background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--thumb-position) 100% no-repeat, linear-gradient(#e4e5e7, #fffefc 70%, #bfc2c7);
+        box-shadow: unset !important;
+        border-radius: 1.125rem;
+        height: 1.125rem;
+        overflow: visible;
+        width: 100%;
+    }
+    /**
+     * Thanks to the following Codepens for helping me with this styling 
+     *   https://codepen.io/thebabydino/pen/JoOomG
+     *   https://codepen.io/thebabydino/pen/ogoxgZ
+     */
+    input[type="range"]::-webkit-slider-thumb {
+        transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        border: none;
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 50%;
+        box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1), 0 0.125em 0.5em rgba(0, 0, 0, 0.1);
+        background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 99%), hsl(0, 0%, 85%) 0.421875rem, hsl(0, 0%, 80%) 0.5625rem, hsl(0, 0%, 99%));
+    }
+    input[type="range"]::-moz-range-thumb {
+        transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        border: none;
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 50%;
+        box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1), 0 0.125em 0.5em rgba(0, 0, 0, 0.1);
+        background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a);
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+        box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1), 0 0.25em 1em rgba(0, 0, 0, 0.1);
+        transform: scale(1.05) !important;
+    }
+    input[type="range"]::-moz-range-thumb:hover {
+        box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1), 0 0.25em 1em rgba(0, 0, 0, 0.1);
+        transform: scale(1.05) !important;
+    }
+
+
+    /* MEDIA QUERIES ============================================================= */
+        
+    /* ----- PARALLAX EFFECT ENABLED ----- */
+
+    /*
+    ┌────────────┬──────────┬────────────┐
+    │            │••••••••••│            │
+    │            │••      ••│            │
+    │            │•• 700w ••│            │
+    │            │••      ••│            │
+    │            │••••••••••│            │
+    │            │••••••••••│            │
+    └────────────┴──────────┴────────────┘
+    */
+    @media (min-width: 700px) {
+        /**
+         * Many thanks to https://larsenwork.com/easing-gradients/
+         * for easily generated, eased gradients
+         */
+        #mainmenu {
+            background-image: linear-gradient(
+                to bottom,
+                hsl(20, 69%, 55%) 0%,
+                hsla(20, 69%, 55%, 0.987) 16.5%,
+                hsla(20, 69%, 55%, 0.951) 30.7%,
+                hsla(20, 69%, 55%, 0.896) 43%,
+                hsla(20, 69%, 55%, 0.825) 53.5%,
+                hsla(20, 69%, 55%, 0.741) 62.4%,
+                hsla(20, 69%, 55%, 0.648) 69.8%,
+                hsla(20, 69%, 55%, 0.55) 75.9%,
+                hsla(20, 69%, 55%, 0.45) 80.9%,
+                hsla(20, 69%, 55%, 0.352) 85%,
+                hsla(20, 69%, 55%, 0.259) 88.3%,
+                hsla(20, 69%, 55%, 0.175) 91.1%,
+                hsla(20, 69%, 55%, 0.104) 93.4%,
+                hsla(20, 69%, 55%, 0.049) 95.6%,
+                hsla(20, 69%, 55%, 0.013) 97.7%,
+                hsla(20, 69%, 55%, 0) 100%
+            );
+        }
+        #dark #mainmenu {
+            background-image: linear-gradient(
+                to bottom,
+                hsl(23, 77%, 31%) 0%,
+                hsla(23, 77%, 31%, 0.987) 16.5%,
+                hsla(23, 77%, 31%, 0.951) 30.7%,
+                hsla(23, 77%, 31%, 0.896) 43%,
+                hsla(23, 77%, 31%, 0.825) 53.5%,
+                hsla(23, 77%, 31%, 0.741) 62.4%,
+                hsla(23, 77%, 31%, 0.648) 69.8%,
+                hsla(23, 77%, 31%, 0.55) 75.9%,
+                hsla(23, 77%, 31%, 0.45) 80.9%,
+                hsla(23, 77%, 31%, 0.352) 85%,
+                hsla(23, 77%, 31%, 0.259) 88.3%,
+                hsla(23, 77%, 31%, 0.175) 91.1%,
+                hsla(23, 77%, 31%, 0.104) 93.4%,
+                hsla(23, 77%, 31%, 0.049) 95.6%,
+                hsla(23, 77%, 31%, 0.013) 97.7%,
+                hsla(23, 77%, 31%, 0) 100%
+            );
+        }
+        /* Let the menu "float" above the content, again (no longer inline) */
+        menu {
+            transform: translateZ(0px);
+            position: sticky;
+        }
+        #parallax .container {
+            perspective: 1px;
+        }
+        #parallax .layer {
+            position: absolute;
+            position: sticky;
+        }
+        #parallax-background {
+            transform: translateZ(-0.2px);
+            height: 120vh;
+            width: 120vw;
+            padding-top: 6rem !important;
+        }
+            #parallax-background img {
+                margin-bottom: 0;
+                height: auto;
+                width: 100%;
+                min-width: 17em;
+                min-height: 17em;
+                max-width: 40.55em;
+                max-height: 40.55em;
+            }
+        #parallax-foreground {
+            transform: translateZ(0px);
+            border-radius: 1em 1em 0 0;
+            width: 100vw;
+            min-width: 100vw;
+            height: auto;
+            margin: 0 !important;
+            border-radius: 1em 1em 0 0;
+            margin-top: calc(792px - 120vh) !important;
+        }
+        .card {
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            width: auto;
+            min-width: 22.5em;
+        }
+        .flex {
+            display: flex !important;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 1.3em;
+            margin-left: 1.3em;
+            margin-right: 1.3em;
+        }
+        .column {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex !important;
+            flex-direction: column !important;
+            flex: 0 1 auto !important;
+        }
+    }
+    /*
+    ┌─────────┬────────────────┬─────────┐
+    │         │••••••••••••••••│         │
+    │         │•••••      •••••│         │
+    │         │••••• 900w •••••│         │
+    │         │•••••      •••••│         │
+    │         │••••••••••••••••│         │
+    │         │••••••••••••••••│         │
+    └─────────┴────────────────┴─────────┘
+     */
+    @media (min-width: 900px) {
+        #parallax-background img {
+            height: auto;
+            min-width: 22em;
+            min-height: 22em;
+        }
+        #parallax-foreground {
+            margin-top: calc(882px - 120vh) !important;
+        }
+    }
+    /*
+    ┌────┬──────────────────────────┬────┐
+    │    │••••••••••••••••••••••••••│    │
+    │    │•••••••••        •••••••••│    │
+    │    │••••••••• 1174w  •••••••••│    │
+    │    │•••••••••        •••••••••│    │
+    │    │••••••••••••••••••••••••••│    │
+    │    │••••••••••••••••••••••••••│    │
+    └────┴──────────────────────────┴────┘
+     */
     @media (min-width: 1174px) {
-    	#parallax-background img {
-    		height: auto;
-    		width: 100%;
-    	}
-    	#parallax-background {
-    		padding-top: calc(29.5px + 7rem) !important;
-    	}
-    	#parallax-foreground {
-    		margin-top: calc(964px - 120vh) !important;
-    	}
-    	.flex a.column {
-    		flex: 0 1 auto !important;
-    	}
-    	.flex .card.column {
-    		flex: 0 1 auto !important;
-    	}
+        #parallax-background img {
+            height: auto;
+            width: 100%;
+        }
+        #parallax-background {
+            padding-top: calc(29.5px + 7rem) !important;
+        }
+        #parallax-foreground {
+            margin-top: calc(964px - 120vh) !important;
+        }
+        .flex a.column {
+            flex: 0 1 auto !important;
+        }
+        .flex .card.column {
+            flex: 0 1 auto !important;
+        }
     }
+    /*
+    ┌──┬──────────────────────────────┬──┐
+    │  │••••••••••••••••••••••••••••••│  │
+    │  │•••••••••••        •••••••••••│  │
+    │  │••••••••••• 1130w  •••••••••••│  │
+    │  │•••••••••••        •••••••••••│  │
+    │  │••••••••••••••••••••••••••••••│  │
+    │  │••••••••••••••••••••••••••••••│  │
+    └──┴──────────────────────────────┴──┘
+     */
     @media (min-width: 1300px) {
-    	.flex {
-    		gap: 2.6em;
-    		margin-left: 2.6em;
-    		margin-right: 2.6em;
-    	}
-    	#parallax-foreground {
-  			margin-top: calc(960px + 5px - 120vh) !important;
-    	}
+        .flex {
+            gap: 2.6em;
+            margin-left: 2.6em;
+            margin-right: 2.6em;
+        }
+        #parallax-foreground {
+            margin-top: calc(960px + 5px - 120vh) !important;
+        }
     }
-  @media (min-width: 700px) and (max-height: 1150px) {
-  	#mainmenu {
-			height: initial;
-		}
-		article {
-			max-width: 35em;
-			text-align: center;
-			display: inline-block;
-			margin-bottom: 2.6em;
-		}
-		#parallax-background {
-			transform: unset;
-			height: 46.75em;
-			width: auto;
-			padding-top: 1.625rem !important;
-			width: 120vw;
-			margin-left: -10vw;
-		}
-		#parallax-foreground {
-			transform: unset;
-			border-radius: unset;
-		}
-		#parallax .container {
-			perspective: 1px;
-		}
-		#parallax .layer {
-			position: initial;
-			display: block;
-		}
-		menu {
-			transform: unset;
-			position: initial;
-		}
-		#up-arrow {
-			display: none;
-		}
-		#parallax-foreground {
-			max-width: unset;
-			width: 100%;
-			margin-top: -5.1em !important;
-		}
-		.card {
-			margin-left: 0;
-			margin-right: 0;
-		}
-		.flex {
-			transform: scale(0.834);
-			transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-		}
-		.flex a.column {
-			flex: 0 1 auto !important;
-		}
-		.flex .card.column {
-			flex: 0 1 auto !important;
-		}
-  }
-  @media (min-width: 900px) and (max-height: 1150px) {
-  	#parallax-background {
-  		padding-top: 1.61rem !important;
-  	}
-  	#parallax-foreground {
-  		margin-top: -4.75em !important;
-  	}
-  }
-  @media (min-width: 1174px) and (max-height: 1150px) {
-  	#parallax-background {
-  		padding-top: 3.625rem !important;
-  	}
-  	#parallax-foreground {
-			margin-top: -0.825em !important;
-  	}
-  }
-  @media (min-width: 1300px) and (max-height: 1150px) {
-		#parallax-background img {
-			border-radius: 1em;
-		}
-	}
-	#parallax-foreground {
-		background-color: hsla(20, 69%, 97.5%, 0.98);
-	}
-	@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-		#parallax-foreground {
-			background-color: hsla(20, 69%, 97.5%, 0.95);
-		}
-		#dark #parallax-foreground {
-			background-color: hsla(23, 50%, 10%, 0.95);
-		}
-	}
-	#dark main {
-		color: hsla(18, 87%, 92.5%, 0.9);
-	}
-	#dark main a,
-	#dark main a:link,
-	#dark main a:visited,
-	#dark .active,
-	#dark .anchor {
-		color: hsl(20, 100%, 55%);
-	}
-	#dark main a:hover,
-	#dark .anchor:hover {
-		background-color: hsla(20, 100%, 55%, 0.1);
-	}
-	#dark ::selection {
-		background: hsla(23, 90%, 31%, 0.99) !important;
-	}
-	#dark ::-moz-selection {
-		background: hsla(23, 90%, 31%, 0.99) !important;
-	}
+
+    /* ----- PARALLAX EFFECT DISABLED (REQUIRES PRECISE ALIGNMENTS TO MAINTAIN RELATIVE POSITION) ----- */
+
+    /*
+    ┌────────────────────────────────────┐
+    │            ┌──────────┐            │
+    │            │••••••••••│            │
+    │            │•  700w  •│            │
+    │            │• 1150h  •│            │
+    │            │••••••••••│            │
+    │            └──────────┘            │
+    └────────────────────────────────────┘
+    */
+    @media (min-width: 700px) and (max-height: 1150px) {
+        #mainmenu {
+            height: initial;
+        }
+        article {
+            max-width: 35em;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 2.6em;
+        }
+        #parallax-background {
+            transform: unset;
+            height: 46.75em;
+            width: auto;
+            padding-top: 1.625rem !important;
+            width: 120vw;
+            margin-left: -10vw;
+        }
+        #parallax-foreground {
+            transform: unset;
+            border-radius: unset;
+            max-width: unset;
+            width: 100%;
+            margin-top: -5.1em !important;
+        }
+        #parallax .container {
+            perspective: 1px;
+        }
+        #parallax .layer {
+            position: initial;
+            display: block;
+        }
+        menu {
+            transform: unset;
+            position: initial;
+        }
+        .card {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .flex {
+            transform: scale(0.834);
+            transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .flex a.column {
+            flex: 0 1 auto !important;
+        }
+        .flex .card.column {
+            flex: 0 1 auto !important;
+        }
+    }
+    /*
+    ┌────────────────────────────────────┐
+    │         ┌────────────────┐         │
+    │         │••••••••••••••••│         │
+    │         │••••  900w  ••••│         │
+    │         │•••• 1150h  ••••│         │
+    │         │••••••••••••••••│         │
+    │         └────────────────┘         │
+    └────────────────────────────────────┘
+    */
+    @media (min-width: 900px) and (max-height: 1150px) {
+        #parallax-background {
+            padding-top: 1.61rem !important;
+        }
+        #parallax-foreground {
+            margin-top: -4.75em !important;
+        }
+    }
+    /*
+    ┌────────────────────────────────────┐
+    │    ┌──────────────────────────┐    │
+    │    │••••••••••••••••••••••••••│    │
+    │    │••••••••• 1174w  •••••••••│    │
+    │    │••••••••• 1150h  •••••••••│    │
+    │    │••••••••••••••••••••••••••│    │
+    │    └──────────────────────────┘    │
+    └────────────────────────────────────┘
+     */
+    @media (min-width: 1174px) and (max-height: 1150px) {
+        #parallax-background {
+            padding-top: 3.625rem !important;
+        }
+        #parallax-foreground {
+            margin-top: -0.825em !important;
+        }
+    }
+
+
+    /* DARK MODE ============================================================= */
+
+    #dark #parallax-background {
+        background: linear-gradient(to bottom, hsl(28, 91%, 29%), hsl(17, 92%, 28%) 100%);
+    }
+    #dark #tracklist {
+        background-color: hsla(23, 50%, 15%, 0.9);
+    }
+    #dark .card li:hover,
+    #dark .card li.active {
+        background-color: hsla(206, 100%, 50%, 0.2);
+    }
+    #dark #gapless5-player {
+        background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0.3) 0%,
+            hsla(0, 0%, 0%, 0.304) 8.1%,
+            hsla(0, 0%, 0%, 0.315) 15.5%,
+            hsla(0, 0%, 0%, 0.331) 22.5%,
+            hsla(0, 0%, 0%, 0.353) 29%,
+            hsla(0, 0%, 0%, 0.378) 35.3%,
+            hsla(0, 0%, 0%, 0.406) 41.2%,
+            hsla(0, 0%, 0%, 0.435) 47.1%,
+            hsla(0, 0%, 0%, 0.465) 52.9%,
+            hsla(0, 0%, 0%, 0.494) 58.8%,
+            hsla(0, 0%, 0%, 0.522) 64.7%,
+            hsla(0, 0%, 0%, 0.547) 71%,
+            hsla(0, 0%, 0%, 0.569) 77.5%,
+            hsla(0, 0%, 0%, 0.585) 84.5%,
+            hsla(0, 0%, 0%, 0.596) 91.9%,
+            hsla(0, 0%, 0%, 0.6) 100%
+        );
+    }
+    #dark [type=range]::-webkit-slider-runnable-track {
+        background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--thumb-position) 100% no-repeat, linear-gradient(hsl(220, 0%, 20%), hsl(40, 0%, 5%) 70%, hsl(218, 0%, 22.5%));
+    }
+    #dark [type=range]::-moz-range-track {
+        background: linear-gradient(#98BCD8, #357FB6 70%, #1B74B6) 0/var(--thumb-position) 100% no-repeat, linear-gradient(hsl(220, 0%, 20%), hsl(40, 0%, 5%) 70%, hsl(218, 0%, 22.5%));
+    }
+    #dark input[type="range"]::-webkit-slider-thumb {
+        background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 25%), hsl(0, 0%, 35%) 0.421875rem, hsl(0, 0%, 45%) 0.5625rem, hsl(0, 0%, 25%));
+    }
+    #dark input[type="range"]::-moz-range-thumb {
+        background: radial-gradient(circle at 75% 72%, hsl(0, 0%, 25%), hsl(0, 0%, 35%) 0.421875rem, hsl(0, 0%, 45%) 0.5625rem, hsl(0, 0%, 25%));
+    }
+    #dark #parallax-background img,
+    #dark .card,
+    #dark .card:hover {
+        border: 2px solid hsla(23, 60%, 35%, 0.9);
+    }
+    #dark .card,
+    #dark .card:hover {
+        background-color: rgba(46, 46, 46, 0.3);
+    }
 </style>
 
 <div id="parallax-background" class="layer">
-	<div class="flex">
-		<a class="column" href="images/cover.jpg">
-			<img src="images/cover.jpg" class="project" alt="Vinyl vector" />
-		</a>
-		<div class="card column">
-			<div id="gapless5-player"></div>
-			<ol id="track-list"></ol>
-			<span id="g5trackname-gapless5-player"></span>
-		</div>
-	</div>
-
-	<svg alt="Minimalist up arrow" onclick="upArrowClicked();" id="up-arrow" class="noselect" viewBox="0 0 565 565" version="1.1" role="img">
-		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			<path d="M242.609127,161.5 L18.96767,385.141457 L-0.477766446,404.586893 L38.4131065,443.477766 L57.858543,424.03233 L281.5,200.390873 L505.141457,424.03233 L524.586893,443.477766 L563.477766,404.586893 L544.03233,385.141457 L320.390873,161.5 L320.461176,161.429697 L281.570303,122.538824 L281.5,122.609127 L281.429697,122.538824 L242.538824,161.429697 L242.609127,161.5 Z"></path>
-		</g>
-	</svg>
+    <div class="flex">
+        <a class="column" href="images/cover-large.jpg">
+            <picture>
+                <source type="image/webp" srcset="images/cover.webp">
+                <img type="image/jpeg" src="images/cover.jpg" alt="SMiLE: Heroes & Villains album art" alt="SMiLE: Heroes & Villains album art">
+            </picture>
+        </a>
+        <div class="card column" id="player">
+            <div id="gapless5-player"></div>
+            <ol id="tracklist"></ol>
+            <span id="g5trackname-gapless5-player"></span>
+        </div>
+    </div>
 </div>
 <main id="parallax-foreground" class="layer">
-	<article>
-		<h1>SMiLE: Heroes and Villains Mix</h1>
-		<p class="large-top-margin">In 1966, hot off recording “Pet Sounds” and with The Beatles’ “Sgt. Pepper’s Lonely Hearts Club Band” in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
+    <article>
+        <h1>SMiLE: Heroes and Villains Mix</h1>
+        <p class="large-top-margin">In 1966, hot off recording “Pet Sounds” and with The Beatles’ “Sgt. Pepper’s Lonely Hearts Club Band” in hot pursuit, Brian Wilson of The Beach Boys joined forces with <a href="https://en.wikipedia.org/wiki/Van_Dyke_Parks">Van Dyke Parks</a> to begin constructing what would later be referred to by many as <a href="http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0">one of the most famous unfinished recordings in history</a>. Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.</p>
 
-		<p>The musical fruits of that year of recording would never see true completion, however. Upon the rest of The Beach Boys returning from their tour the atmosphere cultivating the project turned sour. Specifically, one particular band member, Mike Love, incessantly harassed Parks and his contributions eventually driving Parks to quit the project altogether. This, combined with Love’s further dismissive and harsh comments towards the new material, shattered Brian’s already fragile mental state. The project quickly fell apart afterwards.</p>
+        <p>The musical fruits of that year of recording would never see true completion, however. Upon the rest of The Beach Boys returning from their tour the atmosphere cultivating the project turned sour. Specifically, one particular band member, Mike Love, incessantly harassed Parks and his contributions eventually driving Parks to quit the project altogether. This, combined with Love’s further dismissive and harsh comments towards the new material, shattered Brian’s already fragile mental state. The project quickly fell apart afterwards.</p>
 
-		<p>It would take decades of struggling with increasing mental problems and drug abuse following those events for Brian, with the support of family and friends, to have the courage to pick up the pieces and finally release the symphony to the world (or at least an approximation of what it would have been like had he and Parks been allowed to complete it).</p>
+        <p>It would take decades of struggling with increasing mental problems and drug abuse following those events for Brian, with the support of family and friends, to have the courage to pick up the pieces and finally release the symphony to the world (or at least an approximation of what it would have been like had he and Parks been allowed to complete it).</p>
 
-		<p>The <a href="https://itunes.apple.com/us/album/smile-sessions/id720113626">official compilation</a>, while a treat to hear and special in its own right, is in my and many fans opinions only one possible way to interpret and piece together the literal 75+ hours of unique audio recorded from that era. This reconstruction is my contribution to this thriving community and a personal tribute to the groundbreaking musical exploration that Brian and Parks made back in 1966.</p>
+        <p>The <a href="https://itunes.apple.com/us/album/smile-sessions/id720113626">official compilation</a>, while a treat to hear and special in its own right, is in my and many fans opinions only one possible way to interpret and piece together the literal 75+ hours of unique audio recorded from that era. This reconstruction is my contribution to this thriving community and a personal tribute to the groundbreaking musical exploration that Brian and Parks made back in 1966.</p>
 
-		<h2 id="credits">Credits</h2>
+        <h2 id="credits">Credits</h2>
 
-		<p>This project was only possible because of the help from these wonderful people from the SMiLE and Beach Boys fan community.</p>
+        <p>This project was only possible because of the help from these wonderful people from the SMiLE and Beach Boys fan community.</p>
 
-		<ul>
-			<li><a href="http://albumsthatneverwere.blogspot.com">soniclovenoize</a>’s absolutely stellar <a href="http://albumsthatneverwere.blogspot.com/2012/06/beach-boys-smile-soniclovenoize-stereo.html">BWPS 2004 Stereo Mix</a> whose reconstructions of Vega-Tables and Cabin Essence (among other bits and bobs) were pulled directly for mine. My thanks to him, and you can check out his other amazing album reconstructions at his website <a href="http://albumsthatneverwere.blogspot.com">here</a>.</li>
-			<li><a href="https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg">adwolf16</a>’s <a href="https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9">SMiLE Recreation - Suite One</a> which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.</li>
-			<li>Mark Hardy’s now taken down <a href="https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop">SMiLE - An Approximation</a> mix which was the general inspiration for my recreation.</li>
-		</ul>
-	</article>
+        <ul>
+            <li><a href="http://albumsthatneverwere.blogspot.com">soniclovenoize</a>’s absolutely stellar <a href="http://albumsthatneverwere.blogspot.com/2012/06/beach-boys-smile-soniclovenoize-stereo.html">BWPS 2004 Stereo Mix</a> whose reconstructions of Vega-Tables and Cabin Essence (among other bits and bobs) were pulled directly for mine. My thanks to him, and you can check out his other amazing album reconstructions at his website <a href="http://albumsthatneverwere.blogspot.com">here</a>.</li>
+            <li><a href="https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg">adwolf16</a>’s <a href="https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9">SMiLE Recreation - Suite One</a> which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.</li>
+            <li>Mark Hardy’s now taken down <a href="https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop">SMiLE - An Approximation</a> mix which was the general inspiration for my recreation.</li>
+        </ul>
+    </article>
 </main>
 
 <script>
-	const player = new Gapless5({ guiId: "gapless5-player" });
-	// player.addTrack("https://dropbox.barrowclift.me/assets/projects/music/smile-heroes-and-villains-mix/01%20Our%20Prayer.m4a");
-	player.addTrack("/tmp/01%20Our%20Prayer.m4a");
-	player.addTrack("/tmp/02%20Gee.m4a");
-	player.addTrack("/tmp/03%20Heroes%20and%20Villains.m4a");
-	player.addTrack("/tmp/04%20Do%20You%20Like%20Worms_%20%28Roll%20Plymouth%20Rock%29.m4a");
-	player.addTrack("/tmp/05%20I_m%20In%20Great%20Shape.m4a");
-	player.addTrack("/tmp/06%20Barnyard.m4a");
-	player.addTrack("/tmp/07%20The%20Old%20Master%20Painter.m4a");
-	player.addTrack("/tmp/08%20Cabin%20Essence.m4a");
-	player.addTrack("/tmp/09%20Wonderful.m4a");
-	player.addTrack("/tmp/10%20Look%20%28Song%20For%20Children%29.m4a");
-	player.addTrack("/tmp/11%20Child%20Is%20Father%20Of%20The%20Man.m4a");
-	player.addTrack("/tmp/12%20Surf_s%20Up.m4a");
-	player.addTrack("/tmp/13%20_Wanna%20Be%20Around%20_%20Workshop.m4a");
-	player.addTrack("/tmp/14%20Vege-Tables.m4a");
-	player.addTrack("/tmp/15%20Holidays.m4a");
-	player.addTrack("/tmp/16%20Wind%20Chimes.m4a");
-	player.addTrack("/tmp/17%20Cool%20Cool%20Water%20_%20Love%20To%20Say%20Dada.m4a");
-	player.addTrack("/tmp/18%20Good%20Vibrations.m4a");
+    const PLAYER = new Gapless5({ guiId: "gapless5-player" });
+    let playerIsFocused = false;
+    let isPlaying = false;
+    /* https://dropbox.barrowclift.me/assets/projects/music/smile-heroes-and-villains-mix */
+    PLAYER.addTrack("/tmp/01%20Our%20Prayer.m4a");
+    PLAYER.addTrack("/tmp/02%20Gee.m4a");
+    PLAYER.addTrack("/tmp/03%20Heroes%20and%20Villains.m4a");
+    PLAYER.addTrack("/tmp/04%20Do%20You%20Like%20Worms_%20%28Roll%20Plymouth%20Rock%29.m4a");
+    PLAYER.addTrack("/tmp/05%20I_m%20In%20Great%20Shape.m4a");
+    PLAYER.addTrack("/tmp/06%20Barnyard.m4a");
+    PLAYER.addTrack("/tmp/07%20The%20Old%20Master%20Painter.m4a");
+    PLAYER.addTrack("/tmp/08%20Cabin%20Essence.m4a");
+    PLAYER.addTrack("/tmp/09%20Wonderful.m4a");
+    PLAYER.addTrack("/tmp/10%20Look%20%28Song%20For%20Children%29.m4a");
+    PLAYER.addTrack("/tmp/11%20Child%20Is%20Father%20Of%20The%20Man.m4a");
+    PLAYER.addTrack("/tmp/12%20Surf_s%20Up.m4a");
+    PLAYER.addTrack("/tmp/13%20_Wanna%20Be%20Around%20_%20Workshop.m4a");
+    PLAYER.addTrack("/tmp/14%20Vege-Tables.m4a");
+    PLAYER.addTrack("/tmp/15%20Holidays.m4a");
+    PLAYER.addTrack("/tmp/16%20Wind%20Chimes.m4a");
+    PLAYER.addTrack("/tmp/17%20Cool%20Cool%20Water%20_%20Love%20To%20Say%20Dada.m4a");
+    PLAYER.addTrack("/tmp/18%20Good%20Vibrations.m4a");
 
-	const trackNames = [
-		"Our Prayer",
-		"Gee",
-		"Heroes and Villains",
-		"Do You Like Worms? (Roll Plymouth Rock)",
-		"I’m In Great Shape",
-		"Barnyard",
-		"The Old Master Painter",
-		"Cabin Essence",
-		"Wonderful",
-		"Look (Song For Children)",
-		"Child Is Father Of The Man",
-		"Surf’s Up",
-		"’Wanna Be Around / Workshop",
-		"Vege-Tables",
-		"Holidays",
-		"Wind Chimes",
-		"Cool Cool Water / Love To Say Dada",
-		"Good Vibrations"
-	];
-	var trackNum = 0;
-	for (var trackName of trackNames) {
-    var track = document.createElement("li");
-    track.id = "track-" + trackNum++;
-    track.textContent = trackName;
-    track.onmouseup = (e) => {
-    	player.gotoTrack(parseInt(e.target.id.split("-")[1]));
-    	player.play();
+    const TRACK_NAMES = [
+        "Our Prayer",
+        "Gee",
+        "Heroes and Villains",
+        "Do You Like Worms? (Roll Plymouth Rock)",
+        "I’m In Great Shape",
+        "Barnyard",
+        "The Old Master Painter",
+        "Cabin Essence",
+        "Wonderful",
+        "Look (Song For Children)",
+        "Child Is Father Of The Man",
+        "Surf’s Up",
+        "’Wanna Be Around / Workshop",
+        "Vege-Tables",
+        "Holidays",
+        "Wind Chimes",
+        "Cool Cool Water / Love To Say Dada",
+        "Good Vibrations"
+    ];
+    var trackNumber = 0;
+    for (let trackName of TRACK_NAMES) {
+        let track = document.createElement("li");
+        track.id = "track-" + trackNumber++;
+        track.textContent = trackName;
+        track.onmouseup = (e) => {
+            PLAYER.gotoTrack(parseInt(e.target.id.split("-")[1]));
+            PLAYER.play();
+        };
+        document.getElementById("tracklist").appendChild(track);
+    }
+    PLAYER.onplay = (trackPath) => {
+        for (let index in TRACK_NAMES) {
+            document.getElementById("track-" + index).classList.remove("active");
+        }
+        document.getElementById("track-" + PLAYER.getIndex()).classList.add("active");
+        isPlaying = true;
+    }
+    PLAYER.onstop = (trackPath) => {
+        isPlaying = false;
+    }
+    PLAYER.onpause = (trackPath) => {
+        isPlaying = false;
+    }
+    PLAYER.ontimeupdate = (current_track_time, current_track_index) => {
+        document.getElementById('g5transportbar-gapless5-player').dispatchEvent(new Event("change"));
+    }
+    PLAYER.onfinishedall = () => {
+        for (let index in TRACK_NAMES) {
+            document.getElementById("track-" + index).classList.remove("active");
+        }
+        PLAYER.gotoTrack(0);
+        isPlaying = false
     };
-    document.getElementById("track-list").appendChild(track);
-	}
-	player.onplay = (trackPath) => {
-		for (var index in trackNames) {
-			document.getElementById("track-" + index).classList.remove("active");
-		}
-		document.getElementById("track-" + player.getIndex()).classList.add("active");
-	}
-	player.ontimeupdate = (current_track_time, current_track_index) => {
-		var element = document.getElementById('g5transportbar-gapless5-player').dispatchEvent(new Event("change"));
-	}
-	player.onfinishedall = () => {
-		for (var index in trackNames) {
-			document.getElementById("track-" + index).classList.remove("active");
-		}
-		player.gotoTrack(0);
-	};
-
-	document.getElementById("g5transportbar-gapless5-player").onchange = (e) => {
-		let _t = e.target;
-		_t.style.setProperty('--val', +_t.value);
-		_t.style.setProperty('--max', +_t.max);
-	};
-	document.getElementById("g5transportbar-gapless5-player").addEventListener('input', e => {
-		let _t = e.target;
-		_t.style.setProperty('--val', +_t.value);
-		_t.style.setProperty('--max', +_t.max);
-	}, false);
+    document.getElementById("g5transportbar-gapless5-player").onchange = (e) => {
+        e.target.style.setProperty("--play-progress", + e.target.value);
+        e.target.style.setProperty("--play-end", + e.target.max);
+    };
+    document.getElementById("g5transportbar-gapless5-player").addEventListener('input', e => {
+        e.target.style.setProperty('--play-progress', +e.target.value);
+        e.target.style.setProperty('--play-end', +e.target.max);
+    }, false);
+    document.body.onkeydown = function(e) {
+        let wasSpaceKey = e.key == " "
+                       || e.code == "Space"
+                       || e.keyCode == 32;
+        let wasRightArrow = e.code == "ArrowRight"
+                         || e.keyCode == 39;
+        let wasLeftArrow = e.code == "ArrowLeft"
+                        || e.keyCode == 37;
+        let wasPlayerControlKey = wasSpaceKey
+                               || wasRightArrow
+                               || wasLeftArrow
+        if (playerIsFocused && wasPlayerControlKey) {
+            e.stopPropagation();
+            e.preventDefault();
+            e.returnValue = false;
+            e.cancelBubble = true;
+            return false;
+        }
+    }
+    document.body.onkeyup = function(e) {
+        let wasSpaceKey = e.key == " "
+                       || e.code == "Space"
+                       || e.keyCode == 32;
+        let wasRightArrow = e.code == "ArrowRight"
+                         || e.keyCode == 39;
+        let wasLeftArrow = e.code == "ArrowLeft"
+                        || e.keyCode == 37;
+        if (playerIsFocused) {
+            if (wasSpaceKey) {
+                if (isPlaying) {
+                    PLAYER.pause();
+                } else {
+                    PLAYER.play();
+                }
+            } else if (PLAYER.getTrack()) {
+                if (wasRightArrow) {
+                    PLAYER.next();
+                } else if (wasLeftArrow) {
+                    PLAYER.prevtrack();
+                }
+            }
+        }
+    }
+    document.addEventListener('click', function(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        playerIsFocused = document.getElementById("player").contains(target);
+    }, false);
 </script>

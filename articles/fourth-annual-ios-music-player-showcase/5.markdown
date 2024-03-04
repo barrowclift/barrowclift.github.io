@@ -1,0 +1,268 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Musens"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "4"
+    next-page: "6"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Musens' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png "Musens' iOS app icon"){: .inline-app-icon } Musens
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage-poster.jpg" alt="Video demonstrating Musens' usage in light mode" title="Demonstrating Musens' usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.webp">
+  <img type="image/jpeg" title="Musens' light theme album view" alt="Image of Musens' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.webp">
+  <img type="image/jpeg" title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage-poster.jpg" alt="Video demonstrating Musens' usage in dark mode" title="Demonstrating Musens' usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.webp">
+  <img type="image/jpeg" title="Musens' dark theme album view" alt="Image of Musens' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.webp">
+  <img type="image/jpeg" title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/musens/id1560526260">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+Musens is a brand new arrival from April 13th, 2021, and is the closest I've seen any app get to becoming a viable drop-in replacement for [Music.app]. While many general-purpose players are great, most are missing one or two features found in Music.app that keep them from being a viable full-time replacement for most listeners. Typically this takes the form of a lack of Apple Music service integration, but other times it's a lack of widget support, a lack of visualizer, or any other myriad of Music.app features that aren't "must haves" but necessarily hold back most other players from being considered a feature-complete Music.app replacement for the general population. This results in today's trend that third-party music players are more often than not *supplementary* to Music.app, with the expectation that Music.app is always kept handy just in case you need to stream a particular record, want a playback visualizer, or any other number of features the many listeners will quickly miss in third-party offerings. Not so with Musens; it's a general-purpose player with first-class Apple Music integration and widget support (that in and of itself is fairly surprising to both see supported for this category of player), but what makes it truly remarkable is its very own implementation of Music.app's beautiful lava lamp visualizer and Sonos-like "Party" feature, allowing anyone at the party to add to the queue as they please. No other third-party player offers this combination of features, and frankly I didn't expect I'd ever see supported. And yet, here they are, all presented with a relatively understated design, a standard iOS tab bar, and a number of Music.app similarities that make Musens feel immediately familiar on first launch.
+
+On launch, Musens drops you into the first of five menu items:
+
+* Home
+* Playlists
+* Artists
+* Songs
+* Albums
+
+By far, the most interesting of all these is Musen's "Home" tab, which is strongly reminicent of Music.app's "Listen Now" page and [Mixtapes]'s recent "Discover" page. Like with Mixtapes, it seems the majority of its discovery collections are powered directly from Apple Music, so all the collections you'd expect like "Made For You", "Top Picks", and more are here. The page is nearly identical in every way to Music.app's "Listen now" page, so if you're not fond of it in Music.app, Musens certainly won't change your mind. In both Mixtapes' and Musens' cases, in a certain light I might look at this as lazy or uninspired, but given Musen's clear goal of being a better Music.app and not "just" a third-party supplement like most others (and the fact that Musens seems to be the first and only third-party player *with* this goal), this particular case feels admissible. Not to mention, if you love the "Listen Now" page and frequently find yourself missing it in other players, then you're all but guaranteed to love Musens' "Home" page since it's a near carbon copy.
+
+So far with the "Home" tab, Musens seems near identical to Music.app, but those similarities rapidly fall off the minute we begin exploring more of the menu. Music.app's frustratingly haphazard menu of "Browse", "Radio", "Library", and "Search" are thankfully sidestepped entirely by Musens, instead opting for a sensible, understandable menu containing the likes of "Albums" and "Artists". While Musens has tight Apple Music integration, it clearly puts a focus on your local library by exposing those common browsing pages right in the tab bar, where Music.app instead flounders about with asinine tabs like "Radio". This to me is where Musens makes its vital differentiating stance from Music.app; based on its navigational organization, Music.app barely cares about *your* music, but Musens does, and it makes every effort to ensure it's just a tap away.
+
+Musens's menus are by no means perfect; in contrast to some other general-purpose players that offer more niche browsing methods like genres or composers, Musens only supports browsing by playlists, artists, songs, or albums. Either because of this or as a side effect of this, Musens also lacks the ability to customize the tab bar. Granted, the default choices and arrangement is reasonable, but the lack of ability to adjust the menu contents is nonetheless disappointing after getting spoiled by [Cs Music] and [Power Player].
+
+The browsing experience within each of these menu items is a little opinionated, but still perfectly reasonable. You can browse playlists and albums as grids and artists and songs as lists, but have no ability to change those layout styles like in [Plum] or [Cs Music]. Unlike the layout style, Musens does indeed allow changing the sort order, and provides a respectable number of options suited to each browser. While browsing particular albums, you'll also notice a whimsical animation of a faux vinyl record rolling out of the album art "sleeve", which is sure to elicit a smile from fans of vinyl records. Where Musens visual flare truly shines, however, is in its player view.
+
+While it's becoming increasingly common for players to provide visualizers, it's still exceptionally rare to encounter a player with a visualizer that incorporates the album art. Not counting Musens, at the end of 2021 the only players that can claim this are [Power Player], [Soor], and [Music.app], but they're all flawed in various ways. Power Player's visualizer isn't nearly as reactive to the music as you'd expect, and its bubbly nature is arguably not well suited to a broad array of genres and tastes. Soor's visualizer is a canned gradient curve that cycles through a handful of primary colors from the album art with no dynamic visualization aspect whatsoever. Music.app's visualizer is blurred into a muted, homogenous paste that's both unappealing to look at and barely reacts to the music as a result (in contrast to its continuously gorgeous "Live Lyrics" visualizer). The playing field doesn't look particularly great until we turn our attention towards Musens's full-player. It unbelievably features an honest to goodness reimplementation of Music.app's brilliant "Live Lyrics" album art lava lamp visualizer, the only third-party player to boast this achievement. While the effect is naturally not quite as rich and dynamic as Apple's own (in no small part due to only featuring a single "blob"), its single "blob" is still comfortably discrete from the rest of the colors, subtly "jiggles" in reaction to the music, and moves about at a youthful pace similar to Music.app's. If you've found yourself longing to enjoy Music.app's "Live Lyrics" visualizer for your local library, Musens has gotten the closest I've seen any app get to this goal.
+
+<figure class="two-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp-poster.jpg" alt="Video demonstrating Music.app's full-player visualizer" title="Demonstrating Music.app's full-player visualizer">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/music-app-lava-lamp-poster.jpg" alt="Video demonstrating Music.app's lyrics view visualizer" title="Demonstrating Music.app's lyrics view visualizer">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/music-app-lava-lamp.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/music-app-lava-lamp.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/music-app-lava-lamp.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<figcaption>Musens’ visualizer on the left, Music.app’s “Live Lyrics” visualizer on the right. Despite picking a different primary color and only featuring one blob, Musens gets shockingly close to replicating Music.app’s effect. (sped up x10 to highlight the differences)</figcaption>
+</figure>
+
+The rest of the full-player itself leans towards minimalism in its approach, featuring only a smattering of controls next to a positively massive play/pause button. However, this minimalism serves as the full-player's Achilles heel, as it not only lacks lyrics capabilities (instead lazily outsourcing the feature to [Musixmatch](https://www.musixmatch.com)), but also lacks a means to view and edit the queue. You read that right, Musens does indeed *have* a queue that you can add songs to, but if you need to view or edit the queue beyond that you're forced to temporarily jump back to Music.app. It's far and away the single biggest issue Musens faces right now and I can't help but feel it was a mistake to ship without, especially considering its forward-thinking "Party" feature, which allows anyone with your Party Code to add songs to your queue via the Musens website.
+
+With just how much personality and value Musens offers today, though, it's perhaps a little too easy to forget the app's practically brand new. The fact it came out of the gate in late 2021 with full Apple Music integration, arguably the best full-player visualizer on the market today, and a compelling "Party Mode" is commendable and implies that it's only a short matter of time until Musens supports in-app lyrics and queue management. The Musens approach of being an "actually good" Music.app won't be to everyone's taste, and may in fact hold the player back in some respects. For example, its entire reliance on Apple Music for discovery leaves those without an Apple Music subscription with a crippled and undeniably worse Musens experience (though the local-only experience is still reasonably respectable assuming you're willing to forgo the discovery features). However, for those that *do* have an Apple Music subscription, are fed up with Music.app, and continuously disappointed at the Apple Music integration found in other third-party players, Musens may just be the player you've been looking for.
+
+### iPad Experience
+
+Musens does indeed support the iPad, but unfortunately much like [Plum] its performance characteristics on iPad are dreadful to the point of being unusable. It's a real shame, since Musens on iPad does make a conscious effort to optimize the layout for the larger screen, such as its use of the native iPad sidebar and gorgeous fullscreen player view. But due to its abhorrent performance it's simply not ready for general use.
+
+### Widgets
+
+<div class="show-when-dark box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-dark.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-dark.webp">
+  <img type="image/png" title="Musens' large 'Now Playing' widget in dark mode" alt="Image of Musens' large 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-dark.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-dark.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-dark.webp">
+  <img type="image/png" title="Musens' medium 'Now Playing' widget in dark mode" alt="Image of Musens' medium 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-dark.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-dark.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-dark.webp">
+  <img type="image/png" title="Musens' small 'Now Playing' widget in dark mode" alt="Image of Musens' small 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-dark.png">
+</picture>
+</a>
+</div>
+</div>
+<div class="show-when-light box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-light.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-light.webp">
+  <img type="image/png" title="Musens' large 'Now Playing' widget in light mode" alt="Image of Musens' large 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-light.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-light.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-light.webp">
+  <img type="image/png" title="Musens' medium 'Now Playing' widget in light mode" alt="Image of Musens' medium 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-light.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-light.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-light.webp">
+  <img type="image/png" title="Musens' small 'Now Playing' widget in light mode" alt="Image of Musens' small 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-light.png">
+</picture>
+</a>
+</div>
+</div>
+
+As we've come to expect, Musens heavily takes after Music.app with its approach to widgets, but unfortunately unlike its core app experience it does not offer any improvements over Music.app's offerings, and are arguably worse overall.
+
+Like Music.app, there's a single "Now Playing" widget collection in which a widget for each of the three sizes is offered (sorry iPad, no "extra large" size). Also like Music.app, they each feature the current track's art and varying degrees of additional information as the size increases. Curiously, Musens decided to attempt showing the track title and artist for the small widget *directly beside the art*, which in practice means only a few sad track name characters are visible. Unsurprisingly, this makes it among one of the worst small widgets I've seen offered by any player. Thankfully, its medium and large sizes are perfectly reasonable, with the medium showing just the current track details and the large showing those details in addition to a short list of recent tracks.
+
+All three widgets sport Musens' blue accent color gradient, which thankfully mutes itself to a dark blue while in dark mode. It's pleasing, but it's certainly disappointing to not have the ability to enable an album art blur effect for the background as an option to make the widget as a whole more dynamic and personal.
+
+The widgets overall are nowhere near as good as Musens on iPhone, but is certainly nowhere near as bad as Musens on iPad. They're perfectly sufficient, but not anything particularly remarkable.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>Musens is the one and only third-party player I’ve encountered that replicates Music.app’s “Live Lyrics” lava lamp visualizer, and it’s far and away my favorite part of the entire app. Simply outstanding.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:heavy_check_mark:</span> Apple Music integration</dt>
+  <dd><p>While not anything particularly groundbreaking, Musens offers a standard Apple Music "Home page and expected integration like the ability to search either your local library or Apple Music’s catalog.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+  <dd><p>Its Apple Music “Home” page is a great start, but that alone is not sufficient since it both requires an Apple Music subscription and does not provide nearly enough discovery collections that have come to be expected nowadays, such as “Recently Added”.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+  <dd><p>The grid layout in the “Albums” page is a great start, but a lack of my preferred album sorting method (Artist > Chronological) and any other album-focused features leaves me wanting.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> Lyrics support</dt>
+  <dd><p>Outsourcing a critical feature to <a href="https://www.musixmatch.com/">Musixmatch</a> is not the same as actually supporting the feature.</p></dd>
+  <dt><span class="bullet">:x:</span> iPad support</dt>
+  <dd><p>The performance is appaulingly bad, it’s simply not ready for general use.</p></dd>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/6"><p class="button">Next App: “Albums”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><strong>Musens</strong></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Music.app]: /articles/fourth-annual-ios-music-player-showcase/14
+[Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
+[Power Player]: https://powerplayer.evenwerk.com
+[Plum]: https://apps.apple.com/us/app/plum-music-player/id1441625664
+[Soor]: https://soor.app
+[Mixtapes]: https://mixtapesapp.com

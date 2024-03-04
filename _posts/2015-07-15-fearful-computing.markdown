@@ -1,19 +1,30 @@
 ---
 title: "Fearful Computing"
 date: 2015-07-16 2:38:58
-categories:
-  - Technology
-  - macOS
-  - iOS
-  - Windows
-  - Pokémon
-  - Stories
-  - Best Of
+
 excerpt: |
-  Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window.
+    Fear leads to anger, anger leads to hate, hate leads to throwing your computer out the nearest window.
+categories:
+    - Technology
+    - macOS
+    - iOS
+    - Windows
+    - Pokémon
+    - Stories
+    - Best Of
 image: "fearful-computing/share-image.jpg"
-background-color: "#1279cf"
-foreground-color: "#FCFCFC"
+
+card:
+    background:
+        color: hsl(207, 84%, 44%)"
+        hue: "207"
+        saturation: "84%"
+        lightness: "44%"
+    foreground:
+        color: "hsl(0, 0%, 99%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "99%"
 ---
 
 When I was a child, I&mdash;like most American children in the late 1990's&mdash;spent nearly all my car travel time engrossed in the world of Pokémon. The game cleverly leveraged the social pressures of competitive collecting utilized in the past for baseball cards with cute, digital monsters. Children were incentivized to trade with friends to obtain the bragging rights of collecting all 151 monsters which not only meant the game had a pervasive presence on the playground but also ensured that most of their free time would then be spent preparing for those trades by catching as many Pokémon as possible.

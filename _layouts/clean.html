@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <!--	
 Disables both the menu bar chrome and article chrome, while still preserving
@@ -61,7 +61,7 @@ Currently used for:
 		</style>
 
 		<div id="wrap">
-			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
+			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
 				{% include menu.html %}
 				<main>
 					{{ content }}

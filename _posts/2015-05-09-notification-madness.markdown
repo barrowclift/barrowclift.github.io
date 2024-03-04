@@ -1,13 +1,14 @@
 ---
 title: "Notification Madness"
 date: 2015-05-10 2:50:10
-categories:
-  - Technology
-  - iOS
-  - Notifications
-  - Best Of
+
 excerpt: |
-  Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn’t have to be this way!
+    Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn’t have to be this way!
+categories:
+    - Technology
+    - iOS
+    - Notifications
+    - Best Of
 ---
 
 What's the first thing you see when you use your iPhone? On a typical day you might wake your iPhone to a backlog of half a dozen or so notifications. Maybe you have three email notifications all of which aren't important, perhaps one or two from a free game you stopped playing months ago frantic to let you know about a new 99₵ character skin, or occasionally a twitter notification that another of the hundred thousand spam accounts has followed you. If you are fortunate you may notice somewhere in that wall of noise is a text from a loved one or an important calendar reminder.

@@ -1,17 +1,28 @@
 ---
 title: "Second Annual iOS Music Player Competition"
 date: 2020-01-20 18:42:21-0500
+timelocked: true
+
 excerpt: |
     Eleven of the finest iOS music players go head-to-head in the ultimate showdown. Which will earn the gold as 2019’s best?
-image: "second-annual-ios-music-player-competition/share-image.jpg"
 categories:
-  - Technology
-  - iOS
-  - Design
-  - Music
-timelocked: true
-background-color: "#FFFFFF"
-foreground-color: "rgba(30, 30, 30, 0.9)"
+    - Technology
+    - iOS
+    - Design
+    - Music
+image: "second-annual-ios-music-player-competition/share-image.jpg"
+
+card:
+    background:
+        color: "hsl(0, 0%, 100%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "100%"
+    foreground:
+        color: "hsl(0, 0%, 12%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "12%"
 ---
 
 <style>
@@ -29,7 +40,7 @@ foreground-color: "rgba(30, 30, 30, 0.9)"
 ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/banner.png)
 </figure>
 
-2019 was an exciting year for iOS music apps. Not long after I published my article ["Quest for the Best iOS Music Player"](/post/quest-for-the-best-ios-music-player) early last year, new music players flooded the App Store at breakneck speed. While this was a pleasant suprise, it was certainly unusual; at the end of 2018, the category was more or less stagnant; new music players were exceedingly rare and some of the old guard were [wasting away from developer indifference](/post/quest-for-the-best-ios-music-player#-ecoute). Not so in 2019! No less than half a dozen brand new apps entered the fray, three of which within the same month of each other[^same-month].
+2019 was an exciting year for iOS music apps. Not long after I published my article ["Quest for the Best iOS Music Player"](/articles/quest-for-the-best-ios-music-player) early last year, new music players flooded the App Store at breakneck speed. While this was a pleasant suprise, it was certainly unusual; at the end of 2018, the category was more or less stagnant; new music players were exceedingly rare and some of the old guard were [wasting away from developer indifference](/articles/quest-for-the-best-ios-music-player#-ecoute). Not so in 2019! No less than half a dozen brand new apps entered the fray, three of which within the same month of each other[^same-month].
 
 With such a breadth of exciting change happening in the iOS music player category, it's clear a revisit to last year’s article is in order. My personal list of requirements haven’t drastically changed since, but to reiterate, these are the characteristics I value in music players:
 
@@ -116,13 +127,13 @@ With the score sheet established, let's dive in.
 
 Not long after the original article went up, [Starling] was [pulled from the App Store](https://itunes.apple.com/app/id1210406576). While that alone wouldn't lead me to assume the app was dead[^dead], the suspension of the [once-active Twitter account](https://twitter.com/starling_audio) and the [official website's takedown](http://web.archive.org/web/20190303084818/http://starling.audio/) leaves little chance Starling's removal means anything else.
 
-It's a shame; Starling was one of the few apps that made the qualifiers last year and [earned my pick for the most engaging "Now Playing" view of the lot](/post/quest-for-the-best-ios-music-player#awards) with its waveform visualizer. Aside from [Music.app](ttps://apps.apple.com/us/app/apple-music/id1108187390)'s refreshed lyrics view in iOS 13 (which is only officially accessible from the lyrics view), no other "Now Playing" view has stepped up yet to fill [Starling]'s shoes.
+It's a shame; Starling was one of the few apps that made the qualifiers last year and [earned my pick for the most engaging "Now Playing" view of the lot](/articles/quest-for-the-best-ios-music-player#awards) with its waveform visualizer. Aside from [Music.app](ttps://apps.apple.com/us/app/apple-music/id1108187390)'s refreshed lyrics view in iOS 13 (which is only officially accessible from the lyrics view), no other "Now Playing" view has stepped up yet to fill [Starling]'s shoes.
 
 -----
 
 ## Disqualifications
 
-Like [last time](/post/quest-for-the-best-ios-music-player#disqualifications), many music apps failed to qualify by breaking at least one of my "deal breaker" requirements. They're briefly covered below by descending preference:
+Like [last time](/articles/quest-for-the-best-ios-music-player#disqualifications), many music apps failed to qualify by breaking at least one of my "deal breaker" requirements. They're briefly covered below by descending preference:
 
 ### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .inline-app-icon } Jams On Toast
 
@@ -217,9 +228,9 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
 </a>
 </div>
 
-I can't say this one's surprise, [Ecoute]'s been abandonware long before [its inclusion in last year's review](/post/quest-for-the-best-ios-music-player#-ecoute). Its situation hasn't changed this year in the slightest; the poor thing received barely any updates whatsoever in 2019[^ecoute-updates].
+I can't say this one's surprise, [Ecoute]'s been abandonware long before [its inclusion in last year's review](/articles/quest-for-the-best-ios-music-player#-ecoute). Its situation hasn't changed this year in the slightest; the poor thing received barely any updates whatsoever in 2019[^ecoute-updates].
 
-With its lack of active maintenance, crippling visual bugs in iOS 13, and the crop of new qualifiers that do exactly what Ecoute was [praised for](/post/quest-for-the-best-ios-music-player#awards) last year but *better*, Ecoute is simply not up to the task anymore. It's about time either Ecoute starts receiving meaningful updates with a consistent update schedule or for the once gold-standard music player to finally be put out of its misery.
+With its lack of active maintenance, crippling visual bugs in iOS 13, and the crop of new qualifiers that do exactly what Ecoute was [praised for](/articles/quest-for-the-best-ios-music-player#awards) last year but *better*, Ecoute is simply not up to the task anymore. It's about time either Ecoute starts receiving meaningful updates with a consistent update schedule or for the once gold-standard music player to finally be put out of its misery.
 
 ### !["Soor" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/icon.png '"Soor" iOS app icon'){: .inline-app-icon } Soor
 
@@ -428,7 +439,7 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
 </a>
 </div>
 
-Last year, [Cs] swept up [the lion's share of awards](/post/quest-for-the-best-ios-music-player#awards), such as "best dark and 'true black' mode" and "easiest-to-use app". While it certainly had its shortcomings (most notably it's lack of design identity), it was nonetheless among 2018's best, and I couldn't wait to see where Cs would go in 2019.
+Last year, [Cs] swept up [the lion's share of awards](/articles/quest-for-the-best-ios-music-player#awards), such as "best dark and 'true black' mode" and "easiest-to-use app". While it certainly had its shortcomings (most notably it's lack of design identity), it was nonetheless among 2018's best, and I couldn't wait to see where Cs would go in 2019.
 
 To say Cs had a "rocky" 2019 would be an understatement. A few months following iOS 13's anticipated summer announcement, Mike Clay (Cs's developer) released the first Cs 6 beta, which featured a complete interface redesign. Since its introduction back in 2014, Cs's design remained largely the same: tiers of stock, linear table views, a stock tab bar with artists, albums, etc., and an unassuming "Now Playing" view that tucks away on top of it. Besides a few visual baubles like dark mode and customizable icons, that was all Cs was; what you saw was what you got, no surprises.
 
@@ -513,7 +524,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 </a>
 </div>
 
-[Doppi] is a self-proclaimed "simple music player" which I failed to include in [last year's article](/post/quest-for-the-best-ios-music-player). Upon discovering it in my research this year, I first thought I didn't miss much. Perhaps it was the rather silly name or doctored promotional images in the [App Store], but whatever it was Doppi failed to make a positive first impression. That all changed the minute I launched the app for the first time.
+[Doppi] is a self-proclaimed "simple music player" which I failed to include in [last year's article](/articles/quest-for-the-best-ios-music-player). Upon discovering it in my research this year, I first thought I didn't miss much. Perhaps it was the rather silly name or doctored promotional images in the [App Store], but whatever it was Doppi failed to make a positive first impression. That all changed the minute I launched the app for the first time.
 
 Doppi is *gorgeous*. In my opinion, it’s the most visually consistent and visually *pleasing* app of the lot. Not only that, it's also filled to the brim with buttery smooth animations that delight and tickle the senses. Sure, other apps like [Picky] and [Power Player] have a handful of views that match the level of care and attention Doppi demonstrates, but none do so as thoroughly and consistently as Doppi does. I cannot overstate just how well engineered and designed the experience is.
 
@@ -738,7 +749,7 @@ For the first few moments, practically everything about the local music experien
 
 However, unlike [Cs], there are indeed substantial and compelling changes to be found in 2019's Music.app, most of which are found in the "Now Playing" view. Upon navigating to the new "Now Playing" view, those familiar with last year's Music.app will first notice that the text and progress bars got swapped; the progress bar is now immediately above the play/pause controls and the text is now immediately below the album art. This is certainly a welcome change, as adjustments to the progress bar are now far easier to achieve while holding larger iPhones with one hand, and ascetically it makes the player view more symmetrically pleasing.
 
-The bigger change is far less assuming: the inclusion of a simple speech bubble icon in the lower left corner which launches the brand-new lyrics view. In the previous version, lyrics were technically supported but not thoughtfully integrated; lyrics were tacked below the player view album art and controls, forcing users to scroll down to read them. While functional, it was clear this was an afterthought and practically no design time went into better integrating the feature other than meeting the bare minimum. With iOS 13, lyrics not only get a proper view all to themselves but are now accompanied by the gorgeous "lava lamp" album art visualizer from [tvOS], which earned a glowing [honorable mention](/post/quest-for-the-best-ios-music-player#honorable-mention) from me last year.
+The bigger change is far less assuming: the inclusion of a simple speech bubble icon in the lower left corner which launches the brand-new lyrics view. In the previous version, lyrics were technically supported but not thoughtfully integrated; lyrics were tacked below the player view album art and controls, forcing users to scroll down to read them. While functional, it was clear this was an afterthought and practically no design time went into better integrating the feature other than meeting the bare minimum. With iOS 13, lyrics not only get a proper view all to themselves but are now accompanied by the gorgeous "lava lamp" album art visualizer from [tvOS], which earned a glowing [honorable mention](/articles/quest-for-the-best-ios-music-player#honorable-mention) from me last year.
 
 It's a shame this mesmerizing visualizer is only technically accessible in the lyrics view; the root "Now Playing" view itself remains as boring and stark-white as ever. However, you _can_ display the visualizer in the root view by way of a glitch, which as of iOS 13.2.3 still works.
 
@@ -836,7 +847,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 </a>
 </div>
 
-[Picky] garnered praise [last year](/post/quest-for-the-best-ios-music-player#-picky) not only as the "cream of the crop for music selection and sorting" but also won the "prettiest player" award for its gorgeous player view blur effect. After such a dazzling display, I thought Picky was on the fast track to greatness. As it would turn out, Picky missed the train.
+[Picky] garnered praise [last year](/articles/quest-for-the-best-ios-music-player#-picky) not only as the "cream of the crop for music selection and sorting" but also won the "prettiest player" award for its gorgeous player view blur effect. After such a dazzling display, I thought Picky was on the fast track to greatness. As it would turn out, Picky missed the train.
 
 For the entirety of 2019, Picky saw nothing more than a handful of mere maintenance patches to keep up with iOS 13's changes (most notable change being the inclusion of [Airplay 2] support and integration with iOS 13's dark mode). For all intents and purposes, the Picky available in the store today is the same Picky I reviewed last year.
 
@@ -1114,7 +1125,7 @@ Note that while Sathorn technically offers these options, each and every one are
 </a>
 </div>
 
-I was wrong. Very wrong. For context, here's [my delusional thoughts](/post/quest-for-the-best-ios-music-player#disqualifications) on why [TapTunes] was disqualified last year:
+I was wrong. Very wrong. For context, here's [my delusional thoughts](/articles/quest-for-the-best-ios-music-player#disqualifications) on why [TapTunes] was disqualified last year:
 
 > Obviously an Android port or a native app with *bad* custom UI elements. The app sticks out like a hideous pig and has no place existing on iOS.
 
@@ -1268,7 +1279,7 @@ Not only does Doppi earn its award for best light and dark themes; it's literall
 
 __:trophy: Winner: [!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://powerplayer.evenwerk.com)__
 
-Precious few music players support the iPad, and fewer still are any good at it. In fact, last year Apple's own [Music.app] [won the award by default](/post/quest-for-the-best-ios-music-player#awards) since no other developers bothered to put any real effort into the iPad in the first place. However, I'm pleased to say that thanks to Power Player that's not the case this year. With it's thoughtful, iPad-specific design choices like the album "splitting view" and duel-column "Now Playing" horizontal view, it not only wipes out the third-party competition but also Apple's own app with regards to iPad screen space utilization.
+Precious few music players support the iPad, and fewer still are any good at it. In fact, last year Apple's own [Music.app] [won the award by default](/articles/quest-for-the-best-ios-music-player#awards) since no other developers bothered to put any real effort into the iPad in the first place. However, I'm pleased to say that thanks to Power Player that's not the case this year. With it's thoughtful, iPad-specific design choices like the album "splitting view" and duel-column "Now Playing" horizontal view, it not only wipes out the third-party competition but also Apple's own app with regards to iPad screen space utilization.
 
 If you mostly consume your music on an iPad and are sick of both Apple's "make everything tiny" approach and third-party apps' "whitespace everywhere" approach, Power Player is the app you've been waiting for.
 
@@ -1298,7 +1309,7 @@ However, just like with the "best lyrics support" award, Music.app's "Now Playin
 
 __:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
 
-Last year, I set out on a quest to find the best music app and [ended up dismayed that I hadn't once my search concluded](/post/quest-for-the-best-ios-music-player#final-verdict). However, this year an app appeared that I'm comfortable unequivocally declaring my favorite music player on iOS.
+Last year, I set out on a quest to find the best music app and [ended up dismayed that I hadn't once my search concluded](/articles/quest-for-the-best-ios-music-player#final-verdict). However, this year an app appeared that I'm comfortable unequivocally declaring my favorite music player on iOS.
 
 [Marvis Pro] is so much more than "just" a music player; with some quick customization with its accessible sorting and filtering features, Marvis Pro can become __your__ music player. No other music player available for purchase in 2019 came close to matching the level of personalization Marvis Pro provides. That combined with an "out of the box" experience that's fantastic in its own right makes Marvis Pro my favorite music player on iOS, and in my opinion, the best.
 

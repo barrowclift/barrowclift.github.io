@@ -1,0 +1,276 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Mixtapes"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "2"
+    next-page: "4"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Mixtapes' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/icon.png "Mixtapes' iOS app icon"){: .inline-app-icon } Mixtapes
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage-poster.jpg" alt="Video demonstrating Mixtapes' usage in light mode" title="Demonstrating Mixtapes' usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.jpg">
+<picture>
+    <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.webp">
+    <img type="image/jpeg" title="Mixtapes' light theme album view" alt="Image of Mixtapes' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+<picture>
+    <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.webp">
+    <img type="image/jpeg" title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage-poster.jpg" alt="Video demonstrating Mixtapes' usage in dark mode" title="Demonstrating Mixtapes' usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.jpg">
+<picture>
+    <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.webp">
+    <img type="image/jpeg" title="Mixtapes' dark theme album view" alt="Image of Mixtapes' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+<picture>
+    <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.webp">
+    <img type="image/jpeg" title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/mixtapes-music-player/id1571885606">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+Mixtapes is a new general-purpose player built by [Jake Nelson](https://twitter.com/jknlsn) that dropped late September at the tail end of 2021, and despite its young age already boasts a comprehensive and novel playlist and queue-focused experience. In spite of the third-party music player market's maturity, the concept of "smart" playlists remains rare; to date, the only players that provide a flavor of this capability are [Marvis Pro], [Albums], and [Soor](https://soor.app)[^apple-dropped-the-ball]. It comes as a suprise then to not only see a new player launch boasting this capacity front and center in its marketing and branding, but also to see this relatively complex capability launch right out of the gate in its first version. Even features that didn't make the cut for initial release have since been added in subsequent minor updates, such as full Apple Music support. However, to properly discuss Mixtapes, we need to first step back and take stock of the player holistically.
+
+On launch, Mixtapes offers a comfortably traditional experience, complete with stock tab bar navigation and an interface strongly reminiscent of Apple's own [Music.app](/articles/fourth-annual-ios-music-player-showcase/14) (in no small part due to its choice of red as its default accent color). Mixtapes' tab bar present the following menu items by default:
+
+* Albums
+* Discover
+* Mixes
+* Search
+* More
+
+The traditional browsers like "Albums" are close in appearance and navigation to Music.app with a couple crucial differences. Firstly, the "Albums" page offers a healthy selection of sorting options, including the coveted ability to sort albums by artist name  and then each artist's albums by release date. Secondly, Mixtapes offers a classic "[cover flow](https://en.wikipedia.org/wiki/Cover_Flow)"-style browsing experience when in landscape mode, the only player available today to offer this beloved but forgotten layout style. The "Discover" page is a recent addition as a part of it's first-class Apple Music integration, featuring an Apple Music-powered browsing experience with all the collections you've come to expect from the service ("Favorites Mix", "Stations for You", etc.). It's effectively a carbon copy of what you'd otherwise find in Music.app's "Listen Now" page, and it's great to have immediately accessible within Mixtapes itself without forcing listeners to bounce back to Music.app. While there's so little unique done to its contents I can't help but feel that it's perhaps a lazy integration, it's sure to delight heavy users of Apple Music. Additionally, for those that aren't or don't have a subscription, you can trivially swap out the "Discover" tab with a more traditional browser like "Artists".
+
+Continuing on to the "More" page, it's a near carbon copy of the "More" page originally found on the legacy Music.app on iOS 7 and earlier. It's on this page extra browsers like songs and genres are accessible. However, in Mixtapes' case, a "Settings" menu item also makes an appearance on this page. Within "Settings" is a remarkably dense and deep tree of various behavioral and appearance options, including the ability to customize both the mini-player and full-player's controls and visuals, automatically skip & hide explicit tracks with its novel "family friendly mode", and even the ability to enable filtering by BPM for your smart mixes[^bpm]. It's also worth noting that Mixtapes offers a staggering 120 alternative app icons, the most extensive I've seen offered in any music player and easily beating out the previous leader, [Marvis Pro], by a whopping 80 icons. With Mixtapes, listeners who care deeply about maintaining a particular home screen aesthetic have never had a better chance of finding the perfect icon.
+
+<figure class="two-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
+  <img type="image/jpeg" title="Page 1 of alternative icons in light mode" alt="Image of page 1 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.webp">
+  <img type="image/jpeg" title="Page 2 of alternative icons in light mode" alt="Image of page 2 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.webp">
+  <img type="image/jpeg" title="Page 1 of alternative icons in dark mode" alt="Image of page 1 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.webp">
+  <img type="image/jpeg" title="Page 2 of alternative icons in dark mode" alt="Image of page 2 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.jpg">
+</picture>
+</a>
+<figcaption>Mixtapes offers an <em>insane</em> breadth of alternative icons to choose from. This isn’t even all of them.</figcaption>
+</figure>
+
+Now with a deeper understanding of Mixtapes' design, traditional navigation, and startlingly extensive suite of settings, it's now finally time to dive into the player's namesake: its "Mixes" page. On this page, listeners can of course make regular mixes (playlists) manually, which is the typical player-specific playlist management seen in other players like [Plum]. Alternatively, listeners can create "smart" mixes to have Mixtapes automatically populate those playlists by artist, album, year, or genre. For example, if I wanted to create a playlist of pop tracks from 2021, I could easily do so by creating a new smart mix with two filters, the first to only include tracks with the "pop" genre and the second to only include tracks with a year equal to "2021". It bears noting that this system pales in comparison to [Marvis Pro]'s and [Albums]' equivalents, with Marvis Pro supporting a whopping thirty-five different filter criteria to choose from in comparison to Mixtapes' sad selection of five. However, what is there works exactly as described, and such a small suite of criteria may be easily forgiven given the app has only been available for a few months and is sure to receive expanded capabilities in the coming years.
+
+That brings us finally to Mixtape's full-player, which by default features edge-to-edge album art, a deep album art blur as the background, and a modest suite of standard playback controls. The "deep blur" effect delivers variable results, sometimes looking incredible as is the case with [Yola](https://music.apple.com/us/artist/yola/203292917)'s [*Stand For Myself*](https://music.apple.com/us/album/stand-for-myself/1561240873) but other times looking nearly as bad as [Sathorn]'s full-player as is the case with [Bent Knee](https://music.apple.com/us/artist/bent-knee/474692510)'s [*Frosting*](https://music.apple.com/us/album/frosting/1588174160).
+
+<figure class="three-images ios-screenshot">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
+  <img type="image/jpeg" title="The full-player with a pleasing blur effect" alt="Image of the full-player with a pleasing blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.webp">
+  <img type="image/jpeg" title="The full-player with a mediocre blur effect" alt="Image of the full-player with a mediocre blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.webp">
+  <img type="image/jpeg" title="The full-player with an ugly blur effect" alt="Image of the full-player with an ugly blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.jpg">
+</picture>
+</a>
+<figcaption>The good, the bad, and the ugly.</figcaption>
+</figure>
+
+With that said, its batting average for good results remains well above the times it flops, and the functionality provided by the rest of the player more than makes up for those times.
+
+At the bottom of the player is a novel, segmented tab control which provides the ability to create and switch between different queues on the fly. The feature is absolutely game changing; ever since my first iPod over a decade ago, I've been frustrated at the inability to preserve my playback queue from shuffled playlists. I frequently found myself getting halfway through a shuffled playlist (typically for an "oldies" shuffle during family vacations), only to find myself needing to temporarily switch to something else (say for a drive home), thus forever losing my shuffled playlist queue position and leaving me to manually skip through repeats the following day. Mixtapes is the first and only player that *finally* acknowledges that queue contents are important listener data and offers a solution to preserve them in the form of multiple queues, which can trivially be named and sorted for quick and convenient swapping in the full-player itself. After years of keeping a finger on the pulse of iOS's music player ecosystem, it pleases me to no end to still see such profoundly exciting and useful new features like this drop. With Mixtapes' leadership and a bit of luck, the days of seeing queue contents be treated so transiently and ambivalently by players may finally be coming to an end.
+
+Make no mistake, Mixtapes' young age reveals itself at times, such as with its slim filter criteria and handful of nasty bugs[^handful-of-nasty-bugs], but its exciting features that can't be found anywhere else like cover flow and multiple queues make the experience undeniably captivating. We don't know yet what Mixtapes release cadence will look like, but if it's anything like the handful of releases it received following the launch just a few short months ago, then it's clear that Jake Nelson has big plans in mind with Mixtapes, and he's just getting started.
+
+### iPad Experience
+
+Unfortunately, Mixtapes does not properly support the iPad.
+
+### Widgets
+
+<div class="box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-large-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-large-widget.webp">
+  <img type="image/png" title="Mixtapes' large 'Now Playing' widget" alt="Image of Mixtapes' large 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-large-widget.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-medium-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-medium-widget.webp">
+  <img type="image/png" title="Mixtapes' medium 'Now Playing' widget" alt="Image of Mixtapes' medium 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-medium-widget.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-small-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-small-widget.webp">
+  <img type="image/png" title="Mixtapes' small 'Now Playing' widget" alt="Image of Mixtapes' small 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-small-widget.png">
+</picture>
+</a>
+</div>
+</div>
+
+Mixtapes offers a single "Now Playing" widget collection in three sizes. Like all "Now Playing" widgets, they're populated with the album art of the currently playing track and sometimes additional metadata (depending on the size of the widget). However, Mixtapes's widgets are by far the most bizarre take on this classic widget type I've seen to date.
+
+Against convention, both the small *and* large widget sizes display just the album art with no additional metadata whatsoever. While this of course works perfectly for the postage stamp-sized small widget, it's comically monstrous with the large widget, resulting in half your home screen displaying nothing but the album art. Granted, since no other player today aside from [Albums] provides the ability to display *just* the currently playing track's album art in a large widget, this is sure to please at least some listeners out there waiting patiently for a widget like this to come along, but for the majority of listeners I can't imagine this large widget design makes sense. Disappointingly, there's no customization available whatsoever for any of the sizes; you're stuck with what you get.
+
+The medium widget is a bit more traditional by leveraging a two-column design, featuring the album art beside queue details, including the current song and the next three songs up in the active queue. Like the full-player's "deep blur" effect, the result is a bit hit and miss, sometimes resulting in visually nasty results like with Bent Knee's *Frosting* but other times looking gorgeous as is the case with Yola's *Stand For Myself*. Again, the lack of customization to display the song, album, and artist details instead of the queue is disappointing, but as a medium "Now Playing" widget focused on the queue, it's perfectly acceptable.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:heavy_check_mark:</span> Apple Music integration</dt>
+  <dd><p>While not anything particularly groundbreaking, Mixtapes offers a standard Apple Music discovery page and expected integration like the ability to search either your local library or Apple Music’s catalog.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+  <dd><p>Again, while not particularly groundbreaking, Mixtapes does indeed support a traditional lyrics view by tapping the album art.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>While Mixtapes full-player looks gorgeous in some cases, its results are exceptionally inconsistent and highly dependent on the album art.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+  <dd><p>Its “Smart Mixes” feature is a great start, but not counting Apple Music it’s the only means of discovery in the app, and its limited capabilities prevent it from replacing expected discovery collections like “Recently Added”.</p></dd>
+  <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+    <dd><p>Much to my delight, my preferred album sorting method (Artist > Chronological) is supported. However, I’d love for Mixtapes to take its Smart Mixes further by providing the ability to optionally filter and sort albums instead or in addition to songs.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> iPad support</dt>
+  <dd><p>It can perhaps be written off given Mixtape’s young age, but I still find myself disappointed at the lack of iPad version.</p></dd>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/4"><p class="button">Next App: “MPX EQ”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><strong>Mixtapes</strong></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+----
+
+[^apple-dropped-the-ball]: Comically—despite coining the concept of "smart playlists" in the general public with iTunes over a decade ago—Apple failed to port the feature in any capacity whatsoever over to iOS.
+[^bpm]: BPM metadata is not automatically provided for music downloaded either through Apple Music or iTunes, and thus must be manually set by the listener in order for Mixtapes to target. With that said, there are sure to be a handful of listener libraries out there with meticulously maintained metadata and would be overjoyed at the ability to quickly create smart mixes containing only tracks within a specific BPM range.
+[^handful-of-nasty-bugs]: For example, you can completely break the app by hiding all tab bar items aside from "Albums", "Artists", "Mixes", and "Search". Don't do this though, since the only way to fix is deleting and redownloading the app, losing your data in the process.
+
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Soor]: https://soor.app
+[Plum]: https://apps.apple.com/us/app/plum-music-player/id1441625664
+[Sathorn]: https://sathorn.app

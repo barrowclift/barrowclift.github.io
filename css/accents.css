@@ -1,64 +1,392 @@
-/******************
- ***  GRAPHITE  ***
- ******************/
+/*************************
+ ***  COLOR VARIABLES  ***
+ *************************/
 
-/**
- * Hex: #F5F5F5;
- * RGB: rgb(245, 245, 245);
- * HSL: hsl(0, 0%, 96%)
- */
-mark.gray,
-mark.grey {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(0, 0%, 85%, 0.75) 38.66%, hsla(3, 0%, 85%, 0.75))
-}
-mark.tag.gray,
-mark.tag.grey {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(0, 0%, 50%, 0.9) 38.66%, hsla(3, 0%, 50%, 0.9))
-}
-.admonition {
-    background-color: rgba(245, 245, 245, .9);
-    border-color: rgb(192, 192, 192);
-}
-.admonition .admonition-title:before,
-.admonition > p:first-child:before {
-    background-color: rgb(192, 192, 192);
+html {
+    /* TODO THIS MIGHT NEED ADJUSTING */
+    --light-graphite-hue: 240;
+    --light-graphite-saturation: 24%;
+    --light-graphite-lightness: 96%;
+    --dark-graphite-hue: 240;
+    --dark-graphite-saturation: 3%;
+    --dark-graphite-lightness: 11%;
+
+    /* TODO SWITCH TO MAC VIBRANT COLORS? */
+    --light-blue-hue: 211;
+    --light-blue-saturation: 100%;
+    --light-blue-lightness: 50%;
+    --dark-blue-hue: 210;
+    --dark-blue-saturation: 100%;
+    --dark-blue-lightness: 52%;
+
+    --light-red-hue: 3;
+    --light-red-saturation: 100%;
+    --light-red-lightness: 59%;
+    --dark-red-hue: 3;
+    --dark-red-saturation: 100%;
+    --dark-red-lightness: 61%;
+
+    --light-orange-hue: 30;
+    --light-orange-saturation: 100%;
+    --light-orange-lightness: 50%;
+    --dark-orange-hue: 36;
+    --dark-orange-saturation: 100%;
+    --dark-orange-lightness: 52%;
+
+    --light-yellow-hue: 48;
+/*    --light-yellow-saturation: 100%;*/
+    --light-yellow-saturation: 90%;
+    --light-yellow-lightness: 50%;
+    --dark-yellow-hue: 50;
+    --dark-yellow-saturation: 100%;
+    --dark-yellow-lightness: 52%;
+
+    --light-green-hue: 130;
+/*    --light-green-saturation: 65%;*/
+    --light-green-saturation: 60%;
+/*    --light-green-lightness: 57%;*/
+    --light-green-lightness: 50%;
+    --dark-green-hue: 135;
+    --dark-green-saturation: 64%;
+    --dark-green-lightness: 50%;
+
+    --light-purple-hue: 241;
+    --light-purple-saturation: 61%;
+    --light-purple-lightness: 59%;
+    --dark-purple-hue: 280;
+    --dark-purple-saturation: 85%;
+    --dark-purple-lightness: 65%;
+
+    --light-pink-hue: 349;
+    --light-pink-saturation: 100%;
+    --light-pink-lightness: 59%;
+    --dark-pink-hue: 348;
+    --dark-pink-saturation: 85%;
+    --dark-pink-lightness: 61%;
 }
 
-#dark .admonition {
-    background-color: rgba(46, 46, 46, 0.25);
-    border-color: rgba(124, 124, 124, 0.9);
+html,
+.blue {
+    --accent-hue: var(--light-blue-hue);
+    --accent-saturation: var(--light-blue-saturation);
+    --accent-lightness: var(--light-blue-lightness);
 }
-#dark .admonition > p:first-child:before,
-#dark .admonition .admonition-title:before {
-    background-color: rgb(116, 116, 116);
+#dark.blue {
+    --accent-hue: var(--dark-blue-hue);
+    --accent-saturation: var(--dark-blue-saturation);
+    --accent-lightness: var(--dark-blue-lightness);
+}
+.red {
+    --accent-hue: var(--light-red-hue);
+    --accent-saturation: var(--light-red-saturation);
+    --accent-lightness: var(--light-red-lightness);
+}
+#dark.red {
+    --accent-hue: var(--dark-red-hue);
+    --accent-saturation: var(--dark-red-saturation);
+    --accent-lightness: var(--dark-red-lightness);
+}
+.orange {
+    --accent-hue: var(--light-orange-hue);
+    --accent-saturation: var(--light-orange-saturation);
+    --accent-lightness: var(--light-orange-lightness);
+}
+#dark.orange {
+    --accent-hue: var(--dark-orange-hue);
+    --accent-saturation: var(--dark-orange-saturation);
+    --accent-lightness: var(--dark-orange-lightness);
+}
+.yellow {
+    --accent-hue: var(--light-yellow-hue);
+    --accent-saturation: var(--light-yellow-saturation);
+    --accent-lightness: var(--light-yellow-lightness);
+}
+#dark.yellow {
+    --accent-hue: var(--dark-yellow-hue);
+    --accent-saturation: var(--dark-yellow-saturation);
+    --accent-lightness: var(--dark-yellow-lightness);
+}
+.green {
+    --accent-hue: var(--light-green-hue);
+    --accent-saturation: var(--light-green-saturation);
+    --accent-lightness: var(--light-green-lightness);
+}
+#dark.green {
+    --accent-hue: var(--dark-green-hue);
+    --accent-saturation: var(--dark-green-saturation);
+    --accent-lightness: var(--dark-green-lightness);
+}
+.purple {
+    --accent-hue: var(--light-purple-hue);
+    --accent-saturation: var(--light-purple-saturation);
+    --accent-lightness: var(--light-purple-lightness);
+}
+#dark.purple {
+    --accent-hue: var(--dark-purple-hue);
+    --accent-saturation: var(--dark-purple-saturation);
+    --accent-lightness: var(--dark-purple-lightness);
+}
+.pink {
+    --accent-hue: var(--light-pink-hue);
+    --accent-saturation: var(--light-pink-saturation);
+    --accent-lightness: var(--light-pink-lightness);
+}
+#dark.pink {
+    --accent-hue: var(--dark-pink-hue);
+    --accent-saturation: var(--dark-pink-saturation);
+    --accent-lightness: var(--dark-pink-lightness);
 }
 
-/******************
- ***    BLUE    ***
- ******************/
+/*********************
+ ***  COLOR WELLS  ***
+ *********************/
 
-/**
- * Hex: #007AFF
- * RGB: rgb(0, 122, 255);
- * HSL: hsl(211, 100%, 50%);
- *
- * Hex: #0A84FF;
- * RGB: rgb(10, 132, 255);
- * HSL: hsl(210, 100%, 52%)
- */
 .color-well.blue {
-    background-color: #007AFF;
+    background-color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
+}
+    .color-well.active,
+    .blue .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
+    }
+    #dark.blue .color-well.blue {
+        background-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
+    }
+    #dark .color-well.active,
+    #dark.blue .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
+    }
+.color-well.red {
+    background-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
+}
+    .red .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
+    }
+    #dark.red .color-well.red {
+        background-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
+    }
+    #dark.red .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
+    }
+.color-well.orange {
+    background-color: hsl(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness));
+}
+    .orange .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness));
+    }
+    #dark.orange .color-well.orange {
+        background-color: hsl(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness));
+    }
+    #dark.orange .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness));
+    }
+.color-well.yellow {
+    background-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
+}
+    .yellow .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
+    }
+    #dark.yellow .color-well.yellow {
+        background-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
+    }
+    #dark.yellow .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
+    }
+.color-well.green {
+    background-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
+}
+    .green .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
+    }
+    #dark.green .color-well.green {
+        background-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
+    }
+    #dark.green .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
+    }
+.color-well.purple {
+    background-color: hsl(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness));
+}
+    .purple .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness));
+    }
+    #dark.purple .color-well.purple {
+        background-color: hsl(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness));
+    }
+    #dark.purple .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness));
+    }
+.color-well.pink {
+    background-color: hsl(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness));
+}
+    .pink .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness));
+    }
+    #dark.pink .color-well.pink {
+        background-color: hsl(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness));
+    }
+    #dark.pink .color-well.active {
+        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness));
+    }
+
+/**********************
+ ***  MARKS & TAGS  ***
+ **********************/
+
+
+mark.tag.gray,
+mark.tag.grey,
+mark.tag.graphite,
+#dark mark.tag.gray,
+#dark mark.tag.grey,
+#dark mark.tag.graphite {
+    background-image: linear-gradient(to bottom right, hsl(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%)) 38.66%, hsl(calc(var(--accent-hue) + 3), 15%, calc(var(--accent-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--accent-hue), 15%, var(--accent-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--accent-hue), 15%, var(--accent-lightness), 0.2);
 }
 mark.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(211, 100%, 50%, 0.75) 38.66%, hsla(214, 100%, 50%, 0.75));
+    background-image: linear-gradient(to right, hsla(var(--light-blue-hue), 100%, calc(var(--light-blue-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-blue-hue) + 3), 100%, calc(var(--light-blue-lightness) + 20%), 0.99));
 }
-mark.tag.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(211, 100%, 50%, 0.9) 38.66%, hsla(214, 100%, 50%, 0.9));
+    mark.tag.blue {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-blue-hue), var(--light-blue-saturation), calc(var(--light-blue-lightness) + 10%)) 38.66%, hsl(calc(var(--light-blue-hue) + 3), var(--light-blue-saturation), calc(var(--light-blue-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.2);
+    }
+    #dark mark.blue {
+        background-image: linear-gradient(to right, hsla(var(--dark-blue-hue), 100%, calc(var(--dark-blue-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-blue-hue) + 3), 100%, calc(var(--dark-blue-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.blue {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-blue-hue), var(--dark-blue-saturation), calc(var(--dark-blue-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-blue-hue) + 3), var(--dark-blue-saturation), calc(var(--dark-blue-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.2);
+    }
+mark.red {
+    background-image: linear-gradient(to right, hsla(var(--light-red-hue), 100%, calc(var(--light-red-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-red-hue) + 3), 100%, calc(var(--light-red-lightness) + 20%), 0.99));
 }
+    mark.tag.red {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-red-hue), var(--light-red-saturation), calc(var(--light-red-lightness) + 10%)) 38.66%, hsl(calc(var(--light-red-hue) + 3), var(--light-red-saturation), calc(var(--light-red-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.2);
+    }
+    #dark mark.red {
+        background-image: linear-gradient(to right, hsla(var(--dark-red-hue), 100%, calc(var(--dark-red-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-red-hue) + 3), 100%, calc(var(--dark-red-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.red {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-red-hue), var(--dark-red-saturation), calc(var(--dark-red-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-red-hue) + 3), var(--dark-red-saturation), calc(var(--dark-red-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.2);
+    }
+mark.orange {
+    background-image: linear-gradient(to right, hsla(var(--light-orange-hue), 100%, calc(var(--light-orange-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-orange-hue) + 3), 100%, calc(var(--light-orange-lightness) + 20%), 0.99));
+}
+    mark.tag.orange {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-orange-hue), var(--light-orange-saturation), calc(var(--light-orange-lightness) + 10%)) 38.66%, hsl(calc(var(--light-orange-hue) + 3), var(--light-orange-saturation), calc(var(--light-orange-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness), 0.2);
+    }
+    #dark mark.orange {
+        background-image: linear-gradient(to right, hsla(var(--dark-orange-hue), 100%, calc(var(--dark-orange-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-orange-hue) + 3), 100%, calc(var(--dark-orange-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.orange {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-orange-hue), var(--dark-orange-saturation), calc(var(--dark-orange-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-orange-hue) + 3), var(--dark-orange-saturation), calc(var(--dark-orange-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness), 0.2);
+    }
+mark,
+mark.yellow {
+    background: unset;
+    background-image: linear-gradient(to right, hsla(var(--light-yellow-hue), 100%, calc(var(--light-yellow-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-yellow-hue) + 3), 100%, calc(var(--light-yellow-lightness) + 20%), 0.99));
+}
+    mark.tag,
+    mark.tag.yellow {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-yellow-hue), var(--light-yellow-saturation), calc(var(--light-yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--light-yellow-hue) + 3), var(--light-yellow-saturation), calc(var(--light-yellow-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.2);
+    }
+    #dark mark,
+    #dark mark.yellow {
+        background: unset;
+        background-image: linear-gradient(to right, hsla(var(--dark-yellow-hue), 100%, calc(var(--dark-yellow-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-yellow-hue) + 3), 100%, calc(var(--dark-yellow-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.yellow {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), calc(var(--dark-yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-yellow-hue) + 3), var(--dark-yellow-saturation), calc(var(--dark-yellow-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.2);
+    }
+mark.green {
+    background-image: linear-gradient(to right, hsla(var(--light-green-hue), 100%, calc(var(--light-green-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-green-hue) + 3), 100%, calc(var(--light-green-lightness) + 20%), 0.99));
+}
+    mark.tag.green {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-green-hue), var(--light-green-saturation), calc(var(--light-green-lightness) + 10%)) 38.66%, hsl(calc(var(--light-green-hue) + 3), var(--light-green-saturation), calc(var(--light-green-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.2);
+    }
+    #dark mark.green {
+        background-image: linear-gradient(to right, hsla(var(--dark-green-hue), 100%, calc(var(--dark-green-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-green-hue) + 3), 100%, calc(var(--dark-green-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.green {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-green-hue), var(--dark-green-saturation), calc(var(--dark-green-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-green-hue) + 3), var(--dark-green-saturation), calc(var(--dark-green-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.2);
+    }
+mark.purple {
+    background-image: linear-gradient(to right, hsla(var(--light-purple-hue), 100%, calc(var(--light-purple-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-purple-hue) + 3), 100%, calc(var(--light-purple-lightness) + 20%), 0.99));
+}
+    mark.tag.purple {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-purple-hue), var(--light-purple-saturation), calc(var(--light-purple-lightness) + 10%)) 38.66%, hsl(calc(var(--light-purple-hue) + 3), var(--light-purple-saturation), calc(var(--light-purple-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness), 0.2);
+    }
+    #dark mark.purple {
+        background-image: linear-gradient(to right, hsla(var(--dark-purple-hue), 100%, calc(var(--dark-purple-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-purple-hue) + 3), 100%, calc(var(--dark-purple-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.purple {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-purple-hue), var(--dark-purple-saturation), calc(var(--dark-purple-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-purple-hue) + 3), var(--dark-purple-saturation), calc(var(--dark-purple-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness), 0.2);
+    }
+mark.pink {
+    background-image: linear-gradient(to right, hsla(var(--light-pink-hue), calc(var(--light-pink-saturation) + 10%), calc(var(--light-pink-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-pink-hue) + 3), calc(var(--light-pink-saturation) + 10%), calc(var(--light-pink-lightness) + 20%), 0.99));
+}
+    mark.tag.pink {
+        background-image: linear-gradient(to bottom right, hsl(var(--light-pink-hue), var(--light-pink-saturation), calc(var(--light-pink-lightness) + 10%)) 38.66%, hsl(calc(var(--light-pink-hue) + 3), var(--light-pink-saturation), calc(var(--light-pink-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness), 0.2);
+    }
+    #dark mark.pink {
+        background-image: linear-gradient(to right, hsla(var(--dark-pink-hue), 100%, calc(var(--dark-pink-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-pink-hue) + 3), 100%, calc(var(--dark-pink-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.pink {
+        background-image: linear-gradient(to bottom right, hsl(var(--dark-pink-hue), var(--dark-pink-saturation), calc(var(--dark-pink-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-pink-hue) + 3), var(--dark-pink-saturation), calc(var(--dark-pink-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness), 0.2);
+    }
+
+/*********************
+ ***  ADMONITIONS  ***
+ *********************/
+
+/* ----- GRAPHITE ----- */
+
+.admonition {
+    background-color: hsla(var(--accent-hue), 5%, 50%, 0.075);
+    border-left-color: hsl(var(--accent-hue), 5%, 62.5%) !important;
+    border-right-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
+    border-bottom-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
+    border-top-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
+    box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
+}
+    .admonition.aside {
+        border-left-color: hsl(var(--accent-hue), 5%, 62.5%, 0.15) !important;
+    }
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    .admonition .admonition-title:before,
+    .admonition > p:first-child:before {
+        background-color: hsl(var(--accent-hue), 5%, 62.5%);
+    }
+#dark .admonition {
+    background-color: hsla(var(--accent-hue), 5%, 75%, 0.05);
+    border-left-color: hsl(var(--accent-hue), 5%, 37.5%) !important;
+    border-right-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
+    border-bottom-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
+    border-top-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
+    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
+}
+    /* TODO */
+    #dark .admonition.aside {
+        border-left-color: hsl(var(--accent-hue), 5%, 37.5%, 0.15) !important;
+    }
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    #dark .admonition .admonition-title:before,
+    #dark .admonition > p:first-child:before {
+        background-color: hsl(var(--accent-hue), 5%, 37.5%);
+    }
+
+/* ----- BLUE ----- */
 
 .admonition.question,
 .admonition.hint,
@@ -67,1663 +395,473 @@ mark.tag.blue {
 .admonition.tip,
 .admonition.example,
 .admonition.blue {
-    background-color: hsla(211, 100%, 50%, 0.1);
-    border-color: hsl(211, 100%, 50%) !important;
+    background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1);
+    border-left-color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness)) !important;
+    border-right-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
+    border-bottom-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
+    border-top-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.05);
 }
-.admonition.question .admonition-title:before,
-.admonition.hint .admonition-title:before,
-.admonition.note .admonition-title:before,
-.admonition.info .admonition-title:before,
-.admonition.tip .admonition-title:before,
-.admonition.example .admonition-title:before,
-.admonition.blue .admonition-title:before,
-.admonition.question p:first-child:before,
-.admonition.hint p:first-child:before,
-.admonition.note p:first-child:before,
-.admonition.info p:first-child:before,
-.admonition.tip p:first-child:before,
-.admonition.example p:first-child:before,
-.admonition.blue p:first-child:before {
-    background-color: hsla(211, 100%, 50%) !important;
-}
-
-.blue .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(211, 100%, 50%);
-}
-
-.blue a,
-.blue #mainmenu .active,
-.blue #mainmenu a:hover,
-.blue #settings-toggle:hover,
-.blue #settings-toggle.active a,
-.blue #submenu a:hover,
-.blue .header a:hover,
-.blue a:hover .header,
-.blue summary {
-    color: hsl(211, 100%, 50%);
-}
-.blue #logo:hover .signature-color,
-.blue #signature.active .signature-color {
-    fill: hsl(211, 100%, 50%);
-}
-.blue .backdrop {
-    background-color: hsl(211, 100%, 50%);
-}
-
-.blue a:hover,
-.blue #submenu,
-.blue summary:hover,
-.blue .summary-list li a:hover,
-.blue .card:hover {
-    background-color: hsla(211, 100%, 50%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.blue ::selection { /* Safari */
-    background: hsla(211, 100%, 50%, 0.99);
-    color: white;
-}
-.blue ::-moz-selection { /* Firefox */
-    background: hsla(211, 100%, 50%, 0.99);
-    color: white;
-}
-
-.blue button,
-.blue .button {
-    background-color: hsl(211, 100%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
-}
-    .blue button:hover,
-    .blue .button:hover {
-        background-color: hsl(211, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 45%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    .admonition.question .admonition-title:before,
+    .admonition.hint .admonition-title:before,
+    .admonition.note .admonition-title:before,
+    .admonition.info .admonition-title:before,
+    .admonition.tip .admonition-title:before,
+    .admonition.example .admonition-title:before,
+    .admonition.blue .admonition-title:before,
+    .admonition.question > p:first-child:before,
+    .admonition.hint > p:first-child:before,
+    .admonition.note > p:first-child:before,
+    .admonition.info > p:first-child:before,
+    .admonition.tip > p:first-child:before,
+    .admonition.example > p:first-child:before,
+    .admonition.blue > p:first-child:before {
+        background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness)) !important;
     }
-    .blue button:active,
-    .blue .button:active {
-        background-color: hsl(211, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
+    .admonition.question a,
+    .admonition.hint a,
+    .admonition.note a,
+    .admonition.info a,
+    .admonition.tip a,
+    .admonition.example a,
+    .admonition.blue a {
+        color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
     }
-.blue button.bigfoot-footnote__button,
-.blue button.pill {
-    background-color: hsla(211, 100%, 50%, 0.1);
+    .admonition.question a:hover,
+    .admonition.hint a:hover,
+    .admonition.note a:hover,
+    .admonition.info a:hover,
+    .admonition.tip a:hover,
+    .admonition.example a:hover,
+    .admonition.blue a:hover {
+        background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1);
+    }
+#dark .admonition.question,
+#dark .admonition.hint,
+#dark .admonition.note,
+#dark .admonition.info,
+#dark .admonition.tip,
+#dark .admonition.example,
+#dark .admonition.blue {
+    background-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15);
+    border-left-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness)) !important;
+    border-right-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
+    border-bottom-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
+    border-top-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.05);
 }
-    .blue button.bigfoot-footnote__button:after,
-    .blue button.pill {
-        color: hsl(211, 100%, 50%) !important;
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    #dark .admonition.question .admonition-title:before,
+    #dark .admonition.hint .admonition-title:before,
+    #dark .admonition.note .admonition-title:before,
+    #dark .admonition.info .admonition-title:before,
+    #dark .admonition.tip .admonition-title:before,
+    #dark .admonition.example .admonition-title:before,
+    #dark .admonition.blue .admonition-title:before,
+    #dark .admonition.question > p:first-child:before,
+    #dark .admonition.hint > p:first-child:before,
+    #dark .admonition.note > p:first-child:before,
+    #dark .admonition.info > p:first-child:before,
+    #dark .admonition.tip > p:first-child:before,
+    #dark .admonition.example > p:first-child:before,
+    #dark .admonition.blue > p:first-child:before {
+        background-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness)) !important;
     }
-    .blue button.bigfoot-footnote__button:hover,
-    .blue button.pill:hover {
-        background-color: hsl(211, 100%, 50%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
+    #dark .admonition.question a,
+    #dark .admonition.hint a,
+    #dark .admonition.note a,
+    #dark .admonition.info a,
+    #dark .admonition.tip a,
+    #dark .admonition.example a,
+    #dark .admonition.blue a {
+        color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
     }
-    .blue button.bigfoot-footnote__button:active,
-    .blue button.bigfoot-footnote__button.is-active,
-    .blue button.pill:active,
-    .blue .setting-toggles.active button.pill {
-        background-color: hsl(211, 100%, 45%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
+    #dark .admonition.question a:hover,
+    #dark .admonition.hint a:hover,
+    #dark .admonition.note a:hover,
+    #dark .admonition.info a:hover,
+    #dark .admonition.tip a:hover,
+    #dark .admonition.example a:hover,
+    #dark .admonition.blue a:hover {
+        background-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15);
     }
 
-.blue input:focus,
-.blue textarea:focus {
-    border-color: hsl(211, 100%, 50%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2) !important;
-}
+/* ----- RED ----- */
 
-.blue .codehilite,
-.blue .highlight {
-    background-color: rgb(33, 34, 36);
-}
-
-#dark.blue .color-well.blue {
-    background-color: #0A84FF;
-}
-#dark.blue mark.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.75) 38.66%, hsla(213, 100%, 50%, 0.75));
-}
-#dark.blue mark.tag.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.9) 38.66%, hsla(213, 100%, 50%, 0.9));
-}
-
-#dark.blue .admonition.question,
-#dark.blue .admonition.hint,
-#dark.blue .admonition.note,
-#dark.blue .admonition.info,
-#dark.blue .admonition.tip,
-#dark.blue .admonition.example,
-#dark.blue .admonition.blue {
-    background-color: hsla(210, 100%, 52%, 0.15);
-    border-color: hsl(210, 100%, 52%) !important;
-}
-#dark.blue .admonition.question .admonition-title:before,
-#dark.blue .admonition.hint .admonition-title:before,
-#dark.blue .admonition.note .admonition-title:before,
-#dark.blue .admonition.info .admonition-title:before,
-#dark.blue .admonition.tip .admonition-title:before,
-#dark.blue .admonition.example .admonition-title:before,
-#dark.blue .admonition.blue .admonition-title:before,
-#dark.blue .admonition.question p:first-child:before,
-#dark.blue .admonition.hint p:first-child:before,
-#dark.blue .admonition.note p:first-child:before,
-#dark.blue .admonition.info p:first-child:before,
-#dark.blue .admonition.tip p:first-child:before,
-#dark.blue .admonition.example p:first-child:before,
-#dark.blue .admonition.blue p:first-child:before {
-    background-color: hsla(210, 100%, 52%) !important;
-}
-
-#dark.blue .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(210, 100%, 52%);
-}
-
-#dark.blue a,
-#dark.blue #mainmenu .active,
-#dark.blue #mainmenu a:hover,
-#dark.blue #settings-toggle:hover,
-#dark.blue #settings-toggle.active a,
-#dark.blue #submenu a:hover,
-#dark.blue .header a:hover,
-#dark.blue a:hover .header,
-#dark.blue summary {
-    color: hsl(210, 100%, 52%);
-}
-#dark.blue #logo:hover .signature-color,
-#dark.blue #signature.active .signature-color {
-    fill: hsl(210, 100%, 52%);
-}
-#dark.blue .backdrop {
-    background-color: hsl(210, 100%, 52%);
-}
-#dark.blue a:hover,
-#dark.blue #submenu,
-#dark.blue button.bigfoot-footnote__button,
-#dark.blue button.pill,
-#dark.blue summary:hover,
-#dark.blue .summary-list li a:hover,
-#dark.blue .card:hover {
-    background-color: hsla(210, 100%, 52%, 0.15);
-}
-#dark.blue ::selection {
-    background: hsla(210, 100%, 52%, 0.85);
-}
-#dark.blue ::-moz-selection {
-    background: hsla(210, 100%, 52%, 0.85);
-}
-
-#dark.blue button,
-#dark.blue .button {
-    background-color: hsl(210, 100%, 52%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
-}
-    #dark.blue button:hover,
-    #dark.blue .button:hover {
-        background-color: hsl(210, 100%, 57%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(210, 100%, 47%, 0.375);
-    }
-    #dark.blue button:active,
-    #dark.blue .button:active {
-        background-color: hsl(210, 100%, 47%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(210, 100%, 47%, 0.2);
-    }
-#dark.blue button.bigfoot-footnote__button,
-#dark.blue button.pill {
-    background-color: hsla(210, 100%, 52%, 0.2);
-}
-    #dark.blue button.bigfoot-footnote__button:hover,
-    #dark.blue button.pill:hover {
-        background-color: hsl(210, 100%, 52%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
-    }
-    #dark.blue button.bigfoot-footnote__button:active,
-    #dark.blue button.bigfoot-footnote__button.is-active,
-    #dark.blue button.pill:active,
-    #dark.blue .setting-toggles.active button.pill {
-        background-color: hsl(211, 100%, 47%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 47%, 0.2);
-    }
-
-#dark.blue input:focus,
-#dark.blue textarea:focus {
-    border-color: hsl(210, 100%, 52%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2) !important;
-}
-
-/******************
- ***     RED    ***
- ******************/
-
-/**
- * Hex: #FF3B30
- * RGB: rgb(255, 59, 48);
- * HSL: hsl(3, 100%, 59%);
- *
- * Hex: #FF453A
- * RGB: rgb(255, 69, 58)
- * HSL: hsl(3, 100%, 61%)
- */
-.color-well.red {
-    background-color: #FF3B30;
-}
-mark.red {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(3, 100%, 59%, 0.75) 38.66%, hsla(6, 100%, 59%, 0.75));
-}
-mark.tag.red {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(3, 100%, 59%, 0.9) 38.66%, hsla(6, 100%, 59%, 0.9));
-}
 .admonition.error,
 .admonition.danger,
 .admonition.warning,
 .admonition.red {
-    background-color: hsla(3, 100%, 59%, 0.1);
-    border-color: hsl(3, 100%, 59%) !important;
+    background-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1);
+    border-left-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness)) !important;
+    border-right-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
+    border-bottom-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
+    border-top-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.05);
 }
-.admonition.error .admonition-title:before,
-.admonition.danger .admonition-title:before,
-.admonition.warning .admonition-title:before,
-.admonition.red .admonition-title:before,
-.admonition.error p:first-child:before,
-.admonition.danger p:first-child:before,
-.admonition.warning p:first-child:before,
-.admonition.red p:first-child:before {
-    background-color: hsl(3, 100%, 59%) !important;
-}
-
-.red .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(3, 100%, 59%);
-}
-
-.red a,
-.red #mainmenu .active,
-.red #mainmenu a:hover,
-.red #settings-toggle:hover,
-.red #settings-toggle.active a,
-.red #submenu a:hover,
-.red .header a:hover,
-.red a:hover .header,
-.red summary {
-    color: hsl(3, 100%, 59%);
-}
-.red #logo:hover .signature-color,
-.red #signature.active .signature-color {
-    fill: hsl(3, 100%, 59%);
-}
-.red .backdrop {
-    background-color: hsl(3, 100%, 59%);
-}
-
-.red a:hover,
-.red #submenu,
-.red summary:hover,
-.red .summary-list li a:hover,
-.red .card:hover {
-    background-color: hsla(3, 100%, 59%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.red ::selection { /* Safari */
-    background: hsla(3, 100%, 59%, 0.99);
-    color: white;
-}
-.red ::-moz-selection { /* Firefox */
-    background: hsla(3, 100%, 59%, 0.99);
-    color: white;
-}
-
-.red button,
-.red .button {
-    background-color: hsl(3, 100%, 59%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2);
-}
-    .red button:hover,
-    .red .button:hover {
-        background-color: hsl(3, 100%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(3, 100%, 54%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    .admonition.error .admonition-title:before,
+    .admonition.danger .admonition-title:before,
+    .admonition.warning .admonition-title:before,
+    .admonition.red .admonition-title:before,
+    .admonition.error > p:first-child:before,
+    .admonition.danger > p:first-child:before,
+    .admonition.warning > p:first-child:before,
+    .admonition.red > p:first-child:before {
+        background-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness)) !important;
     }
-    .red button:active,
-    .red .button:active {
-        background-color: hsl(3, 100%, 54%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(3, 100%, 54%, 0.2);
+    .admonition.error a,
+    .admonition.danger a,
+    .admonition.warning a,
+    .admonition.red a {
+        color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
     }
-.red button.bigfoot-footnote__button,
-.red button.pill {
-    background-color: hsla(3, 100%, 59%, 0.1);
-}
-    .red button.bigfoot-footnote__button:after,
-    .red button.pill {
-        color: hsl(3, 100%, 59%) !important;
+    .admonition.error a:hover,
+    .admonition.danger a:hover,
+    .admonition.warning a:hover,
+    .admonition.red a:hover {
+        background-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1);
     }
-    .red button.bigfoot-footnote__button:hover,
-    .red button.pill:hover {
-        background-color: hsl(3, 100%, 59%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2);
-    }
-    .red button.bigfoot-footnote__button:active,
-    .red button.bigfoot-footnote__button.is-active,
-    .red button.pill:active,
-    .red .setting-toggles.active button.pill {
-        background-color: hsl(3, 100%, 54%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(3, 100%, 54%, 0.2);
-    }
-
-.red input:focus,
-.red textarea:focus {
-    border-color: hsl(3, 100%, 59%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2) !important;
-}
-
-.red .codehilite,
-.red .highlight {
-    background-color: rgb(36, 34, 33);
-}
-
 #dark .admonition.error,
 #dark .admonition.danger,
 #dark .admonition.warning,
 #dark .admonition.red {
-    background-color: hsla(3, 100%, 61%, 0.15);
+    background-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15);
+    border-left-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness)) !important;
+    border-right-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
+    border-bottom-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
+    border-top-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.05);
 }
-
-#dark.red .color-well.red {
-    background-color: #FF453A;
-}
-#dark.red mark.red {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(3, 100%, 61%, 0.75) 38.66%, hsla(6, 100%, 61%, 0.75));
-}
-#dark.red mark.tag.red {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(3, 100%, 61%, 0.9) 38.66%, hsla(6, 100%, 61%, 0.9));
-}
-
-#dark.red .admonition.question,
-#dark.red .admonition.hint,
-#dark.red .admonition.note,
-#dark.red .admonition.info,
-#dark.red .admonition.tip,
-#dark.red .admonition.example,
-#dark.red .admonition.red {
-    background-color: hsla(3, 100%, 61%, 0.15);
-    border-color: hsl(3, 100%, 61%) !important;
-}
-#dark.red .admonition.question .admonition-title:before,
-#dark.red .admonition.hint .admonition-title:before,
-#dark.red .admonition.note .admonition-title:before,
-#dark.red .admonition.info .admonition-title:before,
-#dark.red .admonition.tip .admonition-title:before,
-#dark.red .admonition.example .admonition-title:before,
-#dark.red .admonition.red .admonition-title:before,
-#dark.red .admonition.question p:first-child:before,
-#dark.red .admonition.hint p:first-child:before,
-#dark.red .admonition.note p:first-child:before,
-#dark.red .admonition.info p:first-child:before,
-#dark.red .admonition.tip p:first-child:before,
-#dark.red .admonition.example p:first-child:before,
-#dark.red .admonition.red p:first-child:before {
-    background-color: hsla(3, 100%, 61%) !important;
-}
-
-#dark.red .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(3, 100%, 61%);
-}
-
-#dark.red a,
-#dark.red #mainmenu .active,
-#dark.red #mainmenu a:hover,
-#dark.red #settings-toggle:hover,
-#dark.red #settings-toggle.active a,
-#dark.red #submenu a:hover,
-#dark.red .header a:hover,
-#dark.red a:hover .header,
-#dark.red summary {
-    color: hsl(3, 100%, 61%);
-}
-#dark.red #logo:hover .signature-color,
-#dark.red #signature.active .signature-color {
-    fill: hsl(3, 100%, 61%);
-}
-#dark.red .backdrop {
-    background-color: hsl(3, 100%, 61%);
-}
-#dark.red a:hover,
-#dark.red #submenu,
-#dark.red button.bigfoot-footnote__button,
-#dark.red button.pill,
-#dark.red summary:hover,
-#dark.red .summary-list li a:hover,
-#dark.red .card:hover {
-    background-color: hsla(3, 100%, 61%, 0.15);
-}
-#dark.red ::selection {
-    background: hsla(3, 100%, 61%, 0.85);
-}
-#dark.red ::-moz-selection {
-    background: hsla(3, 100%, 61%, 0.85);
-}
-
-#dark.red button,
-#dark.red .button {
-    background-color: hsl(3, 100%, 61%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(3, 100%, 61%, 0.2);
-}
-    #dark.red button:hover,
-    #dark.red .button:hover {
-        background-color: hsl(3, 100%, 66%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(3, 100%, 56%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    #dark .admonition.error .admonition-title:before,
+    #dark .admonition.danger .admonition-title:before,
+    #dark .admonition.warning .admonition-title:before,
+    #dark .admonition.red .admonition-title:before,
+    #dark .admonition.error > p:first-child:before,
+    #dark .admonition.danger > p:first-child:before,
+    #dark .admonition.warning > p:first-child:before,
+    #dark .admonition.red > p:first-child:before {
+        background-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness)) !important;
     }
-    #dark.red button:active,
-    #dark.red .button:active {
-        background-color: hsl(3, 100%, 56%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(3, 100%, 56%, 0.2);
+    #dark .admonition.error a,
+    #dark .admonition.danger a,
+    #dark .admonition.warning a,
+    #dark .admonition.red a {
+        color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
     }
-#dark.red button.bigfoot-footnote__button,
-#dark.red button.pill {
-    background-color: hsla(3, 100%, 61%, 0.2);
-}
-    #dark.red button.bigfoot-footnote__button:hover,
-    #dark.red button.pill:hover {
-        background-color: hsl(3, 100%, 61%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(3, 100%, 61%, 0.2);
-    }
-    #dark.red button.bigfoot-footnote__button:active,
-    #dark.red button.bigfoot-footnote__button.is-active,
-    #dark.red button.pill:active,
-    #dark.red .setting-toggles.active button.pill {
-        background-color: hsl(3, 100%, 56%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(3, 100%, 56%, 0.2);
+    #dark .admonition.error a:hover,
+    #dark .admonition.danger a:hover,
+    #dark .admonition.warning a:hover,
+    #dark .admonition.red a:hover {
+        background-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15);
     }
 
-#dark.red input:focus,
-#dark.red textarea:focus {
-    border-color: hsl(3, 100%, 61%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(3, 100%, 61%, 0.2) !important;
-}
+/* ----- YELLOW ----- */
 
-/******************
- ***   ORANGE   ***
- ******************/
-
-/**
- * Hex: #FF8100
- * RGB: rgb(255, 129, 0);
- * HSL: hsl(30, 100%, 50%);
- *
- * Hex: #FF9F0A
- * RGB: rgb(255, 159, 10);
- * HSL: hsl(36, 100%, 52%);
- */
-.color-well.orange {
-    background-color: #FF8100;
-}
-mark.orange {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(30, 100%, 50%, 0.75) 38.66%, hsla(33, 100%, 50%, 0.75));
-}
-mark.tag.orange {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(30, 100%, 50%, 0.9) 38.66%, hsla(33, 100%, 50%, 0.9));
-}
-
-.orange .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(30, 100%, 50%);
-}
-
-.orange a,
-.orange #mainmenu .active,
-.orange #mainmenu a:hover,
-.orange #settings-toggle:hover,
-.orange #settings-toggle.active a,
-.orange #submenu a:hover,
-.orange .header a:hover,
-.orange a:hover .header,
-.orange summary {
-    color: hsl(30, 100%, 50%);
-}
-.orange #logo:hover .signature-color,
-.orange #signature.active .signature-color {
-    fill: hsl(30, 100%, 50%);
-}
-.orange .backdrop {
-    background-color: hsl(30, 100%, 50%);
-}
-
-.orange a:hover,
-.orange #submenu,
-.orange summary:hover,
-.orange .summary-list li a:hover,
-.orange .card:hover {
-    background-color: hsla(30, 100%, 50%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.orange ::selection { /* Safari */
-    background: hsla(30, 100%, 50%, 0.99);
-    color: white;
-}
-.orange ::-moz-selection { /* Firefox */
-    background: hsla(30, 100%, 50%, 0.99);
-    color: white;
-}
-
-.orange button,
-.orange .button {
-    background-color: hsl(30, 100%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(30, 100%, 50%, 0.2);
-}
-    .orange button:hover,
-    .orange .button:hover {
-        background-color: hsl(30, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(30, 100%, 45%, 0.375);
-    }
-    .orange button:active,
-    .orange .button:active {
-        background-color: hsl(30, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(30, 100%, 45%, 0.2);
-    }
-.orange button.bigfoot-footnote__button,
-.orange button.pill {
-    background-color: hsla(30, 100%, 50%, 0.1);
-    box-shadow: none;
-}
-    .orange button.bigfoot-footnote__button:after,
-    .orange button.pill {
-        color: hsl(30, 100%, 50%) !important;
-    }
-    .orange button.bigfoot-footnote__button:hover,
-    .orange button.pill:hover {
-        background-color: hsl(30, 100%, 50%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(30, 100%, 50%, 0.2);
-    }
-    .orange button.bigfoot-footnote__button:active,
-    .orange button.bigfoot-footnote__button.is-active,
-    .orange button.pill:active,
-    .orange .setting-toggles.active button.pill {
-        background-color: hsl(30, 100%, 45%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(30, 100%, 45%, 0.2);
-    }
-
-.orange input:focus,
-.orange textarea:focus {
-    border-color: hsl(30, 100%, 50%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(30, 100%, 50%, 0.2) !important;
-}
-
-.orange .codehilite,
-.orange .highlight {
-    background-color: rgb(36, 35, 33);
-}
-
-#dark.orange .color-well.orange {
-    background-color: #FF9F0A;
-}
-#dark.orange mark.orange {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(36, 100%, 52%, 0.75) 38.66%, hsla(39, 100%, 52%, 0.75));
-}
-#dark.orange mark.tag.orange {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(36, 100%, 52%, 0.9) 38.66%, hsla(39, 100%, 52%, 0.9));
-}
-
-#dark.orange .admonition.question,
-#dark.orange .admonition.hint,
-#dark.orange .admonition.note,
-#dark.orange .admonition.info,
-#dark.orange .admonition.tip,
-#dark.orange .admonition.example,
-#dark.orange .admonition.orange {
-    background-color: hsla(36, 100%, 52%, 0.15);
-    border-color: hsl(36, 100%, 52%) !important;
-}
-#dark.orange .admonition.question .admonition-title:before,
-#dark.orange .admonition.hint .admonition-title:before,
-#dark.orange .admonition.note .admonition-title:before,
-#dark.orange .admonition.info .admonition-title:before,
-#dark.orange .admonition.tip .admonition-title:before,
-#dark.orange .admonition.example .admonition-title:before,
-#dark.orange .admonition.orange .admonition-title:before,
-#dark.orange .admonition.question p:first-child:before,
-#dark.orange .admonition.hint p:first-child:before,
-#dark.orange .admonition.note p:first-child:before,
-#dark.orange .admonition.info p:first-child:before,
-#dark.orange .admonition.tip p:first-child:before,
-#dark.orange .admonition.example p:first-child:before,
-#dark.orange .admonition.orange p:first-child:before {
-    background-color: hsla(36, 100%, 52%) !important;
-}
-
-#dark.orange .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(36, 100%, 52%);
-}
-
-#dark.orange a,
-#dark.orange #mainmenu .active,
-#dark.orange #mainmenu a:hover,
-#dark.orange #settings-toggle:hover,
-#dark.orange #settings-toggle.active a,
-#dark.orange #submenu a:hover,
-#dark.orange .header a:hover,
-#dark.orange a:hover .header,
-#dark.orange summary {
-    color: hsl(36, 100%, 52%);
-}
-#dark.orange #logo:hover .signature-color,
-#dark.orange #signature.active .signature-color {
-    fill: hsl(36, 100%, 52%);
-}
-#dark.orange .backdrop {
-    background-color: hsl(36, 100%, 52%);
-}
-#dark.orange a:hover,
-#dark.orange #submenu,
-#dark.orange button.bigfoot-footnote__button,
-#dark.orange button.pill,
-#dark.orange summary:hover,
-#dark.orange .summary-list li a:hover,
-#dark.orange .card:hover {
-    background-color: hsla(36, 100%, 52%, 0.15);
-}
-#dark.orange ::selection {
-    background: hsla(36, 100%, 52%, 0.85);
-}
-#dark.orange ::-moz-selection {
-    background: hsla(36, 100%, 52%, 0.85);
-}
-
-#dark.orange button,
-#dark.orange .button {
-    background-color: hsl(36, 100%, 52%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(36, 100%, 52%, 0.2);
-}
-    #dark.orange button:hover,
-    #dark.orange .button:hover {
-        background-color: hsl(36, 100%, 57%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(36, 100%, 47%, 0.375);
-    }
-    #dark.orange button:active,
-    #dark.orange .button:active {
-        background-color: hsl(36, 100%, 47%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(36, 100%, 47%, 0.2);
-    }
-#dark.orange button.bigfoot-footnote__button,
-#dark.orange button.pill {
-    background-color: hsla(36, 100%, 52%, 0.2);
-}
-    #dark.orange button.bigfoot-footnote__button:hover,
-    #dark.orange button.pill:hover {
-        background-color: hsl(36, 100%, 52%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(36, 100%, 52%, 0.2);
-    }
-    #dark.orange button.bigfoot-footnote__button:active,
-    #dark.orange button.bigfoot-footnote__button.is-active,
-    #dark.orange button.pill:active,
-    #dark.orange .setting-toggles.active button.pill {
-        background-color: hsl(36, 100%, 47%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(36, 100%, 47%, 0.2);
-    }
-
-#dark.orange input:focus,
-#dark.orange textarea:focus {
-    border-color: hsl(36, 100%, 52%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(36, 100%, 52%, 0.2) !important;
-}
-
-/******************
- ***   YELLOW   ***
- ******************/
-
-/**
- * Hex: #FFCC00
- * RGB: rgb(255, 204, 0);
- * HSL: hsl(48, 100%, 50%);
- *
- * Hex: #FFD60A
- * RGB: rgb(255, 214, 10)
- * HSL: hsl(50, 100%, 52%);
- */
-.color-well.yellow {
-    background-color: #FFCC00;
-}
-mark,
-mark.yellow {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(48, 100%, 50%, 0.75) 38.66%, hsla(51, 100%, 50%, 0.75));
-}
-mark.tag,
-mark.tag.yellow {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(48, 100%, 50%, 0.9) 38.66%, hsla(51, 100%, 50%, 0.9));
-}
 .admonition.update,
 .admonition.yellow {
-    background-color: hsla(48, 100%, 50%, 0.1);
-    border-color: hsl(48, 100%, 50%) !important;
+    background-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1);
+    border-left-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness)) !important;
+    border-right-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
+    border-bottom-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
+    border-top-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.05);
 }
-.admonition.update .admonition-title:before,
-.admonition.update p:first-child:before,
-.admonition.yellow .admonition-title:before,
-.admonition.yellow p:first-child:before {
-    background-color: hsl(48, 100%, 50%) !important;
-}
-
-.yellow .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(48, 100%, 50%);
-}
-
-.yellow a,
-.yellow #mainmenu .active,
-.yellow #mainmenu a:hover,
-.yellow #settings-toggle:hover,
-.yellow #settings-toggle.active a,
-.yellow #submenu a:hover,
-.yellow .header a:hover,
-.yellow a:hover .header,
-.yellow summary {
-    color: hsl(48, 100%, 50%);
-}
-.admonition.yellow a {
-    color: hsl(45, 100%, 45%);
-}
-.yellow #logo:hover .signature-color,
-.yellow #signature.active .signature-color {
-    fill: hsl(48, 100%, 50%);
-}
-.yellow .backdrop {
-    background-color: hsl(48, 100%, 50%);
-}
-
-.yellow a:hover,
-.yellow #submenu,
-.yellow summary:hover,
-.yellow .summary-list li a:hover,
-.yellow .card:hover {
-    background-color: hsla(48, 100%, 50%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.yellow ::selection { /* Safari */
-    background: hsla(48, 100%, 50%, 0.99);
-    color: white;
-}
-.yellow ::-moz-selection { /* Firefox */
-    background: hsla(48, 100%, 50%, 0.99);
-    color: white;
-}
-
-.yellow button,
-.yellow .button {
-    background-color: hsl(48, 100%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(48, 100%, 50%, 0.2);
-}
-    .yellow button:hover,
-    .yellow .button:hover {
-        background-color: hsl(48, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(48, 100%, 45%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    .admonition.update .admonition-title:before,
+    .admonition.update > p:first-child:before,
+    .admonition.yellow .admonition-title:before,
+    .admonition.yellow > p:first-child:before {
+        background-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness)) !important;
     }
-    .yellow button:active,
-    .yellow .button:active {
-        background-color: hsl(48, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(48, 100%, 45%, 0.2);
+    .admonition.update a,
+    .admonition.yellow a {
+        color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
     }
-.yellow button.bigfoot-footnote__button,
-.yellow button.pill {
-    background-color: hsla(48, 100%, 50%, 0.1);
-    box-shadow: none;
-}
-    .yellow button.bigfoot-footnote__button:after,
-    .yellow button.pill {
-        color: hsl(48, 100%, 50%) !important;
+    .admonition.update a:hover,
+    .admonition.yellow a:hover {
+        background-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1);
     }
-    .yellow button.bigfoot-footnote__button:hover,
-    .yellow button.pill:hover {
-        background-color: hsl(48, 100%, 50%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(48, 100%, 50%, 0.2);
-    }
-    .yellow button.bigfoot-footnote__button:active,
-    .yellow button.bigfoot-footnote__button.is-active,
-    .yellow button.pill:active,
-    .yellow .setting-toggles.active button.pill {
-        background-color: hsl(48, 100%, 45%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(48, 100%, 45%, 0.2);
-    }
-
-.yellow input:focus,
-.yellow textarea:focus {
-    border-color: hsl(48, 100%, 50%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(48, 100%, 50%, 0.2) !important;
-}
-
-.yellow .codehilite,
-.yellow .highlight {
-    background-color: rgb(36, 36, 34);
-}
-
 #dark .admonition.update,
 #dark .admonition.yellow {
-    background-color: hsla(50, 100%, 52%, 0.15);
+    background-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15);
+    border-left-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness)) !important;
+    border-right-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
+    border-bottom-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
+    border-top-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.05);
 }
-
-#dark.yellow .color-well.yellow {
-    background-color: #FFD60A;
-}
-#dark.yellow mark.yellow {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(50, 100%, 52%, 0.75) 38.66%, hsla(53, 100%, 52%, 0.75));
-}
-#dark.yellow mark.tag.yellow {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(50, 100%, 52%, 0.9) 38.66%, hsla(53, 100%, 52%, 0.9));
-}
-
-#dark.yellow .admonition.question,
-#dark.yellow .admonition.hint,
-#dark.yellow .admonition.note,
-#dark.yellow .admonition.info,
-#dark.yellow .admonition.tip,
-#dark.yellow .admonition.example,
-#dark.yellow .admonition.yellow {
-    background-color: hsla(50, 100%, 52%, 0.15);
-    border-color: hsl(50, 100%, 52%) !important;
-}
-#dark.yellow .admonition.question .admonition-title:before,
-#dark.yellow .admonition.hint .admonition-title:before,
-#dark.yellow .admonition.note .admonition-title:before,
-#dark.yellow .admonition.info .admonition-title:before,
-#dark.yellow .admonition.tip .admonition-title:before,
-#dark.yellow .admonition.example .admonition-title:before,
-#dark.yellow .admonition.yellow .admonition-title:before,
-#dark.yellow .admonition.question p:first-child:before,
-#dark.yellow .admonition.hint p:first-child:before,
-#dark.yellow .admonition.note p:first-child:before,
-#dark.yellow .admonition.info p:first-child:before,
-#dark.yellow .admonition.tip p:first-child:before,
-#dark.yellow .admonition.example p:first-child:before,
-#dark.yellow .admonition.yellow p:first-child:before {
-    background-color: hsla(50, 100%, 52%) !important;
-}
-
-#dark.yellow .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(50, 100%, 52%);
-}
-
-#dark.yellow a,
-#dark.yellow #mainmenu .active,
-#dark.yellow #mainmenu a:hover,
-#dark.yellow #settings-toggle:hover,
-#dark.yellow #settings-toggle.active a,
-#dark.yellow #submenu a:hover,
-#dark.yellow .header a:hover,
-#dark.yellow a:hover .header,
-#dark.yellow summary {
-    color: hsl(50, 100%, 52%);
-}
-#dark .admonition.yellow a {
-    color: hsl(50, 100%, 52%);
-}
-#dark.yellow #logo:hover .signature-color,
-#dark.yellow #signature.active .signature-color {
-    fill: hsl(50, 100%, 52%);
-}
-#dark.yellow .backdrop {
-    background-color: hsl(50, 100%, 52%);
-}
-#dark.yellow a:hover,
-#dark.yellow #submenu,
-#dark.yellow button.bigfoot-footnote__button,
-#dark.yellow button.pill,
-#dark.yellow summary:hover,
-#dark.yellow .summary-list li a:hover,
-#dark.yellow .card:hover,
-#dark .admonition.yellow a:hover {
-    background-color: hsla(50, 100%, 52%, 0.15);
-}
-#dark.yellow ::selection {
-    background: hsla(50, 100%, 52%, 0.85);
-}
-#dark.yellow ::-moz-selection {
-    background: hsla(50, 100%, 52%, 0.85);
-}
-
-#dark.yellow button,
-#dark.yellow .button {
-    background-color: hsl(50, 100%, 44%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(50, 100%, 44%, 0.2);
-}
-    #dark.yellow button:hover,
-    #dark.yellow .button:hover {
-        background-color: hsl(50, 100%, 49%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(50, 100%, 39%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    #dark .admonition.update .admonition-title:before,
+    #dark .admonition.update > p:first-child:before,
+    #dark .admonition.yellow .admonition-title:before,
+    #dark .admonition.yellow > p:first-child:before {
+        background-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness)) !important;
     }
-    #dark.yellow button:active,
-    #dark.yellow .button:active {
-        background-color: hsl(50, 100%, 39%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(50, 100%, 39%, 0.2);
+    #dark .admonition.update a,
+    #dark .admonition.yellow a {
+        color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
     }
-#dark.yellow button.bigfoot-footnote__button,
-#dark.yellow button.pill {
-    background-color: hsla(50, 100%, 52%, 0.2);
-}
-    #dark.yellow button.bigfoot-footnote__button:hover,
-    #dark.yellow button.pill:hover {
-        background-color: hsl(50, 100%, 52%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(50, 100%, 52%, 0.2);
-    }
-    #dark.yellow button.bigfoot-footnote__button:active,
-    #dark.yellow button.bigfoot-footnote__button.is-active,
-    #dark.yellow button.pill:active,
-    #dark.yellow .setting-toggles.active button.pill {
-        background-color: hsl(50, 100%, 47%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(50, 100%, 47%, 0.2);
+    #dark .admonition.update a:hover,
+    #dark .admonition.yellow a:hover {
+        background-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15);
     }
 
-#dark.yellow input:focus,
-#dark.yellow textarea:focus {
-    border-color: hsl(50, 100%, 52%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(50, 100%, 52%, 0.2) !important;
-}
+/* ----- GREEN ----- */
 
-/******************
- ***    GREEN   ***
- ******************/
-
-/**
- * Hex: #4CD964
- * RGB: rgb(76, 217, 100);
- * HSL: hsl(130, 65%, 57%);
- *
- * Hex: #30D158;
- * RGB: rgb(48, 209, 88)
- * HSL: hsl(135, 64%, 50%)
- */
-.color-well.green {
-    background-color: #4CD964;
-}
-mark.green {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(130, 65%, 57%, 0.75) 38.66%, hsla(133, 65%, 57%, 0.75));
-}
-mark.tag.green {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(130, 65%, 57%, 0.9) 38.66%, hsla(133, 65%, 57%, 0.9));
-}
 .admonition.success,
 .admonition.green {
-    background-color: hsla(130, 65%, 57%, 0.1);
-    border-color: hsl(130, 65%, 57%) !important;
+    background-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1);
+    border-left-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness)) !important;
+    border-right-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
+    border-bottom-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
+    border-top-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.05);
 }
-.admonition.success .admonition-title:before,
-.admonition.success p:first-child:before,
-.admonition.green .admonition-title:before,
-.admonition.green p:first-child:before {
-    background-color: hsl(130, 65%, 57%) !important;
-}
-
-.green .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(130, 65%, 57%);
-}
-
-.green a,
-.green #mainmenu .active,
-.green #mainmenu a:hover,
-.green #settings-toggle:hover,
-.green #settings-toggle.active a,
-.green #submenu a:hover,
-.green .header a:hover,
-.green a:hover .header,
-.green summary {
-    color: hsl(130, 65%, 57%);
-}
-.green #logo:hover .signature-color,
-.green #signature.active .signature-color {
-    fill: hsl(130, 65%, 57%);
-}
-.green .backdrop {
-    background-color: hsl(130, 65%, 57%);
-}
-
-.green a:hover,
-.green #submenu,
-.green summary:hover,
-.green .summary-list li a:hover,
-.green .card:hover {
-    background-color: hsla(130, 65%, 57%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.green ::selection { /* Safari */
-    background: hsla(130, 65%, 57%, 0.99);
-    color: white;
-}
-.green ::-moz-selection { /* Firefox */
-    background: hsla(130, 65%, 57%, 0.99);
-    color: white;
-}
-
-.green button,
-.green .button {
-    background-color: hsl(130, 65%, 57%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(130, 65%, 57%, 0.2);
-}
-    .green button:hover,
-    .green .button:hover {
-        background-color: hsl(130, 65%, 62%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(130, 75%, 52%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    .admonition.success .admonition-title:before,
+    .admonition.success p:first-child:before,
+    .admonition.green .admonition-title:before,
+    .admonition.green p:first-child:before {
+        background-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness)) !important;
     }
-    .green button:active,
-    .green .button:active {
-        background-color: hsl(130, 65%, 52%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(130, 65%, 52%, 0.2);
+    .admonition.success a,
+    .admonition.green a {
+        color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
     }
-.green button.bigfoot-footnote__button,
-.green button.pill {
-    background-color: hsla(130, 65%, 57%, 0.1);
-    box-shadow: none;
-}
-    .green button.bigfoot-footnote__button:after,
-    .green button.pill {
-        color: hsl(130, 65%, 57%) !important;
+    .admonition.success a:hover,
+    .admonition.green a:hover {
+        background-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1);
     }
-    .green button.bigfoot-footnote__button:hover,
-    .green button.pill:hover {
-        background-color: hsl(130, 65%, 57%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(130, 65%, 57%, 0.2);
-    }
-    .green button.bigfoot-footnote__button:active,
-    .green button.bigfoot-footnote__button.is-active,
-    .green button.pill:active,
-    .green .setting-toggles.active button.pill {
-        background-color: hsl(130, 65%, 52%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(130, 65%, 52%, 0.2);
-    }
-
-.green input:focus,
-.green textarea:focus {
-    border-color: hsl(130, 65%, 57%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(130, 65%, 57%, 0.2) !important;
-}
-
-.green .codehilite,
-.green .highlight {
-    background-color: rgb(34, 36, 34);
-}
-
 #dark .admonition.success,
 #dark .admonition.green {
-    background-color: hsla(135, 64%, 50%, 0.15);
+    background-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15);
+    border-left-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness)) !important;
+    border-right-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
+    border-bottom-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
+    border-top-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
+    box-shadow: 0em 1em 2.75em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.05);
 }
-
-#dark.green .color-well.green {
-    background-color: #30D158;
-}
-#dark.green mark.green {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(135, 64%, 50%, 0.75) 38.66%, hsla(138, 64%, 50%, 0.75));
-}
-#dark.green mark.tag.green {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(135, 64%, 50%, 0.9) 38.66%, hsla(138, 64%, 50%, 0.9));
-}
-
-#dark.green .admonition.question,
-#dark.green .admonition.hint,
-#dark.green .admonition.note,
-#dark.green .admonition.info,
-#dark.green .admonition.tip,
-#dark.green .admonition.example,
-#dark.green .admonition.green {
-    background-color: hsla(135, 64%, 50%, 0.15);
-    border-color: hsl(135, 64%, 50%) !important;
-}
-#dark.green .admonition.question .admonition-title:before,
-#dark.green .admonition.hint .admonition-title:before,
-#dark.green .admonition.note .admonition-title:before,
-#dark.green .admonition.info .admonition-title:before,
-#dark.green .admonition.tip .admonition-title:before,
-#dark.green .admonition.example .admonition-title:before,
-#dark.green .admonition.green .admonition-title:before,
-#dark.green .admonition.question p:first-child:before,
-#dark.green .admonition.hint p:first-child:before,
-#dark.green .admonition.note p:first-child:before,
-#dark.green .admonition.info p:first-child:before,
-#dark.green .admonition.tip p:first-child:before,
-#dark.green .admonition.example p:first-child:before,
-#dark.green .admonition.green p:first-child:before {
-    background-color: hsla(135, 64%, 50%) !important;
-}
-
-#dark.green .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(135, 64%, 50%);
-}
-
-#dark.green a,
-#dark.green #mainmenu .active,
-#dark.green #mainmenu a:hover,
-#dark.green #settings-toggle:hover,
-#dark.green #settings-toggle.active a,
-#dark.green #submenu a:hover,
-#dark.green .header a:hover,
-#dark.green a:hover .header,
-#dark.green summary {
-    color: hsl(135, 64%, 50%);
-}
-#dark.green #logo:hover .signature-color,
-#dark.green #signature.active .signature-color {
-    fill: hsl(135, 64%, 50%);
-}
-#dark.green .backdrop {
-    background-color: hsl(135, 64%, 50%);
-}
-#dark.green a:hover,
-#dark.green #submenu,
-#dark.green button.bigfoot-footnote__button,
-#dark.green button.pill,
-#dark.green summary:hover,
-#dark.green .summary-list li a:hover,
-#dark.green .card:hover {
-    background-color: hsla(135, 64%, 50%, 0.15);
-}
-#dark.green ::selection {
-    background: hsla(135, 64%, 50%, 0.85);
-}
-#dark.green ::-moz-selection {
-    background: hsla(135, 64%, 50%, 0.85);
-}
-
-#dark.green button,
-#dark.green .button {
-    background-color: hsl(135, 64%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(135, 64%, 50%, 0.2);
-}
-    #dark.green button:hover,
-    #dark.green .button:hover {
-        background-color: hsl(135, 64%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(135, 64%, 45%, 0.375);
+    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
+    #dark .admonition.success .admonition-title:before,
+    #dark .admonition.success p:first-child:before,
+    #dark .admonition.green .admonition-title:before,
+    #dark .admonition.green p:first-child:before {
+        background-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness)) !important;
     }
-    #dark.green button:active,
-    #dark.green .button:active {
-        background-color: hsl(135, 64%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(135, 64%, 45%, 0.2);
+    #dark .admonition.success a,
+    #dark .admonition.green a {
+        color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
     }
-#dark.green button.bigfoot-footnote__button,
-#dark.green button.pill {
-    background-color: hsla(135, 64%, 50%, 0.2);
-}
-    #dark.green button.bigfoot-footnote__button:hover,
-    #dark.green button.pill:hover {
-        background-color: hsl(135, 64%, 50%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(135, 64%, 50%, 0.2);
-    }
-    #dark.green button.bigfoot-footnote__button:active,
-    #dark.green button.bigfoot-footnote__button.is-active,
-    #dark.green button.pill:active,
-    #dark.green .setting-toggles.active button.pill {
-        background-color: hsl(135, 64%, 45%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(135, 64%, 45%, 0.2);
+    #dark .admonition.success a:hover,
+    #dark .admonition.green a:hover {
+        background-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15);
     }
 
-#dark.green input:focus,
-#dark.green textarea:focus {
-    border-color: hsl(135, 64%, 50%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(135, 64%, 50%, 0.2) !important;
-}
+/******************************
+ ***  DYNAMIC ACCENT COLOR  ***
+ ******************************/
 
-/******************
- ***   PURPLE   ***
- ******************/
-
-/**
- * Hex: #5856D6
- * RGB: rgb(88, 86, 214);
- * HSL: hsl(241, 61%, 59%);
- *
- * Hex: #BF5AF2;
- * RGB: rgb(191, 90, 242);
- * HSL: hsl(280, 85%, 65%);
- */
-.color-well.purple {
-    background-color: #5856D6;
+a,
+#mainmenu .active,
+#mainmenu a:hover,
+#settings-toggle:hover,
+#settings-toggle.active a,
+#submenu a:hover,
+.header a:hover,
+a:hover .header,
+a:hover .header,
+.card:hover .label .primary,
+#dark .card:hover .label .primary,
+summary,
+#dark a,
+#dark #mainmenu .active,
+#dark #mainmenu a:hover,
+#dark #settings-toggle:hover,
+#dark #settings-toggle.active a,
+#dark #submenu a:hover,
+#dark .header a:hover,
+#dark a:hover .header,
+#dark a:hover .header,
+#dark summary {
+    color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
-mark.purple {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(241, 61%, 59%, 0.75) 38.66%, hsla(244, 61%, 59%, 0.75));
+#logo:hover .signature-color,
+#signature.active .signature-color {
+    fill: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
-mark.tag.purple {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(241, 61%, 59%, 0.9) 38.66%, hsla(244, 61%, 59%, 0.9));
+.backdrop {
+    background-color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
-
-.purple .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(241, 61%, 59%);
+a:hover,
+.header a:hover,
+#submenu,
+summary:hover,
+.summary-list li a:hover {
+    background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1);
 }
-
-.purple a,
-.purple #mainmenu .active,
-.purple #mainmenu a:hover,
-.purple #settings-toggle:hover,
-.purple #settings-toggle.active a,
-.purple #submenu a:hover,
-.purple .header a:hover,
-.purple a:hover .header,
-.purple summary {
-    color: hsl(241, 61%, 59%);
+.card:hover,
+.card:hover .label {
+    background-color: hsla(var(--accent-hue), var(--accent-saturation), 95%, 1);
 }
-.purple #logo:hover .signature-color,
-.purple #signature.active .signature-color {
-    fill: hsl(241, 61%, 59%);
+#dark a:hover,
+#dark .header a:hover,
+#dark #submenu,
+#dark summary:hover,
+#dark .summary-list li a:hover {
+/*    background-color: hsla(var(--accent-hue), 25%, 20%, 1);*/
+    background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.15);
 }
-.purple .backdrop {
-    background-color: hsl(241, 61%, 59%);
+#dark .card:hover,
+#dark .card:hover .label {
+/*    background-color: hsla(var(--accent-hue), var(--accent-saturation), 15%, 1);*/
+    background-color: hsla(var(--accent-hue), 40%, 20%, 1);
 }
-
-.purple a:hover,
-.purple #submenu,
-.purple summary:hover,
-.purple .summary-list li a:hover,
-.purple .card:hover {
-    background-color: hsla(241, 61%, 59%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.purple ::selection { /* Safari */
-    background: hsla(241, 61%, 59%, 0.99);
+::selection {
+    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
     color: white;
 }
-.purple ::-moz-selection { /* Firefox */
-    background: hsla(241, 61%, 59%, 0.99);
+::-moz-selection {
+    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
     color: white;
 }
-
-.purple button,
-.purple .button {
-    background-color: hsl(241, 61%, 59%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(241, 61%, 59%, 0.2);
-}
-    .purple button:hover,
-    .purple .button:hover {
-        background-color: hsl(241, 61%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(241, 71%, 54%, 0.375);
-    }
-    .purple button:active,
-    .purple .button:active {
-        background-color: hsl(241, 61%, 54%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(241, 61%, 54%, 0.2);
-    }
-.purple button.bigfoot-footnote__button,
-.purple button.pill {
-    background-color: hsla(241, 61%, 59%, 0.1);
-    box-shadow: none;
-}
-    .purple button.bigfoot-footnote__button:after,
-    .purple button.pill {
-        color: hsl(241, 61%, 59%) !important;
-    }
-    .purple button.bigfoot-footnote__button:hover,
-    .purple button.pill:hover {
-        background-color: hsl(241, 61%, 59%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(241, 61%, 59%, 0.2);
-    }
-    .purple button.bigfoot-footnote__button:active,
-    .purple button.bigfoot-footnote__button.is-active,
-    .purple button.pill:active,
-    .purple .setting-toggles.active button.pill {
-        background-color: hsl(241, 61%, 54%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(241, 61%, 54%, 0.2);
-    }
-
-.purple input:focus,
-.purple textarea:focus {
-    border-color: hsl(241, 61%, 59%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(241, 61%, 59%, 0.2) !important;
-}
-
-.purple .codehilite,
-.purple .highlight {
-    background-color: rgb(34, 34, 36);
-}
-
-#dark.purple .color-well.purple {
-    background-color: #BF5AF2;
-}
-#dark.purple mark.purple {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(280, 85%, 65%, 0.75) 38.66%, hsla(283, 85%, 65%, 0.75));
-}
-#dark.purple mark.tag.purple {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(280, 85%, 65%, 0.9) 38.66%, hsla(283, 85%, 65%, 0.9));
-}
-
-#dark.purple .admonition.question,
-#dark.purple .admonition.hint,
-#dark.purple .admonition.note,
-#dark.purple .admonition.info,
-#dark.purple .admonition.tip,
-#dark.purple .admonition.example,
-#dark.purple .admonition.purple {
-    background-color: hsla(280, 85%, 65%, 0.15);
-    border-color: hsl(280, 85%, 65%) !important;
-}
-#dark.purple .admonition.question .admonition-title:before,
-#dark.purple .admonition.hint .admonition-title:before,
-#dark.purple .admonition.note .admonition-title:before,
-#dark.purple .admonition.info .admonition-title:before,
-#dark.purple .admonition.tip .admonition-title:before,
-#dark.purple .admonition.example .admonition-title:before,
-#dark.purple .admonition.purple .admonition-title:before,
-#dark.purple .admonition.question p:first-child:before,
-#dark.purple .admonition.hint p:first-child:before,
-#dark.purple .admonition.note p:first-child:before,
-#dark.purple .admonition.info p:first-child:before,
-#dark.purple .admonition.tip p:first-child:before,
-#dark.purple .admonition.example p:first-child:before,
-#dark.purple .admonition.purple p:first-child:before {
-    background-color: hsla(280, 85%, 65%) !important;
-}
-
-#dark.purple .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(280, 85%, 65%);
-}
-
-#dark.purple a,
-#dark.purple #mainmenu .active,
-#dark.purple #mainmenu a:hover,
-#dark.purple #settings-toggle:hover,
-#dark.purple #settings-toggle.active a,
-#dark.purple #submenu a:hover,
-#dark.purple .header a:hover,
-#dark.purple a:hover .header,
-#dark.purple summary {
-    color: hsl(280, 85%, 65%);
-}
-#dark.purple #logo:hover .signature-color,
-#dark.purple #signature.active .signature-color {
-    fill: hsl(280, 85%, 65%);
-}
-#dark.purple .backdrop {
-    background-color: hsl(280, 85%, 65%);
-}
-#dark.purple a:hover,
-#dark.purple #submenu,
-#dark.purple button.bigfoot-footnote__button,
-#dark.purple button.pill,
-#dark.purple summary:hover,
-#dark.purple .summary-list li a:hover,
-#dark.purple .card:hover {
-    background-color: hsla(280, 85%, 65%, 0.15);
-}
-#dark.purple ::selection {
-    background: hsla(280, 85%, 65%, 0.85);
-}
-#dark.purple ::-moz-selection {
-    background: hsla(280, 85%, 65%, 0.85);
-}
-
-#dark.purple button,
-#dark.purple .button {
-    background-color: hsl(280, 85%, 65%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(280, 85%, 65%, 0.2);
-}
-    #dark.purple button:hover,
-    #dark.purple .button:hover {
-        background-color: hsl(280, 85%, 70%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(280, 85%, 60%, 0.375);
-    }
-    #dark.purple button:active,
-    #dark.purple .button:active {
-        background-color: hsl(280, 85%, 60%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(280, 85%, 60%, 0.2);
-    }
-#dark.purple button.bigfoot-footnote__button,
-#dark.purple button.pill {
-    background-color: hsla(280, 85%, 65%, 0.2);
-}
-    #dark.purple button.bigfoot-footnote__button:hover,
-    #dark.purple button.pill:hover {
-        background-color: hsl(280, 85%, 65%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(280, 85%, 65%, 0.2);
-    }
-    #dark.purple button.bigfoot-footnote__button:active,
-    #dark.purple button.bigfoot-footnote__button.is-active,
-    #dark.purple button.pill:active,
-    #dark.purple .setting-toggles.active button.pill {
-        background-color: hsl(280, 85%, 60%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(280, 85%, 60%, 0.2);
-    }
-
-#dark.purple input:focus,
-#dark.purple textarea:focus {
-    border-color: hsl(280, 85%, 65%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(280, 85%, 65%, 0.2) !important;
-}
-
-/******************
- ***    PINK    ***
- ******************/
-
-/**
- * Hex: #FF2D55
- * RGB: rgb(255, 45, 85);
- * HSL: hsl(349, 100%, 59%);
- *
- * Hex: #FF375F
- * RGB: rgb(255, 55, 95)
- * HSL: hsl(348, 100%, 61%)
- */
-.color-well.pink {
-    background-color: #FF2D55;
-}
-mark.pink {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(349, 100%, 59%, 0.75) 38.66%, hsla(352, 100%, 59%, 0.75));
-}
-mark.tag.pink {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(349, 100%, 59%, 0.9) 38.66%, hsla(352, 100%, 59%, 0.9));
-}
-
-.pink .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(349, 100%, 59%);
-}
-
-.pink a,
-.pink #mainmenu .active,
-.pink #mainmenu a:hover,
-.pink #settings-toggle:hover,
-.pink #settings-toggle.active a,
-.pink #submenu a:hover,
-.pink .header a:hover,
-.pink a:hover .header,
-.pink summary {
-    color: hsl(349, 100%, 59%);
-}
-.pink #logo:hover .signature-color,
-.pink #signature.active .signature-color {
-    fill: hsl(349, 100%, 59%);
-}
-.pink .backdrop {
-    background-color: hsl(349, 100%, 59%);
-}
-
-.pink a:hover,
-.pink #submenu,
-.pink summary:hover,
-.pink .summary-list li a:hover,
-.pink .card:hover {
-    background-color: hsla(349, 100%, 59%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-.pink ::selection { /* Safari */
-    background: hsla(349, 100%, 59%, 0.99);
+#dark ::selection {
+    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
     color: white;
 }
-.pink ::-moz-selection { /* Firefox */
-    background: hsla(349, 100%, 59%, 0.99);
+#dark ::-moz-selection {
+    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
     color: white;
 }
-
-.pink button,
-.pink .button {
-    background-color: hsl(349, 100%, 59%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2);
+button,
+.button,
+button.pill,
+button.bigfoot-footnote__button {
+    background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%));
+    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.375), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
 }
-    .pink button:hover,
-    .pink .button:hover {
-        background-color: hsl(349, 100%, 64%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(349, 100%, 54%, 0.375);
+    button:hover,
+    .button:hover,
+    button.pill:hover,
+    button.bigfoot-footnote__button:hover {
+        background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) + 2%)) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.375), 0 .65em 1.3em -0.65em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
     }
-    .pink button:active,
-    .pink .button:active {
-        background-color: hsl(349, 100%, 54%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(349, 100%, 54%, 0.2);
+    button:active,
+    .button:active,
+    button.pill:active,
+    .setting-toggles.active button.pill,
+    button.bigfoot-footnote__button:active,
+    button.bigfoot-footnote__button.is-active {
+        background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%)) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.125), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
-.pink button.bigfoot-footnote__button,
-.pink button.pill {
-    background-color: hsla(349, 100%, 59%, 0.1);
-    box-shadow: none;
-}
-    .pink button.bigfoot-footnote__button:after,
-    .pink button.pill {
-        color: hsl(349, 100%, 59%) !important;
+    #dark button,
+    #dark .button,
+    #dark button.pill,
+    #dark button.bigfoot-footnote__button {
+        background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%));
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.2), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
-    .pink button.bigfoot-footnote__button:hover,
-    .pink button.pill:hover {
-        background-color: hsl(349, 100%, 59%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2);
+    #dark button:hover,
+    #dark .button:hover,
+    #dark button.pill:hover,
+    #dark button.bigfoot-footnote__button:hover {
+        background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%)) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.2), 0 .65em 1.3em -0.65em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
     }
-    .pink button.bigfoot-footnote__button:active,
-    .pink button.bigfoot-footnote__button.is-active,
-    .pink button.pill:active,
-    .pink .setting-toggles.active button.pill {
-        background-color: hsl(349, 100%, 54%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(349, 100%, 54%, 0.2);
+    #dark button:active,
+    #dark .button:active,
+    #dark button.pill:active,
+    #dark .setting-toggles.active button.pill,
+    #dark button.bigfoot-footnote__button:active,
+    #dark button.bigfoot-footnote__button.is-active {
+        background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%)) !important;
+        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.1), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
     }
-
-.pink input:focus,
-.pink textarea:focus {
-    border-color: hsl(349, 100%, 59%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(349, 100%, 59%, 0.2) !important;
+button.pill {
+    box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.375), 0 0.26875em 0.54375em -0.125em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
 }
-
-.pink .codehilite,
-.pink .highlight {
-    background-color: rgb(36, 34, 34);
-}
-
-#dark.pink .color-well.pink {
-    background-color: #FF375F;
-}
-#dark.pink mark.pink {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(348, 100%, 61%, 0.75) 38.66%, hsla(351, 100%, 61%, 0.75));
-}
-#dark.pink mark.tag.pink {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(348, 100%, 61%, 0.9) 38.66%, hsla(351, 100%, 61%, 0.9));
-}
-
-#dark.pink .admonition.question,
-#dark.pink .admonition.hint,
-#dark.pink .admonition.note,
-#dark.pink .admonition.info,
-#dark.pink .admonition.tip,
-#dark.pink .admonition.example,
-#dark.pink .admonition.pink {
-    background-color: hsla(348, 100%, 61%, 0.15);
-    border-color: hsl(348, 100%, 61%) !important;
-}
-#dark.pink .admonition.question .admonition-title:before,
-#dark.pink .admonition.hint .admonition-title:before,
-#dark.pink .admonition.note .admonition-title:before,
-#dark.pink .admonition.info .admonition-title:before,
-#dark.pink .admonition.tip .admonition-title:before,
-#dark.pink .admonition.example .admonition-title:before,
-#dark.pink .admonition.pink .admonition-title:before,
-#dark.pink .admonition.question p:first-child:before,
-#dark.pink .admonition.hint p:first-child:before,
-#dark.pink .admonition.note p:first-child:before,
-#dark.pink .admonition.info p:first-child:before,
-#dark.pink .admonition.tip p:first-child:before,
-#dark.pink .admonition.example p:first-child:before,
-#dark.pink .admonition.pink p:first-child:before {
-    background-color: hsla(348, 100%, 61%) !important;
-}
-
-#dark.pink .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(348, 100%, 61%);
-}
-
-#dark.pink a,
-#dark.pink #mainmenu .active,
-#dark.pink #mainmenu a:hover,
-#dark.pink #settings-toggle:hover,
-#dark.pink #settings-toggle.active a,
-#dark.pink #submenu a:hover,
-#dark.pink .header a:hover,
-#dark.pink a:hover .header,
-#dark.pink summary {
-    color: hsl(348, 100%, 61%);
-}
-#dark.pink #logo:hover .signature-color,
-#dark.pink #signature.active .signature-color {
-    fill: hsl(348, 100%, 61%);
-}
-#dark.pink .backdrop {
-    background-color: hsl(348, 100%, 61%);
-}
-#dark.pink a:hover,
-#dark.pink #submenu,
-#dark.pink button.bigfoot-footnote__button,
-#dark.pink button.pill,
-#dark.pink summary:hover,
-#dark.pink .summary-list li a:hover,
-#dark.pink .card:hover {
-    background-color: hsla(348, 100%, 61%, 0.15);
-}
-#dark.pink ::selection {
-    background: hsla(348, 100%, 61%, 0.85);
-}
-#dark.pink ::-moz-selection {
-    background: hsla(348, 100%, 61%, 0.85);
-}
-
-#dark.pink button,
-#dark.pink .button {
-    background-color: hsl(348, 100%, 61%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(348, 100%, 61%, 0.2);
-}
-    #dark.pink button:hover,
-    #dark.pink .button:hover {
-        background-color: hsl(348, 100%, 66%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(348, 100%, 56%, 0.375);
+    button.pill:hover {
+        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.375), 0 0.40625em 0.8125em -0.40625em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
     }
-    #dark.pink button:active,
-    #dark.pink .button:active {
-        background-color: hsl(348, 100%, 56%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(348, 100%, 56%, 0.2);
+    button.pill:active,
+    .setting-toggles.active button.pill {
+        box-shadow: inset 0 0.40625em 0.8125em rgba(0, 0, 0, 0.125), 0 0.26875em 0.54375em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
-#dark.pink button.bigfoot-footnote__button,
-#dark.pink button.pill {
-    background-color: hsla(348, 100%, 61%, 0.2);
+    #dark button.pill {
+        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.2), 0 0.26875em 0.54375em -0.125em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
+    }
+    #dark button.pill:hover {
+        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.2), 0 0.40625em 0.8125em -0.40625em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
+    }
+    #dark button.pill:active,
+    .setting-toggles.active button.pill {
+        box-shadow: inset 0 0.40625em 0.8125em rgba(0, 0, 0, 0.1), 0 0.26875em 0.54375em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
+    }
+button.bigfoot-footnote__button {
+    box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
 }
-    #dark.pink button.bigfoot-footnote__button:hover,
-    #dark.pink button.pill:hover {
-        background-color: hsl(348, 100%, 61%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(348, 100%, 61%, 0.2);
+    button.bigfoot-footnote__button:hover {
+        box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 .325em 0.65em -0.325em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
     }
-    #dark.pink button.bigfoot-footnote__button:active,
-    #dark.pink button.bigfoot-footnote__button.is-active,
-    #dark.pink button.pill:active,
-    #dark.pink .setting-toggles.active button.pill {
-        background-color: hsl(348, 100%, 56%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(348, 100%, 56%, 0.2);
+    button.bigfoot-footnote__button:active,
+    button.bigfoot-footnote__button.is-active {
+        box-shadow: inset 0 .325em 0.65em rgba(0, 0, 0, 0.125), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
+    #dark button.bigfoot-footnote__button {
+        box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
+    }
+    #dark button.bigfoot-footnote__button:hover {
+        box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 .325em 0.65em -0.325em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
+    }
+    #dark button.bigfoot-footnote__button:active,
+    #dark button.bigfoot-footnote__button.is-active {
+        box-shadow: inset 0 .325em 0.65em rgba(0, 0, 0, 0.125), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
+    }
+input:focus,
+textarea:focus {
+    border-color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness)) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.2) !important;
+}
+.codehilite,
+.highlight {
+    background-color: hsl(var(--accent-hue), 25%, 12.5%);
+}
+#dark .codehilite,
+#dark .highlight {
+    background-color: hsl(var(--accent-hue), 25%, 7.5%);
+}
+.card,
+.summary-list li a,
+pre,
+code,
+kbd,
+.card .label {
 
-#dark.pink input:focus,
-#dark.pink textarea:focus {
-    border-color: hsl(348, 100%, 61%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(348, 100%, 61%, 0.2) !important;
+    /* Card */
+    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .125);
+/*    background-color: hsla(var(--accent-hue), 15%, 95%, 1);*/
+
+    border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.2);
+}
+#dark .card,
+#dark .summary-list li a,
+#dark pre,
+#dark code,
+#dark kbd,
+#dark .card .label {
+    /* Card */
+    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .075);
+/*    background-color: hsla(var(--accent-hue), 5%, 17.5%, 1);*/
+
+    border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
+}
+.card .label {
+    background-color: hsla(var(--accent-hue), 15%, 95%, 1);
+}
+#dark .card .label {
+    background-color: hsla(var(--accent-hue), 5%, 17.5%, 1);
 }

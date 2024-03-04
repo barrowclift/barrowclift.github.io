@@ -1,14 +1,15 @@
 ---
 title: "Multitasking Misconceptions"
 date: 2015-10-27 1:23:04
-categories:
-  - Technology
-  - iOS
-  - macOS
-  - Multitasking
 timelocked: true
+
 excerpt: |
-  Does force quitting apps in iOS really help speed up your iPhone and save battery?
+    Does force quitting apps in iOS really help speed up your iPhone and save battery?
+categories:
+    - Technology
+    - iOS
+    - macOS
+    - Multitasking
 image: "multitasking-misconceptions/share-image.jpg"
 ---
 

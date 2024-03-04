@@ -1,13 +1,14 @@
 ---
 title: "Restoring my iPod Video"
 date: 2018-04-20 2:17:05
-categories:
-  - Technology
-  - Repair
-  - iPod
-  - Stories
+
 excerpt: |
-  The day I got my iPod Touch, I retired my iPod Video to the great “old electronics” drawer in the sky and didn’t look back. Until last month, that is.
+    The day I got my iPod Touch, I retired my iPod Video to the great “old electronics” drawer in the sky and didn’t look back. Until last month, that is.
+categories:
+    - Technology
+    - Repair
+    - iPod
+    - Stories
 image: "restoring-my-ipod-video/share-image.jpg"
 ---
 
@@ -32,7 +33,7 @@ Until last month.
 
 <!--break-->
 
-As I touched on in my ["Why Vinyl"](/post/why-vinyl) article, I believe focus has tremendous value. In a day and age where practically all content ever created is just a few taps away from instant consumption, it's practically impossible to sit down and truly enjoy any of it. Nowadays, I find myself incapable of sitting still and listening to music or watching a video. My hands absentmindedly move about refreshing Twitter, surfing reddit for [stale memes](https://i.redd.it/2tjcdf5wzv601.jpg), and all other sorts of time wasters that draw my attention away from whatever I originally set out to enjoy. I sometimes "snap back" only to find I couldn't even remember what three songs I just listened to, or what happened in the episode I was supposedly watching. There's simply too much self-inflicted mental noise.
+As I touched on in my ["Why Vinyl"](/articles/why-vinyl) article, I believe focus has tremendous value. In a day and age where practically all content ever created is just a few taps away from instant consumption, it's practically impossible to sit down and truly enjoy any of it. Nowadays, I find myself incapable of sitting still and listening to music or watching a video. My hands absentmindedly move about refreshing Twitter, surfing reddit for [stale memes](https://i.redd.it/2tjcdf5wzv601.jpg), and all other sorts of time wasters that draw my attention away from whatever I originally set out to enjoy. I sometimes "snap back" only to find I couldn't even remember what three songs I just listened to, or what happened in the episode I was supposedly watching. There's simply too much self-inflicted mental noise.
 
 Naturally, I made it a goal to combat this by surrounding myself with specialized tools that inherently keep distractions away. When I want to write, I write in notebooks. I can only do *one thing* with those notebooks, and that's write. When I want to read, I read a physical book. I can only do *one thing* with that book, and that's read. When I want to listen to music, I listen on my record player. I can only do *one thing* with that record player, and that's listen to music. At least, if I'm at home.
 

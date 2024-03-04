@@ -1,0 +1,146 @@
+---
+title: "Third Annual iOS Music Player Showcase - Sathorn"
+date: 2020-12-31 13:10:33-0500
+timelocked: true
+
+excerpt: |
+    Celebrating the diverse and exciting world of 2020’s iOS music players.
+image: "third-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Third Annual iOS Music Player Showcase"
+    start-page: "/articles/third-annual-ios-music-player-showcase"
+    previous-page: "15"
+    next-page: "17"
+---
+
+## !["Sathorn" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/icon.png '"Sathorn" iOS app icon'){: .inline-app-icon } Sathorn
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
+![Image of "Sathorn" light album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-album-view.jpg '"Sathorn" light album view')
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-now-playing.jpg">
+![Image of "Sathorn" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-now-playing.jpg '"Sathorn" light player view')
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in dark mode" title="Demonstrating 'Sathorn' usage in dark mode">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
+![Image of "Sathorn" dark album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg '"Sathorn" dark album view')
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-now-playing.jpg">
+![Image of "Sathorn" dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-now-playing.jpg '"Sathorn" dark player view')
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/sathorn/id1447295899">
+<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+[Sathorn]'s a thoroughly unremarkable player that earned [scathing marks last year](/articles/second-annual-ios-music-player-competition#--sathorn) both for its uninspired functionality and ["uncanny vally"](https://en.wikipedia.org/wiki/Uncanny_valley) design. While in broad strokes Sathorn's UI is perfectly sufficient, it suffers from dozens of micro-failures to properly adhere to Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/), resulting in a product that's substantially worse than the sum of its parts. I'm disappointed to say that at the end of this year there's been no changes that I can detect from last year, leaving it just as poorly designed as its initial release.
+
+In an effort to avoid copy/pasting my issues with the design from last year (which would be more effort than Sathron's developer gave towards their own app this year), at a high level my primary issues with Sathorn are:
+
+* Poor dark mode support. The "Dark" mode option is a blindingly bright gray, and the "True Black" mode misses just enough of Apple's guidelines to feel uncomfortable and wrong compared to other apps. To top it off, Sathron doesn't respect the system theme setting, forcing you to manually change it yourself in the app every time the system's theme changes.
+* Poor player design. Aside from a woefully boring "Solid" option, there's three equally shoddy alternatives to choose from ("Light Blur", "Deep Blur", and "Dark Blur"). I've yet to find an album whose art looks good with any of them.
+
+<figure class="three-images ios-screenshot">
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-blur.jpg">
+![Image of the "Light Blur" player design]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-blur.jpg "The "Light Blur" player design")
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/deep-blur.jpg">
+![Image of the "Deep Blur" player design]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/deep-blur.jpg "The "Deep Blur" player design")
+</a>
+<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-blur.jpg">
+![Image of the "Dark Blur" player design]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-blur.jpg "The "Dark Blur" player design")
+</a>
+<figcaption>
+“Light Blur”, “Deep Blur”, and “Dark Blur”. Pick your poison.
+</figcaption>
+</figure>
+
+Where the design doesn't disappoint, the app's disjointed functionality does. At it's core, it's a general-purpose experience with the expected tab bar containing "Albums", "Artists", etc. However, Sathorn makes the fatal mistake of aping [Music.app](/articles/third-annual-ios-music-player-showcase/12) by attempting to integrate support for the [Apple Music streaming service](https://www.apple.com/apple-music/) as well. Like Music.app before it, this results in a bloated and confused interface that does both local library browsing and Apple Music browsing poorly, and in Sathorn's case worse than Music.app's attempt. In my opinion, Sathorn would be much more pleasant to use had it gone for a precise and deliberate implementation of *just* the local-browser model like [Picky] or [Cs] did to great success.
+
+Unfortunately, there's not much else to say about Sathorn. There was barely any movement of note this year, and for an app that needed it as badly as Sathorn did, next year's prospects look grim.
+
+### Widgets
+
+None.
+
+### Personal Score Card
+
+<div class="admonition aside">
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for having any kind of light and dark mode support, despite their rough design and lack of respect for the system setting.</em></li>
+<li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>With the bar for minimum acceptable discovery features set higher by other players this year, Sathorn’s single “Recently Added” discovery feature doesn’t cut it, anymore.</em></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
+<li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
+<li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
+<li><span class="bullet">:x:</span> <strong>Album-focused features</strong><ul class="bare-list">
+    <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
+    <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+</ul></li>
+</ul>
+</div>
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/17"><p class="button">Next App: “SongOwl”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2020’s Players
+        <ul>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+          <li>Sathorn</li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+        </ul>
+      </li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Cs]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Picky]: https://apps.apple.com/us/app/picky-music-player/id497110916
+[Sathorn]: https://apps.apple.com/us/app/sathorn/id1447295899
+
+*[UI]: User Interface

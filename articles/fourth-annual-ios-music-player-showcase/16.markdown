@@ -1,0 +1,362 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Plum"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "15"
+    next-page: "17"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Plum's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png "Plum's iOS app icon"){: .inline-app-icon } Plum
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating Plum's usage in light mode" title="Demonstrating Plum's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.webp">
+  <img type="image/jpeg" title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.webp">
+  <img type="image/jpeg" title="Plum's light theme full-player" alt="Image of Plum's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage-poster.jpg" alt="Video demonstrating Plum's usage in dark mode" title="Demonstrating Plum's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.webp">
+  <img type="image/jpeg" title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.webp">
+  <img type="image/jpeg" title="Plum's dark theme full-player" alt="Image of Plum's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+Plum is a general-purpose player packed with features and a visual design that's as fun and quirky as its name. Unlike other general-purpose players which also sport unique designs like [Power Player] and [Doppler], Plum's not strongly opinionated; Plum offers a surprisingly deep customization system that aims to meet listeners' needs regardless of their varied habits and tastes, all while still maintaining its distinctive voice. All too often, music player developers tightly couple unconventional designs with an firm grip on any ability to change how their player looks or behaves. While this design philosophy certainly has its merits, it nonetheless necessarily alienates listeners whose needs or tastes don't quite line up with that vision. Throughout the app, Plum strives for a more accessible and arguably more friendly approach.
+
+From the moment you launch the app, you're greeted with an unorthodox mini-player which also doubles as the springboard into the app's unconventional menu system. Instead of displaying a tab bar or gesture-revealed menu hidden to the left like nearly every other general-purpose player, the UI instead shifts *up* to reveal the menu. Here you'll find the usual suspects like "Songs", "Albums", "Artist", etc., but with the neat bonus ability to set any particular menu item as the app's default landing page. For example, if you prefer browsing by albums like me, you have the ability to make it the default Plum experience.
+
+<figure class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
+  <img type="image/jpeg" title="The modern full-player in light mode with a predominantly red record" alt="Image of the modern full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.webp">
+  <img type="image/jpeg" title="The modern full-player in light mode with a predominantly green record" alt="Image of the modern full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.webp">
+  <img type="image/jpeg" title="The modern full-player in light mode with a predominantly blue record" alt="Image of the modern full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.webp">
+  <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly red record" alt="Image of the modern full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.webp">
+  <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly green record" alt="Image of the modern full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.webp">
+  <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly blue record" alt="Image of the modern full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.jpg">
+</picture>
+</a>
+<figcaption>Plum's “Modern” full-player skin.</figcaption>
+</figure>
+
+The other core part of Plum's visual identity is its wild "Modern" full-player. It features massive typography, thick progress & volume bars, and sparse but massive buttons which help make it live up to its namesake and indeed feels fresh among today's pretty but arguably visually redundant full-player landscape. There's few buttons displayed by default, but tapping the album art reveals additional controls like the ability to "love"/"unlove", set star ratings, view lyrics, or launch the AirPlay modal, among others. To help bring some additional visual flair, a linear gradient featuring a primary color from the track's art fills the background, bringing the dynamic benefits the translucent background effect other players tend to use while still maintaining visual distinction. Naturally, its focus on hiding the majority of additional controls behind an album art tap won't be to everyone's taste, such as listeners that prefer having as many controls visible and immediately accessible as possible. These listeners need not fret, Plum is the only player today to boast the unique ability to swap to a completely different full-player altogether with a simple setting change.
+
+<figure class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
+  <img type="image/jpeg" title="The classic full-player in light mode with a predominantly red record" alt="Image of the classic full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.webp">
+  <img type="image/jpeg" title="The classic full-player in light mode with a predominantly green record" alt="Image of the classic full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
+  <img type="image/jpeg" title="The classic full-player in light mode with a predominantly blue record" alt="Image of the classic full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
+  <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly red record" alt="Image of the classic full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
+  <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly green record" alt="Image of the classic full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
+  <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly blue record" alt="Image of the classic full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
+</picture>
+</a>
+<figcaption>Plum's “Classic” full-player skin.</figcaption>
+</figure>
+
+The alternative player design—"Classic"—strongly invokes memories of iOS 8's Music.app full-player. Like the iOS 8 Music.app full-player, nearly every control you could possibly want is visible and immediately accessible as buttons, no "tap to show" commands required. Listeners that love instant access to common controls or simply prefer the "old school" look and feel are sure to love this option. It's fantastic to see Adam Wienconek—Plum's developer—investing development time into supporting this feature since it makes Plum's player experience widely accessible to both taste extremes; it doesn't matter if you prefer visual elegance or pure utility, Plum's got you covered.
+
+Plum's browsing experience continues the momentum; while the usual suspects like "Songs" and "Albums" are here, Plum provides a deep level of flexibility to easily adjust these pages to your own tastes and values. Each of these pages feature a "..." menu in the upper-left which allows you to:
+
+* Adjust sort type & order
+* Show or hide a "Recently Added" section at the top of the page
+* Use either a list or a grid for the page's contents
+* Picky-style filtering to only display items with at least a certain number of songs
+
+To top it off, the "Albums" and "Artists" pages allow you to "pin" any particular item to the very top of the page, which is a convenient way to ensure your all-time favorite couple albums or artists are always just a tap away. This degree of control and personalization is unusual for an app that's not fundamentally built around customization like [Marvis Pro], and thus helps Plum stand out and above its peers.
+
+Stepping further into the unusual, there are a couple items in Plum's menu that are somewhat rare to see: "Favourites" and "Folders". The "Favourites" page is empty to start, but can be easily populated by long-tapping nearly any entity in the app (song, playlist, album, etc.). That alone is a nice feature to have, but Plum goes the extra mile to make a special, custom layout mode specific to favorites called "Mosaic". When enabled, Plum renders a beautiful, dynamic collage of all your favorited items. The effect is a delight and brings back fond memories of physically making similar collages when I was young to decorate my room. It's genuinely lovely to see a music player allow its listeners the ability to revisit that exercise in such a convenient and elegant way. Continuing Plum's trend of flexible and unopinionated design, this layout feature may of course be disabled to instead display favorite items traditionally as a series of pinwheel lists.
+
+<div class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
+  <img type="image/jpeg" title="Page 1 of the Mosaic layout style in light mode" alt="Image of page 1 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.webp">
+  <img type="image/jpeg" title="Page 2 of the Mosaic layout style in light mode" alt="Image of page 2 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.webp">
+  <img type="image/jpeg" title="Page 3 of the Mosaic layout style in light mode" alt="Image of page 3 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.webp">
+  <img type="image/jpeg" title="Page 1 of the Mosaic layout style in dark mode" alt="Image of page 1 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.webp">
+  <img type="image/jpeg" title="Page 2 of the Mosaic layout style in dark mode" alt="Image of page 2 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.webp">
+  <img type="image/jpeg" title="Page 3 of the Mosaic layout style in dark mode" alt="Image of page 3 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.jpg">
+</picture>
+</a>
+</div>
+
+The "Folders" page offers users the ability to group together albums, artists, or playlists. This makes Plum's folders extraordinarily flexible, so what they can be used for is more of a personal question. For example, I personally enjoy using the feature to group music into emotional buckets; I have a folder of albums & artists for when I'm in a somber mood, a folder of albums & artists for when I'm in (or want to be in) a more cheerful mood, and so on. No matter how you'd personally like to use folders, Plum's flexibility likely allows you to do it.
+
+<figure class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
+  <img type="image/jpeg" title="The Folders page in light mode" alt="Image of the Folders page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.webp">
+  <img type="image/jpeg" title="An example folder in light mode" alt="Image of an example folder in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.webp">
+  <img type="image/jpeg" title="The Folders page in dark mode" alt="Image of the Folders page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.webp">
+  <img type="image/jpeg" title="An example folder in dark mode" alt="Image of an example folder in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.jpg">
+</picture>
+</a>
+<figcaption>Find yourself feeling content and at peace? Not to worry, “Let's Get Sad, Yo” will make quick work of that.</figcaption>
+</figure>
+
+Despite Plum's subjectively tasteful visual design and flexibility, there are certainly some areas where Plum's unique design falters that can't yet be addressed by adjusting settings. For example, while Plum's menu system is undoubtably unique, it's frustratingly slow due to a canned "show" animation that rapidly overstays its welcome. While some other players also have long, canned animations for their menus, they typically provide a gesture to bypass the canned animation entirely, which then limits the time required to show the menu to the speed of your finger. Unfortunately, this gesture in Plum is not particularly discoverable (it requires a swipe-up gesture on the *left side* of the menu, but not the right side where the menu icon resides). Without knowing this, you're forced to tap the button and wait for the canned animation to finish every single time. Then there's the search history list, which I find barely legible in certain scenarios, depending on what's displayed underneath the transparent search modal when actuated. However, these are admittedly minor, arguably subjective complaints and do little to detract from Plum's overall positive aftertaste[^puns].
+
+There's loads of additional surprises to be discovered in Plum, such as its [Last.fm](https://www.last.fm)-powered artist & album descriptions and its lightning-fast search engine, so if you're looking for a new player experience that's not too complicated or niche, Plum is sure to satisfy.
+
+### iPad Experience
+
+Plum does indeed support the iPad, though unlike its iPhone companion, the iPad performance is not up to snuff. Scrolling in "Albums" is painfully laggy on my 2017 iPad Pro, despite that same library scrolling smoothly without issue on my iPhone 12. While in fairness the iPad Pro I'm using is indeed old at this point, it's worth pointing out that Plum and [Musens] are the only two players I've experienced noticeable performance issues with on this hardware, all other players are either within reasonable tolerances or fully equivalent in performance. Thus, I have to assign the majority of the blame to the player in this case and not to the hardware's age.
+
+Performance issues aside, there's a few design changes to take advantage of the larger screen that end up missing the mark. While it's great that Plum's menu is rendered as sidebar on iPad, there's no way to show or hide it; you're forever stuck with 1/3 of the screen taken up by Plum's sidebar on iPad. It makes Plum on iPad feel uncomfortably rigid and unyielding, which feels particularly strange given how flexible the iPhone experience is in comparison. The full-player is also uncomfortably designed on iPad; Plum opted to permanently display a tiny version of the iPhone's full-player at the bottom of the sidebar, yet upon tapping the album art *another* full-player pops up (this time as a modal along with the queue). It's truly surreal to me that a duplicate full-player visible right beside its clone is an expected part of the user experience on iPad, and to me indicates the player design and interaction model on iPad needs to go back to the drawing board.
+
+Due to these suboptimal design choices and the aforementioned performance issues, the Plum iPad experience is simply not good enough yet to stand among its iPad-supporting peers like [Power Player]. Unfortunately, for the iPad, you're better off exploring elsewhere.
+
+### Widgets
+
+Like last year, Plum does not offer any widgets.
+
+### New This Year
+
+Plum enjoyed a staggering number of releases throughout 2021, including the major release of Plum 8.0. There's plenty to explore, so I'll focus on what I feel are the three most notable changes from this past year:
+
+* Pinned items
+* Massive performance improvements on iPhone
+* Refreshed folders
+
+The new "pinned items" feature allows you to manually pin multiple artists or albums to the top of their respective pages (even above the optional "Recently Added" section). What you "pin" is entirely up to you; you could pin a couple all-time favorites like I did, or alternatively pin records or artists that you might be hitting frequently as of late, or perhaps even pin records or artists you've been meaning to check out but haven't yet gotten to. Regardless of your reason for pinning, it's handy to have the ability to keep specific items no farther than just a tap away.
+
+Next up are the tremendous performance improvements Plum on iPhone received this past year. In 2020, I harped on Plum's janky animations and overall sluggish performance compared to its peers, and claimed it was Plum's primary issue going into the new year. However, throughout 2021, Adam clearly made a goal of fine tuning Plum's iPhone experience, and it shows in just about every aspect of the app. *Everything*, from scrolling through albums to showing and dismissing the full-player, is now silky smooth. I mean no exaggeration when I say the "jank" plaguing Plum in 2020 is now practically nonexistent in today's Plum. Performance enhancements can be a grueling engineering exercise, so to witness such a radical improvement to Plum's iPhone experience in just this past year is remarkable.
+
+Finally, Plum's "Folders" feature received a complete redesign, not only expanding the feature's capabilities but also promoting it to a dedicated menu item. Today, a given folder can contain albums, artists, and even playlists, allowing your folders to be more dynamic and useful than ever before. For example, I have a "Sonic Cheer" folder where I have a handful of albums and artists that never fail to cheer me up. If you're a heavy playlists user, you could also group together related Playlists and throw in some artists or albums if you wanted. Coming from the suffocating constraints of traditional playlists in so many other players, it's such a breath of fresh air to now have a flexible alternative available.
+
+While Plum visually looks identical to last year, the breathtaking performance improvements, new features like "Pinned Items", and fresh takes on existing features like "Folders" make Plum feel like an entirely different app in use. It's unclear where Plum will continue to grow from here, but Plum's recent track record has me eager to follow along.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:trophy:</span> Light &amp; dark themes</dt>
+  <dd><p>Plum of course respects iOS’s system appearance, but goes above and beyond by not only supplying a high-contrast option (which yields a “true black” appearance in dark mode), but also by providing the option to permanently keep the full-player in dark mode regardless. All players should strive for a degree of appearance control like Plum provides.</p></dd>
+  <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>Plum supplies two radically different player “skins” to choose from, and the “Modern” skin is a thorough departure from the conventions established by nearly all other players and is thus visually engaging through sheer novelty alone.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+  <dd><p>Like <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">Picky</a>, the approach is firmly and disappointingly “old school” for both Plum’s “Classic” and “Modern” skins, but it at the very least supports lyrics.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+  <dd><p>While Plum only strictly supports a single traditional discovery collection (“Recently Added”), support for listeners to craft their own discovery collections in the form of folders, pinning, and favorites help pick up the slack.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+  <dd><p>While Plum unfortunately continues to not support my preferred sorting method (Artist > Chronological), its ability to browse albums as a grid, the flexibility to set the “Albums” page as Plum’s home, and the wide breadth of user-generated options available like favorite albums, pinned albums, and folders help round out Plum’s album-focused abilities.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+  <dt><span class="bullet">:x:</span> iPad support</dt>
+  <dd><p>Plum offers an iPad version, but the performance issues yield the app unusable, and the screen size optimizations made are questionable at best.</p></dd>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/17"><p class="button">Next App: “Power Player”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><strong>Plum</strong></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+-----
+
+[^puns]: Yes, I still think these food-related puns are funny, and no, I won't stop.
+
+[Power Player]: https://powerplayer.evenwerk.com
+[Doppler]: https://brushedtype.co
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Musens]: https://musensapp.com
+
+*[UI]: User Interface

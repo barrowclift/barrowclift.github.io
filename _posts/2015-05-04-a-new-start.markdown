@@ -1,12 +1,13 @@
 ---
 title: "A New Start"
 date: 2015-05-04 21:12:01
+
 excerpt: |
-  All designers, even the accidental ones, have something special to share.
+    All designers, even the accidental ones, have something special to share.
 categories:
-  - Design
-  - Technology
-  - Announcement
+    - Design
+    - Technology
+    - Announcement
 ---
 
 A friend of mine once told me software engineers shouldn't do design.

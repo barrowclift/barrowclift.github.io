@@ -1,0 +1,41 @@
+<li style="list-style:none;display:inline-block;padding-bottom:1.625em;margin-bottom:0;">
+    <a style="background-color:unset !important;margin:0;padding:0;line-height:0;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {% if post.card.light.foreground and site.enable-card-colors %}
+        <div class="card threeDHover bleed large-when-small show-when-light" style="background-color:{{ post.card.light.background.color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <img src="{{ site.dropbox }}/{{ post.article.light-banner-image }}.jpg">
+            <div class="label" style="background-color:{{ post.card.light.background.color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <h3 class="primary" style="color:{{ post.card.light.foreground.color }} !important;">{{ post.title }}</h3>
+                <h5 class="secondary" style="color:{{ post.card.light.foreground.color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+            </div>
+        </div>
+        <div class="card threeDHover bleed large-when-small show-when-dark" style="background-color:{{ post.card.dark.background.color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <img src="{{ site.dropbox }}/{{ post.article.dark-banner-image }}.jpg">
+            <div class="label" style="background-color:{{ post.card.dark.background.color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <h3 class="primary" style="color:{{ post.card.dark.foreground.color }} !important;">{{ post.title }}</h3>
+                <h5 class="secondary" style="color:{{ post.card.dark.foreground.color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+            </div>
+        </div>
+        {% elsif post.card.background and site.enable-card-colors %}
+        <div class="card threeDHover bleed large-when-small" style="background-color:{{ post.card.background.color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <img src="{{ site.dropbox }}/{{ post.image }}">
+            <div class="label" style="background-color:{{ post.card.background.color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <h3 class="primary" style="color:{{ post.card.foreground.color }} !important;">{{ post.title }}</h3>
+                <h5 class="secondary" style="color:{{ post.card.foreground.color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+            </div>
+        </div>
+        {% else %}
+        <div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            {% if post.article.dark-banner-image %}
+            <img class="show-when-dark" src="{{ site.dropbox }}/{{ post.article.dark-banner-image }}.jpg">
+            <img class="show-when-light" src="{{ site.dropbox }}/{{ post.article.light-banner-image }}.jpg">
+            {% else %}
+            <img src="{{ site.dropbox }}/{{ post.image }}">
+            {% endif %}
+            <div class="label" style="transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <h3 class="primary">{{ post.title }}</h3>
+                <h5 class="secondary" style="opacity:0.625;">{{ post.excerpt }}</h5>
+            </div>
+        </div>
+        {% endif %}
+    </a>
+</li>

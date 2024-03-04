@@ -1,12 +1,13 @@
 ---
 title: "Meaningful Names"
 date: 2017-02-14 1:05:17
-categories:
-  - Programming
-  - Technology
-image: "meaningful-names/share-image.jpg"
+
 excerpt: |
-  What does “magic()” mean? How about “foo()”? Or “arg1”? Nobody knows, and that’s the problem.
+    What does “magic()” mean? How about “foo()”? Or “arg1”? Nobody knows, and that’s the problem.
+categories:
+    - Programming
+    - Technology
+image: "meaningful-names/share-image.jpg"
 ---
 
 <figure markdown="1" class="edge-to-edge small">
@@ -26,7 +27,6 @@ Oftentimes, this is what it feels like as a developer when [reading code from th
 Nobody can, because it's horrible.
 </figcaption>
 </figure>
-
 
 Where It All Started
 --------------------

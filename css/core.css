@@ -214,7 +214,7 @@ time {
         display: none;
     }
 mark.tag {
-    font-size: 0.5em;
+    font-size: 0.53em;
 }
 p,
 blockquote,
@@ -442,6 +442,23 @@ blockquote {
     border-left: 0.2em solid #000000;
 }
 
+main a {
+/*    text-decoration: underline;*/
+}
+.summary-list a,
+.edge-to-edge > a,
+.app-download a:hover,
+#article-linkback a,
+.reversefootnote,
+figure > a,
+.one-image > a
+.two-images > a
+.three-images > a,
+.macos-window-screenshot > a,
+.watchos-screenshot > a,
+.ios-screenshot > a {
+    text-decoration: none;
+}
 main a,
 .anchor,
 summary {
@@ -900,17 +917,18 @@ button.pill:hover:active {
     padding-left: 0;
     padding-right: 0;
 }
-    .popular-articles .card {
-        border-color: rgb(231, 231, 231);
-    }
-    .popular-articles .card .label {
+    /*.popular-articles .card .label {
         background-color: rgb(245, 245, 245);
-    }
+    }*/
     .card.bleed img,
     .card.bleed video {
         border-top-right-radius: 0.95em;
         border-top-left-radius: 0.95em;
-        display: inline-block !important;
+        display: inline-block;
+    }
+    .popular-articles .card .label .primary,
+    .popular-articles .card .label .secondary {
+        text-align: left;
     }
 
 .card .content {
@@ -967,7 +985,6 @@ hr {
 
 
 /* ----- FORMS, BUTTONS, AND LINKS ----- */
-.header a:hover,
 .button-group a:hover {
     background-color: transparent !important;
 }
@@ -1002,6 +1019,9 @@ button,
 }
 button,
 .button {
+    border-radius: 0.65em;
+}
+.social .button {
     border-radius: 1.3em;
 }
 input,
@@ -1044,17 +1064,14 @@ button.pill {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     display: inline-block;
-/*    margin: 0 0.1em 0 0.2em;*/
     margin: 0;
     border: none;
-    border-radius: 1em;
     font-size: 0.833em;
     vertical-align: middle;
     height: auto;
     width: auto;
-
     line-height: 1rem;
-    border-radius: 1em;
+    border-radius: 0.625em;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.2em;
@@ -1223,18 +1240,20 @@ mark {
     font-style: normal;
 }
     mark.tag {
-        vertical-align: top;
+        display: inline-block;
+        line-height: 1em;
+        vertical-align: middle;
+        margin-top: -0.2em;
         border-radius: 1em;
         border: unset;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
         font-weight: 600;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
-        p mark.tag,
-        time mark.tag,
-        li mark.tag {
-            vertical-align: text-top;
-        }
+    time mark.tag,
+    li mark.tag {
+        margin-top: -0.4em;
+    }
 
 
 /* ----- ADMONITIONS ----- */
@@ -1242,6 +1261,9 @@ mark {
     padding: 1em;
     border-radius: 0.25em;
     border-left: 0.5em solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 .admonition-title {
     margin-top: 0em;
@@ -1295,7 +1317,7 @@ mark {
     padding-left: 0.475em;
 }
 .admonition.aside {
-    border: unset !important;
+    border-left: 1px solid gray;
 }
 .admonition.aside .admonition-title:before,
 .admonition.aside p:first-child:before {
@@ -1318,7 +1340,18 @@ mark {
 
 .admonition.tweet {
     background-color: hsla(203, 89%, 53%, 0.1);
-    border-color: #1DA1F2 !important;
+    box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
+}
+#dark .admonition.tweet {
+    background-color: hsla(203, 89%, 53%, 0.15);
+    box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
+}
+.admonition.tweet,
+#dark .admonition.tweet {
+    border-left-color: hsl(203, 89%, 53%) !important;
+    border-right-color: hsla(203, 89%, 53%, 0.15) !important;
+    border-top-color: hsla(203, 89%, 53%, 0.15) !important;
+    border-bottom-color: hsla(203, 89%, 53%, 0.15) !important;
 }
 .admonition.tweet > p:first-child:before,
 .admonition.tweet .admonition-title:before {
@@ -1334,7 +1367,8 @@ mark {
 .admonition.tweet g {
     fill: white;
 }
-.admonition.tweet a {
+.admonition.tweet a,
+#dark .admonition.tweet a {
     color: #1DA1F2;
 }
 .admonition.tweet a:hover {
@@ -1344,11 +1378,10 @@ mark {
     background-color: hsla(203, 89%, 53%, 0.15);
 }
 .admonition.tweet .admonition-title:before,
-.admonition.tweet p:first-child:before {
+.admonition.tweet p:first-child:before,
+#dark .admonition.tweet .admonition-title:before,
+#dark .admonition.tweet p:first-child:before {
     background-color: #1DA1F2 !important;
-}
-#dark .admonition.tweet {
-    background-color: hsla(203, 89%, 53%, 0.15);
 }
 .admonition.award > p:first-child:before,
 .admonition.award .admonition-title:before {
@@ -1578,12 +1611,12 @@ video.rounded {
     border-radius: 0.25em;
 }
 
-.edge-to-edge a:hover,
-figure a:hover,
-.one-image a:hover,
-.two-images a:hover,
-.three-images a:hover,
-.widget a:hover {
+.edge-to-edge > a:hover,
+figure > a:hover,
+.one-image > a:hover,
+.two-images > a:hover,
+.three-images > a:hover,
+.widget > a:hover {
     background-color: transparent !important;
 }
 
@@ -2041,8 +2074,7 @@ footer {
     margin-bottom: 3.9em;
 }
 footer,
-#article-linkback,
-.article-linkback {
+#article-linkback {
     margin-top: 2.6em;
 }
 sup[id^=fnref] {
@@ -2119,12 +2151,14 @@ summary,
 .shadow video,
 .ios-screenshot img,
 .ios-screenshot video,
-.widget img {
+.widget img,
+.card .label {
     transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .summary-list h3,
 .summary-list .header,
-.summary-list .header {
+.summary-list .header,
+.label .primary {
     transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 menu {
@@ -2178,7 +2212,8 @@ input, textarea {
 }
 .button,
 button,
-.color-well {
+.color-well,
+.bigfoot-footnote__button {
     transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -3075,7 +3110,7 @@ html {
 }
 menu,
 .popup {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
 }
 [data-hint]:after {
     background-color: rgba(255, 255, 255, 0.975);
@@ -3095,7 +3130,7 @@ menu,
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     menu,
     .popup {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.85);
     }
 }
 /**
@@ -3131,14 +3166,6 @@ table th {
 input,
 textarea {
     background-color: rgba(255, 255, 255, 0.625);
-}
-
-.admonition {
-    border-color: rgb(192, 192, 192);
-}
-.admonition > p:first-child:before,
-.admonition .admonition-title:before {
-    background-color: rgb(192, 192, 192);
 }
 
 /* ----- BORDERS AND LINES ----- */
@@ -3197,8 +3224,8 @@ html,
 .admonition,
 [data-hint]:after,
 .card .primary,
-.summary-list p,
-table th {
+table th,
+mark {
     color: rgba(30, 30, 30, 0.9);
 }
 .apple-logo path {
@@ -3219,9 +3246,12 @@ menu a,
     color: rgba(30, 30, 30, 0.6);
 }
 .pill path {
-    fill: rgba(30, 30, 30, 0.6);
+    fill: white;
 }
-blockquote {
+blockquote,
+.summary-list p,
+.card .label .secondary,
+figcaption {
     color: rgba(30, 30, 30, 0.5);
 }
 .stroke-color {
@@ -3233,12 +3263,9 @@ blockquote {
 /**
  * Secondary Text on Secondary Background
  */
-mark.tag.light-gray,
-mark.tag.light-grey,
 pre,
 code,
 pre code,
-mark,
 mark code,
 kbd {
     color: rgba(30, 30, 30, 0.7);
@@ -3251,11 +3278,7 @@ del code,
 time,
 .weak,
 small,
-img,
-.card .label .secondary,
-figcaption,
-.longform-title,
-.longform-title a {
+img {
     color: rgba(30, 30, 30, 0.375);
 }
 .permalink path {
@@ -3297,7 +3320,6 @@ a.button {
 menu {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.075), 0em 0.22em 0.6em rgba(50, 50, 50, 0.0375);
 }
-.admonition,
 .threeDHover,
 .shadow img,
 .shadow video,
@@ -3310,7 +3332,6 @@ menu {
 .widget img {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
 }
-    .admonition.aside,
     .threeDHover:hover,
     .shadow a:hover img,
     .shadow video:hover,
@@ -3326,129 +3347,6 @@ menu {
     .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     }
-
-
-/* LIGHT THEME AQUA ================================================ */
-
-/**
- * Hex: #007AFF
- * RGB: rgb(0, 122, 255);
- * HSL: hsl(211, 100%, 50%);
- */
-a,
-#mainmenu .active,
-#mainmenu a:hover,
-#settings-toggle:hover,
-#settings-toggle.active a,
-#submenu a:hover,
-.header a:hover,
-a:hover .header,
-summary {
-    color: hsl(211, 100%, 50%);
-}
-#logo:hover .signature-color,
-#signature.active .signature-color {
-    fill: hsl(211, 100%, 50%);
-}
-.backdrop {
-    background-color: hsl(211, 100%, 50%);
-}
-
-a:hover,
-#submenu,
-summary:hover,
-.summary-list li a:hover,
-.card:hover {
-    background-color: hsla(211, 100%, 50%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-::selection { /* Safari */
-    background: hsla(211, 100%, 50%, 0.99);
-    color: white;
-}
-::-moz-selection { /* Firefox */
-    background: hsla(211, 100%, 50%, 0.99);
-    color: white;
-}
-
-button,
-.button {
-    background-color: hsl(211, 100%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
-}
-    button:hover,
-    .button:hover {
-        background-color: hsl(211, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 40%, 0.375);
-    }
-    button:active,
-    .button:active {
-        background-color: hsl(211, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
-    }
-button.bigfoot-footnote__button,
-button.pill {
-    box-shadow: none;
-    background-color: hsla(211, 100%, 50%, 0.1);
-}
-button.bigfoot-footnote__button:hover:after,
-button.bigfoot-footnote__button.is-active:after {
-    color: white !important;
-}
-    button.bigfoot-footnote__button:after,
-    button.pill {
-        color: hsl(211, 100%, 50%) !important;
-    }
-    button.bigfoot-footnote__button:hover,
-    button.pill:hover {
-        background-color: hsl(211, 100%, 50%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2);
-    }
-    button.pill:hover path,
-    .setting-toggles.active button.pill path {
-        fill: white !important;
-    }
-    button.bigfoot-footnote__button:active,
-    button.bigfoot-footnote__button.is-active,
-    button.pill:active,
-    .setting-toggles.active button.pill {
-        color: white !important;
-        background-color: hsl(211, 100%, 45%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
-    }
-button.disabled,
-button:disabled,
-.button.disabled,
-button.disabled:hover,
-button:disabled:hover,
-.button.disabled:hover,
-#dark button.disabled,
-#dark button:disabled,
-#dark .button.disabled,
-#dark button.disabled:hover,
-#dark button:disabled:hover,
-#dark .button.disabled:hover {
-    background-color: hsla(3, 0%, 85%, 0.75) !important;
-    background-image: unset !important;
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875) !important;
-    transform: unset !important;
-}
-
-input:focus,
-textarea:focus {
-    border-color: hsl(211, 100%, 50%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(211, 100%, 50%, 0.2) !important;
-}
-.codehilite,
-.highlight {
-    background-color: rgb(33, 34, 36);
-}
-
-.color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(211, 100%, 50%);
-}
-
 
 /* DARK THEME ======================================================================= */
 
@@ -3507,12 +3405,9 @@ html#dark {
     background-color: rgba(46, 46, 46, 0.25);
     border-color: rgba(150, 150, 150, 0.1);
 }
-    #dark .popular-articles .card {
-        border-color: rgb(54, 54, 54);
-    }
-    #dark .popular-articles .card .label {
+    /*#dark .popular-articles .card .label {
         background-color: rgb(46, 46, 46);
-    }
+    }*/
 #dark kbd,
 #dark table th {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
@@ -3527,6 +3422,7 @@ html#dark {
 #dark kbd {
     background-color: rgba(15, 15, 15, 0.25);
 }
+/** TODO HANDLE BY ACCENT */
 #dark .codehilite,
 #dark .highlight {
     background-color: rgba(15, 15, 15, 0.5);
@@ -3537,6 +3433,7 @@ html#dark {
 #dark .highlight pre code {
     background-color: transparent;
 }
+/** IS THIS NEEDED??? */
 #dark #parallax-foreground {
     background-color: rgba(46, 46, 46, 0.975);
 }
@@ -3545,13 +3442,10 @@ html#dark {
             background-color: rgba(46, 46, 46, 0.95);
         }
     }
+/** HANDLE BY ACCENT COLOR! */
 #dark input,
 #dark textarea {
     background-color: rgba(15, 15, 15, 0.375);
-}
-#dark .admonition > p:first-child:before,
-#dark .admonition .admonition-title:before {
-    background-color: rgb(116, 116, 116);
 }
 
 /* ----- BORDERS AND LINES ----- */
@@ -3633,13 +3527,14 @@ html#dark {
  * Primary Text
  */
 html#dark,
-#dark .header a, #dark a .header,
+#dark .header a,
+#dark a .header,
 #dark .admonition,
 #dark [data-hint]:after,
 #dark .card .primary,
-#dark .summary-list p,
 #dark .admonition .admonition-title,
-#dark table th {
+#dark table th,
+#dark mark {
     color: rgba(255, 255, 255, 0.9);
 }
 #dark .apple-logo path {
@@ -3659,7 +3554,9 @@ html#dark,
 #dark.pink menu a {
     color: rgba(255, 255, 255, 0.6);
 }
-#dark blockquote {
+#dark blockquote,
+#dark .summary-list p,
+#dark figcaption {
     color: rgba(255, 255, 255, 0.5);
 }
 #dark .stroke-color {
@@ -3687,30 +3584,19 @@ html#dark,
 #dark small,
 #dark img,
 #dark .card .label .secondary,
-#dark figcaption,
-#dark .longform-title,
-#dark h4.header a {
+#dark .longform-title {
     color: rgba(255, 255, 255, 0.375);
 }
 #dark .permalink path {
     fill: rgba(255, 255, 255, 0.375);
     stroke: transparent;
 }
-/**
- * Lit Text
- *
- * Text with any dark or bold color behind it (like a button)
- */
-#dark mark:not(.tag) {
-    color: rgba(30, 30, 30, 0.9);
-}
 
 /* ----- LOGO ----- */
 
 #dark .fill-color,
 #dark .signature-color,
-#dark .mac-background-color,
-#dark .pill path {
+#dark .mac-background-color {
     fill: rgba(255, 255, 255, 0.6);
 }
 #dark menu header:hover .mac-background-color {
@@ -3738,7 +3624,6 @@ html#dark,
 #dark #parallax-foreground {
     box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
 }
-#dark .admonition,
 #dark .threeDHover,
 #dark .shadow img,
 #dark .shadow video,
@@ -3751,7 +3636,6 @@ html#dark,
 #dark .widget img {
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
-    #dark .admonition.aside,
     #dark .threeDHover:hover,
     #dark .shadow a:hover img,
     #dark .shadow video:hover,
@@ -3767,128 +3651,3 @@ html#dark,
     #dark .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
     }
-
-
-/* DARK THEME AQUA ================================================ */
-
-/**
- * Hex: #007AFF
- * RGB: rgb(0, 122, 255);
- * HSL: hsl(211, 100%, 50%);
- */
-#dark .color-well.blue {
-    background-color: #0A84FF;
-}
-#dark mark.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.75) 38.66%, hsla(213, 100%, 50%, 0.75));
-}
-#dark mark.tag.blue {
-    background: unset;
-    background-image: linear-gradient(to bottom right, hsla(210, 100%, 52%, 0.9) 38.66%, hsla(213, 100%, 50%, 0.9));
-}
-
-#dark .admonition.question,
-#dark .admonition.hint,
-#dark .admonition.note,
-#dark .admonition.info,
-#dark .admonition.tip,
-#dark .admonition.example,
-#dark .admonition.blue {
-    background-color: hsla(210, 100%, 52%, 0.15);
-    border-color: hsl(210, 100%, 52%) !important;
-}
-#dark .admonition.question .admonition-title:before,
-#dark .admonition.hint .admonition-title:before,
-#dark .admonition.note .admonition-title:before,
-#dark .admonition.info .admonition-title:before,
-#dark .admonition.tip .admonition-title:before,
-#dark .admonition.example .admonition-title:before,
-#dark .admonition.blue .admonition-title:before,
-#dark .admonition.question p:first-child:before,
-#dark .admonition.hint p:first-child:before,
-#dark .admonition.note p:first-child:before,
-#dark .admonition.info p:first-child:before,
-#dark .admonition.tip p:first-child:before,
-#dark .admonition.example p:first-child:before,
-#dark .admonition.blue p:first-child:before {
-    background-color: hsla(210, 100%, 52%) !important;
-}
-
-#dark .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(210, 100%, 52%);
-}
-
-#dark a,
-#dark #mainmenu .active,
-#dark #mainmenu a:hover,
-#dark #settings-toggle:hover,
-#dark #settings-toggle.active a,
-#dark #submenu a:hover,
-#dark .header a:hover,
-#dark a:hover .header,
-#dark summary {
-    color: hsl(210, 100%, 52%);
-}
-#dark #logo:hover .signature-color,
-#dark #signature.active .signature-color,
-#dark .pill:hover path {
-    fill: hsl(210, 100%, 52%);
-}
-#dark .backdrop {
-    background-color: hsl(210, 100%, 52%);
-}
-#dark a:hover,
-#dark #submenu,
-#dark button.bigfoot-footnote__button,
-#dark button.pill,
-#dark summary:hover,
-#dark .summary-list li a:hover,
-#dark .card:hover {
-    background-color: hsla(210, 100%, 52%, 0.15);
-}
-#dark ::selection {
-    background: hsla(210, 100%, 52%, 0.85);
-}
-#dark ::-moz-selection {
-    background: hsla(210, 100%, 52%, 0.85);
-}
-
-#dark button,
-#dark .button {
-    background-color: hsl(210, 100%, 52%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
-}
-    #dark button:hover,
-    #dark .button:hover {
-        background-color: hsl(211, 100%, 57%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 47%, 0.375);
-    }
-    #dark button:active,
-    #dark .button:active {
-        background-color: hsl(211, 100%, 47%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 47%, 0.2);
-    }
-#dark button.bigfoot-footnote__button,
-#dark button.pill {
-    box-shadow: unset;
-    background-color: hsla(210, 100%, 52%, 0.2);
-}
-    #dark button.bigfoot-footnote__button:hover,
-    #dark button.pill:hover {
-        background-color: hsl(210, 100%, 52%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2);
-    }
-    #dark button.bigfoot-footnote__button:active,
-    #dark button.bigfoot-footnote__button.is-active,
-    #dark button.pill:active,
-    #dark .setting-toggles.active button.pill {
-        background-color: hsl(211, 100%, 47%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(211, 100%, 47%, 0.2);
-    }
-
-#dark input:focus,
-#dark textarea:focus {
-    border-color: hsl(210, 100%, 52%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(210, 100%, 52%, 0.2) !important;
-}

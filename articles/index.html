@@ -1,64 +1,94 @@
 ---
-layout: default
 title: "Articles"
+display:
+    flex: true
+show-anchors: false
 ---
 
 <style>
-sup[id^=fnref] {
-	display:none;
-}
+    .row {
+        align-items: stretch;
+        width: 100%;
+        display: grid;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .column {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .column a img {
+        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .column .card:hover img {
+        transform: scale(1.05);
+    }
+    .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: unset !important;
+
+        /* https://gist.github.com/ayamflow/b602ab436ac9f05660d9c15190f4fd7b */
+        will-change: transform;
+        overflow: hidden;
+    }
+    .card img {
+        border-radius: 0 !important;
+    }
+    @media (min-width: 700px) {
+        .row {
+            display: flex;
+        }
+        .column.tight {
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+        }
+        .card, .card.large-when-small {
+            max-width: unset;
+            width: auto;
+            min-width: unset;
+        }
+    }
 </style>
-{% assign count=0 %}
-{% for post in paginator.posts %}
-	{% if post.type != "article" %}
-	{% continue %}
-	{% endif %}
-	{% if count > 0 %}
-	<hr>
-	{% endif %}
-
-	<article>
-		{% include article-header.html %}
-		{% if post.hero-banner or post.light-hero-banner or post.dark-hero-banner %}
-			{% if post.hero-banner %}
-			<div class="edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.hero-banner }}.jpg">
-			</picture>
-			</a>
-			</p>
-			</div>
-			{% else %}
-			<div class="show-when-light edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.light-hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
-			</picture>
-		    </a>
-			</p>
-			</div>
-			<div class="show-when-dark edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.dark-hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
-			</picture>
-		    </a>
-	     	</p>
-			</div>
-			{% endif %}
-		{% endif %}
-
-		{{ post.content | split:'<!--break-->' | first }}
-		{% if post.content contains '<!--break-->' %}
-			<h5 style="text-align:center;"><a class="button" href="{{ post.url }}#resume-from-break">Continue Reading…</a></h5>
-		{% endif %}
-	</article>
-	{% assign count=count | plus:1 %}
-{% endfor %}
+<div class="row">
+    <div class="popular-articles column tight w6">
+        {% assign numArticlesPerColumn = site.posts.size | divided_by: 2 %}
+        {% assign found=0 %}
+        {% assign used=0 %}
+        <ul style="margin-left:0;margin-bottom:0;">
+        {% for post in site.posts %}
+            {% if used >= numArticlesPerColumn %}
+                {% break %}
+            {% endif %}
+            {% assign mod=found | modulo: 2 %}
+            {% assign found=found | plus:1 %}
+            {% if mod != 0 %}
+                {% continue %}
+            {% endif %}
+            {% include article-card.html %}
+            {% assign used=used | plus:1 %}
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="popular-articles column tight w6">
+        {% assign numArticlesPerColumn = site.posts.size | divided_by: 2 %}
+        {% assign found=0 %}
+        {% assign used=0 %}
+        <ul style="margin-left:0;margin-bottom:0;">
+        {% for post in site.posts %}
+            {% if used >= numArticlesPerColumn %}
+                {% break %}
+            {% endif %}
+            {% assign mod=found | modulo: 2 %}
+            {% assign found=found | plus:1 %}
+            {% if mod == 0 %}
+                {% continue %}
+            {% endif %}
+            {% include article-card.html %}
+            {% assign used=used | plus:1 %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>

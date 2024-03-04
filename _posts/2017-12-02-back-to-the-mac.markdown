@@ -1,40 +1,51 @@
 ---
 title: "Back to the Mac"
 date: 2017-12-02 23:20:40
-categories:
-  - Technology
-  - Organization
-  - macOS
-  - Best Of
 timelocked: true
+
 excerpt: |
-  The feature listicle that macOS deserves.
+    The feature listicle that macOS deserves.
+categories:
+    - Technology
+    - Organization
+    - macOS
+    - Best Of
 image: "back-to-the-mac/share-image.png"
-background-color: "#64B2B6"
-foreground-color: "#FFFFFF"
+
+card:
+    background:
+        color: "hsl(183, 36%, 55%)"
+        hue: "183"
+        saturation: "36%"
+        lightness: "55%"
+    foreground:
+        color: "hsl(0, 0%, 100%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "100%"
 ---
 
 <style>
 .menu-bar {
-	max-width: 569px;
-	width: 100% !important;
+    max-width: 569px;
+    width: 100% !important;
 }
 .quicktime {
-	max-width: 288px;
-	width: 100% !important;
-	border-radius: 8px;
+    max-width: 288px;
+    width: 100% !important;
+    border-radius: 8px;
 }
 .finder-default {
-	max-width: 685px;
-	width: 100% !important;
+    max-width: 685px;
+    width: 100% !important;
 }
 .customize-toolbar-sheet {
-	max-width: 635px;
-	width: 100% !important;
+    max-width: 635px;
+    width: 100% !important;
 }
 .mail-default {
-	max-width: 586px;
-	width: 100% !important;
+    max-width: 586px;
+    width: 100% !important;
 }
 .quicktime,
 .finder-default,
@@ -42,67 +53,67 @@ foreground-color: "#FFFFFF"
 .mail-default,
 .finder-preferences,
 .get-info {
-	zoom: unset !important
+    zoom: unset !important
 }
 .finder-preferences {
-	max-width: 371px;
-	width: 100% !important;
+    max-width: 371px;
+    width: 100% !important;
 }
 .custom-autocorrect {
-	max-width: 668px;
-	width: 100% !important;
-	zoom: unset !important;
+    max-width: 668px;
+    width: 100% !important;
+    zoom: unset !important;
 }
 .textedit {
-	max-width: 640px;
-	width: 100% !important;
+    max-width: 640px;
+    width: 100% !important;
 }
 .i-guess {
-	max-width: 111px;
-	width: 100% !important;
+    max-width: 111px;
+    width: 100% !important;
 }
 .footnotes .macbook {
-	width:75%;
+    width:75%;
 }
 .get-info {
-	max-width: 308px;
-	width: 100% !important;
+    max-width: 308px;
+    width: 100% !important;
 }
 .menu-bar-arrange {
-	max-width: 554px;
-	width: 100% !important;
+    max-width: 554px;
+    width: 100% !important;
 }
 .bigfoot-footnote__content img.finder,
 .finder {
-	max-width: 130px;
-	width: 40vw;
-	display: block;
+    max-width: 130px;
+    width: 40vw;
+    display: block;
 }
 .screensharing path,
 .screensharing rect {
-	fill: #007AFF;
+    fill: #007AFF;
 }
 .screensharing {
-	height: 1em;
-	margin
+    height: 1em;
+    margin
 }
 .special-footer-struct {
-	width: 111px;
+    width: 111px;
 }
 .special-footer-struct.large {
-	width: 250px;
+    width: 250px;
 }
 @media (min-width: 700px) {
-	.special-footer-struct {
-		width: 222px;
-	}
-	.special-footer-struct.large {
-		width: 400px;
-	}
+    .special-footer-struct {
+        width: 222px;
+    }
+    .special-footer-struct.large {
+        width: 400px;
+    }
 }
 </style>
 
-About a year ago, I published a light "listicle" to highlight some of the smaller features in the then-new [iOS 10](https://web.archive.org/web/20161018023634/https://www.apple.com/ios/ios-10/) and [watchOS 3](https://web.archive.org/web/20160914123844/https://www.apple.com/watchos/). Before diving into the details, [I mentioned offhand]({{ site.baseurl }}/post/listing-the-little-things#fn:where-is-macos) that I omitted [macOS 10.12](https://web.archive.org/web/20160915010119/https://www.apple.com/macos/sierra/) simply because there wasn't anything particularly interesting to include from that release.
+About a year ago, I published a light "listicle" to highlight some of the smaller features in the then-new [iOS 10](https://web.archive.org/web/20161018023634/https://www.apple.com/ios/ios-10/) and [watchOS 3](https://web.archive.org/web/20160914123844/https://www.apple.com/watchos/). Before diving into the details, [I mentioned offhand](/articles/listing-the-little-things#fn:where-is-macos) that I omitted [macOS 10.12](https://web.archive.org/web/20160915010119/https://www.apple.com/macos/sierra/) simply because there wasn't anything particularly interesting to include from that release.
 
 Unfortunately, this year's [macOS 10.13 "High Sierra"](https://arstechnica.com/gadgets/2017/09/macos-10-13-high-sierra-the-ars-technica-review/) release is again slim with regards to user-facing features, despite macOS falling increasingly behind iOS in feature parity. After all, macOS *still* does not have Message stickers and animations, *still* has the same broken App Store, and *still* has all its preexisting problems like pitiful window management and the festering mess that is iTunes. Year after year, Tim Cook's Apple continues to demonstrate they don't care about macOS by simply ignoring it.
 
@@ -116,38 +127,38 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 #### I Wish I Had Known That Sooner <time>Things everyone with a Mac should know</time>
 
 <ul class="compact-list">
-	<li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
-	<li><a href="#display-the-date-in-the-menu-bar-clock">Display the Date in the Menu Bar Clock</a></li>
-	<li><a href="#quicklook-for-superior-file-browsing">Quicklook for Superior File Browsing</a></li>
-	<li><a href="#spotlight-calculator-for-instant-calculations">Spotlight Calculator for Instant Calculations</a></li>
-	<li><a href="#tap-for-definitions-synonyms-and-more">Tap for Definitions, Synonyms, and More</a></li>
-	<li><a href="#automatic-birthdays-in-calendar">Automatic Birthdays in Calendar</a></li>
-	<li><a href="#taking-instant-beautiful-screenshots">Taking Instant, Beautiful Screenshots</a></li>
-	<li><a href="#builtin-screen-recording">Built-In Screen Recording</a></li>
-	<li><a href="#builtin-screensharing">Built-In Screensharing</a></li>
+    <li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
+    <li><a href="#display-the-date-in-the-menu-bar-clock">Display the Date in the Menu Bar Clock</a></li>
+    <li><a href="#quicklook-for-superior-file-browsing">Quicklook for Superior File Browsing</a></li>
+    <li><a href="#spotlight-calculator-for-instant-calculations">Spotlight Calculator for Instant Calculations</a></li>
+    <li><a href="#tap-for-definitions-synonyms-and-more">Tap for Definitions, Synonyms, and More</a></li>
+    <li><a href="#automatic-birthdays-in-calendar">Automatic Birthdays in Calendar</a></li>
+    <li><a href="#taking-instant-beautiful-screenshots">Taking Instant, Beautiful Screenshots</a></li>
+    <li><a href="#builtin-screen-recording">Built-In Screen Recording</a></li>
+    <li><a href="#builtin-screensharing">Built-In Screensharing</a></li>
 </ul>
 
 #### I Want to Work Better <time>Essentials for people aspiring to work smarter, not harder</time>
 
 <ul class="compact-list">
-	<li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
-	<li><a href="#window-tab-and-app-management-shortcuts">Window, Tab, and App Management Shortcuts</a></li>
-	<li><a href="#custom-autocorrect-substitutions">Custom Autocorrect Substitutions</a></li>
-	<li><a href="#go-to-desktop-keyboard-shortcut-for-file-dialogs">"Go To Desktop" Keyboard Shortcut for File Dialogs</a></li>
-	<li><a href="#customize-toolbar-items">Customize Toolbar Items</a></li>
-	<li><a href="#always-search-current-folder-in-finder">Always Search Current Folder in Finder</a></li>
-	<li><a href="#automator-101-">Automator 101 🤖</a></li>
-	<li><a href="#get-info-multiple-files-at-once">"Get Info" Multiple Files at Once</a></li>
+    <li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
+    <li><a href="#window-tab-and-app-management-shortcuts">Window, Tab, and App Management Shortcuts</a></li>
+    <li><a href="#custom-autocorrect-substitutions">Custom Autocorrect Substitutions</a></li>
+    <li><a href="#go-to-desktop-keyboard-shortcut-for-file-dialogs">"Go To Desktop" Keyboard Shortcut for File Dialogs</a></li>
+    <li><a href="#customize-toolbar-items">Customize Toolbar Items</a></li>
+    <li><a href="#always-search-current-folder-in-finder">Always Search Current Folder in Finder</a></li>
+    <li><a href="#automator-101-">Automator 101 🤖</a></li>
+    <li><a href="#get-info-multiple-files-at-once">"Get Info" Multiple Files at Once</a></li>
 </ul>
 
 #### Huh, Neat <time>Tips that only fussy people like me care about</time>
 
 <ul class="compact-list">
-	<li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>
-	<li><a href="#fix-ugly-app-icons">Fix Ugly App Icons</a></li>
-	<li><a href="#dark-mode-">Dark Mode 🌚</a></li>
-	<li><a href="#auto-hidden-dock">Auto-Hidden Dock</a></li>
-	<li><a href="#rearrange-menu-bar-icons">Rearrange Menu Bar Icons</a></li>
+    <li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>
+    <li><a href="#fix-ugly-app-icons">Fix Ugly App Icons</a></li>
+    <li><a href="#dark-mode-">Dark Mode 🌚</a></li>
+    <li><a href="#auto-hidden-dock">Auto-Hidden Dock</a></li>
+    <li><a href="#rearrange-menu-bar-icons">Rearrange Menu Bar Icons</a></li>
 </ul>
 
 --------
@@ -160,10 +171,10 @@ Who am I kidding, the macOS emoji picker is the feature people will love the mos
 
 <div class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -190,10 +201,10 @@ Quicklook on macOS completely solves this problem, and is perhaps my single favo
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -205,10 +216,10 @@ Spotlight is the little magnifying glass on the right side of the Menu Bar and i
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -222,16 +233,16 @@ With the default macOS settings, simply tap the word with three fingers and a de
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
 ### Automatic Birthdays in Calendar
 
-Remembering everyone's birthdays can be a daunting task (especially if you're built for process-based thinking instead of rote memorization, [like myself]({{ site.baseurl }}/post/turtles-hares-and-hot-rods)). Thankfully, macOS and iOS take this problem away entirely by adding Contact birthdays into Calendar automatically. Simply ensure that the desired contacts have birthdays set in their contact cards.
+Remembering everyone's birthdays can be a daunting task (especially if you're built for process-based thinking instead of rote memorization, [like myself](/articles/turtles-hares-and-hot-rods)). Thankfully, macOS and iOS take this problem away entirely by adding Contact birthdays into Calendar automatically. Simply ensure that the desired contacts have birthdays set in their contact cards.
 
 The Calendar app will automatically see these birthdays and create yearly, repeating events for them accompanied with a cute birthday present emoji &#x1F381;. If you had set the optional birth year for your contacts as well, the birthday events will even include how old they are in their reminder notifications. Forgetful people, rejoice!
 
@@ -309,10 +320,10 @@ If you're reading this, you already have at least a passing interest in wanting 
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -326,10 +337,10 @@ To start, you can easily switch to the previous and next tabs of any tabbed wind
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -337,10 +348,10 @@ Quickly switching tabs is nice and all, but it doesn't do much if you still have
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -396,10 +407,10 @@ Once you've added your desired substitutions, using them is as easy as typing mi
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -451,7 +462,7 @@ Custom
 
 ### Always Search Current Folder in Finder
 
-It's no secret Finder (and by extension the file system paradigm of folders and files) utterly baffle most people. For proof, look no further than the Desktop; for both Windows and macOS, the majority of people seem [far more comfortable keeping all their files on the Desktop]({{ site.baseurl }}/post/fearful-computing#the-comfortzone-trap) instead of braving the scary world of the Finder or Explorer to properly sort them away. Comically, Apple's approach to making the system less scary was giving the Finder app a smiley face icon and ignoring the underlying issues, like putting lipstick on a pig[^finder].
+It's no secret Finder (and by extension the file system paradigm of folders and files) utterly baffle most people. For proof, look no further than the Desktop; for both Windows and macOS, the majority of people seem [far more comfortable keeping all their files on the Desktop](/articles/fearful-computing#the-comfortzone-trap) instead of braving the scary world of the Finder or Explorer to properly sort them away. Comically, Apple's approach to making the system less scary was giving the Finder app a smiley face icon and ignoring the underlying issues, like putting lipstick on a pig[^finder].
 
 While there's nothing I can write here that will fix Finder[^fftf], I can at least suggest a change that's the equivalent of adding a small teaspoon of sugar to swill: searching the current folder by default instead of the entire home directory.
 
@@ -485,10 +496,10 @@ To install these scripts, simply double click any ones you've downloaded and cli
 
 <div markdown="1" class="edge-to-edge medium shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -539,10 +550,10 @@ As fate would have it, *you can still get the old mini player back*, even in the
 
 <div markdown="1" class="edge-to-edge large shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 
@@ -590,10 +601,10 @@ Third party menu bar icons come in all kinds of styles. Some have thick stroke l
 
 <div markdown="1" class="inline shadow">
 <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </div>
 

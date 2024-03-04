@@ -1,10 +1,11 @@
 ---
 title: "Bad Music Hertz is Finally Live"
 date: 2016-02-15 4:34:11
-categories:
-  - Announcement
+
 excerpt: |
-  Come scrutinize and celebrate great music with us, one record at a time.
+    Come scrutinize and celebrate great music with us, one record at a time.
+categories:
+    - Announcement
 image: "bad-music-hertz-is-finally-live/banner.jpg"
 link: "https://badmusichertz.com"
 ---

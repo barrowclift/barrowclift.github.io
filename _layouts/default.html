@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if page.flex == true %}flex{% endif %} {% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.display.flex == true %}flex{% endif %} {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
 	
 <!--
 The standard website layout. Includes all the site's standard chrome.
@@ -10,7 +10,7 @@ Settings:
 Currently used for:
   /
   /404
-  /post/
+  /articles/
   /about/
   /about/shoutouts/
   /archive/
@@ -44,7 +44,7 @@ Currently used for:
 			}
 		</style>
 		{% endif %}
-		{% if page.url contains '/post/' or page.dir contains '/obsolete/' %}
+		{% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
 		<style>
 		@media (min-width: 700px) {
 			.float-menu-for-hiding menu.hide-for-small-device,
@@ -58,10 +58,10 @@ Currently used for:
 		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
 
 		<div id="wrap">
-			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.extra-wide %}extra-wide-page{% endif %}">
+			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
 				{% include menu.html %}
 				<main>
-					{% if page.url contains '/post/' or page.dir contains '/obsolete/' %}
+					{% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
 					{% include article.html %}
 					{% else %}
 					{{ content }}

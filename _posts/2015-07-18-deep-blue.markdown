@@ -1,15 +1,18 @@
 ---
 title: "Deep Blue"
 date: 2015-07-18 21:13:39
-categories:
-  - Technology
-  - Apps
-  - Health
+
 excerpt: |
-  Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it’s no coincidence."
-hero-banner: "deep-blue/blue-light-laptop"
-hero-banner-text: "Laptop backlight glowing brightly in a dark room"
+    Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it’s no coincidence."
+categories:
+    - Technology
+    - Apps
+    - Health
 image: "deep-blue/blue-light-laptop.jpg"
+
+article:
+    banner-image: "deep-blue/blue-light-laptop"
+    banner-hover-text: "Laptop backlight glowing brightly in a dark room"
 ---
 
 As a student that has for years now feverishly clacked away assignments deep into the night, f.lux is my easily most precious app. No longer do I have to be bathed in eerie, bright blue light in the night; my poor eyes instead are rewarded a much needed reprieve with a soothing, orange glow that steadily grows with the fading day.

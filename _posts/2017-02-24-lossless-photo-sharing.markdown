@@ -1,13 +1,14 @@
 ---
 title: "Lossless Photo Sharing"
 date: 2017-02-25 1:01:56
-categories:
-  - Technology
-  - Services
-  - Photos
 timelocked: true
+
 excerpt: |
-  It can get confusing trying to figure out the best way to losslessly share photos with someone, but I’m here to help!
+    It can get confusing trying to figure out the best way to losslessly share photos with someone, but I’m here to help!
+categories:
+    - Technology
+    - Services
+    - Photos
 image: "lossless-photo-sharing/share-image.jpg"
 ---
 

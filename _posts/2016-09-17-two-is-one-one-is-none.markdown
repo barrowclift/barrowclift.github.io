@@ -1,18 +1,29 @@
 ---
 title: "Two Is One, One Is None"
 date: 2016-09-17 18:32:50
-categories:
-  - Technology
-  - macOS
-  - iOS
-  - Windows
-  - Backups
-  - Best Of
+
 excerpt: |
-  If you’re not currently backing up your data, it’s not a matter of “if” you lose it, but “when”.
+    If you’re not currently backing up your data, it’s not a matter of “if” you lose it, but “when”.
+categories:
+    - Technology
+    - macOS
+    - iOS
+    - Windows
+    - Backups
+    - Best Of
 image: "two-is-one-one-is-none/share-image.jpg"
-background-color: "#FFFFFF"
-foreground-color: "rgba(30, 30, 30, 0.9)"
+
+card:
+    background:
+        color: "hsl(0, 0%, 100%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "100%"
+    foreground:
+        color: "hsl(0, 0%, 12%)"
+        hue: "0"
+        saturation: "0%"
+        lightness: "12%"
 ---
 
 Your computer is priceless. It doesn't matter whether or not you have a new top-of-the-line desktop or an ancient, eight-year-old clunker, these computers are priceless not because of their specs but because of the data entrusted to their care. Nowadays, we trust our computers not only with memories such as baby pictures and wedding videos but also files critical to our livelihoods like personal projects and art portfolios. This data is more than just computer files, it's an extension of ourselves: our memories, our livelihoods, our lives. This data, *your* data, is precious.

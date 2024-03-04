@@ -1,17 +1,29 @@
 ---
 title: "Eulogy for a Good Icon"
 date: 2018-08-28 23:31:23
-categories:
-  - Technology
-  - macOS
-  - Design
-  - Best Of
+
 excerpt: |
-  Icon redesigns are a difficult balancing act to pull off. Tower 2 did so gracefully, but what about Tower 3?
+    Icon redesigns are a difficult balancing act to pull off. Tower 2 did so gracefully, but what about Tower 3?
+categories:
+    - Technology
+    - macOS
+    - Design
+    - Best Of
 image: "eulogy-for-a-good-icon/share-image.jpg"
-foreground-color: "#45373B"
-background-color: "#EDB392"
-has-afterward: true
+
+article:
+    show-stamp: false
+card:
+    background:
+        color: "hsl(22, 72%, 75%)"
+        hue: "22"
+        saturation: "72%"
+        lightness: "75%"
+    foreground:
+        color: "hsl(343, 11%, 24%)"
+        hue: "343"
+        saturation: "11%"
+        lightness: "24%"
 ---
 
 <style>
@@ -197,7 +209,7 @@ __You deserve better than that__, and designers like Schupp have a responsibilit
 
 Cheers to Tower's good icon design, I can only hope one day it will return.
 
-<div class="article-linkback">
+<div id="article-linkback">
 	<a href="/about">⌘</a>
 </div>
 

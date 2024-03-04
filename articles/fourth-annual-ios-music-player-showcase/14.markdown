@@ -1,0 +1,240 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Music.app"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "13"
+    next-page: "15"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Music.app's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png "Marvis Pro's iOS app icon"){: .inline-app-icon } Music.app
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating Music.app's usage in light mode" title="Demonstrating Music.app's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.webp">
+  <img type="image/jpeg" title="Music.app's light theme album-view" alt="Image of Music.app's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.webp">
+  <img type="image/jpeg" title="Music.app's light theme full-player" alt="Image of Music.app's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage-poster.jpg" alt="Video demonstrating Music.app's usage in dark mode" title="Demonstrating Music.app's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.webp">
+  <img type="image/jpeg" title="Music.app's dark theme album-view" alt="Image of Music.app's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
+</picture>
+</a>
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.webp">
+  <img type="image/jpeg" title="Music.app's dark theme full-player" alt="Image of Music.app's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.jpg">
+</picture>
+</a>
+</div>
+
+Whether you're an album-focused listener like me, a fan of singles and playlist customization, or even a lover of classical compositions, Apple's Music.app does a brilliant job of systematically attempting and failing to meet your needs. Over the years I've continuously bemoaned Music.app's inability to focus on catering to any particular facet of the wide spectrum of listening habits, which yields a player that routinely makes halfhearted attempts to address every segment of the market without sealing the deal on any of them.
+
+Fundamentally, Music.app's primary issue it it's first and foremost a delivery vehicle for the Apple Music streaming service, and this fact is immediately apparent upon scanning the app's stock tab bar items upon launch. Of the five tabs ("Listen Now", "Browse", "Radio", "Library", and "Search"), only "Library" and "Search" are useful to listeners that prioritize their library over the Apple Music service. This is indeed a great boon for Apple Music subscribers that *do* prefer the service's offerings over their own library, Music.app also poorly handles the cloud-primary "Sync Library" feature; Apple technically allows users to keep this feature off (which I continue to begrudgingly do), but unless you go all-in on a cloud-primary library with the "Sync Library" feature, Music.app's interface fights you at every corner. While browsing the Apple Music library, you'll encounter loads of <kbd>+</kbd> buttons strewn about to "add" entities to your library, which don't do anything unless you have "Sync Library" enabled (tapping them launches a helpful dialog prompting you to enable the feature). The strategy in play is clear; Apple could easily hide these buttons for customers without this feature enabled, which to me would be a usability win, but what they *really* want to do is drive the feature's adoption, and this [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) they leverage is a great means of doing so. Mixing the local-only library with Apple Music also results in confusing items in the "Library" tab context menus as well, where the menus display options like "Delete from Library", "Remove from Library", and "Download" which only really make sense in a cloud-primary library like the one "Sync Library" provides (and even then, "Delete from Library" vs. "Remove from Library" is completely inscrutable). Design decisions like these add up to an uncomfortable experience for anyone that doesn't choose Apple's blessed configuration and make it difficult to feel Apple's truly prioritizes your needs over the needs of their service team's bottom line.
+
+Let's step aside from this fundamental, intentional design flaw and focus on the details of Music.app's local library experience with its "Library" tab. As the name implies, the page serves as the springboard into your library, featuring a vertical menu at the top of items you'd expect like "Artists", "Albums", "Songs", and more. Below that vertical menu is a "Recently Added" collection containing a reverse chronological grid of sixty entities you've recently added to your library (which can be albums, songs, or even playlists). The rest of the browsing experience is perfectly plain with little to no frills whatsoever. Even the artist entity pages which could arguably benefit from some Apple Music hero images get no special treatment, the view's just a simple grid of the artist's records. While there's nothing necessarily noteworthy here, it works.
+
+Things thankfully get interesting with Music.app's colorful full-player, freshly renovated in 2020 with iOS 14. Instead of the plain white or black backgrounds from previous releases, last year Apple introduced a reduced version of the gorgeous "lava lamp" visualizer (previously only accessible for "Live" lyrics) into the background of the standard full-player. What should have been a cause for celebration quickly turned sour, as it rapidly became apparent that the visualizer on the full-player was objectively less impressive than its "Live Lyrics" counterpart, apparently an effort on Apple's part to reduce battery impact. While admirable, their battery optimizations over-blur the effect's originally distinctive color blobs into an unintelligible, murky mess, often looking closer to slowly shifting sludge than wistfully drifting lava lamp blobs. Disappointments regarding the full-player's visual design aside, functionally Music.app's full-player is surprisingly well crafted. The album art's massive, the queue and lyrics features are prominently displayed as quickly accessible buttons at the bottom of the full-player, the volume slider is large and always visible (to me, a plus), and there's loads of convenient contextual menus to jump right to the album, artist, or playlist of the current track. While the dreadfully crippled visualizer does its part to hold the full-player back, the functional experience at the very least is soundly designed and among one one of the best for those that value full-player functionality.
+
+### iPad Experience
+
+Paradoxically, the Music.app iPad experience is among the best you can find on the market. Instead of simply scaling the app, Apple seems to take nearly every opportunity available to optimize UI elements to take full advantage of the extra screen real estate the iPad provides; the tab bar is replaced with an iOS 14 sidebar, which not only helps instill Music.app on iPadOS as a first-class iPad experience, but also inherently avoids my complaints about the Apple Music service taking up precious tab bar space on the iPhone version.
+
+The full-player also takes substantial advantage of the extra screen real estate; the full-player takes up the entire screen when launched, allowing the album art to shine in full glory. In landscape mode, the player supports the same duel-column display I cherish in [Power Player], where the entire full-player and lyrics are separated and organized into side-by-side columns. This allows listeners to comfortably appreciate the album art and follow along with lyrics at the same time. In terms of sheer platform optimization goes, Music.app on iPadOS is as good as it gets.
+
+### Widgets
+
+<div class="box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/large-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/large-widget.webp">
+  <img type="image/png" title="Music.app's large 'Now Playing' widget" alt="Image of Music.app's large 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/large-widget.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/medium-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/medium-widget.webp">
+  <img type="image/png" title="Music.app's medium 'Now Playing' widget" alt="Image of Music.app's medium 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/medium-widget.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/small-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/small-widget.webp">
+  <img type="image/png" title="Music.app's small 'Now Playing' widget" alt="Image of Music.app's small 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/small-widget.png">
+</picture>
+</a>
+</div>
+</div>
+
+The terrible, bright red widgets from last year's showcase are (mostly) gone! Now, Apple's singular widget collection features a blurred background and dynamic font colors from the currently playing track's album art. I despised the static, bright red background color from 2020's widgets, so I'm trilled to see Music.app's widgets visually calm down while also providing a more personal look and feel as natural consequence.
+
+<div class="box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-large.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-large.webp">
+  <img type="image/png" title="Music.app's large 'Now Playing' widget" alt="Image of Music.app's large 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-large.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-medium.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-medium.webp">
+  <img type="image/png" title="Music.app's medium 'Now Playing' widget" alt="Image of Music.app's medium 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-medium.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-small.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-small.webp">
+  <img type="image/png" title="Music.app's small 'Now Playing' widget" alt="Image of Music.app's small 'Now Playing' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-small.png">
+</picture>
+</a>
+</div>
+</div>
+
+However, I say that red background is *mostly* gone, because whenever certain conditions are met (such as force quitting the app), the widget design reverts back to that brazen red from 2020. This is a problem for users that compulsively force quit their apps despite the detrimental impacts on app launch time and battery. Given that every third-party music player I've used with similar "Now Playing"-inspired designs handle this gracefully by remembering the details of what was playing even through force quits, it's ridiculous that Apple's own first-party offerings drop those details.
+
+Other than that and the introduction of an "extra large" iPadOS-only widget, Music.app's "Listening Activity" widget collection remains the same as in 2020. For each size, the widget displays the album art, song title, and artist of the currently playing track, and launches the full-player upon tapping. All widgets but the small size also display recent listening history in the form of an album art grid, which upon tapping any particular one launches that album's view in the app.
+
+All in, Music.app's "Listening Activity" widget collection is perfectly serviceable, but falls short of providing the customizability, range, and robustness many third-party players have trained us to expect.
+
+### New This Year
+
+Barely anything changed in Music.app this year. While it's technically enough to meet my "actively maintained" requirement, I expected far more from Music.app given its symbolic importance as Apple's own app and functional importance to the ecosystem as a whole[^ecosystem]. 
+
+What follows is a comprehensive list of every subjectively underwhelming Music.app change this year (not counting changes specific to the Apple Music streaming service):
+
+* A new "Shared with You" collection is now available in the "Listen Now" tab which—you guessed it—displays music shared with you in Messages. While this is technically Apple Music adjacent (you can't stream that music in Apple Music without a subscription), you don't need an Apple Music subscription for music shared with you to appear. While you'll obviously need one to actually stream anything shared this way, simply having all music shared with you available to peruse in a single, nifty collection is pretty handy.
+* While browsing your "Up Next" queue, you can long-press a song and tap the new "Move to Top" item to throw that song to the front of the queue.
+* The widgets now display a blurred background and dynamic font colors of the currently playing track's album art.
+
+In some fairness to Music.app's developers, a tremendous amount of effort this year was most likely dedicated towards the Apple Music service enhancements to support spatial audio and lossless streaming. However, the bulk of that work is exclusive to Apple's streaming service, so there remains little value gain for those not subscribed and leaves the Music.app library experience to mostly languish this year.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:trophy:</span> Lyrics support</dt>
+  <dd><p>Music.app’s lyrics experience is delightful; the button to view lyrics is immediately accessible and visible, the lyrics are displayed in a massive scrollable view, and in landscape mode on iPad the lyrics are shown alongside the full-player just like in <a href="https://powerplayer.evenwerk.com">Power Player</a>. It’s outstanding.</p></dd>
+  <dt><span class="bullet">:trophy:</span> iPad support</dt>
+  <dd><p>In terms of sheer screen size optimization, it’s the best iPad music player available.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+  <dd><p>Your library is practically an afterthought in Music.app; nothing makes me hate Apple Music more than Apple’s own Music.app.</p></dd>
+  <dt><span class="bullet">:x:</span> Discovery features</dt>
+  <dd><p>A single “Recently Added” discovery collection doesn’t cut it anymore, and no, Apple Music’s impersonal “Listen Now” page doesn’t count.</p></dd>
+  <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>The off-brand visualizer used in the full-player is not the same as the beloved one used in the “Live Lyrics” view. It consistently yields worse results, and if all we’re going to get is this crippled version, I’d rather see it removed entirely.</p></dd>
+  <dt><span class="bullet">:x:</span> Album-focused features</dt>
+  <dd><p>Your albums are displayed as a grid, but that’s about the only album-focused feature Music.app offers. That simply doesn’t cut it, anymore.</p></dd>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/15"><p class="button">Next App: “Picky”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><strong>Music.app</strong></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+-----
+
+[^ecosystem]: Every player in this showcase relies either partially or fully on Music.app's APIs. Because of this, the importance Music.app's backend has on the App Store's music player ecosystem cannot be overstated.
+
+[Power Player]: https://powerplayer.evenwerk.com

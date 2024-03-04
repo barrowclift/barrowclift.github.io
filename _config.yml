@@ -10,7 +10,7 @@ url: https://barrowclift.me # The base hostname & protocol for your site
 prod-host: barrowclift.me
 host: localhost
 
-permalink: /post/:title # Permalink posts sorted by date with directories is awful.
+permalink: /articles/:title # Permalink posts sorted by date with directories is awful.
 paginate_path: articles/:num # Home older/previous pages go here
 paginate: 5 # Number of posts to be shown on each each paginated page.
 
@@ -18,6 +18,7 @@ markdown: kramdown
 highlighter: rouge
 show_drafts: False
 future: False
+enable-card-colors: True
 
 timezone: America/New_York
 locale: en-US
@@ -25,31 +26,46 @@ locale: en-US
 kramdown:
   footnote_backlink: "&#x21A9;&#xFE0E;"
 
+collections:
+  updates:
+    output: false
+    sort_by: lesson
+
 defaults:
   -
     scope:
       path: ""
     values:
       layout: default
+      timelocked: false
+      force-early-timelock: false
+      show-anchors: false
+      design:
+        force-dark-mode: false
+        ignore-accent-color: false
+      display:
+        edge-to-edge: false
+        extra-wide: false
+        flex: false
+      menu:
+        show-settings: true
+      article:
+        show-stamp: true
+        show-footer: true
   -
     scope:
-      path: ""
       type: posts
     values:
-      has-afterward: false
-      # Options are:
-      #   "article" for new articles (only one that updates RSS feed)
-      #   "article-update" for updates to existing articles
-      #   "project" for new projects
-      #   "project-update" for updates to existing projects
       type: article
-      anchors: true
+      show-anchors: true
   -
     scope:
-      path: ""
-      path: "projects"
+      path: projects
     values:
-      anchors: true
+      show-anchors: true
+      article:
+        show-stamp: false
+        show-footer: false
 
 plugins:
   - jemoji

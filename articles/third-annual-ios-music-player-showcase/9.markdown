@@ -1,0 +1,152 @@
+---
+title: "Third Annual iOS Music Player Showcase - Longplay"
+date: 2020-12-31 13:10:33-0500
+timelocked: true
+
+excerpt: |
+    Celebrating the diverse and exciting world of 2020’s iOS music players.
+image: "third-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Third Annual iOS Music Player Showcase"
+    start-page: "/articles/third-annual-ios-music-player-showcase"
+    previous-page: "8"
+    next-page: "10"
+---
+
+## !["Longplay" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/icon.png '"Longplay" iOS app icon'){: .inline-app-icon } Longplay
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage-poster.jpg" alt="Video demonstrating 'Longplay' usage with light theme" title="Demonstrating 'Longplay' usage with light theme">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage.mp4" type="video/mp4">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage.webm" type="video/webm">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage.ogv" type="video/ogg">
+  [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+  <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage-poster.jpg" alt="Video demonstrating 'Longplay' usage with dark theme" title="Demonstrating 'Longplay' usage with dark theme">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage.mp4" type="video/mp4">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage.webm" type="video/webm">
+  <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage.ogv" type="video/ogg">
+  [HTML5 video tag not supported by your browser]
+</video>
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
+  <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+</picture>
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/longplay/id1495152002">
+<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+Longplay is not only a newcomer this year, but is also among one of the few that's not a general-purpose player. Like [Jams on Toast] and [Albums] before it, Longplay focuses on delivering a non-traditional, album-centric experience. Upon launching the app for the first time, you'll be greeted by a massive album wall strongly reminiscent of the one found in Albums. Like in Albums, tapping any particular record in this wall will immediately begin playing the entire album. However, unlike both Jams on Toast and Albums, instead of launching a dedicated player view, navigation entirely remains on the wall; you'll instead see the playing record's album art enlarge, gain a border colored to match the album art, and a teeny play/pause button appear in the bottom right of the record. While the currently playing album doesn't stretch the width of the screen by default, there is a setting to enable "Large" album art, allowing Longplay to just barely miss disqualification and meet the 2020 players list.
+
+That covers it, there's nothing more to Longplay's core app experience; aside from a healthy number of sorting options in the menu, that's all the functionality provided by the player. Since general-purpose players are plentiful now, similarly simple general-purpose players like [Dot Music] run the risk of becoming dreadfully boring due to how commonplace the core experience is. Not so with Longplay; its [blue ocean](https://www.blueoceanstrategy.com/what-is-blue-ocean-strategy/) strategy to deliver a focused, relatively unexplored experience appears refreshing, in comparison.
+
+While the lack of dedicated player view and additional album-centric features is a disappointment (and I don't see myself using Longplay over Albums anytime soon, as a result), I'm nonetheless fascinated to see where Longplay will go next; historically, Longplay now stands at the crossroads that Jams on Toast and Albums carved out. Longplay could potentially go Jams on Toast's route and end up never growing beyond this point, eventually fading away as an unmaintained curiosity. Or, it could potentially go Albums' route, and instead use this mission statement as its launchpad for new album-focused experiences for years to come. Time will tell which path Longplay ends up taking.
+
+### Widgets
+
+Longplay's widget's are as unique as the app. Like the app, the experience is trim: just a single widget class sporting two different sizes (medium and small). However, that small package is packed tons of customization options.
+
+<div class="box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
+  <img type="image/png" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
+  <img type="image/png" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.png">
+</picture>
+</a>
+</div>
+</div>
+
+Both widgets display a snapshot of the app's album view (with the small variant opting for a stylized tilt). The contents support a subset of the sorting options available in the app, such as "Addiction" (for displaying albums you've had in heavy rotation) or "Negligence" (for displaying albums you haven't played in a while). The widgets also support a sorting method unique to them called "Different day, different order" which, as the name suggests, will select one of the other sorting methods every day.
+
+Despite the widget containing discrete records, tapping anywhere in the widget is seen as a single action; it plays a random record near the top of whatever sorting method you chose instead of the exact one you tapped. However, that tap action can be changed from immediately playing that record to either launching the app and asking where to play the song (such as if you wanted to [AirPlay](https://www.apple.com/airplay/) to nearby speakers) or simply scrolling to the album in the wall.
+
+While I appreciate this widget class, I'm still left disappointed it does not support executing your preferred action on the specific record you tap in the widget. Other player widgets with record grids support this functionality, so it's puzzling to not have a similar option, here.
+
+### Personal Score Card
+
+<div class="admonition aside">
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+<li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Despite its simplicity, there’s a decent number of discovery features here, such as sorting by album art brightness.</em></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong><ul class="bare-list">
+    <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>Despite its numerous sorting options, proper sorting (artists alphabetically followed by albums in chronological order) is not one of them.</em></li>
+    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view: </strong><em>The app’s nothing but a grid view, yet the lack of visual customization lets it down, holding it back from top marks.</em></li>
+</ul></li>
+</ul>
+
+<ul class="bare-list emoji-list">
+<li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
+<li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
+</ul>
+</div>
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/10"><p class="button">Next App: “Marvis Pro”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2020’s Players
+        <ul>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+          <li>Longplay</li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+        </ul>
+      </li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Jams on Toast]: https://apps.apple.com/us/app/jams-on-toast-music-player/id1303194454
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Dot Music]: https://apps.apple.com/us/app/dot-music-player/id1510755057

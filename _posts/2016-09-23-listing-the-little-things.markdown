@@ -1,13 +1,14 @@
 ---
 title: "Listing the Little Things"
 date: 2016-09-26 3:53:19
-categories:
-  - Technology
-  - iOS
-  - watchOS
 timelocked: true
+
 excerpt: |
-  With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!
+    With fresh versions of Apple operating systems comes loads of new, useful things to discover. Come check out some of the little details with me!
+categories:
+    - Technology
+    - iOS
+    - watchOS
 image: "listing-the-little-things/share-image.jpg"
 ---
 
@@ -19,17 +20,17 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
 📱 __iOS 10__
 
 <ul class="compact-list">
-  <li><a href="#the-bedtime-feature">The Bedtime Feature - Never worry about setting alarms for work or school again</a></li>
-  <li><a href="#custom-music-menu">Custom Music Menu - Create an experience tailored to how <em>you</em> listen to music</a></li>
-  <li><a href="#expanding-important-widgets">Expanding Important Widgets - Opt to always see more information at a glance</a></li>
-  <li><a href="#setting-a-preferred-transportation-type">Setting A Preferred Transportation Type - Have things like time of arrival, departure times, etc. use that type by default</a></li>
+    <li><a href="#the-bedtime-feature">The Bedtime Feature - Never worry about setting alarms for work or school again</a></li>
+    <li><a href="#custom-music-menu">Custom Music Menu - Create an experience tailored to how <em>you</em> listen to music</a></li>
+    <li><a href="#expanding-important-widgets">Expanding Important Widgets - Opt to always see more information at a glance</a></li>
+    <li><a href="#setting-a-preferred-transportation-type">Setting A Preferred Transportation Type - Have things like time of arrival, departure times, etc. use that type by default</a></li>
 </ul>
 
 ⌚ __watchOS 3__
 
 <ul class="compact-list">
-  <li><a href="#the-perfect-dock">The Perfect Dock - Optimizing your app choices to help create the perfect dock</a></li>
-  <li><a href="#super-fast-dock-scrolling">Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster</a></li>
+    <li><a href="#the-perfect-dock">The Perfect Dock - Optimizing your app choices to help create the perfect dock</a></li>
+    <li><a href="#super-fast-dock-scrolling">Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster</a></li>
 </ul>
 
 <!--break-->
@@ -60,7 +61,7 @@ The iOS Music app has been an unequivocal disaster since it's half-assed redesig
 ![A final screenshot of the Music app, now with the sub-menu at the top containing just "Artists" and "Albums", leaving plenty of other space on the screen for other things.]({{ site.dropbox }}/listing-the-little-things/music-app-screenshot-3.jpg)
 </div>
 
-While it's yet to be seen if they've indeed hit that goal[^music-app], they've clearly taken the first steps to make the Music app more tailored to each person's music listening habits. Some people like shuffling and making playlists, others listen exclusively to records or classical compositions, while others yet have healthy mixes of all these. The new Music app addresses these differences by making the library menu items customizable. For example, since I only listen to albums and [don't have iCloud Music Library enabled]({{ "/post/two-is-one-one-is-none" | prepend: site.baseurl }}), there is no reason at all for me to have the "Playlists" and "Downloaded Music" menus show up, so I disabled them by tapping the "Edit" button and deselecting those menus. Now the "Library" tab more closely matches my personal listening style. Give it a try yourself and enable only the menus that *you* want!
+While it's yet to be seen if they've indeed hit that goal[^music-app], they've clearly taken the first steps to make the Music app more tailored to each person's music listening habits. Some people like shuffling and making playlists, others listen exclusively to records or classical compositions, while others yet have healthy mixes of all these. The new Music app addresses these differences by making the library menu items customizable. For example, since I only listen to albums and [don't have iCloud Music Library enabled](/articles/two-is-one-one-is-none), there is no reason at all for me to have the "Playlists" and "Downloaded Music" menus show up, so I disabled them by tapping the "Edit" button and deselecting those menus. Now the "Library" tab more closely matches my personal listening style. Give it a try yourself and enable only the menus that *you* want!
 
 ### <a id="expanding-important-widgets"></a>Expanding Important Widgets
 
@@ -89,7 +90,7 @@ Thankfully, [as of iOS 7](http://www.cultofmac.com/233940/set-the-preferred-dire
 
 ### <a id="the-perfect-dock"></a>The Perfect Dock
 
-As discussed previously in "[Home Sweet Home]({{ "/post/home-sweet-home" | prepend: site.baseurl }})", carefully choosing which apps to include in your home screen and dock in iOS is crucial to creating the optimal iOS experience. This truth carries over to the new Dock feature in watchOS 3. Previously, whenever you wanted to access a favorite app on watchOS you either had to add it as a glance or on your watch face as a complication, otherwise you had to search the [awful app honeycomb menu](https://overcast.fm/+BtuzpCzgI/2:10:14) to find and open it. Not to mention, then you'd have to wait 5-10 seconds for the app to load which utterly defeats the purpose of using the watch instead of your phone in the first place.
+As discussed previously in "[Home Sweet Home](/articles/home-sweet-home)", carefully choosing which apps to include in your home screen and dock in iOS is crucial to creating the optimal iOS experience. This truth carries over to the new Dock feature in watchOS 3. Previously, whenever you wanted to access a favorite app on watchOS you either had to add it as a glance or on your watch face as a complication, otherwise you had to search the [awful app honeycomb menu](https://overcast.fm/+BtuzpCzgI/2:10:14) to find and open it. Not to mention, then you'd have to wait 5-10 seconds for the app to load which utterly defeats the purpose of using the watch instead of your phone in the first place.
 
 <div markdown="1" class="edge-to-edge medium two-images">
 ![A screenshot of the Modular watch face.]({{ site.dropbox }}/listing-the-little-things/watch-face.png)

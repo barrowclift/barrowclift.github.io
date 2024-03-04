@@ -1,28 +1,16 @@
-#mainmenu {
-	height: initial;
-}
-article {
-	max-width: 35em;
-	text-align: center;
-	display: inline-block;
-	margin-bottom: 3.9em;
-}
 #parallax-foreground {
 	min-width: 90vw;
 	width: 90vw;
 	margin-top: 0;
 	top: -1vw;
 }
-#parallax-background figure {
-	margin: 0 !important;
-}
-menu {
-	border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
-}
 #parallax-background figure,
 #parallax-background video {
 	margin: 0 !important;
 	padding: 0 !important;
+}
+menu {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
 }
 @media (min-width: 700px) {
 	#parallax {
@@ -109,20 +97,5 @@ menu {
 	}
 	body {
 		transform: translateZ(0px);
-	}
-
-	menu ul a,
-	menu,
-	.hover:hover:not(.active),
-	#settings-toggle {
-		color: white;
-	}
-	.signature-color {
-		fill: white;
-	}
-	.active,
-	.hover:hover:not(.active),
-	#settings-toggle:hover {
-		color: rgb(0, 122, 255);
 	}
 }

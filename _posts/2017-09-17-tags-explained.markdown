@@ -1,12 +1,13 @@
 ---
 title: "Tags Explained"
 date: 2017-09-18 1:46:52
-categories:
-  - Technology
-  - Organization
-  - macOS
+
 excerpt: |
-  I couldn’t help but wonder just what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn’t?
+    I couldn’t help but wonder just what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn’t?
+categories:
+    - Technology
+    - Organization
+    - macOS
 image: "tags-explained/share-image.jpg"
 ---
 

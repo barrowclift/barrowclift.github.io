@@ -1,17 +1,28 @@
 ---
 title: "Why Vinyl?"
 date: 2016-03-07 23:39:26
-categories:
-  - Analog
-  - Music
-  - Streaming
-  - Technology
-  - Best Of
+
 excerpt: |
-  Why would anyone want a brand new turntable in this day and age?
+    Why would anyone want a brand new turntable in this day and age?
+categories:
+    - Analog
+    - Music
+    - Streaming
+    - Technology
+    - Best Of
 image: "why-vinyl/share-image.jpg"
-background-color: "#6A4D47"
-foreground-color: "#E0D1B0"
+
+card:
+    background:
+        color: "hsl(10, 20%, 35%)"
+        hue: "10"
+        saturation: "20%"
+        lightness: "35%"
+    foreground:
+        color: "hsl(41, 44%, 78%)"
+        hue: "41"
+        saturation: "44%"
+        lightness: "78%"
 ---
 
 At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format long thought dead by the general public since the CD was introduced over thirty years ago. Not to mention, for today's youth that grow up with constant access to the entirety of music history at the tap of a screen the notion of having physical objects dedicated to predetermined static content must seem barbaric.

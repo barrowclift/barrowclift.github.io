@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if page.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <!--
 Produces a parallax effect with a "background" asset (image, video, or custom,
@@ -12,149 +12,199 @@ Settings:
 Currently used for:
   /projects/music/smile-heroes-and-villains-mix/
   /projects/code/the-largest-video-game-ever-made/
-  /post/deep-blue
 -->
 
-	{% include head.html %}
+    {% include head.html %}
 
-	<body>
-		<div id="parallax">
-			<div class="container">
-				{% include menu.html %}
+    <body>
+        <div id="parallax">
+            <div class="container">
+                {% include menu.html %}
 
-				{% if page.parallax-image != nil or page.banner-video != nil %}
-				<div id="parallax-background" class="layer">
-					{% if page.banner-video != nil %}
-					<figure>
-						<video controls preload="none" class="edge-to-edge" {% if page.banner-poster %}poster="{{ site.dropbox }}/{{ page.banner-poster }}"{% endif %} alt="{% if page.banner-alt %}{{ page.banner-alt }}{% else %}Post banner{% endif %}">
-							<source src="{{ site.dropbox }}/{{ page.banner-video }}.mp4" type="video/mp4">
-							<source src="{{ site.dropbox }}/{{ page.banner-video }}.webm" type="video/webm">
-							<source src="{{ site.dropbox }}/{{ page.banner-video }}.ogv" type="video/ogg">
-							[HTML5 video tag not supported by your browser]
-						</video>
-					</figure>
-					{% endif %}
-					{% if page.show-up-arrow %}
-					<svg alt="Minimalist up arrow" onclick="upArrowClicked();" class="noselect" id="up-arrow" viewBox="0 0 565 565" version="1.1" role="img">
-						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							<path d="M242.609127,161.5 L18.96767,385.141457 L-0.477766446,404.586893 L38.4131065,443.477766 L57.858543,424.03233 L281.5,200.390873 L505.141457,424.03233 L524.586893,443.477766 L563.477766,404.586893 L544.03233,385.141457 L320.390873,161.5 L320.461176,161.429697 L281.570303,122.538824 L281.5,122.609127 L281.429697,122.538824 L242.538824,161.429697 L242.609127,161.5 Z"></path>
-						</g>
-					</svg>
-					{% endif %}
-				</div>
-				<main id="parallax-foreground" class="layer">
-					{% if page.url contains '/post/' or page.dir contains '/obsolete/' %}
-					{% include article.html %}
-					{% else %}
-					<article>
-						{{ content }}
-						{% include footer.html %}
-					</article>
-					{% endif %}
-				</div>
-				{% else %}
-				{{ content }}
-				{% endif %}
-			</div>
-		</div>
+                {% if page.parallax.banner-image != nil or page.parallax.banner-video != nil %}
+                <div id="parallax-background" class="layer">
+                    {% if page.parallax.banner-video != nil %}
+                    <figure>
+                        <video controls preload="none" class="edge-to-edge" {% if page.parallax.banner-poster %}poster="{{ site.dropbox }}/{{ page.parallax.banner-poster }}"{% endif %} alt="{% if page.parallax.banner-hover-text %}{{ page.parallax.banner-hover-text }}{% else %}Post banner{% endif %}">
+                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.mp4" type="video/mp4">
+                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.webm" type="video/webm">
+                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.ogv" type="video/ogg">
+                            [HTML5 video tag not supported by your browser]
+                        </video>
+                    </figure>
+                    {% endif %}
+                </div>
+                <main id="parallax-foreground" class="layer">
+                    {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+                    {% include article.html %}
+                    {% else %}
+                    <article>
+                        {{ content }}
+                        {% include footer.html %}
+                    </article>
+                    {% endif %}
+                </div>
+                {% else %}
+                {{ content }}
+                {% endif %}
+            </div>
+        </div>
 
-		<style>
-/* Only apply some styles if not ignore-accent-color???? TODO	*/
-			html {
-				background-color: {{ page.background-color }} !important;
-			}
-			#mainmenu {
-				-webkit-backdrop-filter: unset !important;
-				backdrop-filter: unset !important;
-			}
-			main,
-			menu ul a,
-			menu,
-			.hover:hover:not(.active) {
-				color: {{ page.foreground-color }};
-			}
-			.active,
-			.hover:hover:not(.active) {
-				color: {{ page.primary-color }} !important;
-			}
-			.signature-color {
-				fill: {{ page.foreground-color }};
-			}
-			svg:hover .fill-color {
-				fill: {{ page.primary-color }} !important;
-			}
-			#logo:hover .signature-color {
-				fill: {{ page.primary-color }} !important;
-			}
+        <style>
+            html {
+                background-color: {{ page.parallax.foreground.light.background-color }} !important;
+            }
+            {% if page.parallax.banner-image != nil %}
+            #parallax-background {
+                background-image: url("{{ site.dropbox }}/{{ page.parallax.banner-image }}");
+            }
+            {% endif %}
+            main,
+            menu {
+                color: {{ page.parallax.foreground.light.foreground-color }};
+            }
+            article {
+                max-width: 35em;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 3.9em;
+            }
+            #parallax-background a {
+                margin: 0;
+                padding: 0;
+                display:inline-block;
+                text-decoration: none;
+            }
+            #parallax-background img {
+                border-radius: 1em;
+            }
+            #parallax-background picture {
+                line-height: 0;
+            }
+            #parallax-background a:hover {
+                background-color:unset;
+            }
+            #parallax-foreground {
+                background-color: {{ page.parallax.background.light-color }};
+            }
+            #dark #parallax-foreground {
+                background-color: {{ page.parallax.background.dark-color }};
+            }
+      
+            menu ul a {
+                color: {{ page.menu.light.foreground-color }} !important;
+            }
+            menu a:hover {
+                background-color: transparent !important;
+            }
+            .mac-background-color,
+            .signature-color,
+            .pill path {
+                fill: {{ page.menu.light.foreground-color }};
+            }
+            #mainmenu a:hover,
+            #mainmenu .active {
+                color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
+            }
+            #logo:hover .signature-color {
+                fill: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }});
+            }
+            button.pill {
+                background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}, 0.2) !important;
+            }
+                button.pill:hover {
+                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} + 5%)) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                }
+                button.pill:active,
+                .setting-toggles.active button.pill {
+                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%)) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                }
 
-			#dark menu a:hover,
-			#dark .hover:hover:not(.active) {
-				background-color: {{ page.primary-color-hover }};
-			}
+            {% if page.primary-color.light != nil %}
+            main a,
+            main a:link,
+            main a:visited,
+            .anchor {
+                color: hsl({{ page.primary-color.light.hue }}, {{ page.primary-color.light.saturation }}, {{ page.primary-color.light.lightness }});
+            }
+            main a:hover,
+            .anchor:hover {
+                background-color: hsla({{ page.primary-color.light.hue }}, {{ page.primary-color.light.saturation }}, {{ page.primary-color.light.lightness }}, 0.1);
+            }
 
-			button, .button {
-				background-color: {{ page.primary-color }};
-			}
-			button:hover,
-			.button:hover {
-				background-color: {{ page.primary-color-dark }};
-			}
+            ::selection {
+                background: hsla({{ page.primary-color.light.hue }}, {{ page.primary-color.light.saturation }}, {{ page.primary-color.light.lightness }}, 0.99) !important;
+            }
+            ::-moz-selection {
+                background: hsla({{ page.primary-color.light.hue }}, {{ page.primary-color.light.saturation }}, {{ page.primary-color.light.lightness }}, 0.99) !important;
+            }
+            {% endif %}
 
-			main a,
-			main a:link,
-			main a:visited,
-			.active,
-			.anchor {
-				color: {{ page.primary-color }};
-			}
-			main a:hover,
-			.anchor:hover {
-				background-color: {{ page.primary-color-hover }};
-			}
+            {% if page.parallax.foreground.dark.background-color != nil %}
+            html#dark {
+                background-color: {{ page.parallax.foreground.dark.background-color }} !important;
+            }
+            {% endif %}
+            {% if page.parallax.foreground.dark.foreground-color != nil %}
+            #dark main,
+            #dark menu {
+                color: {{ page.parallax.foreground.dark.foreground-color }};
+            }
+            {% endif %}
+            {% if page.menu.dark.foreground-color != nil %}
+            #dark menu ul a {
+                color: {{ page.menu.dark.foreground-color }} !important;
+            }
+            #dark .mac-background-color,
+            #dark .signature-color,
+            #dark .pill path {
+                fill: {{ page.menu.dark.foreground-color }};
+            }
+            {% endif %}
+            {% if page.menu.dark.active != nil %}
+            #dark #mainmenu a:hover,
+            #dark #mainmenu .active {
+                color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}) !important;
+            }
+            #dark #logo:hover .signature-color {
+                fill: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }});
+            }
+            #dark button.pill {
+                background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}, 0.2) !important;
+            }
+                #dark button.pill:hover {
+                    background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} + 5%)) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%), 0.375) !important;
+                }
+                #dark button.pill:active,
+                #dark .setting-toggles.active button.pill {
+                    background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%)) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%), 0.375) !important;
+                }
+            {% endif %}
+            {% if page.primary-color.dark != nil %}
+            #dark main a,
+            #dark main a:link,
+            #dark main a:visited,
+            #dark .anchor {
+                color: hsl({{ page.primary-color.dark.hue }}, {{ page.primary-color.dark.saturation }}, {{ page.primary-color.dark.lightness }});
+            }
+            #dark main a:hover,
+            #dark .anchor:hover {
+                background-color: hsla({{ page.primary-color.dark.hue }}, {{ page.primary-color.dark.saturation }}, {{ page.primary-color.dark.lightness }}, 0.1);
+            }
 
-			/* Highlights (must be seperate, combining them breaks the style) */
-			::selection { /* Safari */
-				background: {{ page.primary-color }};
-				color: white;
-			}
-			::-moz-selection { /* Firefox */
-				background: {{ page.primary-color }};
-				color: white;
-			}
-
-			#up-arrow {
-				top: 110vh;
-				width: 32px;
-				left: 50%;
-				margin-left: -16px;
-				position: absolute;
-				cursor: pointer;
-			}
-			@media (min-width: 700px) {
-				#up-arrow {
-					top: 105vh;
-					width: 64px;
-					margin-left: -32px;
-				}
-			}
-
-			#up-arrow path {
-				fill: rgba(255, 255, 255, 0.5);
-				transition: fill 0.2s ease;
-			}
-			#up-arrow:hover path {
-				fill: rgba(255, 255, 255, 0.9);
-			}
-			{% if page.parallax-image != nil %}
-			#parallax-background {
-				background-image: url("{{ site.dropbox }}/{{ page.parallax-image }}");
-			}
-			{% endif %}
-			{% if page.dark-background-color != nil %}
-			html#dark {
-				background-color: {{ page.dark-background-color }};
-			}
-			{% endif %}
-		</style>
-	</body>
+            #dark ::selection {
+                background: hsla({{ page.primary-color.dark.hue }}, {{ page.primary-color.dark.saturation }}, calc({{ page.primary-color.dark.lightness }} - 24%), 0.99) !important;
+            }
+            #dark ::-moz-selection {
+                background: hsla({{ page.primary-color.dark.hue }}, {{ page.primary-color.dark.saturation }}, calc({{ page.primary-color.dark.lightness }} - 24%), 0.99) !important;
+            }
+            {% endif %}
+        </style>
+    </body>
 </html>

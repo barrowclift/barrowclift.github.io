@@ -1,0 +1,338 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Power Player"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "16"
+    next-page: "18"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Power Player's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png "Power Player's iOS app icon"){: .inline-app-icon } Power Player
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-usage-poster.jpg" alt="Video demonstrating Power Player's usage in light mode" title="Demonstrating Power Player's usage in light mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-album-view.webp">
+  <img type="image/jpeg" title="Power Player's light theme album-view" alt="Image of Power Player's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-album-view.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.webp">
+  <img type="image/jpeg" title="Power Player's full-player" alt="Image of Power Player's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.jpg">
+</picture>
+</a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-usage-poster.jpg" alt="Video demonstrating Power Player's usage in dark mode" title="Demonstrating Power Player's usage in dark mode">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-usage.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-usage.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-usage.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-album-view.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-album-view.webp">
+  <img type="image/jpeg" title="Power Player's dark theme album-view" alt="Image of Power Player's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-album-view.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.jpg">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.webp">
+  <img type="image/jpeg" title="Power Player's full-player" alt="Image of Power Player's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/full-player.jpg">
+</picture>
+</a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+<a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">
+<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+</a>
+</div>
+
+Few players riff on the original iOS Music.app design as successfully as Power Player. This is in no small part due to how boldly it wears this influence on its sleeve; from its stock tab bar (complete with the venerable "..." item to see and optionally swap out the other tab bar items) to its limited array of settings (which are only accessible through the Settings app), the player can oftentimes feel as though it was plucked right out of the iOS 7 App Store back in 2013. In an environment where other players with similar origins like [Cs Music] have made conscious efforts over the past couple years to distance their UI from their roots, Power Player has instead staunchly kept its design feet firmly planted in its initial power stance.
+
+To be clear, this design philosophy is to Power Player's betterment. Its simple pre-iOS 8 inspired design and carefully selected feature set make the app a breeze to use, and is in my esteem among the easiest to use among the App Store's entire music player lineup. If you find yourself bemoaning [Music.app]'s complexity inflation following the introduction of the Apple Music streaming service, Power Player is the spiritual continuation of what was lost all those years ago.
+
+I hesitate to use the word "simple" to describe Power Player since that may do the disservice of making it seem uninspired like [Dot Music]. Power Player is living proof that a player can be refreshingly simple to use yet still embody a bold design voice and employ slim (but compelling) features that make it stand alone and above many of its peers.
+
+To speak concretely, Power Player features numerous striking visual design choices throughout, including:
+
+* App-wide translucency
+* A full-player painted with just two primary colors from the currently playing track's album art (instead of a stock background color or album art translucency effect like nearly every other player)
+* A dynamic album page theme, featuring colors from the album's art, much like in [iTunes 11](https://panic.com/blog/itunes-11-and-colors/) and [Doppler]'s album pages.
+
+<figure class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-red.webp">
+  <img type="image/jpeg" title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-red.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-green.webp">
+  <img type="image/jpeg" title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-green.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-blue.webp">
+  <img type="image/jpeg" title="The album view in light mode with a predominantly blue record" alt="Image of the album view in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-blue.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-red.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-red.webp">
+  <img type="image/jpeg" title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-red.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-green.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-green.webp">
+  <img type="image/jpeg" title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-green.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-blue.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-blue.webp">
+  <img type="image/jpeg" title="The album view in dark mode with a predominantly blue record" alt="Image of the album view in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-blue.jpg">
+</picture>
+</a>
+<figcaption>Power Player’s album page. Like <a href="https://brushedtype.co">Doppler</a>, it's heavily inspired by <a href="https://panic.com/blog/itunes-11-and-colors/">iTunes 11’s gorgeous dynamic album display theme</a>.</figcaption>
+</figure>
+
+Power Player pairs this opinionated but subjectively tasteful design with a number of relatively small but carefully crafted features, such as:
+
+* A full-player visualizer (one of the few players on the market to provide such a feature)
+* Full-screen lyrics, artfully treated as a "second page" just a swipe away in the full-player
+* A "Home" tab with some pre-baked discovery views like "Recently Added", "Loved", and more.
+
+Compared to apps like [Albums] and [Marvis Pro] which are practically bursting at the seams with features, it's difficult to articulate how Power Player can possibly manage to stack up. As with its simple but timeless navigational interface, its features are implemented with extreme care and precision. For example, to this day, Power Player boasts one of my favorite lyrics experiences because of how tastefully the feature is exposed. So many apps bewilderingly ignore lyrics entirely like [Doppler], stick them unceremoniously in a long, scrollable list of other information like [Marvis Pro], or smear them over the album art like [Picky]. Much like [Doppi]'s approach, Power Player brilliantly strikes the delicate compromise of having lyrics be discoverable and easily accessible without becoming intrusive for listeners that don't wish to use the feature.
+
+That's not to say Power Player is without fault, far from it. While its opinionated design perfectly aligns with my tastes, by nature of Power Player leaning so heavily into its choices without allowing any options to tweak or opt out of them, your own impressions will naturally vary. For example, its emphasis on translucency as a core part of the visual experience and relative lack of customization are no doubt dealbreakers for some listeners. There's also the continued lack of full Apple Music service integration, which means you'll have to continue jumping back to [Music.app] or a supporting third-party player whenever you want to stream something you don't already have locally downloaded. While pain points like these were less of an issue when Apple Music was still young and few third-party players supported it in any capacity, with each passing year an increasing number of players roll out support, making it increasingly disappointing to see some apps like Power Player continue to hold out.
+
+While I can't claim that Tim Evenwerk—Power Player's developer—will continue its early iPhoneOS-inspired interface and iOS 7-era visual design into the new year, the restraint and care he's exercised thus far with that foundation inspires confidence that even if we do see a Power Player 2.0 with a brand new design sometime this year, that new design is sure to still embody the original's core values. Whichever way the winds of change blow, Power Player has demonstrated through its life that it can be depended on to provide a premium and functionally accessible (if not potentially divisive) experience.
+
+### iPad Experience
+
+The past couple years, I've raved about Power Player's exceptional iPad experience, and 2021 was no exception. All of what I loved about the experience in previous years remains; the [iTunes 11](https://panic.com/blog/itunes-11-and-colors/)-style expanding album "tray" effect is still there, much to my delight. Last year's "Loved" song styles continue to shine brightest on the iPad, where the larger display is leveraged to display massive, gorgeously color-matched cards practically begging to be touched. The lyrics experience on iPad still leads the pack as well with an complete full-player right beside a massive scrollable lyrics view when in landscape mode, ensuring that everything you'd possible want to read or interact with in the full-player is visible and accessible the entire time you're listening.
+
+However, this year's new additions are a bit of a mixed bag on iPad. While the new bokeh-style visualizer looks great on the larger screen (if not a bit too distracting due to the "bubbles" not scaling up in size to adjust to the larger screen and simply multiplying in number), the new entity view design suffers. Unlike most other pages on iPad, the new entity page design did not receive any iPad-specific optimizations, leaving the hero image to take up a hilariously massive percentage of the screen, forcing even 12" iPad displays to scroll to see most of the entity page content. It's a real shame to see given Power Player's historically careful attention to the details in its iPad experience, and I can only hope these rough edges in its iPad UI will be smoothed out in future patches.
+
+### Widgets
+
+Power Player's widgets remain the same as they were from 2020, with the sole exception of the addition of a new extra-large widget for iPads running iPadOS 15 and newer.
+
+<div class="show-when-dark box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-dark.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-dark.webp">
+  <img type="image/png" title="Power Player's large 'Home' widget in dark mode" alt="Image of Power Player's large 'Home' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-dark.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-dark.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-dark.webp">
+  <img type="image/png" title="Power Player's medium 'Home' widget in dark mode" alt="Image of Power Player's medium 'Home' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-dark.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.webp">
+  <img type="image/png" title="Power Player's small 'Home' widget" alt="Image of Power Player's small 'Home' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.png">
+</picture>
+</a>
+</div>
+</div>
+<div class="show-when-light box widget">
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-light.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-light.webp">
+  <img type="image/png" title="Power Player's large 'Home' widget in light mode" alt="Image of Power Player's large 'Home' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-large-light.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 40%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-light.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-light.webp">
+  <img type="image/png" title="Power Player's medium 'Home' widget in light mode" alt="Image of Power Player's medium 'Home' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-medium-light.png">
+</picture>
+</a>
+</div>
+<div style="flex:0 1 20%;">
+<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.png">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.webp">
+  <img type="image/png" title="Power Player's small 'Home' widget" alt="Image of Power Player's small 'Home' widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/1-small-widget.png">
+</picture>
+</a>
+</div>
+</div>
+
+As a refresher, Power Player only provides a single "Home" widget collection that spans every available widget size. Each widget in this collection allows the ability to display one or more items from any section in Power Player's "Home" tab, which includes:
+
+* Recently Added
+* Recently Played
+* Most Played
+* Loved
+
+With the exception of the admittedly disappointing absence of a "Now Playing" widget collection, Power Player's widget collection is respectable and moderately flexible by nature of allowing users to select a particular "Home" page section to display. With so many players in the showcase *still* lacking widget support entirely two full years after the feature's release in iOS 14, Power Player's widget suite remains ahead of most by simply existing. However, those coming from [Albums] or [Marvis Pro] that are used to a wide variety of widget collections or customization options will continue to be left wanting.
+
+### New This Year
+
+Through the year, Power Player saw a healthy handful of minor releases containing dozens of bug fixes and new features. Notable among them are:
+
+* A full-player visualizer
+* Brand new "Artist", "Genre", and "Composer" entity pages, featuring full-screen dynamic themes and sub-sections containing albums, songs, "Loved" songs, and more.
+* Enhanced playlist support, including playlist grouping and the ability to edit and create new playlists right in Power Player
+
+Let's start with arguably the most noticeable and controversial change, the new bokeh-style visualizer. Instead of just displaying a solid album art-derived background color like last year, this year many translucent bubbles appear and drift about loosely along with your playback. The term "loosely" is generously applied, as to my eyes what's playing seems to have little to no noticeable impact on the visualizer itself. Thankfully, given the visualizer's floaty, carefree tone, it still manages to fit beautifully with genres like [bedroom pop](https://en.wikipedia.org/wiki/Lo-fi_music#Definitions_and_etymology) and [dream pop](https://en.wikipedia.org/wiki/Dream_pop). However, as you'd expect, those friendly, floaty bubbles are hilariously out of places for other genres like hip hop and metal, certainly not aided in those cases by how little the bubbles seem to react along to the music. With these caveats clear, I still see the visualizer as a welcome addition; it can be trivially disabled for those that dislike it, but for those like myself that have been clamoring for full-player visualizers for years, it's a welcome change to find other players embracing them, despite this particular one's flaws.
+
+<div class="three-images ios-screenshot">
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-1.webp">
+  <img type="image/jpeg" title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-1.jpg">
+</picture>
+</a>
+<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-2.webp">
+  <img type="image/jpeg" title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/light-artist-page-2.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-1.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-1.webp">
+  <img type="image/jpeg" title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-1.jpg">
+</picture>
+</a>
+<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-2.webp">
+<picture>
+  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-2.webp">
+  <img type="image/jpeg" title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/dark-artist-page-2.jpg">
+</picture>
+</a>
+</div>
+
+Next up are the brand-new "Artist", "Genre", and "Composer" entity page designs. Gone are the days of simply showing a list of albums, Power Player now features a [Music.app]-inspired edge-to-edge header image and stacked, horizontally scrollable sections for albums, songs, music videos, and more for the entity in question. While it's sure to be a divisive departure from the standard "list of items" design, I find this a wonderful improvement; these collections are now substantially more useful by allowing their contents to be exposed in a myriad of different ways; regardless of what you're looking to find, the new "Artist", "Genre", and "Composer" views do a far better job of helping you get there.
+
+Finally, Power Player now sports enhanced playlist support, which allows users to edit and create playlists right in Power Player itself. Thankfully, playlists created within Power Player are not exclusive to Power Player like in [Doppi], this is honest-to-goodness [Music.app] playlist integration; playlists you create or edit in Power Player will become available in Music.app and other players that read from the Apple Music database. That's not all, for users with playlists of different make (such as smart playlists, genius playlists, etc.), Power Player now intelligently groups those playlists into folders of that type instead of treating all playlists as "the same" like most other players.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+  <dt><span class="bullet">:trophy:</span> Lyrics support</dt>
+  <dd><p>While lyrics support on the iPhone is good, the lyrics support on iPad (which allows you to view the lyrics in a separate column beside the standard full-player contents in landscape mode) is truly exceptional.</p></dd>
+  <dt><span class="bullet">:trophy:</span> iPad support</dt>
+  <dd><p>Were is not for Music.app and <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a>, Power Player would trivially claim the title of best iPad music player experience. Its album art “tray” effect, full screen full-player, and dual-column full-player & lyrics layout in landscape mode make it one of my only go-to players on the iPad.</p></dd>
+  <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+  <dd><p>Its bold album art color theming and bubbly visualizer make Power Player’s full-player visually striking and as attractive as candy.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+  <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+  <dd><p>Power Player now provides the ability to sort and hide “Home” page sections, which empowered me to make its “Home” discovery collections more personal and relevant to my own use. While the continued lack of ability to group by albums like in <a href="https://apps.apple.com/us/app/cs-music-player/id924491991">Cs Music</a> remains disappointing, Power Player’s offering are perfectly reasonable.</p></dd>
+  <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+  <dd><p>Power Player on iPhone isn’t album-focused at all; you can’t browsed albums with a grid layout, and Power Player doesn’t support my preferred sorting method (Artist > Chronological). However, to me the album art “tray” visual flourish on iPad alone is genuinely enough to pick up the slack, it’s <em>that good</em>.</p></dd>
+</dl>
+
+<dl>
+  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+</dl>
+</div>
+
+-----
+
+<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/18"><p class="button">Next App: “Vinyl Fetish”</p></a></li>
+</ul>
+
+<details open>
+  <summary>Table of Contents</summary>
+
+  <div class="toc" style="margin-bottom: 1.3rem;">
+    <ul>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+      <li>2021’s Players
+        <ul>
+          <li>New This Year
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+            </ul>
+          </li>
+          <li>Established
+            <ul>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+              <li><strong>Power Player</strong></li>
+              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+    </ul>
+  </div>
+</details>
+
+[Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
+[Music.app]: /articles/fourth-annual-ios-music-player-showcase/14
+[Dot Music]: https://www.dotmusicplayer.com
+[Doppler]: https://brushedtype.co
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Doppi]: https://doppi.app
+[Picky]: https://apps.apple.com/us/app/picky-music-player/id497110916
+
+*[UI]: User Interface

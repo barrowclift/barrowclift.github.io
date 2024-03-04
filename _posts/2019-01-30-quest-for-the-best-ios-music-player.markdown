@@ -1,37 +1,40 @@
 ---
 title: "Quest for the Best iOS Music Player"
 date: 2019-01-30 22:16:47
-categories:
-  - Technology
-  - iOS
-  - Design
-  - Music
 timelocked: true
+
 excerpt: |
-  My quest to find a niche app that’s unapologetically for people that love actively listening to and collecting music. Who will win?
+    My quest to find a niche app that’s unapologetically for people that love actively listening to and collecting music. Who will win?
+categories:
+    - Technology
+    - iOS
+    - Design
+    - Music
 image: "quest-for-the-best-ios-music-player/share-image.jpg"
-has-afterward: true
+
+article:
+    show-stamp: false
 ---
 
 <style>
-	.app-icon {
-		height: 5em;
-	}
-	.inline-app-icon {
-		display: inline-block;
-		height: 1em;
-		padding-left: 0.1em;
-		padding-right: 0.1em;
-		vertical-align: text-bottom;
-	}
-	article ul li,
-	article ol li {
-		margin-bottom: 0;
-	}
-	article li ul,
-	article li ol {
-		margin-top: 0;
-	}
+    .app-icon {
+        height: 5em;
+    }
+    .inline-app-icon {
+        display: inline-block;
+        height: 1em;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        vertical-align: text-bottom;
+    }
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
 </style>
 
 <figure markdown="1" class="edge-to-edge large shadow">
@@ -53,8 +56,8 @@ To help guide my search, I wrote out specific features and design decisions I wo
 * Full iPad support
 * Discovery options such as "Recently Added", "Added this day X years ago", etc. to help stimulate music selection
 * Album-focused design, featuring:
-	- The one, true album sorting method (alphabetically by artist then chronologically by release year, any other sorting for albums is wrong)
-	- A grid view to aid in visual album searching
+    - The one, true album sorting method (alphabetically by artist then chronologically by release year, any other sorting for albums is wrong)
+    - A grid view to aid in visual album searching
 * A beautiful or visually engaging player view
 * Active maintenance
 
@@ -383,8 +386,8 @@ I love Cs on my iPhone, but I sometimes want to browse my library with a grid vi
 
 However, that doesn't mean I've given up hope! While Music.app has been more-or-less feature-stagnant since iOS 10, third-party developers of apps like Cs, Picky, and Doppler continue to work tirelessly to bring new and exciting features like "true black" dark mode in Cs and the "Recently added" view in Doppler. The world of quality music players on iOS may be small, but it's thriving, and hints at great improvements down the road that may finally earn one of them a permanent residence on my Dock. Time will tell which one it is.
 
-<div class="article-linkback">
-	<a href="/about">⌘</a>
+<div id="article-linkback">
+    <a href="/about">⌘</a>
 </div>
 
 ------
