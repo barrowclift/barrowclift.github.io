@@ -49,43 +49,29 @@ show-anchors: false
         }
     }
 </style>
-<div class="row">
-    <div class="popular-articles column tight w6">
-        {% assign numArticlesPerColumn = site.posts.size | divided_by: 2 %}
-        {% assign found=0 %}
-        {% assign used=0 %}
-        <ul style="margin-left:0;margin-bottom:0;">
-        {% for post in site.posts %}
-            {% if used > numArticlesPerColumn %}
-                {% break %}
+
+{% for post in site.posts %}
+    {% assign lengthMod = forloop.length | modulo: 2 %}
+    {% assign indexMod = forloop.index | modulo: 2 %}
+
+    {% if indexMod == 0 %}
+            <div class="popular-articles column tight w6">
+                {% include article-card.html %}
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            {% if forloop.index == forloop.length and lengthMod == 1 %}
+                <div class="column tight w3" style="margin-left:5%;margin-right:0%"></div>
             {% endif %}
-            {% assign mod=found | modulo: 2 %}
-            {% assign found=found | plus:1 %}
-            {% if mod != 0 %}
-                {% continue %}
+            <div class="{% if forloop.index == forloop.length and lengthMod == 1 %}middle{% endif %} popular-articles column tight w6">
+                {% include article-card.html %}
+            </div>
+            {% if forloop.index == forloop.length %}
+                {% if lengthMod == 1 %}
+                    <div class="column tight w3" style="margin-left:5%;margin-right:0%"></div>
+                {% endif %}
+                </div>
             {% endif %}
-            {% include article-card.html %}
-            {% assign used=used | plus:1 %}
-        {% endfor %}
-        </ul>
-    </div>
-    <div class="popular-articles column tight w6">
-        {% assign numArticlesPerColumn = site.posts.size | divided_by: 2 %}
-        {% assign found=0 %}
-        {% assign used=0 %}
-        <ul style="margin-left:0;margin-bottom:0;">
-        {% for post in site.posts %}
-            {% if used > numArticlesPerColumn %}
-                {% break %}
-            {% endif %}
-            {% assign mod=found | modulo: 2 %}
-            {% assign found=found | plus:1 %}
-            {% if mod == 0 %}
-                {% continue %}
-            {% endif %}
-            {% include article-card.html %}
-            {% assign used=used | plus:1 %}
-        {% endfor %}
-        </ul>
-    </div>
-</div>
+    {% endif %}
+{% endfor %}

@@ -2577,6 +2577,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
             margin-left: 5%;
             margin-right: 5%;
         }
+        .middle.column {
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+            flex-grow: 2;
+        }
     .flex main {
         display: flex;
         width: auto;
