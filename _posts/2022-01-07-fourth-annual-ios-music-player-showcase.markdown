@@ -13,7 +13,7 @@ categories:
     - Design
     - Music
     - Best Of
-image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
 
 continuation:
     next-page: "/articles/fourth-annual-ios-music-player-showcase/2"
@@ -23,27 +23,13 @@ article:
     dark-banner-image: "fourth-annual-ios-music-player-showcase/dark-banner"
 card:
     light:
-        background:
-            color: "hsl(55, 12%, 81%)"
-            hue: "55"
-            saturation: "12%"
-            lightness: "81%"
-        foreground:
-            color: "hsl(75, 31%, 19%)"
-            hue: "75"
-            saturation: "31%"
-            lightness: "19%"
+        image: "fourth-annual-ios-music-player-showcase/light-card"
+        background-color: "hsl(55, 12%, 81%)"
+        foreground-color: "hsl(75, 31%, 19%)"
     dark:
-        background:
-            color: "hsl(75, 31%, 19%)"
-            hue: "75"
-            saturation: "31%"
-            lightness: "19%"
-        foreground:
-            color: "hsl(55, 12%, 81%)"
-            hue: "55"
-            saturation: "12%"
-            lightness: "81%"
+        image: "fourth-annual-ios-music-player-showcase/dark-card"
+        background-color: "hsl(75, 31%, 19%)"
+        foreground-color: "hsl(55, 12%, 81%)"
 ---
 
 <style>
@@ -105,8 +91,6 @@ These new players combined with the enhancements existing players received this 
 * **Apple Music integration:** This year, Albums added rich [Apple Music](https://www.apple.com/apple-music/) support, [Mixtapes] added support in its first minor release, and [Musens] released with support on launch. This is a far cry from just a couple years ago when [Soor]'s "Full Apple Music Support" was considered novel enough to use as its primary marketing angle. With Apple Music's APIs continuing to improve and more listeners either independently subscribing to Apple Music or getting it "for free" as a part of [Apple One](https://www.apple.com/apple-one/), there's a growing expectation for rudimentary Apple Music support in today's players. This year's new releases are clear reflections of this new expectation, and I anticipate it will only continue to gain traction from here.
 * **Visualizers:** What started as an offering found just in [Music.app] and a single third-party music player ([jetAudio]) is now increasingly common throughout the ecosystem. [Soor] released an animated gradient visualizer [in 2020](/articles/third-annual-ios-music-player-showcase/18), Power Player just released its own bubbly visualizer this past year, and three of the five new releases this year ([MPX EQ], [Musens], and [Vinyls]) all featured visualizers at launch[^visualizer-at-launch]. The attention initially garnered by Music.app's ["live lyrics" visualizer](https://support.apple.com/en-us/HT204459) years ago broke the seal, and it appears an increasing number of listeners are beginning to expect or even demand some form of visualizer in their players.
 * **"Home" landing pages:** Over the past couple years, the rare "Home" page that was previously only present in [Music.app], [Soor], and [Marvis Pro] has appeared now across an additional four players (two of which—[Musens] and [MPX EQ]—launched with it). An increasing number of developers in the industry throughout 2021 arrived at the consensus that a "Home" landing page for general-purpose players is necessary to house the commonly requested discovery collections like "Recently Added" and "Recently Played" that listeners now expect out of modern players. Like with Apple Music integration, I anticipate this trend will only continue to gain traction over time.
-
-<!--break-->
 
 ## Goal
 

@@ -10,7 +10,7 @@ categories:
     - iOS
     - Design
     - Music
-image: "third-annual-ios-music-player-showcase/share-image.jpg"
+image: "third-annual-ios-music-player-showcase/share.jpg"
 
 continuation:
     next-page: "/articles/third-annual-ios-music-player-showcase/2"
@@ -20,27 +20,13 @@ article:
     dark-banner-image: "third-annual-ios-music-player-showcase/dark-banner"
 card:
     light:
-        background:
-            color: "hsl(28, 25%, 90%)"
-            hue: "28"
-            saturation: "25%"
-            lightness: "90%"
-        foreground:
-            color: "hsl(60, 0%, 33%)"
-            hue: "60"
-            saturation: "0%"
-            lightness: "33%"
+        image: "third-annual-ios-music-player-showcase/light-card"
+        background-color: "hsl(28, 25%, 90%)"
+        foreground-color: "hsl(60, 0%, 33%)"
     dark:
-        background:
-            color: "hsl(0, 0%, 19%)"
-            hue: "0"
-            saturation: "0%"
-            lightness: "19%"
-        foreground:
-            color: "hsl(30, 25%, 73%)"
-            hue: "30"
-            saturation: "25%"
-            lightness: "73%"
+        image: "third-annual-ios-music-player-showcase/dark-card"
+        background-color: "hsl(0, 0%, 19%)"
+        foreground-color: "hsl(30, 25%, 73%)"
 ---
 
 <style>
@@ -79,8 +65,6 @@ Like last year, I have a short list of music player "deal-breakers". In an effor
 * Local-primary focus (that means no stream-focused or stream-exclusive players. Players that support both local and cloud functionality but work just as well in "local-only" mode are fair game)
 * Large album art in the player view
 * Any custom equalizer provided by the app must also provide the option to completely disable it
-
-<!--break-->
 
 Given the growing number of players available on iOS, I've broken sections down into discrete pages to make the article easier to read and faster to load. You may advance to the next section with the big button below or jump to a specific section that interests you with the "Table of Contents" below. For readers who prefer single-page articles, you may [read here](/articles/third-annual-ios-music-player-showcase/complete), instead (though I personally recommend this version for an improved reading experience). Additionally, for readers on slow internet connections, you may want to consider reading the speed-optimized copy of this article [here](https://nitro.barrowclift.me/article/third-annual-ios-music-player-showcase).
 

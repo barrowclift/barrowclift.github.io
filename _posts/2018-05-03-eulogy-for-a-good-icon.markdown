@@ -9,21 +9,14 @@ categories:
     - macOS
     - Design
     - Best Of
-image: "eulogy-for-a-good-icon/share-image.jpg"
+image: "eulogy-for-a-good-icon/share.jpg"
 
 article:
     show-stamp: false
 card:
-    background:
-        color: "hsl(22, 72%, 75%)"
-        hue: "22"
-        saturation: "72%"
-        lightness: "75%"
-    foreground:
-        color: "hsl(343, 11%, 24%)"
-        hue: "343"
-        saturation: "11%"
-        lightness: "24%"
+    image: "eulogy-for-a-good-icon/card"
+    background-color: "hsl(22, 72%, 75%)"
+    foreground-color: "hsl(343, 11%, 24%)"
 ---
 
 <style>
@@ -45,8 +38,6 @@ Tower 2 didn't just provide a suburb user experience, it also dazzled with a gor
 <div markdown="1" class="inline shadow">
 ![]({{ site.dropbox }}/eulogy-for-a-good-icon/tower-2-icon-with-yosemite-background.jpg)
 </div>
-
-<!--break-->
 
 Naturally, when Tower 3's public beta was [announced][Tower 3 Announcement Page], I eagerly anticipated not only the upcoming features but also whatever exciting refresh the brand would receive. The [beta signup page][Tower 3 Beta Page] indicated a bold new direction (underwater air control tower?), but one that I was overall onboard with. Sure, the new concept didn't make much real-world sense, but it was fun! It left me filled with optimistic hope that Tower 3 would feature a great new icon.
 

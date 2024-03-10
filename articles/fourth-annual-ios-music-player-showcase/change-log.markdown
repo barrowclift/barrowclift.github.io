@@ -7,7 +7,7 @@ force-early-timelock: true
 
 excerpt: |
     Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
-image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
 
 continuation:
     start-page: "/articles/fourth-annual-ios-music-player-showcase"

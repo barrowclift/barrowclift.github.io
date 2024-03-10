@@ -9,7 +9,16 @@ categories:
     - Technology
     - Services
     - Photos
-image: "lossless-photo-sharing/share-image.jpg"
+image: "lossless-photo-sharing/share.jpg"
+card:
+    light:
+        image: "lossless-photo-sharing/light-card"
+        background-color: "hsl(80, 27%, 98%)"
+        foreground-color: "hsl(0, 0%, 16%)"
+    dark:
+        image: "lossless-photo-sharing/dark-card"
+        background-color: "hsl(240, 4%, 10%)"
+        foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <figure markdown="1" class="edge-to-edge small">
@@ -20,8 +29,6 @@ My mom sent me an email recently asking for advice sending a couple photos to a 
 
 <a id="resume-from-break"></a>
 To combat this absurdly complicated productscape, I've compiled what I personally believe to be the best services for losslessly share photos with friends and family, separated into two tiers based on the volume of photos being shared. Regrettably, two categories are necessary since there's currently no "cure-all" product or service that's the absolute *best* option for sharing arbitrary amounts of pictures; some are wonderful for a picture or two, while others shine best for hundreds. Like many things in life, it's all about knowing which tools to use for the job.
-
-<!--break-->
 
 Sharing A Handful of Pictures
 -----------------------------

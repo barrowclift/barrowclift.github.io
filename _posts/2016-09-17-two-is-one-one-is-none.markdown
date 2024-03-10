@@ -11,27 +11,23 @@ categories:
     - Windows
     - Backups
     - Best Of
-image: "two-is-one-one-is-none/share-image.jpg"
+image: "two-is-one-one-is-none/share.jpg"
 
 card:
-    background:
-        color: "hsl(0, 0%, 100%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "100%"
-    foreground:
-        color: "hsl(0, 0%, 12%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "12%"
+    light:
+        image: "two-is-one-one-is-none/light-card"
+        background-color: "hsl(80, 27%, 98%)"
+        foreground-color: "hsl(0, 0%, 16%)"
+    dark:
+        image: "two-is-one-one-is-none/dark-card"
+        background-color: "hsl(240, 4%, 10%)"
+        foreground-color: "#E9E9E9"
 ---
 
 Your computer is priceless. It doesn't matter whether or not you have a new top-of-the-line desktop or an ancient, eight-year-old clunker, these computers are priceless not because of their specs but because of the data entrusted to their care. Nowadays, we trust our computers not only with memories such as baby pictures and wedding videos but also files critical to our livelihoods like personal projects and art portfolios. This data is more than just computer files, it's an extension of ourselves: our memories, our livelihoods, our lives. This data, *your* data, is precious.
 
 <a id="resume-from-break"></a>
 Yet I generally do not see this importance manifesting in protective action. From observing individuals breaking down at the Apple Store when they discover their family photos are lost forever to witnessing an artist and personal friend lose their entire life's works, I've sadly also seen the consequences of neglecting such action. Depending on your response to the following question, it's not a matter of *if* you'll share a similar fate, but *when*: Do you back up your devices?
-
-<!--break-->
 
 I've learned the value of doing so not just from observation but also from firsthand experience. Back when Apple released the then-new Apple Music service I quickly signed up without a second thought and turned on the option to [integrate my local iTunes library with my new iCloud Music Library](https://support.apple.com/en-us/HT204926). Big mistake.
 

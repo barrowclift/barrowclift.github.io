@@ -10,19 +10,12 @@ categories:
     - Organization
     - macOS
     - Best Of
-image: "back-to-the-mac/share-image.png"
+image: "back-to-the-mac/share.png"
 
 card:
-    background:
-        color: "hsl(183, 36%, 55%)"
-        hue: "183"
-        saturation: "36%"
-        lightness: "55%"
-    foreground:
-        color: "hsl(0, 0%, 100%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "100%"
+    image: "back-to-the-mac/card"
+    background-color: "hsl(183, 60%, 53%)"
+    foreground-color: "hsla(0, 0%, 100%, 0.95)"
 ---
 
 <style>
@@ -121,8 +114,6 @@ Unfortunately, this year's [macOS 10.13 "High Sierra"](https://arstechnica.com/g
 In light of this, I've decided to completely ignore whatever new hotness iOS got this year and instead shine the spotlight on the operating system that remains deeply important to millions of people's digital lifestyles (despite being continually sidelined by Cook's Apple). To give macOS the time it deserves, I'm sharing all the small but fantastic features I've picked up over these ten years that help make macOS the finest desktop operating system available.
 
 For those wanting to jump right in, I've sorted the features by importance; the topmost sections are must know, while the bottommost ones are just curious oddities. You can click on any individual features that interest you, or browse entire sections if you're feeling adventurous. Have fun exploring!
-
-<!--break-->
 
 #### I Wish I Had Known That Sooner <time>Things everyone with a Mac should know</time>
 

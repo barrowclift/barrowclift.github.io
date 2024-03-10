@@ -7,7 +7,16 @@ excerpt: |
 categories:
     - Programming
     - Technology
-image: "meaningful-names/share-image.jpg"
+image: "meaningful-names/share.jpg"
+card:
+    light:
+        image: "meaningful-names/light-card"
+        background-color: "hsl(0, 0%, 91%)"
+        foreground-color: "hsl(90, 6%, 7%)"
+    dark:
+        image: "meaningful-names/dark-card"
+        background-color: "hsl(0, 0%, 7%)"
+        foreground-color: "#EBF6FB"
 ---
 
 <figure markdown="1" class="edge-to-edge small">
@@ -18,8 +27,6 @@ Do you know what `magic()` means? How about `foo()`, what does that do? What abo
 
 <a id="resume-from-break"></a>
 Oftentimes, this is what it feels like as a developer when [reading code from the community](http://www.c2.com/cgi/wiki?BadVariableNames). Not all developers write code in this style, of course, but some do and it makes understanding the story they're trying to tell nigh impossible. Even the general public can sympathize with these feelings; you've no doubt seen "hackers" in shows or movies clacking away [alphabet vomit](http://www.hackertyper.com) and wondered to yourselves, "Who the blazes can actually read that?".
-
-<!--break-->
 
 <figure markdown="1" class="edge-to-edge shadow small">
 [![An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com]({{ site.dropbox }}/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg)](http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the)

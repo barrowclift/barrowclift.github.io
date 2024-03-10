@@ -10,7 +10,16 @@ categories:
     - Unix
     - macOS
     - Guides
-image: "making-terminal-better/banner-image.png"
+image: "making-terminal-better/share.jpg"
+card:
+    light:
+        image: "making-terminal-better/light-card"
+        background-color: "hsl(0, 0%, 95%)"
+        foreground-color: "#000000"
+    dark:
+        image: "making-terminal-better/dark-card"
+        background-color: "hsl(0, 0%, 6%)"
+        foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <style>
@@ -31,8 +40,6 @@ Developers, I'm going to take a wild guess and assume that the vast majority of 
 
 <a id="resume-from-break"></a>
 So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a <span class="small-caps">GUI</span> we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
-
-<!--break-->
 
 Look and Feel
 -------------

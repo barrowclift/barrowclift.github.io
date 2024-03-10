@@ -9,6 +9,16 @@ categories:
     - iOS
     - Notifications
     - Best Of
+image: "notification-madness/share.jpg"
+card:
+    light:
+        image: "notification-madness/light-card"
+        background-color: "hsl(358, 100%, 53%)"
+        foreground-color: "#FFFFFF"
+    dark:
+        image: "notification-madness/dark-card"
+        background-color: "hsl(358, 100%, 53%)"
+        foreground-color: "#FFFFFF"
 ---
 
 What's the first thing you see when you use your iPhone? On a typical day you might wake your iPhone to a backlog of half a dozen or so notifications. Maybe you have three email notifications all of which aren't important, perhaps one or two from a free game you stopped playing months ago frantic to let you know about a new 99₵ character skin, or occasionally a twitter notification that another of the hundred thousand spam accounts has followed you. If you are fortunate you may notice somewhere in that wall of noise is a text from a loved one or an important calendar reminder.
@@ -17,8 +27,6 @@ What's the first thing you see when you use your iPhone? On a typical day you mi
 When you finish mentally parsing through the laundry list of unimportant notifications (or just ignore them out of exasperation) and finally unlock your iPhone you're probably greeted by a sea of red notification bubbles. Which ones are actually meaningful to you again? You can't remember. You think again that you really should just do whatever these apps want you to do so those obnoxious bubbles would all finally go away but the thought of going through them all (most of which you don't care about) is more trouble than it's worth so you ignore them instead to save yourself from further stress.
 
 This is a day in the life of the typical iPhone user and this hostile, stressful environment it creates is entirely avoidable. *It doesn't have to be this way*. Your lock and home screen can be a comforting place that knows what you care about like an old friend, let me show you how.
-
-<!--break-->
 
 Before We Begin
 ---------------

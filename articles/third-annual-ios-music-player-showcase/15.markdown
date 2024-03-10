@@ -5,7 +5,7 @@ timelocked: true
 
 excerpt: |
     Celebrating the diverse and exciting world of 2020’s iOS music players.
-image: "third-annual-ios-music-player-showcase/share-image.jpg"
+image: "third-annual-ios-music-player-showcase/share.jpg"
 
 continuation:
     base-title: "Third Annual iOS Music Player Showcase"

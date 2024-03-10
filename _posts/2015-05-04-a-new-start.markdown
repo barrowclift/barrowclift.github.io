@@ -1,6 +1,7 @@
 ---
 title: "A New Start"
 date: 2015-05-04 21:12:01
+update: 2024-03-09 12:57:24-0500
 
 excerpt: |
     All designers, even the accidental ones, have something special to share.
@@ -8,12 +9,21 @@ categories:
     - Design
     - Technology
     - Announcement
+card:
+    light:
+        background-color: "hsl(0, 0%, 96%)"
+        foreground-color: "#000000"
+    dark:
+        background-color: "hsl(0, 0%, 13%)"
+        foreground-color: "#FFFFFF"
 ---
 
-A friend of mine once told me software engineers shouldn't do design.
+A friend of mine once told me software engineers like myself shouldn't design.
 
 I don't believe that.
 
-Design is a powerful and important tool available to everyone. Making it out to be this exclusive club that software engineers, writers, and other creators can't and shouldn't participate in is harmful and short-sighted. Good design serves a deeper purpose than simply fulfilling its functional purpose (i.e. how it works). It serves as a key communication channel to express to your audience that you genuinely care about them and the quality of your work. Creators have every reason to want to communicate this care and respect to their audience and I believe that this desire should be respected.
+Claiming other passionate creators shouldn't participate in design is harmful and short-sighted. Good design serves a deeper purpose than simply fulfilling its functional purpose (i.e. how it works); it serves as a key channel to communicate to your audience that you genuinely care about the quality of the work you're presenting. Creators have every reason to additionally leverage this channel for their craft, and that desire should not only be respected, but *encouraged* by others in the community.
 
-This website, in addition sharing writings and other creations that celebrate the humanity in computing, will serve as a live demonstration of this point. All designers, even accidental ones like me, have something special to share with the world. Here's to the crazy ones, let's get started.
+This website's design, in addition to the writings and other creations within, serve as a live demonstration of this point. All designers, even unofficial ones like me, have something special to share with the world.
+
+[Here's to the crazy ones](https://www.youtube.com/watch?v=-z4NS2zdrZc), let's get started.

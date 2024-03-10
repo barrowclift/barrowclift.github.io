@@ -10,19 +10,17 @@ categories:
     - iOS
     - Design
     - Music
-image: "second-annual-ios-music-player-competition/share-image.jpg"
+image: "second-annual-ios-music-player-competition/share.jpg"
 
 card:
-    background:
-        color: "hsl(0, 0%, 100%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "100%"
-    foreground:
-        color: "hsl(0, 0%, 12%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "12%"
+    light:
+        image: "second-annual-ios-music-player-competition/light-card"
+        background-color: "hsl(0, 0%, 100%)"
+        foreground-color: "hsl(0, 0%, 12%)"
+    dark:
+        image: "second-annual-ios-music-player-competition/dark-card"
+        background-color: "hsl(0, 0%, 7%)"
+        foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <style>
@@ -62,8 +60,6 @@ My "deal-breaker" requirements mostly remained the same as well:
 * Large album art in the "Now Playing" view
 
 With the score sheet established, let's dive in.
-
-<!--break-->
 
 #### Table of Contents
 

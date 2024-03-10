@@ -10,7 +10,7 @@ categories:
     - iOS
     - Design
     - Music
-image: "third-annual-ios-music-player-showcase/share-image.jpg"
+image: "third-annual-ios-music-player-showcase/share.jpg"
 ---
 
 <style>

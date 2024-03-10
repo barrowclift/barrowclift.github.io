@@ -1,4 +1,5 @@
 ---
+type: project-update
 title: |
     We Made a Podcast!
 date: 2017-12-02 23:19:40
@@ -8,6 +9,10 @@ excerpt: |
 categories:
     - Announcement
 image: "we-made-a-podcast/podcast-cover-art.jpg"
+card:
+    image: "we-made-a-podcast/card"
+    background-color: "hsl(0, 0%, 13%)"
+    foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <div class="inline shadow">

@@ -9,7 +9,11 @@ categories:
     - Repair
     - iPod
     - Stories
-image: "restoring-my-ipod-video/share-image.jpg"
+image: "restoring-my-ipod-video/share.jpg"
+card:
+    image: "restoring-my-ipod-video/card"
+    background-color: "hsl(25, 63%, 24%)"
+    foreground-color: "hsl(202, 8%, 81%)"
 ---
 
 I still remember how thrilled I was the day I got my [iPod Touch](https://web.archive.org/web/20081201132411/http://www.apple.com:80/ipodtouch/)&mdash;or more specifically, how thrilled I was I could finally dump my old [iPod Video](https://en.wikipedia.org/wiki/IPod_Classic#5th_generation). Besides the strict technical upgrade, after four years of hard but loving use, my iPod Video was showing its age. The battery hardly lasted an hour on a single charge (even with the screen brightness turned completely down). The once-gloriously shiny metal back was now dull and dented, and the [infamously scratch-attractive screen](https://www.cnet.com/news/ipod-nano-special-report-scratches-how-to-protect-from-and-fix/) was even worse, transforming its contents into a dim and smudgy mess that no amount of polishing could fix. The 30GB storage that once seemed as endless was practically bursting at the seams.
@@ -30,8 +34,6 @@ I still remember how thrilled I was the day I got my [iPod Touch](https://web.ar
 So, with the new iPod Touch in hand, I retired my iPod Video to the great "old electronics" drawer in the sky and didn't look back.
 
 Until last month.
-
-<!--break-->
 
 As I touched on in my ["Why Vinyl"](/articles/why-vinyl) article, I believe focus has tremendous value. In a day and age where practically all content ever created is just a few taps away from instant consumption, it's practically impossible to sit down and truly enjoy any of it. Nowadays, I find myself incapable of sitting still and listening to music or watching a video. My hands absentmindedly move about refreshing Twitter, surfing reddit for [stale memes](https://i.redd.it/2tjcdf5wzv601.jpg), and all other sorts of time wasters that draw my attention away from whatever I originally set out to enjoy. I sometimes "snap back" only to find I couldn't even remember what three songs I just listened to, or what happened in the episode I was supposedly watching. There's simply too much self-inflicted mental noise.
 

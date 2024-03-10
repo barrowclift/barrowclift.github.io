@@ -9,7 +9,16 @@ categories:
     - Technology
     - iOS
     - watchOS
-image: "listing-the-little-things/share-image.jpg"
+image: "listing-the-little-things/share.jpg"
+card:
+    light:
+        image: "listing-the-little-things/light-card"
+        background-color: "hsl(210, 22%, 96%)"
+        foreground-color: "hsl(0, 0%, 0%)"
+    dark:
+        image: "listing-the-little-things/dark-card"
+        background-color: "hsl(0, 0%, 13%)"
+        foreground-color: "hsl(210, 22%, 96%)"
 ---
 
 As is tradition, with fresh versions of Apple's operating systems comes thousands of reviews and pop tabloids eager to cash in on the hype. While there's no shortage of trashy, Buzzfeed-style list "articles"[^buzzfeed], it's situations like this where lists (when implemented correctly and with respect to the reader) prove to be quite useful. There's four brand-new operating systems teeming with goodies, some of which may potentially never be discovered or utilized to their full potential. To help expose these otherwise obscure tidbits, I've compiled a short list of my favorite features and options from iOS 10 and watchOS 3[^where-is-macos].
@@ -32,8 +41,6 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
     <li><a href="#the-perfect-dock">The Perfect Dock - Optimizing your app choices to help create the perfect dock</a></li>
     <li><a href="#super-fast-dock-scrolling">Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster</a></li>
 </ul>
-
-<!--break-->
 
 ------------
 

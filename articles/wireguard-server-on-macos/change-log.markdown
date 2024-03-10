@@ -5,7 +5,7 @@ update: 2023-07-16 11:34:04-0400
 
 excerpt: |
     With this guide, you too can enjoy Wireguard VPN’s performance and security on macOS.
-image: "wireguard-server-on-macos/share-image.jpg"
+image: "wireguard-server-on-macos/share.jpg"
 
 continuation:
     base-title: "Wireguard Server on macOS"

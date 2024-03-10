@@ -8,7 +8,16 @@ categories:
     - Technology
     - Organization
     - macOS
-image: "tags-explained/share-image.jpg"
+image: "tags-explained/share.jpg"
+card:
+    light:
+        image: "tags-explained/light-card"
+        background-color: "hsl(0, 0%, 93%)"
+        foreground-color: "hsl(0, 0%, 14%)"
+    dark:
+        image: "tags-explained/dark-card"
+        background-color: "hsl(240, 3%, 15%)"
+        foreground-color: "hsl(0, 0%, 92%)"
 ---
 
 <figure markdown="1" class="inline">
@@ -18,8 +27,6 @@ image: "tags-explained/share-image.jpg"
 Over the past five years, you may have noticed a colorful array of dots appeared to decorate the otherwise reserved Finder sidebar. Those dots are part of a relatively new feature in macOS called [Tags](https://support.apple.com/en-us/HT202754). As the name suggests, this lets you tag files and folders in Finder with colored labels for organizational purposes.
 
 I had nothing but apathy for the feature. With macOS's benign default tags like "Red" and "Blue", I was left wondering what problem tags were even intended to solve. After all, what could colorful tags do that folders couldn't?
-
-<!--break-->
 
 ------
 
@@ -52,10 +59,10 @@ However, if we use tags instead, our situation quickly improves. There's no need
 <div markdown="1" class="edge-to-edge medium macos-window-screenshot">
 <p>
 <video controls preload="none" poster="{{ site.dropbox }}/tags-explained/tag-searching-poster.jpg" alt="A video of a macOS Finder window containing a folder filled with tagged web pages. The video depicts a user searching for web pages by the tags 'Professional', 'Colorful' and 'Typography'">
-	<source src="{{ site.dropbox }}/tags-explained/tag-searching.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/tags-explained/tag-searching.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/tags-explained/tag-searching.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
+    <source src="{{ site.dropbox }}/tags-explained/tag-searching.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/tags-explained/tag-searching.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/tags-explained/tag-searching.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
 </video>
 </p>
 </div>

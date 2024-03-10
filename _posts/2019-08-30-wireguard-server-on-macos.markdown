@@ -13,21 +13,14 @@ categories:
     - Unix
     - Guides
     - Best Of
-image: "wireguard-server-on-macos/share-image.jpg"
+image: "wireguard-server-on-macos/share.jpg"
 
 article:
     show-stamp: false
 card:
-    background:
-        color: "hsl(354, 100%, 15%)"
-        hue: "354"
-        saturation: "100%"
-        lightness: "15%"
-    foreground:
-        color: "hsl(0, 0%, 100%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "100%"
+    image: "wireguard-server-on-macos/card"
+    background-color: "hsl(354, 100%, 15%)"
+    foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <div class="admonition">
@@ -53,8 +46,6 @@ Unfortunately, that's the situation I found myself in with macOS when attempting
 Despite numerous attempts over the months, my Google-fu yielded no results, either. While there were plenty of [help articles](https://medium.com/@headquartershq/setting-up-wireguard-on-a-mac-8a121bfe9d86) from others setting up Wireguard on macOS, every single one of them was for setting up a Wireguard *peer* on macOS. This peer was always intended to only connect to a Wireguard server on more common platforms like [Ubuntu](https://ubuntu.com) or [CentOS](https://www.centos.org), never the other way around.
 
 However, from my on-and-off research over these past few months I've finally cobbled together a solution that's working. Thus, I intend to fill this hole in the community's growing collection of documentation and setup guides: here's what you need to do to get a Wireguard server running on macOS with full traffic routing and LAN access[^caveat].
-
-<!--break-->
 
 <ol>
   <li>Choose unused, local <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 4">IPv4</abbr> &amp; <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 6">IPv6</abbr> subnet ranges where Wireguard and the attached clients will reside. This way, we can ensure Wireguard won’t encounter unexpected IP collisions with other users or services on your <abbr title="Local Area Network">LAN</abbr> for either protocol. For this guide…

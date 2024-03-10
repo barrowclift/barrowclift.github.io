@@ -13,7 +13,7 @@ categories:
     - Design
     - Music
     - Best Of
-image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
 
 article:
     show-stamp: false

@@ -58,7 +58,7 @@ display:
 </style>
 
 <div class="row">
-    <div class="column w6 comfy">
+    <div class="column w6 comfy tight">
         <h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/social/images/me.png" /></h2>
 
         <h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full-stack developer</a> from Philly.</h4>
@@ -83,10 +83,10 @@ display:
             <li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
         </ul>
     </div>
-    <div class="column w6">
+    <div class="column w6 tight">
         <h2>Recent Work</h2>
 
-        <ul class="summary-list" style="margin-left: 0.365rem;margin-bottom:0;">
+        <ul class="summary-list" style="margin-left:0;margin-bottom:0;">
         {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
         {% assign maxNumberOfRecentWork=3 %}
         {% for post in recentWork %}

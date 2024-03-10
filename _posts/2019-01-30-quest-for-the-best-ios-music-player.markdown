@@ -4,16 +4,21 @@ date: 2019-01-30 22:16:47
 timelocked: true
 
 excerpt: |
-    My quest to find a niche app that’s unapologetically for people that love actively listening to and collecting music. Who will win?
+    My quest to find a niche app that’s unapologetically for people that love listening to and collecting music. Who will win?
 categories:
     - Technology
     - iOS
     - Design
     - Music
-image: "quest-for-the-best-ios-music-player/share-image.jpg"
+image: "quest-for-the-best-ios-music-player/share.jpg"
 
 article:
     show-stamp: false
+
+card:
+    image: "quest-for-the-best-ios-music-player/card"
+    background-color: "hsl(359, 65%, 74%)"
+    foreground-color: "hsl(288, 45%, 20%)"
 ---
 
 <style>
@@ -46,8 +51,6 @@ article:
 It's no secret I cherish music. That passion seeped not only into my physical library in the form of [vinyl records](post/why-vinyl) but also into my personal projects with the introduction of the [Bad Music Hertz](https://badmusichertz.com) website and podcast. It was only a matter of time until that same passion fueled a desire to find the perfect iOS music player.
 
 By "perfect" player, I do not simply mean the app most appealing to the widest audience, or even the most well-rounded app (if that's what you're looking for, [The Sweet Setup's article](https://thesweetsetup.com/apps/best-ios-music-app-replacement/) is fantastic). No, what I wished to find in my quest was a niche app that's unapologetically for people that love actively listening to and collecting music.
-
-<!--break-->
 
 To help guide my search, I wrote out specific features and design decisions I would look for. Those being:
 

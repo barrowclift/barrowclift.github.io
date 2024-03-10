@@ -1,4 +1,5 @@
 ---
+type: project-update
 title: "Bad Music Hertz is Finally Live"
 date: 2016-02-15 4:34:11
 

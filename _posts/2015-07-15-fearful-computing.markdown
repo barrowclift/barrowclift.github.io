@@ -12,19 +12,12 @@ categories:
     - Pokémon
     - Stories
     - Best Of
-image: "fearful-computing/share-image.jpg"
+image: "fearful-computing/share.jpg"
 
 card:
-    background:
-        color: hsl(207, 84%, 44%)"
-        hue: "207"
-        saturation: "84%"
-        lightness: "44%"
-    foreground:
-        color: "hsl(0, 0%, 99%)"
-        hue: "0"
-        saturation: "0%"
-        lightness: "99%"
+    image: "fearful-computing/card"
+    background-color: "hsl(213, 95%, 36%)"
+    foreground-color: "hsl(187, 95%, 85%)"
 ---
 
 When I was a child, I&mdash;like most American children in the late 1990's&mdash;spent nearly all my car travel time engrossed in the world of Pokémon. The game cleverly leveraged the social pressures of competitive collecting utilized in the past for baseball cards with cute, digital monsters. Children were incentivized to trade with friends to obtain the bragging rights of collecting all 151 monsters which not only meant the game had a pervasive presence on the playground but also ensured that most of their free time would then be spent preparing for those trades by catching as many Pokémon as possible.
@@ -39,8 +32,6 @@ The actual process of trading in particular has remained curiously vivid in my m
 Of course, this was never really an option. Doing so would not only jeopardize my game's progress but also cut me off socially from my peers. So I did what any child or adult does when forced into a situation they're afraid of; I insisted on complete control of the process. My fear of the unknown had taken form in an absurd set of requirements that must be followed during set-up and that only their strict adherence would guarantee the safety of my game save and monster during the trade. I had rationalized with myself that syncing up the in-game trade character's dialogue boxes on both Game Boys would somehow make them "see" each other more clearly and ensure a clear path of communication between them. It just seemed so natural to assume this cable connecting our Game Boys was a delicate, black magic ritual that I could easily break if I didn't set some silly, arbitrary set of obsessive rules to prevent. They were stupid, yes, but they made me *feel* like I was in control, it made me feel just barely comfortable enough with the concept in play to do the trade.
 
 I have no doubt this will prove humorous to most, but some of you may instead give pause and wonder why this sounds so strangely familiar...
-
-<!--break-->
 
 The Comfort-Zone Trap
 ---------------------

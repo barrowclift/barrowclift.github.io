@@ -471,6 +471,10 @@ summary {
     margin-left: -0.25em;
     margin-right: -0.25em;
 }
+.summary-list a {
+    margin-left: 0;
+    margin-right: 0;
+}
 main a,
 mark {
     padding-top: 0.1em;
@@ -930,6 +934,9 @@ button.pill:hover:active {
     .popular-articles .card .label .secondary {
         text-align: left;
     }
+    .popular-articles .card {
+        border-color: rgb(230, 230, 230);
+    }
 
 .card .content {
     padding-left: 5%;
@@ -971,6 +978,24 @@ button.pill:hover:active {
     .card .label .secondary {
         margin-top: 0.25em;
     }
+.card img {
+    border-radius: 0 !important;
+}
+.card h5 {
+    margin-bottom: 0;
+}
+.card .label .secondary {
+    line-height: 1.4em;
+}
+.card .label .primary {
+    font-weight: bold;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+}
+.card time {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 /* ----- DIVIDERS ----- */
@@ -1571,6 +1596,10 @@ figure.edge-to-edge.three-images.shadow {
     margin-bottom: 0;
     max-width: 2000px;
 }
+    .edge-to-edge.hero-banner img,
+    .edge-to-edge.hero-banner video {
+        border-radius: 0;
+    }
 .uml-flowchart, .uml-sequence-diagram {
     overflow-x: scroll;
     /* Momentum scrolling in iOS */
@@ -3089,6 +3118,13 @@ Font size: 21px, ~Margin&Padding: 31.5px
         border-radius: 0.25em;
     }
 }
+@media (min-width: 2001px) {
+    .edge-to-edge.hero-banner img,
+    .edge-to-edge.hero-banner video {
+        border-bottom-left-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;
+    }
+}
 
 
 /* LIGHT THEME ============================================================= */
@@ -3408,6 +3444,9 @@ html#dark {
     /*#dark .popular-articles .card .label {
         background-color: rgb(46, 46, 46);
     }*/
+    #dark .popular-articles .card {
+        border-color: rgb(36, 36, 36);
+    }
 #dark kbd,
 #dark table th {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));

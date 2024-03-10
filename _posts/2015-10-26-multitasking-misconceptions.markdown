@@ -10,7 +10,16 @@ categories:
     - iOS
     - macOS
     - Multitasking
-image: "multitasking-misconceptions/share-image.jpg"
+image: "multitasking-misconceptions/share.jpg"
+card:
+    light:
+        image: "multitasking-misconceptions/light-card"
+        background-color: "hsl(80, 27%, 98%)"
+        foreground-color: "hsl(0, 0%, 16%)"
+    dark:
+        image: "multitasking-misconceptions/dark-card"
+        background-color: "hsl(240, 4%, 10%)"
+        foreground-color: "#BABABA"
 ---
 
 It's inevitable, you'll be enjoying a friend's company and they decide to take out their iPhone to show you some new pictures.  You both share a good laugh or two over them and as they begin to put their iPhone away you notice something strange; just before putting it away they [force quit](https://support.apple.com/en-us/HT201330) the app they just used with the familiar upward swipe, leaving their [multitasking list](https://support.apple.com/en-us/HT202070) barren. When questioned about their reason for doing so they brush it off saying something about wanting to save battery or not slow down their iPhone.
@@ -19,8 +28,6 @@ Perhaps you're the friend in this scenario force quitting iOS apps as an act of 
 
 <a id="resume-from-break"></a>
 In reality this results in the exact opposite of the intended effect and not only slows down app launching in the future but also drains battery that would have otherwise been preserved had the apps been left alone. Now this most likely sounds preposterous and it's entirely because iOS's multitasking model flies in the face of everything people have been taught for decades to be true about how computers work. In many ways the "quit apps when you're done" workflow was and __still remains__ the correct action to do on computers. iPhones, however, are a different story.
-
-<!--break-->
 
 OS X Multitasking
 -----------------

@@ -9,7 +9,16 @@ categories:
     - iOS
     - Home Screen
     - Organization
-image: "home-sweet-home/share-image.jpg"
+image: "home-sweet-home/share.jpg"
+card:
+    light:
+        image: "home-sweet-home/light-card"
+        background-color: "#EEEEEE"
+        foreground-color: "hsl(0, 0%, 16%)"
+    dark:
+        image: "home-sweet-home/dark-card"
+        background-color: "#1A1A1A"
+        foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 What's your iPhone home screen look like? Perhaps you have a few default apps from when you first bought your iPhone like Camera and Clock still taking up a couple rows on your first page. Or maybe you have that one game still sitting on your dock that was really popular a couple months ago but you've mostly stopped playing. Some of you might have half a dozen pages of apps while others might have a dozen folders strewn about like they were accidentally dropped in.
@@ -22,8 +31,6 @@ You might be thinking "Sure, I've got lots of pages, a handful of old apps I don
 
 <a id="resume-from-break"></a>
 The core problem with poorly organized home screens &mdash; whether you believe you're used to them or not &mdash; is they require wasted swipe and tap cycles to navigate to your most commonly used apps. For example, you'd swipe to a specific page, tap on a specific folder, or (in worst case scenarios) swipe to a specific page of a specific folder after swiping to a specific page to get to your app instead of *just tapping it*. Yikes. Not to worry though, with just a few minutes of proper thought and execution this can all be a thing of the past.
-
-<!--break-->
 
 Let's Begin With Spring Cleaning
 --------------------------------
