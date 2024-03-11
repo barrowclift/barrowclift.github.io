@@ -7,3 +7,5 @@ excerpt: |
     Version 12 “Home Run” of my website is live, featuring a refreshed home page and visual refinements.
 link: https://github.com/barrowclift/barrowclift.github.io
 ---
+
+Version 12 "Home Run" of my website is live, featuring a refreshed home page and visual refinements.

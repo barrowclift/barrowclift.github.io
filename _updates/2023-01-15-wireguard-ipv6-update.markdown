@@ -7,3 +7,5 @@ excerpt: |
     The “Wireguard Server on macOS” guide now details how to set up a server supporting both IPv4 &amp; IPv6 connections."
 link: /articles/wireguard-server-on-macos
 ---
+
+The "Wireguard Server on macOS" guide now details how to set up a server supporting both IPv4 & IPv6 connections.

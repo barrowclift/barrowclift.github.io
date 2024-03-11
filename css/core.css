@@ -840,7 +840,7 @@ menu header:hover #logo #logo-eye-opened,
     flex-flow: row wrap;
     align-items: flex-start;
     width: auto;
-    max-width: 60em;
+    max-woidth: 33em;
     gap: 1.3em;
 }
 .flex main .card,
@@ -2395,6 +2395,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     }
     .flex main {
         padding-top: 6em;
+        max-width: 60em;
     }
     @supports(padding: max(5%, env(safe-area-inset-left))) {
         .flex main {

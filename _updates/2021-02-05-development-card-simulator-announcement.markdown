@@ -7,3 +7,5 @@ excerpt: |
     A virtual “Settlers of Catan” development card deck for balanced, remote gaming.
 link: /projects/code/development-card-simulator/
 ---
+
+A virtual "Settlers of Catan" development card deck for balanced, remote gaming.

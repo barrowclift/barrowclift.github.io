@@ -38,19 +38,13 @@ display:
 
         <h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full-stack developer</a> from Philly.</h4>
 
-        <h4>I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="{{ site.baseurl }}/projects/">faff about with personal projects</a> in my free time.</h4>
+        <h4 style="line-height:1.4em">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="{{ site.baseurl }}/projects/">faff about with personal projects</a> in my free time.</h4>
 
-        <h4><a href="{{ site.baseurl }}/about/">More About Me…</a></h4>
-
-        <!-- <ul class="button-group left autosize">
-            <li><a href="{{ site.baseurl }}/contact/"><p class="button">Contact</p></a></li>
-        </ul> -->
+        <h4 style="line-height:1.4em"><a href="{{ site.baseurl }}/about/">Click here to read more…</a></h4>
 
         <h2>Occupation</h2>
 
         <h4 style="line-height:1.4em">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
-
-        <!-- <h4>This past year, I helped build the backend that powers the groundbreaking <a href="https://www.sky.com/glass">Sky Glass</a>.</h4> -->
 
         <h4 style="line-height:1.4em">My studio is open for consultant work and employment offers.</h4>
 
@@ -64,8 +58,12 @@ display:
         <ul class="summary-list" style="margin-left:0;margin-bottom:0;">
         {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
         {% assign maxNumberOfRecentWork=3 %}
+        {% assign numberOfRecentWorkFound=0 %}
         {% for post in recentWork %}
-            {% if forloop.index0 >= maxNumberOfRecentWork %}
+            {% if post.title == "Updates" %}
+                {% continue %}
+            {% endif %}
+            {% if numberOfRecentWorkFound >= maxNumberOfRecentWork %}
                 {% break %}
             {% endif %}
             <li>
@@ -90,8 +88,12 @@ display:
                     {% endif %}
                 </a>
             </li>
+            {% assign numberOfRecentWorkFound = numberOfRecentWorkFound | plus: 1 %}
         {% endfor %}
         </ul>
+        <h4 style="text-align: right; margin-top: 0.707em;">
+            <a href="/updates">More updates…</a>
+        </h4>
     </div>
     <a rel="me" href="https://mastodon.social/@barrowclift" style="display:none !important;"></a>
 </div>

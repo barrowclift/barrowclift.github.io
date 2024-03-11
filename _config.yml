@@ -28,8 +28,7 @@ kramdown:
 
 collections:
   updates:
-    output: false
-    sort_by: lesson
+    output: true
 
 defaults:
   -

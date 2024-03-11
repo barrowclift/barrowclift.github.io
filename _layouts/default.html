@@ -63,6 +63,8 @@ Currently used for:
 				<main>
 					{% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
 					{% include article.html %}
+					{% elsif page.type == "project-update" or page.type == "article-update" %}
+					{% include update.html %}
 					{% else %}
 					{{ content }}
 					{% include footer.html %}

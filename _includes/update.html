@@ -1,28 +1,4 @@
 <article>
-	{% if page.article.banner-image or page.article.light-banner-image or page.article.dark-banner-image %}
-		{% if page.article.banner-image %}
-		<div class="edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.banner-image }}.webp">
-		  <img type="image/jpeg" title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.article.banner-image }}.jpg">
-		</picture>
-		</div>
-		{% else %}
-		<div class="show-when-light edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.light-banner-image }}.webp">
-		  <img type="image/jpeg" title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.article.light-banner-image }}.jpg">
-		</picture>
-		</div>
-		<div class="show-when-dark edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.dark-banner-image }}.webp">
-		  <img type="image/jpeg" title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}" src="{{ site.dropbox }}/{{ page.article.dark-banner-image }}.jpg">
-		</picture>
-		</div>
-		{% endif %}
-	{% endif %}
-
 	{% include header.html %}
 
 	{% if page.timelocked %}
