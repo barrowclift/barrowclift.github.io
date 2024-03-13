@@ -7,19 +7,19 @@ title: "Updates"
 <ul class="summary-list" style="margin-left: 0;">
 {% assign updates = site.updates | sort: "date" | reverse %}
 {% for update in updates %}
-	{% if update.type != "project-update" and update.type != "article-update" %}
-		{% continue %}
-	{% endif %}
-	<li>
-	    <a href="{{ update.url | prepend: site.baseurl | replace: '//', '/' }}">
-	        <h3 class="header">
-            	<time itemprop="dateCreated">{% if update.type == "article-update" %}<mark class="tag blue">Article</mark>{% elsif update.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ update.date | date: "%B %-d, %Y" }}</time>
-            	{{ update.title }} {% if update.link and update.link contains "http" %}↦{% endif %}
-	        </h3>
-	        <p>
-	            {{ update.excerpt }}
-	        </p>
-	    </a>
-	</li>
+    {% if update.type != "project-update" and update.type != "article-update" %}
+        {% continue %}
+    {% endif %}
+    <li>
+        <a href="{{ update.url }}">
+            <h3 class="header">
+                <time itemprop="dateCreated">{% if update.type == "article-update" %}<mark class="tag blue">Article</mark>{% elsif update.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ update.date | date: "%B %-d, %Y" }}</time>
+                {{ update.title }} {% if update.link and update.link contains "http" %}↦{% endif %}
+            </h3>
+            <p>
+                {{ update.excerpt }}
+            </p>
+        </a>
+    </li>
 {% endfor %}
 </ul>

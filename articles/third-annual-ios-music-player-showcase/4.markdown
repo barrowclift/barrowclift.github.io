@@ -17,51 +17,51 @@ continuation:
 ## !["Cs" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/icon.png '"Cs" iOS app icon'){: .inline-app-icon } Cs
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.webp">
-  <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
-</picture>
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.webp">
-  <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.webp">
+            <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
+        </picture>
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.webp">
+            <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.webp">
-  <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
-</picture>
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.webp">
-  <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.webp">
+            <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.webp">
+            <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/cs-classic-music-player/id924491991">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/cs-classic-music-player/id924491991">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Following a [tumultuous development cycle last year](/articles/second-annual-ios-music-player-competition#--cs), Cs 6 is now finally available. This comes as quite the surprise to me; for those unaware, what was originally intended to be Cs 6 nearly released back in 2019. During its public beta, Cs's devoted userbase panned its radical redesign and new customization features. The beta's backlash was so severe it forced Cs's developer—[Mike Clay](https://twitter.com/CsMusicPlayer)—to [backpedal](https://twitter.com/CsMusicPlayer/status/1177628272617754624), redevelop the Cs 6 update from scratch, and spin off the bounced Cs 6 beta as a brand new music player called [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850). As a fan of the Cs 6 beta, this left me worried about Cs's future; I predicted this spinoff player would remain Mike's focus, leaving Cs in mere maintenance mode forever catering to that vocal segment of its user base.
@@ -69,31 +69,31 @@ Following a [tumultuous development cycle last year](/articles/second-annual-ios
 My prediction turned out wildly inaccurate; Mike did indeed go back to the drawing board and release a new Cs 6 update, this time with a more restrained approach that was much more positively received. In retrospect, it appears obvious why this year's Cs 6 won the hearts of detractors where last year's Cs 6 beta (now SongOwl) failed; the original beta introduced many foundational changes—such as "Paths"—that made the beta both a visual *and* functional redesign. In contrast, this year's Cs 6 release features relatively restrained visual refinements such as a new grid view option and tasteful player view redesign, but not many functional additions or changes. Save for the promotion of the old search tab bar item to a universal menu button, Cs 6 works identically to its previous major release, which I suspect explains the positive reception over the original SongOwl approach.
 
 <figure class="two-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
-  <img type="image/jpeg" title="Cs 5 screenshot in light mode" alt="Image of Cs 5 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
-  <img type="image/jpeg" title="Cs 6 screenshot in light mode" alt="Image of Cs 6 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
-  <img type="image/jpeg" title="Cs 5 screenshot in dark mode" alt="Image of Cs 5 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
-  <img type="image/jpeg" title="Cs 6 screenshot in dark mode" alt="Image of Cs 6 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.jpg">
-</picture>
-</a>
-<figcaption>Cs 5 screenshot on the left, Cs 6 (current) screenshot on the right.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
+            <img type="image/jpeg" title="Cs 5 screenshot in light mode" alt="Image of Cs 5 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
+            <img type="image/jpeg" title="Cs 6 screenshot in light mode" alt="Image of Cs 6 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
+            <img type="image/jpeg" title="Cs 5 screenshot in dark mode" alt="Image of Cs 5 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
+            <img type="image/jpeg" title="Cs 6 screenshot in dark mode" alt="Image of Cs 6 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.jpg">
+        </picture>
+    </a>
+    <figcaption>Cs 5 screenshot on the left, Cs 6 (current) screenshot on the right.</figcaption>
 </figure>
 
 Note the side-by-side comparison above; Cs 6's screenshot on the right is clearly the same app, yet it contains plenty of visual tweaks. The redesign is shallow, but its breadth is extensive; mystery meat buttons are now human-friendly, labeled buttons, the mini-player now features rounded corners and space-efficient use of its whitespace for the progress indicator, and the previously prema-visible alphabet scroller on the right now intelligently reveals itself upon scroll. Despite these and many more changes not covered, each are relatively small and the overall experience still *feels* like Cs, only a more refined and modern take.
@@ -101,43 +101,43 @@ Note the side-by-side comparison above; Cs 6's screenshot on the right is clearl
 Arguably, the new player view design is the most prominent change in Cs 6. The new design features a thick progress bar—much like the original Cs 6 beta did—but this time also featuring a dynamic color theme that uses prominent colors from the current track's art. As with dynamic color theme effects featured in [Doppler 2] and [Power Player], the effect is naturally hit and miss; while in my testing the result is always readable and functional, the color extraction algorithm yields noticeably more boring results for some album art than others, particularly in light mode. Observe the screenshots below; "light" theme variants tend to choose a rather plain, pure white background, while their "dark" theme equivalents are typically more dynamic and exciting with more interesting primary, secondary, and background color choices.
 
 <figure class="three-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
-  <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
-  <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
-  <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
-  <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
-  <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
-  <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.jpg">
-</picture>
-</a>
-<figcaption>To compare the light & dark mode variants, click the <kbd><span><span class="small-caps">A</span>A</span></kbd> button in the menu and toggle between this site’s light & dark mode.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
+            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
+            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
+            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
+            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
+            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
+            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.jpg">
+        </picture>
+    </a>
+    <figcaption>To compare the light & dark mode variants, click the <kbd><span><span class="small-caps">A</span>A</span></kbd> button in the menu and toggle between this site’s light & dark mode.</figcaption>
 </figure>
 
 In spite of my gripes with the suboptimal dynamic theme results in certain cases, the Cs 6 redesign is a tremendous success. It manages to make Cs feel fresh and modern on iOS 14 while continuing to satisfy the angry, vocal sect of Cs's user base that previously protested the radical, functional changes in the original beta. Balancing such discrepant needs across a user base is tremendously difficult to accomplish, and Cs 6 does so with poise and grace. To take feedback in stride and try again from scratch like Mike did with Cs 6 during the beta period takes humility; it's a mark of a great engineer and deserves recognition.
@@ -151,20 +151,22 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While Cs supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, the new approach is not to my taste.</em></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>It’s a phoned-in, scaled version of the iPhone app, but it’s functional.</em></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>While certainly unique and more fun than all previous player designs featured in Cs, the effect yields somewhat inconsistent results; the light mode results tend to be a bit plain.</em></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can customize the tab bar to make “Albums” your first tab bar item and now even display its contents in a grid view.</em><ul class="bare-list">
-  <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view properly sorts albums for any particular artist, this option is unfortunately not available in the “Albums” view.</em></li>
-  <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
-</ul></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>My only big disappointment with Cs this year. I was hoping to at least see a “Recently Added” widget or in-app collection in Cs 6.</em></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While Cs supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, the new approach is not to my taste.</em></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>It’s a phoned-in, scaled version of the iPhone app, but it’s functional.</em></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>While certainly unique and more fun than all previous player designs featured in Cs, the effect yields somewhat inconsistent results; the light mode results tend to be a bit plain.</em></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can customize the tab bar to make “Albums” your first tab bar item and now even display its contents in a grid view.</em>
+            <ul class="bare-list">
+                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view properly sorts albums for any particular artist, this option is unfortunately not available in the “Albums” view.</em></li>
+                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>My only big disappointment with Cs this year. I was hoping to at least see a “Recently Added” widget or in-app collection in Cs 6.</em></li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -172,37 +174,37 @@ None.
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li>Cs</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li>Cs</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Doppler 2]: https://apps.apple.com/app/doppler-2-music-player/id1468459747

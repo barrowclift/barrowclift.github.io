@@ -123,44 +123,44 @@ Want the best optimized iPad experience?
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Recommendations</strong></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><strong>Recommendations</strong></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 -----

@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html class="{% if page.display.flex == true %}flex{% endif %} {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %} {% if page.design.oled == true %}oled{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
-	
+    
 <!--
 The standard website layout. Includes all the site's standard chrome.
 
-Settings:
-  flex (bool): Enable or disable flexbox. Defaults to "false"
-
-Currently used for:
-  /
-  /404
-  /articles/
-  /about/
-  /about/shoutouts/
-  /archive/
-  /articles/
-  /contact/
-  /projects/
+Currently used for pages such as:
+    /
+    /404
+    /articles/
+    /about/
+    /about/shoutouts/
+    /archive/
+    /articles/
+    /contact/
+    /projects/
 -->
 
-	{% include head.html %}
+    {% include head.html %}
 
-	<body>
-		{% if page.backdrop-image %}
-		<style>
-			.backdrop {
-				background-image: url('{{ page.backdrop-image }}');
-				background-position: center;
-				background-size: cover;
-				opacity: 0.05;
-			}
-			@supports (filter: blur(25px)) {
-				.backdrop {
-					-webkit-filter: blur(25px);
-					-moz-filter: blur(25px);
-					-o-filter: blur(25px);
-					-ms-filter: blur(25px);
-					filter: blur(25px);
-				}
-			}
-			#dark .backdrop {
-				opacity: 0.1;
-			}
-		</style>
-		{% endif %}
-		{% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
-		<style>
-		@media (min-width: 700px) {
-			.float-menu-for-hiding menu.hide-for-small-device,
-			menu.hide-for-medium-and-larger-devices {
-				opacity: 0;
-				pointer-events: none;
-			}
-		}
-		</style>
-		{% endif %}
-		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
+    <body>
+        {% if page.backdrop-image %}
+            <style>
+                .backdrop {
+                    background-image: url('{{ page.backdrop-image }}');
+                    background-position: center;
+                    background-size: cover;
+                    opacity: 0.05;
+                }
+                @supports (filter: blur(25px)) {
+                    .backdrop {
+                        -webkit-filter: blur(25px);
+                        -moz-filter: blur(25px);
+                        -o-filter: blur(25px);
+                        -ms-filter: blur(25px);
+                        filter: blur(25px);
+                    }
+                }
+                #dark .backdrop {
+                    opacity: 0.1;
+                }
+            </style>
+        {% endif %}
+        {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+            <style>
+            @media (min-width: 700px) {
+                .float-menu-for-hiding menu.hide-for-small-device,
+                menu.hide-for-medium-and-larger-devices {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+            </style>
+        {% endif %}
+        <div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
 
-		<div id="wrap">
-			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
-				{% include menu.html %}
-				<main>
-					{% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
-					{% include article.html %}
-					{% elsif page.type == "project-update" or page.type == "article-update" %}
-					{% include update.html %}
-					{% else %}
-					{{ content }}
-					{% include footer.html %}
-					{% endif %}
-				</main>
-			</div>
-		</div>
-	</body>
+        <div id="wrap">
+            <div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
+                {% include menu.html %}
+                <main>
+                    {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+                        {% include article.html %}
+                    {% elsif page.type == "project-update" or page.type == "article-update" %}
+                        {% include update.html %}
+                    {% else %}
+                        {{ content }}
+                        {% include footer.html %}
+                    {% endif %}
+                </main>
+            </div>
+        </div>
+    </body>
 </html>

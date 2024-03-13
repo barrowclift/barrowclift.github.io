@@ -459,6 +459,9 @@ figure > a,
 .ios-screenshot > a {
     text-decoration: none;
 }
+.app-download a:hover {
+    background-color: transparent !important;
+}
 main a,
 .anchor,
 summary {

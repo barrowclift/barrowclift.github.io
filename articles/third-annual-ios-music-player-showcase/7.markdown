@@ -17,39 +17,39 @@ continuation:
 ## !["Dot Music" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/icon.png '"Dot Music" iOS app icon'){: .inline-app-icon } Dot Music
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with light theme" title="Demonstrating 'Dot Music' usage with light theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
-![Image of "Dot Music" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-album-view.jpg '"Dot Music" light theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-now-playing.jpg">
-![Image of "Dot Music" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-now-playing.jpg '"Dot Music" light theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with light theme" title="Demonstrating 'Dot Music' usage with light theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
+        ![Image of "Dot Music" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-album-view.jpg '"Dot Music" light theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-now-playing.jpg">
+        ![Image of "Dot Music" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-now-playing.jpg '"Dot Music" light theme player view')
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with dark theme" title="Demonstrating 'Dot Music' usage with dark theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
-![Image of "Dot Music" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg '"Dot Music" dark theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-now-playing.jpg">
-![Image of "Dot Music" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-now-playing.jpg '"Dot Music" dark theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with dark theme" title="Demonstrating 'Dot Music' usage with dark theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
+        ![Image of "Dot Music" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg '"Dot Music" dark theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-now-playing.jpg">
+        ![Image of "Dot Music" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-now-playing.jpg '"Dot Music" dark theme player view')
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/dot-music-player/id1510755057">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Among the few new players introduced this year is [Dot Music], an incredibly simple, general-purpose player. Much like [Picky] and [Cs 5], it leverages a "no-nonsense" interface that's strongly reminiscent of [iOS 6's Music.app](https://www.macworld.com/article/2009048/hands-on-with-ios-6-music.html), but in this case provides little else novel beyond that. 
@@ -61,31 +61,31 @@ Dot Music's settings are sparse, providing some minor configuration options to a
 That covers it; there's so little of interest here I'm quite frankly at a loss of what else to say. It's the only player on this list I'd feel comfortable calling a rip-off, in this case of Cs's original [5.0 design](http://web.archive.org/web/20201112014148/https://apps.apple.com/app/cs-music-player/id924491991) from last year. In fact, Dot Music is so visually similar to Cs 5 I'm not sure I could distinguish one from the other at a moment's glance, given the same accent color.
 
 <figure class="two-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
-  <img type="image/jpeg" alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.webp">
-  <img type="image/jpeg" alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
-  <img type="image/jpeg" alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.webp">
-  <img type="image/jpeg" alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
-</picture>
-</a>
-<figcaption>One is Dot Music, the other is Cs 5. Can you tell which was which at a glance? I sure couldn’t.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
+            <img type="image/jpeg" alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.webp">
+            <img type="image/jpeg" alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
+            <img type="image/jpeg" alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.webp">
+            <img type="image/jpeg" alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
+        </picture>
+    </a>
+    <figcaption>One is Dot Music, the other is Cs 5. Can you tell which was which at a glance? I sure couldn’t.</figcaption>
 </figure>
 
 One could argue that general-purpose players will naturally look and behave the same, but I reject that premise; there are plenty of general-purpose players, but [Power Player], [Picky], [Cs], and others all brought their own wildly unique voices and feature sets to the table for their initial releases despite all sharing the same, general-purpose goal. Dot Music did not. I'm not exactly sure what problem Dot Music is trying to solve, and I'm not entirely sure it does, either.
@@ -95,55 +95,55 @@ One could argue that general-purpose players will naturally look and behave the 
 Dot Music provides two widget collections to choose from with a single size variation for each.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png)
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png)
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png)
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png)
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
+        </a>
+    </div>
 </div>
 
 Compared to the widgets provided by other players, Dot Music's "Now Playing" widget collection leaves a lot to be desired. While the square "Now Playing" widget is perfectly fine, the rectangle widget does nothing to justify its larger size. While other players fill the extra space either with more metadata or playback controls (in [Albums] case, [even both](/articles/third-annual-ios-music-player-showcase/3#widgets)), all Dot Music does is stretch the widget box to fill the extra space. The example above demonstrates this issue, the entire right section of the larger widget is an empty void of sadness where interesting things *could* be shown.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png)
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png)
+        </a>
+    </div>
 </div>
 
 Then, there's Dot Music's "Favorites" widgets, which display the albums you've favorited in the app. The widget can be customized to either immediately begin playing tapped albums or shoot you to that particular album's view in the app. You can also adjust the number of columns displayed in the large widget, but curiously this option is absent for its smaller counterpart. Unfortunately, neither have an option to show the album title.
@@ -151,20 +151,22 @@ Then, there's Dot Music's "Favorites" widgets, which display the albums you've f
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-<li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
-<li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-<li><span class="bullet">:x:</span> <strong>Album-focused features</strong><ul class="bare-list">
-    <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
-</ul></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
+            <ul class="bare-list">
+                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
+                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -172,37 +174,37 @@ Then, there's Dot Music's "Favorites" widgets, which display the albums you've f
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li>Dot Music</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li>Dot Music</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Cs]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986

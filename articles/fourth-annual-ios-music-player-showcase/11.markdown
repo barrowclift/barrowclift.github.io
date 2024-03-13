@@ -30,39 +30,39 @@ continuation:
 ## ![Longplay's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/icon.png "Longplay's iOS app icon"){: .inline-app-icon } Longplay
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage-poster.jpg" alt="Video demonstrating Longplay's usage in light mode" title="Demonstrating Longplay's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
-  <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage-poster.jpg" alt="Video demonstrating Longplay's usage in light mode" title="Demonstrating Longplay's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
+            <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage-poster.jpg" alt="Video demonstrating Longplay's usage in dark mode" title="Demonstrating Longplay's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
-  <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage-poster.jpg" alt="Video demonstrating Longplay's usage in dark mode" title="Demonstrating Longplay's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
+            <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/longplay/id1495152002">
-<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/longplay/id1495152002">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Longplay is a niche, album-focused player similar to [Vinyl Fetish] and [Albums]. The player is structurally simple to both; there is just a single, scrollable album grid that—upon revealing the menu with a swipe gesture—can be sorted or sized a myriad of different ways. That's the entire experience, there's no full-player, library browser, or even mini-player. You get a single album grid and different ways to sort or size the items in that grid, that's it.
@@ -90,31 +90,31 @@ The repeats from the sorting feature work exactly as you'd expect, but determine
 While I'm largely indifferent to the sorting options available in Longplay (all but the "Brightness" option are available or have rough equivalents in many other players), I'm quite fond of the new "Size By" option in principle, particularly for sizing albums by duration. It's one of the few things Longplay does better than [Albums]; Albums buckets records into separate menus by duration, but Longplay instead visually represents this duration with the size, making library scans by duration quick and incredibly intuitive. Although, as an unavoidable consequence of the dynamic nature of the "Size By" option, the bottom half of the album grid typically contains large swaths of haphazard blank spaces, and it looks absolutely terrible. If you've ever visited an image-rich website which failed to load its style sheet, that's more or less what Longplay's new "Size By" option looks like once you start scrolling down.
 
 <figure class="three-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
-  <img type="image/jpeg" title="Example 1 of poor Longplay layout results in light mode" alt="Image of Example 1 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
-  <img type="image/jpeg" title="Example 2 of poor Longplay layout results in light mode" alt="Image of Example 2 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
-  <img type="image/jpeg" title="Example 1 of poor Longplay layout results in dark mode" alt="Image of Example 1 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
-  <img type="image/jpeg" title="Example 2 of poor Longplay layout results in dark mode" alt="Image of Example 2 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.jpg">
-</picture>
-</a>
-<figcaption>This looks like something broke, not an expected result.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
+            <img type="image/jpeg" title="Example 1 of poor Longplay layout results in light mode" alt="Image of Example 1 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
+            <img type="image/jpeg" title="Example 2 of poor Longplay layout results in light mode" alt="Image of Example 2 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
+            <img type="image/jpeg" title="Example 1 of poor Longplay layout results in dark mode" alt="Image of Example 1 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
+            <img type="image/jpeg" title="Example 2 of poor Longplay layout results in dark mode" alt="Image of Example 2 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.jpg">
+        </picture>
+    </a>
+    <figcaption>This looks like something broke, not an expected result.</figcaption>
 </figure>
 
 Perhaps the most controversial aspect of Longplay's design isn't the choice to have a single, adjustable album grid, but rather the lack of dedicated full-player. Upon tapping an album in the grid to play, the album enlarges, a thick border surrounds the art, and a single pause button appears in the bottom-right corner of the art. That's as close as you get to a mini or full player in Longplay. There's no lyrics view, no skip/previous buttons, no track list, or anything else listeners have come to expect as music player staples. That means if you want to resume a partially completed record or accidentally tap and start another record in the grid, there's no way within Longplay to get back to your previous place, playback in Longplay **always** starts at the very beginning of the record. To me, this is the most egregious aspect of Longplay's design, it makes it borderline unusable for anything other than perhaps some fun ways to browse your library before deciding to play it in a "real" player that gives you proper playback control. However, this hardly seems worth hopping over to Longplay to do, since competitors in this niche space like [Albums] offer nearly every sorting discovery feature Longplay does but with the tremendous accessibility gains from providing a real full-player and browsable track list. In the current landscape, Longplay simply doesn't provide enough value to justify its steep accessibility deficit. By only providing a play/pause button, Longplay is simply not useful enough for playback, which I can't help but feel was a foolish mistake to make in a music player. While Longplay doesn't appear to be going the way of abandonware like the similarly niche [Jams On Toast] did thanks to a handful of releases this year from Adrian Schoenig—Longplay's developer—I can't help but see Longplay as it exists today as unreconcilable compromise.
@@ -132,22 +132,22 @@ Longplay's widgets remain unchanged from last year.
 For those new to Longplay, Longplay offers a single widget class for both small and medium sizes, which display an album grid similar to what's available in the app itself. Visually, there's a spot of whimsy in the small widget with a slight perspective tilt, along with an optional sort name label for both sizes. Aside from that, there's no other visual flair available aside from the album art itself.
 
 <div class="box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-widget.webp">
-  <img type="image/png" title="Longplay's medium widget" alt="Image of Longplay's medium widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-widget.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-widget.webp">
-  <img type="image/png" title="Longplay's small widget" alt="Image of Longplay's small widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-widget.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-widget.webp">
+                <img type="image/png" title="Longplay's medium widget" alt="Image of Longplay's medium widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-widget.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-widget.webp">
+                <img type="image/png" title="Longplay's small widget" alt="Image of Longplay's small widget" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-widget.png">
+            </picture>
+        </a>
+    </div>
 </div>
 
 For both widgets, you have your choice of sorting method much like in the app, but with an additional option exclusive to the widgets: "Different day, different order". This option cycles through the other sorting methods, choosing a different one for any given day.
@@ -175,12 +175,12 @@ By far the biggest addition this year was the inclusion of the new "Size By" fea
 The new "Random" sort order is a nice addition, allowing listeners to randomly shuffle their library grid as many times as they want with just a tap, and does wonders to break up the organizational staleness that necessarily settles in with deterministic sorting.
 
 <div class="one-image" style="max-width:520px;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
-  <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.jpg">
-</picture>
-</a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
+            <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.jpg">
+        </picture>
+    </a>
 </div>
 
 Finally, Longplay now offers a generous assortment of alternative app icons to choose from. The new red and black options look slick, and the Pride/six colors variant are also visually pleasing and appreciated. While I personally love the original yellow icon and likely won't switch anytime soon, these are an overall handsome set of alternatives and are sure to delight listeners that love customizing their home screens.
@@ -188,72 +188,72 @@ Finally, Longplay now offers a generous assortment of alternative app icons to c
 ### Personal Assessment
 
 <div class="admonition aside">
-<dl>
-  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-  <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
-  <dd><p>I have my issues with the implementation, but Longplay does indeed support the iPad, and the iPad version is performant and fully functional.</p></dd>
-    <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
-  <dd><p>Again, I have my issues with Longplay’s implementation, but there are plenty of discovery capabilities exposed via sorting and sizing options. While only a couple are unique to Longplay, they do their stated job well.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dd><p>I have my issues with the implementation, but Longplay does indeed support the iPad, and the iPad version is performant and fully functional.</p></dd>
+            <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+        <dd><p>Again, I have my issues with Longplay’s implementation, but there are plenty of discovery capabilities exposed via sorting and sizing options. While only a couple are unique to Longplay, they do their stated job well.</p></dd>
+    </dl>
 
-<dl>
-  <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
-  <dd><p>There’s no denying the app is album-focused due to its grid layout and emphasis on album art. However, despite it’s plentiful sorting options, my preferred method (Artist > Chronological) is absent.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dd><p>There’s no denying the app is album-focused due to its grid layout and emphasis on album art. However, despite it’s plentiful sorting options, my preferred method (Artist > Chronological) is absent.</p></dd>
+    </dl>
 
-<dl>
-  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-  <dt><span class="bullet">:x:</span> Lyrics support</dt>
-  <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
-  <dd><p>There is none.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dt><span class="bullet">:x:</span> Lyrics support</dt>
+        <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
+        <dd><p>There is none.</p></dd>
+    </dl>
 </div>
 
 -----
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/12"><p class="button">Next App: “Marvis Pro”</p></a></li>
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/12"><p class="button">Next App: “Marvis Pro”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><strong>Longplay</strong></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><strong>Longplay</strong></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 -----

@@ -34,7 +34,6 @@ html {
     --dark-orange-lightness: 52%;
 
     --light-yellow-hue: 48;
-/*    --light-yellow-saturation: 100%;*/
     --light-yellow-saturation: 90%;
     --light-yellow-lightness: 50%;
     --dark-yellow-hue: 50;
@@ -42,9 +41,7 @@ html {
     --dark-yellow-lightness: 52%;
 
     --light-green-hue: 130;
-/*    --light-green-saturation: 65%;*/
     --light-green-saturation: 60%;
-/*    --light-green-lightness: 57%;*/
     --light-green-lightness: 50%;
     --dark-green-hue: 135;
     --dark-green-saturation: 64%;

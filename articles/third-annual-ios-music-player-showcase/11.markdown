@@ -17,39 +17,39 @@ continuation:
 ## !["Music Player X" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/icon.png '"Music Player X" iOS app icon'){: .inline-app-icon } Music Player X
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with light theme" title="Demonstrating 'Music Player X' usage with light theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg">
-![Image of "Music Player X" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg '"Music Player X" light theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-now-playing.jpg">
-![Image of "Music Player X" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-now-playing.jpg '"Music Player X" light theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with light theme" title="Demonstrating 'Music Player X' usage with light theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg">
+        ![Image of "Music Player X" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg '"Music Player X" light theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-now-playing.jpg">
+        ![Image of "Music Player X" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-now-playing.jpg '"Music Player X" light theme player view')
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with dark theme" title="Demonstrating 'Music Player X' usage with dark theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg">
-![Image of "Music Player X" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg '"Music Player X" dark theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-now-playing.jpg">
-![Image of "Music Player X" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-now-playing.jpg '"Music Player X" dark theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with dark theme" title="Demonstrating 'Music Player X' usage with dark theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg">
+        ![Image of "Music Player X" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg '"Music Player X" dark theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-now-playing.jpg">
+        ![Image of "Music Player X" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-now-playing.jpg '"Music Player X" dark theme player view')
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/music-player-x-equalizer-amp/id1221701870">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/music-player-x-equalizer-amp/id1221701870">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Music Player X enjoyed sweeping changes in 2020, rivaling [Albums] in its scope. There doesn't appear to be a single view in Music Player X that didn't receive a cosmetic change or navigational refactor. It's a much needed and much appreciated effort; last year, Music Player X was disqualified for featuring what I considered to be an exceptionally poor custom UI, many of which violated [iOS's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/) or general user interface principles. However, I did appreciate its plentiful customization options and niche features like its sleep timer and in-app equalizer (though admittedly the sleep timer's interface is dreadful). This made Music Player X in 2019 feel like an aspirational music player let down by its implementation. I'm happy to say at the end of 2020 this no longer feels like the case, and Music Player X is now a respectable player that's earned its place among the others in the showcase, albeit with caveats.
@@ -61,18 +61,16 @@ In terms of discovery features, Music Player X remains unchanged from last year,
 Settings saw substantial improvements this year, starting with the new customizable themes feature. The entire app's foreground and background color may now be customized on the new "Theme" tab, with Music Player X providing a handful of defaults to get you started. While the default themes aren't to my taste (they're reminiscent of that grotesque [Dropbox brand redesign](https://www.itsnicethat.com/news/dropbox-rebrand-collins-graphic-design-041017)), they're sure to delight people who favor that visual aesthetic. For listeners that like to tinker with theme settings such as myself, you're bound to have a good time customizing. For example, here's a few I created that I'm pretty happy with.
 
 <figure class="three-images ios-screenshot">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg">
-![Image of my "Nixie Tube" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg "My "Nixie Tube" custom theme")
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/pretty-pastel.jpg">
-![Image of my "Pretty Pastel" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/pretty-pastel.jpg "My "Pretty Pastel" custom theme")
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/bondi-blue.jpg">
-![Image of my "Bondi Blue" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/bondi-blue.jpg "My "Bondi Blue" custom theme")
-</a>
-<figcaption>
-Some custom themes I made: “Nixie Tube”, “Pretty Pastel”, and “Bondi Blue”. It’s just a shame there's no way to share them or save more than one for quick switching.
-</figcaption>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg">
+        ![Image of my "Nixie Tube" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg "My "Nixie Tube" custom theme")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/pretty-pastel.jpg">
+        ![Image of my "Pretty Pastel" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/pretty-pastel.jpg "My "Pretty Pastel" custom theme")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/bondi-blue.jpg">
+        ![Image of my "Bondi Blue" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/bondi-blue.jpg "My "Bondi Blue" custom theme")
+    </a>
+    <figcaption>Some custom themes I made: “Nixie Tube”, “Pretty Pastel”, and “Bondi Blue”. It’s just a shame there's no way to share them or save more than one for quick switching.</figcaption>
 </figure>
 
 The feature could still use a lot of work. It's practically begging for the ability to name and save custom themes for quick switching, and I'd appreciate the option to have one theme set as the "iOS dark mode" theme and another set as the "iOS light mode" theme. Additionally, there's currently no control for precise entry with hex codes or RGB values, the best you can do to enter specific colors is slide around the color wheels until you get it "close enough". I'd also love the ability to share my themes or try other users' themes [Slack-style](https://slack.com/help/articles/205166337-Change-your-Slack-theme); unfortunately, today the themes you make are more or less stuck on that device, but nonetheless, the feature's a good time.
@@ -90,23 +88,25 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-<li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
-<li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-<li><span class="bullet">:x:</span> <strong>Album-focused features</strong><ul class="bare-list">
-    <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
-</ul></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
+        <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
+            <ul class="bare-list">
+                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
+                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -114,37 +114,37 @@ None.
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li>Music Player X</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li>Music Player X</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986

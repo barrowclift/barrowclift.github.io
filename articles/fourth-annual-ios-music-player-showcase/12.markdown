@@ -30,51 +30,51 @@ continuation:
 ## ![Marvis Pro's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png "Marvis Pro's iOS app icon"){: .inline-app-icon } Marvis Pro
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in light mode" title="Demonstrating Marvis Pro's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
-  <img type="image/jpeg" title="Marvis Pro's light theme album-view" alt="Image of Marvis Pro's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.webp">
-  <img type="image/jpeg" title="Marvis Pro's light theme full-player" alt="Image of Marvis Pro's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in light mode" title="Demonstrating Marvis Pro's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
+            <img type="image/jpeg" title="Marvis Pro's light theme album-view" alt="Image of Marvis Pro's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.webp">
+            <img type="image/jpeg" title="Marvis Pro's light theme full-player" alt="Image of Marvis Pro's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in dark mode" title="Demonstrating Marvis Pro's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
-  <img type="image/jpeg" title="Marvis Pro's dark theme album-view" alt="Image of Marvis Pro's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.webp">
-  <img type="image/jpeg" title="Marvis Pro's dark theme full-player" alt="Image of Marvis Pro's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in dark mode" title="Demonstrating Marvis Pro's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
+            <img type="image/jpeg" title="Marvis Pro's dark theme album-view" alt="Image of Marvis Pro's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.webp">
+            <img type="image/jpeg" title="Marvis Pro's dark theme full-player" alt="Image of Marvis Pro's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
-<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 When all's said and done, every player on the market today "is what it is"; the developer had a vision for the browsing and playback experience their app would provide, and then they developed a player that strove to meet that vision. When listeners are lucky, the developer spent some extra time providing settings to lightly tweak aspects of their player's appearance and behavior, but aside from some very rare exceptions, their app's fundamental browsing capabilities remain unchangeable. To be clear, this is partially what makes exploring the world of iOS music players so enjoyable; it's fascinating to explore the diverse ways developers answer the deceptively complicated question "how do listeners want to browse their library?".
@@ -121,30 +121,30 @@ Again, while these settings are indeed powerful and already provide listeners a 
 However, let's take that one step further; let's say I wanted a section which contained *all* my records organized by year in a similar fashion. I could simply create a new "Home" section, call it something fun like "Time Machine", then for any given year create a new "year" section just like before. And just like that, I have a "Time Machine" section on my Home Screen that—upon tapping—gives me a beautiful year-by-year adventure back through my favorite music. This is still of course a simple example, only a couple basic smart rules power my "Time Machine" section. The engine's flexible enough to be limited only by your own imagination.
 
 <div class="two-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
-  <img type="image/jpeg" title="My Home page Time Machine section in light mode" alt="Image of my Home page Time Machine section in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
-  <img type="image/jpeg" title="My Time Machine page in light mode" alt="Image of my Time Machine page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
-  <img type="image/jpeg" title="My Home page Time Machine section in dark mode" alt="Image of my Home page Time Machine section in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
-  <img type="image/jpeg" title="My Time Machine page in dark mode" alt="Image of my Time Machine page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.jpg">
-</picture>
-</a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
+            <img type="image/jpeg" title="My Home page Time Machine section in light mode" alt="Image of my Home page Time Machine section in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
+            <img type="image/jpeg" title="My Time Machine page in light mode" alt="Image of my Time Machine page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
+            <img type="image/jpeg" title="My Home page Time Machine section in dark mode" alt="Image of my Home page Time Machine section in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
+            <img type="image/jpeg" title="My Time Machine page in dark mode" alt="Image of my Time Machine page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.jpg">
+        </picture>
+    </a>
 </div>
 
 It should be noted that an increasing number of players provide one or sometimes most of the abilities listed above, notable examples being [Albums], [Power Player], [Cs Music], and [Mixtapes]. However, with that said, none of them brilliantly combine all these abilities together into one cohesive "Home" page experience like Marvis Pro. It's truly a case where the result is greater than the sum of its parts.
@@ -166,56 +166,56 @@ Marvis Pro sports one of the best overall iPad experiences of any player availab
 Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impressive widget arsenal remains unchanged from last year.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.webp">
-  <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's small 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.webp">
+                <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's small 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.png">
+            </picture>
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.webp">
-  <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in light mode" alt="Image of Marvis Pro's small 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.webp">
+                <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in light mode" alt="Image of Marvis Pro's small 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.png">
+            </picture>
+        </a>
+    </div>
 </div>
 
 Marvis Pro's widgets are divided evenly into two collections, starting with the "Now Playing" collection. Like most "Now Playing" widgets, by default every widget size features the album art and varying degrees of metadata depending on the size in question. However, like Marvis Pro itself, its widgets feature a staggering degree of customization that allows you to radically change both the widgets' appearance and behavior. For most widgets in this collection, you have access to the following controls:
@@ -235,95 +235,95 @@ Marvis Pro's widgets are divided evenly into two collections, starting with the 
 Arguably the most notable among the customization options is the ability to toggle displaying playback controls in the widget itself (excluding the small widget).
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode with playback controls enabled" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode with playback controls enabled" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode with playback controls enabled" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode with playback controls enabled" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.png">
+            </picture>
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode with playback controls enabled" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode with playback controls enabled" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode with playback controls enabled" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode with playback controls enabled" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode with playback controls enabled" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.png">
+            </picture>
+        </a>
+    </div>
 </div>
 
 In classic Marvis Pro fashion, each widget's default configuration is perfectly reasonable, and if you'd rather not futz about with settings, they're still likely to meet your needs. However, if you care even the slightest bit about getting your widgets and home screen "just so", Marvis Pro's "Now Playing" widget collection is exceptional.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.webp">
-  <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's small 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's large 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.webp">
+                <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in dark mode" alt="Image of Marvis Pro's small 'Now Playing' widget in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.png">
+            </picture>
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.webp">
-  <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.webp">
-  <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.png">
-</picture>
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.png">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.webp">
-  <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in light mode" alt="Image of Marvis Pro's small 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.png">
-</picture>
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.webp">
+                <img type="image/png" title="Marvis Pro's large 'Now Playing' widget in light mode" alt="Image of Marvis Pro's large 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.webp">
+                <img type="image/png" title="Marvis Pro's medium 'Now Playing' widget in light mode" alt="Image of Marvis Pro's medium 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.png">
+            </picture>
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.png">
+            <picture>
+                <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.webp">
+                <img type="image/png" title="Marvis Pro's small 'Now Playing' widget in light mode" alt="Image of Marvis Pro's small 'Now Playing' widget in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.png">
+            </picture>
+        </a>
+    </div>
 </div>
 
 Marvis Pro's other widget collection type, "Section", allows you to add a widget for a particular section in your Home page, and continues the trend of customization from the "Now Playing" collection. For most widgets in this collection, you have access to the following controls:
@@ -348,43 +348,43 @@ By far the biggest change this year was the release of background customization.
 In Marvis Pro's "Settings" menu, there's a renovated "Background" appearance menu item, where you have full control over independently adjusting the background for the main screen, mini-player, and full-player. This control includes specifying the background image (none, artwork, or custom), the degree of blur effect, degree of image saturation, and even the overlay color to apply over the blur effect.
 
 <figure class="three-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
-  <img type="image/jpeg" title="The full-player in light mode with a predominantly red record" alt="Image of the full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
-  <img type="image/jpeg" title="The full-player in light mode with a predominantly green record" alt="Image of the full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
-  <img type="image/jpeg" title="The full-player in light mode with a predominantly blue record" alt="Image of the full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
-  <img type="image/jpeg" title="The full-player in dark mode with a predominantly red record" alt="Image of the full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
-  <img type="image/jpeg" title="The full-player in dark mode with a predominantly green record" alt="Image of the full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
-  <img type="image/jpeg" title="The full-player in dark mode with a predominantly blue record" alt="Image of the full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.jpg">
-</picture>
-</a>
-<figcaption>While I still prefer the full-player visual design of some other players, with some slight configuration Marvis Pro can now easily go toe-to-toe with them.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
+            <img type="image/jpeg" title="The full-player in light mode with a predominantly red record" alt="Image of the full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
+            <img type="image/jpeg" title="The full-player in light mode with a predominantly green record" alt="Image of the full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
+            <img type="image/jpeg" title="The full-player in light mode with a predominantly blue record" alt="Image of the full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
+            <img type="image/jpeg" title="The full-player in dark mode with a predominantly red record" alt="Image of the full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
+            <img type="image/jpeg" title="The full-player in dark mode with a predominantly green record" alt="Image of the full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
+            <img type="image/jpeg" title="The full-player in dark mode with a predominantly blue record" alt="Image of the full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.jpg">
+        </picture>
+    </a>
+    <figcaption>While I still prefer the full-player visual design of some other players, with some slight configuration Marvis Pro can now easily go toe-to-toe with them.</figcaption>
 </figure>
 
 The system is incredibly flexible, allowing listeners to make anything from the most modest of changes (such as just deepening the blur effect on the full-player) to app-wide theme adjustments similar to what you'd find in [Music Player X] and [MPX EQ]'s theming engine. While the system is indeed powerful, I can't help but feel some pre-made defaults would be a huge accessibility improvement, along with providing "pros" examples they can use as starting points. For example, there could be a "classic" default, a "deep blur" default, a "true black" default, and more, all which simply autofill the necessary values to Marvis Pro's "Background" appearance controls. With those minor grumblings set aside, the system is indeed powerful, can meet practically any visual need, and is clearly the single best appearance management system provided by any music player on iOS to date.
@@ -396,72 +396,72 @@ While the change is certainly a good move, the newly maximized full-player is un
 ### Personal Assessment
 
 <div class="admonition aside">
-<dl>
-  <dt><span class="bullet">:trophy:</span> Apple Music integration</dt>
-  <dd><p>You can easily search for and stream Apple Music content, but you can also create Apple Music-powered sections right in your “Home” page as well. Like with <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a>, this kind of seamless integration is exactly what I expect from premium Apple Music integration.</p></dd>
-  <dt><span class="bullet">:trophy:</span> Light &amp; dark themes</dt>
-  <dd><p>Marvis Pro’s theming is exceptional, you can tweak it to be as light or as dark as you want it, and your changes still respect iOS’s system appearance setting.</p></dd>
-  <dt><span class="bullet">:trophy:</span> iPad support</dt>
-  <dd><p>The iPad version is as performant as its iPhone counterpart, scales gracefully to accommodate the larger screen, and now features a gorgeous full-screen maximized player. I have a minor complaint with the way the full-player is handled in landscape mode, but the rest of the experience is close to flawless.</p></dd>
-  <dt><span class="bullet">:trophy:</span> Discovery features</dt>
-  <dd><p>Marvis Pro ships with a respectable array of discovery collections in its “Home” page by default, but the fact you can easily create your own using Marvis Pro’s section engine leaves Marvis Pro’s discovery capabilities with little contest.</p></dd>
-  <dt><span class="bullet">:trophy:</span> Album-focused features</dt>
-  <dd><p>Your “Home” page can be as tailored to albums as you’d like. You can also easily adjust the “Albums” layout to be a grid of your preferred size, and even my preferred sorting method (Artist > Chronological) is available (though this unfortunately remains trapped behind a hidden advanced settings screen).</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:trophy:</span> Apple Music integration</dt>
+        <dd><p>You can easily search for and stream Apple Music content, but you can also create Apple Music-powered sections right in your “Home” page as well. Like with <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a>, this kind of seamless integration is exactly what I expect from premium Apple Music integration.</p></dd>
+        <dt><span class="bullet">:trophy:</span> Light &amp; dark themes</dt>
+        <dd><p>Marvis Pro’s theming is exceptional, you can tweak it to be as light or as dark as you want it, and your changes still respect iOS’s system appearance setting.</p></dd>
+        <dt><span class="bullet">:trophy:</span> iPad support</dt>
+        <dd><p>The iPad version is as performant as its iPhone counterpart, scales gracefully to accommodate the larger screen, and now features a gorgeous full-screen maximized player. I have a minor complaint with the way the full-player is handled in landscape mode, but the rest of the experience is close to flawless.</p></dd>
+        <dt><span class="bullet">:trophy:</span> Discovery features</dt>
+        <dd><p>Marvis Pro ships with a respectable array of discovery collections in its “Home” page by default, but the fact you can easily create your own using Marvis Pro’s section engine leaves Marvis Pro’s discovery capabilities with little contest.</p></dd>
+        <dt><span class="bullet">:trophy:</span> Album-focused features</dt>
+        <dd><p>Your “Home” page can be as tailored to albums as you’d like. You can also easily adjust the “Albums” layout to be a grid of your preferred size, and even my preferred sorting method (Artist > Chronological) is available (though this unfortunately remains trapped behind a hidden advanced settings screen).</p></dd>
+    </dl>
 
-<dl>
-  <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
-  <dd><p>Lyrics are viewable upon scrolling down in the full-player much like in iOS 14’s Music.app, but I continue to dislike this approach to lyrics support since it’s quarantined away from both the playback controls and the album art. The feature exists and works without issue, but I find the implementation personally disappointing.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
-  <dd><p>It continues to not be the most beautiful or most interesting of full-players, but the introduction of background customization this year helped tremendously to freshen up the previously pleasing but standard visual appearance.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dd><p>Lyrics are viewable upon scrolling down in the full-player much like in iOS 14’s Music.app, but I continue to dislike this approach to lyrics support since it’s quarantined away from both the playback controls and the album art. The feature exists and works without issue, but I find the implementation personally disappointing.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
+        <dd><p>It continues to not be the most beautiful or most interesting of full-players, but the introduction of background customization this year helped tremendously to freshen up the previously pleasing but standard visual appearance.</p></dd>
+    </dl>
 </div>
 
 -----
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/13"><p class="button">Next App: “Music Player X”</p></a></li>
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/13"><p class="button">Next App: “Music Player X”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><strong>Marvis Pro</strong></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><strong>Marvis Pro</strong></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 ----

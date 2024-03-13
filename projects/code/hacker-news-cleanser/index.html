@@ -8,33 +8,45 @@ design:
 ---
 
 <h1 id="hacker-news-cleanser">Hacker News Cleanser <img style="width:1em;" src="images/sponge.png" /></h1>
+
 <p>This is a self-hosted service that will auto-hide <a href="https://news.ycombinator.com">Hacker News</a> articles by filtering articles based on:</p>
 <ul class="compact-list">
-<li>Site</li>
-<li>Title keywords matching</li>
-<li>Title regex matching</li>
-<li>Username</li>
+    <li>Site</li>
+    <li>Title keywords matching</li>
+    <li>Title regex matching</li>
+    <li>Username</li>
 </ul>
 <p><a href="https://github.com/barrowclift/hacker-news-cleanser" style="padding-left:2em;padding-right:2em;text-align:left;text-decoration:none;" class="button">Clone On Github</a></p>
+
 <hr>
+
 <h3 id="why-this-exists" class="anchored">Why This Exists</h3>
+
 <p>I’ve been a “lurker” on Hacker News for three years and have long enjoyed reading the thoughtful articles and sometimes heated but always informative comments.</p>
 <p>However, over the past year or so I’ve noticed a trend of articles covering an array of other topics making their way into the front page more frequently and in greater numbers. <em>And that’s fine</em>. The Internet and Hacker News does not exist to exclusively serve my fussy requirements, and clearly the articles and their information are valuable to others.</p>
 <p>With that said, it does somewhat diminish my personal Hacker News experience, given that I tend to prefer articles that are strictly related to technology. That means either manually hiding the other articles or clicking past the first page, neither of which is ideal.</p>
 <p>That’s where the inception of the Hacker News Cleanser came from; it’s a “set it and forget it” service that will automatically tailor my home page to more closely fit my personal taste.</p>
+
 <h3 id="the-compromise-between-being-informed-and-information-separation" class="anchored">The Compromise Between Being Informed and Information Separation</h3>
+
 <figure markdown="1" class="inline macos-window-screenshot" style="max-width:526px;">
-<img src="images/email-report.png" />
+    <img src="images/email-report.png" />
 </figure>
 <p>While I do wish for my personal Hacker News page to be more focused, I also still want to have the ability to see the hidden articles and read them if I so choose. No amount of filter tweaking will prevent the occasional salient article or discussion from getting caught when I would have wished to still see it. Additionally, I do still feel it’s important to have a finger on the heartbeat of Hacker News as a whole, only in a separate view and on my own time.</p>
 <p>To achieve this, the Hacker News Cleanser supports sending out email reports styled to look just like the Hacker News homepage containing all cleansed articles since the last email report. This requires setting up a Gmail “service” account to send emails through or using an existing Gmail account (not recommended).</p>
 <p>Personally, I have the Cleanser set to send an email report of cleansed articles every week, but it can easily be set to daily, bi-weekly, or any other kind of day-length frequency.</p>
+
 <h3 id="why-not-a-browser-extension" class="anchored">Why Not A Browser Extension?</h3>
+
 <p>My portable operating system of choice is iOS, and since Safari on iOS <a href="https://apple.stackexchange.com/a/321213">does not support traditional browser extensions</a>, this would mean my phone (where easily the majority of my browsing and reading occurs) would not benefit.</p>
 <p>Additionally, there are many other different browsers out there, and I have a better chance of serving the needs of other similarly-minded Hacker News readers regardless of their preferred browser or platform by focusing on just one product that’s independent of the browser landscape.</p>
+
 <h3 id="setup" class="anchored">Installation & Usage</h3>
+
 <p>For installation steps, see the Hacker News Cleanser’s <a href="https://github.com/barrowclift/hacker-news-cleanser/blob/master/INSTALL.md">INSTALL.md</a> on the <a href="https://github.com/barrowclift/hacker-news-cleanser">Github page</a>.</p>
 <p>For usage instructions, see <a href="https://github.com/barrowclift/hacker-news-cleanser/blob/master/README.md">README.md</a>, again on the <a href="https://github.com/barrowclift/hacker-news-cleanser">Github page</a>.</p>
+
 <h3 id="license" class="anchored">License</h3>
+
 <p>The Hacker News Cleanser is open source, licensed under the MIT License.</p>
 <p>See <a href="https://github.com/barrowclift/hacker-news-cleanser/blob/master/LICENSE">LICENSE</a> on the <a href="https://github.com/barrowclift/hacker-news-cleanser">Github page</a> for more information.</p>

@@ -30,51 +30,51 @@ continuation:
 ## ![MPX EQ's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/icon.png "MPX EQ's iOS app icon"){: .inline-app-icon } MPX EQ
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in light mode" title="Demonstrating MPX EQ's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.webp">
-  <img type="image/jpeg" title="MPX EQ's light theme album view" alt="Image of MPX EQ's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.webp">
-  <img type="image/jpeg" title="'Mixtapes' light full-player" alt="Image of 'Mixtapes' light full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in light mode" title="Demonstrating MPX EQ's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.webp">
+            <img type="image/jpeg" title="MPX EQ's light theme album view" alt="Image of MPX EQ's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.webp">
+            <img type="image/jpeg" title="'Mixtapes' light full-player" alt="Image of 'Mixtapes' light full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-full-player.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in dark mode" title="Demonstrating MPX EQ's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.webp">
-  <img type="image/jpeg" title="MPX EQ's dark theme album view" alt="Image of MPX EQ's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.webp">
-  <img type="image/jpeg" title="'Mixtapes' dark full-player" alt="Image of 'Mixtapes' dark full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in dark mode" title="Demonstrating MPX EQ's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.webp">
+            <img type="image/jpeg" title="MPX EQ's dark theme album view" alt="Image of MPX EQ's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.webp">
+            <img type="image/jpeg" title="'Mixtapes' dark full-player" alt="Image of 'Mixtapes' dark full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-full-player.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/mpx-equalizer-bass-booster/id1578646614">
-<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/mpx-equalizer-bass-booster/id1578646614">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 This year, Femi Oduntan surprised listeners with a major [Music Player X] release built from scratch with a brand new interface. In another surprise, he released this redesign not as a major update to Music Player X, but rather as a new app altogether called MPX EQ, making a clean break from the original Music Player X in the process. As a part of this release, Music Player X was also made entirely free and will presumably switch to maintenance mode for the rest of its shelf life. Needless to say, a lot's riding on MPX EQ's success.
@@ -98,25 +98,25 @@ MPX EQ's choice of menu items may be unconventional, but its full-player is rema
 After launching the full-player, apart for the peculiar inclusion of skip back and forward 15 second buttons typically found in podcast players and a curious waveform button between them, you'll only find essential controls and metadata, resulting in a pleasing minimal design not too far off from Music Player X's full-player. Upon tapping that alluring waveform button, listeners are greeted with a novel fullscreen visualizer, featuring just the album art, bare minimum playback controls, and one of half a dozen different visualizer styles. Unfortunately, despite my love of iOS music player visualization, MPX EQ's visualizer support leaves a lot to be desired. Swapping visualizer styles is near impossible to discover, forcing listeners to first pause playback while on the visualizer page, tap where the visualizer *would* be shown, then resume playback to switch visualizers; simply tapping the visualizer area alone doesn't work. If there's another way to switch visualizers, I couldn't figure it out in all my time using the app. Additionally, my preferred visualizer (the "flame") is broken in the current App Store build for my device size, resulting in the flame hilariously dying out like a fire without enough kindling after only a few seconds of playback. A single bum visualizer style alone wouldn't be cause for much disappointment (after all, there are quite a few styles in [jetAudio] that I don't care for), but unfortuantely every other visualizer style currently offered by MPX EQ are subjectively poor in comparison, leaving me with one broken visualizer I would otherwise have liked, a handful of subpar alternatives, and an objectively terrible interface to switch between them.
 
 <figure class="three-images ios-screenshot">
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
-  <img type="image/jpeg" title="MPX EQ in a custom Hacker theme" alt="Image of MPX EQ in a custom Hacker theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
-  <img type="image/jpeg" title="MPX EQ in a custom Rosey Red theme" alt="Image of MPX EQ in a custom Rosey Red theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
-  <img type="image/jpeg" title="MPX EQ in a custom Bumblebee theme" alt="Image of MPX EQ in a custom Bumblebee theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.jpg">
-</picture>
-</a>
-<figcaption>MPX EQ supports the theming engine originally found in Music Player X with some quality of life improvements, such as the ability to now save your custom themes.</figcaption>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
+            <img type="image/jpeg" title="MPX EQ in a custom Hacker theme" alt="Image of MPX EQ in a custom Hacker theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.webp">
+            <img type="image/jpeg" title="MPX EQ in a custom Rosey Red theme" alt="Image of MPX EQ in a custom Rosey Red theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/red.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.webp">
+            <img type="image/jpeg" title="MPX EQ in a custom Bumblebee theme" alt="Image of MPX EQ in a custom Bumblebee theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/yellow.jpg">
+        </picture>
+    </a>
+    <figcaption>MPX EQ supports the theming engine originally found in Music Player X with some quality of life improvements, such as the ability to now save your custom themes.</figcaption>
 </figure>
 
 With the brief tour of MPX EQ complete, I can't help but feel dumbfounded disbelief at the asking subscription price and disappointment in comparison to its predecessor. Much of Music Player X's DNA is here, such as the delightful ability to customize the entire app's theme color, and MPX EQ undeniably refines that feature with the ability to save your themes. However, it falls short of sticking the landing in nearly every area to the point where the app in its current form feels closer to an early access beta than a finished, publicly available product. Until MPX EQ's rough edges are addressed, I can't see listeners other than Music Player X diehard fans considering the player as it exists today worth its asking price.
@@ -138,71 +138,71 @@ MPX EQ—like its previous incarnation, Music Player X—does not provide any wi
 ### Personal Assessment
 
 <div class="admonition aside">
-<dl>
-  <dt><span class="bullet">:large_orange_diamond:</span> Light &amp; dark themes</dt>
-  <dd><p>Like Music Player X before it, while it does indeed offer a theming system, that themeing system does not respond to iOS’s current theme option.</p></dd>
-  <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
-  <dd><p>Providing an iPad version at all is appreciated, but there’s far too many layout bugs and poor layout choices made on the larger screen for it to hold up.</p></dd>
-  <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
-  <dd><p>An effort was made with the new “Suggestions” collection, but more is expected nowadays.</p></dd>
-  <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
-  <dd><p>Regrettably, the visualizer is difficult to use, majority of styles are not to my taste, and the one that is appears broken (the flames die out after a few seconds of playback). The full-player itself is not visually engaging or beautiful enough to compensate.</p></dd>
-  <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
-  <dd><p>The introduction of a grid layout option is fantastic in theory, but it’s far too compromised in its current form.</p></dd>
-</dl>
-
-<dl>
-  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-  <dd><p>MPX EQ was a great opportunity to add Apple Music support (where Music Player X did not), but this oppertunity was unfortunately missed.</p></dd>
-  <dt><span class="bullet">:x:</span> Lyrics support</dt>
-</dl>
+    <dl>
+        <dt><span class="bullet">:large_orange_diamond:</span> Light &amp; dark themes</dt>
+        <dd><p>Like Music Player X before it, while it does indeed offer a theming system, that themeing system does not respond to iOS’s current theme option.</p></dd>
+        <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
+        <dd><p>Providing an iPad version at all is appreciated, but there’s far too many layout bugs and poor layout choices made on the larger screen for it to hold up.</p></dd>
+        <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+        <dd><p>An effort was made with the new “Suggestions” collection, but more is expected nowadays.</p></dd>
+        <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
+        <dd><p>Regrettably, the visualizer is difficult to use, majority of styles are not to my taste, and the one that is appears broken (the flames die out after a few seconds of playback). The full-player itself is not visually engaging or beautiful enough to compensate.</p></dd>
+        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dd><p>The introduction of a grid layout option is fantastic in theory, but it’s far too compromised in its current form.</p></dd>
+    </dl>
+    
+    <dl>
+        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dd><p>MPX EQ was a great opportunity to add Apple Music support (where Music Player X did not), but this oppertunity was unfortunately missed.</p></dd>
+        <dt><span class="bullet">:x:</span> Lyrics support</dt>
+    </dl>
 </div>
 
 -----
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/5"><p class="button">Next App: “Musens”</p></a></li>
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/5"><p class="button">Next App: “Musens”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><strong>MPX EQ</strong></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><strong>MPX EQ</strong></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Music Player X]: https://www.musicplayerx.com

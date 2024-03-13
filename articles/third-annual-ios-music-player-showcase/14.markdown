@@ -17,39 +17,39 @@ continuation:
 ## !["Plum" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .inline-app-icon } Plum
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with light theme" title="Demonstrating 'Plum' usage with light theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-album-view.jpg">
-![Image of "Plum" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-album-view.jpg '"Plum" light theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-now-playing.jpg">
-![Image of "Plum" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-now-playing.jpg '"Plum" light theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with light theme" title="Demonstrating 'Plum' usage with light theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-album-view.jpg">
+        ![Image of "Plum" light theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-album-view.jpg '"Plum" light theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-now-playing.jpg">
+        ![Image of "Plum" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-now-playing.jpg '"Plum" light theme player view')
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with dark theme" title="Demonstrating 'Plum' usage with dark theme">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-album-view.jpg">
-![Image of "Plum" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-album-view.jpg '"Plum" dark theme album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-now-playing.jpg">
-![Image of "Plum" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-now-playing.jpg '"Plum" dark theme player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with dark theme" title="Demonstrating 'Plum' usage with dark theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-album-view.jpg">
+        ![Image of "Plum" dark theme album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-album-view.jpg '"Plum" dark theme album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-now-playing.jpg">
+        ![Image of "Plum" dark theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-now-playing.jpg '"Plum" dark theme player view')
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/plum-music-player/id1441625664">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 I somehow managed to miss the delightfully named [Plum] the past couple years, originally releasing all the way back at the start of 2018. It's a general-purpose player with a twist; instead of presenting its standard browse views ("Albums", "Artists", etc.) in a tab bar or left-side [hamburger menu](https://www.computerhope.com/jargon/h/hamburger-menu.htm) like nearly every other player, it hides these views in a hamburger menu at the *bottom* of the screen. While this is simply UI salad dressing and doesn't change the fact the app is functionally another general-purpose experience, it does wonders for making Plum stand out among its peers.
@@ -57,25 +57,25 @@ I somehow managed to miss the delightfully named [Plum] the past couple years, o
 Its individuality doesn't stop there; the player view is also unique, featuring a thick, custom progress indicator and volume slider, massive track metadata, and a [jetAudio]-style hidden toolbar tucking away ancillary controls and features. Visually, the player takes a radical approach of neither using a solid color nor incorporating the standard translucent album art background nearly every other player uses. Instead, it opts for an edge-to-edge gradient featuring a primary color from the album art. While I don't find the effect as stunning as other players' approaches, the effect is always pleasing and its shear novelty makes it a treat to the eyes.
 
 <figure class="three-images ios-screenshot">
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg">
-![Image of the light mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg">
-![Image of the light mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg">
-![Image of the light mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg">
-![Image of the dark mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg">
-![Image of the dark mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg">
-![Image of the dark mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
-</a>
-<figcaption>The “Modern” player view appearance.</figcaption>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg">
+        ![Image of the light mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg">
+        ![Image of the light mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg">
+        ![Image of the light mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg">
+        ![Image of the dark mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg">
+        ![Image of the dark mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg">
+        ![Image of the dark mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <figcaption>The “Modern” player view appearance.</figcaption>
 </figure>
 
 While its hidden toolbar is nowhere near as feature-rich as jetAudio's, it does in comparison have a lovely visibility animation and a respectable number of features, notably star ratings, a "Favorite" button to add tracks to the in-app favorites list, and a "Lyrics" button to toggle showing the track's lyrics.
@@ -83,43 +83,43 @@ While its hidden toolbar is nowhere near as feature-rich as jetAudio's, it does 
 There's more yet to discover in Plum's player view; Plum is the only player available today that offers two radically different player view designs for you to choose from: "Modern", which is the design demonstrated above, and "Classic", which is strongly reminiscent of Music.app's player view design in iOS 8. While I personally prefer its original "Modern" appearance for its novelty, I'm trilled to see players provide appearance customizations like this. It not only provides a means of visual personalization, but also provides functional value for users that may prefer more immediate access to controls in the "Classic" appearance that would otherwise be hidden the "Modern" appearance's toolbar.
 
 <figure class="three-images ios-screenshot">
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
-  <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
-</picture>
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
-  <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
-</picture>
-</a>
-<a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
-  <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
-</picture>
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
-  <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
-</picture>
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
-  <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
-</picture>
-</a>
-<a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
-  <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
-</picture>
-</a>
-<figcaption>The “Classic” player view appearance.</figcaption>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
+            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
+        </picture>
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
+            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
+        </picture>
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
+            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
+        </picture>
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
+            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
+        </picture>
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
+            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
+        </picture>
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
+            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
+        </picture>
+    </a>
+    <figcaption>The “Classic” player view appearance.</figcaption>
 </figure>
 
 Both player views suffer from an unusual dismissal and summon gesture; instead of sliding up from the bottom of the screen (an interaction utilized by most music players, nowadays), the player view slides out from the *right* upon tapping the "Now Playing" bar. This also means the player can't be dismissed by swiping down, instead requiring a "swipe from the left" gesture. While this seems minor, it's positively infuriating in practice since most modern players have trained users to expect a completely different interaction to dismiss, and I continuously find myself attempting to dismiss the player first with a swipe-down gesture followed by a swipe-right gesture in frustration.
@@ -137,20 +137,22 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>Plum sports both a truly unique “Modern” appearance in addition to a “Classic” appearance, the only player to provide such a feature.</em></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>I must note I truly dislike the current iPad player view implementation, but Plum does indeed support the iPad.</em></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While there’s no support for filter or rule-based collections, support for manually creating your own collections with the “Folders” feature and the first-class “Recently Added” and “Favorites” views do the job.</em></li>
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>While lack of proper sorting is a big disappointment, rich grid view support and the ability to pin the “Albums” view as Plum’s home page help make up for it.</em><ul class="bare-list">
-    <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
-</ul></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>Plum sports both a truly unique “Modern” appearance in addition to a “Classic” appearance, the only player to provide such a feature.</em></li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>I must note I truly dislike the current iPad player view implementation, but Plum does indeed support the iPad.</em></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While there’s no support for filter or rule-based collections, support for manually creating your own collections with the “Folders” feature and the first-class “Recently Added” and “Favorites” views do the job.</em></li>
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>While lack of proper sorting is a big disappointment, rich grid view support and the ability to pin the “Albums” view as Plum’s home page help make up for it.</em>
+            <ul class="bare-list">
+                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
+                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -158,37 +160,37 @@ None.
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li>Plum</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li>Plum</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [jetAudio]: https://apps.apple.com/us/app/jetaudio-music-player/id894888135

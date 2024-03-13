@@ -40,8 +40,8 @@ Open the Settings app and tap on Notifications. In there you should see a list d
 
 1. Ask yourself if you want notifications from this app. If the answer is yes, ask yourself again if you *really* want notifications from this app. As an example, I asked myself this with the Mail app and realized that there were only certain people I genuinely cared about getting notifications from: my family. Because of this, I turned off notifications for anyone other than them[^vip]. I read all email every morning and night on my computer and any truly urgent matters are sent via text messages so I gain no benefit from my Mail app spreading unnecessary stress throughout the day for every single email I get.
 2. Depending on what you decided above, either:
-	- Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
-	- Keep notifications on for that app.
+    - Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
+    - Keep notifications on for that app.
 
 Not All App Notifications Are Equal
 -----------------------------------

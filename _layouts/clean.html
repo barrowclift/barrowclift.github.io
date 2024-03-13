@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html class="{% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
 
-<!--	
+<!--
 Disables both the menu bar chrome and article chrome, while still preserving
 their child items' look-and-feel, resulting in a minimalize but still stylized
 effect. Requires extensive customization from the implementing file. Intended
 for use in appropriate Project files.
 
-Settings:
-
 Currently used for:
-  /projects/code/development-card-simulator/
+    /projects/code/development-card-simulator/
 -->
 
-	{% include head.html %}
+    {% include head.html %}
 
-	<body>
-		{% if page.backdrop-image %}
-		<style>
-			.backdrop {
-				background-image: url('{{ page.backdrop-image }}');
-				background-position: center;
-				background-size: cover;
-				opacity: 0.05;
-			}
-			@supports (filter: blur(25px)) {
-				.backdrop {
-					-webkit-filter: blur(25px);
-					-moz-filter: blur(25px);
-					-o-filter: blur(25px);
-					-ms-filter: blur(25px);
-					filter: blur(25px);
-				}
-			}
-			#dark .backdrop {
-				opacity: 0.1;
-			}
-		</style>
-		{% endif %}
-		<div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
-		<style>
-			menu {
-				position: relative !important;
-				background-color: transparent !important;
-				box-shadow: unset !important;
-				border: unset !important;
-			}
-			#mainmenu {
-				-webkit-backdrop-filter: unset !important;
-				backdrop-filter: unset !important;
-			}
-			#menu-height-offset {
-				display: none;
-			}
-			@media (min-width: 700px) {
-				main {
-					margin-top: 2.65em;
-				}
-			}
-		</style>
+    <body>
+        {% if page.backdrop-image %}
+            <style>
+                .backdrop {
+                    background-image: url('{{ page.backdrop-image }}');
+                    background-position: center;
+                    background-size: cover;
+                    opacity: 0.05;
+                }
+                @supports (filter: blur(25px)) {
+                    .backdrop {
+                        -webkit-filter: blur(25px);
+                        -moz-filter: blur(25px);
+                        -o-filter: blur(25px);
+                        -ms-filter: blur(25px);
+                        filter: blur(25px);
+                    }
+                }
+                #dark .backdrop {
+                    opacity: 0.1;
+                }
+            </style>
+        {% endif %}
+        <div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
+        <style>
+            menu {
+                position: relative !important;
+                background-color: transparent !important;
+                box-shadow: unset !important;
+                border: unset !important;
+            }
+            #mainmenu {
+                -webkit-backdrop-filter: unset !important;
+                backdrop-filter: unset !important;
+            }
+            #menu-height-offset {
+                display: none;
+            }
+            @media (min-width: 700px) {
+                main {
+                    margin-top: 2.65em;
+                }
+            }
+        </style>
 
-		<div id="wrap">
-			<div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
-				{% include menu.html %}
-				<main>
-					{{ content }}
-					{% include footer.html %}
-				</main>
-			</div>
-		</div>
-	</body>
+        <div id="wrap">
+            <div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
+                {% include menu.html %}
+                <main>
+                    {{ content }}
+                    {% include footer.html %}
+                </main>
+            </div>
+        </div>
+    </body>
 </html>

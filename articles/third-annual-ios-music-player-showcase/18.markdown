@@ -17,39 +17,39 @@ continuation:
 ## !["Soor" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/icon.png '"Soor" iOS app icon'){: .inline-app-icon } Soor
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-album-view.jpg">
-![Image of "Soor" light album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-album-view.jpg '"Soor" light album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg">
-![Image of "Soor" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg '"Soor" player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-album-view.jpg">
+        ![Image of "Soor" light album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-album-view.jpg '"Soor" light album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg">
+        ![Image of "Soor" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg '"Soor" player view')
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in dark mode" title="Demonstrating 'Soor' usage in dark mode">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
-![Image of "Soor" dark album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-album-view.jpg '"Soor" dark album view')
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg">
-![Image of "Soor" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg '"Soor" player view')
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in dark mode" title="Demonstrating 'Soor' usage in dark mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
+        ![Image of "Soor" dark album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-album-view.jpg '"Soor" dark album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg">
+        ![Image of "Soor" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/now-playing.jpg '"Soor" player view')
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/soor/id1439731526">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/soor/id1439731526">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Last year, Soor [failed to meet the qualifiers list](/articles/second-annual-ios-music-player-competition#--soor) due to not meeting the minimum bar for what I considered "local-primary". Soor's heavy [Apple Music](https://music.apple.com/) integration—its [tent-pole](https://en.wikipedia.org/wiki/Tent-pole_%28entertainment%29) feature—resulted in an experience that at every twist and turn strained against local-only use despite technically supporting it. However, despite that remaining the case this year, the introduction of a couple notable and substantial features that both local and cloud users can access helped earn Soor proper attention this year.
@@ -72,13 +72,13 @@ Given my glowing praise of Marvis Pro's "Rules & Filters" support last year and 
 While I was disappointed by "Magic Mixes", I maintained high hopes for Soor's album art visualizer. With this addition, Soor is now the only iOS player aside from [Music.app](/articles/third-annual-ios-music-player-showcase/12) to feature an album art-based visualizer. While in and of itself that's commendable, I unfortunately find the effect disappointingly dull. It's advertised in the release notes as a *gradient* album art visualizer, and to be fair to Soor's developer—[Tanmay Sonawane](http://tanmay.me)—that's as accurate a description as one could make.
 
 <figure class="two-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<figcaption>The gradient album-art visualizer introduced in Soor this year. The playback speed’s increased to help demonstrate the effect over time.</figcaption>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/effect.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <figcaption>The gradient album-art visualizer introduced in Soor this year. The playback speed’s increased to help demonstrate the effect over time.</figcaption>
 </figure>
 
 The visualizer isn't a dynamic lava lamp of colors like Music.app's "live" lyrics visualizer, but rather a predictable gradient animation between a handful of primary colors from the current track's art. The music itself bears no effect on the timing between gradients or intensity of the color stops, it's just a simple canned animation that uniformly repeats throughout the entire song. It's nothing fancy, nothing offensive, and nothing at all noteworthy.
@@ -90,92 +90,92 @@ My issues with Soor's new features this year emulate my continued issues with th
 Soor offers a generous bounty of *three* whole widget collections to choose from, all at varying sizes. In terms of sheer quantity, it's matched only by [Albums] and [Marvis Pro]. However, in terms of quality it doesn't come anywhere close.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-2.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-2.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-1.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-1.png)
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-3.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-3.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-2.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-2.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-1.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-1.png)
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-3.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-3.png)
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-2.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-2.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-1.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-1.png)
-</a>
-</div>
-<div style="flex:0 1 20%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-3.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-3.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-2.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-2.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-1.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-1.png)
+        </a>
+    </div>
+    <div style="flex:0 1 20%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-3.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-3.png)
+        </a>
+    </div>
 </div>
 
 The "Now Playing" widget collection are the first available in Soor, all of which impressively display the currently playing song title, artist, album art, and the next song up in the queue. Additionally, Soor is one of the few players to optionally support media controls in some of its larger "Now Playing" widgets. However, I should note I ran into strange behavior with Soor's widgets, often resulting in the widgets not updating reflect the current track despite my best efforts to get it to do so (force quitting the app, changing songs, removing and re-adding the widget, restarting iOS, etc.). [*The Suburbs*](https://music.apple.com/us/album/the-suburbs/1252757950) wasn't displayed instead of [*Shore*](https://music.apple.com/us/album/shore/1531283696) in the large "Now Playing" widget by choice, I legitimately could not get any song from *Shore* to display in it, while the other sizes updated just fine. While this could easily be entirely due to iOS bugs (widgets are a brand-new iOS feature, after all, with a plethora of [known bugs](https://www.iphonehacks.com/2020/09/ios-14-bugs.html)), it's still worth noting that Soor was the only player I ran into widget problems with in my testing.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-5.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-5.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-4.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-4.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-5.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-5.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-4.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-4.png)
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-5.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-5.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-4.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-4.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-5.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-5.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-4.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-4.png)
+        </a>
+    </div>
 </div>
 
 The next widget collection provided is a "Magic Mix" button grid, which on the surface is similar to Albums' "Quick Actions" widget collection. However, I can't tell you what tapping the buttons do for Soor's take on the feature since the buttons are completely non-functional for users who don't have iCloud Music Library enabled. That's not an exaggeration, tapping any "Magic Mix" button in these widgets launches the app but does nothing else, and I'm left to assume *something* else would happen had I used iCloud Music Library. If you—like me—don't have this feature enabled but were interested in Soor because of this widget type, pretend it doesn't exist, because it functionally doesn't.
 
 <div class="show-when-dark box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-6.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-6.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-7.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-7.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-6.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-6.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-7.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/dark-widget-7.png)
+        </a>
+    </div>
 </div>
 <div class="show-when-light box widget">
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-6.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-6.png)
-</a>
-</div>
-<div style="flex:0 1 40%;">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-7.png">
-![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-7.png)
-</a>
-</div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-6.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-6.png)
+        </a>
+    </div>
+    <div style="flex:0 1 40%;">
+        <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-7.png">
+            ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/soor/light-widget-7.png)
+        </a>
+    </div>
 </div>
 
 Finally, there's the "Collection" widgets, which display items from one of the predefined collection types such as "Playlists" and "Recently Added". Again—like practically all of Soor—some of these collection types such as "Recently Played" inexplicably break without iCloud Music Library. However, at the very least I was able to get "Recently Added" to work as expected. Regardless of whatever collection you're able to get working, the widget supports hiding metadata text so only the art is visible, which was a nice touch.
@@ -183,23 +183,25 @@ Finally, there's the "Collection" widgets, which display items from one of the p
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While I’m highly critical of Soor’s album art visualizer, simply putting the time in to have one at all when every other third-party player doesn’t bother is enough to warrant a solid “success” mark in my book.</em></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong><em>Neither mode matches iOS’s look and feel. While the light mode is still gorgeous and feels right at home alongside other iOS apps, it’s gray “dark” mode feels out of place, as if it’s an unofficial dark mode from the <a href="http://web.archive.org/web/20170927012228/https://www.apple.com/ios/ios-11/">iOS 11</a> era. The optional “True Black” dark mode doesn’t fare much better, often appearing too dark for iOS’s dark mode guidelines.</em></li>
-<li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features:</strong> <em>While the app does indeed feature a nice “Albums” view, being unable to make “Magic Mixes” for albums instead of songs was a big miss.</em><ul class="bare-list">
-    <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
-</ul></li>
-</ul>
-
-<ul class="bare-list emoji-list">
-<li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Barely any of the discovery features work without iCloud Music Library despite being advertised and “accessible” in local-only mode, making the experience feel like a bait-and-switch tease.</em></li>
-<li><span class="bullet">:x:</span> <strong>Lyrics support:</strong> <em>There’s a lyrics button, but all it does is launch <a href="https://www.musixmatch.com">MusicMatch</a> if you have it downloaded. MusicMatch integration is “nice to have”, not by no means a replacement for real, first-class lyrics support.</em></li>
-<li><span class="bullet">:x:</span> <strong>iPad Support</strong></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While I’m highly critical of Soor’s album art visualizer, simply putting the time in to have one at all when every other third-party player doesn’t bother is enough to warrant a solid “success” mark in my book.</em></li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong><em>Neither mode matches iOS’s look and feel. While the light mode is still gorgeous and feels right at home alongside other iOS apps, it’s gray “dark” mode feels out of place, as if it’s an unofficial dark mode from the <a href="http://web.archive.org/web/20170927012228/https://www.apple.com/ios/ios-11/">iOS 11</a> era. The optional “True Black” dark mode doesn’t fare much better, often appearing too dark for iOS’s dark mode guidelines.</em></li>
+        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features:</strong> <em>While the app does indeed feature a nice “Albums” view, being unable to make “Magic Mixes” for albums instead of songs was a big miss.</em>
+            <ul class="bare-list">
+                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
+                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Barely any of the discovery features work without iCloud Music Library despite being advertised and “accessible” in local-only mode, making the experience feel like a bait-and-switch tease.</em></li>
+        <li><span class="bullet">:x:</span> <strong>Lyrics support:</strong> <em>There’s a lyrics button, but all it does is launch <a href="https://www.musixmatch.com">MusicMatch</a> if you have it downloaded. MusicMatch integration is “nice to have”, not by no means a replacement for real, first-class lyrics support.</em></li>
+        <li><span class="bullet">:x:</span> <strong>iPad Support</strong></li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -207,37 +209,37 @@ Finally, there's the "Collection" widgets, which display items from one of the p
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li>Soor</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li>Soor</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Marvis Pro]: https://appaddy.wixsite.com/marvis

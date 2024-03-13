@@ -30,51 +30,51 @@ continuation:
 ## ![jetAudio's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/icon.png "jetAudio's iOS app icon"){: .inline-app-icon } jetAudio
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in light mode" title="Demonstrating jetAudio's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.webp">
-  <img type="image/jpeg" title="jetAudio's light theme album-view" alt="Image of jetAudio's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.webp">
-  <img type="image/jpeg" title="jetAudio's light theme full-player" alt="Image of jetAudio's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in light mode" title="Demonstrating jetAudio's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.webp">
+            <img type="image/jpeg" title="jetAudio's light theme album-view" alt="Image of jetAudio's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.webp">
+            <img type="image/jpeg" title="jetAudio's light theme full-player" alt="Image of jetAudio's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in dark mode" title="Demonstrating jetAudio's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.webp">
-  <img type="image/jpeg" title="jetAudio's dark theme album-view" alt="Image of jetAudio's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.webp">
-  <img type="image/jpeg" title="jetAudio's dark theme full-player" alt="Image of jetAudio's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in dark mode" title="Demonstrating jetAudio's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
+    <picture>
+        <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.webp">
+        <img type="image/jpeg" title="jetAudio's dark theme album-view" alt="Image of jetAudio's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
+    </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.webp">
+            <img type="image/jpeg" title="jetAudio's dark theme full-player" alt="Image of jetAudio's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/jetaudio-hd-music-player/id894888135">
-<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/jetaudio-hd-music-player/id894888135">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Among the ever-growing pool of third-party music players on iOS, it remains unusual for a player to support deep customization. In terms of sheer quantity of options, only two players boast settings screens rich enough to be considered a customization-forward player, and those are [Marvis Pro] and jetAudio. However, where Marvis Pro's customization focuses on providing listeners the ability to radically restructure the app's browsing navigation, jetAudio's customization does not. Instead, jetAudio's settings empower listeners to adjust nearly every visual and functional aspect of jetAudio's static browsing experience.
@@ -97,43 +97,43 @@ This focus on settings and customization comes with the obvious benefits and dra
 Turning our attention towards jetAudio's browsing experience, it comes with all the browsers like "Albums" and "Artists" that you've come to expect from a general-purpose player. jetAudio opts for displaying these pages with a vertical menu that slides in from the left via a gesture or the hamburger menu on the top bar. This allows jetAudio the extra space to anchor its mini-player right at the bottom of the app instead of setting it on top of or "floating" above a tab bar as seen in many other players. As mentioned before, each of those browsing pages offer per-page customization to hide album art, adjust font size, change layout style, and more, giving you tremendous control over jetAudio's browsing experience. I love being able to make the "Songs" page display just a plain list without album art, the "Albums" page a ×2 grid of my albums, and the "Artists" page a list view with album art, all thanks to jetAudio's settings.
 
 <figure class="three-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
-  <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
-  <img type="image/jpeg" title="My jetAudio Artists page in light mode" alt="Image of my jetAudio Artists page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
-  <img type="image/jpeg" title="My jetAudio Songs page in light mode" alt="Image of my jetAudio Songs page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
-  <img type="image/jpeg" title="My jetAudio Albums page in dark mode" alt="Image of my jetAudio Albums page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
-  <img type="image/jpeg" title="My jetAudio Artists page in dark mode" alt="Image of my jetAudio Artists page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
-  <img type="image/jpeg" title="My jetAudio Songs page in dark mode" alt="Image of my jetAudio Songs page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.jpg">
-</picture>
-</a>
-<figcaption>My preferred “Albums”, “Artists”, and “Songs” configurations.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
+            <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
+            <img type="image/jpeg" title="My jetAudio Artists page in light mode" alt="Image of my jetAudio Artists page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
+            <img type="image/jpeg" title="My jetAudio Songs page in light mode" alt="Image of my jetAudio Songs page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
+            <img type="image/jpeg" title="My jetAudio Albums page in dark mode" alt="Image of my jetAudio Albums page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
+            <img type="image/jpeg" title="My jetAudio Artists page in dark mode" alt="Image of my jetAudio Artists page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
+            <img type="image/jpeg" title="My jetAudio Songs page in dark mode" alt="Image of my jetAudio Songs page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.jpg">
+        </picture>
+    </a>
+    <figcaption>My preferred “Albums”, “Artists”, and “Songs” configurations.</figcaption>
 </figure>
 
 To be clear, this system isn't perfect; puzzlingly, despite jetAudio's extensive UI and behavior settings, there remains no way to hide or otherwise disable jetAudio's overly verbose "secondary details" labels. You're stuck with overly noisy details like number of tracks on a given album, number of entities on the given page, and more. While I'm sure these extra details would be appreciated by some listeners, to not provide a setting to quickly flick these details off is curious from an app with options for nearly every other aspect of the visual and functional experience, and is sure to leave listeners who prefer a more "clean" visual experience disappointed.
@@ -167,73 +167,73 @@ Finally, there's the fascinating new option for jetAudio to preserve playback po
 ### Personal Assessment
 
 <div class="admonition aside">
-<dl>
-  <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
-  <dd><p>It’s deeply customizable, offers the best in-app equalizer solution to date, supports dozens of visualizers, and now this year supports running those visualizers in full screen. jetAudio sets the bar for full-player functionality.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+        <dd><p>It’s deeply customizable, offers the best in-app equalizer solution to date, supports dozens of visualizers, and now this year supports running those visualizers in full screen. jetAudio sets the bar for full-player functionality.</p></dd>
+    </dl>
 
-<dl>
-  <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
-  <dd><p>Lyrics can be toggled on or off by tapping the album art and are badly overlaid onto when activated. It’s pretty hideous, but the feature is there and works.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-  <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
-  <dd><p>There’s an iPad version available, and it’s reasonably performant with minimal screen size optimizations. Perfectly acceptable.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
-  <dd><p>The “Albums” browser can be tweaked both to display albums as a grid and to sort by my preferred method (Artist > Chronological). There aren’t any other album-focused features to speak of, but this is certainly enough.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dd><p>Lyrics can be toggled on or off by tapping the album art and are badly overlaid onto when activated. It’s pretty hideous, but the feature is there and works.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dd><p>There’s an iPad version available, and it’s reasonably performant with minimal screen size optimizations. Perfectly acceptable.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dd><p>The “Albums” browser can be tweaked both to display albums as a grid and to sort by my preferred method (Artist > Chronological). There aren’t any other album-focused features to speak of, but this is certainly enough.</p></dd>
+    </dl>
 
-<dl>
-  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-  <dt><span class="bullet">:x:</span> Discovery features</dt>
-  <dd><p>There’s nary a “Recently Added” or “Recently Played” collection to be found, deeply disappointing.</p></dd>
-</dl>
+    <dl>
+        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dt><span class="bullet">:x:</span> Discovery features</dt>
+        <dd><p>There’s nary a “Recently Added” or “Recently Played” collection to be found, deeply disappointing.</p></dd>
+    </dl>
 </div>
 
 -----
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/11"><p class="button">Next App: “Longplay”</p></a></li>
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/11"><p class="button">Next App: “Longplay”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
+    <div class="toc" style="margin-bottom: 1.3rem;">
     <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
-        <ul>
-          <li>New This Year
+        <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+        <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+        <li>2021’s Players
             <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                <li>New This Year
+                    <ul>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                    </ul>
+                </li>
+                <li>Established
+                    <ul>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                        <li><strong>jetAudio</strong></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                        <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><strong>jetAudio</strong></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+        </li>
+        <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+        <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
     </ul>
-  </div>
+    </div>
 </details>
 
 ----

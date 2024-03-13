@@ -6,221 +6,219 @@ display:
 ---
 
 <style>
-.flex main {
-    padding-top: 2.6em;
+    .flex main {
+        padding-top: 2.6em;
 
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-.column {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-.row {
-    flex-grow: 1;
-}
-.button-group {
-    padding-top: 1.3em;
-    width: 100%;
-}
-.button-group .button {
-    text-align: center;
-}
-.button img {
-    height: 2em;
-    display: inline-block;
-}
-.button span {
-    display: block;
-}
-[data-hint] {
-    display: block;
-}
-.button {
-    padding: 0.75em 1em;
-}
-.barrowclift .button,
-#dark .barrowclift .button {
-    background-color: hsl(211, 100%, 50%);
-    background-image: linear-gradient(#3395FF, #006FE6);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
-}
-    .barrowclift .button:hover,
-    #dark .barrowclift .button:hover {
-        background-color: hsl(211, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 40%, 0.2);
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
-    .barrowclift .button:active,
-    #dark .barrowclift .button:active {
-        background-color: hsl(211, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
+    .column {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
-.email .button,
-#dark .email .button {
-    background-color: hsl(211, 84%, 61%);
-    background-image: linear-gradient(#376EE9 10%, #5DC4F6 90%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 94%, 51%, 0.375);
-}
-    .email .button:hover,
-    #dark .email .button:hover {
-        background-color: hsl(211, 84%, 66%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(211, 94%, 51%, 0.375);
+    .row {
+        flex-grow: 1;
     }
-    .email .button:active,
-    #dark .email .button:active {
-        background-color: hsl(211, 84%, 56%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 84%, 56%, 0.2);
+    .button-group {
+        padding-top: 1.3em;
+        width: 100%;
     }
-.twitter .button,
-#dark .twitter .button {
-    background-color: hsl(204, 88%, 53%);
-    background-image: linear-gradient(#49B2F8, #0E8FE6);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(204, 98%, 43%, 0.375);
-}
-    .twitter .button:hover,
-    #dark .twitter .button:hover {
-        background-color: hsl(204, 88%, 58%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(204, 98%, 43%, 0.375);
+    .button-group .button {
+        text-align: center;
     }
-    .twitter .button:active,
-    #dark .twitter .button:active {
-        background-color: hsl(204, 88%, 48%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(204, 88%, 48%, 0.2);
+    .button img {
+        height: 2em;
+        display: inline-block;
     }
-.mastodon .button,
-#dark .mastodon .button {
-    background-color: hsl(240, 100%, 69%);
-    background-image: linear-gradient(#6364FF, #563ACC);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(240, 100%, 59%, 0.375);
-}
-    .mastodon .button:hover,
-    #dark .mastodon .button:hover {
-        background-color: hsl(204, 88%, 58%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(240, 100%, 59%, 0.375);
+    .button span {
+        display: block;
     }
-    .mastodon .button:active,
-    #dark .mastodon .button:active {
-        background-color: hsl(204, 88%, 48%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(204, 88%, 48%, 0.2);
+    [data-hint] {
+        display: block;
     }
-.youtube .button,
-#dark .youtube .button {
-    background-color: hsl(360, 100%, 50%);
-    background-image: linear-gradient(#FF3333, #E60000);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(360, 100%, 40%, 0.375);
-}
-    .youtube .button:hover,
-    #dark .youtube .button:hover {
-        background-color: hsl(360, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(360, 100%, 40%, 0.375);
+    .button {
+        padding: 0.75em 1em;
     }
-    .youtube .button:active,
-    #dark .youtube .button:active {
-        background-color: hsl(360, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(360, 100%, 45%, 0.2);
+    .barrowclift .button,
+    #dark .barrowclift .button {
+        background-color: hsl(211, 100%, 50%);
+        background-image: linear-gradient(#3395FF, #006FE6);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 100%, 40%, 0.2);
     }
-.apple-music .button,
-#dark .apple-music .button {
-    background-color: hsl(346, 100%, 55%);
-    background-image: linear-gradient(#FD5C74, #FC233B);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(346, 100%, 45%, 0.375);
-}
-    .apple-music .button:hover,
-    #dark .apple-music .button:hover {
-        background-color: hsl(346, 100%, 60%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(346, 100%, 45%, 0.375);
+        .barrowclift .button:hover,
+        #dark .barrowclift .button:hover {
+            background-color: hsl(211, 100%, 55%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(211, 100%, 40%, 0.2);
+        }
+        .barrowclift .button:active,
+        #dark .barrowclift .button:active {
+            background-color: hsl(211, 100%, 45%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 100%, 45%, 0.2);
+        }
+    .email .button,
+    #dark .email .button {
+        background-color: hsl(211, 84%, 61%);
+        background-image: linear-gradient(#376EE9 10%, #5DC4F6 90%);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(211, 94%, 51%, 0.375);
     }
-    .apple-music .button:active,
-    #dark .apple-music .button:active {
-        background-color: hsl(346, 100%, 50%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(346, 100%, 50%, 0.2);
+        .email .button:hover,
+        #dark .email .button:hover {
+            background-color: hsl(211, 84%, 66%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(211, 94%, 51%, 0.375);
+        }
+        .email .button:active,
+        #dark .email .button:active {
+            background-color: hsl(211, 84%, 56%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(211, 84%, 56%, 0.2);
+        }
+    .twitter .button,
+    #dark .twitter .button {
+        background-color: hsl(204, 88%, 53%);
+        background-image: linear-gradient(#49B2F8, #0E8FE6);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(204, 98%, 43%, 0.375);
     }
-.hackernews .button,
-#dark .hackernews .button {
-    background-color: hsl(24, 100%, 50%);
-    background-image: linear-gradient(#FF8433, #E65B00);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 40%, 0.375);
-}
-    .hackernews .button:hover,
-    #dark .hackernews .button:hover {
-        background-color: hsl(360, 100%, 55%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(24, 100%, 40%, 0.375);
+        .twitter .button:hover,
+        #dark .twitter .button:hover {
+            background-color: hsl(204, 88%, 58%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(204, 98%, 43%, 0.375);
+        }
+        .twitter .button:active,
+        #dark .twitter .button:active {
+            background-color: hsl(204, 88%, 48%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(204, 88%, 48%, 0.2);
+        }
+    .mastodon .button,
+    #dark .mastodon .button {
+        background-color: hsl(240, 100%, 69%);
+        background-image: linear-gradient(#6364FF, #563ACC);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(240, 100%, 59%, 0.375);
     }
-    .hackernews .button:active,
-    #dark .hackernews .button:active {
-        background-color: hsl(360, 100%, 45%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(360, 100%, 45%, 0.2);
+        .mastodon .button:hover,
+        #dark .mastodon .button:hover {
+            background-color: hsl(204, 88%, 58%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(240, 100%, 59%, 0.375);
+        }
+        .mastodon .button:active,
+        #dark .mastodon .button:active {
+            background-color: hsl(204, 88%, 48%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(204, 88%, 48%, 0.2);
+        }
+    .youtube .button,
+    #dark .youtube .button {
+        background-color: hsl(360, 100%, 50%);
+        background-image: linear-gradient(#FF3333, #E60000);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(360, 100%, 40%, 0.375);
     }
-.github .button,
-#dark .github .button {
-    background-color: hsl(213, 13%, 16%);
-    background-image: linear-gradient(#2E353D, #181C20);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(213, 23%, 6%, 0.375);
-}
-    .github .button:hover,
-    #dark .github .button:hover {
-        background-color: hsl(213, 13%, 21%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(213, 23%, 6%, 0.375);
+        .youtube .button:hover,
+        #dark .youtube .button:hover {
+            background-color: hsl(360, 100%, 55%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(360, 100%, 40%, 0.375);
+        }
+        .youtube .button:active,
+        #dark .youtube .button:active {
+            background-color: hsl(360, 100%, 45%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(360, 100%, 45%, 0.2);
+        }
+    .apple-music .button,
+    #dark .apple-music .button {
+        background-color: hsl(346, 100%, 55%);
+        background-image: linear-gradient(#FD5C74, #FC233B);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(346, 100%, 45%, 0.375);
     }
-    .github .button:active,
-    #dark .github .button:active {
-        background-color: hsl(213, 13%, 11%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(213, 13%, 11%, 0.2);
+        .apple-music .button:hover,
+        #dark .apple-music .button:hover {
+            background-color: hsl(346, 100%, 60%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(346, 100%, 45%, 0.375);
+        }
+        .apple-music .button:active,
+        #dark .apple-music .button:active {
+            background-color: hsl(346, 100%, 50%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(346, 100%, 50%, 0.2);
+        }
+    .hackernews .button,
+    #dark .hackernews .button {
+        background-color: hsl(24, 100%, 50%);
+        background-image: linear-gradient(#FF8433, #E65B00);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 40%, 0.375);
     }
-.instagram .button,
-#dark .instagram .button {
-    background-color: hsl(335, 66%, 46%);
-    /* Thanks to Alexey Smelyanets for the starting point
-       https://www.csscodelab.com/instagram-style-background-gradient-css/ */
-    background: -webkit-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
-    background: -moz-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
-    background: -ms-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
-    background: -o-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
-    background: radial-gradient(circle farthest-corner at 0% 125%, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), linear-gradient(135deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(335, 76%, 36%, 0.375);
-}
-    .instagram .button:hover,
-    #dark .instagram .button:hover {
-        background-color: hsl(335, 66%, 51%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 .65em 1.3em -0.65em hsla(335, 76%, 36%, 0.375);
+        .hackernews .button:hover,
+        #dark .hackernews .button:hover {
+            background-color: hsl(360, 100%, 55%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(24, 100%, 40%, 0.375);
+        }
+        .hackernews .button:active,
+        #dark .hackernews .button:active {
+            background-color: hsl(360, 100%, 45%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(360, 100%, 45%, 0.2);
+        }
+    .github .button,
+    #dark .github .button {
+        background-color: hsl(213, 13%, 16%);
+        background-image: linear-gradient(#2E353D, #181C20);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(213, 23%, 6%, 0.375);
     }
-    .instagram .button:active,
-    #dark .instagram .button:active {
-        background-color: hsl(335, 66%, 41%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(335, 66%, 41%, 0.2);
+        .github .button:hover,
+        #dark .github .button:hover {
+            background-color: hsl(213, 13%, 21%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(213, 23%, 6%, 0.375);
+        }
+        .github .button:active,
+        #dark .github .button:active {
+            background-color: hsl(213, 13%, 11%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(213, 13%, 11%, 0.2);
+        }
+    .instagram .button,
+    #dark .instagram .button {
+        background-color: hsl(335, 66%, 46%);
+        background: -webkit-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
+        background: -moz-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
+        background: -ms-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
+        background: -o-radial-gradient(0% 125%, circle cover, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
+        background: radial-gradient(circle farthest-corner at 0% 125%, rgb(246, 201, 68) 0%, rgb(246, 196, 67) 10%, rgb(236, 90, 46) 28%, rgb(222, 63, 88) 42%, transparent 82%), linear-gradient(135deg, rgb(222, 63, 88) 12%, rgb(166, 35, 231) 58%);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 0.43em 0.87em -0.2em hsla(335, 76%, 36%, 0.375);
     }
-.tumblr .button,
-#dark .tumblr .button {
-    background-color: hsl(212, 100%, 15%);
-    background-image: linear-gradient(#003A80, #00234D);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(212, 100%, 5%, 0.375);
-}
-    .tumblr .button:hover,
-    #dark .tumblr .button:hover {
-        background-color: hsl(212, 100%, 20%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(212, 100%, 5%, 0.375);
+        .instagram .button:hover,
+        #dark .instagram .button:hover {
+            background-color: hsl(335, 66%, 51%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.5), 0 .65em 1.3em -0.65em hsla(335, 76%, 36%, 0.375);
+        }
+        .instagram .button:active,
+        #dark .instagram .button:active {
+            background-color: hsl(335, 66%, 41%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(335, 66%, 41%, 0.2);
+        }
+    .tumblr .button,
+    #dark .tumblr .button {
+        background-color: hsl(212, 100%, 15%);
+        background-image: linear-gradient(#003A80, #00234D);
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(212, 100%, 5%, 0.375);
     }
-    .tumblr .button:active,
-    #dark .tumblr .button:active {
-        background-color: hsl(212, 100%, 10%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(212, 100%, 10%, 0.2);
+        .tumblr .button:hover,
+        #dark .tumblr .button:hover {
+            background-color: hsl(212, 100%, 20%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(212, 100%, 5%, 0.375);
+        }
+        .tumblr .button:active,
+        #dark .tumblr .button:active {
+            background-color: hsl(212, 100%, 10%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(212, 100%, 10%, 0.2);
+        }
+    @media (min-width: 340px) {
+        .button-group li {
+            margin-left: 1.5vw;
+            margin-right: 1.5vw;
+            width: 45%;
+        }
     }
-@media (min-width: 340px) {
-    .button-group li {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-        width: 45%;
+    @media (min-width: 700px) {
+        .button-group li {
+            margin-left: 0.325em;
+            margin-right: 0.325em;
+            width: 26%;
+        }
     }
-}
-@media (min-width: 700px) {
-    .button-group li {
-        margin-left: 0.325em;
-        margin-right: 0.325em;
-        width: 26%;
-    }
-}
 </style>
 <div class="row">
     <div class="column w6">
@@ -229,21 +227,13 @@ display:
         <h4 style="margin-bottom:0;line-height:1.4em;text-align:center;">I’m Marc Barrowclift, you can find me on…</h4>
 
         <ul class="button-group social">
-            <li class="barrowclift"><span class="hint--top hint--rounded hint--bounce" data-hint="barrowclift.me"><a href="{{ site.baseurl }}/"><p class="button"><img src="images/happy-mac.png" /><span>My Website</span></p></a></span></li>
+            <li class="barrowclift"><span class="hint--top hint--rounded hint--bounce" data-hint="barrowclift.me"><a href="/"><p class="button"><img src="images/happy-mac.png" /><span>My Website</span></p></a></span></li>
             <li class="email"><span class="hint--top hint--rounded hint--bounce" data-hint="{{ site.email }}"><a href="mailto:{{ site.email }}"><p class="button"><img src="images/email.png" /><span>Email</span></p></a></span></li>
             <li class="mastodon"><span class="hint--top hint--rounded hint--bounce" data-hint="mastodon.social/@barrowclift"><a href="https://mastodon.social/@barrowclift"><p class="button"><img src="images/mastodon.png" /><span>Mastodon</span></p></a></span></li>
             <li class="hackernews"><span class="hint--top hint--rounded hint--bounce" data-hint="news.ycombinator.com/user?id=barrowclift"><a href="https://news.ycombinator.com/user?id=barrowclift"><p class="button"><img src="images/hackernews.png" /><span>Hacker News</span></p></a></span></li>
             <li class="apple-music"><span class="hint--top hint--rounded hint--bounce" data-hint="music.apple.com/profile/barrowclift"><a href="https://music.apple.com/profile/barrowclift"><p class="button"><img src="images/apple-music.png" /><span>Apple Music</span></p></a></span></li>
             <li class="github"><span class="hint--top hint--rounded hint--bounce" data-hint="github.com/barrowclift"><a href="https://github.com/barrowclift"><p class="button"><img src="images/github.png" /><span>Github</span></p></a></span></li>
         </ul>
-
-        <!-- <h4 style="margin-top:1em;margin-bottom:0;line-height:1.4em;text-align:center;">Present but inactive on…</h4>
-
-        <ul class="button-group">
-            <li class="tumblr"><span class="hint--top hint--rounded hint--bounce" data-hint="barrowclift.tumblr.com"><a href="https://barrowclift.tumblr.com"><p class="button"><img src="images/tumblr.png" /><span>Tumblr</span></p></a></span></li><br/>
-            <li class="youtube"><span class="hint--top hint--rounded hint--bounce" data-hint="youtube.com/@barrowclift"><a href="https://www.youtube.com/@barrowclift"><p class="button"><img src="images/youtube.png" /><span>YouTube</span></p></a></span></li>
-            <li class="instagram"><span class="hint--top hint--rounded hint--bounce" data-hint="instagram.com/barrowclift"><a href="https://www.instagram.com/barrowclift/"><p class="button"><img src="images/instagram.png" /><span>Instagram</span></p></a></span></li>
-        </ul> -->
     </div>
 </div>
 <a rel="me" href="https://mastodon.social/@barrowclift" style="display:none !important;"></a>

@@ -30,51 +30,51 @@ continuation:
 ## ![Cs Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png "Cs Music's iOS app icon"){: .inline-app-icon } Cs Music
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in light mode" title="Demonstrating Cs Music's usage in light mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.webp">
-  <img type="image/jpeg" title="Cs Music's light theme album-view" alt="Image of Cs Music's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.webp">
-  <img type="image/jpeg" title="Cs Music's light theme full-player" alt="Image of Cs Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in light mode" title="Demonstrating Cs Music's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.webp">
+            <img type="image/jpeg" title="Cs Music's light theme album-view" alt="Image of Cs Music's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.webp">
+            <img type="image/jpeg" title="Cs Music's light theme full-player" alt="Image of Cs Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
+        </picture>
+    </a>
 </div>
 <div class="show-when-dark edge-to-edge large three-images ios-screenshot">
-<video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in dark mode" title="Demonstrating Cs Music's usage in dark mode">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.mp4" type="video/mp4">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.webm" type="video/webm">
-    <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.ogv" type="video/ogg">
-    [HTML5 video tag not supported by your browser]
-</video>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.webp">
-  <img type="image/jpeg" title="Cs Music's dark theme album-view" alt="Image of Cs Music's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
-</picture>
-</a>
-<a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.webp">
-  <img type="image/jpeg" title="Cs Music's dark theme full-player" alt="Image of Cs Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
-</picture>
-</a>
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in dark mode" title="Demonstrating Cs Music's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.webp">
+            <img type="image/jpeg" title="Cs Music's dark theme album-view" alt="Image of Cs Music's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.webp">
+            <img type="image/jpeg" title="Cs Music's dark theme full-player" alt="Image of Cs Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
+        </picture>
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/cs-music-player/id924491991">
-<img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/cs-music-player/id924491991">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Few general-purpose players changed as radically as Cs Music over the past half decade. Cs Music endured a rebranding[^name-change], a failed redesign[^failed-redesign], a *successful* redesign, and plenty of smaller hills and valleys in-between. However, despite its many hurtles, Mike Clay's unyielding dedication to the app helped it continue to mature and flourish over the years into one of the best general-purpose players on the market.
@@ -114,73 +114,73 @@ This pleasing degree of customization carries through into the new "Activity" pa
 While that alone isn't noteworthy (Power Player added a similar "Home" page last year), Cs Music went the extra mile by allowing many of those discovery collections to target either songs, albums, artists, composers, or genres. The simple ability for listeners to decide what kind of entity to display in a given discovery collection makes Cs Music's "Activity" page much more widely useful since it is far more likely to support your listening and browsing preferences. Compared to its most direct equivalent of Power Player's comparatively restrictive "Home" page, Cs Music's "Activity" page provides a much more flexible and inherently personal experience.
 
 <figure class="two-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
-  <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in light mode" alt="Image of page 1 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
-  <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in light mode" alt="Image of page 2 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
-  <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in dark mode" alt="Image of page 1 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
-  <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in dark mode" alt="Image of page 2 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.jpg">
-</picture>
-</a>
-<figcaption>Your “Activity” page might look totally different. For example, there’s nothing stopping you from configuring “Recently Played” to display songs, “Recently Added” to display artists, etc.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
+            <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in light mode" alt="Image of page 1 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
+            <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in light mode" alt="Image of page 2 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
+            <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in dark mode" alt="Image of page 1 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
+            <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in dark mode" alt="Image of page 2 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.jpg">
+        </picture>
+    </a>
+    <figcaption>Your “Activity” page might look totally different. For example, there’s nothing stopping you from configuring “Recently Played” to display songs, “Recently Added” to display artists, etc.</figcaption>
 </figure>
 
 Unlike [Plum] and Power Player, Cs Music's visual design is mostly utilitarian. There's no fancy artist pages, dynamic entity or album view themes, or anything of the sort. The design is elegant and tastefully executed, but purposefully doesn't stray much farther from that. With Cs Music, its feet are firmly on function over form. It's full-player, however, is the sole exception.
 
 <figure class="three-images ios-screenshot">
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
-  <img type="image/jpeg" title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
-  <img type="image/jpeg" title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.jpg">
-</picture>
-</a>
-<a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
-  <img type="image/jpeg" title="The album view in light mode with a predominantly blue record" alt="Image of the album view in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
-  <img type="image/jpeg" title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
-  <img type="image/jpeg" title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.jpg">
-</picture>
-</a>
-<a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
-<picture>
-  <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
-  <img type="image/jpeg" title="The album view in dark mode with a predominantly blue record" alt="Image of the album view in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.jpg">
-</picture>
-</a>
-<figcaption>The effect is boldly colored and blur-free like Power Player, but far more subtle in comparison.</figcaption>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
+            <img type="image/jpeg" title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
+            <img type="image/jpeg" title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
+            <img type="image/jpeg" title="The album view in light mode with a predominantly blue record" alt="Image of the album view in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
+            <img type="image/jpeg" title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
+            <img type="image/jpeg" title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
+            <img type="image/jpeg" title="The album view in dark mode with a predominantly blue record" alt="Image of the album view in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.jpg">
+        </picture>
+    </a>
+    <figcaption>The effect is boldly colored and blur-free like Power Player, but far more subtle in comparison.</figcaption>
 </figure>
 
 The first thing you'll notice in Cs Music's full-player is its massive, grippable progress and volume bars, followed by the only dynamic album art theming found anywhere in the app. Like Power Player, Cs Music takes primary and secondary colors from the album art to color the various controls, but unlike Power Player it *lightly* colors the background color based on the album art. This approach rarely yields results that are particularly noteworthy (a boon for reading accessibility) but as a result are overwhelmingly dull in comparison to Power Player's equivalents. For listeners that prioritize usability and readability but would still prefer just a spot of whimsy in their full-player, there are few other players than Cs Music's that perfectly fit that bill.
@@ -233,70 +233,70 @@ Coming from last year's redesign, I frankly wasn't expecting much movement on Cs
 ### Personal Assessment
 
 <div class="admonition aside">
-<dl>
-  <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
-  <dd><p>Cs Music’s lyrics support is the now “old school” approach of hiding the album art with a translucent scrollable lyrics view, but the feature exists and works well enough.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-  <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
-  <dd><p>Its iPad version performs just as well as its iPhone counterpart, and the lack of screen size optimizations only yield minor cosmetic and usability annoyances and nothing show-stopping like on <a href="https://www.mpxeq.com">MPX EQ</a>’s iPad version. It’s not great, but I’m still happy it exists.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
-  <dd><p>The introduction of the “Activity” page this year was an outstanding achievement, and fully caught up Cs Music’s discovery capabilities to its peers.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
-  <dd><p>The extremely understated full-player dynamic theme is not fully to my taste, but there’s no denying its light hand helps it yield much more consistently pleasing results than other players with more inconsistent results like <a href="https://mixtapesapp.com">Mixtapes</a>.</p></dd>
-  <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
-  <dd><p>The lack of support for my preferred album sorting method (Artist > Chronological) in the “Albums” page continues to be a disappointment, but the ability to customize the new discovery collections in the “Activity” page to display albums and the existing ability to browse albums with a grid helps make up for it.</p></dd>
-</dl>
-
-<dl>
-  <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-</dl>
+    <dl>
+        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dd><p>Cs Music’s lyrics support is the now “old school” approach of hiding the album art with a translucent scrollable lyrics view, but the feature exists and works well enough.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dd><p>Its iPad version performs just as well as its iPhone counterpart, and the lack of screen size optimizations only yield minor cosmetic and usability annoyances and nothing show-stopping like on <a href="https://www.mpxeq.com">MPX EQ</a>’s iPad version. It’s not great, but I’m still happy it exists.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+        <dd><p>The introduction of the “Activity” page this year was an outstanding achievement, and fully caught up Cs Music’s discovery capabilities to its peers.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
+        <dd><p>The extremely understated full-player dynamic theme is not fully to my taste, but there’s no denying its light hand helps it yield much more consistently pleasing results than other players with more inconsistent results like <a href="https://mixtapesapp.com">Mixtapes</a>.</p></dd>
+        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dd><p>The lack of support for my preferred album sorting method (Artist > Chronological) in the “Albums” page continues to be a disappointment, but the ability to customize the new discovery collections in the “Activity” page to display albums and the existing ability to browse albums with a grid helps make up for it.</p></dd>
+    </dl>
+    
+    <dl>
+        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+    </dl>
 </div>
 
 -----
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-  <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/8"><p class="button">Next App: “Doppi”</p></a></li>
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/8"><p class="button">Next App: “Doppi”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><strong>Cs Music</strong></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><strong>Cs Music</strong></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 ----

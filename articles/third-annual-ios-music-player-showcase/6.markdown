@@ -28,25 +28,25 @@ continuation:
 ## !["Doppler 2" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/icon.png '"Doppler 2" iOS app icon'){: .inline-app-icon } Doppler 2
 
 <div class="edge-to-edge large three-images ios-screenshot">
-  <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage-poster.jpg" alt="Video demonstrating 'Doppler 2' usage" title="Demonstrating 'Doppler 2' usage">
-      <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.mp4" type="video/mp4">
-      <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.webm" type="video/webm">
-      <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.ogv" type="video/ogg">
-      [HTML5 video tag not supported by your browser]
-  </video>
-  <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg">
-  ![Image of "Doppler 2" album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg '"Doppler 2" album view')
-  </a>
-  <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg">
-  ![Image of "Doppler 2" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg '"Doppler 2" player view')
-  </a>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage-poster.jpg" alt="Video demonstrating 'Doppler 2' usage" title="Demonstrating 'Doppler 2' usage">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg">
+        ![Image of "Doppler 2" album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg '"Doppler 2" album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg">
+        ![Image of "Doppler 2" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg '"Doppler 2" player view')
+    </a>
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747">
-<img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 [Doppler 2] is technically a new arrival this year since it's a separate app listing from the original Doppler (which has since been taken down) and its initial release occurred at the very beginning of this year on [January 6th](https://blog.brushedtype.co/announcing-doppler-2/). However, one need only peruse the promotion screenshots on its [App Store page](https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747) to realize it shares more in common with its predecessor than the major version bump and new app listing implies. Marked differences from the original version include:
@@ -73,15 +73,15 @@ However, taken as it is outside of the year-by-year scrutiny, Doppler 2 remains 
 As far as small delights are concerned, I really appreciate that Doppler's dynamic color-matching album view still made it through to Doppler 2. The results are overwhelmingly positive, with only a few albums in my collection not looking excellent with the effect (and even then, they're still perfectly acceptable and—most importantly—readable). While it doesn't appear any features got dropped in the major version bump, I'm nonetheless grateful this one is still around.
 
 <div class="three-images ios-screenshot">
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg">
-![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg "The album view with a predominantly red record")
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg">
-![Image of the album view with a predominantly green record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg "The album view with a predominantly green record")
-</a>
-<a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg">
-![Image of the album view with a predominantly blue record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg "The album view with a predominantly blue record")
-</a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg">
+        ![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg "The album view with a predominantly red record")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg">
+        ![Image of the album view with a predominantly green record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg "The album view with a predominantly green record")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg">
+        ![Image of the album view with a predominantly blue record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg "The album view with a predominantly blue record")
+    </a>
 </div>
 
 With all that said, the lack of lyrics support, light mode theme, widgets, and other table-stake features leaves Doppler 2 wanting. The features it has are done well, but compared to the continuously rising bar set by most of its contemporaries, Doppler 2 feels like it's falling short.
@@ -93,23 +93,25 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-<ul class="bare-list emoji-list">
-  <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
-  </ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
+    </ul>
 
-  <ul class="bare-list emoji-list">
-  <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
-  <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em><ul class="bare-list">
-      <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
-      <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
-  </ul></li>
-  </ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
+        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
+            <ul class="bare-list">
+                <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
+                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
 
-  <ul class="bare-list emoji-list">
-  <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
-  <li><span class="bullet">:x:</span> <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
-  <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
-</ul>
+    <ul class="bare-list emoji-list">
+        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
+        <li><span class="bullet">:x:</span> <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
+        <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
+    </ul>
 </div>
 
 <ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
@@ -117,37 +119,37 @@ None.
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li>Doppler 2</li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li>Doppler 2</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 ----

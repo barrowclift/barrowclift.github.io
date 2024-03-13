@@ -21,13 +21,13 @@ card:
 
 <style>
 .high-sierra-dock img {
-	border: 1px solid rgba(184, 180, 179, 0.50);
+    border: 1px solid rgba(184, 180, 179, 0.50);
 }
 #dark .high-sierra-dock img {
-	border-color: #1B1B1B;
+    border-color: #1B1B1B;
 }
 .three-fours-size img {
-	width: 75%;
+    width: 75%;
 }
 </style>
 
@@ -201,7 +201,7 @@ __You deserve better than that__, and designers like Schupp have a responsibilit
 Cheers to Tower's good icon design, I can only hope one day it will return.
 
 <div id="article-linkback">
-	<a href="/about">⌘</a>
+    <a href="/about">⌘</a>
 </div>
 
 ------

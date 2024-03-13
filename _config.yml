@@ -24,49 +24,49 @@ timezone: America/New_York
 locale: en-US
 
 kramdown:
-  footnote_backlink: "&#x21A9;&#xFE0E;"
+    footnote_backlink: "&#x21A9;&#xFE0E;"
 
 collections:
-  updates:
-    output: true
+    updates:
+        output: true
 
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: default
-      timelocked: false
-      force-early-timelock: false
-      show-anchors: false
-      design:
-        force-dark-mode: false
-        ignore-accent-color: false
-      display:
-        edge-to-edge: false
-        extra-wide: false
-        flex: false
-      menu:
-        show-settings: true
-      article:
-        show-stamp: true
-        show-footer: true
-  -
-    scope:
-      type: posts
-    values:
-      type: article
-      show-anchors: true
-  -
-    scope:
-      path: projects
-    values:
-      show-anchors: true
-      article:
-        show-stamp: false
-        show-footer: false
+    -
+        scope:
+            path: ""
+        values:
+            layout: default
+            timelocked: false
+            force-early-timelock: false
+            show-anchors: false
+            design:
+                force-dark-mode: false
+                ignore-accent-color: false
+            display:
+                edge-to-edge: false
+                extra-wide: false
+                flex: false
+            menu:
+                show-settings: true
+            article:
+                show-stamp: true
+                show-footer: true
+    -
+        scope:
+            type: posts
+        values:
+            type: article
+            show-anchors: true
+    -
+        scope:
+            path: projects
+        values:
+            show-anchors: true
+            article:
+                show-stamp: false
+                show-footer: false
 
 plugins:
-  - jemoji
-  - jekyll-paginate
-  - jekyll-feed
+    - jemoji
+    - jekyll-paginate
+    - jekyll-feed

@@ -2,318 +2,312 @@
 <html class="ignore-accent-color" lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <!--
-One-off. Emulates Hackers News' look & feel.
+One-off for /projects/hacker-news-cleanser.
 
-Currently used for:
-  /projects/hacker-news-cleanser
+Emulates Hackers News' "interesting" look & feel.
 -->
 
-	{% include head.html %}
-	<style>
-	a {
-	  color: hsl(24, 100%, 50%);
-	}
-	a:hover {
-	  background-color: hsla(24, 100%, 50%, 0.1);
-	}
-	/* Highlights (must be seperate, combining them breaks the style) */
-	::selection { /* Safari */
-    background: hsla(24, 100%, 50%, 0.99);
-    color: white;
-	}
-	::-moz-selection { /* Firefox */
-    background: hsla(24, 100%, 50%, 0.99);
-    color: white;
-	}
-	.color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 50%);
-	}
-	button,
-	.button {
-    background-color: hsl(24, 100%, 50%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 50%, 0.2);
-	}
-	    button:hover,
-	    .button:hover {
-	        background-color: hsl(24, 100%, 55%) !important;
-	        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 45%, 0.375);
-	    }
-	    button:active,
-	    .button:active {
-	        background-color: hsl(24, 100%, 45%) !important;
-	        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(24, 100%, 45%, 0.2);
-	    }
-	#dark a {
-	    color: hsl(24, 100%, 38%);
-	}
-	#dark a:hover {
-	    background-color: hsla(24, 100%, 38%, 0.15);
-	}
-	#dark ::selection {
-	    background: hsla(24, 100%, 38%, 0.85);
-	}
-	#dark ::-moz-selection {
-	    background: hsla(24, 100%, 38%, 0.85);
-	}
-	#dark .color-well.active {
-    box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 38%);
-	}
-	#dark button,
-	#dark .button {
-	    background-color: hsl(24, 100%, 38%);
-	    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 38%, 0.2);
-	}
-	    #dark button:hover,
-	    #dark .button:hover {
-	        background-color: hsl(24, 100%, 43%) !important;
-	        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 33%, 0.375);
-	    }
-	    #dark button:active,
-	    #dark .button:active {
-	        background-color: hsl(36, 100%, 33%) !important;
-	        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(36, 100%, 33%, 0.2);
-	    }
+    {% include head.html %}
+    <style>
+        a {
+          color: hsl(24, 100%, 50%);
+        }
+        a:hover {
+          background-color: hsla(24, 100%, 50%, 0.1);
+        }
+        ::selection {
+            background: hsla(24, 100%, 50%, 0.99);
+            color: white;
+        }
+        ::-moz-selection {
+            background: hsla(24, 100%, 50%, 0.99);
+            color: white;
+        }
+        .color-well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 50%);
+        }
+        button,
+        .button {
+            background-color: hsl(24, 100%, 50%);
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 50%, 0.2);
+        }
+            button:hover,
+            .button:hover {
+                background-color: hsl(24, 100%, 55%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 45%, 0.375);
+            }
+            button:active,
+            .button:active {
+                background-color: hsl(24, 100%, 45%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(24, 100%, 45%, 0.2);
+            }
+        #dark a {
+            color: hsl(24, 100%, 38%);
+        }
+        #dark a:hover {
+            background-color: hsla(24, 100%, 38%, 0.15);
+        }
+        #dark ::selection {
+            background: hsla(24, 100%, 38%, 0.85);
+        }
+        #dark ::-moz-selection {
+            background: hsla(24, 100%, 38%, 0.85);
+        }
+        #dark .color-well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 38%);
+        }
+        #dark button,
+        #dark .button {
+            background-color: hsl(24, 100%, 38%);
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 38%, 0.2);
+        }
+            #dark button:hover,
+            #dark .button:hover {
+                background-color: hsl(24, 100%, 43%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 33%, 0.375);
+            }
+            #dark button:active,
+            #dark .button:active {
+                background-color: hsl(36, 100%, 33%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(36, 100%, 33%, 0.2);
+            }
+        html {
+            font-size: 14px;
+        }
+        @media (min-width: 700px) {
+            html {
+                font-size: 16px;
+            }
+        }
+        html, body {
+            color: black;
+        }
+        html#dark,
+        #dark body {
+            color: white;
+        }
+        #dark {
+            background-color: #111111;
+        }
+        menu {
+            position: absolute !important;
+            border: unset;
+            box-shadow: unset;
+        }
+        #mainmenu {
+            -webkit-backdrop-filter: unset !important;
+            backdrop-filter: unset !important;
+        }
+        .mac-background-color {
+            fill: #ffffff;
+        }
+        #settings-toggle {
+            width: unset;
+        }
+        main {
+            margin-top: 5.625em;
+        }
+        menu ul li a,
+        #dark menu ul li a {
+            text-shadow: unset;
+            color: black;
+        }
+        .mac-line-color,
+        #dark .mac-line-color {
+            fill: #000000;
+        }
+        #mainmenu .active,
+        #mainmenu a:hover,
+        #dark #mainmenu .active,
+        #dark #mainmenu a:hover {
+            color: white;
+        }
+        .mac-background-color,
+        #dark .mac-background-color {
+            fill: #ffffff;
+        }
+        #logo .signature-color,
+        #dark #logo .signature-color {
+            fill: black;
+        }
+        #logo:hover .signature-color,
+        #dark #logo:hover .signature-color {
+            fill: white;
+        }
+        button.pill,
+        button.pill path,
+        #dark button.pill path,
+        #dark button.pill:hover,
+        #dark button.pill:hover path,
+        #dark button.pill:active,
+        #dark .setting-toggles.active button.pill,
+        #dark .setting-toggles.active button.pill path,
+        button.bigfoot-footnote__button {
+            fill: black !important;
+            transform: unset !important;
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+        button.pill:hover,
+        button.pill:hover path,
+        button.pill:active,
+        .setting-toggles.active button.pill,
+        .setting-toggles.active button.pill path,
+        #dark button.pill:hover,
+        #dark button.pill:hover path,
+        #dark button.pill:active,
+        #dark .setting-toggles.active button.pill,
+        #dark .setting-toggles.active button.pill path {
+            fill: white !important;
+            transform: unset !important;
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+        header {
+            display: inline !important;
+            top: 0;
+            padding-top: 0.3em !important;
+        }
+        .contact {
+            display: none !important;
+        }
+        menu ul li.setting-toggles {
+            margin-left: 0vw;
+            margin-right: 0vw;
+            min-width: auto;
+        }
+        menu > #mainmenu > ul {
+            text-align: left;
+        }
+        .pill svg {
+            height: 1rem;
+        }
+        button.pill {
+            line-height: 0rem !important;
+            top: 0 !important;
+        }
+        @media (max-width: 699px) {
+            #logo {
+                margin-top: 0;
+            }
+            #logo #mac {
+                margin-left: 0.3em;
+                width: 16px;
+                height: 16px;
+            }
+            #logo #signature {
+                height: 24px;
+                margin-left: 0em;
+            }
+            menu ul {
+                display: inline-block;
+                vertical-align: top;
+                width: 70%;
+            }
+            #header-link {
+                display: inline-block;
+            }
+            header {
+                display: inline !important;
+                top: 0.4em;
+                padding-top: 0.3em !important;
+            }
+            menu ul li {
+                margin-top: 0.45em;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                font-size: 0.833em;
+                min-width: unset;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+            #menu-height-offset {
+                display: none;
+            }
+            .button {
+                padding: 0.375em;
+                width: auto;
+            }
+            #submenu-toggle {
+                display: none !important;
+            }
+            #about-link {
+                display: inline !important;
+            }
+        }
+        @media (min-width: 700px) {
+            .contact {
+                display: inline-block !important;
+            }
+            menu > #mainmenu > ul {
+                text-align: center;
+            }
+            .pill svg {
+                height: 1.3rem;
+            }
+            #logo:after {
+                top: -0.5rem;
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+            main {
+                margin-top: 7.5em;
+            }
+        }
+        @media (min-width: 900px) {
+            #logo:after {
+                left: 0rem;
+            }
+        }
+        html {
+            background-color: rgb(246, 246, 239);
+        }
+        menu {
+            background-color: rgb(255, 102, 0); !important;
+        }
+        #dark menu {
+            background-color: hsl(24, 100%, 38%); !important;
+        }
+        hr, #dark hr {
+            background: none;
+            background-image: none;
+            border: none;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+        #dark hr {
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        menu a:hover {
+            background-color: transparent !important;
+        }
+        .popup {
+            width: 9.75em !important;
+            margin-left: -10.375em !important;
+        }
+        menu #mainmenu > ul {
+            -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;
+        }
+        @media (max-width: 700px) {
+            .popup {
+                top: 2em;
+            }
+            #submenu {
+                opacity: 0 !important;
+                height: 0 !important;
+            }
+        }
+    </style>
 
-
-	html {
-		font-size: 14px;
-	}
-	@media (min-width: 700px) {
-		html {
-			font-size: 16px;
-		}
-	}
-	html, body {
-		color: black;
-	}
-	html#dark,
-	#dark body {
-		color: white;
-	}
-	#dark {
-		background-color: #111111;
-	}
-	menu {
-		position: absolute !important;
-		border: unset;
-		box-shadow: unset;
-	}
-	#mainmenu {
-		-webkit-backdrop-filter: unset !important;
-		backdrop-filter: unset !important;
-	}
-	.mac-background-color {
-		fill: #ffffff;
-	}
-	#settings-toggle {
-		width: unset;
-	}
-	main {
-/*		margin-top: 7.5em;*/
-		margin-top: 5.625em;
-	}
-	menu ul li a,
-	#dark menu ul li a {
-		text-shadow: unset;
-		color: black;
-	}
-	.mac-line-color,
-	#dark .mac-line-color {
-		fill: #000000;
-	}
-	#mainmenu .active,
-	#mainmenu a:hover,
-	#dark #mainmenu .active,
-	#dark #mainmenu a:hover {
-		color: white;
-	}
-	.mac-background-color,
-	#dark .mac-background-color {
-		fill: #ffffff;
-	}
-	#logo .signature-color,
-	#dark #logo .signature-color {
-		fill: black;
-	}
-	#logo:hover .signature-color,
-	#dark #logo:hover .signature-color {
-		fill: white;
-	}
-
-	button.pill,
-	button.pill path,
-	#dark button.pill path,
-	#dark button.pill:hover,
-	#dark button.pill:hover path,
-	#dark button.pill:active,
-	#dark .setting-toggles.active button.pill,
-	#dark .setting-toggles.active button.pill path,
-	button.bigfoot-footnote__button {
-		fill: black !important;
-		transform: unset !important;
-		background-color: unset !important;
-		box-shadow: unset !important;
-	}
-	button.pill:hover,
-	button.pill:hover path,
-	button.pill:active,
-	.setting-toggles.active button.pill,
-	.setting-toggles.active button.pill path,
-	#dark button.pill:hover,
-	#dark button.pill:hover path,
-	#dark button.pill:active,
-	#dark .setting-toggles.active button.pill,
-	#dark .setting-toggles.active button.pill path {
-		fill: white !important;
-		transform: unset !important;
-		background-color: unset !important;
-		box-shadow: unset !important;
-	}
-	header {
-		display: inline !important;
-		top: 0;
-		padding-top: 0.3em !important;
-	}
-	.contact {
-		display: none !important;
-	}
-	menu ul li.setting-toggles {
-		margin-left: 0vw;
-		margin-right: 0vw;
-		min-width: auto;
-	}
-	menu > #mainmenu > ul {
-		text-align: left;
-	}
-	.pill svg {
-		height: 1rem;
-	}
-	button.pill {
-		line-height: 0rem !important;
-		top: 0 !important;
-	}
-	@media (max-width: 699px) {
-		#logo {
-			margin-top: 0;
-		}
-		#logo #mac {
-			margin-left: 0.3em;
-			width: 16px;
-			height: 16px;
-		}
-		#logo #signature {
-			height: 24px;
-			margin-left: 0em;
-		}
-		menu ul {
-			display: inline-block;
-			vertical-align: top;
-			width: 70%;
-		}
-		#header-link {
-			display: inline-block;
-		}
-		header {
-			display: inline !important;
-			top: 0.4em;
-			padding-top: 0.3em !important;
-		}
-		menu ul li {
-			margin-top: 0.45em;
-			padding-top: 0;
-			padding-bottom: 0;
-			margin-bottom: 0;
-			font-size: 0.833em;
-			min-width: unset;
-			margin-left: 4vw;
-			margin-right: 4vw;
-		}
-		#menu-height-offset {
-			display: none;
-		}
-		.button {
-			padding: 0.375em;
-			width: auto;
-		}
-		#submenu-toggle {
-			display: none !important;
-		}
-		#about-link {
-			display: inline !important;
-		}
-	}
-	@media (min-width: 700px) {
-		.contact {
-			display: inline-block !important;
-		}
-		menu > #mainmenu > ul {
-			text-align: center;
-		}
-		.pill svg {
-			height: 1.3rem;
-		}
-		#logo:after {
-			top: -0.5rem;
-			height: 3.5rem;
-			width: 3.5rem;
-		}
-		main {
-			margin-top: 7.5em;
-		}
-	}
-	@media (min-width: 900px) {
-		#logo:after {
-			left: 0rem;
-		}
-	}
-	html {
-		background-color: rgb(246, 246, 239);
-	}
-	menu {
-		background-color: rgb(255, 102, 0); !important;
-	}
-	#dark menu {
-		background-color: hsl(24, 100%, 38%); !important;
-	}
-	hr, #dark hr {
-		background: none;
-		background-image: none;
-		border: none;
-		border-bottom: 2px solid rgba(0,0,0,0.1);
-	}
-	#dark hr {
-		border-bottom: 2px solid rgba(255,255,255,0.2);
-	}
-	menu a:hover {
-		background-color: transparent !important;
-	}
-	.popup {
-		width: 9.75em !important;
-		margin-left: -10.375em !important;
-	}
-	menu #mainmenu > ul {
-		-webkit-backdrop-filter: unset;
-		backdrop-filter: unset;
-	}
-	@media (max-width: 700px) {
-		.popup {
-			top: 2em;
-		}
-		#submenu {
-			opacity: 0 !important;
-			height: 0 !important;
-		}
-	}
-	</style>
-
-	<body>
-		<div id="wrap">
-			<div id="content" class="center">
-				{% include menu.html %}
-				<main>
-					{{ content }}
-				</main>
-			</div>
-		</div>
-	</body>
+    <body>
+        <div id="wrap">
+            <div id="content" class="center">
+                {% include menu.html %}
+                <main>
+                    {{ content }}
+                </main>
+            </div>
+        </div>
+    </body>
 </html>

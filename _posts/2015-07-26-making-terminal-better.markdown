@@ -23,14 +23,14 @@ card:
 ---
 
 <style>
-	.terminal-image-1 img {
-		max-width: 570px;
-		width: 100% !important;
-	}
-	.terminal-image-2 img {
-		max-width: 730px;
-		width: 100% !important;
-	}
+    .terminal-image-1 img {
+        max-width: 570px;
+        width: 100% !important;
+    }
+    .terminal-image-2 img {
+        max-width: 730px;
+        width: 100% !important;
+    }
 }
 </style>
 
@@ -101,7 +101,7 @@ export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 Functions
 ---------
 
-Now you've got your Terminal look and feel set just the way you like, what next? Well, I'd say the next most important change you could make is adding functions to your `.bashrc`	to encapsulate those often lengthy, horrid Unix commands into a much nicer function.
+Now you've got your Terminal look and feel set just the way you like, what next? Well, I'd say the next most important change you could make is adding functions to your `.bashrc`  to encapsulate those often lengthy, horrid Unix commands into a much nicer function.
 
 Let's take compression, for example. The proper command to compress a tar of a given file in Unix is `tar czf ${YOUR_FILE}`. Decompressing and extracting the file back out is just as cryptic with `tar xjf ${YOUR_FILE}`. I have never once been able to remember those infuriating arbitrary series of characters that tells the tar command to actually do what should be the default action. Thankfully with functions I don't need to, and now you don't have to either!
 
@@ -110,42 +110,42 @@ Let's take compression, for example. The proper command to compress a tar of a g
 # Extract practically anything
 # Usage: $ extract {YOUR_ARCHIVE}
 extract () {
-	# Many thanks to Daniel Baldwin (danielcbaldwin on GitHub) for providing
-	# the foundation used for the command.
-	#
-	# Must use "$@" if we want all arguments (with white space) to be treated
-	# As one file argument. This, however, restricts the command to one file
-	# or directory argument at a time, so while that's never an issue for me
-	# personally do take note of this.
-	if [ -f "$@" ] ; then
-		case "$@" in
-			*.tar.bz2)  tar xjf "$@"    ;;
-			*.tar.gz)   tar xzf "$@"    ;;
-			*.bz2)      bunzip2 "$@"    ;;
-			*.rar)      rar x "$@"      ;;
-			*.gz)       gunzip "$@"     ;;
-			*.tar)      tar xf "$@"     ;;
-			*.tbz2)     tar xjf "$@"    ;;
-			*.tgz)      tar xzf "$@"    ;;
-			*.zip)      unzip "$@"      ;;
-			*.Z)        uncompress "$@" ;;
-			*)          echo "'$@' cannot be extracted via extract()" ;;
-		esac
-	else
-		echo "'$@' is not a valid file"
-	fi
+    # Many thanks to Daniel Baldwin (danielcbaldwin on GitHub) for providing
+    # the foundation used for the command.
+    #
+    # Must use "$@" if we want all arguments (with white space) to be treated
+    # As one file argument. This, however, restricts the command to one file
+    # or directory argument at a time, so while that's never an issue for me
+    # personally do take note of this.
+    if [ -f "$@" ] ; then
+        case "$@" in
+            *.tar.bz2)  tar xjf "$@"    ;;
+            *.tar.gz)   tar xzf "$@"    ;;
+            *.bz2)      bunzip2 "$@"    ;;
+            *.rar)      rar x "$@"      ;;
+            *.gz)       gunzip "$@"     ;;
+            *.tar)      tar xf "$@"     ;;
+            *.tbz2)     tar xjf "$@"    ;;
+            *.tgz)      tar xzf "$@"    ;;
+            *.zip)      unzip "$@"      ;;
+            *.Z)        uncompress "$@" ;;
+            *)          echo "'$@' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$@' is not a valid file"
+    fi
 }
 
 # An easer zip command
 # Usage: $ zipper ${THE_FILE}
 zipper () {
-	if [ $(echo $@ | tail -c 2) == "/" ] ; then
-		file="${@%?}"
-	else
-		file="$@"
-	fi
+    if [ $(echo $@ | tail -c 2) == "/" ] ; then
+        file="${@%?}"
+    else
+        file="$@"
+    fi
 
-	zip -r -q "$file.zip" "$file"
+    zip -r -q "$file.zip" "$file"
 }
 
 # tartar: For When You *really* want to tar something
@@ -153,13 +153,13 @@ zipper () {
 # An easier tar compression command
 # Usage: $ tartar ${THE_FILE}
 tartar () {
-	if [ $(echo $@ | tail -c 2) == "/" ] ; then
-		file="${@%?}"
-	else
-		file="$@"
-	fi
+    if [ $(echo $@ | tail -c 2) == "/" ] ; then
+        file="${@%?}"
+    else
+        file="$@"
+    fi
 
-	tar czf "$file.tar.gz" "$file"
+    tar czf "$file.tar.gz" "$file"
 }
 {% endhighlight %}
 </div>
@@ -174,7 +174,7 @@ As a special treat to OS X developers, here's some essential functions that both
 # current directory
 # Usage: $ dsdel
 dsdel () {
-	find . -name ".DS_Store" -delete
+    find . -name ".DS_Store" -delete
 }
 
 # If you're like me you've made one or two slip-ups while rm'ing files.
@@ -183,7 +183,7 @@ dsdel () {
 # Move deleted files to OS X's trash (safer)
 # Usage: $ trash ${YOUR_FILE}
 trash () {
-	command mv "$@" ~/.Trash ;
+    command mv "$@" ~/.Trash ;
 }
 
 # Did you know that you could QuickLook a file from Terminal? Now you do.
@@ -191,7 +191,7 @@ trash () {
 # Preview file in OS X's QuickLook
 # Usage: $ ql ${YOUR_FILE}
 ql () {
-	qlmanage -p "$*" >& /dev/null;
+    qlmanage -p "$*" >& /dev/null;
 }
 {% endhighlight %}
 </div>
