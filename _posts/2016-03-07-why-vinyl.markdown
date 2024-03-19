@@ -20,7 +20,6 @@ card:
 
 At Christmastime this past year my parents surprised me with a gift that had been on the nagging edge of my radar for a long time: a record player. That's right, a brand new turntable for a media format long thought dead by the general public since the CD was introduced over thirty years ago. Not to mention, for today's youth that grow up with constant access to the entirety of music history at the tap of a screen the notion of having physical objects dedicated to predetermined static content must seem barbaric.
 
-<a id="resume-from-break"></a>
 Telling friends and colleges about the gift often elicits one of two responses: a lighthearted jab about my hipster status or a genuinely curious "why?". While there's nothing I could say at this point to dispel remarks of the former's variety (owning a record player certainly isn't helping my case), I can certainly address the "why". But to do so I must first explain what happened to make me even consider something so peculiar.
 
 I Used to Write
@@ -39,8 +38,8 @@ I could relearn cursive, but that wouldn't fix problem at its source. Something 
 Restoring Balance
 -----------------
 
-<div markdown="1" class="edge-to-edge medium">
-![A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together]({{ site.dropbox }}/why-vinyl/digital-and-analog-friends.png)
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/why-vinyl/digital-and-analog-friends.png" alt="A cartoon of a vinyl record, iPad, hardbound book, laptop, and pencil joining hands together">
 </div>
 
 As you'd guess, simply throwing away all my digitization progress would grossly overcorrect the problem and leave me in a similarly deficient state. The optimal solution was finding *balance* again by determining whether a given interaction or object was better served through physical or digital means given the context of the situation.
@@ -62,20 +61,20 @@ Now that my reasoning for even having physical artifacts at all is established w
 * __Album Art__: As someone who meticulously obsesses over finding the highest resolution album artwork available for his digital collection having such a large canvas to showcase album artwork was a primary draw from the very start. I spent my childhood staring at [images the size of postage stamps on Game Boy screens](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Game-Boy-Pocket-Black.jpg/800px-Game-Boy-Pocket-Black.jpg), I'm *tired* of low res, rubbish image files (it's 2016, selling digital music with scrawny 500x500 artwork images should be banned). Even when I manage to find high quality artwork and maximize the player window to fit my screen the details in amazing album covers like [Fleet Foxes](http://fleetfoxes.com/images/album_fleet_foxes.jpg) and [Lonerism](https://consequenceofsound.files.wordpress.com/2012/07/tame-impala-lonerism.jpeg) are still lost. With a massive 12"x12" size large enough to be mistaken for a respectable wall decoration, however, vinyl proudly displays the full-sized album artwork, details and all.
 * __Goodie Grab Bag__: As the phrase "grab bag" implies, you never know quite what you're going to get with a record purchase. Sometimes you just get the sleeve and the album, while other times you get full color lyric booklets, posters, supplementary album photos, or lots of other things. Remember when you were a kid and you treasured the times where you got surprises in the cereal box? This is the music equivalent.
 
-<div markdown="1" class="edge-to-edge medium">
-![The Decemberists’s "Picaresque" lyric book, showing the page for the picture and lyrics of "The Mariner's Revenge Song"]({{ site.dropbox }}/why-vinyl/picaresque-lyric-book.jpg)
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/why-vinyl/picaresque-lyric-book.jpg" alt="The Decemberists’s “Picaresque” lyric book, showing the page for the picture and lyrics of “The Mariner's Revenge Song”">
 </div>
 <div></div>
-<div markdown="1" class="edge-to-edge medium">
-![Joanna Newsom's "Divers" alongside all it's included, supplementary lyric pictures]({{ site.dropbox }}/why-vinyl/divers-photos.jpg)
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/why-vinyl/divers-photos.jpg" alt="Joanna Newsom’s “Divers” alongside all it’s included, supplementary lyric pictures">
 </div>
 
 * __Maintenance__: Yes, you read that right, I'm counting maintenance as a perk. When I say "maintenance" I'm referring to how noticeably difficult it is to idly play records without paying attention to the music. With streaming services, it's easy to listen to an endless sea of songs on shuffle all day only to realize afterwards you never actually paid attention to any of it. By comparison, vinyl's need for someone to physically move the album along acts as a built-in system keeping the listener engaged and focused where their attention should be. When I sit down to listen to my favorite records I can use having to flip to the other side or swap to the second disk as an excuse to *calm down*, put my phone and computer aside for a while, and unplug. While you can absolutely achieve this same effect with streaming services (assuming you have enough will power) I personally find it very easy when listening through this medium to slip into "not paying attention" mode and begin working on the endless list of things I convince myself must be worked on this very minute.
 
 To reiterate, this doesn't mean I "hate" digital things. I still love being able to listen to any music I want any time I want and would never want to give that up. That's not to say though that it's my preferred or only choice in all scenarios. It's all part of my overarching effort to restore and maintain balance between my physical and digital life. And, inline with this effort, I regained my cursive ability after a few days of practice and did indeed finish reciting Wordsworth's "My Heart Leaps Up" from memory. All things are better in moderation, in balance with each other, "bound each to each by natural piety".
 
-<div markdown="1" class="inline">
-![Wordsworth's "My Heart Leaps Up" written in cursive on paper]({{ site.dropbox }}/why-vinyl/my-heart-leaps-up.jpg)
+<div class="inline">
+    <img src="{{ site.dropbox }}/why-vinyl/my-heart-leaps-up.jpg" alt="Wordsworth's “My Heart Leaps Up” written in cursive on paper">
 </div>
 
 --------------

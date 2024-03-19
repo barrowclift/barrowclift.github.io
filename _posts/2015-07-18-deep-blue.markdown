@@ -5,6 +5,10 @@ date: 2015-07-18 21:13:39
 design:
     force-dark-mode: true
     oled: true
+    accent:
+        hue: "210"
+        saturation: "85%"
+        lightness: "60%"
 
 excerpt: |
     Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it’s no coincidence."

@@ -18,7 +18,7 @@ markdown: kramdown
 highlighter: rouge
 show_drafts: False
 future: False
-enable-card-colors: True
+enable-card-colors: False
 
 timezone: America/New_York
 locale: en-US

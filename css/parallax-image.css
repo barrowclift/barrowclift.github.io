@@ -67,10 +67,10 @@ menu {
     min-width: 100vw;
     transform: unset;
     position: initial;
-}
-#mainmenu {
     -webkit-backdrop-filter: unset !important;
     backdrop-filter: unset !important;
+}
+#mainmenu {
     height: initial;
 }
 #menu-height-offset {

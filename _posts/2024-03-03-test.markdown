@@ -1,0 +1,532 @@
+---
+title: "Test"
+date: 2014-05-04 21:12:01
+excerpt: Testing everything
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<mark class="tag red">Red</mark> <mark class="tag orange">Orange</mark> <mark class="tag yellow">Yellow</mark> <mark class="tag blue">Blue</mark> <mark class="tag green">Green</mark> <mark class="tag purple">Purple</mark> <mark class="tag gray">Gray</mark>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="admonition gray">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition yellow">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition red">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition green">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition blue">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition aside">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition question">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
+<div class="admonition tweet">
+    <p class="admonition-title"><a href="https://twitter.com/CsMusicPlayer">@CsMusicPlayer</a></p>
+    <p>Alright so here is the upcoming plan. Since everyone hates Cs6 it will be released as a separate (yet unnamed) app. Cs 5 will get its own rebuild for iOS 13 (5.1) with no planned changes beyond adopting Dark Mode.<br><a href="https://twitter.com/CsMusicPlayer/status/1177628272617754624"><em>11:57 AM - Sep 27, 2019</em></a></p>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+1. Ask yourself if you want notifications from this app. If the answer is yes, ask yourself again if you *really* want notifications from this app. As an example, I asked myself this with the Mail app and realized that there were only certain people I genuinely cared about getting notifications from: my family. Because of this, I turned off notifications for anyone other than them[^vip]. I read all email every morning and night on my computer and any truly urgent matters are sent via text messages so I gain no benefit from my Mail app spreading unnecessary stress throughout the day for every single email I get.
+2. Depending on what you decided above, either:
+    - Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
+    - Keep notifications on for that app.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+1. __Notification Center__: This is the pull-down view accessible anywhere that was introduced in iOS 7. Enable this for app notifications that you don't want to have disturb you but you do want available in a unified place when/if the mood strikes you to see if anything new is going on. I enabled this for Mail from non-VIPs, [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8) (my podcast player of choice), Facebook, and a few other low priority notifications. To turn off, tap on "Show in Notification Center" and select "No Recent Items" or any of the other options to turn on.
+2. __Lock Screen__: This is what you see when when you wake your iPhone (the "Slide to Unlock" screen). Enable this for app notifications that you want to be made aware of the minute you begin using your iPhone. I enabled this for apps that I think have important notifications like Messages, Phone, Calendar, and others. Use the "Show in Lock Screen" slider to turn on/off.
+3. __Badge App Icon (Notification Bubbles)__: These are those round, red bubbles that are displayed on the upper right-hand corner of apps that have withstanding notifications. In general, I enable this for apps that have Lock Screen notifications since I deem the importance of Lock Screen and Badge notifications to be equal. Remember, think hard about enabling this and Lock Screen notifications. [If everything is important, nothing is](https://youtu.be/A8I9pYCl9AQ?t=8s), so enable in moderation. Use the "Badge App Icon" slider to turn on/off.
+4. __Sounds__: Sounds are whether or not notifications can alert you through sound or vibrations. This should be the least-used option as this is the only one of the four that will actively interrupt you. As such, enable with great care and purpose and disable with extreme prejudice (remember, these will be interrupting time with loved ones, work, etc.). I have sounds enabled for only Messages, Phone, Facetime, Calendar, and Reminders since their notifications are ones that require my direct and immediate attention and may hold unpleasant consequences if I don't. Use the "Sounds" slider to turn on/off.
+
+<figure class="edge-to-edge large shadow">
+    <img src="{{ site.dropbox }}/blaring-backgrounds/bad-desktop.jpg" alt="Bright green wallpaper">
+    <figcaption>
+        I’M SO GREEN! I’M SORRY ARE YOU TRYING TO FOCUS ON SOMETHING IMPORTANT?!
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="inline shadow">
+    <img src="{{ site.dropbox }}/fearful-computing/cable-club.jpg" alt="Pokémon screen shot with “Welcome to the Cable Club” text bubble" title="Oh god, it begins...">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/fearful-computing/windows-desktop.jpg" alt="Typical Windows desktop, lots of app icons everywhere">
+    <figcaption>
+        This is the equivalent of the college professor who keeps every paper they own on their desk, also known as the default Windows experience
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge medium shadow">
+<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
+    <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
+    [HTML5 video tag not supported by your browser]
+</video>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge small macos-window-screenshot">
+    <img src="{{ site.dropbox }}/fearful-computing/internet-explorer.png" alt="Windows Explorer window showing Internet Explorer's folder contents">
+    <figcaption>
+        Let's play "guess what you have to double click to run your app"
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+> [Our AMA] Recognizes that exposure to excessive light at night, including extended use of various electronic media, can disrupt sleep or exacerbate sleep disorders, especially in children and adolescents. This effect can be minimized by using dim red lighting in the nighttime bedroom environment.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/making-terminal-better/default-terminal.png 100w" sizes="50px" src="{{ site.dropbox }}/making-terminal-better/default-terminal.png" alt="Terminal window, all output is in plain, black text against a blaring white background" title="This look and feel is *great* for people that don't like understanding what's going on.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div markdown="1" class="edge-to-edge infinite">
+{% highlight bash %}
+# COLORS
+# ----------------------------------------------
+# Customizing the colors for particular files
+# See http://www.linux-sxs.org/housekeeping/lscolors.html for color code guide
+# Music (Yellow)
+export LS_COLORS="*.m4a=00;33:*.mp3=00;33:*.flac=00;33:*.aac=00;33:*.aiff=00;33"
+# Movie (Yellow)
+export LS_COLORS="*.m4v=00;33:*.mov=00;33:*.mpg=00;33:*.mp4=00;33:${LS_COLORS}"
+# Pictures (Magenta)
+export LS_COLORS="*.jpg=00;35:*.png=00;35:*.tiff=00;35:*.tif=00;35:*.gif=00;35:*.pdf=00;35:${LS_COLORS}"
+# Archives (Red)
+export LS_COLORS="*.tar=00;31:*.tgz=00;31:*.zip=00;31:*.gz=00;31:*.jar=00;31:*.rar=00;31:*.7z=00;31:${LS_COLORS}"
+
+# Add color in Terminal, required to "turn on" colors for OS X and FreeBSD
+# Other systems might require making alias for commands like "ls" to
+# "ls --color=auto" instead
+export CLICOLOR=1
+
+# PROMPT
+# ----------------------------------------------
+export RED='\[\033[0;31m\]'
+export CYAN='\[\033[0;36m\]'
+export BLUE='\[\033[0;34m\]'
+export NORMAL='\[\033[00m\]'
+export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
+{% endhighlight %}
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{% highlight bash %}
+# Open a new Finder window at your current directory
+alias f='open -a Finder ./'
+{% endhighlight %}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+```
+I'm performed text,
+not code.
+ (please
+   respect
+     my
+       spacing!)
+```
+
+For the ASCII artists out there, you can also easily tighten the font's line height by providing the `ascii-art` class to the `<pre>` element (example below created by [grp](http://www.ascii-code.com/ascii-art/computers/apple.php)).
+
+<pre class="ascii-art"><code>                   __________________________
+           __..--/".'                        '.
+   __..--""      | |                          |
+  /              | |                          |
+ /               | |    ___________________   |
+;                | |   :__________________/:  |
+|                | |   |                 '.|  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |                  ||  |
+|                | |   |______......-----"\|  |
+|                | |   |_______......-----"   |
+|                | |                          |
+|                | |                          |
+|                | |                  ____----|
+|                | |_____.....----|#######|---|
+|                | |______.....----""""       |
+|                | |                          |
+|. ..            | |   ,                      |
+|... ....        | |  (c ----- """           .'
+|..... ......  |\|_|    ____......------"""|"
+|. .... .......| |""""""                   |
+'... ..... ....| |                         |
+  "-._ .....  .| |                         |
+      "-._.....| |             ___...---"""'
+          "-._.| | ___...---"""
+              """""             grp</code></pre>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large three-images ios-screenshot">
+    <img src="{{ site.dropbox }}/home-sweet-home/settings.jpg" alt="iOS Settings Screen, General list item highlighted">
+    <img src="{{ site.dropbox }}/home-sweet-home/general.jpg" alt="iOS General Settings Screen, Usage list item highlighted">
+    <img src="{{ site.dropbox }}/home-sweet-home/usage.jpg" alt="iOS Usage Settings Screen, both Manage Storage list items highlighted">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="two-images">
+    <img src="{{ site.dropbox }}/home-sweet-home/creative-folder-page-1.png" alt="iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos">
+    <img src="{{ site.dropbox }}/home-sweet-home/creative-folder-page-2.png" alt="iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large two-images ios-screenshot">
+    <img src="{{ site.dropbox }}/home-sweet-home/home-screen.jpg" alt="My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/multitasking-misconceptions/panel-1-colored.png" alt="A cartoon of a Storage disk throwing data to a nervous, almost overflowing Memory card" title="Watch how much stuff you're making Memory remember, Storage!">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge large two-images ios-screenshot">
+    <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-new.jpg" alt="The app switcher view, showing images for each of their last known states">
+    <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-old.jpg" alt="The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles">
+    <figcaption>
+        Note how the app preview images change from most recently used to oldest.
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/turtles-hares-and-hot-rods/math-turtle.png" alt="A cartoon of a turtle nervously trying to figure out a simple arithmetic problem at the school chalkboard" title="Nothing in this world gave me worse stage fright than having to do timed math problems in front of the class">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge small">
+    <a href="https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/" title="Note to self: Never buy Western Digital brand drives again."><img src="{{ site.dropbox }}/two-is-one-one-is-none/backblaze-hard-drive-chart.jpg" alt="A chart showing various hard drive brands such as Toshiba and Seagate, the storage sizes for each drive, and their respective failure rates. Can you believe the worst had a 9% annualized failure rate? Wow!"></a>
+    <figcaption>
+        Tap or click on the chart for a link to the full Q2 2016 report.
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="inline macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/storage.png" alt="A screenshot of the “Storage” tab in macOS's “About This Mac” tab, showing a 480GB hard drive" title="Dang, I may need to upgrade my internal hard drive soon.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="inline macos-window-screenshot">
+    <p><img srcset="{{ site.dropbox }}/back-to-the-mac/mail-default.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/mail-default.png" alt="Image of the default Mail Compose toolbar"></p>
+    <figcaption>Default</figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge medium macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/itunes-window-1.png" alt="A screenshot of an iTunes window with an iOS device plugged in" title="iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="inline">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg" alt="A screenshot of Backblaze's menu bar icon and available menu options">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large two-images ios-screenshot">
+    <img src="{{ site.dropbox }}/listing-the-little-things/widget-collapsed.jpg" alt="A screenshot of the new widgets view in iOS 10, showing Weather, Calendar, and Activity widgets.">
+    <img src="{{ site.dropbox }}/listing-the-little-things/widget-expanded.jpg" alt="Another screenshot of that widgets view in iOS 10, this time with Weather expanded to additionally show the week's forecast.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="inline two-images">
+    <img src="{{ site.dropbox }}/listing-the-little-things/watch-face.png" alt="A screenshot of the Modular watch face.">
+    <img src="{{ site.dropbox }}/listing-the-little-things/dock.png" alt="A screenshot of the new dock in watchOS 3, with the &quot;Mail&quot; app preview showing &quot;No Mail&quot;.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge medium two-images ios-screenshot">
+    <img src="{{ site.dropbox }}/listing-the-little-things/ios-watch-app.jpg" alt="A screenshot of the Watch iOS app displaying the new &quot;Dock&quot; preference pane.">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="watchos-screenshot true-width">
+    <p><img src="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif" alt="An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed."></p>
+    <figcaption>
+        Of course, it would be your finger instead of a mouse pointer. 😉
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge small">
+    <img src="{{ site.dropbox }}/meaningful-names/namecard.png" alt="A &quot;Hello, My Name Is&quot; sticker with the name &quot;FOOBAR&quot; on it">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge shadow small">
+    <a href="http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the">
+        <img src="{{ site.dropbox }}/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg" alt="An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com">
+    </a>
+    <figcaption>
+        Nobody can, because it’s horrible.
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="half-inline">
+    <a href="https://www.dropbox.com">
+        <img src="{{ site.dropbox }}/lossless-photo-sharing/dropbox.svg" alt="The Dropbox logo">
+    </a>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge medium macos-window-screenshot">
+    <img src="{{ site.dropbox }}/tags-explained/before-tags.jpg" alt="A screenshot of a macOS Finder window of a folder filled with archived web pages. These pages are not organized at all.">
+    <figcaption>
+        You’d have to check each page manually to see if it matches the criteria, thus this system is woefully inadequate.
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg" alt="My old iPod Video's scratchy screen">
+    <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg" alt="My old iPod Video's aged, dim display and yellowed white plastic front">
+    <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg" alt="My old iPod Video's battered and scratched metal back plate">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge small shadow">
+    <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/norman-and-cara.jpg" alt="The back plate of one of the replacement parts I ordered with the etching &quot;Love always and forever / Norman and Cara&quot;">
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if page.display.flex == true %}flex{% endif %} {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %} {% if page.design.oled == true %}oled{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.display.flex == true %}flex{% endif %} {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.accent %}custom-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %} {% if page.design.oled == true %}oled{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
     
 <!--
 The standard website layout. Includes all the site's standard chrome.
@@ -19,25 +19,13 @@ Currently used for pages such as:
     {% include head.html %}
 
     <body>
-        {% if page.backdrop-image %}
+        {% if page.design.accent %}
             <style>
-                .backdrop {
-                    background-image: url('{{ page.backdrop-image }}');
-                    background-position: center;
-                    background-size: cover;
-                    opacity: 0.05;
-                }
-                @supports (filter: blur(25px)) {
-                    .backdrop {
-                        -webkit-filter: blur(25px);
-                        -moz-filter: blur(25px);
-                        -o-filter: blur(25px);
-                        -ms-filter: blur(25px);
-                        filter: blur(25px);
-                    }
-                }
-                #dark .backdrop {
-                    opacity: 0.1;
+                .custom-accent-color,
+                #dark.custom-accent-color {
+                    --accent-hue: {{ page.design.accent.hue }};
+                    --accent-saturation: {{ page.design.accent.saturation }};
+                    --accent-lightness: {{ page.design.accent.lightness }};
                 }
             </style>
         {% endif %}

@@ -75,37 +75,37 @@ Let's get started...
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li>Intro</li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2020’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
-          <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+            <li>Intro</li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
-      <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 [Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986

@@ -1,6 +1,7 @@
 ---
 title: "Two Is One, One Is None"
 date: 2016-09-17 18:32:50
+timelocked: true
 
 excerpt: |
     If you’re not currently backing up your data, it’s not a matter of “if” you lose it, but “when”.
@@ -14,19 +15,11 @@ categories:
 image: "two-is-one-one-is-none/share.jpg"
 
 card:
-    light:
-        image: "two-is-one-one-is-none/light-card"
-        background-color: "hsl(80, 27%, 98%)"
-        foreground-color: "hsl(0, 0%, 16%)"
-    dark:
-        image: "two-is-one-one-is-none/dark-card"
-        background-color: "hsl(240, 4%, 10%)"
-        foreground-color: "#E9E9E9"
+    image: "two-is-one-one-is-none/card"
 ---
 
 Your computer is priceless. It doesn't matter whether or not you have a new top-of-the-line desktop or an ancient, eight-year-old clunker, these computers are priceless not because of their specs but because of the data entrusted to their care. Nowadays, we trust our computers not only with memories such as baby pictures and wedding videos but also files critical to our livelihoods like personal projects and art portfolios. This data is more than just computer files, it's an extension of ourselves: our memories, our livelihoods, our lives. This data, *your* data, is precious.
 
-<a id="resume-from-break"></a>
 Yet I generally do not see this importance manifesting in protective action. From observing individuals breaking down at the Apple Store when they discover their family photos are lost forever to witnessing an artist and personal friend lose their entire life's works, I've sadly also seen the consequences of neglecting such action. Depending on your response to the following question, it's not a matter of *if* you'll share a similar fate, but *when*: Do you back up your devices?
 
 I've learned the value of doing so not just from observation but also from firsthand experience. Back when Apple released the then-new Apple Music service I quickly signed up without a second thought and turned on the option to [integrate my local iTunes library with my new iCloud Music Library](https://support.apple.com/en-us/HT204926). Big mistake.
@@ -39,11 +32,13 @@ While cleaning up I had accidentally deleted the directory containing the projec
 
 For those rightfully skeptical about taking my anecdotes to heart, the aforementioned backup service Backblaze publishes [quarterly hard drive reports](https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/) covering the various brands and drive sizes they use in their servers and the failure rates they encountered for each of them. Below is the most recent cumulative report available, which goes back all the way to when they started releasing them in 2013.
 
-<figure markdown="1" class="edge-to-edge small">
-[![A chart showing various hard drive brands such as Toshiba and Seagate, the storage sizes for each drive, and their respective failure rates. Can you believe the worst had a 9% annualized failure rate? Wow!]({{ site.dropbox }}/two-is-one-one-is-none/backblaze-hard-drive-chart.jpg)](https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/ "Note to self: Never buy Western Digital brand drives again.")
-<figcaption>
-Tap or click on the chart for a link to the full Q2 2016 report
-</figcaption>
+<figure class="edge-to-edge small">
+    <a href="https://www.backblaze.com/blog/hard-drive-failure-rates-q2-2016/" title="Note to self: Never buy Western Digital brand drives again.">
+        <img src="{{ site.dropbox }}/two-is-one-one-is-none/backblaze-hard-drive-chart.jpg" alt="A chart showing various hard drive brands such as Toshiba and Seagate, the storage sizes for each drive, and their respective failure rates. Can you believe the worst had a 9% annualized failure rate? Wow!">
+    </a>
+    <figcaption>
+        Tap or click on the chart for a link to the full Q2 2016 report.
+    </figcaption>
 </figure>
 
 Backblaze's findings over the years are concerning. Overall, a little over 2% of all drives used in Backblaze's servers fail every year. Being professionals, Backblaze has sufficient data redundancy to safely handle this percentage, but for the population at large 2% of all computers experiencing hard drive failures at any given year is a staggering number, around two million computers assuming only half of Backblaze's observations are representative of the larger population and assuming [around two billion PCs in the world](http://www.worldometers.info/computers/)).
@@ -68,14 +63,14 @@ What I personally believe to be the optimal backup strategy for the vast majorit
 
 ### Local Backups
 
-<div markdown="1" class="edge-to-edge medium">
-![A cartoon depicting a smiling computer passing files to his external hard drive buddy for safe keeping]({{ site.dropbox }}/two-is-one-one-is-none/panel-2-colored.png)
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/panel-2-colored.png" alt="A cartoon depicting a smiling computer passing files to his external hard drive buddy for safe keeping">
 </div>
 
 As mentioned before, Time Machine can be used for local backups on macOS. Assuming you don't already have a spare external hard drive lying around, I recommend buying one that is at least double what your computer's internal storage is. You can determine what this is by clicking the Apple menu on your computer's menu bar then "About this Mac". From there, click the "Storage" tab and note the total storage size.
 
-<div markdown="1" class="inline macos-window-screenshot">
-![A screenshot of the "Storage" tab in macOS's "About This Mac" tab, showing a 480GB hard drive]({{ site.dropbox }}/two-is-one-one-is-none/storage.png "Dang, I may need to upgrade my internal hard drive soon.")
+<div class="inline macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/storage.png" alt="A screenshot of the “Storage” tab in macOS's “About This Mac” tab, showing a 480GB hard drive" title="Dang, I may need to upgrade my internal hard drive soon.">
 </div>
 
 For example, if I'm setting myself up for Time Machine backups for the first time I'd search "external hard drive" at [Amazon](www.amazon.com) or [NewEgg](www.newegg.com) and seek out drives that have double or more the number noted above. For reference, you're looking for [something like these](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=external+hard+drives). Please note that you may run across smaller numbers followed by "TB" instead of "GB". You can think of "TB" as the "kilometer" to GB's "meter", with 1 TB roughly equaling 1000 GB[^tb]. In your search, it's okay to be a little above or a little below the doubled size you noted before, what you're effectively doing is giving yourself some elbow room for your data to grow and for Time Machine to maintain a respectable archive of old, deleted/changed files. When the time comes, plug the new drive into your Mac and a little notification should pop up asking if you want macOS to use it for Time Machine backups, say "yes" and macOS will take care of the rest. Leave this external hard drive plugged in as often as you can so macOS can conduct automatic, scheduled backups to it.
@@ -84,34 +79,34 @@ While Windows doesn't currently have a solution as mature as Time Machine, Micro
 
 For locally backing up your iPhone or iPad, plug it into your computer and open up iTunes. Assuming you've synced with this computer before, your device should appear near the library switcher in the upper-left corner of the window.
 
-<div markdown="1" class="edge-to-edge medium macos-window-screenshot">
-![A screenshot of an iTunes window with an iOS device plugged in]({{ site.dropbox }}/two-is-one-one-is-none/itunes-window-1.png "iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.")
+<div class="edge-to-edge medium macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/itunes-window-1.png" alt="A screenshot of an iTunes window with an iOS device plugged in" title="iTunes is in many ways a terrible app, but I will stand by that it's the best music player for people who listen exclusively to albums.">
 </div>
 
 Once you click on your device you'll be brought to a screen like this.
 
-<div markdown="1" class="edge-to-edge medium macos-window-screenshot">
-![A screenshot of an iTunes window on the device sync screen, highlighting the "Backups" section]({{ site.dropbox }}/two-is-one-one-is-none/itunes-window-2.png)
+<div class="edge-to-edge medium macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/itunes-window-2.png" alt="A screenshot of an iTunes window on the device sync screen, highlighting the “Backups” section">
 </div>
 
 You're going to want to *temporarily* switch the bubble from "iCloud" to "This computer", then check "Encrypt iPhone backup" which will prompt you for a password. Setting an encryption password serves both security and convenience purposes: first, it protects your backup's text messages, photos, etc. from potential snoops and lets you restore from a backup without having to reenter all your iOS passwords all over again like the iCloud backup does. After you've entered your password, you can click "Back Up Now". Once this backup completes, __switch "This computer" back to "iCloud"__ and click "Done". Now you can safely eject your iPhone or iPad and go about your day knowing that you have a recent, local backup of your portable's data should anything happen.
 
 ### Remote Backups
 
-<div markdown="1" class="edge-to-edge medium">
-![A cartoon of a smiling cloud catching files sent to him by balloon]({{ site.dropbox }}/two-is-one-one-is-none/panel-1-colored.png)
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/panel-1-colored.png" alt="A cartoon of a smiling cloud catching files sent to him by balloon">
 </div>
 
 That covers local backups, but what about those remote backups mentioned before? Backing up remotely has never been easier thanks to Backblaze. Simply navigate [to their website](https://www.backblaze.com) and sign up for their [personal unlimited backup plan](https://www.backblaze.com/cloud-backup.html), Backblaze will guide you through the necessary steps to start. Backblaze's small backup utility will continuously run in the background of your computer and automatically send any new/modified files to their secure servers. *You don't have to do a thing*. Should you wish to check on your backup's status or fiddle with the settings you can navigate to their preferences pane in System Preferences > Backblaze Backup.
 
-<div markdown="1" class="inline macos-window-screenshot">
-![A screenshot of Backblaze's preference pane on macOS]({{ site.dropbox }}/two-is-one-one-is-none/preferences.png)
+<div class="inline macos-window-screenshot">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/preferences.png" alt="A screenshot of Backblaze's preference pane on macOS">
 </div>
 
 Alternatively, for just occasionally checking in on the backups you can check out the little flame icon in your menu bar.
 
-<div markdown="1" class="inline">
-![A screenshot of Backblaze's menu bar icon and available menu options]({{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg)
+<div class="inline">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg" alt="A screenshot of Backblaze's menu bar icon and available menu options">
 </div>
 
 I personally recommend choosing the 2-year $95 plan over the monthly $5 or yearly $50 plans, you'll save more money in the long run while also avoiding yet another monthly fee. Even Windows users can sign up for remote backups with Backblaze, so there's no reason not to sign up. I've been backing up my data with them for six years now and they've not only helped me restore numerous prematurely deleted files but also granted me peace of mind, knowing that my livelihood and family memories are safe against all potential local threats.
@@ -120,8 +115,8 @@ For your iOS devices like iPhone and iPad, remote backups are built-in. Every ni
 
 That's it! I have no doubt many people will be turned off from backing up because of the modest monetary investment required to do so, and that's understandable. It helps to think of backups as if it were insurance; it's a required investment to protect yourself against whatever life throws our way. The cost is an investment in protecting your past, present, and future digital lifestyle, and for the peace of mind that brings it's a small price to pay. Just remember: the time to think about backups is *now*, not when the rainy day comes.
 
-<div markdown="1" class="edge-to-edge medium">
-![A cartoon of our smiling cloud and external hard drive characters from before, this time shielding the files from rain using a massive umbrella]({{ site.dropbox }}/two-is-one-one-is-none/panel-3-colored.png "Keeping your data safe, one potential disaster at a time :)")
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/two-is-one-one-is-none/panel-3-colored.png" alt="A cartoon of our smiling cloud and external hard drive characters from before, this time shielding the files from rain using a massive umbrella" title="Keeping your data safe, one potential disaster at a time :)">
 </div>
 
 -----------------------

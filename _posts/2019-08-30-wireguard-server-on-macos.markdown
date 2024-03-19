@@ -24,15 +24,15 @@ card:
 ---
 
 <div class="admonition">
-<p class="admonition-title">Update: July 16, 2023</p>
-<p></p>
-<p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/articles/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
-<p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
-<p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
+    <p class="admonition-title">Update: July 16, 2023</p>
+    <p></p>
+    <p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/articles/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
+    <p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
+    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
-<div markdown="1" class="inline shadow">
-[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
+<div class="inline shadow">
+    <img src="{{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg">
 </div>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is successfully running on macOS.
@@ -274,7 +274,7 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
     </ol>
   </li>
   <li>Finally, restart your macOS server. If your launch daemon was configured and loaded correctly, Wireguard should already be running.</li>
-</ol> 
+</ol>
 
 Congratulations :tada:! You're now among the dozen people crazy enough to serve Wireguard on macOS. If you had trouble following this guide or would simply prefer to explore a repo of example Wireguard macOS config files at your own speed, I highly encourage you take a look at [Donavon Buchanan's example configuration repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6).  Additionally, please feel free to get in touch on [Mastodon](https://mastodon.social/@barrowclift) or via <a href="mailto:{{ site.email }}">email</a> if you have any feedback or corrections, I'd love to hear from you.
 

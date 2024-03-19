@@ -689,9 +689,6 @@ summary,
 #signature.active .signature-color {
     fill: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
-.backdrop {
-    background-color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
-}
 a:hover,
 .header a:hover,
 #submenu,
@@ -831,34 +828,94 @@ textarea:focus {
 #dark .highlight {
     background-color: hsl(var(--accent-hue), 25%, 7.5%);
 }
+menu,
+.popup,
+.bigfoot-footnote__content,
+.bigfoot-footnote__tooltip,
 .card,
 .summary-list li a,
 pre,
 code,
 kbd,
-.card .label {
+.language-plaintext .highlight,
+.card .label,
+[data-hint]:after {
 
     /* Card */
-    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .125);
-/*    background-color: hsla(var(--accent-hue), 15%, 95%, 1);*/
+/*    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .125);*/
+    background-color: hsla(var(--accent-hue), 5%, 93%, .975);
 
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.2);
 }
+    .hint--top[data-hint]:before {
+        border-top-color: hsla(var(--accent-hue), 5%, 93%, .975);
+    }
+    menu,
+    .popup,
+    .bigfoot-footnote,
+    .bigfoot-footnote__tooltip {
+        border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.3);
+    }
+#dark menu,
+#dark .popup,
+#dark .bigfoot-footnote__content,
+#dark .bigfoot-footnote__tooltip,
 #dark .card,
 #dark .summary-list li a,
 #dark pre,
 #dark code,
 #dark kbd,
-#dark .card .label {
+#dark .language-plaintext .highlight,
+#dark .card .label,
+#dark [data-hint]:after {
     /* Card */
-    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .075);
+    background-color: hsla(var(--accent-hue), 10%, 16%, .975);
 /*    background-color: hsla(var(--accent-hue), 5%, 17.5%, 1);*/
 
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
 }
+    #dark .hint--top[data-hint]:before {
+        border-top-color: hsla(var(--accent-hue), 10%, 16%, .975);
+    }
 .card .label {
-    background-color: hsla(var(--accent-hue), 15%, 95%, 1);
+    background-color: hsl(var(--accent-hue), 10%, 92%);
 }
 #dark .card .label {
-    background-color: hsla(var(--accent-hue), 5%, 17.5%, 1);
+    background-color: hsl(var(--accent-hue), 10%, 16%);
 }
+html {
+    background-color: hsl(var(--accent-hue), 10%, 99%);
+}
+html#dark {
+    background-color: hsl(var(--accent-hue), 10%, 12%);
+}
+/*#dark menu {
+    background-color: hsla(var(--accent-hue), 5%, 11%, .975);
+}*/
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    menu,
+    .popup,
+    .bigfoot-footnote__content,
+    .bigfoot-footnote__tooltip,
+    [data-hint]:after {
+        background-color: hsla(var(--accent-hue), 5%, 93%, .85);
+    }
+    #dark menu,
+    #dark .popup,
+    #dark .bigfoot-footnote__content,
+    #dark .bigfoot-footnote__tooltip {
+        background-color: hsla(var(--accent-hue), 10%, 16%, .85);
+    }
+    /*#dark menu,
+    #dark .popup,
+    #dark .bigfoot-footnote__content,
+    #dark .bigfoot-footnote__tooltip {
+        background-color: hsla(var(--accent-hue), 5%, 17.5%, .85);
+        border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
+    }*/
+}
+
+/**
+ * TODO: 15% -> 17.5% lightness for dark cards/menus/etc...;
+ * TODO: SLIGHTLY increase either contrast or color for light mode cards/menus/etc.;
+ */

@@ -42,11 +42,9 @@ card:
     }
 </style>
 
-<figure markdown="1" class="edge-to-edge large shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/player-view-comparison.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/player-view-comparison.jpg)
-</a>
-</figure>
+<div class="edge-to-edge large shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/player-view-comparison.jpg">
+</div>
 
 It's no secret I cherish music. That passion seeped not only into my physical library in the form of [vinyl records](post/why-vinyl) but also into my personal projects with the introduction of the [Bad Music Hertz](https://badmusichertz.com) website and podcast. It was only a matter of time until that same passion fueled a desire to find the perfect iOS music player.
 
@@ -91,23 +89,17 @@ Seven apps survived the disqualification round and continued on to be evaluated 
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .inline-app-icon } Cs (Formerly Cesium)
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/app/cesium-your-music-streamlined./id924491991?mt=8">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/app/cesium-your-music-streamlined./id924491991?mt=8">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Functional, but boring. Its interface is entirely utilitarian with little to no opinionated design in it. If that's what you're interested in, it's the best player of the bunch (especially if you loved the the original iOS 6 Music.app).
@@ -130,23 +122,17 @@ Functional, but boring. Its interface is entirely utilitarian with little to no 
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler.png){: .inline-app-icon } Doppler
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/gr/app/doppler-music-player/id1252143995?mt=8">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/gr/app/doppler-music-player/id1252143995?mt=8">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Promising, but still too young and missing too many features to seriously consider.
@@ -170,23 +156,17 @@ Promising, but still too young and missing too many features to seriously consid
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .inline-app-icon } Ecoute
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/us/app/ecoute/id536882653">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/us/app/ecoute/id536882653">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 What was previously the gold-standard third-party music app is now a barely maintained shell of its former self, its future as bleak as its last design "update" in 2016. The poor thing needs a roadmap or to be finally put out of its misery.
@@ -208,16 +188,10 @@ What was previously the gold-standard third-party music app is now a barely main
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .inline-app-icon } Music.app
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-3.jpg">
 </div>
 
 Entirely inoffensive and mediocre across the board. Unfortunately, in Apple's effort to appeal to the widest possible market, they've created a bloated app that's needlessly complicated compared to every other third-party offering. However, to give credit where credit's due, Music.app easily has the best iPad-optimized app of the lot. Not to mention, most other offerings don't even support iPad, let alone optimize for the larger display. The only other app of the lot that even supports the iPad is Cs.
@@ -238,23 +212,17 @@ Entirely inoffensive and mediocre across the board. Unfortunately, in Apple's ef
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .inline-app-icon } Picky
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/us/app/picky-music-player/id497110916">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/us/app/picky-music-player/id497110916">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 Cream of the crop for music selection and sorting, but needs visual work everywhere but the player itself. However, if you have a large library consisting of both singles and albums, this app's for you.
@@ -278,23 +246,17 @@ Cream of the crop for music selection and sorting, but needs visual work everywh
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .inline-app-icon } Starling
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/app/id1210406576">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/app/id1210406576">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 A visually interesting player view in an otherwise visually dated and functionally compromised app. Needs a redesign to be seriously considered.
@@ -317,23 +279,17 @@ A visually interesting player view in an otherwise visually dated and functional
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox.png){: .inline-app-icon } VOX
 
-<div markdown="1" class="edge-to-edge large three-images shadow">
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-1.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-1.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-2.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-2.jpg)
-</a>
-<a href="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-3.jpg">
-![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-3.jpg)
-</a>
+<div class="edge-to-edge large three-images shadow">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-1.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-2.jpg">
+    <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-3.jpg">
 </div>
 
 <div style="text-align:center" class="inline app-download">
-<a href="https://itunes.apple.com/app/apple-store/id916215494?mt=8">
-<img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
-<img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
-</a>
+    <a href="https://itunes.apple.com/app/apple-store/id916215494?mt=8">
+        <img class="show-when-light" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/second-annual-ios-music-player-competition/dark-download-on-the-app-store.svg" />
+    </a>
 </div>
 
 What seems at first to be a well-made app quickly reveals it's nothing more than a delivery vehicle for the company's "premium" music storage service, leaving the app feeling like nothing more than an upsell trap. Needs to stop being a service delivery vehicle and focus on being an good app to be seriously considered.

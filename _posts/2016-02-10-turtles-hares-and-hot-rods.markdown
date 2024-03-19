@@ -9,19 +9,12 @@ categories:
     - Stories
 image: "turtles-hares-and-hot-rods/share.jpg"
 card:
-    light:
-        image: "turtles-hares-and-hot-rods/light-card"
-        background-color: "hsl(80, 27%, 98%)"
-        foreground-color: "hsl(0, 0%, 16%)"
-    dark:
-        image: "turtles-hares-and-hot-rods/dark-card"
-        background-color: "hsl(240, 4%, 10%)"
-        foreground-color: "#EBDFC5"
+    image: "turtles-hares-and-hot-rods/card"
 ---
 
-<figure markdown="1" class="edge-to-edge medium">
-![A cartoon of a turtle nervously trying to figure out a simple arithmetic problem at the school chalkboard]({{ site.dropbox }}/turtles-hares-and-hot-rods/math-turtle.png "Nothing in this world gave me worse stage fright than having to do timed math problems in front of the class")
-</figure>
+<div class="edge-to-edge medium">
+    <img src="{{ site.dropbox }}/turtles-hares-and-hot-rods/math-turtle.png" alt="A cartoon of a turtle nervously trying to figure out a simple arithmetic problem at the school chalkboard" title="Nothing in this world gave me worse stage fright than having to do timed math problems in front of the class">
+</div>
 
 "Alright class, we're going to play Turtle, Hare, and Hot Rod!"
 
@@ -29,7 +22,6 @@ Oh God, no.
 
 There were few games I feared more than "Turtle, Hare, and Hot Rod" in elementary school. It was a game occasionally played in our math class where groups of three students would go up to the board and have to solve an arithmetic problem as quick as they could in front of the whole class. The winner would crowned "Hot Rod", second place "Hare", and finally the humiliating "Turtle" to the loser. I was usually the Turtle.
 
-<a id="resume-from-break"></a>
 It was a source of embarrassment and frustration losing so frequently in front of my peers in that game. Sure other classmates lost as well in other matches but the fairly wide margin between the runner up and myself was unique and only added insult to injury. I'd often be the final one left trying desperately to solve the problem with every pair of eyes in the class pointed directly at me, waiting. If the panic that came from trying to solve a math problem quickly wasn't enough for me to short circuit, the rolling snowball of stage fright nerves did. This wasn't just for the game either, I'd lag a few problems behind my classmates in [times table](https://en.wikipedia.org/wiki/Multiplication_table) tests as well, often hitting the timer before I could finish.
 
 Only in retrospect did it become apparent what the source of the separation was; my peers were reciting answers based on rote memorization in the games and tests while I found myself computing them in my head nearly every time. Even for the ones I was fairly sure I knew the answer to I found myself impulsing falling into a computation anyway. It was as if I had to prove to myself that the result in my memory was actually valid, otherwise it was no good. Why I found it so much more reassuring to think this way I can't be certain, but I would guess it was due to some deep seeded distrust of pure, rote memory &mdash; even if it was my own. Only when I could prove the result to myself would I feel satisfied enough in it to write the answer down.

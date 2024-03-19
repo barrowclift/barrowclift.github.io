@@ -17,7 +17,7 @@ article:
 </div>
 
 <figure class="inline shadow">
-    <img src="https://dropbox.barrowclift.me/assets/wireguard-server-on-macos/share-image.jpg">
+    <img src="{{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg">
 </figure>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is now successfully running on [macOS Mojave](https://en.wikipedia.org/wiki/MacOS_Mojave).

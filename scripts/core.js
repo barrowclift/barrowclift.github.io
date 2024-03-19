@@ -93,26 +93,26 @@ function updateThemeColor(a_accentColor) {
     let darkBaseThemeColor;
     let lightBaseThemeColor;
     if (accentColor === "purple") {
-        darkBaseThemeColor = "#1B1B1C";
-        lightBaseThemeColor = "#FEFEFF";
+        darkBaseThemeColor = "#29232C";
+        lightBaseThemeColor = "#EFEFF1";
     } else if (accentColor === "pink") {
-        darkBaseThemeColor = "#1D1B1B";
-        lightBaseThemeColor = "#FFFEFE";
+        darkBaseThemeColor = "#2B2325";
+        lightBaseThemeColor = "#F1EFEF";
     } else if (accentColor === "red") {
-        darkBaseThemeColor = "#1D1B1B";
-        lightBaseThemeColor = "#FFFEFE";
+        darkBaseThemeColor = "#2B2323";
+        lightBaseThemeColor = "#F1EFEF";
     } else if (accentColor === "orange") {
-        darkBaseThemeColor = "#1C1C1A";
-        lightBaseThemeColor = "#FFFFFE";
+        darkBaseThemeColor = "#2B2922";
+        lightBaseThemeColor = "#F1F0EF";
     } else if (accentColor === "yellow") {
-        darkBaseThemeColor = "#1C1C19";
-        lightBaseThemeColor = "#FFFFFE";
+        darkBaseThemeColor = "#2B2A22";
+        lightBaseThemeColor = "#F1F1EF";
     } else if (accentColor === "green") {
-        darkBaseThemeColor = "#1B1C1B";
-        lightBaseThemeColor = "#FEFFFE";
+        darkBaseThemeColor = "#222B24";
+        lightBaseThemeColor = "#EFF1EF";
     } else {
-        darkBaseThemeColor = "#1A1B1D";
-        lightBaseThemeColor = "#FEFEFF";
+        darkBaseThemeColor = "#23272B";
+        lightBaseThemeColor = "#EFF0F1";
     }
     let darkModeCookie = $.cookie("dark-mode");
     if (darkModeCookie === "off") {

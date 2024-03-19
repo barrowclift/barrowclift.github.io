@@ -100,26 +100,28 @@ Currently used for:
             .pill path {
                 fill: {{ page.menu.light.foreground-color }};
             }
-            #mainmenu a:hover,
-            #mainmenu .active {
-                color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
-            }
-            #logo:hover .signature-color {
-                fill: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }});
-            }
-            button.pill {
-                background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
-                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}, 0.2) !important;
-            }
-                button.pill:hover {
-                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} + 5%)) !important;
-                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+            {% if page.menu.dark.active != nil %}
+                #mainmenu a:hover,
+                #mainmenu .active {
+                    color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
                 }
-                button.pill:active,
-                .setting-toggles.active button.pill {
-                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%)) !important;
-                    box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                #logo:hover .signature-color {
+                    fill: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }});
                 }
+                button.pill {
+                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}, 0.2) !important;
+                }
+                    button.pill:hover {
+                        background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} + 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                    }
+                    button.pill:active,
+                    .setting-toggles.active button.pill {
+                        background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                    }
+            {% endif %}
 
             {% if page.primary-color.light != nil %}
                 main a,
@@ -154,11 +156,10 @@ Currently used for:
             {% endif %}
             {% if page.menu.dark.foreground-color != nil %}
                 #dark menu ul a {
-                    color: {{ page.menu.dark.foreground-color }} !important;
+                    color: {{ page.menu.dark.foreground-color }};
                 }
                 #dark .mac-background-color,
-                #dark .signature-color,
-                #dark .pill path {
+                #dark .signature-color {
                     fill: {{ page.menu.dark.foreground-color }};
                 }
             {% endif %}

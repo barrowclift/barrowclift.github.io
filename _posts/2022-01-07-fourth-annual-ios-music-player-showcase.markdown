@@ -43,41 +43,6 @@ card:
     }
 </style>
 
-TODO THIS NEEDS TO BE REMOVED
-
-<div class="admonition gray">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition yellow">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition red">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition green">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition blue">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition aside">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition question">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
-</div>
-
-<div class="admonition tweet">
-<p class="admonition-title"><a href="https://twitter.com/CsMusicPlayer">@CsMusicPlayer</a></p>
-<p>Alright so here is the upcoming plan. Since everyone hates Cs6 it will be released as a separate (yet unnamed) app. Cs 5 will get its own rebuild for iOS 13 (5.1) with no planned changes beyond adopting Dark Mode.<br><a href="https://twitter.com/CsMusicPlayer/status/1177628272617754624"><em>11:57 AM - Sep 27, 2019</em></a></p>
-</div>
-
 There's new and exciting developments every year in the realm of iOS third-party music players, and 2021 was no exception. While [2019](/articles/second-annual-ios-music-player-competition) enjoyed an explosion of new players like [Power Player] and [Albums] that through time came to lead the space, [2020](/articles/third-annual-ios-music-player-showcase) in contrast received only a modest handful of new players and is instead remembered for the impressive growth the established player base received that year. This past year, 2021, managed to do both with a dizzying array of five new players *and* impressive growth across nearly all existing players.
 
 To start, there were five new players welcomed into the ecosystem this year:
@@ -174,44 +139,44 @@ With the stage set, it's now finally time to dive into 2021's players. Let's get
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><strong>Introduction</strong></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><strong>Introduction</strong></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Standouts</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Standouts</a></li>
-      <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 -----

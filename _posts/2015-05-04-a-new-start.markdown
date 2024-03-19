@@ -9,13 +9,6 @@ categories:
     - Design
     - Technology
     - Announcement
-card:
-    light:
-        background-color: "hsl(0, 0%, 96%)"
-        foreground-color: "#000000"
-    dark:
-        background-color: "hsl(0, 0%, 13%)"
-        foreground-color: "#FFFFFF"
 ---
 
 A friend of mine once told me software engineers like myself shouldn't design.

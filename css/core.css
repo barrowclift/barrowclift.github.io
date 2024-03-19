@@ -483,6 +483,11 @@ mark {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
 }
+div a,
+figure a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 
 /* NAVBAR --------------------------------------------------------------------------- */
@@ -509,8 +514,13 @@ menu {
     }
 }
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    #mainmenu,
-    .popup {
+    menu,
+    .popup,
+    .bigfoot-footnote__content,
+    .bigfoot-footnote__tooltip,
+    .card,
+    .summary-list li a,
+    [data-hint]:after {
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
     }
@@ -601,7 +611,7 @@ menu {
     padding: 1.3em;
     padding-top: 0.8125em;
     padding-bottom: 0.65em;
-    border: unset;
+    border: 1px solid white;
     background-color: transparent;
     border-radius: 0.65em;
     text-align: left;
@@ -951,9 +961,9 @@ button.pill:hover:active {
     .popular-articles .card .label .secondary {
         text-align: left;
     }
-    .popular-articles .card {
+    /*.popular-articles .card {
         border-color: rgb(230, 230, 230);
-    }
+    }*/
 
 .card .content {
     padding-left: 5%;
@@ -1471,6 +1481,16 @@ figure p {
     margin-top: 0;
     margin-bottom: 0;
 }
+div.inline,
+div.shadow {
+    line-height: 0;
+}
+div.inline p,
+div.shadow p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 figcaption {
     padding: 0 10%;
     vertical-align: bottom;
@@ -1510,6 +1530,7 @@ div.inline > p {
 }
 div.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) {
     margin-top: 0;
+    margin-bottom: 1.3em;
 }
 .macos-window-screenshot > p {
     text-align: center;
@@ -1526,8 +1547,8 @@ div.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) {
     margin-top: 1.95em;
 }
 .inline.shadow {
-    margin-top: 1.3em;
-    margin-bottom: 1.3em;
+    margin-top: 2.6em;
+    margin-bottom: 2.6em;
 }
 .one-image,
 .two-images,
@@ -1557,7 +1578,10 @@ article > p > img {
     margin-right: -19vw;
 
     border-radius: 0;
-    margin-top: 0;
+    margin-top: 1.3em;
+    margin-bottom: 2.6em;
+}
+.edge-to-edge.infinite {
     margin-bottom: 1.3em;
 }
 .edge-to-edge.ios-screenshot.one-image {
@@ -1569,6 +1593,15 @@ article > p > img {
 figure {
     margin-top: 2.6em !important;
     margin-bottom: 2.6em !important;
+}
+figure.highlight,
+figure.codehilite {
+    margin-top: 1.3em !important;
+    margin-bottom: 2.6em !important;
+}
+div > figure.highlight,
+div > figure.codehilite {
+    margin-bottom: 1.3em !important;
 }
 figure.edge-to-edge {
     margin-top: 1.3em !important;
@@ -1622,7 +1655,8 @@ figure.edge-to-edge.three-images.shadow {
     /* Momentum scrolling in iOS */
     -webkit-overflow-scrolling: touch;
 }
-.inline {
+.inline,
+.half-inline {
     margin-bottom: 1.3em;
 }
 .inline img,
@@ -1657,6 +1691,7 @@ video.rounded {
     border-radius: 0.25em;
 }
 
+.edge-to-edge > p > a:hover,
 .edge-to-edge > a:hover,
 figure > a:hover,
 .one-image > a:hover,
@@ -1886,7 +1921,6 @@ code {
  */
 .codehilite,
 .highlight,
-article > pre,
 .edge-to-edge.infinite > pre {
     /**
      * iOS used to resize the code block text size to be *far* larger than it was
@@ -1917,6 +1951,13 @@ article > pre,
     border-radius: 0;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
+}
+article > pre {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0.25em;
 }
 article > pre > code {
     width: 100%;
@@ -2021,10 +2062,15 @@ pre code {
     padding-left: 2.5%;
     margin-left: -2.5%;
 }
+pre.ascii-art {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: scroll;
+}
 pre.ascii-art code {
     line-height: 1.05em;
-    margin-left: 5.5%;
-    margin-right: 5.5%;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
 }
 pre.wrap,
@@ -2195,6 +2241,8 @@ summary,
 .threeDHover,
 .shadow a img,
 .shadow video,
+img.shadow,
+video.shadow,
 .ios-screenshot img,
 .ios-screenshot video,
 .widget img,
@@ -2688,6 +2736,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
     /* IMAGES & VIDEO ----------------------------- */
 
 
+    :not(.edge-to-edge) > figure.highlight,
+    :not(.edge-to-edge) > figure.codehilite {
+        margin-top: 1.3em !important;
+        margin-bottom: 1.3em !important;
+    }
     .codehilite,
     .highlight,
     .edge-to-edge,
@@ -3197,6 +3250,7 @@ menu,
 .hint--left[data-hint]:before {
     border-left-color: rgba(255, 255, 255, 0.975);
 }
+/* TODO DUP!!!! */
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     menu,
     .popup {
@@ -3319,10 +3373,12 @@ menu a,
     fill: white;
 }
 blockquote,
-.summary-list p,
-.card .label .secondary,
 figcaption {
     color: rgba(30, 30, 30, 0.5);
+}
+.summary-list p,
+.card .label .secondary {
+    color: rgba(30, 30, 30, 0.625);
 }
 .stroke-color {
     stroke: rgba(30, 30, 30, 0.5);
@@ -3335,6 +3391,7 @@ figcaption {
  */
 pre,
 code,
+.language-plaintext .highlight pre code,
 pre code,
 mark code,
 kbd {
@@ -3350,6 +3407,9 @@ time,
 small,
 img {
     color: rgba(30, 30, 30, 0.375);
+}
+.summary-list time {
+    color: rgba(30, 30, 30, 0.25);
 }
 .permalink path {
     fill: rgba(30, 30, 30, 0.375);
@@ -3388,11 +3448,13 @@ a.button {
 /* ----- DROP SHADOWS ----- */
 
 menu {
-    box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.075), 0em 0.22em 0.6em rgba(50, 50, 50, 0.0375);
+    box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
 }
 .threeDHover,
 .shadow img,
 .shadow video,
+img.shadow,
+video.shadow,
 .project,
 .ios-screenshot img,
 .ios-screenshot video,
@@ -3405,6 +3467,8 @@ menu {
     .threeDHover:hover,
     .shadow a:hover img,
     .shadow video:hover,
+    a:hover img.shadow,
+    video:hover.shadow,
     .project:hover,
     .ios-screenshot a:hover img,
     .ios-screenshot video:hover,
@@ -3413,6 +3477,7 @@ menu {
     .popup,
     [data-hint]:after,
     .bigfoot-footnote,
+    .bigfoot-footnote__tooltip,
     .summary-list li a:hover,
     .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
@@ -3477,6 +3542,9 @@ html#dark.oled {
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
+#dark .edge-to-edge a:hover {
+    background-color: transparent !important;
+}
 /**
  * Secondary backgrounds
  */
@@ -3488,9 +3556,9 @@ html#dark.oled {
     /*#dark .popular-articles .card .label {
         background-color: rgb(46, 46, 46);
     }*/
-    #dark .popular-articles .card {
+    /*#dark .popular-articles .card {
         border-color: rgb(36, 36, 36);
-    }
+    }*/
 #dark kbd,
 #dark table th {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
@@ -3500,6 +3568,7 @@ html#dark.oled {
  */
 #dark code,
 #dark pre,
+#dark .language-plaintext .highlight pre code,
 #dark tbody tr:nth-child(even),
 #dark table th,
 #dark kbd {
@@ -3638,9 +3707,12 @@ html#dark,
     color: rgba(255, 255, 255, 0.6);
 }
 #dark blockquote,
-#dark .summary-list p,
 #dark figcaption {
     color: rgba(255, 255, 255, 0.5);
+}
+#dark .summary-list p,
+#dark .card .label .secondary {
+    color: rgba(255, 255, 255, 0.625);
 }
 #dark .stroke-color {
     stroke: rgba(255, 255, 255, 0.5);
@@ -3666,9 +3738,11 @@ html#dark,
 #dark .weak,
 #dark small,
 #dark img,
-#dark .card .label .secondary,
 #dark .longform-title {
     color: rgba(255, 255, 255, 0.375);
+}
+#dark .summary-list time {
+    color: rgba(255, 255, 255, 0.25);
 }
 #dark .permalink path {
     fill: rgba(255, 255, 255, 0.375);
@@ -3698,7 +3772,7 @@ html#dark,
 /* ----- DROP SHADOWS ----- */
 
 #dark menu {
-    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3375), 0em 0.22em 0.6em rgba(0, 0, 0, 0.16875);
+    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
 #dark .macos-window-screenshot img,
 #dark .macos-window-screenshot video {
@@ -3710,6 +3784,8 @@ html#dark,
 #dark .threeDHover,
 #dark .shadow img,
 #dark .shadow video,
+#dark img.shadow,
+#dark video.shadow,
 #dark .project,
 #dark .ios-screenshot img,
 #dark .ios-screenshot video,
@@ -3722,6 +3798,8 @@ html#dark,
     #dark .threeDHover:hover,
     #dark .shadow a:hover img,
     #dark .shadow video:hover,
+    #dark a:hover img.shadow,
+    #dark video:hover.shadow,
     #dark .project.threeDHover:hover,
     #dark .ios-screenshot a:hover img,
     #dark .ios-screenshot video:hover,
