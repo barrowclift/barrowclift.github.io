@@ -843,12 +843,12 @@ kbd,
 
     /* Card */
 /*    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .125);*/
-    background-color: hsla(var(--accent-hue), 5%, 93%, .975);
+    background-color: hsla(var(--accent-hue), 10%, 93%, .975);
 
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.2);
 }
     .hint--top[data-hint]:before {
-        border-top-color: hsla(var(--accent-hue), 5%, 93%, .975);
+        border-top-color: hsla(var(--accent-hue), 10%, 93%, .975);
     }
     menu,
     .popup,
@@ -898,12 +898,13 @@ html#dark {
     .bigfoot-footnote__content,
     .bigfoot-footnote__tooltip,
     [data-hint]:after {
-        background-color: hsla(var(--accent-hue), 5%, 93%, .85);
+        background-color: hsla(var(--accent-hue), 10%, 93%, .85);
     }
     #dark menu,
     #dark .popup,
     #dark .bigfoot-footnote__content,
-    #dark .bigfoot-footnote__tooltip {
+    #dark .bigfoot-footnote__tooltip,
+    #dark [data-hint]:after {
         background-color: hsla(var(--accent-hue), 10%, 16%, .85);
     }
     /*#dark menu,

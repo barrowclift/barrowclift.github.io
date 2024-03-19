@@ -94,25 +94,25 @@ function updateThemeColor(a_accentColor) {
     let lightBaseThemeColor;
     if (accentColor === "purple") {
         darkBaseThemeColor = "#29232C";
-        lightBaseThemeColor = "#EFEFF1";
+        lightBaseThemeColor = "#EEEEF1";
     } else if (accentColor === "pink") {
         darkBaseThemeColor = "#2B2325";
-        lightBaseThemeColor = "#F1EFEF";
+        lightBaseThemeColor = "#F2EEEF";
     } else if (accentColor === "red") {
         darkBaseThemeColor = "#2B2323";
-        lightBaseThemeColor = "#F1EFEF";
+        lightBaseThemeColor = "#F1EFEE";
     } else if (accentColor === "orange") {
         darkBaseThemeColor = "#2B2922";
-        lightBaseThemeColor = "#F1F0EF";
+        lightBaseThemeColor = "#F1F0EE";
     } else if (accentColor === "yellow") {
         darkBaseThemeColor = "#2B2A22";
-        lightBaseThemeColor = "#F1F1EF";
+        lightBaseThemeColor = "#F1F1EE";
     } else if (accentColor === "green") {
         darkBaseThemeColor = "#222B24";
-        lightBaseThemeColor = "#EFF1EF";
+        lightBaseThemeColor = "#EDF1EF";
     } else {
         darkBaseThemeColor = "#23272B";
-        lightBaseThemeColor = "#EFF0F1";
+        lightBaseThemeColor = "#EEEFF1";
     }
     let darkModeCookie = $.cookie("dark-mode");
     if (darkModeCookie === "off") {
