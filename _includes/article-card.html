@@ -1,7 +1,7 @@
-<div style="list-style:none;display:inline-block;margin-bottom:0;">
-    <a style="background-color:unset !important;margin:0;padding:0;line-height:0;" href="{{ post.url }}">
+<div>
+    <a href="{{ post.url }}">
         {% if post.card.light.background-color and post.card.dark.background-color and site.enable-card-colors %}
-            <div class="card threeDHover bleed large-when-small show-when-light" style="background-color:{{ post.card.light.background-color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card show-when-light" style="background-color:{{ post.card.light.background-color }};">
                 {% if post.card.light.image %}
                     <picture>
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.light.image }}.webp">
@@ -14,15 +14,15 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="background-color:{{ post.card.light.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <div class="label" style="background-color:{{ post.card.light.background-color }};">
                     <h5>
-                        <time style="color:{{ post.card.light.foreground-color }} !important;opacity:0.375;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+                        <time style="color:{{ post.card.light.foreground-color }} !important;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>
                     <h4 class="primary" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.title }}</h4>
-                    <h5 class="secondary" style="color:{{ post.card.light.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+                    <h5 class="secondary" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.excerpt }}</h5>
                 </div>
             </div>
-            <div class="card threeDHover bleed large-when-small show-when-dark" style="background-color:{{ post.card.dark.background-color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card show-when-dark" style="background-color:{{ post.card.dark.background-color }};">
                 {% if post.card.dark.image %}
                     <picture>
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.dark.image }}.webp">
@@ -35,16 +35,16 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="background-color:{{ post.card.dark.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <div class="label" style="background-color:{{ post.card.dark.background-color }};">
                     <h5>
-                        <time style="color:{{ post.card.dark.foreground-color }} !important;opacity:0.375;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+                        <time style="color:{{ post.card.dark.foreground-color }} !important;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>
                     <h4 class="primary" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.title }}</h4>
-                    <h5 class="secondary" style="color:{{ post.card.dark.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+                    <h5 class="secondary" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.excerpt }}</h5>
                 </div>
             </div>
         {% elsif post.card.background-color and site.enable-card-colors %}
-            <div class="card threeDHover bleed large-when-small" style="background-color:{{ post.card.background-color }};overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card" style="background-color:{{ post.card.background-color }};">
                 {% if post.card.light.image and post.card.dark.image %}
                     <picture class="show-when-light">
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.light.image }}.webp">
@@ -64,16 +64,16 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="background-color:{{ post.card.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <div class="label" style="background-color:{{ post.card.background-color }};">
                     <h5>
-                        <time style="color:{{ post.card.foreground-color }} !important;opacity:0.375;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+                        <time style="color:{{ post.card.foreground-color }} !important;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>
                     <h4 class="primary" style="color:{{ post.card.foreground-color }} !important;">{{ post.title }}</h4>
-                    <h5 class="secondary" style="color:{{ post.card.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
+                    <h5 class="secondary" style="color:{{ post.card.foreground-color }} !important;">{{ post.excerpt }}</h5>
                 </div>
             </div>
         {% elsif site.enable-card-colors %}
-            <div class="card threeDHover bleed large-when-small show-when-light" style="background-color:hsl(0, 0%, 93%);overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card show-when-light" style="background-color:hsl(0, 0%, 93%);">
                 {% if post.card.light.image %}
                     <picture>
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.light.image }}.webp">
@@ -91,15 +91,15 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="background-color:hsl(0, 0%, 93%);transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <div class="label" style="background-color:hsl(0, 0%, 93%);">
                     <h5>
-                        <time style="color:hsl(0, 0%, 12%) !important;opacity:0.375;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+                        <time style="color:hsl(0, 0%, 12%) !important;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>
                     <h4 class="primary" style="color:hsl(0, 0%, 12%) !important;">{{ post.title }}</h4>
-                    <h5 class="secondary" style="color:hsl(0, 0%, 12%) !important;opacity:0.625;">{{ post.excerpt }}</h5>
+                    <h5 class="secondary" style="color:hsl(0, 0%, 12%) !important;">{{ post.excerpt }}</h5>
                 </div>
             </div>
-            <div class="card threeDHover bleed large-when-small show-when-dark" style="background-color:hsl(0, 0%, 16%);overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card show-when-dark" style="background-color:hsl(0, 0%, 16%);">
                 {% if post.card.dark.image %}
                     <picture>
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.dark.image }}.webp">
@@ -117,16 +117,16 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="background-color:hsl(0, 0%, 16%);transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
+                <div class="label" style="background-color:hsl(0, 0%, 16%);">
                     <h5>
-                        <time style="color:hsl(0, 0%, 100%) !important;opacity:0.375;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
+                        <time style="color:hsl(0, 0%, 100%) !important;" itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>
                     <h4 class="primary" style="color:hsl(0, 0%, 100%) !important;">{{ post.title }}</h4>
-                    <h5 class="secondary" style="color:hsl(0, 0%, 100%) !important;opacity:0.625;">{{ post.excerpt }}</h5>
+                    <h5 class="secondary" style="color:hsl(0, 0%, 100%) !important;">{{ post.excerpt }}</h5>
                 </div>
             </div>
         {% else %}
-            <div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
+            <div class="card">
                 {% if post.card.light.image and post.card.dark.image %}
                     <picture class="show-when-light">
                         <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.card.light.image }}.webp">
@@ -149,7 +149,7 @@
                 {% else %}
                     <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
                 {% endif %}
-                <div class="label" style="transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;background-color:transparent !important;">
+                <div class="label">
                     <h5>
                         <time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     </h5>

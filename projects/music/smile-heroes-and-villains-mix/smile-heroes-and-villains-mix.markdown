@@ -1,0 +1,17 @@
+# SMiLE: Heroes and Villains Mix
+
+In 1966, hot off recording "Pet Sounds" and with The Beatles' "Sgt. Pepper's Lonely Hearts Club Band" in hot pursuit, Brian Wilson of The Beach Boys joined forces with [Van Dyke Parks](https://en.wikipedia.org/wiki/Van_Dyke_Parks) to begin constructing what would later be referred to by many as [one of the most famous unfinished recordings in history](http://artsbeat.blogs.nytimes.com/2011/08/31/unfinished-beach-boys-album-is-set-for-release-44-years-later/?_r=0). Originally envisioned as a loving homage to Americana, it featured chanting Native Americans, bar brawls, barbershop quartets, a coast-to-coast motorcycle trip, enlightenment, and some good, good vibrations resulting in what can only be referred to as a teenage symphony to God.
+
+The musical fruits of that year of recording would never see true completion, however. Upon the rest of The Beach Boys returning from their tour the atmosphere cultivating the project turned sour. Specifically, one particular band member, Mike Love, incessantly harassed Parks and his contributions eventually driving Parks to quit the project altogether. This, combined with Love's further dismissive and harsh comments towards the new material, shattered Brian's already fragile mental state. The project quickly fell apart afterwards.
+
+It would take decades of struggling with increasing mental problems and drug abuse following those events for Brian, with the support of family and friends, to have the courage to pick up the pieces and finally release the symphony to the world (or at least an approximation of what it would have been like had he and Parks been allowed to complete it).
+
+The [official compilation](https://itunes.apple.com/us/album/smile-sessions/id720113626), while a treat to hear and special in its own right, is in my and many fans opinions only one possible way to interpret and piece together the literal 75+ hours of unique audio recorded from that era. This reconstruction is my contribution to this thriving community and a personal tribute to the groundbreaking musical exploration that Brian and Parks made back in 1966.
+
+## Credits
+
+This project was only possible because of the help from these wonderful people from the SMiLE and Beach Boys fan community.
+
+* [soniclovenoize](http://albumsthatneverwere.blogspot.com/)'s absolutely stellar [BWPS 2004 Stereo Mix](http://albumsthatneverwere.blogspot.com/2012/06/beach-boys-smile-soniclovenoize-stereo.html) whose reconstructions of Vega-Tables and Cabin Essence (among other bits and bobs) were pulled directly for mine. My thanks to him, and you can check out his other amazing album reconstructions at his website [here](http://albumsthatneverwere.blogspot.com/).
+* [adwolf16](https://www.youtube.com/channel/UC1S4I1pBbqUzthH4AUtwMFg)'s [SMiLE Recreation - Suite One](https://www.youtube.com/watch?v=mJb8ZQdLTzY&list=LLt6yrzumV3rjgXbAPGmm0eQ&index=9) which greatly influenced the first movement of my reconstruction and even features a snippet from his wonderful a cappella rendition of a movement hinted at with piano from the Heroes and Villains tapes.
+* Mark Hardy's now taken down [SMiLE - An Approximation](https://www.youtube.com/watch?v=iHKstT6EqXY&app=desktop) mix which was the general inspiration for my recreation.

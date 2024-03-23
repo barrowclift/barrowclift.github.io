@@ -119,7 +119,7 @@ The showcase itself will strive to keep as impartial and objective a voice as po
     * The "one, true album sorting method", which is sort alphabetically by artist, then sort each artist's albums chronologically by release year.
     * A grid layout option for more natural visual browsing
 
-This is the complete version of the article presented as a single page. If you prefer separate pages, you can read the paginated version [here](/articles/fourth-annual-ios-music-player-showcase/). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here](https://nitro.barrowclift.me/article/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me](https://nitro.barrowclift.me) (note that only a selection of the art assets are available in this mirror to improve page performance).
+This is the complete version of the article presented as a single page. If you prefer separate pages, you can read the paginated version [here](/articles/fourth-annual-ios-music-player-showcase/). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here]({{ site.nitro_url }}/article/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me]({{ site.nitro_url }}) (note that only a selection of the art assets are available in this mirror to improve page performance).
 
 -----
 

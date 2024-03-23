@@ -12,16 +12,20 @@
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.jpg" />
 
     <meta name="application-name" content="Barrowclift" />
-    {% if page.design.browser-theme-color-dark %}
-        <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)" />
-        <script>const darkBaseThemeColorOverride="{{ page.design.browser-theme-color-dark }}";</script>
+    {% if page.design.oled %}
+        <meta name="theme-color" content="black" />
+    {% else %}
+        {% if page.design.browser-theme-color-dark %}
+            <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)" />
+            <script>const darkBaseThemeColorOverride="{{ page.design.browser-theme-color-dark }}";</script>
+        {% endif %}
+        {% if page.design.browser-theme-color-light %}
+            <meta name="theme-color" id="override-light-base-theme-color" content="{{ page.design.browser-theme-color-light }}" media="(prefers-color-scheme: light)" />
+            <script>const lightBaseThemeColorOverride="{{ page.design.browser-theme-color-light }}";</script>
+        {% endif %}
+        <meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" id="light-base-theme-color" content="white" />
     {% endif %}
-    {% if page.design.browser-theme-color-light %}
-        <meta name="theme-color" id="override-light-base-theme-color" content="{{ page.design.browser-theme-color-light }}" media="(prefers-color-scheme: light)" />
-        <script>const lightBaseThemeColorOverride="{{ page.design.browser-theme-color-light }}";</script>
-    {% endif %}
-    <meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" id="light-base-theme-color" content="white" />
     <meta name="msapplication-TileColor" content="white" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
@@ -80,7 +84,14 @@
 
     <!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
     <script type="text/javascript">$(document).ready(function(){anchorsEnabled = {% if page.show-anchors %}true{% else %}false{% endif %};});</script>
-    <!-- Anchor offset -->
+    <!--
+    Anchor offset:
+    Without this, if you click the "back"/↩ button on a footnote to go back to
+    the article, browsers will scroll the top of the page to be precisely
+    where the footnote is, but that means the floating menu will stupidly
+    float right on over it! If we detect this is happening, correct the scroll
+    adjustment so the footnote remains comfortably viewable in spite of the
+    floating menu -->
     <script type="text/javascript">!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);</script>
 
     {% if paginator.previous_page_path or page.continuation.previous-page %}
@@ -104,7 +115,6 @@
         <meta property="og:image" content="{{ site.url }}/images/share-banner.jpg"/>
     {% endif %}
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="fb:admins" content="1665270112" />
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@barrowclift" />

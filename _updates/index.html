@@ -13,7 +13,14 @@ title: "Updates"
     <li>
         <a href="{{ update.url }}">
             <h3 class="header">
-                <time itemprop="dateCreated">{% if update.type == "article-update" %}<mark class="tag blue">Article</mark>{% elsif update.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ update.date | date: "%B %-d, %Y" }}</time>
+                <time itemprop="dateCreated">
+                    {% if update.type == "article-update" %}
+                        <mark class="tag blue">Article</mark>
+                    {% elsif update.type == "project-update" %}
+                        <mark class="tag orange">Project</mark>
+                    {% endif %}
+                    {{ update.date | date: "%B %-d, %Y" }}
+                </time>
                 {{ update.title }} {% if update.link and update.link contains "http" %}↦{% endif %}
             </h3>
             <p>

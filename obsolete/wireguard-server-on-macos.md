@@ -16,9 +16,9 @@ article:
     <p><strong>This is no longer the recommended approach.</strong> Instead, I highly suggest referring to the new guide <a href="/articles/wireguard-server-on-macos">here</a>.    </p>
 </div>
 
-<figure class="inline shadow">
+<div class="inline shadow">
     <img src="{{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg">
-</figure>
+</div>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is now successfully running on [macOS Mojave](https://en.wikipedia.org/wiki/MacOS_Mojave).
 

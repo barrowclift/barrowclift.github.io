@@ -16,12 +16,10 @@ card:
 ---
 
 <div class="inline shadow">
-    <a href="https://podcasts.apple.com/us/podcast/bad-music-hertz/id1319023897">
-        <picture>
-            <source type="image/webp" srcset="{{ site.dropbox }}/we-made-a-podcast/podcast-art.webp">
-            <img type="image/jpeg" title="Bad Music Hertz podcast cover art" alt="Bad Music Hertz podcast cover art" src="{{ site.dropbox }}/we-made-a-podcast/podcast-art.jpg">
-        </picture>
-    </a>
+    <picture>
+        <source type="image/webp" srcset="{{ site.dropbox }}/we-made-a-podcast/podcast-art.webp">
+        <img type="image/jpeg" title="Bad Music Hertz podcast cover art" alt="Bad Music Hertz podcast cover art" src="{{ site.dropbox }}/we-made-a-podcast/podcast-art.jpg">
+    </picture>
 </div>
 
 After talking about it for years, my siblings and I are proud to officially release the [first episode of the Bad Music Hertz podcast](https://badmusichertz.com/post/lonesome-dreams), where we kick things off with a discussion of Lord Huron's *Lonesome Dreams*.

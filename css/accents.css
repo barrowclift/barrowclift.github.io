@@ -847,8 +847,11 @@ kbd,
 
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.2);
 }
+    .card .label {
+        background-color: hsl(var(--accent-hue), 10%, 93%);
+    }
     .hint--top[data-hint]:before {
-        border-top-color: hsla(var(--accent-hue), 10%, 93%, .975);
+        border-top-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
     menu,
     .popup,
@@ -874,15 +877,13 @@ kbd,
 
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
 }
+    #dark .card .label {
+        background-color: hsl(var(--accent-hue), 10%, 16%);
+    }
     #dark .hint--top[data-hint]:before {
         border-top-color: hsla(var(--accent-hue), 10%, 16%, .975);
     }
-.card .label {
-    background-color: hsl(var(--accent-hue), 10%, 92%);
-}
-#dark .card .label {
-    background-color: hsl(var(--accent-hue), 10%, 16%);
-}
+
 html {
     background-color: hsl(var(--accent-hue), 10%, 99%);
 }
@@ -896,9 +897,11 @@ html#dark {
     menu,
     .popup,
     .bigfoot-footnote__content,
-    .bigfoot-footnote__tooltip,
     [data-hint]:after {
         background-color: hsla(var(--accent-hue), 10%, 93%, .85);
+    }
+    .bigfoot-footnote__tooltip {
+        background-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
     #dark menu,
     #dark .popup,

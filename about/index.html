@@ -4,173 +4,95 @@ display:
     edge-to-edge: true
 ---
 
-<!-- TODO There's a lot to clean up here... -->
 <style>
-    main a {
-        text-decoration: none !important;
-    }
-    main h1, main h2 {
-        text-align: center;
-    }
     main ul {
-        margin-top: 0.5rem;
-        margin-bottom: 0rem;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0px;
         text-align: center;
+    }
+    /**
+     * Really not ideal... I should instead have this entire page be flexbox like on Projects or Home.
+     */
+    article {
+        max-width: 33em;
+        width: auto;
+        margin: 2.6em auto;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* ----- CUSTOM CARDS ----- */
 
-    .card.education {
-        background-color: #003A74 !important;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
-    }
-    .card.education .label .primary,
-    .card.education .label .secondary {
-        display: block;
-        color: rgba(255, 255, 255, 0.9) !important;
-    }
-    .card.education .label .small {
-        color: rgba(255, 255, 255, 0.3) !important;
-    }
-    .card.education .label .secondary {
-        font-style: normal;
-        font-weight: 500;
-        text-align: center;
-        margin-top: 0.25rem;
-        margin-bottom: 0;
-    }
-    .card.education .label .primary {
-        text-align: center;
-        margin-top: 1.5rem;
-        color: white;
-    }
-    .card.education .label .small {
-        margin-top: 1rem;
-        margin-bottom: 0;
-        text-align: center;
-        font-weight: 500;
-    }
     .card .label {
         background-color: transparent !important;
     }
-    .card.education img {
-        width: auto;
-        max-height: 11vh;
+    .card.education {
+        padding-bottom: 0;
+        background-color: #003A74 !important;
+        background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 100%, 0.05) 0%,
+            hsla(0, 0%, 99.36%, 0.05) 8.1%,
+            hsla(0, 0%, 97.54%, 0.05) 15.5%,
+            hsla(0, 0%, 94.66%, 0.05) 22.5%,
+            hsla(0, 0%, 90.81%, 0.05) 29%,
+            hsla(0, 0%, 86.07%, 0.05) 35.3%,
+            hsla(0, 0%, 80.5%, 0.05) 41.2%,
+            hsla(0, 0%, 74.16%, 0.05) 47.1%,
+            hsla(0, 0%, 67.09%, 0.05) 52.9%,
+            hsla(0, 0%, 59.33%, 0.05) 58.8%,
+            hsla(0, 0%, 50.92%, 0.05) 64.7%,
+            hsla(0, 0%, 41.88%, 0.05) 71%,
+            hsla(0, 0%, 32.25%, 0.05) 77.5%,
+            hsla(0, 0%, 22.04%, 0.05) 84.5%,
+            hsla(0, 0%, 11.29%, 0.05) 91.9%,
+            hsla(0, 0%, 0%, 0.05) 100%
+        );
     }
-
-    /* ----- IMAGES & VIDEO ----- */
-
-    .fill-transparent,
-    .blue .fill-transparent {
-        fill: rgb(246, 246, 246);
-    }
-    .red .fill-transparent {
-        fill: rgb(250, 246, 246);
-    }
-    .orange .fill-transparent {
-        fill: rgb(249, 248, 246);
-    }
-    .yellow .fill-transparent {
-        fill: rgb(249, 249, 246);
-    }
-    .green .fill-transparent {
-        fill: rgb(247, 249, 247);
-    }
-    .purple .fill-transparent {
-        fill: rgb(247, 247, 249);
-    }
-    .pink .fill-transparent {
-        fill: rgb(250, 246, 247);
-    }
-        #dark .fill-transparent,
-        #dark.blue .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education .content {
+            margin-top: 2.6em;
+            margin-bottom: 2.6em;
         }
-        #dark.red .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education img {
+            max-height: 60px;
         }
-        #dark.orange .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education .label {
+            margin-bottom: 0;
         }
-        #dark.yellow .fill-transparent {
-            fill: rgb(45, 45, 44);
+        .card.education .label .primary,
+        .card.education .label .secondary {
+            color: rgba(255, 255, 255, 0.9) !important;
         }
-        #dark.green .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education .label .small {
+            color: rgba(255, 255, 255, 0.5) !important;
         }
-        #dark.purple .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education .label .primary {
+            font-weight: 900;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            color: white;
         }
-        #dark.pink .fill-transparent {
-            fill: rgb(45, 45, 45);
+        .card.education .label .secondary {
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
         }
-    .stroke-transparent,
-    .blue .stroke-transparent {
-        stroke: rgb(246, 246, 246);
-    }
-    .red .stroke-transparent {
-        stroke: rgb(250, 246, 246);
-    }
-    .orange .stroke-transparent {
-        stroke: rgb(249, 248, 246);
-    }
-    .yellow .stroke-transparent {
-        stroke: rgb(249, 249, 246);
-    }
-    .green .stroke-transparent {
-        stroke: rgb(247, 249, 247);
-    }
-    .purple .stroke-transparent {
-        stroke: rgb(247, 247, 249);
-    }
-    .pink .stroke-transparent {
-        stroke: rgb(250, 246, 247);
-    }
-        #dark .stroke-transparent,
-        #dark.blue .stroke-transparent {
-            stroke: rgb(45, 45, 45);
-        }
-        #dark.red .stroke-transparent {
-            stroke: rgb(45, 45, 45);
-        }
-        #dark.orange .stroke-transparent {
-            stroke: rgb(45, 45, 45);
-        }
-        #dark.yellow .stroke-transparent {
-            stroke: rgb(45, 45, 44);
-        }
-        #dark.green .stroke-transparent {
-            stroke: rgb(45, 45, 45);
-        }
-        #dark.purple .stroke-transparent {
-            stroke: rgb(45, 45, 45);
-        }
-        #dark.pink .stroke-transparent {
-            stroke: rgb(45, 45, 45);
+        .card.education .label .small {
+            font-weight: 600;
+            margin-top: 0.65em;
+            margin-bottom: 0;
+            text-align: center;
         }
 
-    #ibx:hover .fill-color {
-        fill: rgba(22, 138, 204, 1.00) !important;
+    .appearances .card {
+        margin-left: .975rem;
+        margin-right: .975rem;
+        margin-bottom: 1.95rem;
+        max-width: 30em;
+        text-align: center;
+        width: 89vw;
     }
-    #bentley:hover .fill-color {
-        fill: rgba(88, 164, 42, 1.00) !important;
-    }
-    #arcweb:hover .fill-color {
-        fill: rgba(10, 75, 131, 1.00) !important;
-    }
-    #arcweb .stroke-color.secondary,
-    #arcweb:hover .stroke-color.secondary {
-        stroke: transparent !important;
-    }
-    #arcweb:hover .stroke-color {
-        stroke: rgba(10, 75, 131, 1.00) !important;
-    }
-    #arcweb:hover .fill-color.secondary {
-        fill: rgba(23, 132, 233, 1.00) !important;
-    }
+    
     #guinness-world-record:hover .fill-color {
         fill: rgba(3, 45, 76, 1.00) !important;
     }
@@ -185,48 +107,12 @@ display:
     #dark .drexel:hover .fill-color {
         stroke: rgba(9, 42, 77, 1.00) !important;
     }
-    .card .show-when-hovered,
-    .card:hover .hide-when-hovered {
-        opacity: 0;
-    }
-    .card:hover .show-when-hovered,
-    .card .hide-when-hovered {
-        opacity: 1;
-    }
 
-    /* ======================================================================================================= */
-
-    /* Medium devices (iPads) */
-    @media (min-width: 700px) {
-        .education img {
-            max-width: 350px;
-        }
-    }
-
-    /* Large devices (iMacs) */
-    @media (min-width: 900px) {
-        .education img {
-            max-width: 390px;
-        }
-    }
+    /* ----- FANCY DIVIDERS ----- */
 
     h2.fancy {
-        margin: 2.828em 0 1.95rem;
+        margin: 2.6em 0 1.3em;
     }
-    article {
-        max-width: 33em;
-        width: auto;
-        margin: 2.6em auto;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    @supports(padding: max(0px)) {
-        article {
-            padding-left: max(5%, env(safe-area-inset-left));
-            padding-right: max(5%, env(safe-area-inset-right));
-        }
-    }
-
     .fancy {
         line-height: 1em;
         text-align: center;
@@ -252,10 +138,10 @@ display:
         background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.0), rgba(150, 150, 150, 0.15));
     }
         #dark .fancy span:before {
-            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(36, 36, 36, 0.0)), to(rgba(150, 150, 150, 0.15) 25%));
-            background-image: -webkit-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15) 25%);
-            background-image: -moz-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15) 25%);
-            background-image: -o-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15) 25%);
+            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(36, 36, 36, 0.0)), to(rgba(150, 150, 150, 0.15)));
+            background-image: -webkit-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
+            background-image: -moz-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
+            background-image: -o-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
         }
     .fancy span:after {
         left: 100%;
@@ -266,49 +152,50 @@ display:
         background-image: -o-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(255, 255, 255, 0.0));
     }
         #dark .fancy span:after {
-            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(150, 150, 150, 0.15) 25%), to(rgba(36, 36, 36, 0.0)));
-            background-image: -webkit-linear-gradient(left, rgba(150, 150, 150, 0.15) 25%, rgba(36, 36, 36, 0.0));
-            background-image: -moz-linear-gradient(left, rgba(150, 150, 150, 0.15) 25%, rgba(36, 36, 36, 0.0));
-            background-image: -o-linear-gradient(left, rgba(150, 150, 150, 0.15) 25%, rgba(36, 36, 36, 0.0));
+            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(150, 150, 150, 0.15)), to(rgba(36, 36, 36, 0.0)));
+            background-image: -webkit-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
+            background-image: -moz-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
+            background-image: -o-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
         }
-    .apperances {
-        max-width:unset !important;
-    }
-    .card.bleed.education {
-        padding-bottom: 0;
-    }
-    .card.bleed.education .content {
-        padding-top: 2.6em !important;
-        padding-bottom: 2.6em !important;
+
+    /* ----- QUERIES ----- */
+    
+    @supports(padding: max(0px)) {
+        article {
+            padding-left: max(5%, env(safe-area-inset-left));
+            padding-right: max(5%, env(safe-area-inset-right));
+        }
     }
     @media (min-width: 700px) {
+        article {
+            margin-top: 5.2em;
+            max-width: 34em;
+        }
+        .card.education img {
+            max-height: 100px;
+        }
         #past-work .card {
             width: 20vw;
             min-width: 9em;
             max-width: 13em;
-        }
-        article {
-            margin-top: 5.2em;
-            max-width: 34em;
         }
     }
     @media (min-width: 900px) {
         article {
             max-width: 35em;
         }
-        .apperances .card {
+        .appearances .card {
             width: 42.25vw;
             max-width: unset;
         }
     }
     @media (min-width: 1300px) {
-        .apperances .card {
+        .appearances .card {
             width: 29vw;
             max-width: 440px;
         }
         .card,
-        .card.large,
-        .card.large-when-small {
+        .card.large {
             margin-left: .975rem;
             margin-right: .975rem;
             margin-bottom: 1.95rem;
@@ -317,40 +204,19 @@ display:
 </style>
 
 <article>
-    <figure class="inline shadow">
-        <picture>
-            <source type="image/webp" srcset="images/portrait.webp">
-            <img type="image/jpeg" title="Selfie of myself with my husband, Kai" alt="Selfie of myself with my husband, Kai" src="images/portrait.jpg">
-        </picture>
-        <figcaption>Myself (right) and my husband Kai (left) at Pine Point for Christmas.</figcaption>
-    </figure>
-
-    <p>My name is Marc Barrowclift, and I’m a full-stack developer with over {{ site.time | date: '%y' | minus: 14 }} years practical experience in the field.</p>
-
-    <p>Since the formative day my parents purchased our family's <a href="https://en.wikipedia.org/wiki/IMac_(Intel-based)#1st_generation:_Polycarbonate_iMac">first iMac</a> back in 2006, I made it my life’s mission to deliver a feeling of captivating magic in my work like I had felt upon booting up that iMac for the first time.</p>
-
-    <p>Upon arriving at <a href="http://drexel.edu">Drexel University</a> for my studies back in 2011, that passion began yielding results; from collaborating with my professors to create the Guinness World Record’s <a href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">“Largest Video Game Display”</a> at <a href="https://knightfoundation.org/articles/philly-tech-week-and-pong/">2013’s Philly Tech Week</a>, to presenting the stylometry anonymization tool <a href="https://psal.cs.drexel.edu/index.php/Main_Page">“Anonymouth”</a> at <a href="http://petools.soic.indiana.edu">2013’s Privacy Enhancing Technologies Symposium</a>, to finally completing my studies by helping my team land a coveted spot in 2016’s senior design finals, I spent every day in my college education honing my craft.</p>
-
-    <p>In my professional career today, I continue delivering that same spark of joy in everything I do: from rock-solid backend services with understandable architecture and approachable documentation to visually captivating frontend designs, such as the site you're reading now.</p>
-
-    <p>When I’m not applying those principles to software or design, I pass the time <a href="https://badmusichertz.com">recording and editing the Bad Music Hertz podcast</a> with my brother, playing board games with friends at my weekly “Game Nights”, or simply enjoying a good Old Fashioned while spinning a record.</p>
-
-    <p>Thanks for stopping by, and I hope one of my works here brightens your day.</p>
-
-    <hr>
-
-    <p>This website was made possible with the help of numerous <a href="/about/shoutouts/">creative individuals and open source projects</a>.</p>
+    {% capture about-prose %}{% include_relative about.markdown %}{% endcapture %}
+    {{ about-prose | markdownify }}
 </article>
 
 <h2 class="fancy"><span>Education</span></h2>
 
-<ul>
-    <a style="background-color:unset !important;" href="http://drexel.edu">
-        <div class="card bleed threeDHover large education">
+<ul class="cards">
+    <a href="http://drexel.edu">
+        <div class="card large education">
             <div class="content card-animation">
                 <img src="images/drexel-logo.png" alt="Drexel University logo"/>
                 <div class="label">
-                    <h2 class="primary">CLASS OF 2016</h2>
+                    <h1 class="primary">CLASS OF 2016</h1>
                     <h3 class="secondary">Bachelors of Software Engineering</h3>
                     <h4 class="small">Graduate With Honors</h4>
                 </div>
@@ -361,9 +227,9 @@ display:
 
 <h2 class="fancy"><span>Honors</span></h2>
 
-<ul>
-    <a style="background-color:unset !important;" href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
-        <div class="card threeDHover" id="guinness-world-record">
+<ul class="cards">
+    <a href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
+        <div class="card" id="guinness-world-record">
             <div class="content card-animation">
                 <svg class="logo" viewBox="0 0 330 330" preserveAspectRatio="xMidYMin slice" version="1.1" role="img">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -394,8 +260,8 @@ display:
             </div>
         </div>
     </a>
-    <a style="background-color:unset !important;" href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
-        <div class="card threeDHover drexel">
+    <a href="http://www.guinnessworldrecords.com/world-records/largest-architectural-videogame-display">
+        <div class="card drexel">
             <div class="content card-animation">
                 <svg class="logo" viewBox="0 0 227 227" preserveAspectRatio="xMidYMin slice" role="img" version="1.1">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -438,10 +304,10 @@ display:
     </a>
 </ul>
 
-<h2 class="fancy"><span>Apperances</span></h2>
+<h2 class="fancy"><span>Appearances</span></h2>
 
-<ul class="apperances">
-    <div class="card threeDHover bleed large-when-small">
+<ul class="appearances cards">
+    <div class="card">
         <video controls preload="none" poster="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="">
             <source src="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage.mp4" type="video/mp4">
             <source src="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage.webm" type="video/webm">
@@ -453,8 +319,8 @@ display:
             <h5 class="secondary">The Largest Video Game Ever</h5>
         </div>
     </div>
-    <a style="background-color:unset !important;" href="http://petools.soic.indiana.edu">
-        <div class="card threeDHover bleed large-when-small">
+    <a href="http://petools.soic.indiana.edu">
+        <div class="card">
             <img src="images/petools.png">
             <div class="label">
                 <h4 class="primary">PETools Presenter</h4>
@@ -462,9 +328,9 @@ display:
             </div>
         </div>
     </a>
-    <a style="background-color:unset !important;" href="https://twitter.com/comcastcareers/status/889502224791076864">
-        <div class="card threeDHover bleed large-when-small" style="overflow:hidden;">
-            <img style="max-width: unset; width: 113%; margin-left: -13%;" src="images/comcast-ypn-month.jpg">
+    <a href="https://twitter.com/comcastcareers/status/889502224791076864">
+        <div class="card">
+            <img src="images/comcast-ypn-month.jpg">
             <div class="label">
                 <h4 class="primary">Comcast Twitter Feature</h4>
                 <h5 class="secondary">Young Professionals Network</h5>

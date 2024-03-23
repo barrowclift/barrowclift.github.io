@@ -66,7 +66,7 @@ Like last year, I have a short list of music player "deal-breakers". In an effor
 * Large album art in the player view
 * Any custom equalizer provided by the app must also provide the option to completely disable it
 
-Given the growing number of players available on iOS, I've broken sections down into discrete pages to make the article easier to read and faster to load. You may advance to the next section with the big button below or jump to a specific section that interests you with the "Table of Contents" below. For readers who prefer single-page articles, you may [read here](/articles/third-annual-ios-music-player-showcase/complete), instead (though I personally recommend this version for an improved reading experience). Additionally, for readers on slow internet connections, you may want to consider reading the speed-optimized copy of this article [here](https://nitro.barrowclift.me/article/third-annual-ios-music-player-showcase).
+Given the growing number of players available on iOS, I've broken sections down into discrete pages to make the article easier to read and faster to load. You may advance to the next section with the big button below or jump to a specific section that interests you with the "Table of Contents" below. For readers who prefer single-page articles, you may [read here](/articles/third-annual-ios-music-player-showcase/complete), instead (though I personally recommend this version for an improved reading experience). Additionally, for readers on slow internet connections, you may want to consider reading the speed-optimized copy of this article [here]({{ site.nitro_url }}/article/third-annual-ios-music-player-showcase).
 
 Let's get started...
 

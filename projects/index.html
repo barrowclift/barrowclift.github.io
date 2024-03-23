@@ -5,41 +5,13 @@ display:
 ---
 
 <style>
-    .column {
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
     .column > span {
         align-self: center;
-    }
-    .column a img {
-        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    .column .card:hover img {
-        transform: scale(1.05);
-    }
-    .card {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        max-width: unset !important;
-        will-change: transform;
-        overflow: hidden;
-    }
-    .card img {
-        border-radius: 0 !important;
-    }
-    .project-list {
-        padding-bottom: 3.9em;
-        max-width: 65em;
-        text-align: center;
     }
     .project {
         padding: 0;
         margin: 0;
         display: block;
-        width: 100%;
-        height: auto;
         border-radius: 1em;
         overflow: hidden;
         will-change: transform;
@@ -47,25 +19,38 @@ display:
         transform-style: preserve-3d;
         -webkit-transform: perspective(500px);
         transform: perspective(500px);
+        transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     }
+        .project:hover {
+            transform: scale(1.025);
+        }
+            .project:hover .foreground {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .project:hover .foreground-1 {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .project:hover .foreground-2 {
+                -webkit-transform: scale(1.025);
+                transform: scale(1.025);
+            }
     .foreground,
     .foreground-1,
     .foreground-2 {
         position: absolute;
         display: block;
         will-change: transform;
-        z-index: 100;
     }
-    .foreground-1 {
-        z-index: 100;
+    .foreground {
+        z-index: 98;
     }
     .foreground-1 {
         z-index: 99;
     }
-    .background {
-        display: block;
-        will-change: transform;
-        z-index: -1;
+    .foreground-2 {
+        z-index: 100;
     }
     .foreground,
     .foreground-1 {
@@ -74,38 +59,10 @@ display:
     .foreground-2 {
         transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
     }
-    .project {
-        transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    .project:hover {
-        transform: scale(1.025);
-    }
-    .project:hover .foreground {
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-    }
-    .project:hover .foreground-1 {
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-    }
-    .project:hover .foreground-2 {
-        -webkit-transform: scale(1.025);
-        transform: scale(1.025);
-    }
-    main a:hover {
-        text-decoration: none !important;
-        background-color: unset !important;
-    }
-    @media (min-width: 700px) {
-        main,
-        .extra-wide-page main {
-            margin-top: 0;
-            padding-top: 6em !important;
-        }
-    }
-    @media (min-width: 900px) {
-        .project {
-        }
+    .background {
+        display: block;
+        will-change: transform;
+        z-index: -1;
     }
 </style>
 

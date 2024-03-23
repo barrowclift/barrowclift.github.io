@@ -822,8 +822,9 @@ menu header:hover #logo #logo-eye-opened,
 .column {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
     margin-left: 0;
     margin-right: 0;
 }
@@ -883,7 +884,7 @@ menu header:hover #logo #logo-eye-opened,
 
 
 /* ----- CARDS ----- */
-.threeDHover:hover,
+.card:hover,
 .shadow a:hover img,
 .shadow video:hover,
 .ios-screenshot a:hover img,
@@ -924,10 +925,16 @@ button.pill:hover:active {
     margin-left: .5rem;
     margin-right: .5rem;
     margin-bottom: 1.3rem;
+    overflow: hidden;
 }
     .card-animation:hover {
         transform: scale(1.025);
     }
+.articles .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    will-change: transform;
+}
 
 .card.large,
 .card.large-when-small {
@@ -941,14 +948,24 @@ button.pill:hover:active {
 .card.large-when-small {
     width: 89vw;
 }
+.column a:hover .card img {
+    transform: scale(1.05);
+}
+.column a .card img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
+
+.cards a:hover {
+    background-color: transparent !important;
+}
 .card.bleed {
     padding-bottom: 1.3em;
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
 }
-    /*.popular-articles .card .label {
+    /*.articles .card .label {
         background-color: rgb(245, 245, 245);
     }*/
     .card.bleed img,
@@ -957,19 +974,34 @@ button.pill:hover:active {
         border-top-left-radius: 0.95em;
         display: inline-block;
     }
-    .popular-articles .card .label .primary,
-    .popular-articles .card .label .secondary {
+    .articles .card .label .primary,
+    .articles .card .label .secondary {
         text-align: left;
     }
-    /*.popular-articles .card {
+    .articles .card {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+    }
+    .articles .card .label {
+        /**
+         * Both of these are required to have the label "float" over the image
+         * when it "zooms" slightly on hover. It's not great...
+         */
+        transform: scale(1);
+        margin-top: -0.58em;
+
+        padding-top: 1em;
+        margin-bottom: 1em;
+    }
+    /*.articles .card {
         border-color: rgb(230, 230, 230);
     }*/
 
 .card .content {
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 1.3em;
-    padding-top: 1.3em;
+    margin-bottom: 1.3em;
+    margin-top: 1.3em;
 }
 .card .content .logo {
     width: auto;
@@ -988,8 +1020,10 @@ button.pill:hover:active {
 
 .card .label {
     margin-top: 0.5em;
+    margin-bottom: 1.3em;
 }
-.card.bleed .label {
+/*.card.bleed .label {*/
+.card .label {
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 1em;
@@ -1565,6 +1599,7 @@ article > p > img {
 
 
 /* On iOS devices, all edge-to-edge elements are fully edge-to-edge */
+.hero-banner,
 .edge-to-edge,
 .uml-flowchart,
 .uml-sequence-diagram {
@@ -1641,13 +1676,13 @@ figure.edge-to-edge.three-images.shadow {
 .edge-to-edge p {
     text-align: center;
 }
-.edge-to-edge.hero-banner {
+.hero-banner {
     margin-top: -3em !important;
     margin-bottom: 0;
     max-width: 2000px;
 }
-    .edge-to-edge.hero-banner img,
-    .edge-to-edge.hero-banner video {
+    .hero-banner img,
+    .hero-banner video {
         border-radius: 0;
     }
 .uml-flowchart, .uml-sequence-diagram {
@@ -2169,6 +2204,10 @@ footer,
 #article-linkback {
     margin-top: 2.6em;
 }
+.flex footer {
+    margin-top: 3.9em;
+    margin-bottom: 0;
+}
 sup[id^=fnref] {
     font-size: smaller;
     vertical-align: super;
@@ -2238,7 +2277,6 @@ summary,
 }
 .summary-list li a,
 .card,
-.threeDHover,
 .shadow a img,
 .shadow video,
 img.shadow,
@@ -2744,6 +2782,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .codehilite,
     .highlight,
     .edge-to-edge,
+    .hero-banner,
     .uml-flowchart, .uml-sequence-diagram,
     article > pre {
         width: 100vw;
@@ -2754,22 +2793,13 @@ Font size: 19px, ~Margin&Padding: 28.5px
             margin-left: -36vw;
             margin-right: -36vw;
         }
+        .hero-banner,
         .edge-to-edge,
         .uml-flowchart, .uml-sequence-diagram {
             margin-left: -35vw;
             margin-right: -35vw;
         }
 
-    /* When on the home view we want all images AND code blocks to actually be
-    bound, inline objects to provide a less distracting view of the post for
-    speed reading and/or binge reading. This will still allow the code blocks
-    to be completely edge-to-edge in the dedicated post view.*/
-    .feed-view .edge-to-edge:not(.large):not(.medium):not(.small) {
-        display: block;
-        max-width: 812px;
-        width: 100%;
-        margin: 0;
-    }
     /**
      * .small images are only edge-to-edge on small devices, they turn into
      * standard inline images for all larger devices.
@@ -2781,15 +2811,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
         margin-top: 1.3em;
         margin-bottom: 2.6em;
     }
-    /*.edge-to-edge.small.shadow {
-        margin-top: 1.3em;
-        margin-bottom: 1.3em;
-    }*/
-    /* Extra padding in case of figcaption */
-    /*figure.edge-to-edge.small {
-        margin-top: 1.3em;
-        margin-bottom: 1.3em;
-    }*/
     .edge-to-edge.medium {
         max-width: 812px;
     }
@@ -2962,9 +2983,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 }
 @media (min-width: 801px) {
     .edge-to-edge.medium img,
-    .edge-to-edge.medium video
-    .feed-view .edge-to-edge img,
-    .feed-view .edge-to-edge video {
+    .edge-to-edge.medium video {
         border-radius: 0.25em;
     }
 }
@@ -3206,8 +3225,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
     }
 }
 @media (min-width: 2001px) {
-    .edge-to-edge.hero-banner img,
-    .edge-to-edge.hero-banner video {
+    .hero-banner img,
+    .hero-banner video {
         border-bottom-left-radius: 0.25em;
         border-bottom-right-radius: 0.25em;
     }
@@ -3450,7 +3469,7 @@ a.button {
 menu {
     box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
 }
-.threeDHover,
+.card,
 .shadow img,
 .shadow video,
 img.shadow,
@@ -3464,7 +3483,7 @@ video.shadow,
 .widget img {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
 }
-    .threeDHover:hover,
+    .card:hover
     .shadow a:hover img,
     .shadow video:hover,
     a:hover img.shadow,
@@ -3553,10 +3572,10 @@ html#dark.oled {
     background-color: rgba(46, 46, 46, 0.25);
     border-color: rgba(150, 150, 150, 0.1);
 }
-    /*#dark .popular-articles .card .label {
+    /*#dark .articles .card .label {
         background-color: rgb(46, 46, 46);
     }*/
-    /*#dark .popular-articles .card {
+    /*#dark .articles .card {
         border-color: rgb(36, 36, 36);
     }*/
 #dark kbd,
@@ -3781,7 +3800,7 @@ html#dark,
 #dark #parallax-foreground {
     box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
 }
-#dark .threeDHover,
+#dark .card,
 #dark .shadow img,
 #dark .shadow video,
 #dark img.shadow,
@@ -3795,12 +3814,11 @@ html#dark,
 #dark .widget img {
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
-    #dark .threeDHover:hover,
+    #dark .card:hover,
     #dark .shadow a:hover img,
     #dark .shadow video:hover,
     #dark a:hover img.shadow,
     #dark video:hover.shadow,
-    #dark .project.threeDHover:hover,
     #dark .ios-screenshot a:hover img,
     #dark .ios-screenshot video:hover,
     #dark .watchos-screenshot a:hover img,

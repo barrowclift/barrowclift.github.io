@@ -13,33 +13,15 @@
             </header>
         </a>
         <ul>
-            <li><a class="{% if page.dir contains '/articles/' or page.url contains '/articles/' or page.dir contains '/archive/' or page.dir contains '/obsolete/' %}active{% endif %}" href="/articles/">Articles</a></li>
+            <li><a class="{% if page.url contains '/articles/' or page.dir contains '/obsolete/' %}active{% endif %}" href="/articles/">Articles</a></li>
             <li><a class="{% if page.dir contains '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
             <li><a class="{% if page.dir contains '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
             <li class="setting-toggles show-when-small" id="settings-toggle">
-                <noscript>
-                    {% if page.layout == "post" %}
-                        {% assign articlePath=page.url | replace: "/articles/", "/article/" %}
-                        {% capture nitroLink %}https://nitro.barrowclift.me{{ articlePath }}{% endcapture %}
-                        <a class="nitro-link" href="{{ nitroLink }}">&#x26A1;</a>
-                    {% else %}
-                        <a class="nitro-link" href="https://nitro.barrowclift.me">&#x26A1;</a>
-                    {% endif %}
-                </noscript>
                 {% include settings-button.html %}
             </li>
         </ul>
         {% if page.menu.show-settings %}
         <div class="setting-toggles" id="settings-toggle">
-            <noscript>
-                {% if page.layout == "post" %}
-                    {% assign articlePath=page.url | replace: "/articles/", "/article/" %}
-                    {% capture nitroLink %}https://nitro.barrowclift.me{{ articlePath }}{% endcapture %}
-                    <a class="nitro-link" href="{{ nitroLink }}">&#x26A1;</a>
-                {% else %}
-                    <a class="nitro-link" href="https://nitro.barrowclift.me">&#x26A1;</a>
-                {% endif %}
-            </noscript>
             {% include settings-button.html %}
         </div>
         {% endif %}

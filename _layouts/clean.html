@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html class="{% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.display.flex == true %}flex{% endif %}
+             {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %}
+             {% if page.design.accent %}custom-accent-color{% endif %}
+             {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}
+             {% if page.design.oled == true %}oled{% endif %}"
+      lang="en-US"
+      prefix="og: http://ogp.me/ns#">
 
 <!--
 Disables both the menu bar chrome and article chrome, while still preserving
@@ -14,8 +20,20 @@ Currently used for:
     {% include head.html %}
 
     <body>
-        <div class="backdrop {% if page.hard-backdrop %}hard{% endif %}"></div>
+        {% if page.design.accent %}
+            <style>
+                .custom-accent-color,
+                #dark.custom-accent-color {
+                    --accent-hue: {{ page.design.accent.hue }};
+                    --accent-saturation: {{ page.design.accent.saturation }};
+                    --accent-lightness: {{ page.design.accent.lightness }};
+                }
+            </style>
+        {% endif %}
         <style>
+            /**
+             * No menu chrome & keep it inline with the content.
+             */
             menu {
                 position: relative !important;
                 background-color: transparent !important;
@@ -33,9 +51,8 @@ Currently used for:
                 }
             }
         </style>
-
         <div id="wrap">
-            <div id="content" class="center {% if paginator.page != nil %}feed-view{% endif %} {% if page.display.edge-to-edge %}full-width-page{% elsif page.wide %}wide-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
+            <div id="content" class="center {% if page.display.edge-to-edge %}full-width-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
                 {% include menu.html %}
                 <main>
                     {{ content }}

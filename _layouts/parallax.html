@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html class="{% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %} {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}" lang="en-US" prefix="og: http://ogp.me/ns#">
+<html class="{% if page.display.flex == true %}flex{% endif %}
+             {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %}
+             {% if page.design.accent %}custom-accent-color{% endif %}
+             {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}
+             {% if page.design.oled == true %}oled{% endif %}"
+      lang="en-US"
+      prefix="og: http://ogp.me/ns#">
 
 <!--
 Produces a parallax effect with a "background" asset (image, video, or custom,
@@ -20,30 +26,30 @@ Currently used for:
                 {% include menu.html %}
 
                 {% if page.parallax.banner-image != nil or page.parallax.banner-video != nil %}
-                <div id="parallax-background" class="layer">
-                    {% if page.parallax.banner-video != nil %}
-                    <figure>
-                        <video controls preload="none" class="edge-to-edge" {% if page.parallax.banner-poster %}poster="{{ site.dropbox }}/{{ page.parallax.banner-poster }}"{% endif %} alt="{% if page.parallax.banner-hover-text %}{{ page.parallax.banner-hover-text }}{% else %}Post banner{% endif %}">
-                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.mp4" type="video/mp4">
-                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.webm" type="video/webm">
-                            <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.ogv" type="video/ogg">
-                            [HTML5 video tag not supported by your browser]
-                        </video>
-                    </figure>
-                    {% endif %}
-                </div>
-                <main id="parallax-foreground" class="layer">
-                    {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
-                    {% include article.html %}
-                    {% else %}
-                    <article>
-                        {{ content }}
-                        {% include footer.html %}
-                    </article>
-                    {% endif %}
-                </div>
+                    <div id="parallax-background" class="layer">
+                        {% if page.parallax.banner-video != nil %}
+                        <figure>
+                            <video controls preload="none" class="edge-to-edge" {% if page.parallax.banner-poster %}poster="{{ site.dropbox }}/{{ page.parallax.banner-poster }}"{% endif %} alt="{% if page.parallax.banner-hover-text %}{{ page.parallax.banner-hover-text }}{% else %}Post banner{% endif %}">
+                                <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.mp4" type="video/mp4">
+                                <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.webm" type="video/webm">
+                                <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.ogv" type="video/ogg">
+                                [HTML5 video tag not supported by your browser]
+                            </video>
+                        </figure>
+                        {% endif %}
+                    </div>
+                    <main id="parallax-foreground" class="layer">
+                        {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+                            {% include article.html %}
+                        {% else %}
+                        <article>
+                            {{ content }}
+                            {% include footer.html %}
+                        </article>
+                        {% endif %}
+                    </div>
                 {% else %}
-                {{ content }}
+                    {{ content }}
                 {% endif %}
             </div>
         </div>
