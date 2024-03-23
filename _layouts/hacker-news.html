@@ -184,6 +184,9 @@ Emulates Hackers News' "interesting" look & feel.
             line-height: 0rem !important;
             top: 0 !important;
         }
+        .hide-if-space-needed {
+            display: inline-block !important;
+        }
         @media (max-width: 699px) {
             #logo {
                 margin-top: 0;
@@ -192,6 +195,9 @@ Emulates Hackers News' "interesting" look & feel.
                 margin-left: 0.3em;
                 width: 16px;
                 height: 16px;
+            }
+            .hide-if-space-needed {
+                display: none !important;
             }
             #logo #signature {
                 height: 24px;
@@ -226,9 +232,6 @@ Emulates Hackers News' "interesting" look & feel.
             .button {
                 padding: 0.375em;
                 width: auto;
-            }
-            #submenu-toggle {
-                display: none !important;
             }
             #about-link {
                 display: inline !important;
@@ -290,10 +293,6 @@ Emulates Hackers News' "interesting" look & feel.
         @media (max-width: 700px) {
             .popup {
                 top: 2em;
-            }
-            #submenu {
-                opacity: 0 !important;
-                height: 0 !important;
             }
         }
     </style>

@@ -116,14 +116,14 @@ function updateThemeColor(a_accentColor) {
     }
     let darkModeCookie = $.cookie("dark-mode");
     if (darkModeCookie === "off") {
-        document.querySelector("meta#dark-base-theme-color").setAttribute("content", lightBaseThemeColor);
+        document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
     } else {
-        document.querySelector("meta#dark-base-theme-color").setAttribute("content", darkBaseThemeColor);
+        document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", darkBaseThemeColor);
     }
     if (darkModeCookie === "on") {
-        document.querySelector("meta#light-base-theme-color").setAttribute("content", darkBaseThemeColor);
+        document.querySelector("meta#light-base-theme-color")?.setAttribute("content", darkBaseThemeColor);
     } else {
-        document.querySelector("meta#light-base-theme-color").setAttribute("content", lightBaseThemeColor);
+        document.querySelector("meta#light-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
     }
     // TODO THE SETTING HERE ISN'T RIGHT, check hacker news in system dark mode and play around with site theme,m,m,m
     let darkOverride = document.querySelector("meta#override-dark-base-theme-color");
@@ -229,7 +229,7 @@ $(document).ready(function() {
     }
     if ($(this).scrollTop() > 125) {
         menu.addClass("hide-for-small-device");
-    } else if (html.scrollTop() > 100) {
+    } else if (html.scrollTop() > 96) {
         html.addClass("float-menu-for-hiding");
     }
 
@@ -250,10 +250,10 @@ $(document).ready(function() {
             if (newScrollTop > 125) {
                 menu.addClass("hide-for-small-device");
                 html.addClass("float-menu-for-hiding");
-            } else if (newScrollTop > 100) {
+            } else if (newScrollTop > 96) {
                 html.addClass("float-menu-for-hiding");
                 menu.removeClass("hide-for-small-device");
-            } else if (newScrollTop <= 100) {
+            } else if (newScrollTop <= 96) {
                 menu.removeClass("hide-for-small-device");
                 html.removeClass("float-menu-for-hiding");
             }

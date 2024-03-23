@@ -3,14 +3,12 @@ error: true
 title: "No Page Found"
 ---
 
-<style>
-    #content {
-        height: 100vh;
-    }
-</style>
-<h1>Page Not Found</h1>
-<p>I can’t seem to find anything for your request, apologies! If you believe something should be here, please <a href="/contact">reach out</a> and I’ll fix it as soon as possible.</p>
-<p>To pass the time until then, please consider my recent articles below.</p>
+# Page Not Found
+
+I can't seem to find anything for your request, apologies! If you believe something should be here, please [reach out](/contact) and I'll fix it as soon as possible.
+
+To pass the time until then, please consider my recent articles below.
+
 <ul class="summary-list" style="margin-left: 0.75rem;">
     {% assign numberOfLinksAdded = 0 %}
     {% for post in site.posts %}
@@ -34,8 +32,3 @@ title: "No Page Found"
         </li>
     {% endfor %}
 </ul>
-
-
-{% for post in site.posts %}
-    
-{% endfor %}

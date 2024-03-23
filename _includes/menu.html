@@ -15,7 +15,7 @@
         <ul>
             <li><a class="{% if page.url contains '/articles/' or page.dir contains '/obsolete/' %}active{% endif %}" href="/articles/">Articles</a></li>
             <li><a class="{% if page.dir contains '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
-            <li><a class="{% if page.dir contains '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
+            <li class="hide-if-space-needed"><a class="{% if page.dir contains '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
             <li class="setting-toggles show-when-small" id="settings-toggle">
                 {% include settings-button.html %}
             </li>

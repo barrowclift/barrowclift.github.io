@@ -532,9 +532,6 @@ menu {
     #mainmenu a:hover {
         background-color: unset !important;
     }
-    #submenu-toggle {
-        cursor: pointer;
-    }
     menu ul {
         position: relative;
         list-style-type: none;
@@ -571,28 +568,6 @@ menu {
         text-align: center;
         z-index: 1000; /* Otherwise the happy iMac can't accept hover events */
     }
-    #submenu {
-        transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 0);
-
-        z-index: -5000;
-        font-size: 0.833em;
-
-        overflow: hidden;
-        opacity: 0;
-        height: 0;
-    }
-        #submenu.show {
-            opacity: 1;
-            height: 46px;
-        }
-        #submenu a:hover {
-            background-color: transparent !important;
-        }
-        #submenu ul li {
-            padding-top: 0.833em;
-            padding-bottom: 0.833em;
-            min-width: 32vw;
-        }
 
 /* Settings "button" (aA) */
 #settings-toggle {
@@ -711,7 +686,7 @@ menu {
 
 .float-menu-for-hiding menu {
     position: fixed;
-    transform: translate(0, -5.5em);
+    transform: translate(0, -5.35em);
 }
 .float-menu-for-hiding menu.hide-for-small-device {
     opacity: 0;
@@ -801,8 +776,7 @@ menu header:hover #logo #logo-eye-opened,
 /* Hidden for small devices */
 /* Always hide the checkbox, though, should never be visible */
 #dark-mode-checkbox,
-#settings-checkbox,
-#submenu-checkbox {
+#settings-checkbox {
     display: none !important;
 }
 
@@ -2361,9 +2335,6 @@ button,
 #menu-height-offset {
     transition: height 0.2s ease-out;
 }
-#submenu {
-    transition: height 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease-in-out;
-}
 
 pre
 code {
@@ -2553,14 +2524,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
         position: fixed;
         top: 0 !important;
         height: 3em;
-    }
-    /* For now, we have no need to show the submenu on anything but iPhones */
-    #submenu.show {
-        opacity: 0;
-        height: 0;
-    }
-    #submenu {
-        margin-top: 0;
     }
     .float-menu-for-hiding menu,
     .float-menu-for-hiding #logo {
@@ -3522,6 +3485,14 @@ html#dark {
 html#dark.oled {
     background-color: rgb(0, 0, 0);
 }
+html#dark.oled #parallax-foreground {
+    background-color: hsl(0, 0%, 4%, 0.9) !important;
+}
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    html#dark.oled #parallax-foreground {
+        background-color: hsl(0, 0%, 4%, 0.75) !important;
+    }
+}
 /**
  * Primary floating backgrounds
  */
@@ -3558,7 +3529,7 @@ html#dark.oled {
         background-color: rgba(23, 23, 23, 0.7);
     }
     #dark.oled menu {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 #dark .edge-to-edge a:hover {

@@ -373,7 +373,6 @@ mark.pink {
     border-top-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
 }
-    /* TODO */
     #dark .admonition.aside {
         border-left-color: hsl(var(--accent-hue), 5%, 37.5%, 0.15) !important;
     }
@@ -666,7 +665,6 @@ a,
 #mainmenu a:hover,
 #settings-toggle:hover,
 #settings-toggle.active a,
-#submenu a:hover,
 .header a:hover,
 a:hover .header,
 a:hover .header,
@@ -678,7 +676,6 @@ summary,
 #dark #mainmenu a:hover,
 #dark #settings-toggle:hover,
 #dark #settings-toggle.active a,
-#dark #submenu a:hover,
 #dark .header a:hover,
 #dark a:hover .header,
 #dark a:hover .header,
@@ -691,7 +688,6 @@ summary,
 }
 a:hover,
 .header a:hover,
-#submenu,
 summary:hover,
 .summary-list li a:hover {
     background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1);
@@ -702,15 +698,12 @@ summary:hover,
 }
 #dark a:hover,
 #dark .header a:hover,
-#dark #submenu,
 #dark summary:hover,
 #dark .summary-list li a:hover {
-/*    background-color: hsla(var(--accent-hue), 25%, 20%, 1);*/
     background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.15);
 }
 #dark .card:hover,
 #dark .card:hover .label {
-/*    background-color: hsla(var(--accent-hue), var(--accent-saturation), 15%, 1);*/
     background-color: hsla(var(--accent-hue), 40%, 20%, 1);
 }
 ::selection {
@@ -840,11 +833,7 @@ kbd,
 .language-plaintext .highlight,
 .card .label,
 [data-hint]:after {
-
-    /* Card */
-/*    background-color: hsla(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%), .125);*/
     background-color: hsla(var(--accent-hue), 10%, 93%, .975);
-
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.2);
 }
     .card .label {
@@ -871,10 +860,7 @@ kbd,
 #dark .language-plaintext .highlight,
 #dark .card .label,
 #dark [data-hint]:after {
-    /* Card */
     background-color: hsla(var(--accent-hue), 10%, 16%, .975);
-/*    background-color: hsla(var(--accent-hue), 5%, 17.5%, 1);*/
-
     border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
 }
     #dark .card .label {
@@ -890,9 +876,6 @@ html {
 html#dark {
     background-color: hsl(var(--accent-hue), 10%, 12%);
 }
-/*#dark menu {
-    background-color: hsla(var(--accent-hue), 5%, 11%, .975);
-}*/
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     menu,
     .popup,
@@ -910,16 +893,4 @@ html#dark {
     #dark [data-hint]:after {
         background-color: hsla(var(--accent-hue), 10%, 16%, .85);
     }
-    /*#dark menu,
-    #dark .popup,
-    #dark .bigfoot-footnote__content,
-    #dark .bigfoot-footnote__tooltip {
-        background-color: hsla(var(--accent-hue), 5%, 17.5%, .85);
-        border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.1);
-    }*/
 }
-
-/**
- * TODO: 15% -> 17.5% lightness for dark cards/menus/etc...;
- * TODO: SLIGHTLY increase either contrast or color for light mode cards/menus/etc.;
- */

@@ -13,7 +13,7 @@
 
     <meta name="application-name" content="Barrowclift" />
     {% if page.design.oled %}
-        <meta name="theme-color" content="black" />
+        <meta name="theme-color" content="{% if page.design.browser-theme-color-dark %}{{ page.design.browser-theme-color-dark }}{% else %}black{% endif %}" />
     {% else %}
         {% if page.design.browser-theme-color-dark %}
             <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)" />
@@ -39,7 +39,7 @@
         if(c("dark-mode") == "on" || (isSysDark && (c("dark-mode") == null || c("dark-mode") == "auto"))){document.getElementsByTagName("html")[0].setAttribute("id", "dark");isSiteDark=true;}
         if(c("accent-color")){document.getElementsByTagName("html")[0].className+=" "+c("accent-color");color=c("accent-color")}
         if(color==="purple"){dbc="#1B1B1C";lbc="#FEFEFF";}else if(color==="pink") {dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="red"){dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="orange"){dbc="#1C1C1A";lbc="#FFFFFE";}else if(color==="yellow"){dbc="#1C1C19";lbc="#FFFFFE";}else if(color==="green"){dbc="#1B1C1B";lbc="#FEFFFE";}else{dbc="#1A1B1D";lbc="#FEFEFF";}
-        if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color").setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color").setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color").setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color").setAttribute("content",lbc);}
+        if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color").setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color")?.setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lbc);}
     </script>
     {% if page.design.force-dark-mode %}
         <script type="text/javascript">

@@ -11,9 +11,9 @@ design:
     #wrap {
         background-color: #B03431;
     }
-    #dark #wrap {
-        background-color: #7F2623;
-    }
+        #dark #wrap {
+            background-color: #7F2623;
+        }
     .page {
         background-color: #FEFACC;
         color: black;
@@ -21,15 +21,21 @@ design:
         border-radius: 0.25em;
         margin-top: 1.3em;
     }
-    #dark .page {
-        background-color: #BFBC99;
-    }
-    menu, menu a,
-    #dark menu, #dark menu a {
+        #dark .page {
+            background-color: #BFBC99;
+        }
+    menu,
+    menu a,
+    #dark menu,
+    #dark menu a {
         color: white;
     }
-    .fill-color, .signature-color, .mac-background-color,
-    #dark .fill-color, #dark .signature-color, #dark .mac-background-color,
+    .fill-color,
+    .signature-color,
+    .mac-background-color,
+    #dark .fill-color,
+    #dark .signature-color,
+    #dark .mac-background-color,
     #logo .signature-color {
         fill: white;
     }
@@ -69,14 +75,12 @@ design:
     .popup {
         color: black;
         background-color: #FEFACC !important;
-    }
-    #dark .popup {
-        background-color: #BFBC99 !important;
-    }
-    .popup {
         -webkit-backdrop-filter: unset !important;
         backdrop-filter: unset !important;
     }
+        #dark .popup {
+            background-color: #BFBC99 !important;
+        }
     a,
     #dark a {
         color: #B1332F;
@@ -85,7 +89,6 @@ design:
     #mainmenu a:hover,
     #settings-toggle:hover,
     #settings-toggle.active,
-    #submenu a:hover,
     .header a:hover,
     a:hover .header {
         color: #FADF4B;
@@ -93,11 +96,7 @@ design:
     #logo:hover .signature-color {
         fill: #FADF4B;
     }
-    .backdrop {
-        background-color: hsl(227, 53%, 44%);
-    }
-    a:hover,
-    #submenu {
+    a:hover {
         background-color: hsla(2, 58%, 44%, 0.1);
     }
     ::selection {
@@ -127,15 +126,6 @@ design:
             background-color: hsl(227, 53%, 54%) !important;
             box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
         }
-    input:focus,
-    textarea:focus {
-        border-color: hsl(227, 53%, 44%) !important;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2) !important;
-    }
-    .codehilite,
-    .highlight {
-        background-color: rgb(36, 34, 33);
-    }
     hr {
         background-color: rgba(176, 52, 49, 0.2);
         background: rgba(176, 52, 49, 0.2); /* Old browsers */
@@ -158,7 +148,6 @@ design:
     #dark #mainmenu a:hover,
     #dark #settings-toggle:hover,
     #dark #settings-toggle.active a,
-    #dark #submenu a:hover,
     #dark .header a:hover,
     #dark a:hover .header,
     #dark summary {
@@ -172,11 +161,7 @@ design:
     #dark #signature.active .signature-color {
         fill: hsl(51, 95%, 64%);
     }
-    #dark .backdrop {
-        background-color: hsl(51, 95%, 64%);
-    }
     #dark a:hover,
-    #dark #submenu,
     #dark button.bigfoot-footnote__button,
     #dark button.pill,
     #dark summary:hover,
@@ -206,50 +191,16 @@ design:
             background-color: hsl(51, 95%, 54%) !important;
             box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 54%, 0.2);
         }
-    #dark input:focus,
-    #dark textarea:focus {
-        border-color: hsl(51, 95%, 64%) !important;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2) !important;
-    }
 </style>
-<h1>
-    <picture title="Development Card Simulator" alt="Development Card Simulator">
-        <source type="image/webp" srcset="images/title.webp">
-        <img type="image/png" src="images/title.png">
-    </picture>
-</h1>
 
-<h4 style="margin-top:0;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>
+<picture title="Development Card Simulator" alt="Development Card Simulator">
+    <source type="image/webp" srcset="images/title.webp">
+    <img alt="Development Card Simulator" type="image/png" src="images/title.png">
+</picture>
+
+<h4 style="margin-top:0.65em;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>
 
 <div class="page">
-    <p>This is a small web app to establish a virtual Development Card deck for you and friends or family to use while playing a game of “Settlers of Catan” remotely. It’s as simple as can be; only one game can run at any given time for a given instance and anyone with the password you (the admin) set in advance may join.</p>
-    <p>This light app supports both light…</p>
-    <p>
-        <picture>
-            <source type="image/webp" srcset="{{ site.dropbox }}/projects/code/development-card-simulator/light-screenshot.webp">
-            <img type="image/png" src="{{ site.dropbox }}/projects/code/development-card-simulator/light-screenshot.png">
-        </picture>
-    </p>
-    <p>And dark mode (controlled by your system’s theme)</p>
-    <p>
-        <picture>
-            <source type="image/webp" srcset="{{ site.dropbox }}/projects/code/development-card-simulator/dark-screenshot.webp">
-            <img type="image/png" src="{{ site.dropbox }}/projects/code/development-card-simulator/dark-screenshot.png">
-        </picture>
-    </p>
-    <p style="text-align:center;"><a href="https://github.com/barrowclift/development-card-simulator" style="padding-left:2em;padding-right:2em;text-align:left;width:auto;text-decoration:none;" class="button">Clone On Github</a></p>
-    
-    <hr>
-    
-    <h3>Why a virtual, shared development card deck? Why not let everyone use their own decks?</h3>
-    
-    <p>Development cards are already <a href="https://boardgamegeek.com/thread/151481/he-who-has-development-cards-wins">fairly powerful</a> for “real” in-person Catan games, but having each player use their own deck for remote games has two critical issues:</p>
-    <ul>
-        <li>It radically throws off the Development Card deck balance</li>
-        <li>The state of unplayed and played Development Cards for other players is no longer accessible public knowledge</li>
-    </ul>
-    <p>For example, let’s focus on the 5 Victory Point cards in every standard 25 card Development deck; For “real” games, that puts a player sitting at a solid 20% chance of drawing a Victory Point as their their first development card. For each subsequent draw done by yourself or other players, that chance will fluctuate, either going up (if cards other than Victory Points are drawn) or down (if the remaining Victory Points are getting drawn).</p>
-    <p>However, for remote games, those odds don’t fluctuate with other players’ draws, <em>only yours</em>. So say three other players draw development cards prior to you, and each of them were extraordinarily lucky to draw a Victory Point. For “real” games, that means you’d only have a 9.09% chance of drawing one of the remaining Victory Points, but for remote games that chance is still the default (20%) because nobody has yet drawn from <em>your</em> deck.</p>
-    <p><a href="https://www.reddit.com/r/Catan/comments/l9571v/remote_play/glg93wk/">Others have tried addressing this</a> by choosing a player’s deck as the “real” one and having them close their eyes, draw, and hold it up to the camera when another player builds one, but that doesn’t address the not knowing the state of unplayed and played development cards for other players. You either need to write it down yourself or ask occasionally, not ideal.</p>
-    <p>This projects sets out to provide a centralized, friendly website that addresses both of those critical issues in remote Catan play.</p>
+    {% capture about-prose %}{% include_relative development-card-simulator.markdown %}{% endcapture %}
+    {{ about-prose | markdownify }}
 </div>
