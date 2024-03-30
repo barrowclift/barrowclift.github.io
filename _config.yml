@@ -39,8 +39,8 @@ defaults:
             layout: default
             timelocked: false
             force-early-timelock: false
-            show-anchors: false
             design:
+                show-anchors: false
                 force-dark-mode: false
                 ignore-accent-color: false
             display:
@@ -57,12 +57,14 @@ defaults:
             type: posts
         values:
             type: article
-            show-anchors: true
+            design:
+                show-anchors: true
     -
         scope:
             path: projects
         values:
-            show-anchors: true
+            design:
+                show-anchors: true
             article:
                 show-stamp: false
                 show-footer: false

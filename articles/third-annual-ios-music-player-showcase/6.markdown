@@ -93,21 +93,21 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
     </ul>
 
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
         <li><span class="bullet">:x:</span> <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
         <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>

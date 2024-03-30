@@ -281,17 +281,17 @@ To provide examples of the flexibility and power these widgets provide, above ar
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>It may no longer be the only player to provide discovery feature customization like it was last year, but Marvis Pro's mature rules & filters system help it remain the undisputed champion for those with the time and light computer skills necessary to wield it.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong> <em>The <a href="https://www.musixmatch.com/">MusicMatch</a> integration is a nice touch, but for those like myself that just prefer regular ol’ lyrics, they’re still available inline directly below the the player controls like they were in iOS 12’s Music.app.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong> <em>Marvis Pro’s theme design seems to deviate from iOS's guidelines, but its choices are tasteful and overwhelmingly result in a visually pleasing experience (unlike <a href="https://apps.apple.com/us/app/sathorn/id1447295899">Sathron</a>).</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>While I tend to gravitate towards other players on the iPad (notably <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">Power Player</a>), Marvis Pro’s iPad support is perfectly respectable, and support in any capacity is appreciated in light of some other players continuing to drop the ball.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>The visual design is utilitarian and arguably plain, but the ability to enlarge the album art is positively killer for listeners like myself that are fussy about high resolution album art.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>“Out of the box” it’s not particularly album-centric (<a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a> now holds that position), but with some customization it's still among the best album-focused music players of the lot.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>There's no (publically accessible) option to sort alphabetically by artist, then chronologically by release date.</em></li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Not only does Marvis Pro allow you to make every single section in the app a grid view, it also lets you customize the number of columns, metadata visibility, and more.</em></li>
             </ul>

@@ -83,7 +83,7 @@
     {% endif %}
 
     <!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
-    <script type="text/javascript">$(document).ready(function(){anchorsEnabled = {% if page.show-anchors %}true{% else %}false{% endif %};});</script>
+    <script type="text/javascript">$(document).ready(function(){anchorsEnabled = {% if page.design.show-anchors %}true{% else %}false{% endif %};});</script>
     <!--
     Anchor offset:
     Without this, if you click the "back"/↩ button on a footnote to go back to

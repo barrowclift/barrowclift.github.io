@@ -1,8 +1,8 @@
 ---
 title: "Articles"
-display:
+design:
     flex: true
-show-anchors: false
+    show-anchors: false
 ---
 
 {% for post in site.posts %}
@@ -10,16 +10,16 @@ show-anchors: false
     {% assign indexMod = forloop.index | modulo: 2 %}
 
     {% if indexMod == 0 %}
-            <div class="articles column">
+            <div class="column">
                 {% include article-card.html %}
             </div>
         </div>
     {% else %}
-        <div class="row" style="{% if forloop.index == forloop.length and lengthMod == 1 %}gap: 0.65em;{% endif %}">
+        <div class="row articles" style="{% if forloop.index == forloop.length and lengthMod == 1 %}gap: 0.65em;{% endif %}">
             {% if forloop.index == forloop.length and lengthMod == 1 %}
                 <div class="column hide-when-small"></div>
             {% endif %}
-            <div class="{% if forloop.index == forloop.length and lengthMod == 1 %}middle{% endif %} articles column">
+            <div class="column">
                 {% include article-card.html %}
             </div>
             {% if forloop.index == forloop.length %}

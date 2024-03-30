@@ -88,20 +88,20 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>

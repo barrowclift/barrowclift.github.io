@@ -64,20 +64,20 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support:</strong> <em>Just added this year, and it’s the lazy “enlarged iPhone version” you’d come to expect from mediocre iPad ports. However, it’s functional, so credit where credit’s due.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Beautiful or visually engaging player view:</strong> <em>Partial credit awarded for the neat waveform progress indicator.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Light & dark themes: </strong><em>There continues to be no light mode after all these years.</em></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>

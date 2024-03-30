@@ -1,659 +1,92 @@
-/*************************
- ***  COLOR VARIABLES  ***
- *************************/
-
-html {
-    /* TODO THIS MIGHT NEED ADJUSTING */
-    --light-graphite-hue: 240;
-    --light-graphite-saturation: 24%;
-    --light-graphite-lightness: 96%;
-    --dark-graphite-hue: 240;
-    --dark-graphite-saturation: 3%;
-    --dark-graphite-lightness: 11%;
-
-    /* TODO SWITCH TO MAC VIBRANT COLORS? */
-    --light-blue-hue: 211;
-    --light-blue-saturation: 100%;
-    --light-blue-lightness: 50%;
-    --dark-blue-hue: 210;
-    --dark-blue-saturation: 100%;
-    --dark-blue-lightness: 52%;
-
-    --light-red-hue: 3;
-    --light-red-saturation: 100%;
-    --light-red-lightness: 59%;
-    --dark-red-hue: 3;
-    --dark-red-saturation: 100%;
-    --dark-red-lightness: 61%;
-
-    --light-orange-hue: 30;
-    --light-orange-saturation: 100%;
-    --light-orange-lightness: 50%;
-    --dark-orange-hue: 36;
-    --dark-orange-saturation: 100%;
-    --dark-orange-lightness: 52%;
-
-    --light-yellow-hue: 48;
-    --light-yellow-saturation: 90%;
-    --light-yellow-lightness: 50%;
-    --dark-yellow-hue: 50;
-    --dark-yellow-saturation: 100%;
-    --dark-yellow-lightness: 52%;
-
-    --light-green-hue: 130;
-    --light-green-saturation: 60%;
-    --light-green-lightness: 50%;
-    --dark-green-hue: 135;
-    --dark-green-saturation: 64%;
-    --dark-green-lightness: 50%;
-
-    --light-purple-hue: 241;
-    --light-purple-saturation: 61%;
-    --light-purple-lightness: 59%;
-    --dark-purple-hue: 280;
-    --dark-purple-saturation: 85%;
-    --dark-purple-lightness: 65%;
-
-    --light-pink-hue: 349;
-    --light-pink-saturation: 100%;
-    --light-pink-lightness: 59%;
-    --dark-pink-hue: 348;
-    --dark-pink-saturation: 85%;
-    --dark-pink-lightness: 61%;
-}
-
-html,
-.blue {
-    --accent-hue: var(--light-blue-hue);
-    --accent-saturation: var(--light-blue-saturation);
-    --accent-lightness: var(--light-blue-lightness);
-}
-#dark.blue {
-    --accent-hue: var(--dark-blue-hue);
-    --accent-saturation: var(--dark-blue-saturation);
-    --accent-lightness: var(--dark-blue-lightness);
-}
-.red {
-    --accent-hue: var(--light-red-hue);
-    --accent-saturation: var(--light-red-saturation);
-    --accent-lightness: var(--light-red-lightness);
-}
-#dark.red {
-    --accent-hue: var(--dark-red-hue);
-    --accent-saturation: var(--dark-red-saturation);
-    --accent-lightness: var(--dark-red-lightness);
-}
-.orange {
-    --accent-hue: var(--light-orange-hue);
-    --accent-saturation: var(--light-orange-saturation);
-    --accent-lightness: var(--light-orange-lightness);
-}
-#dark.orange {
-    --accent-hue: var(--dark-orange-hue);
-    --accent-saturation: var(--dark-orange-saturation);
-    --accent-lightness: var(--dark-orange-lightness);
-}
-.yellow {
-    --accent-hue: var(--light-yellow-hue);
-    --accent-saturation: var(--light-yellow-saturation);
-    --accent-lightness: var(--light-yellow-lightness);
-}
-#dark.yellow {
-    --accent-hue: var(--dark-yellow-hue);
-    --accent-saturation: var(--dark-yellow-saturation);
-    --accent-lightness: var(--dark-yellow-lightness);
-}
-.green {
-    --accent-hue: var(--light-green-hue);
-    --accent-saturation: var(--light-green-saturation);
-    --accent-lightness: var(--light-green-lightness);
-}
-#dark.green {
-    --accent-hue: var(--dark-green-hue);
-    --accent-saturation: var(--dark-green-saturation);
-    --accent-lightness: var(--dark-green-lightness);
-}
-.purple {
-    --accent-hue: var(--light-purple-hue);
-    --accent-saturation: var(--light-purple-saturation);
-    --accent-lightness: var(--light-purple-lightness);
-}
-#dark.purple {
-    --accent-hue: var(--dark-purple-hue);
-    --accent-saturation: var(--dark-purple-saturation);
-    --accent-lightness: var(--dark-purple-lightness);
-}
-.pink {
-    --accent-hue: var(--light-pink-hue);
-    --accent-saturation: var(--light-pink-saturation);
-    --accent-lightness: var(--light-pink-lightness);
-}
-#dark.pink {
-    --accent-hue: var(--dark-pink-hue);
-    --accent-saturation: var(--dark-pink-saturation);
-    --accent-lightness: var(--dark-pink-lightness);
-}
-
 /*********************
  ***  COLOR WELLS  ***
  *********************/
 
 .color-well.blue {
-    background-color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
+    background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
 }
     .color-well.active,
     .blue .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
     #dark.blue .color-well.blue {
-        background-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
+        background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
     #dark .color-well.active,
     #dark.blue .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
 .color-well.red {
-    background-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
+    background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
 }
     .red .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
     #dark.red .color-well.red {
-        background-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
+        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
     #dark.red .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
 .color-well.orange {
-    background-color: hsl(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness));
+    background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
 }
     .orange .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
     #dark.orange .color-well.orange {
-        background-color: hsl(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness));
+        background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
     #dark.orange .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
 .color-well.yellow {
-    background-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
+    background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
 }
     .yellow .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
     #dark.yellow .color-well.yellow {
-        background-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
+        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
     #dark.yellow .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
 .color-well.green {
-    background-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
+    background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
 }
     .green .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
     #dark.green .color-well.green {
-        background-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
+        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
     #dark.green .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
 .color-well.purple {
-    background-color: hsl(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness));
+    background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
 }
     .purple .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
     #dark.purple .color-well.purple {
-        background-color: hsl(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness));
+        background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
     #dark.purple .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
 .color-well.pink {
-    background-color: hsl(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness));
+    background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
 }
     .pink .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness));
+        box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
     #dark.pink .color-well.pink {
-        background-color: hsl(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness));
+        background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
     #dark.pink .color-well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness));
-    }
-
-/**********************
- ***  MARKS & TAGS  ***
- **********************/
-
-
-mark.tag.gray,
-mark.tag.grey,
-mark.tag.graphite,
-#dark mark.tag.gray,
-#dark mark.tag.grey,
-#dark mark.tag.graphite {
-    background-image: linear-gradient(to bottom right, hsl(var(--accent-hue), 15%, calc(var(--accent-lightness) + 10%)) 38.66%, hsl(calc(var(--accent-hue) + 3), 15%, calc(var(--accent-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--accent-hue), 15%, var(--accent-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--accent-hue), 15%, var(--accent-lightness), 0.2);
-}
-mark.blue {
-    background-image: linear-gradient(to right, hsla(var(--light-blue-hue), 100%, calc(var(--light-blue-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-blue-hue) + 3), 100%, calc(var(--light-blue-lightness) + 20%), 0.99));
-}
-    mark.tag.blue {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-blue-hue), var(--light-blue-saturation), calc(var(--light-blue-lightness) + 10%)) 38.66%, hsl(calc(var(--light-blue-hue) + 3), var(--light-blue-saturation), calc(var(--light-blue-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.2);
-    }
-    #dark mark.blue {
-        background-image: linear-gradient(to right, hsla(var(--dark-blue-hue), 100%, calc(var(--dark-blue-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-blue-hue) + 3), 100%, calc(var(--dark-blue-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.blue {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-blue-hue), var(--dark-blue-saturation), calc(var(--dark-blue-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-blue-hue) + 3), var(--dark-blue-saturation), calc(var(--dark-blue-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.2);
-    }
-mark.red {
-    background-image: linear-gradient(to right, hsla(var(--light-red-hue), 100%, calc(var(--light-red-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-red-hue) + 3), 100%, calc(var(--light-red-lightness) + 20%), 0.99));
-}
-    mark.tag.red {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-red-hue), var(--light-red-saturation), calc(var(--light-red-lightness) + 10%)) 38.66%, hsl(calc(var(--light-red-hue) + 3), var(--light-red-saturation), calc(var(--light-red-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.2);
-    }
-    #dark mark.red {
-        background-image: linear-gradient(to right, hsla(var(--dark-red-hue), 100%, calc(var(--dark-red-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-red-hue) + 3), 100%, calc(var(--dark-red-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.red {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-red-hue), var(--dark-red-saturation), calc(var(--dark-red-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-red-hue) + 3), var(--dark-red-saturation), calc(var(--dark-red-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.2);
-    }
-mark.orange {
-    background-image: linear-gradient(to right, hsla(var(--light-orange-hue), 100%, calc(var(--light-orange-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-orange-hue) + 3), 100%, calc(var(--light-orange-lightness) + 20%), 0.99));
-}
-    mark.tag.orange {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-orange-hue), var(--light-orange-saturation), calc(var(--light-orange-lightness) + 10%)) 38.66%, hsl(calc(var(--light-orange-hue) + 3), var(--light-orange-saturation), calc(var(--light-orange-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-orange-hue), var(--light-orange-saturation), var(--light-orange-lightness), 0.2);
-    }
-    #dark mark.orange {
-        background-image: linear-gradient(to right, hsla(var(--dark-orange-hue), 100%, calc(var(--dark-orange-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-orange-hue) + 3), 100%, calc(var(--dark-orange-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.orange {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-orange-hue), var(--dark-orange-saturation), calc(var(--dark-orange-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-orange-hue) + 3), var(--dark-orange-saturation), calc(var(--dark-orange-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-orange-hue), var(--dark-orange-saturation), var(--dark-orange-lightness), 0.2);
-    }
-mark,
-mark.yellow {
-    background: unset;
-    background-image: linear-gradient(to right, hsla(var(--light-yellow-hue), 100%, calc(var(--light-yellow-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-yellow-hue) + 3), 100%, calc(var(--light-yellow-lightness) + 20%), 0.99));
-}
-    mark.tag,
-    mark.tag.yellow {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-yellow-hue), var(--light-yellow-saturation), calc(var(--light-yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--light-yellow-hue) + 3), var(--light-yellow-saturation), calc(var(--light-yellow-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.2);
-    }
-    #dark mark,
-    #dark mark.yellow {
-        background: unset;
-        background-image: linear-gradient(to right, hsla(var(--dark-yellow-hue), 100%, calc(var(--dark-yellow-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-yellow-hue) + 3), 100%, calc(var(--dark-yellow-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.yellow {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), calc(var(--dark-yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-yellow-hue) + 3), var(--dark-yellow-saturation), calc(var(--dark-yellow-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.2);
-    }
-mark.green {
-    background-image: linear-gradient(to right, hsla(var(--light-green-hue), 100%, calc(var(--light-green-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-green-hue) + 3), 100%, calc(var(--light-green-lightness) + 20%), 0.99));
-}
-    mark.tag.green {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-green-hue), var(--light-green-saturation), calc(var(--light-green-lightness) + 10%)) 38.66%, hsl(calc(var(--light-green-hue) + 3), var(--light-green-saturation), calc(var(--light-green-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.2);
-    }
-    #dark mark.green {
-        background-image: linear-gradient(to right, hsla(var(--dark-green-hue), 100%, calc(var(--dark-green-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-green-hue) + 3), 100%, calc(var(--dark-green-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.green {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-green-hue), var(--dark-green-saturation), calc(var(--dark-green-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-green-hue) + 3), var(--dark-green-saturation), calc(var(--dark-green-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.2);
-    }
-mark.purple {
-    background-image: linear-gradient(to right, hsla(var(--light-purple-hue), 100%, calc(var(--light-purple-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-purple-hue) + 3), 100%, calc(var(--light-purple-lightness) + 20%), 0.99));
-}
-    mark.tag.purple {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-purple-hue), var(--light-purple-saturation), calc(var(--light-purple-lightness) + 10%)) 38.66%, hsl(calc(var(--light-purple-hue) + 3), var(--light-purple-saturation), calc(var(--light-purple-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-purple-hue), var(--light-purple-saturation), var(--light-purple-lightness), 0.2);
-    }
-    #dark mark.purple {
-        background-image: linear-gradient(to right, hsla(var(--dark-purple-hue), 100%, calc(var(--dark-purple-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-purple-hue) + 3), 100%, calc(var(--dark-purple-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.purple {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-purple-hue), var(--dark-purple-saturation), calc(var(--dark-purple-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-purple-hue) + 3), var(--dark-purple-saturation), calc(var(--dark-purple-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-purple-hue), var(--dark-purple-saturation), var(--dark-purple-lightness), 0.2);
-    }
-mark.pink {
-    background-image: linear-gradient(to right, hsla(var(--light-pink-hue), calc(var(--light-pink-saturation) + 10%), calc(var(--light-pink-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--light-pink-hue) + 3), calc(var(--light-pink-saturation) + 10%), calc(var(--light-pink-lightness) + 20%), 0.99));
-}
-    mark.tag.pink {
-        background-image: linear-gradient(to bottom right, hsl(var(--light-pink-hue), var(--light-pink-saturation), calc(var(--light-pink-lightness) + 10%)) 38.66%, hsl(calc(var(--light-pink-hue) + 3), var(--light-pink-saturation), calc(var(--light-pink-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--light-pink-hue), var(--light-pink-saturation), var(--light-pink-lightness), 0.2);
-    }
-    #dark mark.pink {
-        background-image: linear-gradient(to right, hsla(var(--dark-pink-hue), 100%, calc(var(--dark-pink-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--dark-pink-hue) + 3), 100%, calc(var(--dark-pink-lightness) - 20%), 0.99));
-    }
-    #dark mark.tag.pink {
-        background-image: linear-gradient(to bottom right, hsl(var(--dark-pink-hue), var(--dark-pink-saturation), calc(var(--dark-pink-lightness) + 10%)) 38.66%, hsl(calc(var(--dark-pink-hue) + 3), var(--dark-pink-saturation), calc(var(--dark-pink-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--dark-pink-hue), var(--dark-pink-saturation), var(--dark-pink-lightness), 0.2);
-    }
-
-/*********************
- ***  ADMONITIONS  ***
- *********************/
-
-/* ----- GRAPHITE ----- */
-
-.admonition {
-    background-color: hsla(var(--accent-hue), 5%, 50%, 0.075);
-    border-left-color: hsl(var(--accent-hue), 5%, 62.5%) !important;
-    border-right-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
-    border-bottom-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
-    border-top-color: hsla(var(--accent-hue), 5%, 62.5%, 0.15) !important;
-    box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
-}
-    .admonition.aside {
-        border-left-color: hsl(var(--accent-hue), 5%, 62.5%, 0.15) !important;
-    }
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    .admonition .admonition-title:before,
-    .admonition > p:first-child:before {
-        background-color: hsl(var(--accent-hue), 5%, 62.5%);
-    }
-#dark .admonition {
-    background-color: hsla(var(--accent-hue), 5%, 75%, 0.05);
-    border-left-color: hsl(var(--accent-hue), 5%, 37.5%) !important;
-    border-right-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
-    border-bottom-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
-    border-top-color: hsla(var(--accent-hue), 5%, 37.5%, 0.15) !important;
-    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
-}
-    #dark .admonition.aside {
-        border-left-color: hsl(var(--accent-hue), 5%, 37.5%, 0.15) !important;
-    }
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    #dark .admonition .admonition-title:before,
-    #dark .admonition > p:first-child:before {
-        background-color: hsl(var(--accent-hue), 5%, 37.5%);
-    }
-
-/* ----- BLUE ----- */
-
-.admonition.question,
-.admonition.hint,
-.admonition.note,
-.admonition.info,
-.admonition.tip,
-.admonition.example,
-.admonition.blue {
-    background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1);
-    border-left-color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness)) !important;
-    border-right-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
-    border-bottom-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
-    border-top-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    .admonition.question .admonition-title:before,
-    .admonition.hint .admonition-title:before,
-    .admonition.note .admonition-title:before,
-    .admonition.info .admonition-title:before,
-    .admonition.tip .admonition-title:before,
-    .admonition.example .admonition-title:before,
-    .admonition.blue .admonition-title:before,
-    .admonition.question > p:first-child:before,
-    .admonition.hint > p:first-child:before,
-    .admonition.note > p:first-child:before,
-    .admonition.info > p:first-child:before,
-    .admonition.tip > p:first-child:before,
-    .admonition.example > p:first-child:before,
-    .admonition.blue > p:first-child:before {
-        background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness)) !important;
-    }
-    .admonition.question a,
-    .admonition.hint a,
-    .admonition.note a,
-    .admonition.info a,
-    .admonition.tip a,
-    .admonition.example a,
-    .admonition.blue a {
-        color: hsl(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness));
-    }
-    .admonition.question a:hover,
-    .admonition.hint a:hover,
-    .admonition.note a:hover,
-    .admonition.info a:hover,
-    .admonition.tip a:hover,
-    .admonition.example a:hover,
-    .admonition.blue a:hover {
-        background-color: hsla(var(--light-blue-hue), var(--light-blue-saturation), var(--light-blue-lightness), 0.1);
-    }
-#dark .admonition.question,
-#dark .admonition.hint,
-#dark .admonition.note,
-#dark .admonition.info,
-#dark .admonition.tip,
-#dark .admonition.example,
-#dark .admonition.blue {
-    background-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15);
-    border-left-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness)) !important;
-    border-right-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
-    border-bottom-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
-    border-top-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    #dark .admonition.question .admonition-title:before,
-    #dark .admonition.hint .admonition-title:before,
-    #dark .admonition.note .admonition-title:before,
-    #dark .admonition.info .admonition-title:before,
-    #dark .admonition.tip .admonition-title:before,
-    #dark .admonition.example .admonition-title:before,
-    #dark .admonition.blue .admonition-title:before,
-    #dark .admonition.question > p:first-child:before,
-    #dark .admonition.hint > p:first-child:before,
-    #dark .admonition.note > p:first-child:before,
-    #dark .admonition.info > p:first-child:before,
-    #dark .admonition.tip > p:first-child:before,
-    #dark .admonition.example > p:first-child:before,
-    #dark .admonition.blue > p:first-child:before {
-        background-color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness)) !important;
-    }
-    #dark .admonition.question a,
-    #dark .admonition.hint a,
-    #dark .admonition.note a,
-    #dark .admonition.info a,
-    #dark .admonition.tip a,
-    #dark .admonition.example a,
-    #dark .admonition.blue a {
-        color: hsl(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness));
-    }
-    #dark .admonition.question a:hover,
-    #dark .admonition.hint a:hover,
-    #dark .admonition.note a:hover,
-    #dark .admonition.info a:hover,
-    #dark .admonition.tip a:hover,
-    #dark .admonition.example a:hover,
-    #dark .admonition.blue a:hover {
-        background-color: hsla(var(--dark-blue-hue), var(--dark-blue-saturation), var(--dark-blue-lightness), 0.15);
-    }
-
-/* ----- RED ----- */
-
-.admonition.error,
-.admonition.danger,
-.admonition.warning,
-.admonition.red {
-    background-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1);
-    border-left-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness)) !important;
-    border-right-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
-    border-bottom-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
-    border-top-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    .admonition.error .admonition-title:before,
-    .admonition.danger .admonition-title:before,
-    .admonition.warning .admonition-title:before,
-    .admonition.red .admonition-title:before,
-    .admonition.error > p:first-child:before,
-    .admonition.danger > p:first-child:before,
-    .admonition.warning > p:first-child:before,
-    .admonition.red > p:first-child:before {
-        background-color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness)) !important;
-    }
-    .admonition.error a,
-    .admonition.danger a,
-    .admonition.warning a,
-    .admonition.red a {
-        color: hsl(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness));
-    }
-    .admonition.error a:hover,
-    .admonition.danger a:hover,
-    .admonition.warning a:hover,
-    .admonition.red a:hover {
-        background-color: hsla(var(--light-red-hue), var(--light-red-saturation), var(--light-red-lightness), 0.1);
-    }
-#dark .admonition.error,
-#dark .admonition.danger,
-#dark .admonition.warning,
-#dark .admonition.red {
-    background-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15);
-    border-left-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness)) !important;
-    border-right-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
-    border-bottom-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
-    border-top-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    #dark .admonition.error .admonition-title:before,
-    #dark .admonition.danger .admonition-title:before,
-    #dark .admonition.warning .admonition-title:before,
-    #dark .admonition.red .admonition-title:before,
-    #dark .admonition.error > p:first-child:before,
-    #dark .admonition.danger > p:first-child:before,
-    #dark .admonition.warning > p:first-child:before,
-    #dark .admonition.red > p:first-child:before {
-        background-color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness)) !important;
-    }
-    #dark .admonition.error a,
-    #dark .admonition.danger a,
-    #dark .admonition.warning a,
-    #dark .admonition.red a {
-        color: hsl(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness));
-    }
-    #dark .admonition.error a:hover,
-    #dark .admonition.danger a:hover,
-    #dark .admonition.warning a:hover,
-    #dark .admonition.red a:hover {
-        background-color: hsla(var(--dark-red-hue), var(--dark-red-saturation), var(--dark-red-lightness), 0.15);
-    }
-
-/* ----- YELLOW ----- */
-
-.admonition.update,
-.admonition.yellow {
-    background-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1);
-    border-left-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness)) !important;
-    border-right-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
-    border-bottom-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
-    border-top-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.175) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    .admonition.update .admonition-title:before,
-    .admonition.update > p:first-child:before,
-    .admonition.yellow .admonition-title:before,
-    .admonition.yellow > p:first-child:before {
-        background-color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness)) !important;
-    }
-    .admonition.update a,
-    .admonition.yellow a {
-        color: hsl(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness));
-    }
-    .admonition.update a:hover,
-    .admonition.yellow a:hover {
-        background-color: hsla(var(--light-yellow-hue), var(--light-yellow-saturation), var(--light-yellow-lightness), 0.1);
-    }
-#dark .admonition.update,
-#dark .admonition.yellow {
-    background-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15);
-    border-left-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness)) !important;
-    border-right-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
-    border-bottom-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
-    border-top-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    #dark .admonition.update .admonition-title:before,
-    #dark .admonition.update > p:first-child:before,
-    #dark .admonition.yellow .admonition-title:before,
-    #dark .admonition.yellow > p:first-child:before {
-        background-color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness)) !important;
-    }
-    #dark .admonition.update a,
-    #dark .admonition.yellow a {
-        color: hsl(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness));
-    }
-    #dark .admonition.update a:hover,
-    #dark .admonition.yellow a:hover {
-        background-color: hsla(var(--dark-yellow-hue), var(--dark-yellow-saturation), var(--dark-yellow-lightness), 0.15);
-    }
-
-/* ----- GREEN ----- */
-
-.admonition.success,
-.admonition.green {
-    background-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1);
-    border-left-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness)) !important;
-    border-right-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
-    border-bottom-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
-    border-top-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.15) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    .admonition.success .admonition-title:before,
-    .admonition.success p:first-child:before,
-    .admonition.green .admonition-title:before,
-    .admonition.green p:first-child:before {
-        background-color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness)) !important;
-    }
-    .admonition.success a,
-    .admonition.green a {
-        color: hsl(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness));
-    }
-    .admonition.success a:hover,
-    .admonition.green a:hover {
-        background-color: hsla(var(--light-green-hue), var(--light-green-saturation), var(--light-green-lightness), 0.1);
-    }
-#dark .admonition.success,
-#dark .admonition.green {
-    background-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15);
-    border-left-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness)) !important;
-    border-right-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
-    border-bottom-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
-    border-top-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15) !important;
-    box-shadow: 0em 1em 2.75em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.05);
-}
-    /* The [?], [!], etc. rounded rect icon on the top-left of the admonition requires its own background color setting */
-    #dark .admonition.success .admonition-title:before,
-    #dark .admonition.success p:first-child:before,
-    #dark .admonition.green .admonition-title:before,
-    #dark .admonition.green p:first-child:before {
-        background-color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness)) !important;
-    }
-    #dark .admonition.success a,
-    #dark .admonition.green a {
-        color: hsl(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness));
-    }
-    #dark .admonition.success a:hover,
-    #dark .admonition.green a:hover {
-        background-color: hsla(var(--dark-green-hue), var(--dark-green-saturation), var(--dark-green-lightness), 0.15);
+        box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
 
 /******************************
@@ -706,22 +139,7 @@ summary:hover,
 #dark .card:hover .label {
     background-color: hsla(var(--accent-hue), 40%, 20%, 1);
 }
-::selection {
-    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
-    color: white;
-}
-::-moz-selection {
-    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
-    color: white;
-}
-#dark ::selection {
-    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
-    color: white;
-}
-#dark ::-moz-selection {
-    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
-    color: white;
-}
+
 button,
 .button,
 button.pill,
@@ -808,11 +226,6 @@ button.bigfoot-footnote__button {
     #dark button.bigfoot-footnote__button.is-active {
         box-shadow: inset 0 .325em 0.65em rgba(0, 0, 0, 0.125), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
     }
-input:focus,
-textarea:focus {
-    border-color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness)) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.2) !important;
-}
 .codehilite,
 .highlight {
     background-color: hsl(var(--accent-hue), 25%, 12.5%);
@@ -821,7 +234,6 @@ textarea:focus {
 #dark .highlight {
     background-color: hsl(var(--accent-hue), 25%, 7.5%);
 }
-menu,
 .popup,
 .bigfoot-footnote__content,
 .bigfoot-footnote__tooltip,
@@ -842,13 +254,11 @@ kbd,
     .hint--top[data-hint]:before {
         border-top-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
-    menu,
     .popup,
     .bigfoot-footnote,
     .bigfoot-footnote__tooltip {
         border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.3);
     }
-#dark menu,
 #dark .popup,
 #dark .bigfoot-footnote__content,
 #dark .bigfoot-footnote__tooltip,
@@ -869,15 +279,7 @@ kbd,
     #dark .hint--top[data-hint]:before {
         border-top-color: hsla(var(--accent-hue), 10%, 16%, .975);
     }
-
-html {
-    background-color: hsl(var(--accent-hue), 10%, 99%);
-}
-html#dark {
-    background-color: hsl(var(--accent-hue), 10%, 12%);
-}
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    menu,
     .popup,
     .bigfoot-footnote__content,
     [data-hint]:after {
@@ -886,7 +288,6 @@ html#dark {
     .bigfoot-footnote__tooltip {
         background-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
-    #dark menu,
     #dark .popup,
     #dark .bigfoot-footnote__content,
     #dark .bigfoot-footnote__tooltip,

@@ -1,26 +1,26 @@
 ---
-display:
+design:
     flex: true
 ---
 
 <div class="row">
     <div class="column w6">
         <h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/social/images/me.png" alt="Memoji of myself waving friendly" title="Howdy!" /></h2>
-        <h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full-stack developer</a> from Philly.</h4>
-        <h4 style="line-height:1.4em">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
-        <h4 style="line-height:1.4em"><a href="/about">Click here to read more…</a></h4>
+        <h4 style="font-weight:500;line-height:var(--body-line-height);">A <a href="https://github.com/barrowclift">full-stack developer</a> from Philly.</h4>
+        <h4 style="font-weight:500;line-height:var(--body-line-height);">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
+        <h4 style="font-weight:500;line-height:var(--body-line-height);"><a href="/about">Click here to read more…</a></h4>
 
         <h2>Occupation</h2>
-        <h4 style="line-height:1.4em">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
-        <h4 style="line-height:1.4em">My studio is open for consultant work and employment offers.</h4>
+        <h4 style="font-weight:500;line-height:var(--body-line-height);">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
+        <h4 style="font-weight:500;line-height:var(--body-line-height);">My studio is open for consultant work and employment offers.</h4>
         <ul class="button-group left autosize">
             <li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
         </ul>
     </div>
-    <div class="column w6 tight">
+    <div class="column w6">
         <h2>Recent Work</h2>
 
-        <ul class="summary-list" style="margin-left:0;margin-bottom:0;">
+        <ul class="summary-list">
         {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
         {% assign maxNumberOfRecentWork=3 %}
         {% assign numberOfRecentWorkFound=0 %}

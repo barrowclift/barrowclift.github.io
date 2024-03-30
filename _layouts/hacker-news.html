@@ -298,13 +298,9 @@ Emulates Hackers News' "interesting" look & feel.
     </style>
 
     <body>
-        <div id="wrap">
-            <div id="content" class="center">
-                {% include menu.html %}
-                <main>
-                    {{ content }}
-                </main>
-            </div>
-        </div>
+        {% include menu.html %}
+        <main>
+            {{ content }}
+        </main>
     </body>
 </html>

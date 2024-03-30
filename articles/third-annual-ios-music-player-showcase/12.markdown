@@ -98,26 +98,26 @@ While it's nice to see Apple providing first-party music widgets to customers as
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>“Live” lyrics still feature the original effect, and it’s still just as brilliant as it was last year. Regular lyrics are still functionally great, despite featuring the new, worse visualizer.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>iPad Support: </strong><em>Music.app continues to unsurprisingly lead the pack with one of the best optimized iPad experiences, in no small part thanks to the new fullscreen player on iPadOS 14.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery collections available don’t quite keep pace with other players’ progress this year.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong> <em>While Music.app technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view:</strong> <em>A bitter disappointment, I’d rather the old, boring design return than be teased by this shoddy, off-brand alternative.</em></li>
     </ul>
 </div>

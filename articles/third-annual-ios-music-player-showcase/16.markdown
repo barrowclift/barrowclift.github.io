@@ -83,17 +83,17 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for having any kind of light and dark mode support, despite their rough design and lack of respect for the system setting.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>With the bar for minimum acceptable discovery features set higher by other players this year, Sathorn’s single “Recently Added” discovery feature doesn’t cut it, anymore.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>

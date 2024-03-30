@@ -1,6 +1,7 @@
 ---
 title: "Shoutouts"
-show-anchors: true
+design:
+    show-anchors: true
 ---
 
 # Shoutouts

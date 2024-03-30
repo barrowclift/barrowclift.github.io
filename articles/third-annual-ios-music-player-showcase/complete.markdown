@@ -542,23 +542,23 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>Thanks to Albums’ browsable credits list and “Insights” tab, you won’t find another player with as much high quality, pre-built discover collections. Additionally, its customizable discovery features (“Quick Actions”)—while not as rich as Marvis Pro’s—are great as well.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Album-focused features:</strong> <em>It’s in the name, and it doesn’t disappoint; albums is a record-focused tour de force. You won’t find another player out there with as many pre-built features carefully tailored to enhance the record listening experience.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:trophy:</span> <strong>Proper sorting: </strong> <em>It’s the only player out there whose “Albums” and “Artists” views sort my preferred way by default, outstanding.</em></li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view:</strong> <em>Passes with flying colors, it’s used practically everywhere: if there’s albums on the screen, it’s a grid view.</em></li>
             </ul>
         </li>
     </ul>
 
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While visually the player view leaves a lot to be desired, its browsable credits list makes it one of the most engaging player views around. However—while the player's design isn’t terrible—it does hold it back from receiving exception marks.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes </strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
     </ul>
 
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Lyrics support:</strong> <em>While on iPhones the feature works just fine, lyrics on the iPad bafflingly cover both the album art and player column, and for whatever reason this is a personal annoyance I can't bring myself to overlook.</em></li>
     </ul>
 </div>
@@ -700,20 +700,20 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While Cs supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, the new approach is not to my taste.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>It’s a phoned-in, scaled version of the iPhone app, but it’s functional.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>While certainly unique and more fun than all previous player designs featured in Cs, the effect yields somewhat inconsistent results; the light mode results tend to be a bit plain.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can customize the tab bar to make “Albums” your first tab bar item and now even display its contents in a grid view.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view properly sorts albums for any particular artist, this option is unfortunately not available in the “Albums” view.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>My only big disappointment with Cs this year. I was hoping to at least see a “Recently Added” widget or in-app collection in Cs 6.</em></li>
     </ul>
 </div>
@@ -793,22 +793,22 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>We not only got full-height lyrics this year, but the exclusive ability to edit them. No other player has better lyrics support for local music than Doppi.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS’s system appearances while also maintaining an alternative, “lighter” dark mode for those still sporting iPhones with an LCD screen.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s so smooth and so unique, it needs to be tried to be believed.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can easily make “Albums” your first&mdash;or even only&mdash;tab view if you’re so inclined.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting: </strong><em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>iPad support: </strong><em>While I suspect an iPad release is imminent, we're unfortunately still left with no iPad version of Doppi.</em></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Perhaps my only big disappointment with Doppi this year, I hoped we would at least get a “Recently Added” collection somewhere, by now.</em></li>
     </ul>
@@ -882,21 +882,21 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
       </ul>
     
-      <ul class="bare-list emoji-list">
+      <ul class="emoji">
           <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
           <li><span class="bullet">:x:</span> <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
           <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
@@ -1040,17 +1040,17 @@ Then, there's Dot Music's "Favorites" widgets, which display the albums you've f
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
@@ -1135,26 +1135,26 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>With plenty of visualizers to choose from, it’s one of the most engaging player views of the lot.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong>Proper sorting is available in the “Artists” view, but is unfortunately not supported in the “Albums” view.</li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Allows you to not only use grids but also customize the number of columns. Only one other player lets you do this (Marvis Pro).</em></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
     </ul>
 </div>
@@ -1235,22 +1235,22 @@ While I appreciate this widget class, I'm still left disappointed it does not su
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Despite its simplicity, there’s a decent number of discovery features here, such as sorting by album art brightness.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>Despite its numerous sorting options, proper sorting (artists alphabetically followed by albums in chronological order) is not one of them.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view: </strong><em>The app’s nothing but a grid view, yet the lack of visual customization lets it down, holding it back from top marks.</em></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
     </ul>
@@ -1512,17 +1512,17 @@ To provide examples of the flexibility and power these widgets provide, above ar
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>It may no longer be the only player to provide discovery feature customization like it was last year, but Marvis Pro's mature rules & filters system help it remain the undisputed champion for those with the time and light computer skills necessary to wield it.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong> <em>The <a href="https://www.musixmatch.com/">MusicMatch</a> integration is a nice touch, but for those like myself that just prefer regular ol’ lyrics, they’re still available inline directly below the the player controls like they were in iOS 12’s Music.app.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong> <em>Marvis Pro’s theme design seems to deviate from iOS's guidelines, but its choices are tasteful and overwhelmingly result in a visually pleasing experience (unlike <a href="https://apps.apple.com/us/app/sathorn/id1447295899">Sathron</a>).</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>While I tend to gravitate towards other players on the iPad (notably <a href="https://apps.apple.com/us/app/power-player-music-player/id1372545429">Power Player</a>), Marvis Pro’s iPad support is perfectly respectable, and support in any capacity is appreciated in light of some other players continuing to drop the ball.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>The visual design is utilitarian and arguably plain, but the ability to enlarge the album art is positively killer for listeners like myself that are fussy about high resolution album art.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>“Out of the box” it’s not particularly album-centric (<a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a> now holds that position), but with some customization it's still among the best album-focused music players of the lot.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>There's no (publically accessible) option to sort alphabetically by artist, then chronologically by release date.</em></li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Not only does Marvis Pro allow you to make every single section in the app a grid view, it also lets you customize the number of columns, metadata visibility, and more.</em></li>
             </ul>
@@ -1604,20 +1604,20 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
@@ -1709,26 +1709,26 @@ While it's nice to see Apple providing first-party music widgets to customers as
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>“Live” lyrics still feature the original effect, and it’s still just as brilliant as it was last year. Regular lyrics are still functionally great, despite featuring the new, worse visualizer.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>iPad Support: </strong><em>Music.app continues to unsurprisingly lead the pack with one of the best optimized iPad experiences, in no small part thanks to the new fullscreen player on iPadOS 14.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery collections available don’t quite keep pace with other players’ progress this year.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong> <em>While Music.app technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view:</strong> <em>A bitter disappointment, I’d rather the old, boring design return than be teased by this shoddy, off-brand alternative.</em></li>
     </ul>
 </div>
@@ -1898,20 +1898,20 @@ Finally, there's the "Random Pick" widget, which comes exclusively in small and 
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It remains one of the prettiest player views available.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support:</strong> <em>While I’m generally not a fan of the “tap the album art to see the lyrics overtop” approach to lyrics support, Picky is by far the best implementation of this approach thanks to its silky-smooth show/hide animations and translucent background.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Picky not only has world-class filtering capabilities, but a suite of widget collections that provide the kinds of discovery features I tend to expect nowadays (“Recently Added”, “Recently Played”, etc.). While it’s a shame these discovery collections aren’t meaningfully exposed in the app itself, Picky's overall discovery feature support is keeping pace.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While Picky technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view is still stuck without it.</em></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
@@ -2042,17 +2042,17 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>Plum sports both a truly unique “Modern” appearance in addition to a “Classic” appearance, the only player to provide such a feature.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>I must note I truly dislike the current iPad player view implementation, but Plum does indeed support the iPad.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While there’s no support for filter or rule-based collections, support for manually creating your own collections with the “Folders” feature and the first-class “Recently Added” and “Favorites” views do the job.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>While lack of proper sorting is a big disappointment, rich grid view support and the ability to pin the “Albums” view as Plum’s home page help make up for it.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
@@ -2196,20 +2196,20 @@ While there's not much customization to speak of here and the choices are limite
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s opinionated, but for those seeking out the most striking player view or the best iPad player view experience, there’s few that come close to matching Power Player’s.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support:</strong> <em>The vibrant player view and smart space utilization on both iPhone and iPad displays make Power Player one of the best lyrics reading experiences available.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>iPad support: </strong><em>Maintaining its lead from last year, there is no other player that can claim as good an iPad experience for local content as Power Player.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While the new “Home” tab is severely limited in its collections and customization, it’s already a massive improvement over last year.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>No proper sorting, no way to make "Albums" the default view, and no means to tweak the discovery collections to group by album instead of by song weigh Power Player down. Its killer iPad album view is the only thing saving this from a failure mark.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Album grid view: </strong><em>While Power Player uses grid view on the iPad, iPhone users are stuck with a list and no option to change it.</em></li>
             </ul>
@@ -2286,17 +2286,17 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for having any kind of light and dark mode support, despite their rough design and lack of respect for the system setting.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>With the bar for minimum acceptable discovery features set higher by other players this year, Sathorn’s single “Recently Added” discovery feature doesn’t cut it, anymore.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
@@ -2401,23 +2401,23 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While SongOwl supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, SongOwl’s approach is not to my taste.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While not nearly as robust as I’d prefer, the new “Paths” system can support a decent amount of discovery collections like “Recently Added” and “Randomized Records”.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>SongOwl’s king-sized progress and volume bars combined with its pleasing translucency effects are quite pretty.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>You can create a decent amount of album-focused discovery collections like “Recently Added” and “Randomized Records” with the “Paths” feature, but the lack of grid view in SongOwl is disappointing.</em>
-            <ul class="bare-list">
+            <ul class="bare">
               <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view can properly sort albums for any particular artist, this option is unfortunately not available anywhere else.</em></li>
               <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
     </ul>
 </div>
@@ -2591,21 +2591,21 @@ Finally, there's the "Collection" widgets, which display items from one of the p
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While I’m highly critical of Soor’s album art visualizer, simply putting the time in to have one at all when every other third-party player doesn’t bother is enough to warrant a solid “success” mark in my book.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong><em>Neither mode matches iOS’s look and feel. While the light mode is still gorgeous and feels right at home alongside other iOS apps, it’s gray “dark” mode feels out of place, as if it’s an unofficial dark mode from the <a href="http://web.archive.org/web/20170927012228/https://www.apple.com/ios/ios-11/">iOS 11</a> era. The optional “True Black” dark mode doesn’t fare much better, often appearing too dark for iOS’s dark mode guidelines.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features:</strong> <em>While the app does indeed feature a nice “Albums” view, being unable to make “Magic Mixes” for albums instead of songs was a big miss.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Barely any of the discovery features work without iCloud Music Library despite being advertised and “accessible” in local-only mode, making the experience feel like a bait-and-switch tease.</em></li>
         <li><span class="bullet">:x:</span> <strong>Lyrics support:</strong> <em>There’s a lyrics button, but all it does is launch <a href="https://www.musixmatch.com">MusicMatch</a> if you have it downloaded. MusicMatch integration is “nice to have”, not by no means a replacement for real, first-class lyrics support.</em></li>
         <li><span class="bullet">:x:</span> <strong>iPad Support</strong></li>
@@ -2662,20 +2662,20 @@ None.
 #### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support:</strong> <em>Just added this year, and it’s the lazy “enlarged iPhone version” you’d come to expect from mediocre iPad ports. However, it’s functional, so credit where credit’s due.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Beautiful or visually engaging player view:</strong> <em>Partial credit awarded for the neat waveform progress indicator.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
         <li><span class="bullet">:x:</span> <strong>Light & dark themes: </strong><em>There continues to be no light mode after all these years.</em></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>

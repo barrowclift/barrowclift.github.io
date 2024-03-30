@@ -233,23 +233,23 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>Thanks to Albums’ browsable credits list and “Insights” tab, you won’t find another player with as much high quality, pre-built discover collections. Additionally, its customizable discovery features (“Quick Actions”)—while not as rich as Marvis Pro’s—are great as well.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Album-focused features:</strong> <em>It’s in the name, and it doesn’t disappoint; albums is a record-focused tour de force. You won’t find another player out there with as many pre-built features carefully tailored to enhance the record listening experience.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:trophy:</span> <strong>Proper sorting: </strong> <em>It’s the only player out there whose “Albums” and “Artists” views sort my preferred way by default, outstanding.</em></li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view:</strong> <em>Passes with flying colors, it’s used practically everywhere: if there’s albums on the screen, it’s a grid view.</em></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While visually the player view leaves a lot to be desired, its browsable credits list makes it one of the most engaging player views around. However—while the player's design isn’t terrible—it does hold it back from receiving exception marks.</em></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes </strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Lyrics support:</strong> <em>While on iPhones the feature works just fine, lyrics on the iPad bafflingly cover both the album art and player column, and for whatever reason this is a personal annoyance I can't bring myself to overlook.</em></li>
     </ul>
 </div>

@@ -66,7 +66,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 
 #### I Wish I Had Known That Sooner <time>Things everyone with a Mac should know</time>
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
     <li><a href="#display-the-date-in-the-menu-bar-clock">Display the Date in the Menu Bar Clock</a></li>
     <li><a href="#quicklook-for-superior-file-browsing">Quicklook for Superior File Browsing</a></li>
@@ -80,7 +80,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 
 #### I Want to Work Better <time>Essentials for people aspiring to work smarter, not harder</time>
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
     <li><a href="#window-tab-and-app-management-shortcuts">Window, Tab, and App Management Shortcuts</a></li>
     <li><a href="#custom-autocorrect-substitutions">Custom Autocorrect Substitutions</a></li>
@@ -93,7 +93,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 
 #### Huh, Neat <time>Tips that only fussy people like me care about</time>
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>
     <li><a href="#fix-ugly-app-icons">Fix Ugly App Icons</a></li>
     <li><a href="#dark-mode-">Dark Mode 🌚</a></li>
@@ -418,7 +418,7 @@ Making your own scripts like the ones I mentioned above are shockingly easy. Fir
 
 Once opened, you're met with a plentiful list of "Actions" to the left and a chronological timeline to the right where you can drag and drop various actions together to create your desired script. However, if making your own doesn't really interest you, you can search the web for [dozens of pre-made ones](http://macosxautomation.com/services/download/index.html#), ready for use. Additionally, I've linked my favorites below for you to download:
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Change Image Format.zip">Change Image Format</a></li>
     <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Combine PDFs.zip">Combine PDFs</a></li>
     <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Convert Text to Audio File.zip">Convert Text to Audio File</a></li>
@@ -441,7 +441,7 @@ Now we're getting to the good stuff; do you have a mundane, repetitive task you 
 
 Unfortunately, due to the specialized nature of mouse-driven automation, there's no pre-canned Automator scripts I can provide you. I can, however, point you towards some guides to show you the ropes if you're interested (and as always, I stand by the best way to truly learn this feature is to experiment on your own):
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="https://macosxautomation.com/training/automator/tut04/02.html"><em>Mac OS X Automation</em> - “Tutorial 04: Recording”</a></li>
     <li><a href="https://hacksformacs.wordpress.com/2013/05/27/controlling-the-gui-via-automator/"><em>Hacks for Macs</em> - “Controlling the GUI via Automator”</a></li>
     <li><a href="https://www.youtube.com/watch?v=5o_JrForn6Y"><em>Peachpit TV</em> - “Recording Manual Events in Automator with Ben Waldie”</a></li>

@@ -90,22 +90,22 @@ While I appreciate this widget class, I'm still left disappointed it does not su
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Despite its simplicity, there’s a decent number of discovery features here, such as sorting by album art brightness.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>Despite its numerous sorting options, proper sorting (artists alphabetically followed by albums in chronological order) is not one of them.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view: </strong><em>The app’s nothing but a grid view, yet the lack of visual customization lets it down, holding it back from top marks.</em></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
         <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
     </ul>

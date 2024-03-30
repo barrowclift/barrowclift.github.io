@@ -161,20 +161,20 @@ While there's not much customization to speak of here and the choices are limite
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s opinionated, but for those seeking out the most striking player view or the best iPad player view experience, there’s few that come close to matching Power Player’s.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support:</strong> <em>The vibrant player view and smart space utilization on both iPhone and iPad displays make Power Player one of the best lyrics reading experiences available.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>iPad support: </strong><em>Maintaining its lead from last year, there is no other player that can claim as good an iPad experience for local content as Power Player.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While the new “Home” tab is severely limited in its collections and customization, it’s already a massive improvement over last year.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>No proper sorting, no way to make "Albums" the default view, and no means to tweak the discovery collections to group by album instead of by song weigh Power Player down. Its killer iPad album view is the only thing saving this from a failure mark.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Album grid view: </strong><em>While Power Player uses grid view on the iPad, iPhone users are stuck with a list and no option to change it.</em></li>
             </ul>

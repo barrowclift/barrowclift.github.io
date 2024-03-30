@@ -37,7 +37,7 @@ There are the settings I use in my Marvis Pro home screen. Please feel free to u
 1. Add a new "Library" section for "Albums".
 2. Rename the title for "Albums" to <span class="small-caps">PICK OF THE DAY</span> and set the subtitle to a space (to hide the <span class="small-caps">LIBRARY</span> text).
 
-<ul class="compact-list">
+<ul class="tight">
     <li><strong>Layout:</strong> <mark class="tag orange">Grid</mark></li>
     <li><strong>Grid Style:</strong> <mark class="tag orange">Cover Flow</mark></li>
     <li><strong>Columns:</strong> <code>1</code></li>
@@ -86,7 +86,7 @@ There are the settings I use in my Marvis Pro home screen. Please feel free to u
 1. Add a new "Library" section for "Albums".
 2. Rename the subtitle for "Albums" to <span class="small-caps">PAST YEAR</span>.
 
-<ul class="compact-list">
+<ul class="tight">
     <li><strong>Sorting:</strong> <mark class="tag orange">Shuffled</mark></li>
     <li><strong>Sort Order:</strong> <mark class="tag orange">Ascending</mark></li>
     <li><strong>Layout:</strong> <mark class="tag orange">Grid</mark></li>
@@ -101,7 +101,7 @@ There are the settings I use in my Marvis Pro home screen. Please feel free to u
 2. Rename the title for "Albums" to "Recently Added".
 3. Rename the subtitle for "Albums" to <span class="small-caps">PAST YEAR</span>.
 
-<ul class="compact-list">
+<ul class="tight">
     <li><strong>Sorting:</strong> <mark class="tag orange">Shuffled</mark></li>
     <li><strong>Sort Order:</strong> <mark class="tag orange">Descending</mark></li>
     <li><strong>Layout:</strong> <mark class="tag orange">Grid</mark></li>
@@ -131,7 +131,7 @@ Same as ["Recently Added" (Past Year)](#recently-added-past-year), but with the 
 
 Rules for each year:
 
-<ul class="compact-list">
+<ul class="tight">
     <li><strong>Sorting:</strong> <mark class="tag orange">Default</mark></li>
     <li><strong>Sort Order:</strong> <mark class="tag orange">Ascending</mark></li>
     <li><strong>Layout:</strong> <mark class="tag orange">Grid</mark></li>

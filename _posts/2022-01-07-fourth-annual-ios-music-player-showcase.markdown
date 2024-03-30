@@ -43,6 +43,10 @@ card:
     }
 </style>
 
+<div class="admonition gray">
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+</div>
+
 There's new and exciting developments every year in the realm of iOS third-party music players, and 2021 was no exception. While [2019](/articles/second-annual-ios-music-player-competition) enjoyed an explosion of new players like [Power Player] and [Albums] that through time came to lead the space, [2020](/articles/third-annual-ios-music-player-showcase) in contrast received only a modest handful of new players and is instead remembered for the impressive growth the established player base received that year. This past year, 2021, managed to do both with a dizzying array of five new players *and* impressive growth across nearly all existing players.
 
 To start, there were five new players welcomed into the ecosystem this year:
@@ -128,7 +132,7 @@ The showcase itself will strive to keep as impartial and objective a voice as po
     * The "one, true album sorting method", which is sort alphabetically by artist, then sort each artist's albums chronologically by release year.
     * A grid layout option for more natural visual browsing
 
-In order to better handle the increasing number of iOS music players, this article is broken down into separate pages to improve the reading experience. This way, you can easily jump around to particular pages you're interested in. At the bottom of each page is a "Table of Contents" and massive navigation button to the next page of the article so you can always keep track of where you. While this is the intended way to read, there are no doubt readers that prefer single-page articles, and for those readers you may instead read the entirety of the article on a single page [here](/articles/fourth-annual-ios-music-player-showcase/complete). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here]({{ site.nitro_url }}/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me]({{ site.nitro_url }}) (note that only a selection of the art assets are available in this mirror to improve page performance).
+In order to better handle the increasing number of iOS music players, this article is broken down into separate pages to improve the reading experience. This way, you can easily jump around to particular pages you're interested in. At the bottom of each page is a "Table of Contents" and massive navigation button to the next page of the article so you can always keep track of where you. While this is the intended way to read, there are no doubt readers that prefer single-page articles, and for those readers you may instead read the entirety of the article on a single page [here](/articles/fourth-annual-ios-music-player-showcase/complete). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here]({{ site.nitro_url }}/article/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me]({{ site.nitro_url }}) (note that only a selection of the art assets are available in this mirror to improve page performance).
 
 -----
 

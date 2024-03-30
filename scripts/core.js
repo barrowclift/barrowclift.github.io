@@ -229,7 +229,7 @@ $(document).ready(function() {
     }
     if ($(this).scrollTop() > 125) {
         menu.addClass("hide-for-small-device");
-    } else if (html.scrollTop() > 96) {
+    } else if (html.scrollTop() > 105) {
         html.addClass("float-menu-for-hiding");
     }
 
@@ -250,10 +250,10 @@ $(document).ready(function() {
             if (newScrollTop > 125) {
                 menu.addClass("hide-for-small-device");
                 html.addClass("float-menu-for-hiding");
-            } else if (newScrollTop > 96) {
+            } else if (newScrollTop > 105) {
                 html.addClass("float-menu-for-hiding");
                 menu.removeClass("hide-for-small-device");
-            } else if (newScrollTop <= 96) {
+            } else if (newScrollTop <= 105) {
                 menu.removeClass("hide-for-small-device");
                 html.removeClass("float-menu-for-hiding");
             }

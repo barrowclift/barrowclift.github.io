@@ -1,100 +1,247 @@
-/*
-TABLE OF CONTENTS:
-    * Container
-    * Typography
-        - Typeface
-        - Kerning
-        - Sizes, Margins, and Weights
-        - Lists
-        - Text Styles
-    * Navbar
-        - Menu
-        - Logo
-        - Accessibility Toggles
-    * Flex
-    * Elements
-        - Cards
-        - Dividers
-        - Forms, Buttons, and Links
-        - Tables
-        - Tags & Highlighting
-        - Admonitions
-    * Images & Video
-    * Code
-    * Footer
-        - Footnotes
-        - Footnote Buttons
-    * Misc
-        - Anchors
-        - Animations
-        - Positioning
-    * Media Queries
-    * Default Theme (Blue)
-    * Dark Theme
-
-Small devices (iPhones)
-Font size: 14px, ~Margin&Padding: 20px
-*/
+/**
+ * TABLE OF CONTENTS:
+ *   1. Variables
+ *   2. Base
+ *   3. Headers
+ *   4. Lists
+ *   5. Tables
+ *   6. Tags & Highlighting
+ *   7. Typographic Flourishes
+ *   8. Admonitions
+ *   9. Menu
+ */
 
 
-/* CONTAINER ------------------------------------------------------------------------ */
+/**********************
+ ***  1. VARIABLES  ***
+ **********************/
 
+html {
+    /**
+     * -----------------------
+     * Typography & Whitespace
+     * -----------------------
+     */
+    
+    /**
+     * Base gap setting that all margin/padding values derive from. Increase
+     * or decrease to expand or contract the reletive "comfiness" of the site.
+     */
+    --gap: 1.3em;
+    --gap2: calc(var(--gap) * 2);
+    --gap3: calc(var(--gap) * 3);
+    --half-gap: calc(var(--gap) / 2);
 
-html, body {
-    height: 100%;
+    --body-line-height: 1.45em;
+    --header-line-height: 1.2em;
+
+    /**
+     * ------------------
+     * Light Mode Widgets
+     * ------------------
+     */
+    
+    --widget-background-opacity: 0.975;
+    --widget-background: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
+    --widget-border-saturation: 5%;
+    --widget-border-lightness: 62.5%;
+    --widget-border: hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2);
+
+    --admonition-left-border-lightness-adjustment: 10%;
+
+    --highlight-background-opacity: 0.1;
+
+    /**
+     * ------------------
+     * Light Mode Shadows
+     * ------------------
+     */
+    
+    --shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
+
+    /**
+     * -----------------
+     * Light Mode Colors
+     * -----------------
+     */
+
+    --primary-foreground: rgba(30, 30, 30, 0.9);
+    --secondary-foreground: rgba(30, 30, 30, 0.375);
+
+    /**
+     * -------------------
+     * Light Accent Colors
+     * -------------------
+     */
+
+    --graphite-hue: 240;
+    --graphite-saturation: 24%;
+    --graphite-lightness: 96%;
+
+    --blue-hue: 211;
+    --blue-saturation: 100%;
+    --blue-lightness: 50%;
+
+    --red-hue: 3;
+    --red-saturation: 100%;
+    --red-lightness: 59%;
+
+    --orange-hue: 30;
+    --orange-saturation: 100%;
+    --orange-lightness: 50%;
+
+    --yellow-hue: 48;
+    --yellow-saturation: 90%;
+    --yellow-lightness: 50%;
+
+    --green-hue: 130;
+    --green-saturation: 60%;
+    --green-lightness: 50%;
+
+    --purple-hue: 241;
+    --purple-saturation: 61%;
+    --purple-lightness: 59%;
+
+    --pink-hue: 349;
+    --pink-saturation: 100%;
+    --pink-lightness: 59%;
 }
-body, main {
-    text-align: center;
-}
-h1, h2, h3, h4, h5, h6, time,
-p,
-blockquote,
-ol, ul, ol li, ul li {
-    text-align: left;
-}
-main {
-    display: block; /* IE 11 does not fully support main, ignores max-width otherwise */
-    position: relative;
-    max-width: 33em;
-    width: auto;
-    margin: 2.6em auto;
-    margin-bottom: 3.9em;
-
-    padding-left: 5%;
-    padding-right: 5%;
-}
-@supports(padding: max(5%, env(safe-area-inset-left))) {
-    main {
-        padding-left: max(1.3em, env(safe-area-inset-left));
-        padding-right: max(1.3em, env(safe-area-inset-right));
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        html {
+            --widget-background-opacity: 0.85;
+        }
     }
+html#dark {
+    /**
+     * -----------------
+     * Dark Mode Widgets
+     * -----------------
+     */
+    
+    --widget-background: hsla(var(--accent-hue), 10%, 16%, var(--widget-background-opacity));
+    --widget-border-lightness: 37.5%;
+
+    --admonition-left-border-lightness-adjustment: -10%;
+
+    --highlight-background-opacity: 0.15;
+
+    /**
+     * ------------------
+     * Dark Mode Shadows
+     * ------------------
+     */
+    
+    --shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
+
+    /**
+     * ----------------
+     * Dark Mode Colors
+     * ----------------
+     */
+    --primary-foreground: rgba(255, 255, 255, 0.9);
+    --secondary-foreground: rgba(255, 255, 255, 0.375);
+
+    /**
+     * ------------------
+     * Dark Accent Colors
+     * ------------------
+     */
+
+    --graphite-hue: 240;
+    --graphite-saturation: 3%;
+    --graphite-lightness: 11%;
+
+    --blue-hue: 210;
+    --blue-saturation: 100%;
+    --blue-lightness: 52%;
+
+    --red-hue: 3;
+    --red-saturation: 100%;
+    --red-lightness: 61%;
+
+    --orange-hue: 36;
+    --orange-saturation: 100%;
+    --orange-lightness: 52%;
+
+    --yellow-hue: 50;
+    --yellow-saturation: 100%;
+    --yellow-lightness: 52%;
+
+    --green-hue: 135;
+    --green-saturation: 64%;
+    --green-lightness: 50%;
+
+    --purple-hue: 280;
+    --purple-saturation: 85%;
+    --purple-lightness: 65%;
+
+    --pink-hue: 348;
+    --pink-saturation: 85%;
+    --pink-lightness: 61%;
 }
-    .full-width-page main {
-        max-width: 100%;
-        padding: 0;
-    }
-    .extra-wide-page main {
-        max-width: 1920px;
-        padding: 0 !important;
-    }
-    .wide-page main {
-        max-width: 38em;
-    }
-
-/* Allows for margin bottom on main page elements and makes it easier to
-   re-add stickied footers, should I want them back anytime going forward */
-#content {
-    overflow: auto;
-    overflow-x: hidden;
-}
-
-
-/* TYPOGRAPHY ----------------------------------------------------------------------- */
-
-
-/* ----- TYPEFACE ----- */
 html,
-textarea { /* Must explicitly add textarea for Firefox bug, proving once again it's the worst browser */
+.blue {
+    --accent-hue: var(--blue-hue);
+    --accent-saturation: var(--blue-saturation);
+    --accent-lightness: var(--blue-lightness);
+}
+.red {
+    --accent-hue: var(--red-hue);
+    --accent-saturation: var(--red-saturation);
+    --accent-lightness: var(--red-lightness);
+}
+.orange {
+    --accent-hue: var(--orange-hue);
+    --accent-saturation: var(--orange-saturation);
+    --accent-lightness: var(--orange-lightness);
+}
+.yellow {
+    --accent-hue: var(--yellow-hue);
+    --accent-saturation: var(--yellow-saturation);
+    --accent-lightness: var(--yellow-lightness);
+}
+.green {
+    --accent-hue: var(--green-hue);
+    --accent-saturation: var(--green-saturation);
+    --accent-lightness: var(--green-lightness);
+}
+.purple {
+    --accent-hue: var(--purple-hue);
+    --accent-saturation: var(--purple-saturation);
+    --accent-lightness: var(--purple-lightness);
+}
+.pink {
+    --accent-hue: var(--pink-hue);
+    --accent-saturation: var(--pink-saturation);
+    --accent-lightness: var(--pink-lightness);
+}
+
+
+/*****************
+ ***  2. BASE  ***
+ *****************/
+
+* {
+    /**
+     * Default text rendering in WebKit is smudgy and fuzzy. This renders the
+     * text more sharply, making it more pleasing to read.
+     */
+    -webkit-font-smoothing: antialiased;
+    /**
+     * Way easier to have the default alignment be to the left, then selectively
+     * opt-in center alignment when necessary. Otherwise, I'm defining text-align: left;
+     * for damned near every text-based HTML element.
+     */
+    text-align: left;
+    /**
+     * 1.5 is too loose, ~1.2-1.45 is desired, depending on typeface.
+     * Again, way easier to have the default line height be 1.45em and selectively
+     * opting-out elements when necessary.
+     */
+    line-height: var(--body-line-height);
+}
+html {
+    font-size: 14px;
     /* Many thanks to Craig Hockenberry https://furbo.org/2018/03/28/system-fonts-in-css/ */
     font-family: system-ui,
                  -apple-system,
@@ -108,15 +255,952 @@ textarea { /* Must explicitly add textarea for Firefox bug, proving once again i
                  "Droid Sans",
                  "Helvetica Neue",
                  sans-serif;
-
-    text-rendering: optimizeLegibility;
-    /* Font rendering in OS X Firefox is TERRIBLE. This makes the browser tolerable */
-    -moz-osx-font-smoothing: grayscale;
-    /* Default text rendering in WebKit is *way* too heavy, in my opinion. This thins
-    the text a bit and makes it more crisp and pleasing to read. */
-    -webkit-font-smoothing: antialiased;
+    background-color: hsl(var(--accent-hue), 25%, 99%);
 }
-* {-webkit-font-smoothing: antialiased;}
+    html#dark {
+        background-color: hsl(var(--accent-hue), 25%, 12%);
+    }
+body,
+main,
+article {
+    text-align: center;
+}
+main {
+    max-width: 33em;
+    margin: var(--gap2) auto;
+    padding-bottom: var(--gap3);
+    padding-left: 5%;
+    padding-right: 5%;
+    /**
+     * Without this, text selections spill beyond the actual contents. Keep
+     * selections tight, bound within the main content itself.
+     */
+    position: relative;
+}
+    @supports(padding: max(5%, env(safe-area-inset-left))) {
+        main {
+            padding-left: max(var(--gap), env(safe-area-inset-left));
+            padding-right: max(var(--gap), env(safe-area-inset-right));
+        }
+    }
+
+
+/********************
+ ***  3. HEADERS  ***
+ ********************/
+
+/**
+ * Following the 1.2 Minor Third type scale
+ * http://type-scale.com
+ */
+h1 {
+    font-size: 2.074em;
+    font-weight: 900;
+}
+h2 {
+    font-size: 1.728em;
+    font-weight: 800;
+}
+h3 {
+    font-size: 1.44em;
+    font-weight: 700;
+}
+h4,
+.admonition-title {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+h5 {
+    font-size: 1em;
+    font-weight: 500;
+}
+h6,
+.anchor {
+    font-size: 0.833em;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6,
+time {
+    line-height: var(--header-line-height);
+    margin-top: var(--gap);
+    margin-bottom: var(--half-gap);
+}
+time {
+    display: block;
+
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--secondary-foreground);
+}
+
+
+/******************
+ ***  4. LISTS  ***
+ ******************/
+
+ol,
+ul {
+    margin-left: calc(var(--gap) + var(--half-gap));
+    margin-bottom: var(--gap);
+}
+    li {
+        margin-bottom: var(--half-gap);
+    }
+        li ol,
+        li ul {
+            margin-top: var(--half-gap);
+            margin-bottom: 0;
+        }
+        li ol.bare,
+        li ul.bare {
+            margin-top: 0;
+        }
+ol {
+    list-style-type: decimal;
+}
+    ol ol {
+        list-style-type: upper-alpha;
+    }
+        ol ol ol {
+            list-style-type: upper-roman;
+        }
+ul {
+    list-style-type: disc;
+}
+    ul ul {
+        list-style-type: none;
+    }
+    ul ul:not(.bare) li:before {
+        content: "-";
+        position: absolute;
+        margin-left: -1em;
+    }
+        ul ul ul {
+            list-style-type: circle;
+        }
+        ul ul ul:not(.bare) li:before {
+            content: none;
+            margin-left: 0;
+        }
+        ul ul ul ul {
+            list-style-type: square
+        }
+/**
+ * Lists with no list item styling and no padding on list items
+ */
+ul.bare,
+ol.bare {
+    list-style: none;
+}
+    ul.bare li,
+    ol.bare li {
+        margin: 0;
+    }
+/**
+ * Lists with just no padding on list items
+ */
+ul.tight li,
+ol.tight li,
+ul.tight ul,
+ol.tight ol {
+    margin: 0;
+}
+/**
+ * Emoji styling instead of "traditional" list item styling, and no padding on
+ * list items.
+ */
+ul.emoji,
+ol.emoji {
+    margin-left: 0.25em !important;
+}
+/**
+ * Table Of Contents: Equivalent to .tight
+ */
+.toc li,
+.toc ul,
+.toc ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/**
+ * i.e. Checklists
+ */
+.task-list {
+    list-style-type: none;
+    margin-left: var(--half-gap);
+}
+    .task-list-item {
+        text-indent: calc(0em - var(--gap));
+        padding-left: var(--gap);
+    }
+    .task-list input {
+        margin: 0;
+        margin-right: 0.325em;
+        height: 1em;
+        width: 1em;
+    }
+/**
+ * Definitions & Details
+ */
+dl,
+details {
+    margin-bottom: var(--gap);
+}
+/* The definition itself, its "header" or "title". */
+dt {
+    font-weight: 700;
+}
+dd p:last-child {
+    margin-bottom: 0;
+}
+    /* Indent definition list contents like we would "normal" lists. */
+    dl dd {
+        margin-left: calc(var(--gap) + var(--half-gap));
+    }
+
+
+/*******************
+ ***  5. TABLES  ***
+ *******************/
+
+table {
+    width: auto;
+    word-break: normal;
+    word-break: keep-all;
+    border-collapse: collapse;
+    overflow-x: auto;
+    margin-bottom: var(--gap);
+}
+thead {
+    font-weight: bold;
+    color: var(--primary-foreground);
+    background: linear-gradient(
+        to bottom,
+        hsla(0, 0%, 0%, 0) 0%,
+        hsla(0, 0%, 0%, 0.002) 8.1%,
+        hsla(0, 0%, 0%, 0.007) 15.5%,
+        hsla(0, 0%, 0%, 0.016) 22.5%,
+        hsla(0, 0%, 0%, 0.026) 29%,
+        hsla(0, 0%, 0%, 0.039) 35.3%,
+        hsla(0, 0%, 0%, 0.053) 41.2%,
+        hsla(0, 0%, 0%, 0.068) 47.1%,
+        hsla(0, 0%, 0%, 0.082) 52.9%,
+        hsla(0, 0%, 0%, 0.097) 58.8%,
+        hsla(0, 0%, 0%, 0.111) 64.7%,
+        hsla(0, 0%, 0%, 0.124) 71%,
+        hsla(0, 0%, 0%, 0.134) 77.5%,
+        hsla(0, 0%, 0%, 0.143) 84.5%,
+        hsla(0, 0%, 0%, 0.148) 91.9%,
+        hsla(0, 0%, 0%, 0.15) 100%
+    );
+}
+    #dark thead {
+        background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 50%, 0.25) 0%,
+            hsla(0, 0%, 49.68%, 0.25) 8.1%,
+            hsla(0, 0%, 48.77%, 0.25) 15.5%,
+            hsla(0, 0%, 47.33%, 0.25) 22.5%,
+            hsla(0, 0%, 45.4%, 0.25) 29%,
+            hsla(0, 0%, 43.03%, 0.25) 35.3%,
+            hsla(0, 0%, 40.25%, 0.25) 41.2%,
+            hsla(0, 0%, 37.08%, 0.25) 47.1%,
+            hsla(0, 0%, 33.54%, 0.25) 52.9%,
+            hsla(0, 0%, 29.66%, 0.25) 58.8%,
+            hsla(0, 0%, 25.46%, 0.25) 64.7%,
+            hsla(0, 0%, 20.94%, 0.25) 71%,
+            hsla(0, 0%, 16.12%, 0.25) 77.5%,
+            hsla(0, 0%, 11.02%, 0.25) 84.5%,
+            hsla(0, 0%, 5.64%, 0.25) 91.9%,
+            hsla(0, 0%, 0%, 0.25) 100%
+        );
+    }
+td,
+th {
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    padding-top: calc(var(--gap) / 8);
+    padding-bottom: calc(var(--gap) / 8);
+    border: 1px solid rgb(224, 224, 224);
+}
+    #dark td,
+    #dark th {
+        border-color: rgba(65, 65, 65);
+    }
+tbody tr:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.75);
+}
+    #dark tbody tr:nth-child(even) {
+        background-color: rgba(15, 15, 15, 0.25);
+    }
+
+
+/********************************
+ ***  6. TAGS & HIGHLIGHTING  ***
+ ********************************/
+
+mark {
+    word-wrap: break-word;
+
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+
+    color: var(--primary-foreground);
+}
+    #dark mark {
+        color: rgba(255, 255, 255, 0.9);
+    }
+mark.tag {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-style: normal;
+    font-size: 0.53em;
+    font-weight: 600;
+    line-height: 1em;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    margin-top: -1px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 1em;
+}
+mark.tag.gray,
+mark.tag.grey,
+mark.tag.graphite,
+#dark mark.tag.gray,
+#dark mark.tag.grey,
+#dark mark.tag.graphite {
+    background-image: linear-gradient(to bottom right, hsl(var(--accent-hue), 5%, 60%) 38.66%, hsl(calc(var(--accent-hue) + 3), 5%, 40%));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--accent-hue), 5%, var(--accent-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--accent-hue), 5%, var(--accent-lightness), 0.2);
+}
+mark.blue {
+    background-image: linear-gradient(to right, hsla(var(--blue-hue), 100%, calc(var(--blue-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--blue-hue) + 3), 100%, calc(var(--blue-lightness) + 20%), 0.99));
+}
+mark.tag.blue {
+    background-image: linear-gradient(to bottom right, hsl(var(--blue-hue), var(--blue-saturation), calc(var(--blue-lightness) + 10%)) 38.66%, hsl(calc(var(--blue-hue) + 3), var(--blue-saturation), calc(var(--blue-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.2);
+}
+    #dark mark.blue {
+        background-image: linear-gradient(to right, hsla(var(--blue-hue), 100%, calc(var(--blue-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--blue-hue) + 3), 100%, calc(var(--blue-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.blue {
+        background-image: linear-gradient(to bottom right, hsl(var(--blue-hue), var(--blue-saturation), calc(var(--blue-lightness) + 10%)) 38.66%, hsl(calc(var(--blue-hue) + 3), var(--blue-saturation), calc(var(--blue-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.2);
+    }
+mark.red {
+    background-image: linear-gradient(to right, hsla(var(--red-hue), 100%, calc(var(--red-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--red-hue) + 3), 100%, calc(var(--red-lightness) + 20%), 0.99));
+}
+mark.tag.red {
+    background-image: linear-gradient(to bottom right, hsl(var(--red-hue), var(--red-saturation), calc(var(--red-lightness) + 10%)) 38.66%, hsl(calc(var(--red-hue) + 3), var(--red-saturation), calc(var(--red-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.2);
+}
+    #dark mark.red {
+        background-image: linear-gradient(to right, hsla(var(--red-hue), 100%, calc(var(--red-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--red-hue) + 3), 100%, calc(var(--red-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.red {
+        background-image: linear-gradient(to bottom right, hsl(var(--red-hue), var(--red-saturation), calc(var(--red-lightness) + 10%)) 38.66%, hsl(calc(var(--red-hue) + 3), var(--red-saturation), calc(var(--red-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.2);
+    }
+mark.orange {
+    background-image: linear-gradient(to right, hsla(var(--orange-hue), 100%, calc(var(--orange-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--orange-hue) + 3), 100%, calc(var(--orange-lightness) + 20%), 0.99));
+}
+mark.tag.orange {
+    background-image: linear-gradient(to bottom right, hsl(var(--orange-hue), var(--orange-saturation), calc(var(--orange-lightness) + 10%)) 38.66%, hsl(calc(var(--orange-hue) + 3), var(--orange-saturation), calc(var(--orange-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.2);
+}
+    #dark mark.orange {
+        background-image: linear-gradient(to right, hsla(var(--orange-hue), 100%, calc(var(--orange-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--orange-hue) + 3), 100%, calc(var(--orange-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.orange {
+        background-image: linear-gradient(to bottom right, hsl(var(--orange-hue), var(--orange-saturation), calc(var(--orange-lightness) + 10%)) 38.66%, hsl(calc(var(--orange-hue) + 3), var(--orange-saturation), calc(var(--orange-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.2);
+    }
+mark,
+mark.yellow {
+    background: unset;
+    background-image: linear-gradient(to right, hsla(var(--yellow-hue), 100%, calc(var(--yellow-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--yellow-hue) + 3), 100%, calc(var(--yellow-lightness) + 20%), 0.99));
+}
+mark.tag,
+mark.tag.yellow {
+    background-image: linear-gradient(to bottom right, hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--yellow-hue) + 3), var(--yellow-saturation), calc(var(--yellow-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.2);
+}
+    #dark mark,
+    #dark mark.yellow {
+        background: unset;
+        background-image: linear-gradient(to right, hsla(var(--yellow-hue), 100%, calc(var(--yellow-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--yellow-hue) + 3), 100%, calc(var(--yellow-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.yellow {
+        background-image: linear-gradient(to bottom right, hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--yellow-hue) + 3), var(--yellow-saturation), calc(var(--yellow-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.2);
+    }
+mark.green {
+    background-image: linear-gradient(to right, hsla(var(--green-hue), 100%, calc(var(--green-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--green-hue) + 3), 100%, calc(var(--green-lightness) + 20%), 0.99));
+}
+mark.tag.green {
+    background-image: linear-gradient(to bottom right, hsl(var(--green-hue), var(--green-saturation), calc(var(--green-lightness) + 10%)) 38.66%, hsl(calc(var(--green-hue) + 3), var(--green-saturation), calc(var(--green-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.2);
+}
+    #dark mark.green {
+        background-image: linear-gradient(to right, hsla(var(--green-hue), 100%, calc(var(--green-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--green-hue) + 3), 100%, calc(var(--green-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.green {
+        background-image: linear-gradient(to bottom right, hsl(var(--green-hue), var(--green-saturation), calc(var(--green-lightness) + 10%)) 38.66%, hsl(calc(var(--green-hue) + 3), var(--green-saturation), calc(var(--green-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.2);
+    }
+mark.purple {
+    background-image: linear-gradient(to right, hsla(var(--purple-hue), 100%, calc(var(--purple-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--purple-hue) + 3), 100%, calc(var(--purple-lightness) + 20%), 0.99));
+}
+mark.tag.purple {
+    background-image: linear-gradient(to bottom right, hsl(var(--purple-hue), var(--purple-saturation), calc(var(--purple-lightness) + 10%)) 38.66%, hsl(calc(var(--purple-hue) + 3), var(--purple-saturation), calc(var(--purple-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.2);
+}
+    #dark mark.purple {
+        background-image: linear-gradient(to right, hsla(var(--purple-hue), 100%, calc(var(--purple-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--purple-hue) + 3), 100%, calc(var(--purple-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.purple {
+        background-image: linear-gradient(to bottom right, hsl(var(--purple-hue), var(--purple-saturation), calc(var(--purple-lightness) + 10%)) 38.66%, hsl(calc(var(--purple-hue) + 3), var(--purple-saturation), calc(var(--purple-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.2);
+    }
+mark.pink {
+    background-image: linear-gradient(to right, hsla(var(--pink-hue), calc(var(--pink-saturation) + 10%), calc(var(--pink-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--pink-hue) + 3), calc(var(--pink-saturation) + 10%), calc(var(--pink-lightness) + 20%), 0.99));
+}
+mark.tag.pink {
+    background-image: linear-gradient(to bottom right, hsl(var(--pink-hue), var(--pink-saturation), calc(var(--pink-lightness) + 10%)) 38.66%, hsl(calc(var(--pink-hue) + 3), var(--pink-saturation), calc(var(--pink-lightness) - 10%)));
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.2);
+}
+    #dark mark.pink {
+        background-image: linear-gradient(to right, hsla(var(--pink-hue), 100%, calc(var(--pink-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--pink-hue) + 3), 100%, calc(var(--pink-lightness) - 20%), 0.99));
+    }
+    #dark mark.tag.pink {
+        background-image: linear-gradient(to bottom right, hsl(var(--pink-hue), var(--pink-saturation), calc(var(--pink-lightness) + 10%)) 38.66%, hsl(calc(var(--pink-hue) + 3), var(--pink-saturation), calc(var(--pink-lightness) - 10%)));
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.2);
+    }
+
+
+/***********************************
+ ***  7. TYPOGRAPHIC FLOURISHES  ***
+ ***********************************/
+
+/**
+ * Supertext, e.g. Januarth 15^th
+ */
+sup { 
+    vertical-align: super;
+    font-size: smaller;
+}
+/**
+ * Abbreviations (i.e. Acronyms) are more pleasing if they're distinguished
+ * from regular prose with small caps.
+ */
+abbr,
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
+    font-variant-caps: all-small-caps;
+}
+/**
+ * Deletions, i.e. ~slashed through~ text.
+ * Small is HTML "weak"/secondary text.
+ */
+del, del code,
+small,
+.weak {
+    color: var(--secondary-foreground);
+}
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+/**
+ * Accent colored text selections
+ */
+::selection {
+    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
+    color: white;
+}
+    #dark ::selection {
+        background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
+        color: white;
+    }
+
+
+/************************
+ ***  8. ADMONITIONS  ***
+ ************************/
+
+.admonition {
+    padding: 1em;
+    margin-bottom: var(--gap);
+
+    border-top: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-border-saturation), calc(var(--widget-border-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    border-right: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-radius: 0.25em;
+
+    color: var(--primary-foreground);
+    background-color: var(--widget-background);
+    box-shadow: var(--shadow);
+}
+/**
+ * The ".admonition-title a" declaration is intentional, otherwise if the
+ * title of the admonition is a link (like with Tweet Admonitions!), then the
+ * default line height of <a> elements is applied, and the title gets out of
+ * alignment.
+ */
+.admonition-title,
+.admonition-title a {
+    line-height: var(--header-line-height);
+    margin-top: 0;
+    margin-bottom: var(--half-gap);
+}
+/**
+ * Since the admonition itself is padded, if the content's last child's
+ * margin-bottom is still respected, it will artifically extend the
+ * admonition's bottom padding.
+ */
+.admonition *:last-child {
+    margin-bottom: 0;
+}
+.admonition .admonition-title:before,
+.admonition > p:first-child:not(.admonition-title):before {
+    font-weight: 700;
+}
+/**
+ * The icon font size for Admonitions needs to be slightly shrunk (especially
+ * if applied to admonition-titles), looks ridiculously large otherwise.
+ */
+.admonition .admonition-title:before {
+    font-size: 0.833em;
+}
+/**
+ * Simple, Gray "Asides" (No icon and heavy left border)
+ */
+.admonition.aside {
+    border-left: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+}
+    /**
+     * Disable the icon
+     */
+    .admonition.aside .admonition-title:before,
+    .admonition.aside > p:first-child:before {
+        content: none;
+    }
+/**
+ * [i]: Default Gray Info Admonition
+ */
+.admonition > p:first-child:before,
+.admonition .admonition-title:before {
+    content: "i";
+    position: absolute;
+    color: white;
+    border-radius: 25%;
+    height: 1.45em;
+    width: 0.86em;
+    padding-left: 0.625em;
+    margin-left: -2em;
+    background-color: hsl(var(--accent-hue), var(--widget-border-saturation), calc(var(--widget-border-lightness) + var(--admonition-left-border-lightness-adjustment)));
+}
+/**
+ * [i]: Green Info Admonition
+ */
+.admonition.success,
+.admonition.green {
+    background-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+    border-left-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+    border-right-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.05);
+}
+    .admonition.success .admonition-title:before,
+    .admonition.success p:first-child:before,
+    .admonition.green .admonition-title:before,
+    .admonition.green p:first-child:before {
+        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+    }
+    .admonition.success a,
+    .admonition.green a {
+        color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+    }
+    .admonition.success a:hover,
+    .admonition.green a:hover {
+        background-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+    }
+/**
+ * [!]: Red Danger Admonition
+ */
+.admonition.error,
+.admonition.danger,
+.admonition.warning,
+.admonition.red {
+    background-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
+    border-left-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+    border-right-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.05);
+}
+    .admonition.error .admonition-title:before,
+    .admonition.danger .admonition-title:before,
+    .admonition.warning .admonition-title:before,
+    .admonition.red .admonition-title:before,
+    .admonition.error > p:first-child:before,
+    .admonition.danger > p:first-child:before,
+    .admonition.warning > p:first-child:before,
+    .admonition.red > p:first-child:before {
+        content: "!";
+        padding-left: 0.6em;
+        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+    }
+    .admonition.error a,
+    .admonition.danger a,
+    .admonition.warning a,
+    .admonition.red a {
+        color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+    }
+    .admonition.error a:hover,
+    .admonition.danger a:hover,
+    .admonition.warning a:hover,
+    .admonition.red a:hover {
+        background-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.1);
+    }
+/**
+ * [?]/[i]: Blue Question and Info Admonitions
+ */
+.admonition.question,
+.admonition.hint,
+.admonition.note,
+.admonition.info,
+.admonition.tip,
+.admonition.example,
+.admonition.blue {
+    background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+    border-left-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+    border-right-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.05);
+}
+    .admonition.question .admonition-title:before,
+    .admonition.question > p:first-child:before {
+        content: "?";
+        width: 0.975em;
+        padding-left: 0.475em;
+    }
+    .admonition.question .admonition-title:before,
+    .admonition.hint .admonition-title:before,
+    .admonition.note .admonition-title:before,
+    .admonition.info .admonition-title:before,
+    .admonition.tip .admonition-title:before,
+    .admonition.example .admonition-title:before,
+    .admonition.blue .admonition-title:before,
+    .admonition.question > p:first-child:before,
+    .admonition.hint > p:first-child:before,
+    .admonition.note > p:first-child:before,
+    .admonition.info > p:first-child:before,
+    .admonition.tip > p:first-child:before,
+    .admonition.example > p:first-child:before,
+    .admonition.blue > p:first-child:before {
+        background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+    }
+    .admonition.question a,
+    .admonition.hint a,
+    .admonition.note a,
+    .admonition.info a,
+    .admonition.tip a,
+    .admonition.example a,
+    .admonition.blue a {
+        color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+    }
+    .admonition.question a:hover,
+    .admonition.hint a:hover,
+    .admonition.note a:hover,
+    .admonition.info a:hover,
+    .admonition.tip a:hover,
+    .admonition.example a:hover,
+    .admonition.blue a:hover {
+        background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+    }
+/**
+ * [★]/[i]: Yellow Star & Info Admonitions
+ */
+.admonition.update,
+.admonition.yellow,
+.admonition.star {
+    background-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
+    border-left-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+    /**
+     * The border vanishes with the yellow access, but only in dark mode. Tone
+     * the opacity slightly up in light only.
+     */
+    border-right-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
+    border-bottom-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
+    border-top-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
+    box-shadow: 0em 1em 2.75em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.05);
+}
+    /**
+     * Reapply the "normal" border settings, in dark mode the nroaml yellow border shows up perfectly fine. 
+     */
+    #dark .admonition.update,
+    #dark .admonition.yellow,
+    #dark .admonition.star {
+        border-right-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
+        border-bottom-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
+        border-top-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
+    }
+    /**
+     * That THICC left boarder is just too much in dark mode for the yellow access, specifically.
+     * Tone that down ever so slightly...
+     */
+    #dark .admonition.update,
+    #dark .admonition.yellow,
+    #dark .admonition.star {
+        border-left-color: hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) - 7%));
+    }
+    #dark .admonition.update .admonition-title:before,
+    #dark .admonition.update > p:first-child:before,
+    #dark .admonition.yellow .admonition-title:before,
+    #dark .admonition.yellow > p:first-child:before,
+    #dark .admonition.star .admonition-title:before,
+    #dark .admonition.star > p:first-child:before {
+        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) - 7%));
+    }
+    .admonition.star > p:first-child:before,
+    .admonition.star .admonition-title:before {
+        position: absolute;
+        content: '★';
+        width: 0.875em;
+        padding-left: 0.2175em;
+        padding-right: 0.3575em;
+        margin-left: -1.975em;
+    }
+    .admonition.update .admonition-title:before,
+    .admonition.update > p:first-child:before,
+    .admonition.yellow .admonition-title:before,
+    .admonition.yellow > p:first-child:before,
+    .admonition.star .admonition-title:before,
+    .admonition.star > p:first-child:before {
+        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+    }
+    .admonition.update a,
+    .admonition.yellow a,
+    .admonition.star a {
+        color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+    }
+    .admonition.update a:hover,
+    .admonition.yellow a:hover,
+    .admonition.star a:hover {
+        background-color: hsla(var(--yellow-hue), calc(var(--yellow-saturation) - 30%), var(--yellow-lightness), var(--highlight-background-opacity));
+    }
+/**
+ * [🐦]: Teal Twitter Admonitions
+ */
+.admonition.tweet {
+    border-left-color: hsl(203, 89%, 53%);
+    border-right-color: hsla(203, 89%, 53%, 0.15);
+    border-top-color: hsla(203, 89%, 53%, 0.15);
+    border-bottom-color: hsla(203, 89%, 53%, 0.15);
+
+    background-color: hsla(203, 89%, 53%, 0.1);
+    box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
+}
+    #dark .admonition.tweet {
+        background-color: hsla(203, 89%, 53%, 0.15);
+        box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
+    }
+.admonition.tweet .admonition-title:before,
+.admonition.tweet > p:first-child:before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjUwIDI1MCcgdmVyc2lvbj0nMS4xJyB4bWxucz0n aHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8v d3d3LnczLm9yZy8xOTk5L3hsaW5rJz4gPGcgc3Ryb2tlPSdub25lJyBzdHJva2Ut d2lkdGg9JzEnIGZpbGw9J25vbmUnIGZpbGwtcnVsZT0nZXZlbm9kZCc+PHBhdGgg ZD0nTTc4LjYyLDI0OS41OSBDMTcyLjk2LDI0OS41OSAyMjQuNTYsMTcxLjQzIDIy NC41NiwxMDMuNjUgQzIyNC41NiwxMDEuNDMgMjI0LjU2LDk5LjIyIDIyNC40MSw5 Ny4wMiBDMjM0LjQ0ODMxNCw4OS43NTkxMDg2IDI0My4xMTM1NTUsODAuNzY4Nzk0 IDI1MCw3MC40NyBDMjQwLjYzODc5MSw3NC42MTgwMTc3IDIzMC43MDgyOTMsNzcu MzM4Mjg2NSAyMjAuNTQsNzguNTQgQzIzMS4yNDc0NCw3Mi4xMjk4MjA2IDIzOS4y NjEyMzUsNjIuMDQ3NzE5OSAyNDMuMDksNTAuMTcgQzIzMy4wMjE1NzUsNTYuMTQ0 NTUzMiAyMjIuMDA2NDYxLDYwLjM1NTEyMDIgMjEwLjUyLDYyLjYyIEMxOTQuNjIw ODI4LDQ1LjcxMzk0MjggMTY5LjM1NzE5NCw0MS41NzYxMjU4IDE0OC44OTU0OTMs NTIuNTI2Nzk5MyBDMTI4LjQzMzc5Miw2My40Nzc0NzI3IDExNy44NjI3NSw4Ni43 OTMyNTczIDEyMy4xMSwxMDkuNCBDODEuODY4OTU3NCwxMDcuMzMyNDk1IDQzLjQ0 NDc1NzgsODcuODUzMjMyNyAxNy40LDU1LjgxIEMzLjc4NjIyNzU2LDc5LjI0NjQ0 NzMgMTAuNzM5ODc4OCwxMDkuMjI4NTk1IDMzLjI4LDEyNC4yOCBDMjUuMTE3NDEy LDEyNC4wMzgwNzUgMTcuMTMyNzkzNywxMjEuODM2MTMyIDEwLDExNy44NiBDMTAs MTE4LjA3IDEwLDExOC4yOSAxMCwxMTguNTEgQzEwLjAwNjY4MTMsMTQyLjkyNTkz IDI3LjIxNzUxNDksMTYzLjk1NTM1MiA1MS4xNSwxNjguNzkgQzQzLjU5ODY5Niwx NzAuODQ5NCAzNS42NzU4MDU5LDE3MS4xNTA0NDMgMjcuOTksMTY5LjY3IEMzNC43 MDk0NzkzLDE5MC41NjQyMjggNTMuOTY1NzQ1NiwyMDQuODc3ODM5IDc1LjkxLDIw NS4yOSBDNTcuNzQ3MzUwNCwyMTkuNTY0MzE5IDM1LjMxMDU5NTEsMjI3LjMxMzI3 NyAxMi4yMSwyMjcuMjkgQzguMTI5MDM1NjksMjI3LjI4MjE2NSA0LjA1MjA0MDY1 LDIyNy4wMzUwNzUgMCwyMjYuNTUgQzIzLjQ1NjM1OTUsMjQxLjYwMjc2NiA1MC43 NDkxMzQsMjQ5LjU4NzE2OSA3OC42MiwyNDkuNTUnIGZpbGw9JyNGRkZGRkYnIGZp bGwtcnVsZT0nbm9uemVybyc+PC9wYXRoPjwvZz48L3N2Zz4=");
+    position: absolute;
+    border-radius: 25%;
+    height: 1.45em;
+    width: 0.875em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    margin-left: -2em;
+    background-color: #1DA1F2;
+}
+    .admonition.tweet g {
+        fill: white;
+    }
+.admonition.tweet a,
+#dark .admonition.tweet a {
+    color: #1DA1F2;
+}
+.admonition.tweet a:hover {
+    background-color: hsla(203, 89%, 53%, 0.1);
+}
+    #dark .admonition.tweet a:hover {
+        background-color: hsla(203, 89%, 53%, 0.15);
+    }
+
+
+/*****************
+ ***  9. MENU  ***
+ *****************/
+
+/*
+display: inline-block;
+    vertical-align: middle;
+
+    font-style: normal;
+    font-size: 0.53em;
+    font-weight: 600;
+    line-height: 1em;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    margin-top: -1px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 1em;
+ */
+menu {
+    position: absolute;
+    z-index: 10000;
+
+    font-size: 1.3em;
+    font-weight: 600;
+
+    width: 100%;
+
+    background-color: var(--widget-background);
+    box-shadow: var(--shadow);
+}
+#mainmenu {
+    border-bottom: 1px solid var(--widget-border);
+}
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        menu {
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+    }
+menu ul {
+    line-height: var(--header-line-height);
+    margin-top: var(--gap);
+    margin-bottom: var(--half-gap);
+}
+/**
+ * On small devices, the menu bar floats with absolute positioning above the
+ * page. When this happens, the content needs a spacer so it "starts"
+ * comfortably away from the floating menu. Otherwise, the menu covers the
+ * content while floating.
+ */
+#menu-height-offset {
+    height: 10.9em;
+}
+@supports (padding-left: env(safe-area-inset-left)) {
+    menu {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+}
+    #mainmenu {
+        z-index: 5000;
+        height: 100%;
+    }
+    #mainmenu a:hover {
+        background-color: unset !important;
+    }
+    menu ul {
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+        menu ul li {
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 0.5em;
+            padding-top: 0.725em;
+            min-width: 24vw; /* 32vw; */
+        }
+        /*menu ul li.setting-toggles {
+            min-width: 18vw;
+        }*/
+        .setting-toggles > div {
+            text-align: center;
+        }
+        .setting-toggles button.pill {
+            width: 4.5em;
+        }
+        menu ul a {
+            margin-bottom: 0;
+            padding-bottom: 0.5em;
+            padding-top: 0.725em;
+            min-width: 28.5vw;
+            margin-right: -0.125rem;
+            margin-left: -0.125rem;
+        }
+    menu header {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000; /* Otherwise the happy iMac can't accept hover events */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- TYPEFACE ----- */
+
 pre,
 code {
     /* This isn't perfect. Ideally, we'd use a monospace variant of the "system-ui"
@@ -129,100 +1213,21 @@ code {
                  Courier,
                  monospace !important;
 }
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-
-/* ----- KERNING ----- */
-input,
-textarea {
-    /* Better experience for user while entering text */
-    letter-spacing: 1px;
-}
 p > code {
     letter-spacing: -0.0375em;
 }
 
 
 /* ----- SIZES, MARGINS, AND WEIGHTS ----- */
-html {
-    font-size: 14px;
-    font-weight: 400;
-}
-body,
-.bigfoot-footnote__content p,
-.footnote ol, .footnote ol li p, /* Marcdown */
-.footnotes ol, .footnotes ol li p, /* Standard */
-dt, dd,
-figcaption,
-code,
-input, select, textarea, button,
-small {
-    /* 1.5 is too loose, ~1.2-1.45 is desired, depending on typeface */
-    line-height: 1.45em;
-}
-menu,
 .button {
     font-size: 1.3rem;
 }
-/*
-Following the 1.2 Minor Third type scale
-http://type-scale.com
-*/
-h1 {
-    font-size: 2.074em;
-}
-h2 {
-    font-size: 1.728em;
-}
-h3 {
-    font-size: 1.44em;
-}
-h4, .admonition-title {
-    font-size: 1.2em;
-}
-h5 {
-    font-size: 1em;
-}
-h6, .anchor {
-    font-size: 0.833em;
-}
-h1, h2, h3, h4, h5, h6, time,
-.admonition-title,
-menu ul {
-    /* ~1.1em-1.2em preferred, depending on typeface */
-    line-height: 1.2em;
-    margin: 1.414em 0 0.5em;
-}
-time {
-    font-size: 1rem;
-    line-height: 1.3em;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    /* Always have time below whatever content it's representing */
-    display: block;
-    font-weight: 600;
-}
-    .toc time {
-        display: none;
-    }
-mark.tag {
-    font-size: 0.53em;
-}
+
+
+
 p,
 blockquote,
-ol, ul, ol li, ul li,
-dl, table,
 .highlight, .codehilite,
-.admonition,
-details,
 .box {
     margin-top: 0;
     margin-bottom: 1.3rem;
@@ -230,21 +1235,6 @@ details,
 .uml-sequence-diagram, .uml-flowchart {
     margin-top: 0 !important;
     margin-bottom: 1.3em !important;
-}
-    ol li, ul li {
-        margin-top: 0;
-        margin-bottom: 0.65em; /* 1.3 base type bottom margin / 2 */
-    }
-    li ol, li ul {
-        margin-top: 0.65em; /* 1.3 base type bottom margin / 2 */
-        margin-bottom: 0;
-    }
-        li ol.bare-list, li ul.bare-list {
-            margin-top: 0;
-        }
-ol, ul,
-dl dd {
-    margin-left: 1.95em; /* 1.3 base type bottom margin * 1.5 */
 }
 blockquote {
     padding-left: 0.975em;
@@ -274,8 +1264,7 @@ pre {
     pre code {
         font-size: inherit;
     }
-code,
-mark {
+code {
     padding: 0 0.325em;
 }
 code a {
@@ -283,99 +1272,21 @@ code a {
     margin-left: -0.325em !important;
     margin-right: -0.325em !important;
 }
-mark.tag {
-    padding: 0.25em 0.75em;
-    line-height: 2.6em;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-}
-sup { 
-    vertical-align: super;
-    font-size: smaller;
-}
+
 
 
 /* ----- LISTS ----- */
 /* Normal lists */
-ol {
-    list-style-type: decimal;
-}
-    ol ol {
-        list-style-type: upper-alpha;
-    }
-        ol ol ol {
-            list-style-type: upper-roman;
-        }
-ul {
-    list-style-type: disc;
-}
-    ul ul {
-        list-style-type: none;
-    }
-        ul ul:not(.bare-list) li:before {
-            content: "-";
-            position: absolute;
-            margin-left: -1em;
-        }
-        ul ul ul {
-            list-style-type: circle;
-        }
-            ul ul ul:not(.bare-list) li:before {
-                content: none;
-                margin-left: 0;
-            }
-            ul ul ul ul {
-                list-style-type: square
-            }
-/* Raw list of items, no bullets, padding, or frills at all (good for UI element lists) */
-.bare-list {
-    list-style: none;
-    padding-left: 0;
-}
-    .bare-list li {
-        margin: 0;
-    }
-    .compact-list li {
-        margin: 0;
-    }
-.emoji-list {
-    margin-left: 0.25em !important;
-}
-/* No paragraph margins, keep them one logical block (good for short lists) */
-.compact-list li,
-.compact-list ul,
-.compact-list ol,
-.toc li,
-.toc ul,
-.toc ol {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-/* Checklists */
-.task-list {
-    list-style-type: none;
-    margin-left: 0.49em;
-}
-    .task-list-item {
-        text-indent: -1.25em;
-        padding-left: 1.25em;
-    }
-    .task-list input {
-        padding: 0;
-        margin: 0;
-        height: 1em;
-        width: 1em;
-    }
-/* Definition Lists */
-dt, dd {
-    text-align: left;
-}
-    dd p:last-child {
-        margin-bottom: 0;
-    }
+
+
+
+/** TODO THIS NAME SUCKS ASS 
+ * TODO TREAT AS CARDS!!!! THAT'S WHAT THEY ARE!!!*/
 .summary-list {
     list-style: none;
     padding-left: 0;
+    margin-left:0;
+    margin-bottom:0;
 }
     .summary-list li a {
         display: block;
@@ -395,48 +1306,12 @@ dt, dd {
         display: none !important;
     }
 
-
-/* ----- TEXT STYLES ----- */
-h1 {
-    font-weight: 900;
-}
-h2 {
-    font-weight: 800;
-}
-h3,
-strong,
-.admonition-title,
-dt,
 button,
-.button,
-table.fancy thead, table.fancy th {
+.button {
     font-weight: 700;
 }
-h4 {
-    font-weight: 600;
-}
-h5,
-menu {
-    font-weight: 500;
-}
-h6 {
-    font-weight: 400;
-}
-em,
-time,
 blockquote {
     font-style: italic;
-}
-.small-caps,
-abbr {
-    -moz-font-feature-settings: "c2sc", "smcp";
-    -ms-font-feature-settings: "c2sc", "smcp";
-    -webkit-font-feature-settings: "c2sc", "smcp";
-    font-feature-settings: "c2sc", "smcp";
-    font-variant-caps: all-small-caps;
-}
-.underline {
-    text-decoration: underline;
 }
 blockquote {
     border-left: 0.2em solid #000000;
@@ -478,8 +1353,7 @@ summary {
     margin-left: 0;
     margin-right: 0;
 }
-main a,
-mark {
+main a {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
 }
@@ -494,27 +1368,8 @@ figure a {
 
 
 /* ----- MENU ----- */
-menu {
-    text-align: left;
-    position: absolute;
-    width: 100%;
-    z-index: 10000;
-    text-align: left;
-    width: 100%;
-    opacity: 1;
 
-    padding-left: 0;
-    padding-right: 0;
-    border-bottom: 1px solid white;
-}
-@supports (padding-left: env(safe-area-inset-left)) {
-    menu {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
-    }
-}
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    menu,
     .popup,
     .bigfoot-footnote__content,
     .bigfoot-footnote__tooltip,
@@ -525,50 +1380,6 @@ menu {
         backdrop-filter: saturate(180%) blur(20px);
     }
 }
-    #mainmenu {
-        z-index: 5000;
-        height: 100%;
-    }
-    #mainmenu a:hover {
-        background-color: unset !important;
-    }
-    menu ul {
-        position: relative;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-        menu ul li {
-            display: inline-block;
-            text-align: center;
-            margin: 0;
-            padding-bottom: 0.5em;
-            padding-top: 0.725em;
-            min-width: 25vw; /* 32vw; */
-        }
-        menu ul li.setting-toggles {
-            min-width: 18vw;
-        }
-        menu ul a {
-            margin-bottom: 0;
-            padding-bottom: 0.5em;
-            padding-top: 0.725em;
-            min-width: 28.5vw;
-            margin-right: -0.125rem;
-            margin-left: -0.125rem;
-        }
-    menu header {
-        display: inline-block;
-        position: relative;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 1000; /* Otherwise the happy iMac can't accept hover events */
-    }
-
 /* Settings "button" (aA) */
 #settings-toggle {
     height: 1.5em;
@@ -686,16 +1497,14 @@ menu {
 
 .float-menu-for-hiding menu {
     position: fixed;
-    transform: translate(0, -5.35em);
+    transform: translate(0, -5.825em);
 }
 .float-menu-for-hiding menu.hide-for-small-device {
     opacity: 0;
     pointer-events: none;
 }
 
-#menu-height-offset {
-    height: 10.125em;
-}
+
 
 
 /* ----- LOGO ----- */
@@ -788,20 +1597,29 @@ menu header:hover #logo #logo-eye-opened,
     align-items: stretch;
     width: 100%;
     display: grid;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: 0;
     margin-right: 0;
     gap: 1.3em;
 }
+    .row.inline {
+        justify-content: center;
+        display: inline-flex;
+    }
 .column {
     display: flex;
     flex-direction: column;
     flex-basis: 0;
-    flex-grow: 1;
+    flex-grow: 2;
     flex-shrink: 1;
     margin-left: 0;
     margin-right: 0;
 }
+    .column.fizz {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
 
 .box,
 #dark .show-when-dark.box,
@@ -828,14 +1646,28 @@ menu header:hover #logo #logo-eye-opened,
     flex-flow: row wrap;
     align-items: flex-start;
     width: auto;
-    max-woidth: 33em;
+    max-width: 33em;
     gap: 1.3em;
 }
-.flex main .card,
-.flex main .card.large-when-small {
+.flex .card {
     max-width: unset;
     width: auto;
     min-width: unset;
+}
+.flex .card {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.flex article {
+    max-width: 33em;
+    width: auto;
+    margin: 2.6em auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.flex article figure {
+    margin-top: 0 !important;
 }
 .column > h1,
 .column > h2,
@@ -910,27 +1742,20 @@ button.pill:hover:active {
     will-change: transform;
 }
 
-.card.large,
-.card.large-when-small {
-    margin-left: .975rem;
-    margin-right: .975rem;
-    margin-bottom: 1.95rem;
-    max-width: 30em;
-    text-align: center;
-}
-.card.large,
-.card.large-when-small {
-    width: 89vw;
-}
-.column a:hover .card img {
+.column a:hover .card img,
+.column a:hover .card svg,
+.column .card:hover video {
     transform: scale(1.05);
 }
-.column a .card img {
+.column a .card img,
+.column a .card svg,
+.column .card video {
     transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
-.cards a:hover {
+.cards a:hover,
+.column > a:hover {
     background-color: transparent !important;
 }
 .card.bleed {
@@ -956,7 +1781,14 @@ button.pill:hover:active {
         margin-bottom: 0 !important;
         padding-bottom: 0;
     }
-    .articles .card .label {
+    .articles a,
+    .cards a {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .articles .card .label,
+    .cards .card .label {
         /**
          * Both of these are required to have the label "float" over the image
          * when it "zooms" slightly on hover. It's not great...
@@ -976,6 +1808,7 @@ button.pill:hover:active {
     padding-right: 5%;
     margin-bottom: 1.3em;
     margin-top: 1.3em;
+    text-align: center;
 }
 .card .content .logo {
     width: auto;
@@ -1002,9 +1835,6 @@ button.pill:hover:active {
     padding-right: 1em;
     margin-top: 1em;
 }
-.card.large .label {
-    margin-top: 1.3em;
-}
     .card .label .primary,
     .card .label .secondary {
         text-align: center;
@@ -1020,16 +1850,25 @@ button.pill:hover:active {
     margin-bottom: 0;
 }
 .card .label .secondary {
-    line-height: 1.4em;
+    line-height: 1.3em;
 }
 .card .label .primary {
     font-weight: bold;
-    line-height: 1.4em;
+    line-height: 1.2em;
+    margin-bottom: 0.3rem;
+}
+/**
+ * There's more text to article cards than the secondary of "normal"
+ * cards. Adding a bit more visual separation when the text is that
+ * long makes things more pleasing to the eye.
+ */
+.articles .card .label .primary {
     margin-bottom: 0.5em;
 }
-.card time {
+.card time,
+.summary-list time {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.25em;
 }
 
 
@@ -1048,15 +1887,7 @@ hr {
 .button-group a:hover {
     background-color: transparent !important;
 }
-form {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: inline-block;
-}
-form,
 input,
-textarea,
-select,
 button,
 .button {
     width: 100%;
@@ -1065,8 +1896,6 @@ textarea {
     max-width: 100%;
 }
 input,
-textarea,
-select,
 button,
 .button {
     display: block;
@@ -1081,12 +1910,13 @@ button,
 .button {
     border-radius: 0.65em;
 }
+.button span {
+    text-align: center;
+}
 .social .button {
     border-radius: 1.3em;
 }
-input,
-textarea,
-select {
+input {
     border-radius: 0.5em;
 }
 button,
@@ -1148,32 +1978,11 @@ input[type='checkbox'] {
     width: 1rem;
     display: inline-block;
 }
-/* Override iOS textbox shadow */
-input[type="text"],
-input[type="submit"],
-input[type="email"],
-input[type="password"],
-textarea {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-    box-shadow: none !important;
-}
-input,
-input[type="text"],
-input[type="submit"],
-input[type="email"],
-input[type="password"],
-textarea {
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), inset 0 0.1075em 0.2175em -0.2em rgba(0, 0, 0, 0.2) !important;
-}
-input,
-textarea {
+input {
     border: 1px solid #000000;
     width: 100%;
 }
 input:focus,
-textarea:focus,
 summary {
     outline: 0;
 }
@@ -1199,9 +2008,6 @@ input:required {
 summary {
     cursor: pointer;
     display: inline-block;
-}
-details {
-    text-align: left;
 }
 
 a:hover {
@@ -1243,217 +2049,9 @@ a:hover {
 }
 
 
-/* ----- TABLES ----- */
-table {
-    width: auto;
-    word-break: normal;
-    word-break: keep-all;
-    border-collapse: collapse;
-    overflow-x: auto;
-}
-thead,
-th {
-    font-weight: bold;
-}
-td,
-th {
-    text-align: left;
-}
-table td,
-table th {
-    border: 1px solid black;
-}
-tr td,
-tr th {
-    padding-left: 1.3em;
-    padding-right: 1.3em;
-}
-tr td:first-child,
-tr th:first-child {
-    padding-left: 1.3em;
-}
-tr td:last-child,
-tr th:last-child {
-    padding-right: 1.3em;
-}
-tbody tr:last-child {
-    border-bottom: unset;
-}
-th,
-td {
-    padding-top: 0.1625em;
-    padding-bottom: 0.1625em;
-}
-td {
-    border: none;
-}
-tr:last-child td {
-    padding-bottom: 0;
-}
 
 
-/* ----- TAGS & HIGHLIGHTING ----- */
-mark {
-    word-wrap: break-word;
-    margin-left: 0em;
-    margin-right: 0em;
-    font-style: normal;
-}
-    mark.tag {
-        display: inline-block;
-        line-height: 1em;
-        vertical-align: middle;
-        margin-top: -0.2em;
-        border-radius: 1em;
-        border: unset;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
-        font-weight: 600;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    }
-    time mark.tag,
-    li mark.tag {
-        margin-top: -0.4em;
-    }
 
-
-/* ----- ADMONITIONS ----- */
-.admonition {
-    padding: 1em;
-    border-radius: 0.25em;
-    border-left: 0.5em solid gray;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-.admonition-title {
-    margin-top: 0em;
-}
-.admonition p:last-child,
-.admonition ul:last-child,
-.admonition ol:last-child,
-.admonition table:last-child,
-.admonition .admonition {
-    margin-bottom: 0;
-}
-/**
- * Admonition icon
- */
-.admonition > p:first-child:before,
-.admonition .admonition-title:before {
-    color: white;
-    position: absolute;
-    content: "i";
-    border-radius: 25%;
-    height: 1.45em;
-    width: 0.875em;
-    padding-left: 0.625em;
-    margin-left: -2em;
-}
-.admonition.error .admonition-title:before,
-.admonition.danger .admonition-title:before,
-.admonition.warning .admonition-title:before,
-.admonition.red .admonition-title:before,
-.admonition.error p:first-child:before,
-.admonition.danger p:first-child:before,
-.admonition.warning p:first-child:before,
-.admonition.red p:first-child:before {
-    content: "!" !important;
-}
-.admonition.error .admonition-title:before,
-.admonition.danger .admonition-title:before,
-.admonition.warning .admonition-title:before,
-.admonition.red .admonition-title:before,
-.admonition.error > p:first-child:before,
-.admonition.danger > p:first-child:before,
-.admonition.warning > p:first-child:before,
-.admonition.red > p:first-child:before {
-    width: 0.9em;
-    padding-left: 0.6em;
-}
-.admonition.question .admonition-title:before,
-.admonition.question p:first-child:before {
-    content: "?" !important;
-    width: 0.9em;
-    padding-left: 0.475em;
-}
-.admonition.aside {
-    border-left: 1px solid gray;
-}
-.admonition.aside .admonition-title:before,
-.admonition.aside p:first-child:before {
-    content: none !important;
-}
-.admonition > p:first-child:not(.admonition-title):before {
-    font-size: 0.9996em;
-    font-weight: 700;
-}
-.admonition .admonition-title:before {
-    font-size: 0.833em;
-}
-/**
- * If we have a title, the icon is applied to that, so erase it
- * from the first paragraph.
- */
-.admonition .admonition-title + p:before {
-    content: none !important;
-}
-
-.admonition.tweet {
-    background-color: hsla(203, 89%, 53%, 0.1);
-    box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
-}
-#dark .admonition.tweet {
-    background-color: hsla(203, 89%, 53%, 0.15);
-    box-shadow: 0em 1em 2.75em hsla(203, 89%, 53%, 0.1), 0em 0.22em 0.6em hsla(203, 89%, 53%, 0.05);
-}
-.admonition.tweet,
-#dark .admonition.tweet {
-    border-left-color: hsl(203, 89%, 53%) !important;
-    border-right-color: hsla(203, 89%, 53%, 0.15) !important;
-    border-top-color: hsla(203, 89%, 53%, 0.15) !important;
-    border-bottom-color: hsla(203, 89%, 53%, 0.15) !important;
-}
-.admonition.tweet > p:first-child:before,
-.admonition.tweet .admonition-title:before {
-    position: absolute;
-    content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjUwIDI1MCcgdmVyc2lvbj0nMS4xJyB4bWxucz0n aHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8v d3d3LnczLm9yZy8xOTk5L3hsaW5rJz4gPGcgc3Ryb2tlPSdub25lJyBzdHJva2Ut d2lkdGg9JzEnIGZpbGw9J25vbmUnIGZpbGwtcnVsZT0nZXZlbm9kZCc+PHBhdGgg ZD0nTTc4LjYyLDI0OS41OSBDMTcyLjk2LDI0OS41OSAyMjQuNTYsMTcxLjQzIDIy NC41NiwxMDMuNjUgQzIyNC41NiwxMDEuNDMgMjI0LjU2LDk5LjIyIDIyNC40MSw5 Ny4wMiBDMjM0LjQ0ODMxNCw4OS43NTkxMDg2IDI0My4xMTM1NTUsODAuNzY4Nzk0 IDI1MCw3MC40NyBDMjQwLjYzODc5MSw3NC42MTgwMTc3IDIzMC43MDgyOTMsNzcu MzM4Mjg2NSAyMjAuNTQsNzguNTQgQzIzMS4yNDc0NCw3Mi4xMjk4MjA2IDIzOS4y NjEyMzUsNjIuMDQ3NzE5OSAyNDMuMDksNTAuMTcgQzIzMy4wMjE1NzUsNTYuMTQ0 NTUzMiAyMjIuMDA2NDYxLDYwLjM1NTEyMDIgMjEwLjUyLDYyLjYyIEMxOTQuNjIw ODI4LDQ1LjcxMzk0MjggMTY5LjM1NzE5NCw0MS41NzYxMjU4IDE0OC44OTU0OTMs NTIuNTI2Nzk5MyBDMTI4LjQzMzc5Miw2My40Nzc0NzI3IDExNy44NjI3NSw4Ni43 OTMyNTczIDEyMy4xMSwxMDkuNCBDODEuODY4OTU3NCwxMDcuMzMyNDk1IDQzLjQ0 NDc1NzgsODcuODUzMjMyNyAxNy40LDU1LjgxIEMzLjc4NjIyNzU2LDc5LjI0NjQ0 NzMgMTAuNzM5ODc4OCwxMDkuMjI4NTk1IDMzLjI4LDEyNC4yOCBDMjUuMTE3NDEy LDEyNC4wMzgwNzUgMTcuMTMyNzkzNywxMjEuODM2MTMyIDEwLDExNy44NiBDMTAs MTE4LjA3IDEwLDExOC4yOSAxMCwxMTguNTEgQzEwLjAwNjY4MTMsMTQyLjkyNTkz IDI3LjIxNzUxNDksMTYzLjk1NTM1MiA1MS4xNSwxNjguNzkgQzQzLjU5ODY5Niwx NzAuODQ5NCAzNS42NzU4MDU5LDE3MS4xNTA0NDMgMjcuOTksMTY5LjY3IEMzNC43 MDk0NzkzLDE5MC41NjQyMjggNTMuOTY1NzQ1NiwyMDQuODc3ODM5IDc1LjkxLDIw NS4yOSBDNTcuNzQ3MzUwNCwyMTkuNTY0MzE5IDM1LjMxMDU5NTEsMjI3LjMxMzI3 NyAxMi4yMSwyMjcuMjkgQzguMTI5MDM1NjksMjI3LjI4MjE2NSA0LjA1MjA0MDY1 LDIyNy4wMzUwNzUgMCwyMjYuNTUgQzIzLjQ1NjM1OTUsMjQxLjYwMjc2NiA1MC43 NDkxMzQsMjQ5LjU4NzE2OSA3OC42MiwyNDkuNTUnIGZpbGw9JyNGRkZGRkYnIGZp bGwtcnVsZT0nbm9uemVybyc+PC9wYXRoPjwvZz48L3N2Zz4=");
-    border-radius: 25%;
-    height: 1.45em;
-    width: 0.875em;
-    padding-left: 0.3125em;
-    padding-right: 0.3125em;
-    margin-left: -2em;
-}
-.admonition.tweet g {
-    fill: white;
-}
-.admonition.tweet a,
-#dark .admonition.tweet a {
-    color: #1DA1F2;
-}
-.admonition.tweet a:hover {
-    background-color: hsla(203, 89%, 53%, 0.1);
-}
-#dark .admonition.tweet a:hover {
-    background-color: hsla(203, 89%, 53%, 0.15);
-}
-.admonition.tweet .admonition-title:before,
-.admonition.tweet p:first-child:before,
-#dark .admonition.tweet .admonition-title:before,
-#dark .admonition.tweet p:first-child:before {
-    background-color: #1DA1F2 !important;
-}
-.admonition.award > p:first-child:before,
-.admonition.award .admonition-title:before {
-    position: absolute;
-    content: '★';
-    border-radius: 25%;
-    height: 1.45em;
-    width: 0.875em;
-    padding-left: 0.2125em;
-    padding-right: 0.3625em;
-    margin-left: -1.975em;
-}
 
 
 /* ----- HINTS ----- */
@@ -1483,7 +2081,9 @@ img {
     width: auto\9;
 }
 
-
+figure {
+    text-align: center;
+}
 figure p {
     text-align: center;
     margin-top: 0;
@@ -1589,6 +2189,7 @@ article > p > img {
     border-radius: 0;
     margin-top: 1.3em;
     margin-bottom: 2.6em;
+    text-align: center;
 }
 .edge-to-edge.infinite {
     margin-bottom: 1.3em;
@@ -1667,6 +2268,7 @@ figure.edge-to-edge.three-images.shadow {
 .inline,
 .half-inline {
     margin-bottom: 1.3em;
+    text-align: center;
 }
 .inline img,
 .inline video {
@@ -1826,23 +2428,6 @@ h2 img {
     vertical-align: text-top;
     margin-top: 0.125em;
     max-width: unset;
-}
-
-.backdrop {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -500;
-    opacity: 0.01;
-}
-#dark .backdrop {
-    opacity: 0.025;
-}
-.hard.backdrop {
-    opacity: 0.05;
-}
-#dark .hard.backdrop {
-    opacity: 0.1;
 }
 
 .gemoji {
@@ -2161,7 +2746,6 @@ pre ::selection {
     text-shadow: none;
     background: hsla(54, 8%, 26%, 0.9);
 }
-
 span.gp {
     color: #c65d09;
 }
@@ -2177,6 +2761,9 @@ footer {
 footer,
 #article-linkback {
     margin-top: 2.6em;
+}
+#article-linkback {
+    text-align: center;
 }
 .flex footer {
     margin-top: 3.9em;
@@ -2218,6 +2805,7 @@ sup[id^=fnref] {
     opacity: 0;
     float: none;
     margin-left: 0em;
+    line-height: inherit;
 }
 /* When hovering the header text or the anchor location itself, show anchor */
 .anchored:hover .anchor,
@@ -2232,8 +2820,7 @@ sup[id^=fnref] {
 /* ----- ANIMATIONS ----- */
 /* Transitioning background colors */
 main,
-html,
-#wrap {
+html {
     transition: background-color 0.2s cubic-bezier(0.28, 0.11, 0.32, 0);
 }
 #parallax-background {
@@ -2353,40 +2940,6 @@ kbd {
 }
 
 
-.vertical-top {
-    vertical-align: top;
-}
-.inline-block {
-    display: inline-block;
-}
-
-
-.large-top-margin {
-    margin-top: 2.6em;
-}
-.large-bottom-margin {
-    margin-bottom: 2.6em;
-}
-.large-top-pad {
-    padding-top: 2.6em;
-}
-.large-bottom-pad {
-    padding-bottom: 2.6em;
-}
-.top-margin {
-    margin-top: 1.3em;
-}
-.bottom-margin {
-    margin-bottom: 1.3em;
-}
-.small-top-margin {
-    margin-top: 0.65em;
-}
-.small-bottom-margin {
-    margin-bottom: 0.65em;
-}
-
-
 .show-when-dark {
     display: none !important;
 }
@@ -2412,15 +2965,29 @@ kbd {
 
 
 /* Tiny devices (Width smaller than 320px) */
-@media(max-width: 318px) {
+@media(max-width: 324px) {
     /* NAVBAR ------------------------------------- */
 
 
     /* --- MENU --- */
-    .float-menu-for-hiding {
+    menu {
+        position: relative;
+    }
+    menu ul li {
+        display: block;
+    }
+    #menu-height-offset {
+        display: none;
+    }
+    .float-menu-for-hiding menu {
         position: relative;
         left: initial;
         top: initial;
+        transform: unset;
+    }
+    .float-menu-for-hiding menu.hide-for-small-device {
+        opacity: 1;
+        pointer-events: auto;
     }
 }
 
@@ -2457,31 +3024,23 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-top: 6em;
         max-width: 60em;
     }
+    .flex article {
+        max-width: 34em;
+    }
     @supports(padding: max(5%, env(safe-area-inset-left))) {
         .flex main {
             padding-left: max(1.95em, env(safe-area-inset-left)) !important;
             padding-right: max(1.95em, env(safe-area-inset-right)) !important;
         }
     }
-    div:not(.full-width-page) > main {
+    div > main {
         padding-left: 0;
         padding-right: 0;
     }
     @supports(padding-left: env(safe-area-inset-left)) {
-        div:not(.full-width-page) > main {
+        div > main {
             padding-left: env(safe-area-inset-left);
             padding-right: env(safe-area-inset-right);
-        }
-    }
-    .wide-page main {
-        max-width: 36em;
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
-    @supports(padding: max(5%, env(safe-area-inset-left))) {
-        .wide-page main {
-            padding-left: max(5%, env(safe-area-inset-left));
-            padding-right: max(5%, env(safe-area-inset-right));
         }
     }
 
@@ -2499,7 +3058,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
         padding-bottom: 1px;
     }
     menu {
-        font-weight: 500;
         font-size: 1rem;
     }
     .button {
@@ -2509,7 +3067,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
     /* ----- LISTS ----- */
     .task-list {
-        margin-left: 0.62em;
+/*        margin-left: 0.62em;*/
     }
     .emoji-list {
         margin-left: 0.75em !important;
@@ -2559,6 +3117,12 @@ Font size: 19px, ~Margin&Padding: 28.5px
                 padding-bottom: 0.35em;
                 margin-right: -0.0975em;
                 margin-left: -0.0975em;
+            }
+            .setting-toggles > div {
+                text-align: left;
+            }
+            .setting-toggles button.pill {
+                width: auto;
             }
     #menu-height-offset {
         height: 0;
@@ -2624,7 +3188,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     /* FLEX --------------------------------------- */
 
     .row {
-        display: flex;
+        display: inline-flex;
     }
 /*    .column {*/
         /*margin-left: 1.25%;
@@ -2655,14 +3219,27 @@ Font size: 19px, ~Margin&Padding: 28.5px
             margin-left: 5%;
             margin-right: 5%;
         }*/
-        .middle.column {
+/*        .middle.column {*/
             /*margin-left: 1.25%;
             margin-right: 1.25%;*/
-            flex-grow: 2;
+/*            flex-grow: 2;*/
+/*        }*/
+        .column.hide-when-small {
+            flex-grow: 1;
         }
     .flex main {
         display: flex;
         width: auto;
+    }
+    .column.foo {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+    .column.fizz {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
 
@@ -2670,9 +3247,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* --- CARDS --- */
-    .card
-    .card.large,
-    .card.large-when-small {
+    .card {
         margin-left: 1.5vw;
         margin-right: 1.5vw;
         margin-bottom: 4.5vw;
@@ -2683,15 +3258,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
         width: 46vw;
         max-width: 22em;
     }
-        .card.large {
-            width: 75%;
-            max-width: 40em;
-            min-width: 17em;
-            display: inline-block;
-        }
-        .card.large-when-small {
-            width: 46vw;
-        }
     .card .content .logo {
         width: 5em;
         height: 5em;
@@ -2938,8 +3504,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
     menu li.show-when-small {
         display: none !important;
     }
-    main a,
-    mark {
+    main a {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
     }
@@ -2962,8 +3527,8 @@ Font size: 21px, ~Margin&Padding: 31.5px
     main {
         max-width: 35em;
     }
-    .wide-page main {
-        max-width: 46em;
+    .flex article {
+        max-width: 35em;
     }
 
 
@@ -2978,7 +3543,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
     /* ----- LISTS ----- */
     .task-list {
-        margin-left: .73em;
+/*        margin-left: .73em;*/
     }
     .summary-list img {
         max-width: 20em;
@@ -3044,15 +3609,12 @@ Font size: 21px, ~Margin&Padding: 31.5px
 
 
     /* --- CARDS --- */
-    .card,
-    .card.large-when-small {
+    .card {
         width: 42.5vw;
         min-width: 18.5em;
         max-width: 23.5em;
     }
-    .card,
-    .card.large,
-    .card.large-when-small {
+    .card {
         margin-left: .65rem;
         margin-right: .65rem;
         margin-bottom: 1.95rem;
@@ -3163,8 +3725,7 @@ Font size: 21px, ~Margin&Padding: 31.5px
         font-size: 1rem;
     }
 
-    main a,
-    mark {
+    main a {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
     }
@@ -3201,19 +3762,12 @@ Font size: 21px, ~Margin&Padding: 31.5px
 /* ----- BACKGROUNDS ----- */
 
 /**
- * Primary white background
- */
-html {
-    background-color: rgba(255, 255, 255, 1);
-}
-/**
  * Primary floating backgrounds
  */
 .bigfoot-footnote__content,
 .bigfoot-footnote__tooltip {
     background-color: rgb(255, 255, 255, 0.975);
 }
-menu,
 .popup {
     background-color: rgba(255, 255, 255, 0.85);
 }
@@ -3234,7 +3788,6 @@ menu,
 }
 /* TODO DUP!!!! */
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    menu,
     .popup {
         background-color: rgba(255, 255, 255, 0.85);
     }
@@ -3249,11 +3802,7 @@ code,
 kbd {
     background-color: rgba(245, 245, 245, 0.25);
 }
-tbody tr:nth-child(even) {
-    background-color: rgba(245, 245, 245, 0.75);
-}
-kbd,
-table th {
+kbd {
     background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
     background-image: linear-gradient(rgba(255, 255, 255, 0.975), rgba(245, 245, 245, 0.9));
@@ -3279,7 +3828,6 @@ textarea {
 /**
  * Primary
  */
-menu,
 .popup,
 input,
 textarea,
@@ -3315,10 +3863,6 @@ hr {
 .macos-window-screenshot video {
     border-color: rgba(50, 50, 50, 0.25);
 }
-table td,
-table th {
-    border-color: rgb(224, 224, 224);
-}
 
 /* ----- FOREGROUNDS ----- */
 
@@ -3327,11 +3871,8 @@ table th {
  */
 html,
 .header a, a .header,
-.admonition,
 [data-hint]:after,
-.card .primary,
-table th,
-mark {
+.card .primary {
     color: rgba(30, 30, 30, 0.9);
 }
 .apple-logo path {
@@ -3382,11 +3923,6 @@ kbd {
 /**
  * Minor Text
  */
-del,
-del code,
-time,
-.weak,
-small,
 img {
     color: rgba(30, 30, 30, 0.375);
 }
@@ -3405,7 +3941,6 @@ img {
 button,
 .button,
 a.button:hover,
-mark.tag,
 .codehilite,
 .codehilite pre,
 .highlight,
@@ -3429,9 +3964,7 @@ a.button {
 
 /* ----- DROP SHADOWS ----- */
 
-menu {
-    box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
-}
+
 .card,
 .shadow img,
 .shadow video,
@@ -3476,12 +4009,7 @@ video.shadow,
 
 /* ----- BACKGROUNDS ----- */
 
-/**
- * Primary black background
- */
-html#dark {
-    background-color: rgba(36, 36, 36, 1);
-}
+
 html#dark.oled {
     background-color: rgb(0, 0, 0);
 }
@@ -3496,13 +4024,12 @@ html#dark.oled #parallax-foreground {
 /**
  * Primary floating backgrounds
  */
-#dark menu,
 #dark .popup {
     background-color: rgba(23, 23, 23, 0.95);
 }
 #dark.oled menu {
     background-color: rgba(0, 0, 0, 0.95);
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0.15);
 }
 #dark .bigfoot-footnote__content,
 #dark .bigfoot-footnote__tooltip {
@@ -3524,7 +4051,6 @@ html#dark.oled #parallax-foreground {
     border-left-color: rgba(46, 46, 46, 0.975);
 }
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    #dark menu,
     #dark .popup {
         background-color: rgba(23, 23, 23, 0.7);
     }
@@ -3549,8 +4075,7 @@ html#dark.oled #parallax-foreground {
     /*#dark .articles .card {
         border-color: rgb(36, 36, 36);
     }*/
-#dark kbd,
-#dark table th {
+#dark kbd {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
 }
 /**
@@ -3559,8 +4084,6 @@ html#dark.oled #parallax-foreground {
 #dark code,
 #dark pre,
 #dark .language-plaintext .highlight pre code,
-#dark tbody tr:nth-child(even),
-#dark table th,
 #dark kbd {
     background-color: rgba(15, 15, 15, 0.25);
 }
@@ -3595,7 +4118,6 @@ html#dark.oled #parallax-foreground {
 /**
  * Primary
  */
-#dark menu,
 #dark .popup,
 #dark input,
 #dark textarea,
@@ -3619,11 +4141,6 @@ html#dark.oled #parallax-foreground {
     background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.0) 0%, rgba(150, 150, 150, 0.15) 25%, rgba(150, 150, 150, 0.15) 50%, rgba(150, 150, 150, 0.15) 75%, rgba(255, 255, 255, 0.0) 100%); /* IE10+ */
     background: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(150, 150, 150, 0.15) 25%, rgba(150, 150, 150, 0.15) 50%, rgba(150, 150, 150, 0.15) 75%, rgba(255, 255, 255, 0.0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(150, 150, 150, 0.1)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=1 ); /* IE6-9 */
-}
-#dark table td,
-#dark table th,
-#dark thead tr {
-    border-color: rgba(75, 75, 75);
 }
 /**
  * Secondary
@@ -3671,12 +4188,8 @@ html#dark.oled #parallax-foreground {
 html#dark,
 #dark .header a,
 #dark a .header,
-#dark .admonition,
 #dark [data-hint]:after,
-#dark .card .primary,
-#dark .admonition .admonition-title,
-#dark table th,
-#dark mark {
+#dark .card .primary {
     color: rgba(255, 255, 255, 0.9);
 }
 #dark .apple-logo path {
@@ -3722,11 +4235,6 @@ html#dark,
 /**
  * Minor Text
  */
-#dark del,
-#dark del code,
-#dark time,
-#dark .weak,
-#dark small,
 #dark img,
 #dark .longform-title {
     color: rgba(255, 255, 255, 0.375);
@@ -3761,9 +4269,6 @@ html#dark,
 
 /* ----- DROP SHADOWS ----- */
 
-#dark menu {
-    box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
-}
 #dark .macos-window-screenshot img,
 #dark .macos-window-screenshot video {
     box-shadow: 0 0.5em 2em #121212;

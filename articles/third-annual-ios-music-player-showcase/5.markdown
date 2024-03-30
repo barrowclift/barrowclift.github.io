@@ -100,22 +100,22 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>We not only got full-height lyrics this year, but the exclusive ability to edit them. No other player has better lyrics support for local music than Doppi.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS’s system appearances while also maintaining an alternative, “lighter” dark mode for those still sporting iPhones with an LCD screen.</em></li>
         <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s so smooth and so unique, it needs to be tried to be believed.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can easily make “Albums” your first&mdash;or even only&mdash;tab view if you’re so inclined.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting: </strong><em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>iPad support: </strong><em>While I suspect an iPad release is imminent, we're unfortunately still left with no iPad version of Doppi.</em></li>
         <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Perhaps my only big disappointment with Doppi this year, I hoped we would at least get a “Recently Added” collection somewhere, by now.</em></li>
     </ul>

@@ -183,21 +183,21 @@ Finally, there's the "Collection" widgets, which display items from one of the p
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While I’m highly critical of Soor’s album art visualizer, simply putting the time in to have one at all when every other third-party player doesn’t bother is enough to warrant a solid “success” mark in my book.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong><em>Neither mode matches iOS’s look and feel. While the light mode is still gorgeous and feels right at home alongside other iOS apps, it’s gray “dark” mode feels out of place, as if it’s an unofficial dark mode from the <a href="http://web.archive.org/web/20170927012228/https://www.apple.com/ios/ios-11/">iOS 11</a> era. The optional “True Black” dark mode doesn’t fare much better, often appearing too dark for iOS’s dark mode guidelines.</em></li>
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features:</strong> <em>While the app does indeed feature a nice “Albums” view, being unable to make “Magic Mixes” for albums instead of songs was a big miss.</em>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
                 <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Barely any of the discovery features work without iCloud Music Library despite being advertised and “accessible” in local-only mode, making the experience feel like a bait-and-switch tease.</em></li>
         <li><span class="bullet">:x:</span> <strong>Lyrics support:</strong> <em>There’s a lyrics button, but all it does is launch <a href="https://www.musixmatch.com">MusicMatch</a> if you have it downloaded. MusicMatch integration is “nice to have”, not by no means a replacement for real, first-class lyrics support.</em></li>
         <li><span class="bullet">:x:</span> <strong>iPad Support</strong></li>

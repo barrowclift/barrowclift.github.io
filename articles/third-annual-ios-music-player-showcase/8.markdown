@@ -91,26 +91,26 @@ None.
 ### Personal Score Card
 
 <div class="admonition aside">
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
      <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>With plenty of visualizers to choose from, it’s one of the most engaging player views of the lot.</em></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
         <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
-            <ul class="bare-list">
+            <ul class="bare">
                 <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong>Proper sorting is available in the “Artists” view, but is unfortunately not supported in the “Albums” view.</li>
                 <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Allows you to not only use grids but also customize the number of columns. Only one other player lets you do this (Marvis Pro).</em></li>
             </ul>
         </li>
     </ul>
     
-    <ul class="bare-list emoji-list">
+    <ul class="emoji">
         <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
     </ul>
 </div>

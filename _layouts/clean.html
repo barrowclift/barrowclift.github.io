@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if page.display.flex == true %}flex{% endif %}
+<html class="{% if page.design.flex == true %}flex{% endif %}
              {% if page.design.ignore-accent-color == true %}ignore-accent-color{% endif %}
              {% if page.design.accent %}custom-accent-color{% endif %}
              {% if page.design.force-dark-mode == true %}force-dark-mode{% endif %}
@@ -51,14 +51,10 @@ Currently used for:
                 }
             }
         </style>
-        <div id="wrap">
-            <div id="content" class="center {% if page.display.edge-to-edge %}full-width-page{% elsif page.display.extra-wide %}extra-wide-page{% endif %}">
-                {% include menu.html %}
-                <main>
-                    {{ content }}
-                    {% include footer.html %}
-                </main>
-            </div>
-        </div>
+        {% include menu.html %}
+        <main>
+            {{ content }}
+            {% include footer.html %}
+        </main>
     </body>
 </html>

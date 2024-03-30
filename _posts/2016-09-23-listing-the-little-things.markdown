@@ -23,7 +23,7 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
 
 📱 __iOS 10__
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="#the-bedtime-feature">The Bedtime Feature - Never worry about setting alarms for work or school again</a></li>
     <li><a href="#custom-music-menu">Custom Music Menu - Create an experience tailored to how <em>you</em> listen to music</a></li>
     <li><a href="#expanding-important-widgets">Expanding Important Widgets - Opt to always see more information at a glance</a></li>
@@ -32,7 +32,7 @@ In respect of your time, below is a linked list of my personal favorite tidbits,
 
 ⌚ __watchOS 3__
 
-<ul class="compact-list">
+<ul class="tight">
     <li><a href="#the-perfect-dock">The Perfect Dock - Optimizing your app choices to help create the perfect dock</a></li>
     <li><a href="#super-fast-dock-scrolling">Super-Fast Dock Scrolling - Switching between apps on the Apple Watch has never been faster</a></li>
 </ul>
