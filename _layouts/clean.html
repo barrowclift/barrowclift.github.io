@@ -8,7 +8,7 @@
       prefix="og: http://ogp.me/ns#">
 
 <!--
-Disables both the menu bar chrome and article chrome, while still preserving
+Disables both the menubar chrome and article chrome, while still preserving
 their child items' look-and-feel, resulting in a minimalize but still stylized
 effect. Requires extensive customization from the implementing file. Intended
 for use in appropriate Project files.
@@ -20,21 +20,11 @@ Currently used for:
     {% include head.html %}
 
     <body>
-        {% if page.design.accent %}
-            <style>
-                .custom-accent-color,
-                #dark.custom-accent-color {
-                    --accent-hue: {{ page.design.accent.hue }};
-                    --accent-saturation: {{ page.design.accent.saturation }};
-                    --accent-lightness: {{ page.design.accent.lightness }};
-                }
-            </style>
-        {% endif %}
         <style>
             /**
-             * No menu chrome & keep it inline with the content.
+             * No menubar chrome & keep it inline with the content.
              */
-            menu {
+            #menubar {
                 position: relative !important;
                 background-color: transparent !important;
                 box-shadow: unset !important;
@@ -42,7 +32,7 @@ Currently used for:
                 -webkit-backdrop-filter: unset !important;
                 backdrop-filter: unset !important;
             }
-            #menu-height-offset {
+            #menubar-height-offset {
                 display: none;
             }
             @media (min-width: 700px) {
@@ -51,7 +41,7 @@ Currently used for:
                 }
             }
         </style>
-        {% include menu.html %}
+        {% include menubar.html %}
         <main>
             {{ content }}
             {% include footer.html %}

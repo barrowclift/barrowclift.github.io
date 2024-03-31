@@ -9,7 +9,7 @@
 
 <!--
 Produces a parallax effect with a "background" asset (image, video, or custom,
-see Settings options for details). The menu bar chrome is disabled for this
+see Settings options for details). The menubar chrome is disabled for this
 layout style, but the "article"/foreground content's chrome remains, and
 scrolls over the background content with a parallax effect.
 
@@ -23,7 +23,7 @@ Currently used for:
     <body>
         <div id="parallax">
             <div class="container">
-                {% include menu.html %}
+                {% include menubar.html %}
 
                 {% if page.parallax.banner-image != nil or page.parallax.banner-video != nil %}
                     <div id="parallax-background" class="layer">
@@ -64,7 +64,7 @@ Currently used for:
                 }
             {% endif %}
             main,
-            menu {
+            menubar {
                 color: {{ page.parallax.foreground.light.foreground-color }};
             }
             article {
@@ -90,42 +90,43 @@ Currently used for:
             }
             #parallax-foreground {
                 background-color: {{ page.parallax.background.light-color }};
+                border-top: 1px solid var(--widget-border);
             }
             #dark #parallax-foreground {
                 background-color: {{ page.parallax.background.dark-color }};
             }
       
-            menu ul a {
-                color: {{ page.menu.light.foreground-color }} !important;
+            menubar menu a {
+                color: {{ page.menubar.light.foreground-color }} !important;
             }
-            menu a:hover {
+            menubar a:hover {
                 background-color: transparent !important;
             }
             .mac-background-color,
             .signature-color,
             .pill path {
-                fill: {{ page.menu.light.foreground-color }};
+                fill: {{ page.menubar.light.foreground-color }};
             }
-            {% if page.menu.dark.active != nil %}
-                #mainmenu a:hover,
-                #mainmenu .active {
-                    color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
+            {% if page.menubar.dark.active != nil %}
+                menubar a:hover,
+                menubar .active {
+                    color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}) !important;
                 }
                 #logo:hover .signature-color {
-                    fill: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }});
+                    fill: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }});
                 }
                 button.pill {
-                    background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}) !important;
-                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, {{ page.menu.light.active.lightness }}, 0.2) !important;
+                    background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}, 0.2) !important;
                 }
                     button.pill:hover {
-                        background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} + 5%)) !important;
-                        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                        background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} + 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%), 0.375) !important;
                     }
                     button.pill:active,
                     .setting-toggles.active button.pill {
-                        background-color: hsl({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%)) !important;
-                        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.light.active.hue }}, {{ page.menu.light.active.saturation }}, calc({{ page.menu.light.active.lightness }} - 5%), 0.375) !important;
+                        background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%), 0.375) !important;
                     }
             {% endif %}
 
@@ -156,39 +157,39 @@ Currently used for:
             {% endif %}
             {% if page.parallax.foreground.dark.foreground-color != nil %}
                 #dark main,
-                #dark menu {
+                #dark menubar {
                     color: {{ page.parallax.foreground.dark.foreground-color }};
                 }
             {% endif %}
-            {% if page.menu.dark.foreground-color != nil %}
-                #dark menu ul a {
-                    color: {{ page.menu.dark.foreground-color }};
+            {% if page.menubar.dark.foreground-color != nil %}
+                #dark menubar menu a {
+                    color: {{ page.menubar.dark.foreground-color }};
                 }
                 #dark .mac-background-color,
                 #dark .signature-color {
-                    fill: {{ page.menu.dark.foreground-color }};
+                    fill: {{ page.menubar.dark.foreground-color }};
                 }
             {% endif %}
-            {% if page.menu.dark.active != nil %}
-                #dark #mainmenu a:hover,
-                #dark #mainmenu .active {
-                    color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}) !important;
+            {% if page.menubar.dark.active != nil %}
+                #dark menubar a:hover,
+                #dark menubar .active {
+                    color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}) !important;
                 }
                 #dark #logo:hover .signature-color {
-                    fill: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }});
+                    fill: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }});
                 }
                 #dark button.pill {
-                    background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}) !important;
-                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, {{ page.menu.dark.active.lightness }}, 0.2) !important;
+                    background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}) !important;
+                    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}, 0.2) !important;
                 }
                     #dark button.pill:hover {
-                        background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} + 5%)) !important;
-                        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%), 0.375) !important;
+                        background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} + 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%), 0.375) !important;
                     }
                     #dark button.pill:active,
                     #dark .setting-toggles.active button.pill {
-                        background-color: hsl({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%)) !important;
-                        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menu.dark.active.hue }}, {{ page.menu.dark.active.saturation }}, calc({{ page.menu.dark.active.lightness }} - 5%), 0.375) !important;
+                        background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%)) !important;
+                        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%), 0.375) !important;
                     }
             {% endif %}
             {% if page.primary-color.dark != nil %}

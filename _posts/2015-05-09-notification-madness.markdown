@@ -21,6 +21,10 @@ card:
         foreground-color: "#FFFFFF"
 ---
 
+<div class="inline shadow">
+    <img src="{{ site.dropbox }}/notification-madness/share.jpg">
+</div>
+
 What's the first thing you see when you use your iPhone? On a typical day you might wake your iPhone to a backlog of half a dozen or so notifications. Maybe you have three email notifications all of which aren't important, perhaps one or two from a free game you stopped playing months ago frantic to let you know about a new 99₵ character skin, or occasionally a twitter notification that another of the hundred thousand spam accounts has followed you. If you are fortunate you may notice somewhere in that wall of noise is a text from a loved one or an important calendar reminder.
 
 When you finish mentally parsing through the laundry list of unimportant notifications (or just ignore them out of exasperation) and finally unlock your iPhone you're probably greeted by a sea of red notification bubbles. Which ones are actually meaningful to you again? You can't remember. You think again that you really should just do whatever these apps want you to do so those obnoxious bubbles would all finally go away but the thought of going through them all (most of which you don't care about) is more trouble than it's worth so you ignore them instead to save yourself from further stress.

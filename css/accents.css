@@ -2,90 +2,90 @@
  ***  COLOR WELLS  ***
  *********************/
 
-.color-well.blue {
+.well.blue {
     background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
 }
-    .color-well.active,
-    .blue .color-well.active {
+    .well.active,
+    .blue .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
-    #dark.blue .color-well.blue {
+    #dark.blue .well.blue {
         background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
-    #dark .color-well.active,
-    #dark.blue .color-well.active {
+    #dark .well.active,
+    #dark.blue .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
-.color-well.red {
+.well.red {
     background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
 }
-    .red .color-well.active {
+    .red .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
-    #dark.red .color-well.red {
+    #dark.red .well.red {
         background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
-    #dark.red .color-well.active {
+    #dark.red .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
-.color-well.orange {
+.well.orange {
     background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
 }
-    .orange .color-well.active {
+    .orange .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
-    #dark.orange .color-well.orange {
+    #dark.orange .well.orange {
         background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
-    #dark.orange .color-well.active {
+    #dark.orange .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
-.color-well.yellow {
+.well.yellow {
     background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
 }
-    .yellow .color-well.active {
+    .yellow .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
-    #dark.yellow .color-well.yellow {
+    #dark.yellow .well.yellow {
         background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
-    #dark.yellow .color-well.active {
+    #dark.yellow .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
     }
-.color-well.green {
+.well.green {
     background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
 }
-    .green .color-well.active {
+    .green .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
-    #dark.green .color-well.green {
+    #dark.green .well.green {
         background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
-    #dark.green .color-well.active {
+    #dark.green .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
     }
-.color-well.purple {
+.well.purple {
     background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
 }
-    .purple .color-well.active {
+    .purple .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
-    #dark.purple .color-well.purple {
+    #dark.purple .well.purple {
         background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
-    #dark.purple .color-well.active {
+    #dark.purple .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
     }
-.color-well.pink {
+.well.pink {
     background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
 }
-    .pink .color-well.active {
+    .pink .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
-    #dark.pink .color-well.pink {
+    #dark.pink .well.pink {
         background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
-    #dark.pink .color-well.active {
+    #dark.pink .well.active {
         box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
     }
 
@@ -94,8 +94,6 @@
  ******************************/
 
 a,
-#mainmenu .active,
-#mainmenu a:hover,
 #settings-toggle:hover,
 #settings-toggle.active a,
 .header a:hover,
@@ -104,9 +102,6 @@ a:hover .header,
 .card:hover .label .primary,
 #dark .card:hover .label .primary,
 summary,
-#dark a,
-#dark #mainmenu .active,
-#dark #mainmenu a:hover,
 #dark #settings-toggle:hover,
 #dark #settings-toggle.active a,
 #dark .header a:hover,

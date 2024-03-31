@@ -29,7 +29,7 @@ primary-color:
         saturation: "100%"
         lightness: "55%"
 
-menu:
+menubar:
     light:
         foreground-color: "hsl(0, 0%, 100%)"
         active:
@@ -374,7 +374,7 @@ menu:
          * Many thanks to https://larsenwork.com/easing-gradients/
          * for easily generated, eased gradients
          */
-        #mainmenu {
+        #menubar menu {
             background-image: linear-gradient(
                 to bottom,
                 hsl(20, 69%, 55%) 0%,
@@ -395,7 +395,7 @@ menu:
                 hsla(20, 69%, 55%, 0) 100%
             );
         }
-        #dark #mainmenu {
+        #dark #menubar menu {
             background-image: linear-gradient(
                 to bottom,
                 hsl(23, 77%, 31%) 0%,
@@ -416,8 +416,8 @@ menu:
                 hsla(23, 77%, 31%, 0) 100%
             );
         }
-        /* Let the menu "float" above the content, again (no longer inline) */
-        menu {
+        /* Let the menubar "float" above the content, again (no longer inline) */
+        #menubar {
             transform: translateZ(0px);
             position: sticky;
         }
@@ -561,7 +561,7 @@ menu:
     └────────────────────────────────────┘
     */
     @media (min-width: 700px) and (max-height: 1150px) {
-        #mainmenu {
+        #menubar {
             height: initial;
         }
         article {
@@ -592,7 +592,7 @@ menu:
             position: initial;
             display: block;
         }
-        menu {
+        #menubar {
             transform: unset;
             position: initial;
         }

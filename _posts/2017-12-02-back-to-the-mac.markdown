@@ -64,7 +64,7 @@ In light of this, I've decided to completely ignore whatever new hotness iOS got
 
 For those wanting to jump right in, I've sorted the features by importance; the topmost sections are must know, while the bottommost ones are just curious oddities. You can click on any individual features that interest you, or browse entire sections if you're feeling adventurous. Have fun exploring!
 
-#### I Wish I Had Known That Sooner <time>Things everyone with a Mac should know</time>
+#### I Wish I Had Known That Sooner <small>Things everyone with a Mac should know</small>
 
 <ul class="tight">
     <li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
@@ -78,7 +78,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
     <li><a href="#builtin-screensharing">Built-In Screensharing</a></li>
 </ul>
 
-#### I Want to Work Better <time>Essentials for people aspiring to work smarter, not harder</time>
+#### I Want to Work Better <small>Essentials for people aspiring to work smarter, not harder</small>
 
 <ul class="tight">
     <li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
@@ -91,7 +91,7 @@ For those wanting to jump right in, I've sorted the features by importance; the 
     <li><a href="#get-info-multiple-files-at-once">"Get Info" Multiple Files at Once</a></li>
 </ul>
 
-#### Huh, Neat <time>Tips that only fussy people like me care about</time>
+#### Huh, Neat <small>Tips that only fussy people like me care about</small>
 
 <ul class="tight">
     <li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>

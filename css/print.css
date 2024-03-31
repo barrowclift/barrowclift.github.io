@@ -59,7 +59,7 @@ small {
     font-size: 0.8125em;
 }
 /* Hiding elements that shouldn't be printed */
-menu, footer, .hide-for-print, .permalink, .reversefootnote {
+#menubar, footer, .hide-for-print, .permalink, .reversefootnote {
     display:none;
 }
 
@@ -78,7 +78,7 @@ small {
     /* 1.5 is too loose, ~1.2-1.45 is desired, depending on typeface */
     line-height: 1.45em;
 }
-menu ul {
+#menubar menu {
     font-size: 1.3em;
     margin: 0.75rem 0;
 }

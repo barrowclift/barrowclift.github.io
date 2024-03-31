@@ -21,8 +21,10 @@ To pass the time until then, please consider my recent articles below.
         {% endif %}
         <li>
             <a href="{{ post.url }}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%B %-d, %Y" }}
+                </time>
                 <h3 class="header">
-                    <time itemprop="dateCreated">{{ post.date | date: "%B %-d, %Y" }}</time>
                     {{ post.title }}
                 </h3>
                 <p>

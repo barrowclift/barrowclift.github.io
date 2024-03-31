@@ -12,10 +12,10 @@ $.fn.anchor=function(a){var b={headingClass:"anchored",anchorClass:"anchor",symb
 !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=/\+/g,h=a.cookie=function(e,g,i){if(void 0!==g&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setTime(+k+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e&&e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});
 
 function changeAppearance(appearance) {
-    $(".color-well.light").removeClass("active");
-    $(".color-well.dark").removeClass("active");
-    $(".color-well.auto").removeClass("active");
-    $("menu").css("background-color", "");
+    $(".well.light").removeClass("active");
+    $(".well.dark").removeClass("active");
+    $(".well.auto").removeClass("active");
+    $("#menubar").css("background-color", "");
     if (appearance == null) {
         appearance = $.cookie("dark-mode");
     }
@@ -23,16 +23,16 @@ function changeAppearance(appearance) {
         $.cookie("dark-mode", "off");
         $('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
         document.getElementsByTagName("html")[0].removeAttribute("id");
-        $(".color-well.light").addClass("active");
+        $(".well.light").addClass("active");
     } else if ("dark" == appearance) {
         $.cookie("dark-mode", "on");
         $('#logo-speech-bubble').text("Stay cool, dude.");
         document.getElementsByTagName("html")[0].setAttribute("id", "dark");
-        $(".color-well.dark").addClass("active");
+        $(".well.dark").addClass("active");
     } else {
         $.cookie("dark-mode", "auto");
         var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        $(".color-well.auto").addClass("active");
+        $(".well.auto").addClass("active");
         if (inSystemDarkMode) {
             $('#logo-speech-bubble').text("Stay cool, dude.");
             document.getElementsByTagName("html")[0].setAttribute("id", "dark");
@@ -62,15 +62,15 @@ function changeAccentColor(color) {
         $("html").removeClass("green");
         $("html").removeClass("purple");
         $("html").removeClass("pink");
-        $(".color-well.blue").removeClass("active");
-        $(".color-well.red").removeClass("active");
-        $(".color-well.orange").removeClass("active");
-        $(".color-well.yellow").removeClass("active");
-        $(".color-well.green").removeClass("active");
-        $(".color-well.purple").removeClass("active");
-        $(".color-well.pink").removeClass("active");
+        $(".well.blue").removeClass("active");
+        $(".well.red").removeClass("active");
+        $(".well.orange").removeClass("active");
+        $(".well.yellow").removeClass("active");
+        $(".well.green").removeClass("active");
+        $(".well.purple").removeClass("active");
+        $(".well.pink").removeClass("active");
 
-        $(".color-well." + color).addClass("active");
+        $(".well." + color).addClass("active");
         if (color == "blue") {
             $.removeCookie("accent-color");
         } else {
@@ -172,12 +172,12 @@ $(document).ready(function() {
     if ("on" == cachedDarkModeSetting) {
         document.getElementsByTagName("html")[0].setAttribute("id", "dark");
         $('#logo-speech-bubble').text("Stay cool, dude.");
-        $(".color-well.dark").addClass("active");
+        $(".well.dark").addClass("active");
     } else if ("off" == cachedDarkModeSetting) {
         $('#logo-speech-bubble').text("Hi there! Hope you're having a good day.");
-        $(".color-well.light").addClass("active");
+        $(".well.light").addClass("active");
     } else {
-        $(".color-well.auto").addClass("active");
+        $(".well.auto").addClass("active");
         if (inSystemDarkMode) {
             document.getElementsByTagName("html")[0].setAttribute("id", "dark");
             $('#logo-speech-bubble').text("Stay cool, dude.");
@@ -197,9 +197,9 @@ $(document).ready(function() {
         $("html").removeClass("pink");
     }
     if ($.cookie("accent-color") && !document.getElementsByTagName("html")[0].classList.contains("ignore-accent-color")) {
-        $(".color-well." + $.cookie("accent-color")).addClass("active");
+        $(".well." + $.cookie("accent-color")).addClass("active");
     } else {
-        $(".color-well.blue").addClass("active");
+        $(".well.blue").addClass("active");
     }
 
     /* anchor.min.js - Settings */
@@ -209,10 +209,10 @@ $(document).ready(function() {
         });
     }
 
-    /* Pass scrolling events when the mouse is hovering over the menu bar on parallax views */
+    /* Pass scrolling events when the mouse is hovering over the menubar on parallax views */
     var parallax = document.getElementById("parallax");
     if (typeof(parallax) != 'undefined' && parallax != null) {
-        document.getElementsByTagName("menu")[0].addEventListener('mousewheel', function (e) {
+        document.getElementById("menubar")[0].addEventListener('mousewheel', function (e) {
             parallax.scrollTop = parallax.scrollTop+e.deltaY;
         });
     }
@@ -221,55 +221,55 @@ $(document).ready(function() {
      * DYNAMIC MENU
      ***/
     var html = $("html");
-    var menu = $("menu");
+    var menubar = $("#menubar");
 
     // Initial starting position for browsers that remember and persist scroll position through reloads
     if ($(this).scrollTop() > 50) {
-        menu.addClass("hide-for-medium-and-larger-devices");
+        menubar.addClass("hide-for-medium-and-larger-devices");
     }
     if ($(this).scrollTop() > 125) {
-        menu.addClass("hide-for-small-device");
-    } else if (html.scrollTop() > 105) {
-        html.addClass("float-menu-for-hiding");
+        menubar.addClass("hide-for-small-device");
+    } else if (html.scrollTop() > 102) {
+        html.addClass("float-menubar-for-hiding");
     }
 
     // Dynamic hiding based on scroll position and page type
     var previousScrollTop = $(this).scrollTop();
     $(function() {
         var html = $("html");
-        var menu = $("menu");
+        var menubar = $("#menubar");
         var skip = true;
         $(window).scroll(function () {
             var newScrollTop = $(this).scrollTop();
             if (newScrollTop > 50) {
-                menu.addClass("hide-for-medium-and-larger-devices");
+                menubar.addClass("hide-for-medium-and-larger-devices");
             } else {
-                menu.removeClass("hide-for-medium-and-larger-devices");
+                menubar.removeClass("hide-for-medium-and-larger-devices");
             }
 
             if (newScrollTop > 125) {
-                menu.addClass("hide-for-small-device");
-                html.addClass("float-menu-for-hiding");
-            } else if (newScrollTop > 105) {
-                html.addClass("float-menu-for-hiding");
-                menu.removeClass("hide-for-small-device");
-            } else if (newScrollTop <= 105) {
-                menu.removeClass("hide-for-small-device");
-                html.removeClass("float-menu-for-hiding");
+                menubar.addClass("hide-for-small-device");
+                html.addClass("float-menubar-for-hiding");
+            } else if (newScrollTop > 102) {
+                html.addClass("float-menubar-for-hiding");
+                menubar.removeClass("hide-for-small-device");
+            } else if (newScrollTop <= 102) {
+                menubar.removeClass("hide-for-small-device");
+                html.removeClass("float-menubar-for-hiding");
             }
 
             if (newScrollTop > 50) {
                 if (newScrollTop - previousScrollTop < 0) {
-                    menu.removeClass("hide-for-medium-and-larger-devices");
+                    menubar.removeClass("hide-for-medium-and-larger-devices");
                 } else {
-                    menu.addClass("hide-for-medium-and-larger-devices");
+                    menubar.addClass("hide-for-medium-and-larger-devices");
                 }
             }
             if (newScrollTop > 125) {
                 if (newScrollTop - previousScrollTop < 0) {
-                    menu.removeClass("hide-for-small-device");
+                    menubar.removeClass("hide-for-small-device");
                 } else {
-                    menu.addClass("hide-for-small-device");
+                    menubar.addClass("hide-for-small-device");
                 }
             }
             previousScrollTop = newScrollTop;

@@ -60,12 +60,12 @@ html, body {
             background-color: rgba(255, 255, 255, 0.95);    
         }
     }
-menu {
+menubar {
     z-index: 1;
     border: none !important;
     box-shadow: none !important;
     top: 0;
-    height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
+    height: 0; /* Don't push content down */
     box-shadow: none;
     min-width: 100vw;
     transform: unset;
@@ -73,10 +73,7 @@ menu {
     -webkit-backdrop-filter: unset !important;
     backdrop-filter: unset !important;
 }
-#mainmenu {
-    height: initial;
-}
-#menu-height-offset {
+#menubar-height-offset {
     height: 0;
 }
 body {

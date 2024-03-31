@@ -7,31 +7,31 @@
 
     {% feed_meta %}
 
-    <link rel="mask-icon" href="{{ site.baseurl }}/images/pinned-tab.svg" color="#000000" />
-    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.jpg" />
+    <link rel="mask-icon" href="{{ site.baseurl }}/images/pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.jpg">
 
-    <meta name="application-name" content="Barrowclift" />
+    <meta name="application-name" content="Barrowclift">
     {% if page.design.oled %}
-        <meta name="theme-color" content="{% if page.design.browser-theme-color-dark %}{{ page.design.browser-theme-color-dark }}{% else %}black{% endif %}" />
+        <meta name="theme-color" content="{% if page.design.browser-theme-color-dark %}{{ page.design.browser-theme-color-dark }}{% else %}black{% endif %}">
     {% else %}
         {% if page.design.browser-theme-color-dark %}
-            <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)" />
+            <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)">
             <script>const darkBaseThemeColorOverride="{{ page.design.browser-theme-color-dark }}";</script>
         {% endif %}
         {% if page.design.browser-theme-color-light %}
-            <meta name="theme-color" id="override-light-base-theme-color" content="{{ page.design.browser-theme-color-light }}" media="(prefers-color-scheme: light)" />
+            <meta name="theme-color" id="override-light-base-theme-color" content="{{ page.design.browser-theme-color-light }}" media="(prefers-color-scheme: light)">
             <script>const lightBaseThemeColorOverride="{{ page.design.browser-theme-color-light }}";</script>
         {% endif %}
-        <meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" id="light-base-theme-color" content="white" />
+        <meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)">
+        <meta name="theme-color" id="light-base-theme-color" content="white">
     {% endif %}
-    <meta name="msapplication-TileColor" content="white" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="msapplication-TileColor" content="white">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 
     <!-- Add dark mode ID (if enabled) as soon as possible -->
-    <script type="text/javascript">
+    <script>
         function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0){return null;}}else{b+=2;}var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}return decodeURI(dc.substring(b+p.length, e));}
         /* See main.js */
         let isSysDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -39,91 +39,100 @@
         if(c("dark-mode") == "on" || (isSysDark && (c("dark-mode") == null || c("dark-mode") == "auto"))){document.getElementsByTagName("html")[0].setAttribute("id", "dark");isSiteDark=true;}
         if(c("accent-color")){document.getElementsByTagName("html")[0].className+=" "+c("accent-color");color=c("accent-color")}
         if(color==="purple"){dbc="#1B1B1C";lbc="#FEFEFF";}else if(color==="pink") {dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="red"){dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="orange"){dbc="#1C1C1A";lbc="#FFFFFE";}else if(color==="yellow"){dbc="#1C1C19";lbc="#FFFFFE";}else if(color==="green"){dbc="#1B1C1B";lbc="#FEFFFE";}else{dbc="#1A1B1D";lbc="#FEFEFF";}
-        if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color").setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color")?.setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lbc);}
+        if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color")?.setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lbc);}
     </script>
     {% if page.design.force-dark-mode %}
-        <script type="text/javascript">
+        <script>
             document.getElementsByTagName("html")[0].setAttribute("id", "dark");
         </script>
     {% endif %}
     <noscript><style>.jsonly{display: none !important}</style></noscript>
 
     {% if jekyll.environment == "development" %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/accents.css" type="text/css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/accents.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css">
         {% if page.layout == "parallax" %}
             {% if page.parallax.banner-video != nil %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-video.css" type="text/css" />
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-video.css" type="text/css">
             {% else %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-image.css" type="text/css" />
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-image.css" type="text/css">
             {% endif %}
         {% endif %}
 
-        <script src="{{ site.baseurl }}/scripts/min/jquery-3.7.1.min.js" type="text/javascript"></script>
-        <script async src="{{ site.baseurl }}/scripts/core.js" type="text/javascript"></script>
+        <script src="{{ site.baseurl }}/scripts/min/jquery-3.7.1.min.js"></script>
+        <script async src="{{ site.baseurl }}/scripts/core.js"></script>
 
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print" lazyload="1" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
     {% else %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1.min.css" type="text/css" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-1.min.css" type="text/css">
         {% if page.layout == "parallax" %}
             {% if page.parallax.banner-video != nil %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-video-1.min.css" type="text/css" />
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-video-1.min.css" type="text/css">
             {% else %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-image-1.min.css" type="text/css" />
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-image-1.min.css" type="text/css">
             {% endif %}
         {% endif %}
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
-        <script async src="{{ site.baseurl }}/scripts/min/core-1.min.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script async src="{{ site.baseurl }}/scripts/min/core-1.min.js"></script>
 
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print" lazyload="1" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print">
+    {% endif %}
+    {% if page.design.accent %}
+    <style>
+        html {
+            --accent-hue: {{ page.design.accent.hue }} !important;
+            --accent-saturation: {{ page.design.accent.saturation }} !important;
+            --accent-lightness: {{ page.design.accent.lightness }} !important;
+        }
+    </style>
     {% endif %}
 
     <!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
-    <script type="text/javascript">$(document).ready(function(){anchorsEnabled = {% if page.design.show-anchors %}true{% else %}false{% endif %};});</script>
+    <script>$(document).ready(function(){anchorsEnabled = {% if page.design.show-anchors %}true{% else %}false{% endif %};});</script>
     <!--
     Anchor offset:
     Without this, if you click the "back"/↩ button on a footnote to go back to
     the article, browsers will scroll the top of the page to be precisely
-    where the footnote is, but that means the floating menu will stupidly
+    where the footnote is, but that means the floating toolbar will stupidly
     float right on over it! If we detect this is happening, correct the scroll
     adjustment so the footnote remains comfortably viewable in spite of the
-    floating menu -->
-    <script type="text/javascript">!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);</script>
+    floating menubar -->
+    <script>!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);</script>
 
     {% if paginator.previous_page_path or page.continuation.previous-page %}
-        <link rel="prev" href="{{ site.url }}{% if page.continuation.previous-page %}{{ page.dir }}{{ page.continuation.previous-page }}{% else %}{{ paginator.previous_page_path }}{% endif %}" />
+        <link rel="prev" href="{{ site.url }}{% if page.continuation.previous-page %}{{ page.dir }}{{ page.continuation.previous-page }}{% else %}{{ paginator.previous_page_path }}{% endif %}">
     {% endif %}
         <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
     {% if paginator.next_page_path or page.continuation.next-page %}
-        <link rel="next" href="{{ site.url }}{% if page.continuation.next-page %}{{ page.dir }}{{ page.continuation.next-page }}{% else %}{{ paginator.next_page_path }}{% endif %}" />
+        <link rel="next" href="{{ site.url }}{% if page.continuation.next-page %}{{ page.dir }}{{ page.continuation.next-page }}{% else %}{{ paginator.next_page_path }}{% endif %}">
     {% endif %}
 
     <!-- Facebook OpenGraph -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
     {% if page.image %}
-        <meta property="og:image" content="{{ site.dropbox }}/{{ page.image }}"/>
+        <meta property="og:image" content="{{ site.dropbox }}/{{ page.image }}">
     {% else %}
-        <meta property="og:image" content="{{ site.url }}/images/share-banner.jpg"/>
+        <meta property="og:image" content="{{ site.url }}/images/share-banner.jpg">
     {% endif %}
-    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:site_name" content="{{ site.title }}">
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@barrowclift" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@barrowclift">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.image %}
-        <meta name="twitter:image" content="{{ site.dropbox }}/{{ page.image }}" />
+        <meta name="twitter:image" content="{{ site.dropbox }}/{{ page.image }}">
     {% else %}
-        <meta name="twitter:image" content="{{ site.url }}/share-banner.jpg" />
+        <meta name="twitter:image" content="{{ site.url }}/share-banner.jpg">
     {% endif %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 </head>

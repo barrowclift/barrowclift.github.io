@@ -12,7 +12,7 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
 }
-menu {
+#menubar {
     border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
 }
 @media (min-width: 700px) {
@@ -80,7 +80,7 @@ menu {
                 background-color: rgba(255, 255, 255, 0.95);
             }
         }
-    menu {
+    #menubar {
         transform: translateZ(0px);
         z-index: 1;
 
@@ -94,7 +94,7 @@ menu {
         position: fixed; /* Fallback for browsers that don't support sticky */
         position: sticky;
         top: 0;
-        height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
+        height: 0; /* Don't push content down */
         box-shadow: none;
         min-width: 100vw;
     }

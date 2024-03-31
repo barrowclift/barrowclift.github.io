@@ -18,7 +18,7 @@ parallax:
     banner-poster: "projects/code/largest-video-game-ever/tetris-poster.jpg"
     banner-hover-text: "Video of Marc playing tetris on the Cira Center skyscraper"
 
-menu:
+menubar:
     dark:
         foreground-color: "hsla(0, 0%, 100%, 0.6)"
 ---

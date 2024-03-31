@@ -90,7 +90,7 @@ You can actually see this in the wild yourself, double-press your home button an
     </figcaption>
 </figure>
 
-## Background App Refresh <time>The Primary Exception to the Rule</time>
+## Background App Refresh <small>The Primary Exception to the Rule</small>
 
 Starting with iOS 7 Apple added a feature that complicates things slightly. Background App Refresh is an option that developers can opt into where suspended apps can be "woken up" periodically by iOS to refresh data. For example, with Background App Refresh enabled for my podcast app of choice, [Overcast](https://overcast.fm), the app can periodically check if there's any new podcasts available and refresh the UI to add any new episodes to the queue. This feature is incredibly useful for our most commonly used apps since the apps can ensure they don't waste time when resumed updating to reflect changes that *could* have been made in the background.
 

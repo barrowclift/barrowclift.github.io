@@ -1,0 +1,54 @@
+<div id="menubar" class="no-select">
+    <a href="{{ site.baseurl }}/">
+        <header onclick="document.getElementById('hidden-logo-link').click()">
+            <div id="logo">
+                {% if page.error %}
+                    {% include sad-imac.html %}
+                {% else %}
+                    {% include happy-imac.html %}
+                {% endif %}
+                {% include signature.html %}
+            </div>
+        </header>
+    </a>
+    <menu>
+        <li><a class="{% if page.url contains '/articles/' or page.dir contains '/obsolete/' %}active{% endif %}" href="/articles/">Articles</a></li>
+        <li><a class="{% if page.dir contains '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
+        <li class="hide-if-space-needed"><a class="{% if page.dir contains '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
+        {% if page.design.force-dark-mode != true or page.design.accent == null %}
+        <li class="setting-toggles show-when-small" id="settings-toggle">
+            {% include settings-button.html %}
+        </li>
+        {% endif %}
+    </menu>
+    <!-- Intentionally including here so the popup "floats" with the menubar, when shown -->
+    {% if page.design.force-dark-mode != true or page.design.accent == null %}
+        <div class="popup" id="settings-popup">
+            {% if page.design.force-dark-mode != true %}
+                <div id="dark-mode-settings" class="group">
+                    <label>Appearance:</label>
+                    <ul class="wells">
+                        <li><div title="Automatic (match system setting)" onclick="changeAppearance('auto')" class="well appearance auto"></div></li>
+                        <li><div title="Light mode" onclick="changeAppearance('light')" class="well appearance light"></div></li>
+                        <li><div title="Dark mode" onclick="changeAppearance('dark')" class="well appearance dark"></div></li>
+                    </ul>
+                </div>
+            {% endif %}
+            {% if page.design.accent == null %}
+                <div id="well-settings" class="group">
+                    <label>Accent Color:</label>
+                    <ul class="wells">
+                        <li><div title="Blue accent color" onclick="changeAccentColor('blue')" id="input-blue" class="well blue"></div></li>
+                        <li><div title="Purple accent color" onclick="changeAccentColor('purple')" id="input-purple" class="well purple"></div></li>
+                        <li><div title="Pink accent color" onclick="changeAccentColor('pink')" id="input-pink" class="well pink"></div></li>
+                        <li><div title="Red accent color" onclick="changeAccentColor('red')" id="input-red" class="well red"></div></li>
+                        <li><div title="Orange accent color" onclick="changeAccentColor('orange')" id="input-orange" class="well orange"></div></li>
+                        <li><div title="Yellow accent color" onclick="changeAccentColor('yellow')" id="input-yellow" class="well yellow"></div></li>
+                        <li><div title="Green accent color" onclick="changeAccentColor('green')" id="input-green" class="well green"></div></li>
+                    </ul>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+<div id="menubar-height-offset"></div>

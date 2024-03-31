@@ -1,3 +1,12 @@
+<style>
+    @media (min-width: 700px) {
+        .float-menubar-for-hiding #menubar.hide-for-small-device,
+        #menubar.hide-for-medium-and-larger-devices {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+</style>
 <article>
     {% if page.article.banner-image or page.article.light-banner-image or page.article.dark-banner-image %}
         {% if page.article.banner-image %}

@@ -47,8 +47,6 @@ defaults:
                 edge-to-edge: false
                 extra-wide: false
                 flex: false
-            menu:
-                show-settings: true
             article:
                 show-stamp: true
                 show-footer: true

@@ -25,30 +25,7 @@ Currently used for pages such as:
     {% include head.html %}
 
     <body>
-        {% if page.design.accent %}
-            <style>
-                .custom-accent-color,
-                #dark.custom-accent-color {
-                    --accent-hue: {{ page.design.accent.hue }};
-                    --accent-saturation: {{ page.design.accent.saturation }};
-                    --accent-lightness: {{ page.design.accent.lightness }};
-                }
-            </style>
-        {% endif %}
-        <!-- Hide the floating menu on scrolling when reading prose. -->
-        {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
-            <style>
-            @media (min-width: 700px) {
-                .float-menu-for-hiding menu.hide-for-small-device,
-                menu.hide-for-medium-and-larger-devices {
-                    opacity: 0;
-                    pointer-events: none;
-                }
-            }
-            </style>
-        {% endif %}
-
-        {% include menu.html %}
+        {% include menubar.html %}
         <main>
             {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
                 {% include article.html %}
