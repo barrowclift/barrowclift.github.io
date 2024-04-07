@@ -26,7 +26,7 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-            <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+            <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -40,7 +40,7 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-            <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+            <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
         </picture>
     </a>
 </div>

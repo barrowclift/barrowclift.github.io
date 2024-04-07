@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
-            <img type="image/jpeg" title="Marvis Pro's light theme album-view" alt="Image of Marvis Pro's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+            <img title="Marvis Pro's light theme album-view" alt="Image of Marvis Pro's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.webp">
-            <img type="image/jpeg" title="Marvis Pro's light theme full-player" alt="Image of Marvis Pro's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
+            <img title="Marvis Pro's light theme full-player" alt="Image of Marvis Pro's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
-            <img type="image/jpeg" title="Marvis Pro's dark theme album-view" alt="Image of Marvis Pro's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+            <img title="Marvis Pro's dark theme album-view" alt="Image of Marvis Pro's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.webp">
-            <img type="image/jpeg" title="Marvis Pro's dark theme full-player" alt="Image of Marvis Pro's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
+            <img title="Marvis Pro's dark theme full-player" alt="Image of Marvis Pro's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -124,25 +124,25 @@ However, let's take that one step further; let's say I wanted a section which co
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
-            <img type="image/jpeg" title="My Home page Time Machine section in light mode" alt="Image of my Home page Time Machine section in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.jpg">
+            <img title="My Home page Time Machine section in light mode" alt="Image of my Home page Time Machine section in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.webp">
-            <img type="image/jpeg" title="My Time Machine page in light mode" alt="Image of my Time Machine page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.jpg">
+            <img title="My Time Machine page in light mode" alt="Image of my Time Machine page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.webp">
-            <img type="image/jpeg" title="My Home page Time Machine section in dark mode" alt="Image of my Home page Time Machine section in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.jpg">
+            <img title="My Home page Time Machine section in dark mode" alt="Image of my Home page Time Machine section in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.webp">
-            <img type="image/jpeg" title="My Time Machine page in dark mode" alt="Image of my Time Machine page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.jpg">
+            <img title="My Time Machine page in dark mode" alt="Image of my Time Machine page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-dark-2.jpg">
         </picture>
     </a>
 </div>
@@ -351,37 +351,37 @@ In Marvis Pro's "Settings" menu, there's a renovated "Background" appearance men
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
-            <img type="image/jpeg" title="The full-player in light mode with a predominantly red record" alt="Image of the full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.jpg">
+            <img title="The full-player in light mode with a predominantly red record" alt="Image of the full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.webp">
-            <img type="image/jpeg" title="The full-player in light mode with a predominantly green record" alt="Image of the full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.jpg">
+            <img title="The full-player in light mode with a predominantly green record" alt="Image of the full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-green.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.webp">
-            <img type="image/jpeg" title="The full-player in light mode with a predominantly blue record" alt="Image of the full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.jpg">
+            <img title="The full-player in light mode with a predominantly blue record" alt="Image of the full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-blue.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.webp">
-            <img type="image/jpeg" title="The full-player in dark mode with a predominantly red record" alt="Image of the full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.jpg">
+            <img title="The full-player in dark mode with a predominantly red record" alt="Image of the full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-red.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.webp">
-            <img type="image/jpeg" title="The full-player in dark mode with a predominantly green record" alt="Image of the full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.jpg">
+            <img title="The full-player in dark mode with a predominantly green record" alt="Image of the full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-green.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.webp">
-            <img type="image/jpeg" title="The full-player in dark mode with a predominantly blue record" alt="Image of the full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.jpg">
+            <img title="The full-player in dark mode with a predominantly blue record" alt="Image of the full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-blue.jpg">
         </picture>
     </a>
     <figcaption>While I still prefer the full-player visual design of some other players, with some slight configuration Marvis Pro can now easily go toe-to-toe with them.</figcaption>

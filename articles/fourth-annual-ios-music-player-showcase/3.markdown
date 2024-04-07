@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.webp">
-            <img type="image/jpeg" title="Mixtapes' light theme album view" alt="Image of Mixtapes' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.jpg">
+            <img title="Mixtapes' light theme album view" alt="Image of Mixtapes' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.webp">
-            <img type="image/jpeg" title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+            <img title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.webp">
-            <img type="image/jpeg" title="Mixtapes' dark theme album view" alt="Image of Mixtapes' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.jpg">
+            <img title="Mixtapes' dark theme album view" alt="Image of Mixtapes' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.webp">
-            <img type="image/jpeg" title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
+            <img title="Mixtapes' full-player" alt="Image of Mixtapes' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -95,25 +95,25 @@ Continuing on to the "More" page, it's a near carbon copy of the "More" page ori
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
-            <img type="image/jpeg" title="Page 1 of alternative icons in light mode" alt="Image of page 1 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.jpg">
+            <img title="Page 1 of alternative icons in light mode" alt="Image of page 1 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.webp">
-            <img type="image/jpeg" title="Page 2 of alternative icons in light mode" alt="Image of page 2 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.jpg">
+            <img title="Page 2 of alternative icons in light mode" alt="Image of page 2 of alternative icons in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.webp">
-            <img type="image/jpeg" title="Page 1 of alternative icons in dark mode" alt="Image of page 1 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.jpg">
+            <img title="Page 1 of alternative icons in dark mode" alt="Image of page 1 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.webp">
-            <img type="image/jpeg" title="Page 2 of alternative icons in dark mode" alt="Image of page 2 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.jpg">
+            <img title="Page 2 of alternative icons in dark mode" alt="Image of page 2 of alternative icons in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-icons-2.jpg">
         </picture>
     </a>
     <figcaption>Mixtapes offers an <em>insane</em> breadth of alternative icons to choose from. This isn’t even all of them.</figcaption>
@@ -127,19 +127,19 @@ That brings us finally to Mixtape's full-player, which by default features edge-
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
-            <img type="image/jpeg" title="The full-player with a pleasing blur effect" alt="Image of the full-player with a pleasing blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.jpg">
+            <img title="The full-player with a pleasing blur effect" alt="Image of the full-player with a pleasing blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.webp">
-            <img type="image/jpeg" title="The full-player with a mediocre blur effect" alt="Image of the full-player with a mediocre blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.jpg">
+            <img title="The full-player with a mediocre blur effect" alt="Image of the full-player with a mediocre blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/bad.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.webp">
-            <img type="image/jpeg" title="The full-player with an ugly blur effect" alt="Image of the full-player with an ugly blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.jpg">
+            <img title="The full-player with an ugly blur effect" alt="Image of the full-player with an ugly blur effect" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/ugly.jpg">
         </picture>
     </a>
     <figcaption>The good, the bad, and the ugly.</figcaption>

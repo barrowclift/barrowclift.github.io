@@ -37,13 +37,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
-            <img type="image/jpeg" title="'Doppi' light theme album view" alt="Image of 'Doppi' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.jpg">
+            <img title="'Doppi' light theme album view" alt="Image of 'Doppi' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
-            <img type="image/jpeg" title="'Doppi' light theme player view" alt="Image of 'Doppi' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.jpg">
+            <img title="'Doppi' light theme player view" alt="Image of 'Doppi' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -57,13 +57,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
-            <img type="image/jpeg" title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.jpg">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.jpg">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.jpg">
         </picture>
     </a>
 </div>

@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.webp">
-            <img type="image/jpeg" title="Music.app's light theme album-view" alt="Image of Music.app's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
+            <img title="Music.app's light theme album-view" alt="Image of Music.app's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.webp">
-            <img type="image/jpeg" title="Music.app's light theme full-player" alt="Image of Music.app's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.jpg">
+            <img title="Music.app's light theme full-player" alt="Image of Music.app's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.webp">
-            <img type="image/jpeg" title="Music.app's dark theme album-view" alt="Image of Music.app's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
+            <img title="Music.app's dark theme album-view" alt="Image of Music.app's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.webp">
-            <img type="image/jpeg" title="Music.app's dark theme full-player" alt="Image of Music.app's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.jpg">
+            <img title="Music.app's dark theme full-player" alt="Image of Music.app's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-full-player.jpg">
         </picture>
     </a>
 </div>

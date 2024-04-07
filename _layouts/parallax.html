@@ -64,7 +64,7 @@ Currently used for:
                 }
             {% endif %}
             main,
-            menubar {
+            #menubar {
                 color: {{ page.parallax.foreground.light.foreground-color }};
             }
             article {
@@ -96,23 +96,23 @@ Currently used for:
                 background-color: {{ page.parallax.background.dark-color }};
             }
       
-            menubar menu a {
+            #menubar menu a {
                 color: {{ page.menubar.light.foreground-color }} !important;
             }
-            menubar a:hover {
+            #menubar a:hover {
                 background-color: transparent !important;
             }
-            .mac-background-color,
-            .signature-color,
+            .imac-background-color,
+            #signature path,
             .pill path {
                 fill: {{ page.menubar.light.foreground-color }};
             }
             {% if page.menubar.dark.active != nil %}
-                menubar a:hover,
-                menubar .active {
+                #menubar a:hover,
+                #menubar .active {
                     color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}) !important;
                 }
-                #logo:hover .signature-color {
+                #logo:hover #signature path {
                     fill: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }});
                 }
                 button.pill {
@@ -157,25 +157,25 @@ Currently used for:
             {% endif %}
             {% if page.parallax.foreground.dark.foreground-color != nil %}
                 #dark main,
-                #dark menubar {
+                #dark #menubar {
                     color: {{ page.parallax.foreground.dark.foreground-color }};
                 }
             {% endif %}
             {% if page.menubar.dark.foreground-color != nil %}
-                #dark menubar menu a {
+                #dark #menubar menu a {
                     color: {{ page.menubar.dark.foreground-color }};
                 }
-                #dark .mac-background-color,
-                #dark .signature-color {
+                #dark .imac-background-color,
+                #dark #signature path {
                     fill: {{ page.menubar.dark.foreground-color }};
                 }
             {% endif %}
             {% if page.menubar.dark.active != nil %}
-                #dark menubar a:hover,
-                #dark menubar .active {
+                #dark #menubar a:hover,
+                #dark #menubar .active {
                     color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}) !important;
                 }
-                #dark #logo:hover .signature-color {
+                #dark #logo:hover #signature path {
                     fill: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }});
                 }
                 #dark button.pill {

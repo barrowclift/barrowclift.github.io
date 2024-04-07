@@ -9,6 +9,7 @@
  *   7. Typographic Flourishes
  *   8. Admonitions
  *   9. Menubar
+ *   10. Cards
  */
 
 
@@ -57,7 +58,8 @@ html {
      * ------------------
      */
     
-    --shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
+    --inactive-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
+    --active-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
 
     /**
      * -----------------
@@ -67,7 +69,8 @@ html {
 
     --primary-foreground: rgba(30, 30, 30, 0.9);
     --secondary-foreground: rgba(30, 30, 30, 0.375);
-    --heavy-secondary-foreground: rgba(30, 30, 30, 0.6);
+    --light-heavy-secondary-foreground: rgba(30, 30, 30, 0.6);
+    --heavy-secondary-foreground: var(--light-heavy-secondary-foreground);
 
     /**
      * -------------------
@@ -132,7 +135,8 @@ html#dark {
      * ------------------
      */
     
-    --shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
+    --inactive-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
+    --active-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
 
     /**
      * ----------------
@@ -230,6 +234,10 @@ html,
      */
     -webkit-font-smoothing: antialiased;
     /**
+     * Same as the above, but Firefox-specific.
+     */
+    -moz-osx-font-smoothing: grayscale;
+    /**
      * Way easier to have the default alignment be to the left, then selectively
      * opt-in center alignment when necessary. Otherwise, I'm defining text-align: left;
      * for damned near every text-based HTML element.
@@ -257,7 +265,7 @@ html {
                  "Droid Sans",
                  "Helvetica Neue",
                  sans-serif;
-    background-color: hsl(var(--accent-hue), 25%, 99%);
+    background-color: hsl(var(--accent-hue), 50%, 99%);
 }
     html#dark {
         background-color: hsl(var(--accent-hue), 25%, 12%);
@@ -558,9 +566,6 @@ mark {
 
     color: var(--primary-foreground);
 }
-    #dark mark {
-        color: rgba(255, 255, 255, 0.9);
-    }
 mark.tag {
     display: inline-block;
     vertical-align: middle;
@@ -574,7 +579,7 @@ mark.tag {
     padding-bottom: 0.25em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    margin-top: -1px;
+    margin-top: -2px;
     margin-left: 0.25em;
     margin-right: 0.25em;
 
@@ -746,6 +751,20 @@ small,
         background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
         color: white;
     }
+/**
+ * There are some custom UI components that text selections aren't really
+ * appropriate for. Disable selections for those rare cases to match behavior
+ * of their "native" counterparts.
+ */
+.no-select,
+.button {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
 
 
 /************************
@@ -764,7 +783,7 @@ small,
 
     color: var(--primary-foreground);
     background-color: var(--widget-background);
-    box-shadow: var(--shadow);
+    box-shadow: var(--inactive-shadow);
 }
 /**
  * The ".admonition-title a" declaration is intentional, otherwise if the
@@ -1064,6 +1083,9 @@ small,
  ***  9. MENUBAR  ***
  ********************/
 
+/**
+ * The bar itself.
+ */
 #menubar {
     position: absolute;
     z-index: 10000;
@@ -1071,30 +1093,178 @@ small,
     font-size: 1.3em;
     font-weight: 600;
 
+    top: 0;
     width: 100%;
+    text-align: center;
 
     border-bottom: 1px solid var(--widget-border);
     background-color: var(--widget-background);
-    box-shadow: var(--shadow);
+    box-shadow: var(--inactive-shadow);
 }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        #menubar {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
-    }
     @supports (padding-left: env(safe-area-inset-left)) {
         #menubar {
             padding-left: env(safe-area-inset-left);
             padding-right: env(safe-area-inset-right);
         }
     }
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        #menubar {
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+    }
+    /**
+     * For pages that request the design.oled=true property, pure blacks must
+     * be applied (regardless of browser or site's theme setting). This must
+     * too be reflected with a pure black menubar.
+     */
+    html.oled #menubar {
+        background-color: rgba(0, 0, 0, 0.95);
+        border-color: rgba(0, 0, 0, 0.2);
+    }
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        html.oled #menubar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+/**
+ * On small devices, the menu bar floats with fixed positioning above the
+ * page. When this happens, the content needs a spacer so it "starts"
+ * comfortably away from the floating menu. Otherwise, the content suddenly
+ * "snaps" underneath the menu bar when it transitions from absolute to fixed
+ * positioning upon scrolling.
+ */
+#menubar-height-offset {
+    height: 10.9em;
+}
+/**
+ * Part of the "magic" that core.js depends on for it to switch the menu from
+ * a relative to floating element when the page scrolls to the designated
+ * spot.
+ */
+#menubar.float {
+    position: fixed;
+    transform: translate(0, -5.7em);
+}
+#settings-popup.float {
+    position: fixed;
+    top: 3.85em;
+}
+/**
+ * If the menu & friends are floating and the core script added the hint to
+ * hide when scrolling on small screens into the DOM, we will respect that
+ * hint here.
+ *
+ * "Why two seperate hints, one to hide if on small screens, and another if
+ * scrolling on larger screens?" future me's asking. That's because the menu
+ * bar on small screens vs. anything larger has entirely different heights, so
+ * the amount a user should scroll before we consider hiding it must therefore
+ * also be different in order to feel natural for both sizes.
+ *
+ * "Why not have the core script detect page size and have _it_ handle knowing
+ * at what scroll position to slap a single "hide" hint in?" I again here
+ * future me asking. What if the user changes the page size without scrolling?
+ * CSS of course handles this with responsive design, but the core script
+ * would be clueless it's happening unless I add a listener for it, and
+ * honestly, at that point it's easier and arguably more clear to have two
+ * different "hints" to handle it CSS-side.
+ */
+#menubar.float.hide-when-scrolling-on-small-screens,
+#settings-popup.float.hide-when-scrolling-on-small-screens {
+    opacity: 0;
+    pointer-events: none;
+}
 #menubar a {
     color: var(--heavy-secondary-foreground);
 }
+    #menubar .active,
+    #menubar a:hover {
+        color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
+    }
     #menubar a:hover {
         background-color: unset !important;
     }
+/**
+ * The Happy iMac & signature
+ * #logo is the element wrapping both components.
+ */
+#logo {
+    margin-top: 1.414em;
+    display: inline-block;
+}
+#imac {
+    transition: opacity 150ms ease-out, transform 150ms ease-out;
+    display: inline-block;
+    vertical-align: top;
+    width: 48px;
+    height: 48px;
+}
+    .imac-background-color {
+        fill: white;
+        transition: background-color 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
+    }
+    .imac-line-color {
+        fill: var(--light-heavy-secondary-foreground);
+    }
+    .opened-eyes {
+        opacity: 1;
+    }
+    .closed-eyes,
+    .sunglasses {
+        opacity: 0;
+    }
+        #logo:hover .opened-eyes {
+            opacity: 0;
+        }
+        #logo:hover .closed-eyes {
+            opacity: 1;
+        }
+    .smirk,
+    #dark .opened-eyes {
+        opacity: 0;
+    }
+    #dark .sunglasses {
+        opacity: 1;
+    }
+        #dark #logo:hover .closed-eyes {
+            opacity: 0;
+        }
+        #dark #logo:hover .smirk {
+            opacity: 1;
+        }
+    /**
+     * The rainbow backsplash on hover
+     */
+    #logo:after {
+        position: absolute;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: opacity 150ms ease-out, transform 150ms ease-out;
+
+        background-size: contain;
+        background-image: url("/images/light-rainbow-watercolor.png");
+        background-repeat: no-repeat;
+        content: "";
+        
+        z-index: -1;
+        top: 0.75rem;
+        left: calc(50% - 8.5rem);
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    #logo:hover:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+#signature {
+    height: 70px;
+}
+    #signature path {
+        fill: var(--heavy-secondary-foreground);
+    }
+/**
+ * The bar's central "menu" contents: Articles, Projects, Contact, and a Settings Button
+ */
 #menubar menu {
     line-height: var(--header-line-height);
     margin-top: var(--gap);
@@ -1110,323 +1280,533 @@ small,
         padding-top: 0.725em;
         min-width: 24vw;
     }
-#menubar header {
-    text-align: center;
-}
+    #settings-button-wrapper {
+        height: 1.5em;
+    }
+        #settings-button-wrapper button {
+            width: 4.5em;
+            position: relative;
+            top: -0.1em;
+            margin: 0;
+            vertical-align: middle;
+            line-height: 1rem;
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+        }
+        #settings-button-wrapper.active button {
+            -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        #settings-button-wrapper button svg {
+            height: 1.3rem;
+        }
 /**
- * On small devices, the menu bar floats with absolute positioning above the
- * page. When this happens, the content needs a spacer so it "starts"
- * comfortably away from the floating menu. Otherwise, the menu covers the
- * content while floating.
+ * The settings popup modal where theme & accent color can be adjusted.
  */
-#menubar-height-offset {
-    height: 10.9em;
-}
-/**
- * Part of the "magic" that core.js depends on for it to switch the menu from
- * a relative to floating element when the page scrolls to the designated
- * spot.
- */
-.float-menubar-for-hiding #menubar {
-    position: fixed;
-    transform: translate(0, -5.7em);
-}
-.float-menubar-for-hiding #menubar.hide-for-small-device {
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#menubar .active,
-#menubar a:hover,
-#dark #menubar .active,
-#dark #menubar a:hover {
-    color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
-}
-.popup {
+#settings-popup {
     font-weight: 600;
-    font-size: 1rem;
     color: var(--heavy-secondary-foreground);
-}
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    .popup {
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        backdrop-filter: saturate(180%) blur(20px);
-    }
-}
-ul.wells {
-    margin-bottom: 0;
-}
-    .setting-toggles > div {
-        text-align: center;
-    }
-    .setting-toggles button.pill {
-        width: 4.5em;
-    }
-#settings-toggle {
-    height: 1.5em;
-}
-.ignore-accent-color.force-dark-mode #settings-toggle,
-#settings-toggle {
-    display: none;
-}
-.popup {
-    cursor: default;
-    opacity: 0;
-    height: auto;
-    width: auto;
-    padding: 1.3em;
-    padding-top: 0.8125em;
-    padding-bottom: 0.65em;
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 0.65em;
-    text-align: left;
 
-    -webkit-transition-property: opacity, -webkit-transform, background-color, border;
+    opacity: 0; /* Hidden unless shown by clicking #settings-button-wrapper */
+    padding-top: 0.8125em;
+    padding-bottom: 0.8125em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    border: 1px solid var(--widget-border);
+    background-color: var(--widget-background);
+    box-shadow: var(--active-shadow);
+    border-radius: 0.65em;
+
     transition-property: opacity, transform, background-color, border;
-    -webkit-transition-duration: 0.25s, 0.25s, 0.2s, 0.2s;
     transition-duration: 0.25s, 0.25s, 0.2s, 0.2s;
-    -webkit-transition-timing-function: ease, ease, cubic-bezier(0.28, 0.11, 0.32, 0), cubic-bezier(0.28, 0.11, 0.32, 0);
     transition-timing-function: ease, ease, cubic-bezier(0.28, 0.11, 0.32, 0), cubic-bezier(0.28, 0.11, 0.32, 0);
-    -webkit-transform: scale(0.1) translateZ(0);
-    -ms-transform: scale(0.1) translateZ(0);
     transform: scale(0.1) translateZ(0);
-    -webkit-transform-origin: 95% 0;
-    -ms-transform-origin: 95% 0;
     transform-origin: 95% 0;
 
     float: right;
     position: absolute;
+    text-align: center;
     left: 85%;
     margin-left: -252px;
-    top: 10.75em;
+    top: 11.25em;
     z-index: 10000;
 }
-    .popup.show {
-        -webkit-transform: scale(1) translateZ(0);
-        -ms-transform: scale(1) translateZ(0);
+    #settings-popup.show {
         transform: scale(1) translateZ(0);
         opacity: 1;
     }
-    .popup .group {
-        margin-bottom: 0.65em;
-        margin-top: 0.65em;
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        #settings-popup {
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
     }
+/**
+ * A "group" is the label and the controls associated to the label
+ * in the settings popup.
+ */
+#settings-popup .group {
+    margin-bottom: 0.65em;
+    margin-top: 0.65em;
+}
     .group ~ .group {
-        margin-top: 1.3em;
+        margin-top: 1.3em !important;
     }
-    .wells {
-        margin-left: 0.25em;
-        text-align: center;
-        display: inline-block;
-        width: auto;
-        vertical-align: middle;
-        line-height: initial;
-        padding-bottom: 0;
-        margin-top: 0;
-    }
+/**
+ * "Wells" are a kind of visual radio box for switching things like theme and
+ * accent colors.
+ */
+.wells {
+    margin-bottom: 0;
+    margin-left: 0.25em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1em;
+}
     .wells li {
         display: inline-block;
-        min-width: unset;
         margin-left: 0.15em;
         margin-right: 0.15em;
-        margin-top: 0;
-        padding-top: 0;
-        padding-bottom: 0;
         margin-bottom: 0;
     }
-    .well {
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-    }
+.well {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
     .well.appearance {
         border-color: #E5E5E5;
         border-radius: 0.25em !important;
     }
-    .well.auto {
-        background-image: linear-gradient(-45deg, rgb(36, 36, 36) 50%, white 50%);
+        .well.auto {
+            background-image: linear-gradient(-45deg, rgb(36, 36, 36) 50%, white 50%);
+        }
+        .well.light {
+            background-color: white;
+        }
+        .well.dark {
+            background-color: rgb(36, 36, 36);
+        }
+    .well.blue {
+        background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
     }
-    .well.light {
-        background-color: white;
+        .well.active,
+        .blue .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+        }
+    .well.red {
+        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
     }
-    .well.dark {
-        background-color: rgb(36, 36, 36);
+        .red .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+        }
+    .well.orange {
+        background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
     }
-    /* Setting popup groups visibility and padding */
-    .ignore-accent-color #accent-color-settings,
-    .force-dark-mode #dark-mode-settings {
+        .orange .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
+        }
+    .well.yellow {
+        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+    }
+        .yellow .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+        }
+    .well.green {
+        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+    }
+        .green .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+        }
+    .well.purple {
+        background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
+    }
+        .purple .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
+        }
+    .well.pink {
+        background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
+    }
+        .pink .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
+        }
+/**
+ * If just one of the settings wells is active, it looks visually more
+ * pleasing to tighten the top and bottom margins.
+ */
+.ignore-accent-color #dark-mode-settings,
+.force-dark-mode #accent-color-settings {
+    margin-top: 0.325em;
+    margin-bottom: 0.325em;
+}
+/**
+ * If we're not showing the accent color wells, we need to adjust the popup to
+ * reflect the smaller width so it still pops up perfectly underneath the
+ * button.
+ */
+.ignore-accent-color #settings-popup {
+    margin-left: -10.75em;
+}
+/**
+ * For screens less than 400px wide:
+ *   - Put the wells on their own row (no longer inline with their labels)
+ *   - Shift the popup to accomidate that width change
+ */
+@media(max-width: 400px) {
+    html:not(.ignore-accent-color) .wells {
+        margin-left: 0;
+        display: block;
+        margin-top: 0.65em;
+        text-align: left;
+    }
+    #settings-popup {
+        margin-left: -145px;
+        padding: 0.975em;
+    }
+        .ignore-accent-color #settings-popup {
+            margin-left: -10.25em;
+        }
+        #settings-popup .group {
+            margin-bottom: 0.65em;
+        }
+}
+/**
+ * For screens less than 324px wide:
+ *   - Disable menu bar floating on scroll (remains relative)
+ *   - Reflow menu items to each populate their own row (no more width available to remain inline)
+ *   - Center the popup modal
+ */
+@media(max-width: 324px) {
+    #menubar,
+    #menubar.float {
+        position: relative;
+        transform: unset;
+    }
+    #menubar-height-offset {
         display: none;
     }
-    .ignore-accent-color #dark-mode-settings,
-    .force-dark-mode #accent-color-settings {
-        margin-top: 0.325em;
-        margin-bottom: 0.325em;
+    #menubar menu li {
+        display: block;
     }
-    .ignore-accent-color .popup {
-        width: 11.25em !important;
-        margin-left: -14.25em !important;
+    #menubar.float.hide-when-scrolling-on-small-screens,
+    #settings-popup.show.float.hide-when-scrolling-on-small-screens {
+        opacity: 1;
+        pointer-events: auto;
     }
-    .ignore-accent-color .popup .wells {
+    #settings-popup {
+        margin-left: 0;
+        top: 21em;
+        left: calc(50% + -97px);
+        transform-origin: 50% 0;
+    }
+}
+/**
+ * For screens larger than 700px wide:
+ *   - Enlarge every element & its padding
+ *   - Absolutely position the logo to the left
+ *   - Absolutely position the settings button to the right
+ *   - Center the menu list
+ */
+@media (min-width: 700px) {
+    #menubar {
+        font-size: 1rem;
+        text-align: left;
+        position: fixed;
+    }
+        #menubar.float {
+            transform: none;
+        }
+    #logo {
+        position: absolute;
+        padding-left: 0.78em;
+        padding-top: 0.85em;
+        margin-top: 0;
+    }
+        #logo:after {
+            top: 0.35rem;
+            left: 0.35rem;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        #imac {
+            width: 32px;
+            height: 32px;
+        }
+        #signature {
+            height: 47px;
+        }
+    #menubar menu li {
+        min-width: 16vw;
+        padding-top: 1.45em;
+    }
+    #settings-button-wrapper {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: -3.425em !important;
+        padding-top: 1.45em !important;
+    }
+        @supports (margin-left: calc(-3.425em - env(safe-area-inset-right))) {
+            #settings-button-wrapper {
+                margin-left: calc(-3.425em - env(safe-area-inset-right)) !important;
+            }
+        }
+        #settings-button-wrapper button {
+            display: block;
+            width: auto;
+            line-height: 0;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+        }
+        #settings-button-wrapper button svg {
+            padding-bottom: 1px;
+            height: 1rem;
+        }
+    #menubar.float.hide-when-scrolling-on-small-screens,
+    #menubar.hide-when-scrolling-on-larger-screens,
+    #settings-popup.show.float.hide-when-scrolling-on-small-screens,
+    #settings-popup.show.hide-when-scrolling-on-larger-screens {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #menubar-height-offset {
+        height: 0;
+    }
+    #settings-popup {
+        position: fixed;
+        margin-left: -402px;
+        left: 100%;
+    }
+    .ignore-accent-color #settings-popup {
+        margin-left: -14.2em;
+    }
+        #settings-popup,
+        #settings-popup.float {
+            top: 3.75em;
+        }
+}
+/**
+ * For screens larger than 900px wide:
+ *   - Slight padding and margin adjustments to select elements, remains
+ *     largely the same as the layout for medium screens.
+ */
+@media (min-width: 900px) {
+    #logo:after {
+        left: 0.25rem;
+    }
+    #menubar menu li {
+        min-width: 8em;
+        padding-top: 1.25em;
+    }
+    #settings-button-wrapper {
+        padding-top: 1.3em !important;
+    }
+    #settings-popup {
+        margin-left: -443px;
+    }
+    .ignore-accent-color #settings-popup {
+        margin-left: -14.25em;
+    }
+}
+
+
+/*******************
+ ***  10. CARDS  ***
+ *******************/
+
+
+    .card .metadata mark.tag,
+    .card .metadata time {
         display: inline-block;
     }
+    .updates > a {
+        margin-bottom: var(--gap);
+    }
+    .updates .card {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+.card {
+    border-radius: 1em;
+    border: 1px solid rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 42.25vw;
+    vertical-align: middle;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 1.3rem;
+    overflow: hidden;
+}
+    .card-animation:hover {
+        transform: scale(1.025);
+    }
+.updates .card,
+.articles .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    will-change: transform;
+}
 
-#logo {
-    margin-top: 1.414em;
-    margin-bottom: 0;
+.column a:hover .card img,
+.column a:hover .card svg,
+.column .card:hover video {
+    transform: scale(1.05);
+}
+.column a .card img,
+.column a .card svg,
+.column .card video {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cards a:hover,
+.column > a:hover {
+    background-color: transparent !important;
+}
+.card.bleed {
+    padding-bottom: 1.3em;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+    .card.bleed img,
+    .card.bleed video {
+        border-top-right-radius: 0.95em;
+        border-top-left-radius: 0.95em;
+        display: inline-block;
+    }
+    .updates .card .label .primary,
+    .updates .card .label .secondary,
+    .articles .card .label .primary,
+    .articles .card .label .secondary {
+        text-align: left;
+    }
+    .updates .card,
+    .articles .card {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+    }
+    .updates a {
+        padding: 0;
+        display: block;
+    }
+    .articles a,
+    .cards a {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .articles .card .label,
+    .cards .card .label {
+        /**
+         * Both of these are required to have the label "float" over the image
+         * when it "zooms" slightly on hover. It's not great...
+         */
+        transform: scale(1);
+        margin-top: -0.58em;
+
+        padding-top: 1em;
+        margin-bottom: 1em;
+    }
+.card .content {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 1.3em;
+    margin-top: 1.3em;
+    text-align: center;
+}
+.card .content .logo {
     width: auto;
-    display: inline-block;
-    cursor: pointer;
+    height: 15vw;
+    max-height: 6em;
+    text-align: center;
 }
-#logo:after {
-    transition: opacity 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44), transform 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
-    opacity: 0;
-    transform: scale(0.5);
-    background-size: contain;
-    z-index: -5;
-    top: 0.75rem;
-    left: 50%;
-    height: 5.5rem;
-    width: 5.5rem;
-    background-repeat: no-repeat;
-    position: absolute;
-    content: "";
-    background-image: url("/images/light-rainbow-watercolor.png");
+    #dark .card:hover .content .logo {
+        filter: drop-shadow(0em 0.5em 4em rgba(255, 255, 255, 0.375));
+    }
+.card .content .long-logo {
+    width: auto;
+    max-height: 12vh;
+    height: auto;
 }
-@supports (left: calc(50% - 8.9rem)) {
-    #logo:after {
-        left: calc(50% - 8.9rem);
+.card .label {
+    margin-top: 0.5em;
+    margin-bottom: 1.3em;
+}
+/*.card.bleed .label {*/
+.card .label {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+}
+    .card .label .primary,
+    .card .label .secondary {
+        text-align: center;
+        margin: 0;
+    }
+    .card .label .secondary {
+        margin-top: 0.25em;
+    }
+.card img {
+    border-radius: 0 !important;
+}
+.card h5 {
+    margin-bottom: 0;
+}
+.card .label .secondary {
+    line-height: 1.3em;
+}
+.card .label .primary {
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 0.3rem;
+}
+/**
+ * There's more text to article cards than the secondary of "normal"
+ * cards. Adding a bit more visual separation when the text is that
+ * long makes things more pleasing to the eye.
+ */
+.updates .card .label .primary,
+.articles .card .label .primary {
+    margin-bottom: 0.5em;
+}
+.card time {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+@media (min-width: 700px) {
+    .card {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .card {
+        display: inline-block;
+        min-width: 17em;
+        width: 46vw;
+        max-width: 22em;
+    }
+    .card .content .logo {
+        width: 5em;
+        height: 5em;
+    }
+    .card .content .long-logo {
+        max-height: 6.5em;
     }
 }
-
-#menubar header:hover #logo:after {
-    opacity: 1;
-    transform: scale(1);
-}
-.mac-background-color {
-    transition: background-color 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
-}
-#menubar header:hover .mac-background-color {
-    fill: rgba(255, 255, 255, 1);
-}
-#mac {
-    transition: opacity 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44), transform 150ms cubic-bezier(0.165, 0.165, 0.44, 0.44);
-    display: inline-block;
-    vertical-align: top;
-    width: 48px;
-    height: 48px;
-
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
-
-    /* FIX FOR SAFARI RENDERING BUG */
-    position: relative;
-    -webkit-transform: translateZ(0);
-}
-#signature {
-    height: 70px;
-    margin-left: 0.5em;
-}
-.opened-eyes,
-#menubar header:hover #logo .closed-eyes {
-    opacity: 1;
-}
-.closed-eyes,
-#menubar header:hover #logo .opened-eyes,
-#dark #menubar header:hover #logo .closed-eyes {
-    opacity: 0;
-}
-.sunglasses,
-.smirk {
-    opacity: 0;
-}
-#dark-mode-checkbox,
-#settings-checkbox {
-    display: none !important;
-} 
-#dark #menubar header:hover .mac-background-color {
-    fill: rgba(255, 255, 255, 0.9);
-}
-#dark .popup {
-    background-color: rgba(23, 23, 23, 0.95);
-}
-#dark.oled #menubar {
-    background-color: rgba(0, 0, 0, 0.95);
-    border-color: rgba(0, 0, 0, 0.2);
-}
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    #dark .popup {
-        background-color: rgba(23, 23, 23, 0.7);
+@media (min-width: 900px) {
+    .card {
+        width: 42.5vw;
+        min-width: 18.5em;
+        max-width: 23.5em;
     }
-    #dark.oled #menubar {
-        background-color: rgba(0, 0, 0, 0.5);
+    .card {
+        margin-left: .65rem;
+        margin-right: .65rem;
+        margin-bottom: 1.95rem;
     }
 }
-.popup {
-    background-color: rgba(255, 255, 255, 0.85);
-}
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    .popup {
-        background-color: rgba(255, 255, 255, 0.85);
-    }
-}
-.popup {
-    border-color: rgba(50, 50, 50, 0.1);
-}
-.popup {
-    box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
-}
-#dark .popup {
-    border-color: rgba(150, 150, 150, 0.1);
-}
-#dark .popup {
-    box-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
-}
-.signature-color,
-.mac-line-color {
-    fill: rgba(30, 30, 30, 0.6);
-}
-.mac-background-color {
-    fill: rgba(255, 255, 255, 0.6);
-}
-#dark .fill-color,
-#dark .signature-color,
-#dark .mac-background-color {
-    fill: rgba(255, 255, 255, 0.6);
-}
-#dark .sunglasses,
-#dark #logo:hover .smirk {
-    opacity: 1;
-}
-#dark .opened-eyes,
-#dark .closed-eyes,
-#dark .smirk {
-    opacity: 0;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -1555,38 +1935,7 @@ code a {
 
 
 
-/** TODO THIS NAME SUCKS ASS 
- * TODO TREAT AS CARDS!!!! THAT'S WHAT THEY ARE!!!*/
-.summary-list {
-    list-style: none;
-    padding-left: 0;
-    margin-left:0;
-    margin-bottom:0;
-}
-    .summary-list li a {
-        display: block;
-        padding: 1em;
-        border-radius: 1em;
-        border: 1px solid rgba(0,0,0,0.1);
-    }
-    .summary-list h3,
-    .summary-list .header,
-    .summary-list time {
-        margin-top: 0;
-    }
-    .summary-list p {
-        margin-bottom: 0;
-    }
-    .summary-list .anchor {
-        display: none !important;
-    }
-    .summary-list mark.tag {
-        margin-left: 0;
-        margin-top: -2px;
-    }
-    .summary-list time {
-        display: inline-block;
-    }
+
 
 button,
 .button {
@@ -1602,7 +1951,6 @@ blockquote {
 main a {
 /*    text-decoration: underline;*/
 }
-.summary-list a,
 .edge-to-edge > a,
 .app-download a:hover,
 #article-linkback a,
@@ -1631,10 +1979,6 @@ summary {
     margin-left: -0.25em;
     margin-right: -0.25em;
 }
-.summary-list a {
-    margin-left: 0;
-    margin-right: 0;
-}
 main a {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
@@ -1653,7 +1997,6 @@ figure a {
     .bigfoot-footnote__content,
     .bigfoot-footnote__tooltip,
     .card,
-    .summary-list li a,
     [data-hint]:after {
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
@@ -1757,11 +2100,6 @@ figure a {
     margin-top: 0;
 }
 
-
-/* ELEMENTS ------------------------------------------------------------------------- */
-
-
-/* ----- CARDS ----- */
 .card:hover,
 .shadow a:hover img,
 .shadow video:hover,
@@ -1769,7 +2107,6 @@ figure a {
 .ios-screenshot video:hover,
 .watchos-screenshot a:hover img,
 .watchos-screenshot:hover video,
-.summary-list li a:hover,
 .widget a:hover img {
     transform: scale(1.025);
 }
@@ -1788,160 +2125,13 @@ button:active,
 .button:active,
 .well:active,
 button.pill:hover:active {
-    transform: scale(0.95);
+    transform: scale(0.95) !important;
 }
 .setting-toggles.active button.pill:hover {
     transform: scale(1.15);
 }
 
-.card {
-    border-radius: 1em;
-    border: 1px solid rgba(0,0,0,0.1);
-    display: inline-block;
-    width: 42.25vw;
-    vertical-align: middle;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    margin-bottom: 1.3rem;
-    overflow: hidden;
-}
-    .card-animation:hover {
-        transform: scale(1.025);
-    }
-.articles .card {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    will-change: transform;
-}
 
-.column a:hover .card img,
-.column a:hover .card svg,
-.column .card:hover video {
-    transform: scale(1.05);
-}
-.column a .card img,
-.column a .card svg,
-.column .card video {
-    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-
-.cards a:hover,
-.column > a:hover {
-    background-color: transparent !important;
-}
-.card.bleed {
-    padding-bottom: 1.3em;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-    /*.articles .card .label {
-        background-color: rgb(245, 245, 245);
-    }*/
-    .card.bleed img,
-    .card.bleed video {
-        border-top-right-radius: 0.95em;
-        border-top-left-radius: 0.95em;
-        display: inline-block;
-    }
-    .articles .card .label .primary,
-    .articles .card .label .secondary {
-        text-align: left;
-    }
-    .articles .card {
-        margin-bottom: 0 !important;
-        padding-bottom: 0;
-    }
-    .articles a,
-    .cards a {
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
-    .articles .card .label,
-    .cards .card .label {
-        /**
-         * Both of these are required to have the label "float" over the image
-         * when it "zooms" slightly on hover. It's not great...
-         */
-        transform: scale(1);
-        margin-top: -0.58em;
-
-        padding-top: 1em;
-        margin-bottom: 1em;
-    }
-    /*.articles .card {
-        border-color: rgb(230, 230, 230);
-    }*/
-
-.card .content {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 1.3em;
-    margin-top: 1.3em;
-    text-align: center;
-}
-.card .content .logo {
-    width: auto;
-    height: 15vw;
-    max-height: 6em;
-    text-align: center;
-}
-    #dark .card:hover .content .logo {
-        filter: drop-shadow(0em 0.5em 4em rgba(255, 255, 255, 0.375));
-    }
-.card .content .long-logo {
-    width: auto;
-    max-height: 12vh;
-    height: auto;
-}
-
-.card .label {
-    margin-top: 0.5em;
-    margin-bottom: 1.3em;
-}
-/*.card.bleed .label {*/
-.card .label {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1em;
-}
-    .card .label .primary,
-    .card .label .secondary {
-        text-align: center;
-        margin: 0;
-    }
-    .card .label .secondary {
-        margin-top: 0.25em;
-    }
-.card img {
-    border-radius: 0 !important;
-}
-.card h5 {
-    margin-bottom: 0;
-}
-.card .label .secondary {
-    line-height: 1.3em;
-}
-.card .label .primary {
-    font-weight: bold;
-    line-height: 1.2em;
-    margin-bottom: 0.3rem;
-}
-/**
- * There's more text to article cards than the secondary of "normal"
- * cards. Adding a bit more visual separation when the text is that
- * long makes things more pleasing to the eye.
- */
-.articles .card .label .primary {
-    margin-bottom: 0.5em;
-}
-.card time,
-.summary-list time {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-}
 
 
 /* ----- DIVIDERS ----- */
@@ -1976,8 +2166,9 @@ button,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0.65em;
+    padding: 0.325em;
 }
+/* BUTTON PADDING IS FUCKED */
 button,
 .button {
     border-radius: 0.65em;
@@ -2019,33 +2210,6 @@ button:disabled {
         margin-left: 0.325em;
         margin-right: 0.325em;
     }
-button.pill {
-    position: relative;
-    top: -0.1em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    display: inline-block;
-    margin: 0;
-    border: none;
-    font-size: 0.833em;
-    vertical-align: middle;
-    height: auto;
-    width: auto;
-    line-height: 1rem;
-    border-radius: 0.625em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-}
-.setting-toggles.active button.pill {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-.pill svg {
-    height: 1.3rem;
-}
 input[type='checkbox'] {
     width: 1rem;
     display: inline-block;
@@ -2066,16 +2230,7 @@ input:required {
     box-shadow: none;
 }
 
-.no-select,
-.button {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
-}
+
 
 summary {
     cursor: pointer;
@@ -2196,9 +2351,6 @@ div.edge-to-edge > p,
 div.inline > p {
     line-height: 0;
 }
-/*.inline.shadow figcaption {
-    margin-top: ;
-}*/
 .shadow figcaption,
 .macos-window-screenshot figcaption,
 .watchos-screenshot figcaption,
@@ -2906,10 +3058,9 @@ input, textarea {
 main a,
 summary,
 .anchor,
-#settings-toggle {
+#settings-button-wrapper {
     transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.summary-list li a,
 .card,
 .shadow a img,
 .shadow video,
@@ -2921,9 +3072,6 @@ video.shadow,
 .card .label {
     transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.summary-list h3,
-.summary-list .header,
-.summary-list .header,
 .label .primary {
     transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -2953,10 +3101,10 @@ hr {
 /* SVG Fill */
 .fill-transparent,
 .fill-color,
-.signature-color,
+#signature path,
 .card .fill-transparent,
 .card .fill-color,
-.card .signature-color,
+.card #signature path,
 .twitter-logo g,
 .pill path {
     transition: fill 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -3019,19 +3167,13 @@ kbd {
 .show-when-light {
     display: inline-block !important;
 }
-#hidden-logo-link {
-    display: none;
-}
 
 .hide-when-small {
     display: none !important;
 }
-.show-when-small {
-    display: inline !important;
+#settings-button-wrapper {
+    display: inline-block !important;
 }
-    #menubar li.show-when-small {
-        display: inline-block !important;
-    }
 
 
 /* MEDIA QUERIES ==================================================================== */
@@ -3039,58 +3181,6 @@ kbd {
 
 
 
-@media(max-width: 399px) {
-    .wells {
-        margin-left: 0;
-        display: block;
-        margin-top: 0.65em;
-        text-align: left;
-    }
-    .popup .group {
-        margin-bottom: 0.65em;
-    }
-    .popup {
-        margin-left: -145px;
-        padding: 0.975em;
-    }
-}
-/* Tiny devices (Width smaller than 320px) */
-@media(max-width: 324px) {
-    /* NAVBAR ------------------------------------- */
-
-
-    /* --- MENU --- */
-    #menubar {
-        position: relative;
-    }
-    #menubar menu li {
-        display: block;
-    }
-    #menubar-height-offset {
-        display: none;
-    }
-    .float-menubar-for-hiding #menubar {
-        position: relative;
-        left: initial;
-        top: initial;
-        transform: unset;
-    }
-    .float-menubar-for-hiding #menubar.hide-for-small-device {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .popup {
-        margin-left: 0;
-        top: 21em;
-        left: calc(50% + -97px);
-        transform-origin: 50% 0;
-    }
-}
-
-/*
-Medium devices (iPads)
-Font size: 19px, ~Margin&Padding: 28.5px
-*/
 @media (min-width: 700px) {
     /* CONTAINER ---------------------------------- */
 
@@ -3131,21 +3221,11 @@ Font size: 19px, ~Margin&Padding: 28.5px
     html {
         font-size: 19px;
     }
-    #menubar menu {
-        line-height: 1.8em; /* 1.2 header line height * 1.5 */
-        margin-top: -1px;
-        padding-bottom: 1px;
-    }
-    #menubar {
-        font-size: 1rem;
-    }
+    
     .button {
         font-size: 1em;
     }
-    button.pill {
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
-    }
+    
 
 
     /* ----- LISTS ----- */
@@ -3161,111 +3241,10 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* --- MENU --- */
-    #menubar {
-        position: fixed;
-        top: 0 !important;
-        height: 3em;
-    }
-    .float-menubar-for-hiding #menubar,
-    .float-menubar-for-hiding #logo {
-        transform: none;
-    }
-    .popup {
-        -webkit-transform-origin: top right;
-        -ms-transform-origin: top right;
-        transform-origin: top right;
-        margin-left: -402px;
-        left: 100%;
-        top: 3.4em;
-    }
-        #menubar header {
-            text-align: left;
-            width: auto;
-            position: absolute;
-            padding-left: 0.48em;
-            padding-top: 0.7em;
-        }
-        #menubar menu {
-            padding-left: 9em;
-            text-align: left;
-        }
-            #menubar menu li {
-                min-width: 15vw;
-                line-height: 1em;
-                padding-top: 1.35em;
-                padding-bottom: 0.4em;
-            }
-            #menubar menu a {
-                padding-top: 1.15em;
-                padding-bottom: 0.35em;
-                margin-right: -0.0975em;
-                margin-left: -0.0975em;
-            }
-            .setting-toggles > div {
-                text-align: left;
-            }
-            .setting-toggles button.pill {
-                width: auto;
-            }
-    #menubar-height-offset {
-        height: 0;
-    }
-    /*#menubar.hide-for-medium-and-larger-devices {
-        opacity: 0;
-        pointer-events: none;
-    }*/
-
+    
 
     /* --- LOGO --- */
-    #logo {
-        margin-top: 0;
-    }
-    #mac {
-        width: 32px;
-        height: 32px;
-    }
-    #signature {
-        height: 47px;
-        margin-left: 0;
-    }
-    #logo:after {
-        top: 0.25rem;
-        left: 0.05rem;
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-
-    /* --- ACCESSIBILITY TOGGLES --- */
-    #settings-popup,
-    #settings-toggle {
-        display: inline;
-    }
-    #settings-toggle {
-        float: right;
-        position: absolute;
-        display: inline;
-
-        width: 100%;
-        left: 100%;
-
-        top: 0;
-        margin-left: -3.2rem;
-        margin-top: 0;
-        padding-top: 1.1rem;
-    }
-    button.pill {
-        line-height: 0;
-    }
-    button.pill svg {
-        padding-bottom: 1px;
-        height: 1rem;
-    }
-    @supports (margin-left: calc(-3.2rem - env(safe-area-inset-right))) {
-        #settings-toggle {
-            margin-left: calc(-3.2rem - env(safe-area-inset-right));
-        }
-    }
+    
 
 
     /* FLEX --------------------------------------- */
@@ -3273,15 +3252,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .row {
         display: inline-flex;
     }
-/*    .column {*/
-        /*margin-left: 1.25%;
-        margin-right: 1.25%;*/
-/*    }*/
-        /*.column > h1,
-        .column > h2,
-        .column > h3 {
-            margin-top: 0.707em;
-        }*/
         .column > h1:first-child,
         .column > h2:first-child,
         .column > h3:first-child {
@@ -3292,21 +3262,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
         .column h6 {
             margin-top: 0;
         }
-        /*.column.w6:nth-child(odd) {
-            margin-left: 5%;
-        }
-        .column.w6:nth-child(even) {
-            margin-right: 5%;
-        }*/
-        /*.column.w12 {
-            margin-left: 5%;
-            margin-right: 5%;
-        }*/
-/*        .middle.column {*/
-            /*margin-left: 1.25%;
-            margin-right: 1.25%;*/
-/*            flex-grow: 2;*/
-/*        }*/
         .column.hide-when-small {
             flex-grow: 1;
         }
@@ -3330,24 +3285,7 @@ Font size: 19px, ~Margin&Padding: 28.5px
 
 
     /* --- CARDS --- */
-    .card {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-        margin-bottom: 4.5vw;
-    }
-    .card {
-        display: inline-block;
-        min-width: 17em;
-        width: 46vw;
-        max-width: 22em;
-    }
-    .card .content .logo {
-        width: 5em;
-        height: 5em;
-    }
-    .card .content .long-logo {
-        max-height: 6.5em;
-    }
+    
 
 
     /* --- DIVIDERS --- */
@@ -3580,16 +3518,6 @@ Font size: 19px, ~Margin&Padding: 28.5px
     .hide-when-small {
         display: initial !important;
     }
-        #menubar li.hide-when-small {
-            display: inline-block !important;
-        }
-    /** TODO THIS IS THE WRONG CLASSES AND STUFF */
-    .show-when-small,
-    #menubar li.show-when-small {
-/*        display: none !important;*/
-        margin-left: -3.15em;
-        padding-top: 1.2em;
-    }
     main a {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
@@ -3631,87 +3559,21 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .task-list {
 /*        margin-left: .73em;*/
     }
-    .summary-list img {
-        max-width: 20em;
-    }
-        /** TODO THIS IS THE WRONG CLASSES AND STUFF */
-        .show-when-small,
-        #menubar li.show-when-small {
-    /*        display: none !important;*/
-            margin-left: -3.425em;
-            padding-top: 1.05em;
-        }
+        
 
 
     /* NAVBAR ------------------------------------- */
 
 
     /* --- MENU --- */
-    #menubar {
-        /* Fix for Chrome and Firefox hover boxes not overlapping the bottom border (the bottom border was on the outside, while Safari had it inside) */
-        box-sizing: border-box;
-    }
-    .popup {
-        top: 3.4em;
-        margin-left: -443px;
-    }
-        #menubar header {
-            padding-left: 0.78em;
-            padding-top: 0.75em; /* 0.50em;*/
-        }
-            #menubar menu {
-                margin-top: -2px;
-                padding-bottom: 3px;
-            }
-            #menubar menu {
-                padding-left: 0;
-                text-align: center;
-            }
-                #menubar menu li {
-                    min-width: 8em;
-                    padding-top: 1.25em;
-                }
-                #menubar menu a {
-                    padding-top: 1.15em;
-                }
-    .float-menubar-for-hiding #menubar.hide-for-small-device,
-    #menubar.hide-for-medium-and-larger-devices {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    #logo:after {
-        left: 0.25rem;
-    }
-
-
-    /* --- ACCESSIBILITY TOGGLES --- */
-    #settings-toggle {
-        padding-top: 0.95rem;
-    }
-    #settings-toggle {
-        margin-left: -3.45rem;
-    }
-    @supports (margin-left: calc(-3.45rem - env(safe-area-inset-right))) {
-        #settings-toggle {
-            margin-left: calc(-3.45rem - env(safe-area-inset-right));
-        }
-    }
+    
 
 
     /* ELEMENTS ------------------------------------- */
 
 
     /* --- CARDS --- */
-    .card {
-        width: 42.5vw;
-        min-width: 18.5em;
-        max-width: 23.5em;
-    }
-    .card {
-        margin-left: .65rem;
-        margin-right: .65rem;
-        margin-bottom: 1.95rem;
-    }
+    
 
 
     /* --- DIVIDERS --- */
@@ -3880,7 +3742,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
  * Secondary backgrounds
  */
 .card,
-.summary-list li a,
 pre,
 code,
 kbd {
@@ -3953,7 +3814,7 @@ hr {
  * Primary Text
  */
 html,
-.header a, a .header,
+a .header,
 [data-hint]:after,
 .card .primary {
     color: rgba(30, 30, 30, 0.9);
@@ -3968,7 +3829,6 @@ blockquote,
 figcaption {
     color: rgba(30, 30, 30, 0.5);
 }
-.summary-list p,
 .card .label .secondary {
     color: rgba(30, 30, 30, 0.625);
 }
@@ -3994,9 +3854,6 @@ kbd {
  */
 img {
     color: rgba(30, 30, 30, 0.375);
-}
-.summary-list time {
-    color: rgba(30, 30, 30, 0.25);
 }
 .permalink path {
     fill: rgba(30, 30, 30, 0.375);
@@ -4034,7 +3891,6 @@ video.shadow,
 .ios-screenshot video,
 .watchos-screenshot img,
 .watchos-screenshot video,
-.summary-list li a,
 .widget img {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
 }
@@ -4051,7 +3907,6 @@ video.shadow,
     [data-hint]:after,
     .bigfoot-footnote,
     .bigfoot-footnote__tooltip,
-    .summary-list li a:hover,
     .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     }
@@ -4108,8 +3963,7 @@ html#dark.oled #parallax-foreground {
 /**
  * Secondary backgrounds
  */
-#dark .card,
-#dark .summary-list li a {
+#dark .card {
     background-color: rgba(46, 46, 46, 0.25);
     border-color: rgba(150, 150, 150, 0.1);
 }
@@ -4229,7 +4083,6 @@ html#dark.oled #parallax-foreground {
  * Primary Text
  */
 html#dark,
-#dark .header a,
 #dark a .header,
 #dark [data-hint]:after,
 #dark .card .primary {
@@ -4242,7 +4095,6 @@ html#dark,
 #dark figcaption {
     color: rgba(255, 255, 255, 0.5);
 }
-#dark .summary-list p,
 #dark .card .label .secondary {
     color: rgba(255, 255, 255, 0.625);
 }
@@ -4268,9 +4120,6 @@ html#dark,
 #dark .longform-title {
     color: rgba(255, 255, 255, 0.375);
 }
-#dark .summary-list time {
-    color: rgba(255, 255, 255, 0.25);
-}
 #dark .permalink path {
     fill: rgba(255, 255, 255, 0.375);
     stroke: transparent;
@@ -4295,7 +4144,6 @@ html#dark,
 #dark .ios-screenshot video,
 #dark .watchos-screenshot img,
 #dark .watchos-screenshot video,
-#dark .summary-list li a,
 #dark .widget img {
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
@@ -4310,7 +4158,6 @@ html#dark,
     #dark .watchos-screenshot:hover video,
     #dark [data-hint]:after,
     #dark .bigfoot-footnote,
-    #dark .summary-list li a:hover,
     #dark .widget a:hover img {
         box-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
     }

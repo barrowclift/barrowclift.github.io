@@ -37,13 +37,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
-            <img type="image/jpeg" title="'Marvis Pro' light theme album view" alt="Image of 'Marvis Pro' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+            <img title="'Marvis Pro' light theme album view" alt="Image of 'Marvis Pro' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
-            <img type="image/jpeg" title="'Marvis Pro' light theme player view" alt="Image of 'Marvis Pro' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.jpg">
+            <img title="'Marvis Pro' light theme player view" alt="Image of 'Marvis Pro' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -57,13 +57,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
-            <img type="image/jpeg" title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+            <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.jpg">
+            <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -98,7 +98,7 @@ While functionally Marvis Pro saw tremendous improvements this year, I'm still l
     <p>Out of all the new things iOS 13 added, what I am most excited for is new blur styles. 6 years of waiting. ;) Would have been even better if we had complete control but hey this is cool too. :sweat_smile:</p>
     <p><a style="background-color: transparent !important;" href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><picture>
     <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.webp">
-    <img type="image/jpeg" title="Teased screenshots of Marvis Pro with different translucency styles" alt="Image of teased screenshots of Marvis Pro with different translucency styles" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.jpg">
+    <img title="Teased screenshots of Marvis Pro with different translucency styles" alt="Image of teased screenshots of Marvis Pro with different translucency styles" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.jpg">
     </picture></a></p>
     <p><a href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><em>12:33 PM - Jun 4, 2019</em></a></p>
 </div>

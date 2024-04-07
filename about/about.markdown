@@ -1,7 +1,7 @@
 <figure class="inline shadow">
     <picture>
         <source type="image/webp" srcset="images/portrait.webp">
-        <img type="image/jpeg" title="Selfie of myself with my husband, Kai" alt="Selfie of myself with my husband, Kai" src="images/portrait.jpg">
+        <img title="Selfie of myself with my husband, Kai" alt="Selfie of myself with my husband, Kai" src="images/portrait.jpg">
     </picture>
     <figcaption>
         Myself (right) and my husband Kai (left) at Pine Point for Christmas.

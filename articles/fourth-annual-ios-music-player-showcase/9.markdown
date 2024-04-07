@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/album-view.webp">
-            <img type="image/jpeg" title="Doppler's album view" alt="Image of Doppler's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/album-view.jpg">
+            <img title="Doppler's album view" alt="Image of Doppler's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/full-player.webp">
-            <img type="image/jpeg" title="Doppler's full-player" alt="Image of Doppler's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/full-player.jpg">
+            <img title="Doppler's full-player" alt="Image of Doppler's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -65,19 +65,19 @@ To be clear, this positioning generally works in Doppler's favor. To start—whi
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.webp">
-            <img type="image/jpeg" title="The album view with a predominantly red record" alt="Image of the album view with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.jpg">
+            <img title="The album view with a predominantly red record" alt="Image of the album view with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/green.webp">
-            <img type="image/jpeg" title="The album view with a predominantly green record" alt="Image of the album view with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/green.jpg">
+            <img title="The album view with a predominantly green record" alt="Image of the album view with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/green.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/blue.webp">
-            <img type="image/jpeg" title="The album view with a predominantly blue record" alt="Image of the album view with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/blue.jpg">
+            <img title="The album view with a predominantly blue record" alt="Image of the album view with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/blue.jpg">
         </picture>
     </a>
     <figcaption>Doppler’s album view. Like Power Player, it’s heavily inspired by <a href="https://panic.com/blog/itunes-11-and-colors/">iTunes 11’s gorgeous dynamic album display theme</a>.</figcaption>

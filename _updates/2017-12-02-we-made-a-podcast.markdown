@@ -18,7 +18,7 @@ card:
 <div class="inline shadow">
     <picture>
         <source type="image/webp" srcset="{{ site.dropbox }}/we-made-a-podcast/podcast-art.webp">
-        <img type="image/jpeg" title="Bad Music Hertz podcast cover art" alt="Bad Music Hertz podcast cover art" src="{{ site.dropbox }}/we-made-a-podcast/podcast-art.jpg">
+        <img title="Bad Music Hertz podcast cover art" alt="Bad Music Hertz podcast cover art" src="{{ site.dropbox }}/we-made-a-podcast/podcast-art.jpg">
     </picture>
 </div>
 

@@ -64,25 +64,25 @@ That covers it; there's so little of interest here I'm quite frankly at a loss o
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
-            <img type="image/jpeg" alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
+            <img alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.webp">
-            <img type="image/jpeg" alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
+            <img alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
-            <img type="image/jpeg" alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
+            <img alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.webp">
-            <img type="image/jpeg" alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
+            <img alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
         </picture>
     </a>
     <figcaption>One is Dot Music, the other is Cs 5. Can you tell which was which at a glance? I sure couldn’t.</figcaption>

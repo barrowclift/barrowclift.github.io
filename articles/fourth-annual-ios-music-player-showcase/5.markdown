@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.webp">
-            <img type="image/jpeg" title="Musens' light theme album view" alt="Image of Musens' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.jpg">
+            <img title="Musens' light theme album view" alt="Image of Musens' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.webp">
-            <img type="image/jpeg" title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+            <img title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.webp">
-            <img type="image/jpeg" title="Musens' dark theme album view" alt="Image of Musens' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.jpg">
+            <img title="Musens' dark theme album view" alt="Image of Musens' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.webp">
-            <img type="image/jpeg" title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
+            <img title="Musens' full-player" alt="Image of Musens' full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/full-player.jpg">
         </picture>
     </a>
 </div>

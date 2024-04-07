@@ -209,67 +209,74 @@ $(document).ready(function() {
         });
     }
 
-    /* Pass scrolling events when the mouse is hovering over the menubar on parallax views */
-    var parallax = document.getElementById("parallax");
-    if (typeof(parallax) != 'undefined' && parallax != null) {
-        document.getElementById("menubar")[0].addEventListener('mousewheel', function (e) {
-            parallax.scrollTop = parallax.scrollTop+e.deltaY;
-        });
-    }
-
     /***
      * DYNAMIC MENU
      ***/
+    // Initial starting position for browsers that remember and persist scroll position through reloads
     var html = $("html");
     var menubar = $("#menubar");
-
-    // Initial starting position for browsers that remember and persist scroll position through reloads
+    var settingsPopup = $("#settings-popup");
     if ($(this).scrollTop() > 50) {
-        menubar.addClass("hide-for-medium-and-larger-devices");
+        menubar.addClass("hide-when-scrolling-on-larger-screens");
+        settingsPopup.addClass("hide-when-scrolling-on-larger-screens");
     }
     if ($(this).scrollTop() > 125) {
-        menubar.addClass("hide-for-small-device");
+        menubar.addClass("hide-when-scrolling-on-small-screens");
+        settingsPopup.addClass("hide-when-scrolling-on-small-screens");
     } else if (html.scrollTop() > 102) {
-        html.addClass("float-menubar-for-hiding");
+        menubar.addClass("float");
+        settingsPopup.addClass("float");
     }
 
     // Dynamic hiding based on scroll position and page type
     var previousScrollTop = $(this).scrollTop();
     $(function() {
-        var html = $("html");
-        var menubar = $("#menubar");
+        var menuBar = $("#menubar");
+        var settingsPopup = $("#settings-popup");
         var skip = true;
         $(window).scroll(function () {
             var newScrollTop = $(this).scrollTop();
             if (newScrollTop > 50) {
-                menubar.addClass("hide-for-medium-and-larger-devices");
+                menuBar.addClass("hide-when-scrolling-on-larger-screens");
+                settingsPopup.addClass("hide-when-scrolling-on-larger-screens");
             } else {
-                menubar.removeClass("hide-for-medium-and-larger-devices");
+                menuBar.removeClass("hide-when-scrolling-on-larger-screens");
+                settingsPopup.removeClass("hide-when-scrolling-on-larger-screens");
             }
 
             if (newScrollTop > 125) {
-                menubar.addClass("hide-for-small-device");
-                html.addClass("float-menubar-for-hiding");
+                menubar.addClass("hide-when-scrolling-on-small-screens");
+                menubar.addClass("float");
+                settingsPopup.addClass("hide-when-scrolling-on-small-screens");
+                settingsPopup.addClass("float");
             } else if (newScrollTop > 102) {
-                html.addClass("float-menubar-for-hiding");
-                menubar.removeClass("hide-for-small-device");
+                menubar.addClass("float");
+                menubar.removeClass("hide-when-scrolling-on-small-screens");
+                settingsPopup.addClass("float");
+                settingsPopup.removeClass("hide-when-scrolling-on-small-screens");
             } else if (newScrollTop <= 102) {
-                menubar.removeClass("hide-for-small-device");
-                html.removeClass("float-menubar-for-hiding");
+                menubar.removeClass("hide-when-scrolling-on-small-screens");
+                menubar.removeClass("float");
+                settingsPopup.removeClass("hide-when-scrolling-on-small-screens");
+                settingsPopup.removeClass("float");
             }
 
             if (newScrollTop > 50) {
                 if (newScrollTop - previousScrollTop < 0) {
-                    menubar.removeClass("hide-for-medium-and-larger-devices");
+                    menubar.removeClass("hide-when-scrolling-on-larger-screens");
+                    settingsPopup.removeClass("hide-when-scrolling-on-larger-screens");
                 } else {
-                    menubar.addClass("hide-for-medium-and-larger-devices");
+                    menubar.addClass("hide-when-scrolling-on-larger-screens");
+                    settingsPopup.addClass("hide-when-scrolling-on-larger-screens");
                 }
             }
             if (newScrollTop > 125) {
                 if (newScrollTop - previousScrollTop < 0) {
-                    menubar.removeClass("hide-for-small-device");
+                    menubar.removeClass("hide-when-scrolling-on-small-screens");
+                    settingsPopup.removeClass("hide-when-scrolling-on-small-screens");
                 } else {
-                    menubar.addClass("hide-for-small-device");
+                    menubar.addClass("hide-when-scrolling-on-small-screens");
+                    settingsPopup.addClass("hide-when-scrolling-on-small-screens");
                 }
             }
             previousScrollTop = newScrollTop;
@@ -297,7 +304,7 @@ $(document).ready(function() {
     // https://stackoverflow.com/a/3028037
     $(document).on(clickEventName, function(event) {
         if ($("#settings-popup").hasClass("show")) {
-            if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-toggle").length) {
+            if (!$(event.target).closest("#settings-popup").length && !$(event.target).closest("#settings-button-wrapper").length) {
                 settingsToggled()
             }
         }

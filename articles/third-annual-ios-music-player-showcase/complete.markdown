@@ -104,13 +104,13 @@ Like [last year](/articles/second-annual-ios-music-player-competition), not all 
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-album-view.webp">
-            <img type="image/jpeg" title="'Ecoute' light theme album view" alt="Image of 'Ecoute' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
+            <img title="'Ecoute' light theme album view" alt="Image of 'Ecoute' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.webp">
-            <img type="image/jpeg" title="'Ecoute' player view" alt="Image of 'Ecoute' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.jpg">
+            <img title="'Ecoute' player view" alt="Image of 'Ecoute' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -124,13 +124,13 @@ Like [last year](/articles/second-annual-ios-music-player-competition), not all 
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-album-view.webp">
-            <img type="image/jpeg" title="'Ecoute' dark theme player view" alt="Image of 'Ecoute' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
+            <img title="'Ecoute' dark theme player view" alt="Image of 'Ecoute' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.webp">
-            <img type="image/jpeg" title="'Ecoute' player view" alt="Image of 'Ecoute' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.jpg">
+            <img title="'Ecoute' player view" alt="Image of 'Ecoute' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -170,7 +170,7 @@ To be clear, despite a humerous ["definitely maybe"](https://twitter.com/Barbapa
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/album-view.webp">
-            <img type="image/jpeg" title="'Jams On Toast' album view" alt="Image of 'Jams On Toast' album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
+            <img title="'Jams On Toast' album view" alt="Image of 'Jams On Toast' album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
         </picture>
     </a>
 </div>
@@ -198,13 +198,13 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-album-view.webp">
-            <img type="image/jpeg" title="'New Monaural' light theme album view" alt="Image of 'New Monaural' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
+            <img title="'New Monaural' light theme album view" alt="Image of 'New Monaural' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.webp">
-            <img type="image/jpeg" title="'New Monaural' light theme player view" alt="Image of 'New Monaural' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.jpg">
+            <img title="'New Monaural' light theme player view" alt="Image of 'New Monaural' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -218,13 +218,13 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-album-view.webp">
-            <img type="image/jpeg" title="'New Monaural' dark theme player view" alt="Image of 'New Monaural' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
+            <img title="'New Monaural' dark theme player view" alt="Image of 'New Monaural' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.webp">
-            <img type="image/jpeg" title="'New Monaural' dark theme player view" alt="Image of 'New Monaural' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.jpg">
+            <img title="'New Monaural' dark theme player view" alt="Image of 'New Monaural' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -252,13 +252,13 @@ As the name implies, New Monaural supports a suite of mono-focused features whic
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/album-view.webp">
-            <img type="image/jpeg" title="'Stezza' album view" alt="Image of 'Stezza' album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/album-view.jpg">
+            <img title="'Stezza' album view" alt="Image of 'Stezza' album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/now-playing.webp">
-            <img type="image/jpeg" title="'Stezza' player view" alt="Image of 'Stezza' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/now-playing.jpg">
+            <img title="'Stezza' player view" alt="Image of 'Stezza' player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -286,13 +286,13 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-album-view.webp">
-            <img type="image/jpeg" title="'TapTunes' light theme album view" alt="Image of 'TapTunes' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
+            <img title="'TapTunes' light theme album view" alt="Image of 'TapTunes' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-now-playing.webp">
-            <img type="image/jpeg" title="'TapTunes' light theme player view" alt="Image of 'TapTunes' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-now-playing.jpg">
+            <img title="'TapTunes' light theme player view" alt="Image of 'TapTunes' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -306,13 +306,13 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-album-view.webp">
-            <img type="image/jpeg" title="'TapTunes' dark theme player view" alt="Image of 'TapTunes' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
+            <img title="'TapTunes' dark theme player view" alt="Image of 'TapTunes' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-now-playing.webp">
-            <img type="image/jpeg" title="'TapTunes' dark theme player view" alt="Image of 'TapTunes' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-now-playing.jpg">
+            <img title="'TapTunes' dark theme player view" alt="Image of 'TapTunes' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -575,13 +575,13 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.webp">
-            <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
+            <img title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-album-view.jpg">
         </picture>
     </a>
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.webp">
-            <img type="image/jpeg" title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
+            <img title="'Cs' light theme player view" alt="Image of 'Cs' light album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -595,13 +595,13 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.webp">
-            <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
+            <img title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-album-view.jpg">
         </picture>
     </a>
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
+            <img title="'Cs' dark theme player view" alt="Image of 'Cs' dark album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -621,25 +621,25 @@ My prediction turned out wildly inaccurate; Mike did indeed go back to the drawi
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
-            <img type="image/jpeg" title="Cs 5 screenshot in light mode" alt="Image of Cs 5 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.jpg">
+            <img title="Cs 5 screenshot in light mode" alt="Image of Cs 5 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.webp">
-            <img type="image/jpeg" title="Cs 6 screenshot in light mode" alt="Image of Cs 6 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.jpg">
+            <img title="Cs 6 screenshot in light mode" alt="Image of Cs 6 in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-6.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.webp">
-            <img type="image/jpeg" title="Cs 5 screenshot in dark mode" alt="Image of Cs 5 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.jpg">
+            <img title="Cs 5 screenshot in dark mode" alt="Image of Cs 5 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-5.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.webp">
-            <img type="image/jpeg" title="Cs 6 screenshot in dark mode" alt="Image of Cs 6 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.jpg">
+            <img title="Cs 6 screenshot in dark mode" alt="Image of Cs 6 in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-cs-6.jpg">
         </picture>
     </a>
     <figcaption>Cs 5 screenshot on the left, Cs 6 (current) screenshot on the right.</figcaption>
@@ -653,37 +653,37 @@ Arguably, the new player view design is the most prominent change in Cs 6. The n
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-green.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-blue.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-red.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-green.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-blue.jpg">
         </picture>
     </a>
     <figcaption>To compare the light & dark mode variants, click the <kbd><span><span class="small-caps">A</span>A</span></kbd> button in the menu and toggle between this site’s light & dark mode.</figcaption>
@@ -730,13 +730,13 @@ None.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
-            <img type="image/jpeg" title="'Doppi' light theme album view" alt="Image of 'Doppi' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.jpg">
+            <img title="'Doppi' light theme album view" alt="Image of 'Doppi' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
-            <img type="image/jpeg" title="'Doppi' light theme player view" alt="Image of 'Doppi' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.jpg">
+            <img title="'Doppi' light theme player view" alt="Image of 'Doppi' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -750,13 +750,13 @@ None.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
-            <img type="image/jpeg" title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.jpg">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.jpg">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -953,25 +953,25 @@ That covers it; there's so little of interest here I'm quite frankly at a loss o
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
-            <img type="image/jpeg" alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
+            <img alt="Image of Cs in light mode" title="Cs in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.webp">
-            <img type="image/jpeg" alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
+            <img alt="Image of Dot Music in light mode" title="Dot Music in light mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-dot-music.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.webp">
-            <img type="image/jpeg" alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
+            <img alt="Image of Cs in dark mode" title="Cs in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-cs.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.webp">
-            <img type="image/jpeg" alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
+            <img alt="Image of Dot Music in dark mode" title="Dot Music in dark mode" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-dot-music.jpg">
         </picture>
     </a>
     <figcaption>One is Dot Music, the other is Cs 5. Can you tell which was which at a glance? I sure couldn’t.</figcaption>
@@ -1171,7 +1171,7 @@ None.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-            <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+            <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1185,7 +1185,7 @@ None.
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.webp">
-            <img type="image/jpeg" title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
+            <img title="A record playing in 'Longplay'" alt="Image of a record playing in 'Longplay'" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1268,13 +1268,13 @@ While I appreciate this widget class, I'm still left disappointed it does not su
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
-            <img type="image/jpeg" title="'Marvis Pro' light theme album view" alt="Image of 'Marvis Pro' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+            <img title="'Marvis Pro' light theme album view" alt="Image of 'Marvis Pro' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.webp">
-            <img type="image/jpeg" title="'Marvis Pro' light theme player view" alt="Image of 'Marvis Pro' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.jpg">
+            <img title="'Marvis Pro' light theme player view" alt="Image of 'Marvis Pro' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1288,13 +1288,13 @@ While I appreciate this widget class, I'm still left disappointed it does not su
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
-            <img type="image/jpeg" title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+            <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.jpg">
+            <img title="'Marvis Pro' dark theme player view" alt="Image of 'Marvis Pro' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1329,7 +1329,7 @@ While functionally Marvis Pro saw tremendous improvements this year, I'm still l
     <p>Out of all the new things iOS 13 added, what I am most excited for is new blur styles. 6 years of waiting. ;) Would have been even better if we had complete control but hey this is cool too. :sweat_smile:</p>
     <p><a style="background-color: transparent !important;" href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><picture>
     <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.webp">
-    <img type="image/jpeg" title="Teased screenshots of Marvis Pro with different translucency styles" alt="Image of teased screenshots of Marvis Pro with different translucency styles" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.jpg">
+    <img title="Teased screenshots of Marvis Pro with different translucency styles" alt="Image of teased screenshots of Marvis Pro with different translucency styles" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/marvis-pro/tweet-screenshots.jpg">
     </picture></a></p>
     <p><a href="https://twitter.com/AdityaRajveer/status/1135947602191536128"><em>12:33 PM - Jun 4, 2019</em></a></p>
 </div>
@@ -1745,13 +1745,13 @@ While it's nice to see Apple providing first-party music widgets to customers as
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.webp">
-            <img type="image/jpeg" title="'Picky' light theme album view" alt="Image of 'Picky' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.jpg">
+            <img title="'Picky' light theme album view" alt="Image of 'Picky' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.webp">
-            <img type="image/jpeg" title="'Picky' light theme player view" alt="Image of 'Picky' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.jpg">
+            <img title="'Picky' light theme player view" alt="Image of 'Picky' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1765,13 +1765,13 @@ While it's nice to see Apple providing first-party music widgets to customers as
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.webp">
-            <img type="image/jpeg" title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.jpg">
+            <img title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.jpg">
+            <img title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -1795,19 +1795,19 @@ The rest of Picky not addressed in the 4.0 update remains the same as it was las
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.jpg">
         </picture>
     </a>
 </div>
@@ -1815,19 +1815,19 @@ The rest of Picky not addressed in the 4.0 update remains the same as it was las
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.jpg">
         </picture>
     </a>
 </div>
@@ -1991,37 +1991,37 @@ There's more yet to discover in Plum's player view; Plum is the only player avai
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
+            <img title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
+            <img title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
+            <img title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
+            <img title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
+            <img title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
+            <img title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
         </picture>
     </a>
     <figcaption>The “Classic” player view appearance.</figcaption>
@@ -2352,37 +2352,37 @@ It may seem puzzling to consolidate what was previously five discrete tab bar it
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
-            <img type="image/jpeg" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.jpg">
+            <img title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
-            <img type="image/jpeg" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.jpg">
+            <img title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
-            <img type="image/jpeg" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.jpg">
+            <img title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
-            <img type="image/jpeg" title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.jpg">
+            <img title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
-            <img type="image/jpeg" title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.jpg">
+            <img title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
-            <img type="image/jpeg" title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.jpg">
+            <img title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.jpg">
         </picture>
     </a>
     <figcaption>SongOwl’s “Paths” menu and the somewhat limited “Grouping” and “Sorting” options that can be applied to any given path.</figcaption>

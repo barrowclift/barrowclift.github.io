@@ -1,123 +1,26 @@
-/*********************
- ***  COLOR WELLS  ***
- *********************/
-
-.well.blue {
-    background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
-}
-    .well.active,
-    .blue .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
-    }
-    #dark.blue .well.blue {
-        background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
-    }
-    #dark .well.active,
-    #dark.blue .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
-    }
-.well.red {
-    background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
-}
-    .red .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
-    }
-    #dark.red .well.red {
-        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
-    }
-    #dark.red .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
-    }
-.well.orange {
-    background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
-}
-    .orange .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
-    }
-    #dark.orange .well.orange {
-        background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
-    }
-    #dark.orange .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
-    }
-.well.yellow {
-    background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
-}
-    .yellow .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
-    }
-    #dark.yellow .well.yellow {
-        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
-    }
-    #dark.yellow .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
-    }
-.well.green {
-    background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
-}
-    .green .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
-    }
-    #dark.green .well.green {
-        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
-    }
-    #dark.green .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
-    }
-.well.purple {
-    background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
-}
-    .purple .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
-    }
-    #dark.purple .well.purple {
-        background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
-    }
-    #dark.purple .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
-    }
-.well.pink {
-    background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
-}
-    .pink .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
-    }
-    #dark.pink .well.pink {
-        background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
-    }
-    #dark.pink .well.active {
-        box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
-    }
-
 /******************************
  ***  DYNAMIC ACCENT COLOR  ***
  ******************************/
-
 a,
-#settings-toggle:hover,
-#settings-toggle.active a,
 .header a:hover,
 a:hover .header,
 a:hover .header,
 .card:hover .label .primary,
 #dark .card:hover .label .primary,
 summary,
-#dark #settings-toggle:hover,
-#dark #settings-toggle.active a,
 #dark .header a:hover,
 #dark a:hover .header,
 #dark a:hover .header,
 #dark summary {
     color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
-#logo:hover .signature-color,
-#signature.active .signature-color {
+#logo:hover #signature path,
+#signature.active #signature path {
     fill: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 }
 a:hover,
 .header a:hover,
-summary:hover,
-.summary-list li a:hover {
+summary:hover {
     background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.1);
 }
 .card:hover,
@@ -126,8 +29,7 @@ summary:hover,
 }
 #dark a:hover,
 #dark .header a:hover,
-#dark summary:hover,
-#dark .summary-list li a:hover {
+#dark summary:hover {
     background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.15);
 }
 #dark .card:hover,
@@ -137,22 +39,19 @@ summary:hover,
 
 button,
 .button,
-button.pill,
 button.bigfoot-footnote__button {
     background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%));
     box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.375), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
 }
     button:hover,
     .button:hover,
-    button.pill:hover,
     button.bigfoot-footnote__button:hover {
         background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) + 2%)) !important;
         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.375), 0 .65em 1.3em -0.65em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
     }
     button:active,
     .button:active,
-    button.pill:active,
-    .setting-toggles.active button.pill,
+    #settings-button-wrapper.active button,
     button.bigfoot-footnote__button:active,
     button.bigfoot-footnote__button.is-active {
         background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%)) !important;
@@ -160,46 +59,23 @@ button.bigfoot-footnote__button {
     }
     #dark button,
     #dark .button,
-    #dark button.pill,
     #dark button.bigfoot-footnote__button {
         background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%));
         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.2), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
     #dark button:hover,
     #dark .button:hover,
-    #dark button.pill:hover,
     #dark button.bigfoot-footnote__button:hover {
         background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%)) !important;
         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.2), 0 .65em 1.3em -0.65em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
     }
     #dark button:active,
     #dark .button:active,
-    #dark button.pill:active,
-    #dark .setting-toggles.active button.pill,
+    #dark #settings-button-wrapper.active button,
     #dark button.bigfoot-footnote__button:active,
     #dark button.bigfoot-footnote__button.is-active {
         background-color: hsl(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%)) !important;
         box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.1), 0 0.43em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
-    }
-button.pill {
-    box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.375), 0 0.26875em 0.54375em -0.125em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
-}
-    button.pill:hover {
-        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.375), 0 0.40625em 0.8125em -0.40625em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
-    }
-    button.pill:active,
-    .setting-toggles.active button.pill {
-        box-shadow: inset 0 0.40625em 0.8125em rgba(0, 0, 0, 0.125), 0 0.26875em 0.54375em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
-    }
-    #dark button.pill {
-        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.2), 0 0.26875em 0.54375em -0.125em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
-    }
-    #dark button.pill:hover {
-        box-shadow: inset 0 0.40625em 0.8125em rgba(255, 255, 255, 0.2), 0 0.40625em 0.8125em -0.40625em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
-    }
-    #dark button.pill:active,
-    .setting-toggles.active button.pill {
-        box-shadow: inset 0 0.40625em 0.8125em rgba(0, 0, 0, 0.1), 0 0.26875em 0.54375em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
     }
 button.bigfoot-footnote__button {
     box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
@@ -229,11 +105,9 @@ button.bigfoot-footnote__button {
 #dark .highlight {
     background-color: hsl(var(--accent-hue), 25%, 7.5%);
 }
-.popup,
 .bigfoot-footnote__content,
 .bigfoot-footnote__tooltip,
 .card,
-.summary-list li a,
 pre,
 code,
 kbd,
@@ -249,16 +123,13 @@ kbd,
     .hint--top[data-hint]:before {
         border-top-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
-    .popup,
     .bigfoot-footnote,
     .bigfoot-footnote__tooltip {
         border-color: hsla(var(--accent-hue), 5%, calc(var(--accent-lightness) + 10%), 0.3);
     }
-#dark .popup,
 #dark .bigfoot-footnote__content,
 #dark .bigfoot-footnote__tooltip,
 #dark .card,
-#dark .summary-list li a,
 #dark pre,
 #dark code,
 #dark kbd,
@@ -275,7 +146,6 @@ kbd,
         border-top-color: hsla(var(--accent-hue), 10%, 16%, .975);
     }
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-    .popup,
     .bigfoot-footnote__content,
     [data-hint]:after {
         background-color: hsla(var(--accent-hue), 10%, 93%, .85);
@@ -283,7 +153,6 @@ kbd,
     .bigfoot-footnote__tooltip {
         background-color: hsla(var(--accent-hue), 10%, 93%, .9);
     }
-    #dark .popup,
     #dark .bigfoot-footnote__content,
     #dark .bigfoot-footnote__tooltip,
     #dark [data-hint]:after {

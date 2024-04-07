@@ -26,11 +26,11 @@
             <a href="{{ page.link }}">{{ page.title }} ↦</a>
         {% else %}
             {% if page.continuation.previous-page and page.continuation.start-page %}
-                <a title="Go back to the start" href="{{ page.continuation.start-page }}"><span>Reading “{{ page.continuation.base-title }}”</span></a>
+                <a title="Go back to the start" href="{{ page.continuation.start-page }}">Reading “{{ page.continuation.base-title }}”…</a>
             {% elsif page.continuation.base-title %}
-                <a title="Go back to article home" href="{{ page.continuation.start-page }}"><span>Aside from “{{ page.continuation.base-title }}”</span></a>
+                <a title="Go back to article home" href="{{ page.continuation.start-page }}">Aside from “{{ page.continuation.base-title }}”…</a>
             {% else %}
-                <span>{{ page.title }}</span>
+                {{ page.title }}
             {% endif %}
         {% endif %}
         {% if page.continuation.previous-page %}

@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.webp">
-            <img type="image/jpeg" title="jetAudio's light theme album-view" alt="Image of jetAudio's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
+            <img title="jetAudio's light theme album-view" alt="Image of jetAudio's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.webp">
-            <img type="image/jpeg" title="jetAudio's light theme full-player" alt="Image of jetAudio's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
+            <img title="jetAudio's light theme full-player" alt="Image of jetAudio's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
     <picture>
         <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.webp">
-        <img type="image/jpeg" title="jetAudio's dark theme album-view" alt="Image of jetAudio's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
+        <img title="jetAudio's dark theme album-view" alt="Image of jetAudio's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-album-view.jpg">
     </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.webp">
-            <img type="image/jpeg" title="jetAudio's dark theme full-player" alt="Image of jetAudio's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
+            <img title="jetAudio's dark theme full-player" alt="Image of jetAudio's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -100,37 +100,37 @@ Turning our attention towards jetAudio's browsing experience, it comes with all 
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
-            <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.jpg">
+            <img title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.webp">
-            <img type="image/jpeg" title="My jetAudio Artists page in light mode" alt="Image of my jetAudio Artists page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.jpg">
+            <img title="My jetAudio Artists page in light mode" alt="Image of my jetAudio Artists page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-2.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.webp">
-            <img type="image/jpeg" title="My jetAudio Songs page in light mode" alt="Image of my jetAudio Songs page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.jpg">
+            <img title="My jetAudio Songs page in light mode" alt="Image of my jetAudio Songs page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-3.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.webp">
-            <img type="image/jpeg" title="My jetAudio Albums page in dark mode" alt="Image of my jetAudio Albums page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.jpg">
+            <img title="My jetAudio Albums page in dark mode" alt="Image of my jetAudio Albums page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.webp">
-            <img type="image/jpeg" title="My jetAudio Artists page in dark mode" alt="Image of my jetAudio Artists page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.jpg">
+            <img title="My jetAudio Artists page in dark mode" alt="Image of my jetAudio Artists page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.webp">
-            <img type="image/jpeg" title="My jetAudio Songs page in dark mode" alt="Image of my jetAudio Songs page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.jpg">
+            <img title="My jetAudio Songs page in dark mode" alt="Image of my jetAudio Songs page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-3.jpg">
         </picture>
     </a>
     <figcaption>My preferred “Albums”, “Artists”, and “Songs” configurations.</figcaption>

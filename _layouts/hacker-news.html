@@ -96,11 +96,20 @@ Emulates Hackers News' "interesting" look & feel.
             -webkit-backdrop-filter: unset !important;
             backdrop-filter: unset !important;
         }
-        .mac-background-color {
+        .imac-background-color {
             fill: #ffffff;
         }
-        #settings-toggle {
-            width: unset;
+        #settings-button-wrapper {
+            width: auto;
+
+            float: right;
+            position: absolute;
+            display: inline;
+            left: 100%;
+            top: 0;
+            margin-left: -3.2rem !important;
+            margin-top: 0;
+            padding-top: 1.1rem;
         }
         main {
             margin-top: 5.625em;
@@ -110,8 +119,8 @@ Emulates Hackers News' "interesting" look & feel.
             text-shadow: unset;
             color: black;
         }
-        .mac-line-color,
-        #dark .mac-line-color {
+        .imac-line-color,
+        #dark .imac-line-color {
             fill: #000000;
         }
         #menubar .active,
@@ -120,16 +129,16 @@ Emulates Hackers News' "interesting" look & feel.
         #dark #menubar a:hover {
             color: white;
         }
-        .mac-background-color,
-        #dark .mac-background-color {
+        .imac-background-color,
+        #dark .imac-background-color {
             fill: #ffffff;
         }
-        #logo .signature-color,
-        #dark #logo .signature-color {
+        #logo #signature path,
+        #dark #logo #signature path {
             fill: black;
         }
-        #logo:hover .signature-color,
-        #dark #logo:hover .signature-color {
+        #logo:hover #signature path,
+        #dark #logo:hover #signature path {
             fill: white;
         }
         button.pill,
@@ -162,20 +171,25 @@ Emulates Hackers News' "interesting" look & feel.
             box-shadow: unset !important;
         }
         header {
-            display: inline !important;
+            display: inline-block;
             top: 0;
-            padding-top: 0.3em !important;
+            padding-top: 0.4em !important;
+        }
+        #menubar li.setting-toggles {
+            margin-left: 0;
+            margin-right: 0;
         }
         .contact {
             display: none !important;
         }
-        #menubar menu li.setting-toggles {
+        /*#menubar menu li.setting-toggles {
             margin-left: 0vw;
             margin-right: 0vw;
             min-width: auto;
-        }
+        }*/
         #menubar menu {
             text-align: left;
+            width: auto;
         }
         .pill svg {
             height: 1rem;
@@ -183,15 +197,30 @@ Emulates Hackers News' "interesting" look & feel.
         button.pill {
             line-height: 0rem !important;
             top: 0 !important;
+            width: auto !important;
         }
         .hide-if-space-needed {
             display: inline-block !important;
+        }
+        @media(max-width: 324px) {
+            #menubar menu {
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+            main {
+                margin-top: 10.63em;
+            }
+        }
+        @media(max-width: 400px) {
+            #settings-popup {
+                margin-left: -14.5em !important;
+            }
         }
         @media (max-width: 699px) {
             #logo {
                 margin-top: 0;
             }
-            #logo #mac {
+            #logo #imac {
                 margin-left: 0.3em;
                 width: 16px;
                 height: 16px;
@@ -206,15 +235,9 @@ Emulates Hackers News' "interesting" look & feel.
             #menubar menu {
                 display: inline-block;
                 vertical-align: top;
-                width: 70%;
             }
             #header-link {
                 display: inline-block;
-            }
-            header {
-                display: inline !important;
-                top: 0.4em;
-                padding-top: 0.3em !important;
             }
             #menubar menu li {
                 margin-top: 0.45em;
@@ -255,10 +278,22 @@ Emulates Hackers News' "interesting" look & feel.
             main {
                 margin-top: 7.5em;
             }
+            header {
+                display: inline;
+                top: 0;
+                padding-top: 0.35em !important;
+                position: absolute;
+            }
+            #menubar li.setting-toggles {
+                margin-left: -3.15em;
+            }
         }
         @media (min-width: 900px) {
             #logo:after {
                 left: 0rem;
+            }
+            header {
+                padding-top: 0.2em !important;
             }
         }
         html {
@@ -282,16 +317,18 @@ Emulates Hackers News' "interesting" look & feel.
         #menubar a:hover {
             background-color: transparent !important;
         }
-        .popup {
-            width: 9.75em !important;
-            margin-left: -10.375em !important;
+        #settings-popup,
+        .ignore-accent-color #settings-popup {
+            width: 11.5em !important;
+            margin-left: -15.25em !important;
+            left: 100%;
         }
         #menubar menu {
             -webkit-backdrop-filter: unset;
             backdrop-filter: unset;
         }
         @media (max-width: 700px) {
-            .popup {
+            #settings-popup {
                 top: 2em;
             }
         }

@@ -39,7 +39,7 @@ continuation:
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-album-view.webp">
-            <img type="image/jpeg" title="Vinyl Fetish's light theme album-view" alt="Image of Vinyl Fetish's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-album-view.jpg">
+            <img title="Vinyl Fetish's light theme album-view" alt="Image of Vinyl Fetish's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -53,7 +53,7 @@ continuation:
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-album-view.webp">
-            <img type="image/jpeg" title="Vinyl Fetish's dark theme album-view" alt="Image of Vinyl Fetish's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-album-view.jpg">
+            <img title="Vinyl Fetish's dark theme album-view" alt="Image of Vinyl Fetish's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -83,37 +83,37 @@ The first two components (the record player and record sleeve) can be positioned
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.webp">
-            <img type="image/jpeg" title="Abbey Road side B in Vinyl Fetish in light mode" alt="Image of Abbey Road side B in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.jpg">
+            <img title="Abbey Road side B in Vinyl Fetish in light mode" alt="Image of Abbey Road side B in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-2.webp">
-            <img type="image/jpeg" title="The Epic side E in Vinyl Fetish in light mode" alt="Image of The Epic side E in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-2.jpg">
+            <img title="The Epic side E in Vinyl Fetish in light mode" alt="Image of The Epic side E in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-2.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-3.webp">
-            <img type="image/jpeg" title="Out of the Blue side C in Vinyl Fetish in light mode" alt="Image of Out of the Blue side C in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-3.jpg">
+            <img title="Out of the Blue side C in Vinyl Fetish in light mode" alt="Image of Out of the Blue side C in Vinyl Fetish in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-3.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-1.webp">
-            <img type="image/jpeg" title="Abbey Road side B in Vinyl Fetish in dark mode" alt="Image of Abbey Road side B in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-1.jpg">
+            <img title="Abbey Road side B in Vinyl Fetish in dark mode" alt="Image of Abbey Road side B in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-2.webp">
-            <img type="image/jpeg" title="The Epic side E in Vinyl Fetish in dark mode" alt="Image of The Epic side E in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-2.jpg">
+            <img title="The Epic side E in Vinyl Fetish in dark mode" alt="Image of The Epic side E in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-3.webp">
-            <img type="image/jpeg" title="OUt of the Blue side C in Vinyl Fetish in dark mode" alt="Image of OUt of the Blue side C in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-3.jpg">
+            <img title="OUt of the Blue side C in Vinyl Fetish in dark mode" alt="Image of OUt of the Blue side C in Vinyl Fetish in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-example-3.jpg">
         </picture>
     </a>
     <figcaption>In Vinyl Fetish, you can see the numerous vignettes in <em><a href="https://music.apple.com/us/album/abbey-road-2019-mix/1474815798">Abbey Road</a></em>’s <a href="https://en.wikipedia.org/wiki/Abbey_Road#Medley">medly</a>, the sprawling opuses in <em><a href="https://music.apple.com/us/album/the-epic/975610456">The Epic</a></em>, and even <a href="https://en.wikipedia.org/wiki/Out_of_the_Blue_(Electric_Light_Orchestra_album)#Concerto_for_a_Rainy_Day">“Concerto For A Rainy Day”</a> off <em><a href="https://music.apple.com/us/album/out-of-the-blue/1054525002">Out of the Blue</a></em> as originally intended.</figcaption>

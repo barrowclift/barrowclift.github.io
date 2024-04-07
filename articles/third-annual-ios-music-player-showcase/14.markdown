@@ -86,37 +86,37 @@ There's more yet to discover in Plum's player view; Plum is the only player avai
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
+            <img title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
+            <img title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
+            <img title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the light mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
+            <img title="The player view with a predominantly red record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly red record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
+            <img title="The player view with a predominantly green record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly green record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
         </picture>
     </a>
     <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
+            <img title="The player view with a predominantly blue record in the 'Classic' appearance" alt="Image of the dark mode player view with a predominantly blue record in the 'Classic' appearance" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
         </picture>
     </a>
     <figcaption>The “Classic” player view appearance.</figcaption>

@@ -9,7 +9,7 @@ I can't seem to find anything for your request, apologies! If you believe someth
 
 To pass the time until then, please consider my recent articles below.
 
-<ul class="summary-list" style="margin-left: 0.75rem;">
+<div class="updates">
     {% assign numberOfLinksAdded = 0 %}
     {% for post in site.posts %}
         {% if post.type != "article" %}
@@ -19,18 +19,20 @@ To pass the time until then, please consider my recent articles below.
         {% if numberOfLinksAdded > 3 %}
             {% break %}
         {% endif %}
-        <li>
-            <a href="{{ post.url }}">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                </time>
-                <h3 class="header">
-                    {{ post.title }}
-                </h3>
-                <p>
-                    {{ post.excerpt }}
-                </p>
-            </a>
-        </li>
+        <a href="{{ post.url }}">
+            <div class="card">
+                <div class="label">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %-d, %Y" }}
+                    </time>
+                    <h4 class="primary">
+                        {{ post.title }}
+                    </h4>
+                    <h5 class="secondary">
+                        {{ post.excerpt }}
+                    </h5>
+                </div>
+            </div>
+        </a>
     {% endfor %}
-</ul>
+</div>

@@ -57,8 +57,10 @@ menubar:
         position: initial;
         display: block;
     }
-    #parallax-background {
+    html {
         background: linear-gradient(to bottom, hsl(20, 69%, 55%), hsl(17, 82%, 57%) 100%);
+    }
+    #parallax-background {
         transform: unset;
         height: auto;
         width: auto;
@@ -83,6 +85,10 @@ menubar:
     }
     .flex {
         transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    #menubar {
+        height: 0;
+        padding-top: 2px;
     }
 
 
@@ -374,6 +380,13 @@ menubar:
          * Many thanks to https://larsenwork.com/easing-gradients/
          * for easily generated, eased gradients
          */
+        #menubar {
+            z-index: 1;
+            box-shadow: unset;
+            border: unset;
+            -webkit-backdrop-filter: unset;
+            background-color: unset;
+        }
         #menubar menu {
             background-image: linear-gradient(
                 to bottom,
@@ -395,7 +408,7 @@ menubar:
                 hsla(20, 69%, 55%, 0) 100%
             );
         }
-        #dark #menubar menu {
+        #dark #menubar {
             background-image: linear-gradient(
                 to bottom,
                 hsl(23, 77%, 31%) 0%,
@@ -561,9 +574,6 @@ menubar:
     └────────────────────────────────────┘
     */
     @media (min-width: 700px) and (max-height: 1150px) {
-        #menubar {
-            height: initial;
-        }
         article {
             max-width: 35em;
             text-align: center;
@@ -710,7 +720,7 @@ menubar:
         <a class="column" style="line-height: 0" href="images/cover-large.jpg">
             <picture class="shadow">
                 <source type="image/webp" srcset="images/cover.webp">
-                <img type="image/jpeg" src="images/cover.jpg" alt="SMiLE: Heroes & Villains album art" alt="SMiLE: Heroes & Villains album art">
+                <img src="images/cover.jpg" alt="SMiLE: Heroes & Villains album art" alt="SMiLE: Heroes & Villains album art">
             </picture>
         </a>
         <div class="card column jsonly" id="player">

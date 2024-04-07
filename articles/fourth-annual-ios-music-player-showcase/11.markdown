@@ -39,7 +39,7 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
-            <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+            <img title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -53,7 +53,7 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.webp">
-            <img type="image/jpeg" title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
+            <img title="Longplay's full-player equivalent" alt="Image of Longplay's full-player equivalent" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -93,25 +93,25 @@ While I'm largely indifferent to the sorting options available in Longplay (all 
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
-            <img type="image/jpeg" title="Example 1 of poor Longplay layout results in light mode" alt="Image of Example 1 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.jpg">
+            <img title="Example 1 of poor Longplay layout results in light mode" alt="Image of Example 1 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.webp">
-            <img type="image/jpeg" title="Example 2 of poor Longplay layout results in light mode" alt="Image of Example 2 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.jpg">
+            <img title="Example 2 of poor Longplay layout results in light mode" alt="Image of Example 2 of poor Longplay layout results in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.webp">
-            <img type="image/jpeg" title="Example 1 of poor Longplay layout results in dark mode" alt="Image of Example 1 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.jpg">
+            <img title="Example 1 of poor Longplay layout results in dark mode" alt="Image of Example 1 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.webp">
-            <img type="image/jpeg" title="Example 2 of poor Longplay layout results in dark mode" alt="Image of Example 2 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.jpg">
+            <img title="Example 2 of poor Longplay layout results in dark mode" alt="Image of Example 2 of poor Longplay layout results in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-2.jpg">
         </picture>
     </a>
     <figcaption>This looks like something broke, not an expected result.</figcaption>
@@ -178,7 +178,7 @@ The new "Random" sort order is a nice addition, allowing listeners to randomly s
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
-            <img type="image/jpeg" title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.jpg">
+            <img title="My jetAudio Albums page in light mode" alt="Image of my jetAudio Albums page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.jpg">
         </picture>
     </a>
 </div>

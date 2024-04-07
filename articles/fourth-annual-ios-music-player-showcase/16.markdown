@@ -39,13 +39,13 @@ continuation:
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.webp">
-            <img type="image/jpeg" title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+            <img title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.webp">
-            <img type="image/jpeg" title="Plum's light theme full-player" alt="Image of Plum's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.jpg">
+            <img title="Plum's light theme full-player" alt="Image of Plum's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.webp">
-            <img type="image/jpeg" title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
+            <img title="Plum's album-view" alt="Image of Plum's album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/album-view.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.webp">
-            <img type="image/jpeg" title="Plum's dark theme full-player" alt="Image of Plum's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.jpg">
+            <img title="Plum's dark theme full-player" alt="Image of Plum's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -85,37 +85,37 @@ From the moment you launch the app, you're greeted with an unorthodox mini-playe
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
-            <img type="image/jpeg" title="The modern full-player in light mode with a predominantly red record" alt="Image of the modern full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.jpg">
+            <img title="The modern full-player in light mode with a predominantly red record" alt="Image of the modern full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.webp">
-            <img type="image/jpeg" title="The modern full-player in light mode with a predominantly green record" alt="Image of the modern full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.jpg">
+            <img title="The modern full-player in light mode with a predominantly green record" alt="Image of the modern full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-green.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.webp">
-            <img type="image/jpeg" title="The modern full-player in light mode with a predominantly blue record" alt="Image of the modern full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.jpg">
+            <img title="The modern full-player in light mode with a predominantly blue record" alt="Image of the modern full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-blue.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.webp">
-            <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly red record" alt="Image of the modern full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.jpg">
+            <img title="The modern full-player in dark mode with a predominantly red record" alt="Image of the modern full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-red.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.webp">
-            <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly green record" alt="Image of the modern full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.jpg">
+            <img title="The modern full-player in dark mode with a predominantly green record" alt="Image of the modern full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-green.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.webp">
-            <img type="image/jpeg" title="The modern full-player in dark mode with a predominantly blue record" alt="Image of the modern full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.jpg">
+            <img title="The modern full-player in dark mode with a predominantly blue record" alt="Image of the modern full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-modern-blue.jpg">
         </picture>
     </a>
     <figcaption>Plum's “Modern” full-player skin.</figcaption>
@@ -127,37 +127,37 @@ The other core part of Plum's visual identity is its wild "Modern" full-player. 
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
-            <img type="image/jpeg" title="The classic full-player in light mode with a predominantly red record" alt="Image of the classic full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
+            <img title="The classic full-player in light mode with a predominantly red record" alt="Image of the classic full-player in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.webp">
-            <img type="image/jpeg" title="The classic full-player in light mode with a predominantly green record" alt="Image of the classic full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
+            <img title="The classic full-player in light mode with a predominantly green record" alt="Image of the classic full-player in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-green.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.webp">
-            <img type="image/jpeg" title="The classic full-player in light mode with a predominantly blue record" alt="Image of the classic full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
+            <img title="The classic full-player in light mode with a predominantly blue record" alt="Image of the classic full-player in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-blue.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.webp">
-            <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly red record" alt="Image of the classic full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
+            <img title="The classic full-player in dark mode with a predominantly red record" alt="Image of the classic full-player in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-red.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.webp">
-            <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly green record" alt="Image of the classic full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
+            <img title="The classic full-player in dark mode with a predominantly green record" alt="Image of the classic full-player in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-green.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.webp">
-            <img type="image/jpeg" title="The classic full-player in dark mode with a predominantly blue record" alt="Image of the classic full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
+            <img title="The classic full-player in dark mode with a predominantly blue record" alt="Image of the classic full-player in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-classic-blue.jpg">
         </picture>
     </a>
     <figcaption>Plum's “Classic” full-player skin.</figcaption>
@@ -180,37 +180,37 @@ Stepping further into the unusual, there are a couple items in Plum's menu that 
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
-            <img type="image/jpeg" title="Page 1 of the Mosaic layout style in light mode" alt="Image of page 1 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.jpg">
+            <img title="Page 1 of the Mosaic layout style in light mode" alt="Image of page 1 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.webp">
-            <img type="image/jpeg" title="Page 2 of the Mosaic layout style in light mode" alt="Image of page 2 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.jpg">
+            <img title="Page 2 of the Mosaic layout style in light mode" alt="Image of page 2 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-2.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.webp">
-            <img type="image/jpeg" title="Page 3 of the Mosaic layout style in light mode" alt="Image of page 3 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.jpg">
+            <img title="Page 3 of the Mosaic layout style in light mode" alt="Image of page 3 of the Mosaic layout style in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-3.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.webp">
-            <img type="image/jpeg" title="Page 1 of the Mosaic layout style in dark mode" alt="Image of page 1 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.jpg">
+            <img title="Page 1 of the Mosaic layout style in dark mode" alt="Image of page 1 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.webp">
-            <img type="image/jpeg" title="Page 2 of the Mosaic layout style in dark mode" alt="Image of page 2 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.jpg">
+            <img title="Page 2 of the Mosaic layout style in dark mode" alt="Image of page 2 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.webp">
-            <img type="image/jpeg" title="Page 3 of the Mosaic layout style in dark mode" alt="Image of page 3 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.jpg">
+            <img title="Page 3 of the Mosaic layout style in dark mode" alt="Image of page 3 of the Mosaic layout style in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-mosaic-3.jpg">
         </picture>
     </a>
 </div>
@@ -221,25 +221,25 @@ The "Folders" page offers users the ability to group together albums, artists, o
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
-            <img type="image/jpeg" title="The Folders page in light mode" alt="Image of the Folders page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.jpg">
+            <img title="The Folders page in light mode" alt="Image of the Folders page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.webp">
-            <img type="image/jpeg" title="An example folder in light mode" alt="Image of an example folder in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.jpg">
+            <img title="An example folder in light mode" alt="Image of an example folder in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.webp">
-            <img type="image/jpeg" title="The Folders page in dark mode" alt="Image of the Folders page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.jpg">
+            <img title="The Folders page in dark mode" alt="Image of the Folders page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.webp">
-            <img type="image/jpeg" title="An example folder in dark mode" alt="Image of an example folder in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.jpg">
+            <img title="An example folder in dark mode" alt="Image of an example folder in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-folders-2.jpg">
         </picture>
     </a>
     <figcaption>Find yourself feeling content and at peace? Not to worry, “Let's Get Sad, Yo” will make quick work of that.</figcaption>

@@ -30,13 +30,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.webp">
-            <img type="image/jpeg" title="Dot Music's light theme album view" alt="Image of Dot Music's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
+            <img title="Dot Music's light theme album view" alt="Image of Dot Music's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.webp">
-            <img type="image/jpeg" title="Dot Music's light theme full-player" alt="Image of Dot Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.jpg">
+            <img title="Dot Music's light theme full-player" alt="Image of Dot Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -50,13 +50,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.webp">
-            <img type="image/jpeg" title="Dot Music's dark theme album view" alt="Image of Dot Music's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
+            <img title="Dot Music's dark theme album view" alt="Image of Dot Music's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.webp">
-            <img type="image/jpeg" title="Dot Music's dark theme full-player" alt="Image of Dot Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.jpg">
+            <img title="Dot Music's dark theme full-player" alt="Image of Dot Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -82,13 +82,13 @@ Dot Music received no releases of any kind this year, and is thus omitted from t
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.webp">
-            <img type="image/jpeg" title="Ecoute's light theme album view" alt="Image of Ecoute's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
+            <img title="Ecoute's light theme album view" alt="Image of Ecoute's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.webp">
-            <img type="image/jpeg" title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+            <img title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -102,13 +102,13 @@ Dot Music received no releases of any kind this year, and is thus omitted from t
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.webp">
-            <img type="image/jpeg" title="Ecoute's dark theme album view" alt="Image of Ecoute's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
+            <img title="Ecoute's dark theme album view" alt="Image of Ecoute's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.webp">
-            <img type="image/jpeg" title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
+            <img title="Ecoute's full-player" alt="Image of Ecoute's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -138,7 +138,7 @@ While the anticipation for Julien's new player is growing, the Ecoute that remai
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.webp">
-            <img type="image/jpeg" title="Ecoute's album view" alt="Image of Ecoute's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
+            <img title="Ecoute's album view" alt="Image of Ecoute's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/album-view.jpg">
         </picture>
     </a>
 </div>
@@ -166,13 +166,13 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.webp">
-            <img type="image/jpeg" title="New Monaural's light theme album view" alt="Image of New Monaural's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
+            <img title="New Monaural's light theme album view" alt="Image of New Monaural's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.webp">
-            <img type="image/jpeg" title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+            <img title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -186,13 +186,13 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.webp">
-            <img type="image/jpeg" title="New Monaural's dark theme album view" alt="Image of New Monaural's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
+            <img title="New Monaural's dark theme album view" alt="Image of New Monaural's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.webp">
-            <img type="image/jpeg" title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
+            <img title="New Monaural's full-player" alt="Image of New Monaural's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -218,13 +218,13 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.webp">
-            <img type="image/jpeg" title="Sathorn's light theme album view" alt="Image of Sathorn's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
+            <img title="Sathorn's light theme album view" alt="Image of Sathorn's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.webp">
-            <img type="image/jpeg" title="Sathorn's light theme full-player" alt="Image of Sathorn's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.jpg">
+            <img title="Sathorn's light theme full-player" alt="Image of Sathorn's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -238,13 +238,13 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.webp">
-            <img type="image/jpeg" title="Sathorn's dark theme album view" alt="Image of Sathorn's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
+            <img title="Sathorn's dark theme album view" alt="Image of Sathorn's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.webp">
-            <img type="image/jpeg" title="Sathorn's dark theme full-player" alt="Image of Sathorn's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.jpg">
+            <img title="Sathorn's dark theme full-player" alt="Image of Sathorn's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -270,13 +270,13 @@ Sathorn received no attention of any kind this year, remaining the same poorly d
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.webp">
-            <img type="image/jpeg" title="SongOwl's light theme album view" alt="Image of SongOwl's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
+            <img title="SongOwl's light theme album view" alt="Image of SongOwl's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.webp">
-            <img type="image/jpeg" title="SongOwl's light theme full-player" alt="Image of SongOwl's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.jpg">
+            <img title="SongOwl's light theme full-player" alt="Image of SongOwl's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -290,13 +290,13 @@ Sathorn received no attention of any kind this year, remaining the same poorly d
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.webp">
-            <img type="image/jpeg" title="SongOwl's dark theme album view" alt="Image of SongOwl's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
+            <img title="SongOwl's dark theme album view" alt="Image of SongOwl's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.webp">
-            <img type="image/jpeg" title="SongOwl's dark theme full-player" alt="Image of SongOwl's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.jpg">
+            <img title="SongOwl's dark theme full-player" alt="Image of SongOwl's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -324,13 +324,13 @@ If [last year](/articles/third-annual-ios-music-player-showcase/17) was the warn
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.webp">
-            <img type="image/jpeg" title="Songpocket's light theme browser" alt="Image of Songpocket's light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
+            <img title="Songpocket's light theme browser" alt="Image of Songpocket's light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-browse-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.webp">
-            <img type="image/jpeg" title="Songpocket's light theme album view" alt="Image of Songpocket's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
+            <img title="Songpocket's light theme album view" alt="Image of Songpocket's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -344,13 +344,13 @@ If [last year](/articles/third-annual-ios-music-player-showcase/17) was the warn
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.webp">
-            <img type="image/jpeg" title="Songpocket's dark theme browser" alt="Image of Songpocket's dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
+            <img title="Songpocket's dark theme browser" alt="Image of Songpocket's dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-browse-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.webp">
-            <img type="image/jpeg" title="Songpocket's dark theme album view" alt="Image of Songpocket's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
+            <img title="Songpocket's dark theme album view" alt="Image of Songpocket's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -382,13 +382,13 @@ If Songpocket's utilitarian design or unique ability to manually sort and group 
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.webp">
-            <img type="image/jpeg" title="Soor's light theme album view" alt="Image of Soor's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.jpg">
+            <img title="Soor's light theme album view" alt="Image of Soor's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.webp">
-            <img type="image/jpeg" title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+            <img title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -402,13 +402,13 @@ If Songpocket's utilitarian design or unique ability to manually sort and group 
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.webp">
-            <img type="image/jpeg" title="Soor's dark theme album view" alt="Image of Soor's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
+            <img title="Soor's dark theme album view" alt="Image of Soor's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.webp">
-            <img type="image/jpeg" title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
+            <img title="Soor's full-player" alt="Image of Soor's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/full-player.jpg">
         </picture>
     </a>
 </div>
@@ -436,13 +436,13 @@ If you have an Apple Music subscription and have "Sync Library" enabled, Soor is
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.webp">
-            <img type="image/jpeg" title="Stezza's browser" alt="Image of Stezza's browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.jpg">
+            <img title="Stezza's browser" alt="Image of Stezza's browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/browse-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.webp">
-            <img type="image/jpeg" title="Stezza's album view" alt="Image of Stezza's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.jpg">
+            <img title="Stezza's album view" alt="Image of Stezza's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/album-view.jpg">
         </picture>
     </a>
 </div>
@@ -470,13 +470,13 @@ While Stezza does the job it set for itself well, it hasn't seen any noteworthy 
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.webp">
-            <img type="image/jpeg" title="TapTunes's light theme album view" alt="Image of TapTunes's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
+            <img title="TapTunes's light theme album view" alt="Image of TapTunes's light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.webp">
-            <img type="image/jpeg" title="TapTunes's light theme full-player" alt="Image of TapTunes's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.jpg">
+            <img title="TapTunes's light theme full-player" alt="Image of TapTunes's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -490,13 +490,13 @@ While Stezza does the job it set for itself well, it hasn't seen any noteworthy 
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.webp">
-            <img type="image/jpeg" title="TapTunes's dark theme album view" alt="Image of TapTunes's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
+            <img title="TapTunes's dark theme album view" alt="Image of TapTunes's dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.webp">
-            <img type="image/jpeg" title="TapTunes's dark theme full-player" alt="Image of TapTunes's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.jpg">
+            <img title="TapTunes's dark theme full-player" alt="Image of TapTunes's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -524,13 +524,13 @@ While TapTunes just received a major new 7.0 update at the very beginning of 202
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.webp">
-            <img type="image/jpeg" title="Vinyls' light theme browser" alt="Image of Vinyls' light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.jpg">
+            <img title="Vinyls' light theme browser" alt="Image of Vinyls' light theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-browse-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.webp">
-            <img type="image/jpeg" title="Vinyls' light theme album view" alt="Image of Vinyls' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.jpg">
+            <img title="Vinyls' light theme album view" alt="Image of Vinyls' light theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -544,13 +544,13 @@ While TapTunes just received a major new 7.0 update at the very beginning of 202
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.webp">
-            <img type="image/jpeg" title="Vinyls' dark theme browser" alt="Image of Vinyls' dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.jpg">
+            <img title="Vinyls' dark theme browser" alt="Image of Vinyls' dark theme browser" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-browse-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.webp">
-            <img type="image/jpeg" title="Vinyls' dark theme album view" alt="Image of Vinyls' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.jpg">
+            <img title="Vinyls' dark theme album view" alt="Image of Vinyls' dark theme album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-album-view.jpg">
         </picture>
     </a>
 </div>
@@ -578,13 +578,13 @@ Unfortunately, the lack of ability to display large album art in the full-player
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.webp">
-            <img type="image/jpeg" title="VOX's album view" alt="Image of VOX's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.jpg">
+            <img title="VOX's album view" alt="Image of VOX's album view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.webp">
-            <img type="image/jpeg" title="VOX's full-player" alt="Image of VOX's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.jpg">
+            <img title="VOX's full-player" alt="Image of VOX's full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/full-player.jpg">
         </picture>
     </a>
 </div>

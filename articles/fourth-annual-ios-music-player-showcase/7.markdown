@@ -39,13 +39,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.webp">
-            <img type="image/jpeg" title="Cs Music's light theme album-view" alt="Image of Cs Music's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
+            <img title="Cs Music's light theme album-view" alt="Image of Cs Music's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.webp">
-            <img type="image/jpeg" title="Cs Music's light theme full-player" alt="Image of Cs Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
+            <img title="Cs Music's light theme full-player" alt="Image of Cs Music's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -59,13 +59,13 @@ continuation:
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.webp">
-            <img type="image/jpeg" title="Cs Music's dark theme album-view" alt="Image of Cs Music's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
+            <img title="Cs Music's dark theme album-view" alt="Image of Cs Music's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.webp">
-            <img type="image/jpeg" title="Cs Music's dark theme full-player" alt="Image of Cs Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
+            <img title="Cs Music's dark theme full-player" alt="Image of Cs Music's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-full-player.jpg">
         </picture>
     </a>
 </div>
@@ -117,25 +117,25 @@ While that alone isn't noteworthy (Power Player added a similar "Home" page last
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
-            <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in light mode" alt="Image of page 1 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.jpg">
+            <img title="Page 1 of my Cs Music Activity page in light mode" alt="Image of page 1 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.webp">
-            <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in light mode" alt="Image of page 2 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.jpg">
+            <img title="Page 2 of my Cs Music Activity page in light mode" alt="Image of page 2 of my Cs Music Activity page in light mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-2.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.webp">
-            <img type="image/jpeg" title="Page 1 of my Cs Music Activity page in dark mode" alt="Image of page 1 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.jpg">
+            <img title="Page 1 of my Cs Music Activity page in dark mode" alt="Image of page 1 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-1.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.webp">
-            <img type="image/jpeg" title="Page 2 of my Cs Music Activity page in dark mode" alt="Image of page 2 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.jpg">
+            <img title="Page 2 of my Cs Music Activity page in dark mode" alt="Image of page 2 of my Cs Music Activity page in dark mode" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-dark-2.jpg">
         </picture>
     </a>
     <figcaption>Your “Activity” page might look totally different. For example, there’s nothing stopping you from configuring “Recently Played” to display songs, “Recently Added” to display artists, etc.</figcaption>
@@ -147,37 +147,37 @@ Unlike [Plum] and Power Player, Cs Music's visual design is mostly utilitarian. 
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
-            <img type="image/jpeg" title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.jpg">
+            <img title="The album view in light mode with a predominantly red record" alt="Image of the album view in light mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.webp">
-            <img type="image/jpeg" title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.jpg">
+            <img title="The album view in light mode with a predominantly green record" alt="Image of the album view in light mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-green.jpg">
         </picture>
     </a>
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.webp">
-            <img type="image/jpeg" title="The album view in light mode with a predominantly blue record" alt="Image of the album view in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.jpg">
+            <img title="The album view in light mode with a predominantly blue record" alt="Image of the album view in light mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-blue.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.webp">
-            <img type="image/jpeg" title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.jpg">
+            <img title="The album view in dark mode with a predominantly red record" alt="Image of the album view in dark mode with a predominantly red record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-red.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.webp">
-            <img type="image/jpeg" title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.jpg">
+            <img title="The album view in dark mode with a predominantly green record" alt="Image of the album view in dark mode with a predominantly green record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-green.jpg">
         </picture>
     </a>
     <a class="show-when-dark" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.webp">
-            <img type="image/jpeg" title="The album view in dark mode with a predominantly blue record" alt="Image of the album view in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.jpg">
+            <img title="The album view in dark mode with a predominantly blue record" alt="Image of the album view in dark mode with a predominantly blue record" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-blue.jpg">
         </picture>
     </a>
     <figcaption>The effect is boldly colored and blur-free like Power Player, but far more subtle in comparison.</figcaption>

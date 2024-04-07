@@ -6,13 +6,13 @@ design:
 <div class="row">
     <div class="column w6">
         <h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/social/images/me.png" alt="Memoji of myself waving friendly" title="Howdy!" /></h2>
-        <h4 style="font-weight:500;line-height:var(--body-line-height);">A <a href="https://github.com/barrowclift">full-stack developer</a> from Philly.</h4>
-        <h4 style="font-weight:500;line-height:var(--body-line-height);">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
-        <h4 style="font-weight:500;line-height:var(--body-line-height);"><a href="/about">Click here to read more…</a></h4>
+        <h4 style="line-height:var(--body-line-height);">A full-stack developer from Philly.</h4>
+        <h4 style="line-height:var(--body-line-height);">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
+        <h4 style="line-height:var(--body-line-height);"><a href="/about">Click here to read more…</a></h4>
 
-        <h2>Occupation</h2>
-        <h4 style="font-weight:500;line-height:var(--body-line-height);">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
-        <h4 style="font-weight:500;line-height:var(--body-line-height);">My studio is open for consultant work and employment offers.</h4>
+        <h2>Career</h2>
+        <h4 style="line-height:var(--body-line-height);">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
+        <h4 style="line-height:var(--body-line-height);">My studio is open for consultant work and employment offers.</h4>
         <ul class="button-group left autosize">
             <li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
         </ul>
@@ -20,7 +20,7 @@ design:
     <div class="column w6">
         <h2>Recent Work</h2>
 
-        <ul class="summary-list">
+        <div class="updates">
         {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
         {% assign maxNumberOfRecentWork=3 %}
         {% assign numberOfRecentWorkFound=0 %}
@@ -31,41 +31,45 @@ design:
             {% if numberOfRecentWorkFound >= maxNumberOfRecentWork %}
                 {% break %}
             {% endif %}
-            <li>
-                {% if post.link %}
-                <a title="Go to {{ post.link }}" href="{{ post.link }}">
-                {% else %}
-                <a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                {% endif %}
-                    {% if post.type == "project-update" and post.project-update-image %}
-                        <mark class="tag orange">Project</mark> 
-                        <time datetime="{{ post.date | date_to_xmlschema }}">
-                            {{ post.date | date: "%B %-d, %Y" }}
-                        </time>
-                        <img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
-                    {% else %}
-                        {% if post.type == "article" or post.type == "article-update" %}
-                            <mark class="tag blue">Article</mark>
-                        {% elsif post.type == "project-update" %}
-                            <mark class="tag orange">Project</mark>
-                        {% endif %} 
-                        <time datetime="{{ post.date | date_to_xmlschema }}">
-                            {{ post.date | date: "%B %-d, %Y" }}
-                        </time>
-                        <h4 class="header">
-                            
-                            {{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
-                        </h4>
-                        {% if post.excerpt %}
-                            <p>{{ post.excerpt }}</p>
+            {% if post.link %}
+            <a title="Go to {{ post.link }}" href="{{ post.link }}">
+            {% else %}
+            <a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            {% endif %}
+                <div class="card">
+                    <div class="label">
+                        {% if post.type == "project-update" and post.project-update-image %}
+                            <mark class="tag orange">Project</mark> 
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %-d, %Y" }}
+                            </time>
+                            <img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
+                        {% else %}
+                            <div class="metadata">
+                                {% if post.type == "article" or post.type == "article-update" %}
+                                    <mark class="tag blue">Article</mark>
+                                {% elsif post.type == "project-update" %}
+                                    <mark class="tag orange">Project</mark>
+                                {% endif %} 
+                                <time datetime="{{ post.date | date_to_xmlschema }}">
+                                    {{ post.date | date: "%B %-d, %Y" }}
+                                </time>
+                            </div>
+                            <h4 class="primary">
+                                
+                                {{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
+                            </h4>
+                            {% if post.excerpt %}
+                                <h5 class="secondary">{{ post.excerpt }}</h5>
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                </a>
-            </li>
+                    </div>
+                </div>
+            </a>
             {% assign numberOfRecentWorkFound = numberOfRecentWorkFound | plus: 1 %}
         {% endfor %}
-        </ul>
-        <h4 style="text-align: right; margin-top: 0.707em;">
+        </div>
+        <h4 style="text-align: right;">
             <a href="/updates">More updates…</a>
         </h4>
     </div>

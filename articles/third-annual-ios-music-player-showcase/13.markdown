@@ -26,13 +26,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.webp">
-            <img type="image/jpeg" title="'Picky' light theme album view" alt="Image of 'Picky' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.jpg">
+            <img title="'Picky' light theme album view" alt="Image of 'Picky' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.webp">
-            <img type="image/jpeg" title="'Picky' light theme player view" alt="Image of 'Picky' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.jpg">
+            <img title="'Picky' light theme player view" alt="Image of 'Picky' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -46,13 +46,13 @@ continuation:
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.webp">
-            <img type="image/jpeg" title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.jpg">
+            <img title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-album-view.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.webp">
-            <img type="image/jpeg" title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.jpg">
+            <img title="'Picky' dark theme player view" alt="Image of 'Picky' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-now-playing.jpg">
         </picture>
     </a>
 </div>
@@ -76,19 +76,19 @@ The rest of Picky not addressed in the 4.0 update remains the same as it was las
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-green.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-blue.jpg">
         </picture>
     </a>
 </div>
@@ -96,19 +96,19 @@ The rest of Picky not addressed in the 4.0 update remains the same as it was las
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
-            <img type="image/jpeg" title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.jpg">
+            <img title="The player view with a predominantly red record" alt="Image of the player view with a predominantly red record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.webp">
-            <img type="image/jpeg" title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.jpg">
+            <img title="The player view with a predominantly green record" alt="Image of the player view with a predominantly green record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-green.jpg">
         </picture>
     </a>
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.webp">
-            <img type="image/jpeg" title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.jpg">
+            <img title="The player view with a predominantly blue record" alt="Image of the player view with a predominantly blue record" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-blue.jpg">
         </picture>
     </a>
 </div>
