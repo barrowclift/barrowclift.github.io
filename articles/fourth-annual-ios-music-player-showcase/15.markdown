@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Picky's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/picky/icon.png "Picky's iOS app icon"){: .inline-app-icon } Picky
+## ![Picky's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/picky/icon.png "Picky's iOS app icon"){: .app-icon } Picky
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/picky/light-usage-poster.jpg" alt="Video demonstrating Picky's usage in light mode" title="Demonstrating Picky's usage in light mode">

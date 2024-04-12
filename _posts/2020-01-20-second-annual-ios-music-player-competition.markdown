@@ -112,7 +112,7 @@ With the score sheet established, let's dive in.
 
 ## Dead Music Players
 
-### !["Starling" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/starling/icon.png '"Starling" iOS app icon'){: .inline-app-icon } Starling
+### !["Starling" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/starling/icon.png '"Starling" iOS app icon'){: .app-icon } Starling
 
 Not long after the original article went up, [Starling] was [pulled from the App Store](https://itunes.apple.com/app/id1210406576). While that alone wouldn't lead me to assume the app was dead[^dead], the suspension of the [once-active Twitter account](https://twitter.com/starling_audio) and the [official website's takedown](http://web.archive.org/web/20190303084818/http://starling.audio/) leaves little chance Starling's removal means anything else.
 
@@ -124,7 +124,7 @@ It's a shame; Starling was one of the few apps that made the qualifiers last yea
 
 Like [last time](/articles/quest-for-the-best-ios-music-player#disqualifications), many music apps failed to qualify by breaking at least one of my "deal breaker" requirements. They're briefly covered below by descending preference:
 
-### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .inline-app-icon } Jams On Toast
+### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .app-icon } Jams On Toast
 
 <div class="edge-to-edge large two-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams usage in On Toast'" title="Demonstrating 'Jams On Toast' usage">
@@ -149,7 +149,7 @@ Like [last time](/articles/quest-for-the-best-ios-music-player#disqualifications
 
 Like last year, the "Now Playing" view remains a tiny portion of the screen; the largest album art you'll find in Jams On Toast is in its home view. Additionally, the app's effectively abandonware since it hasn’t seen any updates since its original release three years ago. However, if none of that are deal breakers for you and you're looking for a _truly_ unique music player at the expense of a robust feature set and maintenance, give Jams On Toast a look.
 
-### !["Stezza" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/icon.png '"Stezza" iOS app icon'){: .inline-app-icon } Stezza
+### !["Stezza" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/icon.png '"Stezza" iOS app icon'){: .app-icon } Stezza
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage-poster.jpg" alt="Video demonstrating usage in 'Stezza'" title="Demonstrating 'Stezza' usage">
@@ -179,7 +179,7 @@ Stezza is a fine app indeed, but it’s simply not designed as a music player fo
 
 However, while these decisions make Stezza absolutely *phenomenal* for eye-free use in the car, it's by design not a great fit for day-to-day personal use. Since it's simply a different category of music app, it cannot be fairly compared against the other qualifiers and is thus honorably disqualified.
 
-### !["Ecoute" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/icon.png '"Ecoute" iOS app icon'){: .inline-app-icon } Ecoute
+### !["Ecoute" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/icon.png '"Ecoute" iOS app icon'){: .app-icon } Ecoute
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in light mode" title="Demonstrating 'Ecoute' usage in light mode">
@@ -221,7 +221,7 @@ I can't say this one's surprise, [Ecoute]'s been abandonware long before [its in
 
 With its lack of active maintenance, crippling visual bugs in iOS 13, and the crop of new qualifiers that do exactly what Ecoute was [praised for](/articles/quest-for-the-best-ios-music-player#awards) last year but *better*, Ecoute is simply not up to the task anymore. It's about time either Ecoute starts receiving meaningful updates with a consistent update schedule or for the once gold-standard music player to finally be put out of its misery.
 
-### !["Soor" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/icon.png '"Soor" iOS app icon'){: .inline-app-icon } Soor
+### !["Soor" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/icon.png '"Soor" iOS app icon'){: .app-icon } Soor
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
@@ -273,7 +273,7 @@ While [Soor]'s promo images look promising, I personally find Soor does not have
 
 If your music collection is cloud-primary, I'd still recommend giving Soor a look due to its tight integration with Apple Music, but otherwise, I'd give this one a pass.
 
-### !["Music Player X" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/icon.png '"Music Player X" iOS app icon'){: .inline-app-icon } Music Player X
+### !["Music Player X" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/icon.png '"Music Player X" iOS app icon'){: .app-icon } Music Player X
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in light mode" title="Demonstrating 'Music Player X' usage in light mode">
@@ -329,7 +329,7 @@ With that said, Music Player X's developer, Femi, clearly has a passion for musi
 
 With all the disqualifications out of the way, it's time to alphabetically review this year's eleven contenders.
 
-### !["Albums" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/albums/icon.png '"Albums" iOS app icon'){: .inline-app-icon } Albums
+### !["Albums" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums
 
 <div class="show-when-light edge-to-edge large two-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">
@@ -390,7 +390,7 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
     <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
 </ul>
 
-### !["Cs" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/cs/icon.png '"Cs" iOS app icon'){: .inline-app-icon } Cs
+### !["Cs" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/cs/icon.png '"Cs" iOS app icon'){: .app-icon } Cs
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
@@ -477,7 +477,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
     <li>Customizable icons</li>
 </ul>
 
-### !["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .inline-app-icon } Doppi
+### !["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in light mode" title="Demonstrating 'Doppi' usage in light mode">
@@ -554,7 +554,7 @@ Doppi's not without its share of problems, albeit minor; the absence of customiz
     <li>iOS 13 dark mode & “lighter” dark mode options</li>
 </ul>
 
-### !["Doppler" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/icon.png '"Doppler" iOS app icon'){: .inline-app-icon } Doppler
+### !["Doppler" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/icon.png '"Doppler" iOS app icon'){: .app-icon } Doppler
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage-poster.jpg" alt="Video demonstrating usage in 'Doppler'" title="Demonstrating 'Doppler' usage">
@@ -612,7 +612,7 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
     <li>Album views match the dominant colors of the album art, a-la iTunes 11.</li>
 </ul>
 
-### !["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro
+### !["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in light mode" title="Demonstrating 'Marvis Pro' usage in light mode">
@@ -707,7 +707,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
     <li>Customizable icons</li>
 </ul>
 
-### !["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app
+### !["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
@@ -806,7 +806,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
     <li>Easily search both local music <em>and</em> Apple Music</li>
 </ul>
 
-### !["Picky" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/picky/icon.png '"Picky" iOS app icon'){: .inline-app-icon } Picky
+### !["Picky" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/picky/icon.png '"Picky" iOS app icon'){: .app-icon } Picky
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in light mode" title="Demonstrating 'Picky' usage in light mode">
@@ -884,7 +884,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
     <li>Customizable icons</li>
 </ul>
 
-### !["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player
+### !["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in light mode" title="Demonstrating 'Power Player' usage in light mode">
@@ -997,7 +997,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
     </li>
 </ul>
 
-### !["Sathorn" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/icon.png '"Sathorn" iOS app icon'){: .inline-app-icon } Sathorn
+### !["Sathorn" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/icon.png '"Sathorn" iOS app icon'){: .app-icon } Sathorn
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
@@ -1090,7 +1090,7 @@ Note that while Sathorn technically offers these options, each and every one are
     <li>Customizable icons</li>
 </ul>
 
-### !["TapTunes" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/icon.png){: .inline-app-icon } TapTunes
+### !["TapTunes" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/icon.png){: .app-icon } TapTunes
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in light mode" title="Demonstrating 'TapTunes' usage in light mode">
@@ -1210,7 +1210,7 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
     <li>Impressive number of settings and options</li>
 </ul>
 
-### !["VOX" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/vox/icon.png '"VOX" iOS app icon'){: .inline-app-icon } VOX
+### !["VOX" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/vox/icon.png '"VOX" iOS app icon'){: .app-icon } VOX
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage-poster.jpg" alt="Video demonstrating usage in 'VOX'" title="Demonstrating 'VOX' usage">
@@ -1268,7 +1268,7 @@ With 2019 complete and all qualifiers&mdash;both new and old&mdash;accounted for
 
 ### Best Lyrics Support
 
-__:trophy: Winners: [!["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app](https://www.apple.com/apple-music/)__ on iPhone, __[!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://powerplayer.evenwerk.com)__ on iPad
+__:trophy: Winners: [!["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app](https://www.apple.com/apple-music/)__ on iPhone, __[!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://powerplayer.evenwerk.com)__ on iPad
 
 iOS 13's [Music.app]'s lyrics support leapfrogs the previous year's shoddy "scroll down" implementation all the way to earning the title of 2019's best available lyrics support on iPhone. The new, beautifully designed lyrics view displays lyrics overtop the engaging "lava lamp" album art visualizer first seen on [tvOS] and makes reading lyrics feel like a premium, first-class feature in a way that only one other player comes close to achieving ([Power Player] on iPad)
 
@@ -1276,7 +1276,7 @@ Speaking of iPad, unfortunately the iPad equivalent of Music.app's lyrics view i
 
 ### Best Light & Dark Themes
 
-__:trophy: Winner: [!["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .inline-app-icon } Doppi](https://doppi.app)__
+__:trophy: Winner: [!["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi](https://doppi.app)__
 
 While many music players in 2019 feature light and dark modes, I found none balanced their own design wants with iOS 13's look and feel guidelines quite as well as [Doppi]. Some players like [Doppler] doesn't even support light mode. Of those remaining, some like [TapTunes] don't respect iOS 13's global theme setting. Of those, some like [Sathorn] stray too far from iOS 13's guidelines, often becoming hideous as a result. Of those precious few still remaining from all that, only Doppi thoughtfully continues to support both an iOS 13 compliant dark mode in addition to its original "grayish" dark mode that was popular in third-party apps prior to iOS 13's release.
 
@@ -1284,7 +1284,7 @@ Not only does Doppi earn its award for best light and dark themes; it's literall
 
 ### Best iPad Support
 
-__:trophy: Winner: [!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://powerplayer.evenwerk.com)__
+__:trophy: Winner: [!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://powerplayer.evenwerk.com)__
 
 Precious few music players support the iPad, and fewer still are any good at it. In fact, last year Apple's own [Music.app] [won the award by default](/articles/quest-for-the-best-ios-music-player#awards) since no other developers bothered to put any real effort into the iPad in the first place. However, I'm pleased to say that thanks to Power Player that's not the case this year. With it's thoughtful, iPad-specific design choices like the album "splitting view" and duel-column "Now Playing" horizontal view, it not only wipes out the third-party competition but also Apple's own app with regards to iPad screen space utilization.
 
@@ -1292,13 +1292,13 @@ If you mostly consume your music on an iPad and are sick of both Apple's "make e
 
 ### Best Discovery Options
 
-__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
+__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
 
 Discovery options are a disappointing mixed bag for the majority of music players out there. Many like [Cs] don't have any, while others like [Doppler] only support a single view or two, usually just "Recently Added". That leaves precious few like [Albums] and [TapTunes] that are any good at it&mdash;in their cases just by providing a handful of pre-baked discovery views. However, no other music player available on iOS today provides users the ability to quickly and easily craft their __own__ based on their personal tastes and listening habits. For this reason, [Marvis Pro]'s discovery options aren't just the best, they're in a whole other league. No other music player comes close. If you have particular ways you like to organize and display your library that aren't currently met, Marvis Pro is the app for you; It goes above and beyond to serve any and __all__ needs that other players and their pre-defined views will never be able to meet or match.
 
 ### Best Album-Focused Design
 
-__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
+__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
 
 [Marvis Pro] also sweeps up the award for best album-focused design, even beating out [Albums] whose sole purpose is to *be* album-focused. Once again, it achieves this with its deep personalization options. Want a grid view for your albums instead of a list view? Done. How about three albums per row instead of the standard two? Easy. Want particular metadata displayed for each album, or maybe even none at all? Not a problem, and the list of possibilities goes on.
 
@@ -1306,7 +1306,7 @@ It features the best album-focused design for the same reason it also features t
 
 ### Most Beautiful or Visually Engaging Now Playing view
 
-__:trophy: Winners: [!["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app](https://www.apple.com/apple-music/)__ on iPhone, __[!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .inline-app-icon } Power Player](https://powerplayer.evenwerk.com)__ on iPad
+__:trophy: Winners: [!["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app](https://www.apple.com/apple-music/)__ on iPhone, __[!["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://powerplayer.evenwerk.com)__ on iPad
 
 Perhaps unsurprisingly, the story for "most beautiful or visually engaging 'Now Playing' view" is very similar to that of the "best lyrics support" award. Far and away, 2019's most beautiful *and* visually engaging "Now Playing" view on iPhone is Apple's own [Music.app]. Where other players opted for static "Now Playing" views with varying degrees of translucency and blur, Music.app surprised the masses with a port of the gorgeous and dynamic "lava lamp" album art visualizer previously only available on [tvOS]. While as of iOS 13.2.3 the feature can only technically be triggered on the "Now Playing" view by exploiting a bug, the design's sheer impact and the fact the feature's technically accessible lets it earn this year's award.
 
@@ -1314,7 +1314,7 @@ However, just like with the "best lyrics support" award, Music.app's "Now Playin
 
 ### Best Overall iOS Music Player of 2019
 
-__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .inline-app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
+__:trophy: Winner: [!["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://appaddy.wixsite.com/marvis)__
 
 Last year, I set out on a quest to find the best music app and [ended up dismayed that I hadn't once my search concluded](/articles/quest-for-the-best-ios-music-player#final-verdict). However, this year an app appeared that I'm comfortable unequivocally declaring my favorite music player on iOS.
 

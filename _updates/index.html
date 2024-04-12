@@ -4,7 +4,7 @@ title: "Updates"
 
 <h1>Updates</h1>
 
-<div class="updates">
+<div class="cards updates column">
 {% assign updates = site.updates | sort: "date" | reverse %}
 {% for update in updates %}
     {% if update.type != "project-update" and update.type != "article-update" %}

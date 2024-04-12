@@ -18,7 +18,7 @@ continuation:
 
 Like [last year](/articles/second-annual-ios-music-player-competition), not all players will receive proper attention in the showcase. This both helps keep the showcase focused while also providing a decent excuse to completely ignore the dozens of trashy, "free" streaming music apps that pollute the App Store. However, there are a select few players I believe deserve honorable mentions despite not technically meeting the showcase criteria. Those plays are covered in brief, below.
 
-### !["Ecoute" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/icon.png '"Ecoute" iOS app icon'){: .inline-app-icon } Ecoute
+### !["Ecoute" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/icon.png '"Ecoute" iOS app icon'){: .app-icon } Ecoute
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage with light theme" title="Demonstrating 'Ecoute' usage with light theme">
@@ -84,7 +84,7 @@ However, for the first time in years there appears to be signs of movement on Ec
 
 To be clear, despite a humerous ["definitely maybe"](https://twitter.com/Barbapapapps/status/1343732043683934214) response to [my follow-up question](https://twitter.com/Barrowclift/status/1343727914722975746) about whether or not this confirms Ecoute 3's development, we've yet to see any "official" confirmation from Julien on the matter. Assuming the teasers are indeed of Ecoute 3, it's also unknown how far along in development the player is and whether or not it'll see public release in 2021. With all that said, Ecoute as it exists today remains difficult to recommend, but seeing more Ecoute 3 smoke in the past few days than we've seen for years has finally given me hope that Ecoute may soon reclaim its place as one of the finest players on iOS.
 
-### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .inline-app-icon } Jams On Toast
+### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .app-icon } Jams On Toast
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams On Toast' usage" title="Demonstrating 'Jams On Toast' usage">
@@ -112,7 +112,7 @@ Another year come and gone, yet [Jams on Toast] remains one-of-a-kind for its [c
 
 The app's impressive robustness aside, it's undeniably [abandonware](https://en.wikipedia.org/wiki/Abandonware) due to its lack of updates the past three years. Disappointingly, there also remains no way to view large album art in the player view, the album art in the virtual "crate" is the largest you'll see. However, despite these shortcomings, Jams On Toast continues to deliver the virtual record crate experience it advertised back in 2017, and is still worth checking out so long as you're comfortable accepting the slim feature set and lack of maintenance.
 
-### !["New Monaural" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/icon.png '"New Monaural" iOS app icon'){: .inline-app-icon } New Monaural
+### !["New Monaural" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/icon.png '"New Monaural" iOS app icon'){: .app-icon } New Monaural
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-usage-poster.jpg" alt="Video demonstrating 'New Monaural' usage with light theme" title="Demonstrating 'New Monaural' usage with light theme">
@@ -166,7 +166,7 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
 
 As the name implies, New Monaural supports a suite of mono-focused features which intend to make the stereo to mono conversion more pleasing for listeners who either require or prefer listening to their music with a single ear. Accessibility advances like this are fantastic to see, but unfortunately the audio engine New Monaural uses to achieve this feature set prevents [flat playback]() like you'd get in other players, even when these features are supposedly disabled. The differences are noticeable and distracting for stereo listening, and without a means to fully bypass it, I have no choice but to consider New Monaural a novelty for those who prefer their music in stereo and don't benefit from it's "New Mono" accessibility features.
 
-### !["Stezza" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/icon.png '"Stezza" iOS app icon'){: .inline-app-icon } Stezza
+### !["Stezza" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/icon.png '"Stezza" iOS app icon'){: .app-icon } Stezza
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/usage-poster.jpg" alt="Video demonstrating 'Stezza' usage" title="Demonstrating 'Stezza' usage">
@@ -200,7 +200,7 @@ Like [New Monaural], [Stezza] is designed with a clear focus in mind; while New 
 
 However, this focus comes at a cost; Stezza is simply not that appealing beyond its car driver market. Its inflated player interface—while desirable in driving contexts—is comical in any other application. If you find yourself constantly fiddling with your music while driving (which again, you *really* shouldn't), consider giving Stezza a spin. Otherwise, it's not for you.
 
-### !["TapTunes" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/icon.png '"TapTunes" iOS app icon'){: .inline-app-icon } TapTunes
+### !["TapTunes" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/icon.png '"TapTunes" iOS app icon'){: .app-icon } TapTunes
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage with light theme" title="Demonstrating 'TapTunes' usage with light theme">

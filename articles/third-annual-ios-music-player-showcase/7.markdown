@@ -14,7 +14,7 @@ continuation:
     next-page: "8"
 ---
 
-## !["Dot Music" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/icon.png '"Dot Music" iOS app icon'){: .inline-app-icon } Dot Music
+## !["Dot Music" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/icon.png '"Dot Music" iOS app icon'){: .app-icon } Dot Music
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with light theme" title="Demonstrating 'Dot Music' usage with light theme">

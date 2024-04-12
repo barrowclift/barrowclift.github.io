@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![MPX EQ's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/icon.png "MPX EQ's iOS app icon"){: .inline-app-icon } MPX EQ
+## ![MPX EQ's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/icon.png "MPX EQ's iOS app icon"){: .app-icon } MPX EQ
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in light mode" title="Demonstrating MPX EQ's usage in light mode">

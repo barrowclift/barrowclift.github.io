@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Cs Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png "Cs Music's iOS app icon"){: .inline-app-icon } Cs Music
+## ![Cs Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png "Cs Music's iOS app icon"){: .app-icon } Cs Music
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in light mode" title="Demonstrating Cs Music's usage in light mode">

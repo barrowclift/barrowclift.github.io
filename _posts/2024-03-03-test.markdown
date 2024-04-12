@@ -1,6 +1,6 @@
 ---
 title: "Test"
-date: 2014-05-04 21:12:01
+date: 2024-03-04 21:12:01
 excerpt: Testing everything
 ---
 
@@ -70,6 +70,61 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
         * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
     * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in light mode" title="Demonstrating Marvis Pro's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.webp">
+            <img title="Marvis Pro's light theme album-view" alt="Image of Marvis Pro's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.webp">
+            <img title="Marvis Pro's light theme full-player" alt="Image of Marvis Pro's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-full-player.jpg">
+        </picture>
+    </a>
+</div>
+<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in dark mode" title="Demonstrating Marvis Pro's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.webp">
+            <img title="Marvis Pro's dark theme album-view" alt="Image of Marvis Pro's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.webp">
+            <img title="Marvis Pro's dark theme full-player" alt="Image of Marvis Pro's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-full-player.jpg">
+        </picture>
+    </a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+    <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
+</div>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Vinyl Fetish's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/icon.png "Vinyl Fetish's iOS app icon"){: .inline-app-icon } Vinyl Fetish
+## ![Vinyl Fetish's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/icon.png "Vinyl Fetish's iOS app icon"){: .app-icon } Vinyl Fetish
 
 <div class="show-when-light edge-to-edge large two-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-usage-poster.jpg" alt="Video demonstrating Vinyl Fetish's usage in light mode" title="Demonstrating Vinyl Fetish's usage in light mode">

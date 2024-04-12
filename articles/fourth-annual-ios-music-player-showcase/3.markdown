@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Mixtapes' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/icon.png "Mixtapes' iOS app icon"){: .inline-app-icon } Mixtapes
+## ![Mixtapes' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/icon.png "Mixtapes' iOS app icon"){: .app-icon } Mixtapes
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage-poster.jpg" alt="Video demonstrating Mixtapes' usage in light mode" title="Demonstrating Mixtapes' usage in light mode">

@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 design:
-    flex: true
+    expanded-page: true
 ---
 
 <style>
@@ -24,6 +24,9 @@ design:
         .project:hover {
             transform: scale(1.025);
         }
+            .project:hover img {
+                filter: brightness(1) !important;
+            }
             .project:hover .foreground {
                 -webkit-transform: scale(1.05);
                 transform: scale(1.05);
@@ -130,7 +133,7 @@ design:
     </div>
 </div>
 <div class="row" style="gap: 0.65em;">
-    <div class="column hide-when-small">
+    <div class="column whitespace">
     </div>
     <div class="column">
         <span class="hint--top hint--rounded hint--bounce" data-hint="Playing Tetris on a Philly skyscraper">
@@ -141,6 +144,6 @@ design:
             </a>
         </span>
     </div>
-    <div class="column hide-when-small">
+    <div class="column whitespace">
     </div>
 </div>

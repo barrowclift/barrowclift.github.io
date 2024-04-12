@@ -14,7 +14,7 @@ continuation:
     next-page: "20"
 ---
 
-## !["VOX" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/icon.png '"VOX" iOS app icon'){: .inline-app-icon } VOX
+## !["VOX" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/icon.png '"VOX" iOS app icon'){: .app-icon } VOX
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/usage-poster.jpg" alt="Video demonstrating 'VOX' usage" title="Demonstrating 'VOX' usage">

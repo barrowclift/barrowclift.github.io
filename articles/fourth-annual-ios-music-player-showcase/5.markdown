@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Musens' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png "Musens' iOS app icon"){: .inline-app-icon } Musens
+## ![Musens' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png "Musens' iOS app icon"){: .app-icon } Musens
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage-poster.jpg" alt="Video demonstrating Musens' usage in light mode" title="Demonstrating Musens' usage in light mode">

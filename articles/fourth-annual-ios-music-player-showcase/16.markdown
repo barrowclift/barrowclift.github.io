@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Plum's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png "Plum's iOS app icon"){: .inline-app-icon } Plum
+## ![Plum's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png "Plum's iOS app icon"){: .app-icon } Plum
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating Plum's usage in light mode" title="Demonstrating Plum's usage in light mode">

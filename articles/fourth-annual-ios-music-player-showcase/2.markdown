@@ -18,7 +18,7 @@ continuation:
 
 ## Honorable Mentions
 
-### ![Dot Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/icon.png "Dot Music's iOS app icon"){: .inline-app-icon } Dot Music
+### ![Dot Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/icon.png "Dot Music's iOS app icon"){: .app-icon } Dot Music
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating Dot Music's usage in light mode" title="Demonstrating Dot Music's usage in light mode">
@@ -70,7 +70,7 @@ continuation:
 
 Dot Music received no releases of any kind this year, and is thus omitted from the showcase proper. Dot Music's a simple general-purpose player that takes strongly after [2019-era Cs Music](/articles/second-annual-ios-music-player-competition#--cs) but offers nothing uniquely compelling to show for it. If you long for a visually bland player that's been ignored for the past year that includes only the bare minimum of cookie-cutter features, then Dot Music may in fact be just what you're looking for.
 
-### ![Ecoute's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/icon.png "Ecoute's iOS app icon"){: .inline-app-icon } Ecoute
+### ![Ecoute's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/icon.png "Ecoute's iOS app icon"){: .app-icon } Ecoute
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage-poster.jpg" alt="Video demonstrating Ecoute's usage in light mode" title="Demonstrating Ecoute's usage in light mode">
@@ -126,7 +126,7 @@ In 2020, however, [Julien tweeted a single teaser](https://twitter.com/Barbapapa
 
 While the anticipation for Julien's new player is growing, the Ecoute that remains publicly available today hasn't seen an update in over two years, leaving Ecoute to again be omitted from the showcase. While the app is still functional, what once made it visually and functionally stand out from among its peers is now commonplace, leaving it difficult to recommend the aging current Ecoute release. However, if Julien's rate of tweet teasers are any indication, 2022 is looking likely to be the year we'll once again see Ecoute (or perhaps a spiritual successor) return to restore its former glory.
 
-### ![Jams On Toast's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/icon.png "Jams On Toast's iOS app icon"){: .inline-app-icon } Jams On Toast
+### ![Jams On Toast's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/icon.png "Jams On Toast's iOS app icon"){: .app-icon } Jams On Toast
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage-poster.jpg" alt="Video demonstrating Ecoute's usage" title="Demonstrating Ecoute's usage">
@@ -154,7 +154,7 @@ Jams On Toast received its *first ever* maintenance releases this year in the fo
 
 Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exactly* as well as it did all the way back in 2017, and continues to this day to offer a novel ["record crate"](https://duckduckgo.com/?q=record+crate&iax=images&ia=images#) library browsing experience. While [Vinyl Fetish] this year released its own form of "record crate" browsing as an optional layout setting, Jams On Toast remains the only way you can browse your entire library as a scrollable list of "crates". If that gimmick interests you in the lightest, Jams On Toast is still well worth your time to check out.
 
-### ![New Monaural's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/icon.png "New Monaural's iOS app icon"){: .inline-app-icon } New Monaural
+### ![New Monaural's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/icon.png "New Monaural's iOS app icon"){: .app-icon } New Monaural
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage-poster.jpg" alt="Video demonstrating New Monaural's usage in light mode" title="Demonstrating New Monaural's usage in light mode">
@@ -206,7 +206,7 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
 
 Despite first impressions, New Monaural is *not* a general-purpose player, but rather a niche player tailed towards providing rich playback accessibility options. As the name suggests, its crowning jewel is its special "monaural playback" capability, which aims to make playback of stereo music files on mono speakers and headphones sound more natural than they otherwise would with iOS's build-in playback APIs. While the audience who would want such capabilities is undoubtedly slim, it's sure to be a treasured by listeners who are hard of hearing in one ear or for one reason or another only have a single functional speaker. While New Monaural is a fantastic option for those listeners, it remains difficult to broadly recommend as its custom playback engine yields non-flat playback of tracks even if the classic "Stereo" playback option is selected. That paired with a lack of updates through 2021 excluded New Monaural from more thorough attention in the showcase.
 
-### ![Sathorn's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/icon.png "Sathorn's iOS app icon"){: .inline-app-icon } Sathorn
+### ![Sathorn's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/icon.png "Sathorn's iOS app icon"){: .app-icon } Sathorn
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating Sathorn's usage in light mode" title="Demonstrating Sathorn's usage in light mode">
@@ -258,7 +258,7 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
 
 Sathorn received no attention of any kind this year, remaining the same poorly designed general-purpose player it was in 2021 and is thus not included in the showcase. If [Dot Music]'s issue was a lack of anything novel, Sathorn's issue is its numerous attempts and failures at doing so. It features a full-player with four different theme options, but each of them manage to look [unappealing]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/player-composite.webp). It offers a button to change the sort order in the menu bar, but comically features a filter/sieve icon instead of the expected up/down sorting arrows icon. It has an accent color, but inconsistently applies it (in the mini-player, bewilderingly only the "Play" button uses the accent color, not the "Skip" button). While each of these issues taken in isolation is not particularly concerning, the sheer number of issues like these found throughout Sathorn make it difficult to recommend for anyone other than those looking for a case study in poor interface design.
 
-### ![SongOwl's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/icon.png "SongOwl's iOS app icon"){: .inline-app-icon } SongOwl
+### ![SongOwl's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/icon.png "SongOwl's iOS app icon"){: .app-icon } SongOwl
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating SongOwl's usage in light mode" title="Demonstrating SongOwl's usage in light mode">
@@ -312,7 +312,7 @@ SongOwl began life as a radical redesign for Cs Music 6. However, the redesign w
 
 If [last year](/articles/third-annual-ios-music-player-showcase/17) was the warning sign, this year cements it: SongOwl is without a doubt playing second fiddle to [Cs Music], receiving not even a single update this year. For listeners like myself that appreciated SongOwl's flexible and unique "Paths" feature, it's difficult to not be disappointed. "Paths" is in some ways a more approachable and user-friendly parallel to [Marvis Pro]'s "Sections", where listeners can define a grouping and sorting option for any number of different "Paths" they want. For example, I can create a "Recently Added Albums" path by simply grouping by "Album" and sorting by "Date Added". That functionality paired with exceptionally cute branding make SongOwl a catch, and while its future now remains uncertain, what remains available today is still undoubtably worth your time (assuming of course you're comfortable with its current lack of development).
 
-### ![Songpocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/icon.png "Songpocket's iOS app icon"){: .inline-app-icon } Songpocket
+### ![Songpocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/icon.png "Songpocket's iOS app icon"){: .app-icon } Songpocket
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage-poster.jpg" alt="Video demonstrating Songpocket's usage in light mode" title="Demonstrating Songpocket's usage in light mode">
@@ -370,7 +370,7 @@ The singular browser alone doesn't draw parallels to desktop OS playback utiliti
 
 If Songpocket's utilitarian design or unique ability to manually sort and group the contents of your library interest you in the slightest, it's absolutely worth a look since this is the only player I'm aware of that provides these capabilities. However, its slim offerings aside from that capability and the lack of a full-screen player (along with queue control, shuffle, etc.) easily qualify it as a niche player and make it difficult to broadly recommend.
 
-### ![Soor's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/icon.png "Soor's iOS app icon"){: .inline-app-icon } Soor
+### ![Soor's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/icon.png "Soor's iOS app icon"){: .app-icon } Soor
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage-poster.jpg" alt="Video demonstrating Soor's usage in light mode" title="Demonstrating Soor's usage in light mode">
@@ -424,7 +424,7 @@ The general-purpose player Soor received a handful of bug patches this year, but
 
 If you have an Apple Music subscription and have "Sync Library" enabled, Soor is a treat worth checking out; its animations are buttery smooth, it features an album art visualizer (albeit a bit dull in comparison to [Vinyls], [Power Player], and [jetAudio]'s visualizers), and is deeply and richly integrated at every turn with Apple Music. However, unless you have *both* an Apple Music subscription and "Sync Library" enabled, Soor is simply too crippled functionally to recommend.
 
-### ![Stezza's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/icon.png "Stezza's iOS app icon"){: .inline-app-icon } Stezza
+### ![Stezza's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/icon.png "Stezza's iOS app icon"){: .app-icon } Stezza
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage-poster.jpg" alt="Video demonstrating Stezza's usage" title="Demonstrating Stezza's usage">
@@ -458,7 +458,7 @@ Stezza's a curious player whose focus is solely on providing the best possible i
 
 While Stezza does the job it set for itself well, it hasn't seen any noteworthy changes or improvements in years other than occasional patch releases to support newer iOS versions, and thus won't be featured in the showcase this year. However, if you find yourself using your phone in a car mount for playback control and are fed up with dangerously hunting for playback controls while driving (which you frankly shouldn't do, anyway), Stezza's ginormous buttons are still well worth checking out despite the lack of active development.
 
-### ![TapTunes's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/icon.png "TapTunes's iOS app icon"){: .inline-app-icon } TapTunes
+### ![TapTunes's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/icon.png "TapTunes's iOS app icon"){: .app-icon } TapTunes
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage-poster.jpg" alt="Video demonstrating TapTunes's usage in light mode" title="Demonstrating TapTunes's usage in light mode">
@@ -512,7 +512,7 @@ TapTunes is a [decade old](https://david-blundell.blogspot.com/2009/06/taptunes-
 
 While TapTunes just received a major new 7.0 update at the very beginning of 2022 (featuring a refreshed app icon, widgets, and loads of other interface tweaks and improvements), it just barely missed the cut-off window to be considered a 2021 update. TapTunes' new update and any subsequent updates will instead be covered in further detail in the next annual showcase. To be clear, even if TapTunes didn't receive its major update at the very beginning of 2022, its novel browsing capabilities continue to be well worth a look for anyone wanting something richer than what its peers like [Longplay] can offer.
 
-### ![Vinyls' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/icon.png "Vinyls' iOS app icon"){: .inline-app-icon } Vinyls
+### ![Vinyls' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/icon.png "Vinyls' iOS app icon"){: .app-icon } Vinyls
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage-poster.jpg" alt="Video demonstrating Vinyls' usage in light mode" title="Demonstrating Vinyls' usage in light mode">
@@ -566,7 +566,7 @@ Vinyls is a delightful surprise this year that—as the name implies—focuses o
 
 Unfortunately, the lack of ability to display large album art in the full-player instead of or in addition to the spinning record like Vinyl Fetish removes it from consideration. Nonetheless, if you find yourself desiring a cute full-player gimmick but are turned off by Vinyl Fetish's commitment to the illusion, Vinyls is certainly worth checking out.
 
-### ![VOX's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/icon.png "VOX's iOS app icon"){: .inline-app-icon } VOX
+### ![VOX's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/icon.png "VOX's iOS app icon"){: .app-icon } VOX
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage-poster.jpg" alt="Video demonstrating VOX's usage" title="Demonstrating VOX's usage">

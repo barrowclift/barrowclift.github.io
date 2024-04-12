@@ -14,7 +14,7 @@ continuation:
     next-page: "9"
 ---
 
-## !["jetAudio" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/icon.png '"jetAudio" iOS app icon'){: .inline-app-icon } jetAudio
+## !["jetAudio" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/icon.png '"jetAudio" iOS app icon'){: .app-icon } jetAudio
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-usage-poster.jpg" alt="Video demonstrating 'jetAudio' usage in light mode" title="Demonstrating 'jetAudio' usage in light mode">

@@ -77,7 +77,7 @@ Those months were a frantic scramble. Designing the games themselves was trivial
 
 ## Press
 
-<video class="shadow rounded" controls preload="none" poster="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="News segment featuring a brief interview with team">
+<video class="shadow" controls preload="none" poster="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage-poster.jpg" alt="News segment featuring a brief interview with team">
     <source src="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage.mp4" type="video/mp4">
     <source src="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage.webm" type="video/webm">
     <source src="{{ site.dropbox }}/projects/code/largest-video-game-ever/news-coverage.ogv" type="video/ogg">

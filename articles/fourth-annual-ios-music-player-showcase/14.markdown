@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Music.app's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png "Marvis Pro's iOS app icon"){: .inline-app-icon } Music.app
+## ![Music.app's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png "Marvis Pro's iOS app icon"){: .app-icon } Music.app
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating Music.app's usage in light mode" title="Demonstrating Music.app's usage in light mode">

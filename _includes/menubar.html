@@ -35,14 +35,14 @@
 Intentionally including the #settings-popup here instead of within the
 #menubar itself (which would give all the floating/hiding bits "for free")
 because of a Chrome quirk in its backdrop-filter implementation that would
-prevent both the parent #menubar and the child (#settings- popup) from
+prevent both the parent #menubar and the child (#settings-popup) from
 applying the backdrop-filter: https://stackoverflow.com/a/76207141.
 
 Only Chrome has this limitation, but since it's *technically* more in line
 with the written spec, going out of my way to meet it.
 -->
 {% if page.design.force-dark-mode != true or page.design.accent == null %}
-    <div class="popup" id="settings-popup">
+    <div id="settings-popup">
         {% if page.design.force-dark-mode != true %}
             <div id="dark-mode-settings" class="group">
                 <label>Appearance:</label>
@@ -57,13 +57,13 @@ with the written spec, going out of my way to meet it.
             <div id="accent-color-settings" class="group">
                 <label>Accent Color:</label>
                 <ul class="wells">
-                    <li><div title="Blue accent color" onclick="changeAccentColor('blue')" id="input-blue" class="well blue"></div></li>
-                    <li><div title="Purple accent color" onclick="changeAccentColor('purple')" id="input-purple" class="well purple"></div></li>
-                    <li><div title="Pink accent color" onclick="changeAccentColor('pink')" id="input-pink" class="well pink"></div></li>
                     <li><div title="Red accent color" onclick="changeAccentColor('red')" id="input-red" class="well red"></div></li>
                     <li><div title="Orange accent color" onclick="changeAccentColor('orange')" id="input-orange" class="well orange"></div></li>
                     <li><div title="Yellow accent color" onclick="changeAccentColor('yellow')" id="input-yellow" class="well yellow"></div></li>
                     <li><div title="Green accent color" onclick="changeAccentColor('green')" id="input-green" class="well green"></div></li>
+                    <li><div title="Blue accent color" onclick="changeAccentColor('blue')" id="input-blue" class="well blue"></div></li>
+                    <li><div title="Purple accent color" onclick="changeAccentColor('purple')" id="input-purple" class="well purple"></div></li>
+                    <li><div title="Pink accent color" onclick="changeAccentColor('pink')" id="input-pink" class="well pink"></div></li>
                 </ul>
             </div>
         {% endif %}

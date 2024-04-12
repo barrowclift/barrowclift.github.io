@@ -9,7 +9,7 @@ I can't seem to find anything for your request, apologies! If you believe someth
 
 To pass the time until then, please consider my recent articles below.
 
-<div class="updates">
+<div class="cards updates column">
     {% assign numberOfLinksAdded = 0 %}
     {% for post in site.posts %}
         {% if post.type != "article" %}

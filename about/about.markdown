@@ -1,4 +1,4 @@
-<figure class="inline shadow">
+<figure class="inline shadow" style="margin-top: 0 !important;">
     <picture>
         <source type="image/webp" srcset="images/portrait.webp">
         <img title="Selfie of myself with my husband, Kai" alt="Selfie of myself with my husband, Kai" src="images/portrait.jpg">

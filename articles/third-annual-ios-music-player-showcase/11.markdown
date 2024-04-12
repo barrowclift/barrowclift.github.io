@@ -14,7 +14,7 @@ continuation:
     next-page: "12"
 ---
 
-## !["Music Player X" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/icon.png '"Music Player X" iOS app icon'){: .inline-app-icon } Music Player X
+## !["Music Player X" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/icon.png '"Music Player X" iOS app icon'){: .app-icon } Music Player X
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with light theme" title="Demonstrating 'Music Player X' usage with light theme">

@@ -1,7 +1,7 @@
 ---
 title: "Articles"
 design:
-    flex: true
+    expanded-page: true
     show-anchors: false
 ---
 
@@ -15,16 +15,16 @@ design:
             </div>
         </div>
     {% else %}
-        <div class="row articles" style="{% if forloop.index == forloop.length and lengthMod == 1 %}gap: 0.65em;{% endif %}">
+        <div class="cards articles row" style="{% if forloop.index == forloop.length and lengthMod == 1 %}gap: 0.65em;{% endif %}">
             {% if forloop.index == forloop.length and lengthMod == 1 %}
-                <div class="column hide-when-small"></div>
+                <div class="column whitespace"></div>
             {% endif %}
             <div class="column">
                 {% include article-card.html %}
             </div>
             {% if forloop.index == forloop.length %}
                 {% if lengthMod == 1 %}
-                    <div class="column hide-when-small"></div>
+                    <div class="column whitespace"></div>
                 {% endif %}
                 </div>
             {% endif %}

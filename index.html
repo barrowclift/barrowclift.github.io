@@ -1,10 +1,10 @@
 ---
 design:
-    flex: true
+    expanded-page: true
 ---
 
 <div class="row">
-    <div class="column w6">
+    <div class="column w6 align-left">
         <h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/social/images/me.png" alt="Memoji of myself waving friendly" title="Howdy!" /></h2>
         <h4 style="line-height:var(--body-line-height);">A full-stack developer from Philly.</h4>
         <h4 style="line-height:var(--body-line-height);">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
@@ -17,10 +17,10 @@ design:
             <li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
         </ul>
     </div>
-    <div class="column w6">
+    <div class="column w6 align-left">
         <h2>Recent Work</h2>
 
-        <div class="updates">
+        <div class="cards updates column align-left">
         {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
         {% assign maxNumberOfRecentWork=3 %}
         {% assign numberOfRecentWorkFound=0 %}
@@ -43,7 +43,7 @@ design:
                             <time datetime="{{ post.date | date_to_xmlschema }}">
                                 {{ post.date | date: "%B %-d, %Y" }}
                             </time>
-                            <img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
+                            <img src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
                         {% else %}
                             <div class="metadata">
                                 {% if post.type == "article" or post.type == "article-update" %}
@@ -69,7 +69,7 @@ design:
             {% assign numberOfRecentWorkFound = numberOfRecentWorkFound | plus: 1 %}
         {% endfor %}
         </div>
-        <h4 style="text-align: right;">
+        <h4 style="align-self: end; margin-top: var(--gap);">
             <a href="/updates">More updates…</a>
         </h4>
     </div>

@@ -25,7 +25,7 @@ continuation:
     }
 </style>
 
-## !["Albums" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/icon.png '"Albums" iOS app icon'){: .inline-app-icon } Albums
+## !["Albums" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">

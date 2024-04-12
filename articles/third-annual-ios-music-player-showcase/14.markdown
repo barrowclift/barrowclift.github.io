@@ -14,7 +14,7 @@ continuation:
     next-page: "15"
 ---
 
-## !["Plum" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .inline-app-icon } Plum
+## !["Plum" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .app-icon } Plum
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with light theme" title="Demonstrating 'Plum' usage with light theme">

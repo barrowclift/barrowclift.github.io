@@ -93,11 +93,11 @@ function updateThemeColor(a_accentColor) {
     let darkBaseThemeColor;
     let lightBaseThemeColor;
     if (accentColor === "purple") {
-        darkBaseThemeColor = "#29232C";
-        lightBaseThemeColor = "#EEEEF1";
+        darkBaseThemeColor = "#29232E";
+        lightBaseThemeColor = "#F1EDF1";
     } else if (accentColor === "pink") {
-        darkBaseThemeColor = "#2B2325";
-        lightBaseThemeColor = "#F2EEEF";
+        darkBaseThemeColor = "#2D2228";
+        lightBaseThemeColor = "#F2EEF1";
     } else if (accentColor === "red") {
         darkBaseThemeColor = "#2B2323";
         lightBaseThemeColor = "#F1EFEE";

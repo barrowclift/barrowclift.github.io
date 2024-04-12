@@ -10,6 +10,8 @@
  *   8. Admonitions
  *   9. Menubar
  *   10. Cards
+ *   11. Flexbox
+ *   12. Media
  */
 
 
@@ -17,7 +19,7 @@
  ***  1. VARIABLES  ***
  **********************/
 
-html {
+:root {
     /**
      * -----------------------
      * Typography & Whitespace
@@ -44,11 +46,12 @@ html {
     
     --widget-background-opacity: 0.975;
     --widget-background: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
-    --widget-border-saturation: 5%;
-    --widget-border-lightness: 62.5%;
-    --widget-border: hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2);
+    --widget-saturation: 5%;
+    --widget-lightness: 62.5%;
+    --widget-border: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2);
 
     --admonition-left-border-lightness-adjustment: 10%;
+    --default-admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.05);
 
     --highlight-background-opacity: 0.1;
 
@@ -69,14 +72,25 @@ html {
 
     --primary-foreground: rgba(30, 30, 30, 0.9);
     --secondary-foreground: rgba(30, 30, 30, 0.375);
+    /**
+     * Explicitly declaring the light mode heavy secondary foreground color
+     * for the iMac stroke color to use.
+     */
     --light-heavy-secondary-foreground: rgba(30, 30, 30, 0.6);
     --heavy-secondary-foreground: var(--light-heavy-secondary-foreground);
+
+    --table-washboard-background: rgba(245, 245, 245, 0.75);
 
     /**
      * -------------------
      * Light Accent Colors
      * -------------------
      */
+
+    --background-color: hsl(var(--accent-hue), 50%, 99%);
+
+    --accent-color: var(--accent-hue), var(--accent-saturation), var(--accent-lightness);
+    --accent-color-p3: display-p3 var(--accent-r) var(--accent-g) var(--accent-b);
 
     --graphite-hue: 240;
     --graphite-saturation: 24%;
@@ -85,37 +99,72 @@ html {
     --blue-hue: 211;
     --blue-saturation: 100%;
     --blue-lightness: 50%;
+    --blue-r: 0;
+    --blue-g: 0.47843137;
+    --blue-b: 1;
+    --blue-color: var(--blue-hue), var(--blue-saturation), var(--blue-lightness);
+    --blue-color-p3: display-p3 var(--blue-r) var(--blue-g) var(--blue-b);
 
     --red-hue: 3;
     --red-saturation: 100%;
     --red-lightness: 59%;
+    --red-r: 1;
+    --red-g: 0.23137255;
+    --red-b: 0.18823529;
+    --red-color: var(--red-hue), var(--red-saturation), var(--red-lightness);
+    --red-color-p3: display-p3 var(--red-r) var(--red-g) var(--red-b);
 
     --orange-hue: 30;
     --orange-saturation: 100%;
     --orange-lightness: 50%;
+    --orange-r: 1;
+    --orange-g: 0.58431373;
+    --orange-b: 0;
+    --orange-color: var(--orange-hue), var(--orange-saturation), var(--orange-lightness);
+    --orange-color-p3: display-p3 var(--orange-r) var(--orange-g) var(--orange-b);
 
     --yellow-hue: 48;
     --yellow-saturation: 90%;
     --yellow-lightness: 50%;
+    --yellow-r: 0.94901961;
+    --yellow-g: 0.76862745;
+    --yellow-b: 0.05882353;
+    --yellow-color: var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness);
+    --yellow-color-p3: display-p3 var(--yellow-r) var(--yellow-g) var(--yellow-b);
 
     --green-hue: 130;
     --green-saturation: 60%;
     --green-lightness: 50%;
+    --green-r: 0.20392157;
+    --green-g: 0.78039216;
+    --green-b: 0.34901961;
+    --green-color: var(--green-hue), var(--green-saturation), var(--green-lightness);
+    --green-color-p3: display-p3 var(--green-r) var(--green-g) var(--green-b);
 
-    --purple-hue: 241;
-    --purple-saturation: 61%;
-    --purple-lightness: 59%;
+    --purple-hue: 280;
+    --purple-saturation: 68%;
+    --purple-lightness: 60%;
+    --purple-r: 0.68627451;
+    --purple-g: 0.32156863;
+    --purple-b: 0.87058824;
+    --purple-color: var(--purple-hue), var(--purple-saturation), var(--purple-lightness);
+    --purple-color-p3: display-p3 var(--purple-r) var(--purple-g) var(--purple-b);
 
-    --pink-hue: 349;
+    --pink-hue: 322;
     --pink-saturation: 100%;
-    --pink-lightness: 59%;
+    --pink-lightness: 64%;
+    --pink-r: 1;
+    --pink-g: 0.27843137;
+    --pink-b: 0.61568627;
+    --pink-color: var(--pink-hue), var(--pink-saturation), var(--pink-lightness);
+    --pink-color-p3: display-p3 var(--pink-r) var(--pink-g) var(--pink-b);
 }
     @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        html {
+        :root {
             --widget-background-opacity: 0.85;
         }
     }
-html#dark {
+:root#dark {
     /**
      * -----------------
      * Dark Mode Widgets
@@ -123,9 +172,10 @@ html#dark {
      */
     
     --widget-background: hsla(var(--accent-hue), 10%, 16%, var(--widget-background-opacity));
-    --widget-border-lightness: 37.5%;
+    --widget-lightness: 37.5%;
 
     --admonition-left-border-lightness-adjustment: -10%;
+    --default-admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.05);
 
     --highlight-background-opacity: 0.15;
 
@@ -134,7 +184,7 @@ html#dark {
      * Dark Mode Shadows
      * ------------------
      */
-    
+
     --inactive-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.1), 0em 0.22em 0.6em rgba(0, 0, 0, 0.05);
     --active-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.2);
 
@@ -143,15 +193,20 @@ html#dark {
      * Dark Mode Colors
      * ----------------
      */
+    
     --primary-foreground: rgba(255, 255, 255, 0.9);
     --secondary-foreground: rgba(255, 255, 255, 0.375);
     --heavy-secondary-foreground: rgba(255, 255, 255, 0.6);
+
+    --table-washboard-background: rgba(15, 15, 15, 0.25);
 
     /**
      * ------------------
      * Dark Accent Colors
      * ------------------
      */
+
+    --background-color: hsl(var(--accent-hue), 15%, 12%);
 
     --graphite-hue: 240;
     --graphite-saturation: 3%;
@@ -160,66 +215,108 @@ html#dark {
     --blue-hue: 210;
     --blue-saturation: 100%;
     --blue-lightness: 52%;
+    --blue-r: 0.03921569;
+    --blue-g: 0.51764706;
+    --blue-b: 1;
 
     --red-hue: 3;
     --red-saturation: 100%;
     --red-lightness: 61%;
+    --red-r: 1;
+    --red-g: 0.27058824;
+    --red-b: 0.22745098;
 
     --orange-hue: 36;
     --orange-saturation: 100%;
     --orange-lightness: 52%;
+    --orange-r: 1;
+    --orange-g: 0.62352941;
+    --orange-b: 0.03921569;
 
     --yellow-hue: 50;
     --yellow-saturation: 100%;
     --yellow-lightness: 52%;
+    --yellow-r: 1;
+    --yellow-g: 0.83921569;
+    --yellow-b: 0.03921569;
 
     --green-hue: 135;
     --green-saturation: 64%;
     --green-lightness: 50%;
+    --green-r: 0.18823529;
+    --green-g: 0.81960784;
+    --green-b: 0.34509804;
 
     --purple-hue: 280;
     --purple-saturation: 85%;
     --purple-lightness: 65%;
+    --purple-r: 0.74901961;
+    --purple-g: 0.35294118;
+    --purple-b: 0.94901961;
 
-    --pink-hue: 348;
-    --pink-saturation: 85%;
-    --pink-lightness: 61%;
+    --pink-hue: 332;
+    --pink-saturation: 91%;
+    --pink-lightness: 64%;
+    --pink-r: 0.96862745;
+    --pink-g: 0.30980392;
+    --pink-b: 0.61960784;
 }
-html,
+:root,
 .blue {
     --accent-hue: var(--blue-hue);
     --accent-saturation: var(--blue-saturation);
     --accent-lightness: var(--blue-lightness);
+    --accent-r: var(--blue-r);
+    --accent-g: var(--blue-g);
+    --accent-b: var(--blue-b);
 }
 .red {
     --accent-hue: var(--red-hue);
     --accent-saturation: var(--red-saturation);
     --accent-lightness: var(--red-lightness);
+    --accent-r: var(--red-r);
+    --accent-g: var(--red-g);
+    --accent-b: var(--red-b);
 }
 .orange {
     --accent-hue: var(--orange-hue);
     --accent-saturation: var(--orange-saturation);
     --accent-lightness: var(--orange-lightness);
+    --accent-r: var(--orange-r);
+    --accent-g: var(--orange-g);
+    --accent-b: var(--orange-b);
 }
 .yellow {
     --accent-hue: var(--yellow-hue);
     --accent-saturation: var(--yellow-saturation);
     --accent-lightness: var(--yellow-lightness);
+    --accent-r: var(--yellow-r);
+    --accent-g: var(--yellow-g);
+    --accent-b: var(--yellow-b);
 }
 .green {
     --accent-hue: var(--green-hue);
     --accent-saturation: var(--green-saturation);
     --accent-lightness: var(--green-lightness);
+    --accent-r: var(--green-r);
+    --accent-g: var(--green-g);
+    --accent-b: var(--green-b);
 }
 .purple {
     --accent-hue: var(--purple-hue);
     --accent-saturation: var(--purple-saturation);
     --accent-lightness: var(--purple-lightness);
+    --accent-r: var(--purple-r);
+    --accent-g: var(--purple-g);
+    --accent-b: var(--purple-b);
 }
 .pink {
     --accent-hue: var(--pink-hue);
     --accent-saturation: var(--pink-saturation);
     --accent-lightness: var(--pink-lightness);
+    --accent-r: var(--pink-r);
+    --accent-g: var(--pink-g);
+    --accent-b: var(--pink-b);
 }
 
 
@@ -265,11 +362,9 @@ html {
                  "Droid Sans",
                  "Helvetica Neue",
                  sans-serif;
-    background-color: hsl(var(--accent-hue), 50%, 99%);
+    background-color: var(--background-color);
+    color: var(--primary-foreground);
 }
-    html#dark {
-        background-color: hsl(var(--accent-hue), 25%, 12%);
-    }
 body,
 main,
 article {
@@ -344,11 +439,19 @@ small {
     font-weight: 600;
     font-size: 1rem;
 
-    margin-top: 0.25em;
+    margin-top: 0;
     margin-bottom: 0.25em;
 
     color: var(--secondary-foreground);
 }
+    /**
+     * While small is similar in style to time in nearly every way, small
+     * _can_ be displayed either below or above the content it's providing
+     * secondary text for, so applying a top margin.
+     */
+    small {
+        margin-top: 0.25em;
+    }
 
 
 /******************
@@ -429,6 +532,7 @@ ol.tight ol {
 ul.emoji,
 ol.emoji {
     margin-left: 0.25em !important;
+    list-style-type: none;
 }
 /**
  * Table Of Contents: Equivalent to .tight
@@ -545,11 +649,8 @@ th {
         border-color: rgba(65, 65, 65);
     }
 tbody tr:nth-child(even) {
-    background-color: rgba(245, 245, 245, 0.75);
+    background-color: var(--table-washboard-background);
 }
-    #dark tbody tr:nth-child(even) {
-        background-color: rgba(15, 15, 15, 0.25);
-    }
 
 
 /********************************
@@ -602,42 +703,42 @@ mark.blue {
 }
 mark.tag.blue {
     background-image: linear-gradient(to bottom right, hsl(var(--blue-hue), var(--blue-saturation), calc(var(--blue-lightness) + 10%)) 38.66%, hsl(calc(var(--blue-hue) + 3), var(--blue-saturation), calc(var(--blue-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-color), 0.2);
 }
     #dark mark.blue {
         background-image: linear-gradient(to right, hsla(var(--blue-hue), 100%, calc(var(--blue-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--blue-hue) + 3), 100%, calc(var(--blue-lightness) - 20%), 0.99));
     }
     #dark mark.tag.blue {
         background-image: linear-gradient(to bottom right, hsl(var(--blue-hue), var(--blue-saturation), calc(var(--blue-lightness) + 10%)) 38.66%, hsl(calc(var(--blue-hue) + 3), var(--blue-saturation), calc(var(--blue-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--blue-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--blue-color), 0.2);
     }
 mark.red {
     background-image: linear-gradient(to right, hsla(var(--red-hue), 100%, calc(var(--red-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--red-hue) + 3), 100%, calc(var(--red-lightness) + 20%), 0.99));
 }
 mark.tag.red {
     background-image: linear-gradient(to bottom right, hsl(var(--red-hue), var(--red-saturation), calc(var(--red-lightness) + 10%)) 38.66%, hsl(calc(var(--red-hue) + 3), var(--red-saturation), calc(var(--red-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-color), 0.2);
 }
     #dark mark.red {
         background-image: linear-gradient(to right, hsla(var(--red-hue), 100%, calc(var(--red-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--red-hue) + 3), 100%, calc(var(--red-lightness) - 20%), 0.99));
     }
     #dark mark.tag.red {
         background-image: linear-gradient(to bottom right, hsl(var(--red-hue), var(--red-saturation), calc(var(--red-lightness) + 10%)) 38.66%, hsl(calc(var(--red-hue) + 3), var(--red-saturation), calc(var(--red-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--red-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--red-color), 0.2);
     }
 mark.orange {
     background-image: linear-gradient(to right, hsla(var(--orange-hue), 100%, calc(var(--orange-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--orange-hue) + 3), 100%, calc(var(--orange-lightness) + 20%), 0.99));
 }
 mark.tag.orange {
     background-image: linear-gradient(to bottom right, hsl(var(--orange-hue), var(--orange-saturation), calc(var(--orange-lightness) + 10%)) 38.66%, hsl(calc(var(--orange-hue) + 3), var(--orange-saturation), calc(var(--orange-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-color), 0.2);
 }
     #dark mark.orange {
         background-image: linear-gradient(to right, hsla(var(--orange-hue), 100%, calc(var(--orange-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--orange-hue) + 3), 100%, calc(var(--orange-lightness) - 20%), 0.99));
     }
     #dark mark.tag.orange {
         background-image: linear-gradient(to bottom right, hsl(var(--orange-hue), var(--orange-saturation), calc(var(--orange-lightness) + 10%)) 38.66%, hsl(calc(var(--orange-hue) + 3), var(--orange-saturation), calc(var(--orange-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-hue), var(--orange-saturation), var(--orange-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--orange-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--orange-color), 0.2);
     }
 mark,
 mark.yellow {
@@ -647,7 +748,7 @@ mark.yellow {
 mark.tag,
 mark.tag.yellow {
     background-image: linear-gradient(to bottom right, hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--yellow-hue) + 3), var(--yellow-saturation), calc(var(--yellow-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-color), 0.2);
 }
     #dark mark,
     #dark mark.yellow {
@@ -656,49 +757,49 @@ mark.tag.yellow {
     }
     #dark mark.tag.yellow {
         background-image: linear-gradient(to bottom right, hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--yellow-hue) + 3), var(--yellow-saturation), calc(var(--yellow-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--yellow-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--yellow-color), 0.2);
     }
 mark.green {
     background-image: linear-gradient(to right, hsla(var(--green-hue), 100%, calc(var(--green-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--green-hue) + 3), 100%, calc(var(--green-lightness) + 20%), 0.99));
 }
 mark.tag.green {
     background-image: linear-gradient(to bottom right, hsl(var(--green-hue), var(--green-saturation), calc(var(--green-lightness) + 10%)) 38.66%, hsl(calc(var(--green-hue) + 3), var(--green-saturation), calc(var(--green-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-color), 0.2);
 }
     #dark mark.green {
         background-image: linear-gradient(to right, hsla(var(--green-hue), 100%, calc(var(--green-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--green-hue) + 3), 100%, calc(var(--green-lightness) - 20%), 0.99));
     }
     #dark mark.tag.green {
         background-image: linear-gradient(to bottom right, hsl(var(--green-hue), var(--green-saturation), calc(var(--green-lightness) + 10%)) 38.66%, hsl(calc(var(--green-hue) + 3), var(--green-saturation), calc(var(--green-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--green-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--green-color), 0.2);
     }
 mark.purple {
     background-image: linear-gradient(to right, hsla(var(--purple-hue), 100%, calc(var(--purple-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--purple-hue) + 3), 100%, calc(var(--purple-lightness) + 20%), 0.99));
 }
 mark.tag.purple {
     background-image: linear-gradient(to bottom right, hsl(var(--purple-hue), var(--purple-saturation), calc(var(--purple-lightness) + 10%)) 38.66%, hsl(calc(var(--purple-hue) + 3), var(--purple-saturation), calc(var(--purple-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-color), 0.2);
 }
     #dark mark.purple {
         background-image: linear-gradient(to right, hsla(var(--purple-hue), 100%, calc(var(--purple-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--purple-hue) + 3), 100%, calc(var(--purple-lightness) - 20%), 0.99));
     }
     #dark mark.tag.purple {
         background-image: linear-gradient(to bottom right, hsl(var(--purple-hue), var(--purple-saturation), calc(var(--purple-lightness) + 10%)) 38.66%, hsl(calc(var(--purple-hue) + 3), var(--purple-saturation), calc(var(--purple-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-hue), var(--purple-saturation), var(--purple-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--purple-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--purple-color), 0.2);
     }
 mark.pink {
     background-image: linear-gradient(to right, hsla(var(--pink-hue), calc(var(--pink-saturation) + 10%), calc(var(--pink-lightness) + 15%), 0.99) 38.66%, hsla(calc(var(--pink-hue) + 3), calc(var(--pink-saturation) + 10%), calc(var(--pink-lightness) + 20%), 0.99));
 }
 mark.tag.pink {
     background-image: linear-gradient(to bottom right, hsl(var(--pink-hue), var(--pink-saturation), calc(var(--pink-lightness) + 10%)) 38.66%, hsl(calc(var(--pink-hue) + 3), var(--pink-saturation), calc(var(--pink-lightness) - 10%)));
-    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.2);
+    box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-color), 0.2);
 }
     #dark mark.pink {
         background-image: linear-gradient(to right, hsla(var(--pink-hue), 100%, calc(var(--pink-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--pink-hue) + 3), 100%, calc(var(--pink-lightness) - 20%), 0.99));
     }
     #dark mark.tag.pink {
         background-image: linear-gradient(to bottom right, hsl(var(--pink-hue), var(--pink-saturation), calc(var(--pink-lightness) + 10%)) 38.66%, hsl(calc(var(--pink-hue) + 3), var(--pink-saturation), calc(var(--pink-lightness) - 10%)));
-        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-hue), var(--pink-saturation), var(--pink-lightness), 0.2);
+        box-shadow: 0 0.2em 0.4em -0.2em hsla(var(--pink-color), 0.4), 0 0.2em 0.87em -0.2em hsla(var(--pink-color), 0.2);
     }
 
 
@@ -744,11 +845,13 @@ small,
  * Accent colored text selections
  */
 ::selection {
-    background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.99);
+    background: hsla(var(--accent-color), 0.99);
+    background: color(var(--accent-color-p3) / 99%);
     color: white;
 }
     #dark ::selection {
-        background: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.85);
+        background: hsla(var(--accent-color), 0.85);
+        background: color(var(--accent-color-p3) / 85%);
         color: white;
     }
 /**
@@ -771,19 +874,20 @@ small,
  ***  8. ADMONITIONS  ***
  ************************/
 
+
 .admonition {
     padding: 1em;
     margin-bottom: var(--gap);
 
-    border-top: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
-    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
-    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-border-saturation), calc(var(--widget-border-lightness) + var(--admonition-left-border-lightness-adjustment)));
-    border-right: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-top: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
+    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
+    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-saturation), calc(var(--widget-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    border-right: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
     border-radius: 0.25em;
 
     color: var(--primary-foreground);
     background-color: var(--widget-background);
-    box-shadow: var(--inactive-shadow);
+    box-shadow: var(--default-admonition-shadow);
 }
 /**
  * The ".admonition-title a" declaration is intentional, otherwise if the
@@ -820,7 +924,7 @@ small,
  * Simple, Gray "Asides" (No icon and heavy left border)
  */
 .admonition.aside {
-    border-left: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-left: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
 }
     /**
      * Disable the icon
@@ -838,37 +942,42 @@ small,
     position: absolute;
     color: white;
     border-radius: 25%;
-    height: 1.45em;
+    height: var(--body-line-height);
     width: 0.86em;
     padding-left: 0.625em;
     margin-left: -2em;
-    background-color: hsl(var(--accent-hue), var(--widget-border-saturation), calc(var(--widget-border-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    background-color: hsl(var(--accent-hue), var(--widget-saturation), calc(var(--widget-lightness) + var(--admonition-left-border-lightness-adjustment)));
 }
 /**
  * [i]: Green Info Admonition
  */
 .admonition.success,
 .admonition.green {
-    background-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
-    border-left-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
-    border-right-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
-    border-bottom-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
-    border-top-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
-    box-shadow: 0em 1em 2.75em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), 0.05);
+    background-color: hsla(var(--green-color), var(--highlight-background-opacity));
+    background-color: color(var(--green-color-p3) / var(--highlight-background-opacity));
+    border-left-color: hsl(var(--green-color));
+    border-left-color: color(var(--green-color-p3));
+    border-right-color: hsla(var(--green-color), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--green-color), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--green-color), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--green-color), 0.1), 0em 0.22em 0.6em hsla(var(--green-color), 0.05);
 }
     .admonition.success .admonition-title:before,
     .admonition.success p:first-child:before,
     .admonition.green .admonition-title:before,
     .admonition.green p:first-child:before {
-        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+        background-color: hsl(var(--green-color));
+        background-color: color(var(--green-color-p3));
     }
     .admonition.success a,
     .admonition.green a {
-        color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+        color: hsl(var(--green-color));
+        color: color(var(--green-color-p3));
     }
     .admonition.success a:hover,
     .admonition.green a:hover {
-        background-color: hsla(var(--green-hue), var(--green-saturation), var(--green-lightness), var(--highlight-background-opacity));
+        background-color: hsla(var(--green-color), var(--highlight-background-opacity));
+        background-color: color(var(--green-color-p3) / var(--highlight-background-opacity));
     }
 /**
  * [!]: Red Danger Admonition
@@ -877,12 +986,14 @@ small,
 .admonition.danger,
 .admonition.warning,
 .admonition.red {
-    background-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
-    border-left-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
-    border-right-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
-    border-bottom-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
-    border-top-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), var(--highlight-background-opacity));
-    box-shadow: 0em 1em 2.75em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.05);
+    background-color: hsla(var(--red-color), var(--highlight-background-opacity));
+    background-color: color(var(--red-color-p3) / var(--highlight-background-opacity));
+    border-left-color: hsl(var(--red-color));
+    border-left-color: color(var(--red-color-p3));
+    border-right-color: hsla(var(--red-color), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--red-color), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--red-color), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--red-color), 0.1), 0em 0.22em 0.6em hsla(var(--red-color), 0.05);
 }
     .admonition.error .admonition-title:before,
     .admonition.danger .admonition-title:before,
@@ -894,19 +1005,22 @@ small,
     .admonition.red > p:first-child:before {
         content: "!";
         padding-left: 0.6em;
-        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+        background-color: hsl(var(--red-color));
+        background-color: color(var(--red-color-p3));
     }
     .admonition.error a,
     .admonition.danger a,
     .admonition.warning a,
     .admonition.red a {
-        color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+        color: hsl(var(--red-color));
+        color: color(var(--red-color-p3));
     }
     .admonition.error a:hover,
     .admonition.danger a:hover,
     .admonition.warning a:hover,
     .admonition.red a:hover {
-        background-color: hsla(var(--red-hue), var(--red-saturation), var(--red-lightness), 0.1);
+        background-color: hsla(var(--red-color), var(--highlight-background-opacity));
+        background-color: color(var(--red-color-p3) / var(--highlight-background-opacity));
     }
 /**
  * [?]/[i]: Blue Question and Info Admonitions
@@ -918,12 +1032,14 @@ small,
 .admonition.tip,
 .admonition.example,
 .admonition.blue {
-    background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
-    border-left-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
-    border-right-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
-    border-bottom-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
-    border-top-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
-    box-shadow: 0em 1em 2.75em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), 0.05);
+    background-color: hsla(var(--blue-color), var(--highlight-background-opacity));
+    background-color: color(var(--blue-color-p3) / var(--highlight-background-opacity));
+    border-left-color: hsl(var(--blue-color));
+    border-left-color: color(var(--blue-color-p3));
+    border-right-color: hsla(var(--blue-color), var(--highlight-background-opacity));
+    border-bottom-color: hsla(var(--blue-color), var(--highlight-background-opacity));
+    border-top-color: hsla(var(--blue-color), var(--highlight-background-opacity));
+    box-shadow: 0em 1em 2.75em hsla(var(--blue-color), 0.1), 0em 0.22em 0.6em hsla(var(--blue-color), 0.05);
 }
     .admonition.question .admonition-title:before,
     .admonition.question > p:first-child:before {
@@ -945,7 +1061,8 @@ small,
     .admonition.tip > p:first-child:before,
     .admonition.example > p:first-child:before,
     .admonition.blue > p:first-child:before {
-        background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+        background-color: hsl(var(--blue-color));
+        background-color: color(var(--blue-color-p3));
     }
     .admonition.question a,
     .admonition.hint a,
@@ -954,7 +1071,8 @@ small,
     .admonition.tip a,
     .admonition.example a,
     .admonition.blue a {
-        color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+        color: hsl(var(--blue-color));
+        color: color(var(--blue-color-p3));
     }
     .admonition.question a:hover,
     .admonition.hint a:hover,
@@ -963,7 +1081,8 @@ small,
     .admonition.tip a:hover,
     .admonition.example a:hover,
     .admonition.blue a:hover {
-        background-color: hsla(var(--blue-hue), var(--blue-saturation), var(--blue-lightness), var(--highlight-background-opacity));
+        background-color: hsla(var(--blue-color), var(--highlight-background-opacity));
+        background-color: color(var(--blue-color-p3) / var(--highlight-background-opacity));
     }
 /**
  * [★]/[i]: Yellow Star & Info Admonitions
@@ -971,26 +1090,28 @@ small,
 .admonition.update,
 .admonition.yellow,
 .admonition.star {
-    background-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
-    border-left-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+    background-color: hsla(var(--yellow-color), var(--highlight-background-opacity));
+    background-color: color(var(--yellow-color-p3) / var(--highlight-background-opacity));
+    border-left-color: hsl(var(--yellow-color));
+    border-left-color: color(var(--yellow-color-p3));
     /**
      * The border vanishes with the yellow access, but only in dark mode. Tone
      * the opacity slightly up in light only.
      */
-    border-right-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
-    border-bottom-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
-    border-top-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), calc(var(--highlight-background-opacity) + 0.1));
-    box-shadow: 0em 1em 2.75em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.1), 0em 0.22em 0.6em hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), 0.05);
+    border-right-color: hsla(var(--yellow-color), calc(var(--highlight-background-opacity) + 0.1));
+    border-bottom-color: hsla(var(--yellow-color), calc(var(--highlight-background-opacity) + 0.1));
+    border-top-color: hsla(var(--yellow-color), calc(var(--highlight-background-opacity) + 0.1));
+    box-shadow: 0em 1em 2.75em hsla(var(--yellow-color), 0.1), 0em 0.22em 0.6em hsla(var(--yellow-color), 0.05);
 }
     /**
-     * Reapply the "normal" border settings, in dark mode the nroaml yellow border shows up perfectly fine. 
+     * Reapply the "normal" border settings, in dark mode the normal yellow border shows up perfectly fine. 
      */
     #dark .admonition.update,
     #dark .admonition.yellow,
     #dark .admonition.star {
-        border-right-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
-        border-bottom-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
-        border-top-color: hsla(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness), var(--highlight-background-opacity));
+        border-right-color: hsla(var(--yellow-color), var(--highlight-background-opacity));
+        border-bottom-color: hsla(var(--yellow-color), var(--highlight-background-opacity));
+        border-top-color: hsla(var(--yellow-color), var(--highlight-background-opacity));
     }
     /**
      * That THICC left boarder is just too much in dark mode for the yellow access, specifically.
@@ -1000,6 +1121,7 @@ small,
     #dark .admonition.yellow,
     #dark .admonition.star {
         border-left-color: hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) - 7%));
+        border-left-color: color(display-p3 0.90196078 0.74901961 0);
     }
     #dark .admonition.update .admonition-title:before,
     #dark .admonition.update > p:first-child:before,
@@ -1008,6 +1130,7 @@ small,
     #dark .admonition.star .admonition-title:before,
     #dark .admonition.star > p:first-child:before {
         background-color: hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) - 7%));
+        background-color: color(display-p3 0.90196078 0.74901961 0);
     }
     .admonition.star > p:first-child:before,
     .admonition.star .admonition-title:before {
@@ -1024,17 +1147,23 @@ small,
     .admonition.yellow > p:first-child:before,
     .admonition.star .admonition-title:before,
     .admonition.star > p:first-child:before {
-        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+        background-color: hsl(var(--yellow-color));
+        background-color: color(var(--yellow-color-p3));
     }
     .admonition.update a,
     .admonition.yellow a,
     .admonition.star a {
-        color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+        color: hsl(var(--yellow-color));
+        color: color(var(--yellow-color-p3));
     }
     .admonition.update a:hover,
     .admonition.yellow a:hover,
     .admonition.star a:hover {
-        background-color: hsla(var(--yellow-hue), calc(var(--yellow-saturation) - 30%), var(--yellow-lightness), var(--highlight-background-opacity));
+        /**
+         * TODO Double check in dark mode after accents is dead
+         */
+        background-color: hsla(var(--yellow-color), var(--highlight-background-opacity));
+        background-color: color(var(--yellow-color-p3) / var(--highlight-background-opacity));
     }
 /**
  * [🐦]: Teal Twitter Admonitions
@@ -1057,7 +1186,7 @@ small,
     content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjUwIDI1MCcgdmVyc2lvbj0nMS4xJyB4bWxucz0n aHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8v d3d3LnczLm9yZy8xOTk5L3hsaW5rJz4gPGcgc3Ryb2tlPSdub25lJyBzdHJva2Ut d2lkdGg9JzEnIGZpbGw9J25vbmUnIGZpbGwtcnVsZT0nZXZlbm9kZCc+PHBhdGgg ZD0nTTc4LjYyLDI0OS41OSBDMTcyLjk2LDI0OS41OSAyMjQuNTYsMTcxLjQzIDIy NC41NiwxMDMuNjUgQzIyNC41NiwxMDEuNDMgMjI0LjU2LDk5LjIyIDIyNC40MSw5 Ny4wMiBDMjM0LjQ0ODMxNCw4OS43NTkxMDg2IDI0My4xMTM1NTUsODAuNzY4Nzk0 IDI1MCw3MC40NyBDMjQwLjYzODc5MSw3NC42MTgwMTc3IDIzMC43MDgyOTMsNzcu MzM4Mjg2NSAyMjAuNTQsNzguNTQgQzIzMS4yNDc0NCw3Mi4xMjk4MjA2IDIzOS4y NjEyMzUsNjIuMDQ3NzE5OSAyNDMuMDksNTAuMTcgQzIzMy4wMjE1NzUsNTYuMTQ0 NTUzMiAyMjIuMDA2NDYxLDYwLjM1NTEyMDIgMjEwLjUyLDYyLjYyIEMxOTQuNjIw ODI4LDQ1LjcxMzk0MjggMTY5LjM1NzE5NCw0MS41NzYxMjU4IDE0OC44OTU0OTMs NTIuNTI2Nzk5MyBDMTI4LjQzMzc5Miw2My40Nzc0NzI3IDExNy44NjI3NSw4Ni43 OTMyNTczIDEyMy4xMSwxMDkuNCBDODEuODY4OTU3NCwxMDcuMzMyNDk1IDQzLjQ0 NDc1NzgsODcuODUzMjMyNyAxNy40LDU1LjgxIEMzLjc4NjIyNzU2LDc5LjI0NjQ0 NzMgMTAuNzM5ODc4OCwxMDkuMjI4NTk1IDMzLjI4LDEyNC4yOCBDMjUuMTE3NDEy LDEyNC4wMzgwNzUgMTcuMTMyNzkzNywxMjEuODM2MTMyIDEwLDExNy44NiBDMTAs MTE4LjA3IDEwLDExOC4yOSAxMCwxMTguNTEgQzEwLjAwNjY4MTMsMTQyLjkyNTkz IDI3LjIxNzUxNDksMTYzLjk1NTM1MiA1MS4xNSwxNjguNzkgQzQzLjU5ODY5Niwx NzAuODQ5NCAzNS42NzU4MDU5LDE3MS4xNTA0NDMgMjcuOTksMTY5LjY3IEMzNC43 MDk0NzkzLDE5MC41NjQyMjggNTMuOTY1NzQ1NiwyMDQuODc3ODM5IDc1LjkxLDIw NS4yOSBDNTcuNzQ3MzUwNCwyMTkuNTY0MzE5IDM1LjMxMDU5NTEsMjI3LjMxMzI3 NyAxMi4yMSwyMjcuMjkgQzguMTI5MDM1NjksMjI3LjI4MjE2NSA0LjA1MjA0MDY1 LDIyNy4wMzUwNzUgMCwyMjYuNTUgQzIzLjQ1NjM1OTUsMjQxLjYwMjc2NiA1MC43 NDkxMzQsMjQ5LjU4NzE2OSA3OC42MiwyNDkuNTUnIGZpbGw9JyNGRkZGRkYnIGZp bGwtcnVsZT0nbm9uemVybyc+PC9wYXRoPjwvZz48L3N2Zz4=");
     position: absolute;
     border-radius: 25%;
-    height: 1.45em;
+    height: var(--body-line-height);
     width: 0.875em;
     padding-left: 0.3125em;
     padding-right: 0.3125em;
@@ -1179,7 +1308,8 @@ small,
 }
     #menubar .active,
     #menubar a:hover {
-        color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
+        color: hsl(var(--accent-color));
+        color: color(var(--accent-color-p3));
     }
     #menubar a:hover {
         background-color: unset !important;
@@ -1262,6 +1392,11 @@ small,
     #signature path {
         fill: var(--heavy-secondary-foreground);
     }
+#logo:hover #signature path,
+#signature.active path {
+    fill: hsl(var(--accent-color));
+    fill: color(var(--accent-color-p3));
+}
 /**
  * The bar's central "menu" contents: Articles, Projects, Contact, and a Settings Button
  */
@@ -1310,12 +1445,12 @@ small,
     opacity: 0; /* Hidden unless shown by clicking #settings-button-wrapper */
     padding-top: 0.8125em;
     padding-bottom: 0.8125em;
-    padding-left: 1.3em;
-    padding-right: 1.3em;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
     border: 1px solid var(--widget-border);
     background-color: var(--widget-background);
     box-shadow: var(--active-shadow);
-    border-radius: 0.65em;
+    border-radius: var(--half-gap);
 
     transition-property: opacity, transform, background-color, border;
     transition-duration: 0.25s, 0.25s, 0.2s, 0.2s;
@@ -1346,11 +1481,11 @@ small,
  * in the settings popup.
  */
 #settings-popup .group {
-    margin-bottom: 0.65em;
-    margin-top: 0.65em;
+    margin-bottom: var(--half-gap);
+    margin-top: var(--half-gap);
 }
     .group ~ .group {
-        margin-top: 1.3em !important;
+        margin-top: var(--gap) !important;
     }
 /**
  * "Wells" are a kind of visual radio box for switching things like theme and
@@ -1391,47 +1526,54 @@ small,
             background-color: rgb(36, 36, 36);
         }
     .well.blue {
-        background-color: hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+        background-color: hsl(var(--blue-color));
+        background-color: color(var(--blue-color-p3));
     }
         .well.active,
         .blue .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--blue-hue), var(--blue-saturation), var(--blue-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--blue-color));
         }
     .well.red {
-        background-color: hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+        background-color: hsl(var(--red-color));
+        background-color: color(var(--red-color-p3));
     }
         .red .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--red-hue), var(--red-saturation), var(--red-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--red-color));
         }
     .well.orange {
-        background-color: hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
+        background-color: hsl(var(--orange-color));
+        background-color: color(var(--orange-color-p3));
     }
         .orange .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--orange-hue), var(--orange-saturation), var(--orange-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--orange-color));
         }
     .well.yellow {
-        background-color: hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+        background-color: hsl(var(--yellow-color));
+        background-color: color(var(--yellow-color-p3));
     }
         .yellow .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-hue), var(--yellow-saturation), var(--yellow-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--yellow-color));
         }
     .well.green {
-        background-color: hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+        background-color: hsl(var(--green-color));
+        background-color: color(var(--green-color-p3));
     }
         .green .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--green-hue), var(--green-saturation), var(--green-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--green-color));
         }
     .well.purple {
-        background-color: hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
+        background-color: hsl(var(--purple-color));
+        background-color: color(var(--purple-color-p3));
     }
         .purple .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--purple-hue), var(--purple-saturation), var(--purple-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--purple-color));
         }
     .well.pink {
-        background-color: hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
+        background-color: hsl(var(--pink-color));
+        background-color: color(var(--pink-color-p3));
     }
         .pink .well.active {
-            box-shadow: 0 0em 0.5em 0em hsl(var(--pink-hue), var(--pink-saturation), var(--pink-lightness));
+            box-shadow: 0 0em 0.5em 0em hsl(var(--pink-color));
         }
 /**
  * If just one of the settings wells is active, it looks visually more
@@ -1452,14 +1594,14 @@ small,
 }
 /**
  * For screens less than 400px wide:
- *   - Put the wells on their own row (no longer inline with their labels)
- *   - Shift the popup to accomidate that width change
+ *   • Put the wells on their own row (no longer inline with their labels)
+ *   • Shift the popup to accomidate that width change
  */
 @media(max-width: 400px) {
     html:not(.ignore-accent-color) .wells {
         margin-left: 0;
         display: block;
-        margin-top: 0.65em;
+        margin-top: var(--half-gap);
         text-align: left;
     }
     #settings-popup {
@@ -1470,14 +1612,14 @@ small,
             margin-left: -10.25em;
         }
         #settings-popup .group {
-            margin-bottom: 0.65em;
+            margin-bottom: var(--half-gap);
         }
 }
 /**
  * For screens less than 324px wide:
- *   - Disable menu bar floating on scroll (remains relative)
- *   - Reflow menu items to each populate their own row (no more width available to remain inline)
- *   - Center the popup modal
+ *   • Disable menu bar floating on scroll (remains relative)
+ *   • Reflow menu items to each populate their own row (no more width available to remain inline)
+ *   • Center the popup modal
  */
 @media(max-width: 324px) {
     #menubar,
@@ -1505,10 +1647,10 @@ small,
 }
 /**
  * For screens larger than 700px wide:
- *   - Enlarge every element & its padding
- *   - Absolutely position the logo to the left
- *   - Absolutely position the settings button to the right
- *   - Center the menu list
+ *   • Enlarge every element & its padding
+ *   • Absolutely position the logo to the left
+ *   • Absolutely position the settings button to the right
+ *   • Center the menu list
  */
 @media (min-width: 700px) {
     #menubar {
@@ -1540,14 +1682,14 @@ small,
         }
     #menubar menu li {
         min-width: 16vw;
-        padding-top: 1.45em;
+        padding-top: var(--body-line-height);
     }
     #settings-button-wrapper {
         position: absolute;
         left: 100%;
         top: 0;
         margin-left: -3.425em !important;
-        padding-top: 1.45em !important;
+        padding-top: var(--body-line-height) !important;
     }
         @supports (margin-left: calc(-3.425em - env(safe-area-inset-right))) {
             #settings-button-wrapper {
@@ -1590,7 +1732,7 @@ small,
 }
 /**
  * For screens larger than 900px wide:
- *   - Slight padding and margin adjustments to select elements, remains
+ *   • Slight padding and margin adjustments to select elements, remains
  *     largely the same as the layout for medium screens.
  */
 @media (min-width: 900px) {
@@ -1602,7 +1744,7 @@ small,
         padding-top: 1.25em;
     }
     #settings-button-wrapper {
-        padding-top: 1.3em !important;
+        padding-top: var(--gap) !important;
     }
     #settings-popup {
         margin-left: -443px;
@@ -1617,202 +1759,789 @@ small,
  ***  10. CARDS  ***
  *******************/
 
+/**
+ * .cards is a required container or wrapper for .card elements Required
+ * mostly to disable the global link element padding, margin, and background
+ * color on linked cards.
+ */
+.cards.column {
+    gap: var(--gap);
+}
+.cards a {
+    padding: 0;
+    margin: 0;
+}
+.cards a:hover {
+    background-color: transparent !important;
+}
 
+.card {
+    border-radius: 1em;
+    border: 1px solid var(--widget-border);
+    background-color: var(--widget-background);
+    box-shadow: var(--inactive-shadow);
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+    /**
+     * Ensures metatdata associated to a given card (tags, date, etc.) are all
+     * rendered inline together.
+     */
     .card .metadata mark.tag,
     .card .metadata time {
         display: inline-block;
     }
-    .updates > a {
-        margin-bottom: var(--gap);
-    }
-    .updates .card {
-        width: 100% !important;
-        max-width: unset !important;
-    }
-.card {
-    border-radius: 1em;
-    border: 1px solid rgba(0,0,0,0.1);
-    display: inline-block;
-    width: 42.25vw;
-    vertical-align: middle;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    margin-bottom: 1.3rem;
-    overflow: hidden;
-}
-    .card-animation:hover {
-        transform: scale(1.025);
-    }
-.updates .card,
-.articles .card {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    will-change: transform;
-}
-
-.column a:hover .card img,
-.column a:hover .card svg,
-.column .card:hover video {
-    transform: scale(1.05);
-}
-.column a .card img,
-.column a .card svg,
-.column .card video {
-    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.cards a:hover,
-.column > a:hover {
-    background-color: transparent !important;
-}
-.card.bleed {
-    padding-bottom: 1.3em;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-    .card.bleed img,
-    .card.bleed video {
-        border-top-right-radius: 0.95em;
-        border-top-left-radius: 0.95em;
-        display: inline-block;
-    }
-    .updates .card .label .primary,
-    .updates .card .label .secondary,
-    .articles .card .label .primary,
-    .articles .card .label .secondary {
-        text-align: left;
-    }
-    .updates .card,
-    .articles .card {
-        margin-bottom: 0 !important;
-        padding-bottom: 0;
-    }
-    .updates a {
-        padding: 0;
+    .card img,
+    .card video {
         display: block;
+        border-radius: 0 !important;
     }
-    .articles a,
-    .cards a {
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
-    .articles .card .label,
-    .cards .card .label {
-        /**
-         * Both of these are required to have the label "float" over the image
-         * when it "zooms" slightly on hover. It's not great...
-         */
-        transform: scale(1);
-        margin-top: -0.58em;
-
+    .card .logo {
+        width: auto;
+        height: 15vw;
+        max-height: 6em;
         padding-top: 1em;
+    }
+    .card .label {
+        margin-top: 1em;
         margin-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-.card .content {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 1.3em;
-    margin-top: 1.3em;
-    text-align: center;
-}
-.card .content .logo {
-    width: auto;
-    height: 15vw;
-    max-height: 6em;
-    text-align: center;
-}
-    #dark .card:hover .content .logo {
-        filter: drop-shadow(0em 0.5em 4em rgba(255, 255, 255, 0.375));
+    .card .logo ~ .label {
+        margin-top: 0.5em;
     }
-.card .content .long-logo {
-    width: auto;
-    max-height: 12vh;
-    height: auto;
-}
-.card .label {
-    margin-top: 0.5em;
-    margin-bottom: 1.3em;
-}
-/*.card.bleed .label {*/
-.card .label {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1em;
-}
-    .card .label .primary,
-    .card .label .secondary {
-        text-align: center;
-        margin: 0;
+        .card .label .primary,
+        .card .label .secondary {
+            text-align: center;
+        }
+        .card .label .primary {
+            font-weight: bold;
+            margin-bottom: calc(var(--half-gap) / 2);
+            color: var(--primary-foreground);
+        }
+        /**
+         * Since the secondary text is very likely to wrap (and sometimes wrap
+         * more than twice), we need the proper <p>/<body> line height
+         * applied.
+         */
+        .card .label .secondary {
+            line-height: var(--body-line-height);
+            color: var(--heavy-secondary-foreground);
+        }
+    .card:hover {
+        background-color: hsla(var(--accent-color), var(--highlight-background-opacity));
+        background-color: color(var(--accent-color-p3) / var(--highlight-background-opacity));
+        box-shadow: var(--active-shadow);
     }
-    .card .label .secondary {
-        margin-top: 0.25em;
+    .card:hover .label .primary {
+        color: hsl(var(--accent-color));
+        color: color(var(--accent-color-p3));
     }
-.card img {
-    border-radius: 0 !important;
-}
-.card h5 {
-    margin-bottom: 0;
-}
-.card .label .secondary {
-    line-height: 1.3em;
-}
-.card .label .primary {
-    font-weight: bold;
-    line-height: 1.2em;
-    margin-bottom: 0.3rem;
-}
+    .card:hover img,
+    .card:hover svg,
+    .card:hover video {
+        transform: scale(1.05) translate(0, -2.5%);
+    }
+    #dark .column .card:hover img,
+    #dark .column .card:hover svg,
+    #dark .column .card:hover video {
+        filter: brightness(1);
+    }
 /**
- * There's more text to article cards than the secondary of "normal"
- * cards. Adding a bit more visual separation when the text is that
- * long makes things more pleasing to the eye.
+ * "Updates" and "Articles" are special groups of cards with minor styling
+ * tweaks from default card stock.
  */
 .updates .card .label .primary,
-.articles .card .label .primary {
-    margin-bottom: 0.5em;
+.updates .card .label .secondary,
+.articles .card .label .primary,
+.articles .card .label .secondary {
+    text-align: left;
 }
-.card time {
-    margin-top: 0;
-    margin-bottom: 0.25em;
+.updates a,
+.articles a {
+    width: 100%;
 }
+
+
+/*********************
+ ***  11. FLEXBOX  ***
+ *********************/
+
+/* My very, very shitty flexbox system. It Works™ */
+
+/**
+ * To be applied at the document's root to:
+ *   • Provide an expanded canvas (otherwise, <main> contents are restricted to the prose-friendly max-width)
+ *   • Enable flexbox layout for <main>'s immediate children
+ *   • Preserve prose (if any) max-width by means of applying the max-width to <article>, instead
+ *
+ * Examples of this in use include:
+ *   • /
+ *   • /about
+ *   • /articles
+ *   • /projects
+ */
+.expanded-page main {
+    gap: var(--gap);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    @media (min-width: 700px) {
+        .expanded-page main {
+            max-width: 60em;
+        }
+        .expanded-page article {
+            max-width: 34em;
+        }
+    }
+    @media (min-width: 900px) {
+        .expanded-page article {
+            max-width: 35em;
+        }
+    }
+/**
+ * Flexbox rows. By default, on small screens contents of the row flow to a
+ * single vertical column, and on larger screens contents stretch to fill the
+ * row in accordance with their config.
+ */
+.row {
+    width: 100%;
+    gap: var(--gap);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    /**
+     * A "hint" to disable the reflow to a single vertical column on small
+     * screens, instead attempting to render on a single row for as much as
+     * physically possible.
+     *
+     * This does _not_ fully disable wrapping.
+     */
+    .row.resist-wrap {
+        flex-direction: row;
+    }
+/**
+ * Flexbox columns. They're greedy to fill horizontal space, but will shrink
+ * if necessary.
+ */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 2;
+    flex-shrink: 1;
+    align-items: center;
+}
+    /**
+     * To be used as a "buffer" specifically when a single column in a given
+     * row needs invisible pressure to maintain width _as if_ it had siblings
+     * (e.g. a row at the bottom of the Articles page on a large screen if
+     * there's only one remaining article column to populate the row).
+     */
+    .column.whitespace {
+        flex-grow: 1;
+        /**
+         * No need to be that "buffer" when everything in the row's wrapped to
+         * a single column on small screens, anyways.
+         */
+        display: none;
+    }
+    .column.align-left {
+        align-items: start;
+    }
+    /**
+     * This seems nonsensical, but in practice every single time I use
+     * flexbox, I end up needing on or more headers, and every single time I
+     * ended up wishing that top margin GONE. So despite how wrong it feels,
+     * if they show up in a column, ignore top margin in most cases.
+     */
+    .column > h1:first-child,
+    .column > h2:first-child,
+    .column > h3:first-child {
+        margin-top: 0;
+    }
+    .column h4,
+    .column h5,
+    .column h6 {
+        margin-top: 0;
+    }
 @media (min-width: 700px) {
-    .card {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-        margin-bottom: 4.5vw;
+    .row {
+        flex-direction: row;
     }
-    .card {
+    .column.whitespace {
+        display: flex;
+    }
+}
+
+
+/*******************
+ ***  12. MEDIA  ***
+ *******************/
+
+img,
+video {
+    /**
+     * Makes <img> & <video> elements responsively resize the way my brain
+     * expects them to (the elements will respectivelly not explode byeond
+     * their "true" max widths, but will of course responsively shrink when
+     * needed).
+     * 
+     * Yes, there's other ways to do this, and yes, I hate them all.
+     * This Is The Way™.
+     */
+    max-width: 100%;
+    /**
+     * Rounded corners are the default look and feel, must be opted-OUT to
+     * have sharp corners selectively applied only when necessary.
+     */
+    border-radius: 0.25em;
+}
+/**
+ * Images tend to look insanely bright when in dark mode. A filter to slightly
+ * decrease the brightness of all media until hovered by a mouse pointer or
+ * tapped by a finger is a _really_ pleasing way to make late night scrolling
+ * more visually soothing.
+ */
+#dark img,
+#dark video {
+    filter: brightness(0.7);
+    transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease-out;
+}
+    #dark img:hover,
+    #dark video:hover {
+        filter: brightness(1);
+    }
+/**
+ * Snowflakes
+ * A collection of image types that require "special" attention.
+ */
+.app-icon {
+    height: 1em;
+    margin-top: 0.1em;
+    vertical-align: text-top;
+}
+.app-download {
+    text-align: center;
+}
+    .app-download img {
+        border-radius: 0.7rem;
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+    }
+.no-border-radius,
+.no-border-radius img {
+    border-radius: 0 !important;
+}
+.permalink {
+    height: 0.7em;
+}
+/**
+ * For emoji rendered inline from Markdown via GitHub syntax (e.g. :+1:)
+ */
+img.emoji {
+    border-radius: 0;
+}
+/**
+ * The modern approach to "emoji"-style lists used in newer Music Player
+ * Showcase articles.
+ */
+.bullet {
+    margin-right: 0.25em;
+}
+
+
+
+
+figure {
+    text-align: center;
+}
+figure p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div.inline,
+div.shadow {
+    line-height: 0;
+}
+div.inline p,
+div.shadow p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+figcaption {
+    padding: 0 10%;
+    vertical-align: bottom;
+    max-width: 30.4rem;
+    display: inline-block;
+}
+/*
+Markdown adds an empty paragraph element after figcaptions for some reason, hide them.
+ */
+figcaption + p {
+    display: none;
+}
+figcaption {
+    margin-top: 0.65em;
+}
+.edge-to-edge figcaption {
+    margin-top: 1.3em;
+}
+figure > p {
+    line-height: 0;
+}
+div.edge-to-edge > p,
+div.inline > p {
+    line-height: 0;
+}
+.shadow figcaption,
+.macos-window-screenshot figcaption,
+.watchos-screenshot figcaption,
+.ios-screenshot figcaption {
+    margin-top: 1.95em;
+}
+.inline.shadow figcaption {
+    margin-top: 1.3em;
+}
+div.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) {
+    margin-top: 0;
+    margin-bottom: 1.3em;
+}
+.macos-window-screenshot > p {
+    text-align: center;
+}
+.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) figcaption {
+    margin-top: 1.3em;
+}
+.edge-to-edge > p {
+    margin-bottom: 0;
+}
+.one-image figcaption,
+.two-images figcaption,
+.three-images figcaption {
+    margin-top: 1.95em;
+}
+.inline.shadow {
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+.one-image,
+.two-images,
+.three-images {
+    width: 100%;
+    margin-bottom: 1.3em;
+}
+/* On iOS devices, all edge-to-edge elements are fully edge-to-edge */
+.hero-banner,
+.edge-to-edge,
+.uml-flowchart,
+.uml-sequence-diagram {
+    display: inline-block;
+    height: auto;
+    max-width: 1600px;
+    max-height: none;
+
+    width: 100vw;
+    margin-left: -19vw;
+    margin-right: -19vw;
+
+    border-radius: 0;
+    margin-top: 1.3em;
+    margin-bottom: 2.6em;
+    text-align: center;
+}
+.edge-to-edge.infinite {
+    margin-bottom: 1.3em;
+}
+.edge-to-edge.ios-screenshot.one-image {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0.25em;
+}
+figure {
+    margin-top: 2.6em !important;
+    margin-bottom: 2.6em !important;
+}
+figure.highlight,
+figure.codehilite {
+    margin-top: 1.3em !important;
+    margin-bottom: 2.6em !important;
+}
+div > figure.highlight,
+div > figure.codehilite {
+    margin-bottom: 1.3em !important;
+}
+figure.edge-to-edge {
+    margin-top: 1.3em !important;
+    margin-bottom: 2.6em !important;
+}
+figure figcaption {
+    margin-top: 1.3em;
+}
+figure.edge-to-edge {
+    margin-top: 1.3em;
+}
+div.edge-to-edge.ios-screenshot,
+div.edge-to-edge.macos-window-screenshot,
+div.edge-to-edge.three-images.shadow {
+    margin-top: 1.3em;
+    margin-bottom: 2.6em;
+}
+figure.edge-to-edge.ios-screenshot,
+figure.edge-to-edge.macos-window-screenshot,
+figure.edge-to-edge.three-images.shadow {
+    margin-top: 1.3em;
+    margin-bottom: 2.6em;
+}
+.edge-to-edge + div + .edge-to-edge {
+    margin-top: 0;
+}
+    .edge-to-edge.infinite {
+        max-width: unset;
+        margin-left: -36vw;
+        margin-right: -36vw;
+    }
+    .edge-to-edge img,
+    .edge-to-edge video {
         display: inline-block;
-        min-width: 17em;
-        width: 46vw;
-        max-width: 22em;
+        width: 100%;
     }
-    .card .content .logo {
-        width: 5em;
-        height: 5em;
+.edge-to-edge p {
+    text-align: center;
+}
+.hero-banner {
+    margin-top: -2.75em !important;
+    margin-bottom: 0;
+    max-width: 2000px;
+}
+    .hero-banner img,
+    .hero-banner video {
+        border-radius: 0;
     }
-    .card .content .long-logo {
-        max-height: 6.5em;
+.uml-flowchart, .uml-sequence-diagram {
+    overflow-x: scroll;
+    /* Momentum scrolling in iOS */
+    -webkit-overflow-scrolling: touch;
+}
+.inline,
+.half-inline {
+    margin-bottom: 1.3em;
+    text-align: center;
+}
+.inline img,
+.inline video {
+    margin-left: 0;
+    margin-right: 0;
+}
+.true-width img,
+.true-width video {
+    width: auto;
+    zoom: 50%;
+}
+.half-inline img {
+    display: inline-block;
+    height: auto;
+    width: 50%;
+}
+.half-inline > p {
+    text-align: center;
+}
+.half-inline a:hover {
+    background-color: unset !important;
+}
+.edge-to-edge > p > a:hover,
+.edge-to-edge > a:hover,
+figure > a:hover,
+.one-image > a:hover,
+.two-images > a:hover,
+.three-images > a:hover,
+.widget > a:hover {
+    background-color: transparent !important;
+}
+.widget img {
+    border-radius: 2.5vw;
+}
+.watchos-screenshot img,
+.watchos-screenshot video {
+    background-color: #000000;
+    padding: 1.5em;
+    border-radius: 3em !important;
+}
+.macos-window-screenshot:not(.edge-to-edge),
+.watchos-screenshot:not(.edge-to-edge) {
+    margin-top: 2.6em !important;
+    margin-bottom: 2.6em !important;
+}
+.ios-screenshot img,
+.ios-screenshot video,
+.widget img {
+    border: 1px solid #000000;
+}
+.macos-window-screenshot img,
+.macos-window-screenshot video {
+    box-shadow: 0 0.5em 2em rgba(30, 30, 30, 0.3); /*rgba(128, 128, 128, 0.5);*/
+    border: 1px solid #000000;
+    border-radius: 4px !important;
+}
+.one-image img,
+.one-image video {
+    border-radius: 0.75em;
+}
+.two-images img,
+.two-images video,
+.three-images img,
+.three-images video {
+    border-radius: 0.5em;
+}
+.one-image img,
+.one-image video {
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.two-images img,
+.two-images video {
+    max-width: 28vw;
+    width: 25vw;
+    margin-left: 1.75vw;
+    margin-right: 1.75vw;
+}
+.edge-to-edge.two-images img,
+.edge-to-edge.two-images video {
+    max-width: 44vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.three-images img,
+.three-images video {
+    width: 25vw;
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+    max-width: 9.25em;
+}
+.edge-to-edge.three-images img,
+.edge-to-edge.three-images video {
+    max-width: 28vw;
+    margin-left: 1.75vw;
+    margin-right: 1.75vw;
+}
+
+
+
+@media (min-width: 700px) {
+    .hero-banner {
+        margin-top: -1.775em !important;
+    }
+    :not(.edge-to-edge) > figure.highlight,
+    :not(.edge-to-edge) > figure.codehilite {
+        margin-top: 1.3em !important;
+        margin-bottom: 1.3em !important;
+    }
+    .codehilite,
+    .highlight,
+    .edge-to-edge,
+    .hero-banner,
+    .uml-flowchart, .uml-sequence-diagram,
+    article > pre {
+        width: 100vw;
+    }
+        .codehilite,
+        .highlight,
+        article > pre {
+            margin-left: -36vw;
+            margin-right: -36vw;
+        }
+        .hero-banner,
+        .edge-to-edge,
+        .uml-flowchart, .uml-sequence-diagram {
+            margin-left: -35vw;
+            margin-right: -35vw;
+        }
+
+    /**
+     * .small images are only edge-to-edge on small devices, they turn into
+     * standard inline images for all larger devices.
+     */
+    .edge-to-edge.small {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        margin-top: 1.3em;
+        margin-bottom: 2.6em;
+    }
+    .edge-to-edge.medium {
+        max-width: 812px;
+    }
+    .inline img,
+    .edge-to-edge.small img,
+    .edge-to-edge.small video {
+        border-radius: 0.25em;
+    }
+
+    figcaption {
+        padding: 0;
+        display: inline-block;
+        max-width: 31.4rem;
+    }
+    .edge-to-edge.shadow:not(.small) figcaption,
+    .macos-window-screenshot figcaption,
+    .watchos-screenshot figcaption,
+    .ios-screenshot figcaption {
+        margin-top: 1.95em !important
+    }
+    .edge-to-edge:not(.shadow) figcaption {
+        margin-top: 0.975em;
+    }
+
+    .macos-window-screenshot img,
+    .macos-window-screenshot video {
+        border-radius: 7px !important;
+    }
+    .widget img {
+        border-radius: 1em;
+    }
+
+    .two-images img,
+    .two-images video {
+        max-width: 10em;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .three-images img,
+    .three-images video {
+        width: 10em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-width: unset;
+    }
+    .edge-to-edge.one-image img,
+    .edge-to-edge.one-image video,
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
+        max-width: 28vw;
+    }
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+@media (min-width: 801px) {
+    .edge-to-edge.medium img,
+    .edge-to-edge.medium video {
+        border-radius: 0.25em;
     }
 }
 @media (min-width: 900px) {
-    .card {
-        width: 42.5vw;
-        min-width: 18.5em;
-        max-width: 23.5em;
+    .hero-banner {
+        margin-top: -1.975em !important;
     }
-    .card {
-        margin-left: .65rem;
-        margin-right: .65rem;
-        margin-bottom: 1.95rem;
+    .edge-to-edge.medium img,
+    .edge-to-edge.medium video,
+    .edge-to-edge.large img,
+    .edge-to-edge.large video {
+        border-radius: 0;
+    }
+    .edge-to-edge.medium {
+        max-width: 1000px;
+        width: 100vw;
+    }
+    .edge-to-edge.large {
+        margin-left: -35vw;
+        margin-right: -35vw;
+        width: 100vw;
+        max-width: 1303px;
+    }
+    figcaption {
+        max-width: 32.4rem;
+    }
+    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
+       but stay bound for home view. */
+    .one-image img,
+    .two-images img,
+    .three-images img,
+    .one-image video,
+    .two-images video,
+    .three-images video {
+        border-radius: 0.75em !important;
+    }
+    .two-images img,
+    .two-images video {
+        max-width: 14rem;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
+    .three-images img,
+    .three-images video {
+        width: 10.25em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-width: unset;
+    }
+    .edge-to-edge.one-image img,
+    .edge-to-edge.one-image video,
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
+        width: 25vw;
+        max-width: 17rem;
+    }
+    .edge-to-edge.two-images img,
+    .edge-to-edge.two-images video,
+    .edge-to-edge.three-images img,
+    .edge-to-edge.three-images video {
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+    .macos-window-screenshot img,
+    .macos-window-screenshot video {
+        border-radius: 8px !important;
     }
 }
-
-
-
-
-
-
+@media (min-width: 1001px) {
+    .edge-to-edge.medium img,
+    .edge-to-edge.medium video {
+        border-radius: 0.25em;
+    }
+}
+@media (min-width: 1304px) {
+    .edge-to-edge.large img,
+    .edge-to-edge.large video {
+        border-radius: 0.25em;
+    }
+}
+@media (min-width: 1601px) {
+    .edge-to-edge img,
+    .edge-to-edge video {
+        border-radius: 0.25em;
+    }
+}
+@media (min-width: 2001px) {
+    .hero-banner img,
+    .hero-banner video {
+        border-bottom-left-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;
+    }
+}
 
 
 
@@ -1877,8 +2606,6 @@ p > code {
 .button {
     font-size: 1.3rem;
 }
-
-
 
 p,
 blockquote,
@@ -2004,102 +2731,6 @@ figure a {
 }
 
 
-
-/* FLEX ------------------------------------------------------------------------- */
-
-
-.row {
-    align-items: stretch;
-    width: 100%;
-    display: grid;
-    flex-wrap: nowrap;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 1.3em;
-}
-    .row.inline {
-        justify-content: center;
-        display: inline-flex;
-    }
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 0;
-    flex-grow: 2;
-    flex-shrink: 1;
-    margin-left: 0;
-    margin-right: 0;
-}
-    .column.fizz {
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 1;
-    }
-
-.box,
-#dark .show-when-dark.box,
-.show-when-light.box {
-    width: 100%;
-    display: flex !important;
-    flex-flow: row wrap;
-    align-items: flex-end;
-}
-    .box p,
-    .box a {
-      margin: 0.5em;
-      display: inline-block;
-    }
-.flex {
-    margin: 0px;
-    padding: 0px;
-}
-.flex main {
-    margin-top: 0 !important;
-    padding-top: 2.6em;
-
-    display: grid;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    width: auto;
-    max-width: 33em;
-    gap: 1.3em;
-}
-.flex .card {
-    max-width: unset;
-    width: auto;
-    min-width: unset;
-}
-.flex .card {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-}
-.flex article {
-    max-width: 33em;
-    width: auto;
-    margin: 2.6em auto;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.flex article figure {
-    margin-top: 0 !important;
-}
-.column > h1,
-.column > h2,
-.column > h3 {
-    margin-top: 0.707em;
-}
-.column:first-child > h1:first-child,
-.column:first-child > h2:first-child,
-.column:first-child > h3:first-child {
-    margin-top: 0;
-}
-.column h4,
-.column h5,
-.column h6 {
-    margin-top: 0;
-}
-
 .card:hover,
 .shadow a:hover img,
 .shadow video:hover,
@@ -2182,6 +2813,10 @@ button,
 input {
     border-radius: 0.5em;
 }
+#dark button img,
+#dark .button img {
+    filter: brightness(1);
+}
 button,
 .button {
     cursor: pointer;
@@ -2196,11 +2831,11 @@ button.disabled,
 button:disabled {
     cursor: not-allowed;
 }
-.button-group li,
+/*.button-group li,
 .button-group li a,
 .button-group li a p  {
     width: 100%;
-}
+}*/
     .button-group.autosize li,
     .button-group.autosize li a,
     .button-group.autosize li a p {
@@ -2266,14 +2901,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-.app-download img {
-    border-radius: 0.7rem;
-    height: 40px;
-    width: auto;
-}
-.app-download {
-    text-align: center;
-}
 
 
 
@@ -2292,402 +2919,6 @@ a:hover {
 
 /* IMAGES & VIDEO ------------------------------------------------------------------- */
 
-
-video {
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-video:focus {
-    outline: none;
-}
-img {
-    max-width: 100%;
-    width: auto\9;
-}
-
-figure {
-    text-align: center;
-}
-figure p {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-div.inline,
-div.shadow {
-    line-height: 0;
-}
-div.inline p,
-div.shadow p {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-figcaption {
-    padding: 0 10%;
-    vertical-align: bottom;
-    max-width: 30.4rem;
-    display: inline-block;
-}
-/*
-Markdown adds an empty paragraph element after figcaptions for some reason, hide them.
- */
-figcaption + p {
-    display: none;
-}
-figcaption {
-    margin-top: 0.65em;
-}
-.edge-to-edge figcaption {
-    margin-top: 1.3em;
-}
-figure > p {
-    line-height: 0;
-}
-div.edge-to-edge > p,
-div.inline > p {
-    line-height: 0;
-}
-.shadow figcaption,
-.macos-window-screenshot figcaption,
-.watchos-screenshot figcaption,
-.ios-screenshot figcaption {
-    margin-top: 1.95em;
-}
-.inline.shadow figcaption {
-    margin-top: 1.3em;
-}
-div.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) {
-    margin-top: 0;
-    margin-bottom: 1.3em;
-}
-.macos-window-screenshot > p {
-    text-align: center;
-}
-.edge-to-edge:not(.shadow, .ios-screenshot, .macos-window-screenshot) figcaption {
-    margin-top: 1.3em;
-}
-.edge-to-edge > p {
-    margin-bottom: 0;
-}
-.one-image figcaption,
-.two-images figcaption,
-.three-images figcaption {
-    margin-top: 1.95em;
-}
-.inline.shadow {
-    margin-top: 1.3em;
-    margin-bottom: 1.3em;
-}
-.one-image,
-.two-images,
-.three-images {
-    width: 100%;
-    margin-bottom: 1.3em;
-}
-
-
-/* Add border radius to pure Markdown images */
-article > p > img {
-    border-radius: 0.25em;
-}
-
-
-/* On iOS devices, all edge-to-edge elements are fully edge-to-edge */
-.hero-banner,
-.edge-to-edge,
-.uml-flowchart,
-.uml-sequence-diagram {
-    display: inline-block;
-    height: auto;
-    max-width: 1600px;
-    max-height: none;
-
-    width: 100vw;
-    margin-left: -19vw;
-    margin-right: -19vw;
-
-    border-radius: 0;
-    margin-top: 1.3em;
-    margin-bottom: 2.6em;
-    text-align: center;
-}
-.edge-to-edge.infinite {
-    margin-bottom: 1.3em;
-}
-.edge-to-edge.ios-screenshot.one-image {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0.25em;
-}
-figure {
-    margin-top: 2.6em !important;
-    margin-bottom: 2.6em !important;
-}
-figure.highlight,
-figure.codehilite {
-    margin-top: 1.3em !important;
-    margin-bottom: 2.6em !important;
-}
-div > figure.highlight,
-div > figure.codehilite {
-    margin-bottom: 1.3em !important;
-}
-figure.edge-to-edge {
-    margin-top: 1.3em !important;
-    margin-bottom: 2.6em !important;
-}
-figure figcaption {
-    margin-top: 1.3em;
-}
-figure.edge-to-edge {
-    margin-top: 1.3em;
-}
-div.edge-to-edge.ios-screenshot,
-div.edge-to-edge.macos-window-screenshot,
-div.edge-to-edge.three-images.shadow {
-    margin-top: 1.3em;
-    margin-bottom: 2.6em;
-}
-figure.edge-to-edge.ios-screenshot,
-figure.edge-to-edge.macos-window-screenshot,
-figure.edge-to-edge.three-images.shadow {
-    margin-top: 1.3em;
-    margin-bottom: 2.6em;
-}
-.edge-to-edge + div + .edge-to-edge {
-    margin-top: 0;
-}
-    .edge-to-edge.infinite {
-        max-width: unset;
-        margin-left: -36vw;
-        margin-right: -36vw;
-    }
-    .edge-to-edge img,
-    .edge-to-edge video {
-        display: inline-block;
-        width: 100%;
-    }
-.edge-to-edge p {
-    text-align: center;
-}
-.hero-banner {
-    margin-top: -3em !important;
-    margin-bottom: 0;
-    max-width: 2000px;
-}
-    .hero-banner img,
-    .hero-banner video {
-        border-radius: 0;
-    }
-.uml-flowchart, .uml-sequence-diagram {
-    overflow-x: scroll;
-    /* Momentum scrolling in iOS */
-    -webkit-overflow-scrolling: touch;
-}
-.inline,
-.half-inline {
-    margin-bottom: 1.3em;
-    text-align: center;
-}
-.inline img,
-.inline video {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0.25em;
-}
-.true-width img,
-.true-width video {
-    width: auto;
-    zoom: 50%;
-}
-.half-inline img {
-    display: inline-block;
-    height: auto;
-    width: 50%;
-}
-.half-inline img {
-    border-radius: 0.25em;
-}
-.half-inline > p {
-    text-align: center;
-}
-.half-inline a:hover {
-    background-color: unset !important;
-}
-
-img.rounded,
-video.rounded {
-    border-radius: 0.25em;
-}
-
-.edge-to-edge > p > a:hover,
-.edge-to-edge > a:hover,
-figure > a:hover,
-.one-image > a:hover,
-.two-images > a:hover,
-.three-images > a:hover,
-.widget > a:hover {
-    background-color: transparent !important;
-}
-
-.widget img {
-    border-radius: 2.5vw;
-}
-.watchos-screenshot img,
-.watchos-screenshot video {
-    background-color: #000000;
-    padding: 1.5em;
-    border-radius: 3em !important;
-}
-.macos-window-screenshot:not(.edge-to-edge),
-.watchos-screenshot:not(.edge-to-edge) {
-    margin-top: 2.6em !important;
-    margin-bottom: 2.6em !important;
-}
-.ios-screenshot img,
-.ios-screenshot video,
-.widget img {
-    border: 1px solid #000000;
-}
-.macos-window-screenshot img,
-.macos-window-screenshot video {
-    box-shadow: 0 0.5em 2em rgba(30, 30, 30, 0.3); /*rgba(128, 128, 128, 0.5);*/
-    border: 1px solid #000000;
-    border-radius: 4px !important;
-}
-
-
-.one-image img,
-.one-image video {
-    border-radius: 0.75em;
-}
-.two-images img,
-.two-images video,
-.three-images img,
-.three-images video {
-    border-radius: 0.5em;
-}
-.one-image img,
-.one-image video {
-    max-width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.two-images img,
-.two-images video {
-    max-width: 28vw;
-    width: 25vw;
-    margin-left: 1.75vw;
-    margin-right: 1.75vw;
-}
-.edge-to-edge.two-images img,
-.edge-to-edge.two-images video {
-    max-width: 44vw;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-}
-.three-images img,
-.three-images video {
-    width: 25vw;
-    margin-left: 1.25vw;
-    margin-right: 1.25vw;
-    max-width: 9.25em;
-}
-.edge-to-edge.three-images img,
-.edge-to-edge.three-images video {
-    max-width: 28vw;
-    margin-left: 1.75vw;
-    margin-right: 1.75vw;
-}
-
-.stroke-transparent {
-    stroke: white;
-}
-.fill-transparent {
-    fill: white;
-}
-
-
-.no-border-radius,
-.no-border-radius img {
-    border-radius: 0 !important;
-}
-
-
-h2 img {
-    max-width: 16px;
-    margin-left: 0.1em;
-    display: inline;
-}
-
-
-.permalink {
-    overflow: visible;
-    width: auto;
-    height: 0.7em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-    opacity: 1
-}
-.apple-logo {
-    display: inline-block;
-    height: 0.9em;
-}
-
-.app-icon {
-    height: 5em;
-}
-.inline-app-icon {
-    display: inline-block;
-    height: 1em;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-    vertical-align: text-top;
-    margin-top: 0.125em;
-    max-width: unset;
-}
-
-.gemoji {
-    width: 1em;
-}
-.gemoji,
-.emoji {
-    vertical-align: text-top;
-}
-img.emoji {
-    width: 1em !important;
-    height: 1em !important;
-}
-
-.bullet .emoji,
-.bullet .gemoji {
-    vertical-align: text-bottom;
-}
-.bullet {
-    margin-right: 0.75em;
-}
-
-.twitter-logo svg {
-    vertical-align: baseline;
-    height: 0.75em;
-}
-.twitter-logo g {
-    fill: #1DA1F2 !important;
-}
-.twitter-logo,
-.twitter-logo:hover {
-    color: #1DA1F2 !important;
-}
-.twitter-logo:hover {
-    background-color: transparent !important;
-}
 
 
 /* CODE ----------------------------------------------------------------------------- */
@@ -2979,8 +3210,11 @@ span.gp {
 
 
 /* ----- FOOTNOTES ----- */
-footer {
+/*footer {
     margin-bottom: 3.9em;
+}*/
+footer {
+    width: 100%;
 }
 footer,
 #article-linkback {
@@ -3008,12 +3242,16 @@ sup[id^=fnref] {
    So we should add enough padding to make tapping the bottom button keep the page where it
    is */
 #blog-footer-buttons {
-    padding-bottom: 2.6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 #blog-footer-buttons svg {
     height: 0.75em;
     margin-right: 0;
     padding-right: 0.325em;
+}
+#blog-footer-buttons button {
+    width: 100%;
 }
 
 
@@ -3054,6 +3292,11 @@ html {
 input, textarea {
     transition: background-color 0.2s ease, border 0.2s ease-in-out;
 }
+.column a .card img,
+.column a .card svg,
+.column .card video {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 #menubar menu a,
 main a,
 summary,
@@ -3070,7 +3313,7 @@ video.shadow,
 .ios-screenshot video,
 .widget img,
 .card .label {
-    transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease-out;
 }
 .label .primary {
     transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -3090,22 +3333,17 @@ hr {
 }
 
 /* SVG Stroke */
-.stroke-transparent,
 .stroke-color {
     transition: stroke 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.card .stroke-transparent,
 .card .stroke-color {
     transition: stroke 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 /* SVG Fill */
-.fill-transparent,
 .fill-color,
 #signature path,
-.card .fill-transparent,
 .card .fill-color,
 .card #signature path,
-.twitter-logo g,
 .pill path {
     transition: fill 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -3167,6 +3405,10 @@ kbd {
 .show-when-light {
     display: inline-block !important;
 }
+    /* TODO can I do block everywhere? or initial? */
+    picture.show-when-light {
+        display: block !important;
+    }
 
 .hide-when-small {
     display: none !important;
@@ -3175,32 +3417,14 @@ kbd {
     display: inline-block !important;
 }
 
-
 /* MEDIA QUERIES ==================================================================== */
-
-
-
 
 @media (min-width: 700px) {
     /* CONTAINER ---------------------------------- */
 
-
     main {
         margin-top: calc(var(--gap) * 4);
         max-width: 34em;
-    }
-    .flex main {
-        padding-top: calc(var(--gap) * 4);
-        max-width: 60em;
-    }
-    .flex article {
-        max-width: 34em;
-    }
-    @supports(padding: max(5%, env(safe-area-inset-left))) {
-        .flex main {
-            padding-left: max(1.95em, env(safe-area-inset-left)) !important;
-            padding-right: max(1.95em, env(safe-area-inset-right)) !important;
-        }
     }
     div > main {
         padding-left: 0;
@@ -3225,68 +3449,6 @@ kbd {
     .button {
         font-size: 1em;
     }
-    
-
-
-    /* ----- LISTS ----- */
-    .task-list {
-/*        margin-left: 0.62em;*/
-    }
-    .emoji-list {
-        margin-left: 0.75em !important;
-    }
-
-
-    /* NAVBAR ------------------------------------- */
-
-
-    /* --- MENU --- */
-    
-
-    /* --- LOGO --- */
-    
-
-
-    /* FLEX --------------------------------------- */
-
-    .row {
-        display: inline-flex;
-    }
-        .column > h1:first-child,
-        .column > h2:first-child,
-        .column > h3:first-child {
-            margin-top: 0;
-        }
-        .column h4,
-        .column h5,
-        .column h6 {
-            margin-top: 0;
-        }
-        .column.hide-when-small {
-            flex-grow: 1;
-        }
-    .flex main {
-        display: flex;
-        width: auto;
-    }
-    .column.foo {
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 1;
-    }
-    .column.fizz {
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-
-
-    /* ELEMENTS ----------------------------------- */
-
-
-    /* --- CARDS --- */
-    
-
 
     /* --- DIVIDERS --- */
     hr {
@@ -3309,7 +3471,7 @@ kbd {
     .button {
         padding-left: 1em;
         padding-right: 1em;
-        width: auto;
+        width: 100%;
     }
     .button-group li {
         margin-left: 0.325em;
@@ -3319,113 +3481,6 @@ kbd {
     .button-group.autosize li {
         width: auto;
     }
-
-
-    /* IMAGES & VIDEO ----------------------------- */
-
-
-    :not(.edge-to-edge) > figure.highlight,
-    :not(.edge-to-edge) > figure.codehilite {
-        margin-top: 1.3em !important;
-        margin-bottom: 1.3em !important;
-    }
-    .codehilite,
-    .highlight,
-    .edge-to-edge,
-    .hero-banner,
-    .uml-flowchart, .uml-sequence-diagram,
-    article > pre {
-        width: 100vw;
-    }
-        .codehilite,
-        .highlight,
-        article > pre {
-            margin-left: -36vw;
-            margin-right: -36vw;
-        }
-        .hero-banner,
-        .edge-to-edge,
-        .uml-flowchart, .uml-sequence-diagram {
-            margin-left: -35vw;
-            margin-right: -35vw;
-        }
-
-    /**
-     * .small images are only edge-to-edge on small devices, they turn into
-     * standard inline images for all larger devices.
-     */
-    .edge-to-edge.small {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        margin-top: 1.3em;
-        margin-bottom: 2.6em;
-    }
-    .edge-to-edge.medium {
-        max-width: 812px;
-    }
-    .inline img,
-    .edge-to-edge.small img,
-    .edge-to-edge.small video {
-        border-radius: 0.25em;
-    }
-
-    figcaption {
-        padding: 0;
-        display: inline-block;
-        max-width: 31.4rem;
-    }
-    .edge-to-edge.shadow:not(.small) figcaption,
-    .macos-window-screenshot figcaption,
-    .watchos-screenshot figcaption,
-    .ios-screenshot figcaption {
-        margin-top: 1.95em !important
-    }
-    .edge-to-edge:not(.shadow) figcaption {
-        margin-top: 0.975em;
-    }
-
-    .macos-window-screenshot img,
-    .macos-window-screenshot video {
-        border-radius: 7px !important;
-    }
-    .widget img {
-        border-radius: 1em;
-    }
-
-    .two-images img,
-    .two-images video {
-        max-width: 10em;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-    .three-images img,
-    .three-images video {
-        width: 10em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        max-width: unset;
-    }
-    .edge-to-edge.one-image img,
-    .edge-to-edge.one-image video,
-    .edge-to-edge.two-images img,
-    .edge-to-edge.two-images video,
-    .edge-to-edge.three-images img,
-    .edge-to-edge.three-images video {
-        max-width: 28vw;
-    }
-    .edge-to-edge.two-images img,
-    .edge-to-edge.two-images video,
-    .edge-to-edge.three-images img,
-    .edge-to-edge.three-images video {
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    h2 img {
-        max-width: 32px;
-    }
-
 
     /* CODE --------------------------------------- */
 
@@ -3505,15 +3560,12 @@ kbd {
         margin-right: 0;
     }
 
-
     /* FOOTER ------------------------------------- */
     #blog-footer-buttons {
         padding-bottom: 0;
     }
 
-
     /* MISC --------------------------------------- */
-
 
     .hide-when-small {
         display: initial !important;
@@ -3521,12 +3573,6 @@ kbd {
     main a {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
-    }
-}
-@media (min-width: 801px) {
-    .edge-to-edge.medium img,
-    .edge-to-edge.medium video {
-        border-radius: 0.25em;
     }
 }
 
@@ -3537,14 +3583,9 @@ Font size: 21px, ~Margin&Padding: 31.5px
 @media (min-width: 900px) {
     /* CONTAINER ---------------------------------- */
 
-
     main {
         max-width: 35em;
     }
-    .flex article {
-        max-width: 35em;
-    }
-
 
     /* TYPOGRAPHY --------------------------------- */
 
@@ -3553,28 +3594,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
     html {
         font-size: 21px;
     }
-
-
-    /* ----- LISTS ----- */
-    .task-list {
-/*        margin-left: .73em;*/
-    }
-        
-
-
-    /* NAVBAR ------------------------------------- */
-
-
-    /* --- MENU --- */
-    
-
-
-    /* ELEMENTS ------------------------------------- */
-
-
-    /* --- CARDS --- */
-    
-
 
     /* --- DIVIDERS --- */
     hr {
@@ -3587,75 +3606,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
     .button {
         padding-left: 1em;
         padding-right: 1em;
-    }
-
-
-    /* IMAGES & VIDEO ------------------------------- */
-
-
-    .edge-to-edge.medium img,
-    .edge-to-edge.medium video,
-    .edge-to-edge.large img,
-    .edge-to-edge.large video {
-        border-radius: 0;
-    }
-    .edge-to-edge.medium {
-        max-width: 1000px;
-        width: 100vw;
-    }
-    .edge-to-edge.large {
-        margin-left: -35vw;
-        margin-right: -35vw;
-        width: 100vw;
-        max-width: 1303px;
-    }
-    figcaption {
-        max-width: 32.4rem;
-    }
-    /* Lets iOS Screenshots spill beyond the text width bounds when in post view,
-       but stay bound for home view. */
-    .one-image img,
-    .two-images img,
-    .three-images img,
-    .one-image video,
-    .two-images video,
-    .three-images video {
-        border-radius: 0.75em !important;
-    }
-    .two-images img,
-    .two-images video {
-        max-width: 14rem;
-        margin-left: 1em;
-        margin-right: 1em;
-        width: 100%;
-    }
-    .three-images img,
-    .three-images video {
-        width: 10.25em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        max-width: unset;
-    }
-    .edge-to-edge.one-image img,
-    .edge-to-edge.one-image video,
-    .edge-to-edge.two-images img,
-    .edge-to-edge.two-images video,
-    .edge-to-edge.three-images img,
-    .edge-to-edge.three-images video {
-        width: 25vw;
-        max-width: 17rem;
-    }
-    .edge-to-edge.two-images img,
-    .edge-to-edge.two-images video,
-    .edge-to-edge.three-images img,
-    .edge-to-edge.three-images video {
-        margin-left: 1.3rem;
-        margin-right: 1.3rem;
-    }
-
-    .macos-window-screenshot img,
-    .macos-window-screenshot video {
-        border-radius: 8px !important;
     }
 
 
@@ -3683,31 +3633,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
     main a {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
-    }
-}
-@media (min-width: 1001px) {
-    .edge-to-edge.medium img,
-    .edge-to-edge.medium video {
-        border-radius: 0.25em;
-    }
-}
-@media (min-width: 1304px) {
-    .edge-to-edge.large img,
-    .edge-to-edge.large video {
-        border-radius: 0.25em;
-    }
-}
-@media (min-width: 1601px) {
-    .edge-to-edge img,
-    .edge-to-edge video {
-        border-radius: 0.25em;
-    }
-}
-@media (min-width: 2001px) {
-    .hero-banner img,
-    .hero-banner video {
-        border-bottom-left-radius: 0.25em;
-        border-bottom-right-radius: 0.25em;
     }
 }
 
@@ -3741,7 +3666,6 @@ Font size: 21px, ~Margin&Padding: 31.5px
 /**
  * Secondary backgrounds
  */
-.card,
 pre,
 code,
 kbd {
@@ -3813,14 +3737,10 @@ hr {
 /**
  * Primary Text
  */
-html,
 a .header,
-[data-hint]:after,
-.card .primary {
+[data-hint]:after {
+/*.card .primary {*/
     color: rgba(30, 30, 30, 0.9);
-}
-.apple-logo path {
-    fill: rgba(30, 30, 30, 0.9);
 }
 .pill path {
     fill: white;
@@ -3829,14 +3749,11 @@ blockquote,
 figcaption {
     color: rgba(30, 30, 30, 0.5);
 }
-.card .label .secondary {
-    color: rgba(30, 30, 30, 0.625);
-}
 .stroke-color {
-    stroke: rgba(30, 30, 30, 0.5);
+    stroke: var(--heavy-secondary-foreground);
 }
 .fill-color {
-    fill: rgba(30, 30, 30, 0.5);
+    fill: var(--heavy-secondary-foreground);
 }
 /**
  * Secondary Text on Secondary Background
@@ -3881,7 +3798,6 @@ a.button {
 /* ----- DROP SHADOWS ----- */
 
 
-.card,
 .shadow img,
 .shadow video,
 img.shadow,
@@ -3894,7 +3810,6 @@ video.shadow,
 .widget img {
     box-shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
 }
-    .card:hover
     .shadow a:hover img,
     .shadow video:hover,
     a:hover img.shadow,
@@ -3911,18 +3826,15 @@ video.shadow,
         box-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     }
 
-/* DARK THEME ======================================================================= */
-
 #dark .show-when-dark {
     display: inline-block !important;
-}
+}/* TODO can I do block everywhere? or initial? */
+    #dark picture.show-when-dark {
+        display: block !important;
+    }
 #dark .show-when-light {
     display: none !important;
 }
-
-/* ----- BACKGROUNDS ----- */
-
-
 html#dark.oled {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -3935,9 +3847,6 @@ html#dark.oled #parallax-foreground {
         background-color: hsl(0, 0%, 4%, 0.75) !important;
     }
 }
-/**
- * Primary floating backgrounds
- */
 #dark .bigfoot-footnote__content,
 #dark .bigfoot-footnote__tooltip {
     background-color: rgba(46, 46, 46, 0.975);
@@ -3960,25 +3869,9 @@ html#dark.oled #parallax-foreground {
 #dark .edge-to-edge a:hover {
     background-color: transparent !important;
 }
-/**
- * Secondary backgrounds
- */
-#dark .card {
-    background-color: rgba(46, 46, 46, 0.25);
-    border-color: rgba(150, 150, 150, 0.1);
-}
-    /*#dark .articles .card .label {
-        background-color: rgb(46, 46, 46);
-    }*/
-    /*#dark .articles .card {
-        border-color: rgb(36, 36, 36);
-    }*/
 #dark kbd {
     background-image: linear-gradient(rgba(46, 46, 46, 0.9), rgba(23, 23, 23, 0));
 }
-/**
- * Special backgrounds
- */
 #dark code,
 #dark pre,
 #dark .language-plaintext .highlight pre code,
@@ -4010,12 +3903,6 @@ html#dark.oled #parallax-foreground {
 #dark textarea {
     background-color: rgba(15, 15, 15, 0.375);
 }
-
-/* ----- BORDERS AND LINES ----- */
-
-/**
- * Primary
- */
 #dark input,
 #dark textarea,
 #dark .ios-screenshot img,
@@ -4039,20 +3926,10 @@ html#dark.oled #parallax-foreground {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(150, 150, 150, 0.15) 25%, rgba(150, 150, 150, 0.15) 50%, rgba(150, 150, 150, 0.15) 75%, rgba(255, 255, 255, 0.0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(150, 150, 150, 0.1)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=1 ); /* IE6-9 */
 }
-/**
- * Secondary
- */
-/**
- * Special
- */
 #dark .macos-window-screenshot img,
 #dark .macos-window-screenshot video {
     border-color: rgba(0, 0, 0, 0.5);
 }
-#dark .apple-logo path {
-    fill: rgba(255, 255, 255, 0.9);
-}
-
 #dark .uml-sequence-diagram path,
 #dark .uml-sequence-diagram rect,
 #dark .uml-flowchart rect,
@@ -4077,16 +3954,12 @@ html#dark.oled #parallax-foreground {
     border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* ----- FOREGROUNDS ----- */
-
-/**
- * Primary Text
- */
-html#dark,
 #dark a .header,
-#dark [data-hint]:after,
-#dark .card .primary {
+#dark [data-hint]:after {
     color: rgba(255, 255, 255, 0.9);
+}
+.apple-logo path {
+    fill: rgba(30, 30, 30, 0.9);
 }
 #dark .apple-logo path {
     fill: rgba(255, 255, 255, 0.9);
@@ -4095,15 +3968,6 @@ html#dark,
 #dark figcaption {
     color: rgba(255, 255, 255, 0.5);
 }
-#dark .card .label .secondary {
-    color: rgba(255, 255, 255, 0.625);
-}
-#dark .stroke-color {
-    stroke: rgba(255, 255, 255, 0.5);
-}
-/**
- * Secondary Text on Secondary Background
- */
 #dark pre,
 #dark code,
 #dark pre code,
@@ -4113,9 +3977,6 @@ html#dark,
 #dark textarea {
     color: rgba(255, 255, 255, 0.7);
 }
-/**
- * Minor Text
- */
 #dark img,
 #dark .longform-title {
     color: rgba(255, 255, 255, 0.375);
@@ -4124,9 +3985,6 @@ html#dark,
     fill: rgba(255, 255, 255, 0.375);
     stroke: transparent;
 }
-
-/* ----- DROP SHADOWS ----- */
-
 #dark .macos-window-screenshot img,
 #dark .macos-window-screenshot video {
     box-shadow: 0 0.5em 2em #121212;
@@ -4134,7 +3992,6 @@ html#dark,
 #dark #parallax-foreground {
     box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
 }
-#dark .card,
 #dark .shadow img,
 #dark .shadow video,
 #dark img.shadow,
@@ -4147,7 +4004,6 @@ html#dark,
 #dark .widget img {
     box-shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.3), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
 }
-    #dark .card:hover,
     #dark .shadow a:hover img,
     #dark .shadow video:hover,
     #dark a:hover img.shadow,

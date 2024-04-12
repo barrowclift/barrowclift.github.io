@@ -25,7 +25,7 @@ continuation:
     }
 </style>
 
-## !["Doppi" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/icon.png '"Doppi" iOS app icon'){: .inline-app-icon } Doppi
+## !["Doppi" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage with light theme" title="Demonstrating 'Doppi' usage with light theme">

@@ -54,6 +54,10 @@ card:
         width: 400px;
     }
 }
+.apple-logo {
+    display: inline-block;
+    height: 0.9em;
+}
 </style>
 
 About a year ago, I published a light "listicle" to highlight some of the smaller features in the then-new [iOS 10](https://web.archive.org/web/20161018023634/https://www.apple.com/ios/ios-10/) and [watchOS 3](https://web.archive.org/web/20160914123844/https://www.apple.com/watchos/). Before diving into the details, [I mentioned offhand](/articles/listing-the-little-things#fn:where-is-macos) that I omitted [macOS 10.12](https://web.archive.org/web/20160915010119/https://www.apple.com/macos/sierra/) simply because there wasn't anything particularly interesting to include from that release.

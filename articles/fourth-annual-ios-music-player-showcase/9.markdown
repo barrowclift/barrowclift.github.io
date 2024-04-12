@@ -27,7 +27,7 @@ continuation:
     }
 </style>
 
-## ![Doppler's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/icon.png "Doppler's iOS app icon"){: .inline-app-icon } Doppler
+## ![Doppler's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/icon.png "Doppler's iOS app icon"){: .app-icon } Doppler
 
 <div class="edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/usage-poster.jpg" alt="Video demonstrating Doppler's usage" title="Demonstrating Doppler's usage">

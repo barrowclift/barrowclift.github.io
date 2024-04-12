@@ -25,7 +25,7 @@ card:
     .app-icon {
         height: 5em;
     }
-    .inline-app-icon {
+    .app-icon {
         display: inline-block;
         height: 1em;
         padding-left: 0.1em;
@@ -87,7 +87,7 @@ Even with just a few deal-breaking requirements, many music apps failed to even 
 
 Seven apps survived the disqualification round and continued on to be evaluated over the course of six months. They are detailed below in alphabetical order.
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .inline-app-icon } Cs (Formerly Cesium)
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .app-icon } Cs (Formerly Cesium)
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-1.jpg">
@@ -120,7 +120,7 @@ Functional, but boring. Its interface is entirely utilitarian with little to no 
 * No album grid view
 * No discovery options
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler.png){: .inline-app-icon } Doppler
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler.png){: .app-icon } Doppler
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-1.jpg">
@@ -154,7 +154,7 @@ Promising, but still too young and missing too many features to seriously consid
 * No "true black" dark mode
 * No album grid view
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .inline-app-icon } Ecoute
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .app-icon } Ecoute
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-1.jpg">
@@ -186,7 +186,7 @@ What was previously the gold-standard third-party music app is now a barely main
 * No discovery options
 * No development, future uncertain
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .inline-app-icon } Music.app
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .app-icon } Music.app
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-1.jpg">
@@ -210,7 +210,7 @@ Entirely inoffensive and mediocre across the board. Unfortunately, in Apple's ef
 * Postage-stamp album art in iPad player view, and the iPhone's player view album art was just barely large enough to pass
 * Confusing interface
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .inline-app-icon } Picky
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .app-icon } Picky
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-1.jpg">
@@ -244,7 +244,7 @@ Cream of the crop for music selection and sorting, but needs visual work everywh
 * No "true black" dark mode
 * Small album art in iPad player view (though it's large enough on iPhone)
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .inline-app-icon } Starling
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .app-icon } Starling
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-1.jpg">
@@ -277,7 +277,7 @@ A visually interesting player view in an otherwise visually dated and functional
 * Visually dated design (clearly from the thin-stroke, iOS 7 era of design)
 * The slowest and worst performing app of the bunch
 
-### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox.png){: .inline-app-icon } VOX
+### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox.png){: .app-icon } VOX
 
 <div class="edge-to-edge large three-images shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-1.jpg">
@@ -314,25 +314,25 @@ What seems at first to be a well-made app quickly reveals it's nothing more than
 
 ## Awards
 
-Prettiest player: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .inline-app-icon } Picky](https://itunes.apple.com/us/app/picky-filter-browse-play-your/id497110916?mt=8)
+Prettiest player: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .app-icon } Picky](https://itunes.apple.com/us/app/picky-filter-browse-play-your/id497110916?mt=8)
 : While Ecoute comes close, I personally find Picky sports the prettiest player of the lot. The player view employs a blurring effect similar to that used in tvOS's Music.app, resulting in stunning visuals that are sure to keep the discerning eye entertained while listening.
 
-Most interesting player: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .inline-app-icon } Starling](http://starling.audio)
+Most interesting player: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .app-icon } Starling](http://starling.audio)
 : While by no means the best player here (it doesn't even make it to being a good player), there's no denying the waveform visualization that Starling features on its player view is a fantastic feature, and one I can only hope the others will incorporate at some point. If you enjoy having something visual to look at while listening to music, this and Picky are your best bets.
 
-All-around best iPad experience: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .inline-app-icon } Music.app](https://www.apple.com/apple-music/)
+All-around best iPad experience: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .app-icon } Music.app](https://www.apple.com/apple-music/)
 : While Cs's full-screen album art in the iPad player view is a delight, the rest of the experience on iPad is incredibly disappointing; the iPad version is clearly nothing more than a "blown-up" version of the iPhone app. Music.app since iOS 10, on the other hand, is fully optimized for the large iPad display and shines brilliantly on it. However, if missing the edge-to-edge album art in the iPad player view is a deal breaker, use Cs instead.
 
-Best dark and "true black" mode: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .inline-app-icon } Cs](http://www.csmusicplayer.com)
+Best dark and "true black" mode: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .app-icon } Cs](http://www.csmusicplayer.com)
 : Cs is miles ahead of every other contender with its stupendous dark mode support; there's not another player on this list that supports true black dark mode, which single-handedly grants Cs the win.
 
-Best album grid: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .inline-app-icon } Ecoute](https://itunes.apple.com/us/app/ecoute/id536882653)
+Best album grid: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .app-icon } Ecoute](https://itunes.apple.com/us/app/ecoute/id536882653)
 : Despite being close to abandonware at this point, Ecoute continues to hold the title as one of the few third-party iOS music players to support album grid view. This is my favorite means of visually searching for an album to play, which means I still continue to use Ecoute, Music.app, and VOX while deciding what to listen to (even if I soon switch to a different app to control the playback). Ecoute won out over Music.app and VOX by simply having a more informed and nuanced design.
 
-Easiest-to-use app: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .inline-app-icon } Cs](http://www.csmusicplayer.com)
+Easiest-to-use app: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .app-icon } Cs](http://www.csmusicplayer.com)
 : By far, the biggest complaint I hear the average person lob against Music.app is that it's [too darn confusing](https://www.reddit.com/r/apple/comments/3vk65z/the_current_music_app_has_to_be_the_worst_music/). If you share this complaint, look no further than Cs. In terms of UI, Cs is the spiritual successor to the original iOS 6 Music.app. If that was at one point your favorite music player, you'll feel right at home with Cs.
 
-Largest album art display: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .inline-app-icon } Cs](http://www.csmusicplayer.com)
+Largest album art display: [![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .app-icon } Cs](http://www.csmusicplayer.com)
 : If the largest-possible album art is your goal, then Cs is once again the best available choice. Not only is the album artwork edge-to-edge on iPhone displays, *it's also edge-to-edge on iPad*, which makes it feel like you're holding a 7" record sleeve while listening to records.
 
 ## Final Verdict

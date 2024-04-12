@@ -14,7 +14,7 @@ continuation:
     next-page: "13"
 ---
 
-## !["Music.app" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .inline-app-icon } Music.app
+## !["Music.app" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">

@@ -14,7 +14,7 @@ continuation:
     next-page: "17"
 ---
 
-## !["Sathorn" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/icon.png '"Sathorn" iOS app icon'){: .inline-app-icon } Sathorn
+## !["Sathorn" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/icon.png '"Sathorn" iOS app icon'){: .app-icon } Sathorn
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">

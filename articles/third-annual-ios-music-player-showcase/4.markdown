@@ -14,7 +14,7 @@ continuation:
     next-page: "5"
 ---
 
-## !["Cs" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/icon.png '"Cs" iOS app icon'){: .inline-app-icon } Cs
+## !["Cs" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/icon.png '"Cs" iOS app icon'){: .app-icon } Cs
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">

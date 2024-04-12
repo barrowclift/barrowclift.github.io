@@ -14,7 +14,7 @@ continuation:
     next-page: "18"
 ---
 
-## !["SongOwl" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/icon.png '"SongOwl" iOS app icon'){: .inline-app-icon } SongOwl
+## !["SongOwl" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/icon.png '"SongOwl" iOS app icon'){: .app-icon } SongOwl
 
 <div class="show-when-light edge-to-edge large three-images ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating 'SongOwl' usage in light mode" title="Demonstrating 'SongOwl' usage in light mode">
