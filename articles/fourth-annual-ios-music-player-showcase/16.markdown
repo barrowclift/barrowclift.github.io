@@ -29,7 +29,7 @@ continuation:
 
 ## ![Plum's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png "Plum's iOS app icon"){: .app-icon } Plum
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating Plum's usage in light mode" title="Demonstrating Plum's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage-poster.jpg" alt="Video demonstrating Plum's usage in dark mode" title="Demonstrating Plum's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/dark-usage.webm" type="video/webm">
@@ -81,7 +81,7 @@ Plum is a general-purpose player packed with features and a visual design that's
 
 From the moment you launch the app, you're greeted with an unorthodox mini-player which also doubles as the springboard into the app's unconventional menu system. Instead of displaying a tab bar or gesture-revealed menu hidden to the left like nearly every other general-purpose player, the UI instead shifts *up* to reveal the menu. Here you'll find the usual suspects like "Songs", "Albums", "Artist", etc., but with the neat bonus ability to set any particular menu item as the app's default landing page. For example, if you prefer browsing by albums like me, you have the ability to make it the default Plum experience.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-modern-red.webp">
@@ -123,7 +123,7 @@ From the moment you launch the app, you're greeted with an unorthodox mini-playe
 
 The other core part of Plum's visual identity is its wild "Modern" full-player. It features massive typography, thick progress & volume bars, and sparse but massive buttons which help make it live up to its namesake and indeed feels fresh among today's pretty but arguably visually redundant full-player landscape. There's few buttons displayed by default, but tapping the album art reveals additional controls like the ability to "love"/"unlove", set star ratings, view lyrics, or launch the AirPlay modal, among others. To help bring some additional visual flair, a linear gradient featuring a primary color from the track's art fills the background, bringing the dynamic benefits the translucent background effect other players tend to use while still maintaining visual distinction. Naturally, its focus on hiding the majority of additional controls behind an album art tap won't be to everyone's taste, such as listeners that prefer having as many controls visible and immediately accessible as possible. These listeners need not fret, Plum is the only player today to boast the unique ability to swap to a completely different full-player altogether with a simple setting change.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-classic-red.webp">
@@ -176,7 +176,7 @@ To top it off, the "Albums" and "Artists" pages allow you to "pin" any particula
 
 Stepping further into the unusual, there are a couple items in Plum's menu that are somewhat rare to see: "Favourites" and "Folders". The "Favourites" page is empty to start, but can be easily populated by long-tapping nearly any entity in the app (song, playlist, album, etc.). That alone is a nice feature to have, but Plum goes the extra mile to make a special, custom layout mode specific to favorites called "Mosaic". When enabled, Plum renders a beautiful, dynamic collage of all your favorited items. The effect is a delight and brings back fond memories of physically making similar collages when I was young to decorate my room. It's genuinely lovely to see a music player allow its listeners the ability to revisit that exercise in such a convenient and elegant way. Continuing Plum's trend of flexible and unopinionated design, this layout feature may of course be disabled to instead display favorite items traditionally as a series of pinwheel lists.
 
-<div class="three-images ios-screenshot">
+<div class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-mosaic-1.webp">
@@ -217,7 +217,7 @@ Stepping further into the unusual, there are a couple items in Plum's menu that 
 
 The "Folders" page offers users the ability to group together albums, artists, or playlists. This makes Plum's folders extraordinarily flexible, so what they can be used for is more of a personal question. For example, I personally enjoy using the feature to group music into emotional buckets; I have a folder of albums & artists for when I'm in a somber mood, a folder of albums & artists for when I'm in (or want to be in) a more cheerful mood, and so on. No matter how you'd personally like to use folders, Plum's flexibility likely allows you to do it.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/light-folders-1.webp">
@@ -281,31 +281,31 @@ While Plum visually looks identical to last year, the breathtaking performance i
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Light &amp; dark themes</dt>
+        <dt>:trophy: Light &amp; dark themes</dt>
         <dd><p>Plum of course respects iOS’s system appearance, but goes above and beyond by not only supplying a high-contrast option (which yields a “true black” appearance in dark mode), but also by providing the option to permanently keep the full-player in dark mode regardless. All players should strive for a degree of appearance control like Plum provides.</p></dd>
-        <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:trophy: Beautiful or visually engaging full-player</dt>
         <dd><p>Plum supplies two radically different player “skins” to choose from, and the “Modern” skin is a thorough departure from the conventions established by nearly all other players and is thus visually engaging through sheer novelty alone.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Like <a href="https://apps.apple.com/us/app/picky-music-player/id497110916">Picky</a>, the approach is firmly and disappointingly “old school” for both Plum’s “Classic” and “Modern” skins, but it at the very least supports lyrics.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+        <dt>:heavy_check_mark: Discovery features</dt>
         <dd><p>While Plum only strictly supports a single traditional discovery collection (“Recently Added”), support for listeners to craft their own discovery collections in th  e form of folders, pinning, and favorites help pick up the slack.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dt>:heavy_check_mark: Album-focused features</dt>
         <dd><p>While Plum unfortunately continues to not support my preferred sorting method (Artist > Chronological), its ability to browse albums as a grid, the flexibility to set the “Albums” page as Plum’s home, and the wide breadth of user-generated options available like favorite albums, pinned albums, and folders help round out Plum’s album-focused abilities.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-        <dt><span class="bullet">:x:</span> iPad support</dt>
+        <dt>:x: Apple Music integration</dt>
+        <dt>:x: iPad support</dt>
         <dd><p>Plum offers an iPad version, but the performance issues yield the app unusable, and the screen size optimizations made are questionable at best.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/17"><p class="button">Next App: “Power Player”</p></a></li>
 </ul>
 

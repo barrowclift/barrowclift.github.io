@@ -203,7 +203,7 @@
     overflow: hidden;
     margin: 0;
     background-color: white;
-    border-radius: 0.35em;
+    border-radius: 0.3em;
     line-height: 0;
 }
 .bigfoot-footnote__content {
@@ -211,14 +211,14 @@
     z-index: 8;
     display: inline-block;
     max-height: 15em;
-    padding: 1.1em 1.3em 1.2em;
+    padding: 1em;
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     background: #F9F9F9;
-    border-radius: 0.35em;
+    border-radius: 0em;
     font-smoothing: subpixel-antialiased;
     line-height: normal;
 }

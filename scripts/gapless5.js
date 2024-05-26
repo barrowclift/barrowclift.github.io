@@ -496,11 +496,9 @@ function Gapless5Source(parentPlayer, parentLog, inAudioPath) {
                 audioObj.addEventListener('loadedmetadata', onLoadedHTML5Metadata, false);
                 audioObj.addEventListener('canplaythrough', onLoadedHTML5Audio, false);
                 audioObj.addEventListener('error', onError, false);
-                // TODO: switch to audio.networkState, now that it's universally supported
                 return audioObj;
             };
             if (audioPath.startsWith('blob:')) {
-                // TODO: blob as srcObject is not supported on all browsers
                 fetchBlob(audioPath, (blob) => {
                     audio = getHtml5Audio();
                     audio.srcObject = blob;
@@ -563,7 +561,6 @@ function Gapless5FileList(parentPlayer, parentLog, inShuffle, inLoadLimit = -1, 
 
     this.gotoTrack = (pointOrPath, forcePlay, allowOverride, crossfadeEnabled) => {
         const { index: prevIndex, source: prevSource } = this.getSourceIndexed(this.trackNumber);
-        // TODO: why is this returning false when queuedState was Play?
         const wasPlaying = prevSource.isPlayActive(true);
         const requestedIndex = this.indexFromTrack(pointOrPath);
         this.stopAllTracks(true, crossfadeEnabled ? [ player.fadingTrack ] : []);

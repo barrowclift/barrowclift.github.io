@@ -277,7 +277,7 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
 
 Congratulations :tada:! You're now among the dozen people crazy enough to serve Wireguard on macOS. If you had trouble following this guide or would simply prefer to explore a repo of example Wireguard macOS config files at your own speed, I highly encourage you take a look at [Donavon Buchanan's example configuration repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6).  Additionally, please feel free to get in touch on [Mastodon](https://mastodon.social/@barrowclift) or via <a href="mailto:{{ site.email }}">email</a> if you have any feedback or corrections, I'd love to hear from you.
 
-<div id="article-linkback">
+<div id="farewell-stamp">
     <a href="/about">⌘</a>
 </div>
 

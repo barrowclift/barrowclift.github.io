@@ -27,7 +27,7 @@ continuation:
 
 ## !["Doppler 2" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/icon.png '"Doppler 2" iOS app icon'){: .app-icon } Doppler 2
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage-poster.jpg" alt="Video demonstrating 'Doppler 2' usage" title="Demonstrating 'Doppler 2' usage">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.webm" type="video/webm">
@@ -72,7 +72,7 @@ However, taken as it is outside of the year-by-year scrutiny, Doppler 2 remains 
 
 As far as small delights are concerned, I really appreciate that Doppler's dynamic color-matching album view still made it through to Doppler 2. The results are overwhelmingly positive, with only a few albums in my collection not looking excellent with the effect (and even then, they're still perfectly acceptable and—most importantly—readable). While it doesn't appear any features got dropped in the major version bump, I'm nonetheless grateful this one is still around.
 
-<div class="three-images ios-screenshot">
+<div class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg">
         ![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg "The album view with a predominantly red record")
     </a>
@@ -94,27 +94,27 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view</strong></li>
     </ul>
 
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
+        <li>:large_orange_diamond: <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
+        <li>:large_orange_diamond: <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
             <ul class="bare">
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:heavy_check_mark: <strong>Proper sorting</strong></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
-        <li><span class="bullet">:x:</span> <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
-        <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
+        <li>:x: <strong>Lyrics support</strong> </li>
+        <li>:x: <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
+        <li>:x: <strong>iPad support</strong></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/7"><p class="button">Next App: “Dot Music”</p></a></li>
 </ul>
 

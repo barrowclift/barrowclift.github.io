@@ -16,7 +16,7 @@ continuation:
 
 ## !["VOX" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/icon.png '"VOX" iOS app icon'){: .app-icon } VOX
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/usage-poster.jpg" alt="Video demonstrating 'VOX' usage" title="Demonstrating 'VOX' usage">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/usage.webm" type="video/webm">
@@ -42,7 +42,7 @@ VOX is less "music player" than "delivery vehicle" for its company, [Coppertino]
 
 I could forgive the premium service shilling if there was anything of substance in the app itself, but that's unfortunately not the case. While one's instinct may be to point to VOX's free price tag as the reason for the sparse functionality, I would argue this is not an excuse but rather a sign of a critical flaw in Coppertino's business strategy. Their business is a premium music service, not necessarily making a quality music player to deliver that service. Given a budget, it makes sense the business would prioritize the stability and enhancement of the service providing their revenue stream rather than building out their "free" music player delivery vehicle.
 
-<div class="two-images ios-screenshot">
+<div class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/menu.jpg">
         ![Image of the menu]({{ site.dropbox }}/third-annual-ios-music-player-showcase/vox/menu.jpg "The menu")
     </a>
@@ -65,27 +65,27 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support:</strong> <em>Just added this year, and it’s the lazy “enlarged iPhone version” you’d come to expect from mediocre iPad ports. However, it’s functional, so credit where credit’s due.</em></li>
+        <li>:heavy_check_mark: <strong>iPad support:</strong> <em>Just added this year, and it’s the lazy “enlarged iPhone version” you’d come to expect from mediocre iPad ports. However, it’s functional, so credit where credit’s due.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Beautiful or visually engaging player view:</strong> <em>Partial credit awarded for the neat waveform progress indicator.</em></li>
+        <li>:large_orange_diamond: <strong>Beautiful or visually engaging player view:</strong> <em>Partial credit awarded for the neat waveform progress indicator.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Light & dark themes: </strong><em>There continues to be no light mode after all these years.</em></li>
-        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
+        <li>:x: <strong>Lyrics support</strong></li>
+        <li>:x: <strong>Light & dark themes: </strong><em>There continues to be no light mode after all these years.</em></li>
+        <li>:x: <strong>Discovery features</strong></li>
+        <li>:large_orange_diamond: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/20"><p class="button">Next Section: “Standouts”</p></a></li>
 </ul>
 

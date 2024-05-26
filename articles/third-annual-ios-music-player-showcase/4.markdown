@@ -16,7 +16,7 @@ continuation:
 
 ## !["Cs" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/icon.png '"Cs" iOS app icon'){: .app-icon } Cs
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-usage.webm" type="video/webm">
@@ -36,7 +36,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/dark-usage.webm" type="video/webm">
@@ -68,7 +68,7 @@ Following a [tumultuous development cycle last year](/articles/second-annual-ios
 
 My prediction turned out wildly inaccurate; Mike did indeed go back to the drawing board and release a new Cs 6 update, this time with a more restrained approach that was much more positively received. In retrospect, it appears obvious why this year's Cs 6 won the hearts of detractors where last year's Cs 6 beta (now SongOwl) failed; the original beta introduced many foundational changes—such as "Paths"—that made the beta both a visual *and* functional redesign. In contrast, this year's Cs 6 release features relatively restrained visual refinements such as a new grid view option and tasteful player view redesign, but not many functional additions or changes. Save for the promotion of the old search tab bar item to a universal menu button, Cs 6 works identically to its previous major release, which I suspect explains the positive reception over the original SongOwl approach.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-cs-5.webp">
@@ -100,7 +100,7 @@ Note the side-by-side comparison above; Cs 6's screenshot on the right is clearl
 
 Arguably, the new player view design is the most prominent change in Cs 6. The new design features a thick progress bar—much like the original Cs 6 beta did—but this time also featuring a dynamic color theme that uses prominent colors from the current track's art. As with dynamic color theme effects featured in [Doppler 2] and [Power Player], the effect is naturally hit and miss; while in my testing the result is always readable and functional, the color extraction algorithm yields noticeably more boring results for some album art than others, particularly in light mode. Observe the screenshots below; "light" theme variants tend to choose a rather plain, pure white background, while their "dark" theme equivalents are typically more dynamic and exciting with more interesting primary, secondary, and background color choices.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/cs/light-red.webp">
@@ -152,24 +152,24 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While Cs supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, the new approach is not to my taste.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>It’s a phoned-in, scaled version of the iPhone app, but it’s functional.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>While certainly unique and more fun than all previous player designs featured in Cs, the effect yields somewhat inconsistent results; the light mode results tend to be a bit plain.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can customize the tab bar to make “Albums” your first tab bar item and now even display its contents in a grid view.</em>
+        <li>:heavy_check_mark: <strong>Lyrics support: </strong><em>While Cs supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, the new approach is not to my taste.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support: </strong><em>It’s a phoned-in, scaled version of the iPhone app, but it’s functional.</em></li>
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view: </strong><em>While certainly unique and more fun than all previous player designs featured in Cs, the effect yields somewhat inconsistent results; the light mode results tend to be a bit plain.</em></li>
+        <li>:heavy_check_mark: <strong>Album-focused features: </strong><em>You can customize the tab bar to make “Albums” your first tab bar item and now even display its contents in a grid view.</em>
             <ul class="bare">
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view properly sorts albums for any particular artist, this option is unfortunately not available in the “Albums” view.</em></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong><em>While the “Artists” view properly sorts albums for any particular artist, this option is unfortunately not available in the “Albums” view.</em></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>My only big disappointment with Cs this year. I was hoping to at least see a “Recently Added” widget or in-app collection in Cs 6.</em></li>
+        <li>:x: <strong>Discovery features: </strong><em>My only big disappointment with Cs this year. I was hoping to at least see a “Recently Added” widget or in-app collection in Cs 6.</em></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/5"><p class="button">Next App: “Doppi”</p></a></li>
 </ul>
 

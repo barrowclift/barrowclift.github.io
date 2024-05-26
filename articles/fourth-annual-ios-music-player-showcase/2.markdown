@@ -20,7 +20,7 @@ continuation:
 
 ### ![Dot Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/icon.png "Dot Music's iOS app icon"){: .app-icon } Dot Music
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating Dot Music's usage in light mode" title="Demonstrating Dot Music's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/light-usage.webm" type="video/webm">
@@ -40,7 +40,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage-poster.jpg" alt="Video demonstrating Dot Music's usage in dark mode" title="Demonstrating Dot Music's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dot-music/dark-usage.webm" type="video/webm">
@@ -72,7 +72,7 @@ Dot Music received no releases of any kind this year, and is thus omitted from t
 
 ### ![Ecoute's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/icon.png "Ecoute's iOS app icon"){: .app-icon } Ecoute
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage-poster.jpg" alt="Video demonstrating Ecoute's usage in light mode" title="Demonstrating Ecoute's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/light-usage.webm" type="video/webm">
@@ -92,7 +92,7 @@ Dot Music received no releases of any kind this year, and is thus omitted from t
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage-poster.jpg" alt="Video demonstrating Ecoute's usage in dark mode" title="Demonstrating Ecoute's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/ecoute/dark-usage.webm" type="video/webm">
@@ -128,7 +128,7 @@ While the anticipation for Julien's new player is growing, the Ecoute that remai
 
 ### ![Jams On Toast's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/icon.png "Jams On Toast's iOS app icon"){: .app-icon } Jams On Toast
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage-poster.jpg" alt="Video demonstrating Ecoute's usage" title="Demonstrating Ecoute's usage">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jams-on-toast/usage.webm" type="video/webm">
@@ -156,7 +156,7 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
 
 ### ![New Monaural's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/icon.png "New Monaural's iOS app icon"){: .app-icon } New Monaural
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage-poster.jpg" alt="Video demonstrating New Monaural's usage in light mode" title="Demonstrating New Monaural's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/light-usage.webm" type="video/webm">
@@ -176,7 +176,7 @@ Don't let its lack of maintenance deter you; Jams On Toast shockingly works *exa
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage-poster.jpg" alt="Video demonstrating New Monaural's usage in dark mode" title="Demonstrating New Monaural's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/new-monaural/dark-usage.webm" type="video/webm">
@@ -208,7 +208,7 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
 
 ### ![Sathorn's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/icon.png "Sathorn's iOS app icon"){: .app-icon } Sathorn
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating Sathorn's usage in light mode" title="Demonstrating Sathorn's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/light-usage.webm" type="video/webm">
@@ -228,7 +228,7 @@ Despite first impressions, New Monaural is *not* a general-purpose player, but r
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage-poster.jpg" alt="Video demonstrating Sathorn's usage in dark mode" title="Demonstrating Sathorn's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/sathorn/dark-usage.webm" type="video/webm">
@@ -260,7 +260,7 @@ Sathorn received no attention of any kind this year, remaining the same poorly d
 
 ### ![SongOwl's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/icon.png "SongOwl's iOS app icon"){: .app-icon } SongOwl
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating SongOwl's usage in light mode" title="Demonstrating SongOwl's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/light-usage.webm" type="video/webm">
@@ -280,7 +280,7 @@ Sathorn received no attention of any kind this year, remaining the same poorly d
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage-poster.jpg" alt="Video demonstrating SongOwl's usage in dark mode" title="Demonstrating SongOwl's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songowl/dark-usage.webm" type="video/webm">
@@ -314,7 +314,7 @@ If [last year](/articles/third-annual-ios-music-player-showcase/17) was the warn
 
 ### ![Songpocket's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/icon.png "Songpocket's iOS app icon"){: .app-icon } Songpocket
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage-poster.jpg" alt="Video demonstrating Songpocket's usage in light mode" title="Demonstrating Songpocket's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/light-usage.webm" type="video/webm">
@@ -334,7 +334,7 @@ If [last year](/articles/third-annual-ios-music-player-showcase/17) was the warn
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage-poster.jpg" alt="Video demonstrating Songpocket's usage in dark mode" title="Demonstrating Songpocket's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/songpocket/dark-usage.webm" type="video/webm">
@@ -372,7 +372,7 @@ If Songpocket's utilitarian design or unique ability to manually sort and group 
 
 ### ![Soor's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/icon.png "Soor's iOS app icon"){: .app-icon } Soor
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage-poster.jpg" alt="Video demonstrating Soor's usage in light mode" title="Demonstrating Soor's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/light-usage.webm" type="video/webm">
@@ -392,7 +392,7 @@ If Songpocket's utilitarian design or unique ability to manually sort and group 
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage-poster.jpg" alt="Video demonstrating Soor's usage in dark mode" title="Demonstrating Soor's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/soor/dark-usage.webm" type="video/webm">
@@ -426,7 +426,7 @@ If you have an Apple Music subscription and have "Sync Library" enabled, Soor is
 
 ### ![Stezza's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/icon.png "Stezza's iOS app icon"){: .app-icon } Stezza
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage-poster.jpg" alt="Video demonstrating Stezza's usage" title="Demonstrating Stezza's usage">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/stezza/usage.webm" type="video/webm">
@@ -460,7 +460,7 @@ While Stezza does the job it set for itself well, it hasn't seen any noteworthy 
 
 ### ![TapTunes's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/icon.png "TapTunes's iOS app icon"){: .app-icon } TapTunes
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage-poster.jpg" alt="Video demonstrating TapTunes's usage in light mode" title="Demonstrating TapTunes's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/light-usage.webm" type="video/webm">
@@ -480,7 +480,7 @@ While Stezza does the job it set for itself well, it hasn't seen any noteworthy 
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage-poster.jpg" alt="Video demonstrating TapTunes's usage in dark mode" title="Demonstrating TapTunes's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/taptunes/dark-usage.webm" type="video/webm">
@@ -514,7 +514,7 @@ While TapTunes just received a major new 7.0 update at the very beginning of 202
 
 ### ![Vinyls' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/icon.png "Vinyls' iOS app icon"){: .app-icon } Vinyls
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage-poster.jpg" alt="Video demonstrating Vinyls' usage in light mode" title="Demonstrating Vinyls' usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/light-usage.webm" type="video/webm">
@@ -534,7 +534,7 @@ While TapTunes just received a major new 7.0 update at the very beginning of 202
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage-poster.jpg" alt="Video demonstrating Vinyls' usage in dark mode" title="Demonstrating Vinyls' usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyls/dark-usage.webm" type="video/webm">
@@ -568,7 +568,7 @@ Unfortunately, the lack of ability to display large album art in the full-player
 
 ### ![VOX's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/icon.png "VOX's iOS app icon"){: .app-icon } VOX
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage-poster.jpg" alt="Video demonstrating VOX's usage" title="Demonstrating VOX's usage">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vox/usage.webm" type="video/webm">
@@ -605,7 +605,7 @@ Barely anything regarding the player app itself changed this year; VOX remains t
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/3"><p class="button">First App: “Mixtapes”</p></a></li>
 </ul>
 

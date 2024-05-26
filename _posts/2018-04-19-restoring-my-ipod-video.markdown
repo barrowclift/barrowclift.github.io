@@ -18,7 +18,7 @@ card:
 
 I still remember how thrilled I was the day I got my [iPod Touch](https://web.archive.org/web/20081201132411/http://www.apple.com:80/ipodtouch/)&mdash;or more specifically, how thrilled I was I could finally dump my old [iPod Video](https://en.wikipedia.org/wiki/IPod_Classic#5th_generation). Besides the strict technical upgrade, after four years of hard but loving use, my iPod Video was showing its age. The battery hardly lasted an hour on a single charge (even with the screen brightness turned completely down). The once-gloriously shiny metal back was now dull and dented, and the [infamously scratch-attractive screen](https://www.cnet.com/news/ipod-nano-special-report-scratches-how-to-protect-from-and-fix/) was even worse, transforming its contents into a dim and smudgy mess that no amount of polishing could fix. The 30GB storage that once seemed as endless was practically bursting at the seams.
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg" alt="My old iPod Video's scratchy screen">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg" alt="My old iPod Video's aged, dim display and yellowed white plastic front">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg" alt="My old iPod Video's battered and scratched metal back plate">
@@ -77,7 +77,7 @@ After all that, surely this time was a success, right?
 
 Thankfully, after numerous fits and starts, the replacement audio jack did indeed work and I finally sealed the unit up. See the results for yourself!
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-screen.jpg" alt="My new, scratch-free screen">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-front.jpg" alt="My new, bright display and crisp, white plastic front">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/new-ipod-video-back.jpg" alt="My new, shiny metal back plate">

@@ -16,7 +16,7 @@ continuation:
 
 ## !["Music Player X" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/icon.png '"Music Player X" iOS app icon'){: .app-icon } Music Player X
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with light theme" title="Demonstrating 'Music Player X' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "Music Player X" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/light-now-playing.jpg '"Music Player X" light theme player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage with dark theme" title="Demonstrating 'Music Player X' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/dark-usage.webm" type="video/webm">
@@ -60,7 +60,7 @@ In terms of discovery features, Music Player X remains unchanged from last year,
 
 Settings saw substantial improvements this year, starting with the new customizable themes feature. The entire app's foreground and background color may now be customized on the new "Theme" tab, with Music Player X providing a handful of defaults to get you started. While the default themes aren't to my taste (they're reminiscent of that grotesque [Dropbox brand redesign](https://www.itsnicethat.com/news/dropbox-rebrand-collins-graphic-design-041017)), they're sure to delight people who favor that visual aesthetic. For listeners that like to tinker with theme settings such as myself, you're bound to have a good time customizing. For example, here's a few I created that I'm pretty happy with.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg">
         ![Image of my "Nixie Tube" custom theme]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-player-x/nixie-tube.jpg "My "Nixie Tube" custom theme")
     </a>
@@ -89,27 +89,27 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
+        <li>:large_orange_diamond: <strong>Light & dark themes: </strong> <em>Partial credit awarded for its custom theme feature, which can be tailed to any kind of light or dark theme you’d want. However, there’s no way to have it respect the system’s setting.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
+        <li>:x: <strong>Lyrics support</strong></li>
+        <li>:x: <strong>Discovery features</strong></li>
+        <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+        <li>:x: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/12"><p class="button">Next App: “Music.app”</p></a></li>
 </ul>
 

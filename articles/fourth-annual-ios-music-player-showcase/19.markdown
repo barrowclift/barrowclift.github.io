@@ -118,7 +118,7 @@ Want the best optimized iPad experience?
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/20"><p class="button">Final Section: “Conclusion”</p></a></li>
 </ul>
 

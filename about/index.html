@@ -60,6 +60,10 @@ design:
             margin-top: 0;
             margin-bottom: 0;
         }
+        .card.education .label {
+            padding-left: 2.6em;
+            padding-right: 2.6em;
+        }
         .card.education .label .primary,
         .card.education .label .secondary {
             color: rgba(255, 255, 255, 0.9) !important;
@@ -128,31 +132,13 @@ design:
     h2.fancy span:before {
         right: 100%;
         margin-right: 1em;
-        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0.0)), to(rgba(150, 150, 150, 0.15)));
-        background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.0), rgba(150, 150, 150, 0.15));
-        background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.0), rgba(150, 150, 150, 0.15));
-        background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.0), rgba(150, 150, 150, 0.15));
+        background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0), hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2));
     }
-        #dark h2.fancy span:before {
-            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(36, 36, 36, 0.0)), to(rgba(150, 150, 150, 0.15)));
-            background-image: -webkit-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
-            background-image: -moz-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
-            background-image: -o-linear-gradient(left, rgba(36, 36, 36, 0.0), rgba(150, 150, 150, 0.15));
-        }
     h2.fancy span:after {
         left: 100%;
         margin-left: 1em;
-        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(150, 150, 150, 0.15)), to(rgba(255, 255, 255, 0.0)));
-        background-image: -webkit-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(255, 255, 255, 0.0));
-        background-image: -moz-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(255, 255, 255, 0.0));
-        background-image: -o-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(255, 255, 255, 0.0));
+        background: linear-gradient(to right, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2), hsla(var(--background-hsl-core), 0.0));
     }
-        #dark h2.fancy span:after {
-            background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(150, 150, 150, 0.15)), to(rgba(36, 36, 36, 0.0)));
-            background-image: -webkit-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
-            background-image: -moz-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
-            background-image: -o-linear-gradient(left, rgba(150, 150, 150, 0.15), rgba(36, 36, 36, 0.0));
-        }
 
     /* ----- QUERIES ----- */
     
@@ -163,8 +149,8 @@ design:
     }
     @media (min-width: 900px) {
         .card .label {
-            padding-left: 2.6em;
-            padding-right: 2.6em;
+            padding-left: 1.3em;
+            padding-right: 1.3em;
         }
     }
 </style>

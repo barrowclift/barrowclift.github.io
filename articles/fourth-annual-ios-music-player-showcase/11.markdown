@@ -29,7 +29,7 @@ continuation:
 
 ## ![Longplay's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/icon.png "Longplay's iOS app icon"){: .app-icon } Longplay
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage-poster.jpg" alt="Video demonstrating Longplay's usage in light mode" title="Demonstrating Longplay's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-usage.webm" type="video/webm">
@@ -43,7 +43,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage-poster.jpg" alt="Video demonstrating Longplay's usage in dark mode" title="Demonstrating Longplay's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/dark-usage.webm" type="video/webm">
@@ -89,7 +89,7 @@ The repeats from the sorting feature work exactly as you'd expect, but determine
 
 While I'm largely indifferent to the sorting options available in Longplay (all but the "Brightness" option are available or have rough equivalents in many other players), I'm quite fond of the new "Size By" option in principle, particularly for sizing albums by duration. It's one of the few things Longplay does better than [Albums]; Albums buckets records into separate menus by duration, but Longplay instead visually represents this duration with the size, making library scans by duration quick and incredibly intuitive. Although, as an unavoidable consequence of the dynamic nature of the "Size By" option, the bottom half of the album grid typically contains large swaths of haphazard blank spaces, and it looks absolutely terrible. If you've ever visited an image-rich website which failed to load its style sheet, that's more or less what Longplay's new "Size By" option looks like once you start scrolling down.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/light-1.webp">
@@ -131,8 +131,8 @@ Longplay's widgets remain unchanged from last year.
 
 For those new to Longplay, Longplay offers a single widget class for both small and medium sizes, which display an album grid similar to what's available in the app itself. Visually, there's a spot of whimsy in the small widget with a slight perspective tilt, along with an optional sort name label for both sizes. Aside from that, there's no other visual flair available aside from the album art itself.
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/medium-widget.webp">
@@ -140,7 +140,7 @@ For those new to Longplay, Longplay offers a single widget class for both small 
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/small-widget.webp">
@@ -174,7 +174,7 @@ By far the biggest addition this year was the inclusion of the new "Size By" fea
 
 The new "Random" sort order is a nice addition, allowing listeners to randomly shuffle their library grid as many times as they want with just a tap, and does wonders to break up the organizational staleness that necessarily settles in with deterministic sorting.
 
-<div class="one-image" style="max-width:520px;">
+<div class="array" style="max-width:520px;">
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
@@ -189,29 +189,29 @@ Finally, Longplay now offers a generous assortment of alternative app icons to c
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: iPad support</dt>
         <dd><p>I have my issues with the implementation, but Longplay does indeed support the iPad, and the iPad version is performant and fully functional.</p></dd>
-            <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+            <dt>:heavy_check_mark: Discovery features</dt>
         <dd><p>Again, I have my issues with Longplay’s implementation, but there are plenty of discovery capabilities exposed via sorting and sizing options. While only a couple are unique to Longplay, they do their stated job well.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dt>:large_orange_diamond: Album-focused features</dt>
         <dd><p>There’s no denying the app is album-focused due to its grid layout and emphasis on album art. However, despite it’s plentiful sorting options, my preferred method (Artist > Chronological) is absent.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-        <dt><span class="bullet">:x:</span> Lyrics support</dt>
-        <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:x: Apple Music integration</dt>
+        <dt>:x: Lyrics support</dt>
+        <dt>:x: Beautiful or visually engaging full-player</dt>
         <dd><p>There is none.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/12"><p class="button">Next App: “Marvis Pro”</p></a></li>
 </ul>
 

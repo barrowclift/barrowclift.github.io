@@ -3,8 +3,8 @@ title: "Contact"
 ---
 
 <style>
-    .button-group {
-        padding-top: 1.3em;
+    ul.button-group {
+        margin-top: 1.3em;
     }
     .button img {
         height: 2em;
@@ -67,27 +67,12 @@ title: "Contact"
             background-color: hsl(213, 13%, 11%) !important;
             box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(213, 13%, 11%, 0.2);
         }
-
-    @media (min-width: 340px) {
-        .button-group li {
-            margin-left: 1.5vw;
-            margin-right: 1.5vw;
-            width: 45%;
-        }
-    }
-    @media (min-width: 700px) {
-        .button-group li {
-            margin-left: 0.325em;
-            margin-right: 0.325em;
-            width: 30%;
-        }
-    }
 </style>
 
 <img style="height:5em;width:auto;" src="images/me.png" alt="Memoji of myself peaking out behind a laptop screen" title="Hi, there!" />
 <h4 style="text-align:center;font-weight:normal;margin-top:0.5em">I can be quickly reached on any of these services.</h4>
 
-<ul class="button-group social">
+<ul class="button-group fixed social">
     <li class="email">
         <span class="hint--top hint--rounded hint--bounce" data-hint="{{ site.email }}">
             <a href="mailto:{{ site.email }}">

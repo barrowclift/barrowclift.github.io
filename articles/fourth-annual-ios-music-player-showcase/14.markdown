@@ -29,7 +29,7 @@ continuation:
 
 ## ![Music.app's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png "Marvis Pro's iOS app icon"){: .app-icon } Music.app
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating Music.app's usage in light mode" title="Demonstrating Music.app's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage-poster.jpg" alt="Video demonstrating Music.app's usage in dark mode" title="Demonstrating Music.app's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/dark-usage.webm" type="video/webm">
@@ -86,8 +86,8 @@ The full-player also takes substantial advantage of the extra screen real estate
 
 ### Widgets
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/large-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/large-widget.webp">
@@ -95,7 +95,7 @@ The full-player also takes substantial advantage of the extra screen real estate
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/medium-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/medium-widget.webp">
@@ -103,7 +103,7 @@ The full-player also takes substantial advantage of the extra screen real estate
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/small-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/small-widget.webp">
@@ -115,8 +115,8 @@ The full-player also takes substantial advantage of the extra screen real estate
 
 The terrible, bright red widgets from last year's showcase are (mostly) gone! Now, Apple's singular widget collection features a blurred background and dynamic font colors from the currently playing track's album art. I despised the static, bright red background color from 2020's widgets, so I'm trilled to see Music.app's widgets visually calm down while also providing a more personal look and feel as natural consequence.
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-large.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-large.webp">
@@ -124,7 +124,7 @@ The terrible, bright red widgets from last year's showcase are (mostly) gone! No
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-medium.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-medium.webp">
@@ -132,7 +132,7 @@ The terrible, bright red widgets from last year's showcase are (mostly) gone! No
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-small.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/gross-small.webp">
@@ -164,31 +164,31 @@ In some fairness to Music.app's developers, a tremendous amount of effort this y
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Lyrics support</dt>
+        <dt>:trophy: Lyrics support</dt>
         <dd><p>Music.app’s lyrics experience is delightful; the button to view lyrics is immediately accessible and visible, the lyrics are displayed in a massive scrollable view, and in landscape mode on iPad the lyrics are shown alongside the full-player just like in <a href="https://powerplayer.evenwerk.com">Power Player</a>. It’s outstanding.</p></dd>
-        <dt><span class="bullet">:trophy:</span> iPad support</dt>
+        <dt>:trophy: iPad support</dt>
         <dd><p>In terms of sheer screen size optimization, it’s the best iPad music player available.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dt>:x: Apple Music integration</dt>
         <dd><p>Your library is practically an afterthought in Music.app; nothing makes me hate Apple Music more than Apple’s own Music.app.</p></dd>
-        <dt><span class="bullet">:x:</span> Discovery features</dt>
+        <dt>:x: Discovery features</dt>
         <dd><p>A single “Recently Added” discovery collection doesn’t cut it anymore, and no, Apple Music’s impersonal “Listen Now” page doesn’t count.</p></dd>
-        <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:x: Beautiful or visually engaging full-player</dt>
         <dd><p>The off-brand visualizer used in the full-player is not the same as the beloved one used in the “Live Lyrics” view. It consistently yields worse results, and if all we’re going to get is this crippled version, I’d rather see it removed entirely.</p></dd>
-        <dt><span class="bullet">:x:</span> Album-focused features</dt>
+        <dt>:x: Album-focused features</dt>
         <dd><p>Your albums are displayed as a grid, but that’s about the only album-focused feature Music.app offers. That simply doesn’t cut it, anymore.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/15"><p class="button">Next App: “Picky”</p></a></li>
 </ul>
 

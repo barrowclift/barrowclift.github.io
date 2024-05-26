@@ -29,7 +29,7 @@ continuation:
 
 ## ![Vinyl Fetish's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/icon.png "Vinyl Fetish's iOS app icon"){: .app-icon } Vinyl Fetish
 
-<div class="show-when-light edge-to-edge large two-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-usage-poster.jpg" alt="Video demonstrating Vinyl Fetish's usage in light mode" title="Demonstrating Vinyl Fetish's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-usage.webm" type="video/webm">
@@ -43,7 +43,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large two-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-usage-poster.jpg" alt="Video demonstrating Vinyl Fetish's usage in dark mode" title="Demonstrating Vinyl Fetish's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/dark-usage.webm" type="video/webm">
@@ -79,7 +79,7 @@ Focusing more finely on Vinyl Fetish's player view, there are three main compone
 
 The first two components (the record player and record sleeve) can be positioned or scaled any particular way you wish, in addition to some minor rendering options like enabling a tilt or shadow on the sleeve. This alone provides a great deal of customization, but where Vinyl Fetish really shines is the customization it provides for the "vinyl" record itself. Through the app's "vinylize" process, you can choose a particular album from your Apple Music library to be available to browse and play in Vinyl Fetish, and upon selecting an album to "vinylize", Vinyl Fetish presents a number of options. Vinyl Fetish will first make a best attempt guess at dividing up the record into different sides based on the track lengths, which if wrong can be easily adjusted to your taste or corrected to match a physical pressing's arrangement. After approving the disk & side separation, you then have the freedom to change the side labels, vinyl color, and even transparency to your taste. All this customization is certainly powerful, and on its own elevates Vinyl Fetish above the shallow vinyl skeuomorphism found in competing apps like Vinyls. However, what really sets Vinyl Fetish apart is the delightfully accurate track rendering on its "vinyl record". All to often, when you see vinyl records used either as decoration or literal interface controls in players it's just a single pre-rendered image that quickly grows stale. However, with Vinyl Fetish, your vinylized records will all look different. [The Beatles](https://music.apple.com/us/artist/the-beatles/136975)' famous [side 2 medly](https://en.wikipedia.org/wiki/Abbey_Road#Medley) on [*Abbey Road*](https://music.apple.com/us/album/abbey-road-2019-mix/1474815798) looks as jam packed and eclectic as it sounds, [Kamasi Washington](https://music.apple.com/us/artist/kamasi-washington/154076564)'s extensive opuses on [*The Epic*](https://music.apple.com/us/album/the-epic/975610456) look as impressive and imposing as they sound (often just a song or two taking up an entire side all by themselves), and everything in between. The only thing tarnishing the overall effect is the record's cartoony rendering style, which has the unfortunate effect of making it feel a bit amateurish (especially in comparison to Vinyls lazily reused but otherwise gorgeous vinyl record image). Additionally, while the ability to choose your own side labels is perfectly functional, the inability to scale and adjust the images you choose to be *just right* is a bit aggravating. With those few caveats said, they do little to detract from the overall presentation, which is dynamic, customizable, and irresistible to lovers of the vinyl record medium[^irresistible].
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/light-example-1.webp">
@@ -133,8 +133,8 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
 
 ### Widgets
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-large-dark.webp">
@@ -142,7 +142,7 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-medium-dark.webp">
@@ -150,7 +150,7 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-small-dark.webp">
@@ -159,8 +159,8 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-large-light.webp">
@@ -168,7 +168,7 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-medium-light.webp">
@@ -176,7 +176,7 @@ While Vinyl Fetish is a fantastic stand-alone iPad experience, [no Universal App
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/1-small-light.webp">
@@ -198,31 +198,31 @@ Unlike other players in the "Established" category of the showcase, I will not b
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:trophy: Beautiful or visually engaging full-player</dt>
         <dd><p>The record with accurate track separation and ability to customize the record’s center label and color make Vinyl Fetish’s full-player a feast to the eyes.</p></dd>
-        <dt><span class="bullet">:trophy:</span> Album-focused features</dt>
+        <dt>:trophy: Album-focused features</dt>
         <dd><p>It’s the only player I’m aware of that respects album <em>sides</em>, allowing me to enjoy my physical vinyl record side labels digitally while listening, and Vinyl Fetish even sorts albums with my preferred method (Artist > Chronological).</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
+        <dt>:large_orange_diamond: iPad support</dt>
         <dd><p>While Vinyl Fetish does an overall great job supporting the iPad, its iCloud Sync feature was far too flacky to be able to use the iPad version in practice. Still waiting on that album art to appear…</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-        <dt><span class="bullet">:x:</span> Lyrics support</dt>
-        <dt><span class="bullet">:x:</span> Discovery features</dt>
+        <dt>:x: Apple Music integration</dt>
+        <dt>:x: Lyrics support</dt>
+        <dt>:x: Discovery features</dt>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/19"><p class="button">Next Section: “Recommendations”</p></a></li>
 </ul>
 

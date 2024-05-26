@@ -22,7 +22,14 @@ card:
 ---
 
 <div class="inline shadow">
-    <img src="{{ site.dropbox }}/notification-madness/share.jpg">
+    <picture class="show-when-light">
+        <source type="image/webp" srcset="{{ site.dropbox }}/notification-madness/light-card.webp">
+        <img alt="Loads of notification bubbles" src="{{ site.dropbox }}/notification-madness/light-card.jpg">
+    </picture>
+    <picture class="show-when-dark">
+        <source type="image/webp" srcset="{{ site.dropbox }}/notification-madness/dark-card.webp">
+        <img alt="Loads of notification bubbles" src="{{ site.dropbox }}/notification-madness/dark-card.jpg">
+    </picture>
 </div>
 
 What's the first thing you see when you use your iPhone? On a typical day you might wake your iPhone to a backlog of half a dozen or so notifications. Maybe you have three email notifications all of which aren't important, perhaps one or two from a free game you stopped playing months ago frantic to let you know about a new 99₵ character skin, or occasionally a twitter notification that another of the hundred thousand spam accounts has followed you. If you are fortunate you may notice somewhere in that wall of noise is a text from a loved one or an important calendar reminder.

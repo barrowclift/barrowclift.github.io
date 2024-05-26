@@ -29,7 +29,7 @@ continuation:
 
 ## ![Albums' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/icon.png "Albums' iOS app icon"){: .app-icon } Albums
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/light-usage-poster.jpg" alt="Video demonstrating Albums' usage in light mode" title="Demonstrating Albums' usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/dark-usage-poster.jpg" alt="Video demonstrating Albums' usage in dark mode" title="Demonstrating Albums' usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/dark-usage.webm" type="video/webm">
@@ -110,8 +110,8 @@ Albums features a number of design tweaks to take full advantage of the iPad's l
 
 Albums' widgets have seen significant changes from last year. Albums now supports four unique widget collections of various sizes for you to choose from, and continues to contend with [Marvis Pro] and [Soor] for the title of richest music player widget support.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-large-dark.webp">
@@ -119,7 +119,7 @@ Albums' widgets have seen significant changes from last year. Albums now support
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-small-dark.webp">
@@ -128,8 +128,8 @@ Albums' widgets have seen significant changes from last year. Albums now support
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-large-light.webp">
@@ -137,7 +137,7 @@ Albums' widgets have seen significant changes from last year. Albums now support
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/1-small-light.webp">
@@ -155,8 +155,8 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
 * Skip to Next Album
 * Skip to Next Song
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-large-dark.webp">
@@ -164,7 +164,7 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-medium-dark.webp">
@@ -172,7 +172,7 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-small-dark.webp">
@@ -181,8 +181,8 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-large-light.webp">
@@ -190,7 +190,7 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-medium-light.webp">
@@ -198,7 +198,7 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/2-small-light.webp">
@@ -210,8 +210,8 @@ The first of these collections is the "Now Playing (Art)" collection, which feat
 
 The second collection is an alternative to the first called "Now Playing (Info)", which for all four widget sizes features varying degrees of every kind of relevant "now playing" data you can imagine (album name, artist, song, track number, remaining duration, album art, etc.). While most are similar in use, the extra-large widget on iPad uniquely includes playback controls to play/pause, skip to the next track, and skip to the next album (though unfortunately these controls are not available as an option for the smaller sizes). To top it all off, the remaining duration counts down in close approximation along with your playback, a remarkable achievement given Apple's strict widget API limitations.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-large-dark.webp">
@@ -219,7 +219,7 @@ The second collection is an alternative to the first called "Now Playing (Info)"
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-medium-dark.webp">
@@ -228,8 +228,8 @@ The second collection is an alternative to the first called "Now Playing (Info)"
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-large-light.webp">
@@ -237,7 +237,7 @@ The second collection is an alternative to the first called "Now Playing (Info)"
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/3-medium-light.webp">
@@ -249,8 +249,8 @@ The second collection is an alternative to the first called "Now Playing (Info)"
 
 The third widget collection Albums' provides is its "Quick Action" collection, available in medium and large sizes. Each size exposes your custom "Quick Actions" and Albums' build-in ones to be easily launched from the widget itself. Quick Actions tapped in the widget work exactly like they do when tapped in the app; a random record will begin playing immediately according to whatever filtering criteria you set for that "Quick Action". In my opinion, these widgets are where "Quick Actions" shine brightest. I rarely find myself wanting to play a random record with "Quick Actions" when I'm already browsing around in the app, but I frequently find myself in the mood to do so when these "Quick Actions" are readily available with just a tap right from my home screen.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-large-dark.webp">
@@ -258,7 +258,7 @@ The third widget collection Albums' provides is its "Quick Action" collection, a
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-medium-dark.webp">
@@ -267,8 +267,8 @@ The third widget collection Albums' provides is its "Quick Action" collection, a
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-large-light.webp">
@@ -276,7 +276,7 @@ The third widget collection Albums' provides is its "Quick Action" collection, a
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/4-medium-light.webp">
@@ -310,7 +310,7 @@ While I don't own a car, I do occasionally rent one for vacations, and Adam's st
 
 Aside from widget updates (covered above in the dedicated ["Widgets"](#widgets) section), the final major change of note this year was the introduction of listener reports. No doubt heavily inspired by the yearly ["Spotify Wrapped"](https://www.spotify.com/us/wrapped/), Albums now provides its own "wrapped"-like reports and can be adjusted for any arbitrary time period (not just the past year). The feature works remarkably well, displaying numerical data such as number of albums played and hours listened, a gorgeous album grid of your top albums by play count, numerous bar charts showing top artists, top genres, and more. It's a feast for the eyes and is a delightful way to gain insight into your listening habits from the past year you may not even have been aware of. In my case, I discovered I apparently only listened to albums in my library 51 days out of the year and had [Tyler, the Creator](https://music.apple.com/us/artist/tyler-the-creator/420368335) on heavy rotation ("[*CALL ME IF YOU GET LOST*](https://music.apple.com/us/album/call-me-if-you-get-lost/1573484415), B!#%&"). If you spend even a bit of your listening time on an iPhone or iPad, it's well worth the walk down memory lane.
 
-<div class="three-images ios-screenshot">
+<div class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/report-light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/report-light-1.webp">
@@ -353,28 +353,28 @@ Aside from widget updates (covered above in the dedicated ["Widgets"](#widgets) 
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Apple Music integration</dt>
+        <dt>:trophy: Apple Music integration</dt>
         <dd><p>Albums features my preferred kind of Apple Music integration: the majority of the app experience is unchanged, but now you can seamlessly search for, stream, and tag Apple Music albums just like you could your local library. It’s as close to transparent integration as I’ve seen, and for my tastes that’s worthy of praise.</p></dd>
-        <dt><span class="bullet">:trophy:</span> iPad support</dt>
+        <dt>:trophy: iPad support</dt>
         <dd><p>Albums’ iPad version is exceptionally performant and the interface is well optimized to take full advantage of the larger screen. It sets the standard for what players should strive for on the iPad.</p></dd>
-    <dt><span class="bullet">:trophy:</span> Discovery features</dt>
+    <dt>:trophy: Discovery features</dt>
         <dd><p>The sheer number of discovery capabilities offered by Albums is astounding. You can browse by years & decades, duration, studios, record labels, old favorites, recently added, and more than I have space to type. The fact it all comes "as is" with virtually no configuration is industry leading.</p></dd>
-    <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+    <dt>:trophy: Beautiful or visually engaging full-player</dt>
         <dd><p>While not particularly beautiful, Albums without a doubt features one of the most engaging full-players available today thanks to its statistics and credits tabs.</p></dd>
-    <dt><span class="bullet">:trophy:</span> Album-focused features</dt>
+    <dt>:trophy: Album-focused features</dt>
         <dd><p>There’s too much to summarize here here, but suffice to say Albums lives up to its namesake and then some. </p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Lyrics are supported in-app and are perfectly functional. However, it’s worth noting it’s not a particularly inspired implementation and could certainly use a refresh (it’s currently just shoved into a popup card).</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/7"><p class="button">Next App: “Cs Music”</p></a></li>
 </ul>
 

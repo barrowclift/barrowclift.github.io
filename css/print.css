@@ -216,24 +216,24 @@ mark {
 img:not(.emoji), .edge-to-edge, .inline {
     width: 20vw !important;
 }
-.edge-to-edge.one-image,
-.edge-to-edge.two-images,
-.edge-to-edge.three-images {
+.edge-to-edge.array,
+.edge-to-edge.array,
+.edge-to-edge.array {
     width: 50vw !important;
 }
-.edge-to-edge.one-image img {
+.edge-to-edge.array img {
     width: 8vw !important;
 }
-.edge-to-edge.two-images img {
+.edge-to-edge.array img {
     width: 8vw !important;
 }
-.edge-to-edge.three-images img {
+.edge-to-edge.array img {
     width: 8vw !important;
 }
-.half-inline {
+.restrict-growth-to-half {
     width: 15vw !important;
 }
-.one-image, .two-images, .three-images {
+.array, .array, .array {
     width: 18vw !important;
 }
 ul + figure,
@@ -255,9 +255,9 @@ figure {
 .edge-to-edge img {
     border-radius: 0.25em;
 }
-.one-image img,
-.two-images img:first-child,
-.three-images img:first-child {
+.array img,
+.array img:first-child,
+.array img:first-child {
     margin-left: 0 !important;
 }
 

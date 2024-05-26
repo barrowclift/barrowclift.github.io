@@ -93,26 +93,26 @@ function updateThemeColor(a_accentColor) {
     let darkBaseThemeColor;
     let lightBaseThemeColor;
     if (accentColor === "purple") {
-        darkBaseThemeColor = "#29232E";
+        darkBaseThemeColor = "#29242D";
         lightBaseThemeColor = "#F1EDF1";
     } else if (accentColor === "pink") {
-        darkBaseThemeColor = "#2D2228";
-        lightBaseThemeColor = "#F2EEF1";
+        darkBaseThemeColor = "#2C2428";
+        lightBaseThemeColor = "#F2EDF0";
     } else if (accentColor === "red") {
-        darkBaseThemeColor = "#2B2323";
-        lightBaseThemeColor = "#F1EFEE";
+        darkBaseThemeColor = "#2C2424";
+        lightBaseThemeColor = "#F2EEED";
     } else if (accentColor === "orange") {
-        darkBaseThemeColor = "#2B2922";
-        lightBaseThemeColor = "#F1F0EE";
+        darkBaseThemeColor = "#2B2923";
+        lightBaseThemeColor = "#F1F0ED";
     } else if (accentColor === "yellow") {
         darkBaseThemeColor = "#2B2A22";
-        lightBaseThemeColor = "#F1F1EE";
+        lightBaseThemeColor = "#F1F1ED";
     } else if (accentColor === "green") {
-        darkBaseThemeColor = "#222B24";
+        darkBaseThemeColor = "#242B26";
         lightBaseThemeColor = "#EDF1EF";
     } else {
-        darkBaseThemeColor = "#23272B";
-        lightBaseThemeColor = "#EEEFF1";
+        darkBaseThemeColor = "#23282C";
+        lightBaseThemeColor = "#ECF0F1";
     }
     let darkModeCookie = $.cookie("dark-mode");
     if (darkModeCookie === "off") {
@@ -125,7 +125,7 @@ function updateThemeColor(a_accentColor) {
     } else {
         document.querySelector("meta#light-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
     }
-    // TODO THE SETTING HERE ISN'T RIGHT, check hacker news in system dark mode and play around with site theme,m,m,m
+    // TODO THE SETTING HERE ISN'T RIGHT, check hacker news in system dark mode and play around with site theme
     let darkOverride = document.querySelector("meta#override-dark-base-theme-color");
     let lightOverride = document.querySelector("meta#override-light-base-theme-color");
     var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;

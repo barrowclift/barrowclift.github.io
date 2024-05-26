@@ -19,7 +19,7 @@ mark {
 
 There are the settings I use in my Marvis Pro home screen. Please feel free to use these as a starting point for your own!
 
-<figure style="text-align:center" class="inline center tiny shadow">
+<figure style="text-align:center" class="inline tiny shadow">
     <a href="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro-home.jpg">
         <img src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro-home.jpg" />
     </a>

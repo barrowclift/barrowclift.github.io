@@ -16,7 +16,7 @@ continuation:
 
 ## !["Picky" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/icon.png '"Picky" iOS app icon'){: .app-icon } Picky
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-usage-poster.jpg" alt="Video demonstrating 'Picky' usage with light theme" title="Demonstrating 'Picky' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-usage.webm" type="video/webm">
@@ -36,7 +36,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-usage-poster.jpg" alt="Video demonstrating 'Picky' usage with dark theme" title="Demonstrating 'Picky' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-usage.webm" type="video/webm">
@@ -72,7 +72,7 @@ With a major version bump to 4.0, Picky now features—among other things—new 
 
 The rest of Picky not addressed in the 4.0 update remains the same as it was last year; the player view continues to be among the most beautiful available in any player thanks to its custom translucent background effect.
 
-<div class="show-when-light three-images ios-screenshot">
+<div class="show-when-light array ios-screenshot">
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/light-red.webp">
@@ -92,7 +92,7 @@ The rest of Picky not addressed in the 4.0 update remains the same as it was las
         </picture>
     </a>
 </div>
-<div class="show-when-dark three-images ios-screenshot">
+<div class="show-when-dark array ios-screenshot">
     <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/dark-red.webp">
@@ -121,8 +121,8 @@ While Picky isn't the most radical player right now, I think this year proves it
 
 Picky provides a respectable array of widget collections to choose from, although at the moment their customization and size options are fairly limited. Unfortunately, I have the same issue with the overall design as I do with [Music.app](/articles/third-annual-ios-music-player-showcase/12)'s: Every single widget is a bright, loud orange that tears attention towards itself on any home screen page it's on, much like Music.app's hideous bright red widgets do. While I completely understand the desire to brand widgets like this, it's not conducive towards maintaining a harmonious home screen like I strive for. At the very least, an option to tone down the brand color while in dark mode would be appreciated.
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-1.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-1.webp">
@@ -130,7 +130,7 @@ Picky provides a respectable array of widget collections to choose from, althoug
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-2.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-2.webp">
@@ -142,8 +142,8 @@ Picky provides a respectable array of widget collections to choose from, althoug
 
 The first widget collection provided by Picky is "Recently Added", offered in both medium and large sizes. Presentation-wise, there's not much available to customize, although Picky does allow you to display the widgets in either "Regular" or "Compact" sizes, where "Regular" results in a 4-column arrangement and "Compact" results in an information-dense 5-column arrangement. Tapping a given record in this widget class immediately begins playing that record and drops users off at that album's view in Picky.
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-3.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-3.webp">
@@ -151,7 +151,7 @@ The first widget collection provided by Picky is "Recently Added", offered in bo
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-4.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-4.webp">
@@ -163,8 +163,8 @@ The first widget collection provided by Picky is "Recently Added", offered in bo
 
 The second widget collection is "Recently Played", also offered in both medium and large sizes. It functions as you'd expect and supports the same "Regular" or "Compact" setting as the "Recently Added" widget collection.
 
-<div class="box widget">
-    <div style="flex:0 1 20%;">
+<div class="row resist-wrap">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-5.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/picky/widget-5.webp">
@@ -180,27 +180,27 @@ Finally, there's the "Random Pick" widget, which comes exclusively in small and 
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It remains one of the prettiest player views available.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>Lyrics support:</strong> <em>While I’m generally not a fan of the “tap the album art to see the lyrics overtop” approach to lyrics support, Picky is by far the best implementation of this approach thanks to its silky-smooth show/hide animations and translucent background.</em></li>
+        <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>It remains one of the prettiest player views available.</em></li>
+        <li>:trophy: <strong>Lyrics support:</strong> <em>While I’m generally not a fan of the “tap the album art to see the lyrics overtop” approach to lyrics support, Picky is by far the best implementation of this approach thanks to its silky-smooth show/hide animations and translucent background.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Picky not only has world-class filtering capabilities, but a suite of widget collections that provide the kinds of discovery features I tend to expect nowadays (“Recently Added”, “Recently Played”, etc.). While it’s a shame these discovery collections aren’t meaningfully exposed in the app itself, Picky's overall discovery feature support is keeping pace.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>Picky not only has world-class filtering capabilities, but a suite of widget collections that provide the kinds of discovery features I tend to expect nowadays (“Recently Added”, “Recently Played”, etc.). While it’s a shame these discovery collections aren’t meaningfully exposed in the app itself, Picky's overall discovery feature support is keeping pace.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
+        <li>:large_orange_diamond: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While Picky technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view is still stuck without it.</em></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong><em>While Picky technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view is still stuck without it.</em></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/14"><p class="button">Next App: “Plum”</p></a></li>
 </ul>
 

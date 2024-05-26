@@ -27,7 +27,7 @@ continuation:
 
 ## !["Albums" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-usage.webm" type="video/webm">
@@ -41,7 +41,7 @@ continuation:
         ![Image of "Albums" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-now-playing.jpg '"Albums" light player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in dark mode" title="Demonstrating 'Albums' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-usage.webm" type="video/webm">
@@ -67,7 +67,7 @@ Albums first dropped late last year as one of 2019's many new arrivals. While I 
 
 Albums today feels more like a "spiritual successor" to the initial version than a mere update. Last year, the app had just one primary view (the "album wall"). Stuck to the bottom of that wall was an unusual "My Library" button, which Albums' treated as its dumping ground for all its other views, such as "Decades" and "Artists". Today, that's been completely scrapped and replaced with a sensible [iOS tab bar](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/). The album wall—which was the *entire app* when it was originally released—is now just a single tab view, leaving a tremendous swath of attention real estate to fill with new tab views.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-library-tab.jpg">
         ![Image of the new "Library" tab]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-library-tab.jpg "The new "Library" tab")
     </a>
@@ -103,7 +103,7 @@ The last of the new tabs (not counting "Settings") is "Stats", which on the surf
 
 There's even more wonderful discovery possibilities to be found in the player itself. Upon scrolling down in the redesigned player view, three different tabbed views present themselves: "Track List", "Credits", and "Statistics". Those familiar with my thoughts on Albums last year may remember I panned the credits feature, noting that I found its information uninspiring and not particularly useful. However, this year the credits feature received a complete rewrite and is now arguably Albums' "kill feature".
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-metadata-1.jpg">
         ![Image of interactive liner notes for Beach House's "Bloom"]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-metadata-1.jpg "Interactive liner notes for Beach House's \"Bloom\"")
     </a>
@@ -139,35 +139,35 @@ Last year, I closed my thoughts on Albums with an optimistic prediction that it 
 
 Albums' widget support is world-class, featuring not one, not two, but *three* discrete widget collections, all with varying size and customization options. This pits Albums up against [Marvis Pro] and [Soor] for most comprehensive widget support.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-2.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-1.png)
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-2.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-1.png)
         </a>
@@ -176,25 +176,25 @@ Albums' widget support is world-class, featuring not one, not two, but *three* d
 
 To start, there's three "Now Playing" widgets, one for each of the three widget sizes. They all feature a visually pleasing translucency effect. It's among the few "Now Playing" widgets available today that includes any kind of "realtime" information, in this case taking the form of a "time left" counter.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-4.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-4.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-5.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-5.png)
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-4.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-4.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-5.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-5.png)
         </a>
@@ -203,25 +203,25 @@ To start, there's three "Now Playing" widgets, one for each of the three widget 
 
 The next widget collection provided by Albums are "Quick Actions", which display a simple button grid of all your custom actions. If you're heavily invested in customization like I am or find yourself growing weary of the many taps it takes to get to a particular collection, these widgets are perfect for you.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-6.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-6.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-7.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/dark-7.png)
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-6.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-6.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-7.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/albums/light-7.png)
         </a>
@@ -234,27 +234,27 @@ Finally, there's the "Collection" widgets, which display albums in a random orde
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Discovery features: </strong><em>Thanks to Albums’ browsable credits list and “Insights” tab, you won’t find another player with as much high quality, pre-built discover collections. Additionally, its customizable discovery features (“Quick Actions”)—while not as rich as Marvis Pro’s—are great as well.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>Album-focused features:</strong> <em>It’s in the name, and it doesn’t disappoint; albums is a record-focused tour de force. You won’t find another player out there with as many pre-built features carefully tailored to enhance the record listening experience.</em>
+        <li>:trophy: <strong>Discovery features: </strong><em>Thanks to Albums’ browsable credits list and “Insights” tab, you won’t find another player with as much high quality, pre-built discover collections. Additionally, its customizable discovery features (“Quick Actions”)—while not as rich as Marvis Pro’s—are great as well.</em></li>
+        <li>:trophy: <strong>Album-focused features:</strong> <em>It’s in the name, and it doesn’t disappoint; albums is a record-focused tour de force. You won’t find another player out there with as many pre-built features carefully tailored to enhance the record listening experience.</em>
             <ul class="bare">
-                <li><span class="bullet">:trophy:</span> <strong>Proper sorting: </strong> <em>It’s the only player out there whose “Albums” and “Artists” views sort my preferred way by default, outstanding.</em></li>
-                <li><span class="bullet">:trophy:</span> <strong>Album grid view:</strong> <em>Passes with flying colors, it’s used practically everywhere: if there’s albums on the screen, it’s a grid view.</em></li>
+                <li>:trophy: <strong>Proper sorting: </strong> <em>It’s the only player out there whose “Albums” and “Artists” views sort my preferred way by default, outstanding.</em></li>
+                <li>:trophy: <strong>Album grid view:</strong> <em>Passes with flying colors, it’s used practically everywhere: if there’s albums on the screen, it’s a grid view.</em></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While visually the player view leaves a lot to be desired, its browsable credits list makes it one of the most engaging player views around. However—while the player's design isn’t terrible—it does hold it back from receiving exception marks.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes </strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view:</strong> <em>While visually the player view leaves a lot to be desired, its browsable credits list makes it one of the most engaging player views around. However—while the player's design isn’t terrible—it does hold it back from receiving exception marks.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes </strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Lyrics support:</strong> <em>While on iPhones the feature works just fine, lyrics on the iPad bafflingly cover both the album art and player column, and for whatever reason this is a personal annoyance I can't bring myself to overlook.</em></li>
+        <li>:large_orange_diamond: <strong>Lyrics support:</strong> <em>While on iPhones the feature works just fine, lyrics on the iPad bafflingly cover both the album art and player column, and for whatever reason this is a personal annoyance I can't bring myself to overlook.</em></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/4"><p class="button">Next App: “Cs”</p></a></li>
 </ul>
 

@@ -135,7 +135,7 @@ However, from my on-and-off research over these past few months I've finally cob
 
 Congratulations! You're now among the dozen people crazy enough to serve Wireguard on macOS. Please feel free to reach out on [Twitter](https://twitter.com/Barrowclift) or via <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">email</a> if you have feedback or corrections, I'd love to hear from you.
 
-<div id="article-linkback">
+<div id="farewell-stamp">
     <a href="/about">⌘</a>
 </div>
 

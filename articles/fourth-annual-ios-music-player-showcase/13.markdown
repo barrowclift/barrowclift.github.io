@@ -29,7 +29,7 @@ continuation:
 
 ## ![Music Player X's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/icon.png "Marvis Pro's iOS app icon"){: .app-icon } Music Player X
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating Music Player X's usage in light mode" title="Demonstrating Music Player X's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating Music Player X's usage in dark mode" title="Demonstrating Music Player X's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage.webm" type="video/webm">
@@ -83,7 +83,7 @@ With that potential future aside, the app itself is still fully functional, avai
 
 Music Player X is perhaps the most radical general-purpose player available today. While the interface itself and browsing approach is typical fare ("Artists", "Albums", and other usual suspects are all here), not a single control or view in the app appears stock; nearly everything seems custom-made or at least heavily modded beyond recognition. This certainly yields Music Player X plenty of drawbacks, primarily that it barely feels like an iOS app anymore, and secondarily that it severely lacks the animation polish other apps get "for free" by using stock components. This results in a lack of comfort that makes some of its custom navigational flows feel so jarring that they are oftentimes confusing to navigate and back out of, among other issues. The custom UI is naturally strongly opinionated as well, which is sure to push away listeners that don't care for its brutalist, 90's era computing ascetic. With those huge caveats made clear, Music Player X's custom interface *does* allow it a substantial number of benefits, such as its immediately identifiable brand recognition[^brand-recognition]. You can easily and instantly recognize Music Player X even from a distance. This pairs hand-in-hand with its theming engine, which is the other huge benefit its fully custom UI provides. If you're a listener big on the ["aesthetic AF"](https://www.instagram.com/p/CFSj3ZShlEX) movement on iOS and meticulously customize your home screen and app icons to match a certain color scheme, Music Player X can be tweaked to perfectly match. For example, here's some fun alternative themes I whipped up.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/hacker.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/hacker.webp">
@@ -138,24 +138,24 @@ With that and some bug fix patches, that's all the releases Music Player X recei
 
 <div class="admonition aside">
 <dl>
-    <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
+    <dt>:large_orange_diamond: iPad support</dt>
     <dd><p>An iPad version technically exists, but the scaling it uses is comically bad.</p></dd>
 </dl>
 
 <dl>
-    <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-    <dt><span class="bullet">:x:</span> Lyrics support</dt>
-    <dt><span class="bullet">:x:</span> Light &amp; dark themes</dt>
+    <dt>:x: Apple Music integration</dt>
+    <dt>:x: Lyrics support</dt>
+    <dt>:x: Light &amp; dark themes</dt>
     <dd><p>While you can customize the theme, you can only have one theme active at a time, so light &amp; dark theming is not supported.</p></dd>
-    <dt><span class="bullet">:x:</span> Discovery features</dt>
-    <dt><span class="bullet">:x:</span> Beautiful or visually engaging full-player</dt>
-    <dt><span class="bullet">:x:</span> Album-focused features</dt>
+    <dt>:x: Discovery features</dt>
+    <dt>:x: Beautiful or visually engaging full-player</dt>
+    <dt>:x: Album-focused features</dt>
 </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/14"><p class="button">Next App: “Music.app”</p></a></li>
 </ul>
 

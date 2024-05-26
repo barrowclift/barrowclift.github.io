@@ -29,7 +29,7 @@ continuation:
 
 ## ![Doppler's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/icon.png "Doppler's iOS app icon"){: .app-icon } Doppler
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/usage-poster.jpg" alt="Video demonstrating Doppler's usage" title="Demonstrating Doppler's usage">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/usage.webm" type="video/webm">
@@ -61,7 +61,7 @@ When narrowly observing Doppler as "just" an iOS music player, it's easy to lose
 
 To be clear, this positioning generally works in Doppler's favor. To start—while Doppler's permanent dark theme's lack of respect for the system's appearance continues to be my single biggest gripe with Doppler—the design's undeniably lovely. It features a not-quite-black background that looks great on both OLED and traditional LED displays, and works wonderfully to distinguish Doppler from its peers. Additionally, while permanent dark themes run the risk of feeling too cold, Doppler gracefully averts this thanks to generous splashes of color in its album views, which feature dynamic album art theming akin to [iTunes 11](https://panic.com/blog/itunes-11-and-colors/) and Power Player. It's a fun bit of whimsy that helps break up Doppler's otherwise serious demeanor.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/red.webp">
@@ -127,29 +127,29 @@ Finally, as of 2.4.5, Doppler now offers separate control of Apple's recent [spa
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:heavy_check_mark: Beautiful or visually engaging full-player</dt>
         <dd><p>Doppler’s dark theme looks particularly handsome in its full-player in no small part due to featuring a subtle translucent album art effect.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dt>:heavy_check_mark: Album-focused features</dt>
         <dd><p>The “Library” tab can be tweaked to display albums, and albums displayed this way are delightfully sorted by my preferred method (Artist > Chronological). The only thing holding back Doppler from full marks is the continued inability to display albums with a grid layout.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+        <dt>:large_orange_diamond: Discovery features</dt>
         <dd><p>The “Recently Added” section in the “Library” tab is great, but I expect more discovery capabilities nowadays, and this isn’t enough to keep up.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-        <dt><span class="bullet">:x:</span> Lyrics support</dt>
-        <dt><span class="bullet">:x:</span> Light &amp; dark themes</dt>
+        <dt>:x: Apple Music integration</dt>
+        <dt>:x: Lyrics support</dt>
+        <dt>:x: Light &amp; dark themes</dt>
         <dd><p>Doppler unfortunately continues to only offer a dark theme.</p></dd>
-        <dt><span class="bullet">:x:</span> iPad support</dt>
+        <dt>:x: iPad support</dt>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/10"><p class="button">Next App: “jetAudio”</p></a></li>
 </ul>
 

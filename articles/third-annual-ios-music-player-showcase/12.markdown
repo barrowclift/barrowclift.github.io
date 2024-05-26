@@ -16,7 +16,7 @@ continuation:
 
 ## !["Music.app" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "Music.app" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/light-now-playing.jpg '"Music.app" light player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in dark mode" title="Demonstrating 'Music.app' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/dark-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ I tend to give [Music.app](https://www.apple.com/music/) a hard time; while its 
 
 Leading up to [iOS 14](http://web.archive.org/web/20200920101828/https://www.apple.com/ios/ios-14/)'s release, I heard whispers that the betas included my number-one requested feature for the lava lamp visualizer to be *officially* accessible in the player view. Of all iOS 14 features, I was most eager to see this one for myself. The minute the upgrade completed, I rushed to Music.app, started playing a song, and was greeted with...
 
-<div class="two-images ios-screenshot">
+<div class="array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.webm" type="video/webm">
@@ -71,18 +71,18 @@ Aside from the "Library" tab switching locations, nothing else in Music.app's lo
 
 ### Widgets
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-1.jpg">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-1.jpg)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-2.jpg">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-2.jpg)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-3.jpg">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/widget-3.jpg)
         </a>
@@ -99,30 +99,30 @@ While it's nice to see Apple providing first-party music widgets to customers as
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>“Live” lyrics still feature the original effect, and it’s still just as brilliant as it was last year. Regular lyrics are still functionally great, despite featuring the new, worse visualizer.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>iPad Support: </strong><em>Music.app continues to unsurprisingly lead the pack with one of the best optimized iPad experiences, in no small part thanks to the new fullscreen player on iPadOS 14.</em></li>
+        <li>:trophy: <strong>Lyrics support: </strong><em>“Live” lyrics still feature the original effect, and it’s still just as brilliant as it was last year. Regular lyrics are still functionally great, despite featuring the new, worse visualizer.</em></li>
+        <li>:trophy: <strong>iPad Support: </strong><em>Music.app continues to unsurprisingly lead the pack with one of the best optimized iPad experiences, in no small part thanks to the new fullscreen player on iPadOS 14.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery collections available don’t quite keep pace with other players’ progress this year.</em></li>
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
+        <li>:large_orange_diamond: <strong>Discovery features:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery collections available don’t quite keep pace with other players’ progress this year.</em></li>
+        <li>:large_orange_diamond: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong> <em>While Music.app technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong> <em>While Music.app technically supports sorting albums alphabetically by artist and then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view:</strong> <em>A bitter disappointment, I’d rather the old, boring design return than be teased by this shoddy, off-brand alternative.</em></li>
+        <li>:x: <strong>Beautiful or visually engaging player view:</strong> <em>A bitter disappointment, I’d rather the old, boring design return than be teased by this shoddy, off-brand alternative.</em></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/13"><p class="button">Next App: “Picky”</p></a></li>
 </ul>
 

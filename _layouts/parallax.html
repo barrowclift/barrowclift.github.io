@@ -73,6 +73,37 @@ Currently used for:
                 display: inline-block;
                 margin-bottom: 3.9em;
             }
+            #parallax-foreground {
+                background-color: {{ page.parallax.background.light-color }};
+                border-top: 1px solid var(--widget-border);
+                box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
+            }
+                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+                    #parallax-foreground {
+                        background-color: rgba(255, 255, 255, 0.95);
+                    }
+                }
+            #dark #parallax-foreground {
+                background-color: {{ page.parallax.background.dark-color }};
+                box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
+            }
+                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+                    #dark #parallax-foreground {
+                        background-color: rgba(46, 46, 46, 0.95);
+                    }
+                }
+                html#dark.oled #parallax-foreground {
+                    background-color: hsl(0, 0%, 4%, 0.9) !important;
+                }
+                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+                    html#dark.oled #parallax-foreground {
+                        background-color: hsl(0, 0%, 4%, 0.75) !important;
+                    }
+                }
+            #parallax-foreground,
+            #parallax-background {
+                transition: background var(--cubic-bezier-transition);
+            }
             #parallax-background a {
                 margin: 0;
                 padding: 0;
@@ -88,14 +119,6 @@ Currently used for:
             #parallax-background a:hover {
                 background-color:unset;
             }
-            #parallax-foreground {
-                background-color: {{ page.parallax.background.light-color }};
-                border-top: 1px solid var(--widget-border);
-            }
-            #dark #parallax-foreground {
-                background-color: {{ page.parallax.background.dark-color }};
-            }
-      
             #menubar menu a {
                 color: {{ page.menubar.light.foreground-color }} !important;
             }
@@ -104,7 +127,7 @@ Currently used for:
             }
             .imac-background-color,
             #signature path,
-            .pill path {
+            #settings-button-wrapper button svg path {
                 fill: {{ page.menubar.light.foreground-color }};
             }
             {% if page.menubar.dark.active != nil %}
@@ -115,16 +138,16 @@ Currently used for:
                 #logo:hover #signature path {
                     fill: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }});
                 }
-                button.pill {
+                #settings-button-wrapper button {
                     background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}) !important;
                     box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, {{ page.menubar.light.active.lightness }}, 0.2) !important;
                 }
-                    button.pill:hover {
+                    #settings-button-wrapper button:hover {
                         background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} + 5%)) !important;
                         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%), 0.375) !important;
                     }
-                    button.pill:active,
-                    .setting-toggles.active button.pill {
+                    #settings-button-wrapper button:active,
+                    #settings-button-wrapper.active button {
                         background-color: hsl({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%)) !important;
                         box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.light.active.hue }}, {{ page.menubar.light.active.saturation }}, calc({{ page.menubar.light.active.lightness }} - 5%), 0.375) !important;
                     }
@@ -178,16 +201,16 @@ Currently used for:
                 #dark #logo:hover #signature path {
                     fill: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }});
                 }
-                #dark button.pill {
+                #dark #settings-button-wrapper button {
                     background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}) !important;
                     box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, {{ page.menubar.dark.active.lightness }}, 0.2) !important;
                 }
-                    #dark button.pill:hover {
+                    #dark #settings-button-wrapper button:hover {
                         background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} + 5%)) !important;
                         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%), 0.375) !important;
                     }
-                    #dark button.pill:active,
-                    #dark .setting-toggles.active button.pill {
+                    #dark #settings-button-wrapper button:active,
+                    #dark #settings-button-wrapper.active button {
                         background-color: hsl({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%)) !important;
                         box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla({{ page.menubar.dark.active.hue }}, {{ page.menubar.dark.active.saturation }}, calc({{ page.menubar.dark.active.lightness }} - 5%), 0.375) !important;
                     }

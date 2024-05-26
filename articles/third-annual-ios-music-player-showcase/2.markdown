@@ -20,7 +20,7 @@ Like [last year](/articles/second-annual-ios-music-player-competition), not all 
 
 ### !["Ecoute" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/icon.png '"Ecoute" iOS app icon'){: .app-icon } Ecoute
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage with light theme" title="Demonstrating 'Ecoute' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/light-usage.webm" type="video/webm">
@@ -40,7 +40,7 @@ Like [last year](/articles/second-annual-ios-music-player-competition), not all 
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage with dark theme" title="Demonstrating 'Ecoute' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/ecoute/dark-usage.webm" type="video/webm">
@@ -86,7 +86,7 @@ To be clear, despite a humerous ["definitely maybe"](https://twitter.com/Barbapa
 
 ### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .app-icon } Jams On Toast
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams On Toast' usage" title="Demonstrating 'Jams On Toast' usage">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jams-on-toast/usage.webm" type="video/webm">
@@ -114,7 +114,7 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
 
 ### !["New Monaural" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/icon.png '"New Monaural" iOS app icon'){: .app-icon } New Monaural
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-usage-poster.jpg" alt="Video demonstrating 'New Monaural' usage with light theme" title="Demonstrating 'New Monaural' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/light-usage.webm" type="video/webm">
@@ -134,7 +134,7 @@ The app's impressive robustness aside, it's undeniably [abandonware](https://en.
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-usage-poster.jpg" alt="Video demonstrating 'New Monaural' usage with dark theme" title="Demonstrating 'New Monaural' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/new-monaural/dark-usage.webm" type="video/webm">
@@ -168,7 +168,7 @@ As the name implies, New Monaural supports a suite of mono-focused features whic
 
 ### !["Stezza" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/icon.png '"Stezza" iOS app icon'){: .app-icon } Stezza
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/usage-poster.jpg" alt="Video demonstrating 'Stezza' usage" title="Demonstrating 'Stezza' usage">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/stezza/usage.webm" type="video/webm">
@@ -202,7 +202,7 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
 
 ### !["TapTunes" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/icon.png '"TapTunes" iOS app icon'){: .app-icon } TapTunes
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage with light theme" title="Demonstrating 'TapTunes' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/light-usage.webm" type="video/webm">
@@ -222,7 +222,7 @@ However, this focus comes at a cost; Stezza is simply not that appealing beyond 
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage with dark theme" title="Demonstrating 'TapTunes' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/taptunes/dark-usage.webm" type="video/webm">
@@ -258,7 +258,7 @@ Unfortunately, despite its many years of dedicated maintenance, TapTunes last up
 
 Thankfully, despite its lack of update this year, TapTunes is still just as functional and feature-rich as it was in 2019. If you love records or dabbled with other album-focused players in the past, TapTunes remains worthy of a look.
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/3"><p class="button">First App: “Albums”</p></a></li>
 </ul>
 

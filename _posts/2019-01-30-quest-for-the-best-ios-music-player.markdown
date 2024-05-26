@@ -89,7 +89,7 @@ Seven apps survived the disqualification round and continued on to be evaluated 
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/cs.png){: .app-icon } Cs (Formerly Cesium)
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/cs-3.jpg">
@@ -122,7 +122,7 @@ Functional, but boring. Its interface is entirely utilitarian with little to no 
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler.png){: .app-icon } Doppler
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/doppler-3.jpg">
@@ -156,7 +156,7 @@ Promising, but still too young and missing too many features to seriously consid
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute.png){: .app-icon } Ecoute
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/ecoute-3.jpg">
@@ -188,7 +188,7 @@ What was previously the gold-standard third-party music app is now a barely main
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music.png){: .app-icon } Music.app
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/apple-music-3.jpg">
@@ -212,7 +212,7 @@ Entirely inoffensive and mediocre across the board. Unfortunately, in Apple's ef
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/picky.png){: .app-icon } Picky
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/picky-3.jpg">
@@ -246,7 +246,7 @@ Cream of the crop for music selection and sorting, but needs visual work everywh
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/starling.png){: .app-icon } Starling
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/starling-3.jpg">
@@ -279,7 +279,7 @@ A visually interesting player view in an otherwise visually dated and functional
 
 ### ![]({{ site.dropbox }}/quest-for-the-best-ios-music-player/vox.png){: .app-icon } VOX
 
-<div class="edge-to-edge large three-images shadow">
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-1.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-2.jpg">
     <img src="{{ site.dropbox }}/quest-for-the-best-ios-music-player/vox-3.jpg">
@@ -345,7 +345,7 @@ I love Cs on my iPhone, but I sometimes want to browse my library with a grid vi
 
 However, that doesn't mean I've given up hope! While Music.app has been more-or-less feature-stagnant since iOS 10, third-party developers of apps like Cs, Picky, and Doppler continue to work tirelessly to bring new and exciting features like "true black" dark mode in Cs and the "Recently added" view in Doppler. The world of quality music players on iOS may be small, but it's thriving, and hints at great improvements down the road that may finally earn one of them a permanent residence on my Dock. Time will tell which one it is.
 
-<div id="article-linkback">
+<div id="farewell-stamp">
     <a href="/about">⌘</a>
 </div>
 

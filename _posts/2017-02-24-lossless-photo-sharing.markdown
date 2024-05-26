@@ -25,7 +25,7 @@ To combat this absurdly complicated productscape, I've compiled what I personall
 Sharing A Handful of Pictures
 -----------------------------
 
-<div class="half-inline">
+<div class="restrict-growth-to-half">
     <a href="https://www.dropbox.com">
         <img src="{{ site.dropbox }}/lossless-photo-sharing/dropbox.svg" alt="The Dropbox logo">
     </a>
@@ -51,7 +51,7 @@ While I believe Dropbox to be the best solution for this problem, there are load
 Sharing Photo Albums
 --------------------
 
-<div class="half-inline">
+<div class="restrict-growth-to-half">
     <a href="https://photos.google.com">
         <img src="{{ site.dropbox }}/lossless-photo-sharing/google-photos.svg" alt="The Google Photos logo">
     </a>

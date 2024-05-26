@@ -29,7 +29,7 @@ continuation:
 
 ## ![Marvis Pro's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png "Marvis Pro's iOS app icon"){: .app-icon } Marvis Pro
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in light mode" title="Demonstrating Marvis Pro's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in dark mode" title="Demonstrating Marvis Pro's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
@@ -120,7 +120,7 @@ Again, while these settings are indeed powerful and already provide listeners a 
 
 However, let's take that one step further; let's say I wanted a section which contained *all* my records organized by year in a similar fashion. I could simply create a new "Home" section, call it something fun like "Time Machine", then for any given year create a new "year" section just like before. And just like that, I have a "Time Machine" section on my Home Screen that—upon tapping—gives me a beautiful year-by-year adventure back through my favorite music. This is still of course a simple example, only a couple basic smart rules power my "Time Machine" section. The engine's flexible enough to be limited only by your own imagination.
 
-<div class="two-images ios-screenshot">
+<div class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/time-light-1.webp">
@@ -165,8 +165,8 @@ Marvis Pro sports one of the best overall iPad experiences of any player availab
 
 Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impressive widget arsenal remains unchanged from last year.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-dark.webp">
@@ -174,7 +174,7 @@ Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impr
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-dark.webp">
@@ -182,7 +182,7 @@ Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impr
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-dark.webp">
@@ -191,8 +191,8 @@ Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impr
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-large-light.webp">
@@ -200,7 +200,7 @@ Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impr
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-medium-light.webp">
@@ -208,7 +208,7 @@ Aside from the addition of extra-wide widget sizes for iPadOS, Marvis Pro's impr
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/1-small-light.webp">
@@ -234,8 +234,8 @@ Marvis Pro's widgets are divided evenly into two collections, starting with the 
 
 Arguably the most notable among the customization options is the ability to toggle displaying playback controls in the widget itself (excluding the small widget).
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-dark.webp">
@@ -243,7 +243,7 @@ Arguably the most notable among the customization options is the ability to togg
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-dark.webp">
@@ -252,8 +252,8 @@ Arguably the most notable among the customization options is the ability to togg
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-large-light.webp">
@@ -261,7 +261,7 @@ Arguably the most notable among the customization options is the ability to togg
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/alt-medium-light.webp">
@@ -273,8 +273,8 @@ Arguably the most notable among the customization options is the ability to togg
 
 In classic Marvis Pro fashion, each widget's default configuration is perfectly reasonable, and if you'd rather not futz about with settings, they're still likely to meet your needs. However, if you care even the slightest bit about getting your widgets and home screen "just so", Marvis Pro's "Now Playing" widget collection is exceptional.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-dark.webp">
@@ -282,7 +282,7 @@ In classic Marvis Pro fashion, each widget's default configuration is perfectly 
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-dark.webp">
@@ -290,7 +290,7 @@ In classic Marvis Pro fashion, each widget's default configuration is perfectly 
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-dark.webp">
@@ -299,8 +299,8 @@ In classic Marvis Pro fashion, each widget's default configuration is perfectly 
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-large-light.webp">
@@ -308,7 +308,7 @@ In classic Marvis Pro fashion, each widget's default configuration is perfectly 
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-medium-light.webp">
@@ -316,7 +316,7 @@ In classic Marvis Pro fashion, each widget's default configuration is perfectly 
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/2-small-light.webp">
@@ -347,7 +347,7 @@ By far the biggest change this year was the release of background customization.
 
 In Marvis Pro's "Settings" menu, there's a renovated "Background" appearance menu item, where you have full control over independently adjusting the background for the main screen, mini-player, and full-player. This control includes specifying the background image (none, artwork, or custom), the degree of blur effect, degree of image saturation, and even the overlay color to apply over the blur effect.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-red.webp">
@@ -397,29 +397,29 @@ While the change is certainly a good move, the newly maximized full-player is un
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Apple Music integration</dt>
+        <dt>:trophy: Apple Music integration</dt>
         <dd><p>You can easily search for and stream Apple Music content, but you can also create Apple Music-powered sections right in your “Home” page as well. Like with <a href="https://apps.apple.com/us/app/albums-album-focused-player/id1469948986">Albums</a>, this kind of seamless integration is exactly what I expect from premium Apple Music integration.</p></dd>
-        <dt><span class="bullet">:trophy:</span> Light &amp; dark themes</dt>
+        <dt>:trophy: Light &amp; dark themes</dt>
         <dd><p>Marvis Pro’s theming is exceptional, you can tweak it to be as light or as dark as you want it, and your changes still respect iOS’s system appearance setting.</p></dd>
-        <dt><span class="bullet">:trophy:</span> iPad support</dt>
+        <dt>:trophy: iPad support</dt>
         <dd><p>The iPad version is as performant as its iPhone counterpart, scales gracefully to accommodate the larger screen, and now features a gorgeous full-screen maximized player. I have a minor complaint with the way the full-player is handled in landscape mode, but the rest of the experience is close to flawless.</p></dd>
-        <dt><span class="bullet">:trophy:</span> Discovery features</dt>
+        <dt>:trophy: Discovery features</dt>
         <dd><p>Marvis Pro ships with a respectable array of discovery collections in its “Home” page by default, but the fact you can easily create your own using Marvis Pro’s section engine leaves Marvis Pro’s discovery capabilities with little contest.</p></dd>
-        <dt><span class="bullet">:trophy:</span> Album-focused features</dt>
+        <dt>:trophy: Album-focused features</dt>
         <dd><p>Your “Home” page can be as tailored to albums as you’d like. You can also easily adjust the “Albums” layout to be a grid of your preferred size, and even my preferred sorting method (Artist > Chronological) is available (though this unfortunately remains trapped behind a hidden advanced settings screen).</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Lyrics are viewable upon scrolling down in the full-player much like in iOS 14’s Music.app, but I continue to dislike this approach to lyrics support since it’s quarantined away from both the playback controls and the album art. The feature exists and works without issue, but I find the implementation personally disappointing.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:heavy_check_mark: Beautiful or visually engaging full-player</dt>
         <dd><p>It continues to not be the most beautiful or most interesting of full-players, but the introduction of background customization this year helped tremendously to freshen up the previously pleasing but standard visual appearance.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/13"><p class="button">Next App: “Music Player X”</p></a></li>
 </ul>
 

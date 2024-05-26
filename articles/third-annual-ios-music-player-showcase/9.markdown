@@ -16,7 +16,7 @@ continuation:
 
 ## !["Longplay" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/icon.png '"Longplay" iOS app icon'){: .app-icon } Longplay
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage-poster.jpg" alt="Video demonstrating 'Longplay' usage with light theme" title="Demonstrating 'Longplay' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage-poster.jpg" alt="Video demonstrating 'Longplay' usage with dark theme" title="Demonstrating 'Longplay' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/dark-usage.webm" type="video/webm">
@@ -62,8 +62,8 @@ While the lack of dedicated player view and additional album-centric features is
 
 Longplay's widget's are as unique as the app. Like the app, the experience is trim: just a single widget class sporting two different sizes (medium and small). However, that small package is packed tons of customization options.
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-1.webp">
@@ -71,7 +71,7 @@ Longplay's widget's are as unique as the app. Like the app, the experience is tr
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/longplay/widget-2.webp">
@@ -91,27 +91,27 @@ While I appreciate this widget class, I'm still left disappointed it does not su
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>Despite its simplicity, there’s a decent number of discovery features here, such as sorting by album art brightness.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>Despite its simplicity, there’s a decent number of discovery features here, such as sorting by album art brightness.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
+        <li>:large_orange_diamond: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting: </strong><em>Despite its numerous sorting options, proper sorting (artists alphabetically followed by albums in chronological order) is not one of them.</em></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view: </strong><em>The app’s nothing but a grid view, yet the lack of visual customization lets it down, holding it back from top marks.</em></li>
+                <li>:x: <strong>Proper sorting: </strong><em>Despite its numerous sorting options, proper sorting (artists alphabetically followed by albums in chronological order) is not one of them.</em></li>
+                <li>:heavy_check_mark: <strong>Album grid view: </strong><em>The app’s nothing but a grid view, yet the lack of visual customization lets it down, holding it back from top marks.</em></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
+        <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+        <li>:x: <strong>Lyrics support</strong></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/10"><p class="button">Next App: “Marvis Pro”</p></a></li>
 </ul>
 

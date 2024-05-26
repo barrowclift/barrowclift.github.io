@@ -29,7 +29,7 @@ continuation:
 
 ## ![Musens' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png "Musens' iOS app icon"){: .app-icon } Musens
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage-poster.jpg" alt="Video demonstrating Musens' usage in light mode" title="Demonstrating Musens' usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage-poster.jpg" alt="Video demonstrating Musens' usage in dark mode" title="Demonstrating Musens' usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/dark-usage.webm" type="video/webm">
@@ -97,7 +97,7 @@ The browsing experience within each of these menu items is a little opinionated,
 
 While it's becoming increasingly common for players to provide visualizers, it's still exceptionally rare to encounter a player with a visualizer that incorporates the album art. Not counting Musens, at the end of 2021 the only players that can claim this are [Power Player], [Soor], and [Music.app], but they're all flawed in various ways. Power Player's visualizer isn't nearly as reactive to the music as you'd expect, and its bubbly nature is arguably not well suited to a broad array of genres and tastes. Soor's visualizer is a canned gradient curve that cycles through a handful of primary colors from the album art with no dynamic visualization aspect whatsoever. Music.app's visualizer is blurred into a muted, homogenous paste that's both unappealing to look at and barely reacts to the music as a result (in contrast to its continuously gorgeous "Live Lyrics" visualizer). The playing field doesn't look particularly great until we turn our attention towards Musens's full-player. It unbelievably features an honest to goodness reimplementation of Music.app's brilliant "Live Lyrics" album art lava lamp visualizer, the only third-party player to boast this achievement. While the effect is naturally not quite as rich and dynamic as Apple's own (in no small part due to only featuring a single "blob"), its single "blob" is still comfortably discrete from the rest of the colors, subtly "jiggles" in reaction to the music, and moves about at a youthful pace similar to Music.app's. If you've found yourself longing to enjoy Music.app's "Live Lyrics" visualizer for your local library, Musens has gotten the closest I've seen any app get to this goal.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp-poster.jpg" alt="Video demonstrating Music.app's full-player visualizer" title="Demonstrating Music.app's full-player visualizer">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/musens-lava-lamp.webm" type="video/webm">
@@ -123,8 +123,8 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
 
 ### Widgets
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-dark.webp">
@@ -132,7 +132,7 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-dark.webp">
@@ -140,7 +140,7 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-dark.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-dark.webp">
@@ -149,8 +149,8 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-large-light.webp">
@@ -158,7 +158,7 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-medium-light.webp">
@@ -166,7 +166,7 @@ Musens does indeed support the iPad, but unfortunately much like [Plum] its perf
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-light.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/1-small-light.webp">
@@ -188,34 +188,34 @@ The widgets overall are nowhere near as good as Musens on iPhone, but is certain
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:trophy: Beautiful or visually engaging full-player</dt>
         <dd><p>Musens is the one and only third-party player I’ve encountered that replicates Music.app’s “Live Lyrics” lava lamp visualizer, and it’s far and away my favorite part of the entire app. Simply outstanding.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Apple Music integration</dt>
+        <dt>:heavy_check_mark: Apple Music integration</dt>
         <dd><p>While not anything particularly groundbreaking, Musens offers a standard Apple Music "Home page and expected integration like the ability to search either your local library or Apple Music’s catalog.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+        <dt>:large_orange_diamond: Discovery features</dt>
         <dd><p>Its Apple Music “Home” page is a great start, but that alone is not sufficient since it both requires an Apple Music subscription and does not provide nearly enough discovery collections that have come to be expected nowadays, such as “Recently Added”.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dt>:large_orange_diamond: Album-focused features</dt>
         <dd><p>The grid layout in the “Albums” page is a great start, but a lack of my preferred album sorting method (Artist > Chronological) and any other album-focused features leaves me wanting.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:x:</span> Lyrics support</dt>
+        <dt>:x: Lyrics support</dt>
         <dd><p>Outsourcing a critical feature to <a href="https://www.musixmatch.com/">Musixmatch</a> is not the same as actually supporting the feature.</p></dd>
-        <dt><span class="bullet">:x:</span> iPad support</dt>
+        <dt>:x: iPad support</dt>
         <dd><p>The performance is appaulingly bad, it’s simply not ready for general use.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/6"><p class="button">Next App: “Albums”</p></a></li>
 </ul>
 

@@ -27,7 +27,7 @@ continuation:
 
 ## !["Doppi" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage with light theme" title="Demonstrating 'Doppi' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage.webm" type="video/webm">
@@ -47,7 +47,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage with dark theme" title="Demonstrating 'Doppi' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage.webm" type="video/webm">
@@ -101,27 +101,27 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong><em>We not only got full-height lyrics this year, but the exclusive ability to edit them. No other player has better lyrics support for local music than Doppi.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS’s system appearances while also maintaining an alternative, “lighter” dark mode for those still sporting iPhones with an LCD screen.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s so smooth and so unique, it needs to be tried to be believed.</em></li>
+        <li>:trophy: <strong>Lyrics support: </strong><em>We not only got full-height lyrics this year, but the exclusive ability to edit them. No other player has better lyrics support for local music than Doppi.</em></li>
+        <li>:trophy: <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS’s system appearances while also maintaining an alternative, “lighter” dark mode for those still sporting iPhones with an LCD screen.</em></li>
+        <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>It’s so smooth and so unique, it needs to be tried to be believed.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>You can easily make “Albums” your first&mdash;or even only&mdash;tab view if you’re so inclined.</em>
+        <li>:heavy_check_mark: <strong>Album-focused features: </strong><em>You can easily make “Albums” your first&mdash;or even only&mdash;tab view if you’re so inclined.</em>
             <ul class="bare">
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting: </strong><em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+                <li>:heavy_check_mark: <strong>Proper sorting: </strong><em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>iPad support: </strong><em>While I suspect an iPad release is imminent, we're unfortunately still left with no iPad version of Doppi.</em></li>
-        <li><span class="bullet">:x:</span> <strong>Discovery features: </strong><em>Perhaps my only big disappointment with Doppi this year, I hoped we would at least get a “Recently Added” collection somewhere, by now.</em></li>
+        <li>:x: <strong>iPad support: </strong><em>While I suspect an iPad release is imminent, we're unfortunately still left with no iPad version of Doppi.</em></li>
+        <li>:x: <strong>Discovery features: </strong><em>Perhaps my only big disappointment with Doppi this year, I hoped we would at least get a “Recently Added” collection somewhere, by now.</em></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/6"><p class="button">Next App: “Doppler 2”</p></a></li>
 </ul>
 

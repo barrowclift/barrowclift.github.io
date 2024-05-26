@@ -29,7 +29,7 @@ continuation:
 
 ## ![Cs Music's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png "Cs Music's iOS app icon"){: .app-icon } Cs Music
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in light mode" title="Demonstrating Cs Music's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage-poster.jpg" alt="Video demonstrating Cs Music's usage in dark mode" title="Demonstrating Cs Music's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/dark-usage.webm" type="video/webm">
@@ -113,7 +113,7 @@ This pleasing degree of customization carries through into the new "Activity" pa
 
 While that alone isn't noteworthy (Power Player added a similar "Home" page last year), Cs Music went the extra mile by allowing many of those discovery collections to target either songs, albums, artists, composers, or genres. The simple ability for listeners to decide what kind of entity to display in a given discovery collection makes Cs Music's "Activity" page much more widely useful since it is far more likely to support your listening and browsing preferences. Compared to its most direct equivalent of Power Player's comparatively restrictive "Home" page, Cs Music's "Activity" page provides a much more flexible and inherently personal experience.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/activity-light-1.webp">
@@ -143,7 +143,7 @@ While that alone isn't noteworthy (Power Player added a similar "Home" page last
 
 Unlike [Plum] and Power Player, Cs Music's visual design is mostly utilitarian. There's no fancy artist pages, dynamic entity or album view themes, or anything of the sort. The design is elegant and tastefully executed, but purposefully doesn't stray much farther from that. With Cs Music, its feet are firmly on function over form. It's full-player, however, is the sole exception.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/light-red.webp">
@@ -234,27 +234,27 @@ Coming from last year's redesign, I frankly wasn't expecting much movement on Cs
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Cs Music’s lyrics support is the now “old school” approach of hiding the album art with a translucent scrollable lyrics view, but the feature exists and works well enough.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: iPad support</dt>
         <dd><p>Its iPad version performs just as well as its iPhone counterpart, and the lack of screen size optimizations only yield minor cosmetic and usability annoyances and nothing show-stopping like on <a href="https://www.mpxeq.com">MPX EQ</a>’s iPad version. It’s not great, but I’m still happy it exists.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Discovery features</dt>
+        <dt>:heavy_check_mark: Discovery features</dt>
         <dd><p>The introduction of the “Activity” page this year was an outstanding achievement, and fully caught up Cs Music’s discovery capabilities to its peers.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:heavy_check_mark: Beautiful or visually engaging full-player</dt>
         <dd><p>The extremely understated full-player dynamic theme is not fully to my taste, but there’s no denying its light hand helps it yield much more consistently pleasing results than other players with more inconsistent results like <a href="https://mixtapesapp.com">Mixtapes</a>.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dt>:heavy_check_mark: Album-focused features</dt>
         <dd><p>The lack of support for my preferred album sorting method (Artist > Chronological) in the “Albums” page continues to be a disappointment, but the ability to customize the new discovery collections in the “Activity” page to display albums and the existing ability to browse albums with a grid helps make up for it.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dt>:x: Apple Music integration</dt>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/8"><p class="button">Next App: “Doppi”</p></a></li>
 </ul>
 

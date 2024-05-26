@@ -39,34 +39,34 @@ design:
     #logo #signature path {
         fill: white;
     }
-    button.pill path {
+    #settings-button-wrapper button path {
         fill: white !important;
     }
-    button.pill {
+    #settings-button-wrapper button {
         background-color: hsla(51, 95%, 64%, 1);
         box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.375);
     }
-        button.pill:hover,
-        #dark button.pill:hover {
+        #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover {
             background-color: hsla(51, 95%, 64%, 1) !important;
             box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.25);
         }
-        button.pill:active,
-        .setting-toggles.active button.pill,
-        #dark button.pill:active,
-        #dark .setting-toggles.active button.pill  {
+        #settings-button-wrapper button:active,
+        #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button  {
             background-color: hsla(51, 95%, 64%, 1) !important;
             box-shadow: inset 0 0.25em 0.5em rgba(0, 0, 0, 0.375);
         }
-        button.pill:hover path,
-        .setting-toggles.active button.pill path {
+        #settings-button-wrapper button:hover path,
+        #settings-button-wrapper.active button path {
             fill: white !important;
         }
-        #dark button.pill:hover path,
-        #dark .setting-toggles.active button.pill path {
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper.active button path {
             fill: white !important;
         }
-    #dark button.pill {
+    #dark #settings-button-wrapper button {
         background-color: rgba(255, 255, 255, 0.0375);
     }
     .imac-line-color {
@@ -163,7 +163,7 @@ design:
     }
     #dark a:hover,
     #dark button.bigfoot-footnote__button,
-    #dark button.pill,
+    #dark #settings-button-wrapper button,
     #dark summary:hover,
     #dark .card:hover {
         background-color: hsla(2, 58%, 44%, 0.15);
@@ -175,18 +175,18 @@ design:
         background: hsla(227, 53%, 34%, 0.85);
     }
     #dark button.bigfoot-footnote__button,
-    #dark button.pill {
+    #dark #settings-button-wrapper button {
         background-color: hsla(51, 95%, 64%, 0.2);
     }
         #dark button.bigfoot-footnote__button:hover,
-        #dark button.pill:hover {
+        #dark #settings-button-wrapper button:hover {
             background-color: hsl(51, 95%, 64%) !important;
             box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2);
         }
         #dark button.bigfoot-footnote__button:active,
         #dark button.bigfoot-footnote__button.is-active,
-        #dark button.pill:active,
-        #dark .setting-toggles.active button.pill {
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button {
             background-color: hsl(51, 95%, 54%) !important;
             box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 54%, 0.2);
         }

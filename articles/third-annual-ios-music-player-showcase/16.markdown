@@ -16,7 +16,7 @@ continuation:
 
 ## !["Sathorn" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/icon.png '"Sathorn" iOS app icon'){: .app-icon } Sathorn
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "Sathorn" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-now-playing.jpg '"Sathorn" light player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in dark mode" title="Demonstrating 'Sathorn' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/dark-usage.webm" type="video/webm">
@@ -59,7 +59,7 @@ In an effort to avoid copy/pasting my issues with the design from last year (whi
 * Poor dark mode support. The "Dark" mode option is a blindingly bright gray, and the "True Black" mode misses just enough of Apple's guidelines to feel uncomfortable and wrong compared to other apps. To top it off, Sathron doesn't respect the system theme setting, forcing you to manually change it yourself in the app every time the system's theme changes.
 * Poor player design. Aside from a woefully boring "Solid" option, there's three equally shoddy alternatives to choose from ("Light Blur", "Deep Blur", and "Dark Blur"). I've yet to find an album whose art looks good with any of them.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-blur.jpg">
         ![Image of the "Light Blur" player design]({{ site.dropbox }}/third-annual-ios-music-player-showcase/sathorn/light-blur.jpg "The "Light Blur" player design")
     </a>
@@ -84,24 +84,24 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & dark themes: </strong> <em>Partial credit awarded for having any kind of light and dark mode support, despite their rough design and lack of respect for the system setting.</em></li>
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery features:</strong> <em>With the bar for minimum acceptable discovery features set higher by other players this year, Sathorn’s single “Recently Added” discovery feature doesn’t cut it, anymore.</em></li>
+        <li>:large_orange_diamond: <strong>Light & dark themes: </strong> <em>Partial credit awarded for having any kind of light and dark mode support, despite their rough design and lack of respect for the system setting.</em></li>
+        <li>:large_orange_diamond: <strong>Discovery features:</strong> <em>With the bar for minimum acceptable discovery features set higher by other players this year, Sathorn’s single “Recently Added” discovery feature doesn’t cut it, anymore.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-        <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
+        <li>:x: <strong>Lyrics support</strong></li>
+        <li>:x: <strong>iPad support</strong></li>
+        <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+        <li>:x: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/17"><p class="button">Next App: “SongOwl”</p></a></li>
 </ul>
 

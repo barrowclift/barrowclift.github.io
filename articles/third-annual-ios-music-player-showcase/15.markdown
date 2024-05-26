@@ -27,7 +27,7 @@ continuation:
 
 ## !["Power Player" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage with light theme" title="Demonstrating 'Power Player' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-usage.webm" type="video/webm">
@@ -41,7 +41,7 @@ continuation:
         ![Image of "Power Player" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-now-playing.jpg '"Power Player" light theme player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage with dark theme" title="Demonstrating 'Power Player' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-usage.webm" type="video/webm">
@@ -88,7 +88,7 @@ However, I continue to maintain that discovery features are always worth providi
 
 The rest of the app remains mostly the same as it was last year. While I'm disappointed at the relatively slow rate of enhancement compared to what others like Albums received this year, Power Player nonetheless remains a fantastic player. The album view still features the same, great dynamic color matching feature I raved about last year.
 
-<div class="show-when-light three-images ios-screenshot">
+<div class="show-when-light array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-red.jpg">
         ![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-red.jpg "The album view with a predominantly red record")
     </a>
@@ -99,7 +99,7 @@ The rest of the app remains mostly the same as it was last year. While I'm disap
         ![Image of the album view with a predominantly blue record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-blue.jpg "The album view with a predominantly blue record")
     </a>
 </div>
-<div class="show-when-dark three-images ios-screenshot">
+<div class="show-when-dark array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-red.jpg">
         ![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-red.jpg "The album view with a predominantly red record")
     </a>
@@ -117,35 +117,35 @@ The iPad experience also remains industry leading thanks to its numerous interfa
 
 Power Player supports a single widget for each of the three size classes.
 
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-widget-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-widget-2.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-widget-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/light-widget-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/widget-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/widget-1.png)
         </a>
     </div>
 </div>
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-widget-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-widget-2.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-widget-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/dark-widget-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/widget-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/power-player/widget-1.png)
         </a>
@@ -162,27 +162,27 @@ While there's not much customization to speak of here and the choices are limite
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>It’s opinionated, but for those seeking out the most striking player view or the best iPad player view experience, there’s few that come close to matching Power Player’s.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>Lyrics support:</strong> <em>The vibrant player view and smart space utilization on both iPhone and iPad displays make Power Player one of the best lyrics reading experiences available.</em></li>
-        <li><span class="bullet">:trophy:</span> <strong>iPad support: </strong><em>Maintaining its lead from last year, there is no other player that can claim as good an iPad experience for local content as Power Player.</em></li>
+        <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>It’s opinionated, but for those seeking out the most striking player view or the best iPad player view experience, there’s few that come close to matching Power Player’s.</em></li>
+        <li>:trophy: <strong>Lyrics support:</strong> <em>The vibrant player view and smart space utilization on both iPhone and iPad displays make Power Player one of the best lyrics reading experiences available.</em></li>
+        <li>:trophy: <strong>iPad support: </strong><em>Maintaining its lead from last year, there is no other player that can claim as good an iPad experience for local content as Power Player.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While the new “Home” tab is severely limited in its collections and customization, it’s already a massive improvement over last year.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>While the new “Home” tab is severely limited in its collections and customization, it’s already a massive improvement over last year.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>No proper sorting, no way to make "Albums" the default view, and no means to tweak the discovery collections to group by album instead of by song weigh Power Player down. Its killer iPad album view is the only thing saving this from a failure mark.</em>
+        <li>:large_orange_diamond: <strong>Album-focused features: </strong><em>No proper sorting, no way to make "Albums" the default view, and no means to tweak the discovery collections to group by album instead of by song weigh Power Player down. Its killer iPad album view is the only thing saving this from a failure mark.</em>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Album grid view: </strong><em>While Power Player uses grid view on the iPad, iPhone users are stuck with a list and no option to change it.</em></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:large_orange_diamond: <strong>Album grid view: </strong><em>While Power Player uses grid view on the iPad, iPhone users are stuck with a list and no option to change it.</em></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/16"><p class="button">Next App: “Sathorn”</p></a></li>
 </ul>
 

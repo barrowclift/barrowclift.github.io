@@ -16,7 +16,7 @@ continuation:
 
 ## !["jetAudio" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/icon.png '"jetAudio" iOS app icon'){: .app-icon } jetAudio
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-usage-poster.jpg" alt="Video demonstrating 'jetAudio' usage in light mode" title="Demonstrating 'jetAudio' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "jetAudio" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-now-playing.jpg '"jetAudio" light player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/dark-usage-poster.jpg" alt="Video demonstrating 'jetAudio' usage in dark mode" title="Demonstrating 'jetAudio' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/dark-usage.webm" type="video/webm">
@@ -58,7 +58,7 @@ On the surface, jetAudio is a standard, general-purpose player, with the convent
 
 In the player view, tapping the top half of the album art reveals a treasure trove of hidden features. One such feature is—as far as I'm aware—unique to jetAudio: a suite of visualizers. At time of writing, jetAudio provides *twenty* unique visualizers to choose from, along with an "Auto Change" option to automatically cycle through them at a set interval. While they're not all to my taste, with jetAudio providing so many to choose from this hardly warrants a complaint. You can see a few of my favorites in the compilation below.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <video controls preload="none" class="show-when-light" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-visualizer-poster.jpg" alt="Video demonstrating jetAudio's visualizers in light mode" title="Demonstrating jetAudio's visualizers in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-visualizer.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/jetaudio/light-visualizer.webm" type="video/webm">
@@ -92,30 +92,30 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-     <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>With plenty of visualizers to choose from, it’s one of the most engaging player views of the lot.</em></li>
+     <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>With plenty of visualizers to choose from, it’s one of the most engaging player views of the lot.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>Lyrics support</strong></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features</strong>
+        <li>:large_orange_diamond: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong>Proper sorting is available in the “Artists” view, but is unfortunately not supported in the “Albums” view.</li>
-                <li><span class="bullet">:trophy:</span> <strong>Album grid view: </strong><em>Allows you to not only use grids but also customize the number of columns. Only one other player lets you do this (Marvis Pro).</em></li>
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong>Proper sorting is available in the “Artists” view, but is unfortunately not supported in the “Albums” view.</li>
+                <li>:trophy: <strong>Album grid view: </strong><em>Allows you to not only use grids but also customize the number of columns. Only one other player lets you do this (Marvis Pro).</em></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
+        <li>:x: <strong>Discovery features</strong></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/9"><p class="button">Next App: “Longplay”</p></a></li>
 </ul>
 

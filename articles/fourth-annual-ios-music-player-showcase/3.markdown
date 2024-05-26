@@ -29,7 +29,7 @@ continuation:
 
 ## ![Mixtapes' iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/icon.png "Mixtapes' iOS app icon"){: .app-icon } Mixtapes
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage-poster.jpg" alt="Video demonstrating Mixtapes' usage in light mode" title="Demonstrating Mixtapes' usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage-poster.jpg" alt="Video demonstrating Mixtapes' usage in dark mode" title="Demonstrating Mixtapes' usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/dark-usage.webm" type="video/webm">
@@ -91,7 +91,7 @@ The traditional browsers like "Albums" are close in appearance and navigation to
 
 Continuing on to the "More" page, it's a near carbon copy of the "More" page originally found on the legacy Music.app on iOS 7 and earlier. It's on this page extra browsers like songs and genres are accessible. However, in Mixtapes' case, a "Settings" menu item also makes an appearance on this page. Within "Settings" is a remarkably dense and deep tree of various behavioral and appearance options, including the ability to customize both the mini-player and full-player's controls and visuals, automatically skip & hide explicit tracks with its novel "family friendly mode", and even the ability to enable filtering by BPM for your smart mixes[^bpm]. It's also worth noting that Mixtapes offers a staggering 120 alternative app icons, the most extensive I've seen offered in any music player and easily beating out the previous leader, [Marvis Pro], by a whopping 80 icons. With Mixtapes, listeners who care deeply about maintaining a particular home screen aesthetic have never had a better chance of finding the perfect icon.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/light-icons-1.webp">
@@ -123,7 +123,7 @@ Now with a deeper understanding of Mixtapes' design, traditional navigation, and
 
 That brings us finally to Mixtape's full-player, which by default features edge-to-edge album art, a deep album art blur as the background, and a modest suite of standard playback controls. The "deep blur" effect delivers variable results, sometimes looking incredible as is the case with [Yola](https://music.apple.com/us/artist/yola/203292917)'s [*Stand For Myself*](https://music.apple.com/us/album/stand-for-myself/1561240873) but other times looking nearly as bad as [Sathorn]'s full-player as is the case with [Bent Knee](https://music.apple.com/us/artist/bent-knee/474692510)'s [*Frosting*](https://music.apple.com/us/album/frosting/1588174160).
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/good.webp">
@@ -157,8 +157,8 @@ Unfortunately, Mixtapes does not properly support the iPad.
 
 ### Widgets
 
-<div class="box widget">
-    <div style="flex:0 1 40%;">
+<div class="row resist-wrap">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-large-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-large-widget.webp">
@@ -166,7 +166,7 @@ Unfortunately, Mixtapes does not properly support the iPad.
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-medium-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-medium-widget.webp">
@@ -174,7 +174,7 @@ Unfortunately, Mixtapes does not properly support the iPad.
             </picture>
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-small-widget.png">
             <picture>
                 <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/1-small-widget.webp">
@@ -194,31 +194,31 @@ The medium widget is a bit more traditional by leveraging a two-column design, f
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Apple Music integration</dt>
+        <dt>:heavy_check_mark: Apple Music integration</dt>
         <dd><p>While not anything particularly groundbreaking, Mixtapes offers a standard Apple Music discovery page and expected integration like the ability to search either your local library or Apple Music’s catalog.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Again, while not particularly groundbreaking, Mixtapes does indeed support a traditional lyrics view by tapping the album art.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:large_orange_diamond: Beautiful or visually engaging full-player</dt>
         <dd><p>While Mixtapes full-player looks gorgeous in some cases, its results are exceptionally inconsistent and highly dependent on the album art.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+        <dt>:large_orange_diamond: Discovery features</dt>
         <dd><p>Its “Smart Mixes” feature is a great start, but not counting Apple Music it’s the only means of discovery in the app, and its limited capabilities prevent it from replacing expected discovery collections like “Recently Added”.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dt>:large_orange_diamond: Album-focused features</dt>
             <dd><p>Much to my delight, my preferred album sorting method (Artist > Chronological) is supported. However, I’d love for Mixtapes to take its Smart Mixes further by providing the ability to optionally filter and sort albums instead or in addition to songs.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:x:</span> iPad support</dt>
+        <dt>:x: iPad support</dt>
         <dd><p>It can perhaps be written off given Mixtape’s young age, but I still find myself disappointed at the lack of iPad version.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/4"><p class="button">Next App: “MPX EQ”</p></a></li>
 </ul>
 

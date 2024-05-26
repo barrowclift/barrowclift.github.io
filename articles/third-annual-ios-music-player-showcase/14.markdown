@@ -16,7 +16,7 @@ continuation:
 
 ## !["Plum" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .app-icon } Plum
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with light theme" title="Demonstrating 'Plum' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "Plum" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-now-playing.jpg '"Plum" light theme player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage-poster.jpg" alt="Video demonstrating 'Plum' usage with dark theme" title="Demonstrating 'Plum' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-usage.webm" type="video/webm">
@@ -56,7 +56,7 @@ I somehow managed to miss the delightfully named [Plum] the past couple years, o
 
 Its individuality doesn't stop there; the player view is also unique, featuring a thick, custom progress indicator and volume slider, massive track metadata, and a [jetAudio]-style hidden toolbar tucking away ancillary controls and features. Visually, the player takes a radical approach of neither using a solid color nor incorporating the standard translucent album art background nearly every other player uses. Instead, it opts for an edge-to-edge gradient featuring a primary color from the album art. While I don't find the effect as stunning as other players' approaches, the effect is always pleasing and its shear novelty makes it a treat to the eyes.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg">
         ![Image of the light mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
     </a>
@@ -82,7 +82,7 @@ While its hidden toolbar is nowhere near as feature-rich as jetAudio's, it does 
 
 There's more yet to discover in Plum's player view; Plum is the only player available today that offers two radically different player view designs for you to choose from: "Modern", which is the design demonstrated above, and "Classic", which is strongly reminiscent of Music.app's player view design in iOS 8. While I personally prefer its original "Modern" appearance for its novelty, I'm trilled to see players provide appearance customizations like this. It not only provides a means of visual personalization, but also provides functional value for users that may prefer more immediate access to controls in the "Classic" appearance that would otherwise be hidden the "Modern" appearance's toolbar.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-classic-red.webp">
@@ -138,24 +138,24 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view: </strong><em>Plum sports both a truly unique “Modern” appearance in addition to a “Classic” appearance, the only player to provide such a feature.</em></li>
+        <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>Plum sports both a truly unique “Modern” appearance in addition to a “Classic” appearance, the only player to provide such a feature.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support: </strong><em>I must note I truly dislike the current iPad player view implementation, but Plum does indeed support the iPad.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While there’s no support for filter or rule-based collections, support for manually creating your own collections with the “Folders” feature and the first-class “Recently Added” and “Favorites” views do the job.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused features: </strong><em>While lack of proper sorting is a big disappointment, rich grid view support and the ability to pin the “Albums” view as Plum’s home page help make up for it.</em>
+        <li>:heavy_check_mark: <strong>Lyrics support</strong></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support: </strong><em>I must note I truly dislike the current iPad player view implementation, but Plum does indeed support the iPad.</em></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>While there’s no support for filter or rule-based collections, support for manually creating your own collections with the “Folders” feature and the first-class “Recently Added” and “Favorites” views do the job.</em></li>
+        <li>:heavy_check_mark: <strong>Album-focused features: </strong><em>While lack of proper sorting is a big disappointment, rich grid view support and the ability to pin the “Albums” view as Plum’s home page help make up for it.</em>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/15"><p class="button">Next App: “Power Player”</p></a></li>
 </ul>
 

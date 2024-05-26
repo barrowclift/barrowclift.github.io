@@ -156,9 +156,9 @@ During Tower 2's development, Fournova's designer, [Fabricio Rosa Marques][Marqu
 
 However, when time came for me to assist beta testing Tower 3, what awaited me in my Downloads folder was this hideous thing.
 
-<figure class="half-inline">
+<div class="restrict-growth-to-half">
     <img src="{{ site.dropbox }}/eulogy-for-a-good-icon/tower-3-icon.png">
-</figure>
+</div>
 
 This is without a doubt the most incompetently made macOS icon I've ever seen. It fails at every measure to acknowledge the platform's design guidelines, resulting in an Mac icon that is objectively __awful__.
 
@@ -206,7 +206,7 @@ __You deserve better than that__, and designers like Schupp have a responsibilit
 
 Cheers to Tower's good icon design, I can only hope one day it will return.
 
-<div id="article-linkback">
+<div id="farewell-stamp">
     <a href="/about">⌘</a>
 </div>
 

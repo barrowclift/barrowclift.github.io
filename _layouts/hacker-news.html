@@ -141,30 +141,30 @@ Emulates Hackers News' "interesting" look & feel.
         #dark #logo:hover #signature path {
             fill: white;
         }
-        button.pill,
-        button.pill path,
-        #dark button.pill path,
-        #dark button.pill:hover,
-        #dark button.pill:hover path,
-        #dark button.pill:active,
-        #dark .setting-toggles.active button.pill,
-        #dark .setting-toggles.active button.pill path,
+        #settings-button-wrapper button,
+        #settings-button-wrapper button path,
+        #dark #settings-button-wrapper button path,
+        #dark #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper.active button path,
         button.bigfoot-footnote__button {
             fill: black !important;
             transform: unset !important;
             background-color: unset !important;
             box-shadow: unset !important;
         }
-        button.pill:hover,
-        button.pill:hover path,
-        button.pill:active,
-        .setting-toggles.active button.pill,
-        .setting-toggles.active button.pill path,
-        #dark button.pill:hover,
-        #dark button.pill:hover path,
-        #dark button.pill:active,
-        #dark .setting-toggles.active button.pill,
-        #dark .setting-toggles.active button.pill path {
+        #settings-button-wrapper button:hover,
+        #settings-button-wrapper button:hover path,
+        #settings-button-wrapper button:active,
+        #settings-button-wrapper.active button,
+        #settings-button-wrapper.active button path,
+        #dark #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper.active button path {
             fill: white !important;
             transform: unset !important;
             background-color: unset !important;
@@ -175,26 +175,21 @@ Emulates Hackers News' "interesting" look & feel.
             top: 0;
             padding-top: 0.4em !important;
         }
-        #menubar li.setting-toggles {
+        #menubar li#settings-button-wrapper {
             margin-left: 0;
             margin-right: 0;
         }
         .contact {
             display: none !important;
         }
-        /*#menubar menu li.setting-toggles {
-            margin-left: 0vw;
-            margin-right: 0vw;
-            min-width: auto;
-        }*/
         #menubar menu {
             text-align: left;
             width: auto;
         }
-        .pill svg {
+        #settings-button-wrapper button svg {
             height: 1rem;
         }
-        button.pill {
+        #settings-button-wrapper button {
             line-height: 0rem !important;
             top: 0 !important;
             width: auto !important;
@@ -267,7 +262,7 @@ Emulates Hackers News' "interesting" look & feel.
             #menubar menu {
                 text-align: center;
             }
-            .pill svg {
+            #settings-button-wrapper button svg {
                 height: 1.3rem;
             }
             #logo:after {
@@ -284,7 +279,7 @@ Emulates Hackers News' "interesting" look & feel.
                 padding-top: 0.35em !important;
                 position: absolute;
             }
-            #menubar li.setting-toggles {
+            #menubar li#settings-button-wrapper {
                 margin-left: -3.15em;
             }
         }

@@ -29,7 +29,7 @@ continuation:
 
 ## ![jetAudio's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/icon.png "jetAudio's iOS app icon"){: .app-icon } jetAudio
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in light mode" title="Demonstrating jetAudio's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage-poster.jpg" alt="Video demonstrating jetAudio's usage in dark mode" title="Demonstrating jetAudio's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/dark-usage.webm" type="video/webm">
@@ -96,7 +96,7 @@ This focus on settings and customization comes with the obvious benefits and dra
 
 Turning our attention towards jetAudio's browsing experience, it comes with all the browsers like "Albums" and "Artists" that you've come to expect from a general-purpose player. jetAudio opts for displaying these pages with a vertical menu that slides in from the left via a gesture or the hamburger menu on the top bar. This allows jetAudio the extra space to anchor its mini-player right at the bottom of the app instead of setting it on top of or "floating" above a tab bar as seen in many other players. As mentioned before, each of those browsing pages offer per-page customization to hide album art, adjust font size, change layout style, and more, giving you tremendous control over jetAudio's browsing experience. I love being able to make the "Songs" page display just a plain list without album art, the "Albums" page a ×2 grid of my albums, and the "Artists" page a list view with album art, all thanks to jetAudio's settings.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/light-1.webp">
@@ -168,30 +168,30 @@ Finally, there's the fascinating new option for jetAudio to preserve playback po
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:trophy:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:trophy: Beautiful or visually engaging full-player</dt>
         <dd><p>It’s deeply customizable, offers the best in-app equalizer solution to date, supports dozens of visualizers, and now this year supports running those visualizers in full screen. jetAudio sets the bar for full-player functionality.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:heavy_check_mark:</span> Lyrics support</dt>
+        <dt>:heavy_check_mark: Lyrics support</dt>
         <dd><p>Lyrics can be toggled on or off by tapping the album art and are badly overlaid onto when activated. It’s pretty hideous, but the feature is there and works.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Light &amp; dark themes</dt>
-        <dt><span class="bullet">:heavy_check_mark:</span> iPad support</dt>
+        <dt>:heavy_check_mark: Light &amp; dark themes</dt>
+        <dt>:heavy_check_mark: iPad support</dt>
         <dd><p>There’s an iPad version available, and it’s reasonably performant with minimal screen size optimizations. Perfectly acceptable.</p></dd>
-        <dt><span class="bullet">:heavy_check_mark:</span> Album-focused features</dt>
+        <dt>:heavy_check_mark: Album-focused features</dt>
         <dd><p>The “Albums” browser can be tweaked both to display albums as a grid and to sort by my preferred method (Artist > Chronological). There aren’t any other album-focused features to speak of, but this is certainly enough.</p></dd>
     </dl>
 
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
-        <dt><span class="bullet">:x:</span> Discovery features</dt>
+        <dt>:x: Apple Music integration</dt>
+        <dt>:x: Discovery features</dt>
         <dd><p>There’s nary a “Recently Added” or “Recently Played” collection to be found, deeply disappointing.</p></dd>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/11"><p class="button">Next App: “Longplay”</p></a></li>
 </ul>
 

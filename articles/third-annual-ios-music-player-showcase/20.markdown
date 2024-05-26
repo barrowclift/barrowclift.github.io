@@ -84,7 +84,7 @@ __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player
 ... if your primary music library is managed on a Mac
 : __[!["Doppi" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi](https://doppi.app):__ Supports every Apple-only protocol for sending files I can think of, which I've found to be a much more pleasant experience than the open protocol alternatives. While Doppler 2 also supports plenty of means to import your music, I find Doppi's user experience tips the scales in its favor.
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/21"><p class="button">Last Section: “Conclusion”</p></a></li>
 </ul>
 

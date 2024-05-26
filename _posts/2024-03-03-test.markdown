@@ -78,7 +78,27 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+-----
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<button>Test</button>
+
+<a href="#" class="button">Test</a>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in light mode" title="Demonstrating Marvis Pro's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/light-usage.webm" type="video/webm">
@@ -98,7 +118,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating Marvis Pro's usage in dark mode" title="Demonstrating Marvis Pro's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/dark-usage.webm" type="video/webm">
@@ -119,7 +139,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </a>
 </div>
 
-<div style="text-align:center" class="inline app-download">
+<div style="text-align:center" class="app-download">
     <a href="https://apps.apple.com/us/app/marvis-pro/id1447768809">
         <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
         <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
@@ -192,9 +212,20 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <details>
-    Test
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
 </details>
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<details>
+    Test
+</details>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -222,7 +253,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="inline shadow">
+<div class="shadow">
     <img src="{{ site.dropbox }}/fearful-computing/cable-club.jpg" alt="Pokémon screen shot with “Welcome to the Cable Club” text bubble" title="Oh god, it begins...">
 </div>
 
@@ -286,7 +317,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="inline macos-window-screenshot">
+<div class="macos-window-screenshot">
     <img srcset="{{ site.dropbox }}/making-terminal-better/default-terminal.png 100w" sizes="50px" src="{{ site.dropbox }}/making-terminal-better/default-terminal.png" alt="Terminal window, all output is in plain, black text against a blaring white background" title="This look and feel is *great* for people that don't like understanding what's going on.">
 </div>
 
@@ -297,7 +328,6 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # COLORS
 # ----------------------------------------------
@@ -325,7 +355,6 @@ export BLUE='\[\033[0;34m\]'
 export NORMAL='\[\033[00m\]'
 export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 {% endhighlight %}
-</div>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -347,7 +376,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ```
-I'm performed text,
+I'm preformatted text,
 not code.
  (please
    respect
@@ -355,9 +384,24 @@ not code.
        spacing!)
 ```
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+```bash
+#!/bin/sh
+
+echo "Hello, world!"
+exit 0
+```
+
 For the ASCII artists out there, you can also easily tighten the font's line height by providing the `ascii-art` class to the `<pre>` element (example below created by [grp](http://www.ascii-code.com/ascii-art/computers/apple.php)).
 
-<pre class="ascii-art"><code>                   __________________________
+<pre class="ascii-art"><code>
+                   __________________________
            __..--/".'                        '.
    __..--""      | |                          |
   /              | |                          |
@@ -387,7 +431,135 @@ For the ASCII artists out there, you can also easily tighten the font's line hei
   "-._ .....  .| |                         |
       "-._.....| |             ___...---"""'
           "-._.| | ___...---"""
-              """""             grp</code></pre>
+              """""             grp
+
+</code></pre>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation <kbd>^</kbd> + <kbd>⌘</kbd> + <kbd>spacebar</kbd> ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore <del>eu <code>fugiat nulla</code> pariatur</del>. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<pre>
+<code>Here
+       i 
+
+
+         am
+</code>
+</pre>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis <mark>nostrud exercitation <code>test of</code></mark> the thing ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum <mark>dolore eu <a href="#">fugiat nulla</a> pariatur</mark>. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+1. Pick a IPv4 subnet range where Wireguard and the attached clients will reside.
+> For example, `10.0.10.0/24`, which [expands](https://ipaddressguide.com/cidr) to cover all IPs from `10.0.10.0` to `10.0.10.255`.
+2. Enter the following lines into `/etc/pf.conf`. These additional lines will allow us to access other clients on the LAN and route internet traffic for web browsing on the VPN. Note the placement of the lines: *the placement and order of these rules matters, do not rearrange them*. Ensure that the subnet matches the one you chose in the previous step and that `utun3` ends up matching the interface name that Wireguard uses on your machine when you eventually start it up for the first time. If it does not, change the name here to match (for example, it might be `wg0`, `utun1`, etc.). Additionally, if your macOS server is not connected via ethernet, be sure to update `en0` to match whatever other wired or wireless interface you're using instead:
+   ```bash
+   # ...
+   nat-anchor "com.apple/*"
+
+   # [NEW LINES]
+   nat on en0 from 10.0.10.0/24 to any -> (en0)
+   nat on utun3 from 10.0.10.0/24 to any -> (utun3)
+   # [END NEW LINES]
+
+   rdr-anchor "com.apple/*"
+   # ...
+   ```
+3. Test your `pf.conf` changes with `pfctl -nf /etc/pf.conf`. Once you've verified it returns with no errors, run `pfctl -f /etc/pf.conf` to manually load the changes. No restart is necessary.
+4. You'll need to create a small script which a daemon property file we'll make later will execute so these rules are applied on startup. I placed my script at `/usr/local/etc/wireguard-pf.sh`, but you can put yours anywhere you want. The contents of this script are very simple:
+   ```bash
+   #!/bin/sh
+
+   pfctl -f /etc/pf.conf
+   ```
+5. Create the daemon property file at at `/Library/LaunchDaemons/com.username.wireguardpf.plist` that will run the small script we just created. This can be whatever name you prefer, but it should still reside in `/Library/LaunchDaemons/`. The contents of the file follows, but remember to substitute the path and filename you chose in the previous step):
+   ```xml
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>Disabled</key>
+       <false/>
+       <key>KeepAlive</key>
+       <dict>
+           <key>SuccessfulExit</key>
+           <false/>
+       </dict>
+       <key>Label</key>
+       <string>org.username.wireguardpf</string>
+       <key>ProgramArguments</key>
+       <array>
+           <string>/usr/local/etc/wireguard-pf.sh</string>
+       </array>
+       <key>RunAtLoad</key>
+       <true/>
+   </dict>
+   </plist>
+   ```
+6. Ensure the correct permissions are granted to the two files you just created and then ensure the daemon is loaded with `launchctl`. By loading the script with this program, macOS will know to run the script on startup. Remember to use the paths and filenames you previously chose:
+   ```console
+   $ sudo chown root:wheel /usr/local/etc/wireguard-pf.sh
+   $ sudo chmod 755 /usr/local/etc/wireguard-pf.sh
+   $ sudo chown root:wheel /Library/LaunchDaemons/org.username.wireguardpf.plist
+   $ sudo launchctl load /Library/LaunchDaemons/org.username.wireguardpf.plist
+   ```
+7. Create a file named `/etc/sysctl.conf` with the contents below. In order for the added rules in `pf.conf` to be useful, we must ensure our peers continue to report their Wireguard-assigned IPs while on the VPN. The following lines do this for us, and is applied on startup automatically:
+   ```bash
+   net.inet.ip.forwarding=1
+   net.inet6.ip6.forwarding=1
+   ```
+8. To assist testing the setup later, we'll make those settings take effect now by executing the following commands in Terminal (or reboot, your choice):
+   ```console
+   $ sysctl -w net.inet.ip.forwarding=1
+   $ sysctl -w net.inet6.ip6.forwarding=1
+   ```
+9. Decide a port to host Wireguard on (the standard port is 51820). If your router doesn't have this port opened and forwarding to your Wireguard server local IP yet, do so now. For the sake of brevety and the sheer breadth of router software out there, specific instructions for how to do this will not be included. For assistance, Google your Internet provider's name and "setup port forwarding".
+10. Install Wireguard by downloading the free [Wireguard App from the App Store](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12). Finally, something easy!
+11. Launch the Wireguard app, then click "File" > "Add Empty Tunnel...". Pick a name to represent your VPN service then paste the following into the config body. Be sure to update the placeholders with your own values:
+    ```ini
+    [Interface]
+    # Substitute with the subnet for Wireguard you chose earlier
+    Address = 10.0.10.0/24
+    PrivateKey = XXX
+    # If you chose a different port earlier when setting up port forwarding on your router, update the port here to match.
+    ListenPort = 51820
+    # This is to prevent IPv4 & IPv6 DNS leaking when browsing the web on the VPN. Feel free to use whatever DNS provider you prefer.
+    DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111
+
+    [Peer]
+    PublicKey = XXX
+    # Chose an IP that this peer will use when connected to Wireguard. This should be within the subnet you chose earlier.
+    AllowedIPs = 10.0.10.10/32
+
+    # ... and other Peers
+    # Follow the same steps as the example peer above for each new peer
+    ```
+12. Since documentation for setting up Wireguard *peers* is fairly mature at this point, this process won't be covered in depth here. As a sanity check, the configs used by your peers should look something like this
+    ```ini
+    [Interface]
+    # This MUST match the "AllowedIPs" IP you set for this peer in the server's config the previous step.
+    Address = 10.0.10.10/32
+    PrivateKey = XXX
+    # This is to prevent IPv4 & IPv6 DNS leaking when browsing the web on the VPN. Feel free to use whatever DNS provider you prefer.
+    DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111
+
+    [Peer]
+    PublicKey = XXX
+    # Your Wireguard server's public IP
+    Endpoint = XXX.XXX.XXX.XXX:51820
+    AllowedIPs = 0.0.0.0/0, ::/0
+    PersistentKeepalive = 25
+    ```
+13. Test your setup by first starting Wireguard on your macOS server with the app and then attempting to connect with your peer. Once connected, be sure to test the traffic routing was set up correctly by attempting to surf the web. Then, try connecting to the server itself and other computers on the LAN to ensure proper configuration.
+
+Congratulations! You're now among the dozen people crazy enough to serve Wireguard on macOS. Please feel free to reach out on [Twitter](https://twitter.com/Barrowclift) or via <a href="mailto:&#109;&#097;&#114;&#099;&#064;&#098;&#097;&#114;&#114;&#111;&#119;&#099;&#108;&#105;&#102;&#116;&#046;&#109;&#101;">email</a> if you have feedback or corrections, I'd love to hear from you.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -396,7 +568,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/home-sweet-home/settings.jpg" alt="iOS Settings Screen, General list item highlighted">
     <img src="{{ site.dropbox }}/home-sweet-home/general.jpg" alt="iOS General Settings Screen, Usage list item highlighted">
     <img src="{{ site.dropbox }}/home-sweet-home/usage.jpg" alt="iOS Usage Settings Screen, both Manage Storage list items highlighted">
@@ -409,7 +581,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="two-images">
+<div class="array">
     <img src="{{ site.dropbox }}/home-sweet-home/creative-folder-page-1.png" alt="iOS app folder called Creative, page 1 contains Notability, Pages, Notes, Day One, Reminders, Hyperlapse, GarageBand, Coda, and Voice Memos">
     <img src="{{ site.dropbox }}/home-sweet-home/creative-folder-page-2.png" alt="iOS app folder called Creative, page 2 contains PocketCAS, Scanner Pro, Dropbox, Obscura, Pixelmator, Metronome, and Numerical">
 </div>
@@ -421,7 +593,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="edge-to-edge large two-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/home-sweet-home/home-screen.jpg" alt="My iOS Homescreen, contains folders Creative, Games, Media, and Services in the first row, then Tumblr, Tweetbot, narwhal, Paper, Unread, Instapaper, MiniHack, DN Paper, Weather Line, Calendar, Vesper, and Ecoute. In the dock there are Messages, Safari, and Overcast">
 </div>
 
@@ -443,7 +615,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<figure class="edge-to-edge large two-images ios-screenshot">
+<figure class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-new.jpg" alt="The app switcher view, showing images for each of their last known states">
     <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-old.jpg" alt="The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles">
     <figcaption>
@@ -483,7 +655,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="inline macos-window-screenshot">
+<div class="macos-window-screenshot">
     <img src="{{ site.dropbox }}/two-is-one-one-is-none/storage.png" alt="A screenshot of the “Storage” tab in macOS's “About This Mac” tab, showing a 480GB hard drive" title="Dang, I may need to upgrade my internal hard drive soon.">
 </div>
 
@@ -494,7 +666,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<figure class="inline macos-window-screenshot">
+<figure class="macos-window-screenshot">
     <p><img srcset="{{ site.dropbox }}/back-to-the-mac/mail-default.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/mail-default.png" alt="Image of the default Mail Compose toolbar"></p>
     <figcaption>Default</figcaption>
 </figure>
@@ -517,9 +689,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="inline">
-    <img src="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg" alt="A screenshot of Backblaze's menu bar icon and available menu options">
-</div>
+<img src="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg" alt="A screenshot of Backblaze's menu bar icon and available menu options">
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -528,7 +698,25 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="edge-to-edge large two-images ios-screenshot">
+![A screenshot of Backblaze's menu bar icon and available menu options]({{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<img srcset="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg 100w" sizes="50px" src="{{ site.dropbox }}/two-is-one-one-is-none/menu-bar.jpg" alt="A screenshot of Backblaze's menu bar icon and available menu options">
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/widget-collapsed.jpg" alt="A screenshot of the new widgets view in iOS 10, showing Weather, Calendar, and Activity widgets.">
     <img src="{{ site.dropbox }}/listing-the-little-things/widget-expanded.jpg" alt="Another screenshot of that widgets view in iOS 10, this time with Weather expanded to additionally show the week's forecast.">
 </div>
@@ -540,7 +728,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="inline two-images">
+<div class="array">
     <img src="{{ site.dropbox }}/listing-the-little-things/watch-face.png" alt="A screenshot of the Modular watch face.">
     <img src="{{ site.dropbox }}/listing-the-little-things/dock.png" alt="A screenshot of the new dock in watchOS 3, with the &quot;Mail&quot; app preview showing &quot;No Mail&quot;.">
 </div>
@@ -552,7 +740,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="edge-to-edge medium two-images ios-screenshot">
+<div class="edge-to-edge medium array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/ios-watch-app.jpg" alt="A screenshot of the Watch iOS app displaying the new &quot;Dock&quot; preference pane.">
 </div>
 
@@ -563,8 +751,8 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<figure class="watchos-screenshot true-width">
-    <p><img src="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif" alt="An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed."></p>
+<figure class="watchos-screenshot">
+    <img srcset="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif 100w" sizes="50px" src="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif" alt="An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed.">
     <figcaption>
         Of course, it would be your finger instead of a mouse pointer. 😉
     </figcaption>
@@ -604,7 +792,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="half-inline">
+<div class="restrict-growth-to-half">
     <a href="https://www.dropbox.com">
         <img src="{{ site.dropbox }}/lossless-photo-sharing/dropbox.svg" alt="The Dropbox logo">
     </a>
@@ -620,7 +808,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <figure class="edge-to-edge medium macos-window-screenshot">
     <img src="{{ site.dropbox }}/tags-explained/before-tags.jpg" alt="A screenshot of a macOS Finder window of a folder filled with archived web pages. These pages are not organized at all.">
     <figcaption>
-        You’d have to check each page manually to see if it matches the criteria, thus this system is woefully inadequate.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod, tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non, proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </figcaption>
 </figure>
 
@@ -631,7 +819,129 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div class="edge-to-edge large three-images shadow">
+<div class="array">
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
+        <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-new.jpg" alt="The app switcher view, showing images for each of their last known states">
+    </a>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect-poster.jpg" alt="Video demonstrating Music.app's player view visualizer" title="Demonstrating Music.app's player view visualizer">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/new-effect.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect-poster.jpg" alt="Video demonstrating Music.app's lyrics view visualizer" title="Demonstrating Music.app's lyrics view visualizer">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/music-app/old-effect.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <figcaption>The new effect’s on the left, which is seen on the player and “regular” lyrics view. The original effect’s on the right, now viewable only for “live” lyrics on select Apple Music tracks. The playback speed’s increased to help demonstrate the effect over time.</figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="array ios-screenshot">
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg">
+        ![Image of the light mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg">
+        ![Image of the light mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg">
+        ![Image of the light mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg">
+        ![Image of the dark mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg">
+        ![Image of the dark mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg">
+        ![Image of the dark mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <figcaption>The “Modern” player view appearance.</figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="array edge-to-edge">
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/longplay/alt-icons.webp">
+        <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-new.jpg" alt="The app switcher view, showing images for each of their last known states">
+    </a>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="edge-to-edge large array ios-screenshot">
+    <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-new.jpg" alt="The app switcher view, showing images for each of their last known states">
+    <img src="{{ site.dropbox }}/multitasking-misconceptions/multitasking-old.jpg" alt="The app switcher view, this time showing the oldest apps, which are now displayed as just blank rectangles">
+    <figcaption>
+        Note how the app preview images change from most recently used to oldest.
+    </figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<figure class="array edge-to-edge ios-screenshot">
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg">
+        ![Image of the light mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg">
+        ![Image of the light mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg">
+        ![Image of the light mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/light-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg">
+        ![Image of the dark mode player view with a predominantly red record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-red.jpg "The player view with a predominantly red record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg">
+        ![Image of the dark mode player view with a predominantly green record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-green.jpg "The player view with a predominantly green record in the 'Modern' appearance")
+    </a>
+    <a markdown="1" class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg">
+        ![Image of the dark mode player view with a predominantly blue record in the 'Modern' appearance]({{ site.dropbox }}/third-annual-ios-music-player-showcase/plum/dark-blue.jpg "The player view with a predominantly blue record in the 'Modern' appearance")
+    </a>
+    <figcaption>The “Modern” player view appearance.</figcaption>
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="edge-to-edge large array shadow">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-screen.jpg" alt="My old iPod Video's scratchy screen">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-front.jpg" alt="My old iPod Video's aged, dim display and yellowed white plastic front">
     <img src="{{ site.dropbox }}/restoring-my-ipod-video/jpg/old-ipod-video-back.jpg" alt="My old iPod Video's battered and scratched metal back plate">

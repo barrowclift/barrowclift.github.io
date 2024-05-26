@@ -57,7 +57,7 @@ Effectively, this feature replaces having to maintain five individual alarms for
 
 The iOS Music app has been an unequivocal disaster since it's half-assed redesign in iOS 7 and [over-engineered redesign in iOS 9 for Apple Music](http://cezarywojcik.com/2015/06/30/apple-music-usability-nightmare). iOS 10 promised to fix the sins of the past with yet another Music app redesign, this time focusing on bringing order and simplicity back to the once-beloved app.
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/music-app-screenshot-1.jpg" alt="A screenshot of the &quot;Library&quot; tab in the redesigned Music app in iOS 10. There's a sub-menu at the very top containing &quot;Playlists&quot;, &quot;Artists&quot;, &quot;Albums&quot;, and &quot;Downloaded&quot;. There's barely any room left on the screen for anything else!">
     <img src="{{ site.dropbox }}/listing-the-little-things/music-app-screenshot-2.jpg" alt="A screenshot of that same &quot;Library&quot; tab in the redesigned Music app in iOS 10, except now the &quot;Edit&quot; button has been tapped and only “Artists” and &quot;Albums&quot; are checked in the list.">
     <img src="{{ site.dropbox }}/listing-the-little-things/music-app-screenshot-3.jpg" alt="A final screenshot of the Music app, now with the sub-menu at the top containing just &quot;Artists&quot; and &quot;Albums&quot;, leaving plenty of other space on the screen for other things.">
@@ -71,7 +71,7 @@ iOS 10 now offers the ability for complicated widgets to contain optional, addit
 
 As always, you can also scroll down to the bottom of the widgets view and tap "Edit" to see other widgets available to add or to remove ones you don't find useful.
 
-<div class="edge-to-edge large two-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/widget-collapsed.jpg" alt="A screenshot of the new widgets view in iOS 10, showing Weather, Calendar, and Activity widgets.">
     <img src="{{ site.dropbox }}/listing-the-little-things/widget-expanded.jpg" alt="Another screenshot of that widgets view in iOS 10, this time with Weather expanded to additionally show the week's forecast.">
 </div>
@@ -82,7 +82,7 @@ As a fresh graduate living in the heart of Philly, I have neither the money nor 
 
 Thankfully, [as of iOS 7](http://www.cultofmac.com/233940/set-the-preferred-directions-type-for-maps-in-ios-7-beta-ios-tips/), you can set your preferred transportation to whatever fits your lifestyle. If you walk everywhere like me, it makes sense to default to "walking", while if you're a heavy transit user it makes more sense to default to "transit" instead. Once those are set, you don't have to worry about switching the transportation type on the fly anymore and can focus on the reason you're using the app in the first place: getting to where you need to go the way *you* want to.
 
-<div class="edge-to-edge large two-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/settings-home.jpg" alt="A screenshot of the Settings app with the &quot;Maps&quot; menu item highlighted.">
     <img src="{{ site.dropbox }}/listing-the-little-things/settings-map.jpg" alt="A screenshot of the &quot;Maps&quot; preferences pane in the Settings app with the Preferred Transportation Type &quot;Walking&quot; checked.">
 </div>
@@ -94,7 +94,7 @@ Thankfully, [as of iOS 7](http://www.cultofmac.com/233940/set-the-preferred-dire
 
 As discussed previously in "[Home Sweet Home](/articles/home-sweet-home)", carefully choosing which apps to include in your home screen and dock in iOS is crucial to creating the optimal iOS experience. This truth carries over to the new Dock feature in watchOS 3. Previously, whenever you wanted to access a favorite app on watchOS you either had to add it as a glance or on your watch face as a complication, otherwise you had to search the [awful app honeycomb menu](https://overcast.fm/+BtuzpCzgI/2:10:14) to find and open it. Not to mention, then you'd have to wait 5-10 seconds for the app to load which utterly defeats the purpose of using the watch instead of your phone in the first place.
 
-<div class="inline two-images">
+<div class="inline array">
     <img src="{{ site.dropbox }}/listing-the-little-things/watch-face.png" alt="A screenshot of the Modular watch face.">
     <img src="{{ site.dropbox }}/listing-the-little-things/dock.png" alt="A screenshot of the new dock in watchOS 3, with the &quot;Mail&quot; app preview showing &quot;No Mail&quot;.">
 </div>
@@ -111,7 +111,7 @@ This makes which apps you choose for the dock critical; you don't want to add to
 
 You should now have roughly five or six apps to add to your dock. If you have more than that I highly recommend trimming it down to avoid overfilling the dock and slowing yourself down. You can add these apps to the dock from the "Dock" menu in iOS's Watch app. Put the ones you want to access the most at the top and then the ones you want to access the least near the bottom.
 
-<div class="edge-to-edge medium two-images ios-screenshot">
+<div class="edge-to-edge medium array ios-screenshot">
     <img src="{{ site.dropbox }}/listing-the-little-things/ios-watch-app.jpg" alt="A screenshot of the Watch iOS app displaying the new &quot;Dock&quot; preference pane.">
 </div>
 
@@ -121,8 +121,8 @@ You may be wondering why I'm suggesting you exclude apps from the dock that you 
 
 While the new dock in watchOS 3 is fantastic for accessing your apps quickly, it can take a bit longer than desired to scroll to a particular app in the list by using the Digital Crown or standard swipes. Thankfully, there's another method of scrolling which makes the process as fast as you can move: the "tap and drag" section at the bottom of the dock. Instead of having to spin or scroll over multiple times to get to where you want, you can just tap and drag quickly to your destination. Take a look!
 
-<figure class="watchos-screenshot true-width">
-    <p><img src="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif" alt="An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed."></p>
+<figure class="watchos-screenshot">
+    <img srcset="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif 100w" sizes="50px" src="{{ site.dropbox }}/listing-the-little-things/speedy-dock.gif" alt="An animated gif showing watchOS 3 scrolling through all the docked apps with incredible speed.">
     <figcaption>
         Of course, it would be your finger instead of a mouse pointer. 😉
     </figcaption>

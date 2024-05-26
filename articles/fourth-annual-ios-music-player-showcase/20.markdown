@@ -25,7 +25,7 @@ As the music player genre continues to mature and grow, so does the options avai
 
 To put it lightly, 2021 was a wild ride, and it's proving increasingly difficult to predict what the new year will bring. However, if this yearly assessment of the music player landscape has taught me anything, it's that I know for certain what we can expect in 2022; the music player ecosystem will continue to thrive. Happy listening into 2022, everyone!
 
-<div id="article-linkback">
+<div id="farewell-stamp">
     <a href="/about">⌘</a>
 </div>
 

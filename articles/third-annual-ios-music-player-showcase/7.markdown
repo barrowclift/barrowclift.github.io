@@ -16,7 +16,7 @@ continuation:
 
 ## !["Dot Music" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/icon.png '"Dot Music" iOS app icon'){: .app-icon } Dot Music
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with light theme" title="Demonstrating 'Dot Music' usage with light theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "Dot Music" light theme player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-now-playing.jpg '"Dot Music" light theme player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage-poster.jpg" alt="Video demonstrating 'Dot Music' usage with dark theme" title="Demonstrating 'Dot Music' usage with dark theme">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-usage.webm" type="video/webm">
@@ -60,7 +60,7 @@ Dot Music's settings are sparse, providing some minor configuration options to a
 
 That covers it; there's so little of interest here I'm quite frankly at a loss of what else to say. It's the only player on this list I'd feel comfortable calling a rip-off, in this case of Cs's original [5.0 design](http://web.archive.org/web/20201112014148/https://apps.apple.com/app/cs-music-player/id924491991) from last year. In fact, Dot Music is so visually similar to Cs 5 I'm not sure I could distinguish one from the other at a moment's glance, given the same accent color.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-cs.webp">
@@ -94,25 +94,25 @@ One could argue that general-purpose players will naturally look and behave the 
 
 Dot Music provides two widget collections to choose from with a single size variation for each.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-3.png)
         </a>
     </div>
-    <div style="flex:0 1 20%;">
+    <div class="widget small">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/widget-4.png)
         </a>
@@ -121,25 +121,25 @@ Dot Music provides two widget collections to choose from with a single size vari
 
 Compared to the widgets provided by other players, Dot Music's "Now Playing" widget collection leaves a lot to be desired. While the square "Now Playing" widget is perfectly fine, the rectangle widget does nothing to justify its larger size. While other players fill the extra space either with more metadata or playback controls (in [Albums] case, [even both](/articles/third-annual-ios-music-player-showcase/3#widgets)), all Dot Music does is stretch the widget box to fill the extra space. The example above demonstrates this issue, the entire right section of the larger widget is an empty void of sadness where interesting things *could* be shown.
 
-<div class="show-when-dark box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-dark row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-1.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/dark-widget-2.png)
         </a>
     </div>
 </div>
-<div class="show-when-light box widget">
-    <div style="flex:0 1 40%;">
+<div class="show-when-light row resist-wrap">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-1.png)
         </a>
     </div>
-    <div style="flex:0 1 40%;">
+    <div class="widget medium-or-large">
         <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png">
             ![]({{ site.dropbox }}/third-annual-ios-music-player-showcase/dot-music/light-widget-2.png)
         </a>
@@ -152,24 +152,24 @@ Then, there's Dot Music's "Favorites" widgets, which display the albums you've f
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>iPad support</strong></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Discovery features</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-        <li><span class="bullet">:x:</span> <strong>Album-focused features</strong>
+        <li>:x: <strong>Lyrics support</strong></li>
+        <li>:x: <strong>Discovery features</strong></li>
+        <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+        <li>:x: <strong>Album-focused features</strong>
             <ul class="bare">
-                <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:x: <strong>Proper sorting</strong></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/8"><p class="button">Next App: “jetAudio”</p></a></li>
 </ul>
 

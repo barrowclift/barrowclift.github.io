@@ -29,7 +29,7 @@ continuation:
 
 ## ![MPX EQ's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/icon.png "MPX EQ's iOS app icon"){: .app-icon } MPX EQ
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in light mode" title="Demonstrating MPX EQ's usage in light mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/light-usage.webm" type="video/webm">
@@ -49,7 +49,7 @@ continuation:
         </picture>
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage-poster.jpg" alt="Video demonstrating MPX EQ's usage in dark mode" title="Demonstrating MPX EQ's usage in dark mode">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/dark-usage.webm" type="video/webm">
@@ -97,7 +97,7 @@ MPX EQ's choice of menu items may be unconventional, but its full-player is rema
 
 After launching the full-player, apart for the peculiar inclusion of skip back and forward 15 second buttons typically found in podcast players and a curious waveform button between them, you'll only find essential controls and metadata, resulting in a pleasing minimal design not too far off from Music Player X's full-player. Upon tapping that alluring waveform button, listeners are greeted with a novel fullscreen visualizer, featuring just the album art, bare minimum playback controls, and one of half a dozen different visualizer styles. Unfortunately, despite my love of iOS music player visualization, MPX EQ's visualizer support leaves a lot to be desired. Swapping visualizer styles is near impossible to discover, forcing listeners to first pause playback while on the visualizer page, tap where the visualizer *would* be shown, then resume playback to switch visualizers; simply tapping the visualizer area alone doesn't work. If there's another way to switch visualizers, I couldn't figure it out in all my time using the app. Additionally, my preferred visualizer (the "flame") is broken in the current App Store build for my device size, resulting in the flame hilariously dying out like a fire without enough kindling after only a few seconds of playback. A single bum visualizer style alone wouldn't be cause for much disappointment (after all, there are quite a few styles in [jetAudio] that I don't care for), but unfortuantely every other visualizer style currently offered by MPX EQ are subjectively poor in comparison, leaving me with one broken visualizer I would otherwise have liked, a handful of subpar alternatives, and an objectively terrible interface to switch between them.
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mpx-eq/hacker.webp">
@@ -139,28 +139,28 @@ MPX EQ—like its previous incarnation, Music Player X—does not provide any wi
 
 <div class="admonition aside">
     <dl>
-        <dt><span class="bullet">:large_orange_diamond:</span> Light &amp; dark themes</dt>
+        <dt>:large_orange_diamond: Light &amp; dark themes</dt>
         <dd><p>Like Music Player X before it, while it does indeed offer a theming system, that themeing system does not respond to iOS’s current theme option.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> iPad support</dt>
+        <dt>:large_orange_diamond: iPad support</dt>
         <dd><p>Providing an iPad version at all is appreciated, but there’s far too many layout bugs and poor layout choices made on the larger screen for it to hold up.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Discovery features</dt>
+        <dt>:large_orange_diamond: Discovery features</dt>
         <dd><p>An effort was made with the new “Suggestions” collection, but more is expected nowadays.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Beautiful or visually engaging full-player</dt>
+        <dt>:large_orange_diamond: Beautiful or visually engaging full-player</dt>
         <dd><p>Regrettably, the visualizer is difficult to use, majority of styles are not to my taste, and the one that is appears broken (the flames die out after a few seconds of playback). The full-player itself is not visually engaging or beautiful enough to compensate.</p></dd>
-        <dt><span class="bullet">:large_orange_diamond:</span> Album-focused features</dt>
+        <dt>:large_orange_diamond: Album-focused features</dt>
         <dd><p>The introduction of a grid layout option is fantastic in theory, but it’s far too compromised in its current form.</p></dd>
     </dl>
     
     <dl>
-        <dt><span class="bullet">:x:</span> Apple Music integration</dt>
+        <dt>:x: Apple Music integration</dt>
         <dd><p>MPX EQ was a great opportunity to add Apple Music support (where Music Player X did not), but this oppertunity was unfortunately missed.</p></dd>
-        <dt><span class="bullet">:x:</span> Lyrics support</dt>
+        <dt>:x: Lyrics support</dt>
     </dl>
 </div>
 
 -----
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/5"><p class="button">Next App: “Musens”</p></a></li>
 </ul>
 

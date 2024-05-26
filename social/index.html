@@ -9,11 +9,11 @@ design:
     .row {
         flex-grow: 1;
     }
-    .button-group {
-        padding-top: 1.3em;
+    ul.button-group {
+        margin-top: 1.3em;
         width: 100%;
     }
-    .button-group .button {
+    ul.button-group .button {
         text-align: center;
     }
     .button img {
@@ -125,20 +125,6 @@ design:
             background-color: hsl(213, 13%, 11%) !important;
             box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(213, 13%, 11%, 0.2);
         }
-    @media (min-width: 340px) {
-        .button-group li {
-            margin-left: 1.5vw;
-            margin-right: 1.5vw;
-            width: 45%;
-        }
-    }
-    @media (min-width: 700px) {
-        .button-group li {
-            margin-left: 0.325em;
-            margin-right: 0.325em;
-            width: 26%;
-        }
-    }
 </style>
 <div class="row">
     <div class="column w6">
@@ -146,7 +132,7 @@ design:
 
         <h4 style="margin-bottom:0;line-height:1.4em;text-align:center;">I’m Marc Barrowclift, you can find me on…</h4>
 
-        <ul class="button-group social">
+        <ul class="button-group fixed social">
             <li class="barrowclift"><span class="hint--top hint--rounded hint--bounce" data-hint="barrowclift.me"><a href="/"><p class="button"><img src="images/happy-mac.png" /><span>My Website</span></p></a></span></li>
             <li class="email"><span class="hint--top hint--rounded hint--bounce" data-hint="{{ site.email }}"><a href="mailto:{{ site.email }}"><p class="button"><img src="images/email.png" /><span>Email</span></p></a></span></li>
             <li class="mastodon"><span class="hint--top hint--rounded hint--bounce" data-hint="mastodon.social/@barrowclift"><a href="https://mastodon.social/@barrowclift"><p class="button"><img src="images/mastodon.png" /><span>Mastodon</span></p></a></span></li>

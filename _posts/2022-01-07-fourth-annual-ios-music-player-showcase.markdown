@@ -138,7 +138,7 @@ In order to better handle the increasing number of iOS music players, this artic
 
 With the stage set, it's now finally time to dive into 2021's players. Let's get started...
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/2"><p class="button">Next Section: “Honorable Mentions”</p></a></li>
 </ul>
 

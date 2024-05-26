@@ -16,7 +16,7 @@ continuation:
 
 ## !["SongOwl" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/icon.png '"SongOwl" iOS app icon'){: .app-icon } SongOwl
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating 'SongOwl' usage in light mode" title="Demonstrating 'SongOwl' usage in light mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage.webm" type="video/webm">
@@ -30,7 +30,7 @@ continuation:
         ![Image of "SongOwl" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-now-playing.jpg '"SongOwl" light player view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage-poster.jpg" alt="Video demonstrating 'SongOwl' usage in dark mode" title="Demonstrating 'SongOwl' usage in dark mode">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage.webm" type="video/webm">
@@ -58,7 +58,7 @@ SongOwl carries with it the same elegant, simple spirit of its Cs origins, but w
 
 It may seem puzzling to consolidate what was previously five discrete tab bar items in Cs into a single "Library" tab in SongOwl, but much like in Music.app those capabilities reveal themselves upon navigating to its tab view. While Music.app displays these items as predefined views which may be individually hidden or shown to taste, SongOwl has no such list. Instead, there's a conspicuous new icon in the left side of the "Library" view's menu bar. Tapping that button reveals the "Paths" menu, by far the most controversial change in SongOwl from its Cs beta period. In a fresh SongOwl install, there's only a single predefined path ("Library"), which displays an alphabetical list of your songs. Upon tapping the big <kbd>+ New Path...</kbd> button in that menu, a new "Path" item appears in the list. Grouping and sorting changes made for the currently selected "path" are then persisted *only* for that path. For example, you can create a new path, name it "Artists", then select "Artist" and "Alphabetical" as your grouping and sorting options to create your very own "Artists" view just like the "Artists" tab you'd find in Cs. This is of course a simple example, you can use the grouping and sorting options to make a wide variety of unique paths, such as "Recently Added" (finally!) and "Randomized Albums".
 
-<figure class="three-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
         <picture>
             <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
@@ -112,27 +112,27 @@ None.
 
 <div class="admonition aside">
     <ul class="emoji">
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support: </strong><em>While SongOwl supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, SongOwl’s approach is not to my taste.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & dark themes</strong></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery features: </strong><em>While not nearly as robust as I’d prefer, the new “Paths” system can support a decent amount of discovery collections like “Recently Added” and “Randomized Records”.</em></li>
-        <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view: </strong><em>SongOwl’s king-sized progress and volume bars combined with its pleasing translucency effects are quite pretty.</em></li>
+        <li>:heavy_check_mark: <strong>Lyrics support: </strong><em>While SongOwl supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, SongOwl’s approach is not to my taste.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>While not nearly as robust as I’d prefer, the new “Paths” system can support a decent amount of discovery collections like “Recently Added” and “Randomized Records”.</em></li>
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view: </strong><em>SongOwl’s king-sized progress and volume bars combined with its pleasing translucency effects are quite pretty.</em></li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused features: </strong><em>You can create a decent amount of album-focused discovery collections like “Recently Added” and “Randomized Records” with the “Paths” feature, but the lack of grid view in SongOwl is disappointing.</em>
+        <li>:large_orange_diamond: <strong>Album-focused features: </strong><em>You can create a decent amount of album-focused discovery collections like “Recently Added” and “Randomized Records” with the “Paths” feature, but the lack of grid view in SongOwl is disappointing.</em>
             <ul class="bare">
-                <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting: </strong><em>While the “Artists” view can properly sort albums for any particular artist, this option is unfortunately not available anywhere else.</em></li>
-                <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong><em>While the “Artists” view can properly sort albums for any particular artist, this option is unfortunately not available anywhere else.</em></li>
+                <li>:x: <strong>Album grid view</strong></li>
             </ul>
         </li>
     </ul>
     
     <ul class="emoji">
-        <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
+        <li>:x: <strong>iPad support</strong></li>
     </ul>
 </div>
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;">
+<ul class="button-group" style="text-align:left;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/18"><p class="button">Next App: “Soor”</p></a></li>
 </ul>
 

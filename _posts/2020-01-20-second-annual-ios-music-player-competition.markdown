@@ -126,7 +126,7 @@ Like [last time](/articles/quest-for-the-best-ios-music-player#disqualifications
 
 ### !["Jams On Toast" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/icon.png '"Jams On Toast" iOS app icon'){: .app-icon } Jams On Toast
 
-<div class="edge-to-edge large two-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage-poster.jpg" alt="Video demonstrating 'Jams usage in On Toast'" title="Demonstrating 'Jams On Toast' usage">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/jams-on-toast/usage.webm" type="video/webm">
@@ -151,7 +151,7 @@ Like last year, the "Now Playing" view remains a tiny portion of the screen; the
 
 ### !["Stezza" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/icon.png '"Stezza" iOS app icon'){: .app-icon } Stezza
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage-poster.jpg" alt="Video demonstrating usage in 'Stezza'" title="Demonstrating 'Stezza' usage">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/stezza/usage.webm" type="video/webm">
@@ -181,7 +181,7 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
 
 ### !["Ecoute" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/icon.png '"Ecoute" iOS app icon'){: .app-icon } Ecoute
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in light mode" title="Demonstrating 'Ecoute' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/light-usage.webm" type="video/webm">
@@ -195,7 +195,7 @@ However, while these decisions make Stezza absolutely *phenomenal* for eye-free 
         ![Image of "Ecoute" now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/now-playing.jpg '"Ecoute" now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage-poster.jpg" alt="Video demonstrating 'Ecoute' usage in dark mode" title="Demonstrating 'Ecoute' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/ecoute/dark-usage.webm" type="video/webm">
@@ -223,7 +223,7 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
 
 ### !["Soor" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/icon.png '"Soor" iOS app icon'){: .app-icon } Soor
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in light mode" title="Demonstrating 'Soor' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-usage.webm" type="video/webm">
@@ -237,7 +237,7 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
         ![Image of "Soor" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/light-now-playing.jpg '"Soor" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage-poster.jpg" alt="Video demonstrating 'Soor' usage in dark mode" title="Demonstrating 'Soor' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/dark-usage.webm" type="video/webm">
@@ -261,7 +261,7 @@ With its lack of active maintenance, crippling visual bugs in iOS 13, and the cr
 
 While [Soor]'s promo images look promising, I personally find Soor does not have a sufficient local-primary focus and is thus disqualified. While you can _technically_ use the app without ["Sync Library"](https://support.apple.com/en-us/HT204926) and ["Show Apple Music"](https://support.apple.com/en-us/HT204951) enabled, doing so understandably cripples the experience since the majority of Soor’s features were built with the expectation that those two settings are enabled. It even politely notifies you right in the home view that "Soor is built to be enjoyed with an Apple Music subscription". One might think you can get away with just enabling "Show Apple Music" without "Sync Library" when you attempt connecting it to Apple Music, but doing so unfortunately breaks Soor. When this is attempted, you are permanently locked out of using the app until you either give in and enable "Sync Library" or delete and re-download the app altogether.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/soor/connect-with-apple-music-2.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/soor/connect-with-apple-music-2.jpg)
     </a>
@@ -275,7 +275,7 @@ If your music collection is cloud-primary, I'd still recommend giving Soor a loo
 
 ### !["Music Player X" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/icon.png '"Music Player X" iOS app icon'){: .app-icon } Music Player X
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in light mode" title="Demonstrating 'Music Player X' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-usage.webm" type="video/webm">
@@ -289,7 +289,7 @@ If your music collection is cloud-primary, I'd still recommend giving Soor a loo
         ![Image of "Music Player X" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/light-now-playing.jpg '"Music Player X" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating 'Music Player X' usage in dark mode" title="Demonstrating 'Music Player X' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-player-x/dark-usage.webm" type="video/webm">
@@ -331,7 +331,7 @@ With all the disqualifications out of the way, it's time to alphabetically revie
 
 ### !["Albums" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums
 
-<div class="show-when-light edge-to-edge large two-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in light mode" title="Demonstrating 'Albums' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-usage.webm" type="video/webm">
@@ -342,7 +342,7 @@ With all the disqualifications out of the way, it's time to alphabetically revie
         ![Image of "Albums" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/albums/light-now-playing.jpg '"Albums" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large two-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage-poster.jpg" alt="Video demonstrating 'Albums' usage in dark mode" title="Demonstrating 'Albums' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/albums/dark-usage.webm" type="video/webm">
@@ -374,25 +374,25 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery options</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused design</strong>
+    <li>:heavy_check_mark: <strong>Light & Dark themes</strong></li>
+    <li>:heavy_check_mark: <strong>iPad support</strong></li>
+    <li>:heavy_check_mark: <strong>Discovery options</strong></li>
+    <li>:heavy_check_mark: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting:</strong> <em>Records are sorted correctly in the “Artists” view in “My Library”. While technically the “Albums” view does not, this is due to a conscious design decision to shuffle albums in this view for discovery purposes, which in my opinion warrants a pass.</em></li>
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            <li>:heavy_check_mark: <strong>Proper sorting:</strong> <em>Records are sorted correctly in the “Artists” view in “My Library”. While technically the “Albums” view does not, this is due to a conscious design decision to shuffle albums in this view for discovery purposes, which in my opinion warrants a pass.</em></li>
+            <li>:heavy_check_mark: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
     
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:x: <strong>Lyrics support</strong></li>
+    <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
 </ul>
 
 ### !["Cs" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/cs/icon.png '"Cs" iOS app icon'){: .app-icon } Cs
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in light mode" title="Demonstrating 'Cs' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-usage.webm" type="video/webm">
@@ -406,7 +406,7 @@ That's not to say all its album-focused ideas don't land; the "Decades" view in 
         ![Image of "Cs" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/cs/light-now-playing.jpg '"Cs" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage-poster.jpg" alt="Video demonstrating 'Cs' usage in dark mode" title="Demonstrating 'Cs' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/cs/dark-usage.webm" type="video/webm">
@@ -454,18 +454,18 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong> </li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad support</strong></li>
+    <li>:heavy_check_mark: <strong>Lyrics support</strong> </li>
+    <li>:heavy_check_mark: <strong>Light & Dark themes</strong></li>
+    <li>:heavy_check_mark: <strong>iPad support</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album-focused design</strong>
+    <li>:x: <strong>Discovery options</strong></li>
+    <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:x: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting:</strong> <em>While Cs technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
-            <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            <li>:large_orange_diamond: <strong>Proper sorting:</strong> <em>While Cs technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
+            <li>:x: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
@@ -479,7 +479,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
 
 ### !["Doppi" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in light mode" title="Demonstrating 'Doppi' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/light-usage.webm" type="video/webm">
@@ -493,7 +493,7 @@ Cs remains as "functional, but boring" as it was last year, with just as "little
         ![Image of "Doppi" now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/now-playing.jpg '"Doppi" now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage in dark mode" title="Demonstrating 'Doppi' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppi/dark-usage.webm" type="video/webm">
@@ -528,23 +528,23 @@ Doppi's not without its share of problems, albeit minor; the absence of customiz
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS 13’s light and dark mode themes while also maintaining a “lighter” dark mode as an alternative.</em></li>
+    <li>:trophy: <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS 13’s light and dark mode themes while also maintaining a “lighter” dark mode as an alternative.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong> </li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused design</strong>
+    <li>:heavy_check_mark: <strong>Lyrics support</strong> </li>
+    <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:heavy_check_mark: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting:</strong> <em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            <li>:heavy_check_mark: <strong>Proper sorting:</strong> <em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
+            <li>:heavy_check_mark: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
+    <li>:x: <strong>iPad support</strong></li>
+    <li>:x: <strong>Discovery options</strong></li>
 </ul>
 
 #### Extra Credit
@@ -556,7 +556,7 @@ Doppi's not without its share of problems, albeit minor; the absence of customiz
 
 ### !["Doppler" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/icon.png '"Doppler" iOS app icon'){: .app-icon } Doppler
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage-poster.jpg" alt="Video demonstrating usage in 'Doppler'" title="Demonstrating 'Doppler' usage">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/doppler/usage.webm" type="video/webm">
@@ -587,23 +587,23 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery options: </strong><em>Partial credit awarded for the “Recently Added” view, but that remains the only discover option to speak of.</em></li>
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused design</strong>
+    <li>:large_orange_diamond: <strong>Discovery options: </strong><em>Partial credit awarded for the “Recently Added” view, but that remains the only discover option to speak of.</em></li>
+    <li>:large_orange_diamond: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting</strong></li>
-            <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            <li>:heavy_check_mark: <strong>Proper sorting</strong></li>
+            <li>:x: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Lyrics support</strong> </li>
-    <li><span class="bullet">:x:</span> <strong>Light & Dark themes</strong></li>
-    <li><span class="bullet">:x:</span> <strong>iPad support</strong></li>
+    <li>:x: <strong>Lyrics support</strong> </li>
+    <li>:x: <strong>Light & Dark themes</strong></li>
+    <li>:x: <strong>iPad support</strong></li>
 </ul>
 
 #### Extra Credit
@@ -614,7 +614,7 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
 
 ### !["Marvis Pro" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in light mode" title="Demonstrating 'Marvis Pro' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-usage.webm" type="video/webm">
@@ -628,7 +628,7 @@ To make matters worse, the day before Christmas Eve 2019, I received a newslette
         ![Image of "Marvis Pro" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-now-playing.jpg '"Marvis Pro" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage-poster.jpg" alt="Video demonstrating 'Marvis Pro' usage in dark mode" title="Demonstrating 'Marvis Pro' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/dark-usage.webm" type="video/webm">
@@ -662,7 +662,7 @@ However, if you’re like me and fussy about music players, you might continue e
 
 In my "Home", [I have a "Pick Of The Day" section](/notepad/marvis-pro-rules) featuring massive album art for today’s pick. This section’s contents are randomly chosen from a set of records generated by rules I’ve created to foster intelligent curation, such as "If it’s ‘Loved’ and not played within the past two months" and "Neither ‘Loved’ nor ‘Disliked’, only played less than 10 times, and not played within the past two months". Later views are for quick access to new music: my "Just Added" grid (which contains a reverse chronological grid of only the most recently added records) and my "Recently Added" grid (which contains randomly sorted records added within the past year). Another fun view I created is my "Time Machine" list, which contains an array of buttons spanning every year in my record collection (so, if I wanted to only browse records in my collection from 2011, I’d tap the "2011" button). All these views were exclusively created using Marvis Pro’s extensive suite of sorting & display options and filtering rules.
 
-<figure class="two-images ios-screenshot">
+<figure class="array ios-screenshot">
     <a markdown="1" class="show-when-light" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-view-options-1.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/marvis-pro/light-view-options-1.jpg)
     </a>
@@ -683,20 +683,20 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Discovery options: </strong><em>If you want any degree of customization to the core “music player” experience, Marvis Pro is not only a fantastic option, it’s the <strong>only</strong> option.</em></li>
-    <li><span class="bullet">:trophy:</span> <strong>Album-focused design:</strong> <em>While “out of the box” it’s not particularly album-centric, it can easily be customized to be the best album-focused music player of the lot.</em>
+    <li>:trophy: <strong>Discovery options: </strong><em>If you want any degree of customization to the core “music player” experience, Marvis Pro is not only a fantastic option, it’s the <strong>only</strong> option.</em></li>
+    <li>:trophy: <strong>Album-focused design:</strong> <em>While “out of the box” it’s not particularly album-centric, it can easily be customized to be the best album-focused music player of the lot.</em>
         <ul class="bare">
-            <li><span class="bullet">:trophy:</span> <strong>Proper sorting:</strong> <em markdown="1">Marvis Pro supports my beloved sorting method with its flexible, built-in sorting rules.</em></li>
-            <li><span class="bullet">:trophy:</span> <strong>Album grid view:</strong> <em>With its seer amount of display options, Marvis Pro is easily among the best. If you want a grid view in your music player, there’s no better option than Marvis Pro.</em></li>
+            <li>:trophy: <strong>Proper sorting:</strong> <em markdown="1">Marvis Pro supports my beloved sorting method with its flexible, built-in sorting rules.</em></li>
+            <li>:trophy: <strong>Album grid view:</strong> <em>With its seer amount of display options, Marvis Pro is easily among the best. If you want a grid view in your music player, there’s no better option than Marvis Pro.</em></li>
         </ul>
     </li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view:</strong> <em>It’s not among my favorite player views, but it gets the job done with a subtle but pleasing translucency effect.</em></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support:</strong> <em>The integration with <a href="https://www.musixmatch.com">MusicMatch</a> is a nice touch, but for those like me that just prefer regular ol’ lyrics, they’re still included inline below the “Now Playing” view controls, similar to iOS 12’s Music.app.</em></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes: </strong> <em>While the look and feel of Marvis Pro’s themes aren’t compliant with iOS 13’s interface guidelines, I personally find the artistic choices pleasing and tastefully done (unlike Sathorn), so it gets a pass.</em></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>iPad Support</strong></li>
+    <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view:</strong> <em>It’s not among my favorite player views, but it gets the job done with a subtle but pleasing translucency effect.</em></li>
+    <li>:heavy_check_mark: <strong>Lyrics support:</strong> <em>The integration with <a href="https://www.musixmatch.com">MusicMatch</a> is a nice touch, but for those like me that just prefer regular ol’ lyrics, they’re still included inline below the “Now Playing” view controls, similar to iOS 12’s Music.app.</em></li>
+    <li>:heavy_check_mark: <strong>Light & Dark themes: </strong> <em>While the look and feel of Marvis Pro’s themes aren’t compliant with iOS 13’s interface guidelines, I personally find the artistic choices pleasing and tastefully done (unlike Sathorn), so it gets a pass.</em></li>
+    <li>:heavy_check_mark: <strong>iPad Support</strong></li>
 </ul>
 
 #### Extra Credit
@@ -709,7 +709,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
 
 ### !["Music.app" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in light mode" title="Demonstrating 'Music.app' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-usage.webm" type="video/webm">
@@ -723,7 +723,7 @@ It’s for this reason Marvis Pro is my favorite and most used music app in 2019
         ![Image of "Music.app" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-now-playing.jpg '"Music.app" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage-poster.jpg" alt="Video demonstrating 'Music.app' usage in dark mode" title="Demonstrating 'Music.app' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-usage.webm" type="video/webm">
@@ -753,7 +753,7 @@ It's a shame this mesmerizing visualizer is only technically accessible in the l
 3. Minimize the "Now Playing" view and find and tap a song that does __not__ have lyrics
 4. The lyrics visualizer is now viewable on the standard player view and will remain for as long as you don't retap the lyrics button or play a song with lyrics
 
-<div class="show-when-light three-images ios-screenshot">
+<div class="show-when-light array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-red.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-red.jpg)
     </a>
@@ -764,7 +764,7 @@ It's a shame this mesmerizing visualizer is only technically accessible in the l
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/light-blue.jpg)
     </a>
 </div>
-<div class="show-when-dark three-images ios-screenshot">
+<div class="show-when-dark array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-red.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/music-app/dark-red.jpg)
     </a>
@@ -781,20 +781,20 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view:</strong> <em> Awarded solely because of the glitch mentioned earlier which lets you see the tvOS lava lamp visualizer in the player view. No other player (not even last year’s winner, Picky) comes close when this glitch is enacted.</em></li>
-    <li><span class="bullet">:trophy:</span> <strong>Lyrics support</strong></li>
+    <li>:trophy: <strong>Beautiful or visually engaging player view:</strong> <em> Awarded solely because of the glitch mentioned earlier which lets you see the tvOS lava lamp visualizer in the player view. No other player (not even last year’s winner, Picky) comes close when this glitch is enacted.</em></li>
+    <li>:trophy: <strong>Lyrics support</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes</strong></li>
+    <li>:heavy_check_mark: <strong>Light & Dark themes</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery options:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery options available don’t quite keep up with other players’ progress this year.</em></li>
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused design</strong>
+    <li>:large_orange_diamond: <strong>Discovery options:</strong> <em>While the existing “Recently Added” and “More By” lists are nice, the discovery options available don’t quite keep up with other players’ progress this year.</em></li>
+    <li>:large_orange_diamond: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting:</strong> <em>While Music.app technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            <li>:large_orange_diamond: <strong>Proper sorting:</strong> <em>While Music.app technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
+            <li>:heavy_check_mark: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
@@ -808,7 +808,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
 
 ### !["Picky" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/picky/icon.png '"Picky" iOS app icon'){: .app-icon } Picky
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in light mode" title="Demonstrating 'Picky' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-usage.webm" type="video/webm">
@@ -822,7 +822,7 @@ The introduction of this visualizer to iOS along with the glitch that makes it v
         ![Image of "Picky" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/picky/light-now-playing.jpg '"Picky" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage-poster.jpg" alt="Video demonstrating 'Picky' usage in dark mode" title="Demonstrating 'Picky' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/picky/dark-usage.webm" type="video/webm">
@@ -855,24 +855,24 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view:</strong> <em>Despite the lack of substantial updates, the player view remains one of the most enthralling, beat out this year only by Music.app’s lava lamp album art visualizer.</em></li>
+    <li>:trophy: <strong>Beautiful or visually engaging player view:</strong> <em>Despite the lack of substantial updates, the player view remains one of the most enthralling, beat out this year only by Music.app’s lava lamp album art visualizer.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Full iPad support</strong></li>
+    <li>:heavy_check_mark: <strong>Lyrics support</strong></li>
+    <li>:heavy_check_mark: <strong>Light & Dark themes</strong></li>
+    <li>:heavy_check_mark: <strong>Full iPad support</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Discovery options:</strong> <em>While Picky doesn’t have any of the discovery options I tend to look for (“Recently Added”, “Albums Of The Day”, etc.), it does continue to have gold-standard filtering capabilities. For that reason alone it earned partial credit.</em></li>
+    <li>:large_orange_diamond: <strong>Discovery options:</strong> <em>While Picky doesn’t have any of the discovery options I tend to look for (“Recently Added”, “Albums Of The Day”, etc.), it does continue to have gold-standard filtering capabilities. For that reason alone it earned partial credit.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused design</strong>
+    <li>:large_orange_diamond: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:large_orange_diamond:</span> <strong>Proper sorting:</strong> <em>While Picky technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
-            <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            <li>:large_orange_diamond: <strong>Proper sorting:</strong> <em>While Picky technically supports sorting albums alphabetically by artist then by release year, it only supports this in the “Artists” view. The “Albums” view still doesn’t support it.</em></li>
+            <li>:x: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
@@ -886,7 +886,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 
 ### !["Power Player" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in light mode" title="Demonstrating 'Power Player' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-usage.webm" type="video/webm">
@@ -900,7 +900,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
         ![Image of "Power Player" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-now-playing.jpg '"Power Player" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage-poster.jpg" alt="Video demonstrating 'Power Player' usage in dark mode" title="Demonstrating 'Power Player' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-usage.webm" type="video/webm">
@@ -924,7 +924,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
 
 [Power Player] is among the handful of new apps in 2019, and at first glance appears to be a standard music player; it features a typical table view containing the list of items in your library and a stock tab bar with the usual suspects ("Albums", "Artists", etc.). However, Power Player's bold design decisions quickly reveal themselves once you start navigating the app.
 
-<div class="show-when-light three-images ios-screenshot">
+<div class="show-when-light array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-album-view-1.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-album-view-1.jpg)
     </a>
@@ -935,7 +935,7 @@ If you love Picky for what it is *now* and nothing more, that might be enough. B
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/light-album-view-3.jpg)
     </a>
 </div>
-<div class="show-when-dark three-images ios-screenshot">
+<div class="show-when-dark array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-album-view-1.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/power-player/dark-album-view-1.jpg)
     </a>
@@ -978,28 +978,28 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view:</strong> <em>While not for everyone, there’s no better option than Power Player for those that want the most vibrant player view possible. For better and for worse, it’s in a league of its own, and that’s to be commended.</em></li>
-    <li><span class="bullet">:trophy:</span> <strong>Lyrics support: </strong> <em>With it’s dynamic colors and efficient use of space in it’s unique multi-column “Now Playing” view on landscape iPads, Power Player is one of the best for lyrics lovers.</em></li>
-    <li><span class="bullet">:trophy:</span> <strong>Full iPad support:</strong> <em>This is the gold-standard iPad music player experience. Based on my criteria, you will not find a better iPad music player than Power Player.</em></li>
+    <li>:trophy: <strong>Beautiful or visually engaging player view:</strong> <em>While not for everyone, there’s no better option than Power Player for those that want the most vibrant player view possible. For better and for worse, it’s in a league of its own, and that’s to be commended.</em></li>
+    <li>:trophy: <strong>Lyrics support: </strong> <em>With it’s dynamic colors and efficient use of space in it’s unique multi-column “Now Playing” view on landscape iPads, Power Player is one of the best for lyrics lovers.</em></li>
+    <li>:trophy: <strong>Full iPad support:</strong> <em>This is the gold-standard iPad music player experience. Based on my criteria, you will not find a better iPad music player than Power Player.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Light & Dark themes</strong></li>
+    <li>:heavy_check_mark: <strong>Light & Dark themes</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album-focused design</strong>
+    <li>:x: <strong>Discovery options</strong></li>
+    <li>:x: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-            <li><span class="bullet">:x:</span> <strong>Album grid view:</strong> <em>While Power Player on iPad uses grid view, Power Player on iPhone is stricted to just plain-old list view.</em></li>
+            <li>:x: <strong>Proper sorting</strong></li>
+            <li>:x: <strong>Album grid view:</strong> <em>While Power Player on iPad uses grid view, Power Player on iPhone is stricted to just plain-old list view.</em></li>
         </ul>
     </li>
 </ul>
 
 ### !["Sathorn" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/icon.png '"Sathorn" iOS app icon'){: .app-icon } Sathorn
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in light mode" title="Demonstrating 'Sathorn' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-usage.webm" type="video/webm">
@@ -1013,7 +1013,7 @@ Its bullish, art-centric design might not be to everyone's taste and its lack of
         ![Image of "Sathorn" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/light-now-playing.jpg '"Sathorn" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage-poster.jpg" alt="Video demonstrating 'Sathorn' usage in dark mode" title="Demonstrating 'Sathorn' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/dark-usage.webm" type="video/webm">
@@ -1043,7 +1043,7 @@ You don't have to wait long for the awful artistic decisions to reveal themselve
 
 There's also the "Now Playing" view, which despite offering an impressive array of four rendering options manages to disappoint in each and every one of them. The first option is "solid", which is as boring and uninspired as you'd expect. The next three are all different takes on album blurs, each failing in their own special way.
 
-<div class="three-images ios-screenshot">
+<div class="array ios-screenshot">
     <a markdown="1" href="{{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/now-playing-option-1.jpg">
         ![]({{ site.dropbox }}/second-annual-ios-music-player-competition/sathorn/now-playing-option-1.jpg)
     </a>
@@ -1062,21 +1062,21 @@ While Sathorn isn't my least favorite contender (that honor's reserved for [one 
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Discovery options</strong></li>
+    <li>:heavy_check_mark: <strong>Discovery options</strong></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & Dark themes: </strong> <em>Partial credit awarded despite their horrible visual design.</em></li>
+    <li>:large_orange_diamond: <strong>Light & Dark themes: </strong> <em>Partial credit awarded despite their horrible visual design.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Full iPad support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Beautiful or visually engaging player view</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Album-focused design</strong>
+    <li>:x: <strong>Lyrics support</strong></li>
+    <li>:x: <strong>Full iPad support</strong></li>
+    <li>:x: <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:x: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-            <li><span class="bullet">:x:</span> <strong>Album grid view</strong></li>
+            <li>:x: <strong>Proper sorting</strong></li>
+            <li>:x: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
@@ -1092,7 +1092,7 @@ Note that while Sathorn technically offers these options, each and every one are
 
 ### !["TapTunes" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/icon.png){: .app-icon } TapTunes
 
-<div class="show-when-light edge-to-edge large three-images ios-screenshot">
+<div class="show-when-light edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in light mode" title="Demonstrating 'TapTunes' usage in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-usage.webm" type="video/webm">
@@ -1106,7 +1106,7 @@ Note that while Sathorn technically offers these options, each and every one are
         ![Image of "TapTunes" light now playing view]({{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-now-playing.jpg '"TapTunes" light now playing view')
     </a>
 </div>
-<div class="show-when-dark edge-to-edge large three-images ios-screenshot">
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage-poster.jpg" alt="Video demonstrating 'TapTunes' usage in dark mode" title="Demonstrating 'TapTunes' usage in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-usage.webm" type="video/webm">
@@ -1138,7 +1138,7 @@ For example, TapTunes’ entire interface features the album blur effect typical
 
 As for notable features, TapTunes’ key differentiator is its pool of discovery options, implemented with a collection of odd but effective "displays". While most other players have "Artists", "Albums", etc. views browsable in a standard table or grid, TapTunes has a collection of five different displays that all offer unique ways to explore your library. For example, there’s "Circled", which renders your albums on a slot machine "Picker" control and makes your library a blast to flick through. There’s also "Stacked", which displays a scattered, vertically scrolling array of your albums at random shapes and sizes. All displays shuffle your records and automatically animate at a pleasant pace, so you can sit back and simply enjoy your library get ruffled through for you until you see a record you want to play. Once you do, playing it’s just a tap away. Because of these display views, TapTunes’ discovery features are some of the best I've found this year.
 
-<div class="show-when-light three-images ios-screenshot">
+<div class="show-when-light array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in light mode" title="Demonstrating 'TapTunes' 'Circled' display view in light mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/light-circled.webm" type="video/webm">
@@ -1158,7 +1158,7 @@ As for notable features, TapTunes’ key differentiator is its pool of discovery
         [HTML5 video tag not supported by your browser]
     </video>
 </div>
-<div class="show-when-dark three-images ios-screenshot">
+<div class="show-when-dark array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled-poster.jpg" alt="Video demonstrating 'TapTunes' 'Circled' display view in dark mode" title="Demonstrating 'TapTunes' 'Circled' display view in dark mode">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/taptunes/dark-circled.webm" type="video/webm">
@@ -1184,21 +1184,21 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Discovery options:</strong> <em>With it’s unique, animated views like “Circled” and “Stacked”, TapTunes is among the best for facilitating discovery.</em></li>
+    <li>:trophy: <strong>Discovery options:</strong> <em>With it’s unique, animated views like “Circled” and “Stacked”, TapTunes is among the best for facilitating discovery.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Light & Dark themes: </strong> <em>While TapTunes does indeed have light and dark themes, they’re not consistently implemented through the app (the “Settings” view is perpetually light) and don’t respect iOS 13’s theme setting.</em></li>
+    <li>:large_orange_diamond: <strong>Light & Dark themes: </strong> <em>While TapTunes does indeed have light and dark themes, they’re not consistently implemented through the app (the “Settings” view is perpetually light) and don’t respect iOS 13’s theme setting.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Lyrics support</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Full iPad support</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Beautiful or visually engaging player view</strong></li>
-    <li><span class="bullet">:heavy_check_mark:</span> <strong>Album-focused design</strong>
+    <li>:heavy_check_mark: <strong>Lyrics support</strong></li>
+    <li>:heavy_check_mark: <strong>Full iPad support</strong></li>
+    <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view</strong></li>
+    <li>:heavy_check_mark: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Proper sorting: </strong><em>While most “Display” views don’t sort albums by design, the views where sorting does make sense like the “Stacked” display and “Artists” view while searching properly sorts albums.</em></li>
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            <li>:heavy_check_mark: <strong>Proper sorting: </strong><em>While most “Display” views don’t sort albums by design, the views where sorting does make sense like the “Stacked” display and “Artists” view while searching properly sorts albums.</em></li>
+            <li>:heavy_check_mark: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
@@ -1212,7 +1212,7 @@ However, the app’s not without its share of warts; the "Scattered" view’s re
 
 ### !["VOX" iOS app icon]({{ site.dropbox }}/second-annual-ios-music-player-competition/vox/icon.png '"VOX" iOS app icon'){: .app-icon } VOX
 
-<div class="edge-to-edge large three-images ios-screenshot">
+<div class="edge-to-edge large array ios-screenshot">
     <video controls preload="none" poster="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage-poster.jpg" alt="Video demonstrating usage in 'VOX'" title="Demonstrating 'VOX' usage">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage.mp4" type="video/mp4">
         <source src="{{ site.dropbox }}/second-annual-ios-music-player-competition/vox/usage.webm" type="video/webm">
@@ -1241,23 +1241,23 @@ Hints of greatness are scattered throughout VOX (like its fun "Now Playing" view
 #### Score
 
 <ul class="emoji">
-    <li><span class="bullet">:trophy:</span> <strong>Beautiful or visually engaging player view:</strong> <em>The only qualifying app to feature any kind of audio waveform. It’s a shame it happens to be in VOX.</em></li>
+    <li>:trophy: <strong>Beautiful or visually engaging player view:</strong> <em>The only qualifying app to feature any kind of audio waveform. It’s a shame it happens to be in VOX.</em></li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:large_orange_diamond:</span> <strong>Album-focused design</strong>
+    <li>:large_orange_diamond: <strong>Album-focused design</strong>
         <ul class="bare">
-            <li><span class="bullet">:x:</span> <strong>Proper sorting</strong></li>
-            <li><span class="bullet">:heavy_check_mark:</span> <strong>Album grid view</strong></li>
+            <li>:x: <strong>Proper sorting</strong></li>
+            <li>:heavy_check_mark: <strong>Album grid view</strong></li>
         </ul>
     </li>
 </ul>
 
 <ul class="emoji">
-    <li><span class="bullet">:x:</span> <strong>Lyrics support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Light & Dark themes</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Full iPad support</strong></li>
-    <li><span class="bullet">:x:</span> <strong>Discovery options</strong></li>
+    <li>:x: <strong>Lyrics support</strong></li>
+    <li>:x: <strong>Light & Dark themes</strong></li>
+    <li>:x: <strong>Full iPad support</strong></li>
+    <li>:x: <strong>Discovery options</strong></li>
 </ul>
 
 ----

@@ -70,7 +70,7 @@ Given the growing number of players available on iOS, I've broken sections down 
 
 Let's get started...
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
     <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/2"><p class="button">Next Section: “Honorable Mentions”</p></a></li>
 </ul>
 

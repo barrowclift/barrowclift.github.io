@@ -17,12 +17,18 @@ design:
         will-change: transform;
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
+        box-shadow: var(--shadow);
         -webkit-transform: perspective(500px);
         transform: perspective(500px);
-        transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 400ms var(--cubic-bezier-curve), box-shadow 400ms var(--cubic-bezier-curve);
     }
         .project:hover {
-            transform: scale(1.025);
+            transform: var(--hover-scale);
+            box-shadow: var(--hover-shadow);
+        }
+        .project:active {
+            transform: var(--clicking-scale);
+            box-shadow: var(--clicking-shadow);
         }
             .project:hover img {
                 filter: brightness(1) !important;
@@ -57,10 +63,10 @@ design:
     }
     .foreground,
     .foreground-1 {
-        transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 800ms var(--cubic-bezier-curve);
     }
     .foreground-2 {
-        transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 600ms var(--cubic-bezier-curve);
     }
     .background {
         display: block;
