@@ -107,7 +107,7 @@ Emulates Hackers News' "interesting" look & feel.
             display: inline;
             left: 100%;
             top: 0;
-            margin-left: -3.2rem !important;
+            margin-left: -3.3rem !important;
             margin-top: 0;
             padding-top: 1.1rem;
         }
@@ -140,6 +140,9 @@ Emulates Hackers News' "interesting" look & feel.
         #logo:hover #signature path,
         #dark #logo:hover #signature path {
             fill: white;
+        }
+        #logo:after {
+            background: unset;
         }
         #settings-button-wrapper button,
         #settings-button-wrapper button path,
@@ -193,9 +196,14 @@ Emulates Hackers News' "interesting" look & feel.
             line-height: 0rem !important;
             top: 0 !important;
             width: auto !important;
+            padding-top: 0.05em;
         }
         .hide-if-space-needed {
             display: inline-block !important;
+        }
+        #logo {
+            position: absolute;
+            left: 0;
         }
         @media(max-width: 324px) {
             #menubar menu {
@@ -262,6 +270,9 @@ Emulates Hackers News' "interesting" look & feel.
             #menubar menu {
                 text-align: center;
             }
+            #settings-button-wrapper button {
+                padding-top: 0.3em;
+            }
             #settings-button-wrapper button svg {
                 height: 1.3rem;
             }
@@ -282,13 +293,22 @@ Emulates Hackers News' "interesting" look & feel.
             #menubar li#settings-button-wrapper {
                 margin-left: -3.15em;
             }
+            header {
+                padding-top: 0.5em !important;
+            }
+            #settings-button-wrapper {
+                padding-top: 1.15em !important;
+            }
         }
         @media (min-width: 900px) {
             #logo:after {
                 left: 0rem;
             }
             header {
-                padding-top: 0.2em !important;
+                padding-top: 0.3em !important;
+            }
+            #settings-button-wrapper {
+                padding-top: 1em !important;
             }
         }
         html {
@@ -332,7 +352,9 @@ Emulates Hackers News' "interesting" look & feel.
     <body>
         {% include menubar.html %}
         <main>
+            <article>
             {{ content }}
+            </article>
         </main>
     </body>
 </html>

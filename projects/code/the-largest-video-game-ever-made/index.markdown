@@ -6,6 +6,7 @@ design:
     force-dark-mode: true
     oled: true
     browser-theme-color-dark: "#0D0D0D"
+    banner-disable-dark-mode-dimming: true
 
 parallax:
     background:

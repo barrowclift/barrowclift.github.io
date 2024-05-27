@@ -29,7 +29,7 @@ Currently used for:
                     <div id="parallax-background" class="layer">
                         {% if page.parallax.banner-video != nil %}
                         <figure>
-                            <video controls preload="none" class="edge-to-edge" {% if page.parallax.banner-poster %}poster="{{ site.dropbox }}/{{ page.parallax.banner-poster }}"{% endif %} alt="{% if page.parallax.banner-hover-text %}{{ page.parallax.banner-hover-text }}{% else %}Post banner{% endif %}">
+                            <video controls preload="none" class="edge-to-edge" {% if page.parallax.banner-poster %}poster="{{ site.dropbox }}/{{ page.parallax.banner-poster }}"{% endif %} alt="{% if page.parallax.banner-hover-text %}{{ page.parallax.banner-hover-text }}{% else %}Post banner{% endif %}" {% if page.design.banner-disable-dark-mode-dimming %}style="filter: brightness(1)"{% endif %}>
                                 <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.mp4" type="video/mp4">
                                 <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.webm" type="video/webm">
                                 <source src="{{ site.dropbox }}/{{ page.parallax.banner-video }}.ogv" type="video/ogg">
@@ -75,7 +75,9 @@ Currently used for:
             }
             #parallax-foreground {
                 background-color: {{ page.parallax.background.light-color }};
-                border-top: 1px solid var(--widget-border);
+                border-top: 1px solid var(--widget-border-color);
+                border-top-left-radius: var(--gap);
+                border-top-right-radius: var(--gap);
                 box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
             }
                 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
@@ -187,6 +189,11 @@ Currently used for:
             {% if page.menubar.dark.foreground-color != nil %}
                 #dark #menubar menu a {
                     color: {{ page.menubar.dark.foreground-color }};
+                }
+                #dark #menubar .active,
+                #dark #menubar a:hover {
+                    color: var(--accent-color);
+                    color: var(--accent-p3-color);
                 }
                 #dark .imac-background-color,
                 #dark #signature path {

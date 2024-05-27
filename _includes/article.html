@@ -18,7 +18,8 @@
                     <img
                          title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
                          alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
-                         src="{{ site.dropbox }}/{{ page.article.banner-image }}.jpg">
+                         src="{{ site.dropbox }}/{{ page.article.banner-image }}.jpg"
+                         {% if page.design.banner-disable-dark-mode-dimming %}style="filter: brightness(1)"{% endif %}>
                 </picture>
             </div>
         {% else %}

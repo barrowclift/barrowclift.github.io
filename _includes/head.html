@@ -82,10 +82,13 @@
     {% endif %}
     {% if page.design.accent %}
     <style>
-        html {
+        :root {
             --accent-hue: {{ page.design.accent.hue }} !important;
             --accent-saturation: {{ page.design.accent.saturation }} !important;
             --accent-lightness: {{ page.design.accent.lightness }} !important;
+            --accent-r: {{ page.design.accent.r }} !important;
+            --accent-g: {{ page.design.accent.g }} !important;
+            --accent-b: {{ page.design.accent.b }} !important;
         }
     </style>
     {% endif %}

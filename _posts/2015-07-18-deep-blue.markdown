@@ -5,7 +5,11 @@ date: 2015-07-18 21:13:39
 design:
     force-dark-mode: true
     oled: true
+    banner-disable-dark-mode-dimming: true
     accent:
+        r: 0.25882353
+        g: 0.6
+        b: 0.94117647
         hue: "210"
         saturation: "85%"
         lightness: "60%"
@@ -21,6 +25,7 @@ image: "deep-blue/share.jpg"
 article:
     banner-image: "deep-blue/blue-light-laptop"
     banner-hover-text: "Laptop backlight glowing brightly in a dark room"
+    banner-disable-dark-mode-dimming: true
 card:
     light:
         image: "deep-blue/card"

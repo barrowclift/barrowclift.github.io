@@ -28,8 +28,8 @@ That's where the inception of the Hacker News Cleanser came from; it's a "set it
 
 ## The Compromise Between Being Informed and Information Separation
 
-<div class="inline macos-window-screenshot">
-    <img srcsrc="images/email-report.png 100w" size="50px" src="images/email-report.png" alt="The optional email report of all cleansed articles since the last report" />
+<div class="macos-window-screenshot">
+    <img srcsrc="images/email-report.png 100w" size="50px" src="images/email-report.png" alt="The optional email report of all cleansed articles since the last report" class="macos-window-screenshot" />
 </div>
 
 While I do wish for my personal Hacker News page to be more focused, I also still want to have the ability to see the hidden articles and read them if I so choose. No amount of filter tweaking will prevent the occasional salient article or discussion from getting caught when I would have wished to still see it. Additionally, I do still feel it's important to have a finger on the heartbeat of Hacker News as a whole, only in a separate view and on my own time.
