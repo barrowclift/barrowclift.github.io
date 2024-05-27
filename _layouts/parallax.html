@@ -76,8 +76,6 @@ Currently used for:
             #parallax-foreground {
                 background-color: {{ page.parallax.background.light-color }};
                 border-top: 1px solid var(--widget-border-color);
-                border-top-left-radius: var(--gap);
-                border-top-right-radius: var(--gap);
                 box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
             }
                 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
@@ -85,15 +83,16 @@ Currently used for:
                         background-color: rgba(255, 255, 255, 0.95);
                     }
                 }
+                @media (min-width: 700px) {
+                    #parallax-foreground {
+                        border-top-left-radius: var(--gap);
+                        border-top-right-radius: var(--gap);
+                    }
+                }
             #dark #parallax-foreground {
                 background-color: {{ page.parallax.background.dark-color }};
                 box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.75);
             }
-                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-                    #dark #parallax-foreground {
-                        background-color: rgba(46, 46, 46, 0.95);
-                    }
-                }
                 html#dark.oled #parallax-foreground {
                     background-color: hsl(0, 0%, 4%, 0.9) !important;
                 }

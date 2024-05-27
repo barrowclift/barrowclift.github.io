@@ -67,10 +67,13 @@ menubar:
         padding-top: 13em;
     } 
         #parallax-background img {
-            transition: background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), transform var(--cubic-bezier-transition), filter var(--cubic-bezier-transition), transform var(--cubic-bezier-transition);
             width: 90%;
             height: auto;
             margin-bottom: 1.3em;
+        }
+        #parallax-background picture {
+            text-align: center;
         }
     #parallax-foreground {
         min-width: 90vw;
@@ -78,17 +81,18 @@ menubar:
         width: 100%;
 
         transform: unset;
-        border-radius: unset;
 
         top: -1vw;
         margin-top: -0.25em !important;
     }
-    .flex {
-        transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    .row {
+        transition: gap var(--cubic-bezier-transition);
+        width: auto;
+        display: block;
+        text-align: center;
     }
-    #menubar {
-        height: 0;
-        padding-top: 2px;
+    #logo {
+        z-index: 10;
     }
 
 
@@ -114,6 +118,8 @@ menubar:
         margin-right: 0;
         width: 90%;
         max-width: 396px !important;
+        align-items: unset !important;
+        display: inline-block;
     }
         .card ol {
             padding: 0em;
@@ -160,6 +166,7 @@ menubar:
     }
     #gapless5-player {
         height: 4rem;
+        width: 100%;
         background: linear-gradient(
             to bottom,
             hsla(0, 0%, 0%, 0.05) 0%,
@@ -207,6 +214,9 @@ menubar:
 
     /* ----- GAPLESS 5 PLAYER: PLAY/PAUSE BUTTON ----- */
 
+    button {
+        margin-bottom: 0.65rem;
+    }
     .g5button {
         border-radius: 100%;
         width: 2.5rem;
@@ -408,7 +418,7 @@ menubar:
                 hsla(20, 69%, 55%, 0) 100%
             );
         }
-        #dark #menubar {
+        #dark #menubar menu {
             background-image: linear-gradient(
                 to bottom,
                 hsl(23, 77%, 31%) 0%,
@@ -453,8 +463,8 @@ menubar:
                 width: 100%;
                 min-width: 17em;
                 min-height: 17em;
-                max-width: 40.55em;
-                max-height: 40.55em;
+                max-width: 41em;
+                max-height: 41em;
             }
         #parallax-foreground {
             transform: translateZ(0px);
@@ -462,17 +472,18 @@ menubar:
             min-width: 100vw;
             height: auto;
             margin: 0 !important;
-            border-radius: 1em 1em 0 0;
             margin-top: calc(792px - 120vh) !important;
         }
         .card {
             margin-bottom: 0;
             margin-left: 0;
             margin-right: 0;
+            margin-top: -7px;
             width: auto;
             min-width: 22.5em !important;
+            display: flex;
         }
-        .flex {
+        .row {
             display: flex !important;
             flex-wrap: nowrap;
             flex-direction: row;
@@ -532,10 +543,10 @@ menubar:
         #parallax-foreground {
             margin-top: calc(964px - 120vh) !important;
         }
-        .flex a.column {
+        .row a.column {
             flex: 0 1 auto !important;
         }
-        .flex .card.column {
+        .row .card.column {
             flex: 0 1 auto !important;
         }
     }
@@ -550,7 +561,7 @@ menubar:
     └──┴──────────────────────────────┴──┘
      */
     @media (min-width: 1300px) {
-        .flex {
+        .row {
             gap: 2.6em;
             margin-left: 2.6em;
             margin-right: 2.6em;
@@ -589,7 +600,7 @@ menubar:
         }
         #parallax-foreground {
             transform: unset;
-            border-radius: unset;
+            border-radius: unset !important;
             max-width: unset;
             width: 100%;
             margin-top: -5.1em !important;
@@ -609,14 +620,14 @@ menubar:
             margin-left: 0;
             margin-right: 0;
         }
-        .flex {
+        .row {
             transform: scale(0.834);
-            transition: gap 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: gap var(--cubic-bezier-transition);
         }
-        .flex a.column {
+        .row a.column {
             flex: 0 1 auto !important;
         }
-        .flex .card.column {
+        .row .card.column {
             flex: 0 1 auto !important;
         }
     }
@@ -650,7 +661,7 @@ menubar:
      */
     @media (min-width: 1174px) and (max-height: 1150px) {
         #parallax-background {
-            padding-top: 3.625rem !important;
+            padding-top: 3.575rem !important;
         }
         #parallax-foreground {
             margin-top: -0.825em !important;

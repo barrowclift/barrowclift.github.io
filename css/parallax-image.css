@@ -50,7 +50,6 @@ html, body {
     height: auto;
     margin: 0 !important;
     margin-top: -20vh !important;
-    border-radius: 1em 1em 0 0;
 }
     @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
         #parallax-foreground {
@@ -64,13 +63,19 @@ html, body {
     border: none !important;
     box-shadow: none !important;
     top: 0;
-    height: 0; /* Don't push content down */
     box-shadow: none;
     min-width: 100vw;
     transform: unset;
     position: initial;
     -webkit-backdrop-filter: unset !important;
     backdrop-filter: unset !important;
+
+    /**
+     * Don't push the parallax-background content down, but still have the
+     * menu contents visible.
+     */
+    height: 0;
+    overflow: visible;
 }
 #menubar-height-offset {
     height: 0;
