@@ -1096,6 +1096,10 @@ a.anchor {
     bow-shadow: var(--hover-shadow);
     z-index: 100000;
 }
+[data-hint]:after,
+[data-hint]:before {
+    display: none;
+}
     [data-hint]:before {
         z-index: 100001;
     }
@@ -1121,6 +1125,12 @@ a.anchor {
         [data-hint]:after {
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
+        }
+    }
+    @media(min-width: 700px) {
+        [data-hint]:after,
+        [data-hint]:before {
+            display: block;
         }
     }
 /**
@@ -2402,15 +2412,18 @@ video {
  * decrease the brightness of all media until hovered by a mouse pointer or
  * tapped by a finger is a _really_ pleasing way to make late night scrolling
  * more visually soothing.
+ *
+ * Can only realistically do this effect on Safari because every other
+ * rendering engine sucks ass.
  */
-#dark img,
-#dark video {
+#dark.safari img,
+#dark.safari video {
     filter: brightness(0.7);
 }
-    #dark img:hover,
-    #dark video:hover,
-    #dark video:playing {
-        filter: brightness(1);
+    #dark.safari img:hover,
+    #dark.safari video:hover,
+    #dark.safari video:playing {
+        filter: brightness(1) !important;
     }
 /**
  * I use iOS app icons inline prose very heavily in music player showcases.
@@ -3397,8 +3410,14 @@ ul.button-group {
         }
     ul.button-group li {
         display: inline-block;
-        margin-top: var(--three-fourths-gap);
-        margin-bottom: var(--three-fourths-gap);
+        margin-top: var(--half-gap);
+        margin-bottom: var(--half-gap);
+    }
+    ul.button-group a {
+        display: block;
+    }
+    ul.button-group a:hover {
+        background: unset !important;
     }
 /**
  * If the group is flagged as .fixed, then the following opinionated widths
@@ -3422,6 +3441,8 @@ ul.button-group.fixed li {
             display: block;
             margin-left: 0;
             margin-right: 0;
+            margin-top: var(--three-fourths-gap);
+            margin-bottom: var(--three-fourths-gap);
         }
     }
     /**

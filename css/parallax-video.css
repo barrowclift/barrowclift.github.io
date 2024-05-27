@@ -45,7 +45,7 @@ html, body {
         display: block;
         position: absolute;
 
-        height: 67.5vw;
+        height: 70.5vw;
         width: 120vw;
         margin-bottom: -11.25vw;
 
@@ -57,6 +57,9 @@ html, body {
             width: 120vw;
             height: 67.5vw;
             min-height: 67.5vw;
+        }
+        #parallax-background video {
+            border-radius: 0 !important;
         }
         #parallax-background .edge-to-edge {
             max-width: unset;

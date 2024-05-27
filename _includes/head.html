@@ -30,8 +30,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 
-    <!-- Add dark mode ID (if enabled) as soon as possible -->
     <script>
+        // Add dark mode ID (if enabled) as soon as possible
         function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0){return null;}}else{b+=2;}var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}return decodeURI(dc.substring(b+p.length, e));}
         /* See main.js */
         let isSysDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -40,6 +40,21 @@
         if(c("accent-color")){document.getElementsByTagName("html")[0].className+=" "+c("accent-color");color=c("accent-color")}
         if(color==="purple"){dbc="#1B1B1C";lbc="#FEFEFF";}else if(color==="pink") {dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="red"){dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="orange"){dbc="#1C1C1A";lbc="#FFFFFE";}else if(color==="yellow"){dbc="#1C1C19";lbc="#FFFFFE";}else if(color==="green"){dbc="#1B1C1B";lbc="#FEFFFE";}else{dbc="#1A1B1D";lbc="#FEFEFF";}
         if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color")?.setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lbc);}
+
+        // There to this day continues to be certain features that some browsers suck ass for, so browser-specific conditions are still required. Apply as quickly as possible.
+        var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+        var is_ios_safari = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
+        var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+        if ((is_chrome)&&(is_safari)) {is_safari=false;}
+        if ((is_chrome)&&(is_opera)) {is_chrome=false;}
+        if (is_safari || is_ios_safari) {
+            document.getElementsByTagName("html")[0].classList.add("safari");
+        } else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
+            document.getElementsByTagName("html")[0].classList.add("firefox");
+        } else if (!is_safari && !is_ios_safari && !is_opera && is_chrome) {
+            document.getElementsByTagName("html")[0].classList.add("chrome");
+        }
     </script>
     {% if page.design.force-dark-mode %}
         <script>
