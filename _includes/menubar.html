@@ -19,9 +19,9 @@
                 {% if page.layout == "post" %}
                     {% assign articlePath=page.url | replace: "/articles/", "/article/" %}
                     {% capture nitroLink %}{{ site.nitro_url }}{{ articlePath }}{% endcapture %}
-                    <a class="nitro-link" href="{{ nitroLink }}">&#x26A1;</a>
+                    <a class="nitro-link" title="You have Javascript disabled. Click here to instead read the speed-optimized, Javascript-free version of the site." href="{{ nitroLink }}">&#x26A1;</a>
                 {% else %}
-                    <a class="nitro-link" href="{{ site.nitro_url }}">&#x26A1;</a>
+                    <a class="nitro-link" title="You have Javascript disabled. Click here to instead read the speed-optimized, Javascript-free version of the site." href="{{ site.nitro_url }}">&#x26A1;</a>
                 {% endif %}
             </noscript>
             <button onclick="settingsToggled();" class="jsonly">

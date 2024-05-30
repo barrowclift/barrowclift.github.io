@@ -1754,6 +1754,16 @@ a.anchor {
         #menubar menu li a {
             text-align: center;
         }
+        @media(min-width: 700px) {
+            #menubar menu li a.nitro-link {
+                margin-left: -1.5vw;
+            }
+        }
+        @media(min-width: 900px) {
+            #menubar menu li a.nitro-link {
+                margin-left: -1.4em;
+            }
+        }
     #settings-button-wrapper {
         height: 1.5em;
     }
