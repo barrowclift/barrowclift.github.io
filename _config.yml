@@ -23,6 +23,8 @@ enable-card-colors: False
 
 timezone: America/New_York
 locale: en-US
+exclude:
+    - "personal/"
 
 kramdown:
     footnote_backlink: "&#x21A9;&#xFE0E;"
