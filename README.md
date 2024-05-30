@@ -25,6 +25,7 @@ On the design front, at first glance it appears not much has changed, but look d
 * The sloppy rainbow "splash" backdrop that appeared on the Happy iMac on hover is gone, now fully realized with a lovely shifting gradient wheel.
 * Frustratingly, the old site's `articles/` page assigned individual articles a `posts/` path, but now articles finally roll up to the `articles/` path, as expected.
 * Project & article updates are now maintained separately from articles, and can now be their own small "update" pages, too.
+* Refined print stylesheet. You like reading on paper? Try printing any of my articles, they'll look great!
 * Many, many more refinements like these throughout.
 
 ## v12.0 "Home Run"
