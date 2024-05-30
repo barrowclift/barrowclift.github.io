@@ -1,0 +1,11 @@
+---
+type: project-update
+title: "Shelf 3.0 Released"
+date: 2021-06-05 12:25:39-0400
+
+excerpt: |
+    Shelf 3.0 is now available, featuring dark mode support and experimental 3D board game rendering style.
+link: https://github.com/barrowclift/shelf
+---
+
+Shelf 3.0 is now available, featuring dark mode support and experimental 3D board game rendering style.

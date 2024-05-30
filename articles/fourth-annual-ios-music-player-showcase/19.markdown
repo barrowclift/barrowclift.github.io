@@ -1,0 +1,175 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Recommendations"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "18"
+    next-page: "20"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+    dd > ul ul li:before {
+        content: none !important;
+    }
+    dd > ul {
+        margin-bottom: 0
+    }
+</style>
+
+## Recommendations
+
+### Entity Emphasis
+
+Albums
+: __[!["Albums" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums](https://apps.apple.com/us/app/albums-album-focused-player/id1469948986):__ The ability to view and browse by credit, the unified progress bar, and absolutely insane number of discovery options provided with little to no configuration make Albums the undisputed champion of album-focused players. If you love albums as an art form, you own it to yourself to give Albums a look.
+
+Favorites
+: __[!["Plum" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .app-icon } Plum](https://apps.apple.com/us/app/plum-music-player/id1441625664):__ Not only can you favorite *anything* (songs, albums, artists, playlists, and even folders), but Plum's presentation of those favorites is truly exceptional; you can select a traditional layout style to separate favorites by entity type, or alternatively select the lovely "Mosaic" layout style and enjoy a dynamic collage of your all your favorites at once.
+
+Playlists
+: * **Interested in both "smart" and manually crafted playlists?**
+    * __[!["Mixtapes" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/mixtapes/icon.png '"Mixtapes" iOS app icon'){: .app-icon } Mixtapes](https://apps.apple.com/us/app/mixtapes-music-player/id1571885606):__ While Marvis Pro has an exceptional "smart playlist" equivalent and Power Player has solid manual playlist support, Mixtapes is the only player available today that combines them both. It should be noted its "smart" playlist capabilities are fairly limited at the moment, but if support for *both* types are important to you, Mixtapes is the only player that can meet your needs.
+* **Primarily interested in "smart" playlists?**
+    * __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809):__ If you are only interested in "smart" playlists, Marvis Pro is the indisputable champion. No other player even comes close to matching the sheer number of filtering and sorting options Marvis Pro offers.
+
+Singles
+: __[!["Picky" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/picky/icon.png '"Picky" iOS app icon'){: .app-icon } Picky](https://apps.apple.com/us/app/picky-music-player/id497110916):__ While [Plum] puts up fierce competition by sporting similar capabilities for albums and artists, only Picky supports the fantastic "slide to filter" feature in album, artist, *and* song pages. This makes it trivial to browse your library for just one-hit wonders and hit singles, without—for example—irritatingly displaying all twenty-two tracks from [*Illinois*](https://music.apple.com/us/album/illinois/328074546)[^illinois].
+
+Vinyl Records
+: __[!["Vinyl Fetish" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/vinyl-fetish/icon.png '"Vinyl Fetish" iOS app icon'){: .app-icon } Vinyl Fetish](https://apps.apple.com/us/app/vinyl-fetish-music-player/id1490719457):__ The abstract concept of a musical album is inherently different than the many physical manifestations of that concept. Vinyl records are one of a long history of various physical music formats that deliver what we consider an "album", and if you are really into the vinyl record format in particular, Vinyl Fetish is simply stunning and will deliver an experience no other album-focused player (even Albums) can match.
+
+### Premium Lyrics Experience
+
+On iPhone
+: __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809):__ Of all players, Marvis Pro is the only one that supports viewing the album art right alongside the lyrics while in landscape mode on iPhone. That awards it top marks in my book by default.
+
+On iPad
+: __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ While both [Music.app] and Power Player support dual column full-players in landscape mode on iPad, Power Player tips the scales in its favor by providing a more focused, elegant experience throughout the rest of the app like Music.app used to back in the day.
+
+When Streaming
+: __[!["Music.app" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app](https://music.apple.com/):__ Despite my frustrations with [Music.app], there's no denying that if you're streaming Apple Music content and that content happens to support "Live Lyrics", no other third-party player comes close (in no small part due the gorgeous "lava lamp" visualizer remaining locked behind that specific criteria).
+
+### Seamless Streaming Service Integration
+
+Apple Music
+: __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809):__ If you want seamless, premium Apple Music streaming service integration, it doesn't get much better than Marvis Pro. While Music.app of course prominently features the Apple Music streaming service, it's at the expense of where the focus arguably *should* be, your library. Marvis Pro, in contrast, puts your library front and center, but you can search for and stream anything from Apple Music's library and display as much or as little of the Apple Music service on your "Home" page as you want.
+
+Spotify
+: __[!["Plum" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/plum/icon.png '"Plum" iOS app icon'){: .app-icon } Plum](https://apps.apple.com/us/app/plum-music-player/id1441625664):__ Not only does Plum offer respectable [Spotify](https://www.spotify.com/us/) support, it's the *only* player in this year's showcase that boasts this ability. If you continue to grip onto a Spotify subscription on iOS and want your third-party player to support it, Plum's got your back.
+
+### Industry-Leading Visualizers
+
+__[!["jetAudio" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/jetaudio/icon.png '"jetAudio" iOS app icon'){: .app-icon } jetAudio](https://apps.apple.com/us/app/jetaudio-hd-music-player/id894888135):__ While there's now a handful of players that support visualizers (in [Musens] case with exceptional quality), only jetAudio offers over thirty unique and compelling visualizers to choose from. It's in a league of its own.
+
+### Gorgeous Full-Player
+
+On iPhone
+: * **Interested in movement?**
+    * __[!["Musens" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/musens/icon.png '"Musens" iOS app icon'){: .app-icon } Musens](https://apps.apple.com/app/musens/id1560526260):__ The days of being bitterly disappointed at Music.app's diluted full-player visualizer are over; Musens captures the liveliness of Music.app's lava lamp "Live Lyrics" visualizer, but right in the full-player. Not diluted, and not locked behind a lyrics feature.
+* **Prefer no movement?**
+    * __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ If movement in your full-player isn't your flavor, there are few static full-players more bold and captivating than the one supplied by Power Player. While Picky's full-player is arguably equivalent in beautiful (albeit with a very different approach), Power Player's superior full-player lyrics support and optional visualizer nudge it ahead.
+
+On iPad
+: __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ If you're on an iPad, no other player is as beautiful as Power Player's without needlessly sacrificing functionality. [Marvis Pro]'s is arguably more pretty, but the poor use of screen space in landscape mode on iPad in comparison to Power Player's approach held it back.
+
+### Independent Library Support
+
+__[!["Doppler" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/doppler/icon.png '"Doppler" iOS app icon'){: .app-icon } Doppler](https://apps.apple.com/us/app/doppler-mp3-flac-player/id1468459747):__ [Doppi]'s independent library support is indeed rich, but is unfortunately heavily reliant on Apple protocols and the Apple ecosystem. In comparison, Doppler offers industry-leading support for platform agnostic independent library management, allowing anyone (whether on Windows, Linux, whatever) to easily send music from their platform of choice to Doppler.
+
+### Spiritual iPhoneOS Music app Successor
+
+Toss-up between __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429)__ and __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .app-icon } Cs Music](https://apps.apple.com/us/app/cs-music-player/id924491991)__, it really depends on whether or not you appreciate Power Player's bold transparency-forward design. If Power Player's extensive translucency is not to your taste for any reason, Cs Music is the closest alternative to what I'd consider to be the spiritual successor to iPhoneOS's original Music.app. However, if the translucency is to your taste, Power Player is strictly speaking the closest equivalent. While [Picky] got close, it does not support the required ability to customize the tab bar items.
+
+### Discovery Features
+
+Little To No Configuration?
+: __[!["Cs Music" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/cs-music/icon.png '"Cs Music" iOS app icon'){: .app-icon } Cs Music](https://apps.apple.com/us/app/cs-music-player/id924491991):__ With minimal but powerful options like the ability to reorganize and show/hide the various discovery collections combined with the ability to easily switch the entity type they display, Cs Music strikes the best compromise between out-of-the-box discoverability with a satisfying level of accessible customization.
+
+Love Configuration?
+: __[!["Marvis Pro" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/marvis-pro/icon.png '"Marvis Pro" iOS app icon'){: .app-icon } Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809):__ If you loved making "smart" playlists in iTunes back in the day or if you continuously find yourself longing for more power and control in other music players, Marvis Pro is the player you're looking for. Its exhaustive customization capabilities and section creation engine continue to lead Marvis Pro to the top of its class in the category.
+
+Primarily Listen to Albums?
+: __[!["Albums" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/albums/icon.png '"Albums" iOS app icon'){: .app-icon } Albums](https://apps.apple.com/us/app/albums-album-focused-player/id1469948986):__ While Marvis Pro remains the theoretical champion of album discovery features, this carries a massive "lots of assembly required" asterisk. Albums' discovery options are outstanding out of the box with little to no configuration required, in contrast. Unless you're *really* into taking the time to create the album-focused experience you want, Albums is the overall best option.
+
+### iPad Support
+
+Willing to forgo some screen size optimization for a vastly improved album browsing experience?
+: __[!["Power Player" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/power-player/icon.png '"Power Player" iOS app icon'){: .app-icon } Power Player](https://apps.apple.com/us/app/power-player-music-player/id1372545429):__ While Power Player's iPad experience isn't quite as optimized as it could be (most notably due to its absense of multi-column browsing), it does offer a more optimized album browsing experience with its [iTunes 11](https://panic.com/blog/itunes-11-and-colors/)-style album art "tray" design. If you primarily listen to albums, the trade-off is worth it.
+
+Want the best optimized iPad experience?
+: __[!["Music.app" iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-app/icon.png '"Music.app" iOS app icon'){: .app-icon } Music.app](https://music.apple.com/):__ For the best overall optimized iPad experience, Music.app remains the champ thanks to its full screen full-player, stock iPadOS sidebar, and multi-column browsing.
+
+-----
+
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/20"><p class="button">Final Section: “Conclusion”</p></a></li>
+</ul>
+
+<details open>
+    <summary>Table of Contents</summary>
+
+    <div class="toc" style="margin-bottom: 1.3rem;">
+        <ul>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Recommendations</strong></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+        </ul>
+    </div>
+</details>
+
+-----
+
+[^illinois]: [Sufjan Stevens](https://music.apple.com/us/artist/sufjan-stevens/4273404), I love ya, but cut it out.
+
+[Plum]: https://apps.apple.com/us/app/plum-music-player/id1441625664
+[Music.app]: /articles/fourth-annual-ios-music-player-showcase/14
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Doppi]: https://doppi.app
+[Picky]: https://apps.apple.com/us/app/picky-music-player/id497110916
+[Musens]: https://musensapp.com

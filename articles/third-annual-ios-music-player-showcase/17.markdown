@@ -1,0 +1,174 @@
+---
+title: "Third Annual iOS Music Player Showcase - SongOwl"
+date: 2020-12-31 13:10:33-0500
+timelocked: true
+
+excerpt: |
+    Celebrating the diverse and exciting world of 2020’s iOS music players.
+image: "third-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    base-title: "Third Annual iOS Music Player Showcase"
+    start-page: "/articles/third-annual-ios-music-player-showcase"
+    previous-page: "16"
+    next-page: "18"
+---
+
+## !["SongOwl" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/icon.png '"SongOwl" iOS app icon'){: .app-icon } SongOwl
+
+<div class="show-when-light edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage-poster.jpg" alt="Video demonstrating 'SongOwl' usage in light mode" title="Demonstrating 'SongOwl' usage in light mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-album-view.jpg">
+        ![Image of "SongOwl" light album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-album-view.jpg '"SongOwl" light album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-now-playing.jpg">
+        ![Image of "SongOwl" light player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-now-playing.jpg '"SongOwl" light player view')
+    </a>
+</div>
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage-poster.jpg" alt="Video demonstrating 'SongOwl' usage in dark mode" title="Demonstrating 'SongOwl' usage in dark mode">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-album-view.jpg">
+        ![Image of "SongOwl" dark album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-album-view.jpg '"SongOwl" dark album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-now-playing.jpg">
+        ![Image of "SongOwl" dark player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-now-playing.jpg '"SongOwl" dark player view')
+    </a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+    <a href="https://apps.apple.com/us/app/songowl-music-player/id1492630850">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
+</div>
+
+I find it difficult to introduce [SongOwl](https://apps.apple.com/us/app/songowl-music-player/id1492630850)—one of the few new players this year—without immediately addressing the elephant in the room concerning its unfortunate origins. [Mike Clay](https://twitter.com/CsMusicPlayer)—SongOwl's developer—initially developed SongOwl not as a standalone app, but rather as the highly anticipated version 6 update to a different app altogether: his existing player, [Cs](https://apps.apple.com/us/app/cs-music-player/id924491991). However, during the Cs 6 beta testing, the functional and navigational changes proved divisive (to say the least), leaving Mike in a difficult situation. Sure, he could double down on his Cs 6 vision and disregard the negative beta feedback, but that would likely result in a similar reaction from the general public, tanking Cs's historically positive App Store rating. He could also attempt addressing the feedback, but doing so would necessarily compromise the exciting new functionality the beta introduced, which also entails throwing away months of work. There was one final option available to Mike, which he thankfully ended up taking: He decided to release the radical Cs 6 update as a brand-new, standalone app, which both freed him up to redevelop a Cs 6 update from the ground up based on the desires of that existing userbase while also still delivering his original Cs 6 vision to a new, hopefully more receptive audience.
+
+SongOwl carries with it the same elegant, simple spirit of its Cs origins, but with a few exciting new features that I clammered for in Cs for years. Visually, the app is a breath of fresh, modern air from the increasingly stale design of [Cs 5 from last year](/articles/second-annual-ios-music-player-competition#--cs); its plentiful, rounded rects, button-y buttons, and redesigned list item style make SongOwl feel right at home on iOS 14. However, SongOwl goes beyond a simple visual reskin of Cs 5's aging aesthetic; its design features the most foundational changes Cs has ever received thanks to its navigation redesign. While Cs this year continues to feature a standard [iOS tab bar](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/) with an item for each of the usual suspects ("Albums", "Artists", etc.) which can be reorganized in the settings, SongOwl instead takes after Music.app's tab bar; in place of "Albums", "Artists", etc., SongOwl opts instead for a single, unified "Library" tab, within which those traditional views may be created (if desired) with the new "Paths" feature (more on this later). The remaining tab bar items ("Playlists", "Favorites", "Search", and "Settings") are all self-explanatory. Unfortunately, none of SongOwl's tab bar items may be removed or reorganized like they previously could in Cs. What you see is what you get in SongOwl.
+
+It may seem puzzling to consolidate what was previously five discrete tab bar items in Cs into a single "Library" tab in SongOwl, but much like in Music.app those capabilities reveal themselves upon navigating to its tab view. While Music.app displays these items as predefined views which may be individually hidden or shown to taste, SongOwl has no such list. Instead, there's a conspicuous new icon in the left side of the "Library" view's menu bar. Tapping that button reveals the "Paths" menu, by far the most controversial change in SongOwl from its Cs beta period. In a fresh SongOwl install, there's only a single predefined path ("Library"), which displays an alphabetical list of your songs. Upon tapping the big <kbd>+ New Path...</kbd> button in that menu, a new "Path" item appears in the list. Grouping and sorting changes made for the currently selected "path" are then persisted *only* for that path. For example, you can create a new path, name it "Artists", then select "Artist" and "Alphabetical" as your grouping and sorting options to create your very own "Artists" view just like the "Artists" tab you'd find in Cs. This is of course a simple example, you can use the grouping and sorting options to make a wide variety of unique paths, such as "Recently Added" (finally!) and "Randomized Albums".
+
+<figure class="array ios-screenshot">
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.webp">
+            <img title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.webp">
+            <img title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-light" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.webp">
+            <img title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/light-paths-3.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.webp">
+            <img title="The Paths menu, where existing paths can be accessed and new paths can be made" alt="Image of the paths menu, where existing paths can be accessed and new paths can be made" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-1.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.webp">
+            <img title="SongOwl's grouping options" alt="Image of SongOwl's grouping options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-2.jpg">
+        </picture>
+    </a>
+    <a class="show-when-dark" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.webp">
+            <img title="SongOwl's sorting options" alt="Image of SongOwl's sorting options" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/songowl/dark-paths-3.jpg">
+        </picture>
+    </a>
+    <figcaption>SongOwl’s “Paths” menu and the somewhat limited “Grouping” and “Sorting” options that can be applied to any given path.</figcaption>
+</figure>
+
+I hoped for a feature like "Paths" in Cs for years, but the current implementation still has the same issues it did from its Cs 6 beta days. For one, failing to include standard "paths" users expect like "Artists", "Albums", etc. in the base install is a tremendous mistake; dumping users into a fairly complicated customization system like this without providing a sufficient number of reasonable defaults like [Marvis Pro] and [Albums] do make SongOwl's "Paths" feature feel unfinished in comparison. Then there's the matter of SongOwl's static tab bar; while it's completely reasonable from an engineering perspective to expect this feature either cannot be accomplished or would be feindishly complex to develop due to "Paths", the loss of one-tap access to common views like "Artists" and "Albums" remains a disappointment. While potentially not possible, the ability to "pin" specific paths to the tab bar is also absent and disappointing. Finally, the "Paths" system as it exists is simply not powerful enough. There's no way to filter out contents from a particular path; you can *only* change the way those contents are grouped and sorted. While this alone is fairly flexible and allows you to recreate the views that would otherwise come "for free" with Cs like "Albums", "Artists", and "Genres", they're not nearly flexible enough to go toe-to-toe with Albums and Marvis Pro's equivalent systems. I also continue to be disappointed by the slim sorting options provided by SongOwl, which continues to provide no way to sort albums alphabetically by album artist and then by release year.
+
+Putting my issues with the current "Paths" system aside, SongOwl is nonetheless a great general-purpose player; the customization options with "Paths" is limited, but that only means SongOwl can't quite compete with Albums and Marvis Pro; the "Paths" system is plenty sufficient to replicate the functionality found in other general-purpose players while delivering a little extra for those like myself that like discovery collections like "Recently Added" and "Randomized Records", which is a huge quality-of-life improvement for my use.
+
+As 2020 draws to a close, SongOwl's at a crossroads; Mike's decision to spin-off the original Cs 6 beta as SongOwl and redevelop and release a different Cs 6 update leaves SongOwl in uncharted territory. Mike could easily decide SongOwl was a fun experiement that deserved a release and not much more than maintenance patches afterwards. After all, I don't anticipate Mike will suddenly have double the free time required to develop exciting major releases equally across Cs and SongOwl. He could perhaps establish a tick-tock development cycle, swithing between players for each major release, but at this point it's too early to say for certain if he'll choose this path. However, what can be said for certain is SongOwl as it exists today is a compelling, modern interpretation of the arguably aging general-purpose player paradigm; it doesn't go all the way like Albums and Marvis Pro does, but perhaps for an app in this category that's enough.
+
+### Widgets
+
+None.
+
+### Personal Score Card
+
+<div class="admonition aside">
+    <ul class="emoji">
+        <li>:heavy_check_mark: <strong>Lyrics support: </strong><em>While SongOwl supports lyrics, they are sectioned off as a view in the metadata popup instead of integrated directly into the player view itself. As a listener that considers lyrics a more “important” form of metadata, SongOwl’s approach is not to my taste.</em></li>
+        <li>:heavy_check_mark: <strong>Light & dark themes</strong></li>
+        <li>:heavy_check_mark: <strong>Discovery features: </strong><em>While not nearly as robust as I’d prefer, the new “Paths” system can support a decent amount of discovery collections like “Recently Added” and “Randomized Records”.</em></li>
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view: </strong><em>SongOwl’s king-sized progress and volume bars combined with its pleasing translucency effects are quite pretty.</em></li>
+    </ul>
+    
+    <ul class="emoji">
+        <li>:large_orange_diamond: <strong>Album-focused features: </strong><em>You can create a decent amount of album-focused discovery collections like “Recently Added” and “Randomized Records” with the “Paths” feature, but the lack of grid view in SongOwl is disappointing.</em>
+            <ul class="bare">
+                <li>:large_orange_diamond: <strong>Proper sorting: </strong><em>While the “Artists” view can properly sort albums for any particular artist, this option is unfortunately not available anywhere else.</em></li>
+                <li>:x: <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <ul class="emoji">
+        <li>:x: <strong>iPad support</strong></li>
+    </ul>
+</div>
+
+<ul class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/18"><p class="button">Next App: “Soor”</p></a></li>
+</ul>
+
+<details open>
+    <summary>Table of Contents</summary>
+
+    <div class="toc" style="margin-bottom: 1.3rem;">
+        <ul>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li>SongOwl</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+        </ul>
+    </div>
+</details>
+
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Marvis Pro]: https://appaddy.wixsite.com/marvis

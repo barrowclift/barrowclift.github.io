@@ -1,0 +1,38 @@
+---
+error: true
+title: "No Page Found"
+---
+
+# Page Not Found
+
+I can't seem to find anything for your request, apologies! If you believe something should be here, please [reach out](/contact) and I'll fix it as soon as possible.
+
+To pass the time until then, please consider my recent articles below.
+
+<div class="cards updates column">
+    {% assign numberOfLinksAdded = 0 %}
+    {% for post in site.posts %}
+        {% if post.type != "article" %}
+            {% continue %}
+        {% endif %}
+        {% assign numberOfLinksAdded = numberOfLinksAdded | plus: 1 %}
+        {% if numberOfLinksAdded > 3 %}
+            {% break %}
+        {% endif %}
+        <a href="{{ post.url }}">
+            <div class="card">
+                <div class="label">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %-d, %Y" }}
+                    </time>
+                    <h4 class="primary">
+                        {{ post.title }}
+                    </h4>
+                    <h5 class="secondary">
+                        {{ post.excerpt }}
+                    </h5>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

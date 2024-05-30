@@ -1,44 +1,46 @@
 ---
-layout: post
 title: "Meaningful Names"
 date: 2017-02-14 1:05:17
-categories:
-  - Programming
-  - Technology
-image: "meaningful-names/share-image.jpg"
-excerpt: "What does \"magic()\" mean? How about \"foo()\"? Or \"arg1\"? Nobody knows, and that's the problem."
 
+excerpt: |
+    What does “magic()” mean? How about “foo()”? Or “arg1”? Nobody knows, and that’s the problem.
+categories:
+    - Programming
+    - Technology
+image: "meaningful-names/share.jpg"
+card:
+    image: "meaningful-names/card"
 ---
 
-<figure markdown="1" class="edge-to-edge small">
-![A "Hello, My Name Is" sticker with the name "FOOBAR" on it]({{ site.dropbox }}/meaningful-names/namecard.png)
-</figure>
+<div class="edge-to-edge small">
+    <img src="{{ site.dropbox }}/meaningful-names/namecard.png" alt="A &quot;Hello, My Name Is&quot; sticker with the name &quot;FOOBAR&quot; on it">
+</div>
 
 Do you know what `magic()` means? How about `foo()`, what does that do? What about `arg1`, what's that supposed to be? To be frank, I have no idea what any of these represent since the names themselves carry little to no intrinsic meaning. They're just meaningless fluff.
 
-<a id="resume-from-break"></a>
 Oftentimes, this is what it feels like as a developer when [reading code from the community](http://www.c2.com/cgi/wiki?BadVariableNames). Not all developers write code in this style, of course, but some do and it makes understanding the story they're trying to tell nigh impossible. Even the general public can sympathize with these feelings; you've no doubt seen "hackers" in shows or movies clacking away [alphabet vomit](http://www.hackertyper.com) and wondered to yourselves, "Who the blazes can actually read that?".
 
-<!--break-->
-
-<figure markdown="1" class="edge-to-edge small">
-[![An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com]({{ site.dropbox }}/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg)](http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the)
-<figcaption>
-Nobody can, because it's horrible.
-</figcaption>
+<figure class="edge-to-edge shadow small">
+    <a href="http://moviecode.tumblr.com/post/93941117101/this-screen-shot-is-from-the-first-episode-of-the">
+        <img src="{{ site.dropbox }}/meaningful-names/for-developers-that-hate-things-that-make-sense.jpg" alt="An image of a computer screen filled with poorly written and formatted code from the NBC TV series XIII, click this image to go to moviecode's source post at tumblr.com">
+    </a>
+    <figcaption>
+        Nobody can, because it’s horrible.
+    </figcaption>
 </figure>
-
 
 Where It All Started
 --------------------
 
 Having tiny, arbitrary names like [`ox`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-113), [`tid`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-112), or [`pctl`](https://bitbucket.org/inferno-os/inferno-os/src/185709ebf9fcb65846add6abe88c9d3db3e60406/appl/acme/xfid.b?at=default#xfid.b-105) back in the 1980's was a pragmatic choice compared to using lengthier, meaningful names. Developers wrote in lightweight plain text editors such as [vi](https://en.wikipedia.org/wiki/Vi), and at the time no contextual help like [autocomplete](https://en.wikipedia.org/wiki/Autocomplete) or [IntelliSense](https://en.wikipedia.org/wiki/Intelligent_code_completion) existed. This meant that every single variable name had to be retyped in full or copy/pasted whenever needed. Even copy/pasting, while helpful, was a pain since nearly all development in the early 80's was done without a mouse. That's right, actions such as moving the cursor, selecting text, copy/pasting, etc. were done exclusively on the keyboard. While developers adapted to these constraints fairly well, long variable names remained unwieldy and were generally avoided. Shrinking names down to their smallest possible form simply made editing that much easier.
 
-<figure markdown="1" class="edge-to-edge small">
-[![Another image of what appears to be a TV monitor displaying utter gibberish, click this image to go to moviecode's source post at tumblr.com]({{ site.dropbox }}/meaningful-names/back-in-my-day.jpg)](http://moviecode.tumblr.com/post/74145306311/from-classic-doctor-who-episode-the-twin-dilemma)
-<figcaption>
-40 whole characters on a single line? Truly this is the future.
-</figcaption>
+<figure class="edge-to-edge shadow small">
+    <a href="http://moviecode.tumblr.com/post/74145306311/from-classic-doctor-who-episode-the-twin-dilemma">
+        <img src="{{ site.dropbox }}/meaningful-names/back-in-my-day.jpg" alt="Another image of what appears to be a TV monitor displaying utter gibberish, click this image to go to moviecode's source post at tumblr.com">
+    </a>
+    <figcaption>
+        40 whole characters on a single line? Truly this is the future.
+    </figcaption>
 </figure>
 
 Not only that, but computer monitors at the time were extremely small compared to today's offerings, so developers only had a sparse number of characters that could be displayed at any given time on the screen. In general, the more logic a developer can see at any given time the easier it will be for them to maintain their sense of "place".  Given how valuable screen real estate was in the day, shorter names exposed more of the program's underlying logic while still allowing the code itself to fit snuggly on screen. For example, `m=s/60` embeds the same *logic* as `minutes=seconds/SECONDS_IN_MINUTE`, though it's not clear in the first example what that logic actually *represents*. With barely any screen to work with, however, the first option becomes far more appealing.

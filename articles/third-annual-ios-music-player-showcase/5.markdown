@@ -1,0 +1,166 @@
+---
+title: "Third Annual iOS Music Player Showcase - Doppi"
+date: 2020-12-31 13:10:33-0500
+timelocked: true
+
+excerpt: |
+    Celebrating the diverse and exciting world of 2020’s iOS music players.
+image: "third-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    base-title: "Third Annual iOS Music Player Showcase"
+    start-page: "/articles/third-annual-ios-music-player-showcase"
+    previous-page: "4"
+    next-page: "6"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## !["Doppi" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/icon.png '"Doppi" iOS app icon'){: .app-icon } Doppi
+
+<div class="show-when-light edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage with light theme" title="Demonstrating 'Doppi' usage with light theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.webp">
+            <img title="'Doppi' light theme album view" alt="Image of 'Doppi' light theme album view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.webp">
+            <img title="'Doppi' light theme player view" alt="Image of 'Doppi' light theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/light-now-playing.jpg">
+        </picture>
+    </a>
+</div>
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage-poster.jpg" alt="Video demonstrating 'Doppi' usage with dark theme" title="Demonstrating 'Doppi' usage with dark theme">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.webp">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.webp">
+            <img title="'Doppi' dark theme player view" alt="Image of 'Doppi' dark theme player view" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppi/dark-now-playing.jpg">
+        </picture>
+    </a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+    <a href="https://apps.apple.com/us/app/doppi/id1002899671">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
+</div>
+
+Doppi is a sheer delight; thanks to its silky-smooth animations, gorgeous custom interface, and healthy number of customization options despite the [old "simple player" tagline](http://web.archive.org/web/20200114013536if_/https://apps.apple.com/us/app/doppi/id1002899671), no other player held a candle to Doppi's user experience [last year](/articles/second-annual-ios-music-player-competition#--doppi). I'm pleased to report that remains the case this year as well thanks to the introduction of marvelous new features and a brand new player view design; Doppi remains one of the finest general-purpose players available.
+
+While Doppi enjoyed plenty of fixes and improvements this year, I'm going to briefly touch on what I feel are the highlights, starting with the ability to "hide" music from Doppi. Doing so won't delete the music (assuming you manage your library with iOS, it will still be viewable in [Music.app]), it will simply hide it from Doppi. This is a useful way for users with a massive library to use Doppi as a supplemental "favorites" or "album-focused" player for their collection. Another, similar feature introduced this year is the ability to exclude music from "Shuffle All", which as far as I'm aware is exclusive to Doppi. Christmas music collectors rejoice, you can now "Shuffle All" in the summertime with confidence.
+
+Sick of using [iTunes](https://support.apple.com/en-us/HT210384) or [Music.app](https://www.apple.com/music/) to manage and sync your library? This year, you can now avoid it entirely with Doppi's new independent library management support. You may import your library using one of the many Apple-specific options Doppi supports, including:
+
+* [AirDrop](https://support.apple.com/en-us/HT203106)
+* [Files.app](https://support.apple.com/en-us/HT206481), which includes either piecemeal importing from any arbitrary folder or automatic syncing with Doppi's own app folder
+* iOS's [Share Sheet](https://appleinsider.com/articles/20/09/12/how-to-get-the-most-out-of-the-share-sheet-in-ios-13-and-ios-14) from any other app that supports sending audio
+
+Each of these methods are beautifully documented under the new "Add Music" button in the "More" tab, though users on [Windows](https://www.microsoft.com/en-us/windows) or [Linux](https://www.linux.org/pages/download/) are unfortunately stuck without platform-agnostic import options that other players like [Doppler 2] support.
+
+Finally, there's the entrancing new player view design. The new design is quite similar to [Albums]' in principle; the album art and player controls are treated as discrete components, but unlike Albums they gracefully animate with a pleasing parallax effect that follows your gesture the entire time. The animation is so delightful to play with I frequently catch myself fidgetting with it while listening. Best of all—like Picky—the effect is silky-smooth and [jank-free](https://en.wiktionary.org/wiki/jank#Noun).
+
+The lyrics view also received a substantial upgrade with this redesign; instead of utilizing the tired, teeny scroll view album art overlay like many players do, full-height lyrics may now be accessed below the player controls with a simple button press or swipe-up gesture. That's not all, Doppi is now the first and only player I've found that provides the ability to edit lyrics right in the app. That's right, with Doppi you're no longer forced to use your computer anytime you want to add or edit lyrics, you can simply make your changes right in Doppi itself.
+
+There's few other players this year that thrilled me as much as Doppi did. While [Marvis Pro], [Picky], and others enjoyed plenty of enhancements this year, I can't really claim that their improvements delighted me as much as Doppi's player view redesign. Doppi is even more elegant than it was last year, and now thanks to its additional feature enhancements it's now more capable than ever before.
+
+### Widgets
+
+None.
+
+### Personal Score Card
+
+<div class="admonition aside">
+    <ul class="emoji">
+        <li>:trophy: <strong>Lyrics support: </strong><em>We not only got full-height lyrics this year, but the exclusive ability to edit them. No other player has better lyrics support for local music than Doppi.</em></li>
+        <li>:trophy: <strong>Light & Dark themes: </strong><em>Doppi goes above and beyond by offering full support for iOS’s system appearances while also maintaining an alternative, “lighter” dark mode for those still sporting iPhones with an LCD screen.</em></li>
+        <li>:trophy: <strong>Beautiful or visually engaging player view: </strong><em>It’s so smooth and so unique, it needs to be tried to be believed.</em></li>
+    </ul>
+    
+    <ul class="emoji">
+        <li>:heavy_check_mark: <strong>Album-focused features: </strong><em>You can easily make “Albums” your first&mdash;or even only&mdash;tab view if you’re so inclined.</em>
+            <ul class="bare">
+                <li>:heavy_check_mark: <strong>Proper sorting: </strong><em>The setting is easily discoverable and changeable. Other music players, take note.</em></li>
+                <li>:heavy_check_mark: <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <ul class="emoji">
+        <li>:x: <strong>iPad support: </strong><em>While I suspect an iPad release is imminent, we're unfortunately still left with no iPad version of Doppi.</em></li>
+        <li>:x: <strong>Discovery features: </strong><em>Perhaps my only big disappointment with Doppi this year, I hoped we would at least get a “Recently Added” collection somewhere, by now.</em></li>
+    </ul>
+</div>
+
+<ul class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/6"><p class="button">Next App: “Doppler 2”</p></a></li>
+</ul>
+
+<details open>
+    <summary>Table of Contents</summary>
+
+    <div class="toc" style="margin-bottom: 1.3rem;">
+        <ul>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li>Doppi</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/6">Doppler 2</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+        </ul>
+    </div>
+</details>
+
+[Albums]: https://apps.apple.com/us/app/albums-album-focused-player/id1469948986
+[Picky]: https://apps.apple.com/us/app/picky-music-player/id497110916
+[Music.app]: /articles/third-annual-ios-music-player-showcase/12
+[Marvis Pro]: https://appaddy.wixsite.com/marvis
+[Doppler 2]: https://apps.apple.com/app/doppler-2-music-player/id1468459747

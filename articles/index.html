@@ -1,92 +1,32 @@
 ---
-layout: default
 title: "Articles"
-anchors: false
-writings-menu-active: true
+design:
+    expanded-page: true
+    show-anchors: false
 ---
 
-<style>
-sup[id^=fnref] {
-	display:none;
-}
-</style>
-{% assign count=0 %}
-{% for post in paginator.posts %}
-	{% if post.type != "article" %}
-	{% continue %}
-	{% endif %}
-	{% if count > 0 %}
-	<hr>
-	{% endif %}
+{% for post in site.posts %}
+    {% assign lengthMod = forloop.length | modulo: 2 %}
+    {% assign indexMod = forloop.index | modulo: 2 %}
 
-	<article>
-		{% include article-header.html %}
-		{% if post.banner-image %}
-		<figure>
-			<p>
-				{% if post.banner-link %}
-				<a href="{{ post.banner-link }}" {% if post.banner-hover %}title="{{ post.banner-hover }}"{% endif %}>
-					<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
-				</a>
-				{% else %}
-				<img src="{{ post.banner-image-small }}" alt="" class="edge-to-edge" /></a>
-				{% endif %}
-			</p>
-		</figure>
-		{% elsif post.hero-banner or post.light-hero-banner or post.dark-hero-banner %}
-			{% if post.hero-banner %}
-			<div class="edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.hero-banner }}.jpg">
-			</picture>
-			</a>
-			</p>
-			</div>
-			{% else %}
-			<div class="show-when-light edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.light-hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
-			</picture>
-		    </a>
-			</p>
-			</div>
-			<div class="show-when-dark edge-to-edge small shadow">
-			<p>
-			<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-			<picture>
-			  <source type="image/webp" srcset="{{ site.dropbox }}/{{ post.dark-hero-banner }}.webp">
-			  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
-			</picture>
-		    </a>
-	     	</p>
-			</div>
-			{% endif %}
-		{% endif %}
-
-		{{ post.content | split:'<!--break-->' | first }}
-		{% if post.content contains '<!--break-->' %}
-			<h5 style="text-align:center;"><a class="button" href="{{ post.url }}#resume-from-break">Continue Reading…</a></h5>
-		{% endif %}
-	</article>
-	{% assign count=count | plus:1 %}
+    {% if indexMod == 0 %}
+            <div class="column">
+                {% include article-card.html %}
+            </div>
+        </div>
+    {% else %}
+        <div class="cards articles row" style="{% if forloop.index == forloop.length and lengthMod == 1 %}gap: 0.65em;{% endif %}">
+            {% if forloop.index == forloop.length and lengthMod == 1 %}
+                <div class="column whitespace"></div>
+            {% endif %}
+            <div class="column">
+                {% include article-card.html %}
+            </div>
+            {% if forloop.index == forloop.length %}
+                {% if lengthMod == 1 %}
+                    <div class="column whitespace"></div>
+                {% endif %}
+                </div>
+            {% endif %}
+    {% endif %}
 {% endfor %}
-
-<hr>
-
-<footer>
-	<h4 style="text-align:center;">
-		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}">More Articles →</a>
-		{% else %}
-		<span class="weak">No more articles, sorry!</span>
-		{% endif %}
-	</h4>
-</footer>
-
-{% include blog-footer-buttons.html %}

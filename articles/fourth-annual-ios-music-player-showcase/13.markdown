@@ -1,0 +1,217 @@
+---
+title: "Fourth Annual iOS Music Player Showcase - Music Player X"
+date: 2022-01-07 11:11:03-0500
+update: 2022-01-15 11:17:17-0500
+timelocked: true
+force-early-timelock: true
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    base-title: "Fourth Annual iOS Music Player Showcase"
+    start-page: "/articles/fourth-annual-ios-music-player-showcase"
+    previous-page: "12"
+    next-page: "14"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## ![Music Player X's iOS app icon]({{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/icon.png "Marvis Pro's iOS app icon"){: .app-icon } Music Player X
+
+<div class="show-when-light edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage-poster.jpg" alt="Video demonstrating Music Player X's usage in light mode" title="Demonstrating Music Player X's usage in light mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-album-view.webp">
+            <img title="Music Player X's light theme album-view" alt="Image of Music Player X's light theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-full-player.webp">
+            <img title="Music Player X's light theme full-player" alt="Image of Music Player X's light theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/light-full-player.jpg">
+        </picture>
+    </a>
+</div>
+<div class="show-when-dark edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage-poster.jpg" alt="Video demonstrating Music Player X's usage in dark mode" title="Demonstrating Music Player X's usage in dark mode">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-album-view.webp">
+            <img title="Music Player X's dark theme album-view" alt="Image of Music Player X's dark theme album-view" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-album-view.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-full-player.jpg">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-full-player.webp">
+            <img title="Music Player X's dark theme full-player" alt="Image of Music Player X's dark theme full-player" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/dark-full-player.jpg">
+        </picture>
+    </a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+    <a href="https://apps.apple.com/app/apple-store/id1221701870">
+        <img class="show-when-light" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
+</div>
+
+Music Player X—among one of the more curious players in the yearly showcase—is in even more of an usual position this year. In years past, its quirkiness came from its completely custom, [brutalist](https://onextrapixel.com/brutalist-web-design-trend/) interface, which practically bursts at the seams with chaotic but charming personality. However, this past year it's unusual particularly because its successor—[MPX EQ]—was officially released and Music Player X made 100% free. That's right, at least at the time of writing, you can newly download both Music Player X and its replacement right alongside one another. While it's entirely possible Femi Oduntan—the single developer behind both—intends to continue maintaining both for the foreseeable future like Mike does with [Cs Music] and [SongOwl], I can't help but look at this as the formal, graceful deprecation of Music Player X to give customers time to transition to the new version.
+
+With that potential future aside, the app itself is still fully functional, available for download, and received a healthy number of new features in 2021 prior to MPX EQ's release which still award it a dedicated spotlight it this year's showcase. However, given Music Player X's now free and its replacement app is available and gaining steam, this will likely be a final goodbye.
+
+Music Player X is perhaps the most radical general-purpose player available today. While the interface itself and browsing approach is typical fare ("Artists", "Albums", and other usual suspects are all here), not a single control or view in the app appears stock; nearly everything seems custom-made or at least heavily modded beyond recognition. This certainly yields Music Player X plenty of drawbacks, primarily that it barely feels like an iOS app anymore, and secondarily that it severely lacks the animation polish other apps get "for free" by using stock components. This results in a lack of comfort that makes some of its custom navigational flows feel so jarring that they are oftentimes confusing to navigate and back out of, among other issues. The custom UI is naturally strongly opinionated as well, which is sure to push away listeners that don't care for its brutalist, 90's era computing ascetic. With those huge caveats made clear, Music Player X's custom interface *does* allow it a substantial number of benefits, such as its immediately identifiable brand recognition[^brand-recognition]. You can easily and instantly recognize Music Player X even from a distance. This pairs hand-in-hand with its theming engine, which is the other huge benefit its fully custom UI provides. If you're a listener big on the ["aesthetic AF"](https://www.instagram.com/p/CFSj3ZShlEX) movement on iOS and meticulously customize your home screen and app icons to match a certain color scheme, Music Player X can be tweaked to perfectly match. For example, here's some fun alternative themes I whipped up.
+
+<figure class="array ios-screenshot">
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/hacker.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/hacker.webp">
+            <img title="Music Player X in a custom Hacker theme" alt="Image of Music Player X in a custom Hacker theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/hacker.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/rosey-red.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/rosey-red.webp">
+            <img title="Music Player X in a custom Rosey rosey-red theme" alt="Image of Music Player X in a custom Rosey Red theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/red.jpg">
+        </picture>
+    </a>
+    <a href="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/bee.webp">
+        <picture>
+            <source type="image/webp" srcset="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/bee.webp">
+            <img title="Music Player X in a custom Bumblebee theme" alt="Image of Music Player X in a custom Bumblebee theme" src="{{ site.dropbox }}/fourth-annual-ios-music-player-showcase/music-player-x/bee.jpg">
+        </picture>
+    </a>
+    <figcaption>I'll call them “Hacker Fantasy”, “Rosy-Red”, and “Bee Yourself”</figcaption>
+</figure>
+
+While the theming engine is a great addition, it's not without its share of problems. To start, the actual practice of adjusting the app's theme is cumbersome due to its lack of manual hex or RGB input; your precision is capped to arbitrarily dragging around the color picker until it gets visually close enough the to desired color. Additionally, there remains no way to either save multiple custom themes or define light & dark mode variants. There's also no mechanism available to export or import themes, preventing any means of theme sharing. Finally, I can't help but feel the lack of a "dynamic" theme option to automatically adjust the theme to match the current track's album art is a curious omission given the affinity for similar "dynamic" themes demonstrated in other players. However, if all you want is the ability to set a single theme with relatively low precision, then Music Player X's theming system is up to the task.
+
+With regards to the browsing and playback experience itself, the usual collections like "Artists" and "Songs" are present, but have numerous quirks due to Music Player X's custom UI. For example, upon tapping a particular artist, instead of a new page sliding in from the right as is standard in iOS, a custom model blinks into view to display the artist's albums and songs. It's a strange choice, and unfortunately makes Music Player X feel even more foreign on iOS.
+
+The full-player itself is remarkably plain and barely existent; instead of sliding in a full-player card like most other players these days, the artist, track name, album title, and album art blink into view upon launch, overloading the mini-player controls to also serve as the full-player's controls. While certainly unique (I can't think of any other player that behaves this way), it doesn't result in a particularly inspiring nor interesting view. In line with Music Player X's brutalist design, the full-player is fully utilitarian, you won't find a beautiful or engaging full-player experience here.
+
+Finally, Music Player X provides some interesting bits and bobs, starting with its in-app equalizer. Listeners can adjust the playback frequency response at any time via the dedicated "EQ" menu item, or select from sensibly named presets like "Hi Mid" or "Bassy". While I prefer flat playback in my music players, this is certainly not the case for everyone, so the fact this is treated as a first-class feature in Music Player X is appreciated. Listeners can also enable an iTunes-style "crossfade" or manage a *very* limited library directly in the app independent of Apple's Music library. For those curious enough to scroll all the way to the end of the app's menu, they can also access the obscure and borderline useless "3D Audio" feature (not to be confused with Apple's ["Spatial Audio"](https://support.apple.com/en-us/HT212182) feature), which pans the audio from left to right at a set interval. This is all to say, Music Player X sports an overflowing grab bag of features and settings ranging the full spectrum from useful to bizarre. It's not polished and is certainly strange in areas, but it's undeniably fun to explore and certainly leaves an impression.
+
+Music Player X is amateurish, strange, sometimes frustrating, but undeniably endearing. Despite its relatively young age, it strongly reminds me of the long-dead breed of iOS app from back when the App Store [first opened in 2008](https://en.wikipedia.org/wiki/App_Store_(iOS/iPadOS)), when developers were first learning the ins and outs of the platform and felt empowered to continuously experiment and break the mold with their designs in the process. Today, apps on iOS feel fairly homogenous; even apps with custom UI still follow the majority of the conventions coined by the OS (just with a different coat of paint coupled with a smattering of novel interaction differences). To be clear, this convergence is absolutely for the better, if for no other reason than the obvious accessibility and usability benefits that come with it. However, I can't help but feel something wild and fun was forever lost in the process. Getting to relive that on iOS—if even just for a bit—with Music Player X was a rare treat I didn't think I'd get the chance to see again.
+
+### iPad Experience
+
+Music Player X does indeed support the iPad, but much like [Cs Music] it's nothing more than a scaled-up version of the iPhone app. However, the scaling is demonstrably worse on Music Player X because it literally scales *everything* (not just sensibly the scrollable views like Cs Music), most likely a side effect of its lack of stock iOS components. In practice, this means absolutely nothing about the iPad version takes advantage of the larger screen. For example, the menu bar *still* requires scrolling due to the icons scaling to a comically massive size instead of allowing all menu items to comfortably fit at a normal size on the iPad's larger screen.
+
+Like Cs Music, the experience is still perfectly functional and doesn't exhibit any performance issues compared to its iPhone counterpart, but due to the lazy "scale everything" implementation it's one of the worst iPad versions available (beaten out only by [Plum] and [Musens] due to their crippling iPad performance issues).
+
+### Widgets
+
+Music Player X does not provide widgets, and given its potential replacement was released this year, I'd wager it most likely never will.
+
+### New This Year
+
+As is expected given the release of its major update in the form of [MPX EQ], Music Player X itself didn't see radical changes this year. However, there are certainly a few changes worth calling out:
+
+* Removal of in-app purchase (all of Music Player X is now free)
+* EQ presents are now available with understandable names like "Hi Mid" and "Bassy"
+
+With that and some bug fix patches, that's all the releases Music Player X received this year. Music Player X going 100% free and preserved in the app store (at least for the time being) instead of getting taken down immediately like developers tend to do with these kinds of releases is refreshing to see, and a trend I hope continues for the obvious historical preservation benefits and for the odd listener or two that may still prefer the older releases at the expense of continued developer support.
+
+### Personal Assessment
+
+<div class="admonition aside">
+<dl>
+    <dt>:large_orange_diamond: iPad support</dt>
+    <dd><p>An iPad version technically exists, but the scaling it uses is comically bad.</p></dd>
+</dl>
+
+<dl>
+    <dt>:x: Apple Music integration</dt>
+    <dt>:x: Lyrics support</dt>
+    <dt>:x: Light &amp; dark themes</dt>
+    <dd><p>While you can customize the theme, you can only have one theme active at a time, so light &amp; dark theming is not supported.</p></dd>
+    <dt>:x: Discovery features</dt>
+    <dt>:x: Beautiful or visually engaging full-player</dt>
+    <dt>:x: Album-focused features</dt>
+</dl>
+</div>
+
+-----
+
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/14"><p class="button">Next App: “Music.app”</p></a></li>
+</ul>
+
+<details open>
+    <summary>Table of Contents</summary>
+
+    <div class="toc" style="margin-bottom: 1.3rem;">
+        <ul>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase">Introduction</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><strong>Music Player X</strong></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Recommendations</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
+        </ul>
+    </div>
+</details>
+
+--------
+
+[^but-its-just-okay]: Music files added directly into Music Player X are only accessible in a dedicated "Downloads" menu, and no grouping or sorting is supported. It's *just* a list of songs you added, so it's nowhere near full independent library management.
+[^brand-recognition]: This is insanely important. For example, in contrast, I can still barely tell [Dot Music] exists and isn't some kind of stock music player template due to its nonexistent design voice. It's like a house gutted of all signs of life upon being sold. Make no mistake, Music Player X's design *is* wild, but I'd pick that any day of the week than the opposite problem.
+
+[MPX EQ]: https://www.mpxeq.com
+[Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
+[SongOwl]: https://apps.apple.com/us/app/songowl-music-player/id1492630850
+[Doppi]: https://doppi.app
+[Dot Music]: https://www.dotmusicplayer.com
+[Plum]: https://apps.apple.com/us/app/plum-music-player/id1441625664
+[Musens]: https://musensapp.com
+
+*[UI]: User Interface
+*[RGB]: Red Blue Green

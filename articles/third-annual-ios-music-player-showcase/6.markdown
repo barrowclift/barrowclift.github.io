@@ -1,0 +1,160 @@
+---
+title: "Third Annual iOS Music Player Showcase - Doppler 2"
+date: 2020-12-31 13:10:33-0500
+timelocked: true
+
+excerpt: |
+    Celebrating the diverse and exciting world of 2020’s iOS music players.
+image: "third-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    base-title: "Third Annual iOS Music Player Showcase"
+    start-page: "/articles/third-annual-ios-music-player-showcase"
+    previous-page: "5"
+    next-page: "7"
+---
+
+<style>
+    article ul li,
+    article ol li {
+        margin-bottom: 0;
+    }
+    article li ul,
+    article li ol {
+        margin-top: 0;
+    }
+</style>
+
+## !["Doppler 2" iOS app icon]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/icon.png '"Doppler 2" iOS app icon'){: .app-icon } Doppler 2
+
+<div class="edge-to-edge large array ios-screenshot">
+    <video controls preload="none" poster="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage-poster.jpg" alt="Video demonstrating 'Doppler 2' usage" title="Demonstrating 'Doppler 2' usage">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/usage.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg">
+        ![Image of "Doppler 2" album view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/album-view.jpg '"Doppler 2" album view')
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg">
+        ![Image of "Doppler 2" player view]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/now-playing.jpg '"Doppler 2" player view')
+    </a>
+</div>
+
+<div style="text-align:center" class="inline app-download">
+    <a href="https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747">
+        <img class="show-when-light" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/light-download-on-the-app-store.svg" />
+        <img class="show-when-dark" src="{{ site.dropbox }}/third-annual-ios-music-player-showcase/dark-download-on-the-app-store.svg" />
+    </a>
+</div>
+
+[Doppler 2] is technically a new arrival this year since it's a separate app listing from the original Doppler (which has since been taken down) and its initial release occurred at the very beginning of this year on [January 6th](https://blog.brushedtype.co/announcing-doppler-2/). However, one need only peruse the promotion screenshots on its [App Store page](https://apps.apple.com/us/app/doppler-mp3-flac-music-player/id1468459747) to realize it shares more in common with its predecessor than the major version bump and new app listing implies. Marked differences from the original version include:
+
+* A noticeably "darker" dark mode
+* Support for WiFi music transfers for independent, wireless library management
+* Ability to "Like" songs
+* Minor playlist improvements
+* Additional localization support
+* A new app icon
+* A new ["Listening Reports"](https://blog.brushedtype.co/doppler-2-listening-reports/) section, which serves a similar purpose to [Spotify](https://www.spotify.com/us/)'s ["Wrapped"](https://2020.byspotify.com/us?locale=en) feature. Unfortunately, I don't exclusively use Doppler 2, so there's too few data in it to be useful to me.
+* Some *very* minor cosmetic changes like swapping the progress bar and song details on the player view
+
+That's unfortunately the end of Doppler 2's enhancements over the original Doppler. For upgraders such as myself who won't benefit from or even notice most of these enhancements, Doppler 2 is functionally identical to its predecessor, only this time with a ~~$15.99~~ $6.99 price tag. Thus—for the features and design decisions that I personally value in music players—Doppler 2 completely dropped the ball this year and was a tremendous disappointment.
+
+However, taken as it is outside of the year-by-year scrutiny, Doppler 2 remains a respectable general-purpose music player for most users, especially for users who value its core competency of independent library management. Despite [my unfair hot take last year](/articles/second-annual-ios-music-player-competition#--doppler) that the Doppler brand was "forever tarnished" by the lack of substantial updates due to Doppler 2's development, the wall of tremendously positive feedback on Doppler 2's listing from happy customers who covet independent library management has clearly proven me wrong. For those unaware, independent library management empowers users to easily and wirelessly send their local library from their computer to Doppler 2 without needing to manage or sync that library with Apple software (a *huge* win for Windows users still hopelessly stuck with a rapidly decaying [iTunes app](https://support.apple.com/en-us/HT210384)). While this feature set isn't unique to Doppler 2 (others like [Doppi] also support independent library management), it offers an impressive array of four different modes of transfer, including Apple protocols like [AirDrop](https://support.apple.com/en-us/HT204144) and open protocols like peer-to-peer WiFi[^doppi-management]. Those options are:
+
+* **Importing with iTunes on Windows or Finder on macOS:** While it does require a wired connection, it's as simple as a drag 'n drop; your library never needs to pass through [iTunes](https://support.apple.com/en-us/HT210384) or [Apple Music](https://www.apple.com/apple-music/).
+* **Importing with Files.app:** As simple as drag 'n drop, this time without requiring a wired connection.
+* **Importing individual files with Safari's share sheet or URL:** Not incredibly useful for library transfers, but handy for adding one-off songs found on the internet.
+* **Importing with AirDrop:** Quick and easy option for sending an album or two, assuming the sender is also an Apple device.
+* **Import from WiFi:** After a quick and easy setup process, this option's arguably as easy as AirDrop, only this time practically any device like a Windows computer or Android phone can use it to send music. This approach is extraordinarily well designed in Doppler 2 and is shockingly easy to do, I'd say arguably easier than most of the Apple-proprietary approaches above.
+
+As far as small delights are concerned, I really appreciate that Doppler's dynamic color-matching album view still made it through to Doppler 2. The results are overwhelmingly positive, with only a few albums in my collection not looking excellent with the effect (and even then, they're still perfectly acceptable and—most importantly—readable). While it doesn't appear any features got dropped in the major version bump, I'm nonetheless grateful this one is still around.
+
+<div class="array ios-screenshot">
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg">
+        ![Image of the album view with a predominantly red record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/red.jpg "The album view with a predominantly red record")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg">
+        ![Image of the album view with a predominantly green record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/green.jpg "The album view with a predominantly green record")
+    </a>
+    <a markdown="1" href="{{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg">
+        ![Image of the album view with a predominantly blue record]({{ site.dropbox }}/third-annual-ios-music-player-showcase/doppler-2/blue.jpg "The album view with a predominantly blue record")
+    </a>
+</div>
+
+With all that said, the lack of lyrics support, light mode theme, widgets, and other table-stake features leaves Doppler 2 wanting. The features it has are done well, but compared to the continuously rising bar set by most of its contemporaries, Doppler 2 feels like it's falling short.
+
+### Widgets
+
+None.
+
+### Personal Score Card
+
+<div class="admonition aside">
+    <ul class="emoji">
+        <li>:heavy_check_mark: <strong>Beautiful or visually engaging player view</strong></li>
+    </ul>
+
+    <ul class="emoji">
+        <li>:large_orange_diamond: <strong>Discovery features: </strong><em>Partial credit awarded for the “Recently Added” and new “Listening Reports” views, but those remain the only discover options to speak of (and the second requires heavy Doppler 2 use for the view to populate and become useful).</em></li>
+        <li>:large_orange_diamond: <strong>Album-focused features: </strong><em>While Doppler is overall fairly album-centric thanks to its ability to change the “Home” view to display albums, its continued lack of grid view remains a disappointment.</em>
+            <ul class="bare">
+                <li>:heavy_check_mark: <strong>Proper sorting</strong></li>
+                <li>:x: <strong>Album grid view</strong></li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="emoji">
+        <li>:x: <strong>Lyrics support</strong> </li>
+        <li>:x: <strong>Light & dark themes:</strong> <em>Still no light mode, and the only available dark mode ignores iOS’s human interface design guidelines.</em></li>
+        <li>:x: <strong>iPad support</strong></li>
+    </ul>
+</div>
+
+<ul class="button-group" style="text-align:left;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/third-annual-ios-music-player-showcase/7"><p class="button">Next App: “Dot Music”</p></a></li>
+</ul>
+
+<details open>
+    <summary>Table of Contents</summary>
+
+    <div class="toc" style="margin-bottom: 1.3rem;">
+        <ul>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/">Intro</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2020’s Players
+                <ul>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/3">Albums</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/4">Cs</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/5">Doppi</a></li>
+                    <li>Doppler 2</li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/7">Dot Music</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/8">jetAudio</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/9">Longplay</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/10">Marvis Pro</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/11">Music Player X</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/12">Music.app</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/13">Picky</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/14">Plum</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/15">Power Player</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/16">Sathorn</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/17">SongOwl</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/18">Soor</a></li>
+                    <li><a href="/articles/third-annual-ios-music-player-showcase/19">VOX</a></li>
+                </ul>
+            </li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/20">Standouts</a></li>
+            <li><a href="/articles/third-annual-ios-music-player-showcase/21">Conclusion</a></li>
+        </ul>
+    </div>
+</details>
+
+----
+
+[^doppi-management]: Doppi's independent library management is all powered by Apple ecosystem features like the iCloud Files app and AirDrop. That's fantastic for users fully "locked" into Apple's ecosystem, but not so fantastic for Windows or Linux users wanting to send music to their iPhone without having to use iTunes or Apple-specific protocols.
+
+[Doppi]: https://doppi.app
+[Doppler 2]: https://apps.apple.com/app/doppler-2-music-player/id1468459747

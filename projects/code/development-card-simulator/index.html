@@ -1,269 +1,205 @@
 ---
 layout: clean
-
-theme-color-light: "#B03431"
-theme-color-dark: "#7F2623"
-
-ignore-accent-color: true
-hide-settings: false
-
-viewing_single_page: true
-anchors: false
-
 title: "Development Card Simulator"
-projects-menu-active: true
+design:
+    ignore-accent-color: true
+    browser-theme-color-light: "hsl(1, 56%, 44%)"
+    browser-theme-color-dark: "hsl(2, 57%, 32%)"
 ---
 
 <style>
-#wrap {
-    background-color: #B03431;
-}
-#dark #wrap {
-    background-color: #7F2623
-}
-.page {
-    background-color: #FEFACC;
-    color: black;
-    padding: 1em;
-    border-radius: 0.25em;
-    margin-top: 1.3em;
-}
-#dark .page {
-    background-color: #BFBC99;
-}
-menu, menu a,
-#dark menu, #dark menu a {
-    color: white;
-}
-.fill-color, .signature-color, .mac-background-color,
-#dark .fill-color, #dark .signature-color, #dark .mac-background-color,
-#logo .signature-color {
-    fill: white;
-}
-button.pill path {
-    fill: white !important;
-}
-button.pill {
-    background-color: rgba(255, 255, 255, 0.0375);
-    box-shadow: none;
-}
-    button.pill:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    html {
+        background-color: #B03431;
     }
-    button.pill:active,
-    .setting-toggles.active button.pill {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+        html#dark {
+            background-color: #7F2623;
+        }
+    .page {
+        background-color: #FEFACC;
+        color: black;
+        padding: 1em;
+        border-radius: 0.25em;
+        margin-top: 1.3em;
     }
-    button.pill:hover path,
-    .setting-toggles.active button.pill path {
-        fill: #FADF4B !important;
+        #dark .page {
+            background-color: #BFBC99;
+        }
+    #menubar,
+    #menubar a,
+    #dark #menubar,
+    #dark #menubar a {
+        color: white;
     }
-    #dark button.pill:hover path,
-    #dark .setting-toggles.active button.pill path {
+    .fill-color,
+    #signature path,
+    .imac-background-color,
+    #dark .fill-color,
+    #dark #signature path,
+    #dark .imac-background-color,
+    #logo #signature path {
+        fill: white;
+    }
+    #settings-button-wrapper button path {
         fill: white !important;
     }
-#dark button.pill {
-    background-color: rgba(255, 255, 255, 0.0375);
-}
-    #dark button.pill:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+    #settings-button-wrapper button {
+        background-color: hsla(51, 95%, 64%, 1);
+        box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.375);
     }
-    #dark button.pill:active,
-    #dark .setting-toggles.active button.pill {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em rgba(255, 255, 255, 0.1);
+        #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover {
+            background-color: hsla(51, 95%, 64%, 1) !important;
+            box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.25);
+        }
+        #settings-button-wrapper button:active,
+        #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button  {
+            background-color: hsla(51, 95%, 64%, 1) !important;
+            box-shadow: inset 0 0.25em 0.5em rgba(0, 0, 0, 0.375);
+        }
+        #settings-button-wrapper button:hover path,
+        #settings-button-wrapper.active button path {
+            fill: white !important;
+        }
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper.active button path {
+            fill: white !important;
+        }
+    #dark #settings-button-wrapper button {
+        background-color: rgba(255, 255, 255, 0.0375);
     }
-.mac-line-color {
-    fill: black;
-}
-.popup {
-    color: black;
-    background-color: #FEFACC !important;
-}
-#dark .popup {
-    background-color: #BFBC99 !important;
-}
-.popup {
-    -webkit-backdrop-filter: unset !important;
-    backdrop-filter: unset !important;
-}
-
-/**
- * Hex: #283C84
- * RGB: rgb(40, 60, 132);
- * HSL: hsl(227, 53%, 44%);
-*/
-a,
-#dark a {
-    color: #B1332F;
-}
-#mainmenu .active,
-#mainmenu a:hover,
-#settings-toggle:hover,
-#settings-toggle.active,
-#submenu a:hover,
-.header a:hover,
-a:hover .header {
-    color: #FADF4B;
-}
-#logo:hover .signature-color {
-    fill: #FADF4B;
-}
-.backdrop {
-    background-color: hsl(227, 53%, 44%);
-}
-
-a:hover,
-#submenu {
-    background-color: hsla(2, 58%, 44%, 0.1);
-}
-
-/* Highlights (must be seperate, combining them breaks the style) */
-::selection { /* Safari */
-    background: hsla(227, 53%, 34%, 0.99);
-}
-::-moz-selection { /* Firefox */
-    background: hsla(227, 53%, 34%, 0.99);
-}
-
-button,
-.button,
-#dark button,
-#dark .button {
-    background-color: hsl(227, 53%, 44%);
-    box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
-}
-    button:hover,
-    .button:hover,
-    #dark button:hover,
-    #dark .button:hover {
-        background-color: hsl(227, 53%, 54%) !important;
+    .imac-line-color {
+        fill: black;
+    }
+    #settings-popup {
+        color: black;
+        background-color: #FEFACC !important;
+        -webkit-backdrop-filter: unset !important;
+        backdrop-filter: unset !important;
+    }
+        #dark #settings-popup {
+            background-color: #BFBC99 !important;
+        }
+    a,
+    #dark a {
+        color: #B1332F;
+    }
+    #menubar .active,
+    #menubar a:hover,
+    #settings-button-wrapper:hover,
+    #settings-button-wrapper.active,
+    .header a:hover,
+    a:hover .header {
+        color: #FADF4B;
+    }
+    #logo:hover #signature path {
+        fill: #FADF4B;
+    }
+    a:hover {
+        background-color: hsla(2, 58%, 44%, 0.1);
+    }
+    ::selection {
+        background: hsla(227, 53%, 34%, 0.99);
+    }
+    ::-moz-selection {
+        background: hsla(227, 53%, 34%, 0.99);
+    }
+    button,
+    .button,
+    #dark button,
+    #dark .button {
+        background-color: hsl(227, 53%, 44%);
         box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
     }
-    button:active,
-    .button:active,
-    #dark button:active,
-    #dark .button:active {
-        background-color: hsl(227, 53%, 54%) !important;
-        box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+        button:hover,
+        .button:hover,
+        #dark button:hover,
+        #dark .button:hover {
+            background-color: hsl(227, 53%, 54%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+        }
+        button:active,
+        .button:active,
+        #dark button:active,
+        #dark .button:active {
+            background-color: hsl(227, 53%, 54%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+        }
+    hr {
+        background-color: rgba(176, 52, 49, 0.2);
+        background: rgba(176, 52, 49, 0.2); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* FF3.6+ */
+        background: -webkit-linear-gradient(left,  rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* IE10+ */
+        background: linear-gradient(to right, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* W3C */
     }
-
-input:focus,
-textarea:focus {
-    border-color: hsl(227, 53%, 44%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(3, 100%, 59%, 0.2) !important;
-}
-
-.codehilite,
-.highlight {
-    background-color: rgb(36, 34, 33);
-}
-
-hr {
-    background-color: rgba(176, 52, 49, 0.2);
-    background: rgba(176, 52, 49, 0.2); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(left,  rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* IE10+ */
-    background: linear-gradient(to right, rgba(254, 250, 204, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(254, 250, 204, 0.0) 100%); /* W3C */
-}
-#dark hr {
-    background-color: rgba(176, 52, 49, 0.2);
-    background: rgba(176, 52, 49, 0.2); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(left,  rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* IE10+ */
-    background: linear-gradient(to right, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* W3C */
-}
-
-
-#dark #mainmenu .active,
-#dark #mainmenu a:hover,
-#dark #settings-toggle:hover,
-#dark #settings-toggle.active a,
-#dark #submenu a:hover,
-#dark .header a:hover,
-#dark a:hover .header,
-#dark summary {
-    color: hsl(51, 95%, 64%);
-}
-#dark .header a:hover,
-#dark a:hover .header {
-    color: hsl(227, 53%, 44%);
-}
-#dark #logo:hover .signature-color,
-#dark #signature.active .signature-color {
-    fill: hsl(51, 95%, 64%);
-}
-#dark .backdrop {
-    background-color: hsl(51, 95%, 64%);
-}
-#dark a:hover,
-#dark #submenu,
-#dark button.bigfoot-footnote__button,
-#dark button.pill,
-#dark summary:hover,
-#dark .summary-list li a:hover,
-#dark .card:hover {
-    background-color: hsla(2, 58%, 44%, 0.15);
-}
-#dark ::selection {
-    background: hsla(227, 53%, 34%, 0.85);
-}
-#dark ::-moz-selection {
-    background: hsla(227, 53%, 34%, 0.85);
-}
-#dark button.bigfoot-footnote__button,
-#dark button.pill {
-    background-color: hsla(51, 95%, 64%, 0.2);
-}
-    #dark button.bigfoot-footnote__button:hover,
-    #dark button.pill:hover {
-        background-color: hsl(51, 95%, 64%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2);
+    #dark hr {
+        background-color: rgba(176, 52, 49, 0.2);
+        background: rgba(176, 52, 49, 0.2); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* FF3.6+ */
+        background: -webkit-linear-gradient(left,  rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* IE10+ */
+        background: linear-gradient(to right, rgba(191, 188, 153, 0.0) 0%, rgba(176, 52, 49, 0.2) 25%, rgba(176, 52, 49, 0.2) 50%, rgba(176, 52, 49, 0.2) 75%, rgba(191, 188, 153, 0.0) 100%); /* W3C */
     }
-    #dark button.bigfoot-footnote__button:active,
-    #dark button.bigfoot-footnote__button.is-active,
-    #dark button.pill:active,
-    #dark .setting-toggles.active button.pill {
-        background-color: hsl(51, 95%, 54%) !important;
-        box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 54%, 0.2);
+    #dark #menubar .active,
+    #dark #menubar a:hover,
+    #dark #settings-button-wrapper:hover,
+    #dark #settings-button-wrapper.active a,
+    #dark .header a:hover,
+    #dark a:hover .header,
+    #dark summary {
+        color: hsl(51, 95%, 64%);
     }
-
-#dark input:focus,
-#dark textarea:focus {
-    border-color: hsl(51, 95%, 64%) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2) !important;
-}
+    #dark .header a:hover,
+    #dark a:hover .header {
+        color: hsl(227, 53%, 44%);
+    }
+    #dark #logo:hover #signature path,
+    #dark #signature.active #signature path {
+        fill: hsl(51, 95%, 64%);
+    }
+    #dark a:hover,
+    #dark button.bigfoot-footnote__button,
+    #dark #settings-button-wrapper button,
+    #dark summary:hover,
+    #dark .card:hover {
+        background-color: hsla(2, 58%, 44%, 0.15);
+    }
+    #dark ::selection {
+        background: hsla(227, 53%, 34%, 0.85);
+    }
+    #dark ::-moz-selection {
+        background: hsla(227, 53%, 34%, 0.85);
+    }
+    #dark button.bigfoot-footnote__button,
+    #dark #settings-button-wrapper button {
+        background-color: hsla(51, 95%, 64%, 0.2);
+    }
+        #dark button.bigfoot-footnote__button:hover,
+        #dark #settings-button-wrapper button:hover {
+            background-color: hsl(51, 95%, 64%) !important;
+            box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 64%, 0.2);
+        }
+        #dark button.bigfoot-footnote__button:active,
+        #dark button.bigfoot-footnote__button.is-active,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button {
+            background-color: hsl(51, 95%, 54%) !important;
+            box-shadow: 0 0.43em 0.87em -0.2em hsla(51, 95%, 54%, 0.2);
+        }
 </style>
-<h1>
+
 <picture title="Development Card Simulator" alt="Development Card Simulator">
-    <source type="image/webp" srcset="/images/projects/code/development-card-simulator/title.webp">
-    <img type="image/png" src="/images/projects/code/development-card-simulator/title.png">
+    <source type="image/webp" srcset="images/title.webp">
+    <img alt="Development Card Simulator" type="image/png" src="images/title.png">
 </picture>
-</h1>
-<h4 style="margin-top:0;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>
+
+<h4 style="margin-top:0.65em;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>
+
 <div class="page">
-<p>This is a small web app to establish a virtual Development Card deck for you and friends or family to use while playing a game of “Settlers of Catan” remotely. It’s as simple as can be; only one game can run at any given time for a given instance and anyone with the password you (the admin) set in advance may join.</p>
-<p>This light app supports both light…</p>
-<p><picture><source type="image/webp" srcset="https://dropbox.barrowclift.me/assets/projects/code/development-card-simulator/light-screenshot.webp"><img type="image/png" src="https://dropbox.barrowclift.me/assets/projects/code/development-card-simulator/light-screenshot.png"></picture></p>
-<p>And dark mode (controlled by your system’s theme)</p>
-<p><picture><source type="image/webp" srcset="https://dropbox.barrowclift.me/assets/projects/code/development-card-simulator/dark-screenshot.webp"><img type="image/png" src="https://dropbox.barrowclift.me/assets/projects/code/development-card-simulator/dark-screenshot.png"></picture></p>
-<p style="text-align:center;"><a href="https://github.com/barrowclift/development-card-simulator" style="padding-left:2em;padding-right:2em;text-align:left;width:auto;" class="button">Clone on Github</a></p>
-<hr>
-<h3>Why a virtual, shared development card deck? Why not let everyone use their own decks?</h3>
-<p>Development cards are already <a href="https://boardgamegeek.com/thread/151481/he-who-has-development-cards-wins">fairly powerful</a> for “real” in-person Catan games, but having each player use their own deck for remote games has two critical issues:</p>
-<ul>
-<li>It radically throws off the Development Card deck balance</li>
-<li>The state of unplayed and played Development Cards for other players is no longer accessible public knowledge</li>
-</ul>
-<p>For example, let’s focus on the 5 Victory Point cards in every standard 25 card Development deck; For “real” games, that puts a player sitting at a solid 20% chance of drawing a Victory Point as their their first development card. For each subsequent draw done by yourself or other players, that chance will fluctuate, either going up (if cards other than Victory Points are drawn) or down (if the remaining Victory Points are getting drawn).</p>
-<p>However, for remote games, those odds don’t fluctuate with other players’ draws, <em>only yours</em>. So say three other players draw development cards prior to you, and each of them were extraordinarily lucky to draw a Victory Point. For “real” games, that means you’d only have a 9.09% chance of drawing one of the remaining Victory Points, but for remote games that chance is still the default (20%) because nobody has yet drawn from <em>your</em> deck.</p>
-<p><a href="https://www.reddit.com/r/Catan/comments/l9571v/remote_play/glg93wk/">Others have tried addressing this</a> by choosing a player’s deck as the “real” one and having them close their eyes, draw, and hold it up to the camera when another player builds one, but that doesn’t address the not knowing the state of unplayed and played development cards for other players. You either need to write it down yourself or ask occasionally, not ideal.</p>
-<p>This projects sets out to provide a centralized, friendly website that addresses both of those critical issues in remote Catan play.</p>
+    {% capture about-prose %}{% include_relative development-card-simulator.markdown %}{% endcapture %}
+    {{ about-prose | markdownify }}
 </div>

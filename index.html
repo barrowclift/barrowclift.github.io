@@ -1,234 +1,77 @@
 ---
-layout: default-flex
-anchors: false
-home-menu-active: true
+design:
+    expanded-page: true
 ---
 
-<style>
-	.summary-list li:last-child {
-		margin-bottom: 0;
-	}
-	.row {
-		align-items: stretch;
-		width: 100%;
-		display: grid;
-		flex-wrap: wrap;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.column {
-		flex-basis: 0;
-		flex-grow: 1;
-		flex-shrink: 1;
-	}
-	.column a img {
-		transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	}
-	.column .card:hover img {
-		transform: scale(1.05);
-	}
-	.card {
-		margin-left: 0 !important;
-		margin-right: 0 !important;
-		max-width: unset !important;
-
-		/* https://gist.github.com/ayamflow/b602ab436ac9f05660d9c15190f4fd7b */
-		will-change: transform;
-		overflow: hidden;
-	}
-	.card, .threeDHover {
-		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-	}
-	.card img {
-		border-radius: 0 !important;
-	}
-	@media (min-width: 700px) {
-		.row {
-			display: flex;
-		}
-		.column.tight {
-			margin-left: 1.25%;
-			margin-right: 1.25%;
-		}
-		.card, .card.large-when-small {
-			max-width: unset;
-			width: auto;
-			min-width: unset;
-		}
-	}
-</style>
-
 <div class="row">
-	<div class="column w6">
+    <div class="column w6 align-left">
+        <h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;border-radius:unset;" src="/social/images/me.png" alt="Memoji of myself waving friendly" title="Howdy!" /></h2>
+        <h4 style="line-height:var(--body-line-height);">A full-stack developer from Philly.</h4>
+        <h4 style="line-height:var(--body-line-height);">I work on gorgeous entertainment products such as <a href="https://www.xumo.com/products/xumo-tv">Xumo TV</a> & <a href="https://www.sky.com/glass/">Sky Glass</a> professionally and <a href="/projects">faff about with personal projects</a> in my free time.</h4>
+        <h4 style="line-height:var(--body-line-height);"><a href="/about">Click here to read more…</a></h4>
 
-		<h2>I’m Marc Barrowclift <img style="height:0.75em;width:auto;" src="/images/about/me.png" /></h2>
+        <h2>Career</h2>
+        <h4 style="line-height:var(--body-line-height);">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting platforms that process over half a billion requests daily.</h4>
+        <h4 style="line-height:var(--body-line-height);">My studio is open for consultant work and employment offers.</h4>
+        <ul class="button-group left autosize">
+            <li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
+        </ul>
+    </div>
+    <div class="column w6 align-left">
+        <h2>Recent Work</h2>
 
-		<h4 style="line-height:1.4em">A <a href="https://github.com/barrowclift">full stack developer</a> from Philly. I craft <a href="https://www.xfinity.com/support/articles/x1-dvr-overview">sustainable services professionally</a> and <a href="{{ site.baseurl }}/projects/">faff about</a> in my free time.</h4>
-
-		<ul class="button-group left autosize">
-			<li><a href="{{ site.baseurl }}/about/"><p class="button">Learn More About Me</p></a></li>
-			<!-- <li><a href="{{ site.baseurl }}/contact/"><p class="button">Contact</p></a></li> -->
-		</ul>
-
-		<h2>Occupation</h2>
-
-		<h4 style="line-height:1.4em">I’m an engineer at <a href="https://my.xfinity.com">Comcast</a> crafting services which process over half a billion requests daily.</h4>
-
-		<!-- <h4>This past year, I helped build the backend that powers the groundbreaking <a href="https://www.sky.com/glass">Sky Glass</a>.</h4> -->
-
-		<h4 style="line-height:1.4em">My studio is open for consultant work and employment offers.</h4>
-
-		<ul class="button-group left autosize">
-			<li><a href="mailto:{{ site.email }}"><p class="button">Hire</p></a></li>
-		</ul>
-	</div>
-	<div class="column w6">
-		<h2>Recent Work</h2>
-
-		{% assign maxNumberOfRecentWork=3 %}
-		<ul class="summary-list" style="margin-left: 0.365rem;margin-bottom:0;">
-		{% for post in site.posts %}
-			{% if forloop.index0 >= maxNumberOfRecentWork %}
-				{% break %}
-			{% endif %}
-			<li>
-				{% if post.link %}
-				<a title="Go to {{ post.link }}" href="{{ post.link }}">
-				{% else %}
-				<a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-				{% endif %}
-					{% if post.type == "project-update" and post.project-update-image %}
-						<h4 class="header">
-							<time itemprop="dateCreated"><mark class="tag orange">Project</mark> {{ post.date | date: "%B %-d, %Y" }}</time>
-						</h4>
-						<img class="rounded" src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
-					{% else %}
-						<h4 class="header">
-							<time itemprop="dateCreated">{% if post.type == "article" or post.type == "article-update" %}<mark class="tag blue">Article</mark>{% elsif post.type == "project-update" %}<mark class="tag orange">Project</mark>{% endif %} {{ post.date | date: "%B %-d, %Y" }}</time>
-							{{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
-						</h4>
-						{% if post.excerpt %}
-							<p>{{ post.excerpt }}</p>
-						{% endif %}
-					{% endif %}
-				</a>
-			</li>
-		{% endfor %}
-		</ul>
-	</div>
-</div>
-<hr>
-<div class="row">
-	<div class="column w12">
-		<h2>Popular Articles</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="popular-articles column tight w6">
-		{% assign maxNumberOfPopularArticles=3 %}
-		{% assign found=0 %}
-		{% assign used=0 %}
-		<ul style="margin-left:0;margin-bottom:0;">
-		{% for post in site.posts %}
-			{% if used >= maxNumberOfPopularArticles %}
-				{% break %}
-			{% endif %}
-			{% if post.categories and post.categories contains "Best Of" %}
-				{% assign mod=found | modulo: 2 %}
-				{% assign found=found | plus:1 %}
-				{% if mod != 0 %}
-					{% continue %}
-				{% endif %}
-				<li style="list-style:none;display:inline-block;padding-bottom:1.625em;margin-bottom:0;">
-					<a style="background-color:unset !important;margin:0;padding:0;line-height:0;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-						{% if post.light-foreground-color %}
-						<div class="card threeDHover bleed large-when-small show-when-light" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
-							<div class="label" style="background-color:{{ post.light-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								<h3 class="primary" style="text-align:left;color:{{ post.light-foreground-color }} !important;">{{ post.title }}</h3>
-								<h5 class="secondary" style="text-align:left;color:{{ post.light-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-							</div>
-						</div>
-						<div class="card threeDHover bleed large-when-small show-when-dark" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
-							<div class="label" style="background-color:{{ post.dark-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								<h3 class="primary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;">{{ post.title }}</h3>
-								<h5 class="secondary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-							</div>
-						</div>
-						{% else %}
-						<div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.image }}">
-							<div class="label" style="background-color:{{ post.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								{% if post.foreground-color-primary and post.foreground-color-secondary %}
-									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color-primary }} !important;">{{ post.title }}</h3>
-									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color-secondary }} !important;">{{ post.excerpt }}</h5>
-								{% else %}
-									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color }} !important;">{{ post.title }}</h3>
-									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-								{% endif %}
-							</div>
-						</div>
-						{% endif %}
-					</a>
-				</li>
-				{% assign used=used | plus:1 %}
-			{% endif %}
-		{% endfor %}
-		</ul>
-	</div>
-	<div class="column tight w6">
-		{% assign maxNumberOfPopularArticles=3 %}
-		{% assign found=0 %}
-		{% assign used=0 %}
-		<ul style="margin-left:0;margin-bottom:0;">
-		{% for post in site.posts %}
-			{% if used >= maxNumberOfPopularArticles %}
-				{% break %}
-			{% endif %}
-			{% if post.categories and post.categories contains "Best Of" %}
-				{% assign mod=found | modulo: 2 %}
-				{% assign found=found | plus:1 %}
-				{% if mod == 0 %}
-					{% continue %}
-				{% endif %}
-				<li style="list-style:none;display:inline-block;padding-bottom:1.625em;margin-bottom:0;">
-					<a style="background-color:unset !important;margin:0;padding:0;line-height:0;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-						{% if post.light-foreground-color %}
-						<div class="card threeDHover bleed large-when-small show-when-light" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.light-hero-banner }}.jpg">
-							<div class="label" style="background-color:{{ post.light-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								<h3 class="primary" style="text-align:left;color:{{ post.light-foreground-color }} !important;">{{ post.title }}</h3>
-								<h5 class="secondary" style="text-align:left;color:{{ post.light-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-							</div>
-						</div>
-						<div class="card threeDHover bleed large-when-small show-when-dark" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.dark-hero-banner }}.jpg">
-							<div class="label" style="background-color:{{ post.dark-background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								<h3 class="primary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;">{{ post.title }}</h3>
-								<h5 class="secondary" style="text-align:left;color:{{ post.dark-foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-							</div>
-						</div>
-						{% else %}
-						<div class="card threeDHover bleed large-when-small" style="overflow:hidden;margin-bottom:0em;padding-bottom:0;">
-							<img src="{{ site.dropbox }}/{{ post.image }}">
-							<div class="label" style="background-color:{{ post.background-color }};transform:scale(1);margin-top:-7px;padding-top:1em;padding-bottom:1em;">
-								{% if post.foreground-color-primary and post.foreground-color-secondary %}
-									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color-primary }} !important;">{{ post.title }}</h3>
-									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color-secondary }} !important;">{{ post.excerpt }}</h5>
-								{% else %}
-									<h3 class="primary" style="text-align:left;color:{{ post.foreground-color }} !important;">{{ post.title }}</h3>
-									<h5 class="secondary" style="text-align:left;color:{{ post.foreground-color }} !important;opacity:0.625;">{{ post.excerpt }}</h5>
-								{% endif %}
-							</div>
-						</div>
-						{% endif %}
-					</a>
-				</li>
-				{% assign used=used | plus:1 %}
-			{% endif %}
-		{% endfor %}
-		</ul>
-	</div>
-<a rel="me" href="https://mastodon.social/@barrowclift" style="display:none !important;"></a>
+        <div class="cards updates column align-left">
+        {% assign recentWork = site.updates | concat: site.posts | sort: "date" | reverse %}
+        {% assign maxNumberOfRecentWork=3 %}
+        {% assign numberOfRecentWorkFound=0 %}
+        {% for post in recentWork %}
+            {% if post.title == "Updates" %}
+                {% continue %}
+            {% endif %}
+            {% if numberOfRecentWorkFound >= maxNumberOfRecentWork %}
+                {% break %}
+            {% endif %}
+            {% if post.link %}
+            <a title="Go to {{ post.link }}" href="{{ post.link }}">
+            {% else %}
+            <a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            {% endif %}
+                <div class="card">
+                    <div class="label">
+                        {% if post.type == "project-update" and post.project-update-image %}
+                            <mark class="tag orange">Project</mark> 
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %-d, %Y" }}
+                            </time>
+                            <img src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
+                        {% else %}
+                            <div class="metadata">
+                                {% if post.type == "article" or post.type == "article-update" %}
+                                    <mark class="tag blue">Article</mark>
+                                {% elsif post.type == "project-update" %}
+                                    <mark class="tag orange">Project</mark>
+                                {% endif %} 
+                                <time datetime="{{ post.date | date_to_xmlschema }}">
+                                    {{ post.date | date: "%B %-d, %Y" }}
+                                </time>
+                            </div>
+                            <h4 class="primary">
+                                
+                                {{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
+                            </h4>
+                            {% if post.excerpt %}
+                                <h5 class="secondary">{{ post.excerpt }}</h5>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+            {% assign numberOfRecentWorkFound = numberOfRecentWorkFound | plus: 1 %}
+        {% endfor %}
+        </div>
+        <h4 style="align-self: end; text-align: right; margin-top: var(--gap);">
+            <a href="/updates">More updates…</a>
+        </h4>
+    </div>
+    <a rel="me" href="https://mastodon.social/@barrowclift" style="display:none !important;"></a>
 </div>

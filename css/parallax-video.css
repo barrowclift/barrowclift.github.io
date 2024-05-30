@@ -1,135 +1,112 @@
-#mainmenu {
-	height: initial;
-}
-article {
-	max-width: 35em;
-	text-align: center;
-	display: inline-block;
-	margin-bottom: 2.6em;
+html, body {
+    height: 100%;
 }
 #parallax-foreground {
-	min-width: 90vw;
-	width: 90vw;
-	margin-top: 0;
-	top: -1vw;
-}
-#parallax-background figure {
-	margin: 0 !important;
-}
-menu {
-	border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
+    min-width: 90vw;
+    width: 90vw;
+    margin-top: 0;
+    top: -1vw;
 }
 #parallax-background figure,
 #parallax-background video {
-	margin: 0 !important;
-	padding: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-	#mainmenu {
-		-webkit-backdrop-filter: saturate(180%) blur(20px) !important;
-		backdrop-filter: saturate(180%) blur(20px) !important;
-	}
+#menubar {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1) !important;
 }
 @media (min-width: 700px) {
-	#parallax {
-		overflow-y: scroll;
-		overflow-x: hidden;
-		width: 100%;
-		height: 100%;
-		-webkit-overflow-scrolling: touch;
-	}
-		#parallax .container {
-			perspective: 1px;
-			perspective-origin: top left;
-		}
-		#parallax .layer {
-			position: absolute;
-			position: sticky;
-			top: 0px;
-			box-sizing: border-box;
-			display: block;
-		}
-			.safari #parallax .layer {
-				position: -webkit-sticky; /* make parallax work in iOS Safari */
-			}
-	#parallax-background {
-		transform: translateZ(-0.2px);
-		display: block;
-		position: absolute;
+    #parallax {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+        #parallax .container {
+            perspective: 1px;
+            perspective-origin: top left;
+        }
+        #parallax .layer {
+            position: absolute;
+            position: sticky;
+            top: 0px;
+            box-sizing: border-box;
+            display: block;
+        }
+            /* make parallax work in iOS Safari */
+            @supports (position: -webkit-sticky) {
+                #parallax .layer {
+                    position: -webkit-sticky;
+                }
+            }
+    #parallax-background {
+        transform: translateZ(-0.2px);
+        display: block;
+        position: absolute;
 
-		height: 67.5vw;
-		width: 120vw;
-		margin-bottom: -11.25vw;
+        height: 70.5vw;
+        width: 120vw;
+        margin-bottom: -11.25vw;
 
-		background-size: cover;
-		background-position: center;
-	}
-		#parallax-background figure,
-		#parallax-background video {
-			width: 120vw;
-			height: 67.5vw;
-			min-height: 67.5vw;
-		}
-		#parallax-background .edge-to-edge {
-			max-width: unset;
-		}
-	#parallax-foreground {
-		transform: translateZ(0px);
-		z-index: 10;
+        background-size: cover;
+        background-position: center;
+    }
+        #parallax-background figure,
+        #parallax-background video {
+            width: 120vw;
+            height: 67.5vw;
+            min-height: 67.5vw;
+        }
+        #parallax-background video {
+            border-radius: 0 !important;
+        }
+        #parallax-background .edge-to-edge {
+            max-width: unset;
+        }
+    #parallax-foreground {
+        transform: translateZ(0px);
+        z-index: 10;
 
-		box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
-		background-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 1);
 
-		min-width: 100vw;
-		width: 100vw;
-		height: auto;
-		margin: 0 !important;
-	}
-		.safari #parallax-foreground,
-		.chrome #parallax-foreground {
-			
-		}
-		@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-			#parallax-foreground {
-				-webkit-backdrop-filter: saturate(180%) blur(20px);
-				backdrop-filter: saturate(180%) blur(20px);
-				background-color: rgba(255, 255, 255, 0.95);
-			}
-		}
-	menu {
-		transform: translateZ(0px);
-		z-index: 1;
+        min-width: 100vw;
+        width: 100vw;
+        height: auto;
+        margin: 0 !important;
+    }
+        @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+            #parallax-foreground {
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+                background-color: rgba(255, 255, 255, 0.95);
+            }
+        }
+    #settings-popup {
+        position: fixed; /* Fallback for browsers that don't support sticky */
+        position: sticky;
+        z-index: 1;
+        margin-right: 0.75em;
+    }
+    #menubar {
+        transform: translateZ(0px);
+        z-index: 1;
 
-		background-color: transparent !important;
-		-webkit-backdrop-filter: none !important;
-		backdrop-filter: none !important;
+        background-color: transparent !important;
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
 
-		border: none !important;
-		box-shadow: none !important;
+        border: none !important;
+        box-shadow: none !important;
 
-		position: fixed; /* Fallback for browsers that don't support sticky */
-		position: sticky;
-		top: 0;
-		height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
-		box-shadow: none;
-		min-width: 100vw;
-	}
-	body {
-		transform: translateZ(0px);
-	}
-
-	menu ul a,
-	menu,
-	.hover:hover:not(.active),
-	#settings-toggle {
-		color: white;
-	}
-	.signature-color {
-		fill: white;
-	}
-	.active,
-	.hover:hover:not(.active),
-	#settings-toggle:hover {
-		color: rgb(0, 122, 255);
-	}
+        position: fixed; /* Fallback for browsers that don't support sticky */
+        position: sticky;
+        top: 0;
+        height: 0; /* Don't push content down */
+        box-shadow: none;
+        min-width: 100vw;
+    }
+    body {
+        transform: translateZ(0px);
+    }
 }

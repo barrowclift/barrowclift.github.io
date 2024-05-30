@@ -1,0 +1,36 @@
+---
+title: "Updates"
+---
+
+<h1>Updates</h1>
+
+<div class="cards updates column">
+{% assign updates = site.updates | sort: "date" | reverse %}
+{% for update in updates %}
+    {% if update.type != "project-update" and update.type != "article-update" %}
+        {% continue %}
+    {% endif %}
+    <a href="{{ update.url }}">
+        <div class="card">
+            <div class="label">
+                <div class="metadata">
+                    {% if update.type == "article-update" %}
+                        <mark class="tag blue">Article</mark>
+                    {% elsif update.type == "project-update" %}
+                        <mark class="tag orange">Project</mark>
+                    {% endif %}
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ update.date | date: "%B %-d, %Y" }}
+                    </time>
+                </div>
+                <h4 class="primary">
+                    {{ update.title }} {% if update.link and update.link contains "http" %}↦{% endif %}
+                </h4>
+                <h5 class="secondary">
+                    {{ update.excerpt }}
+                </h5>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+</div>

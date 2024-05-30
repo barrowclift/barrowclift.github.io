@@ -7,10 +7,11 @@ description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
 dropbox: "https://dropbox.barrowclift.me/assets"
 url: https://barrowclift.me # The base hostname & protocol for your site
+nitro_url: https://nitro.barrowclift.me
 prod-host: barrowclift.me
 host: localhost
 
-permalink: /post/:title # Permalink posts sorted by date with directories is awful.
+permalink: /articles/:title # Permalink posts sorted by date with directories is awful.
 paginate_path: articles/:num # Home older/previous pages go here
 paginate: 5 # Number of posts to be shown on each each paginated page.
 
@@ -18,31 +19,57 @@ markdown: kramdown
 highlighter: rouge
 show_drafts: False
 future: False
+enable-card-colors: False
 
 timezone: America/New_York
 locale: en-US
+exclude:
+    - "personal/"
 
 kramdown:
-  footnote_backlink: "&#x21A9;&#xFE0E;"
+    footnote_backlink: "&#x21A9;&#xFE0E;"
+
+collections:
+    updates:
+        output: true
 
 defaults:
-  - # POST SPECIFIC VARIABLES
-    scope:
-      path: "" # empty string for all files
-      type: posts # limit to posts
-    values:
-      viewing_single_page: true # *NOT* Being viewed from home, a specific article page
-      has_afterward: false
-      image: # assume a default post doesn't have an image, /images/assets/${image}
-      type: article # assume the post type is an article unless told otherwise
-  - # SITE-WIDE VARIABLES
-    scope:
-      path: "" # all files
-    values:
-      anchors: true # We want sections to be anchorable by default for everything
-      next-page: # Overriden if a given file is paginated
+    -
+        scope:
+            path: ""
+        values:
+            layout: default
+            timelocked: false
+            force-early-timelock: false
+            design:
+                show-anchors: false
+                force-dark-mode: false
+                ignore-accent-color: false
+            display:
+                edge-to-edge: false
+                extra-wide: false
+                flex: false
+            article:
+                show-stamp: true
+                show-footer: true
+    -
+        scope:
+            type: posts
+        values:
+            type: article
+            design:
+                show-anchors: true
+    -
+        scope:
+            path: projects
+        values:
+            design:
+                show-anchors: true
+            article:
+                show-stamp: false
+                show-footer: false
 
 plugins:
-  - jemoji
-  - jekyll-paginate
-  - jekyll-feed
+    - jemoji
+    - jekyll-paginate
+    - jekyll-feed

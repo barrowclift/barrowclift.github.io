@@ -1,37 +1,32 @@
 ---
-layout: post
 title: "Making Terminal Better"
 date: 2015-07-26 23:38:18
-excerpt: "Most developers can agree Terminal is great for productivity. Usability? Not so much. Here's some quick tips to help humanize the grandfather of the GUI on OS X."
-image: "making-terminal-better/banner-image.png"
-categories:
-  - Technology
-  - Programming
-  - Unix
-  - macOS
-  - Guides
----
 
-<style>
-	.terminal-image-1 img {
-		max-width: 570px;
-		width: 100% !important;
-	}
-	.terminal-image-2 img {
-		max-width: 730px;
-		width: 100% !important;
-	}
-}
-</style>
+excerpt: |
+    Most developers can agree Terminal is great for productivity. Usability? Not so much. Here’s some quick tips to help humanize the grandfather of the GUI on OS X.
+categories:
+    - Technology
+    - Programming
+    - Unix
+    - macOS
+    - Guides
+image: "making-terminal-better/share.jpg"
+card:
+    light:
+        image: "making-terminal-better/light-card"
+        background-color: "#FFFFFF"
+        foreground-color: "#000000"
+    dark:
+        image: "making-terminal-better/dark-card"
+        background-color: "#000000"
+        foreground-color: "#FFFFFF"
+---
 
 For the past few articles I've focused on topics that were for everyone, but for now I want to take a brief break and give my developer friends some attention.
 
 Developers, I'm going to take a wild guess and assume that the vast majority of you reading this use some form of Unix-based machine (like Linux or OS X) for the bulk of your development. But let's face it; as powerful as Unix is we can't deny how big a pain in the neck it is to use, even at the most rudimentary level[^quiz]. To master it takes *years* of dedicated exercise which isn't made any easier by how cryptic and ludicrous some commands are (I'm looking at you, `sed`).
 
-<a id="resume-from-break"></a>
 So while it's an essential, incredibly useful pain in the neck for us we thankfully don't have to put up with the "out of box" experience. We can make Terminal just the tiniest bit more human by means of the `.bashrc` file. Now I'm sure most of you out there know all about this file, but for those of you that don't this is essentially a preferences file for the bash shell, the default shell used in OS X and most Linux systems. Since we set our "preferences" directly in the file instead of through a <span class="small-caps">GUI</span> we have incredible flexibility and nearly endless customization possibilities available to us. To help get you started or spark new ideas I'll share some snippets from my own `.bashrc` for you to use or build off of. Please note that I'm going to be focusing primarily on OS X's Terminal, though by nature of OS X's Unix base some of the snippets below are platform agnostic and are applicable for practically any Unix machine.
-
-<!--break-->
 
 Look and Feel
 -------------
@@ -40,9 +35,9 @@ In my opinion if there's anything you take your time to consider it should be yo
 
 To begin, let's look at OS X's default Terminal.
 
-<figure markdown="1" class="terminal-image-1 inline macos-window-screenshot">
-![Terminal window, all output is in plain, black text against a blaring white background]({{ site.dropbox }}/making-terminal-better/default-terminal.png "This look and feel is *great* for people that don't like understanding what's going on.")
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/making-terminal-better/default-terminal.png 100w" sizes="50px" src="{{ site.dropbox }}/making-terminal-better/default-terminal.png" alt="Terminal window, all output is in plain, black text against a blaring white background" title="This look and feel is *great* for people that don't like understanding what's going on.">
+</div>
 
 Yikes, this won't do at all. I've seen far too many friends and colleagues sticking with this or one of the other dreadful default themes available on OS X and I'm here to tell you there's a better way. By just taking a few moments to consider the points below we can transform your Terminal into something actually enjoyable to use (and sometimes even beautiful).
 
@@ -52,9 +47,9 @@ Yikes, this won't do at all. I've seen far too many friends and colleagues stick
 
 Now, here's my current setup for inspiration:
 
-<figure markdown="1" class="terminal-image-2 inline macos-window-screenshot">
-![Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color]({{ site.dropbox }}/making-terminal-better/customized-terminal.png)
-</figure>
+<div class="terminal-image-2 inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/making-terminal-better/customized-terminal.png 100w" size="50px" src="{{ site.dropbox }}/making-terminal-better/customized-terminal.png" alt="Customized Terminal window, all output is stylized with multiple colors depending on file type against a soothing, deep black color">
+</div>
 
 How to actually get your Terminal to behave and look like this can be slightly confusing. The font and colors codes used for "red", "blue", etc. are not actually set in the `.bashrc` but rather Terminal's Preferences window instead since those settings are managed by Terminal itself and not the bash shell. You can begin customizing them by creating your own themes or customize existing ones by going to `Terminal > Preferences > Profiles`. You can also [download mine]({{ site.dropbox }}/downloads/making-terminal-better/duokai.terminal) to play around with though you'll want to install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font I use first.
 
@@ -93,7 +88,7 @@ export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 Functions
 ---------
 
-Now you've got your Terminal look and feel set just the way you like, what next? Well, I'd say the next most important change you could make is adding functions to your `.bashrc`	to encapsulate those often lengthy, horrid Unix commands into a much nicer function.
+Now you've got your Terminal look and feel set just the way you like, what next? Well, I'd say the next most important change you could make is adding functions to your `.bashrc`  to encapsulate those often lengthy, horrid Unix commands into a much nicer function.
 
 Let's take compression, for example. The proper command to compress a tar of a given file in Unix is `tar czf ${YOUR_FILE}`. Decompressing and extracting the file back out is just as cryptic with `tar xjf ${YOUR_FILE}`. I have never once been able to remember those infuriating arbitrary series of characters that tells the tar command to actually do what should be the default action. Thankfully with functions I don't need to, and now you don't have to either!
 
@@ -102,42 +97,42 @@ Let's take compression, for example. The proper command to compress a tar of a g
 # Extract practically anything
 # Usage: $ extract {YOUR_ARCHIVE}
 extract () {
-	# Many thanks to Daniel Baldwin (danielcbaldwin on GitHub) for providing
-	# the foundation used for the command.
-	#
-	# Must use "$@" if we want all arguments (with white space) to be treated
-	# As one file argument. This, however, restricts the command to one file
-	# or directory argument at a time, so while that's never an issue for me
-	# personally do take note of this.
-	if [ -f "$@" ] ; then
-		case "$@" in
-			*.tar.bz2)  tar xjf "$@"    ;;
-			*.tar.gz)   tar xzf "$@"    ;;
-			*.bz2)      bunzip2 "$@"    ;;
-			*.rar)      rar x "$@"      ;;
-			*.gz)       gunzip "$@"     ;;
-			*.tar)      tar xf "$@"     ;;
-			*.tbz2)     tar xjf "$@"    ;;
-			*.tgz)      tar xzf "$@"    ;;
-			*.zip)      unzip "$@"      ;;
-			*.Z)        uncompress "$@" ;;
-			*)          echo "'$@' cannot be extracted via extract()" ;;
-		esac
-	else
-		echo "'$@' is not a valid file"
-	fi
+    # Many thanks to Daniel Baldwin (danielcbaldwin on GitHub) for providing
+    # the foundation used for the command.
+    #
+    # Must use "$@" if we want all arguments (with white space) to be treated
+    # As one file argument. This, however, restricts the command to one file
+    # or directory argument at a time, so while that's never an issue for me
+    # personally do take note of this.
+    if [ -f "$@" ] ; then
+        case "$@" in
+            *.tar.bz2)  tar xjf "$@"    ;;
+            *.tar.gz)   tar xzf "$@"    ;;
+            *.bz2)      bunzip2 "$@"    ;;
+            *.rar)      rar x "$@"      ;;
+            *.gz)       gunzip "$@"     ;;
+            *.tar)      tar xf "$@"     ;;
+            *.tbz2)     tar xjf "$@"    ;;
+            *.tgz)      tar xzf "$@"    ;;
+            *.zip)      unzip "$@"      ;;
+            *.Z)        uncompress "$@" ;;
+            *)          echo "'$@' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$@' is not a valid file"
+    fi
 }
 
 # An easer zip command
 # Usage: $ zipper ${THE_FILE}
 zipper () {
-	if [ $(echo $@ | tail -c 2) == "/" ] ; then
-		file="${@%?}"
-	else
-		file="$@"
-	fi
+    if [ $(echo $@ | tail -c 2) == "/" ] ; then
+        file="${@%?}"
+    else
+        file="$@"
+    fi
 
-	zip -r -q "$file.zip" "$file"
+    zip -r -q "$file.zip" "$file"
 }
 
 # tartar: For When You *really* want to tar something
@@ -145,13 +140,13 @@ zipper () {
 # An easier tar compression command
 # Usage: $ tartar ${THE_FILE}
 tartar () {
-	if [ $(echo $@ | tail -c 2) == "/" ] ; then
-		file="${@%?}"
-	else
-		file="$@"
-	fi
+    if [ $(echo $@ | tail -c 2) == "/" ] ; then
+        file="${@%?}"
+    else
+        file="$@"
+    fi
 
-	tar czf "$file.tar.gz" "$file"
+    tar czf "$file.tar.gz" "$file"
 }
 {% endhighlight %}
 </div>
@@ -166,7 +161,7 @@ As a special treat to OS X developers, here's some essential functions that both
 # current directory
 # Usage: $ dsdel
 dsdel () {
-	find . -name ".DS_Store" -delete
+    find . -name ".DS_Store" -delete
 }
 
 # If you're like me you've made one or two slip-ups while rm'ing files.
@@ -175,7 +170,7 @@ dsdel () {
 # Move deleted files to OS X's trash (safer)
 # Usage: $ trash ${YOUR_FILE}
 trash () {
-	command mv "$@" ~/.Trash ;
+    command mv "$@" ~/.Trash ;
 }
 
 # Did you know that you could QuickLook a file from Terminal? Now you do.
@@ -183,7 +178,7 @@ trash () {
 # Preview file in OS X's QuickLook
 # Usage: $ ql ${YOUR_FILE}
 ql () {
-	qlmanage -p "$*" >& /dev/null;
+    qlmanage -p "$*" >& /dev/null;
 }
 {% endhighlight %}
 </div>

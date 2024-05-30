@@ -1,34 +1,38 @@
 ---
-layout: post
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
 update: 2023-07-16 11:34:04-0400
+
+excerpt: |
+    With this guide, you too can enjoy Wireguard VPN’s performance and security on macOS.
 categories:
-  - Technology
-  - macOS
-  - Services
-  - Programming
-  - Unix
-  - Guides
-  - Best Of
-excerpt: "With this guide, you too can enjoy Wireguard VPN's performance and security on macOS."
-image: "wireguard-server-on-macos/share-image.jpg"
-has_afterward: true
-background-color: "#4E0008"
-foreground-color: "#FFFFFF"
+    - Technology
+    - macOS
+    - Services
+    - Programming
+    - Unix
+    - Guides
+    - Best Of
+image: "wireguard-server-on-macos/share.jpg"
+
+article:
+    show-stamp: false
+card:
+    image: "wireguard-server-on-macos/card"
+    background-color: "hsl(354, 100%, 15%)"
+    foreground-color: "hsl(0, 0%, 100%)"
 ---
 
 <div class="admonition">
-<p class="admonition-title">Update: July 16, 2023</p>
-<p></p>
-<p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/post/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
-<p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
-<p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
+    <p class="admonition-title">Update: July 16, 2023</p>
+    <p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/articles/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
+    <p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
+    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
-<figure markdown="1" class="inline shadow">
-[![]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)]({{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg)
-</figure>
+<div class="inline shadow">
+    <img src="{{ site.dropbox }}/wireguard-server-on-macos/share-image.jpg">
+</div>
 
 After months of false starts and dead ends, I'm happy to report my [Wireguard](https://www.wireguard.com) VPN server is successfully running on macOS.
 
@@ -41,8 +45,6 @@ Unfortunately, that's the situation I found myself in with macOS when attempting
 Despite numerous attempts over the months, my Google-fu yielded no results, either. While there were plenty of [help articles](https://medium.com/@headquartershq/setting-up-wireguard-on-a-mac-8a121bfe9d86) from others setting up Wireguard on macOS, every single one of them was for setting up a Wireguard *peer* on macOS. This peer was always intended to only connect to a Wireguard server on more common platforms like [Ubuntu](https://ubuntu.com) or [CentOS](https://www.centos.org), never the other way around.
 
 However, from my on-and-off research over these past few months I've finally cobbled together a solution that's working. Thus, I intend to fill this hole in the community's growing collection of documentation and setup guides: here's what you need to do to get a Wireguard server running on macOS with full traffic routing and LAN access[^caveat].
-
-<!--break-->
 
 <ol>
   <li>Choose unused, local <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 4">IPv4</abbr> &amp; <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 6">IPv6</abbr> subnet ranges where Wireguard and the attached clients will reside. This way, we can ensure Wireguard won’t encounter unexpected IP collisions with other users or services on your <abbr title="Local Area Network">LAN</abbr> for either protocol. For this guide…
@@ -271,12 +273,12 @@ rm -rf /usr/local/var/run/wireguard/pf_wireguard_ipv6_token.txt
     </ol>
   </li>
   <li>Finally, restart your macOS server. If your launch daemon was configured and loaded correctly, Wireguard should already be running.</li>
-</ol> 
+</ol>
 
 Congratulations :tada:! You're now among the dozen people crazy enough to serve Wireguard on macOS. If you had trouble following this guide or would simply prefer to explore a repo of example Wireguard macOS config files at your own speed, I highly encourage you take a look at [Donavon Buchanan's example configuration repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6).  Additionally, please feel free to get in touch on [Mastodon](https://mastodon.social/@barrowclift) or via <a href="mailto:{{ site.email }}">email</a> if you have any feedback or corrections, I'd love to hear from you.
 
-<div class="article-linkback">
-    <a href="/">⌘</a>
+<div id="farewell-stamp">
+    <a href="/about">⌘</a>
 </div>
 
 ------

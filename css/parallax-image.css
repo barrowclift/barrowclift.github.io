@@ -1,101 +1,85 @@
-#mainmenu {
-	height: initial;
+html, body {
+    height: 100%;
 }
 #parallax {
-	overflow-y: scroll;
-	overflow-x: hidden;
-	width: 100%;
-	height: 100%;
-	-webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
 }
-.project {
-	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-	#parallax .container {
-		perspective: 1px;
-		perspective-origin: top left;
-	}
-	#parallax .layer {
-		position: absolute;
-		position: sticky;
-		top: 0px;
-		box-sizing: border-box;
-		display: block;
-	}
-		/* make parallax work in iOS Safari */
-		.safari #parallax .layer {
-			position: -webkit-sticky;
-		}
+    #parallax .container {
+        perspective: 1px;
+        perspective-origin: top left;
+    }
+    #parallax .layer {
+        position: absolute;
+        position: sticky;
+        top: 0px;
+        box-sizing: border-box;
+        display: block;
+    }
+        /* make parallax work in iOS Safari */
+        @supports (position: -webkit-sticky) {
+            #parallax .layer {
+                position: -webkit-sticky;
+            }
+        }
 #parallax-background {
-	transform: translateZ(-0.2px);
+    transform: translateZ(-0.2px);
 
-	height: 120vh;
-	width: 120vw;
-	margin-bottom: -20vh;
+    height: 120vh;
+    width: 120vw;
 
-	background-size: cover;
-	background-position: center;
+    background-size: cover;
+    background-position: center;
 }
-	#parallax-background figure,
-	#parallax-background video {
-		margin: 0 !important;
-		padding: 0 !important;
-	}
+    #parallax-background figure,
+    #parallax-background video {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 #parallax-foreground {
-	transform: translateZ(0px);
-	z-index: 10;
+    transform: translateZ(0px);
+    z-index: 10;
 
-	box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
-	background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
 
-	width: 100vw;
-	min-width: 100vw;
-	height: auto;
-	margin: 0 !important;
-	border-radius: 1em;
+    width: 100vw;
+    min-width: 100vw;
+    height: auto;
+    margin: 0 !important;
+    margin-top: -20vh !important;
 }
-	@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-		#parallax-foreground {
-			-webkit-backdrop-filter: saturate(180%) blur(20px);
-			backdrop-filter: saturate(180%) blur(20px);
-			background-color: rgba(255, 255, 255, 0.95);	
-		}
-	}
-article {
-	max-width: 35em;
-	text-align: center;
-	display: inline-block;
-	margin-bottom: 2.6em;
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        #parallax-foreground {
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            background-color: rgba(255, 255, 255, 0.95);    
+        }
+    }
+#menubar {
+    z-index: 1;
+    border: none !important;
+    box-shadow: none !important;
+    top: 0;
+    box-shadow: none;
+    min-width: 100vw;
+    transform: unset;
+    position: initial;
+    -webkit-backdrop-filter: unset !important;
+    backdrop-filter: unset !important;
+
+    /**
+     * Don't push the parallax-background content down, but still have the
+     * menu contents visible.
+     */
+    height: 0;
+    overflow: visible;
 }
-menu {
-	transform: translateZ(0px);
-	z-index: 1;
-
-	background-color: transparent !important;
-	-webkit-backdrop-filter: none !important;
-	backdrop-filter: none !important;
-
-	border: none !important;
-	box-shadow: none !important;
-
-	position: fixed; /* Fallback for browsers that don't support sticky */
-	position: sticky;
-	top: 0;
-	height: 0; /* Fixing Chrome rendering bug where it pushes all content down */
-	box-shadow: none;
-	min-width: 100vw;
-}
-#menu-height-offset {
-	height: 0;
+#menubar-height-offset {
+    height: 0;
 }
 body {
-	transform: translateZ(0px);
-}
-
-menu ul a:not(.active),
-#settings-toggle {
-	color: white;
-}
-.signature-color {
-	fill: white;
+    transform: translateZ(0px);
 }

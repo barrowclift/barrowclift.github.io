@@ -1,153 +1,108 @@
 ---
-layout: post
 title: "Back to the Mac"
 date: 2017-12-02 23:20:40
-categories:
-  - Technology
-  - Organization
-  - macOS
-  - Best Of
 timelocked: true
-excerpt: "The feature listicle that macOS deserves."
-image: "back-to-the-mac/share-image.png"
-background-color: "#64B2B6"
-foreground-color: "#FFFFFF"
+
+excerpt: |
+    The feature listicle that macOS deserves.
+categories:
+    - Technology
+    - Organization
+    - macOS
+    - Best Of
+image: "back-to-the-mac/share.png"
+
+card:
+    image: "back-to-the-mac/card"
+    background-color: "hsl(183, 60%, 53%)"
+    foreground-color: "hsla(0, 0%, 100%, 0.95)"
 ---
 
 <style>
-.menu-bar {
-	max-width: 569px;
-	width: 100% !important;
-}
-.quicktime {
-	max-width: 288px;
-	width: 100% !important;
-	border-radius: 8px;
-}
-.finder-default {
-	max-width: 685px;
-	width: 100% !important;
-}
-.customize-toolbar-sheet {
-	max-width: 635px;
-	width: 100% !important;
-}
-.mail-default {
-	max-width: 586px;
-	width: 100% !important;
-}
-.quicktime,
-.finder-default,
-.customize-toolbar-sheet,
-.mail-default,
-.finder-preferences,
-.get-info {
-	zoom: unset !important
-}
-.finder-preferences {
-	max-width: 371px;
-	width: 100% !important;
-}
-.custom-autocorrect {
-	max-width: 668px;
-	width: 100% !important;
-	zoom: unset !important;
-}
-.textedit {
-	max-width: 640px;
-	width: 100% !important;
-}
 .i-guess {
-	max-width: 111px;
-	width: 100% !important;
+    max-width: 111px;
+    width: 100% !important;
 }
 .footnotes .macbook {
-	width:75%;
-}
-.get-info {
-	max-width: 308px;
-	width: 100% !important;
-}
-.menu-bar-arrange {
-	max-width: 554px;
-	width: 100% !important;
+    width:75%;
 }
 .bigfoot-footnote__content img.finder,
 .finder {
-	max-width: 130px;
-	width: 40vw;
-	display: block;
+    max-width: 130px;
+    width: 40vw;
+    display: block;
 }
 .screensharing path,
 .screensharing rect {
-	fill: #007AFF;
+    fill: #007AFF;
 }
 .screensharing {
-	height: 1em;
-	margin
+    height: 1em;
+    margin
 }
 .special-footer-struct {
-	width: 111px;
+    width: 111px;
 }
 .special-footer-struct.large {
-	width: 250px;
+    width: 250px;
 }
 @media (min-width: 700px) {
-	.special-footer-struct {
-		width: 222px;
-	}
-	.special-footer-struct.large {
-		width: 400px;
-	}
+    .special-footer-struct {
+        width: 222px;
+    }
+    .special-footer-struct.large {
+        width: 400px;
+    }
+}
+.apple-logo {
+    display: inline-block;
+    height: 0.9em;
 }
 </style>
 
-About a year ago, I published a light "listicle" to highlight some of the smaller features in the then-new [iOS 10](https://web.archive.org/web/20161018023634/https://www.apple.com/ios/ios-10/) and [watchOS 3](https://web.archive.org/web/20160914123844/https://www.apple.com/watchos/). Before diving into the details, [I mentioned offhand]({{ site.baseurl }}/post/listing-the-little-things#fn:where-is-macos) that I omitted [macOS 10.12](https://web.archive.org/web/20160915010119/https://www.apple.com/macos/sierra/) simply because there wasn't anything particularly interesting to include from that release.
+About a year ago, I published a light "listicle" to highlight some of the smaller features in the then-new [iOS 10](https://web.archive.org/web/20161018023634/https://www.apple.com/ios/ios-10/) and [watchOS 3](https://web.archive.org/web/20160914123844/https://www.apple.com/watchos/). Before diving into the details, [I mentioned offhand](/articles/listing-the-little-things#fn:where-is-macos) that I omitted [macOS 10.12](https://web.archive.org/web/20160915010119/https://www.apple.com/macos/sierra/) simply because there wasn't anything particularly interesting to include from that release.
 
 Unfortunately, this year's [macOS 10.13 "High Sierra"](https://arstechnica.com/gadgets/2017/09/macos-10-13-high-sierra-the-ars-technica-review/) release is again slim with regards to user-facing features, despite macOS falling increasingly behind iOS in feature parity. After all, macOS *still* does not have Message stickers and animations, *still* has the same broken App Store, and *still* has all its preexisting problems like pitiful window management and the festering mess that is iTunes. Year after year, Tim Cook's Apple continues to demonstrate they don't care about macOS by simply ignoring it.
 
-<a id="resume-from-break"></a>
 In light of this, I've decided to completely ignore whatever new hotness iOS got this year and instead shine the spotlight on the operating system that remains deeply important to millions of people's digital lifestyles (despite being continually sidelined by Cook's Apple). To give macOS the time it deserves, I'm sharing all the small but fantastic features I've picked up over these ten years that help make macOS the finest desktop operating system available.
 
 For those wanting to jump right in, I've sorted the features by importance; the topmost sections are must know, while the bottommost ones are just curious oddities. You can click on any individual features that interest you, or browse entire sections if you're feeling adventurous. Have fun exploring!
 
-<!--break-->
+#### I Wish I Had Known That Sooner <small>Things everyone with a Mac should know</small>
 
-#### I Wish I Had Known That Sooner <time>Things everyone with a Mac should know</time>
-
-<ul class="compact-list">
-	<li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
-	<li><a href="#display-the-date-in-the-menu-bar-clock">Display the Date in the Menu Bar Clock</a></li>
-	<li><a href="#quicklook-for-superior-file-browsing">Quicklook for Superior File Browsing</a></li>
-	<li><a href="#spotlight-calculator-for-instant-calculations">Spotlight Calculator for Instant Calculations</a></li>
-	<li><a href="#tap-for-definitions-synonyms-and-more">Tap for Definitions, Synonyms, and More</a></li>
-	<li><a href="#automatic-birthdays-in-calendar">Automatic Birthdays in Calendar</a></li>
-	<li><a href="#taking-instant-beautiful-screenshots">Taking Instant, Beautiful Screenshots</a></li>
-	<li><a href="#builtin-screen-recording">Built-In Screen Recording</a></li>
-	<li><a href="#builtin-screensharing">Built-In Screensharing</a></li>
+<ul class="tight">
+    <li><a href="#emoji-picker-shortcut-">Emoji Picker Shortcut ✨</a></li>
+    <li><a href="#display-the-date-in-the-menu-bar-clock">Display the Date in the Menu Bar Clock</a></li>
+    <li><a href="#quicklook-for-superior-file-browsing">Quicklook for Superior File Browsing</a></li>
+    <li><a href="#spotlight-calculator-for-instant-calculations">Spotlight Calculator for Instant Calculations</a></li>
+    <li><a href="#tap-for-definitions-synonyms-and-more">Tap for Definitions, Synonyms, and More</a></li>
+    <li><a href="#automatic-birthdays-in-calendar">Automatic Birthdays in Calendar</a></li>
+    <li><a href="#taking-instant-beautiful-screenshots">Taking Instant, Beautiful Screenshots</a></li>
+    <li><a href="#builtin-screen-recording">Built-In Screen Recording</a></li>
+    <li><a href="#builtin-screensharing">Built-In Screensharing</a></li>
 </ul>
 
-#### I Want to Work Better <time>Essentials for people aspiring to work smarter, not harder</time>
+#### I Want to Work Better <small>Essentials for people aspiring to work smarter, not harder</small>
 
-<ul class="compact-list">
-	<li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
-	<li><a href="#window-tab-and-app-management-shortcuts">Window, Tab, and App Management Shortcuts</a></li>
-	<li><a href="#custom-autocorrect-substitutions">Custom Autocorrect Substitutions</a></li>
-	<li><a href="#go-to-desktop-keyboard-shortcut-for-file-dialogs">"Go To Desktop" Keyboard Shortcut for File Dialogs</a></li>
-	<li><a href="#customize-toolbar-items">Customize Toolbar Items</a></li>
-	<li><a href="#always-search-current-folder-in-finder">Always Search Current Folder in Finder</a></li>
-	<li><a href="#automator-101-">Automator 101 🤖</a></li>
-	<li><a href="#get-info-multiple-files-at-once">"Get Info" Multiple Files at Once</a></li>
+<ul class="tight">
+    <li><a href="#text-navigation-shortcuts">Text Navigation Keyboard Shortcuts</a></li>
+    <li><a href="#window-tab-and-app-management-shortcuts">Window, Tab, and App Management Shortcuts</a></li>
+    <li><a href="#custom-autocorrect-substitutions">Custom Autocorrect Substitutions</a></li>
+    <li><a href="#go-to-desktop-keyboard-shortcut-for-file-dialogs">“Go To Desktop” Keyboard Shortcut for File Dialogs</a></li>
+    <li><a href="#customize-toolbar-items">Customize Toolbar Items</a></li>
+    <li><a href="#always-search-current-folder-in-finder">Always Search Current Folder in Finder</a></li>
+    <li><a href="#automator-101-">Automator 101 🤖</a></li>
+    <li><a href="#get-info-multiple-files-at-once">"Get Info" Multiple Files at Once</a></li>
 </ul>
 
-#### Huh, Neat <time>Tips that only fussy people like me care about</time>
+#### Huh, Neat <small>Tips that only fussy people like me care about</small>
 
-<ul class="compact-list">
-	<li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>
-	<li><a href="#fix-ugly-app-icons">Fix Ugly App Icons</a></li>
-	<li><a href="#dark-mode-">Dark Mode 🌚</a></li>
-	<li><a href="#auto-hidden-dock">Auto-Hidden Dock</a></li>
-	<li><a href="#rearrange-menu-bar-icons">Rearrange Menu Bar Icons</a></li>
+<ul class="tight">
+    <li><a href="#large-album-art-player-in-itunes">Large Album Art Player in iTunes</a></li>
+    <li><a href="#fix-ugly-app-icons">Fix Ugly App Icons</a></li>
+    <li><a href="#dark-mode-">Dark Mode 🌚</a></li>
+    <li><a href="#auto-hidden-dock">Auto-Hidden Dock</a></li>
+    <li><a href="#rearrange-menu-bar-icons">Rearrange Menu Bar Icons</a></li>
 </ul>
 
 --------
@@ -158,28 +113,26 @@ For those wanting to jump right in, I've sorted the features by importance; the 
 
 Who am I kidding, the macOS emoji picker is the feature people will love the most from this list[^i-guess]. You can launch the picker yourself in practically any application with <kbd>^</kbd> + <kbd>⌘</kbd> + <kbd>spacebar</kbd>.
 
-<figure markdown="1" class="edge-to-edge medium">
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/emoji-picker-poster.jpg" alt="Video demonstrating the macOS emoji picker">
+        <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/emoji-picker.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### Display the Date in the Menu Bar Clock
 
+<div class="admonition update">
+    <p class="admonition-title">Update: September 6, 2018</p>
+    <p>I’ve been informed there's another method for checking the date that’s arguably easier than opening Calendar or checking Notification Center; you can alternatively click the Menu Bar Clock to see the full date in a popup menu.</p>
+</div>
+
 Why Apple to this day hides the date in the macOS Menu Bar clock, I'll never know. To check the date with the default settings, you'd need to open up Calender or check Notification Center&mdash;both of which are nonstarters. Checking the time *and* date should be as immediate and instinctual as glancing at a wristwatch or a family calendar on a nearby wall. If you agree, open up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences..."), click on "Date & Time", and in the "Clock" tab check the box that says "Show the day of the week".
 
-<figure markdown="1" class="edge-to-edge small">
-<a href="{{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg">
-![Image showing the macOS menu bar clock with the date displayed alongside the time]({{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg){: .menu-bar}
-</a>
-</figure>
-
-<div class="admonition update">
-<p class="admonition-title">Update: September 6, 2018</p>
-<p>I've been informed there's another method for checking the date that's arguably easier than opening Calendar or checking Notification Center; you can alternatively click the Menu Bar Clock to see the full date in a popup menu.</p>
+<div class="inline">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/menu-bar-date.jpg" alt="Image showing the macOS menu bar clock with the date displayed alongside the time">
 </div>
 
 ### Quicklook for Superior File Browsing
@@ -188,16 +141,14 @@ Don't you wish you could visually zip through files on a computer as quickly and
 
 Quicklook on macOS completely solves this problem, and is perhaps my single favorite and most used macOS feature. Simply select a file and press <kbd>spacebar</kbd>. You'll get an instant, enlarged preview window proudly displaying the contents of the file you selected. Now navigate around with the arrow keys or pointer to select different files, *the Quicklook preview window instantly updates to display the currently selected file's contents*. This method of visual searching is indispensable, and is well worth the few seconds it takes to become acclimated to it. Say goodbye to dozens of double clicks or hilariously large "thumbnails" and hello to quicker looks.
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/quicklook-poster.jpg" alt="Video demonstrating the benefits of Quicktime">
+        <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/quicklook.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### Spotlight Calculator for Instant Calculations
 
@@ -205,16 +156,14 @@ What's your process for quick calculations? Do you bring up the Calculator app? 
 
 Spotlight is the little magnifying glass on the right side of the Menu Bar and is used for quickly searching files and apps, among other things. One of those "other things" is support for basic arithmetic. Simply launch Spotlight with the global shortcut <kbd>⌘</kbd> + <kbd>spacebar</kbd> and enter whatever equation you need calculated. The results will be displayed automatically, and can even be copied to your clipboard with the "copy" shortcut (<kbd>⌘</kbd> + <kbd>C</kbd>).
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator-poster.jpg" alt="Video demonstrating the Spotlight being used for basic calculations">
+        <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/spotlight-calculator.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 With Spotlight as your calculator, you no longer have to waste time opening and closing a separate calculator application or digging up old, physical calculators; any calculation is just a shortcut away. With just a minute or two of practice, you'll be flying through equations faster than you ever thought you could.
 
@@ -224,20 +173,18 @@ No doubt, there's been plenty of times you need to quickly look up the definitio
 
 With the default macOS settings, simply tap the word with three fingers and a delightful definition window will pop up for you. This gesture works in practically every application, and can easily be changed to four fingers or other desired combinations in System Preferences.
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tap-to-define-poster.jpg" alt="Video showcasing macOS's 'tap to define' feature">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tap-to-define.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### Automatic Birthdays in Calendar
 
-Remembering everyone's birthdays can be a daunting task (especially if you're built for process-based thinking instead of rote memorization, [like myself]({{ site.baseurl }}/post/turtles-hares-and-hot-rods)). Thankfully, macOS and iOS take this problem away entirely by adding Contact birthdays into Calendar automatically. Simply ensure that the desired contacts have birthdays set in their contact cards.
+Remembering everyone's birthdays can be a daunting task (especially if you're built for process-based thinking instead of rote memorization, [like myself](/articles/turtles-hares-and-hot-rods)). Thankfully, macOS and iOS take this problem away entirely by adding Contact birthdays into Calendar automatically. Simply ensure that the desired contacts have birthdays set in their contact cards.
 
 The Calendar app will automatically see these birthdays and create yearly, repeating events for them accompanied with a cute birthday present emoji &#x1F381;. If you had set the optional birth year for your contacts as well, the birthday events will even include how old they are in their reminder notifications. Forgetful people, rejoice!
 
@@ -245,11 +192,11 @@ The Calendar app will automatically see these birthdays and create yearly, repea
 
 You may be aware that Windows supports taking screenshots of windows with the [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool). If you are, you're also aware of how hilariously hideous the results are. As expected, Microsoft implemented the feature with their usual level of polish, resulting in tiresome file dialogs for screenshots of un-cropped windows, all bundled together with a [grotesque app icon](https://en.wikipedia.org/wiki/Snipping_Tool#/media/File:Snipping_Tool_10_Icon.png).
 
-<figure markdown="1" class="edge-to-edge small no-border-radius">
-![Image of Windows File Explorer screenshot. If you have difficulties seeing, or the image didn't load for some reason, just take my word for it that it looks like ass]({{ site.dropbox }}/fearful-computing/internet-explorer.png)
-<figcaption>
-People, you know you don't have to put up with this shit, right?
-</figcaption>
+<figure class="edge-to-edge small no-border-radius">
+    <img src="{{ site.dropbox }}/fearful-computing/internet-explorer.png" alt="Image of Windows File Explorer screenshot. If you have difficulties seeing, or the image didn't load for some reason, just take my word for it that it looks like ass">
+    <figcaption>
+        People, you know you don’t have to put up with this shit, right?
+    </figcaption>
 </figure>
 
 Thankfully, there's a *vastly* nicer way on macOS to take any kind of screenshot, the [Grab app](https://en.wikipedia.org/wiki/Grab_(software)) (or more specifically, its keyboard shortcuts). Whenever you want to take a screenshot of your entire computer screen in macOS, enter the shortcut <kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>3</kbd>. If your volume is on, you'll hear a pleasing camera shutter, signaling that the screenshot has been successfully saved to your Desktop&mdash;no unnecessary save dialogs to slog through.
@@ -258,9 +205,9 @@ If you wanted to take a screenshot of a given section of your screen (not the fu
 
 While these are certainly helpful, this is technically nothing Window's Snipping Tool couldn't do. Where macOS's Grab app truly shines is it's superior window screenshots, which are lovely little window images like this:
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of a lovely macOS window screenshot]({{ site.dropbox }}/back-to-the-mac/screenshot-example.png)
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/screenshot-example.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/screenshot-example.png" alt="Image of a lovely macOS window screenshot">
+</div>
 
 To make your own, enter the shortcut you did to get the click-and-drag crosshairs before (<kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>), only this time instead of clicking and dragging, press <kbd>spacebar</kbd>. Your crosshairs will transform into a little camera icon, and with that icon you can click on *any* window in macOS to get a perfect window screenshot saved to your Desktop with the familiar camera shutter sound.
 
@@ -278,9 +225,9 @@ There was none. There is none. Windows 7, the *"gold standard"* operating system
 
 This is not a problem at all on macOS. Simply open up the [QuickTime app](https://en.wikipedia.org/wiki/QuickTime) with Spotlight (<kbd>⌘</kbd> + <kbd>spacebar</kbd>, type "QuickTime", and press <kbd>return</kbd>). Once the app is open, click "File" > "New Screen Recording". You'll get a small popup window with a VU meter and record button. Click that red button and follow the brief onscreen instructions to begin. Just like that, you're screen recording like a pro!
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the screen recording Quicktime window]({{ site.dropbox }}/back-to-the-mac/quicktime-screen-recording.png){: .quicktime }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/quicktime-screen-recording.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/quicktime-screen-recording.png" alt="Image of the screen recording Quicktime window">
+</div>
 
 ### Built-In Screensharing
 
@@ -289,8 +236,8 @@ This is it, the final "must know" macOS feature. While the chances of you ever n
 If this sounds complicated, don't be worried; macOS makes screensharing (mostly) a breeze by integrating the feature into the [Messages app](https://en.wikipedia.org/wiki/Messages_(Apple)#macOS_version) and Apple IDs. To request temporary control of a friend or family member's screen, first open up the Messages app and select your chat thread with the individual. If you don't have an existing thread with the other party, send them a quick, friendly message to start one.
 
 <div class="admonition">
-<p class="admonition-title">Note</p>
-<p>The bubble should be blue to indicate they have an active Apple ID with iMessage enabled. If it's not blue, either you or the receiving party don't have iMessage enabled. <a href="https://www.imore.com/how-set-messages-your-mac">Read here to find out how to turn it on</a>.</p>
+    <p class="admonition-title">Note</p>
+    <p>The bubble should be blue to indicate they have an active Apple ID with iMessage enabled. If it’s not blue, either you or the receiving party don’t have iMessage enabled. <a href="https://www.imore.com/how-set-messages-your-mac">Read here to find out how to turn it on</a>.</p>
 </div>
 
 With the thread visible, click the blue "Details" button in the upper right-hand side of the Messages window and a little window will popup with recently shared files and additional contact buttons. One of those buttons is <span class="hint--top hint--rounded hint--bounce" data-hint="The button to start screensharing looks like me!"><svg class="screensharing" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="13" y="16" width="29" height="21" rx="2"></rect><path d="M29,15 L29,7 C29,5.8954305 28.1045695,5 27,5 L2,5 L2,5 C0.8954305,5 -1.3527075e-16,5.8954305 0,7 L0,7 L0,24 C1.3527075e-16,25.1045695 0.8954305,26 2,26 L12,26 L12,17 C12,15.8954305 12.8954305,15 14,15 L29,15 Z"></path></g></svg></span>, and clicking it displays two choices, neither of which make any sense. To assist with Apple's horrible labeling, I've translated the options for you below.
@@ -313,16 +260,14 @@ If you're reading this, you already have at least a passing interest in wanting 
 * Jump the cursor to the previous or next word: <kbd>⌥</kbd> + <kbd>◀</kbd> / <kbd>►</kbd>
 * Jump the cursor to the beginning or end of a line: <kbd>⌘</kbd> + <kbd>◀</kbd> / <kbd>►</kbd>
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-navigation-poster.jpg" alt="Video demonstrating mastery over macOS's text navigation shortcuts">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-navigation.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### Window, Tab, and App Management Shortcuts
 
@@ -332,29 +277,25 @@ Wouldn't it be nice to have the option to quickly execute these tasks from the k
 
 To start, you can easily switch to the previous and next tabs of any tabbed window in macOS with <kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>{</kbd> / <kbd>}</kbd>, where the left curly bracket switches to the previous tab and the right switches to the next tab. Try switching between tabs this quickly with the pointer!
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut-poster.jpg" alt="Video showing how you can quickly switch between tabs with the keyboard shortcut">
+        <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/switch-tabs-shortcut.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 Quickly switching tabs is nice and all, but it doesn't do much if you still have to play "hunt for the 'x' button" with the mouse whenever you want to close some of them. To leverage the power of the tab switching shortcut, it should be used in conjunction with the universal "close tab / window" shortcut, <kbd>⌘</kbd> + <kbd>W</kbd>. If there are tabs, this shortcut will close the currently selected tab, and if there are no tabs (just a window), this shortcut will close the window. After a little bit of practice, you'll never be able to go back to the hunting and pecking for 'x' buttons with the pointer again.
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison-poster.jpg" alt="Video showing tab switching and tab closing shortcuts executed together">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/tab-shortcut-comparison.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 Additionally&mdash;whenever you're completely done with an application&mdash;you can use <kbd>⌘</kbd> + <kbd>Q</kbd> to quit the whole thing (this is the equivalent of the red 'X' window button in Windows).
 
@@ -371,51 +312,49 @@ To help make the feature slightly more appealing&mdash;potentially enough to mak
 
 Adding your own autocorrections couldn't be easier; open up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences..."), click on the "Keyboard" item, and then select the "Text" tab. There, you can add whatever autocorrect substitutions you want to the table on the left.
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the text substitutions System Preferences pane]({{ site.dropbox }}/back-to-the-mac/custom-autocorrect-settings.png){: .custom-autocorrect}
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/custom-autocorrect-settings.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/custom-autocorrect-settings.png" alt="Image of the text substitutions System Preferences pane">
+</div>
 
 To get started, I've included a few of my favorite substitutions for you to consider adding to your own autocorrection collection:
 
 <table class="fancy">
-  <thead>
-    <tr>
-      <th style="text-align: left">Replace</th>
-      <th style="text-align: left">With</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">-&gt;</td>
-      <td style="text-align: left">→</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">&lt;-</td>
-      <td style="text-align: left">←</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">shrugguy</td>
-      <td style="text-align: left">¯\<em>(ツ)</em>/¯</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">lod</td>
-      <td style="text-align: left">ಠ_ಠ</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th style="text-align: left">Replace</th>
+            <th style="text-align: left">With</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">-&gt;</td>
+            <td style="text-align: left">→</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">&lt;-</td>
+            <td style="text-align: left">←</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">shrugguy</td>
+            <td style="text-align: left">¯\<em>(ツ)</em>/¯</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">lod</td>
+            <td style="text-align: left">ಠ_ಠ</td>
+        </tr>
+    </tbody>
 </table>
 
 Once you've added your desired substitutions, using them is as easy as typing misspelled words. Simply let macOS handle everything for you, continue typing as you normally would; the substitutions will happen auto-magically.
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/text-substitution-poster.jpg" alt="Video showing the custom autocorrection in action">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/text-substitution.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### "Go To Desktop" Keyboard Shortcut for File Dialogs
 
@@ -431,49 +370,45 @@ All the work improvement tips up to this point have involved the keyboard to var
 
 Tell me then, why do so many people continue to use default application toolbars?
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the default Finder toolbar]({{ site.dropbox }}/back-to-the-mac/finder-default.png){: .finder-default }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/finder-default.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/finder-default.png" alt="Image of the default Finder toolbar">
+</div>
 
 Take for example the nightmare that is the Finder window toolbar. It looks like something Google made, with loads of mystery meat hieroglyphic buttons most people will never use, or even need. Thankfully, you can change it and nearly every macOS application's toolbar by going to "View > Customize toolbar..." in the menu bar. A helpful dialog will slide down filled with various buttons, and from that point on you simply drag and drop in or out whatever you want until you're satisfied.
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the Finder toolbar customization pane]({{ site.dropbox }}/back-to-the-mac/customize-toolbar-sheet.png){: .customize-toolbar-sheet }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/customize-toolbar-sheet.png 100w" sizes="50px" alt="Image of the Finder toolbar customization pane">
+</div>
 
 Don't be afraid to experiment! You wouldn't just buy a desk from an IKEA showroom and keep all the stuff on the desk *exactly* like IKEA had arranged it, would you? No! You'd get your arrangement *just right* to fit the way you work, and you should consider doing the same to your toolbars. Don't worry, You can always get back the default toolbar by dragging the "default set" back up to the top, so there's no risk of "breaking it". Once you've chosen just the stuff __you__ want, click the "Done" button to save your changes.
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of my customized Finder toolbar]({{ site.dropbox }}/back-to-the-mac/finder-custom.png){: .finder-default }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/finder-custom.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/finder-custom.png" alt="Image of my customized Finder toolbar">
+</div>
 
 For inspiration, just compare the noisy mess that is the default Mail compose window toolbar to the one I use. For as much as Apple touts being simple and elegant, it's amazing they don't have something like mine as the default, right?
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the default Mail Compose toolbar]({{ site.dropbox }}/back-to-the-mac/mail-default.png){: .mail-default }
-<figcaption>
-Default
-</figcaption>
+<figure class="inline macos-window-screenshot">
+    <p><img srcset="{{ site.dropbox }}/back-to-the-mac/mail-default.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/mail-default.png" alt="Image of the default Mail Compose toolbar"></p>
+    <figcaption>Default</figcaption>
 </figure>
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of my custom Mail Compose toolbar]({{ site.dropbox }}/back-to-the-mac/mail-custom.png){: .mail-default }
-<figcaption>
-Custom
-</figcaption>
+<figure class="inline macos-window-screenshot">
+    <p><img srcset="{{ site.dropbox }}/back-to-the-mac/mail-custom.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/mail-custom.png" alt="Image of my custom Mail Compose toolbar"></p>
+    <figcaption>Custom</figcaption>
 </figure>
 
 ### Always Search Current Folder in Finder
 
-It's no secret Finder (and by extension the file system paradigm of folders and files) utterly baffle most people. For proof, look no further than the Desktop; for both Windows and macOS, the majority of people seem [far more comfortable keeping all their files on the Desktop]({{ site.baseurl }}/post/fearful-computing#the-comfortzone-trap) instead of braving the scary world of the Finder or Explorer to properly sort them away. Comically, Apple's approach to making the system less scary was giving the Finder app a smiley face icon and ignoring the underlying issues, like putting lipstick on a pig[^finder].
+It's no secret Finder (and by extension the file system paradigm of folders and files) utterly baffle most people. For proof, look no further than the Desktop; for both Windows and macOS, the majority of people seem [far more comfortable keeping all their files on the Desktop](/articles/fearful-computing#the-comfortzone-trap) instead of braving the scary world of the Finder or Explorer to properly sort them away. Comically, Apple's approach to making the system less scary was giving the Finder app a smiley face icon and ignoring the underlying issues, like putting lipstick on a pig[^finder].
 
 While there's nothing I can write here that will fix Finder[^fftf], I can at least suggest a change that's the equivalent of adding a small teaspoon of sugar to swill: searching the current folder by default instead of the entire home directory.
 
 If a search is being made in an opened folder, *why* should that search ever default to searching an entirely different folder instead? If I issued a command for a robot to search my desk drawer for something, I'd consider the robot defective it searched the *entire house* instead of just the specified drawer. The same logic applies to digital folders; if I start a search in a folder, __I expect the search to occur in that folder__. If I wanted to search another folder, __I'd have gone to that folder and started the search there__. If you agree, navigate to "Finder > Preferences...", and in the "Advanced" tab where it says "When performing a search", select "Search the Current Folder". You can now enjoy a marginally less horrible file browser while searching the folders you were expecting to in the first place.
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![Image of the finder Preferences window]({{ site.dropbox }}/back-to-the-mac/finder-preferences.png){: .finder-preferences }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/finder-preferences.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/finder-preferences.png" alt="Image of the finder Preferences window">
+</div>
 
 ### Automator 101 🤖
 
@@ -483,61 +418,55 @@ What can you do with Automator? Practically anything. Want to make PDFs from sel
 
 Making your own scripts like the ones I mentioned above are shockingly easy. First, open up the Automator app, which is easily identifiable due to its striking resemblance to Eve from Pixar's *Wall-E*[^wall-e].
 
-<figure markdown="1" class="inline">
 ![Image showing Auto the Automator robot and Wall-E's Eve side-by-side]({{ site.dropbox }}/back-to-the-mac/automator-and-eve.png)
-</figure>
 
 Once opened, you're met with a plentiful list of "Actions" to the left and a chronological timeline to the right where you can drag and drop various actions together to create your desired script. However, if making your own doesn't really interest you, you can search the web for [dozens of pre-made ones](http://macosxautomation.com/services/download/index.html#), ready for use. Additionally, I've linked my favorites below for you to download:
 
-<ul class="compact-list">
-  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Change Image Format.zip">Change Image Format</a></li>
-  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Combine PDFs.zip">Combine PDFs</a></li>
-  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Convert Text to Audio File.zip">Convert Text to Audio File</a></li>
-  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Make PDF from Images.zip">Make PDF from Images</a></li>
-  <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Rename Files Sequentially.zip">Rename Files Sequentially</a></li>
+<ul class="tight">
+    <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Change Image Format.zip">Change Image Format</a></li>
+    <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Combine PDFs.zip">Combine PDFs</a></li>
+    <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Convert Text to Audio File.zip">Convert Text to Audio File</a></li>
+    <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Make PDF from Images.zip">Make PDF from Images</a></li>
+    <li><a href="{{ site.dropbox }}/downloads/back-to-the-mac/Rename Files Sequentially.zip">Rename Files Sequentially</a></li>
 </ul>
 
 To install these scripts, simply double click any ones you've downloaded and click the "Install" button in the popup. From then on you'll be able to access them by right clicking applicable files in Finder (if you've got a lot of them, they'll instead be grouped under a new "Services" submenu).
 
-<figure markdown="1" class="edge-to-edge medium">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge medium shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/services-poster.jpg" alt="Video showing where the Automator services are located">
+        <source src="{{ site.dropbox }}/back-to-the-mac/services.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/services.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/services.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 Now we're getting to the good stuff; do you have a mundane, repetitive task you need to do every day for work that demands mouse interactions? What if I told you Automator could watch you do it and then quickly play back that repetitive task indefinite times while you sit back and enjoy your morning coffee? There are entire jobs that could be compressed into just a short half hours' worth of actual work with such power, and Automator's got it.
 
 Unfortunately, due to the specialized nature of mouse-driven automation, there's no pre-canned Automator scripts I can provide you. I can, however, point you towards some guides to show you the ropes if you're interested (and as always, I stand by the best way to truly learn this feature is to experiment on your own):
 
-<ul class="compact-list">
-  <li><a href="https://macosxautomation.com/training/automator/tut04/02.html"><em>Mac OS X Automation</em> - "Tutorial 04: Recording"</a></li>
-  <li><a href="https://hacksformacs.wordpress.com/2013/05/27/controlling-the-gui-via-automator/"><em>Hacks for Macs</em> - "Controlling the GUI via Automator"</a></li>
-  <li><a href="https://www.youtube.com/watch?v=5o_JrForn6Y"><em>Peachpit TV</em> - "Recording Manual Events in Automator with Ben Waldie"</a></li>
+<ul class="tight">
+    <li><a href="https://macosxautomation.com/training/automator/tut04/02.html"><em>Mac OS X Automation</em> - “Tutorial 04: Recording”</a></li>
+    <li><a href="https://hacksformacs.wordpress.com/2013/05/27/controlling-the-gui-via-automator/"><em>Hacks for Macs</em> - “Controlling the GUI via Automator”</a></li>
+    <li><a href="https://www.youtube.com/watch?v=5o_JrForn6Y"><em>Peachpit TV</em> - “Recording Manual Events in Automator with Ben Waldie”</a></li>
 </ul>
 
 ### "Get Info" Multiple Files at Once
 
-macOS is great at many things, but "Get Info" windows aren't one of then. If you've ever made the mistake of right clicking a bunch of selected files and clicking "Get Info...", you already know why. For those don't, have you even won a round of Windows Solitaire?
+macOS is great at many things, but "Get Info" windows aren't one of then. If you've ever made the mistake of right clicking a bunch of selected files and clicking "Get Info...", you already know why. For those don't, [have you even won a round of Windows Solitaire](https://www.youtube.com/watch?v=yiGT_7Dgq0I)?
 
-<figure markdown="1" class="edge-to-edge large">
-<a href="{{ site.dropbox }}/back-to-the-mac/originals/death-by-get-info.jpg">
-![Loads of Finder "Get Info" windows, LOADS OF THEM]({{ site.dropbox }}/back-to-the-mac/death-by-get-info.jpg)
-</a>
-<figcaption>
-God dammit, Apple...
-</figcaption>
+<figure class="edge-to-edge large shadow">
+    <img src="{{ site.dropbox }}/back-to-the-mac/death-by-get-info.jpg" alt="Loads of Finder &quot;Get Info&quot; windows, LOADS OF THEM">
+    <figcaption>
+        God dammit, Apple…
+    </figcaption>
 </figure>
 
 Thankfully, there *is* a way to consolidate multiple "Get Info" windows into one, but it requires a special interaction: <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>I</kbd>. "What could this window possibly be useful for?", you may ask. It's indispensable for showing/hiding the extensions of multiple files at once (the only other option being to "Get Info" files one-by-one), and it can be quite useful for changing permissions of numerous files at once without having to fire up Terminal and memorize the necessary Unix commands. Now, instead of drowning in countless individual "Get Info" windows, next time you need to edit multiple files at once you can instead fuse them together into a single, sensible window for your edits.
 
-<figure markdown="1" class="inline macos-window-screenshot">
-![The consolidated Finder "Get Info" window]({{ site.dropbox }}/back-to-the-mac/consolidated-get-info-window.png){: .get-info }
-</figure>
+<div class="inline macos-window-screenshot">
+    <img srcset="{{ site.dropbox }}/back-to-the-mac/consolidated-get-info-window.png 100w" sizes="50px" src="{{ site.dropbox }}/back-to-the-mac/consolidated-get-info-window.png" alt="The consolidated Finder &quot;Get Info&quot; window">
+</div>
 
 -----
 
@@ -555,16 +484,14 @@ Following iTunes 11's mini player redesign, the mini player's window size was lo
 
 As fate would have it, *you can still get the old mini player back*, even in the latest version of iTunes (at time of writing, 12.7.1.14). To get the old player back, <kbd>⌘</kbd> + click the album art of the currently playing song in the menu bar and the old mini player will pop up in all its glory. Rejoice with the other dozen of us in being able to finally see your album art again.
 
-<figure markdown="1" class="edge-to-edge large">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="edge-to-edge large shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players-poster.jpg" alt="Video comparing the new and old iTunes mini-players">
+        <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/itunes-mini-players.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 ### Fix Ugly App Icons
 
@@ -588,11 +515,9 @@ In the past, the only action we could take to combat this was changing our deskt
 
 If you've always found yourself gravitating towards dark backgrounds, you owe it to yourself to give Dark Mode a spin if you haven't already[^website-dark-mode]. Enabling it's as easy as opening up System Preferences (<svg class="apple-logo" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.1,14.23 C15.99,14.54 15.88,14.83 15.77,15.11 C15.48,15.77 15.14,16.38 14.75,16.95 C14.21,17.72 13.77,18.25 13.43,18.54 C12.91,19.02 12.34,19.27 11.74,19.28 C11.31,19.28 10.79,19.16 10.18,18.91 C9.57,18.66 9.01,18.54 8.5,18.54 C7.96,18.54 7.39,18.66 6.77,18.91 C6.15,19.16 5.66,19.29 5.28,19.3 C4.7,19.32 4.13,19.07 3.55,18.54 C3.18,18.22 2.72,17.67 2.17,16.89 C1.58,16.06 1.09,15.1 0.71,14 C0.3,12.81 0.1,11.66 0.1,10.55 C0.1,9.28 0.38,8.18 0.93,7.26 C1.36,6.52 1.94,5.94 2.66,5.51 C3.38,5.08 4.16,4.86 5,4.85 C5.46,4.85 6.06,4.99 6.81,5.27 C7.56,5.55 8.04,5.69 8.25,5.69 C8.41,5.69 8.94,5.52 9.84,5.19 C10.69,4.88 11.41,4.76 12,4.81 C13.6,4.94 14.8,5.57 15.6,6.7 C14.17,7.57 13.46,8.78 13.48,10.34 C13.49,11.55 13.93,12.56 14.8,13.36 C15.18,13.74 15.61,14.02 16.1,14.23 Z M12.08,0.31 C12.09,0.44 12.1,0.56 12.1,0.69 C12.1,1.64 11.75,2.53 11.06,3.35 C10.22,4.33 9.21,4.89 8.12,4.8 C8.11,4.69 8.1,4.57 8.1,4.44 C8.1,3.53 8.5,2.55 9.2,1.75 C9.55,1.35 10,1.01 10.54,0.74 C11.09,0.48 11.6,0.33 12.08,0.31 Z"></path></svg> > "System Preferences...") and clicking the "Use dark menu bar and Dock" checkbox in the "General" Preference Pane. Below's a screenshot of my Desktop with the setting enabled to give you an idea of what to expect.
 
-<figure markdown="1" class="edge-to-edge large">
-<a href="{{ site.dropbox }}/back-to-the-mac/originals/dark-mode.jpg">
-![Image of my desktop with Dark Mode enabled]({{ site.dropbox }}/back-to-the-mac/dark-mode.jpg)
-</a>
-</figure>
+<div class="edge-to-edge large shadow">
+    <img src="{{ site.dropbox }}/back-to-the-mac/dark-mode.jpg" alt="Image of my desktop with Dark Mode enabled">
+</div>
 
 ### Auto-Hidden Dock
 
@@ -608,16 +533,14 @@ With macOS's auto-hiding Dock feature enabled, however, that 9% of the screen is
 
 Third party menu bar icons come in all kinds of styles. Some have thick stroke lines like [Plex](https://www.plex.tv) and [Airserver](http://www.airserver.com), while others are thin and wispy like [Time Machine](https://support.apple.com/en-us/HT201250) and [Spotlight](https://support.apple.com/en-us/HT204014). By default, additions to the menu bar are sorted right to left in the order they're added, which isn't exactly preferable for users that tend towards visual organization systems. From a visual perspective, having something whispy like [Time Machine](https://support.apple.com/en-us/HT201250) sandwiched between beefy icons like [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) and [Tweetbot](https://tapbots.com/tweetbot/) looks utterly ridiculous. You may have even already tried dragging and dropping the icons around like you can on the Dock only to discover it's not possible. While not exactly discoverable, the menu bar icons thankfully *can* be reorganized by combining <kbd>⌘</kbd> with your click-and-drag. Give it a try!
 
-<figure markdown="1" class="inline">
-<p>
-<video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
-	<source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
-	[HTML5 video tag not supported by your browser]
-</video>
-</p>
-</figure>
+<div class="inline shadow">
+    <video controls preload="none" poster="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange-poster.jpg" alt="Video showcasing menu bar icon rearrangement" class="menu-bar-arrange">
+        <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.mp4" type="video/mp4">
+        <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.webm" type="video/webm">
+        <source src="{{ site.dropbox }}/back-to-the-mac/menu-bar-arrange.ogv" type="video/ogg">
+        [HTML5 video tag not supported by your browser]
+    </video>
+</div>
 
 -----
 

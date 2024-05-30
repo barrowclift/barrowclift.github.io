@@ -1,23 +1,40 @@
 ---
-layout: post-parallax-image
 title: "Deep Blue"
-foreground-color: "#BEC5C9"
-primary-color: "#91C0F2"
-background-color: "#030504"
-theme-color-light: "#000000"
-theme-color-dark: "#000000"
 date: 2015-07-18 21:13:39
+
+design:
+    force-dark-mode: true
+    oled: true
+    banner-disable-dark-mode-dimming: true
+    accent:
+        r: 0.25882353
+        g: 0.6
+        b: 0.94117647
+        hue: "210"
+        saturation: "85%"
+        lightness: "60%"
+
+excerpt: |
+    Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it’s no coincidence."
 categories:
-  - Technology
-  - Apps
-  - Health
-excerpt: "Do you have trouble sleeping at night? Do you also use your computer, iPad, or iPhone before going to bed? If you do, it's no coincidence."
-banner-image: "/deep-blue/blue-light-laptop.jpg"
-banner-image-small: "/deep-blue/blue-light-laptop@small.jpg"
-banner-link: "https://www.youtube.com/watch?v=cDIRT_NEMxo"
-banner-alt: "Laptop backlight glowing brightly in a dark room"
-banner-hover: "Hey, put the laptop down for a while. In the night there is something wild. I feel it, it's leaving me."
-image: "deep-blue/blue-light-laptop.jpg"
+    - Technology
+    - Apps
+    - Health
+image: "deep-blue/share.jpg"
+
+article:
+    banner-image: "deep-blue/blue-light-laptop"
+    banner-hover-text: "Laptop backlight glowing brightly in a dark room"
+    banner-disable-dark-mode-dimming: true
+card:
+    light:
+        image: "deep-blue/card"
+        background-color: "hsl(213, 34%, 44%)"
+        foreground-color: "hsl(216, 100%, 90%)"
+    dark:
+        image: "deep-blue/card"
+        background-color: "hsl(180, 25%, 2%)"
+        foreground-color: "hsl(209, 81%, 75%)"
 ---
 
 As a student that has for years now feverishly clacked away assignments deep into the night, f.lux is my easily most precious app. No longer do I have to be bathed in eerie, bright blue light in the night; my poor eyes instead are rewarded a much needed reprieve with a soothing, orange glow that steadily grows with the fading day.

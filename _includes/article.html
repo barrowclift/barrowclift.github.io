@@ -1,84 +1,86 @@
+<style>
+    @media (min-width: 700px) {
+        #menubar.float.hide-when-scrolling-on-small-screens,
+        #menubar.hide-when-scrolling-on-larger-screens,
+        #settings-popup.float.hide-when-scrolling-on-small-screens,
+        #settings-popup.hide-when-scrolling-on-larger-screens {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+</style>
 <article>
-	{% if page.hero-banner or page.light-hero-banner or page.dark-hero-banner %}
-		{% if page.hero-banner %}
-		<div class="edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.hero-banner }}.jpg">
-		</picture>
-		</div>
-		{% else %}
-		<div class="show-when-light edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.light-hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.light-hero-banner }}.jpg">
-		</picture>
-		</div>
-		<div class="show-when-dark edge-to-edge hero-banner">
-		<picture>
-		  <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.dark-hero-banner }}.webp">
-		  <img type="image/jpeg" title="Article banner image" alt="Image of the article's banner" src="{{ site.dropbox }}/{{ page.dark-hero-banner }}.jpg">
-		</picture>
-		</div>
-		{% endif %}
-	{% endif %}
+    {% if page.article.banner-image or page.article.light-banner-image or page.article.dark-banner-image %}
+        {% if page.article.banner-image %}
+            <div class="hero-banner">
+                <picture>
+                    <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.banner-image }}.webp">
+                    <img
+                         title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         src="{{ site.dropbox }}/{{ page.article.banner-image }}.jpg"
+                         {% if page.design.banner-disable-dark-mode-dimming %}style="filter: brightness(1)"{% endif %}>
+                </picture>
+            </div>
+        {% else %}
+            <div class="show-when-light hero-banner">
+                <picture>
+                    <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.light-banner-image }}.webp">
+                    <img
+                         title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         src="{{ site.dropbox }}/{{ page.article.light-banner-image }}.jpg">
+                </picture>
+            </div>
+            <div class="show-when-dark hero-banner">
+                <picture>
+                    <source type="image/webp" srcset="{{ site.dropbox }}/{{ page.article.dark-banner-image }}.webp">
+                    <img
+                         title="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         alt="{% if page.article.banner-hover-text %}{{ page.article.banner-hover-text }}{% else %}Article banner{% endif %}"
+                         src="{{ site.dropbox }}/{{ page.article.dark-banner-image }}.jpg">
+                </picture>
+            </div>
+        {% endif %}
+    {% endif %}
 
-	{% include article-header.html %}
+    {% include header.html %}
 
-	{% if page.timelocked %}
-		{% comment %} convert our dates to Number of seconds since 1970-01-01 00:00:00 UTC {% endcomment %}
-		{% if page.revision-date %}
-			{% assign dateStart = page.revision-date | date: '%s' %}
-		{% else %}
-			{% assign dateStart = page.date | date: '%s' %}
-		{% endif %}
-		{% assign nowTimestamp = 'now' | date: '%s' %}
+    {% if page.timelocked %}
+        {% comment %} convert our dates to Number of seconds since 1970-01-01 00:00:00 UTC {% endcomment %}
+        {% if page.revision-date %}
+            {% assign dateStart = page.revision-date | date: '%s' %}
+        {% else %}
+            {% assign dateStart = page.date | date: '%s' %}
+        {% endif %}
+        {% assign nowTimestamp = 'now' | date: '%s' %}
 
-		{% comment %} difference in seconds {% endcomment %}
-		{% assign diffSeconds = nowTimestamp | minus: dateStart %}
+        {% comment %} difference in seconds {% endcomment %}
+        {% assign diffSeconds = nowTimestamp | minus: dateStart %}
 
-		{% comment %} difference in days {% endcomment %}
-		{% assign daysSince = diffSeconds | divided_by: 3600 | divided_by: 24 %}
-		{% if daysSince >= 730 %}
-		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
-		<div class="admonition warning">
-			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
-			<p>Technology moves fast! Article is now out of date.</p>
-		</div>
-		{% elsif daysSince >= 365 %}
-		{% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
-		<div class="admonition update">
-			<p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
-			<p>Technology moves fast! Details likely out of date.</p>
-		</div>
-		{% elsif daysSince > 180 or page.force-early-timelock %}
-		<div class="admonition update">
-			<p class="admonition-title">{{ daysSince }} Days Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
-			<p>Technology moves fast! Some details likely out of date.</p>
-		</div>
-		{% endif %}
-	{% endif %}
+        {% comment %} difference in days {% endcomment %}
+        {% assign daysSince = diffSeconds | divided_by: 3600 | divided_by: 24 %}
+        {% if daysSince >= 730 %}
+            {% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
+            <div class="admonition warning">
+                <p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+                <p>Technology moves fast! Article is now out of date.</p>
+            </div>
+        {% elsif daysSince >= 365 %}
+            {% assign yearsSince = daysSince | times: 1.0 | divided_by: 365 | round %}
+            <div class="admonition update">
+                <p class="admonition-title">{% if yearsSince > 1 %}{{ yearsSince }} Years{% else %}1 Year{% endif %} Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+                <p>Technology moves fast! Details likely out of date.</p>
+            </div>
+        {% elsif daysSince > 180 or page.force-early-timelock %}
+            <div class="admonition update">
+                <p class="admonition-title">{{ daysSince }} Days Since {% if page.revision-date %}Last Revision{% else %}Publication{% endif %}</p>
+                <p>Technology moves fast! Some details likely out of date.</p>
+            </div>
+        {% endif %}
+    {% endif %}
 
-	{{ content }}
+    {{ content }}
 
-	{% if page.hide-footer != true %}
-		{% if page.next-page == null and page.has_afterward == false or page.has_afterward == null %}
-		<div id="article-linkback">
-			<a href="/">⌘</a>
-		</div>
-		{% endif %}
-		<script type="text/javascript">
-			$(document).ready(function() {
-			    if ($("article .footnotes")) {
-			    	$("#article-linkback").insertBefore($("article .footnotes").prev());
-			    }
-			});
-		</script>
-
-		{% if page.next-page == null %}
-		<footer>
-			{% include blog-footer-buttons.html %}
-		</footer>
-		{% endif %}
-	{% endif %}
+    {% include footer.html %}
 </article>

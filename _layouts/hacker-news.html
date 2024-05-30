@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="ignore-accent-color" lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<!--
+One-off for /projects/hacker-news-cleanser.
+
+Emulates Hackers News' "interesting" look & feel.
+-->
+
+    {% include head.html %}
+    <style>
+        a {
+          color: hsl(24, 100%, 50%);
+        }
+        a:hover {
+          background-color: hsla(24, 100%, 50%, 0.1);
+        }
+        ::selection {
+            background: hsla(24, 100%, 50%, 0.99);
+            color: white;
+        }
+        ::-moz-selection {
+            background: hsla(24, 100%, 50%, 0.99);
+            color: white;
+        }
+        .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 50%);
+        }
+        button,
+        .button {
+            background-color: hsl(24, 100%, 50%);
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 50%, 0.2);
+        }
+            button:hover,
+            .button:hover {
+                background-color: hsl(24, 100%, 55%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 45%, 0.375);
+            }
+            button:active,
+            .button:active {
+                background-color: hsl(24, 100%, 45%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(24, 100%, 45%, 0.2);
+            }
+        #dark a {
+            color: hsl(24, 100%, 38%);
+        }
+        #dark a:hover {
+            background-color: hsla(24, 100%, 38%, 0.15);
+        }
+        #dark ::selection {
+            background: hsla(24, 100%, 38%, 0.85);
+        }
+        #dark ::-moz-selection {
+            background: hsla(24, 100%, 38%, 0.85);
+        }
+        #dark .well.active {
+            box-shadow: 0 0em 0.5em 0em hsl(24, 100%, 38%);
+        }
+        #dark button,
+        #dark .button {
+            background-color: hsl(24, 100%, 38%);
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(24, 100%, 38%, 0.2);
+        }
+            #dark button:hover,
+            #dark .button:hover {
+                background-color: hsl(24, 100%, 43%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 .65em 1.3em -0.65em hsla(24, 100%, 33%, 0.375);
+            }
+            #dark button:active,
+            #dark .button:active {
+                background-color: hsl(36, 100%, 33%) !important;
+                box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(36, 100%, 33%, 0.2);
+            }
+        html {
+            font-size: 14px;
+        }
+        @media (min-width: 700px) {
+            html {
+                font-size: 16px;
+            }
+        }
+        html, body {
+            color: black;
+        }
+        html#dark,
+        #dark body {
+            color: white;
+        }
+        #dark {
+            background-color: #111111;
+        }
+        #menubar {
+            position: absolute !important;
+            border: unset;
+            box-shadow: unset;
+            -webkit-backdrop-filter: unset !important;
+            backdrop-filter: unset !important;
+        }
+        @media(min-width: 700px) {
+            #menubar menu li a.nitro-link {
+                margin-left: -4.5em;
+            }
+        }
+        @media(min-width: 900px) {
+            #menubar menu li a.nitro-link {
+                margin-left: -3.5em;
+            }
+        }
+        .imac-background-color {
+            fill: #ffffff;
+        }
+        #settings-button-wrapper {
+            width: auto;
+
+            float: right;
+            position: absolute;
+            display: inline;
+            left: 100%;
+            top: 0;
+            margin-left: -3.3rem !important;
+            margin-top: 0;
+            padding-top: 1.1rem;
+        }
+        main {
+            margin-top: 5.625em;
+        }
+        #menubar menu li a,
+        #dark #menubar menu li a {
+            text-shadow: unset;
+            color: black;
+        }
+        .imac-line-color,
+        #dark .imac-line-color {
+            fill: #000000;
+        }
+        #menubar .active,
+        #menubar a:hover,
+        #dark #menubar .active,
+        #dark #menubar a:hover {
+            color: white;
+        }
+        .imac-background-color,
+        #dark .imac-background-color {
+            fill: #ffffff;
+        }
+        #logo #signature path,
+        #dark #logo #signature path {
+            fill: black;
+        }
+        #logo:hover #signature path,
+        #dark #logo:hover #signature path {
+            fill: white;
+        }
+        #logo:after {
+            background: unset;
+        }
+        #settings-button-wrapper button,
+        #settings-button-wrapper button path,
+        #dark #settings-button-wrapper button path,
+        #dark #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper.active button path,
+        button.bigfoot-footnote__button {
+            fill: black !important;
+            transform: unset !important;
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+        #settings-button-wrapper button:hover,
+        #settings-button-wrapper button:hover path,
+        #settings-button-wrapper button:active,
+        #settings-button-wrapper.active button,
+        #settings-button-wrapper.active button path,
+        #dark #settings-button-wrapper button:hover,
+        #dark #settings-button-wrapper button:hover path,
+        #dark #settings-button-wrapper button:active,
+        #dark #settings-button-wrapper.active button,
+        #dark #settings-button-wrapper.active button path {
+            fill: white !important;
+            transform: unset !important;
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+        header {
+            display: inline-block;
+            top: 0;
+            padding-top: 0.4em !important;
+        }
+        #menubar li#settings-button-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .contact {
+            display: none !important;
+        }
+        #menubar menu {
+            text-align: left;
+            width: auto;
+        }
+        #settings-button-wrapper button svg {
+            height: 1rem;
+        }
+        #settings-button-wrapper button {
+            line-height: 0rem !important;
+            top: 0 !important;
+            width: auto !important;
+            padding-top: 0.05em;
+        }
+        .hide-if-space-needed {
+            display: inline-block !important;
+        }
+        #logo {
+            position: absolute;
+            left: 0;
+        }
+        @media(max-width: 324px) {
+            #menubar menu {
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+            main {
+                margin-top: 10.63em;
+            }
+        }
+        @media(max-width: 400px) {
+            #settings-popup {
+                margin-left: -14.5em !important;
+            }
+        }
+        @media (max-width: 699px) {
+            #logo {
+                margin-top: 0;
+            }
+            #logo #imac {
+                margin-left: 0.3em;
+                width: 16px;
+                height: 16px;
+            }
+            .hide-if-space-needed {
+                display: none !important;
+            }
+            #logo #signature {
+                height: 24px;
+                margin-left: 0em;
+            }
+            #menubar menu {
+                display: inline-block;
+                vertical-align: top;
+            }
+            #header-link {
+                display: inline-block;
+            }
+            #menubar menu li {
+                margin-top: 0.45em;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                font-size: 0.833em;
+                min-width: unset;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+            #menubar-height-offset {
+                display: none;
+            }
+            .button {
+                padding: 0.375em;
+                width: auto;
+            }
+            #about-link {
+                display: inline !important;
+            }
+        }
+        @media (min-width: 700px) {
+            .contact {
+                display: inline-block !important;
+            }
+            #menubar menu {
+                text-align: center;
+            }
+            #settings-button-wrapper button {
+                padding-top: 0.3em;
+            }
+            #settings-button-wrapper button svg {
+                height: 1.3rem;
+            }
+            #logo:after {
+                top: -0.5rem;
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+            main {
+                margin-top: 7.5em;
+            }
+            header {
+                display: inline;
+                top: 0;
+                padding-top: 0.35em !important;
+                position: absolute;
+            }
+            #menubar li#settings-button-wrapper {
+                margin-left: -3.15em;
+            }
+            header {
+                padding-top: 0.5em !important;
+            }
+            #settings-button-wrapper {
+                padding-top: 1.15em !important;
+            }
+        }
+        @media (min-width: 900px) {
+            #logo:after {
+                left: 0rem;
+            }
+            header {
+                padding-top: 0.3em !important;
+            }
+            #settings-button-wrapper {
+                padding-top: 1em !important;
+            }
+        }
+        html {
+            background-color: rgb(246, 246, 239);
+        }
+        #menubar {
+            background-color: rgb(255, 102, 0); !important;
+        }
+        #dark #menubar {
+            background-color: hsl(24, 100%, 38%); !important;
+        }
+        hr, #dark hr {
+            background: none;
+            background-image: none;
+            border: none;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+        #dark hr {
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        #menubar a:hover {
+            background-color: transparent !important;
+        }
+        #settings-popup,
+        .ignore-accent-color #settings-popup {
+            width: 11.5em !important;
+            margin-left: -15.25em !important;
+            left: 100%;
+        }
+        #menubar menu {
+            -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;
+        }
+        @media (max-width: 700px) {
+            #settings-popup {
+                top: 2em;
+            }
+        }
+    </style>
+
+    <body>
+        {% include menubar.html %}
+        <main>
+            <article>
+            {{ content }}
+            </article>
+        </main>
+    </body>
+</html>

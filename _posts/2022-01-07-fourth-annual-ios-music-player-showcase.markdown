@@ -1,25 +1,35 @@
 ---
-layout: post
 title: "Fourth Annual iOS Music Player Showcase"
 date: 2022-01-07 11:11:03-0500
 update: 2022-01-15 11:17:17-0500
-excerpt: "Dive into the thriving, diverse landscape of 2021’s finest iOS music players."
-light-hero-banner: "fourth-annual-ios-music-player-showcase/light-banner"
-dark-hero-banner: "fourth-annual-ios-music-player-showcase/dark-banner"
-image: "fourth-annual-ios-music-player-showcase/share-image.jpg"
-categories:
-  - Technology
-  - iOS
-  - Design
-  - Music
-  - Best Of
 timelocked: true
 force-early-timelock: true
-light-background-color: "#D4D3C8"
-light-foreground-color: "#394122"
-dark-background-color: "#394122"
-dark-foreground-color: "#D4D3C8"
-next-page: "/post/fourth-annual-ios-music-player-showcase/2"
+
+excerpt: |
+    Dive into the thriving, diverse landscape of 2021’s finest iOS music players.
+categories:
+    - Technology
+    - iOS
+    - Design
+    - Music
+    - Best Of
+image: "fourth-annual-ios-music-player-showcase/share.jpg"
+
+continuation:
+    next-page: "/articles/fourth-annual-ios-music-player-showcase/2"
+
+article:
+    light-banner-image: "fourth-annual-ios-music-player-showcase/light-banner"
+    dark-banner-image: "fourth-annual-ios-music-player-showcase/dark-banner"
+card:
+    light:
+        image: "fourth-annual-ios-music-player-showcase/light-card"
+        background-color: "hsl(55, 12%, 81%)"
+        foreground-color: "hsl(75, 31%, 19%)"
+    dark:
+        image: "fourth-annual-ios-music-player-showcase/dark-card"
+        background-color: "hsl(75, 31%, 19%)"
+        foreground-color: "hsl(55, 12%, 81%)"
 ---
 
 <style>
@@ -34,30 +44,28 @@ next-page: "/post/fourth-annual-ios-music-player-showcase/2"
 </style>
 
 <div class="admonition gray">
-<p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/post/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
+    <p>This is a slightly updated version of the original article which addresses minor factual errors and spelling mistakes. The full change log is available to view <a href="/articles/fourth-annual-ios-music-player-showcase/change-log">here</a>. Many thanks to all involved!</p>
 </div>
 
-There's new and exciting developments every year in the realm of iOS third-party music players, and 2021 was no exception. While [2019](/post/second-annual-ios-music-player-competition) enjoyed an explosion of new players like [Power Player] and [Albums] that through time came to lead the space, [2020](/post/third-annual-ios-music-player-showcase) in contrast received only a modest handful of new players and is instead remembered for the impressive growth the established player base received that year. This past year, 2021, managed to do both with a dizzying array of five new players *and* impressive growth across nearly all existing players.
+There's new and exciting developments every year in the realm of iOS third-party music players, and 2021 was no exception. While [2019](/articles/second-annual-ios-music-player-competition) enjoyed an explosion of new players like [Power Player] and [Albums] that through time came to lead the space, [2020](/articles/third-annual-ios-music-player-showcase) in contrast received only a modest handful of new players and is instead remembered for the impressive growth the established player base received that year. This past year, 2021, managed to do both with a dizzying array of five new players *and* impressive growth across nearly all existing players.
 
 To start, there were five new players welcomed into the ecosystem this year:
 
-1. [**Mixtapes:**](/post/fourth-annual-ios-music-player-showcase/3) A general-purpose player with an empahsis on "smart" playlists
-2. [**MPX EQ:**](/post/fourth-annual-ios-music-player-showcase/4) The next evolution of [Music Player X]
-3. [**Musens:**](/post/fourth-annual-ios-music-player-showcase/5) A general-purpose player with a heavy empahsis on [Apple Music](https://www.apple.com/apple-music/) and is similar in many ways to [Music.app]
-4. [**Songpocket:**](/post/fourth-annual-ios-music-player-showcase/2#-Songpocket) A lightweight niche player focused on providing the ability to manually sort and manage your library
-5. [**Vinyls:**](/post/fourth-annual-ios-music-player-showcase/2#-vinyls) A general-purpose player with a cute "vinyl record" visual gimmick in its full-player
+1. [**Mixtapes:**](/articles/fourth-annual-ios-music-player-showcase/3) A general-purpose player with an empahsis on "smart" playlists
+2. [**MPX EQ:**](/articles/fourth-annual-ios-music-player-showcase/4) The next evolution of [Music Player X]
+3. [**Musens:**](/articles/fourth-annual-ios-music-player-showcase/5) A general-purpose player with a heavy empahsis on [Apple Music](https://www.apple.com/apple-music/) and is similar in many ways to [Music.app]
+4. [**Songpocket:**](/articles/fourth-annual-ios-music-player-showcase/2#-Songpocket) A lightweight niche player focused on providing the ability to manually sort and manage your library
+5. [**Vinyls:**](/articles/fourth-annual-ios-music-player-showcase/2#-vinyls) A general-purpose player with a cute "vinyl record" visual gimmick in its full-player
 
 These new players combined with the enhancements existing players received this year reveal a few new trends that together define what it means to be a great modern music player at the end of 2021. Those trends are:
 
 * **Apple Music integration:** This year, Albums added rich [Apple Music](https://www.apple.com/apple-music/) support, [Mixtapes] added support in its first minor release, and [Musens] released with support on launch. This is a far cry from just a couple years ago when [Soor]'s "Full Apple Music Support" was considered novel enough to use as its primary marketing angle. With Apple Music's APIs continuing to improve and more listeners either independently subscribing to Apple Music or getting it "for free" as a part of [Apple One](https://www.apple.com/apple-one/), there's a growing expectation for rudimentary Apple Music support in today's players. This year's new releases are clear reflections of this new expectation, and I anticipate it will only continue to gain traction from here.
-* **Visualizers:** What started as an offering found just in [Music.app] and a single third-party music player ([jetAudio]) is now increasingly common throughout the ecosystem. [Soor] released an animated gradient visualizer [in 2020](/post/third-annual-ios-music-player-showcase/18), Power Player just released its own bubbly visualizer this past year, and three of the five new releases this year ([MPX EQ], [Musens], and [Vinyls]) all featured visualizers at launch[^visualizer-at-launch]. The attention initially garnered by Music.app's ["live lyrics" visualizer](https://support.apple.com/en-us/HT204459) years ago broke the seal, and it appears an increasing number of listeners are beginning to expect or even demand some form of visualizer in their players.
+* **Visualizers:** What started as an offering found just in [Music.app] and a single third-party music player ([jetAudio]) is now increasingly common throughout the ecosystem. [Soor] released an animated gradient visualizer [in 2020](/articles/third-annual-ios-music-player-showcase/18), Power Player just released its own bubbly visualizer this past year, and three of the five new releases this year ([MPX EQ], [Musens], and [Vinyls]) all featured visualizers at launch[^visualizer-at-launch]. The attention initially garnered by Music.app's ["live lyrics" visualizer](https://support.apple.com/en-us/HT204459) years ago broke the seal, and it appears an increasing number of listeners are beginning to expect or even demand some form of visualizer in their players.
 * **"Home" landing pages:** Over the past couple years, the rare "Home" page that was previously only present in [Music.app], [Soor], and [Marvis Pro] has appeared now across an additional four players (two of which—[Musens] and [MPX EQ]—launched with it). An increasing number of developers in the industry throughout 2021 arrived at the consensus that a "Home" landing page for general-purpose players is necessary to house the commonly requested discovery collections like "Recently Added" and "Recently Played" that listeners now expect out of modern players. Like with Apple Music integration, I anticipate this trend will only continue to gain traction over time.
-
-<!--break-->
 
 ## Goal
 
-This showcase intends to both celebrate this thriving ecosystem and catalog its participants to serve as a helpful launchpad for music player exploration. Given the truly appalling state of [App Store](https://www.apple.com/app-store/) discovery, exploring the App Store for music players is exceptionally difficult and frustrating without a third-party catalog like this to refer to. For example, to this day I continue to [routinely encounter players that are new to me](/post/fourth-annual-ios-music-player-showcase/18) despite being on the store for years.
+This showcase intends to both celebrate this thriving ecosystem and catalog its participants to serve as a helpful launchpad for music player exploration. Given the truly appalling state of [App Store](https://www.apple.com/app-store/) discovery, exploring the App Store for music players is exceptionally difficult and frustrating without a third-party catalog like this to refer to. For example, to this day I continue to [routinely encounter players that are new to me](/articles/fourth-annual-ios-music-player-showcase/18) despite being on the store for years.
 
 ## Art Assets
 
@@ -103,7 +111,7 @@ Opinionated
 
 ## Methodology
 
-As with previous years, in order to codify what I expect at a bare minimum from modern music players and in an effort to keep the list of players in the showcase manageable, only players that meet each of the following requirements will be included in the showcase. With that said, any players that I feel are noteworthy for whatever reason will still be briefly acknowledged beforehand as an honorable mention. Despite some minor adjustments, the requirements are broadly the same as [2020's showcase](/post/third-annual-ios-music-player-showcase/):
+As with previous years, in order to codify what I expect at a bare minimum from modern music players and in an effort to keep the list of players in the showcase manageable, only players that meet each of the following requirements will be included in the showcase. With that said, any players that I feel are noteworthy for whatever reason will still be briefly acknowledged beforehand as an honorable mention. Despite some minor adjustments, the requirements are broadly the same as [2020's showcase](/articles/third-annual-ios-music-player-showcase/):
 
 * <mark class="tag blue">UPDATED</mark> Active maintenance ("active" meaning the delivery of at least a single meaningful minor or major update in the past year. Does not count patch releases or minor releases, such as just keeping up with new hardware.)
 * <mark class="tag blue">UPDATED</mark> Local-only option (meaning only players that treat cloud capabilities as a strictly additive feature and continue to work in "local-only" mode are fair game.)
@@ -112,7 +120,7 @@ As with previous years, in order to codify what I expect at a bare minimum from 
 * Large album art in the full-player view
 * Any custom equalization provided by the player must also have the ability to be disabled
 
-The showcase itself will strive to keep as impartial and objective a voice as possible, leaving my own personal assessment for the very end of each player's section. In that section, I'll assess each player based on the following features I typically desire in music players. While none of these particular features are requirements like above, their presence or absence weigh into my personal thoughts of the player as a whole where other aspects of the player typically do not. Again, this list is largely the same as [2020's](/post/third-annual-ios-music-player-showcase/), save for a single new addition this year:
+The showcase itself will strive to keep as impartial and objective a voice as possible, leaving my own personal assessment for the very end of each player's section. In that section, I'll assess each player based on the following features I typically desire in music players. While none of these particular features are requirements like above, their presence or absence weigh into my personal thoughts of the player as a whole where other aspects of the player typically do not. Again, this list is largely the same as [2020's](/articles/third-annual-ios-music-player-showcase/), save for a single new addition this year:
 
 * <mark class="tag yellow">NEW</mark> Apple Music integration
 * Lyrics support
@@ -124,55 +132,55 @@ The showcase itself will strive to keep as impartial and objective a voice as po
     * The "one, true album sorting method", which is sort alphabetically by artist, then sort each artist's albums chronologically by release year.
     * A grid layout option for more natural visual browsing
 
-In order to better handle the increasing number of iOS music players, this article is broken down into separate pages to improve the reading experience. This way, you can easily jump around to particular pages you're interested in. At the bottom of each page is a "Table of Contents" and massive navigation button to the next page of the article so you can always keep track of where you. While this is the intended way to read, there are no doubt readers that prefer single-page articles, and for those readers you may instead read the entirety of the article on a single page [here](/post/fourth-annual-ios-music-player-showcase/complete). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here](https://nitro.barrowclift.me/article/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me](https://nitro.barrowclift.me) (note that only a selection of the art assets are available in this mirror to improve page performance).
+In order to better handle the increasing number of iOS music players, this article is broken down into separate pages to improve the reading experience. This way, you can easily jump around to particular pages you're interested in. At the bottom of each page is a "Table of Contents" and massive navigation button to the next page of the article so you can always keep track of where you. While this is the intended way to read, there are no doubt readers that prefer single-page articles, and for those readers you may instead read the entirety of the article on a single page [here](/articles/fourth-annual-ios-music-player-showcase/complete). For readers on slow internet connections, it's recommended you instead consider reading the speed-optimized version of this article [here]({{ site.nitro_url }}/article/fourth-annual-ios-music-player-showcase) at this site's performance-optimized mirror, [nitro.barrowclift.me]({{ site.nitro_url }}) (note that only a selection of the art assets are available in this mirror to improve page performance).
 
 -----
 
 With the stage set, it's now finally time to dive into 2021's players. Let's get started...
 
-<ul id="blog-footer-buttons" class="button-group" style="text-align:left;padding-bottom:0;">
-    <li style="margin-left:0;width:auto;"><a href="/post/fourth-annual-ios-music-player-showcase/2"><p class="button">Next Section: “Honorable Mentions”</p></a></li>
+<ul class="button-group" style="text-align:left;padding-bottom:0;">
+    <li style="margin-left:0;width:auto;"><a href="/articles/fourth-annual-ios-music-player-showcase/2"><p class="button">Next Section: “Honorable Mentions”</p></a></li>
 </ul>
 
 <details open>
-  <summary>Table of Contents</summary>
+    <summary>Table of Contents</summary>
 
-  <div class="toc" style="margin-bottom: 1.3rem;">
-    <ul>
-      <li><strong>Introduction</strong></li>
-      <li><a href="/post/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
-      <li>2021’s Players
+    <div class="toc" style="margin-bottom: 1.3rem;">
         <ul>
-          <li>New This Year
-            <ul>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
-            </ul>
-          </li>
-          <li>Established
-            <ul>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
-              <li><a href="/post/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
-            </ul>
-          </li>
+            <li><strong>Introduction</strong></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/2">Honorable Mentions</a></li>
+            <li>2021’s Players
+                <ul>
+                    <li>New This Year
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/3">Mixtapes</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/4">MPX EQ</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/5">Musens</a></li>
+                        </ul>
+                    </li>
+                    <li>Established
+                        <ul>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/6">Albums</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/7">Cs Music</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/8">Doppi</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/9">Doppler</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/10">jetAudio</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/11">Longplay</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/12">Marvis Pro</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/13">Music Player X</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/14">Music.app</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/15">Picky</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/16">Plum</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/17">Power Player</a></li>
+                            <li><a href="/articles/fourth-annual-ios-music-player-showcase/18">Vinyl Fetish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/19">Standouts</a></li>
+            <li><a href="/articles/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
         </ul>
-      </li>
-      <li><a href="/post/fourth-annual-ios-music-player-showcase/19">Standouts</a></li>
-      <li><a href="/post/fourth-annual-ios-music-player-showcase/20">Conclusion</a></li>
-    </ul>
-  </div>
+    </div>
 </details>
 
 -----
@@ -189,7 +197,7 @@ With the stage set, it's now finally time to dive into 2021's players. Let's get
 [MPX EQ]: https://www.mpxeq.com
 [Marvis Pro]: https://appaddy.wixsite.com/marvis
 [Vinyl Fetish]: https://apps.apple.com/us/app/vinyl-fetish-music-player/id1490719457
-[Music.app]: /post/fourth-annual-ios-music-player-showcase/14
+[Music.app]: /articles/fourth-annual-ios-music-player-showcase/14
 [Music Player X]: https://www.musicplayerx.com
 
 *[UI]: User Interface

@@ -1,23 +1,42 @@
 ---
-layout: post
 title: "Notification Madness"
 date: 2015-05-10 2:50:10
+
+excerpt: |
+    Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn’t have to be this way!
 categories:
-  - Technology
-  - iOS
-  - Notifications
-  - Best Of
-excerpt: "Getting buzzed near constantly throughout the day? Have a sea of red alert bubbles on your home screen? It doesn't have to be this way!"
+    - Technology
+    - iOS
+    - Notifications
+    - Best Of
+image: "notification-madness/share.jpg"
+card:
+    light:
+        image: "notification-madness/card"
+        background-color: "hsl(358, 100%, 53%)"
+        foreground-color: "#FFFFFF"
+    dark:
+        image: "notification-madness/card"
+        background-color: "hsl(358, 100%, 53%)"
+        foreground-color: "#FFFFFF"
 ---
+
+<div class="inline shadow">
+    <picture class="show-when-light">
+        <source type="image/webp" srcset="{{ site.dropbox }}/notification-madness/light-card.webp">
+        <img alt="Loads of notification bubbles" src="{{ site.dropbox }}/notification-madness/light-card.jpg">
+    </picture>
+    <picture class="show-when-dark">
+        <source type="image/webp" srcset="{{ site.dropbox }}/notification-madness/dark-card.webp">
+        <img alt="Loads of notification bubbles" src="{{ site.dropbox }}/notification-madness/dark-card.jpg">
+    </picture>
+</div>
 
 What's the first thing you see when you use your iPhone? On a typical day you might wake your iPhone to a backlog of half a dozen or so notifications. Maybe you have three email notifications all of which aren't important, perhaps one or two from a free game you stopped playing months ago frantic to let you know about a new 99₵ character skin, or occasionally a twitter notification that another of the hundred thousand spam accounts has followed you. If you are fortunate you may notice somewhere in that wall of noise is a text from a loved one or an important calendar reminder.
 
-<a id="resume-from-break"></a>
 When you finish mentally parsing through the laundry list of unimportant notifications (or just ignore them out of exasperation) and finally unlock your iPhone you're probably greeted by a sea of red notification bubbles. Which ones are actually meaningful to you again? You can't remember. You think again that you really should just do whatever these apps want you to do so those obnoxious bubbles would all finally go away but the thought of going through them all (most of which you don't care about) is more trouble than it's worth so you ignore them instead to save yourself from further stress.
 
 This is a day in the life of the typical iPhone user and this hostile, stressful environment it creates is entirely avoidable. *It doesn't have to be this way*. Your lock and home screen can be a comforting place that knows what you care about like an old friend, let me show you how.
-
-<!--break-->
 
 Before We Begin
 ---------------
@@ -31,8 +50,8 @@ Open the Settings app and tap on Notifications. In there you should see a list d
 
 1. Ask yourself if you want notifications from this app. If the answer is yes, ask yourself again if you *really* want notifications from this app. As an example, I asked myself this with the Mail app and realized that there were only certain people I genuinely cared about getting notifications from: my family. Because of this, I turned off notifications for anyone other than them[^vip]. I read all email every morning and night on my computer and any truly urgent matters are sent via text messages so I gain no benefit from my Mail app spreading unnecessary stress throughout the day for every single email I get.
 2. Depending on what you decided above, either:
-	- Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
-	- Keep notifications on for that app.
+    - Turn off the notifications completely by tapping on the app in the "Include" list and sliding "Allow Notifications" off. You will never get notification banners or red bubbles from that app again.
+    - Keep notifications on for that app.
 
 Not All App Notifications Are Equal
 -----------------------------------
