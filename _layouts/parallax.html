@@ -155,6 +155,14 @@ Currently used for:
             {% endif %}
 
             {% if page.primary-color.light != nil %}
+                :root {
+                    --accent-hue: {{ page.primary-color.light.hue }};
+                    --accent-saturation: {{ page.primary-color.light.saturation }};
+                    --accent-lightness: {{ page.primary-color.light.lightness }};
+                    --accent-r: {{ page.primary-color.light.r }};
+                    --accent-g: {{ page.primary-color.light.g }};
+                    --accent-b: {{ page.primary-color.light.b }};
+                }
                 main a,
                 main a:link,
                 main a:visited,
@@ -222,6 +230,14 @@ Currently used for:
                     }
             {% endif %}
             {% if page.primary-color.dark != nil %}
+                :root#dark {
+                    --accent-hue: {{ page.primary-color.dark.hue }};
+                    --accent-saturation: {{ page.primary-color.dark.saturation }};
+                    --accent-lightness: {{ page.primary-color.dark.lightness }};
+                    --accent-r: {{ page.primary-color.dark.r }};
+                    --accent-g: {{ page.primary-color.dark.g }};
+                    --accent-b: {{ page.primary-color.dark.b }};
+                }
                 #dark main a,
                 #dark main a:link,
                 #dark main a:visited,

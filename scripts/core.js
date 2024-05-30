@@ -125,7 +125,6 @@ function updateThemeColor(a_accentColor) {
     } else {
         document.querySelector("meta#light-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
     }
-    // TODO THE SETTING HERE ISN'T RIGHT, check hacker news in system dark mode and play around with site theme
     let darkOverride = document.querySelector("meta#override-dark-base-theme-color");
     let lightOverride = document.querySelector("meta#override-light-base-theme-color");
     var inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;

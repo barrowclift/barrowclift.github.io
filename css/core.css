@@ -2910,7 +2910,16 @@ article figure > a:hover {
 .watchos-screenshot {
     display: inline-block;
 }
-
+/**
+ * Buuuuut, having an image with a shadow at the start of an article is an
+ * extremely common usage pattern, and that particular application looks far
+ * better when displayed as a block. In that specific scenario, override to be
+ * a block, instead.
+ */
+header + .shadow,
+header + .admonition + .shadow {
+    display: block;
+}
 
 /******************
  ***  13. CODE  ***

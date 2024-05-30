@@ -1752,11 +1752,17 @@ function Gapless5(options = {}, deprecated = {}) { // eslint-disable-line no-unu
                 elem.addEventListener('mousedown', cb);
             }
         };
+        const onMouseUp = (elementId, cb) => {
+            const elem = getElement(elementId);
+            if (elem) {
+                elem.addEventListener('mouseup', cb);
+            }
+        };
 
         // set up button mappings
         onMouseDown('prev', this.prev);
-        onMouseDown('play', this.playpause);
-        onMouseDown('stop', this.stop);
+        onMouseUp('play', this.playpause);
+        onMouseUp('stop', this.stop);
         onMouseDown('shuffle', this.toggleShuffle);
         onMouseDown('next', this.next);
 
