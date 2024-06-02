@@ -90,8 +90,6 @@
     --heavy-primary-foreground-color: black;
     --secondary-foreground-color: rgba(30, 30, 30, 0.375);
     --heavy-secondary-foreground-color: rgba(30, 30, 30, 0.6);
-
-    --table-washboard-background-color: rgba(245, 245, 245, 0.75);
     
     --widget-background-opacity: 0.975;
     --widget-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
@@ -101,6 +99,10 @@
 
     --code-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
     --code-border-color: var(--widget-border-color);
+
+    --table-header-background-color: var(--code-background-color);
+    --table-washboard-even-background-color: var(--code-background-color);
+    --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 93%, 0.25);
 
     --bigfoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 85%);
     
@@ -237,7 +239,7 @@
 
     /**
      * -----------------
-     * Light Mode Colors
+     * Dark Mode Colors
      * -----------------
      */
     
@@ -248,14 +250,16 @@
     --secondary-foreground-color: rgba(255, 255, 255, 0.375);
     --heavy-secondary-foreground-color: rgba(255, 255, 255, 0.6);
     
-    --table-washboard-background-color: rgba(15, 15, 15, 0.25);
-
     --widget-background-color: hsla(var(--accent-hue), 10%, 16%, var(--widget-background-opacity));
     --widget-lightness: 37.5%;
 
     --code-background-color: hsla(var(--accent-hue), 10%, 7%, var(--widget-background-opacity));
     --code-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.3);
     
+    --table-header-background-color: hsla(var(--accent-hue), 10%, 20%, 0.5);
+    --table-washboard-even-background-color: hsla(var(--accent-hue), 10%, 20%, 0.5);
+    --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 20%, 0.2);
+
     --bigfoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 25%);
 
     --admonition-left-border-lightness-adjustment: -10%;
@@ -606,7 +610,7 @@ ul.tight li,
 ol.tight li,
 ul.tight ul,
 ol.tight ol {
-    margin: 0;
+    margin-bottom: 0;
 }
 /**
  * Emoji styling instead of "traditional" list item styling, and no padding on
@@ -692,68 +696,80 @@ table {
     width: auto;
     word-break: normal;
     word-break: keep-all;
-    border-collapse: collapse;
     overflow-x: auto;
     margin-bottom: var(--gap);
+
+    border: 1px solid var(--code-border-color);
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: var(--img-border-radius);
+    border-spacing: 0px;
 }
+/**
+ * Header
+ */
 thead {
-    font-weight: bold;
-    color: var(--primary-foreground-color);
-    background: linear-gradient(
-        to bottom,
-        hsla(0, 0%, 0%, 0) 0%,
-        hsla(0, 0%, 0%, 0.002) 8.1%,
-        hsla(0, 0%, 0%, 0.007) 15.5%,
-        hsla(0, 0%, 0%, 0.016) 22.5%,
-        hsla(0, 0%, 0%, 0.026) 29%,
-        hsla(0, 0%, 0%, 0.039) 35.3%,
-        hsla(0, 0%, 0%, 0.053) 41.2%,
-        hsla(0, 0%, 0%, 0.068) 47.1%,
-        hsla(0, 0%, 0%, 0.082) 52.9%,
-        hsla(0, 0%, 0%, 0.097) 58.8%,
-        hsla(0, 0%, 0%, 0.111) 64.7%,
-        hsla(0, 0%, 0%, 0.124) 71%,
-        hsla(0, 0%, 0%, 0.134) 77.5%,
-        hsla(0, 0%, 0%, 0.143) 84.5%,
-        hsla(0, 0%, 0%, 0.148) 91.9%,
-        hsla(0, 0%, 0%, 0.15) 100%
-    );
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+    font-weight: 600;
 }
-    #dark thead {
-        background: linear-gradient(
-            to bottom,
-            hsla(0, 0%, 50%, 0.25) 0%,
-            hsla(0, 0%, 49.68%, 0.25) 8.1%,
-            hsla(0, 0%, 48.77%, 0.25) 15.5%,
-            hsla(0, 0%, 47.33%, 0.25) 22.5%,
-            hsla(0, 0%, 45.4%, 0.25) 29%,
-            hsla(0, 0%, 43.03%, 0.25) 35.3%,
-            hsla(0, 0%, 40.25%, 0.25) 41.2%,
-            hsla(0, 0%, 37.08%, 0.25) 47.1%,
-            hsla(0, 0%, 33.54%, 0.25) 52.9%,
-            hsla(0, 0%, 29.66%, 0.25) 58.8%,
-            hsla(0, 0%, 25.46%, 0.25) 64.7%,
-            hsla(0, 0%, 20.94%, 0.25) 71%,
-            hsla(0, 0%, 16.12%, 0.25) 77.5%,
-            hsla(0, 0%, 11.02%, 0.25) 84.5%,
-            hsla(0, 0%, 5.64%, 0.25) 91.9%,
-            hsla(0, 0%, 0%, 0.25) 100%
-        );
+    thead tr:last-child th:last-child {
+        border-radius: 0 var(--img-border-radius) 0 0;
     }
+    thead:first-child tr:first-child th:first-child {
+        border-radius: var(--img-border-radius) 0 0 0;
+    }
+    thead:last-child tr:last-child th:first-child {
+        border-radius: 0 0 0 var(--img-border-radius);
+    }
+th {
+    font-weight: 600;
+    color: var(--heavy-primary-foreground-color);
+    background-color: var(--table-header-background-color);
+}
+/**
+ * Rows
+ */
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+/**
+ * Cells
+ */
 td,
 th {
-    padding-left: var(--gap);
-    padding-right: var(--gap);
+    padding-left: var(--img-border-radius);
+    padding-right: var(--img-border-radius); 
     padding-top: calc(var(--gap) / 8);
     padding-bottom: calc(var(--gap) / 8);
-    border: 1px solid rgb(224, 224, 224);
+    text-align: left;
+    vertical-align: top;
+    border-left: 1px solid var(--code-border-color);
 }
-    #dark td,
-    #dark th {
-        border-color: rgba(65, 65, 65);
-    }
-tbody tr:nth-child(even) {
-    background-color: var(--table-washboard-background-color);
+td {
+    border-top: 1px solid var(--code-border-color);
+}
+/**
+ * Body
+ */
+tbody tr:nth-child(even) td {
+    background-color: var(--table-washboard-even-background-color);
+}
+tbody tr:nth-child(odd) td {
+    background-color: var(--table-washboard-odd-background-color);
+}
+tbody:first-child tr:first-child td:first-child {
+    border-radius: var(--img-border-radius) 0 0 0;
+}
+tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--img-border-radius);
+}
+tbody:last-child tr:last-child td:last-child {
+    border-radius: 0 0 var(--img-border-radius) 0;
 }
 
 
@@ -1042,10 +1058,11 @@ hr {
     background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0) 0%, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2) 25%, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2) 75%, hsla(var(--background-hsl-core), 0.0) 100%);
 }
 blockquote {
-    color: var(--secondary-foreground-color);
+    color: var(--heavy-secondary-foreground-color);
     transition: color var(--cubic-bezier-transition), border var(--cubic-bezier-transition);
     border-left: 0.2em solid var(--widget-border-color);
     padding-left: var(--three-fourths-gap);
+    font-style: italic;
 }
     li blockquote {
         margin-top: var(--half-gap);
@@ -1231,7 +1248,7 @@ a.anchor {
     transition: background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
 }
 /**
- * [i]: Green Info Admonition
+ * [i]/[✓]: Green Info Admonition
  */
 .admonition.success,
 .admonition.green {
@@ -1244,6 +1261,13 @@ a.anchor {
     border-top-color: hsla(var(--green-hsl-core), var(--highlight-background-opacity));
     box-shadow: 0em 1em 2.75em hsla(var(--green-hsl-core), 0.1), 0em 0.22em 0.6em hsla(var(--green-hsl-core), 0.05);
 }
+    .admonition.success .admonition-title:before,
+    .admonition.success > p:first-child:before {
+        content: "✓";
+        width: var(--three-fourths-gap);
+        padding-left: 0.325em;
+        padding-right: 0.1725em;
+    }
     .admonition.success .admonition-title:before,
     .admonition.success p:first-child:before,
     .admonition.green .admonition-title:before,
@@ -1285,13 +1309,16 @@ a.anchor {
     .admonition.error .admonition-title:before,
     .admonition.danger .admonition-title:before,
     .admonition.warning .admonition-title:before,
-    .admonition.red .admonition-title:before,
     .admonition.error > p:first-child:before,
     .admonition.danger > p:first-child:before,
-    .admonition.warning > p:first-child:before,
-    .admonition.red > p:first-child:before {
+    .admonition.warning > p:first-child:before {
         content: "!";
         padding-left: 0.6em;
+        background-color: var(--red-color);
+        background-color: var(--red-p3-color);
+    }
+    .admonition.red .admonition-title:before,
+    .admonition.red > p:first-child:before {
         background-color: var(--red-color);
         background-color: var(--red-p3-color);
     }
@@ -2585,6 +2612,7 @@ video {
  */
 img.emoji {
     border-radius: 0;
+    vertical-align: text-top;
 }
 /**
  * For emoji used as if they were list-style-type (commonly used in the Music Player Showcases)
@@ -2595,6 +2623,7 @@ dt .emoji {
     margin-right: 0.2em;
     height: 0.75em;
     width: auto;
+    vertical-align: baseline;
 }
 /**
  * Ability to disable rounded corners on a per-image basis.
@@ -3313,7 +3342,7 @@ button,
     font-weight: 700;
     text-align: center;
 
-    width: 100%;
+    width: auto;
     display: inline-block;
     box-sizing: border-box;
     cursor: pointer;
@@ -3451,6 +3480,10 @@ ul.button-group.fixed li {
     margin-right: 1.5vw;
     width: 45%;
 }
+    ul.button-group.fixed li button,
+    ul.button-group.fixed li .button {
+        width: 100%;
+    }
     /**
      * For teeny screens less than 324px wide.
      */
