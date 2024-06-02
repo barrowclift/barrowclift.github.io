@@ -1993,7 +1993,7 @@ a.anchor {
         text-align: left;
     }
     #settings-popup {
-        margin-left: -145px;
+        margin-left: -150px;
         padding: var(--three-fourths-gap);
     }
         .ignore-accent-color #settings-popup {
@@ -2080,11 +2080,11 @@ a.anchor {
         left: 100%;
         top: 0;
         margin-left: -4.36em !important;
-        padding-top: var(--body-line-height) !important;
+        padding-top: 1em !important;
     }
-        @supports (margin-left: calc(-4.36em - env(safe-area-inset-right))) {
+        @supports (margin-left: calc(-3.1em - env(safe-area-inset-right))) {
             #settings-button-wrapper {
-                margin-left: calc(-4.36em - env(safe-area-inset-right)) !important;
+                margin-left: calc(-3.1em - env(safe-area-inset-right)) !important;
             }
         }
         #settings-button-wrapper button {
@@ -2092,6 +2092,8 @@ a.anchor {
             line-height: 0;
             padding-top: 0.3em;
             padding-bottom: 0.3em;
+            padding-left: var(--half-gap);
+            padding-right: var(--half-gap);
         }
         #settings-button-wrapper button svg {
             padding-bottom: 1px;
@@ -2109,7 +2111,7 @@ a.anchor {
     }
     #settings-popup {
         position: fixed;
-        margin-left: -402px;
+        margin-left: -410px;
         left: 100%;
     }
     .ignore-accent-color #settings-popup {
@@ -2133,12 +2135,17 @@ a.anchor {
         min-width: 8em;
         padding-top: 1.25em;
     }
-    #settings-button-wrapper {
-        padding-top: var(--gap) !important;
-    }
     #settings-popup {
-        margin-left: -443px;
+        margin-left: -446px;
     }
+    #settings-button-wrapper {
+        padding-top: 0.875em !important;
+    }
+        @supports (margin-left: calc(-3.05em - env(safe-area-inset-right))) {
+            #settings-button-wrapper {
+                margin-left: calc(-3.05em - env(safe-area-inset-right)) !important;
+            }
+        }
     .ignore-accent-color #settings-popup {
         margin-left: -14.25em;
     }
