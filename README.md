@@ -8,7 +8,7 @@ Welcome! Please feel free to stop by and celebrate the humanity in computing wit
 
 ## v13.0 "Clarity"
 
-![My site with the v13.0 "Clarity" refresh](images/clarity-home-page.png)
+![My site with the v13.0 "Clarity" refresh](images/clarity-home-page.webp)
 
 The site was a complete mess. The backend was full of spaghetti CSS and the frontend was rife with inconsistent colors, margins, and more. What started as just minor changes to the ["SMiLE: Heroes and Villains Mix"](https://barrowclift.me/projects/music/smile-heroes-and-villains-mix/) soon ballooned to a site-wide refactoring and design refresh.
 
