@@ -1667,6 +1667,10 @@ a.anchor {
     vertical-align: top;
     width: 48px;
     height: 48px;
+    /**
+     * Without this, the closed eyes smile rendering gets screwed up in Safari.
+     */
+    -webkit-transform: translateZ(0);
 }
     .imac-background-color {
         fill: white;
