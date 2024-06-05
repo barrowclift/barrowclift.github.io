@@ -3357,6 +3357,7 @@ button,
     display: inline-block;
     box-sizing: border-box;
     cursor: pointer;
+    outline: none !important;
 
     border-radius: var(--rem-half-gap);
     border: none;
