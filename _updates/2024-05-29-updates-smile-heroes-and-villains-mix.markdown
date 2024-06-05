@@ -1,11 +1,11 @@
 ---
 type: project-update
-title: "Refreshed Site Design"
-date: 2024-05-29 11:42:22-0500
+title: "New “SMiLE: Heroes and Villains Mix” Edition"
+date: 2024-05-29 11:42:22-0400
 
 excerpt: |
-    After many months of effort, v13.0 “Clarity” of my site is finally live with a top-to-bottom rewrite.
-link: "https://github.com/barrowclift/barrowclift.github.io?tab=readme-ov-file#120---home-run"
+    My take on the legendary album is now better than ever, featuring improved audio mastering and superior sequencing.
+link: /projects/music/smile-heroes-and-villains-mix
 ---
 
-After many months of effort, v13.0 "Clarity" of my site is finally live with a top-to-bottom rewrite.
+My take on the legendary album is now better than ever, featuring dramatically improved audio mastering and superior sequencing.
