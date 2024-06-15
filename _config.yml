@@ -5,7 +5,7 @@ twitter_username: barrowclift
 github_username:  barrowclift
 description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
-dropbox: "https://dropbox.barrowclift.me/assets"
+dropbox: "https://cargo.barrowclift.me"
 url: https://barrowclift.me # The base hostname & protocol for your site
 nitro_url: https://nitro.barrowclift.me
 prod-host: barrowclift.me
