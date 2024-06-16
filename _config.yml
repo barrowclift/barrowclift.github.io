@@ -1,8 +1,10 @@
 title: Barrowclift
-author: Marc Barrowclift
-email: marc@barrowclift.me
-twitter_username: barrowclift
-github_username:  barrowclift
+author:
+    name: Marc Barrowclift
+    email: marc@barrowclift.me
+    twitter_handle: barrowclift
+    github_username:  barrowclift
+    uri: https://barrowclift.me/about
 description: Where humanity and computing meet
 baseurl: "" # The subpath of your site, e.g. /blog/
 dropbox: "https://cargo.barrowclift.me"
