@@ -10,7 +10,7 @@ categories:
     - Organization
     - macOS
     - Best Of
-image: "back-to-the-mac/share.png"
+image: "back-to-the-mac/share.jpg"
 
 card:
     image: "back-to-the-mac/card"
