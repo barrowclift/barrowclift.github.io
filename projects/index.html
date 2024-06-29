@@ -73,6 +73,9 @@ design:
         will-change: transform;
         z-index: -1;
     }
+    .background img {
+        display: block;
+    }
 </style>
 
 <div class="row">
@@ -87,8 +90,14 @@ design:
     <div class="column">
         <span class="hint--top hint--rounded hint--bounce" data-hint="Beautifully display your library on the Internet">
             <a class="project" href="https://shelf.barrowclift.me">
-                <img class="foreground" src="images/shelf/project-banner-top.png" />
-                <img class="background" src="images/shelf/project-banner-bottom.png" alt="Shelf: Beautifully display your library on the Internet" />
+                <picture class="foreground">
+                    <source type="image/webp" srcset="{{ site.dropbox }}/projects/code/shelf/project-banner-top.webp">
+                    <img alt="Shelf: Beautifully display your library on the Internet" src="{{ site.dropbox }}/projects/code/shelf/project-banner-top.jpg">
+                </picture>
+                <picture class="background">
+                    <source type="image/webp" srcset="{{ site.dropbox }}/projects/code/shelf/project-banner-bottom.webp">
+                    <img alt="Shelf: Beautifully display your library on the Internet" src="{{ site.dropbox }}/projects/code/shelf/project-banner-bottom.jpg">
+                </picture>
             </a>
         </span>
     </div>
