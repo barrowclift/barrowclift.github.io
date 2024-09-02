@@ -142,14 +142,19 @@
     {% endif %}
     <meta property="og:site_name" content="{{ site.title }}">
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@barrowclift">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}">
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.image %}
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:image" content="{{ site.dropbox }}/{{ page.image }}">
+        {% if page.image_alt %}
+        <meta name="twitter:image:alt" content="{{ page.image_alt }}">
+        {% endif %}
     {% else %}
-        <meta name="twitter:image" content="{{ site.url }}/share-banner.jpg">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ site.url }}/images/apple-touch-icon.jpg">
+        <meta name="twitter:image:alt" content="A Happy iMac over a blurred rainbow radial gradient. The “Happy iMac” itself is reminiscent of Susan Kare's designs for the Macintosh.">
     {% endif %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' }}">
 </head>
