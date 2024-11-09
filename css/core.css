@@ -3036,6 +3036,18 @@ pre {
     -o-tab-size: 4;
     tab-size: 4;
     word-break: normal;
+
+    /**
+     * Mobile browsers try to be "smart" about dynamically increasing the font
+     * size of elements which it detects have massive widths. Unfortunately,
+     * it incorrectly detects my infinite edge-to-edge elements as these kinds
+     * of elements and artificially enlarges the contents, more or less
+     * breaking the element. These critical settings disable this behavior.
+     */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
     pre::selection,
     pre ::selection {
