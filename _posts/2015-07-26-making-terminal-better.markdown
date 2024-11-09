@@ -55,7 +55,6 @@ How to actually get your Terminal to behave and look like this can be slightly c
 
 The `.bashrc` will be used to actually "turn on" colors, assign the colors to the kinds of files you think they should represent, and customize your prompt since they're all directly handled by the shell. Below are the lines necessary to turn on colors and some of my current settings to help get you started on your prompt and color assignments.
 
-<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # COLORS
 # ----------------------------------------------
@@ -83,7 +82,6 @@ export BLUE='\[\033[0;34m\]'
 export NORMAL='\[\033[00m\]'
 export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 {% endhighlight %}
-</div>
 
 Functions
 ---------
@@ -92,7 +90,6 @@ Now you've got your Terminal look and feel set just the way you like, what next?
 
 Let's take compression, for example. The proper command to compress a tar of a given file in Unix is `tar czf ${YOUR_FILE}`. Decompressing and extracting the file back out is just as cryptic with `tar xjf ${YOUR_FILE}`. I have never once been able to remember those infuriating arbitrary series of characters that tells the tar command to actually do what should be the default action. Thankfully with functions I don't need to, and now you don't have to either!
 
-<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # Extract practically anything
 # Usage: $ extract {YOUR_ARCHIVE}
@@ -149,11 +146,9 @@ tartar () {
     tar czf "$file.tar.gz" "$file"
 }
 {% endhighlight %}
-</div>
 
 As a special treat to OS X developers, here's some essential functions that both help clean up after OS X's messes and also bring the power of OS X's <span class="small-caps">GUI</span> to the Terminal.
 
-<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # .DS_Store files are the herpes of the OS X file system.
 #
@@ -181,14 +176,12 @@ ql () {
     qlmanage -p "$*" >& /dev/null;
 }
 {% endhighlight %}
-</div>
 
 Aliases
 -------
 
 Last but not least there's aliases which &mdash; if you aren't aware &mdash; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
 
-<div markdown="1" class="edge-to-edge infinite">
 {% highlight bash %}
 # Print out every path that constitutes the current $PATH
 alias path='echo -e ${PATH//:/\\n}'
@@ -213,7 +206,6 @@ alias disksize='df -h --total | grep total'
 # Display every instance of the given command found in the path
 alias which='type -all'
 {% endhighlight %}
-</div>
 
 And for OS X developers this particular command helps bridge the sometimes aggravating separation between the <span class="small-caps">GUI</span> and command line interfaces by letting you to quickly open a Finder window of your current directory when it's the preferred tool for a particular job.
 

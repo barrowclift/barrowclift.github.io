@@ -44,26 +44,23 @@ design:
     }
     #settings-button-wrapper button {
         background-color: hsla(51, 95%, 64%, 1);
-        box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.375);
     }
         #settings-button-wrapper button:hover,
         #dark #settings-button-wrapper button:hover {
             background-color: hsla(51, 95%, 64%, 1) !important;
-            box-shadow: inset 0 -0.25em 0.5em rgba(0, 0, 0, 0.25);
         }
         #settings-button-wrapper button:active,
-        #settings-button-wrapper.active button,
+        #settings-button-wrapper button.active,
         #dark #settings-button-wrapper button:active,
-        #dark #settings-button-wrapper.active button  {
+        #dark #settings-button-wrapper button.active  {
             background-color: hsla(51, 95%, 64%, 1) !important;
-            box-shadow: inset 0 0.25em 0.5em rgba(0, 0, 0, 0.375);
         }
         #settings-button-wrapper button:hover path,
-        #settings-button-wrapper.active button path {
+        #settings-button-wrapper button.active path {
             fill: white !important;
         }
         #dark #settings-button-wrapper button:hover path,
-        #dark #settings-button-wrapper.active button path {
+        #dark #settings-button-wrapper button.active path {
             fill: white !important;
         }
     #dark #settings-button-wrapper button {
@@ -110,21 +107,21 @@ design:
     #dark button,
     #dark .button {
         background-color: hsl(227, 53%, 44%);
-        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+/*        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);*/
     }
         button:hover,
         .button:hover,
         #dark button:hover,
         #dark .button:hover {
             background-color: hsl(227, 53%, 54%) !important;
-            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+/*            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);*/
         }
         button:active,
         .button:active,
         #dark button:active,
         #dark .button:active {
             background-color: hsl(227, 53%, 54%) !important;
-            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);
+/*            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(227, 53%, 44%, 0.2);*/
         }
     hr {
         background-color: rgba(176, 52, 49, 0.2);
@@ -197,7 +194,7 @@ design:
     <img alt="Development Card Simulator" type="image/png" src="images/title.png">
 </picture>
 
-<h4 style="margin-top:0.65em;text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced, remote gaming</h4>
+<h4 style="margin-top:0.65em;margin-left:var(--gap2);margin-right:var(--gap2);text-align:center;color:white;">A virtual “Settlers of Catan” development card deck for balanced remote gameplay</h4>
 
 <div class="page">
     {% capture about-prose %}{% include_relative development-card-simulator.markdown %}{% endcapture %}

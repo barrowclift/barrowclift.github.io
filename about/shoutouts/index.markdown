@@ -13,12 +13,11 @@ This website is powered by [Jekyll](http://jekyllrb.com/), hosted with [Github P
 I am genuinely grateful for all the open source projects I used and advice I received from the community while building this website, including:
 
 * **[Andreas Larsen](https://larsenwork.com/)**, whose [elegant "eased" gradients generator](https://larsenwork.com/easing-gradients/) was heavily used for many of the gradients throughout this site.
-* **[BigFoot](http://www.bigfootjs.com/)** for their Instapaper-like footer popups used to power my article footnotes.
 * **[Criag Hockenberry](https://furbo.org/2018/03/28/system-fonts-in-css/)** for trailblazing a backwards compatible `font-family` declaration which leverages the system's default typeface whenever possible, and which is used "as is" on this site.
 * **[Gapless 5](https://github.com/regosen/Gapless-5)** for powering the [SMiLE: Heroes & Villains](http://localhost:4000/projects/music/smile-heroes-and-villains-mix/) page's jukebox.
 * **[Hint](https://github.com/chinchang/hint.css)** for the lovely hover bubbles used throughout the site (like the [Projects](/projects) and [Social](/social) pages).
-* **[jQuery](https://jquery.com)** powers lots of functionality on this site. Stuff what anyone else says: it was awesome, and quite frankly still *is* awesome.
 * **[jQueryScript.net](http://www.jqueryscript.net/other/jQuery-Plugin-To-Add-Unique-Anchor-Links-To-Headlines-anchor-js.html)** whose anchor links script is leveraged to display header anchor links on hover.
+* **[littlefoot.js](https://littlefoot.js.org)** for their Instapaper-like footer popups used to power my article footnotes, all driven by "vanilla" Javascript.
 * **[Michael J. Deeb](https://michaeljdeeb.com/)** for [his help](http://michaeljdeeb.com/blog/using-a-custom-domain-with-github-pages/) getting a custom domain set up with Github Pages and Hover.
 * **[Paul Lewis](https://developers.google.com/web/resources/contributors#paullewis)** & **[Robert Flack](https://developers.google.com/web/resources/contributors#flackr)**, authors of Google's [Performant Parallaxing developer article](https://developers.google.com/web/updates/2016/12/performant-parallaxing) which was *heavily* referenced for my [Largest Video Game Ever](\/projects/code/the-largest-video-game-ever-made/) & [SMiLE: Heroes & Villains](http://localhost:4000/projects/music/smile-heroes-and-villains-mix/) pages.
 * **[Richard Leland](https://github.com/richleland)** on Github for his [Pygments Monokai color scheme](https://github.com/richleland/pygments-css/blob/master/monokai.css), which I use for my syntax highlighting.

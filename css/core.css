@@ -73,10 +73,13 @@
      * ------------------
      */
     
+    /* General-purpose shadows */
     --shadow: 0em 1em 2.75em rgba(50, 50, 50, 0.1), 0em 0.22em 0.6em rgba(50, 50, 50, 0.05);
     --hover-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     --clicking-shadow: 0em 0.5em 2.2em rgba(50, 50, 50, 0.15), 0em 0.11em 0.36em rgba(50, 50, 50, 0.1);
+    /* Single-purpose shadows */
     --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.05);
+    --hint-shadow: 0em 0.5em 2.2em rgba(50, 50, 50, 0.2), 0em 0.11em 0.36em rgba(50, 50, 50, 0.15);
 
     /**
      * -----------------
@@ -97,6 +100,16 @@
     --widget-lightness: 62.5%;
     --widget-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2);
 
+    /**
+     * "Regular"/Gray admonitions need to be _ever so slightly_ more opaque
+     * compared to standard widgets to better visually match other admonition
+     * flavors.
+     */
+    --admonition-background-color: hsla(var(--accent-hue), 10%, 91.5%, var(--widget-background-opacity));
+    --admonition-lightness: 62%;
+    --admonition-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.2);
+    --admonition-left-border-lightness-adjustment: 10%;
+
     --code-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
     --code-border-color: var(--widget-border-color);
 
@@ -104,9 +117,7 @@
     --table-washboard-even-background-color: var(--code-background-color);
     --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 93%, 0.25);
 
-    --bigfoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 85%);
-    
-    --admonition-left-border-lightness-adjustment: 10%;
+    --littlefoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 85%);
     
     /**
      * For any kind of element or background that can be considered gently
@@ -232,10 +243,13 @@
      * ------------------
      */
 
+    /* General-purpose shadows */
     --shadow: 0em 1em 2.75em rgba(0, 0, 0, 0.25), 0em 0.22em 0.6em rgba(0, 0, 0, 0.15);
     --hover-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.25);
     --clicking-shadow: 0em 0.5em 2.2em rgba(0, 0, 0, 0.35), 0em 0.11em 0.36em rgba(0, 0, 0, 0.2);
+    /* Single-purpose shadows */
     --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.05);
+    --hint-shadow: 0em 0.5em 2.2em rgba(0, 0, 0, 0.40), 0em 0.11em 0.36em rgba(0, 0, 0, 0.25);
 
     /**
      * -----------------
@@ -253,6 +267,10 @@
     --widget-background-color: hsla(var(--accent-hue), 10%, 16%, var(--widget-background-opacity));
     --widget-lightness: 37.5%;
 
+    --admonition-background-color: hsla(var(--accent-hue), 10%, 20%, var(--widget-background-opacity));
+    --admonition-lightness: 50%;
+    --admonition-left-border-lightness-adjustment: -10%;
+
     --code-background-color: hsla(var(--accent-hue), 10%, 7%, var(--widget-background-opacity));
     --code-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.3);
     
@@ -260,9 +278,7 @@
     --table-washboard-even-background-color: hsla(var(--accent-hue), 10%, 20%, 0.5);
     --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 20%, 0.2);
 
-    --bigfoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 25%);
-
-    --admonition-left-border-lightness-adjustment: -10%;
+    --littlefoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 25%);
 
     --highlight-background-opacity: 0.15;
     --selection-background-opacity: 0.85;
@@ -468,10 +484,6 @@ main {
             max-width: 35em;
         }
     }
-main,
-html {
-    transition: background-color var(--cubic-bezier-transition);
-}
 p {
     margin-bottom: var(--gap);
     transition: color var(--cubic-bezier-transition);
@@ -562,6 +574,18 @@ ul {
         li ul.bare {
             margin-top: 0;
         }
+    /**
+     * If something in the Markdown "breaks up" a list item (like a <pre>
+     * block, for example), for whatever reason GitHub's Markdown parser wraps
+     * the subsequent items in a <p>. That in and of itself isn't a problem in
+     * the unlikely event a list item has multiple paragraphs, but IS a
+     * problem for screwing with the standard <li> margin-bottom (it makes the
+     * margin-bottom slightly bigger than expected. This protects against that
+     * edge case.
+     */
+    li > p:last-child {
+        margin-bottom: 0;
+    }
 ol {
     list-style-type: decimal;
 }
@@ -951,12 +975,14 @@ main a {
     margin-left: -0.25em;
     margin-right: -0.25em;
 }
-    a {
+    a,
+    a > code { /* See "a:has(> code)" comment for details */
         color: var(--accent-color);
         color: var(--accent-p3-color);
         transition: background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
     }
-    a:hover {
+    a:hover,
+    a:hover > code { /* See "a:has(> code)" comment for details */
         background-color: hsla(var(--accent-hsl-core), var(--highlight-background-opacity));
         background-color: color(var(--accent-p3-core) / var(--highlight-background-opacity));
     }
@@ -1103,53 +1129,42 @@ a.anchor {
     }
 }
 /**
- * Little "talk bubble" hints perfect for adding little comments or details to
- * hoverable elements.
+ * hint.css: little "talk bubble" hints perfect for adding little comments or
+ *           details to hoverable elements.
  */
-[data-hint]:after {
-    color: var(--primary-foreground-color);
+[class*=hint--]:after,
+[class*=hint--]:before {
     background-color: var(--widget-background-color);
-    border-color: var(--widget-border-color);
-    bow-shadow: var(--hover-shadow);
-    z-index: 100000;
+    box-shadow: var(--hint-shadow);
 }
-[data-hint]:after,
-[data-hint]:before {
-    display: none;
-}
-    [data-hint]:before {
-        z-index: 100001;
-    }
-    /**
-     * Not a mistake! These "borders" are actually the little "talk bubble
-     * arrow" coming out of the hint bubble that points to the content that
-     * spawned it, so it needs to match the bubble's _background_, not the
-     * border.
-     */
-    .hint--right[data-hint]:before {
-        border-right-color: var(--widget-background-color);
-    }
-    .hint--top[data-hint]:before {
-        border-top-color: var(--widget-background-color);
-    }
-    .hint--bottom[data-hint]:before {
-        border-bottom-color: var(--widget-background-color);
-    }
-    .hint--left[data-hint]:before {
-        border-left-color: var(--widget-background-color);
-    }
     @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        [data-hint]:after {
+        [class*=hint--]:after,
+        [class*=hint--]:before {
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
         }
     }
-    @media(min-width: 700px) {
-        [data-hint]:after,
-        [data-hint]:before {
-            display: block;
-        }
+    /**
+     * The "body" of the Hint popup
+     */
+    [class*=hint--]:after {
+        color: var(--primary-foreground-color);
+        font-size: 0.75em;
+        text-shadow: unset;
     }
+    /**
+     * Don't show on small screens.
+     */
+    [class*=hint--]:after,
+    [class*=hint--]:before {
+        display: none;
+    }
+        @media(min-width: 700px) {
+            [class*=hint--]:after,
+            [class*=hint--]:before {
+                display: block;
+            }
+        }
 /**
  * Yes, I have an Apple SVG on standby to drop into articles and I'm not
  * afraid to use it.
@@ -1167,15 +1182,23 @@ a.anchor {
     padding: 1em;
     margin-bottom: var(--gap);
 
-    border-top: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
-    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
-    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-saturation), calc(var(--widget-lightness) + var(--admonition-left-border-lightness-adjustment)));
-    border-right: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
+    border-top: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
+    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
+    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-saturation), calc(var(--admonition-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    border-right: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
     border-radius: var(--img-border-radius);
 
     color: var(--primary-foreground-color);
-    background-color: var(--widget-background-color);
+    background-color: var(--admonition-background-color);
     box-shadow: var(--admonition-shadow);
+
+    /*
+    --widget-background-opacity: 0.975;
+    --widget-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
+    --widget-saturation: 5%;
+    --widget-lightness: 62.5%;
+    --widget-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2);
+     */
 
     transition: border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
 }
@@ -1218,7 +1241,7 @@ a.anchor {
  * Simple, Gray "Asides" (No icon and heavy left border)
  */
 .admonition.aside {
-    border-left: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.15);
+    border-left: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
 }
     /**
      * Disable the icon
@@ -1244,7 +1267,7 @@ a.anchor {
     width: 0.86em;
     padding-left: 0.625em;
     margin-left: -2em;
-    background-color: hsl(var(--accent-hue), var(--widget-saturation), calc(var(--widget-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    background-color: hsl(var(--accent-hue), var(--widget-saturation), calc(var(--admonition-lightness) + var(--admonition-left-border-lightness-adjustment)));
     transition: background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
 }
 /**
@@ -1566,7 +1589,7 @@ a.anchor {
     background-color: var(--widget-background-color);
     box-shadow: var(--shadow);
     overflow: hidden;
-    transition: background-color var(--cubic-bezier-transition), border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), opacity var(--cubic-bezier-transition);
+    transition: background-color var(--cubic-bezier-transition), border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), opacity var(--cubic-bezier-transition), top var(--cubic-bezier-transition);
 }
     @supports (padding-left: env(safe-area-inset-left)) {
         #menubar {
@@ -1641,6 +1664,7 @@ a.anchor {
 #menubar.float.hide-when-scrolling-on-small-screens,
 #settings-popup.float.hide-when-scrolling-on-small-screens {
     opacity: 0;
+    top: -3.85em;
     pointer-events: none;
 }
 #menubar a {
@@ -2111,6 +2135,7 @@ a.anchor {
     #settings-popup.show.float.hide-when-scrolling-on-small-screens,
     #settings-popup.show.hide-when-scrolling-on-larger-screens {
         opacity: 1;
+        top: 0;
         pointer-events: auto;
     }
     #menubar-height-offset {
@@ -3013,12 +3038,10 @@ pre {
     word-break: normal;
 }
     pre::selection,
-    code::selection,
     pre ::selection {
         background: hsla(var(--accent-hue), 10%, 35%, .975);
     }
     #dark pre::selection,
-    #dark code::selection,
     #dark pre ::selection {
         background: hsla(var(--accent-hue), 10%, 20%, .975);
     }
@@ -3061,6 +3084,21 @@ code {
         padding: 0 0.325em !important;
         margin-left: -0.325em !important;
         margin-right: -0.325em !important;
+    }
+    /**
+     * It looks gross to have the hover effect applied "as is" to inline code
+     * blocks. It's visually superior to have the "code" block element ITSELF
+     * reflect the hover effect. In order to achieve that, the otherwise
+     * normal <a> element padding & margins need to be zeroed out so all
+     * that's used is the <code> element's padding & margins.
+     */
+    a:has(> code) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 /**
  * STANDARD CODEBLOCKS
@@ -3249,59 +3287,90 @@ footer {
 .footnotes {
     font-size: var(--h6-size);
 }
-/**
- * The BigFoot.js footnote element, which offers a substantially improved
- * footnote experience where you can read the footnote in a handy popup
- * without having to change your position in the article at all.
- */
-.bigfoot-footnote__wrapper,
-.bigfoot-footnote__content,
-.bigfoot-footnote {
-    background-color: transparent;
-    border: none;
-}
-.bigfoot-footnote__button {
-    font-size: var(--h6-size);
-}
-.bigfoot-footnote__content {
-    max-height: 25em !important;
-}
-.bigfoot-footnote,
-.bigfoot-footnote__tooltip {
-    border: 1px solid var(--bigfoot-popup-border-color);
-    box-shadow: var(--hover-shadow);
-}
-.bigfoot-footnote__content,
-.bigfoot-footnote__tooltip {
-    background-color: var(--widget-background-color);
-}
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        .bigfoot-footnote__content,
-        .bigfoot-footnote__tooltip {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
+    /**
+     * Ensure that the footnotes at the bottom are still visible (but ONLY
+     * those footnotes, don't show the standard footnote numbers in the
+     * article proper).
+     */
+    .footnotes,
+    .footnotes .littlefoot--print {
+        display: revert;
     }
-.bigfoot-footnote__button {
+/**
+ * littlefoot.js: Offers a substantially improved footnote experience where
+ *                you can read the footnote in a handy popup without having to
+ *                change your position in the article at all.
+ */
+.littlefoot {
+    --button-height: var(--gap);
+    --button-margin: 0 0.15em;
+    --button-padding: 0 1em;
+    --button-text-color: white;
+
+    --popover-background-color: var(--widget-background-color);
+    --popover-border-radius: 0.5rem;
+    --popover-border: 1px solid var(--littlefoot-popup-border-color);
+    --popover-font-size: var(--h6-size);
+    --popover-horizontal-padding: var(--gap);
+    --popover-max-height: 25em;
+    --popover-scroll-indicator-color: var(--secondary-foreground-color);
+    --popover-shadow: var(--hover-shadow);
+    --popover-text-color: var(--primary-foreground-color);
+    --popover-transition: opacity 250ms var(--cubic-bezier-curve), transform 250ms var(--cubic-bezier-curve);
+    --popover-vertical-padding: var(--gap);
+}
+/**
+ * The article div:has(img) & article div:has(video) styling screws with
+ * footnote rendering. Ensure that styling is scrubbed for rendering footnote
+ * popup contents.
+ */
+.littlefoot div {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.littlefoot img {
+    line-height: var(--body-line-height);
+}
+.littlefoot__popover p:last-child {
+    margin-bottom: 0;
+}
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    .littlefoot__content,
+    .littlefoot__tooltip {
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+}
+.littlefoot__button,
+.littlefoot__button.is-active,
+.littlefoot__button:active,
+.littlefoot__button:focus,
+.littlefoot__button:hover {
     background-color: var(--accent-color);
     background-color: var(--accent-p3-color);
+}
+.littlefoot__button {
+    font-size: 0.625em;
+    font-weight: 600;
+    line-height: 1em;
+    margin-top: -3px;
     box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
 }
-    .bigfoot-footnote__button:hover {
+    .littlefoot__button:hover {
         box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.5), 0 .325em 0.65em -0.325em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) + 2%), 0.375);
     }
-    .bigfoot-footnote__button:active,
-    .bigfoot-footnote__button.is-active {
+    .littlefoot__button:active,
+    .littlefoot__button.is-active {
         box-shadow: inset 0 .325em 0.65em rgba(0, 0, 0, 0.125), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
-    #dark .bigfoot-footnote__button {
+    #dark .littlefoot__button {
         box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 8%), 0.2);
     }
-    #dark .bigfoot-footnote__button:hover {
+    #dark .littlefoot__button:hover {
         box-shadow: inset 0 .325em 0.65em rgba(255, 255, 255, 0.375), 0 .325em 0.65em -0.325em hsla(var(--accent-hue), calc(var(--accent-saturation) + 10%), calc(var(--accent-lightness) - 3%), 0.375);
     }
-    #dark .bigfoot-footnote__button:active,
-    #dark .bigfoot-footnote__button.is-active {
+    #dark .littlefoot__button:active,
+    #dark .littlefoot__button.is-active {
         box-shadow: inset 0 .325em 0.65em rgba(0, 0, 0, 0.125), 0 0.215em 0.435em -0.1em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 13%), 0.2);
     }
 

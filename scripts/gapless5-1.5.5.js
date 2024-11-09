@@ -4,7 +4,7 @@
  *
  * Version 1.4.4
  * Copyright 2014 Rego Sen
- *
+ * Unmodified, provided "as is".
 */
 
 // PROBLEM: We have 2 APIs for playing audio through the web, and both of them have problems:

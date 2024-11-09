@@ -5,70 +5,28 @@
         <title>{{site.title}}</title>
     {% endif %}
 
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
+    <meta name="application-name" content="{{site.title}}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 
     <link rel="mask-icon" href="{{ site.baseurl }}/images/pinned-tab.svg" color="#000000">
     <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.jpg">
-
-    <meta name="application-name" content="Barrowclift">
-    {% if page.design.oled %}
-        <meta name="theme-color" content="{% if page.design.browser-theme-color-dark %}{{ page.design.browser-theme-color-dark }}{% else %}black{% endif %}">
-    {% else %}
-        {% if page.design.browser-theme-color-dark %}
-            <meta name="theme-color" id="override-dark-base-theme-color" content="{{ page.design.browser-theme-color-dark }}" media="(prefers-color-scheme: dark)">
-            <script>const darkBaseThemeColorOverride="{{ page.design.browser-theme-color-dark }}";</script>
-        {% endif %}
-        {% if page.design.browser-theme-color-light %}
-            <meta name="theme-color" id="override-light-base-theme-color" content="{{ page.design.browser-theme-color-light }}" media="(prefers-color-scheme: light)">
-            <script>const lightBaseThemeColorOverride="{{ page.design.browser-theme-color-light }}";</script>
-        {% endif %}
-        <meta name="theme-color" id="dark-base-theme-color" content="#191919" media="(prefers-color-scheme: dark)">
-        <meta name="theme-color" id="light-base-theme-color" content="white">
+    <meta name="theme-color" id="{% if page.design.oled != true %}theme-color{% endif %}" content="{% if page.design.browser-theme-color-dark %}{{ page.design.browser-theme-color-dark }}{% elsif page.design.oled %}black{% else %}white{% endif %}">
+    {% if page.design.browser-theme-color-light %}
+        <meta name="light-theme-color-override" content="{{ page.design.browser-theme-color-light }}">
     {% endif %}
-    <meta name="msapplication-TileColor" content="white">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
-
-    <script>
-        // Add dark mode ID (if enabled) as soon as possible
-        function c(n){var dc=document.cookie;var p=n+"=";var b=dc.indexOf("; "+p);if(b==-1){b=dc.indexOf(p);if(b!=0){return null;}}else{b+=2;}var e=document.cookie.indexOf(";",b);if(e==-1){e=dc.length;}return decodeURI(dc.substring(b+p.length, e));}
-        /* See main.js */
-        let isSysDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
-        let isSiteDark=false,color="blue",lbc,dbc;
-        if(c("dark-mode") == "on" || (isSysDark && (c("dark-mode") == null || c("dark-mode") == "auto"))){document.getElementsByTagName("html")[0].setAttribute("id", "dark");isSiteDark=true;}
-        if(c("accent-color")){document.getElementsByTagName("html")[0].className+=" "+c("accent-color");color=c("accent-color")}
-        if(color==="purple"){dbc="#1B1B1C";lbc="#FEFEFF";}else if(color==="pink") {dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="red"){dbc="#1D1B1B";lbc="#FFFEFE";}else if(color==="orange"){dbc="#1C1C1A";lbc="#FFFFFE";}else if(color==="yellow"){dbc="#1C1C19";lbc="#FFFFFE";}else if(color==="green"){dbc="#1B1C1B";lbc="#FEFFFE";}else{dbc="#1A1B1D";lbc="#FEFEFF";}
-        if(c("dark-mode")==="off"){document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lbc);}else{document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",dbc);}if(c("dark-mode")==="on"){document.querySelector("meta#light-base-theme-color")?.setAttribute("content",dbc);}else{document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lbc);}
-
-        // There to this day continues to be certain features that some browsers suck ass for, so browser-specific conditions are still required. Apply as quickly as possible.
-        var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
-        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-        var is_ios_safari = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
-        var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
-        if ((is_chrome)&&(is_safari)) {is_safari=false;}
-        if ((is_chrome)&&(is_opera)) {is_chrome=false;}
-        if (is_safari || is_ios_safari) {
-            document.getElementsByTagName("html")[0].classList.add("safari");
-        } else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
-            document.getElementsByTagName("html")[0].classList.add("firefox");
-        } else if (!is_safari && !is_ios_safari && !is_opera && is_chrome) {
-            document.getElementsByTagName("html")[0].classList.add("chrome");
-        }
-    </script>
-    {% if page.design.force-dark-mode %}
-        <script>
-            document.getElementsByTagName("html")[0].setAttribute("id", "dark");
-        </script>
+    {% if page.design.browser-theme-color-dark %}
+        <meta name="dark-theme-color-override" content="{{ page.design.browser-theme-color-dark }}">
     {% endif %}
-    <noscript><style>.jsonly{display: none !important}</style></noscript>
 
     {% if jekyll.environment == "development" %}
         <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/bigfoot-number.css" type="text/css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/hint.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/littlefoot-4.1.1.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/hint-3.0.0.css" type="text/css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/core.css" type="text/css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
         {% if page.layout == "parallax" %}
             {% if page.parallax.banner-video != nil %}
                 <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-video.css" type="text/css">
@@ -76,13 +34,9 @@
                 <link rel="stylesheet" href="{{ site.baseurl }}/css/parallax-image.css" type="text/css">
             {% endif %}
         {% endif %}
-
-        <script src="{{ site.baseurl }}/scripts/min/jquery-3.7.1.min.js"></script>
-        <script async src="{{ site.baseurl }}/scripts/core.js"></script>
-
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
     {% else %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-7.min.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-8.min.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print">
         {% if page.layout == "parallax" %}
             {% if page.parallax.banner-video != nil %}
                 <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-video-1.min.css" type="text/css">
@@ -90,10 +44,6 @@
                 <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-image-1.min.css" type="text/css">
             {% endif %}
         {% endif %}
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script async src="{{ site.baseurl }}/scripts/min/core-2.min.js"></script>
-
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print">
     {% endif %}
     {% if page.design.accent %}
     <style>
@@ -108,8 +58,96 @@
     </style>
     {% endif %}
 
+    {% if page.design.force-dark-mode %}
+        <script>
+            document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+        </script>
+    {% endif %}
+    <script>
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+        let osDarkModeEnabled=window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let isSiteThemeAuto = getCookie("appearance") == null || getCookie("appearance") == "auto";
+        let isSiteDark = getCookie("appearance") == "dark" || (osDarkModeEnabled && isSiteThemeAuto);
+
+        let accentColor="blue"
+        if (getCookie("accent")) {
+            document.getElementsByTagName("html")[0].classList.add(getCookie("accent"));
+            accentColor = getCookie("accent");
+        }
+        let lightBaseThemeColor, darkBaseThemeColor;
+        if (accentColor === "purple") {
+            darkBaseThemeColor = "#29242D";
+            lightBaseThemeColor = "#F1EDF1";
+        } else if (accentColor === "pink") {
+            darkBaseThemeColor = "#2C2428";
+            lightBaseThemeColor = "#F2EDF0";
+        } else if (accentColor === "red") {
+            darkBaseThemeColor = "#2C2424";
+            lightBaseThemeColor = "#F2EEED";
+        } else if (accentColor === "orange") {
+            darkBaseThemeColor = "#2B2923";
+            lightBaseThemeColor = "#F1F0ED";
+        } else if (accentColor === "yellow") {
+            darkBaseThemeColor = "#2B2A22";
+            lightBaseThemeColor = "#F1F1ED";
+        } else if (accentColor === "green") {
+            darkBaseThemeColor = "#242B26";
+            lightBaseThemeColor = "#EDF1EF";
+        } else {
+            darkBaseThemeColor = "#23282C";
+            lightBaseThemeColor = "#ECF0F1";
+        }
+
+        /**
+         * Enable dark mode if explicitly enabled OR if appareance setting hasn't ever
+         * set by the user OR if the appearance setting is set at "auto"
+         */
+        if (isSiteDark) {
+            document.getElementsByTagName("html")[0].setAttribute("id", "dark");
+            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",darkBaseThemeColor);
+            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",darkBaseThemeColor);
+        } else {
+            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
+            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lightBaseThemeColor);
+        }
+
+        /**
+         * There to this day continues to be certain features that lesser
+         * browsers like Firefox faceplant for, so browser-specific conditions
+         * are still required. Apply as quickly as possible.
+         */
+        var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+        var is_ios_safari = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
+        var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+        if ((is_chrome)&&(is_safari)) {is_safari=false;}
+        if ((is_chrome)&&(is_opera)) {is_chrome=false;}
+        if (is_safari || is_ios_safari) {
+            document.getElementsByTagName("html")[0].classList.add("safari");
+        } else if (!is_safari && !is_ios_safari && !is_opera && !is_chrome) {
+            document.getElementsByTagName("html")[0].classList.add("firefox");
+        } else if (!is_safari && !is_ios_safari && !is_opera && is_chrome) {
+            document.getElementsByTagName("html")[0].classList.add("chrome");
+        }
+    </script>
+    <noscript><style>.jsonly{display: none !important}</style></noscript>
+    {% if jekyll.environment == "development" %}
+        <script async src="{{ site.baseurl }}/scripts/littlefoot-4.1.1.js"></script>
+        <script async src="{{ site.baseurl }}/scripts/core.js"></script>
+    {% else %}
+        <script async src="{{ site.baseurl }}/scripts/min/core-3.min.js"></script>
+    {% endif %}
     <!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
-    <script>$(document).ready(function(){anchorsEnabled = {% if page.design.show-anchors %}true{% else %}false{% endif %};});</script>
+    <script>anchorsEnabled = {{ page.design.show-anchors }};</script>
     <!--
     Anchor offset:
     Without this, if you click the "back"/↩ button on a footnote to go back to
@@ -120,6 +158,7 @@
     floating menubar -->
     <script>!function(t,e,n){var i=!(!e||!e.pushState),o={ANCHOR_REGEX:/^#[^ ]+$/,OFFSET_HEIGHT_PX:75,init:function(){this.scrollToCurrent(),window.addEventListener("hashchange",this.scrollToCurrent.bind(this)),t.body.addEventListener("click",this.delegateAnchors.bind(this))},getFixedOffset:function(){return this.OFFSET_HEIGHT_PX},scrollIfAnchor:function(o,r){var s,d,c;return this.ANCHOR_REGEX.test(o)?(s=t.getElementById(o.slice(1)),s&&(d=s.getBoundingClientRect(),c=window.pageYOffset+d.top-this.getFixedOffset(),window.scrollTo(window.pageXOffset,c),i&&r&&e.pushState({},t.title,n.pathname+o)),!!s):!1},scrollToCurrent:function(){this.scrollIfAnchor(window.location.hash)},delegateAnchors:function(t){var e=t.target;"A"===e.nodeName&&this.scrollIfAnchor(e.getAttribute("href"),!0)&&t.preventDefault()}};window.addEventListener("DOMContentLoaded",o.init.bind(o))}(window.document,window.history,window.location);</script>
 
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
     {% if paginator.previous_page_path or page.continuation.previous-page %}
         <link rel="prev" href="{{ site.url }}{% if page.continuation.previous-page %}{{ page.dir }}{{ page.continuation.previous-page }}{% else %}{{ paginator.previous_page_path }}{% endif %}">
     {% endif %}

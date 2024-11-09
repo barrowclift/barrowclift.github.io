@@ -19,10 +19,6 @@ card:
 ---
 
 <style>
-.i-guess {
-    max-width: 111px;
-    width: 100% !important;
-}
 .footnotes .macbook {
     width:75%;
 }
@@ -39,20 +35,6 @@ card:
 .screensharing {
     height: 1em;
     margin
-}
-.special-footer-struct {
-    width: 111px;
-}
-.special-footer-struct.large {
-    width: 250px;
-}
-@media (min-width: 700px) {
-    .special-footer-struct {
-        width: 222px;
-    }
-    .special-footer-struct.large {
-        width: 400px;
-    }
 }
 .apple-logo {
     display: inline-block;
@@ -550,12 +532,12 @@ However, even with the poor treatment its receives, macOS continues to stand str
 
 -----
 
-[^i-guess]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct"></div><p style="text-align:left;"><a href="http://www.gunshowcomic.com/367"><img alt="I GUESS" class="i-guess" src="{{ site.dropbox }}/back-to-the-mac/i-guess.png" /></a></p></figure>
-[^finder]: Although, there's no denying he's utterly adorable.<img class="finder" alt="Fin the Finder" src="{{ site.dropbox }}/back-to-the-mac/finder.png" />
+[^i-guess]: ![I GUESS]({{ site.dropbox }}/back-to-the-mac/i-guess.png)
+[^finder]: Although, there's no denying he's utterly adorable.<br>![macOS Finder icon]({{ site.dropbox }}/back-to-the-mac/finder.png)
 [^fftf]: Fun Fact: <abbr title="Fix the 🙊 Finder">FTFF</abbr> was a well known acronym chanted by many Mac fans back in the early days of the Mac OS X. I'll give you one guess as to what it stood for, fill in the missing word: "Fix the 🙊 Finder".
 [^wall-e]: The similarity to Apple's design aesthetic was no coincidence; *Wall-E*'s director, Andrew Stanton, revealed in [an interview with Fortune](http://money.cnn.com/2008/05/09/technology/siklos_walle.fortune/index.htm?postversion=2008051208) that Apple's "playbook for design" drove Eve's seamless and sleek character design.
 [^website-dark-mode]: If dark mode's your thing, try clicking the moon in the upper right-hand corner of this site's menu (or tapping the logo on mobile devices). This site fully supports dark mode for late night reading, and remembers your preference for next time!
-[^dock]: <figure class="shadow" style="margin-bottom:0;"><div class="special-footer-struct large"></div><p style="text-align:left;"><img alt="MacBook screenshot showcasing the space taken up by the Dock" class="macbook" style="border-radius:0.25em" src="{{ site.dropbox }}/back-to-the-mac/macbook-dock.jpg"/></p></figure>
+[^dock]: ![MacBook screenshot showcasing the space taken up by the Dock]({{ site.dropbox }}/back-to-the-mac/macbook-dock.jpg)
 
 *[VU]: Volume Unit
 *[MP3]: Moving Picture Experts Group Layer-3 Audio

@@ -5,9 +5,16 @@
                 <a href="/about">⌘</a>
             </div>
             <script type="text/javascript">
-                $(document).ready(function() {
-                    if ($("article .footnotes")) {
-                        $("#farewell-stamp").insertBefore($("article .footnotes").prev());
+                function ready(fn) {
+                    if (document.readyState !== 'loading') {
+                        fn();
+                        return;
+                    }
+                    document.addEventListener('DOMContentLoaded', fn);
+                }
+                ready(function() { 
+                    if (document.querySelector("article .footnotes")) {
+                        document.getElementsByTagName("article")[0].insertBefore(document.getElementById("farewell-stamp"), document.querySelector("article .footnotes").previousElementSibling);
                     }
                 });
             </script>
