@@ -217,7 +217,7 @@ function updateMagicMenu() {
      * least 100 pixels down, we have plenty of buffer that can be safely
      * ignored).
      */
-    if (newScrollTop - previousScrollTop > 0 && previousScrollTop != -1) {
+    if (newScrollTop - previousScrollTop > 0 && previousScrollTop != -1 && newScrollTop > 125) {
         cumulativeScrollDown += newScrollTop - previousScrollTop;
     } else {
         cumulativeScrollDown = 0;
@@ -243,7 +243,7 @@ function updateMagicMenu() {
             menubar.classList.remove("hide-when-scrolling-on-small-screens");
             settingsPopup.classList.remove("hide-when-scrolling-on-small-screens");
         }
-        if (newScrollTop > 102) {
+        if (newScrollTop > 104) {
             menubar.classList.add("float");
             settingsPopup.classList.add("float");
         } else {

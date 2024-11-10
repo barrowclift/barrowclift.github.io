@@ -1589,7 +1589,7 @@ a.anchor {
     background-color: var(--widget-background-color);
     box-shadow: var(--shadow);
     overflow: hidden;
-    transition: background-color var(--cubic-bezier-transition), border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), opacity var(--cubic-bezier-transition), top var(--cubic-bezier-transition);
+    transition: background-color var(--cubic-bezier-transition), border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), opacity 800ms var(--cubic-bezier-curve), top 800ms var(--cubic-bezier-curve);
 }
     @supports (padding-left: env(safe-area-inset-left)) {
         #menubar {

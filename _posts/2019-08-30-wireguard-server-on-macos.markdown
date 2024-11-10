@@ -27,7 +27,7 @@ card:
     <p class="admonition-title">Update: July 16, 2023</p>
     <p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/articles/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
     <p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
-    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Ventura 13.4.1 (c) on both Apple Silicon and Intel-based Macs.</p>
+    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Sequoia 15.1 on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <div class="inline shadow">
