@@ -76,7 +76,7 @@ What follows is an excruciating deep dive into the differences in *SMiLE: Heroes
     * All verses correctly use Brian's demos performing Tony Asher's original, superior lyrics.
     * The cello continues its triplets at the end of the track for an additional two measures before the rest of the Wrecking Crew join in for the final fade.
 
-It wasn't an accidental, "Mrs. O'Leary's Cow" is not in this mix (sure to be a cardinal sin amongst die-hard fans). The track hindered the otherwise graceful transition to soothing, tropical sounds in the last third of the record no matter where I placed it, and for the goals of this project, hindering the pacing that severely meant it had to go. If you need the cow, listen to *Smile Sessions*.
+It wasn't an accident, "Mrs. O'Leary's Cow" is not in this mix (sure to be a cardinal sin amongst die-hard fans). The track hindered the otherwise graceful transition to soothing, tropical sounds in the last third of the record no matter where I placed it, and for the goals of this project, hindering the pacing that severely meant it had to go. If you need the cow, listen to *Smile Sessions*.
 
 <ul class="button-group">
     <li><a href="{{ site.dropbox }}/projects/music/smile-heroes-and-villains-mix/smile-heroes-and-villains-mix.zip"><p class="button">Download</p></a></li>
