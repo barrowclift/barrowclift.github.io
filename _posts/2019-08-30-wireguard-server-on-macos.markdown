@@ -1,7 +1,7 @@
 ---
 title: "Wireguard Server on macOS"
 date: 2019-08-30 20:15:26
-update: 2023-07-16 11:34:04-0400
+update: 2025-01-15 21:02:50-0500
 
 excerpt: |
     With this guide, you too can enjoy Wireguard VPN’s performance and security on macOS.
@@ -27,7 +27,7 @@ card:
     <p class="admonition-title">Update: July 16, 2023</p>
     <p>This is a heavily modified version of the <a href="/obsolete/wireguard-server-on-macos">original, obsolete guide</a>, see <a href="/articles/wireguard-server-on-macos/change-log">here</a> for the complete change log.</p>
     <p>This guide contains numerous enhancements from <a href="#many-thanks-to">multiple individuals</a> and would not exist in its current, vastly improved form without their help. Each are credited at the end of the article. Many thanks to them for their contributions to this site and the Wireguard community.</p>
-    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Sequoia 15.1 on both Apple Silicon and Intel-based Macs.</p>
+    <p>The below steps are confirmed to work with <a href="https://formulae.brew.sh/formula/wireguard-tools">wireguard-tools 1.0.20210914</a> for macOS Sequoia 15.2 on both Apple Silicon and Intel-based Macs.</p>
 </div>
 
 <div class="inline shadow">
@@ -135,7 +135,8 @@ However, from my on-and-off research over these past few months I've finally cob
     ```console
     $ brew install wireguard-tools
     ```
-Note that the [Wireguard App on the Mac App Store](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12) is not sufficient for managing a Wireguard server due to macOS's [sandbox restrictions](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html), which [prevent](https://www.reddit.com/r/WireGuard/comments/bea47m/wireguard_macos_application_postuppostdown/) the use of the crucial `PostUp` and `PostDown` directives. The Mac App Store version may of course still be used by clients.
+    * If you decide to not install with Homebrew, be warned that [Wireguard App on the Mac App Store](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12) is not sufficient for managing a Wireguard server due to macOS's [sandbox restrictions](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html), which [prevent](https://www.reddit.com/r/WireGuard/comments/bea47m/wireguard_macos_application_postuppostdown/) the use of the crucial `PostUp` and `PostDown` directives. The Mac App Store version may of course still be used by clients.
+    * For users on an Intel machine running Sequoia, be warned that at time of writing [Homebrew appears to be outright missing a bottle for x86 Sequoia](https://github.com/Homebrew/homebrew-core/blob/3a687f80caf72cf60a25471245df354e2b62c0f1/Formula/w/wireguard-go.rb#L14), only the arm64 bottle for Sequoia appears to be defined. This means *fresh* installs of `wireguard-tools` using Homebrew on an Intel Mac running Sequoia will run into issues. This note will be removed when/if this miss in the Homebrew Cellar is addressed. Thanks Glenn ("theweatherguy") for the report!
 5. Generate private and public key pairs for Wireguard to use, one pair for each peer you want to connect to Wireguard, plus one for your server itself. You can use the following commands to accomplish this, which will spit the keys into your current directory:
     ```console
     $ umask 077 # Ensure credentials don't leak from possible race condition.
@@ -299,7 +300,7 @@ The following help articles and documentation from fellow enthusiasts were inval
 * **Luke Sandoval** for his private message revealing that the approach detailed in this guide obfuscates client IPs behind the server's IP. Thus, this solution might not meet certain needs and is thus now called out as a caveat in the guide.
 * [**Alessio Nossa**](https://github.com/alessionossa) for informing me that the original "post down" script did *not* in fact remove the PF traffic routing rule as originally claimed (rather, [it only removed the PF "enable" reference](https://www.manpagez.com/man/8/pfctl/). Their original comment notifying this miss remains [publicly accessible on Github](https://github.com/barrowclift/barrowclift.github.io/issues/1#issuecomment-1133563862).
 * [**Donavon Buchanan**](https://github.com/dbuchanandev), whose thorough email and sensible [reference repo](https://github.com/dbuchanandev/WireGuard-macOS-IPv6) filled the crucial missing piece of <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 6">IPv6</abbr> support in this guide. Without his contribution, this guide would still be restricted to just <abbr style="font-variant-caps:unset;font-feature-settings:unset;" title="Internet Protocol version 4">IPv4</abbr> connections, and been worse off for it.
-* [**Glenn F. Schreiber**](https://theweatherguy.net/blog/blog-faq/) (a.k.a "theweatherguy") for identifying and notifying me that starting with macOS 13 Ventura the DNS directive prevents the VPN from functioning when set in the *server*'s Wireguard config.
+* [**Glenn F. Schreiber**](https://theweatherguy.net/blog/blog-faq/) (a.k.a "theweatherguy") for identifying and notifying me that starting with macOS 13 Ventura the DNS directive prevents the VPN from functioning when set in the *server*'s Wireguard config. Additionally, he's caught & reported a miss in the Homebrew Cellar which causes issues with fresh `wireguard-tools` installs on Intel Macs running Sequoia, which has been noted in the relevant step of the guide above.
 * [**Cory**](https://mastodon.social/@CyberCory) for [identifying a shortcoming in the daemon config](https://mastodon.social/@CyberCory/110668229010278552) that required user login for the Wireguard server to start. Because of his report, the guide now ensures the daemon's set up to start immediately on system boot, independent of user logins.
 
 *[DNS]: Domain Name System
