@@ -8,7 +8,7 @@ let html = document.getElementsByTagName("html")[0];
 function setCookie(name, value, days) {
     let expires = "";
     if (!days) {
-        day = 365;
+        days = 365;
     }
     let date = new Date();
     date.setTime(date.getTime() + (days*24*60*60*1000));
