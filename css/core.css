@@ -2269,6 +2269,16 @@ a.anchor {
         transform: var(--hover-scale);
         box-shadow: var(--hover-shadow);
     }
+        /**
+         * Chrome refuses to render the effect performantly with everything
+         * going on AND this transition. This "hack" is to ensure Chrome
+         * remains functional.
+         *
+         * Retest after a while to see if Chrome fixes their crap.
+         */
+        .chrome .card:hover {
+            box-shadow: var(--shadow);
+        }
     .card:active {
         transform: var(--clicking-scale);
         box-shadow: var(--clicking-shadow);
