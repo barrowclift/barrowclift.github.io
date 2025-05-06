@@ -73,7 +73,7 @@ function insertAnchors(options) {
 
         var a = document.createElement("a");
         a.classList.add(opt.anchorClass);
-        a.href = id;
+        a.href = "#" + id;
         a.textContent = opt.symbol;
         header.appendChild(a);
 
