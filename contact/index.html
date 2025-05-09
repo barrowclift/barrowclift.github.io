@@ -51,6 +51,22 @@ title: "Contact"
             background-color: hsl(204, 88%, 48%) !important;
             box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(204, 88%, 48%, 0.2);
         }
+    .bluesky .button,
+    #dark .bluesky .button {
+        background-color: rgb(10, 122, 255);
+        background-image: linear-gradient(rgb(10, 122, 255) 40%, rgb(89, 185, 255));
+        box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.1875), 0 0.43em 0.87em -0.2em hsla(213, 100%, 52%, 0.375);
+    }
+        .bluesky .button:hover,
+        #dark .bluesky .button:hover {
+            background-color: hsl(213, 90%, 62%);
+            box-shadow: inset 0 .65em 1.3em rgba(255, 255, 255, 0.25), 0 .65em 1.3em -0.65em hsla(213, 100%, 52%, 0.375);
+        }
+        .bluesky .button:active,
+        #dark .bluesky .button:active {
+            background-color: hsl(213, 90%, 52%) !important;
+            box-shadow: inset 0 .65em 1.3em rgba(0, 0, 0, 0.0625), 0 0.43em 0.87em -0.2em hsla(213, 90%, 57%, 0.2);
+        }
     .github .button,
     #dark .github .button {
         background-color: hsl(213, 13%, 16%);
@@ -70,7 +86,6 @@ title: "Contact"
 </style>
 
 <img style="height:5em;width:auto;" class="memoji" src="images/me.png" alt="Memoji of myself peaking out behind a laptop screen" title="Hi, there!" />
-<h4 style="text-align:center;font-weight:normal;margin-top:0.5em">I can be quickly reached on any of these services.</h4>
 
 <ul class="button-group fixed social">
     <li class="email">
@@ -80,6 +95,14 @@ title: "Contact"
             </a>
         </span>
     </li>
+    <li class="bluesky">
+        <span class="hint--top hint--rounded hint--bounce" data-hint="bsky.app/profile/barrowclift.me">
+            <a href="https://bsky.app/profile/barrowclift.me">
+                <p class="button"><img src="/social/images/bluesky.png" /><span>Bluesky</span></p>
+            </a>
+        </span>
+    </li>
+    <br>
     <li class="mastodon">
         <span class="hint--top hint--rounded hint--bounce" data-hint="mastodon.social/@barrowclift">
             <a href="https://mastodon.social/@barrowclift">
