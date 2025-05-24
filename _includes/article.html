@@ -4,9 +4,12 @@
         #menubar.hide-when-scrolling-on-larger-screens,
         #settings-popup.float.hide-when-scrolling-on-small-screens,
         #settings-popup.hide-when-scrolling-on-larger-screens {
-            opacity: 0;
-            top: -3.85em;
+            opacity: 0 !important;
             pointer-events: none;
+        }
+        #menubar.float.hide-when-scrolling-on-small-screens,
+        #menubar.hide-when-scrolling-on-larger-screens {
+            top: -3.85em;
         }
     }
 </style>
