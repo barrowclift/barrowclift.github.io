@@ -4227,7 +4227,7 @@ To speak personally for a moment, this year's showcase was difficult to complete
 [Sathorn]: https://sathorn.app
 [SongOwl]: https://apps.apple.com/us/app/songowl-music-player/id1492630850
 [Soor]: https://soor.app
-[Stezza]: http://stezza.co
+[Stezza]: http://stezza.app
 [Vinyl Fetish]: https://apps.apple.com/us/app/vinyl-fetish-music-player/id1490719457
 [Vinyls]: https://www.pnguin.app/vinyls
 

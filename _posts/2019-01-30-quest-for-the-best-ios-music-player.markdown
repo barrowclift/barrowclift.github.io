@@ -76,7 +76,7 @@ Even with just a few deal-breaking requirements, many music apps failed to even 
 
 * [Jams on Toast](http://www.jamsontoast.com) &ndash; The album art is not full-size in the player view. Gets an honorable mention though due to its unique and fun [cover flow](https://en.wikipedia.org/wiki/Cover_Flow)-inspired album view.
 * [Loud](https://itunes.apple.com/us/app/loud/id1075155206) &ndash; Clearly not native, animations and UI elements are janky and feel brittle to the touch.
-* [Stezza](http://stezza.co) &ndash; The player view does not feature large album art (and is otherwise clearly designed for the car, which is not my desired use case).
+* [Stezza](http://stezza.app) &ndash; The player view does not feature large album art (and is otherwise clearly designed for the car, which is not my desired use case).
 * [CloudBeats](https://www.cloudbeatsapp.com) &ndash; As the name would suggest, the app is not local-primary.
 * [TapTunes](https://itunes.apple.com/us/app/taptunes/id320145698) &ndash; Obviously an Android port or a native app with *bad* custom UI elements. The app sticks out like a hideous pig and has no place existing on iOS.
 * [Neutron](http://www.neutronmp.com) &ndash; Obviously an Android port or web app. If I wanted trash like this, I'd use Android.

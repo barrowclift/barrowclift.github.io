@@ -654,7 +654,7 @@ Barely anything regarding the player app itself changed this year; VOX remains t
 [Dot Music]: https://www.dotmusicplayer.com
 [Cs Music]: https://apps.apple.com/us/app/cs-music-player/id924491991
 [Marvis Pro]: https://appaddy.wixsite.com/marvis
-[Stezza]: http://stezza.co
+[Stezza]: http://stezza.app
 [Vinyls]: https://www.pnguin.app/vinyls
 [Power Player]: https://powerplayer.evenwerk.com
 [jetAudio]: https://apps.apple.com/us/app/jetaudio-music-player/id894888135
