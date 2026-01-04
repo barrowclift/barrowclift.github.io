@@ -1364,7 +1364,7 @@ Enough about what I think, what were *your* favorite iOS music players this year
 [Sathorn]: https://sathorn.app
 [Soor]: https://soor.app
 [Starling]: http://web.archive.org/web/20190303084818/http://starling.audio/
-[Stezza]: http://stezza.co
+[Stezza]: http://stezza.app
 [TapTunes]: https://apps.apple.com/us/app/taptunes/id320145698
 [tvOS]: https://developer.apple.com/tvos/
 [VOX]: https://vox.rocks
