@@ -51,11 +51,11 @@ html, body {
     margin: 0 !important;
     margin-top: -20vh !important;
 }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
         #parallax-foreground {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-            background-color: rgba(255, 255, 255, 0.95);    
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            backdrop-filter: saturate(180%) blur(14px);
+            background-color: rgba(255, 255, 255, 0.95);
         }
     }
 #menubar {
@@ -63,7 +63,6 @@ html, body {
     border: none !important;
     box-shadow: none !important;
     top: 0;
-    box-shadow: none;
     min-width: 100vw;
     transform: unset;
     position: initial;
@@ -76,9 +75,6 @@ html, body {
      */
     height: 0;
     overflow: visible;
-}
-#menubar-height-offset {
-    height: 0;
 }
 body {
     transform: translateZ(0px);

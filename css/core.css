@@ -78,7 +78,7 @@
     --hover-shadow: 0em 2em 3.5em rgba(50, 50, 50, 0.15), 0em 0.45em 0.85em rgba(50, 50, 50, 0.1);
     --clicking-shadow: 0em 0.5em 2.2em rgba(50, 50, 50, 0.15), 0em 0.11em 0.36em rgba(50, 50, 50, 0.1);
     /* Single-purpose shadows */
-    --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 20%, 0.05);
+    --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-border-saturation), 20%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-border-saturation), 20%, 0.05);
     --hint-shadow: 0em 0.5em 2.2em rgba(50, 50, 50, 0.2), 0em 0.11em 0.36em rgba(50, 50, 50, 0.15);
 
     /**
@@ -94,38 +94,43 @@
     --secondary-foreground-color: rgba(30, 30, 30, 0.375);
     --heavy-secondary-foreground-color: rgba(30, 30, 30, 0.6);
     
-    --widget-background-opacity: 0.975;
-    --widget-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
-    --widget-saturation: 5%;
-    --widget-lightness: 62.5%;
-    --widget-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2);
+    /**
+     * "Widget" is used as a catch-all for most container-like objects
+     * (admonitions, code blocks, popups, etc.) When specific styling is
+     * necessary, these fields are often still used and adjustments made, as
+     * needed.
+     */
+    --widget-background-opacity: 0.75;
+    --widget-background-saturation: 10%;
+    --widget-background-lightness: 98%;
+    --widget-background-color: hsla(var(--accent-hue), var(--widget-background-saturation), var(--widget-background-lightness), var(--widget-background-opacity));
+    --widget-border-saturation: 5%;
+    --widget-border-lightness: 62.5%;
+    --widget-border-color: hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2);
 
     /**
-     * "Regular"/Gray admonitions need to be _ever so slightly_ more opaque
-     * compared to standard widgets to better visually match other admonition
-     * flavors.
+     * A "flavor" of widget to more closely emulate lightly frosted glass.
      */
-    --admonition-background-color: hsla(var(--accent-hue), 10%, 91.5%, var(--widget-background-opacity));
-    --admonition-lightness: 62%;
-    --admonition-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.2);
-    --admonition-left-border-lightness-adjustment: 10%;
+    --glass-background-opacity: 0.975;
+    --glass-background-color: hsla(var(--accent-hue), var(--widget-background-saturation), var(--widget-background-lightness), var(--glass-background-opacity));
 
-    --code-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
-    --code-border-color: var(--widget-border-color);
+    --code-background-lightness: 93%;
+    --code-background-color: hsla(var(--accent-hue), 10%, var(--code-background-lightness), var(--widget-background-opacity));
+    --code-border-opacity: 0.2;
+    --code-border-color: hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), var(--code-border-opacity));
 
     --table-header-background-color: var(--code-background-color);
     --table-washboard-even-background-color: var(--code-background-color);
     --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 93%, 0.25);
-
-    --littlefoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 85%);
     
     /**
-     * For any kind of element or background that can be considered gently
-     * "highlighting" its content (.admonition, <mark>, etc.)
+     * For any kind of element or background that has a hover or activation
+     * effect, or would just passively be considered to "highlight" its
+     * contents.
      */
-    --highlight-background-opacity: 0.1;
+    --highlight-background-opacity: 0.12;
     /**
-     * For actual text selection background opacity.
+     * For user text selection background opacity.
      */
     --selection-background-opacity: 0.99;
 
@@ -221,9 +226,9 @@
     --pink-color: hsl(var(--pink-hsl-core));
     --pink-p3-color: color(var(--pink-p3-core));
 }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
         :root {
-            --widget-background-opacity: 0.85;
+            --glass-background-opacity: 0.12;
         }
     }
     @media(min-width: 700px) {
@@ -248,7 +253,7 @@
     --hover-shadow: 0em 2em 3.5em rgba(0, 0, 0, 0.35), 0em 0.45em 0.85em rgba(0, 0, 0, 0.25);
     --clicking-shadow: 0em 0.5em 2.2em rgba(0, 0, 0, 0.35), 0em 0.11em 0.36em rgba(0, 0, 0, 0.2);
     /* Single-purpose shadows */
-    --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-saturation), 60%, 0.05);
+    --admonition-shadow: 0em 1em 2.75em hsla(var(--accent-hue), var(--widget-border-saturation), 60%, 0.1), 0em 0.22em 0.6em hsla(var(--accent-hue), var(--widget-border-saturation), 60%, 0.05);
     --hint-shadow: 0em 0.5em 2.2em rgba(0, 0, 0, 0.40), 0em 0.11em 0.36em rgba(0, 0, 0, 0.25);
 
     /**
@@ -264,23 +269,19 @@
     --secondary-foreground-color: rgba(255, 255, 255, 0.375);
     --heavy-secondary-foreground-color: rgba(255, 255, 255, 0.6);
     
-    --widget-background-color: hsla(var(--accent-hue), 10%, 16%, var(--widget-background-opacity));
-    --widget-lightness: 37.5%;
+    --widget-border-lightness: 40%;
+    --widget-background-color: hsla(var(--accent-hue), 10%, 18%, var(--widget-background-opacity));
 
-    --admonition-background-color: hsla(var(--accent-hue), 10%, 20%, var(--widget-background-opacity));
-    --admonition-lightness: 50%;
-    --admonition-left-border-lightness-adjustment: -10%;
+    --glass-background-color: hsla(var(--accent-hue), 10%, 18%, var(--glass-background-opacity));
 
-    --code-background-color: hsla(var(--accent-hue), 10%, 7%, var(--widget-background-opacity));
-    --code-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.3);
+    --code-background-lightness: 7%;
+    --code-border-opacity: 0.3;
     
     --table-header-background-color: hsla(var(--accent-hue), 10%, 20%, 0.5);
     --table-washboard-even-background-color: hsla(var(--accent-hue), 10%, 20%, 0.5);
     --table-washboard-odd-background-color: hsla(var(--accent-hue), 10%, 20%, 0.2);
 
-    --littlefoot-popup-border-color: hsl(var(--accent-hue), var(--widget-saturation), 25%);
-
-    --highlight-background-opacity: 0.15;
+    --highlight-background-opacity: 0.12;
     --selection-background-opacity: 0.85;
 
     /**
@@ -906,7 +907,7 @@ mark.tag.yellow {
     #dark mark,
     #dark mark.yellow {
         background: unset;
-        background-image: linear-gradient(to right, hsla(var(--yellow-hue), 100%, calc(var(--yellow-lightness) - 25%), 0.99) 38.66%, hsla(calc(var(--yellow-hue) + 3), 100%, calc(var(--yellow-lightness) - 20%), 0.99));
+        background-image: linear-gradient(to right, hsla(var(--yellow-hue), 100%, calc(var(--yellow-lightness) - 30%), 0.99) 38.66%, hsla(calc(var(--yellow-hue) + 3), 100%, calc(var(--yellow-lightness) - 27.5%), 0.99));
     }
     #dark mark.tag.yellow {
         background-image: linear-gradient(to bottom right, hsl(var(--yellow-hue), var(--yellow-saturation), calc(var(--yellow-lightness) + 10%)) 38.66%, hsl(calc(var(--yellow-hue) + 3), var(--yellow-saturation), calc(var(--yellow-lightness) - 10%)));
@@ -1081,7 +1082,7 @@ hr {
     margin-top: var(--gap3);
     margin-bottom: var(--gap3);
     display: block;
-    background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0) 0%, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2) 25%, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2) 75%, hsla(var(--background-hsl-core), 0.0) 100%);
+    background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0) 0%, hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2) 25%, hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2) 75%, hsla(var(--background-hsl-core), 0.0) 100%);
 }
 blockquote {
     color: var(--heavy-secondary-foreground-color);
@@ -1137,11 +1138,11 @@ a.anchor {
     background-color: var(--widget-background-color);
     box-shadow: var(--hint-shadow);
 }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
         [class*=hint--]:after,
         [class*=hint--]:before {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            backdrop-filter: saturate(180%) blur(14px);
         }
     }
     /**
@@ -1182,22 +1183,22 @@ a.anchor {
     padding: 1em;
     margin-bottom: var(--gap);
 
-    border-top: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
-    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
-    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-saturation), calc(var(--admonition-lightness) + var(--admonition-left-border-lightness-adjustment)));
-    border-right: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
+    border-top: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-bottom: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
+    border-left: 0.5em solid hsl(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness));
+    border-right: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
     border-radius: var(--img-border-radius);
 
     color: var(--primary-foreground-color);
-    background-color: var(--admonition-background-color);
+    background-color: var(--widget-background-color);
     box-shadow: var(--admonition-shadow);
 
     /*
     --widget-background-opacity: 0.975;
     --widget-background-color: hsla(var(--accent-hue), 10%, 93%, var(--widget-background-opacity));
-    --widget-saturation: 5%;
-    --widget-lightness: 62.5%;
-    --widget-border-color: hsla(var(--accent-hue), var(--widget-saturation), var(--widget-lightness), 0.2);
+    --widget-border-saturation: 5%;
+    --widget-border-lightness: 62.5%;
+    --widget-border-color: hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2);
      */
 
     transition: border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
@@ -1241,7 +1242,7 @@ a.anchor {
  * Simple, Gray "Asides" (No icon and heavy left border)
  */
 .admonition.aside {
-    border-left: 1px solid hsla(var(--accent-hue), var(--widget-saturation), var(--admonition-lightness), 0.15);
+    border-left: 1px solid hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.15);
 }
     /**
      * Disable the icon
@@ -1267,7 +1268,7 @@ a.anchor {
     width: 0.86em;
     padding-left: 0.625em;
     margin-left: -2em;
-    background-color: hsl(var(--accent-hue), var(--widget-saturation), calc(var(--admonition-lightness) + var(--admonition-left-border-lightness-adjustment)));
+    background-color: hsl(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness));
     transition: background-color var(--cubic-bezier-transition), color var(--cubic-bezier-transition);
 }
 /**
@@ -1575,21 +1576,12 @@ a.anchor {
  * The bar itself.
  */
 #menubar {
-    position: absolute;
-    z-index: 10000;
-
     font-size: 1.3em;
     font-weight: 600;
 
     top: 0;
     width: 100%;
     text-align: center;
-
-    border-bottom: 1px solid var(--widget-border-color);
-    background-color: var(--widget-background-color);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    transition: background-color var(--cubic-bezier-transition), border var(--cubic-bezier-transition), box-shadow var(--cubic-bezier-transition), opacity 800ms var(--cubic-bezier-curve), top 800ms var(--cubic-bezier-curve);
 }
     @supports (padding-left: env(safe-area-inset-left)) {
         #menubar {
@@ -1597,94 +1589,33 @@ a.anchor {
             padding-right: env(safe-area-inset-right);
         }
     }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        #menubar {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
-    }
-    /**
-     * For pages that request the design.oled=true property, pure blacks must
-     * be applied (regardless of browser or site's theme setting). This must
-     * too be reflected with a pure black menubar.
-     */
-    html.oled #menubar {
-        background-color: rgba(0, 0, 0, 0.95);
-        border-color: rgba(0, 0, 0, 0.2);
-        overflow: visible;
-    }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        html.oled #menubar {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    }
-/**
- * On small devices, the menu bar floats with fixed positioning above the
- * page. When this happens, the content needs a spacer so it "starts"
- * comfortably away from the floating menu. Otherwise, the content suddenly
- * "snaps" underneath the menu bar when it transitions from absolute to fixed
- * positioning upon scrolling.
- */
-#menubar-height-offset {
-    height: 10.9em;
-    transition: height var(--cubic-bezier-transition)
-}
-/**
- * Part of the "magic" that core.js depends on for it to switch the menu from
- * a relative to floating element when the page scrolls to the designated
- * spot.
- */
-#menubar.float {
-    position: fixed;
-    transform: translate(0, -5.7em);
-}
-#settings-popup.float {
-    position: fixed;
-    top: 3.85em;
-}
-/**
- * If the menu & friends are floating and the core script added the hint to
- * hide when scrolling on small screens into the DOM, we will respect that
- * hint here.
- *
- * "Why two seperate hints, one to hide if on small screens, and another if
- * scrolling on larger screens?" future me's asking. That's because the menu
- * bar on small screens vs. anything larger has entirely different heights, so
- * the amount a user should scroll before we consider hiding it must therefore
- * also be different in order to feel natural for both sizes.
- *
- * "Why not have the core script detect page size and have _it_ handle knowing
- * at what scroll position to slap a single "hide" hint in?" I again here
- * future me asking. What if the user changes the page size without scrolling?
- * CSS of course handles this with responsive design, but the core script
- * would be clueless it's happening unless I add a listener for it, and
- * honestly, at that point it's easier and arguably more clear to have two
- * different "hints" to handle it CSS-side.
- */
-#menubar.float.hide-when-scrolling-on-small-screens,
-#settings-popup.float.hide-when-scrolling-on-small-screens {
-    opacity: 0;
-    pointer-events: none;
-}
-    #menubar.float.hide-when-scrolling-on-small-screens {
-        top: -3.85em;
-    }
 #menubar a {
-    color: var(--heavy-secondary-foreground-color);
+    color: var(--accent-color);
+    color: var(--accent-p3-color);
 }
-    #menubar .active,
-    #menubar a:hover {
-        color: var(--accent-color);
-        color: var(--accent-p3-color);
+    #menubar > a {
+        background-color: unset;
     }
-    #menubar a:hover {
-        background-color: unset !important;
+    #menubar menu a {
+        /*border-radius: 0.25em;*/
+        border-radius: var(--rem-half-gap);
+
+        padding-top: 0.25em;
+        padding-bottom: 0.27em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
     }
+        #menubar menu a.active  {
+            border: 3px solid color(var(--accent-hsl-core) / var(--highlight-background-opacity));
+            border: 3px solid color(var(--accent-p3-core) / var(--highlight-background-opacity));
+            box-shadow: 0 0em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
+        }
 /**
  * The Happy iMac & signature
  * #logo is the element wrapping both components.
  */
 #logo {
+    z-index: 1;
     margin-top: 1.414em;
     display: inline-block;
 }
@@ -1742,13 +1673,13 @@ a.anchor {
     #logo:after {
         position: absolute;
         z-index: -1;
-        top: 0.75rem;
-        left: calc(50% - 8.5rem);
-        height: 5.5rem;
-        width: 5.5rem;
+        top: -1rem;
+        left: calc(50% - 10rem);
+        height: 9rem;
+        width: 18.75rem;
         opacity: 0;
-        transform: scale(0.5);
-        transition: opacity 600ms ease-in, transform 300ms ease-in;
+        transform: scale(0.6);
+        transition: opacity 300ms ease-in, transform 150ms ease-in;
         content: "";
         filter: blur(1em) saturate(200%) hue-rotate(0deg);
         background: conic-gradient(var(--red-color), var(--orange-color), var(--yellow-color), var(--green-color), var(--blue-color), var(--purple-color), var(--red-color));
@@ -1757,11 +1688,16 @@ a.anchor {
         animation: rainbowCycle 10s infinite linear;
         animation-play-state: paused;
     }
+    #logo.active:after,
     #logo:hover:after {
-        opacity: 0.5;
         transform: scale(1);
         animation-play-state: running;
+        opacity: 0.25;
     }
+        #dark #logo.active:after,
+        #dark #logo:hover:after {
+            opacity: 0.3;
+        }
     @keyframes rainbowCycle {
         0% {
             filter: blur(1em) saturate(200%) hue-rotate(0deg);
@@ -1774,22 +1710,9 @@ a.anchor {
     height: 70px;
 }
     #signature path {
-        fill: var(--heavy-secondary-foreground-color);
-    }
-#logo:hover #signature path,
-#signature.active path {
-    fill: hsl(var(--accent-hsl-core));
-    fill: color(var(--accent-p3-core));
-}
-@keyframes worksInSafari {
-    from {
-        fill: var(--heavy-secondary-foreground-color);
-    }
-    to {
-        fill: hsl(var(--accent-hsl-core));
+        fill: var(--accent-color);
         fill: color(var(--accent-p3-core));
     }
-}
 /**
  * The bar's central "menu" contents: Articles, Projects, Contact, and a Settings Button
  */
@@ -1846,7 +1769,7 @@ a.anchor {
  */
 #settings-popup {
     font-weight: 600;
-    color: var(--heavy-secondary-foreground-color);
+    color: var(--primary-foreground-color);
 
     opacity: 0; /* Hidden unless shown by clicking #settings-button-wrapper */
     padding-top: 0.8125em;
@@ -1854,7 +1777,7 @@ a.anchor {
     padding-left: var(--gap);
     padding-right: var(--gap);
     border: 1px solid var(--widget-border-color);
-    background-color: var(--widget-background-color);
+    background-color: var(--glass-background-color);
     box-shadow: var(--hover-shadow);
     border-radius: var(--half-gap);
 
@@ -1876,10 +1799,10 @@ a.anchor {
         transform: scale(1) translateZ(0);
         opacity: 1;
     }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
         #settings-popup {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            backdrop-filter: saturate(180%) blur(14px);
         }
     }
 /**
@@ -2040,25 +1963,12 @@ a.anchor {
  *   • Center the popup modal
  */
 @media(max-width: 324px) {
-    #menubar,
-    #menubar.float {
-        position: relative;
-        transform: unset;
-    }
-    #menubar-height-offset {
-        display: none;
-    }
     #menubar menu li {
         display: block;
     }
         #menubar menu li#settings-button-wrapper {
             margin-bottom: var(--gap);
         }
-    #menubar.float.hide-when-scrolling-on-small-screens,
-    #settings-popup.show.float.hide-when-scrolling-on-small-screens {
-        opacity: 1;
-        pointer-events: auto;
-    }
     #settings-popup {
         margin-left: 0;
         top: 21em;
@@ -2075,24 +1985,23 @@ a.anchor {
  */
 @media(min-width: 700px) {
     #menubar {
+        position: absolute;
         font-size: 1rem;
         text-align: left;
-        position: fixed;
     }
-        #menubar.float {
-            transform: none;
-        }
     #logo {
         position: absolute;
         padding-left: max(var(--gap), env(safe-area-inset-left));
-        padding-top: 0.85em;
+        padding-top: 1.3em;
         margin-top: 0;
     }
         #logo:after {
-            top: -0.6rem;
-            left: -0.625rem;
+            top: -0.1rem;
+            left: -0.1rem;
             height: 4.5rem;
-            width: 4.5rem;
+            width: 9.5rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
         #imac {
             width: 32px;
@@ -2113,7 +2022,7 @@ a.anchor {
         width: auto;
         min-width: unset !important;
         margin-left: -4.36em !important;
-        padding-top: 1em !important;
+        padding-top: 1.41em !important;
     }
         @supports (margin-left: calc(-3.1em - env(safe-area-inset-right))) {
             #settings-button-wrapper {
@@ -2129,36 +2038,19 @@ a.anchor {
             padding-right: var(--half-gap);
         }
         #settings-button-wrapper button svg {
-            padding-bottom: 1px;
+            padding-top: 1px;
             height: 1rem;
         }
-    #menubar.float.hide-when-scrolling-on-small-screens,
-    #menubar.hide-when-scrolling-on-larger-screens,
-    #settings-popup.show.float.hide-when-scrolling-on-small-screens,
-    #settings-popup.show.hide-when-scrolling-on-larger-screens {
-        opacity: 1;
-        pointer-events: auto;
-    }
-        #menubar.float.hide-when-scrolling-on-small-screens,
-        #menubar.hide-when-scrolling-on-larger-screens,
-        #settings-popup.show.hide-when-scrolling-on-larger-screens {
-            top: 0;
-        }
-    #menubar-height-offset {
-        height: 0;
-    }
     #settings-popup {
-        position: fixed;
+        position: absolute;
         margin-left: -417px;
         left: 100%;
     }
     .ignore-accent-color #settings-popup {
         margin-left: -14.2em;
     }
-        #settings-popup,
-        #settings-popup.float,
-        #settings-popup.float.hide-when-scrolling-on-small-screens {
-            top: 3.75em;
+        #settings-popup {
+            top: 3em;
         }
 }
 /**
@@ -2168,7 +2060,9 @@ a.anchor {
  */
 @media(min-width: 900px) {
     #logo:after {
-        left: -0.7rem;
+        left: -0.2rem;
+        top: -0.2rem;
+        width: 9rem;
     }
     #menubar menu li {
         min-width: 8em;
@@ -2178,7 +2072,7 @@ a.anchor {
         margin-left: -455px;
     }
     #settings-button-wrapper {
-        padding-top: 0.875em !important;
+        padding-top: 1.25em !important;
     }
         @supports (margin-left: calc(-3.55em - env(safe-area-inset-right))) {
             #settings-button-wrapper {
@@ -2308,12 +2202,6 @@ a.anchor {
     #dark .column .card:hover svg,
     #dark .column .card:hover video {
         filter: brightness(1);
-    }
-    @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
-        .card {
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
     }
 /**
  * "Updates" and "Articles" are special groups of cards with minor styling
@@ -2888,6 +2776,7 @@ article figure > a:hover {
     .hero-banner img,
     .hero-banner video {
         border-radius: 0;
+        box-shadow: var(--shadow);
     }
 @media(min-width: 700px) {
     .hero-banner {
@@ -2913,7 +2802,7 @@ article figure > a:hover {
 }
 @media(min-width: 900px) {
     .hero-banner {
-        margin-top: -1.975em !important;
+        margin-top: calc(var(--gap) * -1) !important;
     }
     .edge-to-edge.medium {
         max-width: 1000px;
@@ -3336,9 +3225,9 @@ footer {
     --button-padding: 0 1em;
     --button-text-color: white;
 
-    --popover-background-color: var(--widget-background-color);
+    --popover-background-color: var(--glass-background-color);
     --popover-border-radius: 0.5rem;
-    --popover-border: 1px solid var(--littlefoot-popup-border-color);
+    --popover-border: 1px solid var(--widget-border-color);
     --popover-font-size: var(--h6-size);
     --popover-horizontal-padding: var(--gap);
     --popover-max-height: 25em;
@@ -3363,11 +3252,11 @@ footer {
 .littlefoot__popover p:last-child {
     margin-bottom: 0;
 }
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
     .littlefoot__content,
     .littlefoot__tooltip {
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(14px);
+        backdrop-filter: saturate(180%) blur(14px);
     }
 }
 .littlefoot__button,

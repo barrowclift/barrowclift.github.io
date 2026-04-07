@@ -96,6 +96,10 @@ Emulates Hackers News' "interesting" look & feel.
             -webkit-backdrop-filter: unset !important;
             backdrop-filter: unset !important;
         }
+            #menubar menu a.active {
+                border: unset;
+                box-shadow: unset;
+            }
         @media(min-width: 700px) {
             #menubar menu li a.nitro-link {
                 margin-left: -4.5em;
@@ -260,9 +264,6 @@ Emulates Hackers News' "interesting" look & feel.
                 margin-left: 4vw;
                 margin-right: 4vw;
             }
-            #menubar-height-offset {
-                display: none;
-            }
             .button {
                 padding: 0.375em;
                 width: auto;
@@ -313,10 +314,10 @@ Emulates Hackers News' "interesting" look & feel.
                 left: 0rem;
             }
             header {
-                padding-top: 0.3em !important;
+                padding-top: 0.4em !important;
             }
             #settings-button-wrapper {
-                padding-top: 1em !important;
+                padding-top: 0.75em !important;
             }
         }
         html {
@@ -337,7 +338,8 @@ Emulates Hackers News' "interesting" look & feel.
         #dark hr {
             border-bottom: 2px solid rgba(255,255,255,0.2);
         }
-        #menubar a:hover {
+        #menubar a:hover,
+        #menubar menu a.active {
             background-color: transparent !important;
         }
         #settings-popup,

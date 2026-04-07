@@ -1,6 +1,6 @@
 <div id="menubar" class="no-select">
     <a href="{{ site.baseurl }}/">
-        <header id="logo">
+        <header id="logo" class="{% if page.dir == '/' %}active{% endif %}">
             {% if page.error %}
                 {% include sad-imac.html %}
             {% else %}
@@ -69,11 +69,3 @@ with the written spec, going out of my way to meet it.
         {% endif %}
     </div>
 {% endif %}
-<!--
-On small devices, the menu bar floats with fixed positioning above the page.
-When this happens, the content needs a spacer so it "starts" comfortably away
-from the floating menu. Otherwise, the content suddenly "snaps" underneath the
-menu bar when it transitions from absolute to fixed positioning upon
-scrolling.
--->
-<div id="menubar-height-offset"></div>

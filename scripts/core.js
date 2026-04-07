@@ -95,12 +95,13 @@ function changeAppearance(appearance) {
     document.querySelector(".well." + appearance)?.classList.add("active");
     
     let inSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if ("light" == appearance || ("auto" == appearance && !inSystemDarkMode)) {
-        document.getElementById("logo-speech-bubble").textContent = "Hi there! Hope you're having a good day.";
-        html.removeAttribute("id");
-    } else if ("dark" == appearance || ("auto" == appearance && inSystemDarkMode)) {
+    let forceDarkMode = document.getElementsByTagName("html")[0].classList.contains("force-dark-mode");
+    if ("dark" == appearance || forceDarkMode || ("auto" == appearance && inSystemDarkMode)) {
         document.getElementById("logo-speech-bubble").textContent = "Stay cool, dude.";
         html.setAttribute("id", "dark");
+    } else {
+        document.getElementById("logo-speech-bubble").textContent = "Hi there! Hope you're having a good day.";
+        html.removeAttribute("id");
     }
 
     refreshBrowserThemeColor();
@@ -142,27 +143,27 @@ function refreshBrowserThemeColor() {
     let darkThemeColor;
     let lightThemeColor;
     let accent = getCookie("accent");
-    if (accent == "purple") {
-        darkThemeColor = "#29242D";
-        lightThemeColor = "#F1EDF1";
-    } else if (accent == "pink") {
-        darkThemeColor = "#2C2328";
-        lightThemeColor = "#F2EDF0";
-    } else if (accent == "red") {
-        darkThemeColor = "#2C2424";
-        lightThemeColor = "#F2EEED";
-    } else if (accent == "orange") {
-        darkThemeColor = "#2B2923";
-        lightThemeColor = "#F1F0ED";
-    } else if (accent == "yellow") {
-        darkThemeColor = "#2B2A22";
-        lightThemeColor = "#F1F1ED";
-    } else if (accent == "green") {
-        darkThemeColor = "#242B26";
-        lightThemeColor = "#EDF1EF";
+    if (accent === "purple") {
+        darkThemeColor = "#1F1A22";
+        lightThemeColor = "#FDFBFE";
+    } else if (accent === "pink") {
+        darkThemeColor = "#221A1E";
+        lightThemeColor = "#FEFBFD";
+    } else if (accent === "red") {
+        darkThemeColor = "#221A1A";
+        lightThemeColor = "#FEFBFB";
+    } else if (accent === "orange") {
+        darkThemeColor = "#22201B";
+        lightThemeColor = "#FEFCFB";
+    } else if (accent === "yellow") {
+        darkThemeColor = "#23221B";
+        lightThemeColor = "#FEFDFB";
+    } else if (accent === "green") {
+        darkThemeColor = "#1C231D";
+        lightThemeColor = "#FCFEFC";
     } else {
-        darkThemeColor = "#23282C";
-        lightThemeColor = "#ECF0F1";
+        darkThemeColor = "#1B1F23";
+        lightThemeColor = "#FBFCFE";
     }
     let darkThemeColorOverride = document.querySelector("meta[name='dark-theme-color-override']")?.content;
     let lightThemeColorOverride = document.querySelector("meta[name='light-theme-color-override']")?.content;
@@ -180,88 +181,6 @@ function toggleSettingsPopup() {
     let popup = document.getElementById("settings-popup");
     popup.classList.toggle("show");
     document.getElementById("settings-button").classList.toggle("active");
-}
-
-/**
- * Depending on the provided argument and current DOM state, will either:
- *
- * - Do nothing (the menu remains whatever state it's in)
- * - Adjust the relatively positioned menu to become a floating menu
- * - Hide a currently floating menu
- * - Show a hidden floating menu
- * - Adjust a floating menu to become relatively positioned
- */
-let previousScrollTop = -1;
-let menubar = document.getElementById("menubar");
-let settingsPopup = document.getElementById("settings-popup");
-let cumulativeScrollDown = 0;
-let cumulativeScrollUp = 0;
-let isFirstScrollEvent = true;
-function updateMagicMenu() {
-    let newScrollTop = html.scrollTop;
-    /**
-     * We need to know how much cumulative scroll has been made in one
-     * direction or another to not have the hiding & showing of floating menus
-     * be IMMEDIATE (doesn't feel good from a user perspective, needs a little
-     * buffer).
-     *
-     * The logic is intentionally skipped / NOT counted as a cumulative scroll
-     * in either direction if previousScrollTop == -1 (i.e. if this is our
-     * very first scroll event, which may very well be the browser "snapping"
-     * a reloaded page to the previous scroll position. When that happens, we
-     * don't want the menu hidden on immediate page load!)
-     *
-     * This is "safe" to do even if the page load is "fresh" (no browser
-     * scroll event), since the first scroll event is largerly ignored ANYWAYS
-     * (we only consider doing "magic menu" stuff if the scroll position is at
-     * least 100 pixels down, we have plenty of buffer that can be safely
-     * ignored).
-     */
-    if (newScrollTop - previousScrollTop > 0 && previousScrollTop != -1 && newScrollTop > 125) {
-        cumulativeScrollDown += newScrollTop - previousScrollTop;
-    } else {
-        cumulativeScrollDown = 0;
-    }
-    if (previousScrollTop - newScrollTop > 0 && previousScrollTop != -1) {
-        cumulativeScrollUp += previousScrollTop - newScrollTop
-    } else {
-        cumulativeScrollUp = 0;
-    }
-
-    if (newScrollTop > 125) {
-        if ((newScrollTop - previousScrollTop < 0 && cumulativeScrollUp > 150) || previousScrollTop == -1) {
-            menubar.classList.remove("hide-when-scrolling-on-small-screens");
-            settingsPopup.classList.remove("hide-when-scrolling-on-small-screens");
-        } else if (cumulativeScrollDown > 300) {
-            menubar.classList.add("hide-when-scrolling-on-small-screens");
-            settingsPopup.classList.add("hide-when-scrolling-on-small-screens");
-        }
-        menubar.classList.add("float");
-        settingsPopup.classList.add("float");
-    } else {
-        if (cumulativeScrollUp > 150) {
-            menubar.classList.remove("hide-when-scrolling-on-small-screens");
-            settingsPopup.classList.remove("hide-when-scrolling-on-small-screens");
-        }
-        if (newScrollTop > 104) {
-            menubar.classList.add("float");
-            settingsPopup.classList.add("float");
-        } else {
-            menubar.classList.remove("float");
-            settingsPopup.classList.remove("float");
-        }
-        if (newScrollTop > 50) {
-            if (newScrollTop - previousScrollTop < 0 && cumulativeScrollUp > 150) {
-                menubar.classList.remove("hide-when-scrolling-on-larger-screens");
-                settingsPopup.classList.remove("hide-when-scrolling-on-larger-screens");
-            } else if (cumulativeScrollDown > 300) {
-                menubar.classList.add("hide-when-scrolling-on-larger-screens");
-                settingsPopup.classList.add("hide-when-scrolling-on-larger-screens");
-            }
-        }
-    }
-    
-    previousScrollTop = newScrollTop;
 }
 
 /**
@@ -287,11 +206,6 @@ ready(function() {
         anchorsEnabled,
         symbol: "¶",
         query: "h2,h3"
-    });
-
-    // Dynamic hiding based on scroll position and page type
-    addEventListener("scroll", (event) => {
-        updateMagicMenu();
     });
 
     // Ensure we react to changes in the browser's reported "preferred color scheme" when in "auto" mode

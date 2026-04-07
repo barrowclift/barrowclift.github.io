@@ -75,10 +75,10 @@ html, body {
         height: auto;
         margin: 0 !important;
     }
-        @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+        @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
             #parallax-foreground {
-                -webkit-backdrop-filter: saturate(180%) blur(20px);
-                backdrop-filter: saturate(180%) blur(20px);
+                -webkit-backdrop-filter: saturate(180%) blur(14px);
+                backdrop-filter: saturate(180%) blur(14px);
                 background-color: rgba(255, 255, 255, 0.95);
             }
         }
@@ -103,7 +103,6 @@ html, body {
         position: sticky;
         top: 0;
         height: 0; /* Don't push content down */
-        box-shadow: none;
         min-width: 100vw;
     }
     body {

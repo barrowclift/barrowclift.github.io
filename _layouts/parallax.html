@@ -79,7 +79,7 @@ Currently used for:
                 border-top: 1px solid var(--widget-border-color);
                 box-shadow: 0 -20px 20px -20px rgba(115, 115, 115, 0.75);
             }
-                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+                @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
                     #parallax-foreground {
                         background-color: rgba(255, 255, 255, 0.95);
                     }
@@ -97,7 +97,7 @@ Currently used for:
                 html#dark.oled #parallax-foreground {
                     background-color: hsl(0, 0%, 4%, 0.9) !important;
                 }
-                @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+                @supports ((-webkit-backdrop-filter: saturate(180%) blur(14px)) or (backdrop-filter: saturate(180%) blur(14px))) {
                     html#dark.oled #parallax-foreground {
                         background-color: hsl(0, 0%, 4%, 0.75) !important;
                     }
@@ -131,6 +131,10 @@ Currently used for:
             #signature path,
             #settings-button-wrapper button svg path {
                 fill: {{ page.menubar.light.foreground-color }};
+            }
+            #menubar menu a.active {
+                border: unset;
+                box-shadow: unset;
             }
             {% if page.menubar.dark.active != nil %}
                 #menubar a:hover,

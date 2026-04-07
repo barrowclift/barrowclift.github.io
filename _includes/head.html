@@ -35,13 +35,13 @@
             {% endif %}
         {% endif %}
     {% else %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-12.min.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/min/core-13.min.css" type="text/css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/min/print-1.min.css" type="text/css" media="print">
         {% if page.layout == "parallax" %}
             {% if page.parallax.banner-video != nil %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-video-1.min.css" type="text/css">
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-video-2.min.css" type="text/css">
             {% else %}
-                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-image-1.min.css" type="text/css">
+                <link rel="stylesheet" href="{{ site.baseurl }}/css/min/parallax-image-2.min.css" type="text/css">
             {% endif %}
         {% endif %}
     {% endif %}
@@ -78,33 +78,33 @@
         let isSiteThemeAuto = getCookie("appearance") == null || getCookie("appearance") == "auto";
         let isSiteDark = getCookie("appearance") == "dark" || (osDarkModeEnabled && isSiteThemeAuto);
 
-        let accentColor="blue"
+        let accent="blue"
         if (getCookie("accent")) {
             document.getElementsByTagName("html")[0].classList.add(getCookie("accent"));
-            accentColor = getCookie("accent");
+            accent = getCookie("accent");
         }
-        let lightBaseThemeColor, darkBaseThemeColor;
-        if (accentColor === "purple") {
-            darkBaseThemeColor = "#29242D";
-            lightBaseThemeColor = "#F1EDF1";
-        } else if (accentColor === "pink") {
-            darkBaseThemeColor = "#2C2428";
-            lightBaseThemeColor = "#F2EDF0";
-        } else if (accentColor === "red") {
-            darkBaseThemeColor = "#2C2424";
-            lightBaseThemeColor = "#F2EEED";
-        } else if (accentColor === "orange") {
-            darkBaseThemeColor = "#2B2923";
-            lightBaseThemeColor = "#F1F0ED";
-        } else if (accentColor === "yellow") {
-            darkBaseThemeColor = "#2B2A22";
-            lightBaseThemeColor = "#F1F1ED";
-        } else if (accentColor === "green") {
-            darkBaseThemeColor = "#242B26";
-            lightBaseThemeColor = "#EDF1EF";
+        let lightThemeColor, darkThemeColor;
+        if (accent === "purple") {
+            darkThemeColor = "#1F1A22";
+            lightThemeColor = "#FDFBFE";
+        } else if (accent === "pink") {
+            darkThemeColor = "#221A1E";
+            lightThemeColor = "#FEFBFD";
+        } else if (accent === "red") {
+            darkThemeColor = "#221A1A";
+            lightThemeColor = "#FEFBFB";
+        } else if (accent === "orange") {
+            darkThemeColor = "#22201B";
+            lightThemeColor = "#FEFCFB";
+        } else if (accent === "yellow") {
+            darkThemeColor = "#23221B";
+            lightThemeColor = "#FEFDFB";
+        } else if (accent === "green") {
+            darkThemeColor = "#1C231D";
+            lightThemeColor = "#FCFEFC";
         } else {
-            darkBaseThemeColor = "#23282C";
-            lightBaseThemeColor = "#ECF0F1";
+            darkThemeColor = "#1B1F23";
+            lightThemeColor = "#FBFCFE";
         }
 
         /**
@@ -113,11 +113,11 @@
          */
         if (isSiteDark) {
             document.getElementsByTagName("html")[0].setAttribute("id", "dark");
-            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",darkBaseThemeColor);
-            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",darkBaseThemeColor);
+            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content",darkThemeColor);
+            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",darkThemeColor);
         } else {
-            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lightBaseThemeColor);
-            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lightBaseThemeColor);
+            document.querySelector("meta#dark-base-theme-color")?.setAttribute("content", lightThemeColor);
+            document.querySelector("meta#light-base-theme-color")?.setAttribute("content",lightThemeColor);
         }
 
         /**
@@ -144,7 +144,7 @@
         <script async src="{{ site.baseurl }}/scripts/littlefoot-4.1.1.js"></script>
         <script async src="{{ site.baseurl }}/scripts/core.js"></script>
     {% else %}
-        <script async src="{{ site.baseurl }}/scripts/min/core-7.min.js"></script>
+        <script async src="{{ site.baseurl }}/scripts/min/core-8.min.js"></script>
     {% endif %}
     <!-- Some pages should not have anchors (like "Writings"), disable them if needed. -->
     <script>anchorsEnabled = {{ page.design.show-anchors }};</script>
