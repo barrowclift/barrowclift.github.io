@@ -1684,7 +1684,10 @@ a.anchor {
         filter: blur(1em) saturate(200%) hue-rotate(0deg);
         background: conic-gradient(var(--red-color), var(--orange-color), var(--yellow-color), var(--green-color), var(--blue-color), var(--purple-color), var(--red-color));
         background: conic-gradient(var(--red-p3-color), var(--orange-p3-color), var(--yellow-p3-color), var(--green-p3-color), var(--blue-p3-color), var(--purple-p3-color), var(--red-p3-color));
-        border-radius: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
         animation: rainbowCycle 10s infinite linear;
         animation-play-state: paused;
     }
@@ -2001,7 +2004,9 @@ a.anchor {
             height: 4.5rem;
             width: 9.5rem;
             border-top-left-radius: 0;
+            border-top-right-radius: 100%;
             border-bottom-left-radius: 0;
+            border-bottom-right-radius: 100%;
         }
         #imac {
             width: 32px;
