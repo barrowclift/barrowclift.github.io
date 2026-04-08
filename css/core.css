@@ -1597,17 +1597,17 @@ a.anchor {
         background-color: unset;
     }
     #menubar menu a {
-        /*border-radius: 0.25em;*/
         border-radius: var(--rem-half-gap);
+        border: 3px solid transparent;
 
         padding-top: 0.25em;
         padding-bottom: 0.27em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
         #menubar menu a.active  {
-            border: 3px solid color(var(--accent-hsl-core) / var(--highlight-background-opacity));
-            border: 3px solid color(var(--accent-p3-core) / var(--highlight-background-opacity));
+            border-color: color(var(--accent-hsl-core) / var(--highlight-background-opacity));
+            border-color: color(var(--accent-p3-core) / var(--highlight-background-opacity));
             box-shadow: 0 0em 0.87em -0.2em hsla(var(--accent-hue), var(--accent-saturation), calc(var(--accent-lightness) - 3%), 0.2);
         }
 /**
@@ -1729,7 +1729,7 @@ a.anchor {
         margin: 0;
         padding-bottom: 0.5em;
         padding-top: 0.725em;
-        min-width: 24vw;
+        min-width: 16vw;
     }
         #menubar menu li a {
             text-align: center;
@@ -1785,7 +1785,7 @@ a.anchor {
     transition-duration: 250ms, 250ms, var(--cubic-bezier-time), var(--cubic-bezier-time);
     transition-timing-function: ease, ease, var(--cubic-bezier-curve), var(--cubic-bezier-curve);
     transform: scale(0.1) translateZ(0);
-    transform-origin: 95% 0;
+    transform-origin: 85% 0;
 
     float: right;
     position: absolute;
@@ -1962,7 +1962,7 @@ a.anchor {
  *   • Reflow menu items to each populate their own row (no more width available to remain inline)
  *   • Center the popup modal
  */
-@media(max-width: 324px) {
+@media(max-width: 355px) {
     #menubar menu li {
         display: block;
     }
@@ -2011,9 +2011,12 @@ a.anchor {
             height: 47px;
         }
     #menubar menu li {
-        min-width: 16vw;
         padding-top: var(--body-line-height);
     }
+        #menubar menu a {
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+        }
     #settings-button-wrapper {
         position: absolute;
         right: 0;
@@ -2045,6 +2048,7 @@ a.anchor {
         position: absolute;
         margin-left: -417px;
         left: 100%;
+        transform-origin: 95% 0;
     }
     .ignore-accent-color #settings-popup {
         margin-left: -14.2em;
