@@ -24,6 +24,6 @@ Thanks for stopping by, and I hope one of my works here brightens your day.
 
 This website was made possible with the help of [numerous creative individuals and open source projects](http://localhost:4000/about/shoutouts/).
 
-[I have never and will never use AI for my personal work](/about/no-ai/).
+[I have never and will never use AI for my personal work](/about/no-ai).
 
 -----
