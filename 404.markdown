@@ -22,9 +22,11 @@ To pass the time until then, please consider my recent articles below.
         <a href="{{ post.url }}">
             <div class="card">
                 <div class="label">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%B %-d, %Y" }}
-                    </time>
+                    <small>
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+                    </small>
                     <h4 class="primary">
                         {{ post.title }}
                     </h4>

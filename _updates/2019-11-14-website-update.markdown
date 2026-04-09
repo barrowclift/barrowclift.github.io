@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "Website Update"
 date: 2019-11-16 15:21:08
 

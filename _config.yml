@@ -20,6 +20,9 @@ paginate: 5 # Number of posts to be shown on each each paginated page.
 markdown: kramdown
 highlighter: rouge
 show_drafts: False
+ai:
+    poisoned-well-date: "January 1, 2023"
+    show-declaration: True
 future: False
 enable-card-colors: False
 

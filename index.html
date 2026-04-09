@@ -32,32 +32,45 @@ design:
                 {% break %}
             {% endif %}
             {% if post.link %}
-            <a title="Go to {{ post.link }}" href="{{ post.link }}">
+                {% if post.length == "extended" %}
+                    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                {% elsif post.type == "announcement" %}
+                    <a href="{{ post.link }}">
+                {% elsif post.link contains "http" %}
+                    <a title="Visit {{ post.link }}" href="{{ post.link }}">
+                {% else %}
+                    <a href="{{ post.link }}">
+                {% endif %}
             {% else %}
-            <a title="Permalink for &quot;{{ post.title }}&quot;" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {% endif %}
                 <div class="card">
                     <div class="label">
                         {% if post.type == "project-update" and post.project-update-image %}
-                            <mark class="tag orange">Project</mark> 
-                            <time datetime="{{ post.date | date_to_xmlschema }}">
-                                {{ post.date | date: "%B %-d, %Y" }}
-                            </time>
-                            <img src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
-                        {% else %}
-                            <div class="metadata">
-                                {% if post.type == "article" or post.type == "article-update" %}
-                                    <mark class="tag blue">Article</mark>
-                                {% elsif post.type == "project-update" %}
-                                    <mark class="tag orange">Project</mark>
-                                {% endif %} 
+                            <small>
                                 <time datetime="{{ post.date | date_to_xmlschema }}">
                                     {{ post.date | date: "%B %-d, %Y" }}
                                 </time>
+                                <mark class="tag orange">Project</mark> 
+                            </small>
+                            <img src="{{ site.dropbox }}/{{ post.project-update-image }}"/>
+                        {% else %}
+                            <div class="metadata">
+                                <small>
+                                    {% if post.type == "article" or post.type == "article-update" %}
+                                        <mark class="tag blue">Article</mark>
+                                    {% elsif post.type == "project-update" %}
+                                        <mark class="tag orange">Project</mark>
+                                    {% elsif post.type == "announcement" %}
+                                        <mark class="tag red">Announcement</mark>
+                                    {% endif %}
+                                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                                        {{ post.date | date: "%B %-d, %Y" }}
+                                    </time>
+                                </small>
                             </div>
                             <h4 class="primary">
-                                
-                                {{ post.title }} {% if post.link and post.link contains "http" %}↦{% endif %}
+                                {{ post.title }} {% if post.link and post.link contains "http" and post.length != "extended" %}↦{% endif %}
                             </h4>
                             {% if post.excerpt %}
                                 <h5 class="secondary">{{ post.excerpt }}</h5>

@@ -28,7 +28,7 @@ Currently used for pages such as:
     <body>
         {% include menubar.html %}
         <main>
-            {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+            {% if page.dir contains '/obsolete/' or page.type == 'article' or page.url contains '/articles/' and page.url != '/articles/' %}
                 {% include article.html %}
             {% elsif page.type == "project-update" or page.type == "article-update" %}
                 {% include update.html %}

@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "New “SMiLE: Heroes and Villains Mix” Edition"
 date: 2024-05-29 11:42:22-0400
 

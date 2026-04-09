@@ -1,5 +1,5 @@
-{% if page.continuation.next-page == null and page.article.show-footer and paginator.page != nil or page.url contains '/articles/' or page.dir contains '/obsolete/' %}
-    {% if page.url contains '/articles/' and page.url != '/articles/' or page.dir contains '/obsolete/' %}
+{% if page.dir contains '/obsolete/' or page.url contains '/articles/' or page.continuation.next-page == null and page.article.show-footer and paginator.page != nil %}
+    {% if page.dir contains '/obsolete/' or page.url contains '/articles/' and page.url != '/articles/' %}
         {% if page.article.show-stamp %}
             <div id="farewell-stamp">
                 <a href="/about">⌘</a>

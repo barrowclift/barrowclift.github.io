@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "Announcing “Nitro”"
 date: 2020-03-15 15:53:58-0400
 

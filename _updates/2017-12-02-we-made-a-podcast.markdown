@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: extended
 title: |
     We Made a Podcast!
 date: 2017-12-02 23:19:40

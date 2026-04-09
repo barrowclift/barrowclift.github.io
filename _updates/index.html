@@ -7,24 +7,40 @@ title: "Updates"
 <div class="cards updates column">
 {% assign updates = site.updates | sort: "date" | reverse %}
 {% for update in updates %}
-    {% if update.type != "project-update" and update.type != "article-update" %}
+    {% if update.type != "project-update" and update.type != "article-update" and update.type != "announcement" %}
         {% continue %}
     {% endif %}
-    <a href="{{ update.url }}">
+    {% if update.link %}
+        {% if update.length == "extended" %}
+            <a href="{{ update.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {% elsif post.type == "announcement" %}
+            <a href="{{ post.link }}">
+        {% elsif update.link contains "http" %}
+            <a title="Visit {{ update.link }}" href="{{ update.link }}">
+        {% else %}
+            <a href="{{ update.link }}">
+        {% endif %}
+    {% else %}
+        <a href="{{ update.url | prepend: site.baseurl | replace: '//', '/' }}">
+    {% endif %}
         <div class="card">
             <div class="label">
                 <div class="metadata">
-                    {% if update.type == "article-update" %}
-                        <mark class="tag blue">Article</mark>
-                    {% elsif update.type == "project-update" %}
-                        <mark class="tag orange">Project</mark>
-                    {% endif %}
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ update.date | date: "%B %-d, %Y" }}
-                    </time>
+                    <small>
+                        <time datetime="{{ update.date | date_to_xmlschema }}">
+                            {{ update.date | date: "%B %-d, %Y" }}
+                        </time>
+                        {% if update.type == "article-update" %}
+                            <mark class="tag blue">Article</mark>
+                        {% elsif update.type == "project-update" %}
+                            <mark class="tag orange">Project</mark>
+                        {% elsif update.type == "announcement" %}
+                            <mark class="tag red">Announcement</mark>
+                        {% endif %}
+                    </small>
                 </div>
                 <h4 class="primary">
-                    {{ update.title }} {% if update.link and update.link contains "http" %}↦{% endif %}
+                    {{ update.title }} {% if update.link and update.link contains "http" and update.length != "extended" %}↦{% endif %}
                 </h4>
                 <h5 class="secondary">
                     {{ update.excerpt }}

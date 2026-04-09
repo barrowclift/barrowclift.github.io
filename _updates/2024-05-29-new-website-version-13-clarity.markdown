@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "Website Design Refresh"
 date: 2024-05-29 11:43:22-0400
 

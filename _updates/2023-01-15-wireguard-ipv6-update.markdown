@@ -1,5 +1,6 @@
 ---
 type: article-update
+length: short
 title: "IPv6 support added to Wireguard Guide"
 date: 2023-01-15 11:42:22-0500
 

@@ -14,7 +14,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label" style="background-color:{{ post.card.light.background-color }};">
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.title }}</h4>
                 <h5 class="secondary" style="color:{{ post.card.light.foreground-color }} !important;">{{ post.excerpt }}</h5>
             </div>
@@ -33,7 +33,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label" style="background-color:{{ post.card.dark.background-color }};">
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.title }}</h4>
                 <h5 class="secondary" style="color:{{ post.card.dark.foreground-color }} !important;">{{ post.excerpt }}</h5>
             </div>
@@ -60,7 +60,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label" style="background-color:{{ post.card.background-color }};">
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}" style="color:{{ post.card.foreground-color }} !important;">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary" style="color:{{ post.card.foreground-color }} !important;">{{ post.title }}</h4>
                 <h5 class="secondary" style="color:{{ post.card.foreground-color }} !important;">{{ post.excerpt }}</h5>
             </div>
@@ -85,7 +85,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label" style="background-color:hsl(0, 0%, 93%);">
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="color:hsl(0, 0%, 12%) !important;">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}" style="color:hsl(0, 0%, 12%) !important;">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary" style="color:hsl(0, 0%, 12%) !important;">{{ post.title }}</h4>
                 <h5 class="secondary" style="color:hsl(0, 0%, 12%) !important;">{{ post.excerpt }}</h5>
             </div>
@@ -109,7 +109,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label" style="background-color:hsl(0, 0%, 16%);">
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="color:hsl(0, 0%, 100%) !important;">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}" style="color:hsl(0, 0%, 100%) !important;">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary" style="color:hsl(0, 0%, 100%) !important;">{{ post.title }}</h4>
                 <h5 class="secondary" style="color:hsl(0, 0%, 100%) !important;">{{ post.excerpt }}</h5>
             </div>
@@ -139,7 +139,7 @@
                 <img alt="Banner image for '{{ post.title }}'" src="/images/share-banner.jpg">
             {% endif %}
             <div class="label">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></small>
                 <h4 class="primary">{{ post.title }}</h4>
                 <h5 class="secondary">{{ post.excerpt }}</h5>
             </div>

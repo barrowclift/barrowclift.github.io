@@ -180,7 +180,7 @@ ql () {
 Aliases
 -------
 
-Last but not least there's aliases which &mdash; if you aren't aware &mdash; are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
+Last but not least there's aliases which&mdash;if you aren't aware&mdash;are similar to shell functions but have the distinct difference of only being available from the interactive shell (so they won't work in scripts like functions do). They also don't have the argument flexibility that functions do so it's best to view aliases as a way to save commonly-used options for particular commands that don't require command line arguments. Here are some of my aliases to help you get started.
 
 {% highlight bash %}
 # Print out every path that constitutes the current $PATH

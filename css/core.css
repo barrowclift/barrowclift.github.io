@@ -458,8 +458,10 @@ article {
 }
 main {
     max-width: 33em;
-    margin: var(--gap2) auto;
-    padding-bottom: var(--gap3);
+    margin-top: var(--gap2);
+    margin-bottom: var(--gap3);
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 5%;
     padding-right: 5%;
     /**
@@ -531,26 +533,30 @@ small {
     margin-bottom: var(--half-gap);
     transition: color var(--cubic-bezier-transition);
 }
-time,
-small {
-    display: block;
-
+/**
+ * Time is only ever a single element always wrapped within the encompassing
+ * small element (which could contain a permalink icon, tags, and other
+ * article metadata).
+ *
+ * It should always be atop the header.
+ */
+small,
+time {
     font-style: italic;
     font-weight: 600;
     font-size: 1rem;
 
     margin-top: 0;
-    margin-bottom: 0.25em;
-
+    
     color: var(--secondary-foreground-color);
 }
-    /**
-     * While small is similar in style to time in nearly every way, small
-     * _can_ be displayed either below or above the content it's providing
-     * secondary text for, so applying a top margin.
-     */
+    time {
+        display: inline-block;
+        margin-bottom: 0;
+    }
     small {
-        margin-top: 0.25em;
+        display: block;
+        margin-bottom: 0.25em;
     }
 
 
@@ -820,6 +826,12 @@ mark {
         padding: 0;
         background-color: transparent;
         border: none;
+    }
+    /**
+     * Disable link highlighting if it encapsulates a <mark>
+     */
+    a:has(mark:first-child:last-child) {
+        background-color: transparent;
     }
 mark.tag {
     display: inline-block;

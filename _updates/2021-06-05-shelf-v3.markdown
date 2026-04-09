@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "Shelf 3.0 Released"
 date: 2021-06-05 12:25:39-0400
 

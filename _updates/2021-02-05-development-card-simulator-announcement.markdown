@@ -1,5 +1,6 @@
 ---
 type: project-update
+length: short
 title: "Announcing the “Development Card Simulator”"
 date: 2021-02-05 19:23:32-0500
 
