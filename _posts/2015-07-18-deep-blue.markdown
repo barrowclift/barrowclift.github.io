@@ -3,7 +3,7 @@ title: "Deep Blue"
 date: 2015-07-18 21:13:39
 
 design:
-    force_dark_mode: true
+    force-dark-mode: true
     oled: true
     banner-disable-dark-mode-dimming: true
     accent:
