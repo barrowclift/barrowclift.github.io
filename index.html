@@ -57,6 +57,9 @@ design:
                         {% else %}
                             <div class="metadata">
                                 <small>
+                                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                                        {{ post.date | date: "%B %-d, %Y" }}
+                                    </time>
                                     {% if post.type == "article" or post.type == "article-update" %}
                                         <mark class="tag blue">Article</mark>
                                     {% elsif post.type == "project-update" %}
@@ -64,9 +67,6 @@ design:
                                     {% elsif post.type == "announcement" %}
                                         <mark class="tag red">Announcement</mark>
                                     {% endif %}
-                                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                                        {{ post.date | date: "%B %-d, %Y" }}
-                                    </time>
                                 </small>
                             </div>
                             <h4 class="primary">

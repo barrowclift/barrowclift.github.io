@@ -2902,6 +2902,20 @@ article figure > a:hover {
         margin-right: min(var(--gap), 1.75vw);
     }
 }
+    /**
+     * Slightly tweaked sizing for edge-to-edge arrays of just two items
+     * instead of the assumed three.
+     */
+    .edge-to-edge.array.duo img,
+    .edge-to-edge.array.duo video {
+        width: 45vw;
+    }
+    @media(min-width: 900px) {
+        .edge-to-edge.array.duo img,
+        .edge-to-edge.array.duo video {
+            max-width: 22rem;
+        }
+    }
 /**
  * "Why not display: block? Then your margins are much easier to manage!"
  * 
