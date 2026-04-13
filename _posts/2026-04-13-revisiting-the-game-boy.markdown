@@ -3,7 +3,7 @@ title: "Revisiting the Game Boy"
 date: 2026-04-13 07:18:49-0400
 
 excerpt: |
-    Escaping the modern tech industry to get back to basics and explore the extensive Game Boy catalog.
+    Escaping the modern tech industry, getting back to basics, and exploring the extensive Game Boy catalog.
 categories:
     - Technology
     - iOS
