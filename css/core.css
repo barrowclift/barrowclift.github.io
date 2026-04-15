@@ -30,7 +30,7 @@
      * -------------------
      */
     
-    --font-size: 14px;
+    --font-size: 16px;
     --h1-size: 2.074em;
     --h2-size: 1.728em;
     --h3-size: 1.44em;
@@ -456,6 +456,9 @@ main,
 article {
     text-align: center;
 }
+article {
+    text-wrap: balance;
+}
 main {
     max-width: 33em;
     margin-top: var(--gap2);
@@ -835,18 +838,15 @@ mark {
     }
 mark.tag {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: text-bottom;
 
     font-style: normal;
-    font-size: 0.53em;
+    font-size: 0.75em;
     font-weight: 600;
-    line-height: 1em;
+    line-height: 1.3em;
 
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    margin-top: -2px;
     margin-left: 0.25em;
     margin-right: 0.25em;
 
@@ -1588,7 +1588,7 @@ a.anchor {
  * The bar itself.
  */
 #menubar {
-    font-size: 1.3em;
+    font-size: 1.1rem;
     font-weight: 600;
 
     top: 0;
@@ -1806,8 +1806,8 @@ a.anchor {
     position: absolute;
     text-align: center;
     left: 85%;
-    margin-left: -252px;
-    top: 11.25em;
+    margin-left: -305px;
+    top: 9.5em;
     z-index: 10000;
 }
     #settings-popup.show {
@@ -1950,19 +1950,13 @@ a.anchor {
 }
 /**
  * For screens less than 400px wide:
- *   • Put the wells on their own row (no longer inline with their labels)
  *   • Shift the popup to accomidate that width change
  */
 @media(max-width: 400px) {
-    html:not(.ignore-accent-color) .wells {
-        margin-left: 0;
-        display: block;
-        margin-top: var(--half-gap);
-        text-align: left;
-    }
     #settings-popup {
-        margin-left: -150px;
+        margin-left: -281px;
         padding: var(--three-fourths-gap);
+        transform-origin: 95% 0;
     }
         .ignore-accent-color #settings-popup {
             margin-left: -10.25em;
@@ -1973,11 +1967,18 @@ a.anchor {
 }
 /**
  * For screens less than 324px wide:
+ *   • Put the wells on their own row (no longer inline with their labels)
  *   • Disable menu bar floating on scroll (remains relative)
  *   • Reflow menu items to each populate their own row (no more width available to remain inline)
  *   • Center the popup modal
  */
 @media(max-width: 355px) {
+    html:not(.ignore-accent-color) .wells {
+        margin-left: 0;
+        display: block;
+        margin-top: var(--half-gap);
+        text-align: left;
+    }
     #menubar menu li {
         display: block;
     }
@@ -1986,8 +1987,8 @@ a.anchor {
         }
     #settings-popup {
         margin-left: 0;
-        top: 21em;
-        left: calc(50% + -97px);
+        top: 18.5em;
+        left: calc(50% + -108px);
         transform-origin: 50% 0;
     }
 }
@@ -2071,7 +2072,7 @@ a.anchor {
         margin-left: -14.2em;
     }
         #settings-popup {
-            top: 3em;
+            top: 3.5em;
         }
 }
 /**
@@ -2790,7 +2791,7 @@ article figure > a:hover {
     }
 .hero-banner {
     display: inline-block;
-    margin-top: -2.75em !important;
+    margin-top: 0;
     margin-bottom: 0;
     max-width: 2000px;
 }
@@ -2800,9 +2801,6 @@ article figure > a:hover {
         box-shadow: var(--shadow);
     }
 @media(min-width: 700px) {
-    .hero-banner {
-        margin-top: -1.775em !important;
-    }
     .edge-to-edge,
     .hero-banner {
         width: 100vw;
@@ -2822,9 +2820,6 @@ article figure > a:hover {
     }
 }
 @media(min-width: 900px) {
-    .hero-banner {
-        margin-top: calc(var(--gap) * -1) !important;
-    }
     .edge-to-edge.medium {
         max-width: 1000px;
         width: 100vw;

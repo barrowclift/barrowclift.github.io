@@ -59,6 +59,12 @@ menubar:
             margin: auto;
         }
     }
+    @supports(padding: max(5%, env(safe-area-inset-left))) {
+        main {
+            padding-left: max(var(--three-fourths-gap), env(safe-area-inset-left));
+            padding-right: max(var(--three-fourths-gap), env(safe-area-inset-right));
+        }
+    }
 </style>
 
 # The Largest Video Game Ever
