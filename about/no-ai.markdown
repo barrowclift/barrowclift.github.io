@@ -15,5 +15,6 @@ I will continue to use [em dashes](https://www.seangoedecke.com/em-dashes/) like
 I will never sacrifice my integrity at the alter of "content", as if producing "more" in and of itself is a virtue worth the sacrifice of true human expression. I have few articles, few projects, and fewer still that are worth anyone's time. But it's unapologetically human, every bit of it, and always will be.
 
 <div id="farewell-stamp">
-    <a href="/about">⌘</a>
+    <!-- I don't want to just link about to the about page for this one. -->
+    <a href="https://innisfree.barrowclift.me">⌘</a>
 </div>
