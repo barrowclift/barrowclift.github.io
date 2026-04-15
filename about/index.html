@@ -127,17 +127,26 @@ design:
         position: absolute;
         height: 2px;
         top: 0.5em;
-        width: 30vw;
+        width: 20vw;
+    }
+    /**
+     * For screens less than 324px wide
+     */
+    @media(max-width: 374px) {
+        h2.fancy span:before,
+        h2.fancy span:after {
+            display: none;
+        }
     }
     h2.fancy span:before {
         right: 100%;
-        margin-right: 1em;
-        background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0), hsla(var(--accent-hue), var(--widget-saturation), var(--widget-border-lightness), 0.2));
+        margin-right: 0.75em;
+        background: linear-gradient(to right, hsla(var(--background-hsl-core), 0.0), hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2));
     }
     h2.fancy span:after {
         left: 100%;
-        margin-left: 1em;
-        background: linear-gradient(to right, hsla(var(--accent-hue), var(--widget-saturation), var(--widget-border-lightness), 0.2), hsla(var(--background-hsl-core), 0.0));
+        margin-left: 0.75em;
+        background: linear-gradient(to right, hsla(var(--accent-hue), var(--widget-border-saturation), var(--widget-border-lightness), 0.2), hsla(var(--background-hsl-core), 0.0));
     }
 
     /* ----- QUERIES ----- */

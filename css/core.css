@@ -1685,15 +1685,15 @@ a.anchor {
     #logo:after {
         position: absolute;
         z-index: -1;
-        top: -1rem;
+        top: 0rem;
         left: calc(50% - 10rem);
-        height: 9rem;
+        height: 6rem;
         width: 18.75rem;
         opacity: 0;
         transform: scale(0.6);
         transition: opacity 300ms ease-in, transform 150ms ease-in;
         content: "";
-        filter: blur(1em) saturate(200%) hue-rotate(0deg);
+        filter: blur(1.25em) saturate(200%) hue-rotate(0deg);
         background: conic-gradient(var(--red-color), var(--orange-color), var(--yellow-color), var(--green-color), var(--blue-color), var(--purple-color), var(--red-color));
         background: conic-gradient(var(--red-p3-color), var(--orange-p3-color), var(--yellow-p3-color), var(--green-p3-color), var(--blue-p3-color), var(--purple-p3-color), var(--red-p3-color));
         border-top-left-radius: 0;
@@ -1707,7 +1707,7 @@ a.anchor {
     #logo:hover:after {
         transform: scale(1);
         animation-play-state: running;
-        opacity: 0.25;
+        opacity: 0.35;
     }
         #dark #logo.active:after,
         #dark #logo:hover:after {
@@ -1715,10 +1715,10 @@ a.anchor {
         }
     @keyframes rainbowCycle {
         0% {
-            filter: blur(1em) saturate(200%) hue-rotate(0deg);
+            filter: blur(1.25em) saturate(200%) hue-rotate(0deg);
         }
         100% {
-            filter: blur(1em) saturate(200%) hue-rotate(-360deg);
+            filter: blur(1.25em) saturate(200%) hue-rotate(-360deg);
         }
     }
 #signature {
