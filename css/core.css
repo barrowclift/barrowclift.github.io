@@ -456,9 +456,6 @@ main,
 article {
     text-align: center;
 }
-article {
-    text-wrap: balance;
-}
 main {
     max-width: 33em;
     margin-top: var(--gap2);
@@ -535,6 +532,10 @@ small {
     margin-top: var(--gap);
     margin-bottom: var(--half-gap);
     transition: color var(--cubic-bezier-transition);
+}
+h1, h2, h3, h4, h5, h6,
+blockquote, figcaption {
+    text-wrap: balance;
 }
 /**
  * Time is only ever a single element always wrapped within the encompassing
@@ -2415,17 +2416,14 @@ video {
  * decrease the brightness of all media until hovered by a mouse pointer or
  * tapped by a finger is a _really_ pleasing way to make late night scrolling
  * more visually soothing.
- *
- * Can only realistically do this effect on Safari because every other
- * rendering engine sucks ass.
  */
-#dark.safari img,
-#dark.safari video {
+#dark img,
+#dark video {
     filter: brightness(0.7);
 }
-    #dark.safari img:hover,
-    #dark.safari video:hover,
-    #dark.safari video:playing {
+    #dark img:hover,
+    #dark video:hover,
+    #dark video:playing {
         filter: brightness(1) !important;
     }
 /**
