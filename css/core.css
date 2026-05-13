@@ -446,6 +446,10 @@ html {
                  sans-serif;
     background-color: var(--background-color);
     color: var(--primary-foreground-color);
+
+    /* The first color is the thumb, the second is the track */
+    scrollbar-color: var(--accent-color) hsla(var(--accent-hsl-core), var(--highlight-background-opacity));
+    scrollbar-color: var(--accent-p3-color) color(var(--accent-p3-core) / var(--highlight-background-opacity));
 }
     html#dark.oled {
         background-color: rgb(0, 0, 0);
